@@ -35,6 +35,7 @@ cta_note:
 Le `SSPHub` centralise et vise à faire connaître le contenu créé par le réseau des _data-scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
 
 Il met en valeur les [projets 👇](#projects) du réseau,
+les [publications scientifiques associées 👇](#featured)
 propose des [articles de blog 👇](#posts) et une liste
 de [ressources utiles 👇](#formations).
 
