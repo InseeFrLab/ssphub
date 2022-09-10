@@ -76,9 +76,9 @@ les administrations en charge de la production de statistiques officielles, prin
 Ce réseau répond à plusieurs objectifs,
 dont les principaux sont:
 
-:one: Le partage et la diffusion de connaissances au sein de la communauté des _data-scientists_ de l'administration autour des pratiques et des innovations de la _data-science_ ;
-:two: La valorisation de travaux novateurs dans le champ de la production statistique ;
-:three: Faciliter les échanges entre pairs, qu'ils appartiennent au service statistique public ou non. 
+- Le partage et la diffusion de connaissances au sein de la communauté des _data-scientists_ de l'administration autour des pratiques et des innovations de la _data-science_ ;
+- La valorisation de travaux novateurs dans le champ de la production statistique ;
+- Faciliter les échanges entre pairs, qu'ils appartiennent au service statistique public ou non. 
 
 Afin de mieux cerner les objectifs, le public cible, les thèmes abordés par le réseau, et les moyens associés, un [Manifeste 📜](/#manifesto) a été rédigé de manière collective. 
 
