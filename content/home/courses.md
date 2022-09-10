@@ -7,11 +7,11 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 20
+weight: 40
 
-title: Projets
+title: Ressources utiles
 
-subtitle: "Une galerie de projets innovants illustrant l'apport de la data-science pour la production statistique"
+subtitle: "Une sélection de ressources utiles pour se former ou se perfectionner à la data-science"
 
 content:
   # Page type to display. E.g. project.
@@ -28,14 +28,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Analyse textuelle
-      tag: NLP
-    - name: Deep Learning
-      tag: Deep Learning
-    - name: Big Data
-      tag: Big Data
-    - name: Visualisation
-      tag: Dataviz
+    - name: Cours
+      tag: courses
+    - name: Livres
+      tag: book
+    - name: Vidéos
+      tag: videos
     - name: Open Source
       tag: opensource
 

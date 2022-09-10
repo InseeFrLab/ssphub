@@ -70,17 +70,18 @@ email: 'ssphub-contact@insee.fr'
 highlight_name: false
 ---
 
-Le site `SSP Hub` centralise et vise à faire connaître le contenu créé par le réseau des _data-scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192) qui est constitué par
-les administrations en charge de la production de statistiques officielles, principalement Insee et les Services Statistiques Ministériels (SSM). 
+Le réseau des _data-scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192) est constitué principalement, mais non exclusivement, par
+les administrations en charge de la production de statistiques officielles
+(Insee et Services Statistiques Ministériels principalement). 
 
-Ce réseau répond à plusieurs objectifs,
+Afin de mieux cerner les objectifs, le public cible, les thèmes abordés par le réseau, et les moyens associés, un [Manifeste 📜](/#manifesto) a été rédigé de manière collective.  
+
+Le réseau répond à plusieurs objectifs,
 dont les principaux sont:
 
 - Le partage et la diffusion de connaissances au sein de la communauté des _data-scientists_ de l'administration autour des pratiques et des innovations de la _data-science_ ;
 - La valorisation de travaux novateurs dans le champ de la production statistique ;
 - Faciliter les échanges entre pairs, qu'ils appartiennent au service statistique public ou non. 
-
-Afin de mieux cerner les objectifs, le public cible, les thèmes abordés par le réseau, et les moyens associés, un [Manifeste 📜](/#manifesto) a été rédigé de manière collective. 
 
 Le réseau peut être rejoint de diverses manières ! Pour intégrer notre canal de discussion `Tchap`, recevoir l'infolettre mensuelle ou connaître les évènements _data_ à venir, vous pouvez écrire à <ssphub-contact@insee.fr>. Pour participer à la création de contenu sur ce site, cela se passe sur [`Github` {{< icon name="github" pack="fab" >}}](https://github.com/linogaliana/ssphub)
 
