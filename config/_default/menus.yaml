@@ -21,6 +21,7 @@ main:
     weight: 50
   - name: Contenu supplémentaire
     identifier: plus
+    weight: 90
   - name: Manifeste
     url: /manifeste.md
     weight: 91
@@ -33,3 +34,6 @@ main:
     url: /infolettre.md
     weight: 93
     parent: plus
+  - name: <i class="fab fa-github"></i>
+    url: 'https://github.com/linogaliana/ssphub'
+    weight: 100
