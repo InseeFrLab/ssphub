@@ -37,7 +37,8 @@ Le `SSPHub` centralise et vise à faire connaître le contenu créé par le rés
 Il met en valeur les [projets 👇](#projects) du réseau,
 les [publications scientifiques associées 👇](#featured)
 propose des [articles de blog 👇](#posts) et une liste
-de [ressources utiles 👇](#formations).
+de [ressources utiles 👇](#formations). Les
+événements :date: organisés par le réseau sont listés [ici 👇](#event).
 
 Pour en savoir plus sur le réseau, une description est
 disponible [ici 👇 !](#about) et le [Manifeste 📜 est là](/#manifesto)
