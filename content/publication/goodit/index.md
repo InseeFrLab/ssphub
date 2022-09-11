@@ -33,9 +33,12 @@ links:
 tags:
 - NLP
 - Deep Learning
-- RelevanC
-publication: ""
-publication_short: ""
+- MadeByUs
+
+# Publication name and optional abbreviated publication name.
+publication: "In ACM's Proceedings for _\"GoodIT 2022: ACM International Conference on Information Technology for Social Good\"_"
+publication_short: "_\"GoodIT 2022: ACM International Conference on Information Technology for Social Good\" Proceedings_"
+
 publication_types:
 - "1"
 publishDate: "2022-09-08"
