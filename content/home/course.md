@@ -7,20 +7,18 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 20
+weight: 40
 
-title: Projets
+title: Ressources utiles
 
-subtitle: "Une galerie de projets innovants illustrant l'apport de la data-science pour la production statistique"
+subtitle: "Une sélection de ressources utiles pour se former ou se perfectionner à la data-science"
 
 content:
   # Page type to display. E.g. project.
-  page_type: project
+  page_type: course
 
   # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
   filter_default: 0
-
-  count: 10
 
   # Filter toolbar (optional).
   # Add or remove as many filters (`filter_button` instances) as you like.
@@ -30,6 +28,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
+    - name: Cours
+      tag: courses
+    - name: Livres
+      tag: book
+    - name: Vidéos
+      tag: videos
     - name: Analyse textuelle
       tag: NLP
     - name: Deep Learning
@@ -40,8 +44,14 @@ content:
       tag: Dataviz
     - name: Open Source
       tag: opensource
+    - name: Open Data
+      tag: opendata
     - name: Made by SSPHub people
       tag: MadeByUs
+    - name: Python
+      tag: Python
+    - name: R
+      tag: R
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

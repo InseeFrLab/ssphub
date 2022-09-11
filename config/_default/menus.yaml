@@ -5,26 +5,41 @@
 
 main:
   - name: Home
-    url: '#about'
+    url: '/'
     weight: 10
-  - name: Posts
-    url: '#posts'
-    weight: 20
-  - name: Projects
+  - name: Projets
     url: '#projects'
+    weight: 20
+  - name: Blog
+    url: '#posts'
     weight: 30
-  - name: Talks
-    url: '#talks'
+  - name: Evénements
+    url: '#event'
+    weight: 35
+  - name: Ressources utiles
+    url: '#course'
     weight: 40
   - name: Publications
     url: '#featured'
     weight: 50
-  - name: Contact
-    url: '#contact'
+  - name: A propos du réseau
+    url: '#about'
     weight: 60
-
-# Link to a PDF of your resume/CV from the menu.
-# To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
-#  - name: CV
-#    url: uploads/resume.pdf
-#    weight: 70
+  - name: Contenu supplémentaire
+    identifier: plus
+    weight: 90
+  - name: Manifeste
+    url: /manifeste.md
+    weight: 91
+    parent: plus
+  - name: Documents présentés lors des événements du réseau
+    url: /openhour.md
+    weight: 92
+    parent: plus    
+  - name: Infolettres mensuelles
+    url: /infolettre.md
+    weight: 93
+    parent: plus
+  - name: <i class="fab fa-github"></i>
+    url: 'https://github.com/linogaliana/ssphub'
+    weight: 100

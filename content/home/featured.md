@@ -33,4 +33,10 @@ design:
   #   3 = Card
   #   4 = Citation (publication only)
   view: 3
+  #background:
+  #  color: '#6886bb'
+    # Text color (true=light, false=dark, or remove for the dynamic theme color). 
+  #  text_color_light: false
+
+
 ---

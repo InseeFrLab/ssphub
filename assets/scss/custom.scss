@@ -1,0 +1,65 @@
+/* ---- button -----*/
+
+.btn {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 15px 15px !important;
+  }
+  
+  .btn.btn-primary.btn-lg.active {
+    background-color: #ee6b78 !important;
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 .2rem #dc3545 !important;
+  }
+  
+  .btn-primary {
+    background-color: #6886bb !important;
+  /*  border-color: #507ee0 !important;
+    box-shadow: 0 0 0 .1rem #436eca  !important;
+  */
+  }
+  
+  /* ------------------------------
+  DATAFRAME RENDERING
+  ---------------------------------*/
+  
+  .dataframe {
+    border: none
+  }
+  
+  .dataframe table {
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: black ;
+    font-size: 12px;
+    table-layout: fixed;
+  }
+  
+  .dataframe thead {
+    border-bottom: 1px solid black ;
+    vertical-align: bottom;
+  }
+  
+  .dataframe tr, .dataframe th, .dataframe td {
+    text-align: right;
+    vertical-align: middle;
+    padding: 0.5em 0.5em;
+    line-height: normal;
+    white-space: normal;
+    max-width: none;
+    border: none;
+  }
+  
+  .dataframe th {
+    font-weight: bold;
+  }
+  .dataframe tbody tr:nth-child(odd) {
+    background: #f5f5f5;
+  }
+  .dataframe tbody tr:hover {
+    background: rgba(66, 165, 245, 0.2);
+  }

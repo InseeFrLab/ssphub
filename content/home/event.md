@@ -7,10 +7,10 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 30
+weight: 35
 
-title: Articles de blog
-subtitle: Sélection des articles de blog les plus récents
+title: Evénements
+subtitle: "Les derniers événements :date: organisés"
 
 content:
   # Filter on criteria
