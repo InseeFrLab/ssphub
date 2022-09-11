@@ -17,7 +17,7 @@ main:
     url: '#event'
     weight: 35
   - name: Ressources utiles
-    url: '#courses'
+    url: '#course'
     weight: 40
   - name: Publications
     url: '#featured'

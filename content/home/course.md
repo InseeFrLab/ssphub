@@ -15,7 +15,7 @@ subtitle: "Une sélection de ressources utiles pour se former ou se perfectionne
 
 content:
   # Page type to display. E.g. project.
-  page_type: project
+  page_type: course
 
   # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
   filter_default: 0
