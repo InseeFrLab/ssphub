@@ -13,12 +13,18 @@ main:
   - name: Blog
     url: '#posts'
     weight: 30
+  - name: Evénements
+    url: '#event'
+    weight: 35
   - name: Ressources utiles
     url: '#courses'
     weight: 40
   - name: Publications
     url: '#featured'
     weight: 50
+  - name: A propos du réseau
+    url: '#about'
+    weight: 60
   - name: Contenu supplémentaire
     identifier: plus
     weight: 90
