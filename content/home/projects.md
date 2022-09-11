@@ -38,6 +38,8 @@ content:
       tag: Dataviz
     - name: Open Source
       tag: opensource
+    - name: Made by SSPHub people
+      tag: MadeByUs
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

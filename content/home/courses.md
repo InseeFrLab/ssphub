@@ -34,8 +34,24 @@ content:
       tag: book
     - name: Vidéos
       tag: videos
+    - name: Analyse textuelle
+      tag: NLP
+    - name: Deep Learning
+      tag: Deep Learning
+    - name: Big Data
+      tag: Big Data
+    - name: Visualisation
+      tag: Dataviz
     - name: Open Source
       tag: opensource
+    - name: Open Data
+      tag: opendata
+    - name: Made by SSPHub people
+      tag: MadeByUs
+    - name: Python
+      tag: Python
+    - name: R
+      tag: R
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
