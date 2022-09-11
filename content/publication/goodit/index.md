@@ -19,13 +19,13 @@ author_notes:
 doi: "10.1145/3524458.3547244"
 featured: true
 image:
-  caption: "Siamese network performance"
+  caption: "Comparaison entre une distance textuelle classique et celle issue d'un plongement de mot"
   focal_point: ""
   preview_only: false
 links:
-- name: Découvrir le travail
+- name: Découvrir la publication
   url: https://dl.acm.org/doi/10.1145/3524458.3547244
-- name: Oral presentation
+- name: Présentation orale
   url: https://linogaliana.github.io/relevanc-goodIT22
 
 #projects:
