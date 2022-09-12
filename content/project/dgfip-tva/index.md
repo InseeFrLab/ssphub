@@ -1,5 +1,6 @@
 ---
-title: Estimation du manque à gagner en matière fiscale à l’aide de machine learning
+title: Estimation du manque à gagner en matière fiscale à l’aide de Machine Learning
+
 summary: |
   L’estimation du manque à gagner de l’administration fiscale dans
   son activité de recouvrement des impôts est un enjeu important.
@@ -60,3 +61,10 @@ url_video: ""
 # slides: example
 ---
 
+{{% callout warning %}}
+L'objectif de ce projet n'est pas d'utiliser les données disponibles
+pour transmettre à l'administration fiscale
+le fait qu'une entreprise ait fait
+une déclaration suspicieuses. Cela serait contraire
+à la [loi de 1951 sur le secret statistique](https://www.insee.fr/fr/information/1300624)
+{{% /callout %}}
