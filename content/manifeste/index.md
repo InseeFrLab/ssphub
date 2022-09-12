@@ -70,7 +70,7 @@ acquises, qu'elles soient produites par des membres du réseau ou non.
 
 A plus long terme, selon la réussite initiale du réseau, les demandes exprimées par les participants et les moyens dégagés, le _SSP Hub_ pourrait :
 
-1. **Offrir une vitrine des initiatives de _data science_** au sein du SSP et favoriser la visibilité et le dialogue avec d'autres acteurs de la _data science_ (autres institutions françaises, institutions internationales, enseignement supérieur et recherche académique...)
+1. **Offrir une vitrine des initiatives de _data science_** au sein du {{< abbr title="Le Service Statistique Public (SSP) regroupe les institutions en charge de la production de statistiques officielles. Il est principalement constitué de l'Insee et des services statistiques ministériels (SSM). Pour en savoir plus, le [site de l'Insee](https://www.insee.fr/fr/information/1302192) propose des éléments supplémentaires" text="SSP" >}} et favoriser la visibilité et le dialogue avec d'autres acteurs de la _data science_ (autres institutions françaises, institutions internationales, enseignement supérieur et recherche académique...)
 2. **Accompagner de manière ponctuelle des équipes** dans l'amélioration de processus de production existants grâce aux outils ou méthodes de la _data science_. Ces accompagnements offrent un complément utile aux formations en proposant l'acquisition de compétences sur un projet sur lequel les agents travaillent à une fréquence élevée.
 
 # Publics
@@ -89,7 +89,8 @@ Plusieurs éléments sont mis en place pour atteindre les objectifs du réseau :
 
 # Résumé
 
-Le SSP Hub doit permettre de faire « plus et mieux » de _data science_ en étant composé d’un public aux compétences et attentes diverses. Le réseau se veut inclusif, ouvert, utile, informel et convivial.
+Le réseau des _data-scientists_ doit
+permettre de faire « plus et mieux » de _data science_ en étant composé d’un public aux compétences et attentes diverses. Le réseau se veut inclusif, ouvert, utile, informel et convivial.
 
 Pour faciliter son adoption, le réseau cherche à apporter des solutions et informations concrètes sans impliquer une charge horaire trop conséquente. 
 
