@@ -50,7 +50,8 @@ links:
 #  url: https://intranet.insee.fr/jcms/152407_DBFileDocument/fr/2021-18494-dg75-l401
 #- name: Code/Git
 #  url: https://gitlab.insee.fr/ssplab/codification-pcs2020
-url_code: ""
+- name: Article méthodologique
+  url: https://www.insee.fr/fr/statistiques/6478533
 url_pdf: ""
 url_slides: ""
 url_video: ""
