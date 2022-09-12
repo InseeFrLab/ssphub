@@ -85,7 +85,9 @@ Plusieurs éléments sont mis en place pour atteindre les objectifs du réseau :
 
 - Le présent __site web__ indexe les travaux, formations et bonnes pratiques à mutualiser pour diffusion de l’information. Son contenu est en cours construction sur la base des suggestions des personnes faisant parti du réseau ;
 - Un ensemble d’__évènements ouverts__. Afin de répondre aux différents besoins, ceux-ci visent des publics, durées et finalités variés. Le premier type d'évènement, testé en 2022, est l'_Open Hour_ dont le rôle est de choisir pour chaque occurence un thème en amont et d'en discuter informellement entre agents travaillant sur cette thématique et ceux désireux d'en apprendre plus. D'autres évènements seront mis en place progressivement selon les formats et contenus identifiés comme pertinents ;
-- Des canaux de communication sur l’actualité du réseau (infolettre mensuelle) et d’échanges en continu entre agents du réseau (un canal `Tchap`, qu'il est possible de rejoindre sur simple demande à <utilitr-contact@insee.fr>, est proposé pour une transmission d'information en continu)
+- Des canaux de communication sur l’actualité du réseau (infolettre mensuelle) et d’échanges en continu entre agents du réseau (à travers un canal `Tchap`[^5])
+
+[^5] Il est possible de rejoindre ce canal `Tchap` sur simple demande à <utilitr-contact@insee.fr>
 
 # Résumé
 
