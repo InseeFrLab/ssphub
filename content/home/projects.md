@@ -13,7 +13,7 @@ title: Projets
 
 subtitle: |
   Une galerie de projets innovants illustrant l'apport de la data-science pour la production statistique.
-  
+
   N'hésitez pas à utiliser les filtres !
 
 content:
@@ -57,6 +57,8 @@ content:
       tag: SDES
     - name: SIES (Enseignement Supérieur)
       tag: SIES
+    - name: SSMSI (Intérieur)
+      tag: SSMSI
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
