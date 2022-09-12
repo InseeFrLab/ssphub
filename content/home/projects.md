@@ -40,8 +40,16 @@ content:
       tag: Dataviz
     - name: Open Source
       tag: opensource
-    - name: Made by SSPHub people
-      tag: MadeByUs
+#    - name: Made by SSPHub people
+#      tag: MadeByUs
+    - name: Insee
+      category: Insee
+    - name: DARES (Travail)
+      category: DARES
+    - name: DREES (Santé)
+      category: DREES
+    - name: DGFIP (Finances)
+      category: DGFIP
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
