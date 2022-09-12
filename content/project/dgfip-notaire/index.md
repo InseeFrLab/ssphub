@@ -1,15 +1,21 @@
 ---
 title: Océrisation des déclarations notariales en format PDF
+date: "2021-02-28T00:00:00Z"
 summary: |
   Ce projet du [service statistique de la DGFiP](https://www.impots.gouv.fr/etudes-et-statistiques)
   vise à constituer 
-  une base d’apprentissage à partir de déclarations notariale enregistrées au 
-  format PDF (technique de l'[océrisation](https://fr.wiktionary.org/wiki/oc%C3%A9risation)). 
+  une base d’apprentissage est en cours de constitution en isolant le texte
+  présent dans dans des déclarations notariale enregistrées au 
+  format `PDF` (technique de l'[océrisation](https://fr.wiktionary.org/wiki/oc%C3%A9risation)). 
   L'objectif est de constituer une base de données comportant, pour chaque succession,
   l'actif brut concerné, l'actif net et le lien de filiation entre le donateur et les héritiers.
+
 tags:
-- Image
-date: "2021-02-28T00:00:00Z"
+- Computer Vision
+- MadeByUs
+
+categories:
+- DGFIP
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
