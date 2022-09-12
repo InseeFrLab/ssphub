@@ -33,7 +33,7 @@ links:
 #- name: Git
 #  url: https://git.lab.sspcloud.fr/qchabennet/challenge-donnees-sat.git
 #url_code: ""
-url_pdf: "./uploads/Presentation_seminaire_interne_Clement_Guillo_donnees_satellites.pdf"
+url_pdf: "https://minio.lab.sspcloud.fr/lgaliana/diffusion/ssphub/Presentation_seminaire_interne_Clement_Guillo_donnees_satellites.pdf"
 url_slides: ""
 url_video: ""
 
