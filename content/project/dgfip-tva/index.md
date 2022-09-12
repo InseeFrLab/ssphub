@@ -10,6 +10,7 @@ summary: |
   concernent des entreprises qui ne sont, potentiellement,
   pas choisies aléatoirement. 
 
+
   Le [service statistique de la DGFiP](https://www.impots.gouv.fr/etudes-et-statistiques)
   a lancé un projet visant à estimer,
   à partir des montants de redressement observés dans les contrôles fiscaux,
