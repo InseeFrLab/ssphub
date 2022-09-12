@@ -19,6 +19,7 @@ tags:
 - Computer Vision
 - Images satellites
 
+categories: Insee
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
