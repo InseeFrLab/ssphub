@@ -14,6 +14,7 @@ date: "2021-09-01T00:00:00Z"
 tags:
 - Anomalies
 - Machine Learning
+- Insee
 
 categories:
 - Insee

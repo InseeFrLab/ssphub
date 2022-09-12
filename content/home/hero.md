@@ -41,6 +41,6 @@ de [ressources utiles 👇](#formations). Les
 événements :date: organisés par le réseau sont listés [ici 👇](#event).
 
 Pour en savoir plus sur le réseau, une description est
-disponible [ici 👇](#about) et le [Manifeste 📜 est là](/#manifesto)
+disponible [ici 👇](#about) et le [Manifeste 📜 est là](/manifeste)
 
 <br>

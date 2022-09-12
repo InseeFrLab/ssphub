@@ -25,6 +25,7 @@ summary: |
 tags:
 - Webscraping
 - NLP
+- Insee
 categories:
 - Insee
 

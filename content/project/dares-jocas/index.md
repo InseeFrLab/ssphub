@@ -12,9 +12,10 @@ summary: |
   en _open-source_ sur [`Github` <i class="fa-brands fa-github"></i>](https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR)
 
 tags:
-- webscraping
-- classification
+- Webscraping
+- Classification
 - opensource
+- DARES
 
 categories:
 - DARES
