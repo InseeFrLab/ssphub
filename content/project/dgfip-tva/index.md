@@ -28,9 +28,10 @@ summary: |
   un [rapport de la Cour des Comptes](https://www.ccomptes.fr/fr/publications/la-fraude-aux-prelevements-obligatoires) sur le sujet
 
 tags:
-- classification
-- prediction
-- machine learning
+- Classification
+- Prediction
+- Machine Learning
+- DGFIP
 
 categories:
 - DGFIP

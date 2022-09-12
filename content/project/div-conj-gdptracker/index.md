@@ -8,9 +8,10 @@ summary: |
   à agrégeant de multiples informations disponibles à l'instant _t_.  
 
 tags:
-- classification
-- prediction
-- machine learning
+- Classification
+- Prediction
+- Machine Learning
+- Insee
 categories:
 - Insee
 

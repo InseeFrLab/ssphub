@@ -15,9 +15,10 @@ summary: |
   à l'utilisateur de jouer avec les données et obtenir
   une mise à jour de graphiques exploratoires. 
 tags:
-- dataviz
-- covid
-- shiny
+- Dataviz
+- Covid
+- Shiny
+- DREES
 categories:
 - DREES
 date: "2022-04-08T00:00:00Z"

@@ -12,7 +12,7 @@ summary: |
 
 tags:
 - Computer Vision
-- MadeByUs
+- DGFIP
 
 categories:
 - DGFIP

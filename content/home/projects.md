@@ -11,7 +11,10 @@ weight: 20
 
 title: Projets
 
-subtitle: "Une galerie de projets innovants illustrant l'apport de la data-science pour la production statistique"
+subtitle: |
+  Une galerie de projets innovants illustrant l'apport de la data-science pour la production statistique.
+  
+  N'hésitez pas à utiliser les filtres !
 
 content:
   # Page type to display. E.g. project.
@@ -43,13 +46,17 @@ content:
 #    - name: Made by SSPHub people
 #      tag: MadeByUs
     - name: Insee
-      category: Insee
+      tag: Insee
     - name: DARES (Travail)
-      category: DARES
+      tag: DARES
     - name: DREES (Santé)
-      category: DREES
+      tag: DREES
     - name: DGFIP (Finances)
-      category: DGFIP
+      tag: DGFIP
+    - name: SDES (Ecologie)
+      tag: SDES
+    - name: SIES (Enseignement Supérieur)
+      tag: SIES
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

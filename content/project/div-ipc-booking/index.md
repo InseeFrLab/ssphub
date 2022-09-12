@@ -22,6 +22,7 @@ summary: |
  
 tags:
 - Webscraping
+- Insee
 categories:
 - Insee
 

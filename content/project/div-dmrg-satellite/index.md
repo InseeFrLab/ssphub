@@ -16,6 +16,7 @@ summary: |
 tags:
 - Computer Vision
 - Images satellites
+- Insee
 
 categories:
 - Insee
