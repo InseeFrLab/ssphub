@@ -12,6 +12,14 @@ summary: |
   automatisée le prix des chambres et les caractéristiques
   de celles-ci.
 
+  Un autre projet d'intégration de données _scrappées_
+  au calcul de l'indice des prix à la consommation a
+  été mis en oeuvre à l'Insee. Il s'agissait de
+  _scraper_ automatiquement le prix d'équipements
+  électroniques dont les prix peuvent, au cours
+  d'une année, connaître des variations significatives
+  (tablettes, smartphones...).
+ 
 tags:
 - Webscraping
 categories:
