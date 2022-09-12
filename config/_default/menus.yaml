@@ -29,7 +29,7 @@ main:
     identifier: plus
     weight: 90
   - name: Manifeste
-    url: /manifeste.md
+    url: /manifeste
     weight: 91
     parent: plus
   - name: Documents présentés lors des événements du réseau
