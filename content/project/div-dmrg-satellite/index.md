@@ -11,15 +11,14 @@ summary: |
   l'aménagement du territoire. 
 
   Les modèles mis en oeuvre reposent sur des
-  réseaux de neurone (techniques de _deep learning_) 
-  Modèles de deep Learning appliqués à la segmentation sémantique
-  (INSEE - Division Méthodes et référentiels géographiques)
+  réseaux de neurone (techniques de _deep learning_).
 
 tags:
 - Computer Vision
 - Images satellites
 
-categories: Insee
+categories:
+- Insee
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
@@ -33,8 +32,8 @@ links:
 #  url: https://ssphub.netlify.app/uploads/Presentation_seminaire_interne_Clement_Guillo_donnees_satellites.pdf
 #- name: Git
 #  url: https://git.lab.sspcloud.fr/qchabennet/challenge-donnees-sat.git
-url_code: "Presentation_seminaire_interne_Clement_Guillo_donnees_satellites.pdf"
-url_pdf: ""
+#url_code: ""
+url_pdf: "./uploads/Presentation_seminaire_interne_Clement_Guillo_donnees_satellites.pdf"
 url_slides: ""
 url_video: ""
 

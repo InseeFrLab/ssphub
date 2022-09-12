@@ -11,6 +11,8 @@ tags:
 - classification
 - prediction
 - machine learning
+categories:
+- Insee
 
 date: "2022-04-08T00:00:00Z"
 
