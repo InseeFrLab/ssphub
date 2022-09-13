@@ -1,5 +1,5 @@
 ---
-title: "Association de données de caisse et de données nutritionnelles grâce aux méthode d'analyse textuelle"
+title: "Association de données de caisse et de données nutritionnelles grâce aux méthodes d'analyse textuelle"
 summary: |
   Depuis quelques années, l'Insee exploite les données de caisse des enseignes de la grande distribution pour le calcul des indices de prix à la consommation. Ces données de caisse offrent
   également une information très riche sur la composition de la consommation alimentaire
