@@ -22,6 +22,9 @@ tags:
 - NLP
 - Deep Learning
 - Big Data
+- Insee
+categories:
+- Insee
 date: "2022-07-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
