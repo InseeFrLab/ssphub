@@ -32,3 +32,6 @@ url_video: ""
 # slides: example
 ---
 
+Récupération des archives du _Monde_ depuis 1949 et analyse textuelle
+pour déterminer la manière dont le discours médiatique permet
+de prédire l'état de l'économie.
