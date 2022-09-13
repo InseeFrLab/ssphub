@@ -35,9 +35,13 @@ image:
   focal_point: Smart
 
 links:
+- name: Publication (version courte)
+  url: https://dl.acm.org/doi/10.1145/3524458.3547244
+- name: Publication (version longue)
+  url: http://www.jms-insee.fr/2022/S28_2_ACTE_GALIANA_JMS2022.pdf
 url_code: ""
 url_pdf: "https://dl.acm.org/doi/pdf/10.1145/3524458.3547244"
-url_slides: ""
+url_slides: "https://linogaliana.github.io/relevanc-goodIT22/"
 url_video: ""
 
 # Slides (optional).
