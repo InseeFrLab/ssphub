@@ -45,3 +45,15 @@ url_video: ""
 # slides: example
 ---
 
+Le but de cette expérimentation de l'`Insee` est
+de tester et comparer différents
+modèles d'apprentissage statistique et méthodes
+de prétraitement pour le codage des professions
+dans la nomenclature [PCS](https://www.insee.fr/fr/information/2406153)
+2020.
+
+Cette nomenclature révisée des PCS implique de
+revoir la manière dont les professions sont
+déterminées à partir du libellé fourni
+par l'enquêté mais aussi des variables annexes
+(statut de l'employeur, etc.).
