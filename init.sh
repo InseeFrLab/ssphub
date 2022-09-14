@@ -10,3 +10,5 @@ HUGO_VERSION="0.97.3"
 wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.deb && \
     sudo apt install "./hugo_extended_${HUGO_VERSION}_Linux-64bit.deb" && \
     rm -f hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
+
+

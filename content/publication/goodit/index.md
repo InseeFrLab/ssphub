@@ -28,8 +28,8 @@ links:
 - name: Présentation orale
   url: https://linogaliana.github.io/relevanc-goodIT22
 
-#projects:
-#- RelevanC
+projects:
+- ssplab-relevanc
 tags:
 - NLP
 - Deep Learning
