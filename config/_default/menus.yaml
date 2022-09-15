@@ -8,7 +8,7 @@ main:
     url: '/'
     weight: 10
   - name: Projets
-    url: '#projects'
+    url: '/projects'
     weight: 20
   - name: Blog
     url: '#posts'
