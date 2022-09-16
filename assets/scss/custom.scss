@@ -63,3 +63,25 @@
   .dataframe tbody tr:hover {
     background: rgba(66, 165, 245, 0.2);
   }
+
+
+
+/*----------------
+BANNER HERO
+---------------*/
+
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 70% !important;
+    max-width: 70% !important;
+  }
+}
+
+.hero-media {
+  display: flex;
+  height: 100%;
+  flex: 0 0 30% !important ;
+  max-width: 30% !important;
+}
+

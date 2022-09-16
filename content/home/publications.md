@@ -14,7 +14,6 @@ subtitle: ''
 
 active: false
 
-
 content:
   # Filter on criteria
   filters:
