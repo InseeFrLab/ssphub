@@ -10,7 +10,7 @@ headless: true
 weight: 35
 
 title: Événements
-subtitle: "Les derniers événements :date: organisés"
+subtitle: "Les derniers événements :date: organisés ou recommandés sur les sujets _data-science_"
 
 content:
   # Filter on criteria
