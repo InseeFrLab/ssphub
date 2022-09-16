@@ -1,16 +1,16 @@
 ---
 # An instance of the Portfolio widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: portfolio
+widget: portfolio-custom
 
 # This file represents a page section.
 headless: true
-active: false
 
 # Order that this section appears on the page.
-weight: 40
+weight: 30
 
 title: Ressources utiles
+subtitle: Une sélection de ressources utiles pour se former ou se perfectionner à la data-science
 
 subtitle: "Une sélection de ressources utiles pour se former ou se perfectionner à la data-science"
 
@@ -68,3 +68,6 @@ design:
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false
 ---
+
+
+# Blog

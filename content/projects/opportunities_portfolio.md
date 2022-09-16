@@ -5,6 +5,7 @@ widget: portfolio-custom
 
 # This file represents a page section.
 headless: true
+active: true
 
 # Order that this section appears on the page.
 weight: 20
@@ -74,3 +75,11 @@ design:
   # For Showcase view, flip alternate rows?
   flip_alt_rows: false
 ---
+
+# Galerie des projets
+
+<br>
+
+Une galerie de projets innovants illustrant l'apport de la data-science pour la production statistique.
+
+N'hésitez pas à utiliser les filtres !

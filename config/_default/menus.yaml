@@ -7,24 +7,24 @@ main:
   - name: Home
     url: '/'
     weight: 10
-  - name: Projets
-    url: '#projects'
-    weight: 20
-  - name: Blog
-    url: '#posts'
-    weight: 30
-  - name: Evénements
+  - name: Événements
     url: '#event'
+    weight: 20
+  - name: A propos
+    url: '#about'
+    weight: 25
+  - name: Blog
+    url: '/posts'
+    weight: 30
+  - name: Projets
+    url: '/projects'
     weight: 35
   - name: Ressources utiles
-    url: '#course'
+    url: '/courses'
     weight: 40
-  - name: Publications
-    url: '#featured'
-    weight: 50
-  - name: A propos du réseau
-    url: '#about'
-    weight: 60
+#  - name: Publications
+#    url: '#featured'
+#    weight: 50
   - name: Contenu supplémentaire
     identifier: plus
     weight: 90

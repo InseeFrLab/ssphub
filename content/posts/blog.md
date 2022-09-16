@@ -1,22 +1,22 @@
 ---
-# An instance of the Pages widget.
+# An instance of the Portfolio widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
-widget: pages
+widget: portfolio-custom
 
 # This file represents a page section.
 headless: true
 
 # Order that this section appears on the page.
-weight: 35
+weight: 30
 
-title: Événements
-subtitle: "Les derniers événements :date: organisés ou recommandés sur les sujets _data-science_"
+title: Articles de blog
+subtitle: Sélection des articles de blog les plus récents
 
 content:
   # Filter on criteria
   filters:
     folders:
-      - event
+      - post
     tag: ''
     category: ''
     publication_type: ''
@@ -39,5 +39,13 @@ design:
   #  color: '#6886bb'
     # Text color (true=light, false=dark, or remove for the dynamic theme color). 
   #  text_color_light: true
-
 ---
+
+
+# Blog
+
+<br>
+
+Les articles de blog les plus récents
+
+<br>
