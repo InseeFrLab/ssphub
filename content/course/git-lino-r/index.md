@@ -1,12 +1,16 @@
 ---
 title: Utiliser Git avec RStudio
 summary: |
-  Un cours de Git pour utilisateurs de R
-  créé à l'`Insee`
+  Un cours créé à l'`Insee` visant à présenter
+  les principes de Git et son usage lorsqu'on
+  est utilisateur de `R`
 tags:
 - Git
 - R
 - MadeByUs
+- Insee
+categories:
+- Insee
 date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
