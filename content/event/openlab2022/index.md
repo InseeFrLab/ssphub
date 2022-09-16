@@ -29,7 +29,8 @@ all_day: false
 # Schedule page publish date (NOT talk date).
 publishDate: '2022-09-01T00:00:00Z'
 
-authors: []
+authors:
+- admin
 
 # Is this a featured talk? (true/false)
 featured: true
@@ -82,15 +83,23 @@ et cas d'usage afin d'orienter les futurs développements.
 
 Au programme :
 
-- 9h30-9h45 : Accueil café
-- 9h45-11h : Présentation de l'outil Onyxia par l'INSEE et la DINUM, suivie de questions/réponses
-- 11h15-12h : Témoignages de réutilisateurs de la plateforme
-- 12h-13h30: Pause Déjeuner
-- 13h30-16h : Ateliers au choix : Instancier Onyxia pour mon équipe de data scientists, Gouvernance open source, Contribuer à l’interface utilisateur d’Onxya, Comment contribuer au catalogue de data science
-- 16h-16h30 : Échanges et restitution
+| Horaire   |  Programme            |
+|-----------|--------------|
+| 9h30-9h45 | Accueil café |
+| 9h45-11h  | Présentation de l'outil Onyxia par l'INSEE et la DINUM, suivie de questions/réponses |
+| 11h15-12h | Témoignages de réutilisateurs de la plateforme |
+| 12h-13h30 | Pause Déjeuner |
+| 13h30-16h | Ateliers au choix : Instancier Onyxia pour mon équipe de data scientists, Gouvernance open source, Contribuer à l’interface utilisateur d’Onxya, Comment contribuer au catalogue de data science |
+| 16h-16h30 | Échanges et restitution |
 
 N'oubliez pas d'apporter vos ordinateurs portables afin de pouvoir tester la plateforme et y contribuer.
 
-Vous êtes chercheur, agent public, étudiant, citoyen, spécialiste de l'IA ou non ? Venez participer au projet !
+
+__Vous êtes chercheur, agent public, étudiant, citoyen, spécialiste de l'IA ou non ? Venez participer au projet !__
+
+{{% callout %}}
 
 Pour toute information : <lab-ia@data.gouv.fr>
+
+{{% /callout %}}
+
