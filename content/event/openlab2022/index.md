@@ -7,10 +7,9 @@ event_url: https://www.eventbrite.fr/e/billets-openlab-onyxia-n2-415380352817
 location: Lieu de la transformation publique
 address:
   street: 77 Avenue de Ségur
-  city: 75015 Paris
-  region: CA
-  postcode: '94305'
-  country: United States
+  city: Paris
+  postcode: '75015'
+  country: France
 
 summary: |
   Second OpenLab, organisé conjointement par l'INSEE et le Lab IA d'Etalab permettant de présenter
@@ -23,8 +22,8 @@ abstract: |
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-10-12T13:00:00Z'
-date_end: '2022-10-12T15:00:00Z'
+date: '2022-10-12T09:30:00Z'
+date_end: '2022-10-12T16:30:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
