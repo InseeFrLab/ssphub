@@ -9,6 +9,7 @@ tags:
 - R
 - MadeByUs
 - Insee
+- book
 categories:
 - Insee
 date: "2016-04-27T00:00:00Z"
