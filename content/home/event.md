@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 35
 
-title: Evénements
+title: Événements
 subtitle: "Les derniers événements :date: organisés"
 
 content:

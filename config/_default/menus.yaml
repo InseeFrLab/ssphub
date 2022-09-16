@@ -7,7 +7,7 @@ main:
   - name: Home
     url: '/'
     weight: 10
-  - name: Evénements
+  - name: Événements
     url: '#event'
     weight: 20
   - name: A propos
