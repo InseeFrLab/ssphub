@@ -7,4 +7,11 @@ summary: |
 date: "2022-04-11T00:00:00Z"
 ---
 
-Retrouvez sur cette page les infolettres mensuelles précédemment envoyées ainsi que les supports présentés lors des Open Hour (séances non enregistrées car informelles !).
+Retrouvez sur cette page les infolettres mensuelles
+précédemment envoyées :
+
+- {{< staticref "uploads/Infolettre n5.pdf" "newtab" >}}Infolettre n°5, Juin 2022{{< /staticref >}}
+- {{< staticref "uploads/Infolettre n4.pdf" "newtab" >}}Infolettre n°4, Mai 2022{{< /staticref >}}
+- {{< staticref "uploads/Infolettre n3.pdf" "newtab" >}}Infolettre n°3, Avril 2022{{< /staticref >}}
+- {{< staticref "uploads/Infolettre n2.pdf" "newtab" >}}Infolettre n°2, Mars 2022{{< /staticref >}}
+- {{< staticref "uploads/Infolettre n1.pdf" "newtab" >}}Infolettre n°1, Février 2022{{< /staticref >}}
