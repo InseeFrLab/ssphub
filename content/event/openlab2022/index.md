@@ -11,6 +11,10 @@ address:
   postcode: '75015'
   country: France
 
+tags:
+- onyxia
+- MadeByUs
+
 summary: |
   Second OpenLab, organisé conjointement par l'INSEE et le Lab IA d'Etalab permettant de présenter
   le projet Onyxia
