@@ -11,4 +11,5 @@ wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_ex
     sudo apt install "./hugo_extended_${HUGO_VERSION}_Linux-64bit.deb" && \
     rm -f hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
 
+#hugo server -p 5000 --bind 0.0.0.0
 
