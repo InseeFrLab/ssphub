@@ -85,3 +85,82 @@ BANNER HERO
   max-width: 30% !important;
 }
 
+
+
+/*------------------------------
+CARDS
+-------------------------------*/
+
+.card {
+  cursor: pointer;
+}
+
+/*
+.chevron {
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 15px);
+  transform-origin: 50%;
+  transform: rotate(180deg);
+  transition: transform 1000ms;
+}
+
+.card.expanded .chevron {
+  transform: rotate(0deg);
+}
+.card.expanded {
+  max-height: 400px 
+}
+.card.expanded .article-style{
+  display: none ;
+  transition: transform 1000ms;
+}
+*/
+
+/*-----------
+.card.expanded {
+  max-height: 1000px;
+}
+-----------*/
+
+/*
+.card-image {
+  margin-top: 30px;
+  transform: translateY(10px);
+  transition: transform 1000ms;
+}
+.card.expanded .card-image {
+  transform: translateY(0);
+}
+*/
+
+/*----------
+.card {
+  max-height: 400px;
+}
+.card.expanded {
+  max-height: none;
+}
+
+.card .article-style {
+  clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -90%, 50% -5%, 100% -90%, 100% 100%);
+  transition: clip-path 1000ms;
+  overflow: hidden;
+}
+
+.card.expanded .article-style {
+  clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0 -100%, 50% -15%, 100% -100%, 100% 100%);
+}
+
+.card .article-style {
+  transform: translateY(-160px);
+  transition: transform 1000ms;
+}
+
+.card.expanded .article-style {
+  transform: translateY(-15px);
+}
+--------------
+*/
