@@ -8,6 +8,7 @@ summary: |
 tags:
 - R
 - website
+- Bonnes pratiques
 
 date: "2021-04-27T00:00:00Z"
 
