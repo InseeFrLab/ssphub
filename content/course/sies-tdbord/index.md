@@ -3,8 +3,7 @@ title: "#dataESR: portail de l'open-data du Ministère de l'Enseignement Supéri
 summary: |
   `#dataESR` est un portail développé
   par le [service statistique du Ministère de l'Enseignement Supérieur et de la Recherche](https://www.enseignementsup-recherche.gouv.fr/fr/statistiques-et-analyses-50213)
-
-  vous aide à trouver les ressources en données sur l'enseignement supérieur, la recherche et l'innovation
+  pour vous aider à trouver les ressources en données sur l'enseignement supérieur, la recherche et l'innovation
 tags:
 - Dataviz
 - SIES
