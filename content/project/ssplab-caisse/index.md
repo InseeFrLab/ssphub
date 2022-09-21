@@ -40,6 +40,8 @@ image:
   caption: Photo by rawpixel on Unsplash
   focal_point: Smart
 
+draft: true
+
 links:
 #- name: Fiche descriptive
 #  url: https://intranet.insee.fr/jcms/135247_DBFileDocument/2019-0809-dg75-f610-fiche-descriptif-machine-learning-ddc-vu-pl-as2

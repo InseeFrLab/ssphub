@@ -34,6 +34,8 @@ image:
   caption: 
   focal_point: Smart
 
+draft: true
+
 links:
 - name: Publication (version courte)
   url: https://dl.acm.org/doi/10.1145/3524458.3547244

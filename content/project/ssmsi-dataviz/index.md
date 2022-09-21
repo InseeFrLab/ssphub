@@ -21,6 +21,8 @@ image:
   caption: 
   focal_point: Smart
 
+draft: true
+
 links:
 #- icon: twitter
 #  icon_pack: fab

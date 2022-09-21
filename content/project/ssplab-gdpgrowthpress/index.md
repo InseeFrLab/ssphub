@@ -17,6 +17,8 @@ image:
   caption: 
   focal_point: Smart
 
+draft: true
+
 links:
 - name: Article académique
   url: https://www.insee.fr/fr/statistiques/3705976?sommaire=3706255
