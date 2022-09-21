@@ -16,6 +16,7 @@ summary: |
   et économiques agrégées par carreaux
   de 200m (données [`Filosofi` 2015](https://www.insee.fr/fr/statistiques/4176290?sommaire=4176305))
 date: "2016-04-27T00:00:00Z"
+
 tags:
 - Dataviz
 - Site web
@@ -26,6 +27,8 @@ categories:
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://www.hubblo.fr/"
+
+draft: true
 
 image:
   caption: Photo by rawpixel on Unsplash

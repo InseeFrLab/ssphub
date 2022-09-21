@@ -17,6 +17,8 @@ image:
   caption: 
   focal_point: Smart
 
+draft: true
+
 links:
 #- name: Fiche descriptive
 #  url: https://intranet.insee.fr/jcms/2626207_DBFileDocument/2018-10227-dg75-l401-fiche-lancement-id-emp-census?details=true

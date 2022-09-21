@@ -14,6 +14,8 @@ tags:
 - Computer Vision
 - DGFIP
 
+draft: true
+
 categories:
 - DGFIP
 

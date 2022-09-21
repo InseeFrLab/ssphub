@@ -59,12 +59,13 @@ Après appariement avec d'autres sources, l'enquête permet de produire des étu
 statistiques. Par exemple, cette enquête a permis de mieux connaître
 les [caractéristiques des magasins bio](https://www.insee.fr/fr/statistiques/4240612).
 
-La base de sondage, c'est-à-dire la liste des commerces susceptibles d'être
+La base de sondage, c'est-à-dire la liste des entités susceptibles d'être
 interrogés, est constituée en combinant à la fois des données administratives
 (la source [Sirene](https://fr.wikipedia.org/wiki/Syst%C3%A8me_d%27identification_du_r%C3%A9pertoire_des_entreprises)) et des données
 récupérées par _webscraping_ à  
-partir des informations disponibles sur internet 
-Les retours des premières collectes ont montré que la base de sondage n’est pas assez précise et des améliorations, reposant sur le _machine learning_, sont envisagées. 
+partir des informations disponibles sur internet.
+Les retours des premières collectes ont montré que la base de sondage n’est pas assez précise et des améliorations, reposants
+en partie sur de l'analyse textuelle et de la recherche approximative, sont envisagées. 
 
 Un autre enjeu de l’enquête _"Réseaux d’enseignes"_ est de pouvoir compléter les réponses à l’enquête
 à partir de sources administratives. Un défi consiste à déterminer, ou corriger lorsqu'il est
