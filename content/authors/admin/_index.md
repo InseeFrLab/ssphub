@@ -74,7 +74,7 @@ Le réseau des _data-scientists_ du [Service Statistique Publique (SSP)](https:/
 les administrations en charge de la production de statistiques officielles
 (Insee et Services Statistiques Ministériels principalement). 
 
-Afin de mieux cerner les objectifs, le public cible, les thèmes abordés par le réseau, et les moyens associés, un [Manifeste 📜](/#manifesto) a été rédigé de manière collective.  
+Afin de mieux cerner les objectifs, le public cible, les thèmes abordés par le réseau, et les moyens associés, un [Manifeste 📜](/manifeste) a été rédigé de manière collective.  
 
 Le réseau répond à plusieurs objectifs,
 dont les principaux sont:
