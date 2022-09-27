@@ -28,7 +28,7 @@ image:
   preview_only: false
 
 authors:
-  - Lucas Malherbe
+  - lucasmalherbe
 
 tags:
   - NLP
