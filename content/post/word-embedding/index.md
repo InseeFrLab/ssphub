@@ -71,9 +71,9 @@ Un algorithme ne travaille qu'avec des nombres. Il faut donc d'abord transformer
 Il existe principalement deux approches pour cela :
 
 *   le [sac de mots (_bag of words_)](#bag-of-words),
-*   le [plongement lexical(_word embedding_)](#embedding).
+*   le [plongement lexical (_word embedding_)](#embedding).
 
-# Traiter un texte comme une information numérique: les approches possibles
+# Traiter un texte comme une information numérique : les approches possibles
 
 ## L'approche _bag of words_ {#bag-of-words}
 
@@ -108,7 +108,7 @@ Chaque phrase du corpus est associée à un vecteur numérique.
 Il est maintenant possible de manipuler cette matrice comme des données tabulaires classiques. Par exemple, pour classer ces phrases dans des catégories, on pourrait appliquer l’un des algorithmes usuels de _machine learning_ pour les tâches de classification (régression logistique, forêt aléatoire, _gradient boosting_, etc.).
 
 Cependant, même si cette représentation via la matrice document-terme répond au besoin initial de transformer les données, un autre type de représentation se place souvent comme une meilleure option : le plongement lexical. L'approche _bag-of-words_ ne permet en effet pas
-de distinguer des différences de nature entre des termes: on peut compter les occurrences de certains, mais on ne peut distinguer
+de distinguer des différences de nature entre des termes : on peut compter les occurrences de certains, mais on ne peut distinguer
 la similarité entre _'tricot"_ et _"crochet"_.
 
 ## Le plongement lexical {#embedding}
@@ -123,7 +123,7 @@ de façon à ce que deux mots dont le sens est proche possèdent des représenta
 <div style="text-align: center"> Illustration du plongement lexical. Source : Post de blog <a href="https://medium.com/@hari4om/word-embedding-d816f643140" target="_blank">Word Embedding : Basics</a></div>  &nbsp;
 
 
-Chaque composante va encoder des informations différentes, comme le fait d’être un être vivant, le genre, l’âge, le niveau d’abstraction, etc.. En pratique, les vecteurs de plongements ont quelques dizaines voire quelques centaines de composantes et il est impossible d’associer à chacune un concept clair : toutes les notions s’entremêlent, mais chaque composante à un rôle à jouer. 
+Chaque composante va encoder des informations différentes, comme le fait d’être un être vivant, le genre, l’âge, le niveau d’abstraction, etc. En pratique, les vecteurs de plongements ont quelques dizaines voire quelques centaines de composantes et il est impossible d’associer à chacune un concept clair : toutes les notions s’entremêlent, mais chaque composante à un rôle à jouer. 
 
 Le plongement lexical possède deux avantages par rapport à l’approche _bag of words_ :
 
@@ -214,7 +214,7 @@ Une manière de procéder est de calculer la similarité cosinus entre les vecte
 
 ![Illustration de la similarité cosinus](similarite_cosinus.png)
 
- <div style="text-align: center"> Illustration du fonctionnement du modèle fastText sur un libellé de profession</div>  &nbsp;
+ <div style="text-align: center"> Illustration de la similarité cosinus en deux dimensions</div>  &nbsp;
 
 Le calcul de la proximité entre les mots est à la base du jeu [cemantix](https://cemantix.herokuapp.com/).
 Le principe est proche du `Wordle` mais s'en distingue sur un point : il y a certes un mot à trouver chaque jour et il s’agit de faire des propositions de mots mais le jeu répond en donnant la proximité entre les mots proposés et le mot du jour. Ainsi, au fil des propositions, on a une vision de plus en plus précise du champ lexical associé au mot mystère, jusqu’à finalement le trouver.
