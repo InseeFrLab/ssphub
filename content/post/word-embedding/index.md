@@ -77,7 +77,7 @@ Il existe principalement deux approches pour cela :
 
 ## L'approche _bag of words_ {#bag-of-words}
 
-Le principe du _bag of words_ est qu'on peut décrire un document comme
+Le principe du _bag of words_ est que l'on peut décrire un document comme
 un dictionnaire de mots dans lequel on pioche plus ou moins fréquemment
 un terme en fonction de son nombre d'occurrence. 
 
