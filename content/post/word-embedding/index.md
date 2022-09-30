@@ -38,11 +38,10 @@ categories:
   - NLP
 ---
 
-Les données textuelles constituent une source extraordinaire d’informations,
-que ce soit sous la forme d’e-mails, de réponses à des enquêtes ou encore de commentaires sur les réseaux sociaux.
-Dans la statistique publique, et à l’`Insee` notamment,
-une problématique récurrente est de classer des libellés (professions, noms de produits, etc.) dans des nomenclatures
-standardisées (PCS[^1], NAF[^2]...). 
+
+Avec le développement de la collecte automatisée d'information numérique, les données textuelles sont devenues omniprésentes, que ce soit sous la forme d’e-mails, de réponses à des enquêtes, d'articles de presse ou encore de commentaires sur les réseaux sociaux. 
+Ces données peuvent être une source très riche d’informations mobilisable par les statisticiens, pour peu qu'ils parviennent à en faire un traitement statistique. Ainsi, une problématique récurrente dans la statistique publique consiste à classer des informations formulées en langage courant (professions, noms de produits, noms de communes, etc.) dans des nomenclatures
+standardisées (PCS[^1], NAF[^2], COG[^3]...). 
 
 [^1]: La nomenclature `PCS` (professions et catégories socioprofessionnelles)
 sert à la codification des professions dans le recensement et les enquêtes auprès des ménages. 
@@ -59,16 +58,11 @@ ou de l'industrie automobile.
 Une description plus
 complète de cette nomenclature et de son historique est disponible sur [le site de l'Insee](https://www.insee.fr/fr/information/2406147)
 
-Avec la collecte automatisée d'information numérique, les données textuelles sont devenues 
-de plus en plus communes. Les méthodes de traitement automatisé du langage, plus connues sous l'acronyme
-`NLP` (acronyme de _natural langage processing_), sont devenues un champ de recherche très actif
-pour proposer des solutions génériques
-permettant de traiter ces corpus très peu structurés et très 
-hétérogènes de données. 
+[^3]: Le Code Officiel Géographique est... A COMPLETER
 
-Il existe une difficulté avec ce type de données : __le langage naturel n'a pas de sens pour un ordinateur !__
-Un algorithme ne travaille qu'avec des nombres. Il faut donc d'abord transformer l'information pour la rendre compréhensible par une machine.
-Il existe principalement deux approches pour cela :
+Or, le traitement des données textuelles pose une difficulté particulière: __le langage naturel n'a pas de sens pour un ordinateur !__ Un ordinateur ne travaille qu'avec des nombres, et ne peut pas manipuler directement des mots, des expressions ou des phrases. C'est pourquoi de multiples méthodes ont été développées au cours des dernières décennies pour proposer des solutions génériques permettant de traiter des corpus de données textuelles à la fois peu structurés et hétérogènes. Cet ensemble de méthodes de traitement automatisé du langage, plus connues sous l'acronyme `NLP` (_natural langage processing_) constituent encore aujourd'hui un champ de recherche particulièrement actif. 
+
+Ce billet de blog n'a pas l'ambition de proposer un aperçu des méthodes de NLP, mais simplement de présenter deux méthodes fréquemment utilisées pour transformer l'information textuelle pour la rendre compréhensible et utilisable par une machine:
 
 *   le [sac de mots (_bag of words_)](#bag-of-words),
 *   le [plongement lexical (_word embedding_)](#embedding).
