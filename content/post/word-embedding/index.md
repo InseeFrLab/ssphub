@@ -102,7 +102,7 @@ Chaque phrase du corpus est associée à un vecteur numérique.
 
 Il est maintenant possible de manipuler cette matrice comme des données tabulaires classiques. Par exemple, on pourrait appliquer l’un des algorithmes usuels de classification (régression logistique, forêt aléatoire, _gradient boosting_, etc.) pour classer ces phrases dans des catégories.
 
-L'approche _bag-of-words_ répond donc au besoin initial de transformer les données pour rendre manipulables par une machine, en représentant les données textuelles sous la forme d'une matrice document-terme. Cette approche présente néanmoins une limite: elle traite tous les termes de façon indépendante et ne restitue pas la proximité de certains termes. Par exemple, rien dans la matrice document-terme de l'exemple précédent n'indique que les termes _'tricot"_ et _"crochet"_ relèvent du même champ lexical. Un autre type de représentation plus complexe et plus riche constitue souvent comme une meilleure option : le plongement lexical.
+L'approche _bag-of-words_ répond donc au besoin initial de transformer les données pour les rendre manipulables par une machine, en représentant les données textuelles sous la forme d'une matrice document-terme. Cette approche présente néanmoins une limite: elle traite tous les termes de façon indépendante et ne restitue pas la proximité de certains termes. Par exemple, rien dans la matrice document-terme de l'exemple précédent n'indique que les termes _'tricot"_ et _"crochet"_ relèvent du même champ lexical. Un autre type de représentation plus complexe et plus riche constitue souvent comme une meilleure option : le plongement lexical.
 
 ## Le plongement lexical {#embedding}
 
