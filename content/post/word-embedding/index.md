@@ -38,11 +38,10 @@ categories:
   - NLP
 ---
 
-Les données textuelles constituent une source extraordinaire d’informations,
-que ce soit sous la forme d’e-mails, de réponses à des enquêtes ou encore de commentaires sur les réseaux sociaux.
-Dans la statistique publique, et à l’`Insee` notamment,
-une problématique récurrente est de classer des libellés (professions, noms de produits, etc.) dans des nomenclatures
-standardisées (PCS[^1], NAF[^2]...). 
+
+Avec le développement de la collecte automatisée d'information numérique, les données textuelles sont devenues omniprésentes, que ce soit sous la forme d’e-mails, de réponses à des enquêtes, d'articles de presse ou encore de commentaires sur les réseaux sociaux. 
+Ces données peuvent être une source très riche d’informations mobilisable par les statisticiens, pour peu qu'ils parviennent à en faire un traitement statistique. Ainsi, une problématique récurrente dans la statistique publique consiste à classer des informations formulées en langage courant (professions, noms de produits, noms de communes, etc.) dans des nomenclatures
+standardisées (PCS[^1], NAF[^2], COG[^3]...). 
 
 [^1]: La nomenclature `PCS` (professions et catégories socioprofessionnelles)
 sert à la codification des professions dans le recensement et les enquêtes auprès des ménages. 
@@ -59,16 +58,11 @@ ou de l'industrie automobile.
 Une description plus
 complète de cette nomenclature et de son historique est disponible sur [le site de l'Insee](https://www.insee.fr/fr/information/2406147)
 
-Avec la collecte automatisée d'information numérique, les données textuelles sont devenues 
-de plus en plus communes. Les méthodes de traitement automatisé du langage, plus connues sous l'acronyme
-`NLP` (acronyme de _natural langage processing_), sont devenues un champ de recherche très actif
-pour proposer des solutions génériques
-permettant de traiter ces corpus très peu structurés et très 
-hétérogènes de données. 
+[^3]: Le Code Officiel Géographique est le référentiel permettant de relier des adresses, des noms de communes ou encore des noms de collectivités locales à un identifiant unique. Pour plus d'informations, voir le [site de l'Insee](https://www.insee.fr/fr/information/5230987)
 
-Il existe une difficulté avec ce type de données : __le langage naturel n'a pas de sens pour un ordinateur !__
-Un algorithme ne travaille qu'avec des nombres. Il faut donc d'abord transformer l'information pour la rendre compréhensible par une machine.
-Il existe principalement deux approches pour cela :
+Or, le traitement des données textuelles pose une difficulté particulière: __le langage naturel n'a pas de sens pour un ordinateur !__ Un ordinateur ne travaille qu'avec des nombres, et ne peut pas manipuler directement des mots, des expressions ou des phrases. C'est pourquoi de multiples méthodes ont été développées au cours des dernières décennies pour proposer des solutions génériques permettant de traiter des corpus de données textuelles à la fois peu structurés et hétérogènes. Cet ensemble de méthodes de traitement automatisé du langage, plus connues sous l'acronyme `NLP` (_natural langage processing_) constituent encore aujourd'hui un champ de recherche particulièrement actif. 
+
+Ce billet de blog n'a pas l'ambition de proposer un aperçu des méthodes de NLP, mais simplement de présenter deux méthodes fréquemment utilisées pour transformer l'information textuelle pour la rendre compréhensible et utilisable par une machine:
 
 *   le [sac de mots (_bag of words_)](#bag-of-words),
 *   le [plongement lexical (_word embedding_)](#embedding).
@@ -77,15 +71,16 @@ Il existe principalement deux approches pour cela :
 
 ## L'approche _bag of words_ {#bag-of-words}
 
-Le principe du _bag of words_ est que l'on peut décrire un document comme
-un dictionnaire de mots dans lequel on pioche plus ou moins fréquemment
+Le principe du _bag of words_ est qu'on peut décrire un document comme
+un dictionnaire de mots (un _sac de mots_) dans lequel on pioche plus ou moins fréquemment
 un terme en fonction de son nombre d'occurrences. 
 
 La manière la plus simple de transformer des phrases ou des
 libellés textuels en une information numérique est de passer
 par un objet que l’on appelle la __matrice document-terme__.
 L’idée est de compter le nombre de fois où les
-mots (les termes) sont présents dans chaque phrase ou libellé (le document).
+mots (les termes, en colonne) sont présents dans chaque phrase ou libellé (le document, en ligne).
+Cette matrice fournit alors une représentation __numérique__ des données textuelles.
 
 Considérons un corpus constitué des trois phrases suivantes :
 
@@ -105,38 +100,30 @@ La matrice document-terme associée à ce corpus est la suivante :
 __Mission accomplie !__ :tada:
 Chaque phrase du corpus est associée à un vecteur numérique.
 
-Il est maintenant possible de manipuler cette matrice comme des données tabulaires classiques. Par exemple, pour classer ces phrases dans des catégories, on pourrait appliquer l’un des algorithmes usuels de _machine learning_ pour les tâches de classification (régression logistique, forêt aléatoire, _gradient boosting_, etc.).
+Il est maintenant possible de manipuler cette matrice comme des données tabulaires classiques. Par exemple, on pourrait appliquer l’un des algorithmes usuels de classification (régression logistique, forêt aléatoire, _gradient boosting_, etc.) pour classer ces phrases dans des catégories.
 
-Cependant, même si cette représentation via la matrice document-terme répond au besoin initial de transformer les données, un autre type de représentation se place souvent comme une meilleure option : le plongement lexical. L'approche _bag-of-words_ ne permet en effet pas
-de distinguer des différences de nature entre des termes : on peut compter les occurrences de certains, mais on ne peut distinguer
-la similarité entre _'tricot"_ et _"crochet"_.
+L'approche _bag-of-words_ répond donc au besoin initial de transformer les données pour les rendre manipulables par une machine, en représentant les données textuelles sous la forme d'une matrice document-terme. Cette approche présente néanmoins une limite: elle traite tous les termes de façon indépendante et ne restitue pas la proximité de certains termes. Par exemple, rien dans la matrice document-terme de l'exemple précédent n'indique que les termes _'tricot"_ et _"crochet"_ relèvent du même champ lexical. Un autre type de représentation plus complexe et plus riche constitue souvent comme une meilleure option : le plongement lexical.
 
 ## Le plongement lexical {#embedding}
 
 Le plongement lexical (_word embedding_ en anglais)
-consiste à représenter chaque mot par un vecteur de taille fixe,
+consiste à projeter l'ensemble des termes qui apparaissent dans le corpus dans un espace numérique à $n$ dimensions. Chaque mot est représenté par un vecteur de taille fixe (comprenant $n$ nombres),
 de façon à ce que deux mots dont le sens est proche possèdent des représentations numériques proches. Ainsi les mots « chat » et « chaton » devraient avoir des vecteurs de plongement assez similaires, eux-mêmes également assez proches de celui du mot « chien » et plus éloignés de la représentation du mot « maison ».
-
 
 ![Illustration du word embedding](word_embedding.png)
 
 <div style="text-align: center"> Illustration du plongement lexical. Source : Post de blog <a href="https://medium.com/@hari4om/word-embedding-d816f643140" target="_blank">Word Embedding : Basics</a></div>  &nbsp;
 
 
-Chaque composante va encoder des informations différentes, comme le fait d’être un être vivant, le genre, l’âge, le niveau d’abstraction, etc. En pratique, les vecteurs de plongement ont quelques dizaines voire quelques centaines de composantes et il est impossible d’associer à chacune un concept clair : toutes les notions s’entremêlent, mais chaque composante à un rôle à jouer. 
+Chacune des $n$ composantes va encoder des informations différentes, comme le fait d’être un être vivant ou un objet, le genre, l’âge, le niveau d’abstraction, etc. C'est pour cette raison que des termes appartenant au même champ lexical auront des représentations numériquement proches. En pratique, les vecteurs de plongement ont des dizaines voire des centaines de composantes et il est impossible d’associer à chacune une interprétation univoque : toutes les notions s’entremêlent, mais chaque composante a un rôle à jouer.
 
-Le plongement lexical possède deux avantages par rapport à l’approche _bag of words_ :
-
-*   Il fournit une représentation dense, plus adaptée aux algorithmes d’apprentissage statistique que la matrice creuse (contenant beaucoup de zéros) de l’approche _bag of words_ ;
-*   Les opérations mathématiques ont un sens sur les vecteurs du plongement.
-
-Il devient en effet possible de faire des mathématiques avec les mots. Ainsi par exemple, les vecteurs résultant de la différence entre les représentations des mots « femme » et « homme » d’une part, et des mots « reine » et « roi » d’autre part, devraient être proches, car conceptuellement ces couples de mots sont régis par la même relation : un changement de genre.
+Le plongement lexical possède deux avantages par rapport à l’approche _bag of words_. D'une part, il fournit une représentation dense des termes, qui est plus adaptée aux algorithmes d’apprentissage statistique que la représentation creuse (matrice contenant beaucoup de zéros) de l’approche _bag of words_. D'autre part, les opérations mathématiques ont un sens sur les vecteurs du plongement. C'est là la magie du plongement lexical: __il devient possible de faire des mathématiques avec les mots__. Ainsi par exemple, les vecteurs résultant de la différence entre les représentations des mots « femme » et « homme » d’une part, et des mots « reine » et « roi » d’autre part, devraient être proches, car conceptuellement ces couples de mots sont régis par la même relation : un changement de genre.
 
 Cette formule, souvent résumée sous la forme, 
 
 $$\text{king} - \text{man} + \text{woman} ≈ \text{queen}$$
 
-a assuré le succès des _embedding_. 
+a assuré le succès des _embeddings_, car elle permet à une machine d'appréhender les relations logiques entre les mots.
 
 Jusqu’ici, nous avons parlé du plongement de mots, mais comment obtenir le plongement d’un libellé textuel ? Une possibilité est de considérer tous les mots qui composent le libellé et de calculer la moyenne de leurs vecteurs de plongement.
 
