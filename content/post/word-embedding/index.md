@@ -165,7 +165,7 @@ Il s’agit d’un modèle _open-source_ développé par une équipe de `Google`
 
 Le modèle [`GloVe`](https://nlp.stanford.edu/projects/glove/) constitue un autre exemple[^3]. Développé en 2014 à Stanford,
 ce modèle ne repose pas sur des réseaux de neurones mais sur la construction d’une grande matrice de co-occurrences de mots. Pour chaque mot, il s’agit de calculer les fréquences d’apparition des autres mots dans une fenêtre de taille fixe autour de lui. La matrice de co-occurrences obtenue est ensuite factorisée par une décomposition en valeurs singulières.
-modèle `BERT` développé par `Google` en 2019 dont il existe des déclinaisons dans différentes langues, notamment en Français (les
+Il est également possible de produire des plongements de mots à partir du [modèle de langage `BERT`](hub.io/illustrated-bert/ ? Post de blog qui est très bien), développé par `Google` en 2019, dont il existe des déclinaisons dans différentes langues, notamment en Français (les
 modèles [`CamemBERT`](https://camembert-model.fr/) ou [`FlauBERT`](https://github.com/getalp/Flaubert))
 
 [^3]: Jeffrey Pennington, Richard Socher, and Christopher D. Manning. 2014. GloVe: Global Vectors for Word Representation
