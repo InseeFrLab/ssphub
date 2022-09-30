@@ -58,7 +58,7 @@ ou de l'industrie automobile.
 Une description plus
 complète de cette nomenclature et de son historique est disponible sur [le site de l'Insee](https://www.insee.fr/fr/information/2406147)
 
-[^3]: Le Code Officiel Géographique est... A COMPLETER
+[^3]: Le Code Officiel Géographique est le référentiel permettant de relier des adresses, des noms de communes ou encore des noms de collectivités locales à un identifiant unique. Pour plus d'informations, voir le [site de l'Insee](https://www.insee.fr/fr/information/5230987)
 
 Or, le traitement des données textuelles pose une difficulté particulière: __le langage naturel n'a pas de sens pour un ordinateur !__ Un ordinateur ne travaille qu'avec des nombres, et ne peut pas manipuler directement des mots, des expressions ou des phrases. C'est pourquoi de multiples méthodes ont été développées au cours des dernières décennies pour proposer des solutions génériques permettant de traiter des corpus de données textuelles à la fois peu structurés et hétérogènes. Cet ensemble de méthodes de traitement automatisé du langage, plus connues sous l'acronyme `NLP` (_natural langage processing_) constituent encore aujourd'hui un champ de recherche particulièrement actif. 
 
