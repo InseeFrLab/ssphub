@@ -185,7 +185,7 @@ A `l’Insee`, plusieurs modèles de classification de libellés textuels dans d
 
 Collecter à nouveau les données ayant servi à entrainer un modèle puis le
 ré-entraîner implique énormément de ressources, ce qui est coûteux
-en temps et peu écologique[^4]
+en temps et peu écologique[^4].
 
 [^4]: Strubell, Ganesh, and McCallum (2019)
 estiment que l’entraînement d’un modèle à l’état de l’art dans le domaine du NLP
