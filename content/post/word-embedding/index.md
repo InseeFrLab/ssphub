@@ -72,14 +72,15 @@ Ce billet de blog n'a pas l'ambition de proposer un aperçu des méthodes de NLP
 ## L'approche _bag of words_ {#bag-of-words}
 
 Le principe du _bag of words_ est qu'on peut décrire un document comme
-un dictionnaire de mots dans lequel on pioche plus ou moins fréquemment
-un terme en fonction de son nombre d'occurrence. 
+un dictionnaire de mots (un _sac de mots_) dans lequel on pioche plus ou moins fréquemment
+un terme en fonction de son nombre d'occurrences. 
 
 La manière la plus simple de transformer des phrases ou des
 libellés textuels en une information numérique est de passer
 par un objet que l’on appelle la __matrice document-terme__.
 L’idée est de compter le nombre de fois où les
-mots (les termes) sont présents dans chaque phrase ou libellé (le document).
+mots (les termes, en colonne) sont présents dans chaque phrase ou libellé (le document, en ligne).
+Cette matrice fournit alors une représentation __numérique__ des données textuelles.
 
 Considérons un corpus constitué des trois phrases suivantes :
 
@@ -99,11 +100,9 @@ La matrice document-terme associée à ce corpus est la suivante :
 __Mission accomplie !__ :tada:
 Chaque phrase du corpus est associée à un vecteur numérique.
 
-Il est maintenant possible de manipuler cette matrice comme des données tabulaires classiques. Par exemple, pour classer ces phrases dans des catégories, on pourrait appliquer l’un des algorithmes usuels de _machine learning_ pour les tâches de classification (régression logistique, forêt aléatoire, _gradient boosting_, etc.).
+Il est maintenant possible de manipuler cette matrice comme des données tabulaires classiques. Par exemple, on pourrait appliquer l’un des algorithmes usuels de classification (régression logistique, forêt aléatoire, _gradient boosting_, etc.) pour classer ces phrases dans des catégories.
 
-Cependant, même si cette représentation via la matrice document-terme répond au besoin initial de transformer les données, un autre type de représentation se place souvent comme une meilleure option : le plongement lexical. L'approche _bag-of-words_ ne permet en effet pas
-de distinguer des différences de nature entre des termes : on peut compter les occurrences de certains, mais on ne peut distinguer
-la similarité entre _'tricot"_ et _"crochet"_.
+L'approche _bag-of-words_ répond donc au besoin initial de transformer les données pour rendre manipulables par une machine, en représentant les données textuelles sous la forme d'une matrice document-terme. Cette approche présente néanmoins une limite: elle traite tous les termes de façon indépendante et ne restitue pas la proximité de certains termes. Par exemple, rien dans la matrice document-terme de l'exemple précédent n'indique que les termes _'tricot"_ et _"crochet"_ relèvent du même champ lexical. Un autre type de représentation plus complexe et plus riche constitue souvent comme une meilleure option : le plongement lexical.
 
 ## Le plongement lexical {#embedding}
 
