@@ -107,29 +107,23 @@ L'approche _bag-of-words_ répond donc au besoin initial de transformer les donn
 ## Le plongement lexical {#embedding}
 
 Le plongement lexical (_word embedding_ en anglais)
-consiste à représenter chaque mot par un vecteur de taille fixe,
+consiste à projeter l'ensemble des termes qui apparaissent dans le corpus dans un espace numérique à $n$ dimensions. Chaque mot est représenté par un vecteur de taille fixe (comprenant $n$ nombres),
 de façon à ce que deux mots dont le sens est proche possèdent des représentations numériques proches. Ainsi les mots « chat » et « chaton » devraient avoir des vecteurs de plongement assez similaires, eux-mêmes également assez proches de celui du mot « chien » et plus éloignés de la représentation du mot « maison ».
-
 
 ![Illustration du word embedding](word_embedding.png)
 
 <div style="text-align: center"> Illustration du plongement lexical. Source : Post de blog <a href="https://medium.com/@hari4om/word-embedding-d816f643140" target="_blank">Word Embedding : Basics</a></div>  &nbsp;
 
 
-Chaque composante va encoder des informations différentes, comme le fait d’être un être vivant, le genre, l’âge, le niveau d’abstraction, etc. En pratique, les vecteurs de plongements ont quelques dizaines voire quelques centaines de composantes et il est impossible d’associer à chacune un concept clair : toutes les notions s’entremêlent, mais chaque composante à un rôle à jouer. 
+Chacune des $n$ composantes va encoder des informations différentes, comme le fait d’être un être vivant ou un objet, le genre, l’âge, le niveau d’abstraction, etc. C'est pour cette raison que des termes appartenant au même champ lexical auront des représentations numériquement proche. En pratique, les vecteurs de plongement ont des dizaines voire des centaines de composantes et il est impossible d’associer à chacune une interprétation univoque : toutes les notions s’entremêlent, mais chaque composante a un rôle à jouer.
 
-Le plongement lexical possède deux avantages par rapport à l’approche _bag of words_ :
-
-*   Il fournit une représentation dense, plus adaptée aux algorithmes d’apprentissage statistique que la matrice creuse (contenant beaucoup de zéros) de l’approche _bag of words_ ;
-*   Les opérations mathématiques ont un sens sur les vecteurs du plongement.
-
-Il devient en effet possible de faire des mathématiques avec les mots. Ainsi par exemple, les vecteurs résultant de la différence entre les représentations des mots « femme » et « homme » d’une part, et des mots « reine » et « roi » d’autre part, devraient être proches, car conceptuellement ces couples de mots sont régis par la même relation : un changement de genre.
+Le plongement lexical possède deux avantages par rapport à l’approche _bag of words_. D'une part, il fournit une représentation dense des termes, qui est plus adaptée aux algorithmes d’apprentissage statistique que la représentation creuse (matrice contenant beaucoup de zéros) de l’approche _bag of words_. D'autre part, les opérations mathématiques ont un sens sur les vecteurs du plongement. C'est là la magie du plongement lexical: __il devient possible de faire des mathématiques avec les mots__. Ainsi par exemple, les vecteurs résultant de la différence entre les représentations des mots « femme » et « homme » d’une part, et des mots « reine » et « roi » d’autre part, devraient être proches, car conceptuellement ces couples de mots sont régis par la même relation : un changement de genre.
 
 Cette formule, souvent résumée sous la forme, 
 
 $$\text{king} - \text{man} + \text{woman} ≈ \text{queen}$$
 
-a assuré le succès des _embedding_. 
+a assuré le succès des _embeddings_, car elle permet à une machine d'appréhender les relations logiques entre les mots.
 
 Jusqu’ici, nous avons parlé du plongement de mots, mais comment obtenir le plongement d’un libellé textuel ? Une possibilité est de considérer tous les mots qui composent le libellé et de calculer la moyenne de leurs vecteurs de plongement.
 
