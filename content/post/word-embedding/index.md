@@ -5,7 +5,6 @@ subtitle: Introduction aux méthodes de traitement du langage naturel
 # Summary for listings and search engines
 summary: Introduction aux méthodes de traitement du langage naturel
 
-type: book
 
 # Link this post with a project
 projects: []
