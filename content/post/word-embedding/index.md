@@ -79,7 +79,7 @@ Il existe principalement deux approches pour cela :
 
 Le principe du _bag of words_ est que l'on peut décrire un document comme
 un dictionnaire de mots dans lequel on pioche plus ou moins fréquemment
-un terme en fonction de son nombre d'occurrence. 
+un terme en fonction de son nombre d'occurrences. 
 
 La manière la plus simple de transformer des phrases ou des
 libellés textuels en une information numérique est de passer
