@@ -151,15 +151,15 @@ Il s’agit d’un modèle _open-source_ développé par une équipe de `Google`
 `Word2Vec` a été le pionnier en termes de modèles de plongement lexical.
 
 Le modèle [`GloVe`](https://nlp.stanford.edu/projects/glove/) constitue un autre exemple[^3]. Développé en 2014 à Stanford,
-ce modèle ne repose pas sur des réseaux de neurones mais sur la construction d’une grande matrice de co-occurrences de mots. Pour chaque mot, il s’agit de calculer les fréquences d’apparitions des autres mots dans une fenêtre de taille fixe autour de lui. La matrice de co-occurrences obtenue est ensuite factorisée par une décomposition en valeurs singulières. Un autre plongement celèbre est le 
-modèle `BERT` développé par `Google` en 2019 dont il existe des déclinaisons dans différentes langues, notamment en Français (les
+ce modèle ne repose pas sur des réseaux de neurones mais sur la construction d’une grande matrice de co-occurrences de mots. Pour chaque mot, il s’agit de calculer les fréquences d’apparition des autres mots dans une fenêtre de taille fixe autour de lui. La matrice de co-occurrences obtenue est ensuite factorisée par une décomposition en valeurs singulières.
+Il est également possible de produire des plongements de mots à partir du [modèle de langage `BERT`](hub.io/illustrated-bert/ ? Post de blog qui est très bien), développé par `Google` en 2019, dont il existe des déclinaisons dans différentes langues, notamment en Français (les
 modèles [`CamemBERT`](https://camembert-model.fr/) ou [`FlauBERT`](https://github.com/getalp/Flaubert))
 
 [^3]: Jeffrey Pennington, Richard Socher, and Christopher D. Manning. 2014. GloVe: Global Vectors for Word Representation
 
 Enfin, le modèle [`FastText`](https://fasttext.cc/), développé en 2016 par une équipe de `Facebook`, fonctionne de façon similaire à `Word2Vec` mais se distingue particulièrement sur deux points :
 
-*   En plus des mots eux-mêmes, le modèle apprend des représentations pour les n-grammes de mots (sous-séquences de caractères de taille \\(n\\), par exemple _« tar »_, _« art »_ et _« rte »_ sont les trigrammes du mot _« tarte »_), ce qui le rend notamment robuste aux variations d’orthographe ;
+*   En plus des mots eux-mêmes, le modèle apprend des représentations pour les n-grams de caractères (sous-séquences de caractères de taille \\(n\\), par exemple _« tar »_, _« art »_ et _« rte »_ sont les trigrammes du mot _« tarte »_), ce qui le rend notamment robuste aux variations d’orthographe ;
 *   Le modèle a été optimisé pour que son entraînement soit particulièrement rapide.
 
 A `l’Insee`, plusieurs modèles de classification de libellés textuels dans des nomenclatures reposent sur l’algorithme de plongement lexical [`FastText`](https://fasttext.cc/). 
@@ -172,7 +172,7 @@ A `l’Insee`, plusieurs modèles de classification de libellés textuels dans d
 
 Collecter à nouveau les données ayant servi à entrainer un modèle puis le
 ré-entraîner implique énormément de ressources, ce qui est coûteux
-en temps et peu écologique[^4]
+en temps et peu écologique[^4].
 
 [^4]: Strubell, Ganesh, and McCallum (2019)
 estiment que l’entraînement d’un modèle à l’état de l’art dans le domaine du NLP
@@ -204,4 +204,4 @@ Une manière de procéder est de calculer la similarité cosinus entre les vecte
  <div style="text-align: center"> Illustration de la similarité cosinus en deux dimensions</div>  &nbsp;
 
 Le calcul de la proximité entre les mots est à la base du jeu [cemantix](https://cemantix.herokuapp.com/).
-Le principe est proche du `Wordle` mais s'en distingue sur un point : il y a certes un mot à trouver chaque jour et il s’agit de faire des propositions de mots mais le jeu répond en donnant la proximité entre les mots proposés et le mot du jour. Ainsi, au fil des propositions, on a une vision de plus en plus précise du champ lexical associé au mot mystère, jusqu’à finalement le trouver.
+Le principe est proche du jeu `Wordle` mais s'en distingue sur un point : il y a certes un mot à trouver chaque jour et il s’agit de faire des propositions de mots mais le jeu répond en donnant la proximité entre les mots proposés et le mot du jour. Ainsi, au fil des propositions, on a une vision de plus en plus précise du champ lexical associé au mot mystère, jusqu’à finalement le trouver.
