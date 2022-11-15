@@ -1,28 +1,23 @@
 ---
-title: OpenLab Onyxia
+title: "OpenDP, trustworthy tools for deploying differential privacy"
 
-event: Second openlab onyxia
-event_url: https://www.eventbrite.fr/e/billets-openlab-onyxia-n2-415380352817
+event: Data Science and AI for Public Good
+event_url: https://youtu.be/Vo4rwvwvnNw
 
-location: Lieu de la transformation publique
+location: Youtube stream
 
 tags:
-- onyxia
-- MadeByUs
+- Differential Privacy
 
 summary: |
   Second OpenLab, organisé conjointement par l'INSEE et le Lab IA d'Etalab permettant de présenter
   le projet Onyxia
 abstract: |
-  Ce second `OpenLab`, organisé conjointement par l'`INSEE` et le `Lab IA` d'Etalab,
-  a pour objectif de présenter les avancées de l'année écoulée, de rassembler une communauté d'utilisateurs potentiels,
-  d'obtenir des retours utilisateurs et de mieux connaitre vos besoins
-  et cas d'usage afin d'orienter les futurs développements.
+  Since it was introduced in 2006 by theoretical computer scientists Dwork, McSherry, Nissim, and Smith, differential privacy has become the leading framework for ensuring that individual-level information is not leaked through statistical releases or machine learning models built from sensitive datasets.  In addition to a rich theoretical literature, differential privacy has also started to make the transition to practice, with large-scale applications by the US Census Bureau and technology companies like Google, Apple, Microsoft, and Meta.
 
-# Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-10-12T09:30:00Z'
-date_end: '2022-10-12T16:30:00Z'
+  In this talk, Dr Vadhan will survey some of the potential and challenges for using differential privacy to open up sensitive data for public good. In particular, Dr Vadhan will discuss OpenDP, a community effort to build a suite of trustworthy, open-source software tools for deploying differential privacy.
+date: '2022-12-09T14:00:00Z'
+date_end: '2022-12-09T15:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
@@ -32,7 +27,7 @@ authors:
 - admin
 
 # Is this a featured talk? (true/false)
-featured: false
+featured: true
 
 image:
   caption: 'Onyxia'
