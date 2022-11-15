@@ -46,7 +46,7 @@ authors:
 featured: true
 
 image:
-  caption: 'Onyxia'
+  caption: 'Observable'
   focal_point: Right
 
 links:
