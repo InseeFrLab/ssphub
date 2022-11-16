@@ -77,7 +77,7 @@ url_video: ''
 
 Présentation d'[`observable`](https://observablehq.com/explore)
 par [Nicolas Lambert](https://observablehq.com/@neocartocnrs)
-sous la forme d'un _notebook_ interactif (https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales).
+sous la forme d'un _notebook_ interactif : https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales 
 
 Le replay est [disponible plus bas 👇](#replay)
 
