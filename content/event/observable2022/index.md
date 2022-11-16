@@ -75,8 +75,13 @@ url_video: ''
 #  - example
 ---
 
-Lien `zoom` de l'événement: 
-https://insee-fr.zoom.us/j/96339097523?pwd=RUtiLzZoSjkyMjdHK1h2c1NSbzkvdz09
+https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales
+https://observablehq.com/@observablehq/duckdb
+https://quarto.org/docs/interactive/ojs/
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/observable-20221116.mp4" controls="yes" >}}
+
 
 Pour découvrir `observable`: https://observablehq.com/explore.
 Les habitués à `ggplot2` trouveront sans doute ce _notebook_ utile: https://observablehq.com/@observablehq/plot-from-ggplot2
