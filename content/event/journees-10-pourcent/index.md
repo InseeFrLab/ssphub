@@ -14,11 +14,9 @@ tags:
 summary: |
   "Deux ateliers prévus pendant le mois de novembre : le 8/11 et le 23/11. Retrouvez la liste des projets d’intérêts commun."
 abstract: |
-  Dans le cadre du mois de l’innovation publique, 4 matinées en mode hybride sous la forme d’échanges sur les enjeux de souveraineté (21/11), d'éthique et de confiance (22/11), de circulation et de valorisation des données (23/11), de passage à l'échelle (24/11).
-  Plus d’infos sur https://www.modernisation.gouv.fr/mois-de-linnovation-publique/les-journees-de-la-donnee 
-  Les inscriptions sont sur le [site weezevent](https://my.weezevent.com/journee-donnee)
-date: '2022-11-21T14:00:00Z'
-date_end: '2022-11-24T15:00:00Z'
+  En 2022, la DINUM lance le programme 10%, qui vise à encourager le travail entre pairs en permettant aux experts de la donnée de la sphère publique de consacrer 10% de leur temps de travail à des projets d’intérêt partagé à l’échelle interministérielle.
+date: '2022-11-08T14:00:00Z'
+date_end: '2022-11-23T15:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
