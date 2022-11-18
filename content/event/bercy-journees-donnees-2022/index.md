@@ -15,9 +15,9 @@ summary: |
   Sur 4 matinées, venez participer aux échanges sur les enjeux de souveraineté (21/11), d’éthique et de confiance (22/11),
 de circulation et de valorisation des données (23/11), de passage à l’échelle (24/11).  
 abstract: |
-  Dans le cadre du mois de l’innovation publique, 4 matinées en mode hybride sous la forme d’échanges sur les enjeux de souveraineté (21/11), d'éthique et de confiance (22/11), de circulation et de valorisation des données (23/11), de passage à l'échelle (24/11).
+  "Dans le cadre du mois de l’innovation publique, 4 matinées en mode hybride sous la forme d’échanges sur les enjeux de souveraineté (21/11), d'éthique et de confiance (22/11), de circulation et de valorisation des données (23/11), de passage à l'échelle (24/11).
   Plus d’infos sur la [page web de l'événement](https://www.modernisation.gouv.fr/mois-de-linnovation-publique/les-journees-de-la-donnee).
-  Les inscriptions sont sur le [site weezevent](https://my.weezevent.com/journee-donnee)
+  Les inscriptions sont sur le [site weezevent](https://my.weezevent.com/journee-donnee)"
 date: '2022-11-21T14:00:00Z'
 date_end: '2022-11-24T15:00:00Z'
 all_day: false

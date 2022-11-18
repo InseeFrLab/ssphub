@@ -14,7 +14,7 @@ tags:
 summary: |
   "Deux ateliers prévus pendant le mois de novembre : le 8/11 et le 23/11. Retrouvez la liste des projets d’intérêts commun."
 abstract: |
-  En 2022, la DINUM lance le programme 10%, qui vise à encourager le travail entre pairs en permettant aux experts de la donnée de la sphère publique de consacrer 10% de leur temps de travail à des projets d’intérêt partagé à l’échelle interministérielle.
+  "En 2022, la DINUM lance le programme 10%, qui vise à encourager le travail entre pairs en permettant aux experts de la donnée de la sphère publique de consacrer 10% de leur temps de travail à des projets d’intérêt partagé à l’échelle interministérielle."
 date: '2022-11-08T14:00:00Z'
 date_end: '2022-11-23T15:00:00Z'
 all_day: false
