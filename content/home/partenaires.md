@@ -10,7 +10,7 @@ headless: true
 weight: 105
 
 title: Les réseaux partenaires
-subtitle: 'Quelques acteurs de la data-science avec lesquels nous collaborons'
+subtitle: 'Quelques communautés de la data-science avec lesquels nous collaborons'
 
 content:
   # Page type to display. E.g. project.
