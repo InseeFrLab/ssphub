@@ -52,3 +52,9 @@ design:
   # For Showcase view, flip alternate rows?
   flip_alt_rows: true
 ---
+
+
+[`Grrr`](https://app.slack.com/client/T9ML8RLMP) (_"pour quand votre `R` fait `Grrr`"_) est un
+groupe [`Slack`](https://app.slack.com/client/T9ML8RLMP) (plateforme de discussion instantanée)
+francophone dédié aux échanges et à l’entraide autour de `R`.
+Il est ouvert à tou.te.s et se veut accessible aux débutants. Vous pouvez même utiliser un pseudonyme si vous préférez.
