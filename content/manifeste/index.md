@@ -30,6 +30,9 @@ suivre [ce lien vers <i class="fa-brands fa-github"></i>](https://github.com/Ins
 
 # Contexte institutionnel
 
+La _data science_ est un domaine interdisciplinaire combinant des techniques issues des mathématiques,
+de la statistique et de l’informatique pour produire de la connaissance utile à partir de données.
+
 Les innovations récentes dans le domaine de
 la  _data science_ ont beaucoup à offrir à la statistique publique 
 pour simplifier et accélérer certains processus de production, 
@@ -49,22 +52,18 @@ La pratique de la _data science_ nécessite cependant l’expérience de nouvell
 environnements et méthodes de travail. Cet article dans
 la [_Harvard Business Review_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century),
 qui revient 10 ans plus tard sur le titre provocateur
-_["Data Scientist: Sexiest Job of the 21st Century."](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century
-)_
-illustre bien les changements rapides au cours de la dernière 
+_["Data Scientist: Sexiest Job of the 21st Century"](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century
+)_, illustre les changements rapides au cours de la dernière 
 décennie du rôle du _data-scientist_ dans l'écosystème de
-la donnée. Cette multiplication des compétences rend particulièrement
+la donnée. Cette multiplication des compétences rend
 utile un réseau de praticiens partageant régulièrement ensemble
-leur expérience, diffusant leurs projets,
+leur expérience, 
 les ressources jugées utiles et échangeant sur
 les innovations récentes pouvant amener à des évolutions
 de la production de statistique publique. 
 
 
 # Thématiques
-
-La _data science_ est un domaine interdisciplinaire combinant des techniques issues des mathématiques,
-de la statistique et de l’informatique pour produire de la connaissance utile à partir de données.
 
 Le réseau regroupe les agents volontaires du
 {{< abbr title="Le Service Statistique Public (SSP) regroupe les institutions en charge de la production de statistiques officielles. Il est principalement constitué de l'Insee et des services statistiques ministériels (SSM). Pour en savoir plus, le [site de l'Insee](https://www.insee.fr/fr/information/1302192) propose des éléments supplémentaires" text="Service Statistique Public (SSP)" >}}. 
