@@ -13,7 +13,7 @@ summary: |
   Le `Bercy Hub` vous invite à la 3ème édition des Journées de la donnée du 21/11 au 24/11 en présentiel à Bercy ou à distance.
   
   Sur 4 matinées, venez participer aux échanges sur les enjeux de souveraineté (21/11), d’éthique et de confiance (22/11),
-de circulation et de valorisation des données (23/11), de passage à l’échelle (24/11).  
+  de circulation et de valorisation des données (23/11), de passage à l’échelle (24/11).  
 abstract: |
   "Dans le cadre du mois de l’innovation publique, 4 matinées en mode hybride sous la forme d’échanges sur les enjeux de souveraineté (21/11), d'éthique et de confiance (22/11), de circulation et de valorisation des données (23/11), de passage à l'échelle (24/11).
   Plus d’infos sur la [page web de l'événement](https://www.modernisation.gouv.fr/mois-de-linnovation-publique/les-journees-de-la-donnee).
