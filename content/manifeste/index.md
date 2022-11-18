@@ -23,16 +23,34 @@ date: "2022-04-11T00:00:00Z"
 
 # Contexte institutionnel
 
-La _data science_ a beaucoup à offrir à la statistique publique en termes de gains de productivité, d’automatisation des tâches, d’exploitation de nouvelles sources de données et de nouveaux sujets d’études.
+Les innovations récentes dans le domaine de
+la  _data science_ ont beaucoup à offrir à la statistique publique 
+pour simplifier et accélérer certains processus de production, 
+faciliter l’exploitation de sources de données non traditionnelles
+ou volumineuses, automatiser certaines tâches,
+communiquer auprès de publics plus larges avec des visualisations
+réactives ou encore, entre autres,
+réduire le hiatus entre statisticiens et informaticiens.
 
-L’importance de la _data science_ pour la sphère publique, a été soulignée dans différents rapports successifs. Pour répondre en partie à ce défi, [le rapport public sur l’_« Évaluation des besoins de l’État en compétences et expertise en matière de donnée »_](https://www.numerique.gouv.fr/publications/rapport-evaluation-besoins-etat-en-competences-et-expertises-en-matiere-de-donnee/) ainsi que le rapport de l’Inspection Générale de l’INSEE _« Les corps de l’INSEE et les carrières des data scientists »_[^1] recommandent la création de réseaux de _data scientists_ pour répondre aux besoins dans ce domaine.
+L’importance de la _data science_ pour la sphère publique, a été soulignée dans différents rapports successifs.
+[Le rapport public sur l’_« Évaluation des besoins de l’État en compétences et expertise en matière de donnée »_](https://www.numerique.gouv.fr/publications/rapport-evaluation-besoins-etat-en-competences-et-expertises-en-matiere-de-donnee/) ainsi que le rapport de l’Inspection Générale de l’INSEE _« Les corps de l’INSEE et les carrières des data scientists »_[^1] recommandent la création de réseaux de _data scientists_ pour répondre aux besoins dans ce domaine.
 
 [^1]: Rapport de l'Inspection Générale de l'Insee `N° 2020_48/DG75-B001` (non public)
-<!---
-(https://intranet.insee.fr/jcms/38757_DBFileDocument/rfx-2020-48-les-corps-de-l-insee-et-les-carrieres-de-data-scientists-ig-30-06-2021)
---->
 
-La pratique de la _data science_ nécessite cependant l’expérience de nouvelles compétences,  environnements et méthodes de travail.
+
+La pratique de la _data science_ nécessite cependant l’expérience de nouvelles compétences,
+environnements et méthodes de travail. Cet article dans
+la [_Harvard Business Review_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century),
+qui revient 10 ans plus tard sur le titre provocateur
+_["Data Scientist: Sexiest Job of the 21st Century."](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century
+)_
+illustre bien les changements rapides au cours de la dernière 
+décennie du rôle du _data-scientist_ dans l'écosystème de
+la donnée. Cette multiplication des compétences rend particulièrement
+utile un réseau de praticien partageant régulièrement ensemble
+leur expérience, les ressources jugées utiles et échangeant sur
+les innovations récentes pouvant amener à des évolutions
+de la production de statistique publique. 
 
 
 # Thématiques
