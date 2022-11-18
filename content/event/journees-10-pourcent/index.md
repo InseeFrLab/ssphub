@@ -9,6 +9,7 @@ location: Lieu de la transformation publique
 tags:
 - 10%
 - Etalab
+- MadeByUS
 
 summary: |
   "Deux ateliers prévus pendant le mois de novembre : le 8/11 et le 23/11. Retrouvez la liste des projets d’intérêts commun."
