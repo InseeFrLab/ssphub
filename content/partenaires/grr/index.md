@@ -1,6 +1,7 @@
 ---
-title: Grrr
-summary: Une communauté d'agents de l'Etat pour s'entraider en R et Python
+title: grrr
+summary: |
+    La communauté francophone autour du logiciel `R`
 date: "2015-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
