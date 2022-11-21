@@ -1,5 +1,5 @@
 ---
-title: "Evénement de clôture de la saison 1 du programme 10%"
+title: "Breizh Data Days"
 
 event: "Breizh Data Days"
 event_url: https://meetu.ps/e/LDrDT/JgYdy/i
@@ -19,8 +19,8 @@ abstract: |
   Prévu le Mardi 4 avril 2023 à Ploufragan (22) pour tous les passionnés des données (data lovers), cet événement est organisé par LA FRENCH TECH SAINT-BRIEUC BAY / INNOZH (https://www.lafrenchtech-saintbrieucbay.fr/) – (https://www.innozh.fr/)
 
   Deux sessions de conférences seront en parallèle :
-    – TECH : Etat de l’Art sur la Data science
-    – et GRAND PUBLIC : Retours d’expérience sur des projets réussis (ou non).
+    * TECH : Etat de l’Art sur la Data science
+    * et GRAND PUBLIC : Retours d’expérience sur des projets réussis (ou non).
 
 date: '2023-04-04T09:00:00Z'
 date_end: '2023-04-04T18:00:00Z'
