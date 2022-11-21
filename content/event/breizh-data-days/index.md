@@ -1,27 +1,30 @@
 ---
-title: "Journées de la donnée organisées par le Bercy Hub"
+title: "Breizh Data Days"
 
-event: Data Science and AI for Public Good
-event_url: https://my.weezevent.com/journee-donnee
+event: "Breizh Data Days"
+event_url: https://meetu.ps/e/LDrDT/JgYdy/i
 
-location: Ministère de l'Economie (Paris, Bercy) ou distanciel
+location: Ploufragan (22)
 
 tags:
-- Bercy
+- Event
 
 summary: |
-  Le `Bercy Hub` vous invite à la __3ème édition des Journées de la donnée__ du 21/11 au 24/11 en présentiel à Bercy ou à distance.
-  
-  Sur __4 matinées__, venez participer aux échanges sur les enjeux de souveraineté (`21/11`), d’éthique et de confiance (`22/11`),
-  de circulation et de valorisation des données (`23/11`), de passage à l’échelle (`24/11`).  
+  Journée de conférences entièrement consacrées aux données
+  (avec des approches techniques, des cas d’usage et des retours d’expérience).
 abstract: |
-  "Dans le cadre du mois de l’innovation publique, __4 matinées__ en mode hybride sous la forme d’échanges
-  sur les enjeux de souveraineté (`21/11`), d'éthique et de confiance (`22/11`), de circulation et de valorisation des données (`23/11`), de passage à l'échelle (`24/11`).
-  Plus d’infos sur la [page web de l'événement](https://www.modernisation.gouv.fr/mois-de-linnovation-publique/les-journees-de-la-donnee).
-  Les inscriptions sont sur le [site weezevent](https://my.weezevent.com/journee-donnee)"
-date: '2022-11-21T14:00:00Z'
-date_end: '2022-11-24T15:00:00Z'
-all_day: false
+
+  Breizh Data Day, c’est une journée de conférences entièrement consacrées aux données (avec des approches techniques, des cas d’usage et des retours d’expérience).
+  
+  Prévu le Mardi 4 avril 2023 à Ploufragan (22) pour tous les passionnés des données (data lovers), cet événement est organisé par LA FRENCH TECH SAINT-BRIEUC BAY / INNOZH (https://www.lafrenchtech-saintbrieucbay.fr/) – (https://www.innozh.fr/)
+
+  Deux sessions de conférences seront en parallèle :
+    * TECH : Etat de l’Art sur la Data science
+    * et GRAND PUBLIC : Retours d’expérience sur des projets réussis (ou non).
+
+date: '2023-04-04T09:00:00Z'
+date_end: '2023-04-04T18:00:00Z'
+all_day: true
 
 # Schedule page publish date (NOT talk date).
 publishDate: '2022-11-01T00:00:00Z'
@@ -33,7 +36,7 @@ authors:
 featured: true
 
 image:
-  caption: 'Journées de la donnée'
+  caption: 'Programme 10%'
   focal_point: Right
 
 links:
@@ -62,5 +65,5 @@ url_video: ''
 #  - example
 ---
 
- 
-Pour voir le programme et vous inscrire dès maintenant, c’est [ici](https://my.weezevent.com/journee-donnee)
+Réservations possible sur
+https://meetu.ps/e/LDrDT/JgYdy/i
