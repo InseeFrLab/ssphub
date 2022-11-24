@@ -68,6 +68,11 @@ url_video: ''
 #  - example
 ---
 
+Lien zoom de l'événement: 
+https://insee-fr.zoom.us/j/95117439112?pwd=T3p0SklrQjEyemZ1dlZ6bnkxZmhYUT09
+
+Quelques exemples de cartes générées par `gridviz`:
+
 ![](gridviz.png)
 
 
