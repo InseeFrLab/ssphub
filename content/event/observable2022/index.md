@@ -54,10 +54,10 @@ links:
 #    icon_pack: fab
 #    name: Follow
 #    url: https://twitter.com/georgecushen
-url_code: ''
+url_code: 'https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales'
 url_pdf: ''
-url_slides: ''
-url_video: ''
+url_slides: 'https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales'
+url_video: 'https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/observable-20221116.mp4'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
