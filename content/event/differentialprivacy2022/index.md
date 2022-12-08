@@ -58,12 +58,3 @@ url_video: ''
 #  - example
 ---
 
-
-__Vous êtes chercheur, agent public, étudiant, citoyen, spécialiste de l'IA ou non ? Venez participer au projet !__
-
-{{% callout %}}
-
-Pour toute information : <lab-ia@data.gouv.fr>
-
-{{% /callout %}}
-
