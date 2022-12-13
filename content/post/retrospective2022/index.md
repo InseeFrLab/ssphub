@@ -73,4 +73,16 @@ appréhende l'intelligence artificielle.
 
 ![](https://i.chzbgr.com/full/9717138688/hC5E738A3/chatgpt-will-see-all-criticisms-its-training-data-on-next-update-some-are-not-surviving-uprising)
 
-L'année 2022 ne se réduit néanmoins pas à ces deux buzz.  
+Résumer l'année 2022 à ces deux _buzz_ serait réducteur. D'autres événements
+méritent d'être présents dans une rétrospective. XXXX
+
+
+## Génération de contenu
+
+Dans le domaine du _generative AI_, qui consiste à transformer
+un texte fourni par un utilisateur en un contenu créatif (image ou texte),
+il y aura un avant et un après Dall-E 2. Cet outil, proposé par OpenAI, consiste 
+à générer une image à partir d'une phrase. 
+
+![](vermeer.png)
+"A sea otter with a pearl earring" by Johannes Vermeer
