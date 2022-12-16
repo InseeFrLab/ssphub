@@ -95,6 +95,18 @@ CARDS
   cursor: pointer;
 }
 
+
+/*-------------------------
+ARTICLES LAYOUT
+--------------------------*/
+
+
+
+.article > .article-header {
+  max-width: 740px !important; 
+}
+
+
 /*
 .chevron {
   position: absolute;
