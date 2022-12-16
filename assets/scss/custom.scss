@@ -100,11 +100,15 @@ CARDS
 ARTICLES LAYOUT
 --------------------------*/
 
-
+/* nicer scroll on toc */
+html {
+	scroll-behavior: smooth;
+}
 
 .article > .article-header {
   max-width: 740px !important; 
 }
+
 
 
 /*
