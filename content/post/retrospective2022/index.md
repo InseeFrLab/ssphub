@@ -48,41 +48,62 @@ Le mois de décembre est généralement synonyme de
 bétisiers, _best of_ ou
 rétrospectives personnalisées qui nous permettent
 de nous rappeler les événements marquants de l'année.
+Pour célébrer la fin de l'année 2022, cette _newsletter_
+adopte un format un peu spécial pour
+proposer deux rétrospectives: une rétrospective
+des principaux événements de l'année 2022 dans le monde de
+la _data science_ et une rétrospective chiffrée sur le
+réseau des data scientists de la statistique publique.
+
 Si l'année 2022 a été particulièrement riche dans le domaine
-de la _data science_, c'est notamment grâce à deux coups
-médiatiques du consortium [openAI](https://openai.com/),
+de la _data science_, c'est principalement grâce à deux coups
+médiatiques d'[OpenAI](https://openai.com/),
 à savoir [`Dall-E`](https://openai.com/dall-e-2/)
 et [`chatGPT`](https://openai.com/blog/chatgpt/). 
-Ces deux outils se distinguent de leurs prédécesseurs
-(les _chatbots_ XXX)
-principalement parce qu'ils ont
-fait beaucoup parlé d'eux, au-delà
+
+Ces deux outils ont
+beaucoup fait parlé d'eux, au-delà
 de la sphère traditionnelle de la _data science_.
 Pour une fois, il ne s'agit pas de souligner 
 exclusivement les limites de ces modèles voire leurs
-dérives (_deep fake_, biais racistes...) mais aussi
+dérives ([_deep fake_](https://fr.wikipedia.org/wiki/Deepfake),
+[biais racistes](https://www.washingtonpost.com/technology/2022/07/16/racist-robots-ai/)...) mais aussi
 de s'enthousiasmer sur
-leur [potentiel créatif](https://www.platformer.news/p/how-dall-e-could-power-a-creative)
-ou les implications sociétales qu'ils peuvent avoir (modification de [certains métiers](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me) créatifs notamment).
-Ces _buzz_ ont été intenses sur Twitter, tout juste racheté par Elon Musk, ou sur Mastodon, 
-le réseau social qui a connu une croissance importante de son nombre d'utilisateurs en réaction.
+leur [potentiel créatif](https://www.platformer.news/p/how-dall-e-could-power-a-creative).
+Il est difficile de rester insensible à certaines des créations
+artistiques des modèles [`Dall-E`](https://dalle2.gallery/#search-random), [`Stable Diffusion`](https://stablediffusion.fr/gallery), [Midjourney](https://www.midjourney.com/showcase/recent/) et consorts ou de résister à la tentation de piéger
+`chatGPT` en lui posant des questions auquel il ne parviendrait
+pas à répondre.
+Ces innovations, parce qu'elles représentent une percée
+dans la quête d'une intelligence artificielle qui pourrait avoir
+des conséquences socioéconomiques durables,
+ont ainsi beaucoup intéressé les médias, notamment [_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_ qui s'interroge ](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me)).
+L'une des explications les plus pédagogiques
+du fonctionnement de ces [modèles de diffusion](https://en.wikipedia.org/wiki/Diffusion_model) 
+vient d'ailleurs du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/). 
+
+![](https://raw.githubusercontent.com/CompVis/stable-diffusion/2ff270f4e0c884d9684fa038f6d84d8600a94b39/assets/stable-samples/txt2img/merged-0006.png)
+
+Ces _buzz_ ont été intenses sur `Twitter`, tout juste racheté par Elon Musk, ou sur `Mastodon`, 
+le réseau social qui a connu, en réaction, une croissance importante de son nombre d'utilisateurs.
 Il ne faut néanmoins pas seulement penser ces événements comme des passades,
 ils pourraient avoir des effets à long terme sur la manière dont le grand public 
 appréhende l'intelligence artificielle. 
 
 
-![](https://i.chzbgr.com/full/9717138688/hC5E738A3/chatgpt-will-see-all-criticisms-its-training-data-on-next-update-some-are-not-surviving-uprising)
-
-Résumer l'année 2022 à ces deux _buzz_ serait réducteur. D'autres événements
-méritent d'être présents dans une rétrospective. XXXX
 
 
-## Génération de contenu
+<!-----
+- quarto
+- rstudio -> posit
+- observable + duckdb
+- IA: rapport conseil d'Etat: https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf + UNECE Adasmm
 
-Dans le domaine du _generative AI_, qui consiste à transformer
-un texte fourni par un utilisateur en un contenu créatif (image ou texte),
-il y aura un avant et un après Dall-E 2. Cet outil, proposé par OpenAI, consiste 
-à générer une image à partir d'une phrase. 
-
-![](vermeer.png)
-"A sea otter with a pearl earring" by Johannes Vermeer
+- pytorch dans linux foundation
+- tensorflow abandonné par google
+- plate-forme dataviz de l'ONS sur les résultats du census qui est hyper bien faite
+- onyxia
+- Ryanair v lastminute.com, j’ai grossièrement résumé le cas page 85 dans le support
+- Twitter Elon
+- Data scientist 10 ans après
+------->
