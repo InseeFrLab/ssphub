@@ -44,7 +44,7 @@ categories:
   - Insee
 ---
 
-Le mois de décembre est généralement synonyme de
+La fin de l'année est généralement synonyme de
 bétisiers, _best of_ ou
 rétrospectives personnalisées qui nous permettent
 de nous rappeler les événements marquants de l'année.
@@ -64,6 +64,17 @@ et [`chatGPT`](https://openai.com/blog/chatgpt/).
 Ces deux outils ont
 beaucoup fait parlé d'eux, au-delà
 de la sphère traditionnelle de la _data science_.
+Le _buzz_ a d'abord été intense sur `Twitter`, racheté en fin d'année par Elon Musk,
+ou sur `Mastodon`, 
+le réseau social qui a connu, en réaction, une croissance importante de son nombre d'utilisateurs.
+
+Cependant, ces innovations, parce qu'elles pourraient
+avoir des effets à long terme sur la manière dont le grand public
+appréhende l'intelligence artificielle, 
+ont beaucoup intéressé les médias traditionnels, notamment [_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_ qui s'interroge ](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me)).
+L'une des explications les plus pédagogiques
+du fonctionnement de ces [modèles de diffusion](https://en.wikipedia.org/wiki/Diffusion_model) 
+vient d'ailleurs du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/). 
 Pour une fois, il ne s'agit pas de souligner 
 exclusivement les limites de ces modèles voire leurs
 dérives ([_deep fake_](https://fr.wikipedia.org/wiki/Deepfake),
@@ -74,21 +85,9 @@ Il est difficile de rester insensible à certaines des créations
 artistiques des modèles [`Dall-E`](https://dalle2.gallery/#search-random), [`Stable Diffusion`](https://stablediffusion.fr/gallery), [Midjourney](https://www.midjourney.com/showcase/recent/) et consorts ou de résister à la tentation de piéger
 `chatGPT` en lui posant des questions auquel il ne parviendrait
 pas à répondre.
-Ces innovations, parce qu'elles représentent une percée
-dans la quête d'une intelligence artificielle qui pourrait avoir
-des conséquences socioéconomiques durables,
-ont ainsi beaucoup intéressé les médias, notamment [_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_ qui s'interroge ](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me)).
-L'une des explications les plus pédagogiques
-du fonctionnement de ces [modèles de diffusion](https://en.wikipedia.org/wiki/Diffusion_model) 
-vient d'ailleurs du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/). 
 
 ![](https://raw.githubusercontent.com/CompVis/stable-diffusion/2ff270f4e0c884d9684fa038f6d84d8600a94b39/assets/stable-samples/txt2img/merged-0006.png)
 
-Ces _buzz_ ont été intenses sur `Twitter`, tout juste racheté par Elon Musk, ou sur `Mastodon`, 
-le réseau social qui a connu, en réaction, une croissance importante de son nombre d'utilisateurs.
-Il ne faut néanmoins pas seulement penser ces événements comme des passades,
-ils pourraient avoir des effets à long terme sur la manière dont le grand public 
-appréhende l'intelligence artificielle. 
 
 
 
