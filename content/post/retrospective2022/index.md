@@ -118,7 +118,7 @@ L'une des explications les plus pédagogiques
 pour comprendre le fonctionnement de ces modèles 
 vient du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/). Sinon, on peut demander directement à `chatGPT` de nous expliquer:
 
-
+![](diffusion.png)
 
 
 <!-----
