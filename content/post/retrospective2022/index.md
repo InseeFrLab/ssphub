@@ -68,16 +68,17 @@ et [`chatGPT`](https://openai.com/blog/chatgpt/).
 Ces deux outils ont
 beaucoup fait parlé d'eux, au-delà
 de la sphère traditionnelle de la _data science_.
-Le _buzz_ a d'abord été intense sur `Twitter`, racheté en fin d'année par Elon Musk,
+Le _buzz_ a été intense sur `Twitter`, racheté en fin d'année par Elon Musk,
 ou sur `Mastodon`, 
-le réseau social qui a connu, en réaction, une croissance importante de son nombre d'utilisateurs.
+le réseau social qui a connu, en réaction,
+une croissance importante de son nombre d'utilisateurs.
 
 ![](https://i.chzbgr.com/full/9717138688/hC5E738A3/chatgpt-will-see-all-criticisms-its-training-data-on-next-update-some-are-not-surviving-uprising)
 
 Cependant, ces innovations, parce qu'elles pourraient
 avoir des effets à long terme sur la manière dont le grand public
 appréhende l'intelligence artificielle, 
-ont beaucoup intéressé les médias traditionnels, notamment [_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_ qui s'interroge ](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me)).
+ont beaucoup intéressé les médias traditionnels, notamment [_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_ qui s'interroge](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me)).
 
 Pour une fois, il ne s'agit pas de souligner 
 exclusivement les limites de ces modèles voire leurs
@@ -86,11 +87,18 @@ dérives ([_deep fake_](https://fr.wikipedia.org/wiki/Deepfake),
 de s'enthousiasmer sur
 leur [potentiel créatif](https://www.platformer.news/p/how-dall-e-could-power-a-creative).
 Il est difficile de rester insensible à certaines des créations
-artistiques des modèles [`Dall-E`](https://dalle2.gallery/#search-random), [`Stable Diffusion`](https://stablediffusion.fr/gallery), [Midjourney](https://www.midjourney.com/showcase/recent/) et consorts ou de résister à la tentation de piéger
+artistiques des modèles [`Dall-E`](https://dalle2.gallery/#search-random), [`Stable Diffusion`](https://stablediffusion.fr/gallery), [Midjourney](https://www.midjourney.com/showcase/recent/) et consorts
+ou de résister à la tentation de piéger
 `chatGPT` en lui posant des questions auquel il ne parviendrait
 pas à répondre.
+Les chercheurs, et pas des moindres (notamment [Andrew Ng](https://twitter.com/andrewyng/status/1600284752258686976?lang=fr) ou [Gaël Varoquaux](https://theconversation.com/beau-parleur-comme-une-ia-196084)) se sont également saisis de cette question et ont
+souligné
+les biais de raisonnement et excès de confiance de ces IA. 
+
 
 ![https://github.com/Stability-AI/stablediffusion](https://raw.githubusercontent.com/CompVis/stable-diffusion/2ff270f4e0c884d9684fa038f6d84d8600a94b39/assets/stable-samples/txt2img/merged-0006.png)
+
+![](https://i.chzbgr.com/full/9717140480/hD779E54E/writing-shit-like-elon-musk-suicide-note-and-robert-ebert-goncharov-review-please-stop-need-sleep)
 
 ## Le succès des modèles de diffusion
 
@@ -120,15 +128,36 @@ vient du [_Washington Post_](https://www.washingtonpost.com/technology/interacti
 
 ![](diffusion.png)
 
+## L'actualité dans le monde du _deep learning_
+
+Si le succès d'estime de ces IA génératrices consacre les modèles de 
+diffusion, l'année du _deep learning_ ne se réduit pas à cette actualité.
+
+L'année a notamment été marquée par la compétition
+entre les librairies et
+écosystèmes [`TensorFlow`](https://www.tensorflow.org/?hl=fr), développé par
+`Google`, et [`PyTorch`](https://pytorch.org/) projet initié par `Facebook/Meta`. 
+`PyTorch`, plus récent, bénéficie d'une dynamique plus ascendante que `TensorFlow`.
+Le [succès d'`HuggingFace`](https://twitter.com/huggingface/status/1609162974626779136?s=20&t=XUCGBC_PL60IdHjia8wXNA),
+où les [implémentations `PyTorch` sont systématiques alors que celles en `TensorFlow` sont rares](https://www.assemblyai.com/blog/pytorch-vs-tensorflow-in-2022/#pytorch-vs-tensorflowmodel-availability) a participé à la diffusion de `PyTorch`. 
+
+Preuve du succès de `PyTorch`, cet écosystème [est géré depuis septembre par la `Linux Foundation`](https://www.linuxfoundation.org/blog/blog/welcoming-pytorch-to-the-linux-foundation) et
+non plus par `Meta`. A l'inverse,
+[`Google` semble se détacher graduellement de `TensorFlow` pour privilégier son nouvel écosystème `JAX`](https://twitter.com/ylecun/status/1538419932475555840). 
+
+
+
+
+
 
 <!-----
+- pytorch dans linux foundation
+- tensorflow abandonné par google
+
 - quarto
 - rstudio -> posit
 - observable + duckdb
 - IA: rapport conseil d'Etat: https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf + UNECE Adasmm
-
-- pytorch dans linux foundation
-- tensorflow abandonné par google
 - plate-forme dataviz de l'ONS sur les résultats du census qui est hyper bien faite
 - onyxia
 - Ryanair v lastminute.com, j’ai grossièrement résumé le cas page 85 dans le support
