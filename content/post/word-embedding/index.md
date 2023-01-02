@@ -37,6 +37,8 @@ tags:
 categories:
   - Insee
   - NLP
+
+toc: true
 ---
 
 
