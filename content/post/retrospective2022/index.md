@@ -94,14 +94,18 @@ Les chercheurs, et pas des moindres (notamment [Andrew Ng](https://twitter.com/a
 souligné
 les biais de raisonnement et excès de confiance de ces IA. 
 
-
 ![https://github.com/Stability-AI/stablediffusion](https://raw.githubusercontent.com/CompVis/stable-diffusion/2ff270f4e0c884d9684fa038f6d84d8600a94b39/assets/stable-samples/txt2img/merged-0006.png)
+
+Si vous désirez utiliser `Python` de manière créative pour générer du contenu avec `Stable Diffusion`,
+vous pouvez consulter [ce tutoriel](https://pythonds.linogaliana.fr/dalle/) qui fonctionne
+sur le [`SSPCloud`](https://www.sspcloud.fr/) ou sur `Google Colab`.
 
 ![](https://i.chzbgr.com/full/9717140480/hD779E54E/writing-shit-like-elon-musk-suicide-note-and-robert-ebert-goncharov-review-please-stop-need-sleep)
 
 ## Le succès des modèles de diffusion
 
-Ces [IA génératrices de contenu](https://pub.towardsai.net/generative-ai-and-future-c3b1695876f2) reposent toutes, à plusieurs niveaux, sur
+Ces [IA génératrices de contenu](https://pub.towardsai.net/generative-ai-and-future-c3b1695876f2)
+reposent toutes, à plusieurs niveaux, sur
 des réseaux de neurone.
 
 Le premier étage de la fusée est
@@ -161,6 +165,10 @@ convaincu de l'intérêt de cet outil que
 de se balader dans [la documentation très riche](https://quarto.org/),
 de [tester soi-même sur un exemple](https://quarto.org/docs/get-started/hello/rstudio.html)
 ou d'observer [la galerie d'exemples](https://quarto.org/docs/gallery/).
+Cet été, `RStudio` a également annoncé que `Shiny`, son autre produit,
+serait maintenant disponible sous [`Python`](https://shiny.rstudio.com/py/), 
+comme alternative à [`Dash`](https://dash.plotly.com/) ou [`Streamlit`](https://streamlit.io/).
+
 
 L'année 2022 a été l'occasion, pour `RStudio`, d'un autre changement, symbolique celui-ci.
 Afin de détacher son image du langage `R`,
@@ -173,35 +181,72 @@ l'ouvrage de référence [_R For Data Science_](https://r4ds.had.co.nz/).
 ## `Observable` devient un incontournable dans le monde de la dataviz
 
 Pour permettre des visualisations interactives,
-cela fait plusieurs années que `JavaScript` est un incontournable. 
-Les journaux traditionnels utilisent ainsi de plus en plus le _data scrollytelling_ 
+cela fait plusieurs années que `JavaScript` est un incontournable et
+que le [_web assembly_](https://fr.wikipedia.org/wiki/WebAssembly)
+est l'[objet de plus en plus d'attention](https://twitter.com/solomonstre/status/1111004913222324225).
+
+Les journaux traditionnels utilisent ainsi de plus en plus
+le _data scrollytelling_ 
 pour illustrer un article de manière interactive.
 L'un des exemples les plus réussis des dernières années a sans doute été 
-la visualisation du [_New York Times_ _"How the virus got out"_](https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html). 
+la visualisation du [_New York Times_ _"How the virus got out"_](https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html). Cette approche a également été adoptée par
+le Ministère de l'Agriculture pour diffuser les 
+chiffrés clés du [recensement agricole](https://vizagreste.agriculture.gouv.fr/). 
+Nos voisins anglais ne sont pas en reste puisque les derniers résultats du
+recensement sont proposés sur un [site web remarquable de fluidité](https://www.ons.gov.uk/census/maps/choropleth/population/age/resident-age-3a/aged-16-to-64-years). 
 
 Afin de permettre une diffusion accrue de visualisations en `JavaScript`,
 [Mike Bostock](https://en.wikipedia.org/wiki/Mike_Bostock), déjà créateur 
 de la librairie de dataviz de référence [`D3.js`](https://en.wikipedia.org/wiki/D3.js),
 est à l'origine de la plateforme [`observable`](https://observablehq.com/), sorte de 
-`Github` de la dataviz permettant du partage et de la réutilisation de _notebooks_ réactifs. 
-En cette année 2022, la plateforme a connu un véritable _boom_ et est devenu un incontournable. 
+`Github` de la _dataviz_ permettant du partage et de la réutilisation de _notebooks_ réactifs. 
+En cette année 2022, la plateforme a connu un véritable _boom_ et est devenu un incontournable
+dans le domaine. L'une des raisons est l'ajout de fonctionalités qui permettent d'étendre
+le public cible au delà des développeurs _web_, déjà accoutumés à `Javascript`.
+Parmi les 
+fonctionalités les plus remarquables,
+la possibilité depuis Novembre
+d'utiliser des [requêtes SQL](https://observablehq.com/@ericmauviere/duckdb-redonne-nouvelle-vie-sql)
+grâce à [`DuckDB`](https://observablehq.com/@observablehq/duckdb)
+permet aux habitués de `R` ou de `Python` de
+retrouver des manipulations auxquels ils sont habitués. 
+La librairie [`Plot`](https://observablehq.com/@observablehq/plot) offre
+une [grammaire proche de `ggplot2`](https://observablehq.com/@observablehq/plot-from-ggplot2).
 
+La communauté des cartographes a été particulièrement active sur `Observable`, notamment 
+à l'occasion du [#30daymapchallenge](https://observablehq.com/collection/@observablehq/30-day-map-challenge).
+[Nicolas Bertin (`neocarto`)](https://observablehq.com/@neocartocnrs), dont on ne peut
+que recommander l'[introduction à `Observable` faite pour le réseau](/talk/presentation-dobservable-par-nicolas-lambert/)
+ou [Eric Mauvière](https://observablehq.com/@ericmauviere) font parti des
+comptes à suivre dans la communauté
+francophone. 
 
+`observable`, en tant que langage construit sur `JavaScript`,
+est également disponible pour les utilisateurs de [`Quarto`](https://quarto.org/docs/interactive/ojs/),
+ce qui ne nécessite pas nécessairement de passer par la plateforme [observablehq.com](https://observablehq.com/)
+pour mettre à disposition des visualisations réactives.  Une alternative intéressante 
 
-
+![](/talk/presentation-dobservable-par-nicolas-lambert/observable1.png)
+![](/talk/presentation-dobservable-par-nicolas-lambert/observable2.png)
 
 
 ## Actualité en France
 
+Le rapport du conseil d'Etat
+pour la [construction d'une IA de "confiance"](https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf)
+a donc été publié en une année 2022 où les avancées techniques des dernières années commencent 
+à prendre forme avec des outils plus grands publics qui vont nécessairement poser des enjeux
+éthiques et juridiques. 
+
+Le [projet `Onyxia`](https://www.onyxia.sh/), qui vise à proposer une infrastructure de _data science_
+à l'état de l'art pour _data scientists_, a organisé son deuxième _Openlab_. L'occasion de 
+revenir sur le projet, sa philosophie, ses dernières avancées mais aussi d'échanger sur les perspectives
+de réutilisation dans de multiples environnements et de nouer des partenariats qui 
+permettront au projet d'encore grandir en 2023. 
 
 <!-----
-- quarto
-- rstudio -> posit
-- observable + duckdb
-- event nicolas lambert
 - onyxia
 - IA: rapport conseil d'Etat: https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf + UNECE Adasmm
-- plate-forme dataviz de l'ONS sur les résultats du census qui est hyper bien faite
 - Ryanair v lastminute.com, j’ai grossièrement résumé le cas page 85 dans le support
 - Data scientist 10 ans après
 ------->
