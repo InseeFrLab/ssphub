@@ -9,8 +9,9 @@ summary: |
   et [`chatGPT`](https://openai.com/blog/chatgpt/),
   qui ont créé un réel engouement au delà de la sphère
   des praticiens de la donnée. Cet article revient 
-  sur les principaux événements de l'année 2022
-  XXXXX
+  ouvre une série de _post_ rétrospectifs sur l'année 2022
+  pour faire un bilan de l'actualité de la _data science_
+  et du réseau. 
 # Link this post with a project
 projects: []
 
@@ -47,16 +48,20 @@ La fin de l'année est généralement synonyme de
 bétisiers, _best of_ ou
 rétrospectives personnalisées qui nous permettent
 de nous rappeler les événements marquants de l'année.
-Pour célébrer la fin de l'année 2022, cette _newsletter_
-adopte un format un peu spécial pour
-proposer deux rétrospectives: une rétrospective
-des principaux événements de l'année 2022 dans le monde de
-la _data science_ et une rétrospective chiffrée sur le
-réseau des data scientists de la statistique publique.
 
-# Retour sur l'année de la data science 
+Pour célébrer la fin de l'année 2022, la _newsletter_
+de Janvier adopte un format un peu spécial pour
+proposer, en deux temps, deux rétrospectives.
 
-## Les IA créatrices de contenu à l'honneur
+Cette première _newsletter_ revient 
+sur les principaux événements de l'année 2022 dans le monde de
+la _data science_. La seconde _newsletter_ proposera
+une rétrospective quantitative sur le
+réseau des _data scientists_ de la statistique publique, à la manière
+des rétrospectives personnalisées de nos applications préférées.
+
+
+# Les IA créatrices de contenu à l'honneur
 
 Si l'année 2022 a été particulièrement riche dans le domaine
 de la _data science_, c'est principalement grâce à deux coups
@@ -102,7 +107,7 @@ sur le [`SSPCloud`](https://www.sspcloud.fr/) ou sur `Google Colab`.
 
 ![](https://i.chzbgr.com/full/9717140480/hD779E54E/writing-shit-like-elon-musk-suicide-note-and-robert-ebert-goncharov-review-please-stop-need-sleep)
 
-## Le succès des modèles de diffusion
+# Le succès des modèles de diffusion
 
 Ces [IA génératrices de contenu](https://pub.towardsai.net/generative-ai-and-future-c3b1695876f2)
 reposent toutes, à plusieurs niveaux, sur
@@ -131,7 +136,7 @@ vient du [_Washington Post_](https://www.washingtonpost.com/technology/interacti
 
 ![](diffusion.png)
 
-## L'actualité dans le monde du _deep learning_
+# L'actualité dans le monde du _deep learning_
 
 Si le succès d'estime de ces IA génératrices consacre les modèles de 
 diffusion, l'année du _deep learning_ ne se réduit pas à cette actualité.
@@ -148,7 +153,7 @@ Preuve du succès de `PyTorch`, cet écosystème [est géré depuis septembre pa
 non plus par `Meta`. A l'inverse,
 [`Google` semble se détacher graduellement de `TensorFlow` pour privilégier son nouvel écosystème `JAX`](https://twitter.com/ylecun/status/1538419932475555840). 
 
-## Du changement côté `RStudio`
+# Du changement côté `RStudio`
 
 Depuis quelques années, `RStudio` a fait le choix
 de devenir un écosystème de _data science_
@@ -178,7 +183,7 @@ Hadley Wickham a commencé à publier de nouveaux chapitres pour
 une nouvelle édition augmentée de
 l'ouvrage de référence [_R For Data Science_](https://r4ds.had.co.nz/).
 
-## `Observable` devient un incontournable dans le monde de la dataviz
+# `Observable` devient un incontournable dans le monde de la dataviz
 
 Pour permettre des visualisations interactives,
 cela fait plusieurs années que `JavaScript` est un incontournable et
@@ -230,7 +235,7 @@ pour mettre à disposition des visualisations réactives.  Une alternative inté
 ![](/talk/presentation-dobservable-par-nicolas-lambert/observable2.png)
 
 
-## Actualité en France
+# Les autres actualités en France
 
 Le rapport du conseil d'Etat
 pour la [construction d'une IA de "confiance"](https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf)
