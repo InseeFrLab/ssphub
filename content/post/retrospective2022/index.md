@@ -50,7 +50,7 @@ rétrospectives personnalisées qui nous permettent
 de nous rappeler les événements marquants de l'année.
 
 Pour célébrer la fin de l'année 2022, la _newsletter_
-de Janvier adopte un format un peu spécial pour
+de janvier adopte un format un peu spécial pour
 proposer, en deux temps, deux rétrospectives.
 
 Cette première _newsletter_ revient 
@@ -67,7 +67,7 @@ Si l'année 2022 a été particulièrement riche dans le domaine
 de la _data science_, c'est principalement grâce à deux coups
 médiatiques d'[OpenAI](https://openai.com/),
 à savoir [`Dall-E`](https://openai.com/dall-e-2/)
-et [`chatGPT`](https://openai.com/blog/chatgpt/). 
+et [`ChatGPT`](https://openai.com/blog/chatgpt/). 
 
 Ces deux outils ont
 beaucoup fait parlé d'eux, au-delà
@@ -115,15 +115,15 @@ reposent toutes, à plusieurs niveaux, sur
 des réseaux de neurone.
 
 Le premier étage de la fusée est
-un [modèle de langage (_large language model_)](https://en.wikipedia.org/wiki/Language_model)
+un [modèle de langage](https://en.wikipedia.org/wiki/Language_model) (_large language model_)
 qui synthétise un langage en un ensemble complexe de paramètres. 
 Les plus connus sont [BERT](https://en.wikipedia.org/wiki/BERT_(language_model))
-et [GPT-3](https://fr.wikipedia.org/wiki/GPT-3). 
+et [GPT-3](https://en.wikipedia.org/wiki/GPT-3). 
 L'inflation dans le nombre de paramètres n'est pas prête de s'arrêter.
 Si les ressources nécessaires à entraîner en 2018 le modèle BERT (110 millions de paramètres)
 avaient déjà [été critiquées](https://arxiv.org/abs/1906.02243), cette complexité
 apparaît déjà dépassée. Le modèle GPT-3, sorti en 2020, et qui sert de base à
-`Dall-E` et `chatGPT` intègre 175 millions de paramètres. Un chiffre qui apparaît minime
+`Dall-E` et `ChatGPT` intègre 175 millions de paramètres. Un chiffre qui apparaît minime
 par rapport aux 17O trillions de paramètres attendus pour le modèle GPT4 en 2023.
 
 Le deuxième étage de la fusée est un modèle d'analyse d'image qui apprend à associer
@@ -133,7 +133,7 @@ Ensuite, pour générer une image à partir d'une description inédite intervien
 le [modèle de diffusion](https://en.wikipedia.org/wiki/Diffusion_model).
 L'une des explications les plus pédagogiques
 pour comprendre le fonctionnement de ces modèles 
-vient du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/). Sinon, on peut demander directement à `chatGPT` de nous expliquer:
+vient du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/). Sinon, on peut demander directement à `ChatGPT` de nous expliquer:
 
 ![](diffusion.png)
 
@@ -152,7 +152,7 @@ où les [implémentations `PyTorch` sont systématiques alors que celles en `Ten
 
 Preuve du succès de `PyTorch`, cet écosystème [est géré depuis septembre par la `Linux Foundation`](https://www.linuxfoundation.org/blog/blog/welcoming-pytorch-to-the-linux-foundation) et
 non plus par `Meta`. A l'inverse,
-[`Google` semble se détacher graduellement de `TensorFlow` pour privilégier son nouvel écosystème `JAX`](https://twitter.com/ylecun/status/1538419932475555840). 
+[`Google` semble se détacher graduellement de `TensorFlow`](https://twitter.com/ylecun/status/1538419932475555840) pour privilégier son nouvel écosystème `JAX`. 
 
 # Du changement côté `RStudio`
 
@@ -169,7 +169,7 @@ l'un des produits emblématiques de `RStudio`, à savoir
 langages de programmation. Rien de mieux pour être
 convaincu de l'intérêt de cet outil que
 de se balader dans [la documentation très riche](https://quarto.org/),
-de [tester soi-même sur un exemple](https://quarto.org/docs/get-started/hello/rstudio.html)
+de [tester soi-même](https://quarto.org/docs/get-started/hello/rstudio.html) sur un exemple
 ou d'observer [la galerie d'exemples](https://quarto.org/docs/gallery/).
 Cet été, `RStudio` a également annoncé que `Shiny`, son autre produit,
 serait maintenant disponible sous [`Python`](https://shiny.rstudio.com/py/), 
@@ -222,15 +222,15 @@ une [grammaire proche de `ggplot2`](https://observablehq.com/@observablehq/plot-
 La communauté des cartographes a été particulièrement active sur `Observable`, notamment 
 à l'occasion du [#30daymapchallenge](https://observablehq.com/collection/@observablehq/30-day-map-challenge).
 [Nicolas Bertin (`neocarto`)](https://observablehq.com/@neocartocnrs), dont on ne peut
-que recommander l'[introduction à `Observable` faite pour le réseau](/talk/presentation-dobservable-par-nicolas-lambert/)
-ou [Eric Mauvière](https://observablehq.com/@ericmauviere) font parti des
+que recommander l'[introduction à `Observable`](/talk/presentation-dobservable-par-nicolas-lambert/) faite pour le réseau,
+ou [Eric Mauvière](https://observablehq.com/@ericmauviere) font partie des
 comptes à suivre dans la communauté
 francophone. 
 
 `observable`, en tant que langage construit sur `JavaScript`,
 est également disponible pour les utilisateurs de [`Quarto`](https://quarto.org/docs/interactive/ojs/),
-ce qui ne nécessite pas nécessairement de passer par la plateforme [observablehq.com](https://observablehq.com/)
-pour mettre à disposition des visualisations réactives.  Une alternative intéressante 
+ce qui permet de mettre à disposition des visualisation réactives sans passer nécessairement par la plateforme [observablehq.com](https://observablehq.com/)
+pour mettre à disposition des visualisations réactives, ce qui constitue une alternative intéressante aux applications qui nécessitent un serveur en arrière plan, comme `Shiny` ou `Dash`.
 
 ![](/talk/presentation-dobservable-par-nicolas-lambert/observable1.png)
 ![](/talk/presentation-dobservable-par-nicolas-lambert/observable2.png)
@@ -238,10 +238,10 @@ pour mettre à disposition des visualisations réactives.  Une alternative inté
 
 # Les autres actualités en France
 
-Le rapport du conseil d'Etat
+Le rapport du conseil d'État
 pour la [construction d'une IA de "confiance"](https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf)
 a donc été publié en une année 2022 où les avancées techniques des dernières années commencent 
-à prendre forme avec des outils plus grands publics qui vont nécessairement poser des enjeux
+à prendre forme avec des outils plus grand public qui vont nécessairement soulever des enjeux
 éthiques et juridiques. 
 
 Le [projet `Onyxia`](https://www.onyxia.sh/), qui vise à proposer une infrastructure de _data science_
