@@ -1,8 +1,7 @@
 ---
 title: L'année 2022 dans le monde de la data science
 subtitle: Une rétrospective
-
-# Summary for listings and search engines
+toc: true
 summary: |
   La _data science_ a beaucoup fait parler d'elle en 2022,
   notamment du fait des deux coups
@@ -145,9 +144,51 @@ Preuve du succès de `PyTorch`, cet écosystème [est géré depuis septembre pa
 non plus par `Meta`. A l'inverse,
 [`Google` semble se détacher graduellement de `TensorFlow` pour privilégier son nouvel écosystème `JAX`](https://twitter.com/ylecun/status/1538419932475555840). 
 
-## Du changement côté RStudio
+## Du changement côté `RStudio`
 
-## Observable décolle 
+Depuis quelques années, `RStudio` a fait le choix
+de devenir un écosystème de _data science_
+généraliste et non plus exclusivement attaché au langage `R`. 
+
+Cette année, cela s'est traduit par
+la publication, très commentée, de [`Quarto`](https://quarto.org/)
+qui vise à proposer des fonctionalités de publications reproductibles
+équivalentes à
+l'un des produits emblématiques de `RStudio`, à savoir
+[`R Markdown`](https://rmarkdown.rstudio.com/), à de nombreux
+langages de programmation. Rien de mieux pour être
+convaincu de l'intérêt de cet outil que
+de se balader dans [la documentation très riche](https://quarto.org/),
+de [tester soi-même sur un exemple](https://quarto.org/docs/get-started/hello/rstudio.html)
+ou d'observer [la galerie d'exemples](https://quarto.org/docs/gallery/).
+
+L'année 2022 a été l'occasion, pour `RStudio`, d'un autre changement, symbolique celui-ci.
+Afin de détacher son image du langage `R`,
+l'entreprise a en effet changé de nom pour devenir [`posit`](https://posit.co/). 
+L'entreprise n'a néanmoins pas abandonné son activité foisonnante dans `R` puisque
+Hadley Wickham a commencé à publier de nouveaux chapitres pour
+une nouvelle édition augmentée de
+l'ouvrage de référence [_R For Data Science_](https://r4ds.had.co.nz/).
+
+## `Observable` devient un incontournable dans le monde de la dataviz
+
+Pour permettre des visualisations interactives,
+cela fait plusieurs années que `JavaScript` est un incontournable. 
+Les journaux traditionnels utilisent ainsi de plus en plus le _data scrollytelling_ 
+pour illustrer un article de manière interactive.
+L'un des exemples les plus réussis des dernières années a sans doute été 
+la visualisation du [_New York Times_ _"How the virus got out"_](https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html). 
+
+Afin de permettre une diffusion accrue de visualisations en `JavaScript`,
+[Mike Bostock](https://en.wikipedia.org/wiki/Mike_Bostock), déjà créateur 
+de la librairie de dataviz de référence [`D3.js`](https://en.wikipedia.org/wiki/D3.js),
+est à l'origine de la plateforme [`observable`](https://observablehq.com/), sorte de 
+`Github` de la dataviz permettant du partage et de la réutilisation de _notebooks_ réactifs. 
+En cette année 2022, la plateforme a connu un véritable _boom_ et est devenu un incontournable. 
+
+
+
+
 
 
 ## Actualité en France
