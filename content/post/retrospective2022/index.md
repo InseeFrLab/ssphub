@@ -145,22 +145,22 @@ Preuve du succès de `PyTorch`, cet écosystème [est géré depuis septembre pa
 non plus par `Meta`. A l'inverse,
 [`Google` semble se détacher graduellement de `TensorFlow` pour privilégier son nouvel écosystème `JAX`](https://twitter.com/ylecun/status/1538419932475555840). 
 
+## Du changement côté RStudio
+
+## Observable décolle 
 
 
-
+## Actualité en France
 
 
 <!-----
-- pytorch dans linux foundation
-- tensorflow abandonné par google
-
 - quarto
 - rstudio -> posit
 - observable + duckdb
+- event nicolas lambert
+- onyxia
 - IA: rapport conseil d'Etat: https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf + UNECE Adasmm
 - plate-forme dataviz de l'ONS sur les résultats du census qui est hyper bien faite
-- onyxia
 - Ryanair v lastminute.com, j’ai grossièrement résumé le cas page 85 dans le support
-- Twitter Elon
 - Data scientist 10 ans après
 ------->
