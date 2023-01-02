@@ -107,6 +107,7 @@ sur le [`SSPCloud`](https://www.sspcloud.fr/) ou sur `Google Colab`.
 
 ![](https://i.chzbgr.com/full/9717140480/hD779E54E/writing-shit-like-elon-musk-suicide-note-and-robert-ebert-goncharov-review-please-stop-need-sleep)
 
+
 # Le succès des modèles de diffusion
 
 Ces [IA génératrices de contenu](https://pub.towardsai.net/generative-ai-and-future-c3b1695876f2)
