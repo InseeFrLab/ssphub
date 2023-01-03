@@ -51,6 +51,10 @@ categories:
   - Infolettre
 ---
 
+_Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit_ 
+
+
+
 La fin de l'année est généralement synonyme de
 bétisiers, _best of_ ou
 rétrospectives personnalisées qui nous permettent
