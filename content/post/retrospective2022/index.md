@@ -16,16 +16,16 @@ summary: |
 projects: []
 
 # Date published
-date: '2022-12-13T00:00:00Z'
+date: '2022-12-31T00:00:00Z'
 
 # Date updated
-lastmod: '2022-09-19T00:00:00Z'
+lastmod: '2022-12-31T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
 
 # Show this page in the Featured widget?
-featured: false
+featured: true
 
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
@@ -39,9 +39,16 @@ authors:
 
 tags:
   - NLP
+  - retrospective
+  - observable
+  - quarto
+  - deep learning
+  - infolettre
 
 categories:
   - Insee
+  - Retrospective
+  - Infolettre
 ---
 
 La fin de l'année est généralement synonyme de
@@ -78,7 +85,11 @@ le réseau social dont le nombre d'utilisateurs
 a nettement augmenté en réaction
 au rachat de `Twitter` par Elon Musk en fin d'année.
 
-![](https://i.chzbgr.com/full/9717138688/hC5E738A3/chatgpt-will-see-all-criticisms-its-training-data-on-next-update-some-are-not-surviving-uprising)
+<figure>
+    <img src="https://i.chzbgr.com/full/9717138688/hC5E738A3/chatgpt-will-see-all-criticisms-its-training-data-on-next-update-some-are-not-surviving-uprising"
+         alt="Illustration d'un modèle de diffusion" width="500" height="600">
+</figure>
+
 
 Ces innovations, parce qu'elles pourraient
 avoir des effets à long terme sur la manière dont le grand public
@@ -109,7 +120,12 @@ Si vous désirez utiliser `Python` de manière créative pour générer du conte
 vous pouvez consulter [ce tutoriel](https://pythonds.linogaliana.fr/dalle/) qui fonctionne
 sur le [`SSPCloud`](https://www.sspcloud.fr/) ou sur `Google Colab`.
 
-![](https://i.chzbgr.com/full/9717140480/hD779E54E/writing-shit-like-elon-musk-suicide-note-and-robert-ebert-goncharov-review-please-stop-need-sleep)
+<figure>
+    <img src="https://i.chzbgr.com/full/9717140480/hD779E54E/writing-shit-like-elon-musk-suicide-note-and-robert-ebert-goncharov-review-please-stop-need-sleep"
+         alt="Illustration d'un modèle de diffusion" width="500" height="600">
+</figure>
+
+
 
 
 # Le succès des modèles de diffusion
@@ -138,8 +154,14 @@ des mots ou des séquences de mots et des formes sur des images.
 Il s'agit de déconstruire une forme en une structure minimale de pixels qui permet de
 l'identifier. 
 
-![](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdb4ef038-9c72-42b5-9383-26952d95aea0_740x141.jpeg) 
-_Source: [Sebastian Raschka](https://magazine.sebastianraschka.com/p/ahead-of-ai-1-a-diffusion-of-innovations)_
+
+<figure>
+    <img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdb4ef038-9c72-42b5-9383-26952d95aea0_740x141.jpeg"
+         alt="Illustration d'un modèle de diffusion">
+    <figcaption><i>Source: <a href="https://magazine.sebastianraschka.com/p/ahead-of-ai-1-a-diffusion-of-innovations" target="_blank">Sebastian Raschka</a></i></figcaption>
+</figure>
+
+
 
 Ensuite, pour générer une image à partir d'une description inédite intervient
 le [modèle de diffusion](https://en.wikipedia.org/wiki/Diffusion_model)
