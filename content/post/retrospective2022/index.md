@@ -8,7 +8,7 @@ summary: |
   médiatiques d'[openAI](https://openai.com/), à savoir [`Dall-E`](https://openai.com/dall-e-2/)
   et [`chatGPT`](https://openai.com/blog/chatgpt/),
   qui ont créé un réel engouement au delà de la sphère
-  des praticiens de la donnée. Cet article revient 
+  des praticiens de la donnée. Cet article 
   ouvre une série de _post_ rétrospectifs sur l'année 2022
   pour faire un bilan de l'actualité de la _data science_
   et du réseau. 
@@ -70,21 +70,26 @@ médiatiques d'[OpenAI](https://openai.com/),
 et [`ChatGPT`](https://openai.com/blog/chatgpt/). 
 
 Ces deux outils ont
-beaucoup fait parlé d'eux, au-delà
+beaucoup fait parler d'eux, au-delà
 de la sphère traditionnelle de la _data science_.
-Le _buzz_ a été intense sur `Twitter`, racheté en fin d'année par Elon Musk,
+Le _buzz_ a été intense sur `Twitter`
 ou sur `Mastodon`, 
-le réseau social qui a connu, en réaction,
-une croissance importante de son nombre d'utilisateurs.
+le réseau social dont le nombre d'utilisateurs
+a nettement augmenté en réaction
+au rachat de `Twitter` par Elon Musk en fin d'année.
 
 ![](https://i.chzbgr.com/full/9717138688/hC5E738A3/chatgpt-will-see-all-criticisms-its-training-data-on-next-update-some-are-not-surviving-uprising)
 
-Cependant, ces innovations, parce qu'elles pourraient
+Ces innovations, parce qu'elles pourraient
 avoir des effets à long terme sur la manière dont le grand public
 appréhende l'intelligence artificielle, 
-ont beaucoup intéressé les médias traditionnels, notamment [_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_ qui s'interroge](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me)).
+ont beaucoup intéressé les médias traditionnels,
+notamment [_Le Monde_](https://www.lemonde.fr/economie/article/2022/12/06/chatgpt-le-logiciel-capable-d-ecrire-des-petits-textes-confondants_6153252_3234.html), 
+[_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me))
+qui s'interroge sur la nature des tâches que l'intelligence artificielle pourra remplacer à terme :
+procédurales et régies par des règles bien définies ou bien également des activités nécessitant de la créativité et des capacités d'analyse ?
 
-Pour une fois, il ne s'agit pas de souligner 
+Pour une fois, il ne s'agit donc pas de souligner 
 exclusivement les limites de ces modèles voire leurs
 dérives ([_deep fake_](https://fr.wikipedia.org/wiki/Deepfake),
 [biais racistes](https://www.washingtonpost.com/technology/2022/07/16/racist-robots-ai/)...) mais aussi
@@ -92,9 +97,8 @@ de s'enthousiasmer sur
 leur [potentiel créatif](https://www.platformer.news/p/how-dall-e-could-power-a-creative).
 Il est difficile de rester insensible à certaines des créations
 artistiques des modèles [`Dall-E`](https://dalle2.gallery/#search-random), [`Stable Diffusion`](https://stablediffusion.fr/gallery), [Midjourney](https://www.midjourney.com/showcase/recent/) et consorts
-ou de résister à la tentation de piéger
-`chatGPT` en lui posant des questions auquel il ne parviendrait
-pas à répondre.
+ou de résister à la tentation de tester la capacité
+de `ChatGPT` à répondre à des questions complexes
 Les chercheurs, et pas des moindres (notamment [Andrew Ng](https://twitter.com/andrewyng/status/1600284752258686976?lang=fr) ou [Gaël Varoquaux](https://theconversation.com/beau-parleur-comme-une-ia-196084)) se sont également saisis de cette question et ont
 souligné
 les biais de raisonnement et excès de confiance de ces IA. 
