@@ -1,6 +1,6 @@
 ---
 title: L'année 2022 dans le monde de la data science
-subtitle: Rétrospective
+subtitle: Rétrospective d'une année riche
 toc: true
 summary: |
   La _data science_ a beaucoup fait parler d'elle en 2022,
