@@ -96,7 +96,7 @@ avoir des effets à long terme sur la manière dont le grand public
 appréhende l'intelligence artificielle, 
 ont beaucoup intéressé les médias traditionnels,
 notamment [_Le Monde_](https://www.lemonde.fr/economie/article/2022/12/06/chatgpt-le-logiciel-capable-d-ecrire-des-petits-textes-confondants_6153252_3234.html), 
-[_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me))
+[_The Economist_ et sa _"Nouvelle Frontière"_](https://www.economist.com/news/2022/06/11/how-a-computer-designed-this-weeks-cover) ou [le _Guardian_](https://www.theguardian.com/commentisfree/2022/dec/10/i-wrote-this-column-myself-but-how-long-before-a-chatbot-could-do-it-for-me)
 qui s'interroge sur la nature des tâches que l'intelligence artificielle pourra remplacer à terme :
 procédurales et régies par des règles bien définies ou bien également des activités nécessitant de la créativité et des capacités d'analyse ?
 
