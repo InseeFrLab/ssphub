@@ -125,23 +125,29 @@ Les plus connus sont [BERT](https://en.wikipedia.org/wiki/BERT_(language_model))
 et [GPT-3](https://en.wikipedia.org/wiki/GPT-3). 
 L'inflation dans le nombre de paramètres n'est pas prête de s'arrêter.
 Si les ressources nécessaires à entraîner en 2018 le modèle BERT (110 millions de paramètres)
-avaient déjà [été critiquées](https://arxiv.org/abs/1906.02243), cette complexité
-apparaît déjà dépassée. Le modèle GPT-3, sorti en 2020, et qui sert de base à
+avaient déjà [été critiquées](https://arxiv.org/abs/1906.02243) en raison
+de leur coût financier et environnemental, cette complexité
+a encore augmenté depuis. Le modèle `GPT-3`, sorti en 2020, et qui sert de base à
 `Dall-E` et `ChatGPT` intègre 175 millions de paramètres. Un chiffre qui apparaît minime
-par rapport aux 17O trillions de paramètres attendus pour le modèle GPT4 en 2023.
+par rapport aux 17O trillions de paramètres attendus pour le modèle `GPT-4` en 2023.
 
-Le deuxième étage de la fusée est un modèle d'analyse d'image qui apprend à associer
+En ce qui concerne les IA créatrices de contenu visuel, 
+le deuxième étage de la fusée est un modèle d'analyse d'image qui apprend à associer
 des images à une description textuelle afin de détecter des structures communes entre
 des mots ou des séquences de mots et des formes sur des images. 
-Ensuite, pour générer une image à partir d'une description inédite intervient
-le [modèle de diffusion](https://en.wikipedia.org/wiki/Diffusion_model).
-L'une des explications les plus pédagogiques
-pour comprendre le fonctionnement de ces modèles 
-vient du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/).
+Il s'agit de déconstruire une forme en une structure minimale de pixels qui permet de
+l'identifier. 
 
 ![](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdb4ef038-9c72-42b5-9383-26952d95aea0_740x141.jpeg) 
 _Source: [Sebastian Raschka](https://magazine.sebastianraschka.com/p/ahead-of-ai-1-a-diffusion-of-innovations)_
 
+Ensuite, pour générer une image à partir d'une description inédite intervient
+le [modèle de diffusion](https://en.wikipedia.org/wiki/Diffusion_model)
+qui reconstruit une image à partir du mélange de l'ensemble des pixels qui traduisent
+les concepts principaux d'une instruction.
+L'une des explications les plus pédagogiques
+pour comprendre le fonctionnement de ces modèles 
+vient du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/).
 
 Sinon, on peut demander directement à `ChatGPT` de nous expliquer:
 
@@ -158,10 +164,10 @@ entre les librairies et
 `Google`, et [`PyTorch`](https://pytorch.org/) projet initié par `Facebook/Meta`. 
 `PyTorch`, plus récent, bénéficie d'une dynamique plus ascendante que `TensorFlow`.
 Le [succès d'`HuggingFace`](https://twitter.com/huggingface/status/1609162974626779136?s=20&t=XUCGBC_PL60IdHjia8wXNA),
+plateforme de mise à disposition de modèles, et
 où les [implémentations `PyTorch` sont systématiques alors que celles en `TensorFlow` sont rares](https://www.assemblyai.com/blog/pytorch-vs-tensorflow-in-2022/#pytorch-vs-tensorflowmodel-availability) a participé à la diffusion de `PyTorch`. 
 
-Preuve du succès de `PyTorch`, cet écosystème [est géré depuis septembre par la `Linux Foundation`](https://www.linuxfoundation.org/blog/blog/welcoming-pytorch-to-the-linux-foundation) et
-non plus par `Meta`. A l'inverse,
+Preuve du succès de `PyTorch`, cet écosystème est dissocié de `Meta` depuis septembre afin de devenir un outil généraliste [géré par la `Linux Foundation`](https://www.linuxfoundation.org/blog/blog/welcoming-pytorch-to-the-linux-foundation). À l'inverse,
 [`Google` semble se détacher graduellement de `TensorFlow`](https://twitter.com/ylecun/status/1538419932475555840) pour privilégier son nouvel écosystème `JAX`. 
 
 # Du changement côté `RStudio`
@@ -172,16 +178,17 @@ généraliste et non plus exclusivement attaché au langage `R`.
 
 Cette année, cela s'est traduit par
 la publication, très commentée, de [`Quarto`](https://quarto.org/)
-qui vise à proposer des fonctionalités de publications reproductibles
+qui vise à proposer, dans de nombreux langages de programmation,
+des fonctionalités de publications reproductibles
 équivalentes à
 l'un des produits emblématiques de `RStudio`, à savoir
-[`R Markdown`](https://rmarkdown.rstudio.com/), à de nombreux
-langages de programmation. Rien de mieux pour être
+[`R Markdown`](https://rmarkdown.rstudio.com/).
+Rien de mieux pour être
 convaincu de l'intérêt de cet outil que
-de se balader dans [la documentation très riche](https://quarto.org/),
-de [tester soi-même](https://quarto.org/docs/get-started/hello/rstudio.html) sur un exemple
-ou d'observer [la galerie d'exemples](https://quarto.org/docs/gallery/).
-Cet été, `RStudio` a également annoncé que `Shiny`, son autre produit,
+d'observer [la galerie d'exemples](https://quarto.org/docs/gallery/),
+d'explorer [la documentation très riche](https://quarto.org/),
+ou de [tester soi-même](https://quarto.org/docs/get-started/hello/rstudio.html) sur un exemple.
+Cet été, `RStudio` a également annoncé que `Shiny`, un autre produit emblématique,
 serait maintenant disponible sous [`Python`](https://shiny.rstudio.com/py/), 
 comme alternative à [`Dash`](https://dash.plotly.com/) ou [`Streamlit`](https://streamlit.io/).
 
@@ -199,11 +206,13 @@ l'ouvrage de référence [_R For Data Science_](https://r4ds.had.co.nz/).
 Pour permettre des visualisations interactives,
 cela fait plusieurs années que `JavaScript` est un incontournable et
 que le [_web assembly_](https://fr.wikipedia.org/wiki/WebAssembly)
-est l'[objet de plus en plus d'attention](https://twitter.com/solomonstre/status/1111004913222324225).
+retient [de plus en plus d'attention](https://twitter.com/solomonstre/status/1111004913222324225).
 
 Les journaux traditionnels utilisent ainsi de plus en plus
-le _data scrollytelling_ 
-pour illustrer un article de manière interactive.
+le _data scrollytelling_ , cette technique de narration
+qui consiste à présenter des informations sous forme de récit interactif, 
+en utilisant une combinaison de texte et de graphiques qui apparaissent et
+disparaissent en fonction des actions du lecteur.
 L'un des exemples les plus réussis des dernières années a sans doute été 
 la visualisation du [_New York Times_ _"How the virus got out"_](https://www.nytimes.com/interactive/2020/03/22/world/coronavirus-spread.html). Cette approche a également été adoptée par
 le Ministère de l'Agriculture pour diffuser les 
@@ -237,7 +246,7 @@ ou [Eric Mauvière](https://observablehq.com/@ericmauviere) font partie des
 comptes à suivre dans la communauté
 francophone. 
 
-`observable`, en tant que langage construit sur `JavaScript`,
+`Observable`, en tant que langage construit sur `JavaScript`,
 est également disponible pour les utilisateurs de [`Quarto`](https://quarto.org/docs/interactive/ojs/),
 ce qui permet de mettre à disposition des visualisation réactives sans passer nécessairement par la plateforme [observablehq.com](https://observablehq.com/)
 pour mettre à disposition des visualisations réactives, ce qui constitue une alternative intéressante aux applications qui nécessitent un serveur en arrière plan, comme `Shiny` ou `Dash`.
@@ -251,7 +260,7 @@ pour mettre à disposition des visualisations réactives, ce qui constitue une a
 Le rapport du conseil d'État
 pour la [construction d'une IA de "confiance"](https://www.conseil-etat.fr/content/download/175739/file/Etude%20%C3%A0%20la%20demande%20du%20PM%20-%20IA%20et%20action%20publique.pdf)
 a donc été publié en une année 2022 où les avancées techniques des dernières années commencent 
-à prendre forme avec des outils plus grand public qui vont nécessairement soulever des enjeux
+à être accessibles grâce à des outils plus grand public, ce qui va nécessairement soulever des enjeux
 éthiques et juridiques. 
 
 Le [projet `Onyxia`](https://www.onyxia.sh/), qui vise à proposer une infrastructure de _data science_
