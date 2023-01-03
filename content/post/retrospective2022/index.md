@@ -267,7 +267,7 @@ Le [projet `Onyxia`](https://www.onyxia.sh/), qui vise à proposer une infrastru
 à l'état de l'art pour _data scientists_, a organisé son deuxième _Openlab_. L'occasion de 
 revenir sur le projet, sa philosophie, ses dernières avancées mais aussi d'échanger sur les perspectives
 de réutilisation dans de multiples environnements et de nouer des partenariats qui 
-permettront au projet d'encore grandir en 2023. 
+permettront au projet de grandir encore  en 2023. 
 
 <!-----
 - onyxia
