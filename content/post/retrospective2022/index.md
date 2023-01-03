@@ -133,7 +133,13 @@ Ensuite, pour générer une image à partir d'une description inédite intervien
 le [modèle de diffusion](https://en.wikipedia.org/wiki/Diffusion_model).
 L'une des explications les plus pédagogiques
 pour comprendre le fonctionnement de ces modèles 
-vient du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/). Sinon, on peut demander directement à `ChatGPT` de nous expliquer:
+vient du [_Washington Post_](https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/).
+
+![](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fdb4ef038-9c72-42b5-9383-26952d95aea0_740x141.jpeg) 
+_Source: [Sebastian Raschka](https://magazine.sebastianraschka.com/p/ahead-of-ai-1-a-diffusion-of-innovations)_
+
+
+Sinon, on peut demander directement à `ChatGPT` de nous expliquer:
 
 ![](diffusion.png)
 
