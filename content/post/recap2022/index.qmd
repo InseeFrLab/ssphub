@@ -60,7 +60,7 @@ plusieurs applications pour synthétiser l'activité de leurs utilisateurs.
 Cette _newsletter_ permet aussi d'illustrer le potentiel d'outils qui ont été présentés 
 dans la [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/).
 Les principaux ingrédients ici utilisés sont `Observable`, `Quarto` et `DuckDB`. Les données 
-sont stockées sur le système de stockage S3 du `SSPCloud`
+sont stockées sur le système de stockage `S3` du `SSPCloud`.
 
 
 ## Dynamique du réseau
