@@ -1,0 +1,883 @@
+---
+title: L'année 2022 dans le monde de la data science
+subtitle: Rétrospective d'une année riche
+toc: true
+summary: |
+  La _data science_ a beaucoup fait parler d'elle en 2022,
+  notamment du fait des deux coups
+  médiatiques d'[openAI](https://openai.com/), à savoir [`Dall-E`](https://openai.com/dall-e-2/)
+  et [`chatGPT`](https://openai.com/blog/chatgpt/),
+  qui ont créé un réel engouement au delà de la sphère
+  des praticiens de la donnée. Cet article 
+  ouvre une série de _post_ rétrospectifs sur l'année 2022
+  pour faire un bilan de l'actualité de la _data science_
+  et du réseau. 
+# Link this post with a project
+projects: []
+
+# Date published
+date: '2022-12-31T00:00:00Z'
+
+# Date updated
+lastmod: '2022-12-31T00:00:00Z'
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: true
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
+#image:
+#  focal_point: ''
+#  placement: 2
+#  preview_only: false
+
+authors:
+  - linogaliana
+
+tags:
+  - retrospective
+  - observable
+  - quarto
+  - deep learning
+  - infolettre
+
+categories:
+  - Insee
+  - Retrospective
+  - Infolettre
+---
+
+_Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit_ 
+
+
+La [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/) promettait
+une version plus personnalisée, inspirée des visualisations proposées par
+plusieurs applications pour synthétiser l'activité de leurs utilisateurs.
+
+Cette _newsletter_ permet aussi d'illustrer le potentiel d'outils qui ont été présentés 
+dans la [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/).
+Les principaux ingrédients ici utilisés sont `Observable`, `Quarto` et `DuckDB`. Les données 
+sont stockées sur le système de stockage S3 du `SSPCloud`
+
+
+## Dynamique du réseau
+
+```{ojs}
+//| echo: false
+
+parseDate = d3.utcParse("%Y-%m-%d");
+startDate = parseDate("2022-06-30");
+endDate = parseDate("2022-09-05");
+daysBetween = d3.utcDay.count(startDate, endDate);
+middleDate = d3.utcDay.offset(startDate, Math.floor(daysBetween / 2));
+
+// Line for network
+addTooltips(
+Plot.plot({
+  y: {
+    grid: true,
+    label: "↑ Nombre d'inscrits à la liste de diffusion"
+  },
+  marks: [
+    Plot.line(serie_contacts, {
+        x: "date", y: "mail",
+        stroke: "#6886bb"
+        //marker: "circle",
+        //curve: "step", strokeWidth: 1
+        }),        
+    Plot.dot(serie_contacts, {
+        x: "date", y: "mail",
+        title: (d) => `${new Date(d.date).toLocaleDateString("en-US", {
+                timeZone: "UTC"
+              })} \n ${d.mail} inscrits `,
+        fill: "#6886bb"
+        //marker: "circle",
+        //curve: "step", strokeWidth: 1
+        }),
+    // vertical rule to mark date/time of event
+    Plot.ruleX([d3.utcParse("%Y-%m-%d")("2022-06-30"), d3.utcParse("%Y-%m-%d")("2022-09-05")], {
+        stroke: "gray", strokeWidth: 2, strokeDasharray: "4 2"
+        }),
+    Plot.text([[0]], {
+      text: ["Réseau en pause pendant \n les vacances d'été 🌞"],
+      x: middleDate,
+      y: 290,
+      textAnchor: "center"
+      //fill: "#6886bb"
+    }),
+    width > 500
+    ? Plot.text(annotations, {
+          x: "date",
+          y: "textCount",
+          lineHeight: 1.3,
+          width: 20,
+        text: (d) =>
+            `${new Date(d.date).toLocaleDateString("en-US", {
+                timeZone: "UTC"
+              })} \n ${d.text} `,
+          textAnchor: "start"
+        })
+    : [
+        Plot.text(annotations, {
+            x: "date",
+            y: "textCount",
+            lineHeight: 1.3,
+            width: 20,
+            fill: "#6886bb",
+            text: (d, i) => i + 1,
+            textAnchor: "center"
+          }),
+          Plot.dot(annotations, {
+            x: "date",
+            y: "textCount",
+            r: 10
+          })
+    ],
+    Plot.arrow(annotations, {
+      x2: "date",
+      y1: "textCount",
+      x1: "endDate",
+      y2: "endCount",
+      // dx: 14,
+      bend: 20,
+      inset: 5,
+      head: null,
+      strokeOpacity: 0.5
+    })    
+    ],
+  marginLeft: 50,
+  width: 900,
+  height: 500, 
+  caption:
+    width > 500
+      ? ""
+      : html`<details><summary>Dérouler la <i>timeline</i> du réseau</summary>${annotations
+          .map(
+            (d, i) =>
+              `(${i + 1}) ${new Date(d.date).toLocaleDateString("en-US", {
+                timeZone: "UTC"
+              })} – ${d.text} `
+          )
+          .join("<br>")}</details>`
+}),
+    {
+        fill: "red",
+        stroke: "blue",
+        r: 8
+    }
+)
+```
+
+
+## Evolution composition réseau
+
+```{ojs}
+//| echo: false
+viewof input_date = Scrubber(
+  serie_contacts_domain.map(d => d.date), {
+  delay: 50,
+  autoplay: false,
+  unique: true,
+  sort: true,
+  format: date => date.toLocaleString("en", {month: "long", day: "numeric"})
+})
+```
+
+<br>
+
+```{ojs}
+//| echo: false
+// Source: https://observablehq.com/@mbostock/dashboard
+grid = html`<div style="
+  background: #fff;
+  margin: 0;
+  border: none ;
+  display: grid;
+  width: ${screen.width};
+  grid-template-areas: 
+    'a b'
+    'a b'
+    'a b'
+    'c c';
+  grid-gap: 10px;
+">
+  <div name="a" style="grid-area: a; position: relative;">${plt2}</div>
+  <div name="b" style="grid-area: b; position: relative;">${plt1}</div>
+  <div name="c" style="grid-area: c; position: relative;">${plt3}</div>
+</div>`
+```
+
+
+
+
+```{ojs}
+//| echo: false
+
+// Line for network
+plt1 = addTooltips(
+    Plot.plot({
+    y: {
+        domain: [110,320],
+        grid: true,
+        label: "↑ Nombre d'inscrits à la liste de diffusion"
+    },
+    marks: [
+        Plot.dot(serie_contacts,
+            {
+                x: "date", y: "mail",
+                fill: "#6886bb",
+                title: (d) => `${new Date(d.date).toLocaleDateString("en-US", {
+                    timeZone: "UTC"
+                })} \n ${d.mail} inscrits `
+                //marker: "circle",
+                //curve: "step", strokeWidth: 1
+            }),   
+        Plot.line(serie_contacts,
+            {
+                x: "date", y: "mail",
+                stroke: "#6886bb"
+                //marker: "circle",
+                //curve: "step", strokeWidth: 1
+            }),   
+        Plot.dot(serie_contacts.filter(d => dateFormat(d.date) <= dateFormat(input_date)),
+            {
+                x: "date", y: "mail",
+                fill: "red",
+                title: (d) => `${new Date(d.date).toLocaleDateString("en-US", {
+                                timeZone: "UTC"
+                            })} \n ${d.mail} inscrits `            
+                //marker: "circle",
+                //curve: "step", strokeWidth: 1
+            }), 
+        Plot.line(serie_contacts.filter(d => dateFormat(d.date) <= dateFormat(input_date)),
+            {
+                x: "date", y: "mail",
+                stroke: "red"
+                //marker: "circle",
+                //curve: "step", strokeWidth: 1
+            }),   
+        Plot.arrow(annotations.filter(d => dateFormat(d.date) == dateFormat(input_date)), {
+        x2: "date",
+        y1: "textCount",
+        x1: "endDate",
+        y2: "endCount",
+        // dx: 14,
+        bend: 20,
+        inset: 5,
+        head: null,
+        strokeOpacity: 0.5
+        }),
+        Plot.text(annotations.filter(d => dateFormat(d.date) == dateFormat(input_date)), {
+                    x: "date",
+                    y: "textCount",
+                    lineHeight: 1.3,
+                    width: 20,
+                    text: (d) =>
+                        `${new Date(d.date).toLocaleDateString("en-US", {
+                            timeZone: "UTC"
+                        })} \n ${d.text} `,
+                    textAnchor: "start"
+                })        
+        ],
+    marginLeft: 50,
+    width: 500,
+    height: 300, 
+    }),
+    {
+        fill: "green",
+        stroke: "black",
+        r: 8
+    }
+)
+```
+
+
+```{ojs}
+//| echo: false
+dateFormat = d3.utcFormat("%Y-%m-%d")
+subset = serie_contacts_domain.filter(d => dateFormat(d.date) == dateFormat(input_date))
+order_domain = d3.groupSort(
+  serie_contacts_domain,
+  (g) => d3.max(g, (d) => d.mail),
+  (d) => d.domain
+)
+```
+
+```{ojs}
+//| echo: false
+array1 = ssp.concat(autres_ssp)
+array2 = subset.map(d => d.domain)
+hors_ssp_all = serie_contacts_domain.map(d => d.domain).filter(d => !array1.includes(d))
+hors_ssp = [... new Set(hors_ssp_all)]
+colors_hors_ssp = Array(hors_ssp.length).fill("#fb9a99")
+```
+
+```{ojs}
+//| echo: false
+ssp = [
+    'INSEE', 'Santé', 'Développement Durable', 'Agriculture', 'Finances', 'Travail', 'Intérieur', 'Recherche'
+    ]
+autres_ssp = ['Justice', 'Culture', "Collectivités Locales", "Enseignement Supérieur",
+                "Jeunesse Sports", "Défense"]
+colors_autres_ssp = Array(6).fill("orange")
+```
+
+
+```{ojs}
+//| echo: false
+plt2 = addTooltips(
+    Plot.plot({
+    width: 500,
+    paddingTop: 80,
+    projection: {
+        // equal-area is crucial to maintain comparability of the slices,
+        // but it could be any other equal-area projection
+        type: "azimuthal-equal-area", 
+        rotate: [0, 180 - 90]
+    },
+    color: {
+        type: "categorical",
+        legend: false, 
+        label: "Institution",
+        domain: ssp.concat(autres_ssp).concat(hors_ssp), 
+        range: [
+            "#5a5758", "#9cb5b8", "forestgreen", "#e8d630", "gold", "#2d378c", "brown", "lavender"
+            ].concat(colors_autres_ssp).concat(colors_hors_ssp)
+    },
+    sort: {
+            color: "stroke",
+            reduce: "count",
+            reverse: true,
+            domain: ssp.concat(autres_ssp).concat(hors_ssp)
+            },    
+    marks: [
+        pie(
+            subset, {
+                value: "mail", fill: "domain",
+                title: d => `${d.domain}: ${d.mail} \n (${(d.mail / d3.sum(subset, d => d.mail)).toLocaleString(undefined, {style: "percent"})} du total)` 
+                })        
+    ]
+    }),
+    { fill: "gray", opacity: 0.5, "stroke-width": "3px", stroke: "red" } 
+)
+```
+
+```{ojs}
+//| echo: false
+plt3 = addTooltips(
+    Plot.plot({
+        y: {
+            label: "Institution"
+        },
+        x: {
+            label: "Nombre d'inscrits à la liste de diffusion →"
+        },
+        marginLeft: 150,
+        color: {
+            type: "categorical",
+            legend: false, 
+            label: "Institution",
+            domain: ssp.concat(autres_ssp).concat(hors_ssp), 
+            range: [
+                "#5a5758", "#9cb5b8", "forestgreen", "#e8d630", "gold", "#2d378c", "brown", "lavender"
+                ].concat(colors_autres_ssp).concat(colors_hors_ssp),
+        },
+    marks: [
+        Plot.barX(
+            subset,
+            {
+                x: "mail", y: "domain", fill: "domain", sort: {y: "x", reverse: true},
+                title: d => `${d.domain}: ${d.mail} \n (${(d.mail / d3.sum(subset, d => d.mail)).toLocaleString(undefined, {style: "percent"})} du total)`,
+            }),
+        Plot.ruleX([0]),
+        Plot.text(subset,
+        {
+            x: "mail", y: "domain", dx: 5,
+            text: d => `${d.mail} (${(d.mail / d3.sum(subset, d => d.mail)).toLocaleString(undefined, {style: "percent"})})`,
+            textAnchor: "start"
+        })      
+    ]
+    }),
+    { fill: "gray", opacity: 0.5, "stroke-width": "3px", stroke: "red" } 
+)
+
+```
+
+
+## Répartition des modes d'accès au réseau
+
+```{ojs}
+//| echo: false
+//| eval: true
+stats_tchap_vs_outlook = db.sql`
+SELECT source, domain, CAST(COUNT(*) AS int) AS count
+FROM latest
+WHERE domain IN (SELECT domain
+                FROM latest
+                GROUP BY domain
+                HAVING COUNT(*) > 10)
+GROUP BY source, domain
+`
+
+stats_all = db.sql`
+SELECT source, domain, CAST(COUNT(*) AS int) AS count
+FROM latest
+GROUP BY source, domain
+`
+//viewof tt = Inputs.table(stats_all)
+```
+
+
+```{ojs}
+//| echo: false
+addTooltips(
+    Plot.plot({
+    x: {
+        domain: order_domain_all,
+        label: "Institution"
+    },        
+    y: {
+        grid: true,
+        label: "↑ Nombre d'inscrits"
+        },
+    color: {
+        legend: true,
+        type: "categorical",
+        scheme: "pastel1",
+        domain: ["Diffusion mail et Tchap", "Diffusion mail", "Tchap"] // setting the order manually by specifying the array
+    },
+    marks: [
+        Plot.barY(stats_tchap_vs_outlook,
+        {
+            x: "domain", y: "count", sort: "source", fill: "source",
+            title: d => `${d.source}: ${d.count} \n (${(d.count / d3.sum(stats_tchap_vs_outlook.filter(t => t.domain == d.domain), d => d.count)).toLocaleString(undefined, {style: "percent"})})` 
+        }),
+        Plot.ruleY([0])
+    ],
+    style: { paddingTop: 50},
+    caption: html`<details><summary>Dérouler la note:</summary><i>Seules les institutions comportant au moins 10 inscrits sont présentées dans ce graphique</i></details>`
+    }),
+  // Set styles for the hovered element
+  { fill: "gray", opacity: 0.5, "stroke-width": "3px", stroke: "red" }    
+)
+```
+
+```{ojs}
+order_domain_all = d3.groupSort(
+  stats_tchap_vs_outlook,
+  (g) => d3.sum(g, (d) => -d.count),
+  (d) => d.domain
+)
+//viewof tt = Inputs.table(stats_tchap_vs_outlook)
+```
+
+```{ojs}
+//| echo: false
+annotations = [
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-02-22"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-02-22"),
+    endCount: 112,
+    text: "Newsletter n°1 🎉",
+    textDate: "2022-02-23",
+    textCount: 250,
+    bend: 20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-03-17"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-03-17"),
+    endCount: 153,
+    text: "Newsletter n°2",
+    textDate: "2022-02-23",
+    textCount: 230,
+    bend: -5
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-04-22"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-04-22"),
+    endCount: 188,
+    text: "Newsletter n°3",
+    textDate: "2022-04-14",
+    textCount: 140,
+    bend: 20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-05-14"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-05-14"),
+    endCount: 212,
+    text: "Newsletter n°4",
+    textDate: "2022-05-23",
+    textCount: 180,
+    bend: 20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-06-14"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-06-17"),
+    endCount: 227,
+    text: "Newsletter n°5",
+    textDate: "2022-06-15",
+    textCount: 160,
+    bend: -20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-10-26"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-10-26"),
+    endCount: 261,
+    text: "Newsletter n°6",
+    textDate: "2022-10-26",
+    textCount: 295,
+    bend: -20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-11-30"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-11-30"),
+    endCount: 282,
+    text: "Newsletter n°7",
+    textDate: "2022-11-30",
+    textCount: 230,
+    bend: -20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-04-22"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-04-22"),
+    endCount: 188,
+    text: "OpenHour n°1",
+    textDate: "2022-04-22",
+    textCount: 240,
+    bend: -20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-06-03"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-06-03"),
+    endCount: 220,
+    text: "OpenHour n°2",
+    textDate: "2022-06-03",
+    textCount: 270,
+    bend: -20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-09-13"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-09-13"),
+    endCount: 232,
+    text: "Nouvelle version du site web",
+    textDate: "2022-09-13",
+    textCount: 150
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-09-30"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-09-30"),
+    endCount: 245,
+    text: "Premier post de blog",
+    textDate: "2022-09-30",
+    textCount: 205,
+    bend: 20
+  },
+  {
+    date: d3.utcParse("%Y-%m-%d")("2022-11-16"),
+    endDate: d3.utcParse("%Y-%m-%d")("2022-11-16"),
+    endCount: 275,
+    text: `Présentation observable\npar Nicolas Lambert`,
+    textDate: "2022-09-13",
+    textCount: 150,
+    bend: 20
+  },
+]
+```
+
+# Composition du réseau
+
+Composition de la liste de diffusion mail
+
+
+
+```{ojs}
+//| eval: false
+addTooltips(
+    Plot.plot({
+    y: {
+        label: "↑ Count",
+    },
+    marks: [
+        Plot.areaY(
+            serie_contacts_domain,
+            {x: "date", y: "mail", fill: "domain",
+            z: "domain",
+            title: "domain",
+            order: "max",
+            reverse: true,
+            stroke: "#ddd"
+            }), // implicit stacking
+        Plot.ruleY([0])
+    ],
+    style: {
+        pointerEvents: "all"
+    },
+    color: {
+      legend: true,
+      columns: "110px",
+      width: 640,
+      type: "categorical"
+    }    
+    })
+)
+```
+
+```{ojs}
+//| eval: true
+configuredClient = {
+  const client = await DuckDBClient.of();
+  await client.sql`
+    SET s3_endpoint='minio.lab.sspcloud.fr'
+  `;
+  return client;
+}
+url_latest = 's3://lgaliana/ssphub/files/retrospective2022-observable/list_contacts_latest.parquet'
+url_latest2 = 's3://lgaliana/ssphub/files/retrospective2022-observable/series_nombre_contact.parquet'
+db = {
+  await configuredClient.query(`
+    CREATE VIEW latest AS 
+    SELECT * FROM read_parquet('${url_latest}') ;
+  `);
+  await configuredClient.query(`
+    CREATE VIEW serie AS 
+    SELECT * FROM read_parquet('${url_latest2}') ;
+  `);
+  return configuredClient
+}
+
+//db = DuckDBClient.of({
+//  latest: await FileAttachment("list_contacts_latest.csv").csv({typed: true}),
+//  serie: await FileAttachment("series_nombre_contact.csv").csv({typed: true})
+//})
+```
+
+```{ojs}
+//| eval: false
+SummaryTable(serie_contacts_domain)
+```
+
+```{ojs}
+//| eval: true
+serie_contacts = db.sql`
+SELECT date, CAST(SUM(mail) AS int) AS mail
+FROM serie
+GROUP BY date
+`
+serie_contacts_domain = db.sql`
+SELECT date, domain, CAST(mail AS int) AS mail
+FROM serie
+`
+
+//viewof tt3 = Inputs.table(serie_contacts_domain)
+//SummaryTable(serie_contacts_domain)
+```
+
+
+```{ojs}
+//import {Plot} from "@mkfreeman/plot-tooltip"
+import {addTooltips} from "@mkfreeman/plot-tooltip"
+import {SummaryTable} from "@observablehq/summary-table"
+import {Treemap} from "@d3/treemap"
+import { style as faStyle, fa, fas } from "@airbornemint/fontawesome"
+faStyle({regular: true, solid: true, brands: true})
+Plot = require('@observablehq/plot@0.6.1/dist/plot.umd.min.js')
+```
+
+
+```{ojs}
+//| echo: false
+
+// Borrowed to https://observablehq.com/@observablehq/whats-different-timeseries-forecast-performance?collection=@observablehq/analyzing-time-series-data
+colors = new Map([
+  ["Infolettre", "#6886bb"], 
+  ["Event", "#a2a5ba"]
+])
+```
+
+
+```{ojs}
+pie = (data, { value, ...options }) => {
+  const cs = d3.cumsum(data, (d) => d[value]);
+  const r = 360 / cs[cs.length - 1];
+  for (let i = 0; i < cs.length; ++i) cs[i] *= r;
+  for (const d of data)
+    return Plot.geo(
+      {
+        type: "GeometryCollection",
+        geometries: data.map((d, i) => {
+          const a = -(cs[i - 1] || 0);
+          const b = -cs[i];
+          return {
+            type: "Polygon",
+            ...d,
+            coordinates: [
+              [
+                [0, 90],
+                [a, 0],
+                [(2 * a + b) / 3, 0], // add intermediate points for sectors larger than a half-circle
+                [(a + 2 * b) / 3, 0],
+                [b, 0],
+                [0, 90]
+              ]
+            ]
+          };
+        })
+      },
+      { ...options }
+    );
+}
+```
+
+
+```{ojs}
+//addTooltips(
+    Treemap(stats_all, {
+    value: d => d?.count, // size of each node (file); null for internal nodes (folders)
+    path: d => d.domain + "/" + d.source, // e.g., "flare/animate/Easing"
+    group: d => d.domain, // e.g., "animate" in "flare.animate.Easing"; for color
+    label: d => `${d.domain}\n${d.source}\n${d.count.toLocaleString()}`,
+    //title: d => `${d.domain}\n${d.count.toLocaleString()}\n`, // text to show on 
+    title: d => `${d.domain}\n${d.source}\n${d.count} \n(${(d.count / d3.sum(stats_all.filter(t => t.domain == d.domain), d => d.count)).toLocaleString(undefined, {style: "percent"})} des inscrits ${d.domain})`,
+    width: 1152,
+    height: 1152,
+    tile: d3.treemapSquarify,
+    colors: ["#5a5758", "#9cb5b8", "forestgreen", "#e8d630", "gold", "#2d378c", "brown", "lavender"].concat(colors_autres_ssp).concat(colors_hors_ssp), // array of colors
+    zDomain: ssp.concat(autres_ssp).concat(hors_ssp), // array of values for the color scale
+    stroke: d => d.domain
+    })//,
+    //{ fill: "gray", opacity: 0.5, "stroke-width": "3px", stroke: "red" }    
+//)
+```
+
+
+```{ojs}
+//| echo: false
+//| eval: false
+chart2 = Treemap(subset, {
+  value: d => d?.mail, // size of each node (file); null for internal nodes (folders)
+  path: d => d.domain + "/" + d.source, // e.g., "flare/animate/Easing"
+  group: d => d.domain, // e.g., "animate" in "flare.animate.Easing"; for color
+  label: d => d.domain + "\n",
+  title: d => `${d.domain}\n${d.mail.toLocaleString()}`, // text to show on hover
+  width: 1152,
+  height: 1152
+})
+```
+
+
+```{ojs}
+html`<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+</style>`
+```
+
+
+```{ojs}
+import {disposal} from "@mbostock/disposal"
+function Scrubber(
+  values,
+  {
+    format = value => value,
+    initial = 0,
+    delay = null,
+    autoplay = true,
+    loop = true,
+    alternate = false,
+    width = 500
+  } = {}
+) {
+  values = Array.from(values);
+  const form = html`<form style="font: 12px var(--sans-serif); font-variant-numeric: tabular-nums; display: flex; height: 33px; align-items: center;">
+  <button name=b type=button style="margin-right: 0.4em; width: 5em;"></button>
+  <label style="display: flex; align-items: center;">
+    <input name=i type=range min=0 max=${values.length -
+      1} value=${initial} step=1 class="slider" style="width: ${width}px;">
+    <output name=o style="margin-left: 0.4em;"></output>
+  </label>
+</form>`;
+  let timer = null;
+  let direction = 1;
+  function start() {
+    form.b.textContent = "Pause";
+    timer =
+      delay === null ? requestAnimationFrame(tick) : setInterval(tick, delay);
+  }
+
+  function stop() {
+    form.b.textContent = "Play";
+    if (delay === null) cancelAnimationFrame(timer);
+    else clearInterval(timer);
+    timer = null;
+  }
+  function tick() {
+    if (delay === null) timer = requestAnimationFrame(tick);
+    if (
+      form.i.valueAsNumber ===
+      (direction > 0 ? values.length - 1 : direction < 0 ? 0 : NaN)
+    ) {
+      if (!loop) return stop();
+      if (alternate) direction = -direction;
+    }
+    form.i.valueAsNumber =
+      (form.i.valueAsNumber + direction + values.length) % values.length;
+    form.i.dispatchEvent(new CustomEvent("input", { bubbles: true }));
+  }
+  form.i.oninput = event => {
+    if (event && event.isTrusted && timer) form.b.onclick();
+    form.value = values[form.i.valueAsNumber];
+    form.o.value = format(form.value, form.i.valueAsNumber, values);
+  };
+  form.b.onclick = () => {
+    if (timer) return stop();
+    direction =
+      alternate && form.i.valueAsNumber === values.length - 1 ? -1 : 1;
+    form.i.valueAsNumber = (form.i.valueAsNumber + direction) % values.length;
+    form.i.dispatchEvent(new CustomEvent("input", { bubbles: true }));
+    start();
+  };
+  form.i.oninput();
+  if (autoplay) start();
+  else stop();
+  disposal(form).then(stop);
+  return form;
+}
+```
