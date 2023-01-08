@@ -55,18 +55,18 @@ Les principaux ingrédients ici utilisés sont `Observable`, `Quarto` et `DuckDB
 sont stockées sur le système de stockage `S3` du `SSPCloud`.
 
 
-<div id="observablehq-evolution-bc310100"></div>
+<div id="observablehq-evolution-bbfd8ffe"></div>
+
+<div id="observablehq-grid-bbfd8ffe"></div>
 
 
-
-<div id="observablehq-viewof-input_date-bc310100"; style="background-color: white !important; color: black;"></div>
-<div id="observablehq-grid-bc310100"></div>
-
-<div id="observablehq-repartition-bc310100"></div>
-
+<iframe width="100%" height="529" frameborder="0"
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=repartition"></iframe>
 
 <div id="observablehq-treemap_network-81108356"></div>
 
+<iframe width="100%" height="967" frameborder="0"
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=containeur_github"></iframe>
 
 
 <style media="screen">
@@ -132,17 +132,16 @@ sont stockées sur le système de stockage `S3` du `SSPCloud`.
 }  
 </style>
 
+
+
+
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
 import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "evolution") return new Inspector(document.querySelector("#observablehq-evolution-bc310100"));
-  if (name === "viewof input_date") return new Inspector(document.querySelector("#observablehq-viewof-input_date-bc310100"));
-  if (name === "grid") return new Inspector(document.querySelector("#observablehq-grid-bc310100"));
-  if (name === "repartition") return new Inspector(document.querySelector("#observablehq-repartition-bc310100"));
-  if (name === "treemap_network") return new Inspector(document.querySelector("#observablehq-treemap_network-81108356"));
-  return ["plt1","subset","plt2","plt3","array2"].includes(name);
+  if (name === "evolution") return new Inspector(document.querySelector("#observablehq-evolution-bbfd8ffe"));
+  if (name === "grid") return new Inspector(document.querySelector("#observablehq-grid-bbfd8ffe"));
 });
 </script>
-
