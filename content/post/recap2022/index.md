@@ -64,8 +64,16 @@ sont stockées sur le système de stockage `S3` du `SSPCloud`.
 
 <div id="observablehq-repartition-bc310100"></div>
 
+
+<div id="observablehq-treemap_network-81108356"></div>
+
+
+
 <style media="screen">
 
+  #observablehq-treemap_network-81108356 .has-title {
+    fill: black;
+  }
 
   .slidecontainer {
     width: 100%;
@@ -133,6 +141,8 @@ new Runtime().module(define, name => {
   if (name === "viewof input_date") return new Inspector(document.querySelector("#observablehq-viewof-input_date-bc310100"));
   if (name === "grid") return new Inspector(document.querySelector("#observablehq-grid-bc310100"));
   if (name === "repartition") return new Inspector(document.querySelector("#observablehq-repartition-bc310100"));
+  if (name === "treemap_network") return new Inspector(document.querySelector("#observablehq-treemap_network-81108356"));
   return ["plt1","subset","plt2","plt3","array2"].includes(name);
 });
 </script>
+
