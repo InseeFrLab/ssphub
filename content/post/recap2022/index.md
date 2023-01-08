@@ -1,17 +1,9 @@
 ---
-title: L'année 2022 dans le monde de la data science
-subtitle: Rétrospective d'une année riche
+title: Rétrospective de l'année du réseau
+subtitle: Une rétrospective interactive
 toc: true
 summary: |
-  La _data science_ a beaucoup fait parler d'elle en 2022,
-  notamment du fait des deux coups
-  médiatiques d'[openAI](https://openai.com/), à savoir [`Dall-E`](https://openai.com/dall-e-2/)
-  et [`chatGPT`](https://openai.com/blog/chatgpt/),
-  qui ont créé un réel engouement au delà de la sphère
-  des praticiens de la donnée. Cet article 
-  ouvre une série de _post_ rétrospectifs sur l'année 2022
-  pour faire un bilan de l'actualité de la _data science_
-  et du réseau. 
+  TO BE COMPLETED
 # Link this post with a project
 projects: []
 
@@ -65,15 +57,15 @@ sont stockées sur le système de stockage `S3` du `SSPCloud`.
 
 <div id="observablehq-evolution-bc310100"></div>
 
-eee
+
+
 <div id="observablehq-viewof-input_date-bc310100"; style="background-color: white !important; color: black;"></div>
 <div id="observablehq-grid-bc310100"></div>
-
-eeee
 
 <div id="observablehq-repartition-bc310100"></div>
 
 <style media="screen">
+
 
   .slidecontainer {
     width: 100%;
