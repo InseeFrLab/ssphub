@@ -62,45 +62,85 @@ dans la [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retros
 Les principaux ingrédients ici utilisés sont `Observable`, `Quarto` et `DuckDB`. Les données
 sont stockées sur le système de stockage `S3` du `SSPCloud`.
 
-<div>
-  <div id="evolution_reseau"></div>
-</div>
 
+<div id="observablehq-evolution-bc310100"></div>
 
+eee
+<div id="observablehq-viewof-input_date-bc310100"; style="background-color: white !important; color: black;"></div>
+<div id="observablehq-grid-bc310100"></div>
+
+eeee
+
+<div id="observablehq-repartition-bc310100"></div>
+
+<style media="screen">
+
+  .slidecontainer {
+    width: 100%;
+  }
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+
+  .slider:hover {
+    opacity: 1;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  svg {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  figure figcaption {
+    /* text-align: center; */
+    text-align: left;
+  }
+.fullwidth {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}  
+</style>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-      import notebook from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network@177.js?v=3";
-
-      function render(_node, value) {
-        if (!(value instanceof Element)) {
-          const el = document.createElement("span");
-          el.innerHTML = value;
-          value = el;
-        }
-        if (_node.firstChild !== value) {
-          if (_node.firstChild) {
-            while (_node.lastChild !== _node.firstChild) _node.removeChild(_node.lastChild);
-            _node.replaceChild(value, _node.firstChild);
-          } else {
-            _node.appendChild(value);
-          }
-        }
-      }
-      
-      const renders = {
-      	//"viewof season": "#viewof-season",
-        "evolution_reseau": "#evolution_reseau",
-      }
-
-      
-      const runtime = new Runtime();
-      const main = runtime.module(notebook, name => {
-        const selector = renders[name];
-        if (selector) {
-          return {fulfilled: (value) => render(document.querySelector(selector), value)}
-        } else {
-          return true;
-        }
-      });
-      
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "evolution") return new Inspector(document.querySelector("#observablehq-evolution-bc310100"));
+  if (name === "viewof input_date") return new Inspector(document.querySelector("#observablehq-viewof-input_date-bc310100"));
+  if (name === "grid") return new Inspector(document.querySelector("#observablehq-grid-bc310100"));
+  if (name === "repartition") return new Inspector(document.querySelector("#observablehq-repartition-bc310100"));
+  return ["plt1","subset","plt2","plt3","array2"].includes(name);
+});
 </script>
