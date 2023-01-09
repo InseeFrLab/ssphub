@@ -52,6 +52,8 @@ les réseaux sociaux pour synthétiser l'activité de leurs utilisateurs.
 Cette *newsletter* un peu spéciale propose un retour sur la première année du réseau des
 data scientists de la statistique publique qui existe
 de manière informelle depuis mars et de manière officielle depuis septembre. 
+Vous pourrez retrouver à la fin de la _newsletter_ des informations plus classiques:
+événements, retour sur les actions du réseau, formations, etc. 
 
 Elle permet aussi d'illustrer le potentiel d'outils qui ont été présentés
 dans la [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/).
@@ -225,6 +227,15 @@ Tous ces projets sont ouverts et disponible sur `Github`:
 <iframe width="100%" height="967" frameborder="0"
   src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@576?cells=containeur_github"></iframe>
 
+
+
+# Autres actualités du réseau
+
+TO BE COMPLETED
+
+- hackathon ONU: première place
+- formation de formateurs git+BP
+- événement gridviz
 
 <style media="screen">
 
