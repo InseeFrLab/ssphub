@@ -148,7 +148,7 @@ Si les ressources nécessaires à entraîner en 2018 le modèle BERT (110 millio
 avaient déjà [été critiquées](https://arxiv.org/abs/1906.02243) en raison
 de leur coût financier et environnemental, cette complexité
 a encore augmenté depuis. Le modèle `GPT-3`, sorti en 2020, et qui sert de base à
-`Dall-E` et `ChatGPT` intègre 175 millions de paramètres. Un chiffre qui apparaît minime
+`Dall-E` et `ChatGPT` intègre 175 milliards de paramètres. Un chiffre qui apparaît minime
 par rapport aux 17O trillions de paramètres attendus pour le modèle `GPT-4` en 2023.
 
 En ce qui concerne les IA créatrices de contenu visuel, 
