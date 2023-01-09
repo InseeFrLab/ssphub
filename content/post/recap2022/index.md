@@ -61,9 +61,66 @@ sont stockées sur le système de stockage `S3` du `SSPCloud`.
 
 
 <div class="alert alert-info" role="alert">
-<h3 class="alert-heading"><i class="fa-solid fa-comment"></i> Note</h3>
+<h3 class="alert-heading"><i class="fa-solid fa-comment"></i> Making-of</h3>
 
-Les 
+Ce _notebook_ utilise certaines les fonctionalités d'`Observable`
+pour proposer des visualisations interactives de manière efficace. 
+
+{{< spoiler text="Si vous êtes intéressés par le _making-of_ de cette page _web_, cliquez sur le menu déroulant (partie plus technique)" >}}
+
+`Observable` est à la fois un langage visant à simplifier l'usage de 
+`JavaScript` pour mettre en oeuvre des visualisations interactives
+et une [plateforme](https://observablehq.com/@linogaliana) permettant
+de simplifier la mise à disposition
+de ces visualisations sous une forme de _notebook_. 
+
+Les statistiques de comptage sont enregistrées sous format `Parquet` sur le système
+de stockage `S3` du `SSPCloud`. L'intégration native de `DuckDB`
+à `Observable` permet au navigateur _web_
+de lire et d'effectuer des manipulations de données à travers des requêtes
+SQL de manière très efficace. Sur ce sujet, outre
+la [documentation officielle d'`Observable`](https://observablehq.com/@observablehq/duckdb),
+je recommande vivement
+le [tutoriel d'Eric Mauvière](https://observablehq.com/@ericmauviere/duckdb-redonne-nouvelle-vie-sql). 
+
+La librairie [`Plot`](https://observablehq.com/@observablehq/plot) propose de nombreuses fonctionalités
+utiles pour construire des visualisations interactives. Sa logique est assez proche de celle
+des _frameworks_ [`ggplot2` en `R`](https://observablehq.com/@observablehq/plot-from-ggplot2)
+ou [`matplotlib` en `Python`](https://observablehq.com/@observablehq/plot-overview-for-matplotlib-users). 
+Lorsque la librairie `Plot` n'est plus suffisante, comme pour le _treemap_ sur cette page, 
+le _framework_ `d3.js` est utile. 
+
+L'intégration de figures construites à partir du langage `Observable` peut être faite de plusieurs 
+manières:
+
+- Utiliser [`Quarto`](https://quarto.org/docs/interactive/ojs/) qui permet de créer une page _web_ 
+statique autosuffisante à partir d'une suite d'instructions dans des blocs `{ojs}`. Cette méthode est
+très intéressante pour l'intégration de figures `JavaScript` dans des sites _web_ complets générés de
+manière automatique. Bien qu'initialement envisagée, cette méthode ne fait pas encore bon ménage
+avec [`Hugo`](https://gohugo.io/) qui n'attend pas des `Quarto Markdown` mais des `Markdown` classiques
+- Utiliser la plateforme [`observablehq`](https://observablehq.com/@linogaliana) pour créer un _notebook_
+proposant le code à l'origine des visualisations puis intégrer ces dernières par le biais d'`<iframe>`
+ou de l'intégration via `Runtime JS`. Cela permet d'avoir ces visualisations sur une page statique sans
+stocker au même endroit le code ayant permis de les générer et permettant de les reproduire, qui
+n'intéresse pas nécessairement le même public. 
+
+La deuxième approche, celle de l'intégration depuis un _notebook_ `observable` a été choisie. 
+Ce _notebook_ est
+disponible sur [la plateforme](https://observablehq.com/@linogaliana/2022-year-recap-data-scientists-network)
+pour les utilisateurs intéressés par la réutilisation des figures, des données sous-jacentes ou
+des utilitaires ayant permis d'aboutir à certaines visualisations. 
+Le code source de cette page, disponible
+sur le [`Github inseefrlab/ssphub`](https://github.com/InseeFrLab/ssphub/blob/ojs/content/post/recap2022/index.md)
+illustre la manière dont les figures peuvent être intégrées à un site _web_ depuis la
+plateforme [`observablehq`](https://observablehq.com/). Bien que j'ai privilégié la
+méthode `Runtime JS`, qui permet d'intégrer la visualisation sans le 
+bandeau `Observable` sous la figure, pour certaines d'entre elles, j'ai dû 
+utiliser la méthode `<iframe>` du fait de certaines limitations dans l'héritage de règles CSS
+aux `svg` générés par `Plot` qui affectaient la colorisation et donc la lecture de certaines figures. 
+
+
+{{< /spoiler >}}
+
 
 </div>
 
@@ -104,12 +161,12 @@ Environ __55%__ des membres de la liste de diffusion (soit plus de 180 personnes
 sont également inscrits sur le canal de discussion instantanée.
 
 <iframe width="100%" height="529" frameborder="0"
-  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=repartition"></iframe>
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@576?cells=repartition"></iframe>
 
 # Composition du réseau
 
 La diffusion d'informations par le
-réseau a permis de réunir des _data scientists_ de 27 organisations différentes.
+réseau a permis de réunir des _data scientists_ de __27 organisations différentes__.
 L'[Insee](https://www.insee.fr/fr/accueil), qui représente 47% de l'effectif
 du réseau, est majoritaire. Suivent dans le palmarès, les services statistiques
 du [Ministère de la Santé (DREES)](https://drees.solidarites-sante.gouv.fr/)
@@ -141,14 +198,32 @@ Les membres du réseau des _data scientists_ ont été particulièrement
 actifs dans le cadre du __[programme interministériel 10%](https://10pourcent.etalab.studio/)__,
 issu des recommandations d'un [rapport INSEE-DINUM d'"Évaluation des besoins de l’État en compétences et expertises en matière de donnée"](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf). 
 La saison 1 a donné sa chance à __quatre projets__, portés par différentes administrations. 
-Tous ces projets sont ouverts et disponible sur `Github`[^2]:
+Tous ces projets sont ouverts et disponible sur `Github`:
 
 <details>
-<summary>_Si les figures ne s'affichent pas, dérouler pour afficher une version non réactive_</summary>
+<summary>Si les figures ne s'affichent pas, dérouler pour afficher une version non réactive</summary>
+
+
+<div>Projet <code>cartiflette</code></div>
+
+<img src = "cartiflette.svg" alt="Projet cartiflette"/>
+
+<div>Projet <code>Socratext</code></div>
+
+<img src = "Socratext.svg" alt="Projet Socratext"/>
+
+<div>Projet <code>gouvdown</code></div>
+
+<img src = "gouvdown.svg" alt="Projet gouvdown"/>
+
+<div>Projet <code>matchSIRET</code></div>
+
+<img src = "matchSIRET.svg" alt="Projet matchSIRET"/>
+
 </details>
 
 <iframe width="100%" height="967" frameborder="0"
-  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=containeur_github"></iframe>
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@576?cells=containeur_github"></iframe>
 
 
 <style media="screen">
@@ -221,7 +296,7 @@ Tous ces projets sont ouverts et disponible sur `Github`[^2]:
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network.js?v=3";
+import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network@576.js?v=3";
 new Runtime().module(define, name => {
   if (name === "evolution") return new Inspector(document.querySelector("#observablehq-evolution-bbfd8ffe"));
   if (name === "treemap_network") return new Inspector(document.querySelector("#observablehq-treemap_network-81108356"));

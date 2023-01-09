@@ -1,7 +1,14 @@
+details p, details li {
+  margin-left: 0.3rem;
+  padding-left: 0.5rem;
+  border-left: none !important;
+  font-size: 0.9rem;
+}
+
+
 /*-------------------
     CUSTOM BOXES
 --------------------*/
-
 
 .alert.alert-info,
 .alert.alert-success,
