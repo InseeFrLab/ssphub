@@ -97,19 +97,55 @@ idéale pour une autre rétrospective quantitative.
 
 # Répartition des modes d'accès au réseau
 
+Le réseau propose __deux canaux de diffusion__ de l'information: une liste
+de diffusion par mail et un canal de discussion instantanée qui utilise 
+la messagerie sécurisée de l'Etat [`Tchap`](https://www.tchap.gouv.fr/).
+Environ __55%__ des membres de la liste de diffusion (soit plus de 180 personnes) 
+sont également inscrits sur le canal de discussion instantanée.
+
 <iframe width="100%" height="529" frameborder="0"
   src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=repartition"></iframe>
 
 # Composition du réseau
 
+La diffusion d'informations par le
+réseau a permis de réunir des _data scientists_ de 27 organisations différentes.
+L'[Insee](https://www.insee.fr/fr/accueil), qui représente 47% de l'effectif
+du réseau, est majoritaire. Suivent dans le palmarès, les services statistiques
+du [Ministère de la Santé (DREES)](https://drees.solidarites-sante.gouv.fr/)
+et du [Ministère du Développement Durable (SDES)](https://www.statistiques.developpement-durable.gouv.fr/). 
+
 <div id="observablehq-treemap_network-81108356"></div>
 
 # Évolution de la composition du réseau
+
+La diffusion progressive d'informations par le biais des _newsletters_ 
+a permis de diversifier progressivement la composition de la liste de 
+diffusion. Alors que la première _newsletter_ de l'année 2022 
+avait été diffusée auprès de
+14 institutions, ce sont des agents de 27 organisations qui ont reçues 
+la dernière.  
+
+Les événements organisés par le réseau ou les
+présentations spéciales, comme celle pour
+les [administrateurs de l'INSEE en poste à l'ENSAE](https://prez-nouveaux-admin-ssphub-20221125.netlify.app/#/title-slide), 
+ont également pu motiver des
+personnes à intégrer le réseau. 
 
 <div id="observablehq-grid-bbfd8ffe"></div>
 
 
 # Programme 10%
+
+Les membres du réseau des _data scientists_ ont été particulièrement
+actifs dans le cadre du __[programme interministériel 10%](https://10pourcent.etalab.studio/)__,
+issu des recommandations d'un [rapport INSEE-DINUM d'"Évaluation des besoins de l’État en compétences et expertises en matière de donnée"](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf). 
+La saison 1 a donné sa chance à __quatre projets__, portés par différentes administrations. 
+Tous ces projets sont ouverts et disponible sur `Github`[^2]:
+
+<details>
+<summary>_Si les figures ne s'affichent pas, dérouler pour afficher une version non réactive_</summary>
+</details>
 
 <iframe width="100%" height="967" frameborder="0"
   src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=containeur_github"></iframe>
@@ -188,6 +224,7 @@ import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/run
 import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network.js?v=3";
 new Runtime().module(define, name => {
   if (name === "evolution") return new Inspector(document.querySelector("#observablehq-evolution-bbfd8ffe"));
+  if (name === "treemap_network") return new Inspector(document.querySelector("#observablehq-treemap_network-81108356"));
   if (name === "grid") return new Inspector(document.querySelector("#observablehq-grid-bbfd8ffe"));
 });
 </script>
