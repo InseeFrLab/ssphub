@@ -231,11 +231,35 @@ Tous ces projets sont ouverts et disponible sur `Github`:
 
 # Autres actualités du réseau
 
-TO BE COMPLETED
+## Première place européenne au hackathon de l'ONU
 
-- hackathon ONU: première place
+Les résultats du _hackathon big data_ de l'ONU, ayant eu lieu du 7 au Novembre 2022, ont été annoncés ! 
+L'équipe `datadive`, constituée de membres du réseau de l'INSEE, de la DGFIP et du CASD,
+est arrivée à la [première place des équipes européennes](https://unstats.un.org/bigdata/events/2022/hackathon/winners-bde.cshtml).
+
+## Présentation de `Gridviz` par Julien Gaffuri
+
+Pour rappel, le __20 Janvier 2023 de 11h à 12h30__
+Julien Gaffuri (Eurostat) viendra nous présenter la librairie open-source [`Gridviz`](https://eurostat.github.io/gridviz/).
+Réservez ce créneau pour découvrir cette librairie qui ouvre de nouvelles perspectives pour la mise à disposition de données carroyées !
+
+
+<figure>
+    <img src="gridviz.png"
+         alt="Illustration d'un modèle de diffusion">
+    <figcaption><i>Source: <a href="https://observablehq.com/@neocartocnrs/hello-gridviz" target="_blank">Notebook <code>Hello Gridviz</code> par <code>neocarto</code> sur <code>Observable</code></a></i></figcaption>
+</figure>
+
+
+
+
+
+
+
+## `Git` et bonnes pratiques: des formations de formateurs prévus pour les statisticiens publics
+
 - formation de formateurs git+BP
-- événement gridviz
+
 
 <style media="screen">
 
