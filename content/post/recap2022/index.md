@@ -203,8 +203,7 @@ La saison 1 a donné sa chance à __quatre projets__, portés par différentes a
 Si l'un d'eux existait déjà depuis plus de
 deux ans (projet [`gouvdown`](https://github.com/spyrales/gouvdown)), trois sont nés pour l'occasion.  
 
-Tous les projets sont ouverts et disponible sur `Github`.
-Une statistique qui permet de représenter
+Tous les projets sont ouverts et disponible sur `Github`. Une statistique qui permet de représenter
 leur succès est le nombre de ⭐: c'est un peu un mélange entre un site en favori sous `Firefox` puisque cela
 permet de facilement
 retrouver un projet dans `Github` et le nombre de _followers_ d'une page sur `Facebook` ou
@@ -248,12 +247,12 @@ Réservez ce créneau pour découvrir cette librairie qui ouvre de nouvelles per
 
 <figure>
     <img src="gridviz.png"
-         alt="Illustration de gridviz">
+         alt="Illustration de gridviz" width="70%">
     <figcaption><i>Source: <a href="https://observablehq.com/@neocartocnrs/hello-gridviz" target="_blank">Notebook <code>Hello Gridviz</code> par <code>neocarto</code> sur <code>Observable</code></a></i></figcaption>
 </figure>
 
 
-## Première place européenne au hackathon de l'ONU
+## Première place européenne au hackathon Big Data de l'ONU
 
 Les résultats du _hackathon big data_ de l'ONU, ayant eu lieu du 7 au Novembre 2022, ont été annoncés ! 
 L'équipe `datadive` - constituée de membres du réseau de l'INSEE, de la DGFIP et du CASD -
@@ -265,25 +264,30 @@ est arrivée à la [première place des équipes européennes](https://unstats.u
 Les nouvelles formations à `Git` et aux bonnes pratiques avec `R`, testées récemment à l'Insee et 
 au service statistique du Ministère du Travail, la DARES,
 (voir _newsletters_ de [Novembre](/uploads/infolettre_6.pdf) et [Décembre]((/uploads/infolettre_7.pdf))),
-devraient devenir des formations nationales. Pour pouvoir faire tache d'huile et améliorer
+deviennent des formations nationales.
+
+Pour pouvoir faire tache d'huile et améliorer
 la qualité et la diffusion des projets statistiques impliquant du code, 
 il est nécessaire d'avoir le plus d'enseignants possibles pour cette formation. Pour permettre
-cela, un appel à candidat pour une formation de formateurs a été diffusée à l'Insee et dans les services
+cela, un appel à candidat pour une __formation de formateurs__ a été diffusée à l'Insee et dans les services
 statistiques ministériels. Si vous êtes intéressés et ne l'avez pas reçu, n'hésitez pas à envoyer
 un mail à ssphub-contact@insee.fr
 
 En attendant,
-les supports de ces formations sont déjà disponibles sur internet, sur [inseefrlab.github.io/formation-bonnes-pratiques-git/](https://inseefrlab.github.io/formation-bonnes-pratiques-git/#/title-slide) et sur [inseefrlab.github.io/formation-bonnes-pratiques-R/](https://inseefrlab.github.io/formation-bonnes-pratiques-R/#/title-slide). Les codes sources sont bien-sûr ouverts et disponibles sur `Github`, tant pour
-la [première partie](https://github.com/InseeFrLab/formation-bonnes-pratiques-git) que pour [la seconde](https://github.com/InseeFrLab/formation-bonnes-pratiques-R). Ceux-ci sont construits collectivement, n'hésitez pas à suggérer des modifications depuis `Github`.
+les supports de ces formations sont déjà disponibles
+sur [inseefrlab.github.io/formation-bonnes-pratiques-git/](https://inseefrlab.github.io/formation-bonnes-pratiques-git/#/title-slide)
+et sur [inseefrlab.github.io/formation-bonnes-pratiques-R/](https://inseefrlab.github.io/formation-bonnes-pratiques-R/#/title-slide). Les
+codes sources sont bien-sûr ouverts et disponibles sur `Github`, tant pour
+la [première partie](https://github.com/InseeFrLab/formation-bonnes-pratiques-git)
+que pour [la seconde](https://github.com/InseeFrLab/formation-bonnes-pratiques-R). Ceux-ci
+sont construits collectivement, n'hésitez pas à suggérer des modifications depuis `Github`.
+
 Un site web plus complet devrait prochainement voir le jour pour accompagner cette formation.
 En complément de celui-ci, des éléments peuvent déjà
 être trouvés dans le cours de 3e année de l'ENSAE sur
 la [mise en production de projets _data science_](https://ensae-reproductibilite.netlify.app/) et dans
 la documentation collaborative [`utilitR`](https://www.utilitr.org/).
 
-
-
-## Masterclass `datascientest`
 
 
 
