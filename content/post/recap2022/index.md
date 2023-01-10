@@ -254,8 +254,26 @@ est arrivée à la [première place des équipes européennes](https://unstats.u
 
 ## `Git` et bonnes pratiques: des formations de formateurs prévus pour les statisticiens publics
 
-Les nouvelles formations à `Git` et aux bonnes pratiques, testées récemment à l'Insee
-(voir _newsletters_ de [Novembre](/uploads/infolettre_6.pdf) et [Novembre]())
+Les nouvelles formations à `Git` et aux bonnes pratiques avec `R`, testées récemment à l'Insee et 
+au service statistique du Ministère du Travail, la DARES,
+(voir _newsletters_ de [Novembre](/uploads/infolettre_6.pdf) et [Décembre]((/uploads/infolettre_7.pdf))),
+devraient devenir des formations nationales. Pour pouvoir faire tache d'huile et améliorer
+la qualité et la diffusion des projets statistiques impliquant du code, 
+il est nécessaire d'avoir le plus d'enseignants possibles pour cette formation. Pour permettre
+cela, un appel à candidat pour une formation de formateurs a été diffusée à l'Insee et dans les services
+statistiques ministériels. Si vous êtes intéressés et ne l'avez pas reçu, n'hésitez pas à envoyer
+un mail à ssphub-contact@insee.fr
+
+En attendant,
+les supports de ces formations sont déjà disponibles sur internet, sur [inseefrlab.github.io/formation-bonnes-pratiques-git/](https://inseefrlab.github.io/formation-bonnes-pratiques-git/#/title-slide) et sur [inseefrlab.github.io/formation-bonnes-pratiques-R/](https://inseefrlab.github.io/formation-bonnes-pratiques-R/#/title-slide). Les codes sources sont bien-sûr ouverts et disponibles sur `Github`, tant pour
+la [première partie](https://github.com/InseeFrLab/formation-bonnes-pratiques-git) que pour [la seconde](https://github.com/InseeFrLab/formation-bonnes-pratiques-R). Ceux-ci sont construits collectivement, n'hésitez pas à suggérer des modifications depuis `Github`.
+Un site web plus complet devrait prochainement voir le jour pour accompagner cette formation.
+En complément de celui-ci, des éléments peuvent déjà
+être trouvés dans le cours de 3e année de l'ENSAE sur
+la [mise en production de projets _data science_](https://ensae-reproductibilite.netlify.app/) et dans
+la documentation collaborative [`utilitR`](https://www.utilitr.org/).
+
+
 
 ## Masterclass `datascientest`
 
