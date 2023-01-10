@@ -202,7 +202,8 @@ issu des recommandations d'un [rapport INSEE-DINUM d'"Évaluation des besoins de
 La saison 1 a donné sa chance à __quatre projets__, portés par différentes administrations. 
 Si l'un d'eux existait déjà depuis plus de
 deux ans (projet [`gouvdown`](https://github.com/spyrales/gouvdown)), trois sont nés pour l'occasion.  
-Tous ces projets sont ouverts et disponible sur `Github`.
+
+Tous les projets sont ouverts et disponible sur `Github`.
 Une statistique qui permet de représenter
 leur succès est le nombre de ⭐: c'est un peu un mélange entre un site en favori sous `Firefox` puisque cela
 permet de facilement
