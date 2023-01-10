@@ -68,7 +68,7 @@ sont stockées sur le système de stockage `S3` du `SSPCloud`.
 Ce _notebook_ utilise certaines les fonctionalités d'`Observable`
 pour proposer des visualisations interactives de manière efficace. 
 
-{{< spoiler text="Si vous êtes intéressés par le _making-of_ de cette page _web_, cliquez sur le menu déroulant (partie plus technique)" >}}
+{{< spoiler text="Si vous êtes intéressés par le _making-of_ de cette page _web_, cliquez sur le menu déroulant (partie plus technique)." >}}
 
 `Observable` est à la fois un langage visant à simplifier l'usage de 
 `JavaScript` pour mettre en oeuvre des visualisations interactives
@@ -293,8 +293,15 @@ la documentation collaborative [`utilitR`](https://www.utilitr.org/).
 
 <style media="screen">
 
+
+/* Feuille de style intégrée #22 | https://user-lgaliana-481305-user.user.lab.sspcloud.fr/post/recap2022/ */
+
+
   #observablehq-treemap_network-81108356 .has-title {
     fill: black;
+    font-size: 12;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .slidecontainer {
