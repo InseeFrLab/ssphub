@@ -50,8 +50,8 @@ une version plus personnalisée, inspirée des visualisations proposées par
 les réseaux sociaux pour synthétiser l'activité de leurs utilisateurs.
 
 Cette *newsletter* un peu spéciale propose un retour sur la première année du réseau des
-data scientists de la statistique publique qui existe
-de manière informelle depuis mars et de manière officielle depuis septembre. 
+data scientists de la statistique publique dont la préfiguration
+a commencé en mars 2022 et qui a été lancé officiellement en septembre. 
 Vous pourrez retrouver à la fin de la _newsletter_ des informations plus classiques:
 événements, retour sur les actions du réseau, formations, etc. 
 
@@ -200,7 +200,11 @@ Les membres du réseau des _data scientists_ ont été particulièrement
 actifs dans le cadre du __[programme interministériel 10%](https://10pourcent.etalab.studio/)__,
 issu des recommandations d'un [rapport INSEE-DINUM d'"Évaluation des besoins de l’État en compétences et expertises en matière de donnée"](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf). 
 La saison 1 a donné sa chance à __quatre projets__, portés par différentes administrations. 
-Tous ces projets sont ouverts et disponible sur `Github`:
+Si l'un d'eux existait déjà depuis plus de
+deux ans (projet [`gouvdown`](https://github.com/spyrales/gouvdown)), trois sont nés pour l'occasion.  
+Tous ces projets sont ouverts et disponible sur `Github`. Une statistique qui permet de représenter
+leur succès est le nombre de ⭐: c'est un peu comme le nombre de _followers_ d'une page sur `Facebook` ou
+sur `Twitter`. 
 
 <details>
 <summary>Si les figures ne s'affichent pas, dérouler pour afficher une version non réactive</summary>
