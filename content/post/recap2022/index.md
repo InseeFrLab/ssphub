@@ -163,7 +163,7 @@ Environ __55%__ des membres de la liste de diffusion (soit plus de 180 personnes
 sont également inscrits sur le canal de discussion instantanée.
 
 <iframe width="100%" height="529" frameborder="0"
-  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@576?cells=repartition"></iframe>
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@587?cells=repartition"></iframe>
 
 # Composition du réseau
 
@@ -232,7 +232,7 @@ sur `Twitter` puisque cela permet de suivre l'activité d'un dépôt `Github`.
 </details>
 
 <iframe width="100%" height="967" frameborder="0"
-  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@576?cells=containeur_github"></iframe>
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@587?cells=containeur_github"></iframe>
 
 
 
@@ -361,7 +361,7 @@ la documentation collaborative [`utilitR`](https://www.utilitr.org/).
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network@576.js?v=3";
+import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network@587.js?v=3";
 new Runtime().module(define, name => {
   if (name === "evolution") return new Inspector(document.querySelector("#observablehq-evolution-bbfd8ffe"));
   if (name === "treemap_network") return new Inspector(document.querySelector("#observablehq-treemap_network-81108356"));
