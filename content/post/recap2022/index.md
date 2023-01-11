@@ -134,7 +134,7 @@ aux `svg` générés par `Plot` qui affectaient la colorisation et donc la lectu
 
 
 
-# L'année du réseau
+## L'année du réseau
 
 Le réseau comporte deux canaux de communication: une liste de diffusion mail
 et un canal de discussions instantanées.
@@ -160,7 +160,7 @@ le nombre de personnes dans cette liste (340 début janvier). Un retour spécial
 le mois de janvier sera l'occasion
 idéale pour une autre rétrospective quantitative. 
 
-# Répartition des modes d'accès au réseau
+## Répartition des modes d'accès au réseau
 
 Le réseau propose __deux canaux de diffusion__ de l'information: une liste
 de diffusion par mail et un canal de discussion instantanée qui utilise 
@@ -171,7 +171,8 @@ sont également inscrits sur le canal de discussion instantanée.
 <iframe width="100%" height="529" frameborder="0"
   src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=repartition"></iframe>
 
-# Composition du réseau
+
+## Composition du réseau
 
 La diffusion d'informations par le
 réseau a permis de réunir des _data scientists_ de __27 organisations différentes__.
@@ -182,7 +183,7 @@ et du [Ministère du Développement Durable (SDES)](https://www.statistiques.dev
 
 <div id="observablehq-treemap_network-81108356"></div>
 
-# Évolution de la composition du réseau
+## Évolution de la composition du réseau
 
 La diffusion progressive d'informations par le biais des _newsletters_ 
 a permis de diversifier progressivement la composition de la liste de 
@@ -200,11 +201,12 @@ personnes à intégrer le réseau.
 <div id="observablehq-grid-bbfd8ffe"></div>
 
 
-# Programme 10%
+## Programme 10%
 
 Les membres du réseau des _data scientists_ ont été particulièrement
 actifs dans le cadre du __[programme interministériel 10%](https://10pourcent.etalab.studio/)__,
-issu des recommandations d'un [rapport INSEE-DINUM d'"Évaluation des besoins de l’État en compétences et expertises en matière de donnée"](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf). 
+issu des recommandations d'un [rapport INSEE-DINUM "Évaluation des besoins de l’État en compétences et expertises en matière de donnée"](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf). 
+
 La saison 1 a donné sa chance à __quatre projets__, portés par différentes administrations. 
 Si l'un d'eux existait déjà depuis plus de
 deux ans (projet [`gouvdown`](https://github.com/spyrales/gouvdown)), trois sont nés pour l'occasion.  
@@ -242,9 +244,9 @@ sur `Twitter` puisque cela permet de suivre l'activité d'un dépôt `Github`.
 
 
 
-# Autres actualités du réseau
+## Autres actualités du réseau
 
-## Présentation de `Gridviz` par Julien Gaffuri
+### Présentation de `Gridviz` par Julien Gaffuri
 
 Pour rappel, le __20 Janvier 2023 de 11h à 12h30__
 Julien Gaffuri (Eurostat) viendra nous présenter la librairie open-source [`Gridviz`](https://eurostat.github.io/gridviz/).
@@ -258,24 +260,27 @@ Réservez ce créneau pour découvrir cette librairie qui ouvre de nouvelles per
 </figure>
 
 
-## Première place européenne au hackathon Big Data de l'ONU
+### Première place européenne au hackathon Big Data de l'ONU
 
 Les résultats du _hackathon big data_ de l'ONU, ayant eu lieu du 7 au Novembre 2022, ont été annoncés ! 
-L'équipe `datadive` - constituée de membres du réseau de l'INSEE, de la DGFIP et du CASD -
+L'[équipe `Datadive`](https://github.com/InseeFrLab/hackathon-un-2022) - constituée de membres du réseau de l'INSEE, de la DGFIP et du CASD -
 est arrivée à la [première place des équipes européennes](https://unstats.un.org/bigdata/events/2022/hackathon/winners-bde.cshtml) 🎉.
 
 
-## `Git` et bonnes pratiques: des formations de formateurs prévus pour les statisticiens publics
+
+### `Git` et bonnes pratiques: des formations de formateurs prévus pour les statisticiens publics
 
 Les nouvelles formations à `Git` et aux bonnes pratiques avec `R`, testées récemment à l'Insee et 
 au service statistique du Ministère du Travail, la DARES,
 (voir _newsletters_ de [Novembre](/uploads/infolettre_6.pdf) et [Décembre]((/uploads/infolettre_7.pdf))),
 deviennent des formations nationales.
 
-Pour pouvoir faire tache d'huile et améliorer
-la qualité et la diffusion des projets statistiques impliquant du code, 
+Pour pouvoir diffuser les bonnes pratiques favorisant
+le partage de codes et la qualité des
+projets statistiques,
 il est nécessaire d'avoir le plus d'enseignants possibles pour cette formation. Pour permettre
-cela, un appel à candidat pour une __formation de formateurs__ a été diffusée à l'Insee et dans les services
+cela, un appel à candidat pour une __formation de formateurs__ a été diffusée
+à l'Insee et dans les services
 statistiques ministériels. Si vous êtes intéressés et ne l'avez pas reçu, n'hésitez pas à envoyer
 un mail à ssphub-contact@insee.fr
 
