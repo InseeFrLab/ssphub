@@ -265,6 +265,8 @@ Pour rappel, le __20 Janvier 2023 de 11h à 12h30__
 Julien Gaffuri (Eurostat) viendra nous présenter la librairie open-source [`Gridviz`](https://eurostat.github.io/gridviz/).
 Réservez ce créneau pour découvrir cette librairie qui ouvre de nouvelles perspectives pour la mise à disposition de données géographiques !
 
+[Télécharger l'invitation à l'événement sous format `Outlook`](gridviz.ics)
+
 
 <figure>
     <img src="gridviz.png"
@@ -311,7 +313,6 @@ En complément de celui-ci, des éléments peuvent déjà
 être trouvés dans le cours de 3e année de l'ENSAE sur
 la [mise en production de projets _data science_](https://ensae-reproductibilite.netlify.app/) et dans
 la documentation collaborative [`utilitR`](https://www.utilitr.org/).
-
 
 
 
