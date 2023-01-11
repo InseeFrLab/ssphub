@@ -225,7 +225,9 @@ sur `Twitter` puisque cela permet de suivre l'activité d'un dépôt `Github`.
 Cette visualisation fait appel à l'API `Github`. 
 Si les figures ne s'affichent pas, cela peut être dû à un 
 dépassement du nombre de requêtes par heure autorisées
-par l'API `Github` sans jeton. 
+par l'API `Github` sans jeton. A l'heure actuelle, il n'existe pas
+encore de fonctionalité gratuite sous `Observable` pour stocker
+de manière sécurisée un jeton pour l'API `Github`. 
 
 {{< spoiler text="Dérouler pour afficher une version non réactive" >}}
 
