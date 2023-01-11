@@ -13,7 +13,8 @@ summary: |
   pour faire un bilan de l'actualité de la _data science_
   et du réseau. 
 # Link this post with a project
-projects: []
+projects: [dataviz, recap2022]
+
 
 # Date published
 date: '2022-12-31T00:00:00Z'
