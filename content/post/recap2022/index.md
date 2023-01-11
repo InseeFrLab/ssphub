@@ -156,7 +156,8 @@ a réuni près de 50 personnes.
 
 [^1]: Les actions de communication du mois de janvier
 ont permis d'augmenter sensiblement
-le nombre de personnes dans cette liste. Une occasion
+le nombre de personnes dans cette liste (340 début janvier). Un retour spécial sur
+le mois de janvier sera l'occasion
 idéale pour une autre rétrospective quantitative. 
 
 # Répartition des modes d'accès au réseau
