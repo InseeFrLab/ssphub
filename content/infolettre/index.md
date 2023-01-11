@@ -10,7 +10,8 @@ date: "2022-04-11T00:00:00Z"
 Retrouvez sur cette page les infolettres mensuelles
 précédemment envoyées :
 
-- ![Infolettre n°8, Janvier 2023, rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/)
+- [Infolettre n°9, Janvier 2023 (Hors série), rétrospective de l'année 2022 du réseau](https://ssphub.netlify.app/post/recap2022/)
+- [Infolettre n°8, Janvier 2023, rétrospective de l'année 2022 de la data science](https://ssphub.netlify.app/post/retrospective2022/)
 - {{< staticref "uploads/infolettre_7.pdf" "newtab" >}}Infolettre n°7, Décembre 2022{{< /staticref >}}
 - {{< staticref "uploads/infolettre_6.pdf" "newtab" >}}Infolettre n°6, Novembre 2022{{< /staticref >}}
 - {{< staticref "uploads/Infolettre n5.pdf" "newtab" >}}Infolettre n°5, Juin 2022{{< /staticref >}}
