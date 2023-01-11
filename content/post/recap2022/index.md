@@ -4,7 +4,7 @@ subtitle: Une rétrospective interactive
 toc: true
 summary: |
   Après la rétrospective de l'année 2022
-  de la data science, il est temps
+  de la _data science_, il est temps
   de se pencher sur l'année du réseau
   avec des visualisations interactives
   produites grâce à <code>observable</code>
@@ -189,7 +189,7 @@ La diffusion progressive d'informations par le biais des _newsletters_
 a permis de diversifier progressivement la composition de la liste de 
 diffusion. Alors que la première _newsletter_ de l'année 2022 
 avait été diffusée auprès de
-14 institutions, ce sont des agents de 27 organisations qui ont reçues 
+__14 institutions__, ce sont des agents de __27 organisations__ qui ont reçues 
 la dernière.  
 
 Les événements organisés par le réseau ou les
