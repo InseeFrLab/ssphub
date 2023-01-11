@@ -220,7 +220,7 @@ retrouver un projet dans `Github` et le nombre de _followers_ d'une page sur `Fa
 sur `Twitter` puisque cela permet de suivre l'activité d'un dépôt `Github`. 
 
 <details>
-<summary>Si les figures ne s'affichent pas, dérouler pour afficher une version non réactive</summary>
+<summary>Si les figures ne s'affichent pas (dépassement des limites autorisées par l'API `Github`), dérouler pour afficher une version non réactive</summary>
 
 
 <div>Projet <code>cartiflette</code></div>
