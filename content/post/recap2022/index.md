@@ -1,17 +1,21 @@
 ---
-title: Rétrospective de l'année du réseau
+title: Rétrospective 2022 de l'année du réseau
 subtitle: Une rétrospective interactive
 toc: true
 summary: |
-  TO BE COMPLETED
+  Après la rétrospective de l'année 2022
+  de la data science, il est temps
+  de se pencher sur l'année du réseau
+  avec des visualisations interactives
+  produites grâce à <code>observable</code>
 # Link this post with a project
-projects: []
+projects: [dataviz, recap2022]
 
 # Date published
-date: '2022-12-31T00:00:00Z'
+date: '2023-01-10T00:00:00Z'
 
 # Date updated
-lastmod: '2022-12-31T00:00:00Z'
+lastmod: '2023-01-10T00:00:00Z'
 
 # Is this an unpublished draft?
 draft: false
@@ -57,6 +61,7 @@ Vous pourrez retrouver à la fin de la _newsletter_ des informations plus classi
 
 Elle permet aussi d'illustrer le potentiel d'outils qui ont été présentés
 dans la [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/).
+Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. 
 Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la 
 première partie de la rétrospective, sont `Observable`, `Quarto` et `DuckDB`. Les données
 sont stockées sur le système de stockage `S3` du `SSPCloud`.
@@ -163,7 +168,7 @@ Environ __55%__ des membres de la liste de diffusion (soit plus de 180 personnes
 sont également inscrits sur le canal de discussion instantanée.
 
 <iframe width="100%" height="529" frameborder="0"
-  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@601?cells=repartition"></iframe>
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=repartition"></iframe>
 
 # Composition du réseau
 
@@ -232,7 +237,7 @@ sur `Twitter` puisque cela permet de suivre l'activité d'un dépôt `Github`.
 </details>
 
 <iframe width="100%" height="967" frameborder="0"
-  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network@601?cells=containeur_github"></iframe>
+  src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=containeur_github"></iframe>
 
 
 
@@ -242,7 +247,7 @@ sur `Twitter` puisque cela permet de suivre l'activité d'un dépôt `Github`.
 
 Pour rappel, le __20 Janvier 2023 de 11h à 12h30__
 Julien Gaffuri (Eurostat) viendra nous présenter la librairie open-source [`Gridviz`](https://eurostat.github.io/gridviz/).
-Réservez ce créneau pour découvrir cette librairie qui ouvre de nouvelles perspectives pour la mise à disposition de données carroyées !
+Réservez ce créneau pour découvrir cette librairie qui ouvre de nouvelles perspectives pour la mise à disposition de données géographiques !
 
 
 <figure>
@@ -294,12 +299,13 @@ la documentation collaborative [`utilitR`](https://www.utilitr.org/).
 <style media="screen">
 
 
-/* Feuille de style intégrée #22 | https://user-lgaliana-481305-user.user.lab.sspcloud.fr/post/recap2022/ */
+  #observablehq-evolution-bbfd8ffe .has-title {
+    font-size: 18px;
+  }
 
 
   #observablehq-treemap_network-81108356 .has-title {
     fill: black;
-    font-size: 12;
     font-size: 18px;
     font-weight: bold;
   }
@@ -368,7 +374,7 @@ la documentation collaborative [`utilitR`](https://www.utilitr.org/).
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network@601.js?v=3";
+import define from "https://api.observablehq.com/@linogaliana/2022-year-recap-data-scientists-network.js?v=3";
 new Runtime().module(define, name => {
   if (name === "evolution") return new Inspector(document.querySelector("#observablehq-evolution-bbfd8ffe"));
   if (name === "treemap_network") return new Inspector(document.querySelector("#observablehq-treemap_network-81108356"));
