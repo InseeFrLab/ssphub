@@ -77,7 +77,7 @@ pour proposer des visualisations interactives de manière efficace.
 
 `Observable` est à la fois un langage visant à simplifier l'usage de 
 `JavaScript` pour mettre en oeuvre des visualisations interactives
-et une [plateforme](https://observablehq.com/@linogaliana) permettant
+et une [plateforme](https://observablehq.com/) permettant
 de simplifier la mise à disposition
 de ces visualisations sous une forme de _notebook_. 
 
@@ -209,7 +209,9 @@ issu des recommandations d'un [rapport INSEE-DINUM "Évaluation des besoins de l
 
 La saison 1 a donné sa chance à __quatre projets__, portés par différentes administrations. 
 Si l'un d'eux existait déjà depuis plus de
-deux ans (projet [`gouvdown`](https://github.com/spyrales/gouvdown)), trois sont nés pour l'occasion.  
+deux ans (projet [`Gouvdown`](https://github.com/spyrales/gouvdown)), trois sont nés pour l'occasion, 
+avec la mise en ligne de code immédiate (`Cartiflette`) ou postérieure au _bootcamp_ de 
+lancement (`Socratext` et `matchSIRET`) .  
 
 Tous les projets sont ouverts et disponible sur `Github`. Une statistique qui permet de représenter
 leur succès est le nombre de ⭐: c'est un peu un mélange entre un site en favori sous `Firefox` puisque cela
