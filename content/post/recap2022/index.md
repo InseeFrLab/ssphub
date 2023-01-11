@@ -219,27 +219,36 @@ permet de facilement
 retrouver un projet dans `Github` et le nombre de _followers_ d'une page sur `Facebook` ou
 sur `Twitter` puisque cela permet de suivre l'activité d'un dépôt `Github`. 
 
-<details>
-<summary>Si les figures ne s'affichent pas (dépassement des limites autorisées par l'API `Github`), dérouler pour afficher une version non réactive</summary>
+<div class="alert alert-info" role="alert">
+<h3 class="alert-heading"><i class="fa-solid fa-comment"></i> Note</h3>
 
+Cette visualisation fait appel à l'API `Github`. 
+Si les figures ne s'affichent pas, cela peut être dû à un 
+dépassement du nombre de requêtes par heure autorisées
+par l'API `Github` sans jeton. 
+
+{{< spoiler text="Dérouler pour afficher une version non réactive" >}}
 
 <div>Projet <code>cartiflette</code></div>
 
-<img src = "cartiflette.svg" alt="Projet cartiflette"/>
+<img src = "cartiflette.png" alt="Projet cartiflette"/>
 
 <div>Projet <code>Socratext</code></div>
 
-<img src = "Socratext.svg" alt="Projet Socratext"/>
+<img src = "socratext.png" alt="Projet Socratext"/>
 
 <div>Projet <code>gouvdown</code></div>
 
-<img src = "gouvdown.svg" alt="Projet gouvdown"/>
+<img src = "gouvdown.png" alt="Projet gouvdown"/>
 
 <div>Projet <code>matchSIRET</code></div>
 
-<img src = "matchSIRET.svg" alt="Projet matchSIRET"/>
+<img src = "matchsiret.png" alt="Projet matchSIRET"/>
 
-</details>
+{{< /spoiler >}}
+
+
+</div>
 
 <iframe width="100%" height="967" frameborder="0"
   src="https://observablehq.com/embed/@linogaliana/2022-year-recap-data-scientists-network?cells=containeur_github"></iframe>
