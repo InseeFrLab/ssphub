@@ -117,7 +117,7 @@ disponible sur [la plateforme](https://observablehq.com/@linogaliana/2022-year-r
 pour les utilisateurs intéressés par la réutilisation des figures, des données sous-jacentes ou
 des utilitaires ayant permis d'aboutir à certaines visualisations. 
 Le code source de cette page, disponible
-sur le [`Github inseefrlab/ssphub`](https://github.com/InseeFrLab/ssphub/blob/ojs/content/post/recap2022/index.md)
+sur le [`Github inseefrlab/ssphub`](https://github.com/InseeFrLab/ssphub/blob/main/content/post/recap2022/index.md)
 illustre la manière dont les figures peuvent être intégrées à un site _web_ depuis la
 plateforme [`observablehq`](https://observablehq.com/). Bien que j'ai privilégié la
 méthode `Runtime JS`, qui permet d'intégrer la visualisation sans le 
