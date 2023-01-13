@@ -67,7 +67,7 @@ proposer, en deux temps, deux rétrospectives.
 
 Cette première _newsletter_ revient 
 sur les principaux événements de l'année 2022 dans le monde de
-la _data science_. La seconde _newsletter_ proposera
+la _data science_. La [seconde _newsletter_](https://ssphub.netlify.app/post/recap2022/) proposera
 une rétrospective quantitative sur le
 réseau des _data scientists_ de la statistique publique, à la manière
 des rétrospectives personnalisées de nos applications préférées.
