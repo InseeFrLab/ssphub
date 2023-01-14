@@ -19,13 +19,14 @@ hero_media: 'ssp-logo-reverse.png'
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `cta`.
 #   Remove a link/note by deleting a cta/note block.
-cta_alt:
+cta:
   url: './projects'
   label: Voir nos projets !
 
-# Note. An optional note to show underneath the links.
-cta_note:
-  label: ''
+cta_alt:
+  url: './projects'
+  label: Découvrir le blog !
+
 ---
 
 <br>
