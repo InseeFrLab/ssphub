@@ -33,8 +33,9 @@ content:
 
 design:
   # Choose a view for the listings:
-  view: compact
+  view: masonry
   columns: '2'
+  flip_alt_rows: true
   #background:
   #  color: '#6886bb'
     # Text color (true=light, false=dark, or remove for the dynamic theme color). 
