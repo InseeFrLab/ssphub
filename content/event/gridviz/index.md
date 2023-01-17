@@ -25,8 +25,8 @@ abstract: |
   Unlike traditional raster-based web mapping tools, Gridviz renders everything client-side, on the fly.
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2023-01-20T10:00:00Z'
-date_end: '2023-01-20T11:30:00Z'
+date: '2023-01-20T11:00:00Z'
+date_end: '2023-01-20T12:30:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
