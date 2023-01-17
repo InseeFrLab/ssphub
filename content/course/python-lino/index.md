@@ -3,8 +3,8 @@ title: Python pour la data-science
 summary: |
   Un site web complet pour découvrir la richesse
   de `Python` pour la _data-science_. Ce cours
-  est enseigné en
-  deuxième année (Master 1) de l’`ENSAE`. 
+  est enseigné par Lino Galiana en
+  deuxième année (Master 1) de l'`ENSAE`. 
 tags:
 - Python
 - Machine Learning
@@ -14,7 +14,7 @@ tags:
 categories:
 - Insee
 
-date: "2021-04-27T00:00:00Z"
+date: "2022-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://pythonds.linogaliana.fr"

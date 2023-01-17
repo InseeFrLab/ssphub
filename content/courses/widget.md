@@ -45,6 +45,8 @@ content:
       tag: Big Data
     - name: Visualisation
       tag: Dataviz
+    - name: Observable
+      tag: observable
     - name: Open Source
       tag: opensource
     - name: Open Data
