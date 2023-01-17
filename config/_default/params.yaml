@@ -43,7 +43,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Réseau des data-scientists du SSP. This work is licensed under {license}'
+    notice: '© {year} Réseau des data scientists du SSP. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

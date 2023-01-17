@@ -1,5 +1,5 @@
 ---
-title: Le manifeste du réseau des data-scientists du service statistique public
+title: Le manifeste du réseau des data scientists du service statistique public
 subtitle: Un document produit collectivement pour s'accorder sur les objectifs et les moyens du réseau  
 summary: |
     Ce document, issu de délibérations collectives,
@@ -50,11 +50,11 @@ L’importance de la _data science_ pour la sphère publique, a été soulignée
 
 La pratique de la _data science_ nécessite cependant l’expérience de nouvelles compétences,
 environnements et méthodes de travail. Cet article dans
-la [_Harvard Business Review_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century),
+la [_Harvard Business Review_](https://hbr.org/2022/07/is-data scientist-still-the-sexiest-job-of-the-21st-century),
 qui revient 10 ans plus tard sur le titre provocateur
-_["Data Scientist: Sexiest Job of the 21st Century"](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century
+_["Data Scientist: Sexiest Job of the 21st Century"](https://hbr.org/2012/10/data scientist-the-sexiest-job-of-the-21st-century
 )_, illustre les changements rapides au cours de la dernière 
-décennie du rôle du _data-scientist_ dans l'écosystème de
+décennie du rôle du _data scientist_ dans l'écosystème de
 la donnée. Cette multiplication des compétences rend
 utile un réseau de praticiens partageant régulièrement ensemble
 leur expérience, 
@@ -90,7 +90,7 @@ les projets et
 les connaissances
 acquises, qu'elles soient produites par des membres du réseau ou non.
 Ce site relaye à la fois les actions du réseau (posts de blog, projets menés, événéments
-organisés) mais aussi des ressources utiles pour les _data-scientists_ 
+organisés) mais aussi des ressources utiles pour les _data scientists_ 
 de l'administration qui désirent suivre des événements liés à la _data-science_
 ou explorer des ressources éducatives sur le sujet.  
 
@@ -125,7 +125,7 @@ Plusieurs éléments sont mis en place pour atteindre les objectifs du réseau :
 
 # Résumé
 
-Le réseau des _data-scientists_ doit
+Le réseau des _data scientists_ doit
 permettre de faire « plus et mieux » de _data science_ en étant composé d’un public aux compétences et attentes diverses.
 Le réseau se veut inclusif, ouvert, utile, informel et convivial.
 
