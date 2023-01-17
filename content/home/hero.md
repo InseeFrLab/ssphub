@@ -24,7 +24,7 @@ cta:
   label: Voir nos projets !
 
 cta_alt:
-  url: './projects'
+  url: './posts'
   label: Découvrir le blog !
 
 ---
