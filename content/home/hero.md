@@ -11,7 +11,7 @@ design:
     text_color_light: true
 
 # ... Put Your Section Options Here (title etc.) ...
-title: Le réseau des data-scientists du Service Statistique Public
+title: Le réseau des data scientists du Service Statistique Public
 
 # Hero image (optional). Enter filename of an image in the assets/media/ folder.
 hero_media: 'ssp-logo-reverse.png'
@@ -32,7 +32,7 @@ cta_alt:
 <br>
 
 Le `SSPHub` centralise et vise à faire connaître le contenu créé par
-le réseau des _data-scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
+le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
 
 Les
 événements :date: organisés ou relayés

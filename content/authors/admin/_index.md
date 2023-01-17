@@ -6,7 +6,7 @@ title: SSP Hub
 superuser: true
 
 # Role/position/tagline
-role: Réseau des data-scientists du SSP
+role: Réseau des data scientists du SSP
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -14,7 +14,7 @@ organizations:
   url: https://www.insee.fr/fr/information/1302192
 
 # Short bio (displayed in user profile at end of posts)
-bio: Le réseau des data-scientists du service statistique public (SSP) a été créé suite aux recommandations du [Rapport _"Évaluation des besoins de l’État en compétences et expertises en matière de donnée"_](https://www.numerique.gouv.fr/publications/rapport-evaluation-besoins-etat-en-competences-et-expertises-en-matiere-de-donnee/) afin de faciliter les échanges entre _data-scientists_ de l'administration et favoriser la diffusion des innovations récentes de l'écosystème de l'analyse de données dans la sphère statistique.
+bio: Le réseau des data scientists du service statistique public (SSP) a été créé suite aux recommandations du [Rapport _"Évaluation des besoins de l’État en compétences et expertises en matière de donnée"_](https://www.numerique.gouv.fr/publications/rapport-evaluation-besoins-etat-en-competences-et-expertises-en-matiere-de-donnee/) afin de faciliter les échanges entre _data scientists_ de l'administration et favoriser la diffusion des innovations récentes de l'écosystème de l'analyse de données dans la sphère statistique.
 
 # Interests to show in About widget
 #interests:
@@ -70,7 +70,7 @@ email: 'ssphub-contact@insee.fr'
 highlight_name: false
 ---
 
-Le réseau des _data-scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192) est constitué principalement, mais non exclusivement, par
+Le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192) est constitué principalement, mais non exclusivement, par
 les administrations en charge de la production de statistiques officielles
 (Insee et Services Statistiques Ministériels principalement). 
 
@@ -79,7 +79,7 @@ Afin de mieux cerner les objectifs, le public cible, les thèmes abordés par le
 Le réseau répond à plusieurs objectifs,
 dont les principaux sont:
 
-- Le partage et la diffusion de connaissances au sein de la communauté des _data-scientists_ de l'administration autour des pratiques et des innovations de la _data-science_ ;
+- Le partage et la diffusion de connaissances au sein de la communauté des _data scientists_ de l'administration autour des pratiques et des innovations de la _data-science_ ;
 - La valorisation de travaux novateurs dans le champ de la production statistique ;
 - Faciliter les échanges entre pairs, qu'ils appartiennent au service statistique public ou non. 
 

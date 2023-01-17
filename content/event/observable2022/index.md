@@ -23,12 +23,12 @@ abstract: |
   [observable](https://observablehq.com/) est la nouvelle plateforme
   de dataviz réactive. Initiée par Mike Bostock (créateur de D3.js),
   ce réseau social de la dataviz a pour objectif de permettre 
-  aux _data-scientists_ de publier et réutiliser des _notebooks_  
+  aux _data scientists_ de publier et réutiliser des _notebooks_  
   de visualisations réactives, basées sur JavaScript. L'un des principaux
   usages de cette plateforme est la mise à disposition de cartographies
   réactives. Nicolas Lambert (alias [neocarto](https://observablehq.com/@neocartocnrs))
   nous présentera quelques fonctionalités de la plateforme pour
-  les _data-scientists_ désirant valoriser des données géographiques.
+  les _data scientists_ désirant valoriser des données géographiques.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
