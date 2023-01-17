@@ -20,7 +20,7 @@ image:
   focal_point: Smart
 
 links:
-- name: Présentation sur observable !
+- name: Notebooks sur observable !
   url: https://observablehq.com/@observablehq/plot
 url_code: "https://github.com/observablehq/plot"
 url_pdf: ""
