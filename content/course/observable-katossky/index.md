@@ -10,7 +10,7 @@ tags:
 - opensource
 - javascript
 - MadeByUs
-date: "2021-04-27T00:00:00Z"
+date: "2023-01-16T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://observablehq.com/collection/@katossky/data-visualisation-with-d3-js"
