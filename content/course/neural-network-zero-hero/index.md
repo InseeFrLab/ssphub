@@ -3,7 +3,7 @@ title: "Neural Network: from zero to hero"
 summary: |
   A course by Andrej Karpathy on building neural networks, from scratch, in code.
   
-  We start with the basics of backpropagation and build up to modern deep neural networks, like GPT. In my opinion language models are an excellent place to learn deep learning, even if your intention is to eventually go to other areas like computer vision because most of what you learn will be immediately transferable. This is why we dive into and focus on languade models.
+  _"We start with the basics of backpropagation and build up to modern deep neural networks, like `GPT`. Language models are an excellent place to learn deep learning, even if your intention is to eventually go to other areas like computer vision because most of what you learn will be immediately transferable."_
 tags:
 - Docker
 - Bonnes Pratiques
