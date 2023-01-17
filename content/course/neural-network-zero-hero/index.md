@@ -5,9 +5,9 @@ summary: |
   
   _"We start with the basics of backpropagation and build up to modern deep neural networks, like `GPT`. Language models are an excellent place to learn deep learning, even if your intention is to eventually go to other areas like computer vision because most of what you learn will be immediately transferable."_
 tags:
-- Docker
-- Bonnes Pratiques
-- website
+- deep learning
+- python
+- NLP
 
 date: "2023-01-16T00:00:00Z"
 
