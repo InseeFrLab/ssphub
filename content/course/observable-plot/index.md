@@ -9,7 +9,7 @@ tags:
 - observable
 - opensource
 - javascript
-- MadeByUs
+- dataviz
 date: "2023-01-16T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
