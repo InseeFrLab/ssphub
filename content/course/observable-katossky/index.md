@@ -3,6 +3,7 @@ title: Data visualisation with d3.js
 summary: |
   `d3.js` est la librairie favorite des spécialistes de 
   _dataviz_ en `Javascript`. Dans cette série de notebooks, 
+  proposée par Arthur Katossky,
   vous découvrirez comment utiliser la librairie pour
   construire des visualisations de données réactives.
 tags:
