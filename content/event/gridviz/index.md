@@ -69,9 +69,8 @@ url_video: ''
 ---
 
 Présentation par Julien Gaffuri de
-la [librairie `Gridviz`](https://eurostat.github.io/gridviz/):
-
-Le replay est [disponible plus bas 👇](#replay)
+la [librairie `Gridviz`](https://eurostat.github.io/gridviz/). 
+Le __replay est [disponible plus bas 👇](#replay)__
 
 ![](gridviz.png)
 
