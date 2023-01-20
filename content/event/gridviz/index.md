@@ -68,11 +68,23 @@ url_video: ''
 #  - example
 ---
 
-Lien zoom de l'événement: 
-https://insee-fr.zoom.us/j/95117439112?pwd=T3p0SklrQjEyemZ1dlZ6bnkxZmhYUT09
+Présentation par Julien Gaffuri de
+la [librairie `Gridviz`](https://eurostat.github.io/gridviz/):
 
-Quelques exemples de cartes générées par `gridviz`:
+Le replay est [disponible plus bas 👇](#replay)
 
 ![](gridviz.png)
 
+`Gridviz` est une
+librairie _open source_ ([disponible sur `Github`](https://github.com/eurostat/gridviz))
+consacrée à la visualisation cartographique de données
+carroyées (ou données géolocalisées par des _(x,y)_ à carroyer).
+Très efficace, elle permet de représenter de manière fluide
+des volumes importants de données. 
+
+
+## Replay {#replay}
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/ssphub/replay/gridviz-20230120.mp4" controls="yes" >}}
 
