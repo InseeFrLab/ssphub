@@ -86,5 +86,5 @@ des volumes importants de données.
 ## Replay {#replay}
 
 
-{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/ssphub/replay/gridviz-20230120.mp4" controls="yes" >}}
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/gridviz-20230120.mp4" controls="yes" >}}
 
