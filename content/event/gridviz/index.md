@@ -81,6 +81,9 @@ carroyées (ou données géolocalisées par des _(x,y)_ à carroyer).
 Très efficace, elle permet de représenter de manière fluide
 des volumes importants de données. 
 
+{{< staticref "uploads/gridviz.pdf" "newtab" >}}Télécharger les supports{{< /staticref >}}
+
+
 
 ## Replay {#replay}
 
