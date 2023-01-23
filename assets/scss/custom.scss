@@ -5,6 +5,26 @@ details p, details li {
   font-size: 0.9rem;
 }
 
+/*---
+.card-link:hover {
+  color: #566e9f;
+  font-weight: bold;
+  text-decoration: none;
+}
+----*/
+.article-style a:hover p {
+  color: #00aeef;
+}
+.card-text h4:hover a {
+  color:  #00aeef;
+  text-decoration: none;
+}
+.card-image.hover-overlay:hover {
+  border-bottom: 3px solid #00aeef;
+}
+
+
+
 
 /*-------------------
     CUSTOM BOXES

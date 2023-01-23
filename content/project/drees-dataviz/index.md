@@ -10,7 +10,7 @@ summary: |
   de santé, pensions et âges de retraites...).
   
   Ces visualisations reposent
-  sur [<i class="fa-brands fa-r-project"></i> `Shiny`](https://shiny.rstudio.com/)
+  sur <i class="fa-brands fa-r-project"></i> `Shiny`
   et offrent ainsi la liberté
   à l'utilisateur de jouer avec les données et obtenir
   une mise à jour de graphiques exploratoires. 

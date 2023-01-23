@@ -3,10 +3,6 @@ title: Extraction de données dans des comptes sociaux au format PDF
 summary: |
   Les déclarations papiers représentent une 
   forme importante de collecte de données. 
-  Ces sources papiers sont plus coûteuses
-  à intégrer dans des bases de données informatiques
-  puisqu'il est nécessaire de récupérer l'information
-  depuis une source non numérique. 
 
   Ce travail de l'Insee vise à explorer la manière
   dont les méthodes `TableNet` et `Tesseract` peuvent

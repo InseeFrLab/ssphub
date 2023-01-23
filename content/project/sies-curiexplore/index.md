@@ -3,15 +3,14 @@ title: "Plateforme de comparaison des politiques nationales d’enseignement et 
 date: "2022-01-01T00:00:00Z"
 summary: |
   Le projet `CurieXplore`, développé par 
-  le [service statistique du Ministère de l'Enseignement Supérieur et de la Recherche](https://www.enseignementsup-recherche.gouv.fr/fr/statistiques-et-analyses-50213)
-  (le `SIES`)
+  le `SIES` (service statistique du Ministère de l'Enseignement Supérieur et de la Recherche)
   propose une visualisation interactive de l'environnement de l'enseignement
   et de la recherche dans les différents pays. 
 
   Les données sont issues du réseau diplomatique français, de sources statistiques internationales ou _webscrappées_ quand elles concernent des institutions privées.
 
   Tout est _open-source_, disponible
-  sur [`Github` <i class="fa-brands fa-github"></i>](https://github.com/dataesr)
+  sur `Github` <i class="fa-brands fa-github"></i>
 tags:
 - Dataviz
 - Webscraping

@@ -2,10 +2,10 @@
 title: "« GDP Tracker » : un outil pour des prrévisions économiques en continu"
 
 summary: |
-  Le département de la conjoncture de l'`Insee` a mis en oeuvre
-  un modèle de _machine learning_ pour faire du _nowcasting_,
-  c'est-à-dire de la prévision économique en continu 
-  à agrégeant de multiples informations disponibles à l'instant _t_.  
+  Le département de la conjoncture de l'`Insee` met
+  en oeuvre des modèles de _machine learning_ pour
+  effectuer des prévisions en temps réel (_nowcasting_)
+  pour alimenter ses analyses conjoncturelles.
 
 tags:
 - Classification

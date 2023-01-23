@@ -40,16 +40,11 @@
 
     {{ with $summary }}
     <div class="article-style">
-      <p>{{ . }}</p>
+      <a href="{{ $link }}" {{ $target | safeHTMLAttr }}><p>{{ . }}</p></a>
     </div>
     {{ end }}
 
-    {{ with $tags }}
-    <div class="article-tags">
-      <i>Tags</i>:
-      <p>{{ delimit $tags ", " " et " }}</p>
-    </div><br>
-    {{ end }}
+    <br>
 
 
     {{ if $has_attachments }}
@@ -57,6 +52,18 @@
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
     {{ end }}
+
+    {{ with $tags }}
+      <br>
+      <p><i>Tags:</i></p>
+      <p><div class="article-tags">
+        {{ range $tag := $tags }}
+          <a class="btn btn-primary btn-lg">{{ $tag }}</a>
+        {{ end }}
+      </div></p>
+    {{ end }}
+
+
   </div>
 
 

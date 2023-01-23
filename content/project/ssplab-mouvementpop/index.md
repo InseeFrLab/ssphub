@@ -6,9 +6,10 @@ summary: |
   Ces données ont permis de produire les statistiques
   sur les déplacements de population entre les 
   régions françaises juste avant le confinement.
-  Outre une [publication grand public](https://www.insee.fr/fr/statistiques/4930403),
+
+  Outre une publication grand public,
   ce projet a amené à diffuser une visualisation 
-  dynamique des flux 
+  dynamique des flux.
 tags:
 - Dataviz
 - opensource
@@ -30,9 +31,10 @@ links:
 #  name: Follow
 #  url: https://twitter.com/georgecushen
 url_code: "https://github.com/InseeFrLab/lockdown-maps-R"
-url_pdf: ""
+url_pdf: "https://www.insee.fr/fr/statistiques/4930403"
 url_slides: ""
 url_video: ""
+#[publication grand public]()
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

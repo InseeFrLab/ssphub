@@ -34,12 +34,12 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: Analyse textuelle
-      tag: NLP
+#    - name: Analyse textuelle
+#      tag: NLP
     - name: Deep Learning
       tag: Deep Learning
-    - name: Big Data
-      tag: Big Data
+#    - name: Big Data
+#      tag: Big Data
     - name: Visualisation
       tag: Dataviz
     - name: Open Source
@@ -52,8 +52,8 @@ content:
       tag: DARES
     - name: DREES (Santé)
       tag: DREES
-    - name: DGFIP (Finances)
-      tag: DGFIP
+#    - name: DGFIP (Finances)
+#      tag: DGFIP
     - name: SDES (Ecologie)
       tag: SDES
     - name: SIES (Enseignement Supérieur)
@@ -76,10 +76,3 @@ design:
   flip_alt_rows: false
 ---
 
-# Galerie des projets
-
-<br>
-
-Une galerie de projets innovants illustrant l'apport de la data-science pour la production statistique.
-
-N'hésitez pas à utiliser les filtres !
