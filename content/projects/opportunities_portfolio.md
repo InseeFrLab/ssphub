@@ -54,12 +54,12 @@ content:
       tag: DREES
 #    - name: DGFIP (Finances)
 #      tag: DGFIP
-    - name: SDES (Ecologie)
-      tag: SDES
+#    - name: SDES (Ecologie)
+#      tag: SDES
     - name: SIES (Enseignement Supérieur)
       tag: SIES
-    - name: SSMSI (Intérieur)
-      tag: SSMSI
+#    - name: SSMSI (Intérieur)
+#      tag: SSMSI
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
