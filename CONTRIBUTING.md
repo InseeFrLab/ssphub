@@ -2,13 +2,17 @@
 
 ## :one: Introduction
 
-Il est possible de contribuer au projet `utilitR` de différentes manières, détaillées dans ce document. 
-Il n'est pas nécessaire d'être un expert des fonctionnalités de `Git` ou `Github` pour pouvoir
-proposer des modifications du site web grâce à quelques outils qui simplifient les contributions
-et qui sont détaillés par la suite. 
+Il est possible de contribuer au site web du réseau
+de différentes manières, détaillées dans ce document. 
+Grâce à quelques outils qui simplifient les contributions
+et qui sont détaillés par la suite,
+il n'est pas nécessaire d'être un expert des fonctionnalités de `Git` ou `Github` pour pouvoir
+proposer des modifications du site web. 
 
 Les contributions peuvent prendre différentes formes, qu'il s'agisse d'une discussion autour de contenu à ajouter,
 d'une proposition d'ajout à l'une des rubriques du site ou l'écriture d'un post de blog. 
+
+<br>
 
 > **Note**
 > 
@@ -16,13 +20,14 @@ d'une proposition d'ajout à l'une des rubriques du site ou l'écriture d'un pos
 > revanche, il est nécessaire de s'inscrire dans le fonctionnement
 > classique des projets _open source_,
 > fonctionnement qui est orchestré autour de `Github` et de ses différents outils.
-> Il est possible d'en acquérir très rapidement les bases à partir de ce document présentant le [Travail collaboratif avec `R`](https://linogaliana.gitlab.io/collaboratif/git.html#des-bases-de-git), ou à partir d'échanges avec les contributeurs actuels
+> Il est possible d'en acquérir très rapidement les bases à partir de ce document présentant le [Travail collaboratif avec `R`](https://inseefrlab.github.io/formation-bonnes-pratiques-git/), ou à partir d'échanges avec les contributeurs actuels
 > depuis le salon [`Tchap`](https://www.tchap.gouv.fr/) du réseau (pour l'intégrer, un mail à <ssphub-contact@insee.fr> suffit)
 
+<br>
+
 Un environnement prêt à l'emploi pour l'exécution des scripts est disponible sur le `SSPCloud`, à 
-travers l'interface du logiciel `VSCode`.
-En cliquant sur le lien suivant, un service `VSCode` avec l'ensemble des dépendances nécessaires pour utiliser la documentation est disponible: [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&networking.user.enabled=true&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB).
-Le reste de la procédure pour prévisualiser le site web depuis un service existant est expliqué dans l'annexe technique.
+travers l'interface du logiciel `VSCode` [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&networking.user.enabled=true&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB).
+Son utilisation est détaillée dans la partie plus avancée sur la création de contenu pour le blog. 
 
 <br>
 
@@ -34,9 +39,11 @@ Pré-requis: avoir un compte `Github`.
 
 Pour ce type de modifications, il est demandé d'utiliser directement
 l'outil de suggestions de changements de `Github`.
-Les pages déployées sur https://ssphub.netlify.app comprennent un bouton `Edit` qui
+Les pages déployées sur https://ssphub.netlify.app comprennent un bouton qui
 permet de proposer, automatiquement, des modifications via l'interface de 
 `Github`. Ce bouton se trouve à la fin de la table des matières et a cette apparence:
+
+<br>
 
 ![](https://img.shields.io/badge/Proposer%20une%20modification-%236886bb?logo=github)
 
@@ -55,18 +62,22 @@ A l'ouverture du lien, s'il n'existe pas de fork du projet sur son compte, un po
 On se retrouve alors sur une interface permettant d'éditer,
 de visualiser et de proposer des modifications du fichier source. 
 
-La documentation officielle de Github sur cette manière de procéder est
+La documentation officielle de `Github` sur cette manière de procéder est
 disponible
 [ici](https://docs.github.com/en/free-pro-team@latest/github/managing-files-in-a-repository/editing-files-in-another-users-repository).
 
-Dans ce menu, vous avez accès au code de la fiche en `R Markdown`.
+Dans ce menu, vous avez accès au code source, un fichier au format `Markdown`.
 C'est directement dans cette fenêtre que les modifications sont à écrire.
 Il est recommandé de prévisualiser la modification en cliquant sur l'onglet `Preview`.
 En cliquant sur `Preview` vous ne verrez pas la fiche mise en forme mais
 les modifications seront identifiées (rouge pour suppression, vert pour
 insertion) par le système de contrôle de version `Git`
 
+<br>
+
 ![](https://raw.githubusercontent.com/InseeFrLab/utilitR/master/pics/contributing/Relecture_preview.png)
+
+<br>
 
 Enfin, une fois la modification écrite, il convient de la valider.
 Cette opération, nommée `commit` dans la terminologie `Git`,
@@ -74,6 +85,8 @@ peut être effectuée en:
 
 * écrivant un message signifiant dans la fenêtre `Commit message`. Les messages cryptiques du type `modification` sont proscrits. 
 * sélectionnant la branche dans laquelle la modification s'applique. Si la modification est à appliquer aux supports déployés, il est nécessaire de sélectionner `main`. Les modifications proposées dans `master` ne sont intégrées qu'après validation des mainteneurs du projets, seuls utilisateurs à avoir les droits en écriture sur la version maître. 
+
+<br>
 
 ![](https://raw.githubusercontent.com/InseeFrLab/utilitR/master/pics/contributing/edit3.png)
 
@@ -101,6 +114,8 @@ cliquer sur `Create pull request`. Cela permettra aux mainteneurs du projet
 `ssphub` d'éventuellement intégrer les modifications ou de démarrer une
 discussion sur les propositions de modifications. Celles-ci sont visibles
 en cliquant sur l'onglet `Files changed`:
+
+<br>
 
 ![](https://raw.githubusercontent.com/InseeFrLab/utilitR/master/pics/contributing/edit5.png)
 
@@ -148,7 +163,9 @@ TO BE COMPLETED
 
 La compréhension de la tuyauterie permettant de transformer les fichiers
 sources (format `Markdown`) n'est pas obligatoire pour pouvoir proposer
-une nouvelle page sur le site. La lecture de la partie technique de ce 
+une nouvelle page sur le site.
+
+La lecture de la partie technique de ce 
 guide des contributeurs est néanmoins recommandée car
 la compréhension des briques techniques mises en oeuvre
 peut aider à comprendre
@@ -174,7 +191,7 @@ décrite ci-dessous et les
 > servira à mettre à jour le fork pour intégrer les dernières mises à jour
 > du site web.
 
-#### Utiliser un environnement de travail entièrement configuré pour disposer de l'ensemble des librairies nécessaires à la génération de la documentation
+### Utiliser un environnement de travail entièrement configuré pour disposer de l'ensemble des librairies nécessaires à la génération de la documentation
 
 Plutôt que d'utiliser un environnement en local dont la configuration peut différer
 de manière parfois significative avec l'environnement canonique qui sert à générer le site web sous `Github`,
@@ -183,11 +200,12 @@ il est recommandé d'utiliser le service préconfiguré `VSCode` du `SSP Cloud`.
 
 [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&networking.user.enabled=true&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB)
 
-#### Configurer l'accès au dépôt distant Github : la méthode simple et sécurisée
+### Configurer l'accès au dépôt distant `Github` : la méthode simple et sécurisée
 
-Pour accéder au dépôt distant `Github` (très généralement un _fork_ du dépôt officiel d'`utilitR`, comme expliqué plus bas), il faut que l'identifiant du compte corresponde à celui configuré dans l'image (dont on peut voir la valeur prise par défaut dans l'onglet Git de la configuration du service, à l'item `user.email`).
+Pour accéder au dépôt distant `Github` (très généralement un _fork_ du dépôt officiel d'`ssphub`, comme expliqué plus bas),
+il faut que l'identifiant du compte corresponde à celui configuré dans l'image (dont on peut voir la valeur prise par défaut dans l'onglet Git de la configuration du service, à l'item `user.email`).
 
-Dans l'éventualité où cet identifiant ne correspondrait, il est possible de le reconfigurer une fois le service lancé en soumettant dans un terminal la commande suivante :
+Il est possible de le reconfigurer une fois le service lancé en soumettant dans un terminal la commande suivante :
 
 ```shell
 git config --global user.name "Prénom Nom"
