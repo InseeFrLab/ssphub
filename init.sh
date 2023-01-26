@@ -10,12 +10,13 @@ wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_ex
     rm -f hugo_extended_${HUGO_VERSION}_Linux-64bit.deb
 
 # Install latest version of quarto
-QUARTO_DL_URL="https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.91/quarto-1.3.91-linux-amd64.deb"
+QUARTO_DL_URL="https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.129/quarto-1.3.129-linux-amd64.deb"
 wget -q ${QUARTO_DL_URL} -O quarto.deb
 sudo dpkg -i quarto.deb
 quarto check install
 
 rm quarto.deb
+rm go*
 
 export PATH="/usr/local/go/bin:${PATH}"
 
