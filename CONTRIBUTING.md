@@ -149,7 +149,22 @@ mail à ssphub-contact@insee.fr
 
 ## :four: Comment ajouter une référence dans l'une des rubriques événements, ressources ou projets ? 
 
-TO BE COMPLETED
+Pour proposer l'ajout d'une référence dans l'une de ses sections, la première étape
+est d'ouvrir une _issue_ pour en discuter avec les mainteneurs du site web. 
+
+### Ajout d'une ressource utile ou d'un événement
+
+Ces éléments étant assez légers, après une _issue_, les mainteneurs pourront proposer
+l'ajout de contenu à travers une _pull request_ à valider ensemble. 
+
+### Ajout d'un projet
+
+Comme il s'agit d'une suggestion plus substantielle, et qui nécessite une 
+bonne connaissance du projet, les mainteneurs peuvent vous suggérer 
+d'écrire une première version à soumettre sous la forme
+d'une _pull request_. Dans ce cas, il suffit de suivre la démarche
+de la section suivante :five: mais en lieu et place de se situer 
+dans le dossier `/content/post`, se placer dans le dossier `/content/project`.
 
 ## :five: Comment ajouter un nouveau _post_ au blog ?
 
