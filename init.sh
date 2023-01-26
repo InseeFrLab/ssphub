@@ -16,7 +16,8 @@ sudo dpkg -i quarto.deb
 quarto check install
 
 rm quarto.deb
-rm go*
+
+rm go${GO_VERSION}.linux-amd64.tar.*
 
 export PATH="/usr/local/go/bin:${PATH}"
 
