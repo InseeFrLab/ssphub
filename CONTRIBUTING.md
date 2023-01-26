@@ -214,9 +214,6 @@ git config --global user.email "mon.adresse@mail.com"
 
 Il est également possible, pour les utilisateurs avancés, d'incorporer cette commande dans un script d'initialisation qui se lance au démarrage du service, en utilisant également la commande `runuser` de manière à lancer la commande `Git` pour le _user_ `rstudio` et non en _root_ comme cela se fait par défaut.
 
-Enfin, comme montré dans la capture d'écran ci-dessous, il est possible de configurer le mot de passe associé au compte `Github` de manière à ce qu'il soit conservé dans le cache du service pendant une durée limitée (dans l'exemple ci-dessous, une heure). Une fois le temps écoulé, l'utilisateur devra de nouveau entrer son mot de passe.
-
-![](https://raw.githubusercontent.com/InseeFrLab/utilitR/master/pics/contributing/configurer_git_cache.png)
 
 ### Créer un _post_ de blog
 
@@ -269,10 +266,47 @@ hugo server -p 5000 --bind 0.0.0.0
 
 ## Annexe technique
 
+Cette partie, plus technique, est présente pour expliciter le processus
+de génération du site web. Elle peut servir à comprendre la logique
+automatisée de construction du site web. 
+
 ### Hugo, Markdown et Netlify
 
-### Structure d'un site web hugo
+Le format `Markdown` est un langage de balisage léger conçu pour être lu facilement
+par les humains et converti en HTML pour être lu par les ordinateurs.
+Les fichiers Markdown sont simples à écrire et à lire, et peuvent être édités avec n'importe quel éditeur de texte.
+
+`Hugo` est un générateur de site statique _open-source_ écrit en `Go`.
+Il utilise des fichiers de contenu en format `Markdown` pour créer des pages web statiques
+qui peuvent être hébergées sur n'importe quel serveur web. 
+`Hugo` se charge de transformer le balisage léger du `Markdown` (lisible par les humains)
+en un balise plus lourd qu'est le HTML (lisible par un navigateur web), de 
+gérer l'arborescence du site web, l'injection de métadonnées dans les pages web et leur
+mise en forme à partir de feuilles de style. `Hugo` est extrêmement rapide, il ne faut que quelques
+secondes pour transformer des dizaines de fichiers `Markdown` en un site web complet. 
+
+La construction et la mise à disposition du site web https://ssphub.netlify.app 
+est automatisée à chaque interaction avec `Github`. Le dépôt source est
+envoyé à des machines du fournisseur de
+service [`Netlify`](https://www.netlify.com/) qui construisent le site web et 
+le déploie pour son accès depuis n'importe quel navigateur web à l'adresse https://ssphub.netlify.app
+
+
+### Structure d'un site web `Hugo`
+
+`Hugo` repose sur des modèles qui fournissent à la fois une feuille de style mais
+aussi une structure de site web. Le modèle utilisé pour ce site web
+est [`Wowchemy`](https://wowchemy.com/), l'un des plus utilisés dans la
+galaxie `Hugo`. 
+
 
 ### Structure d'une page 
 
+Les fichiers sources `Markdown` sont décomposés en deux
+parties: le _header_ qui stocke les métadonnées du fichier (titre, auteur, etc.) et
+le _body_ où figure le contenu de celui-ci. Des éléments spéciaux, les _shortcodes_
+permettent de formatter certains éléments selon une structure pré-définie. 
 
+Pour en apprendre plus
+sur les options autorisées, et les _shortcodes_, voir la
+[documentation du modèle `Wowchemy`](https://wowchemy.com/docs/content/page-features/)
