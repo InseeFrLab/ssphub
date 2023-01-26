@@ -174,7 +174,7 @@ décrite ci-dessous et les
 > servira à mettre à jour le fork pour intégrer les dernières mises à jour
 > du site web.
 
-### Utiliser un environnement de travail entièrement configuré pour disposer de l'ensemble des librairies nécessaires à la génération de la documentation
+#### Utiliser un environnement de travail entièrement configuré pour disposer de l'ensemble des librairies nécessaires à la génération de la documentation
 
 Plutôt que d'utiliser un environnement en local dont la configuration peut différer
 de manière parfois significative avec l'environnement canonique qui sert à générer le site web sous `Github`,
@@ -183,7 +183,77 @@ il est recommandé d'utiliser le service préconfiguré `VSCode` du `SSP Cloud`.
 
 [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&networking.user.enabled=true&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB)
 
+#### Configurer l'accès au dépôt distant Github : la méthode simple et sécurisée
+
+Pour accéder au dépôt distant `Github` (très généralement un _fork_ du dépôt officiel d'`utilitR`, comme expliqué plus bas), il faut que l'identifiant du compte corresponde à celui configuré dans l'image (dont on peut voir la valeur prise par défaut dans l'onglet Git de la configuration du service, à l'item `user.email`).
+
+Dans l'éventualité où cet identifiant ne correspondrait, il est possible de le reconfigurer une fois le service lancé en soumettant dans un terminal la commande suivante :
+
+```shell
+git config --global user.name "Prénom Nom"
+git config --global user.email "mon.adresse@mail.com"
+```
+
+Il est également possible, pour les utilisateurs avancés, d'incorporer cette commande dans un script d'initialisation qui se lance au démarrage du service, en utilisant également la commande `runuser` de manière à lancer la commande `Git` pour le _user_ `rstudio` et non en _root_ comme cela se fait par défaut.
+
+Enfin, comme montré dans la capture d'écran ci-dessous, il est possible de configurer le mot de passe associé au compte `Github` de manière à ce qu'il soit conservé dans le cache du service pendant une durée limitée (dans l'exemple ci-dessous, une heure). Une fois le temps écoulé, l'utilisateur devra de nouveau entrer son mot de passe.
+
+![](https://raw.githubusercontent.com/InseeFrLab/utilitR/master/pics/contributing/configurer_git_cache.png)
+
+### Créer un _post_ de blog
+
+Le contenu qui génère la partie blog est présent dans le dossier `/content/post`.
+
+Il est nécessaire ensuite de créer un sous dossier contenant deux fichiers: un fichier
+`index.md` pour le contenu, un `featured.png` stockant une image à mettre en une pour 
+illustrer le _post_.
+Si vous manquez d'idée d'image illustrative, n'hésitez pas à créer
+une image grâce à une IA génératrice de contenu comme `Dall-E` ou `Stable Diffusion`. 
+
+Autrement dit, pour créer un nouveau contenu dans la partie blog, il sera nécessaire
+d'adopter l'arborescence suivante :
+
+```
+├── content
+|    ├── post
+|    |    ├── nom-du-post
+|    |    |   ├── index.md
+|    |    |   ├── image1.png
+|    |    |   ├── image2.png
+|    |    |   └── featured.png
+```
+
+`image1.png` et `image2.png` sont des fichiers optionnels, pour illustrer qu'il est possible
+d'ajouter des fichiers au dossier source. 
+
+Plutôt que de créer _ex-nihilo_ ce dossier, 
+le plus simple est de prendre un post de blog existant, copier l'ensemble du dossier de celui-ci
+dans un nouveau dossier, le renommer puis éditer le contenu directement dans  `index.md`.
+
+### Prévisualiser en local vos modifications
+
+La méthode la plus pratique est d'utiliser la commande `hugo server` qui permet à la
+fois de générer le site web, de lancer un serveur web local et enfin
+d'actualiser à la volée le site web local en cas de modification des fichiers.
+
+Pour cela, depuis un terminal, lancer la commande suivante:
+
+```shell
+hugo server -p 5000 --bind 0.0.0.0
+```
+
+> **Note**
+> 
+> Si vous êtes sur le `SSP Cloud` et que vous avez utilisé le bouton précédent
+> pour générer le service, il est nécessaire d'ajouter des options pour lancer
+> le serveur local sur le bon port (par défaut 5000). 
+
+
 ## Annexe technique
+
+### Hugo, Markdown et Netlify
+
+### Structure d'un site web hugo
 
 ### Structure d'une page 
 
