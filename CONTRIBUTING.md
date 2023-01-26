@@ -26,10 +26,12 @@ d'une proposition d'ajout à l'une des rubriques du site ou l'écriture d'un pos
 <br>
 
 Un environnement prêt à l'emploi pour l'exécution des scripts est disponible sur le `SSPCloud`, à 
-travers l'interface du logiciel `VSCode` [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&networking.user.enabled=true&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB).
+travers l'interface du logiciel `VSCode` [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB&onyxia.friendlyName=%C2%ABSSPHub%C2%BB&networking.user.enabled=true).
 Son utilisation est détaillée dans la partie plus avancée sur la création de contenu pour le blog. 
 
 <br>
+
+
 
 ## :two: Comment proposer des modifications légères sur une page déjà existante ? 
 
@@ -55,7 +57,7 @@ techniques [plus bas](#structure-d-une-page), si besoin)
 
 Cette fonctionnalité est utilisable même
 lorsque vous n'avez pas les droits en écriture sur le dépôt (droits attachés
-au statut de *mainteneur* sur le projet), grâce à la notion de [*fork*](https://github.com/InseeFrLab/utilitr-bonnes-pratiques/edit/master/CONTRIBUTING.md#one-forker-le-d%C3%A9p%C3%B4t-utilitr).
+au statut de *mainteneur* sur le projet), grâce à la notion de *fork*.
 
 A l'ouverture du lien, s'il n'existe pas de fork du projet sur son compte, un pop-up s'ouvre pour indiquer qu'il faut en créer un pour pouvoir proposer des modifications : en acceptant, un fork est créé automatiquement.
 
@@ -213,7 +215,7 @@ de manière parfois significative avec l'environnement canonique qui sert à gé
 il est recommandé d'utiliser le service préconfiguré `VSCode` du `SSP Cloud`.
 
 
-[![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&networking.user.enabled=true&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB)
+[![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&security.allowlist.enabled=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fcontributing%2Finit.sh%C2%BB&onyxia.friendlyName=%C2%ABSSPHub%C2%BB&networking.user.enabled=true)
 
 ### Configurer l'accès au dépôt distant `Github` : la méthode simple et sécurisée
 
