@@ -1,5 +1,5 @@
 ---
-title: Présentation des packages `R` et `Python` pour accéder à l'open data de l'Insee
+title: Présentation des packages R et Python pour accéder à l'open data de l'Insee
 
 event: Une présentation en deux temps autour des packages faits par des utilisateurs de données de l'Insee
 event_url: https://insee-fr.zoom.us/j/94120715167?pwd=aVMvZGpXTXdkMTFjL2JxdTlCWmRydz09
