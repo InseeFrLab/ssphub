@@ -5,8 +5,8 @@ summary: |
     facilite la récupération des données Insee pour les data scientists.
     La librairie est _open source_, disponible sur <i class="fa-brands fa-github"></i>.
 tags:
-- R
-- doremifasol
+- Python
+- pynsee
 - Open Data
 - Insee
 date: "2023-01-01T00:00:00Z"
