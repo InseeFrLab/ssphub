@@ -4,7 +4,7 @@ title: Présentation des packages `R` et `Python` pour accéder à l'open data d
 event: Une présentation en deux temps autour des packages faits par des utilisateurs de données de l'Insee
 event_url: https://insee-fr.zoom.us/j/94120715167?pwd=aVMvZGpXTXdkMTFjL2JxdTlCWmRydz09
 
-location: Salle Malinvaud-Closon ou zoom (https://insee-fr.zoom.us/j/94120715167?pwd=aVMvZGpXTXdkMTFjL2JxdTlCWmRydz09)
+location: Zoom ou salle Malinvaud-Closon (Insee)
 #address:
 #  street: 77 Avenue de Ségur
 #  city: Paris
