@@ -25,8 +25,8 @@ abstract: |
   
   Après l'événement de clôture de la saison 1, un webinaire pour découvrir le programme
   permettra de lancer la saison 2
-date: '2022-01-31T16:30:00Z'
-date_end: '2022-01-31T17:30:00Z'
+date: '2023-01-31T16:30:00Z'
+date_end: '2023-01-31T17:30:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
