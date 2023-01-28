@@ -1,7 +1,7 @@
 ---
-title: "doremifasol" 
+title: pynsee
 summary: |
-    Le package <i class="fa-brands fa-r-project"></i> `Doremifasol`
+    Le package <i class="fa-brands fa-python"></i> `pynsee`
     facilite la récupération des données Insee pour les data scientists.
     La librairie est _open source_, disponible sur <i class="fa-brands fa-github"></i>.
 tags:
@@ -12,7 +12,7 @@ tags:
 date: "2023-01-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://inseefrlab.github.io/DoReMIFaSol/"
+external_link: "https://pynsee.readthedocs.io/en/latest/"
 
 image:
   caption: 
@@ -20,8 +20,8 @@ image:
 
 links:
 - name: Documentation
-  url: https://inseefrlab.github.io/DoReMIFaSol/
-url_code: "https://github.com/InseeFrLab/DoReMIFaSol"
+  url: https://pynsee.readthedocs.io/en/latest/
+url_code: "https://github.com/InseeFrLab/pynsee"
 url_pdf: ""
 url_slides: ""
 url_video: ""
