@@ -4,7 +4,7 @@ title: Packages R et Python pour accéder à l'open data de l'Insee
 event: Une présentation en deux temps autour des packages faits par des utilisateurs de données de l'Insee
 event_url: https://insee-fr.zoom.us/j/94120715167?pwd=aVMvZGpXTXdkMTFjL2JxdTlCWmRydz09
 
-location: Evénement en visio (zoom)
+location: https://insee-fr.zoom.us/j/94120715167?pwd=aVMvZGpXTXdkMTFjL2JxdTlCWmRydz09
 #address:
 #  street: 77 Avenue de Ségur
 #  city: Paris
@@ -19,18 +19,17 @@ tags:
 - event
 
 summary: |
-  L'Insee met à disposition ses données par le biais d'API ou par son site web. Pour faciliter
-  la récupération de données Insee par les data scientists, des packages R et Python ont
+  L'Insee met à disposition ses données par le biais d'[API](https://api.insee.fr/catalogue/) ou
+  par son [site web](https://www.insee.fr/fr/accueil). Pour faciliter
+  la récupération de données Insee par les data scientists, des packages `R` et `Python` ont
   été développés par des utilisateurs de données. Pierre Lamarche nous présentera le package
-  doremifasol (R) et Hadrien Leclerc nous fera une démonstration du package pynsee (Python).
+  `doremifasol` (`R`) et Hadrien Leclerc nous fera une démonstration du package `pynsee` (`Python`).
 abstract: |
   L'Insee met à disposition ses données par le biais d'[API](https://api.insee.fr/catalogue/) ou
   par son [site web](https://www.insee.fr/fr/accueil). Pour faciliter
   la récupération de données Insee par les data scientists, des packages `R` et `Python` ont
   été développés par des utilisateurs de données. Pierre Lamarche nous présentera le package
   `doremifasol` (`R`) et Hadrien Leclerc nous fera une démonstration du package `pynsee` (`Python`).
-# Talk start and end times.
-#   End time can optionally be hidden by prefixing the line with `#`.
 date: '2023-02-13T15:00:00Z'
 date_end: '2023-02-13T16:30:00Z'
 all_day: false
@@ -78,12 +77,14 @@ url_video: ''
 #  - example
 ---
 
-Présentation autour des packages
+Présentation autour des _packages_
 développés par des data scientists pour faciliter la récupération des données
 officielles de l'Insee :
 
 - Pierre Lamarche présentera le package `R` [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol)
 - Hadrien Leclerc présentera le package `Python` [`pynsee`](https://github.com/InseeFrLab/pynsee)
+
+Les présentations seront suivies d'un temps d'échange. 
 
 __Visio de l'événement__: https://insee-fr.zoom.us/j/94120715167?pwd=aVMvZGpXTXdkMTFjL2JxdTlCWmRydz09
 
