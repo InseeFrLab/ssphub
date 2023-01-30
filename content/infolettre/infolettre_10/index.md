@@ -35,7 +35,6 @@ tags:
 #  - quarto
 #  - deep learning
   - infolettre
-  - onyxia
   - 10%
   - datascientest
   - utilitr
