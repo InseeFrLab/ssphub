@@ -128,9 +128,11 @@ des contributions volontaires pour __ajouter des exercices à chaque fiche thém
 L'objectif est de produire pour chaque chapitre un ensemble d'exercices, de difficulté graduelle,
 permettant de mettre en application les concepts présentés dans la fiche. 
 
-Pour les débutants en `R`, associer des exercices aux fiches
+<!-----
+Pour les débutants en <i class="fa-brands fa-r-project"></i>, associer des exercices aux fiches
 présente l'intérêt d'apprendre à lire une documentation pour résoudre des problèmes concrets, compétence que 
 des utilisateurs plus expérimentés savent mettre en oeuvre quoditiennement. 
+------->
 
 Ces exercices seraient accessibles depuis le [site web](https://www.book.utilitr.org/)
 mais aussi à travers
@@ -162,7 +164,7 @@ __Vos idées et contributions sont les bienvenues pour l'enrichir !__
 Pour souligner l'aspect collectif de cette section,
 un [guide des contributeurs](https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md) 
 vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de 
-discussion pour définir le sujet du _post_ aux outils proposés pour faciliter la rédaction 
+discussion pour définir le sujet du billet aux outils proposés pour faciliter la rédaction 
 et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i>](https://github.com/InseeFrLab/ssphub).
 
 
@@ -173,16 +175,18 @@ et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i
 
 L'attente était insoutenable mais la nouvelle saison de 10% est enfin là !
 __Rejoignez ce programme__, issu des
-recommandations d'un [rapport de l'Inspection Générale de l'Insee et de la DINUM](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf),
+recommandations du [rapport de l'Inspection Générale de l'Insee et de la DINUM](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf),
 où des data scientists proposent de consacrer jusqu'à 10% de leur temps de travail à
-des projets transversaux passionnants.
+des projets transversaux !
 
-Au-delà de la participation à des projets transversaux, le programme 10% est également l'opportunité 
+Au-delà de la participation à ces projets, le programme 10% est également l'opportunité 
 d'échanger des idées avec des data scientists d'autres administrations et de bénéficier de formations.
 
-Après un __webinaire d'information sur le programme le 31 janvier__ (inscription via [eventbrite](https://www.eventbrite.fr/e/billets-saison-2023-du-programme-10-webinaire-dinformation-520302437597) ),
-la __journée de lancement__ de la saison 2 se tiendra le __14 février au Bercy Lab__.
-Une saison plus longue que la première pour pérenniser certains des projets de la saison 1 mais aussi soutenir de
+Après un __webinaire d'information sur le programme le 31 janvier__ (inscription via [eventbrite](https://www.eventbrite.fr/e/billets-saison-2023-du-programme-10-webinaire-dinformation-520302437597)),
+la __journée de lancement__ de la saison 2 se tiendra le __14 février au Bercy Lab__ (plus d'infos à venir).
+
+Cette saison, plus longue que la première, permettra de pérenniser certains des projets de la saison 1
+mais aussi de lancer de
 nouveaux projets. 
 
 __Inscrivez-vous dès maintenant pour ne pas manquer la saison 2 de 10%!__
