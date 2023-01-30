@@ -27,7 +27,7 @@ featured: true
 #  preview_only: false
 
 authors:
-  - admin
+  - linogaliana
 
 tags:
 #  - retrospective
@@ -49,67 +49,82 @@ categories:
 
 *Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
 
-# Masterclass datascientest
+## Événement autour des packages pour faciliter l'accès à l'open data de l'Insee
+
+<img src="dessin-opendata.png" alt="Datascientest" width="450"> 
+
+Après les présentations [d'`observable`](/talk/presentation-dobservable-par-nicolas-lambert/)
+et de [`gridviz`](/talk/presentation-de-gridviz-par-julien-gaffuri/)
+nous vous proposons un
+nouvel événement. Celui-ci sera autour de l'_open data_ à travers la présentation des 
+__packages facilitant la récupération de données de l'Insee__ disponibles
+depuis le site web ou les API.
+
+Deux présentations sont prévues :
+- Pierre Lamarche présentera le package <i class="fa-brands fa-r-project"></i> [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). C'est grâce à ce package que la documentation `utilitR` peut s'appuyer sur des données bien connues des utilisateurs d'_open data_ (Filosofi, recensement...)
+- Hadrien Leclerc nous présentera le package <i class="fa-brands fa-python"></i> [`Pynsee`](https://github.com/InseeFrLab/pynsee) qui est utilisé depuis deux ans à l'ENSAE pour apprendre aux futurs data scientists à récupérer des données de cadrage. 
+ 
+Ces deux présentations seront suivies d'un temps d'échange.
+
+Cet événement aura lieu le __13 février de 15h à 16h30__ ([📅 invitation `Outlook`](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/newsletter_10/Pr%C3%A9sentation%20au%20r%C3%A9seau%20des%20data%20scientists%20des%20packages%20open%20data%20Insee%20.ics)). Si vous êtes utilisateurs de données, que vous veniez de l'Insee ou non, ces packages peuvent vous intéresser !
+
+
+
+
+## Masterclass datascientest
+
+<img src="datascientest.png" alt="Datascientest" width="200"> 
 
 Les masterclass organisées avec
 l'organisme de formation spécialisé `datascientest`
-reprennent ! Après une première masterclass au mois de décembre sur
-le sujet du MLOps, notre réseau va proposer de nouvelles séances.
+reprennent ! Après une première masterclass au mois de décembre consacrée
+au MLOps, notre réseau va proposer de nouvelles séances.
 
-Les premières séances vont s'organiser autour de deux cursus parallèles, qui 
+Les premières séances vont s'organiser autour de __deux cursus parallèles__, qui 
 commenceront par des introductions pour monter graduellement en niveau 
-et se rapprocher de cas d'usages que rencontrent nos data scientists. 
+et se rapprocher des cas d'usages que rencontrent nos data scientists. 
 
 Le premier parcours sera orienté autour des problématiques de NLP. 
 La première séance aura lieu le __10 février, de 10h à 12h__ et constituera
 une introduction au NLP avec un retour sur certains concepts
 centraux (_preprocessing_, _tokenisation_, _lemmatisation_...) et des
 exemples d'applications avec le package [`SpaCy`](https://spacy.io/). 
-Une deuxième séance est déjà programmée, le __24 mars de 10h à 12h__, sur 
+Une deuxième séance dans ce parcours est déjà programmée, le __24 mars de 10h à 12h__, sur 
 le thème de la similarité textuelle et de la classification de textes grâce
 aux méthodes d'_embeddings_. 
 
 Le deuxième parcours cible la problématique de l'analyse d'images. Une première séance,
 qui aura lieu le __10 mars de 10h à 12h__ reviendra sur certains concepts 
 centraux du _deep learning_ (perceptron, convolution, _transfer learning_...).
-Les séances suivantes, dont les dates n'ont pas encore été arrêtées, s'intéresseront aux 
-applications comme l'OCRisation ou la détection d'objets dans des images. 
+Les séances suivantes, dont les dates n'ont pas encore été arrêtées, s'intéresseront à 
+des cas d'usages comme l'OCRisation ou la détection d'objets dans des images. 
+
+{{% callout %}}
 
 __Pour vous inscrire, il suffit de remplir [ce formulaire](https://framaforms.org/participation-aux-masterclass-datascientest-1675096179) !__
 
-# Questionnaire sur vos besoins en formation data science
+{{% /callout %}}
+
+## Questionnaire sur vos besoins en formation data science
+
+<img src="circle-question-solid.png" alt="Questionnaire" width="100"> 
+
 
 En cette période de recensement, le réseau propose également le sien !
 Pour déterminer au mieux la répartition des besoins en formation sur les
 sujets data science et ainsi pouvoir proposer des
 événements pertinents, 
-nous vous
-proposons un [questionnaire](https://framaforms.org/besoin-de-formations-en-data-science-1674150129).
+__nous vous proposons un [questionnaire](https://framaforms.org/besoin-de-formations-en-data-science-1674150129)__
+sur vos besoins en formation.
 
-# Evénement autour des packages pour faciliter l'accès à l'open data de l'Insee
+## `utilitR` recherche des rédacteurs d'exercices !
 
-Après les événements [`observable`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-dobservable-par-nicolas-lambert/)
-et [`gridviz`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-de-gridviz-par-julien-gaffuri/)
-nous vous proposons un
-nouvel événement. Celui-ci sera autour de l'_open data_ à travers la présentation des 
-packages facilitant la récupération de données de l'Insee disponibles
-depuis le site web ou les API.
-
-Deux présentations auront lieu:
-- Pierre Lamarche nous présentera le package `R` [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). C'est grâce à ce package que la documentation `utilitR` peut s'appuyer sur des données bien connues des utilisateurs d'_open data_ (Filosofi, recensement...)
-- Hadrien Leclerc nous présentera le package `Python` [`Pynsee`](https://github.com/InseeFrLab/pynsee) qui est utilisé depuis deux ans à l'ENSAE pour apprendre aux data scientists à récupérer des données de contexte. 
- 
-Ces deux présentations seront suivies d'un temps d'échange.
-
-Cet événement aura lieu le __13 février de 15h à 16h30__ et pourra à la fois intéresser les personnes de l'Insee (venez découvrir comment les données que vous produisez peuvent être utilisées) et les extérieurs de l'Insee (venez découvrir des manières automatisées et facilitées d'accéder à nos données)
-
-
-# `utilitR` évolue: proposez des exercices !
+<img src="utilitr.png" alt="Questionnaire" width="200"> 
 
 Dans le but de continuer à développer [`utilitR`](https://www.book.utilitr.org/), 
 documentation collaborative et ouverte,
 l'équipe du projet souhaite encourager
-des contributions volontaires pour ajouter des exercices à chaque fiche thématique.
+des contributions volontaires pour __ajouter des exercices à chaque fiche thématique__.
 L'objectif est de produire pour chaque chapitre un ensemble d'exercices, de difficulté graduelle,
 permettant de mettre en application les concepts présentés dans la fiche. 
 
@@ -123,8 +138,7 @@ le [portail de formation du `SSP Cloud`](https://www.sspcloud.fr/formation),
 sous la forme de _notebooks_ d'autoformation. 
 
 L'équipe du projet `utilitR` est donc à la
-recherche des personnes motivées pour rédiger des exercices ou mettre à disposition
-des bouts de code ou des exercices déjà préparés.
+__recherche des personnes motivées pour rédiger des exercices ou mettre à disposition des bouts de code ou des exercices déjà préparés__.
 Si vous désirez apporter votre pierre à l'édifice, toute contribution, même modeste, 
 sur cette [page](https://github.com/InseeFrLab/utilitR/issues/462),
 sera appréciée par l'équipe `utilitr`.
@@ -137,7 +151,10 @@ tout en ajoutant des fonctionnalités utiles aux lecteurs, comme la
 possibilité de surligner ou de prendre des notes. 
 
 
-# Proposez un billet de blog !
+## Proposez un billet de blog !
+
+<img src="write-blogpost.jpg" alt="A vos stylos!" width="300"> 
+
 
 Le site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. 
 __Vos idées et contributions sont les bienvenues pour l'enrichir !__
@@ -146,14 +163,16 @@ Pour souligner l'aspect collectif de cette section,
 un [guide des contributeurs](https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md) 
 vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de 
 discussion pour définir le sujet du _post_ aux outils proposés pour faciliter la rédaction 
-et la soumission de celui-ci depuis [`Github`](https://github.com/InseeFrLab/ssphub).
+et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i>](https://github.com/InseeFrLab/ssphub).
 
 
+## La saison 2 du programme 10% arrive 
 
-# La saison 2 du programme 10% arrive 
+<img src="10p.png" alt="10 poucent" width="200"> 
 
-L'attente était insoutenable mais la saison 2 de 10% est enfin là!
-Rejoignez ce programme, issu des
+
+L'attente était insoutenable mais la nouvelle saison de 10% est enfin là !
+__Rejoignez ce programme__, issu des
 recommandations d'un [rapport de l'Inspection Générale de l'Insee et de la DINUM](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf),
 où des data scientists proposent de consacrer jusqu'à 10% de leur temps de travail à
 des projets transversaux passionnants.
