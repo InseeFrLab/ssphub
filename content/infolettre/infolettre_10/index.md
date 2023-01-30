@@ -49,7 +49,7 @@ categories:
 
 *Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
 
-## Événement autour des packages pour faciliter l'accès à l'open data de l'Insee
+## Un événement autour des packages facilitant l'accès à l'open data de l'Insee
 
 <img src="dessin-opendata.png" alt="Datascientest" width="450"> 
 
@@ -61,7 +61,7 @@ __packages facilitant la récupération de données de l'Insee__ disponibles
 depuis le site web ou les API.
 
 Deux présentations sont prévues :
-- Pierre Lamarche présentera le package <i class="fa-brands fa-r-project"></i> [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). C'est grâce à ce package que la documentation `utilitR` peut s'appuyer sur des données bien connues des utilisateurs d'_open data_ (Filosofi, recensement...)
+- Pierre Lamarche présentera le package <i class="fa-brands fa-r-project"></i> [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). C'est notamment grâce à ce package que la documentation `utilitR` peut s'appuyer sur des données bien connues des utilisateurs d'_open data_ (Filosofi, recensement...)
 - Hadrien Leclerc nous présentera le package <i class="fa-brands fa-python"></i> [`Pynsee`](https://github.com/InseeFrLab/pynsee) qui est utilisé depuis deux ans à l'ENSAE pour apprendre aux futurs data scientists à récupérer des données de cadrage. 
  
 Ces deux présentations seront suivies d'un temps d'échange.
@@ -168,7 +168,7 @@ et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i
 
 ## La saison 2 du programme 10% arrive 
 
-<img src="10p.png" alt="10 poucent" width="200"> 
+<img src="wantyou.jpg" alt="10 pourcent" width="200"> 
 
 
 L'attente était insoutenable mais la nouvelle saison de 10% est enfin là !
@@ -176,15 +176,23 @@ __Rejoignez ce programme__, issu des
 recommandations d'un [rapport de l'Inspection Générale de l'Insee et de la DINUM](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf),
 où des data scientists proposent de consacrer jusqu'à 10% de leur temps de travail à
 des projets transversaux passionnants.
+
 Au-delà de la participation à des projets transversaux, le programme 10% est également l'opportunité 
 d'échanger des idées avec des data scientists d'autres administrations et de bénéficier de formations.
 
-Après un webinaire d'information sur le programme le 31 janvier (inscription via [eventbrite](https://www.eventbrite.fr/e/billets-saison-2023-du-programme-10-webinaire-dinformation-520302437597) ),
-la journée de lancement de la saison 2 se tiendra le 14 février au Bercy Lab.
+Après un __webinaire d'information sur le programme le 31 janvier__ (inscription via [eventbrite](https://www.eventbrite.fr/e/billets-saison-2023-du-programme-10-webinaire-dinformation-520302437597) ),
+la __journée de lancement__ de la saison 2 se tiendra le __14 février au Bercy Lab__.
 Une saison plus longue que la première pour pérenniser certains des projets de la saison 1 mais aussi soutenir de
 nouveaux projets. 
 
-Inscrivez-vous dès maintenant pour ne pas manquer la saison 2 de 10%!
+__Inscrivez-vous dès maintenant pour ne pas manquer la saison 2 de 10%!__
+
+{{% callout %}}
+
+Pour plus d'information sur le programme : <lab-ia@data.gouv.fr>
+
+{{% /callout %}}
+
 
 <!------
 # L'ENSAE adopte le dragon Onyxia
@@ -203,9 +211,9 @@ les projets de l'école, et ainsi former les élèves aux technologies modernes 
 l'écosystème de la data science. 
 --------------->
 
-# Report de la journée de la donnée
+## Report de la journée de la donnée
 
-La journée de la donnée organisée par l'Administrateur Ministériel
-des Données, Algorithmes et Codes sources (AMDAC) du Ministère de la Santé, initialement prévue
-le 31 janvier, est reportée à une date ultérieure.  
+La __journée de la donnée__ organisée par l'Administrateur Ministériel
+des Données, Algorithmes et Codes sources (AMDAC) du Ministère de la Santé, __initialement prévue
+le 31 janvier, est reportée à une date ultérieure__.
 
