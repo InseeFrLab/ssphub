@@ -49,6 +49,61 @@ categories:
 
 *Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
 
+# Masterclass datascientest
+
+Les masterclass organisées avec
+l'organisme de formation spécialisé `datascientest`
+reprennent ! Après une première masterclass au mois de décembre sur
+le sujet du MLOps, notre réseau va proposer de nouvelles séances.
+
+Les premières séances vont s'organiser autour de deux cursus parallèles, qui 
+commenceront par des introductions pour monter graduellement en niveau 
+et se rapprocher de cas d'usages que rencontrent nos data scientists. 
+
+Le premier parcours sera orienté autour des problématiques de NLP. 
+La première séance aura lieu le __10 février, de 10h à 12h__ et constituera
+une introduction au NLP avec un retour sur certains concepts
+centraux (_preprocessing_, _tokenisation_, _lemmatisation_...) et des
+exemples d'applications avec le package [`SpaCy`](https://spacy.io/). 
+Une deuxième séance est déjà programmée, le __24 mars de 10h à 12h__, sur 
+le thème de la similarité textuelle et de la classification de textes grâce
+aux méthodes d'_embeddings_. 
+
+Le deuxième parcours cible la problématique de l'analyse d'images. Une première séance,
+qui aura lieu le __10 mars de 10h à 12h__ reviendra sur certains concepts 
+centraux du _deep learning_ (perceptron, convolution, _transfer learning_...).
+Les séances suivantes, dont les dates n'ont pas encore été arrêtées, s'intéresseront aux 
+applications comme l'OCRisation ou la détection d'objets dans des images. 
+
+__Pour vous inscrire, il suffit de remplir [ce formulaire](https://framaforms.org/participation-aux-masterclass-datascientest-1675096179) !__
+
+# Questionnaire sur vos besoins en formation data science
+
+En cette période de recensement, le réseau propose également le sien !
+Pour déterminer au mieux la répartition des besoins en formation sur les
+sujets data science et ainsi pouvoir proposer des
+événements pertinents, 
+nous vous
+proposons un [questionnaire](https://framaforms.org/besoin-de-formations-en-data-science-1674150129).
+
+# Evénement autour des packages pour faciliter l'accès à l'open data de l'Insee
+
+Après les événements [`observable`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-dobservable-par-nicolas-lambert/)
+et [`gridviz`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-de-gridviz-par-julien-gaffuri/)
+nous vous proposons un
+nouvel événement. Celui-ci sera autour de l'_open data_ à travers la présentation des 
+packages facilitant la récupération de données de l'Insee disponibles
+depuis le site web ou les API.
+
+Deux présentations auront lieu:
+- Pierre Lamarche nous présentera le package `R` [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). C'est grâce à ce package que la documentation `utilitR` peut s'appuyer sur des données bien connues des utilisateurs d'_open data_ (Filosofi, recensement...)
+- Hadrien Leclerc nous présentera le package `Python` [`Pynsee`](https://github.com/InseeFrLab/pynsee) qui est utilisé depuis deux ans à l'ENSAE pour apprendre aux data scientists à récupérer des données de contexte. 
+ 
+Ces deux présentations seront suivies d'un temps d'échange.
+
+Cet événement aura lieu le __13 février de 15h à 16h30__ et pourra à la fois intéresser les personnes de l'Insee (venez découvrir comment les données que vous produisez peuvent être utilisées) et les extérieurs de l'Insee (venez découvrir des manières automatisées et facilitées d'accéder à nos données)
+
+
 # `utilitR` évolue: proposez des exercices !
 
 Dans le but de continuer à développer [`utilitR`](https://www.book.utilitr.org/), 
@@ -93,43 +148,6 @@ vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de
 discussion pour définir le sujet du _post_ aux outils proposés pour faciliter la rédaction 
 et la soumission de celui-ci depuis [`Github`](https://github.com/InseeFrLab/ssphub).
 
-# Masterclass datascientest
-
-Les masterclass organisées avec
-l'organisme de formation spécialisé `datascientest`
-reprennent ! Après une première masterclass au mois de décembre sur
-le sujet du MLOps, notre réseau va proposer de nouvelles séances.
-
-Les premières séances vont s'organiser autour de deux cursus parallèles, qui 
-commenceront par des introductions pour monter graduellement en niveau 
-et se rapprocher de cas d'usages que rencontrent nos data scientists. 
-
-Le premier parcours sera orienté autour des problématiques de NLP. 
-La première séance aura lieu le __10 février, de 10h à 12h__ et constituera
-une introduction au NLP avec un retour sur certains concepts
-centraux (_preprocessing_, _tokenisation_, _lemmatisation_...) et des
-exemples d'applications avec le package [`SpaCy`](https://spacy.io/). 
-Une deuxième séance est déjà programmée, le __24 mars de 10h à 12h__, sur 
-le thème de la similarité textuelle et de la classification de textes grâce
-aux méthodes d'_embeddings_. 
-
-Le deuxième parcours cible la problématique de l'analyse d'images. Une première séance,
-qui aura lieu le __10 mars de 10h à 12h__ reviendra sur certains concepts 
-centraux du _deep learning_ (perceptron, convolution, _transfer learning_...).
-Les séances suivantes, dont les dates n'ont pas encore été arrêtées, s'intéresseront aux 
-applications comme l'OCRisation ou la détection d'objets dans des images. 
-
-Modalités d'inscription
-Inscrivez-vous dès maintenant à nos prochaines masterclass !
-
-# Questionnaire sur vos besoins en formation data science
-
-En cette période de recensement, le réseau propose également le sien !
-Pour déterminer au mieux la répartition des besoins en formation sur les
-sujets data science et ainsi pouvoir proposer des
-événements pertinents, 
-nous vous
-proposons un [questionnaire](https://framaforms.org/besoin-de-formations-en-data-science-1674150129).
 
 
 # La saison 2 du programme 10% arrive 
@@ -148,23 +166,6 @@ Une saison plus longue que la première pour pérenniser certains des projets de
 nouveaux projets. 
 
 Inscrivez-vous dès maintenant pour ne pas manquer la saison 2 de 10%!
-
-# Evénement autour des packages pour faciliter l'accès à l'open data de l'Insee
-
-Après les événements [`observable`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-dobservable-par-nicolas-lambert/)
-et [`gridviz`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-de-gridviz-par-julien-gaffuri/)
-nous vous proposons un
-nouvel événement. Celui-ci sera autour de l'_open data_ à travers la présentation des 
-packages facilitant la récupération de données de l'Insee disponibles
-depuis le site web ou les API.
-
-Deux présentations auront lieu:
-- Pierre Lamarche nous présentera le package `R` [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). C'est grâce à ce package que la documentation `utilitR` peut s'appuyer sur des données bien connues des utilisateurs d'_open data_ (Filosofi, recensement...)
-- Hadrien Leclerc nous présentera le package `Python` [`Pynsee`](https://github.com/InseeFrLab/pynsee) qui est utilisé depuis deux ans à l'ENSAE pour apprendre aux data scientists à récupérer des données de contexte. 
- 
-Ces deux présentations seront suivies d'un temps d'échange.
-
-Cet événement aura lieu le __13 février de 15h à 16h30__ et pourra à la fois intéresser les personnes de l'Insee (venez découvrir comment les données que vous produisez peuvent être utilisées) et les extérieurs de l'Insee (venez découvrir des manières automatisées et facilitées d'accéder à nos données)
 
 <!------
 # L'ENSAE adopte le dragon Onyxia
