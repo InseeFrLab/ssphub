@@ -151,8 +151,8 @@ Inscrivez-vous dès maintenant pour ne pas manquer la saison 2 de 10%!
 
 # Evénement autour des packages pour faciliter l'accès à l'open data de l'Insee
 
-Après les événements [observable](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-dobservable-par-nicolas-lambert/)
-et [gridviz](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-de-gridviz-par-julien-gaffuri/)
+Après les événements [`observable`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-dobservable-par-nicolas-lambert/)
+et [`gridviz`](https://projet-utilitr-898785-user.user.lab.sspcloud.fr/talk/presentation-de-gridviz-par-julien-gaffuri/)
 nous vous proposons un
 nouvel événement. Celui-ci sera autour de l'_open data_ à travers la présentation des 
 packages facilitant la récupération de données de l'Insee disponibles
