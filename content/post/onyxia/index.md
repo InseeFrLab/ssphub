@@ -38,6 +38,26 @@ categories:
 ---
 
 
+L'écosystème de la data science est en mouvement accéléré depuis 10 ans
+et le rôle du data scientist dans les organisations valorisant de la donnée
+a évolué. 
+Les data scientists modernes sont amenés à utiliser de plus en plus
+de langages ou être capable de maîtriser plusieurs
+architectures informatiques. Les innovations récentes dans le monde du
+développement logiciel, notamment 
+L'adoption massive de l'approche DevOps dans le monde logiciel,
+approche qui consiste à XXXXX , a également fait évoluer les pratiques des data scientists
+[ref data scientist 10 years later]. Le besoin de ressources informatiques croissantes, 
+de flexibilité dans le prototypage de solutions informatiques et les pratiques
+consistant à mettre à disposition en continu des livrables a eu des implications
+importantes sur les architectures informatiques dominantes dans l'écosystème de la 
+donnée. Par exemple,
+après avoir connu son heure de gloire au début des années 2010, l'infrastructure HDFS, 
+qui reposait sur la collocalisation des traitements, a laissé place à des infrastructures
+plus scalables, basées sur l'approche de la conteneurisation. 
+
+
+La 
 https://www.onyxia.sh/
 
 Onyxia is a web app that aims at being the glue between multiple open source backend technologies to provide a state of art working environnement for data scientists.
