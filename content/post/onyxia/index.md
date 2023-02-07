@@ -37,9 +37,18 @@ categories:
   - Insee
 ---
 
-Onyxia est un logiciel open source développé par l’Insee permettant de fournir un environnement de traitement de données à l’état de l’art. Principalement conçu pour permettre le travail intéractif des data scientists avec la donnée, l’expérience fournie avec Onyxia favorise également la reproductibilité des travaux et leur mise en production.
+`Onyxia` est un logiciel _open source_ développé par l’Insee
+([disponible sur `Github` <i class="fa-brands fa-github"></i>](https://github.com/InseeFrLab/onyxia-web))
+permettant de fournir un environnement de traitement de données à l’état de l’art.
+Principalement conçu pour permettre le travail interactif des data scientists avec la donnée,
+l’expérience fournie avec Onyxia favorise également la reproductibilité des travaux et leur mise en production.
 
-Il est installé par des organisations souhaitant créer un Datalab (plateforme de traitement de donnée interactive) et qui ont toute le point commun de vouloir construire une plateforme qui embrasse les technologies cloud que sont la conteneurisation et le stockage objet. Ces technologies deviennent indispensables dans l’écosystème de la donnée car elles permettent une meilleure gestion des ressources et un environnement parfaitement reproductible.
+`Onyxia` est installé par des organisations souhaitant créer un _datalab_ (plateforme de traitement de donnée interactive).
+Ces organisations ont toutes le point commun de vouloir construire une plateforme qui embrasse
+les technologies _cloud_ que sont la conteneurisation et le stockage objet.
+Ces technologies deviennent indispensables dans l’écosystème de la donnée car
+elles permettent une meilleure gestion des ressources et un environnement parfaitement reproductible.
+
 
 ## Contexte
 
@@ -47,19 +56,29 @@ L'écosystème de la data science est en mouvement accéléré depuis 10 ans
 et le rôle du data scientist dans les organisations valorisant de la donnée
 a évolué. 
 Les data scientists modernes sont amenés à utiliser de plus en plus
-de langages ou être capable de maîtriser plusieurs
+de langages et doivent être capables de maîtriser plusieurs
 architectures informatiques. Les innovations récentes dans le monde du
 développement logiciel, notamment 
-L'adoption massive de l'approche DevOps dans le monde logiciel,
-approche qui consiste à XXXXX , a également fait évoluer les pratiques des data scientists
-[ref data scientist 10 years later]. Le besoin de ressources informatiques croissantes, 
-de flexibilité dans le prototypage de solutions informatiques et les pratiques
-consistant à mettre à disposition en continu des livrables a eu des implications
+l'adoption massive de l'approche `DevOps` dans le monde logiciel,
+approche qui consiste à automatiser la production de livrable dès la conception
+du prototype,
+a également fait évoluer les pratiques des data scientists [ref data scientists 10 years].
+
+Ce besoin de ressources informatiques croissantes, 
+de flexibilité dans le prototypage de solutions informatiques et l'évolution des
+pratiques
+consistant à mettre à disposition en continu des livrables ont eu des implications
 importantes sur les architectures informatiques dominantes dans l'écosystème de la 
-donnée. Par exemple,
-après avoir connu son heure de gloire au début des années 2010, l'infrastructure HDFS, 
-qui reposait sur la collocalisation des traitements, a laissé place à des infrastructures
-plus scalables, basées sur l'approche de la conteneurisation. Cette approche, qui repose
+donnée.
+Après avoir connu son heure de gloire au début des années 2010, l'infrastructure
+HDFS (_Hadoop Distributed File System_), 
+qui reposait sur des _cluster_ où les données et la puissance de traitement étaient
+distribués et collocalisés, a laissé place à des infrastructures
+plus scalables, basées sur l'approche de la conteneurisation.
+
+Images
+
+Cette approche de la conteunirisation, qui repose
 sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
 effectuant les traitements, sert de fondement aux principales plateformes fournissant 
 des services à la demande. Ce nouveau paradigme part du constat que les
@@ -67,28 +86,60 @@ des services à la demande. Ce nouveau paradigme part du constat que les
 
 L'accès aux données se fait à travers des API qui 
 permettent de traiter le système de stockage distant comme un système de fichiers
-classiques. Il est 
+classiques.
 
 
+## La solution Onyxia
 
-Fort de tous ces constats, l'équipe innovation de l'Insee a eu l'idée de créer une 
-plateforme mobilisant exclusivement des composants open-source. 
+Pour permettre aux data scientists des administrations françaises
+de bénéficier de technologies _cloud_ sans être dépendant d'un
+fournisseur de service privé,
+l'équipe innovation de l'Insee a eu l'idée de créer un
+_datalab_ basé sur la philosophie de la conteunerisation et 
+mobilisant exclusivement des composants open-source. 
+Ce _datalab_ est né à l'Insee en 2018 et a été ouvert à l'administration
+publique sous la forme d'une instance https://www.sspcloud.fr/
+sous la condition d'utiliser des données ouvertes. 
+Depuis deux ans, cette infrastructure sert à former les élèves de l'ENSAE
+dans le cadre de leur formation en _data science_. 
 
+Nbre utilisation quotidienne
+Dimensionnement (CPU, GPU, RAM)
 
-La 
-https://www.onyxia.sh/
+Pour les utilisations internes de données plus sensibles,
+l'équipe innovation
+de l'Insee a rendu disponible
+le code source derrière le `SSP Cloud`
+dans le cadre d'un logiciel
+nommé `Onyxia` (https://www.onyxia.sh/).
+Ce logiciel est pensé comme un kit qui peut être installé
+sur un cluster kubernetes. `Kubernetes` est une technologie
+qui permet d'orchestrer des ressources entre des containeurs. 
+Cela permet d'adapter les ressources à la demande afin que
+coexistent des services partageant des ressources dont les besoins
+ne sont pas constants. 
 
-Onyxia is a web app that aims at being the glue between multiple open source backend technologies to provide a state of art working environnement for data scientists.
-Onyxia is developed by the French National institute of statistics and economic studies (INSEE).
+Plus précisément, Onyxia propose deux composants de valeur :
 
+* une interface web qui agit comme la porte d’entrée du data scientist sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée.
+* des catalogues de logiciels : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...),  5 services d’automatisation (`MLflow`, `Label Studio`) et 2 services de _dataviz_ (`Redash` et `superset`)
 
-Onyxia propose deux composants de valeur :
-    • une interface web qui agit comme la porte d’entrée du data scientist sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée.
-    • des catalogues de logiciels : 18 services interactifs (ex : rstudio, jupyter, vscode), 15 services de base de donnée (ex : postgres, elastic search), 5 services d’automatisation (ex : mlflow, label studio), 2 services de dataviz (redash et superset)
-Ces composants sont proposés en open source par l’Insee ce qui permet de fédérer une communauté et est un bel exemple de mutualisation au sein de l’État et au delà. Cette communauté peut proposer de nouveaux services dans le catalogue.
 
 Onyxia est une application web qui permet aux data scientists d'accéder à un environnement de travail a l'état de l'art même sans être très pointu en informatique. Essentiellement, Onyxia transforme un repo de charts Helm en un catalogue de services configurables et configurés automatiquement.
 Onyxia propose également une intégration avec S3.
+
+Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation.
+Il est ainsi possible de ne pas adopter l'ensemble des services ou de changer certaines des briques
+de base pour l'adapter à des éléments d'infrastructure interne. Par exemple, il est possible d'adapter
+la destination du service de stockage ou les configurations des environnements data science pour adapter
+à des ressources. 
+
+Tous les composants sont proposés en open source par l’Insee ce qui permet de fédérer une communauté
+et est un bel exemple de mutualisation au sein de l’État et au delà. L'approche open source avec l'ensemble 
+des dépôts 
+sur le Github de l'équipe innovation (celui de [l'interface web](WXXX), celui des [images data science](XXXX)...).
+La communauté peut proposer de nouveaux services dans le catalogue. Cette approche _bottom up_ a déjà permis 
+d'adapter des services aux besoins des utilisateurs. 
 
 Onyxia génère automatiquement un formulaire qui permet aux utilisateurs d'écraser les valeurs pas défaut des values.yaml de vos charts Helm. Onyxia vous permet également de préciser des valeurs à préremplir spécifiquement pour l'utilisateur en question. Ce mécanisme permet notamment à l'utilisateur d'être déjà authentifié à S3 et d'avoir accès à son bucket personel dès l'ouverture de Jupyter ou RStudio.
 
