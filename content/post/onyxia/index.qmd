@@ -94,7 +94,7 @@ qui reposait sur des _clusters_ où les données et la puissance de traitement �
 distribués et collocalisés, a laissé place à des infrastructures
 plus scalables, basées sur l'approche de la conteneurisation. 
 
-## De HDFS aux conteneurs
+## De HDFS aux conteneurs à Kubernetes
 
 Annonce partie plus technique -> faire un lien vers une autre partie
 
@@ -165,7 +165,7 @@ la même technologie. Le système de la conteneurisation a justement été pens�
 pour cela: plutôt qu'installer des librairies au niveau du système, pour une fraction 
 d'utilisateur limitée, il est plus intéressant de créer des environnements complets
 qui vont exister de manière conjointe.  
-
+orchestration kubernetes
 
 ```{python}
 #| output: asis
