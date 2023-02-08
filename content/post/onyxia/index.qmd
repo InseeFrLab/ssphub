@@ -35,34 +35,49 @@ tags:
 
 categories:
   - Insee
+
+bibliography: references.bib
 ---
+
 
 `Onyxia` est un logiciel _open source_ développé par l’Insee
 ([disponible sur `Github` <i class="fa-brands fa-github"></i>](https://github.com/InseeFrLab/onyxia-web))
 permettant de fournir un environnement de traitement de données à l’état de l’art.
-Principalement conçu pour permettre le travail interactif des data scientists avec la donnée,
-l’expérience fournie avec Onyxia favorise également la reproductibilité des travaux et leur mise en production.
+Principalement conçu pour permettre le travail interactif des data scientists,
+l’expérience fournie avec `Onyxia`
+favorise également la reproductibilité des travaux et leur mise en production.
 
-`Onyxia` est installé par des organisations souhaitant créer un _datalab_ (plateforme de traitement de donnée interactive).
+Le logiciel `Onyxia` est installé par des organisations souhaitant créer un _datalab_,
+c'est-à-dire une plateforme interactive de traitement de données.
 Ces organisations ont toutes le point commun de vouloir construire une plateforme qui embrasse
-les technologies _cloud_ que sont la conteneurisation et le stockage objet.
-Ces technologies deviennent indispensables dans l’écosystème de la donnée car
-elles permettent une meilleure gestion des ressources et un environnement parfaitement reproductible.
+les technologies _cloud_ que sont la conteneurisation et le stockage objet tout en mettant à
+disposition celles-ci dans un environnement _user-friendly_ où l'interconnexion entre ces
+différentes briques est gérée de manière cohérente.
+Les technologies _cloud native_ étant devenues indispensables dans l’écosystème de la donnée, 
+par la meilleure gestion des ressources et la capacité à créer un
+environnement parfaitement reproductible pour une mise en production accélérée, ont beaucoup
+à apporter à l'administration française.
 
+Ce _post_ de blog a pour objectif de présenter la raison d'être d'`Onyxia`,
+sa génèse et les solutions qu'apporte cette infrastructure à des irritants
+classiques des projets novateurs de data science. 
 
 ## Contexte
 
 L'écosystème de la data science est en mouvement accéléré depuis 10 ans
-et le rôle du data scientist dans les organisations valorisant de la donnée
-a évolué. 
+et le rôle du _data scientist_ dans les organisations valorisant de la donnée
+a évolué [@davenport2022data]. 
 Les data scientists modernes sont amenés à utiliser de plus en plus
 de langages et doivent être capables de maîtriser plusieurs
-architectures informatiques. Les innovations récentes dans le monde du
+architectures informatiques. La frontière est ainsi moins nette
+que par le passé entre
+statisticiens et informaticiens. 
+De plus, les innovations récentes dans le monde du
 développement logiciel, notamment 
-l'adoption massive de l'approche `DevOps` dans le monde logiciel,
-approche qui consiste à automatiser la production de livrable dès la conception
-du prototype,
-a également fait évoluer les pratiques des data scientists [ref data scientists 10 years].
+l'adoption massive de l'approche `DevOps` -
+approche qui consiste à automatiser la production de livrables dès la conception
+du prototype -
+a également fait évoluer les pratiques des data scientists.
 
 Ce besoin de ressources informatiques croissantes, 
 de flexibilité dans le prototypage de solutions informatiques et l'évolution des
@@ -70,19 +85,106 @@ pratiques
 consistant à mettre à disposition en continu des livrables ont eu des implications
 importantes sur les architectures informatiques dominantes dans l'écosystème de la 
 donnée.
-Après avoir connu son heure de gloire au début des années 2010, l'infrastructure
-HDFS (_Hadoop Distributed File System_), 
-qui reposait sur des _cluster_ où les données et la puissance de traitement étaient
+Pour répondre au besoin croissant de puissance de traitement, les serveurs
+partagés, organisés sous forme de clusters, se sont développés dans de 
+nombreuses organisations.
+Après avoir connue son heure de gloire au début des années 2010, l'infrastructure
+[`HDFS` (_Hadoop Distributed File System_)](https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs), 
+qui reposait sur des _clusters_ où les données et la puissance de traitement étaient
 distribués et collocalisés, a laissé place à des infrastructures
-plus scalables, basées sur l'approche de la conteneurisation.
+plus scalables, basées sur l'approche de la conteneurisation. 
 
-Images
+## De HDFS aux conteneurs
+
+Annonce partie plus technique -> faire un lien vers une autre partie
+
+Les infrastructures _big data_ reposent sur le principe du _cluster_ (grappe) informatique.
+Des serveurs sont connectés entre eux, ce qui forme de manière imagée une grappe. 
+Cette interconnexion de plusieurs serveurs entre eux peut se faire au niveau de stockage
+(les données volumineuses ne sont pas stockées sur un seul serveur mais au contraire réparties)
+ou du traitement (les calculs sont effectués par blocs sur plusieurs serveurs et le résultat
+de ceux-ci est ensuite transmis à un serveur maître). 
+
+Le système _Hadoop Distributed File System_ a été pensé pour tirer parti
+de l'algorithme de traitement parallélisé `MapReduce`. Les fichiers
+volumineux sont fractionnés et répartis sur plusieurs serveurs.
+La spécificité de l'architecture HDFS est que non seulement le stockage est
+distribué mais aussi la puissance de traitement associée également. On parle à
+ce propos de collocalisation: les traitements ont lieu sur les mêmes serveurs
+que ceux où sont stockés les données. Cette collocalisation a permis au 
+système HDFS de devenir le paradigme dominant
+en tirant parti de la parallélisation
+permise par des langages très efficaces comme `Spark` tout en limitant les
+échanges réseaux pouvant faire perdre en performance. 
+
+Le système HDFS présente néanmoins certaines limites qui expliquent sa
+perte de succès avec l'émergence d'un nouveau paradigme plus flexible.
+
+En premier lieu,
+ce système nécessite beaucoup de ressources du fait de son design. Comme
+les traitements sont lourds et partagés pour des usages concurrents, 
+les noeuds constituant le cluster peuvent subir des arrêts à cause
+de surcharge des ressources. 
+Pour tenir
+compte de la nature instable de cette infrastructure _big data_,
+les fichiers 
+sont dupliqués afin qu'une erreur sur le
+serveur (par exemple à cause de traitements trop gourmands)
+permette tout de même de sécuriser les traitements sur l'ensemble
+des données et éviter la perte de données ou des traitements
+sur un ensemble partiel des données. L'implication est que les données, 
+déjà volumineuses, sont dupliquées plusieurs fois ce qui 
+fait implique des architectures assez monumentales. Si la duplication
+de la donnée n'est
+pas en soi choquante afin d'éviter la perte de donnée, cela a un effet 
+pervers dans un système de collocalisation. A chaque ajout de noeuds
+pour le stockage de données, il est également nécessaire d'ajouter 
+des ressources pour les traiter. Il est donc compliqué de décorréler 
+l'ajout de ressources de stockage et de traitement. Cette absence
+de flexibilité est pénalisante dans un monde où les données sont mises
+à jour fréquemment et où les technologies de traitement, 
+donc les besoins associés, évoluent rapidement. Les infrastructures HDFS
+sont donc lourdes à faire évoluer, que ce soit pour ajouter des ressources
+ou faire évoluer les distributions logicielles présentes dessus.
+
+Le deuxième facteur qui a favorisé un changement de paradigme est l'amélioration
+des échanges réseaux. Il n'est plus aussi coûteux que par le passé de transférer
+des volumes importants de données au sein d'une infrastructure. Cela facilite
+la décorrélation entre environnement de stockage et de traitement.
+
+Cette séparation
+des environnements de stockage et de traitement 
+permet alors d'adopter pour chacun les technologies
+les plus performantes. Dans le domaine du stockage, celle qui 
+a rencontré le plus de succès est le système de stockage S3 développé
+par Amazon. L'implémentation open source du système S3 est MinIO, utilisée
+par le SSP Cloud. Dans le domaine du traitement, la technologie la plus performante
+dépend de la nature de la tâche réalisée. Selon qu'on désire effectuer de la recherche
+textuelle, des dataviz ou de l'analyse d'image, on ne va pas vouloir utiliser
+la même technologie. Le système de la conteneurisation a justement été pensé
+pour cela: plutôt qu'installer des librairies au niveau du système, pour une fraction 
+d'utilisateur limitée, il est plus intéressant de créer des environnements complets
+qui vont exister de manière conjointe.  
+
+
+```{python}
+#| output: asis
+#| echo: false
+with open('onyxia_logic.svg') as f:
+    s = f.read()
+print(s)
+```
 
 Cette approche de la conteunirisation, qui repose
 sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
 effectuant les traitements, sert de fondement aux principales plateformes fournissant 
-des services à la demande. Ce nouveau paradigme part du constat que les
-échanges réseaux sont devenus peu coûteux par rapport à la maintenance d'une infrastructure
+des services à la demande. Ce nouveau paradigme part de deux constats. Le premier
+est que les
+échanges réseaux sont devenus peu coûteux. Avec des flux réseaux suffisants et une technologie
+performante, 
+il est donc possible d'échanger des grands volumes de données au sein d'une infrastructure.
+Le deuxième constat est qu'il est 
+par rapport à la maintenance d'une infrastructure
 
 L'accès aux données se fait à travers des API qui 
 permettent de traiter le système de stockage distant comme un système de fichiers
@@ -103,8 +205,10 @@ sous la condition d'utiliser des données ouvertes.
 Depuis deux ans, cette infrastructure sert à former les élèves de l'ENSAE
 dans le cadre de leur formation en _data science_. 
 
-Nbre utilisation quotidienne
-Dimensionnement (CPU, GPU, RAM)
+300 hebdos , 3000 inscrits
+10 TB RAM , 34 GPU, 1100 cpu (au sens des threads, pas des coeurs)
+150 TB S3
+
 
 Pour les utilisations internes de données plus sensibles,
 l'équipe innovation
@@ -119,10 +223,19 @@ Cela permet d'adapter les ressources à la demande afin que
 coexistent des services partageant des ressources dont les besoins
 ne sont pas constants. 
 
+
 Plus précisément, Onyxia propose deux composants de valeur :
 
 * une interface web qui agit comme la porte d’entrée du data scientist sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée.
 * des catalogues de logiciels : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...),  5 services d’automatisation (`MLflow`, `Label Studio`) et 2 services de _dataviz_ (`Redash` et `superset`)
+
+<img src = "catalogue.svg" alt="Le catalogue Onyxia"/>
+
+
+
+
+<img src = "onyxia_ecailles.svg" alt="Composantes Onyxia"/>
+
 
 
 Onyxia est une application web qui permet aux data scientists d'accéder à un environnement de travail a l'état de l'art même sans être très pointu en informatique. Essentiellement, Onyxia transforme un repo de charts Helm en un catalogue de services configurables et configurés automatiquement.
@@ -140,6 +253,8 @@ des dépôts
 sur le Github de l'équipe innovation (celui de [l'interface web](WXXX), celui des [images data science](XXXX)...).
 La communauté peut proposer de nouveaux services dans le catalogue. Cette approche _bottom up_ a déjà permis 
 d'adapter des services aux besoins des utilisateurs. 
+
+
 
 Onyxia génère automatiquement un formulaire qui permet aux utilisateurs d'écraser les valeurs pas défaut des values.yaml de vos charts Helm. Onyxia vous permet également de préciser des valeurs à préremplir spécifiquement pour l'utilisateur en question. Ce mécanisme permet notamment à l'utilisateur d'être déjà authentifié à S3 et d'avoir accès à son bucket personel dès l'ouverture de Jupyter ou RStudio.
 
@@ -175,6 +290,9 @@ Avec Onyxia vous n'investissez pas sur une stack technique en particulier sauf k
 
 ## Les plateformes basées sur Onyxia
 
+<img src = "multiple_instances.svg" alt="Onyxia, un ensemble d'instanciations possibles"/>
+
+
 L’Insee propose le SSPCloud, une plateforme ouverte à tous les agents de l’État et de nombreuses écoles et exclusivement limitée à l’exploitation de données open data. Cette stratégie d’offreur de services de traitement sur l’open data permet de montrer l’expertise de l’Insee sur les sujets data science sans prendre de risques sur la nature des projets et la complexité organisationnelle et technique des plateformes mutualisées sur données sensibles (HDH, Escale coté Drees/Dares). Afin d’illustrer les possibilités offertes par une telle plateforme, voici quelques exemples typiques :
     • la formation
     • l’organisation de hackathons
@@ -189,3 +307,8 @@ Onyxia et ses catalogues fournissent le coeur de l’offre mais l’infrastructu
     • Le logiciel Grafana pour proposer aux utilisateurs un service de supervision et leur montrer leurs consommations de ressources.
 L’Insee n’est désormais plus seul et fédère autour de son projet d’autres organisations. Eurostat a été la première organisation en dehors de l’Insee à choisir Onyxia fin 2021 et a présenté sa plateforme à l’international. Expertise France pour le projet DATAFID a fait le choix d’Onyxia tout comme le CASD, le GENES, Orange et BercyHub avec le projet Nubonyxia (installation d’Onyxia dans le cloud interministériel Nubo).
 D’autres organisations sont plus dans une phase de POC ou d’études : l’INS norvégien, Pole Emploi, BPCE, Data4Good, l’Ineris, le ministère de l’Intérieur, le ministère de la Justice, l’Inria, EDF…
+
+
+
+
+## Références
