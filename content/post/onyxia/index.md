@@ -1,9 +1,16 @@
 ---
 title: "Onyxia: l'infrastructure cloud mère des dragons"
-subtitle: Une infrastructure de data science avec les technologies à la pointe
+subtitle: Un projet autour d'une infrastructure de data science à la pointe
 toc: true
 summary: |
-  TO BE COMPLETED
+  Les technologies cloud sont incontournables dans l'écosystème de la 
+  donnée. Pour ne pas se rendre dépendante de fournisseurs de services
+  externes, l'Insee a développé un datalab avec des technologies
+  à la pointe pour ses data scientists. Le code source de celle-ci 
+  a été ouvert dans le cadre du projet Onyxia. Ce projet permet
+  de fédérer une large communauté d'utilisateurs mais aussi
+  d'organisations intéressées par le développement d'une
+  plateforme souveraine de data science. 
 # Link this post with a project
 projects: [onyxia]
 
