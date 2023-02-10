@@ -165,7 +165,8 @@ la même technologie. Le système de la conteneurisation a justement été pens�
 pour cela: plutôt qu'installer des librairies au niveau du système, pour une fraction 
 d'utilisateur limitée, il est plus intéressant de créer des environnements complets
 qui vont exister de manière conjointe.  
-orchestration kubernetes
+
++ orchestration kubernetes
 
 ```{python}
 #| output: asis
