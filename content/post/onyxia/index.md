@@ -1,6 +1,6 @@
 ---
-title: "Onyxia: un cloud idéal pour les data scientists"
-subtitle: Une infrastructure de data science avec les technologies à la pointe disponible en open source
+title: "Onyxia: l'infrastructure cloud mère des dragons"
+subtitle: Une infrastructure de data science avec les technologies à la pointe
 toc: true
 summary: |
   TO BE COMPLETED
@@ -101,76 +101,41 @@ plus scalables, basées sur l'approche de la conteneurisation.
 
 ## De HDFS aux conteneurs à Kubernetes
 
-Annonce partie plus technique -\> faire un lien vers une autre partie
+Cette partie plus technique développe des éléments pour comprendre
+le succès récent des infrastructures conteuneurisées.
+Elle pourra intéresser le lecteur curieux sur les fondements
+des infrastructures *cloud* modernes mais n'est pas nécessaire
+à la compréhension générale de l'article.
 
-Les infrastructures *big data* reposent sur le principe du *cluster* (grappe) informatique.
-Des serveurs sont connectés entre eux, ce qui forme de manière imagée une grappe.
-Cette interconnexion de plusieurs serveurs entre eux peut se faire au niveau de stockage
-(les données volumineuses ne sont pas stockées sur un seul serveur mais au contraire réparties)
-ou du traitement (les calculs sont effectués par blocs sur plusieurs serveurs et le résultat
-de ceux-ci est ensuite transmis à un serveur maître).
+Voici un résumé de ces éléments:
 
-Le système *Hadoop Distributed File System* a été pensé pour tirer parti
-de l'algorithme de traitement parallélisé `MapReduce`. Les fichiers
-volumineux sont fractionnés et répartis sur plusieurs serveurs.
-La spécificité de l'architecture HDFS est que non seulement le stockage est
-distribué mais aussi la puissance de traitement associée également. On parle à
-ce propos de collocalisation: les traitements ont lieu sur les mêmes serveurs
-que ceux où sont stockés les données. Cette collocalisation a permis au
-système HDFS de devenir le paradigme dominant
-en tirant parti de la parallélisation
-permise par des langages très efficaces comme `Spark` tout en limitant les
-échanges réseaux pouvant faire perdre en performance.
-
-Le système HDFS présente néanmoins certaines limites qui expliquent sa
-perte de succès avec l'émergence d'un nouveau paradigme plus flexible.
-
-En premier lieu,
-ce système nécessite beaucoup de ressources du fait de son design. Comme
-les traitements sont lourds et partagés pour des usages concurrents,
-les noeuds constituant le cluster peuvent subir des arrêts à cause
-de surcharge des ressources.
-Pour tenir
-compte de la nature instable de cette infrastructure *big data*,
-les fichiers
-sont dupliqués afin qu'une erreur sur le
-serveur (par exemple à cause de traitements trop gourmands)
-permette tout de même de sécuriser les traitements sur l'ensemble
-des données et éviter la perte de données ou des traitements
-sur un ensemble partiel des données. L'implication est que les données,
-déjà volumineuses, sont dupliquées plusieurs fois ce qui
-fait implique des architectures assez monumentales. Si la duplication
-de la donnée n'est
-pas en soi choquante afin d'éviter la perte de donnée, cela a un effet
-pervers dans un système de collocalisation. A chaque ajout de noeuds
-pour le stockage de données, il est également nécessaire d'ajouter
-des ressources pour les traiter. Il est donc compliqué de décorréler
-l'ajout de ressources de stockage et de traitement. Cette absence
-de flexibilité est pénalisante dans un monde où les données sont mises
-à jour fréquemment et où les technologies de traitement,
-donc les besoins associés, évoluent rapidement. Les infrastructures HDFS
-sont donc lourdes à faire évoluer, que ce soit pour ajouter des ressources
-ou faire évoluer les distributions logicielles présentes dessus.
-
-Le deuxième facteur qui a favorisé un changement de paradigme est l'amélioration
-des échanges réseaux. Il n'est plus aussi coûteux que par le passé de transférer
-des volumes importants de données au sein d'une infrastructure. Cela facilite
-la décorrélation entre environnement de stockage et de traitement.
-
-Cette séparation
-des environnements de stockage et de traitement
-permet alors d'adopter pour chacun les technologies
-les plus performantes. Dans le domaine du stockage, celle qui
-a rencontré le plus de succès est le système de stockage S3 développé
-par Amazon. L'implémentation open source du système S3 est MinIO, utilisée
-par le SSP Cloud. Dans le domaine du traitement, la technologie la plus performante
-dépend de la nature de la tâche réalisée. Selon qu'on désire effectuer de la recherche
-textuelle, des dataviz ou de l'analyse d'image, on ne va pas vouloir utiliser
-la même technologie. Le système de la conteneurisation a justement été pensé
-pour cela: plutôt qu'installer des librairies au niveau du système, pour une fraction
-d'utilisateur limitée, il est plus intéressant de créer des environnements complets
-qui vont exister de manière conjointe.  
-orchestration kubernetes
+> La conteuneurisation, qui repose
+> sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
+> effectuant les traitements, sert de fondement aux principales plateformes *cloud* fournissant
+> des services à la demande.
+>
+> Ce nouveau paradigme part de deux constats. Le premier
+> est que les
+> échanges de données entre les noeuds d'un serveur sont aujourd'hui peu coûteux.
+> Avec des flux réseaux suffisants et une technologie
+> performante,
+> il est donc possible d'échanger des grands volumes de données au sein d'une infrastructure.
+> Le deuxième constat est que la maintenance d'une infrastructure conteuneurisée est
+> plus légère que celle d'une infrastructure basée sur des machines virtuelles ou sur
+> la collocalisation des données et des traitements comme HDFS.
+>
+> Les données étant stockées sur des serveurs différents de ceux exécutant les traitements,
+> l'accès à celles-ci fait à travers des API qui
+> permettent de traiter le système de stockage distant comme un système de fichiers
+> classiques. Le SSP Cloud a adopté une implémentation *open source* du système de stockage
+> S3 appelée [`MinIO`](https://min.io/). En ce qui concerne le traitement des données, le fait
+> d'utiliser un système de conteneurs, c'est-à-dire une configuration logicielle portable minimaliste
+> prête à l'emploi (par opposition aux machines virtuelles qui impliquent un système d'exploitation complet),
+> offre une grande liberté sur le choix des logiciels de traitement. De nombreuses technologies
+> *open source* devenues standards dans le monde de la *data science* (Jupyter, RStudio, ElasticSearch...)
+> existent déjà sous cette forme et peuvent ainsi être adoptées dans une telle infrastructure. La mise en
+> musique de toutes ces petites boites auto-suffisantes, notamment l'optimisation des ressources concurrentes
+> sur un serveur, est permise par la technologie de contenurisation [`Kubernetes`](https://kubernetes.io/fr/).
 
 <svg width="100%" height="100%" viewBox="0 0 1479 741" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M695 118V292.5" stroke="#FF562C" stroke-width="5"/>
@@ -225,20 +190,90 @@ orchestration kubernetes
 <path d="M579.477 339.953C581.765 339.953 583.62 338.098 583.62 335.81C583.62 333.522 581.765 331.667 579.477 331.667C577.189 331.667 575.334 333.522 575.334 335.81C575.334 338.098 577.189 339.953 579.477 339.953Z" fill="currentColor"/>
 </svg>
 
-Cette approche de la conteunirisation, qui repose
-sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
-effectuant les traitements, sert de fondement aux principales plateformes fournissant
-des services à la demande. Ce nouveau paradigme part de deux constats. Le premier
-est que les
-échanges réseaux sont devenus peu coûteux. Avec des flux réseaux suffisants et une technologie
-performante,
-il est donc possible d'échanger des grands volumes de données au sein d'une infrastructure.
-Le deuxième constat est qu'il est
-par rapport à la maintenance d'une infrastructure
+<br>
 
-L'accès aux données se fait à travers des API qui
-permettent de traiter le système de stockage distant comme un système de fichiers
-classiques.
+{{< spoiler text="Plus de détails pour comprendre le changement de paradigme vers la conteuneurisation" >}}
+
+
+Les infrastructures _big data_ reposent sur le principe du _cluster_ (grappe) informatique.
+Des serveurs sont connectés entre eux, ce qui forme de manière imagée une grappe. 
+Cette interconnexion de plusieurs serveurs entre eux peut se faire au niveau :
+
+- du stockage: les données volumineuses ne sont pas stockées sur un seul serveur mais au contraire réparties ;
+- du traitement: les calculs sont effectués par blocs sur plusieurs serveurs et le résultat
+de ceux-ci est ensuite transmis à un serveur maître. 
+
+Le système _Hadoop Distributed File System_ a été pensé pour tirer parti
+de l'algorithme de traitement
+parallélisé [`MapReduce`](https://fr.wikipedia.org/wiki/MapReduce) proposé en 2004
+par `Google`. Les fichiers
+volumineux sont fractionnés et répartis sur plusieurs serveurs.
+
+![](https://i0.wp.com/datascientest.com/wp-content/uploads/2021/04/illu_schema_mapreduce-04.png?w=1024&ssl=1)
+
+Source: [Datascientest](https://datascientest.com/mapreduce)
+
+La spécificité de l'architecture HDFS est que non seulement le stockage est
+distribué mais aussi la puissance de traitement associée également. On parle à
+ce propos de collocalisation: les traitements ont lieu sur les mêmes serveurs
+que ceux où sont stockés les données. Cette collocalisation a permis au 
+système HDFS de devenir le paradigme dominant
+en tirant parti de la parallélisation
+permise par des langages très efficaces comme `Spark` tout en limitant les
+échanges réseaux pouvant faire perdre en performance. 
+
+Le système HDFS présente néanmoins certaines limites qui expliquent sa
+perte de succès avec l'émergence d'un nouveau paradigme plus flexible.
+
+En premier lieu,
+ce système nécessite beaucoup de ressources du fait de son design. Comme
+les traitements sont lourds et partagés pour des usages concurrents, 
+les noeuds constituant le cluster peuvent subir des arrêts à cause
+de surcharge des ressources. 
+Pour tenir
+compte de la nature instable de cette infrastructure _big data_,
+les fichiers 
+sont dupliqués afin qu'une erreur sur le
+serveur (par exemple à cause de traitements trop gourmands)
+permette tout de même de sécuriser les traitements sur l'ensemble
+des données et éviter la perte de données ou des traitements
+sur un ensemble partiel des données. L'implication est que les données, 
+déjà volumineuses, sont dupliquées plusieurs fois ce qui 
+fait implique des architectures assez monumentales. Si la duplication
+de la donnée n'est
+pas en soi choquante afin d'éviter la perte de donnée, cela a un effet 
+pervers dans un système de collocalisation. A chaque ajout de noeuds
+pour le stockage de données, il est également nécessaire d'ajouter 
+des ressources pour les traiter. Il est donc compliqué de décorréler 
+l'ajout de ressources de stockage et de traitement. Cette absence
+de flexibilité est pénalisante dans un monde où les données sont mises
+à jour fréquemment et où les technologies de traitement, 
+donc les besoins associés, évoluent rapidement. Les infrastructures HDFS
+sont donc lourdes à faire évoluer, que ce soit pour ajouter des ressources
+ou faire évoluer les distributions logicielles présentes dessus.
+
+Le deuxième facteur qui a favorisé un changement de paradigme est l'amélioration
+des échanges réseaux. Il n'est plus aussi coûteux que par le passé de transférer
+des volumes importants de données au sein d'une infrastructure. Cela facilite
+la décorrélation entre environnement de stockage et de traitement.
+
+Cette séparation
+des environnements de stockage et de traitement 
+permet alors d'adopter pour chacun les technologies
+les plus performantes. Dans le domaine du stockage, celle qui 
+a rencontré le plus de succès est le système de stockage S3 développé
+par Amazon. L'implémentation open source du système S3 est MinIO, utilisée
+par le SSP Cloud. Dans le domaine du traitement, la technologie la plus performante
+dépend de la nature de la tâche réalisée. Selon qu'on désire effectuer de la recherche
+textuelle, des dataviz ou de l'analyse d'image, on ne va pas vouloir utiliser
+la même technologie. Le système de la conteneurisation a justement été pensé
+pour cela: plutôt qu'installer des librairies au niveau du système, pour une fraction 
+d'utilisateur limitée, il est plus intéressant de créer des environnements complets
+qui vont exister de manière conjointe.  
+
++ orchestration kubernetes
+
+{{< /spoiler >}}
 
 ## La solution Onyxia
 
