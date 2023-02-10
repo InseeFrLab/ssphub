@@ -40,7 +40,7 @@ bibliography: references.bib
 ---
 
 -   <a href="#contexte" id="toc-contexte">Contexte</a>
--   <a href="#de-hdfs-aux-conteneurs-à-kubernetes" id="toc-de-hdfs-aux-conteneurs-à-kubernetes">De HDFS aux conteneurs à Kubernetes</a>
+-   <a href="#de-hdfs-à-la-conteneurisation" id="toc-de-hdfs-à-la-conteneurisation">De HDFS à la conteneurisation</a>
 -   <a href="#la-solution-onyxia" id="toc-la-solution-onyxia">La solution Onyxia</a>
     -   <a href="#dun-cloud-de-ladministration-à-un-logiciel-ouvert" id="toc-dun-cloud-de-ladministration-à-un-logiciel-ouvert">D’un <em>cloud</em> de l’administration à un logiciel ouvert</a>
 -   <a href="#onyxia-en-bref" id="toc-onyxia-en-bref">Onyxia en bref</a>
@@ -61,10 +61,9 @@ Ces organisations ont toutes le point commun de vouloir construire une plateform
 les technologies *cloud* que sont la conteneurisation et le stockage objet tout en mettant à
 disposition celles-ci dans un environnement *user-friendly* où l'interconnexion entre ces
 différentes briques est gérée de manière cohérente.
-Les technologies *cloud native* étant devenues indispensables dans l'écosystème de la donnée,
-par la meilleure gestion des ressources et la capacité à créer un
-environnement parfaitement reproductible pour une mise en production accélérée, ont beaucoup
-à apporter à l'administration française.
+Les technologies *cloud native* sont devenues indispensables dans l'écosystème de la donnée,
+du fait d'une meilleure gestion des ressources de traitement ou de la capacité à créer un
+environnement parfaitement reproductible pour une mise en production accélérée.
 
 Ce *post* de blog a pour objectif de présenter la raison d'être d'`Onyxia`,
 sa génèse et les solutions qu'apporte cette infrastructure à des irritants
@@ -94,7 +93,7 @@ consistant à mettre à disposition en continu des livrables ont eu des implicat
 importantes sur les architectures informatiques dominantes dans l'écosystème de la
 donnée.
 Pour répondre au besoin croissant de puissance de traitement, les serveurs
-partagés, organisés sous forme de clusters, se sont développés dans de
+partagés, organisés sous forme de *clusters*, se sont développés dans de
 nombreuses organisations.
 Après avoir connue son heure de gloire au début des années 2010, l'infrastructure
 [`HDFS` (*Hadoop Distributed File System*)](https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs),
@@ -102,43 +101,48 @@ qui reposait sur des *clusters* où les données et la puissance de traitement �
 distribués et collocalisés, a laissé place à des infrastructures
 plus scalables, basées sur l'approche de la conteneurisation.
 
-## De HDFS aux conteneurs à Kubernetes
+## De HDFS à la conteneurisation
 
+{{{% callout note %}}}
 Cette partie plus technique développe des éléments pour comprendre
 le succès récent des infrastructures conteuneurisées.
+
 Elle pourra intéresser le lecteur curieux sur les fondements
 des infrastructures *cloud* modernes mais n'est pas nécessaire
 à la compréhension générale de l'article.
+{{{% /callout %}}}
 
-Voici un résumé de ces éléments:
+La conteuneurisation, qui repose
+sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
+effectuant les traitements, sert de fondement aux principales plateformes *cloud* actuelles
+fournissant
+des services à la demande.
 
-> La conteuneurisation, qui repose
-> sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
-> effectuant les traitements, sert de fondement aux principales plateformes *cloud* fournissant
-> des services à la demande.
->
-> Ce nouveau paradigme part de deux constats. Le premier
-> est que les
-> échanges de données entre les noeuds d'un serveur sont aujourd'hui peu coûteux.
-> Avec des flux réseaux suffisants et une technologie
-> performante,
-> il est donc possible d'échanger des grands volumes de données au sein d'une infrastructure.
-> Le deuxième constat est que la maintenance d'une infrastructure conteuneurisée est
-> plus légère que celle d'une infrastructure basée sur des machines virtuelles ou sur
-> la collocalisation des données et des traitements comme HDFS.
->
-> Les données étant stockées sur des serveurs différents de ceux exécutant les traitements,
-> l'accès à celles-ci fait à travers des API qui
-> permettent de traiter le système de stockage distant comme un système de fichiers
-> classiques. Le SSP Cloud a adopté une implémentation *open source* du système de stockage
-> S3 appelée [`MinIO`](https://min.io/). En ce qui concerne le traitement des données, le fait
-> d'utiliser un système de conteneurs, c'est-à-dire une configuration logicielle portable minimaliste
-> prête à l'emploi (par opposition aux machines virtuelles qui impliquent un système d'exploitation complet),
-> offre une grande liberté sur le choix des logiciels de traitement. De nombreuses technologies
-> *open source* devenues standards dans le monde de la *data science* (Jupyter, RStudio, ElasticSearch...)
-> existent déjà sous cette forme et peuvent ainsi être adoptées dans une telle infrastructure. La mise en
-> musique de toutes ces petites boites auto-suffisantes, notamment l'optimisation des ressources concurrentes
-> sur un serveur, est permise par la technologie d'orchestration [`Kubernetes`](https://kubernetes.io/fr/).
+Ce nouveau paradigme part de deux constats. Le premier
+est que les
+échanges de données entre les noeuds d'un serveur sont aujourd'hui peu coûteux.
+Avec des flux réseaux suffisants et une technologie
+performante,
+il est donc possible d'échanger des grands volumes de données au sein d'une infrastructure
+à un coût modéré.
+Le deuxième constat est que la maintenance d'une infrastructure conteuneurisée est
+plus légère que celle d'une infrastructure basée sur des machines virtuelles ou sur
+la collocalisation des données et des traitements comme `HDFS`.
+
+Les données étant stockées sur des serveurs différents de ceux exécutant les traitements,
+l'accès à celles-ci se fait à travers des API qui
+permettent de traiter le système de stockage distant comme un système de fichiers
+classiques. `Onyxia` a adopté une implémentation *open source* du système de stockage
+`S3` appelée [`MinIO`](https://min.io/).
+
+En ce qui concerne le traitement des données, le fait
+d'utiliser un système de conteneurs, c'est-à-dire une configuration logicielle portable minimaliste
+prête à l'emploi (par opposition aux machines virtuelles qui impliquent un système d'exploitation complet),
+offre une grande liberté sur le choix des logiciels de traitement. De nombreuses technologies
+*open source* devenues standards dans le monde de la *data science* (`Jupyter`, `RStudio`, `ElasticSearch`...)
+existent déjà sous cette forme et peuvent ainsi être adoptées dans une telle infrastructure. La mise en
+musique de toutes ces petites boites auto-suffisantes, notamment l'optimisation des ressources concurrentes
+sur un serveur, est permise par la technologie d'orchestration [`Kubernetes`](https://kubernetes.io/fr/).
 
 <br>
 
@@ -197,7 +201,7 @@ Voici un résumé de ces éléments:
 
 <br>
 
-{{< spoiler text="Plus de détails pour comprendre le changement de paradigme vers la conteuneurisation" >}}
+{{< spoiler text="Plus de détails pour comprendre le changement de paradigme vers la conteuneurisation 👇" >}}
 
 
 Les infrastructures _big data_ reposent sur le principe du _cluster_ (grappe) informatique.
@@ -216,17 +220,17 @@ volumineux sont fractionnés et répartis sur plusieurs serveurs.
 
 ![](https://i0.wp.com/datascientest.com/wp-content/uploads/2021/04/illu_schema_mapreduce-04.png?w=1024&ssl=1)
 
-Source: Fonctionnement d'une architecture `MapReduce` [Datascientest](https://datascientest.com/mapreduce)
+Fonctionnement d'une architecture `MapReduce` (source: [Datascientest](https://datascientest.com/mapreduce))
 
-La spécificité de l'architecture HDFS est que non seulement le stockage est
-distribué mais aussi la puissance de traitement associée également.  
+La spécificité de l'architecture `HDFS` est que non seulement le stockage est
+distribué mais également aussi la puissance de traitement associée.  
 On parle à
-ce propos de collocalisation: les traitements ont lieu sur les mêmes serveurs
+ce propos de __collocalisation__: les traitements ont lieu sur les mêmes serveurs
 que ceux où sont stockés les données. Cela permet
 de réduire les mouvements de données (_shuffle_ dans l'image ci-dessus) qui 
-sont coûteux en termes de performance.
+sont coûteux du point de vue de la performance.
 Cette collocalisation a permis au 
-système HDFS de devenir, au début de la décennie 20210,
+système `HDFS` de devenir, au début de la décennie 20210,
 le paradigme dominant. En
 tirant parti de la parallélisation
 permise par des langages très efficaces comme `Spark` tout en limitant les
@@ -261,7 +265,7 @@ des ressources pour les traiter. Il est donc compliqué de décorréler
 l'ajout de ressources de stockage et de traitement. Cette absence
 de flexibilité est pénalisante dans un monde où les données sont mises
 à jour fréquemment et où les technologies de traitement, 
-donc les besoins associés, évoluent rapidement. Les infrastructures HDFS
+donc les besoins associés, évoluent rapidement. Les infrastructures `HDFS`
 sont donc lourdes à faire évoluer, que ce soit pour ajouter des ressources
 ou faire évoluer les distributions logicielles présentes dessus.
 
@@ -278,7 +282,7 @@ a rencontré le plus de succès est
 le système de stockage [`S3`](https://aws.amazon.com/fr/s3/) développé
 par Amazon. L'implémentation _open source_ du système S3
 est [`MinIO`](https://min.io/), utilisée
-par le SSP Cloud.
+par `Onyxia`.
 
 Dans le domaine du traitement, la technologie la plus performante
 dépend de la nature de la tâche réalisée.
@@ -292,10 +296,10 @@ La première repose sur le principe des machines virtuelles.
 Cette approche n'est pas nouvelle et de nombreuses organisations ont
 proposé ou proposent encore ce type d'infrastructures pour des serveurs
 collectifs de traitement. Cette approche est néanmoins lourde: elle nécessite
-un système d'exploitation complet pour ensuite adapter la configuration pour
+un système d'exploitation complet dont il faudra ensuite adapter la configuration à
 chaque logiciel à installer. Plusieurs logiciels coexistent
 donc dans ce système
-d'exploitation même si un seul, par exemple, `Python`, est nécessaire. 
+d'exploitation même si un seul, par exemple, `Python`, est utilisé. 
 Les machines virtuelles sont des infrastructures assez polluantes puisque pour
 faire fonctionner un système d'exploitation dans son ensemble, il
 est nécessaire de mobiliser des ressources plus importantes que celles seulement
@@ -322,23 +326,26 @@ qui permet d'empâqueter un logiciel et ses dépendances sous la forme de boites
 minimalistes et les mettre à disposition facilement pour une réutilisation. 
 Il existe par exemple des images `Docker` pour pouvoir utiliser `RStudio`, `Jupyter`,
 `VSCode`
-dans des configurations minimalistes pour pouvoir utiliser `Python` ou `R`. 
+avec des configurations minimales pour pouvoir utiliser `Python` ou `R`. 
+
 Mais les images `Docker` ne se réduisent pas à la mise à disposition
 d'environnements de développement.
 Une partie des technologies les plus appréciées de l'écosystème de la
 data science sont également livrées sous forme d'images `Docker`. Par
 exemple, le moteur de recherche `ElasticSearch`, très utilisé pour
 la recherche textuelle, peut être empâqueté dans une
-image `Docker`. Le logiciel Onyxia propose dans un catalogue vivant
+image `Docker`. Le logiciel Onyxia propose dès lors dans un catalogue vivant
 un certain nombre
-de logiciels très utiles pour les _data scientists_. 
+de logiciels très utiles pour les _data scientists_ ayant fait l'objet d'un 
+tel empâquetage. 
 Les nombreuses images `Docker` servant à créer des services 
 pour les _data scientists_ sont disponibles en _open source_ 
-sur [`Github`](https://github.com/InseeFrLab/images-datascience)
+sur [`Github`](https://github.com/InseeFrLab/images-datascience).
 
 Pour organiser la coexistence sur un serveur 
 de multiples utilisateurs de services gourmands en ressource, 
-la solution [`Kubernetes`](https://kubernetes.io/fr/).
+la solution [`Kubernetes`](https://kubernetes.io/fr/) sert aujourd'hui de 
+référence.
 Entre sa création en 2014 et aujourd'hui, cette solution
 d'orchestration, c'est-à-dire de gestion d'une infrastructure,
 est devenue incontournable. Outre son allocation dynamique
@@ -347,8 +354,8 @@ le livrable d'une chaine de traitement
 en application disponible en continu. Ceci est
 particulièrement adapté dans un contexte de
 diversification
-des livrables fournis par les _data scientists_:
-API, application web...
+des livrables fournis par les _data scientists_ (API, application web, modèle...)
+et d'adoption d'une démarche `DevOps`
 
 {{< /spoiler >}}
 
@@ -362,13 +369,15 @@ fournisseur de service privé,
 l'équipe innovation de l'Insee a eu l'idée de créer un
 *datalab* basé sur la philosophie de la conteunerisation en
 mobilisant exclusivement des composants open-source.
+
 Ce *datalab*, né à l'Insee en 2018, a été ouvert à l'administration
 publique sous la forme d'une instance https://www.sspcloud.fr/
 sous la condition d'utiliser des données ouvertes.
-Depuis deux ans, cette infrastructure sert à former les élèves de l'ENSAE
+Depuis deux ans, cette infrastructure sert à former les élèves de l'ENSAE et
+de l'ENSAI
 dans le cadre de leur formation en *data science*.
 
-Début 2022, ce sont plus de 3000 agents et étudiants qui sont inscrits
+Début 2023, ce sont plus de 3000 agents et étudiants qui sont inscrits
 sur cette infrastructure avec, en moyenne, 300 utilisateurs
 hebdomadaires. L'infrastructure de traitement propose 10 TB de RAM,
 1100 CPU disponibles et 34 GPU. La capacité de stockage associée
