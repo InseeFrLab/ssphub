@@ -103,14 +103,14 @@ plus scalables, basées sur l'approche de la conteneurisation.
 
 ## De HDFS à la conteneurisation
 
-{{{% callout note %}}}
+{{% callout note %}}
 Cette partie plus technique développe des éléments pour comprendre
 le succès récent des infrastructures conteuneurisées.
 
 Elle pourra intéresser le lecteur curieux sur les fondements
 des infrastructures *cloud* modernes mais n'est pas nécessaire
 à la compréhension générale de l'article.
-{{{% /callout %}}}
+{{% /callout %}}
 
 La conteuneurisation, qui repose
 sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
@@ -399,22 +399,22 @@ précédemment.
 
 `Onyxia` propose principalement deux composants de valeur :
 
--   une interface web qui agit comme la porte d'entrée du data scientist sur son datalab, lui facilitant l'accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L'interface ergonomique permet à la fois aux utilisateurs de données ayant peu de connaissance de démarrer des services standardisés et aux data scientists plus aguerris de bénéficier de vastes possibilités de personnalisation du service.
--   des catalogues de logiciels : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...), 5 services d'automatisation (`MLflow`, `Label Studio`) et 2 services de *dataviz* (`Redash` et `Superset`)
+-   une **interface web** qui agit comme la porte d'entrée du data scientist sur son datalab, lui facilitant l'accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L'interface ergonomique permet aux utilisateurs de données ayant peu de connaissance de démarrer des services standardisés sans se préoccuper de la configuration mais aussi aux data scientists plus aguerris de bénéficier de vastes possibilités de personnalisation du service.
+-   des **catalogues de logiciels** : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...), 5 services d'automatisation (`MLflow`, `Label Studio`) et 2 services de *dataviz* (`Redash` et `Superset`)
 
 <img src = "catalogue.svg" alt="Le catalogue Onyxia"/>
 
 <br>
 
 Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation.
-Tous les services temporaires (`Jupyter`, ) sont automatiquement connectés à l'espace de stockage `S3`,
-au coffre de secret `Vault`. La gestion des droits d'accès aux données stockées dans l'espace
-de stockage ou dans des services de bases de données (`ElasticSearch`, `PostGreSQL`...)
+Tous les services interactifs sont automatiquement connectés à l'espace de stockage `S3`,
+et au coffre de secret `Vault`. La gestion des droits d'accès aux données stockées dans l'espace
+de stockage `S3` ou dans des services de bases de données (`ElasticSearch`, `PostGreSQL`...)
 est automatisée afin que chaque service accède puisse accéder aux données sur lesquelles l'utilisateur
 détient des droits.
 
 `Onyxia` étant un ensemble malléable de logiciels conteuneurisés,
-il est possible de ne pas adopter l'ensemble des services proposés par l'équipe qui maitient
+il est possible de ne pas adopter l'ensemble des services proposés par l'équipe de l'Insee qui maintient
 `Onyxia`. Il est également possible de changer certaines des briques
 de base pour l'adapter à des éléments d'infrastructure interne. Par exemple, il est possible d'adapter
 la destination du service de stockage ou les configurations des environnements data science pour adapter
@@ -426,7 +426,8 @@ Tous les composants sont proposés en *open source* par l'Insee ce qui permet de
 d'utilisateurs et de développeurs de ce produit.
 Il s'agit d'un bel exemple de mutualisation au sein de l'État et au delà.
 Les dépôts peuvent être retrouvés sur
-le `Github` de l'équipe innovation (celui de [l'interface web](WXXX), celui des [images data science](XXXX)...).
+le `Github` de l'équipe innovation (celui de [l'interface web](https://github.com/InseeFrLab/onyxia-web),
+celui des [images pour la data-science](https://github.com/InseeFrLab/images-datascience)...).
 La communauté peut proposer de nouveaux services dans le catalogue. Cette approche *bottom up* a déjà permis
 d'adapter des services aux besoins des utilisateurs ou d'améliorer la solution grâce à des retours
 des ré-utilisateurs d'`Onyxia`.
@@ -442,7 +443,7 @@ Fallback text here for unsupporting browsers, of which there are scant few.
 <img src = "multiple_instances.svg" alt="Onyxia, un ensemble d'instanciations possibles"/>
 
 La plateforme d'origine, le `SSPCloud`,
-est ouverte à tous les agents de l'État et de nombreuses écoles et exclusivement limitée à l'exploitation de données open data.
+est ouverte à tous les agents de l'État et de nombreuses écoles. Celle-ci est exclusivement limitée à l'exploitation de données open data.
 Cette stratégie d'offreur de services de traitement sur l'open data permet de montrer l'expertise de l'Insee sur les sujets *data science*.
 
 Les principaux usages de cette plateforme sont les suivants :
@@ -452,10 +453,13 @@ Les principaux usages de cette plateforme sont les suivants :
 -   la mise à disposition de services innovants aux SSM (metric-osrm)
 -   le travail sur données ouvertes (conception d'indicateur ou de dataviz sur des données ouvertes)
 
-L'Insee n'est désormais plus seul et fédère autour de son projet d'autres organisations.
+Grâce à la mise à disposition de la solution `Onyxia` sur `Github`,
+il est néanmoins possible d'adapter cette plateforme pour des *datalab* internes, sur données plus sensibles.
+
+L'Insee n'est donc désormais plus seul et fédère autour de son projet d'autres organisations.
 `Eurostat` a été la première organisation en dehors de l'Insee à choisir Onyxia fin 2021 et a présenté sa plateforme à l'international.
-Expertise France pour le projet DATAFID a fait le choix d'Onyxia tout comme le CASD,
-le GENES, Orange et BercyHub avec le projet `Nubonyxia`.
+Expertise France pour le projet `DATAFID` a fait le choix d'Onyxia tout comme le CASD,
+le GENES, Orange ou encore le *BercyHub* avec le projet `Nubonyxia`.
 D'autres organisations sont plus dans une phase de POC ou d'études : l'INS norvégien, Pole Emploi, BPCE, Data4Good,
 l'Ineris, le ministère de l'Intérieur, le ministère de la Justice, l'Inria, EDF...
 
