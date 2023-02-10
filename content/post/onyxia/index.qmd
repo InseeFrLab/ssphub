@@ -133,6 +133,8 @@ performante,
 > musique de toutes ces petites boites auto-suffisantes, notamment l'optimisation des ressources concurrentes
 > sur un serveur, est permise par la technologie d'orchestration [`Kubernetes`](https://kubernetes.io/fr/).
 
+<br>
+
 ```{python}
 #| output: asis
 #| echo: false
@@ -302,6 +304,8 @@ API, application web...
 
 ## La solution Onyxia
 
+### D'un _cloud_ de l'administration à un logiciel ouvert
+
 Pour permettre aux data scientists des administrations françaises
 de bénéficier de technologies _cloud_ sans être dépendant d'un
 fournisseur de service privé,
@@ -330,43 +334,45 @@ Ce logiciel est pensé comme un kit qui peut être installé
 sur un _cluster_ `Kubernetes`, technologie détaillée
 précédemment. 
 
-
-Plus précisément, Onyxia propose deux composants de valeur :
-
-* une interface web qui agit comme la porte d’entrée du data scientist sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée.
-* des catalogues de logiciels : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...),  5 services d’automatisation (`MLflow`, `Label Studio`) et 2 services de _dataviz_ (`Redash` et `superset`)
-
-<img src = "catalogue.svg" alt="Le catalogue Onyxia"/>
-
-
-
+## Onyxia en bref
 
 <img src = "onyxia_ecailles.svg" alt="Composantes Onyxia"/>
 
+`Onyxia` propose principalement deux composants de valeur :
 
+* une interface web qui agit comme la porte d’entrée du data scientist sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L'interface ergonomique permet à la fois aux utilisateurs de données ayant peu de connaissance de démarrer des services standardisés et aux data scientists plus aguerris de bénéficier de vastes possibilités de personnalisation du service. 
+* des catalogues de logiciels : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...),  5 services d’automatisation (`MLflow`, `Label Studio`) et 2 services de _dataviz_ (`Redash` et `Superset`)
 
-Onyxia est une application web qui permet aux data scientists d'accéder à un environnement de travail a l'état de l'art même sans être très pointu en informatique. Essentiellement, Onyxia transforme un repo de charts Helm en un catalogue de services configurables et configurés automatiquement.
-Onyxia propose également une intégration avec S3.
+<img src = "catalogue.svg" alt="Le catalogue Onyxia"/>
+
+<br>
 
 Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation.
-Il est ainsi possible de ne pas adopter l'ensemble des services ou de changer certaines des briques
+Tous les services temporaires (`Jupyter`, ) sont automatiquement connectés à l'espace de stockage `S3`,
+au coffre de secret `Vault`. La gestion des droits d'accès aux données stockées dans l'espace
+de stockage ou dans des services de bases de données (`ElasticSearch`, `PostGreSQL`...)
+est automatisée afin que chaque service accède puisse accéder aux données sur lesquelles l'utilisateur
+détient des droits. 
+
+
+
+`Onyxia` étant un ensemble malléable de logiciels conteuneurisés,
+il est possible de ne pas adopter l'ensemble des services proposés par l'équipe qui maitient
+`Onyxia`. Il est également possible de changer certaines des briques
 de base pour l'adapter à des éléments d'infrastructure interne. Par exemple, il est possible d'adapter
 la destination du service de stockage ou les configurations des environnements data science pour adapter
 à des ressources. 
 
-Tous les composants sont proposés en open source par l’Insee ce qui permet de fédérer une communauté
-et est un bel exemple de mutualisation au sein de l’État et au delà. L'approche open source avec l'ensemble 
-des dépôts 
-sur le Github de l'équipe innovation (celui de [l'interface web](WXXX), celui des [images data science](XXXX)...).
+## La communauté `Onyxia`
+
+Tous les composants sont proposés en _open source_ par l’Insee ce qui permet de fédérer une communauté
+d'utilisateurs et de développeurs de ce produit. 
+Il s'agit d'un bel exemple de mutualisation au sein de l’État et au delà.
+Les dépôts peuvent être retrouvés sur
+le `Github` de l'équipe innovation (celui de [l'interface web](WXXX), celui des [images data science](XXXX)...).
 La communauté peut proposer de nouveaux services dans le catalogue. Cette approche _bottom up_ a déjà permis 
-d'adapter des services aux besoins des utilisateurs. 
-
-
-
-Onyxia génère automatiquement un formulaire qui permet aux utilisateurs d'écraser les valeurs pas défaut des values.yaml de vos charts Helm. Onyxia vous permet également de préciser des valeurs à préremplir spécifiquement pour l'utilisateur en question. Ce mécanisme permet notamment à l'utilisateur d'être déjà authentifié à S3 et d'avoir accès à son bucket personel dès l'ouverture de Jupyter ou RStudio.
-
-
-https://www.insee.fr/fr/information/6035940?sommaire=6035950
+d'adapter des services aux besoins des utilisateurs ou d'améliorer la solution grâce à des retours
+des ré-utilisateurs d'`Onyxia`. 
 
 
 
@@ -386,7 +392,7 @@ Personnalisez l'apparence d'Onyxia
 
 Onyxia offre de nombreuses options de personalisation. Modifiez le thème, le lien et le logo de l'entête sans avoir à toucher au code source d'Onyxia. Mais uniquement en modifiant les paramètres de votre instance. Example du customization.
 
-Un environement de formation
+Un environnement de formation
 
 Onyxia permet de générer des liens de lancement de service.
 Cette fonctionalité peut être utilisée pour créer des catalogues de formations comme celui-là.
