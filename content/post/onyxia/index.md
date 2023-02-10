@@ -44,6 +44,7 @@ bibliography: references.bib
 -   <a href="#la-solution-onyxia" id="toc-la-solution-onyxia">La solution Onyxia</a>
     -   <a href="#dun-cloud-de-ladministration-à-un-logiciel-ouvert" id="toc-dun-cloud-de-ladministration-à-un-logiciel-ouvert">D’un <em>cloud</em> de l’administration à un logiciel ouvert</a>
 -   <a href="#onyxia-en-bref" id="toc-onyxia-en-bref">Onyxia en bref</a>
+-   <a href="#la-communauté-onyxia" id="toc-la-communauté-onyxia">La communauté <code>Onyxia</code></a>
 -   <a href="#les-plateformes-basées-sur-onyxia" id="toc-les-plateformes-basées-sur-onyxia">Les plateformes basées sur Onyxia</a>
 -   <a href="#références" id="toc-références">Références</a>
 
@@ -385,6 +386,8 @@ précédemment.
 
 ## Onyxia en bref
 
+<img src = "onyxia_ecailles.svg" alt="Composantes Onyxia"/>
+
 `Onyxia` propose principalement deux composants de valeur :
 
 -   une interface web qui agit comme la porte d'entrée du data scientist sur son datalab, lui facilitant l'accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L'interface ergonomique permet à la fois aux utilisateurs de données ayant peu de connaissance de démarrer des services standardisés et aux data scientists plus aguerris de bénéficier de vastes possibilités de personnalisation du service.
@@ -394,30 +397,35 @@ précédemment.
 
 <br>
 
-Tous les services sont automatiquement
-
-<img src = "onyxia_ecailles.svg" alt="Composantes Onyxia"/>
-
-Onyxia est une application web qui permet aux data scientists d'accéder à un environnement de travail a l'état de l'art même sans être très pointu en informatique. Essentiellement, Onyxia transforme un repo de charts Helm en un catalogue de services configurables et configurés automatiquement.
-Onyxia propose également une intégration avec S3.
-
 Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation.
-Il est ainsi possible de ne pas adopter l'ensemble des services ou de changer certaines des briques
+Tous les services temporaires (`Jupyter`, ) sont automatiquement connectés à l'espace de stockage `S3`,
+au coffre de secret `Vault`. La gestion des droits d'accès aux données stockées dans l'espace
+de stockage ou dans des services de bases de données (`ElasticSearch`, `PostGreSQL`...)
+est automatisée afin que chaque service accède puisse accéder aux données sur lesquelles l'utilisateur
+détient des droits.
+
+`Onyxia` étant un ensemble malléable de logiciels conteuneurisés,
+il est possible de ne pas adopter l'ensemble des services proposés par l'équipe qui maitient
+`Onyxia`. Il est également possible de changer certaines des briques
 de base pour l'adapter à des éléments d'infrastructure interne. Par exemple, il est possible d'adapter
 la destination du service de stockage ou les configurations des environnements data science pour adapter
 à des ressources.
 
-Tous les composants sont proposés en open source par l'Insee ce qui permet de fédérer une communauté
-et est un bel exemple de mutualisation au sein de l'État et au delà. L'approche open source avec l'ensemble
-des dépôts
-sur le Github de l'équipe innovation (celui de [l'interface web](WXXX), celui des [images data science](XXXX)...).
+## La communauté `Onyxia`
+
+Tous les composants sont proposés en *open source* par l'Insee ce qui permet de fédérer une communauté
+d'utilisateurs et de développeurs de ce produit.
+Il s'agit d'un bel exemple de mutualisation au sein de l'État et au delà.
+Les dépôts peuvent être retrouvés sur
+le `Github` de l'équipe innovation (celui de [l'interface web](WXXX), celui des [images data science](XXXX)...).
 La communauté peut proposer de nouveaux services dans le catalogue. Cette approche *bottom up* a déjà permis
-d'adapter des services aux besoins des utilisateurs.
+d'adapter des services aux besoins des utilisateurs ou d'améliorer la solution grâce à des retours
+des ré-utilisateurs d'`Onyxia`.
 
-Onyxia génère automatiquement un formulaire qui permet aux utilisateurs d'écraser les valeurs pas défaut des values.yaml de vos charts Helm. Onyxia vous permet également de préciser des valeurs à préremplir spécifiquement pour l'utilisateur en question. Ce mécanisme permet notamment à l'utilisateur d'être déjà authentifié à S3 et d'avoir accès à son bucket personel dès l'ouverture de Jupyter ou RStudio.
-
-https://www.insee.fr/fr/information/6035940?sommaire=6035950
-
+<iframe width="400" height="400" marginheight="0" marginwidth="0" src="template.html">
+Fallback text here for unsupporting browsers, of which there are scant few.
+</iframe>
+<!----
 Onyxia ne cherche pas à se rendre indispensable
 
 Nous visons à rendre les utilisateurs de la plateforme suffisamment familiers avec les technologies sous-jacentes (Kubernetes, helm, S3...) pour pouvoir s'affranchir d'Onyxia. Nous affichons les commandes exécutées sur le cluster, sur S3, sur Vault par le biais d'Onyxia.
@@ -434,7 +442,7 @@ Personnalisez l'apparence d'Onyxia
 
 Onyxia offre de nombreuses options de personalisation. Modifiez le thème, le lien et le logo de l'entête sans avoir à toucher au code source d'Onyxia. Mais uniquement en modifiant les paramètres de votre instance. Example du customization.
 
-Un environement de formation
+Un environnement de formation
 
 Onyxia permet de générer des liens de lancement de service.
 Cette fonctionalité peut être utilisée pour créer des catalogues de formations comme celui-là.
@@ -442,6 +450,7 @@ Cette fonctionalité peut être utilisée pour créer des catalogues de formatio
 Technologiquement agnostique
 
 Avec Onyxia vous n'investissez pas sur une stack technique en particulier sauf kubernetes et S3. Onyxia permet de rendre accessible n'importe quelle technologie cloud native et ne génére donc pas de potentielle dette technique future.
+--------------->
 
 ## Les plateformes basées sur Onyxia
 
