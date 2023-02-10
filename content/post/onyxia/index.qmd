@@ -374,32 +374,11 @@ La communauté peut proposer de nouveaux services dans le catalogue. Cette appro
 d'adapter des services aux besoins des utilisateurs ou d'améliorer la solution grâce à des retours
 des ré-utilisateurs d'`Onyxia`. 
 
-<!----
-Onyxia ne cherche pas à se rendre indispensable
-
-Nous visons à rendre les utilisateurs de la plateforme suffisamment familiers avec les technologies sous-jacentes (Kubernetes, helm, S3...) pour pouvoir s'affranchir d'Onyxia. Nous affichons les commandes exécutées sur le cluster, sur S3, sur Vault par le biais d'Onyxia.
-
-Un explorateur de fichiers S3
-
-Onyxia permet de glisser déposer ses jeux de données pour les uploader sur S3.
-
-Intégration avec HashiCorp Vault
-
-Onyxia permet de stocker les informations sensibles de type clés d'API dans Vault et de les rendre accessibles dans les services sous forme de variable.
-
-Personnalisez l'apparence d'Onyxia
-
-Onyxia offre de nombreuses options de personalisation. Modifiez le thème, le lien et le logo de l'entête sans avoir à toucher au code source d'Onyxia. Mais uniquement en modifiant les paramètres de votre instance. Example du customization.
-
-Un environnement de formation
-
-Onyxia permet de générer des liens de lancement de service.
-Cette fonctionalité peut être utilisée pour créer des catalogues de formations comme celui-là.
-
-Technologiquement agnostique
-
-Avec Onyxia vous n'investissez pas sur une stack technique en particulier sauf kubernetes et S3. Onyxia permet de rendre accessible n'importe quelle technologie cloud native et ne génére donc pas de potentielle dette technique future.
---------------->
+<!-----
+<iframe width="100%" height="500px" marginheight="0" marginwidth="0" src="./template/index.html">
+Fallback text here for unsupporting browsers, of which there are scant few.
+</iframe>
+----->
 
 ## Les plateformes basées sur Onyxia
 
@@ -418,8 +397,8 @@ Les principaux usages de cette plateforme sont les suivants :
 
 L’Insee n’est désormais plus seul et fédère autour de son projet d’autres organisations.
 `Eurostat` a été la première organisation en dehors de l’Insee à choisir Onyxia fin 2021 et a présenté sa plateforme à l’international. 
-Expertise France pour le projet DATAFID a fait le choix d’Onyxia tout comme le CASD, le GENES, Orange et BercyHub avec le projet `Nubonyxia`
-.
+Expertise France pour le projet DATAFID a fait le choix d’Onyxia tout comme le CASD,
+le GENES, Orange et BercyHub avec le projet `Nubonyxia`.
 D’autres organisations sont plus dans une phase de POC ou d’études : l’INS norvégien, Pole Emploi, BPCE, Data4Good,
 l’Ineris, le ministère de l’Intérieur, le ministère de la Justice, l’Inria, EDF…
 
