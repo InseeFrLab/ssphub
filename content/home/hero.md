@@ -11,7 +11,7 @@ design:
     text_color_light: true
 
 # ... Put Your Section Options Here (title etc.) ...
-title: Le réseau des data scientists du Service Statistique Public
+title: Le réseau des data scientists de la statistique publique
 
 # Hero image (optional). Enter filename of an image in the assets/media/ folder.
 hero_media: 'ssp-logo-reverse.png'
