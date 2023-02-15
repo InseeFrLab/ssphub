@@ -129,7 +129,13 @@ Le deuxième constat est que la maintenance d'une infrastructure conteuneurisée
 faite pour être très malléable, est
 plus légère que celle d'une infrastructure basée sur des machines virtuelles ou sur
 les infrastructrures calibrées pour l'analytique _big data_ comme `HDFS` reposant
-sur la collocalisation des données et des traitements.
+sur la collocalisation des données et des traitements[^1].
+
+[^1]: On peut ajouter que cette question n'est pas exclusivement technologique. 
+Même s'il est volontairement polémique,
+l'article de [Jordan Tigani "Big Data is Dead"](https://motherduck.com/blog/big-data-is-dead/)
+illustre bien le changement de paradigme du monde de la _tech_. 
+
  
 Les données étant stockées sur des serveurs différents de ceux exécutant les traitements,
 l'accès à celles-ci se fait à travers des API qui 
