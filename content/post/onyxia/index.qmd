@@ -404,31 +404,36 @@ Les conteneurs sont démarrés comme des services à la demande et la configurat
 de ceux-ci permet d'assurer aux data scientists l'accès aux données disponibles dans
 des espaces de stockage ou des bases de données créées par l'utilisateur.
 
+Le catalogue de service se présente par le biais d'un formulaire ergonomique où l'utilisateur
+choisit la brique qu'il désire utiliser:
+
+![](onyxia_ui1.png)
+
 Les data scientists
 et statisticiens n'ont donc pas besoin de connaître les détails du fonctionnement des briques
 techniques d'`Onyxia` pour utiliser la plateforme. Les
 éléments techniques comme la connexion au système de stockage sont
 par défaut déja configurés:
 
-![](onyxia_ui1.png)
+![](onyxia_ui2.png)
 
 L'interface ergonomique
 permet de paramétrer certaines configurations si besoin, notamment 
 les ressources à disposition du conteneur. Néanmoins l'allocation
 dynamique des ressources offre déjà de la flexibilité :
 
-![](onyxia_ui2.png)
+![](onyxia_ui3.png)
 
 L'utilisateur a accès à l'ensemble des services qu'il a ouvert
 depuis une page dédiée:
 
-![](onyxia_ui3.png)
+![](onyxia_ui4.png)
 
 Les services interactifs comme `Jupyter`, `VSCode` ou `RStudio` permettent
 alors à l'utilisateur d'accéder à une interface pour exécuter des 
 traitements `Python` ou `R`. 
 
-![](onyxia_ui4.png)
+![](onyxia_ui5.png)
 
 L'accès aux données peut se faire depuis la ligne de
 commande (via un utilitaire [Minio Client](https://min.io/docs/minio/linux/reference/minio-mc.html))
