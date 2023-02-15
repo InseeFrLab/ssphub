@@ -125,9 +125,11 @@ Avec des flux réseaux suffisants et une technologie
 performante, 
 il est donc possible d'échanger à un coût modéré
 de gros volumes de données au sein d'une infrastructure.
-Le deuxième constat est que la maintenance d'une infrastructure conteuneurisée est
+Le deuxième constat est que la maintenance d'une infrastructure conteuneurisée,
+donc très malléable, est
 plus légère que celle d'une infrastructure basée sur des machines virtuelles ou sur
-la collocalisation des données et des traitements comme `HDFS`. 
+les infrastructrures calibrées pour l'analytique _big data_ comme `HDFS` reposant
+sur la collocalisation des données et des traitements.
  
 Les données étant stockées sur des serveurs différents de ceux exécutant les traitements,
 l'accès à celles-ci se fait à travers des API qui 
