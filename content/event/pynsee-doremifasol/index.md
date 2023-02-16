@@ -82,10 +82,12 @@ Présentation autour des _packages_
 développés par des data scientists pour faciliter la récupération des données
 officielles de l'Insee :
 
-- Pierre Lamarche présentera le package `R` [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol)
-- Hadrien Leclerc présentera le package `Python` [`pynsee`](https://github.com/InseeFrLab/pynsee)
+- Pierre Lamarche a présenté le package `R` [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). Les slides sont consultables
+sur https://presentation-doremifasol.lab.sspcloud.fr/
+- Hadrien Leclerc a présenté le package `Python` [`pynsee`](https://github.com/InseeFrLab/pynsee). Les slides sont
+{{< staticref "https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_opendata_2023/pynsee_slides.pdf" "newtab" >}}disponibles en téléchargement{{< /staticref >}}
 
-Les présentations seront suivies d'un temps d'échange. 
 
-__Visio de l'événement__: https://insee-fr.zoom.us/j/94120715167?pwd=aVMvZGpXTXdkMTFjL2JxdTlCWmRydz09
+## Replay {#replay}
 
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/opendata-20230213.mp4" controls="yes" >}}
