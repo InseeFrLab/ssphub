@@ -191,7 +191,7 @@ _Fonctionnement d'une architecture `MapReduce` (source: [Datascientest](https://
 
 La spécificité de l'architecture `HDFS` est que non seulement le stockage est
 distribué mais également aussi la puissance de traitement associée.  On parle à
-ce propos de __collocalisation__: les traitements ont lieu sur les mêmes serveurs
+ce propos de __collocalisation__ : les traitements ont lieu sur les mêmes serveurs
 que ceux où sont stockés les données. Cela permet
 de réduire les mouvements de données (_shuffle_ dans l'image ci-dessus) qui 
 sont coûteux du point de vue de la performance.
@@ -214,12 +214,12 @@ de surcharge des ressources.
 Pour tenir
 compte de la nature instable de cette infrastructure _big data_,
 les fichiers 
-sont dupliqués afin qu'une erreur sur le
-serveur (par exemple à cause de traitements trop gourmands)
-générant un arrêt du noeud
-permette tout de même de sécuriser les traitements sur l'ensemble
-des données et éviter la perte de données ou des traitements
-sur un ensemble partiel des données.
+sont dupliqués. Ainsi, lors d'une erreur sur le
+serveur générant un arrêt du nœud 
+(par exemple à cause de traitements trop gourmands),
+ les traitements sur l'ensemble
+des données sont sécurisés évitant également 
+la perte partielle ou totale de ces dernières.
 
 L'implication est que les données, 
 déjà volumineuses, sont dupliquées plusieurs fois ce qui 
