@@ -307,7 +307,7 @@ Une partie des technologies les plus appréciées de l'écosystème de la
 data science sont également livrées sous forme d'images `Docker`. Par
 exemple, le moteur de recherche `ElasticSearch`, très utilisé pour
 la recherche textuelle, peut être empaqueté dans une
-image `Docker`. Le logiciel `Onyxia` propose dès lors dans un catalogue vivant
+image `Docker`. Le logiciel `Onyxia` propose dès lors, dans un catalogue vivant,
 un certain nombre
 de logiciels très utiles pour les _data scientists_ ayant fait l'objet d'un 
 tel empaquetage. 
@@ -338,16 +338,16 @@ et d'adoption d'une démarche `DevOps` voire `MLOps`.
 
 ### D'un _cloud_ de l'administration à un logiciel ouvert
 
-Pour permettre aux data scientists des administrations françaises
+Pour permettre aux *data scientists* des administrations françaises
 de bénéficier de technologies _cloud_ sans être dépendant d'un
 fournisseur de service privé,
 l'équipe innovation de l'Insee a eu l'idée de créer un
-_datalab_ basé sur la philosophie de la conteunerisation en 
+_datalab_ basé sur la philosophie de la conteneurisation en 
 mobilisant exclusivement des composants open-source. 
 
 Ce _datalab_, né à l'Insee en 2018, a été ouvert à l'administration
 publique sous la forme d'une instance https://www.sspcloud.fr/
-sous la condition d'utiliser des données ouvertes. 
+à condition d'utiliser des données ouvertes. 
 En plus des agents déjà en poste dans l'administration,
 cette infrastructure sert depuis deux ans à former les élèves de l'ENSAE et
 de l'ENSAI
@@ -375,7 +375,7 @@ précédemment.
 
 `Onyxia` propose principalement deux composants de valeur :
 
-* une __interface web__ qui agit comme la porte d’entrée du data scientist sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L'interface ergonomique permet aux utilisateurs de données ayant peu de connaissance de démarrer des services standardisés sans se préoccuper de la configuration mais aussi aux data scientists plus aguerris de bénéficier de vastes possibilités de personnalisation du service. 
+* une __interface web__ qui agit comme la porte d’entrée du *data scientist* sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L'interface ergonomique permet aux utilisateurs de données néophytes de démarrer des services standardisés sans se préoccuper de la configuration mais aussi aux *data scientists* plus aguerris de bénéficier de vastes possibilités de personnalisation du service. 
 * des __catalogues de logiciels__ : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...),  5 services d’automatisation (`MLflow`, `Label Studio`) et 2 services de _dataviz_ (`Redash` et `Superset`)
 
 <img src = "catalogue.svg" alt="Le catalogue Onyxia"/>
