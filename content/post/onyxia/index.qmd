@@ -376,7 +376,7 @@ précédemment.
 `Onyxia` propose principalement deux composants de valeur :
 
 * une __interface web__ qui agit comme la porte d’entrée du *data scientist* sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L'interface ergonomique permet aux utilisateurs de données néophytes de démarrer des services standardisés sans se préoccuper de la configuration mais aussi aux *data scientists* plus aguerris de bénéficier de vastes possibilités de personnalisation du service. 
-* des __catalogues de logiciels__ : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...),  5 services d’automatisation (`MLflow`, `Label Studio`) et 2 services de _dataviz_ (`Redash` et `Superset`)
+* des __catalogues de logiciels__ : une petite vingtaine de services interactifs dont les plus utilisés sont `RStudio`, `Jupyter`, `VScode`, une quinzaine de services spécialisés dans les bases de données (`Postgres`, `ElasticSearch`...),  5 services d’automatisation (`MLflow`...) et 2 services de _dataviz_ (`Redash` et `Superset`)
 
 <img src = "catalogue.svg" alt="Le catalogue Onyxia"/>
 
@@ -392,11 +392,11 @@ est automatisée afin que chaque service
 puisse accéder aux données sur lesquelles l'utilisateur
 détient des droits. 
 
-`Onyxia` étant un ensemble malléable de logiciels conteuneurisés,
+`Onyxia` étant un ensemble malléable de logiciels conteneurisés,
 il est possible de ne pas adopter l'ensemble des services proposés par l'équipe de l'Insee qui maintient
 `Onyxia`. Il est également possible de changer certaines des briques
 de base pour l'adapter à des éléments d'infrastructure interne. Par exemple, il est possible d'adapter
-la destination du service de stockage ou les configurations des environnements data science pour adapter
+la destination du service de stockage ou les configurations des environnements data science pour l'adapter
 à des ressources. 
 
 ## L'interface et les services proposés par `Onyxia`
@@ -409,7 +409,7 @@ L'une des principales forces d'`Onyxia` est d'offrir une multiplicité de servic
 avec une interconnexion entre eux gérée de manière cohérente. 
 
 Les conteneurs sont démarrés comme des services à la demande et la configuration automatique
-de ceux-ci permet d'assurer aux data scientists l'accès aux données disponibles dans
+de ceux-ci permet d'assurer aux *data scientists* l'accès aux données disponibles dans
 des espaces de stockage ou des bases de données créées par l'utilisateur.
 
 Le catalogue de services se présente par le biais d'un formulaire ergonomique où l'utilisateur
@@ -417,11 +417,11 @@ choisit la brique qu'il désire utiliser:
 
 ![](onyxia_ui1.png)
 
-Les data scientists
+Les *data scientists*
 et statisticiens n'ont donc pas besoin de connaître les détails du fonctionnement des briques
 techniques d'`Onyxia` pour utiliser la plateforme. Les
-éléments techniques comme la connexion au système de stockage sont
-par défaut déja configurés:
+éléments techniques comme la connexion au système de stockage sont,
+par défaut, déjà configurés :
 
 ![](onyxia_ui2.png)
 
@@ -433,7 +433,7 @@ dynamique des ressources offre déjà de la flexibilité :
 ![](onyxia_ui3.png)
 
 L'utilisateur a accès à l'ensemble des services qu'il a ouvert
-depuis une page dédiée:
+depuis une page dédiée :
 
 ![](onyxia_ui4.png)
 
