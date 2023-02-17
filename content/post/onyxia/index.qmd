@@ -97,8 +97,8 @@ nombreuses organisations.
 Après avoir connue son heure de gloire au début des années 2010, l'infrastructure
 [`HDFS` (_Hadoop Distributed File System_)](https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs), 
 qui reposait sur des _clusters_ où les données et la puissance de traitement étaient
-distribués et collocalisés, a laissé place à des infrastructures
-plus scalables, basées sur l'approche de la conteneurisation. 
+distribuées et collocalisées, a laissé place à des infrastructures
+plus _scalables_, basées sur l'approche de la conteneurisation. 
 
 ## De HDFS à la conteneurisation
 
@@ -141,7 +141,7 @@ Les données étant stockées sur des serveurs différents de ceux exécutant le
 l'accès à celles-ci se fait à travers des API qui 
 permettent de traiter le système de stockage distant comme un système de fichiers
 classiques. `Onyxia` a adopté une implémentation _open source_ du système de stockage
-`S3` appelée [`MinIO`](https://min.io/).
+[`S3`](https://fr.wikipedia.org/wiki/Amazon_S3) appelée [`MinIO`](https://min.io/).
 
 En ce qui concerne le traitement des données, le fait
 d'utiliser un système de conteneurs, c'est-à-dire une configuration logicielle portable minimaliste
@@ -293,7 +293,7 @@ un conteneur autosuffisant avec un système d'exploitation minime et un nombre
 minimal de couches de configurations supplémentaires. Un _framework_ est livré
 sous la forme d'une
 image [`Docker`](https://fr.wikipedia.org/wiki/Docker_(logiciel)), une technologie
-qui permet d'empâqueter un logiciel et ses dépendances sous la forme de boites
+qui permet d'empaqueter un logiciel et ses dépendances sous la forme de boites
 minimalistes et les mettre à disposition facilement pour une réutilisation. 
 Il existe par exemple des images `Docker` pour pouvoir utiliser `RStudio`, `Jupyter`,
 `VSCode`
@@ -306,11 +306,11 @@ d'environnements de développement.
 Une partie des technologies les plus appréciées de l'écosystème de la
 data science sont également livrées sous forme d'images `Docker`. Par
 exemple, le moteur de recherche `ElasticSearch`, très utilisé pour
-la recherche textuelle, peut être empâqueté dans une
+la recherche textuelle, peut être empaqueté dans une
 image `Docker`. Le logiciel `Onyxia` propose dès lors dans un catalogue vivant
 un certain nombre
 de logiciels très utiles pour les _data scientists_ ayant fait l'objet d'un 
-tel empâquetage. 
+tel empaquetage. 
 Les nombreuses images `Docker` servant à créer des services 
 pour les _data scientists_ sont disponibles en _open source_ 
 sur [`Github`](https://github.com/InseeFrLab/images-datascience).
@@ -412,7 +412,7 @@ Les conteneurs sont démarrés comme des services à la demande et la configurat
 de ceux-ci permet d'assurer aux data scientists l'accès aux données disponibles dans
 des espaces de stockage ou des bases de données créées par l'utilisateur.
 
-Le catalogue de service se présente par le biais d'un formulaire ergonomique où l'utilisateur
+Le catalogue de services se présente par le biais d'un formulaire ergonomique où l'utilisateur
 choisit la brique qu'il désire utiliser:
 
 ![](onyxia_ui1.png)
@@ -490,11 +490,11 @@ Grâce à la mise à disposition de la solution `Onyxia` sur `Github`,
 il est néanmoins possible d'adapter cette plateforme pour des _datalab_ internes, sur données plus sensibles.
 
 L’Insee n’est donc désormais plus seul et fédère autour de son projet d’autres organisations.
-Fin 2021, `Eurostat` a été la première organisation en dehors de l’Insee à choisir `Onyxia`
+Fin 2021, `Eurostat` a été la première organisation en dehors de l’Insee à choisir `Onyxia` pour construire son [_Cloud Agnostic Data Lab_](https://github.com/eurostat/datalab).
 Expertise France pour le projet `DATAFID` a fait le choix d’Onyxia tout comme le CASD,
 le GENES, Orange ou encore le _BercyHub_ avec le projet `Nubonyxia`.
 
-D’autres organisations sont plus dans une phase de POC ou d’études : l’INS norvégien, Pole Emploi, BPCE, Data4Good,
+D’autres organisations sont plus dans une phase de POC ou d’étude : l’INS norvégien, Pole Emploi, BPCE, Data4Good,
 l’Ineris, le ministère de l’Intérieur, le ministère de la Justice, l’Inria, EDF…
 
 
