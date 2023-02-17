@@ -263,9 +263,9 @@ sur un serveur, il existe principalement deux approches concurrentes.
 La première repose sur le principe des machines virtuelles. 
 Cette approche n'est pas nouvelle et de nombreuses organisations ont
 proposé ou proposent encore ce type d'infrastructures pour des serveurs
-collectifs de traitement. Cette approche est néanmoins lourde: elle nécessite
-un système d'exploitation complet dont il faudra ensuite adapter la configuration à
-chaque logiciel à installer. Plusieurs logiciels coexistent
+collectifs de traitement. Cette approche est néanmoins lourde : elle nécessite
+un système d'exploitation complet dont il faudra ensuite adapter la configuration lors de
+l'installation de chaque logiciel. Plusieurs logiciels coexistent
 donc dans ce système
 d'exploitation même si un seul, par exemple, `Python`, est utilisé. 
 Les machines virtuelles sont des infrastructures assez polluantes puisque pour
@@ -297,7 +297,7 @@ qui permet d'empaqueter un logiciel et ses dépendances sous la forme de boites
 minimalistes et les mettre à disposition facilement pour une réutilisation. 
 Il existe par exemple des images `Docker` pour pouvoir utiliser `RStudio`, `Jupyter`,
 `VSCode`
-avec des configurations minimales pour pouvoir utiliser `Python` ou `R`. A partir de
+avec des configurations minimales afin d'exécuter du `Python` ou du `R`. A partir de
 celles-ci, l'utilisateur qui désire des configurations supplémentaires
 peut ajouter les couches qui lui sont utiles. 
 
