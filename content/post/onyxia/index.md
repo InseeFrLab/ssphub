@@ -537,11 +537,11 @@ le ministère de l'Intérieur, le ministère de la Justice, l'Inria...
 Dans le cadre du [TOSIT](https://tosit.fr/), association qui réunit de gros acteurs publics et privés autour de solutions
 *open source*, un certain nombre d'entreprises s'intéressent à `Onyxia`.
 
-## Références
-
-Vidéo de présentation d'`Onyxia`:
+## Vidéo de présentation d'`Onyxia`
 
 {{< youtube zwKiO6LcIWE >}}
+
+## Références
 
 Davenport, Thomas H, and DJ Patil. 2022. "Is Data Scientist Still the Sexiest Job of the 21st Century?" *Harvard Business Review*. <https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century>.
 
