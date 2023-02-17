@@ -97,7 +97,7 @@ nombreuses organisations.
 Après avoir connue son heure de gloire au début des années 2010, l'infrastructure
 [`HDFS` (_Hadoop Distributed File System_)](https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs), 
 qui reposait sur des _clusters_ où les données et la puissance de traitement étaient
-distribués et collocalisés, a laissé place à des infrastructures
+distribuées et collocalisées, a laissé place à des infrastructures
 plus scalables, basées sur l'approche de la conteneurisation. 
 
 ## De HDFS à la conteneurisation
