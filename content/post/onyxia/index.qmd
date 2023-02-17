@@ -285,7 +285,7 @@ pour déterminer celle s'intégrant le mieux dans un processus de traitement
 de données. 
 
 Le système de la conteneurisation a justement été pensé
-pour cela: plutôt qu'installer de nombreuses librairies au niveau du système, pour une fraction 
+pour cela : plutôt qu'installer de nombreuses librairies au niveau du système, pour une fraction 
 d'utilisateurs limitée à chacune,
 il est plus intéressant de créer des environnements complets
 qui vont exister de manière conjointe. Chaque _framework_ va être construit comme
