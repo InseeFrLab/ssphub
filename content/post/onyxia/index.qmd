@@ -489,13 +489,17 @@ Les principaux usages de cette plateforme sont les suivants :
 Grâce à la mise à disposition de la solution `Onyxia` sur `Github`,
 il est néanmoins possible d'adapter cette plateforme pour des _datalab_ internes, sur données plus sensibles.
 
-L’Insee n’est donc désormais plus seul et fédère autour de son projet d’autres organisations.
-Fin 2021, `Eurostat` a été la première organisation en dehors de l’Insee à choisir `Onyxia` pour construire son [_Cloud Agnostic Data Lab_](https://github.com/eurostat/datalab).
+L’Insee n’est donc désormais plus seul et fédère de nombreux acteurs autour de son projet.
+Fin 2021, `Eurostat` a été la première organisation en dehors
+de l’Insee à choisir `Onyxia` pour construire son [_Cloud Agnostic Data Lab_](https://github.com/eurostat/datalab).
 Expertise France pour le projet `DATAFID` a fait le choix d’Onyxia tout comme le CASD,
-le GENES, Orange ou encore le _BercyHub_ avec le projet `Nubonyxia`.
+le GENES ou encore le _BercyHub_ avec le projet `Nubonyxia`.
 
-D’autres organisations sont plus dans une phase de POC ou d’étude : l’INS norvégien, Pole Emploi, BPCE, Data4Good,
-l’Ineris, le ministère de l’Intérieur, le ministère de la Justice, l’Inria, EDF…
+D’autres organisations sont plus dans une phase de POC ou d’étude : l’INS norvégien, Pole Emploi, Data4Good,
+le ministère de l’Intérieur, le ministère de la Justice, l’Inria...
+
+Dans le cadre du [TOSIT](https://tosit.fr/), association qui réunit de gros acteurs publics et privés autour de solutions
+_open source_, un certain nombre d'entreprises s'intéressent à `Onyxia`. 
 
 
 ## Références
