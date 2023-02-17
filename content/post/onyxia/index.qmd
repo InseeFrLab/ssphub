@@ -234,7 +234,7 @@ l'ajout de ressources de stockage et de traitement. Cette absence
 de flexibilité est pénalisante dans un monde où les données sont mises
 à jour fréquemment et où les technologies de traitement, 
 donc les besoins associés, évoluent rapidement. Les infrastructures `HDFS`
-sont donc lourdes à faire évoluer, que ce soit pour ajouter des ressources
+sont donc lourdes à changer, que ce soit pour ajouter des ressources
 ou faire évoluer les distributions logicielles présentes dessus.
 
 Le deuxième facteur qui a favorisé le changement de paradigme est l'amélioration
