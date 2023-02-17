@@ -41,3 +41,14 @@ design:
   #  text_color_light: true
 
 ---
+
+<div id="observablehq-grid-fbf85711"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@linogaliana/calendar@1233.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "grid") return new Inspector(document.querySelector("#observablehq-grid-fbf85711"));
+});
+</script>
