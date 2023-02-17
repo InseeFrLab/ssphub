@@ -222,8 +222,8 @@ des données sont sécurisés évitant également
 la perte partielle ou totale de ces dernières.
 
 L'implication est que les données, 
-déjà volumineuses, sont dupliquées plusieurs fois ce qui 
-implique des architectures assez monumentales. Si la duplication
+déjà volumineuses, sont dupliquées plusieurs fois 
+impliquant des architectures assez monumentales. Si la duplication
 de la donnée n'est
 pas en soi choquante afin d'éviter la perte de données,
 cela a un effet 
@@ -237,7 +237,7 @@ donc les besoins associés, évoluent rapidement. Les infrastructures `HDFS`
 sont donc lourdes à faire évoluer, que ce soit pour ajouter des ressources
 ou faire évoluer les distributions logicielles présentes dessus.
 
-Le deuxième facteur qui a favorisé un changement de paradigme est l'amélioration
+Le deuxième facteur qui a favorisé le changement de paradigme est l'amélioration
 des échanges réseaux. Il n'est plus aussi coûteux que par le passé de transférer
 des volumes importants de données au sein d'une infrastructure. Cela facilite
 la décorrélation entre environnement de stockage et de traitement.
