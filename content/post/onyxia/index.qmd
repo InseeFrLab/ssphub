@@ -104,7 +104,7 @@ plus _scalables_, basées sur l'approche de la conteneurisation.
 
 {{% callout note %}}
 Cette partie plus technique développe des éléments pour comprendre
-le succès récent des infrastructures conteuneurisées. 
+le succès récent des infrastructures conteneurisées. 
 
 Elle pourra intéresser le lecteur curieux sur les fondements
 des infrastructures _cloud_ modernes mais n'est pas nécessaire
@@ -112,7 +112,7 @@ des infrastructures _cloud_ modernes mais n'est pas nécessaire
 {{% /callout %}}
 
 
-La conteuneurisation, qui repose
+La conteneurisation, qui repose
 sur l'idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux
 effectuant les traitements, sert de fondement aux principales plateformes _cloud_ actuelles
 fournissant 
@@ -125,7 +125,7 @@ Avec des flux réseaux suffisants et une technologie
 performante, 
 il est donc possible d'échanger à un coût modéré
 de gros volumes de données au sein d'une infrastructure.
-Le deuxième constat est que la maintenance d'une infrastructure conteuneurisée,
+Le deuxième constat est que la maintenance d'une infrastructure conteneurisée,
 faite pour être très malléable, est
 plus légère que celle d'une infrastructure basée sur des machines virtuelles ou sur
 les infrastructrures calibrées pour l'analytique _big data_ comme `HDFS` reposant
@@ -140,7 +140,7 @@ illustre bien le changement de paradigme du monde de la _tech_.
 Les données étant stockées sur des serveurs différents de ceux exécutant les traitements,
 l'accès à celles-ci se fait à travers des API qui 
 permettent de traiter le système de stockage distant comme un système de fichiers
-classiques. `Onyxia` a adopté une implémentation _open source_ du système de stockage
+classique. `Onyxia` a adopté une implémentation _open source_ du système de stockage
 [`S3`](https://fr.wikipedia.org/wiki/Amazon_S3) appelée [`MinIO`](https://min.io/).
 
 En ce qui concerne le traitement des données, le fait
@@ -175,8 +175,8 @@ Les infrastructures _big data_ reposent sur le principe du _cluster_ (grappe) in
 Des serveurs sont connectés entre eux, ce qui forme de manière imagée une grappe. 
 Cette interconnexion de plusieurs serveurs entre eux peut se faire au niveau :
 
-- du stockage: les données volumineuses ne sont pas stockées sur un seul serveur mais au contraire réparties ;
-- du traitement: les calculs sont effectués par blocs sur plusieurs serveurs et le résultat
+- du **stockage** : les données volumineuses ne sont pas stockées sur un seul serveur mais au contraire réparties ;
+- du **traitement** : les calculs sont effectués par blocs sur plusieurs serveurs et le résultat
 de ceux-ci est ensuite transmis à un serveur maître. 
 
 Le système _Hadoop Distributed File System_ a été pensé pour tirer parti
