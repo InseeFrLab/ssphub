@@ -23,8 +23,8 @@ abstract: |
   Session spéciale de formation organisée par le réseau
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-03-10T10:00:00Z'
-date_end: '2022-03-10T11:30:00Z'
+date: '2023-03-10T10:00:00Z'
+date_end: '2023-03-10T11:30:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
