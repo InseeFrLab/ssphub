@@ -1,5 +1,5 @@
 ---
-title: "Onyxia: l'infrastructure cloud mère des dragons"
+title: "Onyxia : l'infrastructure cloud mère des dragons"
 subtitle: Un projet autour d'une infrastructure de data science à la pointe
 toc: true
 summary: |
@@ -93,10 +93,10 @@ donnée.
 Pour répondre au besoin croissant de puissance de traitement, les serveurs
 partagés, organisés sous forme de *clusters*, se sont développés dans de
 nombreuses organisations.
-Après avoir connue son heure de gloire au début des années 2010, l'infrastructure
+Après avoir connu son heure de gloire au début des années 2010, l'infrastructure
 [`HDFS` (*Hadoop Distributed File System*)](https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs),
 qui reposait sur des *clusters* où les données et la puissance de traitement étaient
-distribuées et collocalisées, a laissé place à des infrastructures
+distribuées et colocalisées, a laissé place à des infrastructures
 plus *scalables*, basées sur l'approche de la conteneurisation.
 
 ## De HDFS à la conteneurisation
@@ -127,7 +127,7 @@ Le deuxième constat est que la maintenance d'une infrastructure conteneurisée,
 faite pour être très malléable, est
 plus légère que celle d'une infrastructure basée sur des machines virtuelles ou sur
 les infrastructrures calibrées pour l'analytique *big data* comme `HDFS` reposant
-sur la collocalisation des données et des traitements[^1].
+sur la colocalisation des données et des traitements[^1].
 
 Les données étant stockées sur des serveurs différents de ceux exécutant les traitements,
 l'accès à celles-ci se fait à travers des API qui
@@ -227,12 +227,12 @@ volumineux sont fractionnés et répartis sur plusieurs serveurs.
 _Fonctionnement d'une architecture `MapReduce` (source: [Datascientest](https://datascientest.com/mapreduce))_
 
 La spécificité de l'architecture `HDFS` est que non seulement le stockage est
-distribué mais également aussi la puissance de traitement associée.  On parle à
-ce propos de __collocalisation__ : les traitements ont lieu sur les mêmes serveurs
-que ceux où sont stockés les données. Cela permet
+distribué, mais la puissance de traitement associée également.  On parle à
+ce propos de __colocalisation__ : les traitements ont lieu sur les mêmes serveurs
+que ceux où sont stockées les données. Cela permet
 de réduire les mouvements de données (_shuffle_ dans l'image ci-dessus) qui 
 sont coûteux du point de vue de la performance.
-Cette collocalisation a permis au 
+Cette colocalisation a permis au 
 système `HDFS` de devenir, au début de la décennie 2010,
 le paradigme dominant. En
 tirant parti de la parallélisation
@@ -264,7 +264,7 @@ impliquant des architectures assez monumentales. Si la duplication
 de la donnée n'est
 pas en soi choquante afin d'éviter la perte de données,
 cela a un effet 
-pervers dans un système de collocalisation. A chaque ajout de noeuds
+pervers dans un système de colocalisation. A chaque ajout de noeuds
 pour le stockage de données, il est également nécessaire d'ajouter 
 des ressources pour les traiter. Il est donc compliqué de décorréler 
 l'ajout de ressources de stockage et de traitement. Cette absence
@@ -375,7 +375,7 @@ et d'adoption d'une démarche `DevOps` voire `MLOps`.
 ### D'un *cloud* de l'administration à un logiciel ouvert
 
 Pour permettre aux *data scientists* des administrations françaises
-de bénéficier de technologies *cloud* sans être dépendant d'un
+de bénéficier de technologies *cloud* sans être dépendants d'un
 fournisseur de service privé,
 l'équipe innovation de l'Insee a eu l'idée de créer un
 *datalab* basé sur la philosophie de la conteneurisation en
@@ -422,7 +422,7 @@ précédemment.
 
 Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation.
 Tous les services interactifs sont automatiquement connectés à l'espace de stockage `S3`,
-et au coffre de secret `Vault`. La gestion des droits d'accès aux données stockées dans l'espace
+et au coffre de secrets `Vault`. La gestion des droits d'accès aux données stockées dans l'espace
 de stockage `S3` ou dans des services de bases de données (`ElasticSearch`, `PostGreSQL`...)
 est automatisée afin que chaque service
 puisse accéder aux données sur lesquelles l'utilisateur
@@ -490,7 +490,7 @@ les traitements sont exécutés depuis des serveurs hébergés à l'Insee.
 
 ## La communauté `Onyxia`
 
-Tous les composants sont proposés en *open source* par l'Insee ce qui permet de fédérer une communauté
+Tous les composants sont proposés en *open source* par l'Insee, ce qui permet de fédérer une communauté
 d'utilisateurs et de développeurs de ce produit.
 Il s'agit d'un bel exemple de mutualisation au sein de l'État et au delà.
 Les dépôts peuvent être retrouvés sur
