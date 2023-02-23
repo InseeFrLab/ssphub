@@ -2,7 +2,7 @@
 title: "Table ronde sur l'anonymisation de données"
 
 event: "La DINUM, l’INSEE, la CNIL, l’INSA et le Health Data Hub discutent de l'anonymisation des données"
-event_url: https://www.numerique.gouv.fr/agenda/table-ronde-sur-lanonymisation-de-donnees/
+event_url: https://www.numerique.gouv.fr/agenda/table-ronde-anonymisation-de-donnees/
 
 location: Visioconférence
 
@@ -61,4 +61,8 @@ url_video: ''
 #projects:
 #  - example
 ---
+
+Informations sur l'événement : 
+
+https://www.numerique.gouv.fr/agenda/table-ronde-anonymisation-de-donnees/
 
