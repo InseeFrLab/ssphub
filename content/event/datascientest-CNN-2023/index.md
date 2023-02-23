@@ -1,5 +1,5 @@
 ---
-title: Masterclass d'introduction aux réseaux de neurone
+title: Masterclass d'introduction aux réseaux de neurones
 
 event: Une masterclass proposée au réseau par Datascientest
 event_url: https://ssphub.netlify.app/infolettre/infolettre_10/#masterclass-datascientest
@@ -17,7 +17,7 @@ tags:
 - Event
 
 summary: |
-  Cette session d'introduction aux réseaux de neurone
+  Cette session d'introduction aux réseaux de neurones
   ouvre un cycle de masterclass sur l'analyse d'image 
 abstract: |
   Session spéciale de formation organisée par le réseau
