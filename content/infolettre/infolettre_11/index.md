@@ -92,7 +92,7 @@ d'une version de test de son robot conversationnel dans son navigateur `Bing`
 montre que l'intégration à un moteur de recherche 
 traditionnel n'est pas évidente, notamment pour éviter la diffusion de fausses informations. 
 Alors que `ChatGPT` avait bénéficié d'un gros travail humain pour [cadrer son comportement](https://time.com/6247678/openai-chatgpt-kenya-workers/), il semblerait que l'IA de Bing
-ait des propos moins consensuels.
+soit moins consensuelle dans ses propos.
 
 Pendant ce temps, la recherche sur les modèles de diffusion continue à avancer à grande
 vitesse. La dernière innovation est la capacité
@@ -133,11 +133,11 @@ Par ailleurs, l'article de Jordan Tigani ["Big data is dead"](https://motherduck
 `Huggingface` et `Observable` sont chacun devenus des incontournables dans leur domaine
 (voir notre [_newsletter_ de décembre](https://ssphub.netlify.app/post/retrospective2022/)).
 Alors un rapprochement entre ces deux univers, permettant d'utiliser
-de nombreux modèles d'apprentissage via l'API d'HuggingFace directement dans le navigateur,
+de nombreux modèles d'apprentissage via l'API d'`HuggingFace` directement dans le navigateur,
 ça donne envie de s'amuser.
 
 Le _notebook_, disponible
-depuis [`Observable`](https://observablehq.com/@huggingface/hello-huggingface-js-inference),
+sur [`Observable`](https://observablehq.com/@huggingface/hello-huggingface-js-inference),
 illustre la richesse des fonctionnalités disponibles. 
 
 
@@ -148,10 +148,14 @@ que nous organisons.
 
 ## Première journée du réseau en avril
 
+<img src="treso.webp" alt="La Tréso" width="500"> 
+
+
 Notre réseau organise des événements
 virtuels depuis un an.
 Pour renforcer l'esprit communautaire, nous proposons
 une __journée du réseau le 17 avril, en présentiel__ 📅. 
+
 Cet événement aura lieu dans le
 tiers-lieu [la Tréso](https://www.latreso.fr/) à Malakoff. 
 Pendant la journée se succèderont
@@ -163,7 +167,7 @@ Le programme et les
 modalités pratiques d'inscription seront communiqués prochainement ! 
 Vous pouvez néanmoins déjà marquer la date dans votre calendrier. 
 
-## Carpentries
+## Présentation de la documentation collaborative _Carpentries_
 
 Pour favoriser l'adoption des langages `R`, `Python` et `Git`
 dans les administrations, le
@@ -178,8 +182,10 @@ disponibles de manière ouverte.
 L'absence de contenu en Français et l'orientation principalement
 académique des [contenus](https://datacarpentry.org/lessons/)
 a amené le programme `ModernStat` 
-à proposer aux _carpentries_ de créer de nouveaux parcours
-de formations, en Français. 
+à proposer aux _Carpentries_ de créer de nouveaux parcours
+de formations, en Français. Ces programmes seraient créés
+par des membres de la communauté francophone des utilisateurs
+des langages `R`, `Python` et `Git`.
 
 Kate Burnett-Isaacs, de Statistics Canada, nous présentera 
 l'initiative le __mardi 28 mars à 15h__ 📅
@@ -234,10 +240,12 @@ web du réseau revient sur le projet `Onyxia`,
 le logiciel initié par l'équipe innovation de l'Insee et mis à disposition
 sur [`Github`](https://github.com/InseeFrLab/onyxia-web) pour 
 permettre à d'autres organisations de développer une infrastructure
-de _data science_ à l'état de l'art. Pour en savoir plus
+de _data science_ à l'état de l'art.
+
+Pour en savoir plus
 sur le contexte de naissance d'Onyxia,
 les choix techniques mis en oeuvre ou la communauté des 
-réutilisateurs, c'est [par ici](https://ssphub.netlify.app/post/onyxia/)
+réutilisateurs, c'est [par ici](https://ssphub.netlify.app/post/onyxia/).
 
 
 ## Replay de l'événement autour des packages facilitant l'accès à l'open data de l'Insee
