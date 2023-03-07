@@ -35,7 +35,7 @@ abstract: |
   dans les langages _open source_, associés à des documentations
   disponibles de manière ouverte. 
 date: '2023-03-07T15:00:00Z'
-date_end: '2023-03-07T16:30:00Z'
+date_end: '2023-03-07T16:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
