@@ -6,7 +6,7 @@ title: Lino Galiana
 superuser: false
 
 # Role/position/tagline
-role: data scientist
+role: Data Scientist
 
 # Organizations/Affiliations to show in About widget
 organizations:

@@ -126,7 +126,7 @@ de lire le _post_ à venir prochainement sur le blog de notre réseau.
 
 Par ailleurs, l'article de Jordan Tigani ["Big data is dead"](https://motherduck.com/blog/big-data-is-dead/?utm_campaign=Data_Elixir&utm_source=Data_Elixir_424) vaut le détour. 
 
-## `Huggingface.js`: l'API d'HuggingFace directement accessible depuis un navigateur web
+## `Huggingface.js`: l'API d'`HuggingFace` directement accessible depuis un navigateur web
 
 <img src="hf-js.png" alt="Exemple d'utilisation de l'API via le navigateur" width="400"> 
 
@@ -168,6 +168,7 @@ Vous pouvez néanmoins déjà marquer la date dans votre calendrier.
 Pour favoriser l'adoption des langages `R`, `Python` et `Git`
 dans les administrations, le
 programme `ModernStat` piloté par l'OCDE et Statistics Canada,
+a lancé un projet nommé `Meta Academy` et
 s'est rapproché de l'organisation américaine `Carpentries`
 dont l'objectif est de proposer
 des parcours progressifs de cours
@@ -182,13 +183,15 @@ de formations, en Français.
 
 Kate Burnett-Isaacs, de Statistics Canada, nous présentera 
 l'initiative le __mardi 28 mars à 15h__ 📅
-([invitation `Outlook` ](XXXX)). La présentation aura lieu
+([invitation `Outlook` ](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/newsletter_11/carpentries.ics)).
+La présentation aura lieu
 en Anglais et sera suivie d'un
 échange (Français et Anglais possibles).
 Si vous êtes intéressés
 par la manière dont les nombreux contenus créés par
 les membres du réseau pourraient prendre place
 dans ce cadre, n'hésitez pas à venir pour en savoir plus !
+Informations pratiques [ici](https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/) !
 
 
 ## Masterclass datascientest
@@ -259,4 +262,4 @@ Au final, une demi-douzaine de projets ont déjà été identifiés.
 
 Si vous n'étiez pas disponible lors de cette première journée, il 
 est possible à tout moment de rejoindre cette communauté.
-Le prochain atelier a lieu le __14 mars au Lieu de la Transformation Publique__ !
+Le prochain atelier a lieu le __14 mars au Lieu de la Transformation Publique__ 📅 !
