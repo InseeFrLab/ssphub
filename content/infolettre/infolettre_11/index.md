@@ -229,7 +229,7 @@ __Pour vous inscrire, il suffit de remplir [ce formulaire](https://framaforms.or
 
 
 
-# Actualités du réseau: derniers événements et contenus produits
+# Actualités du réseau: dernières nouveautés
 
 ## Onyxia
 
