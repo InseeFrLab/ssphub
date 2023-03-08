@@ -67,7 +67,7 @@ nouvelles du réseau.
 
 L'actualité est encore largement dominée par les
 discussions autour de `ChatGPT`.
-Les débats continuent sur la pertinence de
+Les débats continuent notamment sur la pertinence de
 ce type d'outil dans l'enseignement ([cf. Télérama](https://www.telerama.fr/enfants/chatgpt-a-l-ecole-et-si-c-etait-bien-7014474.php)).
 L'article du [_New Yorker_ "ChatGPT is a blurry JPEG of the web"](https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web?utm_campaign=Data_Elixir&utm_source=Data_Elixir_424)
 propose une analyse en profondeur de la manière dont les modèles
@@ -175,7 +175,7 @@ programme `ModernStat` piloté par l'OCDE et Statistics Canada,
 a lancé un projet nommé `Meta Academy` et
 s'est rapproché de l'organisation américaine `Carpentries`
 dont l'objectif est de proposer
-des parcours progressifs de cours
+des parcours progressifs de formation
 dans les langages _open source_, associés à des documentations
 disponibles de manière ouverte. 
 
@@ -183,7 +183,7 @@ L'absence de contenu en Français et l'orientation principalement
 académique des [contenus](https://datacarpentry.org/lessons/)
 a amené le programme `ModernStat` 
 à proposer aux _Carpentries_ de créer de nouveaux parcours
-de formations, en Français. Ces programmes seraient créés
+de formations en Français. Ces programmes seraient créés
 par des membres de la communauté francophone des utilisateurs
 des langages `R`, `Python` et `Git`.
 
