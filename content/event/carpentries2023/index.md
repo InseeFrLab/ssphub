@@ -86,6 +86,10 @@ Lien de l'événement:
 
 https://insee-fr.zoom.us/j/99374135087?pwd=Z200ZDBYd01UcnNpdnc2RkFWd3FYQT09
 
+__Evénement `outlook`__ [ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_carpentries_2023/carpentries.ics)
+
+
+
 
 
 
