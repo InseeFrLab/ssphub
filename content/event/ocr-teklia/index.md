@@ -1,5 +1,5 @@
 ---
-title: ' \"OCRisation, état de l'art et projets auxquels participe Teklia\" par Christopher Kermorvant'
+title: "\"OCRisation, état de l'art et projets auxquels participe Teklia\" par Christopher Kermorvant"
 
 event: Présentation par Kate Burnett-Isaacs (Statistics Canada) du projet de documentation ouverte
 event_url: https://insee-fr.zoom.us/j/99374135087?pwd=Z200ZDBYd01UcnNpdnc2RkFWd3FYQT09
