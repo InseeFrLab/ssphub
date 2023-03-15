@@ -64,7 +64,7 @@ fonctionnalités du package vise à le compléter:
 
 
 
-# Performances
+# Les secrets de la performance
 
 Les _benchmarks_ disponibles [sont clairs](https://h2oai.github.io/db-benchmark/) : `Polars` est
 un ours qui cours vite !
@@ -171,7 +171,7 @@ df = q.collect(streaming=True)
 De plus, `Polars` lit nativement les fichiers `Parquet` qui par ses propriétés
 permet d'aller beaucoup plus vite que le CSV !
 
-# API fluide
+# Une API fluide
 
 C'est un reproche régulièrement fait à `Pandas` :
 la syntaxe de manipulations des données est parfois complexe ou peu lisible, et les choix d'écriture ne sont pas transparents du point de vue des performances.
@@ -194,7 +194,7 @@ df.lazy()
 
 On retrouve une sémantique d'opérations de haut niveau qui s'enchaînent à la manière de [ce que l'on peut faire en `dplyr`](https://www.book.utilitr.org/03_fiches_thematiques/fiche_tidyverse#comment-utiliser-lop%C3%A9rateur-pipe-avec-le-tidyverse). ;)
 
-# D'autres concurrents
+# Les autres concurrents
 
 `Pandas` et `Polars` ne sont pas seuls dans le grand zoo de la manipulation de données en Python : des solutions comme [Vaex](https://github.com/vaexio/vaex) ou [Dask](https://github.com/dask/dask) ont des arguments à
 faire valoir. 
@@ -205,7 +205,7 @@ avec  `Polars` dans la ménagerie.
 
 _Le duo DuckDB-Polars illustré par Dall-E-2_
 
-# Ressources
+# Ressources supplémentaires
 
 - [_Awesome Polars_ par Damien Dotta (INSEE)](https://github.com/ddotta/awesome-polars)
 - [Polars pour R](https://rpolars.github.io/)
