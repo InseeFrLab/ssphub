@@ -45,9 +45,9 @@ categories:
 toc: true
 ---
 
-> _Credit Par File:ZL-Ursus-maritimus.pngFile:Polar bear range map.png, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17286219_
+> _Credit : [File:ZL-Ursus-maritimus.pngFile:Polar bear range map.png, CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=17286219_)
 
-Le concept de [_dataframe_](https://www.databricks.com/glossary/what-are-dataframes) est central pour le _data scientist_ qui manipule des données tabulaires.
+Le concept de **[_dataframe_](https://www.databricks.com/glossary/what-are-dataframes)** est central pour le _data scientist_ qui manipule des données tabulaires.
 En `Python`, [`Pandas`](https://pandas.pydata.org/) est la solution de loin la plus populaire. En moyenne, le _package_ est téléchargé
 4 millions de fois par semaine, depuis des années. 
 
@@ -68,7 +68,8 @@ fonctionnalités du package vise à le compléter:
 
 Les _benchmarks_ disponibles [sont clairs](https://h2oai.github.io/db-benchmark/) : `Polars` est
 un ours qui cours vite !
-Ce benchmark, [proposé par H2O](https://h2oai.github.io/db-benchmark/), propose
+
+Le benchmark suivant, [effectué par H2O](https://h2oai.github.io/db-benchmark/), propose
 un comparatif de la vitesse des principaux frameworks de manipulation de données
 pour effectuer une agrégation par groupe avec un jeu de données de 50GB:
 
@@ -76,7 +77,7 @@ pour effectuer une agrégation par groupe avec un jeu de données de 50GB:
 
 `Polars` devance des solutions connues pour leur efficacité sur ce type d'opérations, 
 comme le package `R` `data.table`. L'utilisateur habituel de `Pandas`
-ne pourrait même pas traiter ses données, qui excèdent les capacités computationnelles
+ne pourrait même pas traiter ces données, qui excèdent les capacités computationnelles
 de sa machine.
 
 ## L'évaluation _lazy_
@@ -84,19 +85,26 @@ de sa machine.
 Plusieurs éléments expliquent cette rapidité.
 
 En premier lieu, `Polars` est conçu pour optimiser les requêtes :
-grâce au mode _lazy_ ("paresseux"), on laisse la possibilité au moteur d'analyser ce qu'on souhaite faire pour proposer une exécution optimale (pour la lecture comme pour la transformation des jeux de données).
+grâce au mode _lazy_ (_"paresseux"_),
+on laisse la possibilité au moteur d'analyser ce qu'on souhaite faire
+pour proposer une exécution optimale (pour la lecture comme pour la transformation des jeux de données).
 La _lazy evaluation_ est une méthode assez commune pour améliorer la vitesse
-des traitements et est utilisée, entre autres, par `Spark` ou par `Arrow`.
+des traitements et est utilisée, entre autres, par `Spark`.
 
-La _lazy evaluation_ permet, par exemple, si un filtre sur les lignes arrive 
+Du fait de
+la _lazy evaluation_ il est ainsi possible, par exemple,
+si un filtre sur les lignes arrive 
 tardivement, de le remonter dans l'ordre des opérations effectuées par `Python`
-pour que
+afin que
 les opérations ultérieures ne soient effectuées que sur
-l'ensemble de données optimal.
+l'ensemble optimal de données.
 Ces optimisations sont détaillées dans la [documentation officielle](https://pola-rs.github.io/polars-book/user-guide/optimizations/intro.html). 
 
+## Lecture optimisée des fichiers
+
 L'utilisateur `Pandas` est habitué à lire du CSV avec `pd.read_csv`. 
-Avec `Polars`, il existe deux manières, très ressemblantes. 
+Avec `Polars`, il existe deux manières, très ressemblantes
+de le faire.
 
 ```python
 import polars as pl
@@ -113,9 +121,11 @@ q = (
 df = q.collect()
 ```
 
-Avec cette syntaxe, les connaisseurs de `Pyspark` retrouveront facilement leurs petits (ours). 
+Avec cette syntaxe, les connaisseurs de `Pyspark` retrouveront facilement leurs petits (ours 🐻). 
 
-On peut toujours lire de manière plus directe (en mode _eager_, "impatient") en utilisant la fonction `read_csv`, et ensuite appliquer des transformations optimisables en glissant habilement `lazy` :
+On peut toujours lire de manière plus directe
+(en mode _eager_, _"impatient"_) en utilisant la fonction `read_csv`,
+et ensuite appliquer des transformations optimisables en glissant habilement `lazy` :
 
 ```python
 df = pl.read_csv("iris.csv")
@@ -127,6 +137,10 @@ df_res = df.lazy() # ←  ici :)
   .collect()
 ```
 
+`Polars` fonctionne également très bien avec le format `Parquet`, comme illustré dans
+le _notebook_ qui accompagne ce _post_.
+
+
 ## Parallélisation
 
 `Polars` parallélise les traitements dès que cela est possible, notamment dans le cas d'aggrégation.
@@ -134,6 +148,8 @@ Chaque coeur se charge d'une partie de l'agrégation et envoie des données plus
 qui va finaliser l'agrégation
 
 ![Parallélisation](polars-split-parallel-apply-combine.svg)
+
+_Illustration du principe de la parallélisation_
 
 Sur les systèmes proposant de nombreux coeurs, cela peut faire gagner beaucoup de temps.
 
@@ -144,7 +160,7 @@ Enfin, le choix d'utiliser à la fois le format de représentation en mémoire [
 ## Calculs _out of memory_
 
 `Polars` travaille vite mais présente aussi l'avantage
-de lire naturellement des jeux de données hors des limites de la mémoire de l'ordinateur grâce à [sa capacité de lire en flux](https://www.youtube.com/watch?v=3-C0Afs5TXQ) (a.k.a _streaming_)
+de lire naturellement des jeux de données hors des limites de la mémoire de l'ordinateur grâce à [sa capacité de lire en flux](https://www.youtube.com/watch?v=3-C0Afs5TXQ) (méthode qu'on appelle le _streaming_).
 
 
 ```python
@@ -157,9 +173,12 @@ permet d'aller beaucoup plus vite que le CSV !
 
 # API fluide
 
-C'est un reproche régulièrement fait à Pandas : la syntaxe de manipulations des données est parfois complexe ou peu lisible, et les choix d'écriture ne sont pas transparents du point de vue des performances.
+C'est un reproche régulièrement fait à `Pandas` :
+la syntaxe de manipulations des données est parfois complexe ou peu lisible, et les choix d'écriture ne sont pas transparents du point de vue des performances.
 
-L'API proposée par Polars est à la fois expressive et transparente. Un exemple d'exploitation de la BPE :
+L'API proposée par Polars est à la fois expressive et transparente.
+Voici un exemple d'exploitation de la BPE, issu du _notebook_ accompagnant 
+ce _post_ :
 
 ```python
 df.lazy()
@@ -188,7 +207,7 @@ _Le duo DuckDB-Polars illustré par Dall-E-2_
 
 # Ressources
 
-- [_Awesome Polars_] par Damien Dotta (INSEE) : https://github.com/ddotta/awesome-polars 
+- [_Awesome Polars_ par Damien Dotta (INSEE)](https://github.com/ddotta/awesome-polars)
 - [Polars pour R](https://rpolars.github.io/)
 - https://www.rhosignal.com/tags/polars/
 - https://kevinheavey.github.io/modern-polars/
