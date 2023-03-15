@@ -45,7 +45,7 @@ categories:
 toc: true
 ---
 
-> Credit Par File:ZL-Ursus-maritimus.pngFile:Polar bear range map.png, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17286219
+> _Credit Par File:ZL-Ursus-maritimus.pngFile:Polar bear range map.png, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=17286219_
 
 Le concept de [_dataframe_](https://www.databricks.com/glossary/what-are-dataframes) est central pour le _data scientist_ qui manipule des données tabulaires.
 En `Python`, [`Pandas`](https://pandas.pydata.org/) est la solution de loin la plus populaire. En moyenne, le _package_ est téléchargé
@@ -54,6 +54,15 @@ En `Python`, [`Pandas`](https://pandas.pydata.org/) est la solution de loin la p
 Un petit nouveau apporte un vent de fraîcheur dans le domaine : [`Polars`](https://www.pola.rs/).
 
 Ses atouts ? D'excellentes performances et une expressibilité qui le rapproche d'un [`dplyr`](https://dplyr.tidyverse.org/).
+
+Ce post de blog revient sur les principaux atouts de `Polars`, sans vouloir être exaustif. Un _notebook_ illustrant les principales
+fonctionnalités du package vise à le compléter: 
+
+<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
+<a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+
+
+
 
 # Performances
 
@@ -179,7 +188,12 @@ _Le duo DuckDB-Polars illustré par Dall-E-2_
 
 # Ressources
 
-- notebook sur le datalab
+- [_Awesome Polars_] par Damien Dotta (INSEE) : https://github.com/ddotta/awesome-polars 
 - [Polars pour R](https://rpolars.github.io/)
 - https://www.rhosignal.com/tags/polars/
 - https://kevinheavey.github.io/modern-polars/
+
+Le _notebook_ accompagnant ce _post_:
+
+<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
+<a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
