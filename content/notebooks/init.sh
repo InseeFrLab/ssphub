@@ -4,11 +4,10 @@ NOTEBOOK_NAME=$1
 WORK_DIR="/home/onyxia/work"
 CLONE_DIR="${WORK_DIR}/repo-git"
 
-COURSE_DIR="${CLONE_DIR}"
-# COURSE_DIR="${CLONE_DIR}/notebooks"
+COURSE_DIR="${CLONE_DIR}/content/notebooks"
 
 # Clone course repository
-REPO_URL="https://github.com/romaintailhurat/miscbooks.git"
+REPO_URL="https://github.com/inseefrlab/ssphub.git"
 git clone --depth 1 $REPO_URL $CLONE_DIR
 
 # Put relevant notebook in formation dir
