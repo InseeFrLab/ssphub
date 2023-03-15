@@ -58,7 +58,7 @@ Ses atouts ? D'excellentes performances et une expressibilité qui le rapproche 
 Ce post de blog revient sur les principaux atouts de `Polars`, sans vouloir être exaustif. Un _notebook_ illustrant les principales
 fonctionnalités du package vise à le compléter: 
 
-<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
+<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
 <a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
@@ -192,7 +192,7 @@ df.lazy()
   .collect()
 ```
 
-On retrouve une sémantique d'opérations de haut niveau qui s'enchaînent à la manière de [ce que l'on peut faire en `dplyr`](https://www.book.utilitr.org/03_fiches_thematiques/fiche_tidyverse#comment-utiliser-lop%C3%A9rateur-pipe-avec-le-tidyverse). ;)
+On retrouve une sémantique d'opérations de haut niveau qui s'enchaînent à la manière de [ce que l'on peut faire en `dplyr`](https://www.book.utilitr.org/03_fiches_thematiques/fiche_tidyverse#comment-utiliser-lop%C3%A9rateur-pipe-avec-le-tidyverse).
 
 # Les autres concurrents
 
