@@ -6,7 +6,7 @@ title: Romain Tailhurat
 superuser: false
 
 # Role/position/tagline
-role: Data Scientist
+role: Product manager
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -17,10 +17,10 @@ organizations:
 #bio: 
 
 # Interests to show in About widget
-#interests:
-#  - Artificial Intelligence
-#  - Computational Linguistics
-#  - Information Retrieval
+interests:
+  - data engineering
+  - machine learning in general
+  - Python & R
 
 # Education to show in About widget
 #education:
