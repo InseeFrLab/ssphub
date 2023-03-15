@@ -167,7 +167,7 @@ On retrouve une sémantique d'opérations de haut niveau qui s'enchaînent à la
 
 # D'autres concurrents
 
-`Pandas` et `Polars` ne sont pas seuls dans le grand zoo de la manipulation de données en Python : des solution comme [Vaex](https://github.com/vaexio/vaex) ou [Dask](https://github.com/dask/dask) ont des arguments à
+`Pandas` et `Polars` ne sont pas seuls dans le grand zoo de la manipulation de données en Python : des solutions comme [Vaex](https://github.com/vaexio/vaex) ou [Dask](https://github.com/dask/dask) ont des arguments à
 faire valoir. 
 `DuckDB`, un autre _framework_ de manipulation de données, s'intègre quand à lui très bien
 avec  `Polars` dans la ménagerie.
@@ -179,5 +179,6 @@ _Le duo DuckDB-Polars illustré par Dall-E-2_
 # Ressources
 
 - notebook sur le datalab
+- [Polars pour R](https://rpolars.github.io/)
 - https://www.rhosignal.com/tags/polars/
 - https://kevinheavey.github.io/modern-polars/
