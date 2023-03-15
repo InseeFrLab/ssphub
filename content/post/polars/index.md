@@ -30,6 +30,7 @@ image:
 
 authors:
   - romaintailhurat
+  - linogaliana
 
 tags:
   - Python
