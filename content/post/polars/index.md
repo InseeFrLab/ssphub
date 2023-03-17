@@ -55,8 +55,8 @@ Un petit nouveau apporte un vent de fraîcheur dans le domaine : [`Polars`](http
 
 Ses atouts ? D'excellentes performances et une expressibilité qui le rapproche d'un [`dplyr`](https://dplyr.tidyverse.org/).
 
-Ce post de blog revient sur les principaux atouts de `Polars`, sans vouloir être exaustif. Un _notebook_ illustrant les principales
-fonctionnalités du package vise à le compléter: 
+Ce post de blog revient sur les principaux atouts de `Polars`, sans vouloir être exhaustif. Un _notebook_ illustrant les principales
+fonctionnalités du package vise à le compléter : 
 
 <a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
 <a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
@@ -67,7 +67,7 @@ fonctionnalités du package vise à le compléter:
 # Les secrets de la performance
 
 Les _benchmarks_ disponibles [sont clairs](https://h2oai.github.io/db-benchmark/) : `Polars` est
-un ours qui cours vite !
+un ours qui court vite !
 
 Le benchmark suivant, [effectué par H2O](https://h2oai.github.io/db-benchmark/), propose
 un comparatif de la vitesse des principaux frameworks de manipulation de données
@@ -143,9 +143,9 @@ le _notebook_ qui accompagne ce _post_.
 
 ## Parallélisation
 
-`Polars` parallélise les traitements dès que cela est possible, notamment dans le cas d'aggrégation.
+`Polars` parallélise les traitements dès que cela est possible, notamment dans le cas d'agrégation.
 Chaque coeur se charge d'une partie de l'agrégation et envoie des données plus légères à `Python`
-qui va finaliser l'agrégation
+qui va finaliser l'agrégation.
 
 ![Parallélisation](polars-split-parallel-apply-combine.svg)
 
