@@ -75,7 +75,7 @@ n'hésitez pas à le consulter ! Ou à découvrir celui sur le [_Met Gala_](http
 
 <img src="https://ssphub.netlify.app/post/retrospective2022/featured.png" alt="Un enfant parlant à un robot" width="300"> 
 
-`ChatGPT` continue de centraliser l'attention.
+`ChatGPT` continue de focaliser l'attention.
 Dans la veine de l'article désignant les modèles de langages
 sous le terme de [_"stochastic parrots"_](https://dl.acm.org/doi/10.1145/3442188.3445922) ("perroquets stochastiques"),
 Arthur Charpentier
