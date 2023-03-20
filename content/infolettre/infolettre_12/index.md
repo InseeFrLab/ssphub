@@ -83,7 +83,7 @@ la stratégie d'ouverture (ou plutôt
 l'absence d'ouverture) d'`OpenAI` : _"Nous avions tord"_ ([voir _The Verge_](https://www.theverge.com/2023/3/15/23640180/openai-gpt-4-launch-closed-research-ilya-sutskever-interview)). 
 Hasard du calendrier, cette déclaration a eu lieu presque au même moment que la publication d'un robot
 conversationnel ouvert [`OpenChatKit`](https://www.together.xyz/blog/openchatkit). La concurrence est néanmoins
-apre puisque une équipe de Microsoft a déjà proposé l'intégration à `ChatGPT` d'un module permettant
+âpre puisque une équipe de Microsoft a déjà proposé l'intégration à `ChatGPT` d'un module permettant
 d'interagir avec `ChatGPT` également par le [biais d'images](https://www.linkedin.com/posts/thomas-wolf-a056857_ai-opensource-chatgpt-activity-7040347000814383104-eCXz/?utm_source=share&utm_medium=member_android).
 
 
@@ -91,7 +91,7 @@ d'interagir avec `ChatGPT` également par le [biais d'images](https://www.linked
 
 <img src="bank_failures.png" alt="Infographie des faillites bancaires" width="500"> 
 
-Une infographie des faillites bancaires par Mike Bostock. Source: [Notebook Observable](https://observablehq.com/@mbostock/bank-failures)
+_Une infographie des faillites bancaires par Mike Bostock. Source: [Notebook Observable](https://observablehq.com/@mbostock/bank-failures)_
 
 L'autre actualité phare des quinze derniers jours est la faillite 
 de la _Silicon Valley Bank_. Aux Etats-Unis, il s'agit de la plus 
@@ -101,7 +101,17 @@ une panique bancaire, même si
 la banque était en fait déjà dans les radars de la Fed depuis quelques temps ([NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
 
 
-## 
+## L'écosystème de la data science continue sa mue
+
+Le [panorama technologique 2023 de Matt Turck](https://mattturck.com/mad2023/)
+confirme la tendance à la diversification des technologies
+à maîtriser pour mener un projet de _data science_. Cette complexification
+des outils et des rôles dans l'écosystème de la donnée, déjà évoqué
+dans l'article ""
+
+
+
+
 
 
 
