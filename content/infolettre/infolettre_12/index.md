@@ -84,12 +84,12 @@ l'absence d'ouverture) d'`OpenAI` : _"Nous avions tord"_ ([voir _The Verge_](htt
 Hasard du calendrier, cette déclaration a eu lieu presque au même moment que la publication d'un robot
 conversationnel ouvert [`OpenChatKit`](https://www.together.xyz/blog/openchatkit). La concurrence est néanmoins
 apre puisque une équipe de Microsoft a déjà proposé l'intégration à `ChatGPT` d'un module permettant
-d'interagir avec `ChatGPT` également par le biais d'images (https://www.linkedin.com/posts/thomas-wolf-a056857_ai-opensource-chatgpt-activity-7040347000814383104-eCXz/?utm_source=share&utm_medium=member_android).
+d'interagir avec `ChatGPT` également par le [biais d'images](https://www.linkedin.com/posts/thomas-wolf-a056857_ai-opensource-chatgpt-activity-7040347000814383104-eCXz/?utm_source=share&utm_medium=member_android).
 
 
 ## Des turbulences dans la Silicon Valley
 
-<img src="bank_failures.png" alt="Infographie des faillites bancaires" width="300"> 
+<img src="bank_failures.png" alt="Infographie des faillites bancaires" width="500"> 
 
 Une infographie des faillites bancaires par Mike Bostock. Source: [Notebook Observable](https://observablehq.com/@mbostock/bank-failures)
 
@@ -100,6 +100,8 @@ Fed est rapidement intervenue pour éviter
 une panique bancaire, même si
 la banque était en fait déjà dans les radars de la Fed depuis quelques temps ([NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
 
+
+## 
 
 
 
