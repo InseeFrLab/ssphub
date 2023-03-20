@@ -56,7 +56,8 @@ nous proposons d'accélérer le rythme de publication des _newsletters_.
 
 # Actualités de la data science
 
-<br>
+## La charte graphique de l'Insee sur le tapis rouge
+
 La semaine dernière avait lieu la cérémonie des Oscars. 
 Grâce à
 un [fil de Clara Dealberto](https://twitter.com/claradealberto/status/1635310454628298753),
@@ -176,7 +177,7 @@ Dans le cadre du programme 10%, des présentations ont lieu
 avant certains
 ateliers de travail sur les projets communautaires.
 
-La prochaine présentation, qui aura lieu le __jeudi 30 mars de 14h à 15h__,
+La prochaine présentation, qui aura lieu le __jeudi 30 mars de 14h à 15h 📅__,
 sera donnée par des membres du réseau. Elle portera sur une présentation
 des outils favorisant les bonnes pratiques de développement en `Python`
 et de l'intérêt de ces bonnes pratiques pour faciliter la mise en production
@@ -188,7 +189,7 @@ Plus d'infos à venir par le biais du canal `Tchap` de notre réseau.
 
 ## Un événement autour de l'OCRisation avec Christopher Kermorvant (29 mars)
 
-Le __mercredi 29 mars de 15h à 16h__ nous recevons [Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
+Le __mercredi 29 mars de 15h à 16h 📅__ nous recevons [Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
 chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com/).
 Christopher mène actuellement plusieurs projets de numérisation de textes anciens, notamment 
 d'OCRisation de vieux recensements avec l'INED. 
@@ -217,8 +218,10 @@ __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files
 Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
 qui présentait l'écosystème autour du package [`Python` `Polars`](https://www.pola.rs/), 
 Romain Tailhurat (Insee) nous propose un post de blog pour découvrir ce _package_. 
+
 Celui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales
 fonctionnalités de la librairie
-qu'il est possible de tester en un seul clic sur le SSP Cloud ou sur Google Colab. 
+qu'il est possible de tester en un seul clic sur le `SSP Cloud` ou sur `Google Colab`. 
+
 Vous pouvez également retrouver ce tutoriel depuis
 l'[espace formation](https://www.sspcloud.fr/formation) du SSP Cloud. 
