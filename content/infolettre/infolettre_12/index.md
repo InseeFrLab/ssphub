@@ -198,6 +198,8 @@ Pendant cet événement, Christopher
 nous fera un état de l'art de l'OCRisation puis nous présentera des projets qu'il a pu mener récemment
 avec Teklia.
 
+Il est possible de suivre la présentation via [__Zoom__](https://insee-fr.zoom.us/j/99414476694?pwd=NTg2UTl4TUdzMi9TOGk5QzdKOUZjdz09) ou, pour les personnes présentes à l’Insee, en  __2-C-496__.
+
 [__Invitation outlook ici__](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_carpentries_2023/ocrisation.ics)
 
 ## Présentation de la documentation collaborative _Carpentries_ (28 mars)
