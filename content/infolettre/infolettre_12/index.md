@@ -170,41 +170,19 @@ chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com
 Christopher mène actuellement plusieurs projets de numérisation de textes anciens, notamment 
 d'OCRisation de vieux recensements avec l'INED. 
 
-Il nous fera un état de l'art de l'OCRisation puis nous parlera des projets qu'il a pu mener avec Teklia comme son projet actuel.
+Pendant cet événement, Christopher
+nous fera un état de l'art de l'OCRisation puis nous parlera des projets qu'il a pu mener récemment
+avec Teklia.
+
+[__Invitation outlook ici__](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_carpentries_2023/ocrisation.ics)
 
 ## Présentation de la documentation collaborative _Carpentries_ (28 mars)
 
-Pour favoriser l'adoption des langages `R`, `Python` et `Git`
-dans les administrations, le
-programme `ModernStat` piloté par l'OCDE et Statistics Canada,
-a lancé un projet nommé `Meta Academy` et
-s'est rapproché de l'organisation américaine `Carpentries`
-dont l'objectif est de proposer
-des parcours progressifs de formation
-dans les langages _open source_, associés à des documentations
-disponibles de manière ouverte. 
+Pour rappel, Kate Burnett-Isaacs, de Statistics Canada, nous présentera 
+l'initiative Meta Academy / Carpentries le __mardi 28 mars à 15h__ 📅.
+Plus de détails dans la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/).
 
-L'absence de contenu en Français et l'orientation principalement
-académique des [contenus](https://datacarpentry.org/lessons/)
-a amené le programme `ModernStat` 
-à proposer aux _Carpentries_ de créer de nouveaux parcours
-de formations en Français. Ces programmes seraient créés
-par des membres de la communauté francophone des utilisateurs
-des langages `R`, `Python` et `Git`.
-
-Kate Burnett-Isaacs, de Statistics Canada, nous présentera 
-l'initiative le __mardi 28 mars à 15h__ 📅
-([invitation `Outlook` ](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/newsletter_11/carpentries.ics)).
-La présentation aura lieu
-en Anglais et sera suivie d'un
-échange (Français et Anglais possibles).
-Si vous êtes intéressés
-par la manière dont les nombreux contenus créés par
-les membres du réseau pourraient prendre place
-dans ce cadre, n'hésitez pas à venir pour en savoir plus !
-Informations pratiques [ici](https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/) !
-
-
+__[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/newsletter_11/carpentries.ics)__.
 
 # Actualités du réseau: dernières nouveautés
 
