@@ -219,11 +219,11 @@ __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files
 
 Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
 qui présentait l'écosystème autour du package [`Python` `Polars`](https://www.pola.rs/), 
-Romain Tailhurat (Insee) nous propose un post de blog pour découvrir ce _package_. 
+Romain Tailhurat (Insee) nous propose un [post de blog](https://ssphub.netlify.app/post/polars/) pour découvrir ce _package_. 
 
 Celui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales
-fonctionnalités de la librairie
-qu'il est possible de tester en un seul clic sur le `SSP Cloud` ou sur `Google Colab`. 
+fonctionnalités de la librairie. Il est possible de tester 
+le _notebook_ en un seul clic sur le `SSP Cloud` ou sur `Google Colab`. 
 
 Vous pouvez également retrouver ce tutoriel depuis
 l'[espace formation](https://www.sspcloud.fr/formation) du SSP Cloud. 
