@@ -50,9 +50,9 @@ L’importance de la _data science_ pour la sphère publique, a été soulignée
 
 La pratique de la _data science_ nécessite cependant l’expérience de nouvelles compétences,
 environnements et méthodes de travail. Cet article dans
-la [_Harvard Business Review_](https://hbr.org/2022/07/is-data scientist-still-the-sexiest-job-of-the-21st-century),
+la [_Harvard Business Review_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century),
 qui revient 10 ans plus tard sur le titre provocateur
-_["Data Scientist: Sexiest Job of the 21st Century"](https://hbr.org/2012/10/data scientist-the-sexiest-job-of-the-21st-century
+_["Data Scientist: Sexiest Job of the 21st Century"](https://hbr.org/2012/10/data-scientist-the-sexiest-job-of-the-21st-century
 )_, illustre les changements rapides au cours de la dernière 
 décennie du rôle du _data scientist_ dans l'écosystème de
 la donnée. Cette multiplication des compétences rend
