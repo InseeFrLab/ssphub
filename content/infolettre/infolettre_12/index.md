@@ -210,6 +210,9 @@ __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files
 
 ## Post de blog sur `Polars`
 
+<img src="polar.png" alt="Infographie des faillites bancaires" width="500"> 
+
+
 Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
 qui présentait l'écosystème autour du package [`Python` `Polars`](https://www.pola.rs/), 
 Romain Tailhurat (INSEE) nous propose un post de blog pour découvrir ce _package_. 
