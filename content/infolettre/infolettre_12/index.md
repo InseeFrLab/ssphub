@@ -58,7 +58,8 @@ nous proposons d'accélérer le rythme de publication des _newsletters_.
 
 <br>
 La semaine dernière avait lieu la cérémonie des Oscars. 
-Grâce à un [fil de Clara Dealberto](https://twitter.com/claradealberto/status/1635310454628298753?s=20),
+Grâce à
+un [fil de Clara Dealberto](https://twitter.com/claradealberto/status/1635310454628298753),
 on peut mesurer l'influence des
 graphistes de l'Insee sur les stylistes des stars :
 
@@ -97,7 +98,7 @@ la stratégie d'ouverture (ou plutôt
 l'absence d'ouverture) d'`OpenAI` : _"Nous avions tord"_ ([voir _The Verge_](https://www.theverge.com/2023/3/15/23640180/openai-gpt-4-launch-closed-research-ilya-sutskever-interview)). 
 Hasard du calendrier, cette déclaration a eu lieu presque au même moment que la publication d'un robot
 conversationnel ouvert [`OpenChatKit`](https://www.together.xyz/blog/openchatkit). La concurrence est néanmoins
-âpre puisque une équipe de Microsoft a déjà proposé l'intégration à `ChatGPT` d'un module permettant
+âpre puisqu'une équipe de Microsoft a déjà proposé l'intégration à `ChatGPT` d'un module permettant
 d'interagir avec `ChatGPT` également par le [biais d'images](https://www.linkedin.com/posts/thomas-wolf-a056857_ai-opensource-chatgpt-activity-7040347000814383104-eCXz/?utm_source=share&utm_medium=member_android).
 
 
@@ -114,7 +115,7 @@ principale faillite bancaire depuis 2008 aux Etats-Unis.
 La
 Fed est rapidement intervenue pour endiguer
 la panique bancaire, même si
-la banque était en fait déjà dans les radars de la Fed bien avant sa faillite ([voir NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
+la banque était en fait déjà dans ses radars bien avant sa faillite ([voir NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
 
 
 ## Retour sur les évolutions récentes du monde de la data science
@@ -126,7 +127,7 @@ des outils et des rôles dans l'écosystème de la donnée, évoquée
 dans l'article [_"Is Data Scientist Still the Sexiest Job of the 21st Century?"_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century), est ici confirmée. 
 
 Les derniers sondages auprès des recruteurs
-américains montrent la popularité des _data engineer_,
+américains montrent la popularité des _data engineers_,
 plus spécialisés que les _data scientists_
 dans la mise en oeuvre d'infrastructures techniques
 pour valoriser des données. Le profil de _data engineer_ apparaît en deuxième place dans le classement 
@@ -169,7 +170,7 @@ une invitation par mail et un lien d'inscription seront communiqués dans la sem
 pouvoir participer à cet événement en présentiel dans le
 tiers-lieu [la Tréso](https://www.latreso.fr/) à Malakoff. 
 
-## Bonnes pratiques en `Python`: présentation lors des ateliers du programme 10% (30 mars)
+## Bonnes pratiques en `Python` : présentation lors des ateliers du programme 10% (30 mars)
 
 Dans le cadre du programme 10%, des présentations ont lieu
 avant certains
@@ -215,7 +216,7 @@ __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files
 
 Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
 qui présentait l'écosystème autour du package [`Python` `Polars`](https://www.pola.rs/), 
-Romain Tailhurat (INSEE) nous propose un post de blog pour découvrir ce _package_. 
+Romain Tailhurat (Insee) nous propose un post de blog pour découvrir ce _package_. 
 Celui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales
 fonctionnalités de la librairie
 qu'il est possible de tester en un seul clic sur le SSP Cloud ou sur Google Colab. 
