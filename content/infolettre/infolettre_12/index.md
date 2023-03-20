@@ -52,15 +52,15 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 Du fait de la densité des actualités dans le monde de la _data science_
 et des multiples événements à venir dans le cadre de ce réseau, 
 nous proposons d'accélérer le rythme de publication des _newsletters_.
+<br>
 
 # Actualités de la data science
 
 <br>
-
 La semaine dernière avait lieu la cérémonie des Oscars. 
 Grâce à un [fil de Clara Dealberto](https://twitter.com/claradealberto/status/1635310454628298753?s=20),
 on peut mesurer l'influence des
-graphistes de l'Insee sur les stylistes des stars sur le tapis rouge :
+graphistes de l'Insee sur les stylistes des stars :
 
 ![](oscars.png)
 
@@ -109,10 +109,12 @@ _Une infographie des faillites bancaires par Mike Bostock. Source: [Notebook Obs
 
 L'autre actualité phare des quinze derniers jours est la faillite 
 de la _Silicon Valley Bank_. Aux Etats-Unis, il s'agit de la plus 
-principale faillite bancaire depuis 2008 aux Etats-Unis. La
-Fed est rapidement intervenue pour éviter
-une panique bancaire, même si
-la banque était en fait déjà dans les radars de la Fed depuis quelques temps ([NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
+principale faillite bancaire depuis 2008 aux Etats-Unis.
+
+La
+Fed est rapidement intervenue pour endiguer
+la panique bancaire, même si
+la banque était en fait déjà dans les radars de la Fed bien avant sa faillite ([voir NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
 
 
 ## Retour sur les évolutions récentes du monde de la data science
@@ -120,23 +122,27 @@ la banque était en fait déjà dans les radars de la Fed depuis quelques temps 
 Le [panorama technologique 2023 de Matt Turck](https://mattturck.com/mad2023/)
 confirme la tendance à la diversification des technologies
 à maîtriser pour mener un projet de _data science_. Cette complexification
-des outils et des rôles dans l'écosystème de la donnée, déjà évoquée
+des outils et des rôles dans l'écosystème de la donnée, évoquée
 dans l'article [_"Is Data Scientist Still the Sexiest Job of the 21st Century?"_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century), est ici confirmée. 
 
-Le besoin croissant de _data engineer_, plus spécialisés que les _data scientists_
+Les derniers sondages auprès des recruteurs
+américains montrent la popularité des _data engineer_,
+plus spécialisés que les _data scientists_
 dans la mise en oeuvre d'infrastructures techniques
-pour valoriser des données,
-est confirmé par les derniers sondages auprès des recruteurs
-américains. Le profil de _data engineer_ y apparaît en deuxième place dans le classement 
+pour valoriser des données. Le profil de _data engineer_ apparaît en deuxième place dans le classement 
 des profils les plus recherchés par les 
-recruteurs. Les _data scientists_ n'apparaissent plus dans les premières places
+recruteurs alors que les _data scientists_ n'apparaissent plus dans les premières places
 du classement. 
+
+## Le big data n'est pas mort
 
 Une [réponse intéressante](https://ponder.io/big-data-is-dead-long-live-big-data/)
 à l'article _"Big data is dead"_
 ([voir Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
 revient sur l'intérêt de disposer de données historiques longues pour
 l'entrainement de modèles d'apprentissage. 
+
+## `R` directement dans le navigateur
 
 Avec un peu de retard sur [`Python`](https://github.com/pyodide/pyodide), il 
 devient maintenant possible de faire du `R` directement depuis le navigateur
@@ -145,7 +151,6 @@ grâce à [`WebR`](https://www.tidyverse.org/blog/2023/03/webr-0-1-0/). Cette ap
 est typique du
 _Web Assembly_ où les langages de programmation sont directement utilisés depuis
 le navigateur, sans installation préalable. 
-
 
 # Actualités du réseau: événements à venir
 
@@ -158,20 +163,37 @@ que nous organisons.
 
 Déjà annoncée dans la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/),
 nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅.
-Le nombre de places étant limité,
+
+Le nombre de places dans l'espace à disposition étant limité,
 une invitation par mail et un lien d'inscription seront communiqués dans la semaine pour
 pouvoir participer à cet événement en présentiel dans le
 tiers-lieu [la Tréso](https://www.latreso.fr/) à Malakoff. 
 
+## Bonnes pratiques en `Python`: présentation lors des ateliers du programme 10% (30 mars)
+
+Dans le cadre du programme 10%, des présentations ont lieu
+avant certains
+ateliers de travail sur les projets communautaires.
+
+La prochaine présentation, qui aura lieu le __jeudi 30 mars de 14h à 15h__,
+sera donnée par des membres du réseau. Elle portera sur une présentation
+des outils favorisant les bonnes pratiques de développement en `Python`
+et de l'intérêt de ces bonnes pratiques pour faciliter la mise en production
+de projets de _data science_. Il s'agira d'une présentation succincte 
+du contenu du cours de l'ENSAE ["Bonnes pratiques et mise en production de projets data science"](https://ensae-reproductibilite.netlify.app/).
+
+Plus d'infos à venir par le biais du canal `Tchap` de notre réseau. 
+
+
 ## Un événement autour de l'OCRisation avec Christopher Kermorvant (29 mars)
 
-Le __29 mars de 15h à 16h__ nous recevons [Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
+Le __mercredi 29 mars de 15h à 16h__ nous recevons [Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
 chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com/).
 Christopher mène actuellement plusieurs projets de numérisation de textes anciens, notamment 
 d'OCRisation de vieux recensements avec l'INED. 
 
 Pendant cet événement, Christopher
-nous fera un état de l'art de l'OCRisation puis nous parlera des projets qu'il a pu mener récemment
+nous fera un état de l'art de l'OCRisation puis nous présentera des projets qu'il a pu mener récemment
 avec Teklia.
 
 [__Invitation outlook ici__](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_carpentries_2023/ocrisation.ics)
@@ -186,43 +208,13 @@ __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files
 
 # Actualités du réseau: dernières nouveautés
 
-## Onyxia
+## Post de blog sur `Polars`
 
-<img src="https://ssphub.netlify.app/post/onyxia/featured.png" alt="Datascientest" width="450"> 
-
-Le [dernier post](https://ssphub.netlify.app/post/onyxia/) sur le site
-web du réseau revient sur le projet `Onyxia`, 
-le logiciel initié par l'équipe innovation de l'Insee et mis à disposition
-sur [`Github`](https://github.com/InseeFrLab/onyxia-web) pour 
-permettre à d'autres organisations de développer une infrastructure
-de _data science_ à l'état de l'art.
-
-Pour en savoir plus
-sur le contexte de naissance d'Onyxia,
-les choix techniques mis en oeuvre ou la communauté des 
-réutilisateurs, c'est [par ici](https://ssphub.netlify.app/post/onyxia/).
-
-
-## Replay de l'événement autour des packages facilitant l'accès à l'open data de l'Insee
-
-<img src="dessin-opendata.png" alt="Datascientest" width="450"> 
-
-Le _replay_ des présentations des
-packages [`Doremifasol`](https://inseefrlab.github.io/DoReMIFaSol/) (`R`)
-et [`Pynsee`](https://github.com/InseeFrLab/pynsee) (`Python`) lors de notre
-événement du __13 février__ autour des packages facilitant l'accès
-à l'open data de l'Insee est en ligne ! 
-
-La vidéo et les supports présentés sont mis à disposition
-sur le [site web du réseau](https://ssphub.netlify.app/talk/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/)
-
-## Programme 10%
-
-La journée de lancement du programme 10% annonce une saison prometteuse !
-Plus de 50 personnes, issues d'un large panel d'administrations, se 
-sont rencontrées et ont échangées autour de projets mutualisables. 
-Au final, une demi-douzaine de projets ont déjà été identifiés. 
-
-Si vous n'étiez pas disponible lors de cette première journée, il 
-est possible à tout moment de rejoindre cette communauté.
-Le prochain atelier a lieu le __14 mars au Lieu de la Transformation Publique__ 📅 !
+Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
+qui présentait l'écosystème autour du package [`Python` `Polars`](https://www.pola.rs/), 
+Romain Tailhurat (INSEE) nous propose un post de blog pour découvrir ce _package_. 
+Celui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales
+fonctionnalités de la librairie
+qu'il est possible de tester en un seul clic sur le SSP Cloud ou sur Google Colab. 
+Vous pouvez également retrouver ce tutoriel depuis
+l'[espace formation](https://www.sspcloud.fr/formation) du SSP Cloud. 
