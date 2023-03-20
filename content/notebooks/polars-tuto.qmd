@@ -10,20 +10,10 @@ Ce notebook offre un complément à l'[article](https://ssphub.netlify.app/post/
 <a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20notebook%20sur%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
 <a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
-Les exemples fournis dans ce notebook utiliseront les données de la
-[base permanente des équipements (BPE)](https://www.insee.fr/fr/metadonnees/source/serie/s1161). 
-
 Pour faire le parallèle avec les
 exemples pour [découvrir le `tidyverse` dans `utilitr`](https://www.book.utilitr.org/03_fiches_thematiques/fiche_tidyverse)),
 ce _notebook_ exploite la [Base Permanente des Equipements (BPE)](https://www.insee.fr/fr/metadonnees/source/serie/s1161).
 
-
-```{python}
-import os
-import polars as pl
-import s3fs
-from pynsee.download import download_file
-```
 
 ::: {.cell .markdown}
 ```{=html}
@@ -60,6 +50,15 @@ il est nécessaire d'exécuter la cellule suivante:
 !pip install polars pynsee[full] s3fs duckdb
 ```
 
+
+Nous aurons besoin d'importer les packages suivants dans ce _notebook_:
+
+```{python}
+import os
+import polars as pl
+import s3fs
+from pynsee.download import download_file
+```
 
 
 # Lecture de données
