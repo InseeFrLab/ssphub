@@ -55,11 +55,18 @@ nous proposons d'accélérer le rythme de publication des _newsletters_.
 
 # Actualités de la data science
 
+<br>
+
 La semaine dernière avait lieu la cérémonie des Oscars. 
 Grâce à un [fil de Clara Dealberto](https://twitter.com/claradealberto/status/1635310454628298753?s=20),
-on peut mesurer l'influence de l'Insee sur les stylistes des stars sur le tapis rouge
+on peut mesurer l'influence des
+graphistes de l'Insee sur les stylistes des stars sur le tapis rouge :
 
 ![](oscars.png)
+
+Le [fil](https://twitter.com/claradealberto/status/1635310454628298753?s=20), qui met à l'honneur
+l'Insee, vaut le détour ;
+n'hésitez pas à le consulter ! Ou à découvrir celui sur le [_Met Gala_](https://twitter.com/claradealberto/status/1521417299210686464). 
 
 
 ## ChatGPT encore et toujours
@@ -68,11 +75,12 @@ on peut mesurer l'influence de l'Insee sur les stylistes des stars sur le tapis 
 
 `ChatGPT` continue de centraliser l'attention.
 Dans la veine de l'article désignant les modèles de langages
-sous le terme de [_"stochastic parrot"_](https://dl.acm.org/doi/10.1145/3442188.3445922) ("perroquets stochastiques"),
+sous le terme de [_"stochastic parrots"_](https://dl.acm.org/doi/10.1145/3442188.3445922) ("perroquets stochastiques"),
 Arthur Charpentier
 parle lui de ["société du bullshit"](https://freakonometrics.hypotheses.org/66144) pour désigner
 la manière dont `ChatGPT` offre, sous un raisonnement en apparence logique, de manière
 indifférenciée des absurdités et des vérités. 
+
 Espérons que lorsque `ChatGPT`
 sera [embarqué dans les voitures _General Motors_](https://arstechnica.com/cars/2023/03/gm-plans-to-let-you-talk-to-your-car-with-chatgpt-knight-rider-style/), 
 il ne nous donnera pas de fausse indication pour changer un pneu ou ne se retournera pas contre
@@ -107,18 +115,22 @@ une panique bancaire, même si
 la banque était en fait déjà dans les radars de la Fed depuis quelques temps ([NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
 
 
-## L'écosystème de la data science continue sa mue
+## Retour sur les évolutions récentes du monde de la data science
 
 Le [panorama technologique 2023 de Matt Turck](https://mattturck.com/mad2023/)
 confirme la tendance à la diversification des technologies
 à maîtriser pour mener un projet de _data science_. Cette complexification
-des outils et des rôles dans l'écosystème de la donnée, évoqué
-dans l'article [_"Is Data Scientist Still the Sexiest Job of the 21st Century?"_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century), est ici confirmé. 
+des outils et des rôles dans l'écosystème de la donnée, déjà évoquée
+dans l'article [_"Is Data Scientist Still the Sexiest Job of the 21st Century?"_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century), est ici confirmée. 
+
 Le besoin croissant de _data engineer_, plus spécialisés que les _data scientists_
 dans la mise en oeuvre d'infrastructures techniques
 pour valoriser des données,
 est confirmé par les derniers sondages auprès des recruteurs
-américains. 
+américains. Le profil de _data engineer_ y apparaît en deuxième place dans le classement 
+des profils les plus recherchés par les 
+recruteurs. Les _data scientists_ n'apparaissent plus dans les premières places
+du classement. 
 
 Une [réponse intéressante](https://ponder.io/big-data-is-dead-long-live-big-data/)
 à l'article _"Big data is dead"_
@@ -135,82 +147,32 @@ _Web Assembly_ où les langages de programmation sont directement utilisés depu
 le navigateur, sans installation préalable. 
 
 
-
-
-
-
-
-
-
-## Traitement de données tabulaires: `Arrow` et `Polars` au centre du jeu
-
-<img src="polars-arrow.png" alt="Un ours tirant une flèche avec un arc elfique" width="400"> 
-
-Du côté des données tabulaires plus traditionnelles, 
-Apache `Arrow` continue de s'affirmer comme un incontournable. 
-
-La version 2.0 de `Pandas` qui vient de sortir permet de plus facilement
-s'appuyer, en arrière-plan, sur `Arrow` plutôt que `Numpy`
-qui offre des performances et des fonctionnalités
-limitées sur données non numériques (cf. [https://datapythonista.me](https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i)). 
-Il s'agissait d'une des limites majeures de `Pandas`, identifiées dès 2017 par son
-créateur Wes McKinney ([voir ici](https://wesmckinney.com/blog/apache-arrow-pandas-internals/))
-qui est également très impliqué dans le développement d'Apache `Arrow`.
-
-La librairie [`Polars`](https://www.pola.rs/) connait
-une certaine [_hype_](https://airbyte.com/blog/pandas-2-0-ecosystem-arrow-polars-duckdb#the-alternatives) et va sans doute
-devenir dans les mois à venir une librairie incontournable, en alternative à `Pandas`.
-La [dernière version de `DuckDB`](https://duckdb.org/2023/02/13/announcing-duckdb-070.html) (sortie mi-février)
-renforce l'interconnexion entre ces deux écosystèmes ([exemples](https://duckdb.org/docs/guides/python/polars.html)). 
-Si vous voulez en savoir plus sur `Polars`, il est recommandé de suivre l'évolution de 
-la liste _["Awesome Polars"](https://github.com/ddotta/awesome-polars)_ faite par Damien Dotta
-(relayée par la très bonne _newsletter_ du site [Data Elixir](https://dataelixir.com/)) et 
-de lire le _post_ à venir prochainement sur le blog de notre réseau.
-
-Par ailleurs, l'article de Jordan Tigani ["Big data is dead"](https://motherduck.com/blog/big-data-is-dead/?utm_campaign=Data_Elixir&utm_source=Data_Elixir_424) vaut le détour. 
-
-## `Huggingface.js`: l'API d'`HuggingFace` directement accessible depuis un navigateur web
-
-<img src="hf-js.png" alt="Exemple d'utilisation de l'API via le navigateur" width="400"> 
-
-`Huggingface` et `Observable` sont chacun devenus des incontournables dans leur domaine
-(voir notre [_newsletter_ de décembre](https://ssphub.netlify.app/post/retrospective2022/)).
-Alors un rapprochement entre ces deux univers, permettant d'utiliser
-de nombreux modèles d'apprentissage via l'API d'`HuggingFace` directement dans le navigateur,
-ça donne envie de s'amuser.
-
-Le _notebook_, disponible
-sur [`Observable`](https://observablehq.com/@huggingface/hello-huggingface-js-inference),
-illustre la richesse des fonctionnalités disponibles. 
-
-
 # Actualités du réseau: événements à venir
 
 Place aux actualités de notre réseau avec les prochains événements
 que nous organisons. 
 
-## Première journée du réseau en avril
+## Première journée du réseau en avril (17 avril)
 
 <img src="treso.webp" alt="La Tréso" width="500"> 
 
-
-Notre réseau organise des événements
-virtuels depuis un an.
-Pour renforcer l'esprit communautaire, nous proposons
-une __journée du réseau le 17 avril, en présentiel__ 📅. 
-
-Cet événement aura lieu dans le
+Déjà annoncée dans la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/),
+nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅.
+Le nombre de places étant limité,
+une invitation par mail et un lien d'inscription seront communiqués dans la semaine pour
+pouvoir participer à cet événement en présentiel dans le
 tiers-lieu [la Tréso](https://www.latreso.fr/) à Malakoff. 
-Pendant la journée se succèderont
-plusieurs séquences pour
-construire ensemble le réseau, partager autour du sujet
-de la _data science_ et échanger ensemble.
 
-Le programme et les
-modalités pratiques d'inscription seront communiqués prochainement ! 
-Vous pouvez néanmoins déjà marquer la date dans votre calendrier. 
+## Un événement autour de l'OCRisation avec Christopher Kermorvant (29 mars)
 
-## Présentation de la documentation collaborative _Carpentries_
+Le __29 mars de 15h à 16h__ nous recevons [Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
+chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com/).
+Christopher mène actuellement plusieurs projets de numérisation de textes anciens, notamment 
+d'OCRisation de vieux recensements avec l'INED. 
+
+Il nous fera un état de l'art de l'OCRisation puis nous parlera des projets qu'il a pu mener avec Teklia comme son projet actuel.
+
+## Présentation de la documentation collaborative _Carpentries_ (28 mars)
 
 Pour favoriser l'adoption des langages `R`, `Python` et `Git`
 dans les administrations, le
@@ -241,34 +203,6 @@ par la manière dont les nombreux contenus créés par
 les membres du réseau pourraient prendre place
 dans ce cadre, n'hésitez pas à venir pour en savoir plus !
 Informations pratiques [ici](https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/) !
-
-
-## Masterclass datascientest
-
-<img src="datascientest.png" alt="Datascientest" width="200"> 
-
-Les inscriptions à nos cycles de _masterclass_ `datascientest` sont toujours
-ouvertes ! Pendant le mois de mars, nous continuerons d'avancer dans
-les __deux cursus parallèles__.
-
-En premier lieu, 
-la masterclass d'introduction au deep learning (__10 mars de 10h à 12h__ 📅)
-permettra d'initier notre
-parcours de _computer vision_ avec la présentation de 
-certains concepts 
-centraux du _deep learning_ (perceptron, convolution, _transfer learning_...).
-
-La deuxième session mensuelle, ayant lieu le __24 mars de 10h à 12h__ 📅
-sera elle l'occasion
-d'avancer dans notre parcours NLP 
-grâce au sujet de la similarité textuelle et de la classification de textes avec
-des méthodes d'_embeddings_.
-
-{{% callout %}}
-
-__Pour vous inscrire, il suffit de remplir [ce formulaire](https://framaforms.org/participation-aux-masterclass-datascientest-1675096179) !__
-
-{{% /callout %}}
 
 
 
