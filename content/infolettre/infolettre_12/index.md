@@ -95,7 +95,10 @@ Une infographie des faillites bancaires par Mike Bostock. Source: [Notebook Obse
 
 L'autre actualité phare des quinze derniers jours est la faillite 
 de la _Silicon Valley Bank_. Aux Etats-Unis, il s'agit de la plus 
-principale faillite bancaire depuis 2008. 
+principale faillite bancaire depuis 2008 aux Etats-Unis. La
+Fed est rapidement intervenue pour éviter
+une panique bancaire, même si
+la banque était en fait déjà dans les radars de la Fed depuis quelques temps ([NYT](https://www.nytimes.com/2023/03/19/business/economy/fed-silicon-valley-bank.html)). 
 
 
 
