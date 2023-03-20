@@ -55,10 +55,16 @@ nous proposons d'accélérer le rythme de publication des _newsletters_.
 
 # Actualités de la data science
 
+La semaine dernière avait lieu la cérémonie des Oscars. 
+Grâce à un [fil de Clara Dealberto](https://twitter.com/claradealberto/status/1635310454628298753?s=20),
+on peut mesurer l'influence de l'Insee sur les stylistes des stars sur le tapis rouge
+
+![](oscars.png)
+
+
 ## ChatGPT encore et toujours
 
 <img src="https://ssphub.netlify.app/post/retrospective2022/featured.png" alt="Un enfant parlant à un robot" width="300"> 
-
 
 `ChatGPT` continue de centraliser l'attention.
 Dans la veine de l'article désignant les modèles de langages
