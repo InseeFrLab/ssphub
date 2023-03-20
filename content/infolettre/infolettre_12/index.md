@@ -212,7 +212,7 @@ __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files
 
 ## Post de blog sur `Polars`
 
-<img src="polar.png" alt="Infographie des faillites bancaires" width="500"> 
+<img src="polar.png" alt="Infographie des faillites bancaires" width="300"> 
 
 
 Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
