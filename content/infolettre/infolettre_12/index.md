@@ -106,8 +106,29 @@ la banque était en fait déjà dans les radars de la Fed depuis quelques temps 
 Le [panorama technologique 2023 de Matt Turck](https://mattturck.com/mad2023/)
 confirme la tendance à la diversification des technologies
 à maîtriser pour mener un projet de _data science_. Cette complexification
-des outils et des rôles dans l'écosystème de la donnée, déjà évoqué
-dans l'article ""
+des outils et des rôles dans l'écosystème de la donnée, évoqué
+dans l'article [_"Is Data Scientist Still the Sexiest Job of the 21st Century?"_](https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century), est ici confirmé. 
+Le besoin croissant de _data engineer_, plus spécialisés que les _data scientists_
+dans la mise en oeuvre d'infrastructures techniques
+pour valoriser des données,
+est confirmé par les derniers sondages auprès des recruteurs
+américains. 
+
+Une [réponse intéressante](https://ponder.io/big-data-is-dead-long-live-big-data/)
+à l'article _"Big data is dead"_
+([voir Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
+revient sur l'intérêt de disposer de données historiques longues pour
+l'entrainement de modèles d'apprentissage. 
+
+Avec un peu de retard sur [`Python`](https://github.com/pyodide/pyodide), il 
+devient maintenant possible de faire du `R` directement depuis le navigateur
+web, c'est-à-dire sans installation du logiciel `R`,
+grâce à [`WebR`](https://www.tidyverse.org/blog/2023/03/webr-0-1-0/). Cette approche
+est typique du
+_Web Assembly_ où les langages de programmation sont directement utilisés depuis
+le navigateur, sans installation préalable. 
+
+
 
 
 
