@@ -2,8 +2,8 @@
 title: "\"OCRisation, état de l'art et projets auxquels participe Teklia\" par Christopher Kermorvant"
 slug: "ocrisation-teklia"
 
-event: Présentation par Kate Burnett-Isaacs (Statistics Canada) du projet de documentation ouverte
-event_url: https://insee-fr.zoom.us/j/99374135087?pwd=Z200ZDBYd01UcnNpdnc2RkFWd3FYQT09
+event: Présentation par Christopher Kermorvant de la problématique de l'OCRisation du projet de documentation ouverte
+event_url: https://insee-fr.zoom.us/j/99414476694?pwd=NTg2UTl4TUdzMi9TOGk5QzdKOUZjdz09
 
 location: Zoom
 #address:
