@@ -72,7 +72,7 @@ Lien de l'événement:
 
 https://insee-fr.zoom.us/j/99414476694?pwd=NTg2UTl4TUdzMi9TOGk5QzdKOUZjdz09
 
-__Evénement `outlook`__ [ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_carpentries_2023/ocrisation.ics)
+__Evénement `outlook`__ [ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_ocrisation/ocrisation.ics)
 
 
 
