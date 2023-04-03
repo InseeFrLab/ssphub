@@ -68,14 +68,13 @@ url_video: ''
 #  - pynsee
 ---
 
-Lien de l'événement:
+Replay de l'événement: 
 
-https://insee-fr.zoom.us/j/99414476694?pwd=NTg2UTl4TUdzMi9TOGk5QzdKOUZjdz09
-
-__Evénement `outlook`__ [ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_ocrisation/ocrisation.ics)
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_ocrisation/replay.mp4" controls="yes" >}}
 
 
+Slides présentées par Christopher Kermorvant:
 
+https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_ocrisation/slides.pptx
 
-
-
+![](ocr.png)

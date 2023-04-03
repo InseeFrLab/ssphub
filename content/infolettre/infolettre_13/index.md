@@ -63,8 +63,11 @@ Face à la recrudescence des montages utilisant `Midjourney`, qu'il s'agisse de 
 d'images à vocation humoristique, _Le Monde_ a publie un
 guide pour [reconnaître une image générée par une IA](https://www.lemonde.fr/les-decodeurs/article/2023/03/30/comment-reconnaitre-une-image-generee-par-midjourney_6167525_4355770.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D).
 
+![](https://preview.redd.it/pope-francis-goes-to-space-v0-7e9161rhoypa1.png?width=640&crop=smart&auto=webp&s=75d424b86993ca3b081e4182e774b51b4b6d3bce)
+_Source: [Reddit](https://www.reddit.com/r/midjourney/comments/1221l3j/pope_francis_goes_to_space/)_
 
 La publication de modèles de langage continue à suivre un rythme presque quotidien. 
+Cet [état de l'art](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier est déjà largement dépassé.
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/) une version _open source_
 de [Flamingo](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model),
@@ -79,7 +82,11 @@ ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/).
 `Databricks` s'appuie également sur `LLaMA` et `Alpaca` pour proposer 
 son modèle de langage ouvert: [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html). Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). 
 Et la course folle n'est pas prête de s'arrêter puisque la prochaine étape 
-est peut-être de générer des [formes en 3D](https://twitter.com/mattdeitke/status/1638608472525897728).
+est peut-être de générer des formes en 3D à partir [d'un jeu de données ouvertes en 3D](https://twitter.com/mattdeitke/status/1638608472525897728).
+
+{{< video src="3d.mp4" controls="yes" >}}
+_Source: [Twitter](https://twitter.com/mattdeitke/status/1638608472525897728)_
+
 
 La question de la sécurité et de la confidentialité des informations
 fournies à `OpenAI` a également été au centre de l'attention au cours
@@ -98,7 +105,7 @@ artficielle. Cette lettre a été rapidement critiquée que ce soit par
 [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19)
 ou par les
 auteurs de l'article développant le concept de _"Stochastic Parrots"_ qui est cité dans la lettre 
-([voir la réponse des auteurs](https://www.dair-institute.org/blog/letter-statement-March2023))
+([voir la réponse des auteurs](https://www.dair-institute.org/blog/letter-statement-March2023)).
 
 
 ## Le reste de l'actualité
@@ -126,6 +133,10 @@ une application prête à l'emploi, avec tous
 les ingrédients pré-installés, pour
 tester ou enrichir un modèle. 
 
+La plateforme `observable` propose
+un [comparatif](https://observablehq.com/@observablehq/data-wrangling-translations) des principales syntaxes
+de manipulation de données (`JavaScript`, `Python`, `R` et `SQL`). 
+
 Si vous appréciez les cartes, un _hashtag_ à suivre
 est le [#MapPromptMonday](https://twitter.com/hashtag/MapPromptMonday).
 
@@ -138,67 +149,41 @@ que nous organisons.
 
 <img src="treso.webp" alt="La Tréso" width="500"> 
 
-Déjà annoncée dans la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/),
-nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅.
+Nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅 ([_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/)).
+Les places en présentiel sont
+presque épuisées, ne tardez pas à vous inscrire !
+Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom. 
 
-Le nombre de places dans l'espace à disposition étant limité,
-une invitation par mail et un lien d'inscription seront communiqués dans la semaine pour
-pouvoir participer à cet événement en présentiel dans le
-tiers-lieu [la Tréso](https://www.latreso.fr/) à Malakoff. 
-
-## Bonnes pratiques en `Python` : présentation lors des ateliers du programme 10% (30 mars)
-
-Dans le cadre du programme 10%, des présentations ont lieu
-avant certains
-ateliers de travail sur les projets communautaires.
-
-La prochaine présentation, qui aura lieu le __jeudi 30 mars de 14h à 15h 📅__,
-sera donnée par des membres du réseau. Elle portera sur une présentation
-des outils favorisant les bonnes pratiques de développement en `Python`
-et de l'intérêt de ces bonnes pratiques pour faciliter la mise en production
-de projets de _data science_. Il s'agira d'une présentation succincte 
-du contenu du cours de l'ENSAE ["Bonnes pratiques et mise en production de projets data science"](https://ensae-reproductibilite.netlify.app/).
-
-Plus d'infos à venir par le biais du canal `Tchap` de notre réseau. 
-
-
-## Un événement autour de l'OCRisation avec Christopher Kermorvant (29 mars)
-
-Le __mercredi 29 mars de 15h à 16h 📅__ nous recevons [Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
-chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com/).
-Christopher mène actuellement plusieurs projets de numérisation de textes anciens, notamment 
-d'OCRisation de vieux recensements avec l'INED. 
-
-Pendant cet événement, Christopher
-nous fera un état de l'art de l'OCRisation puis nous présentera des projets qu'il a pu mener récemment
-avec Teklia.
-
-Il est possible de suivre la présentation via [__Zoom__](https://insee-fr.zoom.us/j/99414476694?pwd=NTg2UTl4TUdzMi9TOGk5QzdKOUZjdz09) ou, pour les personnes présentes à l’Insee, en  __2-C-496__.
-
-[__Invitation outlook ici__](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_carpentries_2023/ocrisation.ics)
-
-## Présentation de la documentation collaborative _Carpentries_ (28 mars)
-
-Pour rappel, Kate Burnett-Isaacs, de Statistics Canada, nous présentera 
-l'initiative Meta Academy / Carpentries le __mardi 28 mars à 15h__ 📅.
-Plus de détails dans la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/).
-
-__[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/newsletter_11/carpentries.ics)__.
 
 # Actualités du réseau: dernières nouveautés
 
-## Post de blog sur `Polars`
+## Replay "Bonnes pratiques en `Python`" (30 mars)
 
-<img src="polar.png" alt="Infographie des faillites bancaires" width="300"> 
+Le replay de la présentation succincte 
+du contenu du cours de l'ENSAE ["Bonnes pratiques et mise en production de projets data science"](https://ensae-reproductibilite.netlify.app/) ayant eu lieu dans le cadre du programme 10% (voir [_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/))
+est disponible en ligne [LIEN A VENIR]
 
 
-Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
-qui présentait l'écosystème autour du package [`Python` `Polars`](https://www.pola.rs/), 
-Romain Tailhurat (Insee) nous propose un [post de blog](https://ssphub.netlify.app/post/polars/) pour découvrir ce _package_. 
+## Replay de l'événement autour de l'OCRisation avec Christopher Kermorvant (29 mars)
 
-Celui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales
-fonctionnalités de la librairie. Il est possible de tester 
-le _notebook_ en un seul clic sur le `SSP Cloud` ou sur `Google Colab`. 
+[Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
+chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com/)
+a proposé au réseau une présentation très pédagogique sur l'extraction de texte 
+avec des méthodes de _deep learning_.
 
-Vous pouvez également retrouver ce tutoriel depuis
-l'[espace formation](https://www.sspcloud.fr/formation) du SSP Cloud. 
+A partir de l'exemple de recensements de la fin du XIXe siècle, nous avons
+ainsi bénéficié d'une excellente introduction à l'histoire des techniques d'OCRisation
+et la manière dont aujourd'hui ces modèles fonctionnent en associant reconnaissance d'image
+et analyse textuelle. 
+
+Le replay est [ici](https://ssphub.netlify.app/talk/ocrisation-teklia/) !
+
+
+## Replay de la présentation de la documentation collaborative _Carpentries_ (28 mars)
+
+Kate Burnett-Isaacs, de Statistics Canada, nous a présenté
+l'initiative Meta Academy / Carpentries permettant de
+construire une documentation francophone de référence
+sur `R`, `Python` et `Git` pensée pour les utilisateurs de données.
+
+Le replay est [ici](https://ssphub.netlify.app/talk/ocrisation-teklia/) !
