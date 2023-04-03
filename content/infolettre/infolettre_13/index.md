@@ -56,9 +56,11 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 ## Débats autour de la place de l'IA dans la société 
 
 L'actualité des modèles de langage et des _chatbots_ est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et il est difficile de tout évoquer de manière succincte. 
+
 `Github Copilot`, l'assistant de code de `Microsoft`, devrait prochainement [utiliser `ChatGPT`](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/).
-Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un créateur d'image basé sur `Dall-E` : https://www.bing.com/create. 
+Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un [créateur d'image](https://www.bing.com/create) basé sur `Dall-E`. 
 Pendant ce temps, `Midjourney` sort sa [V5](https://www.lesnumeriques.com/intelligence-artificielle/midjourney-v5-est-disponible-comment-l-utiliser-n208168.html), améliorant encore le réalisme du rendu. 
+
 Face à la recrudescence des montages utilisant `Midjourney`, qu'il s'agisse de _deep fakes_ ou
 d'images à vocation humoristique, _Le Monde_ a publie un
 guide pour [reconnaître une image générée par une IA](https://www.lemonde.fr/les-decodeurs/article/2023/03/30/comment-reconnaitre-une-image-generee-par-midjourney_6167525_4355770.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D).
@@ -68,10 +70,12 @@ _Source: [Reddit](https://www.reddit.com/r/midjourney/comments/1221l3j/pope_fran
 
 La publication de modèles de langage continue à suivre un rythme presque quotidien. 
 Cet [état de l'art](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier est déjà largement dépassé.
+
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/) une version _open source_
 de [Flamingo](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model),
 le modèle de Google DeepMind.
+
 Afin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d'image et textuelle, 
 celui-ci s'appuie sur des composantes _open source_ pour les modèles de langage et 
 de reconnaissance d'image et un jeu de données ouvert. Des exemples de réutilisation
@@ -79,8 +83,12 @@ en `Python` sont disponibles sur le [dépôt `Github`](https://github.com/mlfoun
 Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a
 mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
 ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/). 
+
 `Databricks` s'appuie également sur `LLaMA` et `Alpaca` pour proposer 
-son modèle de langage ouvert: [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html). Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). 
+son modèle de langage ouvert: [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
+
+Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). 
+
 Et la course folle n'est pas prête de s'arrêter puisque la prochaine étape 
 est peut-être de générer des formes en 3D à partir [d'un jeu de données ouvertes en 3D](https://twitter.com/mattdeitke/status/1638608472525897728).
 
@@ -93,7 +101,7 @@ fournies à `OpenAI` a également été au centre de l'attention au cours
 de la dernière quinzaine. `OpenAI` a
 révélé une faille de sécurité à l'origine d'une [fuite de données](https://twitter.com/OpenAI/status/1639297361729191936?t=j1gdTehqAT8OraZRC34iqg&s=19). 
 Cette question de la confidentialité des informations fournies à `ChatGPT` 
-a d'ailleurs amené la CNIL italienne a demander le blocage
+a d'ailleurs amené la CNIL italienne à demander le blocage
 temporaire de l'outil d'OpenAI ([voir ici](https://www.lefigaro.fr/secteur/high-tech/rgpd-la-cnil-italienne-bloque-temporairement-l-acces-au-robot-conversationnel-chatgpt-20230331)).
 
 Cette interdiction prend place dans un contexte de discussions intenses autour de la place
@@ -101,7 +109,7 @@ Cette interdiction prend place dans un contexte de discussions intenses autour d
 Une [lettre ouverte](https://futureoflife.org/open-letter/pause-giant-ai-experiments/) au [fort écho médiatique](https://www.lemonde.fr/economie/article/2023/03/29/elon-musk-et-des-centaines-d-experts-reclament-une-pause-dans-le-developpement-de-l-ia_6167461_3234.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D) publiée par 
 des figures de la _tech_ (dont Elon Musk) et des universitaires réclame 
 un moratoire dans le développement de nouveaux modèles d'intelligence
-artficielle. Cette lettre a été rapidement critiquée que ce soit par
+artficielle. Cette lettre a été rapidement critiquée, que ce soit par
 [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19)
 ou par les
 auteurs de l'article développant le concept de _"Stochastic Parrots"_ qui est cité dans la lettre 
@@ -120,7 +128,8 @@ la [publication en open source de l'algorithme de recommandation de Twitter](htt
 Celui-ci permet de mieux comprendre la manière dont
 fonctionne l'[algorithme de recommandation](https://www.theverge.com/2023/3/31/23664849/twitter-releases-algorithm-musk-open-source)
 de `Twitter`, notamment la manière dont des [bulles de filtre](https://www.cnil.fr/fr/definition/bulle-de-filtre)
-peuvent advenir après avoir cliqué sur un _post_ par curiosité.  
+peuvent advenir après avoir cliqué sur un _post_ par curiosité. 
+
 La publication de ce code prend place quelques jours après la découverte qu'une 
 partie important du
 code de `Twitter` était [déjà sur `Github`](https://www.theverge.com/2023/3/27/23657928/twitter-source-code-leak-github), sans
