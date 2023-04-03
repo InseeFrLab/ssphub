@@ -58,6 +58,11 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 L'actualité des modèles de langage et des _chatbots_ est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et il est difficile de tout évoquer de manière succincte. 
 `Github Copilot`, l'assistant de code de `Microsoft`, devrait prochainement [utiliser `ChatGPT`](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/).
 Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un créateur d'image basé sur `Dall-E` : https://www.bing.com/create. 
+Pendant ce temps, `Midjourney` sort sa [V5](https://www.lesnumeriques.com/intelligence-artificielle/midjourney-v5-est-disponible-comment-l-utiliser-n208168.html), améliorant encore le réalisme du rendu. 
+Face à la recrudescence des montages utilisant `Midjourney`, qu'il s'agisse de _deep fakes_ ou
+d'images à vocation humoristique, _Le Monde_ a publie un
+guide pour [reconnaître une image générée par une IA](https://www.lemonde.fr/les-decodeurs/article/2023/03/30/comment-reconnaitre-une-image-generee-par-midjourney_6167525_4355770.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D).
+
 
 La publication de modèles de langage continue à suivre un rythme presque quotidien. 
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
@@ -114,14 +119,15 @@ partie important du
 code de `Twitter` était [déjà sur `Github`](https://www.theverge.com/2023/3/27/23657928/twitter-source-code-leak-github), sans
 doute suite à une fuite après l'un des licenciements massifs des derniers mois. 
 
-`Docker` et `HuggingFace` nouent un partenariat pour faciliter la réutilisation
-de modèles `HuggingFace` de manière complémentaire
-aux API. Avec cette approche, il est maintenant possible de proposer
-directement dans `HuggingFace` une application prête à l'emploi, avec tous
+`Docker` et `HuggingFace` nouent un [partenariat](https://www.docker.com/blog/docker-and-hugging-face-partner-to-democratize-ai/) pour faciliter la réutilisation
+de modèles `HuggingFace`. Avec cette approche, il est maintenant possible de proposer
+aux ré-utilisateurs, directement depuis `HuggingFace`, 
+une application prête à l'emploi, avec tous
 les ingrédients pré-installés, pour
 tester ou enrichir un modèle. 
 
-Si vous appréciez les cartes, il est recomandé de suivre le _hashtag_ [#MapPromptMonday](https://twitter.com/hashtag/MapPromptMonday)
+Si vous appréciez les cartes, un _hashtag_ à suivre
+est le [#MapPromptMonday](https://twitter.com/hashtag/MapPromptMonday).
 
 # Actualités du réseau: événements à venir
 
