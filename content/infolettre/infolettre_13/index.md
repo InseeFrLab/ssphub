@@ -55,9 +55,11 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 ## Débats autour de la place de l'IA dans la société 
 
-L'actualité des modèles de langage et des _chatbots_ est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et il est difficile de ne rien rater. 
-La publication de modèles de langage continue à suivre un rythme presque quotidien. 
+L'actualité des modèles de langage et des _chatbots_ est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et il est difficile de tout évoquer de manière succincte. 
+`Github Copilot`, l'assistant de code de `Microsoft`, devrait prochainement [utiliser `ChatGPT`](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/).
+Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un créateur d'image basé sur `Dall-E` : https://www.bing.com/create. 
 
+La publication de modèles de langage continue à suivre un rythme presque quotidien. 
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/) une version _open source_
 de [Flamingo](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model),
@@ -71,7 +73,8 @@ mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [N
 ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/). 
 `Databricks` s'appuie également sur `LLaMA` et `Alpaca` pour proposer 
 son modèle de langage ouvert: [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html). Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). 
-
+Et la course folle n'est pas prête de s'arrêter puisque la prochaine étape 
+est peut-être de générer des [formes en 3D](https://twitter.com/mattdeitke/status/1638608472525897728).
 
 La question de la sécurité et de la confidentialité des informations
 fournies à `OpenAI` a également été au centre de l'attention au cours
@@ -92,6 +95,33 @@ ou par les
 auteurs de l'article développant le concept de _"Stochastic Parrots"_ qui est cité dans la lettre 
 ([voir la réponse des auteurs](https://www.dair-institute.org/blog/letter-statement-March2023))
 
+
+## Le reste de l'actualité
+
+L'intensité de l'actualité autour de `ChatGPT` occulte beaucoup de
+faits qui auraient, dans un autre contexte, amenés à 
+des discussions passionnées. 
+
+Dans les faits majeurs quelques peu occultés par le bruit autour
+de `ChatGPT`, il y a
+la [publication en open source de l'algorithme de recommandation de Twitter](https://www.lesechos.fr/tech-medias/medias/elon-musk-ouvre-une-partie-de-twitter-en-open-source-les-annonceurs-mefiants-1921111). 
+Celui-ci permet de mieux comprendre la manière dont
+fonctionne l'[algorithme de recommandation](https://www.theverge.com/2023/3/31/23664849/twitter-releases-algorithm-musk-open-source)
+de `Twitter`, notamment la manière dont des [bulles de filtre](https://www.cnil.fr/fr/definition/bulle-de-filtre)
+peuvent advenir après avoir cliqué sur un _post_ par curiosité.  
+La publication de ce code prend place quelques jours après la découverte qu'une 
+partie important du
+code de `Twitter` était [déjà sur `Github`](https://www.theverge.com/2023/3/27/23657928/twitter-source-code-leak-github), sans
+doute suite à une fuite après l'un des licenciements massifs des derniers mois. 
+
+`Docker` et `HuggingFace` nouent un partenariat pour faciliter la réutilisation
+de modèles `HuggingFace` de manière complémentaire
+aux API. Avec cette approche, il est maintenant possible de proposer
+directement dans `HuggingFace` une application prête à l'emploi, avec tous
+les ingrédients pré-installés, pour
+tester ou enrichir un modèle. 
+
+Si vous appréciez les cartes, il est recomandé de suivre le _hashtag_ [#MapPromptMonday](https://twitter.com/hashtag/MapPromptMonday)
 
 # Actualités du réseau: événements à venir
 
