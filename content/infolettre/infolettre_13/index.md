@@ -147,7 +147,7 @@ La plateforme `observable` propose
 un [comparatif](https://observablehq.com/@observablehq/data-wrangling-translations) des principales syntaxes
 de manipulation de données (`JavaScript`, `Python`, `R` et `SQL`). 
 
-Si vous appréciez les cartes, un _hashtag_ à suivre
+Enfin, si vous appréciez les cartes, un _hashtag_ à suivre
 est le [#MapPromptMonday](https://twitter.com/hashtag/MapPromptMonday).
 
 # Actualités du réseau: événements à venir
