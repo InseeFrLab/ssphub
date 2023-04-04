@@ -55,7 +55,7 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 ## Débats autour de la place de l'IA dans la société 
 
-L'actualité des modèles de langage et des _chatbots_ est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et il est difficile de tout évoquer de manière succincte. 
+L'actualité des modèles de langage et des _chatbots_ est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et cette lettre se concentrera sur les actualités majeures. 
 
 `Github Copilot`, l'assistant de code de `Microsoft`, devrait prochainement [utiliser `ChatGPT`](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/).
 Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un [créateur d'image](https://www.bing.com/create) basé sur `Dall-E`. 
