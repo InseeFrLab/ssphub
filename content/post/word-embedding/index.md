@@ -206,5 +206,5 @@ Une manière de procéder est de calculer la similarité cosinus entre les vecte
 
  <div style="text-align: center"> Illustration de la similarité cosinus en deux dimensions</div>  &nbsp;
 
-Le calcul de la proximité entre les mots est à la base du jeu [cemantix](https://cemantix.herokuapp.com/).
+Le calcul de la proximité entre les mots est à la base du jeu [cemantix](https://cemantix.certitudes.org/).
 Le principe est proche du jeu `Wordle` mais s'en distingue sur un point : il y a certes un mot à trouver chaque jour et il s’agit de faire des propositions de mots mais le jeu répond en donnant la proximité entre les mots proposés et le mot du jour. Ainsi, au fil des propositions, on a une vision de plus en plus précise du champ lexical associé au mot mystère, jusqu’à finalement le trouver.
