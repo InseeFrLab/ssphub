@@ -82,7 +82,7 @@ de reconnaissance d'image et un jeu de données ouvert. Des exemples de réutili
 en `Python` sont disponibles sur le [dépôt `Github`](https://github.com/mlfoundations/open_flamingo).
 Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a
 mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
-ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/). 
+ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/). Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. L'avantage de celui-ci est néanmoins technique puisqu'il s'appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4. 
 
 `Databricks` s'appuie également sur `LLaMA` et `Alpaca` pour proposer 
 son modèle de langage ouvert: [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
