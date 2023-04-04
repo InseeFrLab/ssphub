@@ -120,7 +120,7 @@ auteurs de l'article développant le concept de _"Stochastic Parrots"_ qui est c
 ## ... mais ne nous font pas oublier certaines autres nouveautés dignes d'intérêt
 
 L'intensité de l'actualité autour de `ChatGPT` occulte beaucoup de
-faits qui auraient, dans un autre contexte, amenés à 
+faits qui auraient, dans un autre contexte, amené à 
 des discussions passionnées. 
 
 Dans les faits majeurs quelques peu occultés par le bruit autour
