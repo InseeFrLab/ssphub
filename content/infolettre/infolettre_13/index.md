@@ -53,9 +53,9 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 # Actualités de la data science
 
-## Débats autour de la place de l'IA dans la société 
+## Un foisonnement d'avancées... 
 
-L'actualité des modèles de langage et des _chatbots_ est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et cette lettre se concentrera sur les actualités majeures. 
+L'actualité des modèles d'Intelligence Artificielle est très chargée ([résumé annonces du mois de mars](https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&s=19)) et cette lettre se concentrera sur les actualités majeures. 
 
 `Github Copilot`, l'assistant de code de `Microsoft`, devrait prochainement [utiliser `ChatGPT`](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/).
 Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un [créateur d'image](https://www.bing.com/create) basé sur `Dall-E`. 
@@ -95,6 +95,7 @@ est peut-être de générer des formes en 3D à partir [d'un jeu de données ouv
 {{< video src="3d.mp4" controls="yes" >}}
 _Source: [Twitter](https://twitter.com/mattdeitke/status/1638608472525897728)_
 
+## ... qui alimentent les débats autour de la place de l'IA dans la société...
 
 La question de la sécurité et de la confidentialité des informations
 fournies à `OpenAI` a également été au centre de l'attention au cours
@@ -116,7 +117,7 @@ auteurs de l'article développant le concept de _"Stochastic Parrots"_ qui est c
 ([voir la réponse des auteurs](https://www.dair-institute.org/blog/letter-statement-March2023)).
 
 
-## Le reste de l'actualité
+## ... mais ne nous font pas oublier certaines autres nouveautés dignes d'intérêt
 
 L'intensité de l'actualité autour de `ChatGPT` occulte beaucoup de
 faits qui auraient, dans un autre contexte, amenés à 
