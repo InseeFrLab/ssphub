@@ -59,7 +59,7 @@ L'actualité des modèles de langage et des _chatbots_ est très chargée ([rés
 
 `Github Copilot`, l'assistant de code de `Microsoft`, devrait prochainement [utiliser `ChatGPT`](https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/).
 Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un [créateur d'image](https://www.bing.com/create) basé sur `Dall-E`. 
-Pendant ce temps, `Midjourney` sort sa [V5](https://www.lesnumeriques.com/intelligence-artificielle/midjourney-v5-est-disponible-comment-l-utiliser-n208168.html), améliorant encore le réalisme du rendu. 
+Pendant ce temps, `Midjourney` (une des principales alternatives de création d'images) sort sa [V5](https://www.lesnumeriques.com/intelligence-artificielle/midjourney-v5-est-disponible-comment-l-utiliser-n208168.html), améliorant encore le réalisme du rendu. 
 
 Face à la recrudescence des montages utilisant `Midjourney`, qu'il s'agisse de _deep fakes_ ou
 d'images à vocation humoristique, _Le Monde_ a publie un
