@@ -62,7 +62,7 @@ Après `ChatGPT`, le navigateur `Bing` s'enrichit également d'un [créateur d'i
 Pendant ce temps, `Midjourney` (une des principales alternatives de création d'images) sort sa [V5](https://www.lesnumeriques.com/intelligence-artificielle/midjourney-v5-est-disponible-comment-l-utiliser-n208168.html), améliorant encore le réalisme du rendu. 
 
 Face à la recrudescence des montages utilisant `Midjourney`, qu'il s'agisse de _deep fakes_ ou
-d'images à vocation humoristique, _Le Monde_ a publie un
+d'images à vocation humoristique, _Le Monde_ a publié un
 guide pour [reconnaître une image générée par une IA](https://www.lemonde.fr/les-decodeurs/article/2023/03/30/comment-reconnaitre-une-image-generee-par-midjourney_6167525_4355770.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D).
 
 ![](https://preview.redd.it/pope-francis-goes-to-space-v0-7e9161rhoypa1.png?width=640&crop=smart&auto=webp&s=75d424b86993ca3b081e4182e774b51b4b6d3bce)
