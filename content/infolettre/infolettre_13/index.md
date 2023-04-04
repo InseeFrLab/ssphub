@@ -110,7 +110,7 @@ Cette interdiction prend place dans un contexte de discussions intenses autour d
 Une [lettre ouverte](https://futureoflife.org/open-letter/pause-giant-ai-experiments/) au [fort écho médiatique](https://www.lemonde.fr/economie/article/2023/03/29/elon-musk-et-des-centaines-d-experts-reclament-une-pause-dans-le-developpement-de-l-ia_6167461_3234.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D) publiée par 
 des figures de la _tech_ (dont Elon Musk) et des universitaires réclame 
 un moratoire dans le développement de nouveaux modèles d'intelligence
-artficielle. Cette lettre a été rapidement critiquée, que ce soit par
+artificielle, dont les signataires soulignent à quel point il est difficile de les _"comprendre, prédire ou contrôler de manière fiable"_. Cette lettre a été rapidement critiquée, que ce soit par
 [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19)
 ou par les
 auteurs de l'article développant le concept de _"Stochastic Parrots"_ qui est cité dans la lettre 
