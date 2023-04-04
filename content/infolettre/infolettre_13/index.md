@@ -155,7 +155,7 @@ est le [#MapPromptMonday](https://twitter.com/hashtag/MapPromptMonday).
 Place aux actualités de notre réseau avec les prochains événements
 que nous organisons. 
 
-## Première journée du réseau en avril (17 avril)
+## Première journée du réseau le 17 avril
 
 <img src="treso.webp" alt="La Tréso" width="500"> 
 
