@@ -74,7 +74,7 @@ Cet [état de l'art](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier es
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/) une version _open source_
 de [Flamingo](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model),
-le modèle de Google DeepMind.
+modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.
 
 Afin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d'image et textuelle, 
 celui-ci s'appuie sur des composantes _open source_ pour les modèles de langage et 
