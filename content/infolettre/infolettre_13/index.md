@@ -84,6 +84,7 @@ Afin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d'im
 celui-ci s'appuie sur des composantes _open source_ pour les modèles de langage et 
 de reconnaissance d'image et un jeu de données ouvert. Des exemples de réutilisation
 en `Python` sont disponibles sur le [dépôt `Github`](https://github.com/mlfoundations/open_flamingo).
+
 Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a
 mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
 ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/).
@@ -93,11 +94,12 @@ un cadre interne,
 ce chat présente un avantage technique
 puisqu'il s'appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4. 
 
-`Databricks` s'appuie également sur `LLaMA` et `Alpaca` pour proposer 
-un modèle de langage ouvert avec lequel il est possible 
-d'échanger. Ce modèle s'appelle [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html) et est le premier clône du modèle `Alpaca`.
+Dans le même temps, `Databricks` s'est également 
+appuyé sur `LLaMA` et `Alpaca` pour proposer 
+un autre modèle de langage ouvert avec lequel il est possible 
+d'échanger. Ce modèle s'appelle [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html) et est pensé comme premier clône du modèle [`Alpaca`](https://github.com/tatsu-lab/stanford_alpaca).
 `Dolly` peut être entrainé en 30 minutes sur un corpus massif et 
-ne présente _"que"_ 6 milliards de paramètres 
+ne présente _"que"_ 6 milliards de paramètres (qu'il hérite d'`Alpaca`)
 ce qui en fait, dans l'écosystème actuel des modèles de langage (LLM) un nain: `GPT-3` comporte 175 milliards de paramètres et
 le nombre de paramètres de `GPT-4` est inconnu mais l'ordre de grandeur pourrait être la centaine de trillions. 
 
