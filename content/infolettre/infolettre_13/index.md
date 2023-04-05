@@ -86,10 +86,20 @@ de reconnaissance d'image et un jeu de données ouvert. Des exemples de réutili
 en `Python` sont disponibles sur le [dépôt `Github`](https://github.com/mlfoundations/open_flamingo).
 Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a
 mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
-ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/). Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. L'avantage de celui-ci est néanmoins technique puisqu'il s'appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4. 
+ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/).
+Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. 
+En plus de s'appuyer sur des modèles ouverts ce qui peut faciliter sa ré-utilisation dans
+un cadre interne,
+ce chat présente un avantage technique
+puisqu'il s'appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4. 
 
 `Databricks` s'appuie également sur `LLaMA` et `Alpaca` pour proposer 
-son modèle de langage ouvert: [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html).
+un modèle de langage ouvert avec lequel il est possible 
+d'échanger. Ce modèle s'appelle [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html) et est le premier clône du modèle `Alpaca`.
+`Dolly` peut être entrainé en 30 minutes sur un corpus massif et 
+ne présente _"que"_ 6 milliards de paramètres 
+ce qui en fait, dans l'écosystème actuel des modèles de langage (LLM) un nain: `GPT-3` comporte 175 milliards de paramètres et
+le nombre de paramètres de `GPT-4` est inconnu mais l'ordre de grandeur pourrait être la centaine de trillions. 
 
 Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). Pour Mozilla, cette startup sert à adapter la philosophie à l'origine du navigateur Firefox au développement d'intelligences artificielles: proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé. 
 
