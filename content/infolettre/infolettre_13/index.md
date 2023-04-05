@@ -124,7 +124,6 @@ faits qui auraient, dans un autre contexte, amené à
 des discussions passionnées. 
 
 Dans les faits majeurs quelques peu occultés par le bruit autour
-de `ChatGPT`, il y a
 Ainsi, la [publication en open source de l'algorithme de recommandation de Twitter](https://www.lesechos.fr/tech-medias/medias/elon-musk-ouvre-une-partie-de-twitter-en-open-source-les-annonceurs-mefiants-1921111). 
 Celui-ci permet de mieux comprendre la manière dont
 fonctionne l'[algorithme de recommandation](https://www.theverge.com/2023/3/31/23664849/twitter-releases-algorithm-musk-open-source)
