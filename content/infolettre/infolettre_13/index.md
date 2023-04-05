@@ -73,7 +73,7 @@ Cet [état de l'art](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier, p
 est déjà largement dépassé. 
 [Celui-ci](https://arxiv.org/abs/2303.18223), qui vient de sortir, risque de l'être aussi rapidement.
 
-![](featured.png)
+![](featured.jpg)
 
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/) une version _open source_
