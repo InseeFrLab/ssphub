@@ -139,7 +139,7 @@ Le logiciel de création d'applications [`Docker`](https://fr.wikipedia.org/wiki
 de modèles `HuggingFace`. Avec cette approche, il est maintenant possible de proposer
 aux ré-utilisateurs, directement depuis `HuggingFace`, 
 une application prête à l'emploi
-les ingrédients pré-installés, pour
+pour
 tester ou enrichir un modèle. 
 
 La plateforme `observable` propose
