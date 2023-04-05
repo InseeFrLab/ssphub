@@ -199,7 +199,7 @@ Inscription [ici](https://framaforms.org/participation-aux-masterclass-datascien
 
 Le replay de la présentation succincte 
 du contenu du cours de l'ENSAE ["Bonnes pratiques et mise en production de projets data science"](https://ensae-reproductibilite.netlify.app/) ayant eu lieu dans le cadre du programme 10% (voir [_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/))
-est disponible en ligne [LIEN A VENIR]
+est disponible [sur le site du programme 10%](https://bbb-dinum-scalelite.visio.education.fr/playback/presentation/2.3/871ab1ad6290d683201d2996582dffe96174d9a6-1680176731865). 
 
 
 ## Replay de l'événement autour de l'OCRisation avec Christopher Kermorvant (29 mars)
