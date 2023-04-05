@@ -211,4 +211,4 @@ l'initiative Meta Academy / Carpentries permettant de
 construire une documentation francophone de référence
 sur `R`, `Python` et `Git` pensée pour les utilisateurs de données.
 
-Le replay est [ici](https://ssphub.netlify.app/talk/ocrisation-teklia/) !
+Le replay est [ici](https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/) !
