@@ -138,7 +138,7 @@ doute suite à une fuite après l'un des licenciements massifs des derniers mois
 Le logiciel de création d'applications [`Docker`](https://fr.wikipedia.org/wiki/Docker_(logiciel)) (principal logiciel de [conteneurisation](https://www.redhat.com/fr/topics/cloud-native-apps/what-is-containerization)) noue un [partenariat](https://www.docker.com/blog/docker-and-hugging-face-partner-to-democratize-ai/) avec [`HuggingFace`](https://huggingface.co/), qui rassemble une immense bibliothèque de modèles,  pour faciliter la réutilisation
 de modèles `HuggingFace`. Avec cette approche, il est maintenant possible de proposer
 aux ré-utilisateurs, directement depuis `HuggingFace`, 
-une application prête à l'emploi, avec tous
+une application prête à l'emploi
 les ingrédients pré-installés, pour
 tester ou enrichir un modèle. 
 
