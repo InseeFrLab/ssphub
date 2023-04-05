@@ -125,7 +125,7 @@ des discussions passionnées.
 
 Dans les faits majeurs quelques peu occultés par le bruit autour
 Ainsi, la [publication en open source de l'algorithme de recommandation de Twitter](https://www.lesechos.fr/tech-medias/medias/elon-musk-ouvre-une-partie-de-twitter-en-open-source-les-annonceurs-mefiants-1921111). 
-Celui-ci permet de mieux comprendre la manière dont
+permet de mieux comprendre la manière dont
 fonctionne l'[algorithme de recommandation](https://www.theverge.com/2023/3/31/23664849/twitter-releases-algorithm-musk-open-source)
 de `Twitter`, notamment la manière dont des [bulles de filtre](https://www.cnil.fr/fr/definition/bulle-de-filtre)
 peuvent advenir après avoir cliqué sur un _post_ par curiosité. 
