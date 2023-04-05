@@ -139,13 +139,14 @@ un chien (un Shiba Inu), logo d'une cryptomonnaie, le _dogecoin_, dont Elon Musk
 dont les cours ont [connu une envolée depuis](https://techcrunch.com/2023/04/03/twitters-new-dog-icon-is-sending-dogecoin-sigh-to-the-moon/?guccounter=1&guce_referrer=aHR0cHM6Ly90LmNvLw&guce_referrer_sig=AQAAAJNxrMnEUPBmdQSt0itSK2mkXlYk2q2oU6Xlfk4DvUuTbtY0ycbsOICeiE4h9nfrCDw7vMehvG9RnBo3-AtvTmylVThzobsrraE27Rr-5pKjCdFf6fp97WB-dWGKoIxuYhipoFCua_PzoJG8x1PR5STbJqGbZqXhmos0IdWM26Rr).
 
 Le logiciel de création d'applications [`Docker`](https://fr.wikipedia.org/wiki/Docker_(logiciel)) (principal logiciel de [conteneurisation](https://www.redhat.com/fr/topics/cloud-native-apps/what-is-containerization)) noue un [partenariat](https://www.docker.com/blog/docker-and-hugging-face-partner-to-democratize-ai/) avec [`HuggingFace`](https://huggingface.co/), qui rassemble une immense bibliothèque de modèles,  pour faciliter la réutilisation
-de modèles `HuggingFace`. Avec cette approche, il est maintenant possible de proposer
-aux ré-utilisateurs, directement depuis `HuggingFace`, 
-une application prête à l'emploi
-pour
-tester ou enrichir un modèle. 
+de modèles de _deep learning_. Avec cette approche, il est plus facile de proposer
+aux ré-utilisateurs de modèles
+des applications prêtes à l'emploi
+pour tester ou enrichir un modèle sur des infrastructures compatibles 
+avec la technique de la conteneurisation, par exemple comme
+celles s'appuyant sur le logiciel [`Onyxia`](https://ssphub.netlify.app/post/onyxia/).
 
-La plateforme `observable` propose
+La plateforme `Observable` propose
 un [comparatif](https://observablehq.com/@observablehq/data-wrangling-translations) des principales syntaxes
 de manipulation de données (`JavaScript`, `Python`, `R` et `SQL`). 
 
