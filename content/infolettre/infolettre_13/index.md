@@ -179,6 +179,19 @@ Les places en présentiel sont
 presque épuisées, ne tardez pas à vous inscrire !
 Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom. 
 
+## Les masterclass avec `DataScientest` continuent
+
+Nos cycles de _masterclass_ `datascientest` continuent !
+Les cycles parallèles NLP et analyse d'image continuent. 
+
+Au programme: 
+
+- Analyse d'image, niveau confirmé (📅 14 avril, 10h-12h )
+- NLP, niveau avancé (📅 12 mai, 10h-12h )
+- Analyse d'image, niveau avancé (📅 9 juin, 10h-12h )
+
+Inscription [ici](https://framaforms.org/participation-aux-masterclass-datascientest-2e-serie-1680103227)
+
 
 # Actualités du réseau: dernières nouveautés
 
