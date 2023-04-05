@@ -70,38 +70,33 @@ _Source: [Reddit](https://www.reddit.com/r/midjourney/comments/1221l3j/pope_fran
 
 ## ... qui alimentent les débats autour de la place de l'IA dans la société et notre économie numérique...
 
-Alors que `ChatGPT` est déjà utilisé par plus de 100 millions d'utilisateurs, seulement quatre mois après sa sortie, il est légitime de se poser la question, comme le fait [Gaspard Koenig dans _Les Echos_](https://www.linkedin.com/posts/gaspard-koenig-36b49647_je-persiste-et-signe-in-les-echos-du-jour-activity-7049265627668078592-Nzm5?utm_source=share&utm_medium=member_desktop) du rapport à la vérité des IA génératives et des implications sociétales de la généralisation de ces assistants.
+Alors que `ChatGPT` est déjà utilisé par plus de 100 millions d'utilisateurs, seulement quatre mois après sa sortie, il est légitime de se poser la question, comme le fait [Gaspard Koenig dans _Les Echos_](https://www.linkedin.com/posts/gaspard-koenig-36b49647_je-persiste-et-signe-in-les-echos-du-jour-activity-7049265627668078592-Nzm5?utm_source=share&utm_medium=member_desktop), du rapport à la vérité des IA génératives et des implications sociétales de la généralisation de ces assistants.
 
-Les prospectivistes, après s'être consacrés au _bitcoin_ et à la _blockchain_, comme [Jean Detrez - le héros de Jean Philippe Toussaint -](http://www.leseditionsdeminuit.fr/livre-La_Cl%C3%A9_USB-3304-1-1-0-1.html), commencent à proposer des évaluations des conséquences économiques de cette (r)évolution. Dernier chiffre en date: 300 millions d'emplois au niveau mondial seraient supprimés ou reconfigurés d'après [Goldman Sachs](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/).
+Les prospectivistes, après s'être consacrés au _bitcoin_ et à la _blockchain_, comme [Jean Detrez - le héros de Jean Philippe Toussaint -](http://www.leseditionsdeminuit.fr/livre-La_Cl%C3%A9_USB-3304-1-1-0-1.html), commencent à proposer des évaluations des conséquences économiques de cette (r)évolution. Dernier chiffre en date: d'après [Goldman Sachs](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/), 300 millions d'emplois au niveau mondial seraient supprimés ou amenés à évoluer.
 
 Par ailleurs, la question de l'ouverture des corpus ayant servis à entraîner ces modèles ou de la licence à réutiliser des modèles pré-entraînés est importante à plusieurs égards. D'abord, dans une perspective scientifique, il apparaît compliqué d'évaluer la qualité d'un modèle ou lui proposer des alternatives sans accès à des données scientifiques de base comme le nombre de paramètres (inconnu pour GPT-4 par exemple). Mais c'est aussi une question économique : si ces outils deviennent de plus en plus incontournables, quel sera le _business model_ de ce secteur ? Resteront-ils gratuits avec en contrepartie une réutilisation des données fournies, potentiellement opaque et difficilement contrôlable par l'utilisateur, ou ces services seront-ils monétisés ? 
 
 La publication en _open source_ de modèles de langage est donc un enjeu d'indépendance pour les organisations intéressées par l'utilisation de _chatbots_ ou l'extraction d'information. Cette publication continue à suivre un rythme presque quotidien. Cet [état de l'art des modèles publiés en open source](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier est déjà largement dépassé. Et [celui-ci](https://arxiv.org/pdf/2303.18223.pdf) ne sera probablement plus à jour tout aussi rapidement.
 
 ![](featured.png) 
-Cet [état de l'art](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier, pourtant complet,
-est déjà largement dépassé. 
-[Celui-ci](https://arxiv.org/abs/2303.18223), qui vient de sortir, risque de l'être aussi rapidement.
-
-![](featured.jpg)
 
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
-d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/) une version _open source_
+d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/), une version _open source_
 de [Flamingo](https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model),
 modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.
 
 Afin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d'image et textuelle, 
 celui-ci s'appuie sur des composantes _open source_ pour les modèles de langage et 
-de reconnaissance d'image et un jeu de données ouvert. Des exemples de réutilisation
+de reconnaissance d'image et sur un jeu de données ouvertes. Des exemples de réutilisation
 en `Python` sont disponibles sur le [dépôt `Github`](https://github.com/mlfoundations/open_flamingo).
 
 Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a
 mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
 ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/).
 Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. 
-En plus de s'appuyer sur des modèles ouverts ce qui peut faciliter sa ré-utilisation dans
+En plus de s'appuyer sur des modèles ouverts, ce qui peut faciliter sa ré-utilisation dans
 un cadre interne,
-ce chat présente un avantage technique
+ce _chat_ présente un avantage technique
 puisqu'il s'appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4. 
 
 Dans le même temps, `Databricks` s'est également 
@@ -131,11 +126,11 @@ Cette interdiction prend place dans un contexte de discussions intenses autour d
 Une [lettre ouverte](https://futureoflife.org/open-letter/pause-giant-ai-experiments/) au [fort écho médiatique](https://www.lemonde.fr/economie/article/2023/03/29/elon-musk-et-des-centaines-d-experts-reclament-une-pause-dans-le-developpement-de-l-ia_6167461_3234.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D) publiée par 
 des figures de la _tech_ (dont Elon Musk) et des universitaires réclame 
 un moratoire dans le développement de nouveaux modèles d'intelligence
-artificielle, dont les signataires soulignent à quel point il est difficile de les _"comprendre, prédire ou contrôler de manière fiable"_. Cette lettre a été rapidement critiquée. 
-En premier lieu par [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19) qui souligne qu'en plus de l'impossibilité pratique de mettre en oeuvre un tel moratoire dans le cadre d'une recherche privée, ce type de sursis retarde la recherche sur des applications bénéfiques, notamment dans le domaine de la santé.
-Mais la critique est aussi venue de Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face), autrices citées dans la lettre en référence au concept de _["Stochastic Parrots"](https://dl.acm.org/doi/abs/10.1145/3442188.3445922) (les modèles de langage répétent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d'apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens). 
-([voir la réponse des auteurs](https://www.dair-institute.org/blog/letter-statement-March2023)).
+artificielle, dont les signataires soulignent à quel point il est difficile de les _"comprendre, prédire ou contrôler de manière fiable"_.
 
+Cette lettre a été rapidement critiquée. 
+En premier lieu par [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19) qui souligne qu'en plus de l'impossibilité pratique de mettre en oeuvre un tel moratoire dans le cadre d'une recherche privée, ce type de sursis retarde la recherche sur des applications bénéfiques, notamment dans le domaine de la santé.
+Mais la critique est aussi venue de [Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face)](https://www.dair-institute.org/blog/letter-statement-March2023), autrices citées dans la lettre en référence au concept de _["Stochastic Parrots"](https://dl.acm.org/doi/abs/10.1145/3442188.3445922) (les modèles de langage répétent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d'apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens). 
 
 ## ... mais ne nous font pas oublier certaines autres nouveautés dignes d'intérêt
 
@@ -143,7 +138,6 @@ L'intensité de l'actualité autour de `ChatGPT` occulte beaucoup de
 faits qui auraient, dans un autre contexte, amené à 
 des discussions passionnées. 
 
-Dans les faits majeurs quelques peu occultés par le bruit autour
 Ainsi, la [publication en open source de l'algorithme de recommandation de Twitter](https://www.lesechos.fr/tech-medias/medias/elon-musk-ouvre-une-partie-de-twitter-en-open-source-les-annonceurs-mefiants-1921111)
 permet de mieux comprendre la manière dont
 fonctionne l'[algorithme de recommandation](https://www.theverge.com/2023/3/31/23664849/twitter-releases-algorithm-musk-open-source)
@@ -164,8 +158,8 @@ de modèles de _deep learning_. Avec cette approche, il est plus facile de propo
 aux ré-utilisateurs de modèles
 des applications prêtes à l'emploi
 pour tester ou enrichir un modèle sur des infrastructures compatibles 
-avec la technique de la conteneurisation, par exemple comme
-celles s'appuyant sur le logiciel [`Onyxia`](https://ssphub.netlify.app/post/onyxia/).
+avec la technique de la conteneurisation, approche utilisée
+par les principales plateformes de _data science_ modernes (notamment par celles s'appuyant sur le logiciel [`Onyxia`](https://ssphub.netlify.app/post/onyxia/)).
 
 La plateforme `Observable` propose
 un [comparatif](https://observablehq.com/@observablehq/data-wrangling-translations) des principales syntaxes
@@ -199,22 +193,22 @@ Au programme:
 - NLP, niveau avancé (📅 12 mai, 10h-12h )
 - Analyse d'image, niveau avancé (📅 9 juin, 10h-12h )
 
-Inscription [ici](https://framaforms.org/participation-aux-masterclass-datascientest-2e-serie-1680103227)
+Inscription [ici](https://framaforms.org/participation-aux-masterclass-datascientest-2e-serie-1680103227) !
 
 
 # Actualités du réseau: dernières nouveautés
 
-## Replay "Bonnes pratiques en `Python`" (30 mars)
+## Replay "Bonnes pratiques pour la mise en production de projets _data science_" (30 mars)
 
 Le replay de la présentation succincte 
-du contenu du cours de l'ENSAE ["Bonnes pratiques et mise en production de projets data science"](https://ensae-reproductibilite.netlify.app/) ayant eu lieu dans le cadre du programme 10% (voir [_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/))
+du contenu du cours de l'ENSAE ["Bonnes pratiques pour la mise en production de projets _data science_"](https://ensae-reproductibilite.netlify.app/) ayant eu lieu dans le cadre du programme 10% (voir [_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/))
 est disponible [sur le site du programme 10%](https://bbb-dinum-scalelite.visio.education.fr/playback/presentation/2.3/871ab1ad6290d683201d2996582dffe96174d9a6-1680176731865). 
 
 
 ## Replay de l'événement autour de l'OCRisation avec Christopher Kermorvant (29 mars)
 
 [Christopher Kermorvant](https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr),
-chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com/)
+chercheur spécialisé en OCRisation et fondateur de [Teklia](https://teklia.com/),
 a proposé au réseau une présentation très pédagogique sur l'extraction de texte 
 avec des méthodes de _deep learning_.
 
@@ -231,6 +225,6 @@ Le replay est [ici](https://ssphub.netlify.app/talk/ocrisation-teklia/) !
 Kate Burnett-Isaacs, de Statistics Canada, nous a présenté
 l'initiative Meta Academy / Carpentries permettant de
 construire une documentation francophone de référence
-sur `R`, `Python` et `Git` pensée pour les utilisateurs de données.
+sur `R`, `Python` et `Git` à destination des utilisateurs de données.
 
 Le replay est [ici](https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/) !
