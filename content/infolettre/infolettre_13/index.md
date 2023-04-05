@@ -89,13 +89,8 @@ son modèle de langage ouvert: [`Dolly`](https://www.databricks.com/blog/2023/03
 
 Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). Pour Mozilla, cette startup sert à adapter la philosophie à l'origine du navigateur Firefox au développement d'intelligences artificielles: proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé. 
 
-Et la course folle n'est pas prête de s'arrêter puisque la prochaine étape 
-est peut-être de générer des formes en 3D à partir [d'un jeu de données ouvertes en 3D](https://twitter.com/mattdeitke/status/1638608472525897728).
 
-{{< video src="3d.mp4" controls="yes" >}}
-_Source: [Twitter](https://twitter.com/mattdeitke/status/1638608472525897728)_
 
-## ... qui alimentent les débats autour de la place de l'IA dans la société...
 
 La question de la sécurité et de la confidentialité des informations
 fournies à `OpenAI` a également été au centre de l'attention au cours
