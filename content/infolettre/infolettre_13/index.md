@@ -69,7 +69,11 @@ guide pour [reconnaître une image générée par une IA](https://www.lemonde.fr
 _Source: [Reddit](https://www.reddit.com/r/midjourney/comments/1221l3j/pope_francis_goes_to_space/)_
 
 La publication de modèles de langage, permettant une grande variété d'applications comme les _chatbots_ ou l'extraction d'information, continue à suivre un rythme presque quotidien. 
-Cet [état de l'art](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier est déjà largement dépassé.
+Cet [état de l'art](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier, pourtant complet,
+est déjà largement dépassé. 
+[Celui-ci](https://arxiv.org/abs/2303.18223), qui vient de sortir, risque de l'être aussi rapidement.
+
+![](featured.png)
 
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/) une version _open source_
