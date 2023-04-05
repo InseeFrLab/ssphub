@@ -122,7 +122,7 @@ Une [lettre ouverte](https://futureoflife.org/open-letter/pause-giant-ai-experim
 des figures de la _tech_ (dont Elon Musk) et des universitaires réclame 
 un moratoire dans le développement de nouveaux modèles d'intelligence
 artificielle, dont les signataires soulignent à quel point il est difficile de les _"comprendre, prédire ou contrôler de manière fiable"_. Cette lettre a été rapidement critiquée. 
-[Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19)
+En premier lieu par [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19) qui souligne qu'en plus de l'impossibilité pratique de mettre en oeuvre un tel moratoire dans le cadre d'une recherche privée, ce type de sursis retarde la recherche sur des applications bénéfiques, notamment dans le domaine de la santé.
 ou par les
 Mais la critique est aussi venue de Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face), autrices citées dans la lettre en référence au concept de _["Stochastic Parrots"](https://dl.acm.org/doi/abs/10.1145/3442188.3445922) (les modèles de langage répétent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d'apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens). 
 ([voir la réponse des auteurs](https://www.dair-institute.org/blog/letter-statement-March2023)).
