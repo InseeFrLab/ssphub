@@ -78,7 +78,7 @@ Par ailleurs, la question de l'ouverture des corpus ayant servis à entraîner c
 
 La publication en _open source_ de modèles de langage est donc un enjeu d'indépendance pour les organisations intéressées par l'utilisation de _chatbots_ ou l'extraction d'information. Cette publication continue à suivre un rythme presque quotidien. Cet [état de l'art des modèles publiés en open source](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier est déjà largement dépassé. Et [celui-ci](https://arxiv.org/pdf/2303.18223.pdf) ne sera probablement plus à jour tout aussi rapidement.
 
-![](featured.png) 
+![](featured.jpg) 
 
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/), une version _open source_
