@@ -72,9 +72,9 @@ _Source: [Reddit](https://www.reddit.com/r/midjourney/comments/1221l3j/pope_fran
 
 Alors que `ChatGPT` est déjà utilisé par plus de 100 millions d'utilisateurs, seulement quatre mois après sa sortie, il est légitime de se poser la question, comme le fait [Gaspard Koenig dans _Les Echos_](https://www.linkedin.com/posts/gaspard-koenig-36b49647_je-persiste-et-signe-in-les-echos-du-jour-activity-7049265627668078592-Nzm5?utm_source=share&utm_medium=member_desktop), du rapport à la vérité des IA génératrices et des implications sociétales de la généralisation de ces assistants.
 
-Les prospectivistes, après s'être consacrés au _bitcoin_ et à la _blockchain_, comme [Jean Detrez - le héros de Jean Philippe Toussaint -](http://www.leseditionsdeminuit.fr/livre-La_Cl%C3%A9_USB-3304-1-1-0-1.html), commencent à proposer des évaluations des conséquences économiques de cette (r)évolution. Dernier chiffre en date: d'après [Goldman Sachs](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/), 300 millions d'emplois au niveau mondial seraient supprimés ou amenés à évoluer.
+Les prospectivistes, après s'être consacrés au _bitcoin_ et à la _blockchain_, comme [Jean Detrez - le héros de Jean Philippe Toussaint -](http://www.leseditionsdeminuit.fr/livre-La_Cl%C3%A9_USB-3304-1-1-0-1.html), commencent à proposer des évaluations des conséquences économiques de cette (r)évolution. Dernier chiffre en date : d'après [Goldman Sachs](https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/), 300 millions d'emplois au niveau mondial pourraient être supprimés ou amenés à évoluer.
 
-Par ailleurs, la question de l'ouverture des corpus ayant servis à entraîner ces modèles ou de la licence à réutiliser des modèles pré-entraînés est importante à plusieurs égards. D'abord, dans une perspective scientifique, il apparaît compliqué d'évaluer la qualité d'un modèle ou lui proposer des alternatives sans accès à des données scientifiques de base comme le nombre de paramètres (inconnu pour GPT-4 par exemple). Mais c'est aussi une question économique : si ces outils deviennent de plus en plus incontournables, quel sera le _business model_ de ce secteur ? Ces services resteront-ils gratuits avec en contrepartie une réutilisation des données fournies, potentiellement opaque et difficilement contrôlable par l'utilisateur, ou seront-ils monétisés ? 
+Par ailleurs, la question de l'ouverture des corpus ayant servi à entraîner ces modèles ou de la licence à réutiliser des modèles pré-entraînés est importante à plusieurs égards. D'abord, dans une perspective scientifique, il apparaît compliqué d'évaluer la qualité d'un modèle ou lui proposer des alternatives sans accès à des données scientifiques de base comme le nombre de paramètres (inconnu pour GPT-4 par exemple). Mais c'est aussi une question économique : si ces outils deviennent de plus en plus incontournables, quel sera le _business model_ de ce secteur ? Ces services resteront-ils gratuits avec en contrepartie une réutilisation des données fournies, potentiellement opaque et difficilement contrôlable par l'utilisateur, ou seront-ils monétisés ? 
 
 La publication en _open source_ de modèles de langage est donc un enjeu d'indépendance pour les organisations intéressées par l'utilisation de _chatbots_ ou l'extraction d'information. Cette publication continue à suivre un rythme presque quotidien. Cet [état de l'art des modèles publiés en open source](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier est déjà largement dépassé. Et [celui-ci](https://arxiv.org/pdf/2303.18223.pdf) ne sera probablement plus à jour tout aussi rapidement.
 
@@ -102,13 +102,13 @@ puisqu'il s'appuie sur des modèles de langage plus économes en ressources que 
 Dans le même temps, `Databricks` s'est également 
 appuyé sur `LLaMA` et `Alpaca` pour proposer 
 un autre modèle de langage ouvert avec lequel il est possible 
-d'échanger. Ce modèle s'appelle [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html) et est pensé comme premier clône du modèle [`Alpaca`](https://github.com/tatsu-lab/stanford_alpaca).
+d'échanger. Ce modèle s'appelle [`Dolly`](https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html) et est pensé comme premier clone du modèle [`Alpaca`](https://github.com/tatsu-lab/stanford_alpaca).
 `Dolly` peut être entrainé en 30 minutes sur un corpus massif et 
 ne présente _"que"_ 6 milliards de paramètres (qu'il hérite d'`Alpaca`)
-ce qui en fait, dans l'écosystème actuel des modèles de langage (LLM) un nain: `GPT-3` comporte 175 milliards de paramètres et
-le nombre de paramètres de `GPT-4` est inconnu mais l'ordre de grandeur pourrait être la centaine de trillions. 
+ce qui en fait, dans l'écosystème actuel des modèles de langage (LLM), un nain : à titre de comparaison `GPT-3` comporte 175 milliards de paramètres et
+le nombre de paramètres de `GPT-4` est inconnu mais pourrait être de l'ordre de la centaine de trillions. 
 
-Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). Pour Mozilla, cette startup sert à adapter la philosophie à l'origine du navigateur Firefox au développement d'intelligences artificielles: proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé. 
+Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la _startup_ [Mozilla.ai](https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/). Pour Mozilla, cette startup sert à adapter la philosophie à l'origine du navigateur Firefox au développement d'intelligences artificielles : proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé. 
 
 
 
@@ -130,7 +130,7 @@ artificielle, dont les signataires soulignent à quel point il est difficile de 
 
 Cette lettre a été rapidement critiquée. 
 En premier lieu par [Andrew Ng](https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&s=19) qui souligne qu'en plus de l'impossibilité pratique de mettre en oeuvre un tel moratoire dans le cadre d'une recherche privée, ce type de sursis retarde la recherche sur des applications bénéfiques, notamment dans le domaine de la santé.
-Mais la critique est aussi venue de [Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face)](https://www.dair-institute.org/blog/letter-statement-March2023), autrices citées dans la lettre en référence au concept de _["Stochastic Parrots"](https://dl.acm.org/doi/abs/10.1145/3442188.3445922) (les modèles de langage répétent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d'apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens). 
+Mais la critique est aussi venue de [Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face)](https://www.dair-institute.org/blog/letter-statement-March2023), autrices citées dans la lettre en référence au concept de _["Stochastic Parrots"](https://dl.acm.org/doi/abs/10.1145/3442188.3445922)_ (les modèles de langage répètent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d'apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens). 
 
 ## ... mais ne nous font pas oublier certaines autres nouveautés dignes d'intérêt
 
@@ -145,7 +145,7 @@ de `Twitter`, notamment la manière dont des [bulles de filtre](https://www.cnil
 peuvent advenir après avoir cliqué sur un _post_ par curiosité. 
 
 La publication de ce code prend place quelques jours après la découverte qu'une 
-partie important du
+partie importante du
 code de `Twitter` était [déjà sur `Github`](https://www.theverge.com/2023/3/27/23657928/twitter-source-code-leak-github), sans
 doute suite à une fuite après l'un des licenciements massifs des derniers mois. 
 
