@@ -41,7 +41,7 @@ main:
     weight: 93
     parent: plus
   - name: <i class="fab fa-github"></i>
-    url: 'https://github.com/linogaliana/ssphub'
+    url: 'https://github.com/InseeFrLab/ssphub'
     weight: 110
   - name: "SSPCloud <img alt=\"\" src = \"/custom/onyxia.svg\" style=\"display: inline; height: 20px; width: 20px;\">"
     url: 'https://datalab.sspcloud.fr'
