@@ -4,7 +4,7 @@ summary: Une communauté d'agents de l'Etat pour s'entraider en R et Python
 date: "2015-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.spyrales.fr/"
+# external_link: "https://www.spyrales.fr/"
 
 image:
   caption:
