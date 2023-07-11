@@ -98,6 +98,6 @@ Après avoir lu tout ceci, vous serez prêts pour les événements
 _data science_ de la rentrée comme le [hackathon du _mobidatalab_](https://mobidatalab.eu/living-labs/hackathon/)
 sur le thème de l'amélioration des services de mobilité urbaine (15 et 16 septembre). 
 
-Bonne vacances ! 🌞🌊⛰️
+__Bonne vacances !__ 🌞🌊⛰️
 
 ![](bye.png)
