@@ -59,26 +59,26 @@ pour la rentrée 📖⛱️.
 
 ## Lectures estivales
 
-Pour commencer, quelques conseils de lecture pour en apprendre plus sur les modèles de
+Pour commencer, quelques conseils de lecture sur les modèles de
 langage :
 
-- [Un article du _Washington Post_](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) pour comprendre l'origine de corpus d'entrainement des
+- [Un article du _Washington Post_](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) pour en savoir plus sur le corpus d'entrainement des
 modèles de langage (LLM) ;
 
 - Pour comprendre la manière dont `ChatGPT` et les modèles de langage  traduisent vos phrases afin de vous répondre, consultez ce [_post_ de blog](https://simonwillison.net/2023/Jun/8/gpt-tokenizers/) sur les _tokenizers_
 
 - Vous serez ensuite prêts à approfondir le sujet avec [ce cours](https://huggingface.co/learn/nlp-course/chapter1/1) complet d'`Huggingface` sur le _natural langage processing_ ;
 
-- Entre deux épisodes de votre série préférée, vous pouvez faire une pause avec [ce cours de 2 heures](https://www.youtube.com/watch?v=Ku9PM26Cc2c) sur les modèles de langage.
+- Entre deux épisodes de votre série préférée, vous pourrez alterner avec [ce cours de 2 heures](https://www.youtube.com/watch?v=Ku9PM26Cc2c) sur les modèles de langage.
 
 N'hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des
 images avec [Dall-E 2](https://openai.com/dall-e-2) ou [StableDiffusion](https://huggingface.co/stabilityai/stable-diffusion-2-1).
 
-Place ensuite à la partie interprétabilité des modèles de _machine learning_,
+Place ensuite à l'interprétabilité des modèles de _machine learning_,
 avec ce [site web](https://interpretable-ml-class.github.io/) très utile.
 
 
-Si vous désirez profiter de l'été pour en apprendre plus sur la question de la reproductibilité, 
+Si vous désirez en apprendre plus sur la question de la reproductibilité, 
 les ressources suivantes vous seront utiles :
 
 - [_Building reproducible analytical pipelines with R_](https://raps-with-r.dev/) ;
