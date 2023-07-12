@@ -63,9 +63,9 @@ Pour commencer, quelques conseils de lecture sur les modèles de
 langage :
 
 - [Un article du _Washington Post_](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) pour en savoir plus sur le corpus d'entrainement des
-modèles de langage (LLM) ;
+grands modèles de langage (_large langage model_, LLM);
 
-- Pour comprendre la manière dont `ChatGPT` et les modèles de langage  traduisent vos phrases afin de vous répondre, consultez ce [_post_ de blog](https://simonwillison.net/2023/Jun/8/gpt-tokenizers/) sur les _tokenizers_
+- Pour comprendre la manière dont `ChatGPT` et les modèles de langage  traduisent vos phrases afin de vous répondre, consultez ce [_post_ de blog](https://simonwillison.net/2023/Jun/8/gpt-tokenizers/) sur les _tokenizers_ ;
 
 - Vous serez ensuite prêts à approfondir le sujet avec [ce cours](https://huggingface.co/learn/nlp-course/chapter1/1) complet d'`Huggingface` sur le traitement automatique du langage ;
 
@@ -75,7 +75,7 @@ N'hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativit
 images avec [Dall-E 2](https://openai.com/dall-e-2) ou [StableDiffusion](https://huggingface.co/stabilityai/stable-diffusion-2-1).
 
 Place ensuite à l'interprétabilité des modèles de _machine learning_,
-avec ce [site web](https://interpretable-ml-class.github.io/) très utile.
+avec ce [site web](https://interpretable-ml-class.github.io/) très utile pour découvrir les méthodes permettant de mieux comprendre la manière dont les algorithmes d'apprentissage aboutissent à une décision.
 
 
 Si vous désirez en apprendre plus sur la question de la reproductibilité, 
@@ -92,8 +92,9 @@ Que vous désiriez vous former à la datavisualisation, au traitement du langage
 ou à la manipulation de données spatiales ou 
 que vous soyez simplement curieux,
 vous pouvez également reprendre l'ensemble
-des ressources mises à disposition par l'INSEE et le SSM Agriculture
-dans le cadre du [Funathon 2023](https://inseefrlab.github.io/funathon2023/).
+des ressources mises à disposition
+dans le cadre du [Funathon 2023](https://inseefrlab.github.io/funathon2023/), un événement pour lequel les équipes innovation de l'INSEE et le SSM Agriculture ont mis à disposition de nombreuses ressources `R` ou `Python`
+sur le thème de l'alimentation et de la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté pour permettre à la fois aux débutants en code et aux _data scientists_ plus aguerris d’y trouver leur compte. 
 
 Et pour un parcours complet de formation, rien de mieux que d'explorer
 de fond en comble le [portail de formation du SSP Cloud](https://www.sspcloud.fr/formation).
