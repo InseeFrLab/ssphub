@@ -67,15 +67,16 @@ grands modèles de langage (_large langage model_, LLM);
 
 - Pour comprendre la manière dont `ChatGPT` et les modèles de langage  traduisent vos phrases afin de vous répondre, consultez ce [_post_ de blog](https://simonwillison.net/2023/Jun/8/gpt-tokenizers/) sur les _tokenizers_ ;
 
-- Vous serez ensuite prêts à approfondir le sujet avec [ce cours](https://huggingface.co/learn/nlp-course/chapter1/1) complet d'`Huggingface` sur le traitement automatique du langage ;
+- Entre deux épisodes de votre série préférée, vous pourrez alterner avec [ce cours de 2 heures](https://www.youtube.com/watch?v=Ku9PM26Cc2c) sur les modèles de langage ;
 
-- Entre deux épisodes de votre série préférée, vous pourrez alterner avec [ce cours de 2 heures](https://www.youtube.com/watch?v=Ku9PM26Cc2c) sur les modèles de langage.
+- Vous serez ensuite prêts à approfondir le sujet avec [ce cours](https://huggingface.co/learn/nlp-course/chapter1/1) complet d'`Huggingface` sur le traitement automatique du langage.
+
 
 N'hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des
 images avec [Dall-E 2](https://openai.com/dall-e-2) ou [StableDiffusion](https://huggingface.co/stabilityai/stable-diffusion-2-1).
 
 Place ensuite à l'interprétabilité des modèles de _machine learning_,
-avec ce [site web](https://interpretable-ml-class.github.io/) très utile pour découvrir les méthodes permettant de mieux comprendre la manière dont les algorithmes d'apprentissage aboutissent à une décision.
+avec ce [site web](https://interpretable-ml-class.github.io/) très utile pour découvrir les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d'apprentissage aboutissent à une décision.
 
 
 Si vous désirez en apprendre plus sur la question de la reproductibilité, 
@@ -84,8 +85,8 @@ les ressources suivantes vous seront utiles :
 - [_Building reproducible analytical pipelines with R_](https://raps-with-r.dev/) ;
 - [_Coding for economists_](https://aeturrell.github.io/coding-for-economists/intro.html)
 
-Si les semestres de l'année scolaire ne vous ont pas suffi vous pouvez aussi
-profiter de l'été pour compléter votre formation en data science en suivant le [_missing semester_](https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education)
+Si les semestres de l'année scolaire ne vous ont pas suffi, vous pouvez aussi
+profiter de l'été pour compléter votre formation en _data science_ en suivant le [_missing semester_](https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education)
 de votre cursus.
 
 Que vous désiriez vous former à la datavisualisation, au traitement du langage naturel
