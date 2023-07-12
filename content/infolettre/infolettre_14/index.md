@@ -84,19 +84,19 @@ les ressources suivantes vous seront utiles :
 - [_Building reproducible analytical pipelines with R_](https://raps-with-r.dev/) ;
 - [_Coding for economists_](https://aeturrell.github.io/coding-for-economists/intro.html)
 
-Vous pouvez aussi
-profiter de l'été pour suivre le [_missing semester_](https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education)
-de votre cursus si les semestres de l'année scolaire ne vous ont pas suffi.
+Si les semestres de l'année scolaire ne vous ont pas suffi vous pouvez aussi
+profiter de l'été pour compléter votre formation en data science en suivant le [_missing semester_](https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education)
+de votre cursus.
 
-Que vous désiriez vous former à la dataviz, au NLP 
+Que vous désiriez vous former à la datavisualisation, au traitement du langage naturel
 ou à la manipulation de données spatiales ou 
 que vous soyez simplement curieux,
-vous pouvez toujours reprendre l'ensemble
+vous pouvez également reprendre l'ensemble
 des ressources mises à disposition par l'INSEE et le SSM Agriculture
 dans le cadre du [Funathon 2023](https://inseefrlab.github.io/funathon2023/).
 
 Et pour un parcours complet de formation, rien de mieux que d'explorer
-pendant l'été de fond en comble le [portail de formation du SSP Cloud](https://www.sspcloud.fr/formation).
+de fond en comble le [portail de formation du SSP Cloud](https://www.sspcloud.fr/formation).
 
 
 Après avoir lu tout ceci, vous serez prêts pour les événements
