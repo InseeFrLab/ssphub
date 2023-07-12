@@ -85,8 +85,7 @@ les ressources suivantes vous seront utiles :
 - [_Building reproducible analytical pipelines with R_](https://raps-with-r.dev/) ;
 - [_Coding for economists_](https://aeturrell.github.io/coding-for-economists/intro.html) ;
 - [Formation aux bonnes pratiques `R` et `Git`](https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/) par l'INSEE ;
-- Une formation de l'INSEE sur le [MLOps](https://inseefrlab.github.io/formation-mlops/slides/index.html#/title-slide), ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles de _machine learning_ pour des projets statistiques ;
-- [Mise en production de projets _data science_](https://ensae-reproductibilite.github.io/website/), un cours de l'ENSAE.
+- Un cours de l'ENSAE sur la [mise en production de projets _data science_](https://ensae-reproductibilite.github.io/website/), un cours de l'ENSAE et, pour approfondir sur la mise en production de modèles, une formation de l'INSEE sur le [MLOps](https://inseefrlab.github.io/formation-mlops/slides/index.html#/title-slide), ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles de _machine learning_  ;
 
 Si les semestres de l'année scolaire ne vous ont pas suffi, vous pouvez aussi
 profiter de l'été pour compléter votre formation en _data science_ en suivant le [_missing semester_](https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education)
