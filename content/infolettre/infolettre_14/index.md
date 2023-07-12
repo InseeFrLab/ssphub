@@ -85,19 +85,16 @@ les ressources suivantes vous seront utiles :
 - [_Building reproducible analytical pipelines with R_](https://raps-with-r.dev/) ;
 - [_Coding for economists_](https://aeturrell.github.io/coding-for-economists/intro.html) ;
 - [Formation aux bonnes pratiques `R` et `Git`](https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/) par l'INSEE ;
-- Un cours de l'ENSAE sur la [mise en production de projets _data science_](https://ensae-reproductibilite.github.io/website/), un cours de l'ENSAE et, pour approfondir sur la mise en production de modèles, une formation de l'INSEE sur le [MLOps](https://inseefrlab.github.io/formation-mlops/slides/index.html#/title-slide), ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles de _machine learning_  ;
+- Un cours de l'ENSAE sur la [mise en production de projets _data science_](https://ensae-reproductibilite.github.io/website/) et, pour approfondir sur la mise en production de modèles de _machine learning_, une formation de l'INSEE sur le [MLOps](https://inseefrlab.github.io/formation-mlops/slides/index.html#/title-slide), ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles.
 
 Si les semestres de l'année scolaire ne vous ont pas suffi, vous pouvez aussi
 profiter de l'été pour compléter votre formation en _data science_ en suivant le [_missing semester_](https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education)
 de votre cursus.
 
-Que vous désiriez vous former à la datavisualisation, au traitement du langage naturel
-ou à la manipulation de données spatiales ou 
-que vous soyez simplement curieux,
-vous pouvez également reprendre l'ensemble
+Vous pouvez également reprendre l'ensemble
 des ressources mises à disposition
 dans le cadre du [Funathon 2023](https://inseefrlab.github.io/funathon2023/), un événement pour lequel les équipes innovation de l'INSEE et le SSM Agriculture ont mis à disposition de nombreuses ressources `R` ou `Python`
-sur le thème de l'alimentation et de la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté pour permettre à la fois aux débutants en code et aux _data scientists_ plus aguerris d’y trouver leur compte. 
+sur six thèmes concernant l'alimentation et la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté et de techniques pour permettre à la fois aux débutants en code et aux _data scientists_ plus aguerris d’y trouver leur compte. 
 
 Et pour un parcours complet de formation, rien de mieux que d'explorer
 de fond en comble le [portail de formation du SSP Cloud](https://www.sspcloud.fr/formation).
