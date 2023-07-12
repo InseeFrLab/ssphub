@@ -73,7 +73,7 @@ grands modèles de langage (_large langage model_, LLM);
 
 
 N'hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des
-images avec [Dall-E 2](https://openai.com/dall-e-2) ou [StableDiffusion](https://huggingface.co/stabilityai/stable-diffusion-2-1).
+images avec [StableDiffusion](https://huggingface.co/spaces/stabilityai/stable-diffusion) ou [Dall-E 2](https://openai.com/dall-e-2).
 
 Place ensuite à l'interprétabilité des modèles de _machine learning_,
 avec ce [site web](https://interpretable-ml-class.github.io/) très utile pour découvrir les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d'apprentissage aboutissent à une décision.
