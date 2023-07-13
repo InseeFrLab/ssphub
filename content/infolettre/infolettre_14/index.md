@@ -63,7 +63,7 @@ Pour commencer, quelques conseils de lecture sur les grands modèles de
 langage :
 
 - [Un article du _Washington Post_](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) pour en savoir plus sur le corpus d'entrainement des
-grands modèles de langage (_large langage model_, LLM);
+grands modèles de langage (_large langage model_, LLM) ;
 
 - Pour comprendre la manière dont `ChatGPT` et les grands modèles de langage  traduisent vos phrases afin de vous répondre, consultez ce [_post_ de blog](https://simonwillison.net/2023/Jun/8/gpt-tokenizers/) sur les _tokenizers_ ;
 
