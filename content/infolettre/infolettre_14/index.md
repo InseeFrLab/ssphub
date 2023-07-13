@@ -75,7 +75,7 @@ grands modèles de langage (_large langage model_, LLM) ;
 N'hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des
 images avec [StableDiffusion](https://huggingface.co/spaces/stabilityai/stable-diffusion) ou [Dall-E 2](https://openai.com/dall-e-2).
 
-Le version `Python` de l'ouvrage de référence [_Introduction to Statistical Learning_](https://www.statlearning.com/) vient de sortir et est disponible, comme la version `R`, gratuitement. Si après la lecture de celui-ci vous désirez mieux comprendre la question de l'interprétabilité des modèles de _machine learning_, c'est-à-dire les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d'apprentissage aboutissent à une décision, ce [site web](https://interpretable-ml-class.github.io/) vous sera très utile.
+La version `Python` de l'ouvrage de référence [_Introduction to Statistical Learning_](https://www.statlearning.com/) vient de sortir et est disponible, comme la version `R`, gratuitement. Si après la lecture de celui-ci vous désirez mieux comprendre la question de l'interprétabilité des modèles de _machine learning_, c'est-à-dire les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d'apprentissage aboutissent à une décision, ce [site web](https://interpretable-ml-class.github.io/) vous sera très utile.
 
 
 Si vous désirez en apprendre plus sur la question de la reproductibilité, 
