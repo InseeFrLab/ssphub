@@ -59,7 +59,7 @@ pour la rentrée 📖⛱️.
 
 ## Lectures estivales
 
-Pour commencer, quelques conseils de lecture sur les modèles de
+Pour commencer, quelques conseils de lecture sur les grands modèles de
 langage :
 
 - [Un article du _Washington Post_](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) pour en savoir plus sur le corpus d'entrainement des
