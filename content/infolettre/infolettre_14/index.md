@@ -103,6 +103,6 @@ Après avoir lu tout ceci, vous serez prêts pour les événements
 _data science_ de la rentrée comme le [hackathon du _mobidatalab_](https://mobidatalab.eu/living-labs/hackathon/)
 sur le thème de l'amélioration des services de mobilité urbaine (15 et 16 septembre). 
 
-__Bonnes vacances ! Et n'oubliez pas de profiter pleinement des vacances pour oublier `chatGPT` quelques temps !__ 🌞🌊⛰️
+__Bonnes vacances ! Et n'oubliez pas de profiter pleinement des vacances pour oublier `ChatGPT` quelques temps !__ 🌞🌊⛰️
 
 ![](bye.png)
