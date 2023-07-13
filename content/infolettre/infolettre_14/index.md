@@ -67,7 +67,7 @@ grands modèles de langage (_large langage model_, LLM) ;
 
 - Pour comprendre la manière dont `ChatGPT` et les grands modèles de langage  traduisent vos phrases afin de vous répondre, consultez ce [_post_ de blog](https://simonwillison.net/2023/Jun/8/gpt-tokenizers/) sur les _tokenizers_ ;
 
-- Entre deux épisodes de votre série préférée, vous pourrez alterner avec [ce cours de 2 heures](https://www.youtube.com/watch?v=Ku9PM26Cc2c) sur les modèles de langage ;
+- Entre deux épisodes de votre série préférée, vous pourrez alterner avec [ce cours de 2 heures](https://www.youtube.com/watch?v=Ku9PM26Cc2c) sur les grands modèles de langage ;
 
 - Vous serez ensuite prêts à approfondir le sujet avec [ce cours](https://huggingface.co/learn/nlp-course/chapter1/1) complet d'`Huggingface` sur le traitement automatique du langage.
 
