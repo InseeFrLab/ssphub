@@ -92,7 +92,7 @@ de votre cursus.
 
 Vous pouvez également reprendre l'ensemble
 des ressources mises à disposition
-dans le cadre du [Funathon 2023](https://inseefrlab.github.io/funathon2023/), un événement pour lequel les équipes innovation de l'INSEE et le SSM Agriculture ont mis à disposition de nombreuses ressources `R` ou `Python`
+dans le cadre du [Funathon 2023](https://inseefrlab.github.io/funathon2023/), un événement pour lequel les équipes innovation de l'INSEE et du SSM Agriculture et alimentation ont mis à disposition de nombreuses ressources `R` ou `Python`
 sur six thèmes concernant l'alimentation et la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté et de techniques pour permettre à la fois aux débutants en code et aux _data scientists_ plus aguerris d’y trouver leur compte. 
 
 Et pour un parcours complet de formation, rien de mieux que d'explorer
@@ -103,6 +103,6 @@ Après avoir lu tout ceci, vous serez prêts pour les événements
 _data science_ de la rentrée comme le [hackathon du _mobidatalab_](https://mobidatalab.eu/living-labs/hackathon/)
 sur le thème de l'amélioration des services de mobilité urbaine (15 et 16 septembre). 
 
-__Bonnes vacances !__ 🌞🌊⛰️
+__Bonnes vacances ! Et n'oubliez pas de profiter pleinement des vacances !__ 🌞🌊⛰️
 
 ![](bye.png)
