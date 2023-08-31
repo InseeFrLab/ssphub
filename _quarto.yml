@@ -1,0 +1,31 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - event/*.qmd
+
+website:
+  title: "SSPHub"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: event/index.qmd
+        text: Événements
+      - href: about.qmd
+        text: A propos
+      - href: infolettre/index.qmd
+        text: Newsletters
+      - href: posts/index.qmd
+        text: Newsletters
+      - href: course/index.qmd
+        text: Ressources utiles
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

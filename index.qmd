@@ -1,0 +1,41 @@
+---
+title: ""
+---
+
+::: {#hero-banner .column-screen}
+
+:::: {.grid .column-page}
+
+::::: {.headline .g-col-lg-6 .g-col-12 .g-col-md-12}
+
+:::::: h1
+Le réseau des data scientists de la statistique publique
+::::::
+
+:::::: h2
+SSPHub
+::::::
+
+```{=html}
+<a class="github-button" href="https://github.com/inseefrlab/ssphub" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this website on Github">Star this website on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+```
+
+<br>
+
+
+
+<br>
+
+
+
+:::::
+
+::::: {.g-col-lg-6 .g-col-12 .g-col-md-12}
+![](./word.png)
+:::::
+
+::::
+
+:::
+
+<br>
