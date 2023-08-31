@@ -16,6 +16,9 @@ main:
   - name: Blog
     url: '/posts'
     weight: 30
+  - name: Newsletters
+    url: '/infolettre'
+    weight: 30
   - name: Projets
     url: '/projects'
     weight: 35
@@ -36,10 +39,6 @@ main:
     url: /openhour
     weight: 92
     parent: plus    
-  - name: Infolettres mensuelles
-    url: /infolettre
-    weight: 93
-    parent: plus
   - name: <i class="fab fa-github"></i>
     url: 'https://github.com/InseeFrLab/ssphub'
     weight: 110
