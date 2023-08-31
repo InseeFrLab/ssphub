@@ -2,7 +2,12 @@ project:
   type: website
   render:
     - index.qmd
+    - about.qmd
     - event/*.qmd
+    - infolettre/*md
+    - posts/*.qmd
+    - course/*.qmd
+
 
 website:
   title: "SSPHub"
@@ -17,9 +22,10 @@ website:
       - href: infolettre/index.qmd
         text: Newsletters
       - href: posts/index.qmd
-        text: Newsletters
+        text: Blog
       - href: course/index.qmd
         text: Ressources utiles
+
 
 format:
   html:
