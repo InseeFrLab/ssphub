@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "content/course/index.html",
+    "href": "content/course/index.html",
+    "title": "Liste de ressources utiles",
+    "section": "",
+    "text": "CitationBibTeX citation:@article{untitled,\n  author = {},\n  title = {Liste de Ressources Utiles},\n  journal = {Python pour la data science},\n  url = {https://pythonds.linogaliana.fr},\n  doi = {https://zenodo.org/record/8229676},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n“Liste de Ressources Utiles.” n.d. Python Pour La Data\nScience. https://doi.org/https://zenodo.org/record/8229676."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "SSPHub",
@@ -7,17 +14,591 @@
     "text": "Le réseau des data scientists de la statistique publique\n\n\nSSPHub\n\nStar this website on Github"
   },
   {
-    "objectID": "event/index.html",
-    "href": "event/index.html",
-    "title": "Recent & Upcoming Talks",
+    "objectID": "content/infolettre/index.html",
+    "href": "content/infolettre/index.html",
+    "title": "Archives des infolettres",
     "section": "",
-    "text": "Liste des événements"
+    "text": "Retrouvez sur cette page les infolettres mensuelles précédemment envoyées :\n\nInfolettre n°9, Janvier 2023 (Hors série), rétrospective de l’année 2022 du réseau\nInfolettre n°8, Janvier 2023, rétrospective de l’année 2022 de la data science\nInfolettre n°7, Décembre 2022\nInfolettre n°6, Novembre 2022\nInfolettre n°5, Juin 2022\nInfolettre n°4, Mai 2022\nInfolettre n°3, Avril 2022\nInfolettre n°2, Mars 2022\nInfolettre n°1, Février 2022\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_14/index.html",
+    "href": "content/infolettre/infolettre_14/index.html",
+    "title": "Infolettre estivale, Juillet 2023 (#14)",
+    "section": "",
+    "text": "{{% callout %}}\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\n{{% /callout %}}\nCette newsletter propose un petit cahier de vacances de la data science afin de profiter de la période estivale pour en apprendre plus sur les sujets en vogue et ainsi être fin prêt pour la rentrée 📖⛱️."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_14/index.html#lectures-estivales",
+    "href": "content/infolettre/infolettre_14/index.html#lectures-estivales",
+    "title": "Infolettre estivale, Juillet 2023 (#14)",
+    "section": "Lectures estivales",
+    "text": "Lectures estivales\nPour commencer, quelques conseils de lecture sur les grands modèles de langage :\n\nUn article du Washington Post pour en savoir plus sur le corpus d’entrainement des grands modèles de langage (large langage model, LLM) ;\nPour comprendre la manière dont ChatGPT et les grands modèles de langage traduisent vos phrases afin de vous répondre, consultez ce post de blog sur les tokenizers (décomposition d’une chaine de caractères en unité minimale comme un mot ou une syllabe);\nEntre deux épisodes de votre série préférée, vous pourrez alterner avec ce cours de 2 heures sur les grands modèles de langage ;\nVous serez ensuite prêts à approfondir le sujet avec ce cours complet d’Huggingface sur le traitement automatique du langage.\n\nN’hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des images avec StableDiffusion ou Dall-E 2.\nLa version Python de l’ouvrage de référence Introduction to Statistical Learning vient de sortir et est disponible, comme la version R, gratuitement. Si après la lecture de celui-ci vous désirez mieux comprendre la question de l’interprétabilité des modèles de machine learning, c’est-à-dire les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d’apprentissage aboutissent à une décision, ce site web vous sera très utile.\nSi vous désirez en apprendre plus sur la question de la reproductibilité, les ressources suivantes vous seront utiles :\n\nBuilding reproducible analytical pipelines with R ;\nCoding for economists ;\nFormation aux bonnes pratiques R et Git par l’INSEE ;\nUn cours de l’ENSAE sur la mise en production de projets data science et, pour approfondir sur la mise en production de modèles de machine learning, une formation de l’Insee sur le MLOps, ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles.\n\nSi les semestres de l’année scolaire ne vous ont pas suffi, vous pouvez aussi profiter de l’été pour compléter votre formation en data science en suivant le missing semester de votre cursus.\nVous pouvez également reprendre l’ensemble des ressources mises à disposition dans le cadre du Funathon 2023, un événement pour lequel les équipes innovation de l’Insee et du SSM Agriculture et alimentation ont mis à disposition de nombreuses ressources R ou Python sur six thèmes concernant l’alimentation et la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté et de techniques pour permettre à la fois aux débutants en code et aux data scientists plus aguerris d’y trouver leur compte.\nEt pour un parcours complet de formation, rien de mieux que d’explorer de fond en comble le portail de formation du SSP Cloud.\nAprès avoir lu tout ceci, vous serez prêts pour les événements data science de la rentrée comme le hackathon du mobidatalab sur le thème de l’amélioration des services de mobilité urbaine (15 et 16 septembre).\nBonnes vacances ! Et n’oubliez pas de profiter pleinement des vacances pour oublier ChatGPT quelques temps ! 🌞🌊⛰️"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html",
+    "href": "content/infolettre/infolettre_12/index.html",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "",
+    "text": "{{% callout %}}\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\n{{% /callout %}}\nDu fait de la densité des actualités dans le monde de la data science et des multiples événements à venir dans le cadre de ce réseau, nous proposons d’accélérer le rythme de publication des newsletters."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#la-charte-graphique-de-linsee-sur-le-tapis-rouge",
+    "href": "content/infolettre/infolettre_12/index.html#la-charte-graphique-de-linsee-sur-le-tapis-rouge",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "La charte graphique de l’Insee sur le tapis rouge",
+    "text": "La charte graphique de l’Insee sur le tapis rouge\nLa semaine dernière avait lieu la cérémonie des Oscars. Grâce à un fil de Clara Dealberto, on peut mesurer l’influence des graphistes de l’Insee sur les stylistes des stars :\n\nLe fil, qui met à l’honneur l’Insee, vaut le détour ; n’hésitez pas à le consulter ! Ou à découvrir celui sur le Met Gala."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#chatgpt-encore-et-toujours",
+    "href": "content/infolettre/infolettre_12/index.html#chatgpt-encore-et-toujours",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "ChatGPT encore et toujours",
+    "text": "ChatGPT encore et toujours\n\nChatGPT continue de focaliser l’attention. Dans la veine de l’article désignant les modèles de langages sous le terme de “stochastic parrots” (“perroquets stochastiques”), Arthur Charpentier parle lui de “société du bullshit” pour désigner la manière dont ChatGPT offre, sous un raisonnement en apparence logique, de manière indifférenciée des absurdités et des vérités.\nEspérons que lorsque ChatGPT sera embarqué dans les voitures General Motors, il ne nous donnera pas de fausse indication pour changer un pneu ou ne se retournera pas contre le conducteur comme le ferait HAL 9000.\nUn article intéressant de Wired questionne d’ailleurs l’empreinte carbone que pourrait impliquer la généralisation des modèles de langage dans les moteurs de recherche, qui font face à des milliards de requêtes quotidiennes.\nAu moment où OpenAI rend public GPT-4, une version plus riche de son modèle GPT-3 qui servait de base à ChatGPT, l’un des cofondateurs d’OpenAI revient sur la stratégie d’ouverture (ou plutôt l’absence d’ouverture) d’OpenAI : “Nous avions tord” (voir The Verge). Hasard du calendrier, cette déclaration a eu lieu presque au même moment que la publication d’un robot conversationnel ouvert OpenChatKit. La concurrence est néanmoins âpre puisqu’une équipe de Microsoft a déjà proposé l’intégration à ChatGPT d’un module permettant d’interagir avec ChatGPT également par le biais d’images."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#des-turbulences-dans-la-silicon-valley",
+    "href": "content/infolettre/infolettre_12/index.html#des-turbulences-dans-la-silicon-valley",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Des turbulences dans la Silicon Valley",
+    "text": "Des turbulences dans la Silicon Valley\n\nUne infographie des faillites bancaires par Mike Bostock. Source: Notebook Observable\nL’autre actualité phare des quinze derniers jours est la faillite de la Silicon Valley Bank. Aux Etats-Unis, il s’agit de la plus principale faillite bancaire depuis 2008 aux Etats-Unis.\nLa Fed est rapidement intervenue pour endiguer la panique bancaire, même si la banque était en fait déjà dans ses radars bien avant sa faillite (voir NYT)."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#retour-sur-les-évolutions-récentes-du-monde-de-la-data-science",
+    "href": "content/infolettre/infolettre_12/index.html#retour-sur-les-évolutions-récentes-du-monde-de-la-data-science",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Retour sur les évolutions récentes du monde de la data science",
+    "text": "Retour sur les évolutions récentes du monde de la data science\nLe panorama technologique 2023 de Matt Turck confirme la tendance à la diversification des technologies à maîtriser pour mener un projet de data science. Cette complexification des outils et des rôles dans l’écosystème de la donnée, évoquée dans l’article “Is Data Scientist Still the Sexiest Job of the 21st Century?”, est ici confirmée.\nLes derniers sondages auprès des recruteurs américains montrent la popularité des data engineers, plus spécialisés que les data scientists dans la mise en oeuvre d’infrastructures techniques pour valoriser des données. Le profil de data engineer apparaît en deuxième place dans le classement des profils les plus recherchés par les recruteurs alors que les data scientists n’apparaissent plus dans les premières places du classement."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#le-big-data-nest-pas-mort",
+    "href": "content/infolettre/infolettre_12/index.html#le-big-data-nest-pas-mort",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Le big data n’est pas mort",
+    "text": "Le big data n’est pas mort\nUne réponse intéressante à l’article “Big data is dead” (voir Newsletter #11) revient sur l’intérêt de disposer de données historiques longues pour l’entrainement de modèles d’apprentissage."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#r-directement-dans-le-navigateur",
+    "href": "content/infolettre/infolettre_12/index.html#r-directement-dans-le-navigateur",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "R directement dans le navigateur",
+    "text": "R directement dans le navigateur\nAvec un peu de retard sur Python, il devient maintenant possible de faire du R directement depuis le navigateur web, c’est-à-dire sans installation du logiciel R, grâce à WebR. Cette approche est typique du Web Assembly où les langages de programmation sont directement utilisés depuis le navigateur, sans installation préalable."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#première-journée-du-réseau-en-avril-17-avril",
+    "href": "content/infolettre/infolettre_12/index.html#première-journée-du-réseau-en-avril-17-avril",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Première journée du réseau en avril (17 avril)",
+    "text": "Première journée du réseau en avril (17 avril)\n\nDéjà annoncée dans la Newsletter #11, nous rappelons la journée du réseau le 17 avril, en présentiel 📅.\nLe nombre de places dans l’espace à disposition étant limité, une invitation par mail et un lien d’inscription seront communiqués dans la semaine pour pouvoir participer à cet événement en présentiel dans le tiers-lieu la Tréso à Malakoff."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#bonnes-pratiques-en-python-présentation-lors-des-ateliers-du-programme-10-30-mars",
+    "href": "content/infolettre/infolettre_12/index.html#bonnes-pratiques-en-python-présentation-lors-des-ateliers-du-programme-10-30-mars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Bonnes pratiques en Python : présentation lors des ateliers du programme 10% (30 mars)",
+    "text": "Bonnes pratiques en Python : présentation lors des ateliers du programme 10% (30 mars)\nDans le cadre du programme 10%, des présentations ont lieu avant certains ateliers de travail sur les projets communautaires.\nLa prochaine présentation, qui aura lieu le jeudi 30 mars de 14h à 15h 📅, sera donnée par des membres du réseau. Elle portera sur une présentation des outils favorisant les bonnes pratiques de développement en Python et de l’intérêt de ces bonnes pratiques pour faciliter la mise en production de projets de data science. Il s’agira d’une présentation succincte du contenu du cours de l’ENSAE “Bonnes pratiques et mise en production de projets data science”.\nPlus d’infos à venir par le biais du canal Tchap de notre réseau."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#un-événement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "href": "content/infolettre/infolettre_12/index.html#un-événement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Un événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)",
+    "text": "Un événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)\nLe mercredi 29 mars de 15h à 16h 📅 nous recevons Christopher Kermorvant, chercheur spécialisé en OCRisation et fondateur de Teklia. Christopher mène actuellement plusieurs projets de numérisation de textes anciens, notamment d’OCRisation de vieux recensements avec l’INED.\nPendant cet événement, Christopher nous fera un état de l’art de l’OCRisation puis nous présentera des projets qu’il a pu mener récemment avec Teklia.\nIl est possible de suivre la présentation via Zoom ou, pour les personnes présentes à l’Insee, en 2-C-496.\nInvitation outlook ici"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "href": "content/infolettre/infolettre_12/index.html#présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Présentation de la documentation collaborative Carpentries (28 mars)",
+    "text": "Présentation de la documentation collaborative Carpentries (28 mars)\nPour rappel, Kate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative Meta Academy / Carpentries le mardi 28 mars à 15h 📅. Plus de détails dans la Newsletter #11.\nInvitation Outlook ici."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_12/index.html#post-de-blog-sur-polars",
+    "href": "content/infolettre/infolettre_12/index.html#post-de-blog-sur-polars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Post de blog sur Polars",
+    "text": "Post de blog sur Polars\n\nPour faire suite à la Newsletter #11 qui présentait l’écosystème autour du package Python Polars, Romain Tailhurat (Insee) nous propose un post de blog pour découvrir ce package.\nCelui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales fonctionnalités de la librairie. Il est possible de tester le notebook en un seul clic sur le SSP Cloud ou sur Google Colab.\nVous pouvez également retrouver ce tutoriel depuis l’espace formation du SSP Cloud."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html",
+    "href": "content/infolettre/infolettre_10/index.html",
+    "title": "Infolettre n°10",
+    "section": "",
+    "text": "Vous désirez intégrer la liste de diffusion ? Un mail à ssphub-contact@insee.fr suffit"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html#un-événement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "href": "content/infolettre/infolettre_10/index.html#un-événement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "title": "Infolettre n°10",
+    "section": "Un événement autour des packages facilitant l’accès à l’open data de l’Insee",
+    "text": "Un événement autour des packages facilitant l’accès à l’open data de l’Insee\n\nAprès les présentations d’observable et de gridviz nous vous proposons un nouvel événement. Celui-ci sera autour de l’open data à travers la présentation des packages facilitant la récupération de données de l’Insee disponibles depuis le site web ou les API.\nDeux présentations sont prévues : - Pierre Lamarche présentera le package  doremifasol. C’est notamment grâce à ce package que la documentation utilitR peut s’appuyer sur des données bien connues des utilisateurs d’open data (Filosofi, recensement…) - Hadrien Leclerc nous présentera le package  Pynsee qui est utilisé depuis deux ans à l’ENSAE pour apprendre aux futurs data scientists à récupérer des données de cadrage.\nCes deux présentations seront suivies d’un temps d’échange.\nCet événement aura lieu le 13 février de 15h à 16h30 (📅 invitation Outlook). Si vous êtes utilisateurs de données, que vous veniez de l’Insee ou non, ces packages peuvent vous intéresser !"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html#masterclass-datascientest",
+    "href": "content/infolettre/infolettre_10/index.html#masterclass-datascientest",
+    "title": "Infolettre n°10",
+    "section": "Masterclass datascientest",
+    "text": "Masterclass datascientest\n\nLes masterclass organisées avec l’organisme de formation spécialisé datascientest reprennent ! Après une première masterclass au mois de décembre consacrée au MLOps, notre réseau va proposer de nouvelles séances.\nLes premières séances vont s’organiser autour de deux cursus parallèles, qui commenceront par des introductions pour monter graduellement en niveau et se rapprocher des cas d’usages que rencontrent nos data scientists.\nLe premier parcours sera orienté autour des problématiques de NLP. La première séance aura lieu le 10 février, de 10h à 12h et constituera une introduction au NLP avec un retour sur certains concepts centraux (preprocessing, tokenisation, lemmatisation…) et des exemples d’applications avec le package SpaCy. Une deuxième séance dans ce parcours est déjà programmée, le 24 mars de 10h à 12h, sur le thème de la similarité textuelle et de la classification de textes grâce aux méthodes d’embeddings.\nLe deuxième parcours cible la problématique de l’analyse d’images. Une première séance, qui aura lieu le 10 mars de 10h à 12h reviendra sur certains concepts centraux du deep learning (perceptron, convolution, transfer learning…). Les séances suivantes, dont les dates n’ont pas encore été arrêtées, s’intéresseront à des cas d’usages comme l’OCRisation ou la détection d’objets dans des images.\n{{% callout %}}\nPour vous inscrire, il suffit de remplir ce formulaire !\n{{% /callout %}}"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html#questionnaire-sur-vos-besoins-en-formation-data-science",
+    "href": "content/infolettre/infolettre_10/index.html#questionnaire-sur-vos-besoins-en-formation-data-science",
+    "title": "Infolettre n°10",
+    "section": "Questionnaire sur vos besoins en formation data science",
+    "text": "Questionnaire sur vos besoins en formation data science\n\nEn cette période de recensement, le réseau propose également le sien ! Pour déterminer au mieux la répartition des besoins en formation sur les sujets data science et ainsi pouvoir proposer des événements pertinents, nous vous proposons un questionnaire sur vos besoins en formation."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html#utilitr-recherche-des-rédacteurs-dexercices",
+    "href": "content/infolettre/infolettre_10/index.html#utilitr-recherche-des-rédacteurs-dexercices",
+    "title": "Infolettre n°10",
+    "section": "utilitR recherche des rédacteurs d’exercices !",
+    "text": "utilitR recherche des rédacteurs d’exercices !\n\nDans le but de continuer à développer utilitR, documentation collaborative et ouverte, l’équipe du projet souhaite encourager des contributions volontaires pour ajouter des exercices à chaque fiche thématique. L’objectif est de produire pour chaque chapitre un ensemble d’exercices, de difficulté graduelle, permettant de mettre en application les concepts présentés dans la fiche.\n\nCes exercices seraient accessibles depuis le site web mais aussi à travers le portail de formation du SSP Cloud, sous la forme de notebooks d’autoformation.\nL’équipe du projet utilitR est donc à la recherche des personnes motivées pour rédiger des exercices ou mettre à disposition des bouts de code ou des exercices déjà préparés. Si vous désirez apporter votre pierre à l’édifice, toute contribution, même modeste, sur cette page, sera appréciée par l’équipe utilitr.\nCette évolution de la documentation vise à prolonger l’effort continu pour construire une documentation vivante, interactive et originale. L’esthétique du site web book.utilitr.org a ainsi été revue récemment afin de rendre la documentation plus ergonomique tout en ajoutant des fonctionnalités utiles aux lecteurs, comme la possibilité de surligner ou de prendre des notes."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html#proposez-un-billet-de-blog",
+    "href": "content/infolettre/infolettre_10/index.html#proposez-un-billet-de-blog",
+    "title": "Infolettre n°10",
+    "section": "Proposez un billet de blog !",
+    "text": "Proposez un billet de blog !\n\nLe site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. Vos idées et contributions sont les bienvenues pour l’enrichir !\nPour souligner l’aspect collectif de cette section, un guide des contributeurs vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de discussion pour définir le sujet du billet aux outils proposés pour faciliter la rédaction et la soumission de celui-ci depuis Github ."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html#la-saison-2-du-programme-10-arrive",
+    "href": "content/infolettre/infolettre_10/index.html#la-saison-2-du-programme-10-arrive",
+    "title": "Infolettre n°10",
+    "section": "La saison 2 du programme 10% arrive",
+    "text": "La saison 2 du programme 10% arrive\n\nL’attente était insoutenable mais la nouvelle saison de 10% est enfin là ! Rejoignez ce programme, issu des recommandations du rapport de l’Inspection Générale de l’Insee et de la DINUM, où des data scientists proposent de consacrer jusqu’à 10% de leur temps de travail à des projets transversaux !\nAu-delà de la participation à ces projets, le programme 10% est également l’opportunité d’échanger des idées avec des data scientists d’autres administrations et de bénéficier de formations.\nAprès un webinaire d’information sur le programme le 31 janvier (inscription via eventbrite), la journée de lancement de la saison 2 se tiendra le 14 février au Bercy Lab (plus d’infos à venir).\nCette saison, plus longue que la première, permettra de pérenniser certains des projets de la saison 1 mais aussi de lancer de nouveaux projets.\nInscrivez-vous dès maintenant pour ne pas manquer la saison 2 de 10%!\n{{% callout %}}\nPour plus d’information sur le programme : lab-ia@data.gouv.fr\n{{% /callout %}}"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_10/index.html#report-de-la-journée-de-la-donnée",
+    "href": "content/infolettre/infolettre_10/index.html#report-de-la-journée-de-la-donnée",
+    "title": "Infolettre n°10",
+    "section": "Report de la journée de la donnée",
+    "text": "Report de la journée de la donnée\nLa journée de la donnée organisée par l’Administrateur Ministériel des Données, Algorithmes et Codes sources (AMDAC) du Ministère de la Santé, initialement prévue le 31 janvier, est reportée à une date ultérieure."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html",
+    "href": "content/infolettre/infolettre_11/index.html",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "",
+    "text": "{{% callout %}}\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\n{{% /callout %}}\nCe numéro reprend le format expérimenté à la fin de l’année 2022: un résumé des dernières actualités du monde de la data science précède la présentation plus classique des nouvelles du réseau."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#chatgpt-continue-de-faire-parler",
+    "href": "content/infolettre/infolettre_11/index.html#chatgpt-continue-de-faire-parler",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "ChatGPT continue de faire parler",
+    "text": "ChatGPT continue de faire parler\n\nL’actualité est encore largement dominée par les discussions autour de ChatGPT. Les débats continuent notamment sur la pertinence de ce type d’outil dans l’enseignement (cf. Télérama). L’article du New Yorker “ChatGPT is a blurry JPEG of the web” propose une analyse en profondeur de la manière dont les modèles de langage reconstruisent des réponses originales en mélangeant des corpus rencontrés lors de la phase d’entraînement.\nAlors qu’il est difficile d’avoir des informations sur le corpus de ChatGPT ou les méthodes d’apprentissage mises en oeuvre, des développeurs ont mis en place de nombreux chatbots thématiques sur https://beta.character.ai/ s’appuyant sur des modèles de langage ouverts.\nCe mois-ci, Facebook-Meta est également rentré dans la danse avec son modèle LLaMa, ouvert aux chercheurs et ayant vocation à fonctionner sur des installations moins gourmandes en ressources que les modèles GPT ou PaLM.\nA peine deux mois après le lancement tonitruant de ChatGPT, et la création d’un “code rouge” du côté de Google, le lancement difficile par Microsoft d’une version de test de son robot conversationnel dans son navigateur Bing montre que l’intégration à un moteur de recherche traditionnel n’est pas évidente, notamment pour éviter la diffusion de fausses informations. Alors que ChatGPT avait bénéficié d’un gros travail humain pour cadrer son comportement, il semblerait que l’IA de Bing soit moins consensuelle dans ses propos.\nPendant ce temps, la recherche sur les modèles de diffusion continue à avancer à grande vitesse. La dernière innovation est la capacité à reconstruire des images à partir d’IRM de l’activité du cerveau grâce au modèle Stable Diffusion."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#traitement-de-données-tabulaires-arrow-et-polars-au-centre-du-jeu",
+    "href": "content/infolettre/infolettre_11/index.html#traitement-de-données-tabulaires-arrow-et-polars-au-centre-du-jeu",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Traitement de données tabulaires: Arrow et Polars au centre du jeu",
+    "text": "Traitement de données tabulaires: Arrow et Polars au centre du jeu\n\nDu côté des données tabulaires plus traditionnelles, Apache Arrow continue de s’affirmer comme un incontournable.\nLa version 2.0 de Pandas qui vient de sortir permet de plus facilement s’appuyer, en arrière-plan, sur Arrow plutôt que Numpy qui offre des performances et des fonctionnalités limitées sur données non numériques (cf. https://datapythonista.me). Il s’agissait d’une des limites majeures de Pandas, identifiées dès 2017 par son créateur Wes McKinney (voir ici) qui est également très impliqué dans le développement d’Apache Arrow.\nLa librairie Polars connait une certaine hype et va sans doute devenir dans les mois à venir une librairie incontournable, en alternative à Pandas. La dernière version de DuckDB (sortie mi-février) renforce l’interconnexion entre ces deux écosystèmes (exemples). Si vous voulez en savoir plus sur Polars, il est recommandé de suivre l’évolution de la liste “Awesome Polars” faite par Damien Dotta (relayée par la très bonne newsletter du site Data Elixir) et de lire le post à venir prochainement sur le blog de notre réseau.\nPar ailleurs, l’article de Jordan Tigani “Big data is dead” vaut le détour."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#huggingface.js-lapi-dhuggingface-directement-accessible-depuis-un-navigateur-web",
+    "href": "content/infolettre/infolettre_11/index.html#huggingface.js-lapi-dhuggingface-directement-accessible-depuis-un-navigateur-web",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Huggingface.js: l’API d’HuggingFace directement accessible depuis un navigateur web",
+    "text": "Huggingface.js: l’API d’HuggingFace directement accessible depuis un navigateur web\n\nHuggingface et Observable sont chacun devenus des incontournables dans leur domaine (voir notre newsletter de décembre). Alors un rapprochement entre ces deux univers, permettant d’utiliser de nombreux modèles d’apprentissage via l’API d’HuggingFace directement dans le navigateur, ça donne envie de s’amuser.\nLe notebook, disponible sur Observable, illustre la richesse des fonctionnalités disponibles."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#première-journée-du-réseau-en-avril",
+    "href": "content/infolettre/infolettre_11/index.html#première-journée-du-réseau-en-avril",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Première journée du réseau en avril",
+    "text": "Première journée du réseau en avril\n\nNotre réseau organise des événements virtuels depuis un an. Pour renforcer l’esprit communautaire, nous proposons une journée du réseau le 17 avril, en présentiel 📅.\nCet événement aura lieu dans le tiers-lieu la Tréso à Malakoff. Pendant la journée se succèderont plusieurs séquences pour construire ensemble le réseau, partager autour du sujet de la data science et échanger ensemble.\nLe programme et les modalités pratiques d’inscription seront communiqués prochainement ! Vous pouvez néanmoins déjà marquer la date dans votre calendrier."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#présentation-de-la-documentation-collaborative-carpentries",
+    "href": "content/infolettre/infolettre_11/index.html#présentation-de-la-documentation-collaborative-carpentries",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Présentation de la documentation collaborative Carpentries",
+    "text": "Présentation de la documentation collaborative Carpentries\nPour favoriser l’adoption des langages R, Python et Git dans les administrations, le programme ModernStat piloté par l’OCDE et Statistics Canada, a lancé un projet nommé Meta Academy et s’est rapproché de l’organisation américaine Carpentries dont l’objectif est de proposer des parcours progressifs de formation dans les langages open source, associés à des documentations disponibles de manière ouverte.\nL’absence de contenu en Français et l’orientation principalement académique des contenus a amené le programme ModernStat à proposer aux Carpentries de créer de nouveaux parcours de formations en Français. Ces programmes seraient créés par des membres de la communauté francophone des utilisateurs des langages R, Python et Git.\nKate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative le mardi 28 mars à 15h 📅 (invitation Outlook). La présentation aura lieu en Anglais et sera suivie d’un échange (Français et Anglais possibles). Si vous êtes intéressés par la manière dont les nombreux contenus créés par les membres du réseau pourraient prendre place dans ce cadre, n’hésitez pas à venir pour en savoir plus ! Informations pratiques ici !"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#masterclass-datascientest",
+    "href": "content/infolettre/infolettre_11/index.html#masterclass-datascientest",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Masterclass datascientest",
+    "text": "Masterclass datascientest\n\nLes inscriptions à nos cycles de masterclass datascientest sont toujours ouvertes ! Pendant le mois de mars, nous continuerons d’avancer dans les deux cursus parallèles.\nEn premier lieu, la masterclass d’introduction au deep learning (10 mars de 10h à 12h 📅) permettra d’initier notre parcours de computer vision avec la présentation de certains concepts centraux du deep learning (perceptron, convolution, transfer learning…).\nLa deuxième session mensuelle, ayant lieu le 24 mars de 10h à 12h 📅 sera elle l’occasion d’avancer dans notre parcours NLP grâce au sujet de la similarité textuelle et de la classification de textes avec des méthodes d’embeddings.\n{{% callout %}}\nPour vous inscrire, il suffit de remplir ce formulaire !\n{{% /callout %}}"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#onyxia",
+    "href": "content/infolettre/infolettre_11/index.html#onyxia",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Onyxia",
+    "text": "Onyxia\n\nLe dernier post sur le site web du réseau revient sur le projet Onyxia, le logiciel initié par l’équipe innovation de l’Insee et mis à disposition sur Github pour permettre à d’autres organisations de développer une infrastructure de data science à l’état de l’art.\nPour en savoir plus sur le contexte de naissance d’Onyxia, les choix techniques mis en oeuvre ou la communauté des réutilisateurs, c’est par ici."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#replay-de-lévénement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "href": "content/infolettre/infolettre_11/index.html#replay-de-lévénement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Replay de l’événement autour des packages facilitant l’accès à l’open data de l’Insee",
+    "text": "Replay de l’événement autour des packages facilitant l’accès à l’open data de l’Insee\n\nLe replay des présentations des packages Doremifasol (R) et Pynsee (Python) lors de notre événement du 13 février autour des packages facilitant l’accès à l’open data de l’Insee est en ligne !\nLa vidéo et les supports présentés sont mis à disposition sur le site web du réseau"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_11/index.html#programme-10",
+    "href": "content/infolettre/infolettre_11/index.html#programme-10",
+    "title": "Infolettre Mars 2023 (#11)",
+    "section": "Programme 10%",
+    "text": "Programme 10%\nLa journée de lancement du programme 10% annonce une saison prometteuse ! Plus de 50 personnes, issues d’un large panel d’administrations, se sont rencontrées et ont échangées autour de projets mutualisables. Au final, une demi-douzaine de projets ont déjà été identifiés.\nSi vous n’étiez pas disponible lors de cette première journée, il est possible à tout moment de rejoindre cette communauté. Le prochain atelier a lieu le 14 mars au Lieu de la Transformation Publique 📅 !"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html",
+    "href": "content/infolettre/infolettre_13/index.html",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "",
+    "text": "{{% callout %}}\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\n{{% /callout %}}"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#un-foisonnement-davancées",
+    "href": "content/infolettre/infolettre_13/index.html#un-foisonnement-davancées",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Un foisonnement d’avancées…",
+    "text": "Un foisonnement d’avancées…\nL’actualité des modèles d’intelligence artificielle est très chargée (résumé des annonces du mois de mars) et cette lettre se concentrera sur les actualités majeures.\nGithub Copilot, l’assistant de code de Microsoft, devrait prochainement utiliser ChatGPT. Après ChatGPT, le navigateur Bing s’enrichit également d’un créateur d’image basé sur Dall-E. Pendant ce temps, Midjourney (une des principales alternatives de création d’images) sort sa V5, améliorant encore le réalisme du rendu.\nFace à la recrudescence des montages utilisant Midjourney, qu’il s’agisse de deep fakes ou d’images à vocation humoristique, Le Monde a publié un guide pour reconnaître une image générée par une IA.\n Source: Reddit"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#qui-alimentent-les-débats-autour-de-la-place-de-lia-dans-la-société-et-notre-économie-numérique",
+    "href": "content/infolettre/infolettre_13/index.html#qui-alimentent-les-débats-autour-de-la-place-de-lia-dans-la-société-et-notre-économie-numérique",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "… qui alimentent les débats autour de la place de l’IA dans la société et notre économie numérique…",
+    "text": "… qui alimentent les débats autour de la place de l’IA dans la société et notre économie numérique…\nAlors que ChatGPT est déjà utilisé par plus de 100 millions d’utilisateurs, seulement quatre mois après sa sortie, il est légitime de se poser la question, comme le fait Gaspard Koenig dans Les Echos, du rapport à la vérité des IA génératrices et des implications sociétales de la généralisation de ces assistants.\nLes prospectivistes, après s’être consacrés au bitcoin et à la blockchain, comme Jean Detrez - le héros de Jean Philippe Toussaint -, commencent à proposer des évaluations des conséquences économiques de cette (r)évolution. Dernier chiffre en date : d’après Goldman Sachs, 300 millions d’emplois au niveau mondial pourraient être supprimés ou amenés à évoluer.\nPar ailleurs, la question de l’ouverture des corpus ayant servi à entraîner ces modèles ou de la licence à réutiliser des modèles pré-entraînés est importante à plusieurs égards. D’abord, dans une perspective scientifique, il apparaît compliqué d’évaluer la qualité d’un modèle ou lui proposer des alternatives sans accès à des données scientifiques de base comme le nombre de paramètres (inconnu pour GPT-4 par exemple). Mais c’est aussi une question économique : si ces outils deviennent de plus en plus incontournables, quel sera le business model de ce secteur ? Ces services resteront-ils gratuits avec en contrepartie une réutilisation des données fournies, potentiellement opaque et difficilement contrôlable par l’utilisateur, ou seront-ils monétisés ?\nLa publication en open source de modèles de langage est donc un enjeu d’indépendance pour les organisations intéressées par l’utilisation de chatbots ou l’extraction d’information. Cette publication continue à suivre un rythme presque quotidien. Cet état de l’art des modèles publiés en open source publié en janvier est déjà largement dépassé. Et celui-ci ne sera probablement plus à jour tout aussi rapidement.\n\nDans la dernière quinzaine, l’une des principales annonces est la publication par LAION d’OpenFlamingo, une version open source de Flamingo, modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.\nAfin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d’image et textuelle, celui-ci s’appuie sur des composantes open source pour les modèles de langage et de reconnaissance d’image et sur un jeu de données ouvertes. Des exemples de réutilisation en Python sont disponibles sur le dépôt Github.\nDans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a mis en oeuvre un chatbot ouvert, à partir des modèles LLaMA (Meta, voir Newsletter #11) ou Alpaca (Stanford) : Vicuna. Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. En plus de s’appuyer sur des modèles ouverts, ce qui peut faciliter sa ré-utilisation dans un cadre interne, ce chat présente un avantage technique puisqu’il s’appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4.\nDans le même temps, Databricks s’est également appuyé sur LLaMA et Alpaca pour proposer un autre modèle de langage ouvert avec lequel il est possible d’échanger. Ce modèle s’appelle Dolly et est pensé comme premier clone du modèle Alpaca. Dolly peut être entrainé en 30 minutes sur un corpus massif et ne présente “que” 6 milliards de paramètres (qu’il hérite d’Alpaca) ce qui en fait, dans l’écosystème actuel des modèles de langage (LLM), un nain : à titre de comparaison GPT-3 comporte 175 milliards de paramètres et le nombre de paramètres de GPT-4 est inconnu mais pourrait être de l’ordre de la centaine de trillions.\nMozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la startup Mozilla.ai. Pour Mozilla, cette startup sert à adapter la philosophie à l’origine du navigateur Firefox au développement d’intelligences artificielles : proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé.\nLa question de la sécurité et de la confidentialité des informations fournies à OpenAI a également été au centre de l’attention au cours de la dernière quinzaine. OpenAI a révélé une faille de sécurité à l’origine d’une fuite de données. Cette question de la confidentialité des informations fournies à ChatGPT a d’ailleurs amené la CNIL italienne à demander le blocage temporaire de l’outil d’OpenAI (voir ici).\nCette interdiction prend place dans un contexte de discussions intenses autour de la place à venir dans nos sociétés de ces robots conversationnels. Une lettre ouverte au fort écho médiatique publiée par des figures de la tech (dont Elon Musk) et des universitaires réclame un moratoire dans le développement de nouveaux modèles d’intelligence artificielle, dont les signataires soulignent à quel point il est difficile de les “comprendre, prédire ou contrôler de manière fiable”.\nCette lettre a été rapidement critiquée. En premier lieu par Andrew Ng qui souligne qu’en plus de l’impossibilité pratique de mettre en oeuvre un tel moratoire dans le cadre d’une recherche privée, ce type de sursis retarde la recherche sur des applications bénéfiques, notamment dans le domaine de la santé. Mais la critique est aussi venue de Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face), autrices citées dans la lettre en référence au concept de “Stochastic Parrots” (les modèles de langage répètent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d’apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens)."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#mais-ne-nous-font-pas-oublier-certaines-autres-nouveautés-dignes-dintérêt",
+    "href": "content/infolettre/infolettre_13/index.html#mais-ne-nous-font-pas-oublier-certaines-autres-nouveautés-dignes-dintérêt",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "… mais ne nous font pas oublier certaines autres nouveautés dignes d’intérêt",
+    "text": "… mais ne nous font pas oublier certaines autres nouveautés dignes d’intérêt\nL’intensité de l’actualité autour de ChatGPT occulte beaucoup de faits qui auraient, dans un autre contexte, amené à des discussions passionnées.\nAinsi, la publication en open source de l’algorithme de recommandation de Twitter permet de mieux comprendre la manière dont fonctionne l’algorithme de recommandation de Twitter, notamment la manière dont des bulles de filtre peuvent advenir après avoir cliqué sur un post par curiosité.\nLa publication de ce code prend place quelques jours après la découverte qu’une partie importante du code de Twitter était déjà sur Github, sans doute suite à une fuite après l’un des licenciements massifs des derniers mois.\nPeut-être n’avez-vous pas remarqué mais Twitter n’a plus le même logo depuis lundi. L’oiseau bleu a été remplacé par un chien (un Shiba Inu), logo d’une cryptomonnaie, le dogecoin, dont Elon Musk avait fait une promotion controversée et dont les cours ont connu une envolée depuis.\nLe logiciel de création d’applications Docker (principal logiciel de conteneurisation) noue un partenariat avec HuggingFace, qui rassemble une immense bibliothèque de modèles, pour faciliter la réutilisation de modèles de deep learning. Avec cette approche, il est plus facile de proposer aux ré-utilisateurs de modèles des applications prêtes à l’emploi pour tester ou enrichir un modèle sur des infrastructures compatibles avec la technique de la conteneurisation, approche utilisée par les principales plateformes de data science modernes (notamment par celles s’appuyant sur le logiciel Onyxia).\nLa plateforme Observable propose un comparatif des principales syntaxes de manipulation de données (JavaScript, Python, R et SQL).\nEnfin, si vous appréciez les cartes, un hashtag à suivre est le #MapPromptMonday."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#première-journée-du-réseau-le-17-avril",
+    "href": "content/infolettre/infolettre_13/index.html#première-journée-du-réseau-le-17-avril",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Première journée du réseau le 17 avril",
+    "text": "Première journée du réseau le 17 avril\n\nNous rappelons la journée du réseau le 17 avril, en présentiel 📅 (Newsletter #12). Les places en présentiel sont presque épuisées, ne tardez pas à vous inscrire ! Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#les-masterclass-avec-datascientest-continuent",
+    "href": "content/infolettre/infolettre_13/index.html#les-masterclass-avec-datascientest-continuent",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Les masterclass avec DataScientest continuent",
+    "text": "Les masterclass avec DataScientest continuent\nNos cycles de masterclass datascientest continuent ! Les cycles parallèles NLP et analyse d’image continuent.\nAu programme:\n\nAnalyse d’image, niveau confirmé (📅 14 avril, 10h-12h )\nNLP, niveau avancé (📅 12 mai, 10h-12h )\nAnalyse d’image, niveau avancé (📅 9 juin, 10h-12h )\n\nInscription ici !"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars",
+    "href": "content/infolettre/infolettre_13/index.html#replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Replay “Bonnes pratiques pour la mise en production de projets data science” (30 mars)",
+    "text": "Replay “Bonnes pratiques pour la mise en production de projets data science” (30 mars)\nLe replay de la présentation succincte du contenu du cours de l’ENSAE “Bonnes pratiques pour la mise en production de projets data science” ayant eu lieu dans le cadre du programme 10% (voir Newsletter #12) est disponible sur le site du programme 10%."
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "href": "content/infolettre/infolettre_13/index.html#replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Replay de l’événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)",
+    "text": "Replay de l’événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)\nChristopher Kermorvant, chercheur spécialisé en OCRisation et fondateur de Teklia, a proposé au réseau une présentation très pédagogique sur l’extraction de texte avec des méthodes de deep learning.\nA partir de l’exemple de recensements de la fin du XIXe siècle, nous avons ainsi bénéficié d’une excellente introduction à l’histoire des techniques d’OCRisation et la manière dont aujourd’hui ces modèles fonctionnent en associant reconnaissance d’image et analyse textuelle.\nLe replay est ici !"
+  },
+  {
+    "objectID": "content/infolettre/infolettre_13/index.html#replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "href": "content/infolettre/infolettre_13/index.html#replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Replay de la présentation de la documentation collaborative Carpentries (28 mars)",
+    "text": "Replay de la présentation de la documentation collaborative Carpentries (28 mars)\nKate Burnett-Isaacs, de Statistics Canada, nous a présenté l’initiative Meta Academy / Carpentries permettant de construire une documentation francophone de référence sur R, Python et Git à destination des utilisateurs de données.\nLe replay est ici !"
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html",
+    "href": "infolettre/infolettre_13/index.html",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "",
+    "text": "{{% callout %}}\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\n{{% /callout %}}"
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#un-foisonnement-davancées",
+    "href": "infolettre/infolettre_13/index.html#un-foisonnement-davancées",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Un foisonnement d’avancées…",
+    "text": "Un foisonnement d’avancées…\nL’actualité des modèles d’intelligence artificielle est très chargée (résumé des annonces du mois de mars) et cette lettre se concentrera sur les actualités majeures.\nGithub Copilot, l’assistant de code de Microsoft, devrait prochainement utiliser ChatGPT. Après ChatGPT, le navigateur Bing s’enrichit également d’un créateur d’image basé sur Dall-E. Pendant ce temps, Midjourney (une des principales alternatives de création d’images) sort sa V5, améliorant encore le réalisme du rendu.\nFace à la recrudescence des montages utilisant Midjourney, qu’il s’agisse de deep fakes ou d’images à vocation humoristique, Le Monde a publié un guide pour reconnaître une image générée par une IA.\n Source: Reddit"
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#qui-alimentent-les-débats-autour-de-la-place-de-lia-dans-la-société-et-notre-économie-numérique",
+    "href": "infolettre/infolettre_13/index.html#qui-alimentent-les-débats-autour-de-la-place-de-lia-dans-la-société-et-notre-économie-numérique",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "… qui alimentent les débats autour de la place de l’IA dans la société et notre économie numérique…",
+    "text": "… qui alimentent les débats autour de la place de l’IA dans la société et notre économie numérique…\nAlors que ChatGPT est déjà utilisé par plus de 100 millions d’utilisateurs, seulement quatre mois après sa sortie, il est légitime de se poser la question, comme le fait Gaspard Koenig dans Les Echos, du rapport à la vérité des IA génératrices et des implications sociétales de la généralisation de ces assistants.\nLes prospectivistes, après s’être consacrés au bitcoin et à la blockchain, comme Jean Detrez - le héros de Jean Philippe Toussaint -, commencent à proposer des évaluations des conséquences économiques de cette (r)évolution. Dernier chiffre en date : d’après Goldman Sachs, 300 millions d’emplois au niveau mondial pourraient être supprimés ou amenés à évoluer.\nPar ailleurs, la question de l’ouverture des corpus ayant servi à entraîner ces modèles ou de la licence à réutiliser des modèles pré-entraînés est importante à plusieurs égards. D’abord, dans une perspective scientifique, il apparaît compliqué d’évaluer la qualité d’un modèle ou lui proposer des alternatives sans accès à des données scientifiques de base comme le nombre de paramètres (inconnu pour GPT-4 par exemple). Mais c’est aussi une question économique : si ces outils deviennent de plus en plus incontournables, quel sera le business model de ce secteur ? Ces services resteront-ils gratuits avec en contrepartie une réutilisation des données fournies, potentiellement opaque et difficilement contrôlable par l’utilisateur, ou seront-ils monétisés ?\nLa publication en open source de modèles de langage est donc un enjeu d’indépendance pour les organisations intéressées par l’utilisation de chatbots ou l’extraction d’information. Cette publication continue à suivre un rythme presque quotidien. Cet état de l’art des modèles publiés en open source publié en janvier est déjà largement dépassé. Et celui-ci ne sera probablement plus à jour tout aussi rapidement.\n\nDans la dernière quinzaine, l’une des principales annonces est la publication par LAION d’OpenFlamingo, une version open source de Flamingo, modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.\nAfin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d’image et textuelle, celui-ci s’appuie sur des composantes open source pour les modèles de langage et de reconnaissance d’image et sur un jeu de données ouvertes. Des exemples de réutilisation en Python sont disponibles sur le dépôt Github.\nDans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a mis en oeuvre un chatbot ouvert, à partir des modèles LLaMA (Meta, voir Newsletter #11) ou Alpaca (Stanford) : Vicuna. Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. En plus de s’appuyer sur des modèles ouverts, ce qui peut faciliter sa ré-utilisation dans un cadre interne, ce chat présente un avantage technique puisqu’il s’appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4.\nDans le même temps, Databricks s’est également appuyé sur LLaMA et Alpaca pour proposer un autre modèle de langage ouvert avec lequel il est possible d’échanger. Ce modèle s’appelle Dolly et est pensé comme premier clone du modèle Alpaca. Dolly peut être entrainé en 30 minutes sur un corpus massif et ne présente “que” 6 milliards de paramètres (qu’il hérite d’Alpaca) ce qui en fait, dans l’écosystème actuel des modèles de langage (LLM), un nain : à titre de comparaison GPT-3 comporte 175 milliards de paramètres et le nombre de paramètres de GPT-4 est inconnu mais pourrait être de l’ordre de la centaine de trillions.\nMozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la startup Mozilla.ai. Pour Mozilla, cette startup sert à adapter la philosophie à l’origine du navigateur Firefox au développement d’intelligences artificielles : proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé.\nLa question de la sécurité et de la confidentialité des informations fournies à OpenAI a également été au centre de l’attention au cours de la dernière quinzaine. OpenAI a révélé une faille de sécurité à l’origine d’une fuite de données. Cette question de la confidentialité des informations fournies à ChatGPT a d’ailleurs amené la CNIL italienne à demander le blocage temporaire de l’outil d’OpenAI (voir ici).\nCette interdiction prend place dans un contexte de discussions intenses autour de la place à venir dans nos sociétés de ces robots conversationnels. Une lettre ouverte au fort écho médiatique publiée par des figures de la tech (dont Elon Musk) et des universitaires réclame un moratoire dans le développement de nouveaux modèles d’intelligence artificielle, dont les signataires soulignent à quel point il est difficile de les “comprendre, prédire ou contrôler de manière fiable”.\nCette lettre a été rapidement critiquée. En premier lieu par Andrew Ng qui souligne qu’en plus de l’impossibilité pratique de mettre en oeuvre un tel moratoire dans le cadre d’une recherche privée, ce type de sursis retarde la recherche sur des applications bénéfiques, notamment dans le domaine de la santé. Mais la critique est aussi venue de Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face), autrices citées dans la lettre en référence au concept de “Stochastic Parrots” (les modèles de langage répètent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d’apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens)."
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#mais-ne-nous-font-pas-oublier-certaines-autres-nouveautés-dignes-dintérêt",
+    "href": "infolettre/infolettre_13/index.html#mais-ne-nous-font-pas-oublier-certaines-autres-nouveautés-dignes-dintérêt",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "… mais ne nous font pas oublier certaines autres nouveautés dignes d’intérêt",
+    "text": "… mais ne nous font pas oublier certaines autres nouveautés dignes d’intérêt\nL’intensité de l’actualité autour de ChatGPT occulte beaucoup de faits qui auraient, dans un autre contexte, amené à des discussions passionnées.\nAinsi, la publication en open source de l’algorithme de recommandation de Twitter permet de mieux comprendre la manière dont fonctionne l’algorithme de recommandation de Twitter, notamment la manière dont des bulles de filtre peuvent advenir après avoir cliqué sur un post par curiosité.\nLa publication de ce code prend place quelques jours après la découverte qu’une partie importante du code de Twitter était déjà sur Github, sans doute suite à une fuite après l’un des licenciements massifs des derniers mois.\nPeut-être n’avez-vous pas remarqué mais Twitter n’a plus le même logo depuis lundi. L’oiseau bleu a été remplacé par un chien (un Shiba Inu), logo d’une cryptomonnaie, le dogecoin, dont Elon Musk avait fait une promotion controversée et dont les cours ont connu une envolée depuis.\nLe logiciel de création d’applications Docker (principal logiciel de conteneurisation) noue un partenariat avec HuggingFace, qui rassemble une immense bibliothèque de modèles, pour faciliter la réutilisation de modèles de deep learning. Avec cette approche, il est plus facile de proposer aux ré-utilisateurs de modèles des applications prêtes à l’emploi pour tester ou enrichir un modèle sur des infrastructures compatibles avec la technique de la conteneurisation, approche utilisée par les principales plateformes de data science modernes (notamment par celles s’appuyant sur le logiciel Onyxia).\nLa plateforme Observable propose un comparatif des principales syntaxes de manipulation de données (JavaScript, Python, R et SQL).\nEnfin, si vous appréciez les cartes, un hashtag à suivre est le #MapPromptMonday."
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#première-journée-du-réseau-le-17-avril",
+    "href": "infolettre/infolettre_13/index.html#première-journée-du-réseau-le-17-avril",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Première journée du réseau le 17 avril",
+    "text": "Première journée du réseau le 17 avril\n\nNous rappelons la journée du réseau le 17 avril, en présentiel 📅 (Newsletter #12). Les places en présentiel sont presque épuisées, ne tardez pas à vous inscrire ! Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom."
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#les-masterclass-avec-datascientest-continuent",
+    "href": "infolettre/infolettre_13/index.html#les-masterclass-avec-datascientest-continuent",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Les masterclass avec DataScientest continuent",
+    "text": "Les masterclass avec DataScientest continuent\nNos cycles de masterclass datascientest continuent ! Les cycles parallèles NLP et analyse d’image continuent.\nAu programme:\n\nAnalyse d’image, niveau confirmé (📅 14 avril, 10h-12h )\nNLP, niveau avancé (📅 12 mai, 10h-12h )\nAnalyse d’image, niveau avancé (📅 9 juin, 10h-12h )\n\nInscription ici !"
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars",
+    "href": "infolettre/infolettre_13/index.html#replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Replay “Bonnes pratiques pour la mise en production de projets data science” (30 mars)",
+    "text": "Replay “Bonnes pratiques pour la mise en production de projets data science” (30 mars)\nLe replay de la présentation succincte du contenu du cours de l’ENSAE “Bonnes pratiques pour la mise en production de projets data science” ayant eu lieu dans le cadre du programme 10% (voir Newsletter #12) est disponible sur le site du programme 10%."
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "href": "infolettre/infolettre_13/index.html#replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Replay de l’événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)",
+    "text": "Replay de l’événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)\nChristopher Kermorvant, chercheur spécialisé en OCRisation et fondateur de Teklia, a proposé au réseau une présentation très pédagogique sur l’extraction de texte avec des méthodes de deep learning.\nA partir de l’exemple de recensements de la fin du XIXe siècle, nous avons ainsi bénéficié d’une excellente introduction à l’histoire des techniques d’OCRisation et la manière dont aujourd’hui ces modèles fonctionnent en associant reconnaissance d’image et analyse textuelle.\nLe replay est ici !"
+  },
+  {
+    "objectID": "infolettre/infolettre_13/index.html#replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "href": "infolettre/infolettre_13/index.html#replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "title": "Infolettre Avril 2023, première quinzaine (#13)",
+    "section": "Replay de la présentation de la documentation collaborative Carpentries (28 mars)",
+    "text": "Replay de la présentation de la documentation collaborative Carpentries (28 mars)\nKate Burnett-Isaacs, de Statistics Canada, nous a présenté l’initiative Meta Academy / Carpentries permettant de construire une documentation francophone de référence sur R, Python et Git à destination des utilisateurs de données.\nLe replay est ici !"
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html",
+    "href": "infolettre/infolettre_11/index.html",
+    "title": "Infolettre n°11",
+    "section": "",
+    "text": "Note\n\n\n\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\nCe numéro reprend le format expérimenté à la fin de l’année 2022: un résumé des dernières actualités du monde de la data science précède la présentation plus classique des nouvelles du réseau."
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#chatgpt-continue-de-faire-parler",
+    "href": "infolettre/infolettre_11/index.html#chatgpt-continue-de-faire-parler",
+    "title": "Infolettre n°11",
+    "section": "ChatGPT continue de faire parler",
+    "text": "ChatGPT continue de faire parler\n\nL’actualité est encore largement dominée par les discussions autour de ChatGPT. Les débats continuent notamment sur la pertinence de ce type d’outil dans l’enseignement (cf. Télérama). L’article du New Yorker “ChatGPT is a blurry JPEG of the web” propose une analyse en profondeur de la manière dont les modèles de langage reconstruisent des réponses originales en mélangeant des corpus rencontrés lors de la phase d’entraînement.\nAlors qu’il est difficile d’avoir des informations sur le corpus de ChatGPT ou les méthodes d’apprentissage mises en oeuvre, des développeurs ont mis en place de nombreux chatbots thématiques sur https://beta.character.ai/ s’appuyant sur des modèles de langage ouverts.\nCe mois-ci, Facebook-Meta est également rentré dans la danse avec son modèle LLaMa, ouvert aux chercheurs et ayant vocation à fonctionner sur des installations moins gourmandes en ressources que les modèles GPT ou PaLM.\nA peine deux mois après le lancement tonitruant de ChatGPT, et la création d’un “code rouge” du côté de Google, le lancement difficile par Microsoft d’une version de test de son robot conversationnel dans son navigateur Bing montre que l’intégration à un moteur de recherche traditionnel n’est pas évidente, notamment pour éviter la diffusion de fausses informations. Alors que ChatGPT avait bénéficié d’un gros travail humain pour cadrer son comportement, il semblerait que l’IA de Bing soit moins consensuelle dans ses propos.\nPendant ce temps, la recherche sur les modèles de diffusion continue à avancer à grande vitesse. La dernière innovation est la capacité à reconstruire des images à partir d’IRM de l’activité du cerveau grâce au modèle Stable Diffusion."
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#traitement-de-données-tabulaires-arrow-et-polars-au-centre-du-jeu",
+    "href": "infolettre/infolettre_11/index.html#traitement-de-données-tabulaires-arrow-et-polars-au-centre-du-jeu",
+    "title": "Infolettre n°11",
+    "section": "Traitement de données tabulaires: Arrow et Polars au centre du jeu",
+    "text": "Traitement de données tabulaires: Arrow et Polars au centre du jeu\n\nDu côté des données tabulaires plus traditionnelles, Apache Arrow continue de s’affirmer comme un incontournable.\nLa version 2.0 de Pandas qui vient de sortir permet de plus facilement s’appuyer, en arrière-plan, sur Arrow plutôt que Numpy qui offre des performances et des fonctionnalités limitées sur données non numériques (cf. https://datapythonista.me). Il s’agissait d’une des limites majeures de Pandas, identifiées dès 2017 par son créateur Wes McKinney (voir ici) qui est également très impliqué dans le développement d’Apache Arrow.\nLa librairie Polars connait une certaine hype et va sans doute devenir dans les mois à venir une librairie incontournable, en alternative à Pandas. La dernière version de DuckDB (sortie mi-février) renforce l’interconnexion entre ces deux écosystèmes (exemples). Si vous voulez en savoir plus sur Polars, il est recommandé de suivre l’évolution de la liste “Awesome Polars” faite par Damien Dotta (relayée par la très bonne newsletter du site Data Elixir) et de lire le post à venir prochainement sur le blog de notre réseau.\nPar ailleurs, l’article de Jordan Tigani “Big data is dead” vaut le détour."
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#huggingface.js-lapi-dhuggingface-directement-accessible-depuis-un-navigateur-web",
+    "href": "infolettre/infolettre_11/index.html#huggingface.js-lapi-dhuggingface-directement-accessible-depuis-un-navigateur-web",
+    "title": "Infolettre n°11",
+    "section": "Huggingface.js: l’API d’HuggingFace directement accessible depuis un navigateur web",
+    "text": "Huggingface.js: l’API d’HuggingFace directement accessible depuis un navigateur web\n\nHuggingface et Observable sont chacun devenus des incontournables dans leur domaine (voir notre newsletter de décembre). Alors un rapprochement entre ces deux univers, permettant d’utiliser de nombreux modèles d’apprentissage via l’API d’HuggingFace directement dans le navigateur, ça donne envie de s’amuser.\nLe notebook, disponible sur Observable, illustre la richesse des fonctionnalités disponibles."
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#première-journée-du-réseau-en-avril",
+    "href": "infolettre/infolettre_11/index.html#première-journée-du-réseau-en-avril",
+    "title": "Infolettre n°11",
+    "section": "Première journée du réseau en avril",
+    "text": "Première journée du réseau en avril\n\nNotre réseau organise des événements virtuels depuis un an. Pour renforcer l’esprit communautaire, nous proposons une journée du réseau le 17 avril, en présentiel 📅.\nCet événement aura lieu dans le tiers-lieu la Tréso à Malakoff. Pendant la journée se succèderont plusieurs séquences pour construire ensemble le réseau, partager autour du sujet de la data science et échanger ensemble.\nLe programme et les modalités pratiques d’inscription seront communiqués prochainement ! Vous pouvez néanmoins déjà marquer la date dans votre calendrier."
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#présentation-de-la-documentation-collaborative-carpentries",
+    "href": "infolettre/infolettre_11/index.html#présentation-de-la-documentation-collaborative-carpentries",
+    "title": "Infolettre n°11",
+    "section": "Présentation de la documentation collaborative Carpentries",
+    "text": "Présentation de la documentation collaborative Carpentries\nPour favoriser l’adoption des langages R, Python et Git dans les administrations, le programme ModernStat piloté par l’OCDE et Statistics Canada, a lancé un projet nommé Meta Academy et s’est rapproché de l’organisation américaine Carpentries dont l’objectif est de proposer des parcours progressifs de formation dans les langages open source, associés à des documentations disponibles de manière ouverte.\nL’absence de contenu en Français et l’orientation principalement académique des contenus a amené le programme ModernStat à proposer aux Carpentries de créer de nouveaux parcours de formations en Français. Ces programmes seraient créés par des membres de la communauté francophone des utilisateurs des langages R, Python et Git.\nKate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative le mardi 28 mars à 15h 📅 (invitation Outlook). La présentation aura lieu en Anglais et sera suivie d’un échange (Français et Anglais possibles). Si vous êtes intéressés par la manière dont les nombreux contenus créés par les membres du réseau pourraient prendre place dans ce cadre, n’hésitez pas à venir pour en savoir plus ! Informations pratiques ici !"
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#masterclass-datascientest",
+    "href": "infolettre/infolettre_11/index.html#masterclass-datascientest",
+    "title": "Infolettre n°11",
+    "section": "Masterclass datascientest",
+    "text": "Masterclass datascientest\n\nLes inscriptions à nos cycles de masterclass datascientest sont toujours ouvertes ! Pendant le mois de mars, nous continuerons d’avancer dans les deux cursus parallèles.\nEn premier lieu, la masterclass d’introduction au deep learning (10 mars de 10h à 12h 📅) permettra d’initier notre parcours de computer vision avec la présentation de certains concepts centraux du deep learning (perceptron, convolution, transfer learning…).\nLa deuxième session mensuelle, ayant lieu le 24 mars de 10h à 12h 📅 sera elle l’occasion d’avancer dans notre parcours NLP grâce au sujet de la similarité textuelle et de la classification de textes avec des méthodes d’embeddings.\n\n\n\n\n\n\nNote\n\n\n\nPour vous inscrire, il suffit de remplir ce formulaire !"
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#onyxia",
+    "href": "infolettre/infolettre_11/index.html#onyxia",
+    "title": "Infolettre n°11",
+    "section": "Onyxia",
+    "text": "Onyxia\n\nLe dernier post sur le site web du réseau revient sur le projet Onyxia, le logiciel initié par l’équipe innovation de l’Insee et mis à disposition sur Github pour permettre à d’autres organisations de développer une infrastructure de data science à l’état de l’art.\nPour en savoir plus sur le contexte de naissance d’Onyxia, les choix techniques mis en oeuvre ou la communauté des réutilisateurs, c’est par ici."
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#replay-de-lévénement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "href": "infolettre/infolettre_11/index.html#replay-de-lévénement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "title": "Infolettre n°11",
+    "section": "Replay de l’événement autour des packages facilitant l’accès à l’open data de l’Insee",
+    "text": "Replay de l’événement autour des packages facilitant l’accès à l’open data de l’Insee\n\nLe replay des présentations des packages Doremifasol (R) et Pynsee (Python) lors de notre événement du 13 février autour des packages facilitant l’accès à l’open data de l’Insee est en ligne !\nLa vidéo et les supports présentés sont mis à disposition sur le site web du réseau"
+  },
+  {
+    "objectID": "infolettre/infolettre_11/index.html#programme-10",
+    "href": "infolettre/infolettre_11/index.html#programme-10",
+    "title": "Infolettre n°11",
+    "section": "Programme 10%",
+    "text": "Programme 10%\nLa journée de lancement du programme 10% annonce une saison prometteuse ! Plus de 50 personnes, issues d’un large panel d’administrations, se sont rencontrées et ont échangées autour de projets mutualisables. Au final, une demi-douzaine de projets ont déjà été identifiés.\nSi vous n’étiez pas disponible lors de cette première journée, il est possible à tout moment de rejoindre cette communauté. Le prochain atelier a lieu le 14 mars au Lieu de la Transformation Publique 📅 !"
   },
   {
     "objectID": "infolettre/index.html",
     "href": "infolettre/index.html",
     "title": "Archives des infolettres",
     "section": "",
-    "text": "Retrouvez sur cette page les infolettres mensuelles précédemment envoyées :\n\nInfolettre n°9, Janvier 2023 (Hors série), rétrospective de l’année 2022 du réseau\nInfolettre n°8, Janvier 2023, rétrospective de l’année 2022 de la data science\nInfolettre n°7, Décembre 2022\nInfolettre n°6, Novembre 2022\nInfolettre n°5, Juin 2022\nInfolettre n°4, Mai 2022\nInfolettre n°3, Avril 2022\nInfolettre n°2, Mars 2022\nInfolettre n°1, Février 2022"
+    "text": "Retrouvez sur cette page les infolettres mensuelles précédemment envoyées :\n\nInfolettre n°9, Janvier 2023 (Hors série), rétrospective de l’année 2022 du réseau\nInfolettre n°8, Janvier 2023, rétrospective de l’année 2022 de la data science\nInfolettre n°7, Décembre 2022\nInfolettre n°6, Novembre 2022\nInfolettre n°5, Juin 2022\nInfolettre n°4, Mai 2022\nInfolettre n°3, Avril 2022\nInfolettre n°2, Mars 2022\nInfolettre n°1, Février 2022\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nInfolettre Avril 2023, première quinzaine (#13)\n\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2023\n\n\n\n\n\n\n  \n\n\n\n\nInfolettre Mars 2023, deuxième quinzaine (#12)\n\n\n\n\n\n\n\n\n\n\n\n\nMar 20, 2023\n\n\n\n\n\n\n  \n\n\n\n\nInfolettre estivale, Juillet 2023 (#14)\n\n\n\n\n\n\n\n\n\n\n\n\nJul 1, 2023\n\n\n\n\n\n\n  \n\n\n\n\nInfolettre n°10\n\n\n\n\n\nInfolettre du mois de Février 2023\n\n\n\n\n\n\nJan 30, 2023\n\n\n\n\n\n\n  \n\n\n\n\nInfolettre n°11\n\n\n\n\n\nInfolettre du mois de Mars 2023\n\n\n\n\n\n\nMar 1, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html",
+    "href": "infolettre/infolettre_10/index.html",
+    "title": "Infolettre n°10",
+    "section": "",
+    "text": "Vous désirez intégrer la liste de diffusion ? Un mail à ssphub-contact@insee.fr suffit"
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html#un-événement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "href": "infolettre/infolettre_10/index.html#un-événement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee",
+    "title": "Infolettre n°10",
+    "section": "Un événement autour des packages facilitant l’accès à l’open data de l’Insee",
+    "text": "Un événement autour des packages facilitant l’accès à l’open data de l’Insee\n\nAprès les présentations d’observable et de gridviz nous vous proposons un nouvel événement. Celui-ci sera autour de l’open data à travers la présentation des packages facilitant la récupération de données de l’Insee disponibles depuis le site web ou les API.\nDeux présentations sont prévues : - Pierre Lamarche présentera le package  doremifasol. C’est notamment grâce à ce package que la documentation utilitR peut s’appuyer sur des données bien connues des utilisateurs d’open data (Filosofi, recensement…) - Hadrien Leclerc nous présentera le package  Pynsee qui est utilisé depuis deux ans à l’ENSAE pour apprendre aux futurs data scientists à récupérer des données de cadrage.\nCes deux présentations seront suivies d’un temps d’échange.\nCet événement aura lieu le 13 février de 15h à 16h30 (📅 invitation Outlook). Si vous êtes utilisateurs de données, que vous veniez de l’Insee ou non, ces packages peuvent vous intéresser !"
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html#masterclass-datascientest",
+    "href": "infolettre/infolettre_10/index.html#masterclass-datascientest",
+    "title": "Infolettre n°10",
+    "section": "Masterclass datascientest",
+    "text": "Masterclass datascientest\n\nLes masterclass organisées avec l’organisme de formation spécialisé datascientest reprennent ! Après une première masterclass au mois de décembre consacrée au MLOps, notre réseau va proposer de nouvelles séances.\nLes premières séances vont s’organiser autour de deux cursus parallèles, qui commenceront par des introductions pour monter graduellement en niveau et se rapprocher des cas d’usages que rencontrent nos data scientists.\nLe premier parcours sera orienté autour des problématiques de NLP. La première séance aura lieu le 10 février, de 10h à 12h et constituera une introduction au NLP avec un retour sur certains concepts centraux (preprocessing, tokenisation, lemmatisation…) et des exemples d’applications avec le package SpaCy. Une deuxième séance dans ce parcours est déjà programmée, le 24 mars de 10h à 12h, sur le thème de la similarité textuelle et de la classification de textes grâce aux méthodes d’embeddings.\nLe deuxième parcours cible la problématique de l’analyse d’images. Une première séance, qui aura lieu le 10 mars de 10h à 12h reviendra sur certains concepts centraux du deep learning (perceptron, convolution, transfer learning…). Les séances suivantes, dont les dates n’ont pas encore été arrêtées, s’intéresseront à des cas d’usages comme l’OCRisation ou la détection d’objets dans des images.\n\n\n\n\n\n\nNote\n\n\n\nPour vous inscrire, il suffit de remplir ce formulaire !"
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html#questionnaire-sur-vos-besoins-en-formation-data-science",
+    "href": "infolettre/infolettre_10/index.html#questionnaire-sur-vos-besoins-en-formation-data-science",
+    "title": "Infolettre n°10",
+    "section": "Questionnaire sur vos besoins en formation data science",
+    "text": "Questionnaire sur vos besoins en formation data science\n\nEn cette période de recensement, le réseau propose également le sien ! Pour déterminer au mieux la répartition des besoins en formation sur les sujets data science et ainsi pouvoir proposer des événements pertinents, nous vous proposons un questionnaire sur vos besoins en formation."
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html#utilitr-recherche-des-rédacteurs-dexercices",
+    "href": "infolettre/infolettre_10/index.html#utilitr-recherche-des-rédacteurs-dexercices",
+    "title": "Infolettre n°10",
+    "section": "utilitR recherche des rédacteurs d’exercices !",
+    "text": "utilitR recherche des rédacteurs d’exercices !\n\nDans le but de continuer à développer utilitR, documentation collaborative et ouverte, l’équipe du projet souhaite encourager des contributions volontaires pour ajouter des exercices à chaque fiche thématique. L’objectif est de produire pour chaque chapitre un ensemble d’exercices, de difficulté graduelle, permettant de mettre en application les concepts présentés dans la fiche.\n\nCes exercices seraient accessibles depuis le site web mais aussi à travers le portail de formation du SSP Cloud, sous la forme de notebooks d’autoformation.\nL’équipe du projet utilitR est donc à la recherche des personnes motivées pour rédiger des exercices ou mettre à disposition des bouts de code ou des exercices déjà préparés. Si vous désirez apporter votre pierre à l’édifice, toute contribution, même modeste, sur cette page, sera appréciée par l’équipe utilitr.\nCette évolution de la documentation vise à prolonger l’effort continu pour construire une documentation vivante, interactive et originale. L’esthétique du site web book.utilitr.org a ainsi été revue récemment afin de rendre la documentation plus ergonomique tout en ajoutant des fonctionnalités utiles aux lecteurs, comme la possibilité de surligner ou de prendre des notes."
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html#proposez-un-billet-de-blog",
+    "href": "infolettre/infolettre_10/index.html#proposez-un-billet-de-blog",
+    "title": "Infolettre n°10",
+    "section": "Proposez un billet de blog !",
+    "text": "Proposez un billet de blog !\n\nLe site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. Vos idées et contributions sont les bienvenues pour l’enrichir !\nPour souligner l’aspect collectif de cette section, un guide des contributeurs vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de discussion pour définir le sujet du billet aux outils proposés pour faciliter la rédaction et la soumission de celui-ci depuis Github ."
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html#la-saison-2-du-programme-10-arrive",
+    "href": "infolettre/infolettre_10/index.html#la-saison-2-du-programme-10-arrive",
+    "title": "Infolettre n°10",
+    "section": "La saison 2 du programme 10% arrive",
+    "text": "La saison 2 du programme 10% arrive\n\nL’attente était insoutenable mais la nouvelle saison de 10% est enfin là ! Rejoignez ce programme, issu des recommandations du rapport de l’Inspection Générale de l’Insee et de la DINUM, où des data scientists proposent de consacrer jusqu’à 10% de leur temps de travail à des projets transversaux !\nAu-delà de la participation à ces projets, le programme 10% est également l’opportunité d’échanger des idées avec des data scientists d’autres administrations et de bénéficier de formations.\nAprès un webinaire d’information sur le programme le 31 janvier (inscription via eventbrite), la journée de lancement de la saison 2 se tiendra le 14 février au Bercy Lab (plus d’infos à venir).\nCette saison, plus longue que la première, permettra de pérenniser certains des projets de la saison 1 mais aussi de lancer de nouveaux projets.\nInscrivez-vous dès maintenant pour ne pas manquer la saison 2 de 10%!\n\n\n\n\n\n\nNote\n\n\n\nPour plus d’information sur le programme : lab-ia@data.gouv.fr"
+  },
+  {
+    "objectID": "infolettre/infolettre_10/index.html#report-de-la-journée-de-la-donnée",
+    "href": "infolettre/infolettre_10/index.html#report-de-la-journée-de-la-donnée",
+    "title": "Infolettre n°10",
+    "section": "Report de la journée de la donnée",
+    "text": "Report de la journée de la donnée\nLa journée de la donnée organisée par l’Administrateur Ministériel des Données, Algorithmes et Codes sources (AMDAC) du Ministère de la Santé, initialement prévue le 31 janvier, est reportée à une date ultérieure."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html",
+    "href": "infolettre/infolettre_12/index.html",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "",
+    "text": "{{% callout %}}\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\n{{% /callout %}}\nDu fait de la densité des actualités dans le monde de la data science et des multiples événements à venir dans le cadre de ce réseau, nous proposons d’accélérer le rythme de publication des newsletters."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#la-charte-graphique-de-linsee-sur-le-tapis-rouge",
+    "href": "infolettre/infolettre_12/index.html#la-charte-graphique-de-linsee-sur-le-tapis-rouge",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "La charte graphique de l’Insee sur le tapis rouge",
+    "text": "La charte graphique de l’Insee sur le tapis rouge\nLa semaine dernière avait lieu la cérémonie des Oscars. Grâce à un fil de Clara Dealberto, on peut mesurer l’influence des graphistes de l’Insee sur les stylistes des stars :\n\nLe fil, qui met à l’honneur l’Insee, vaut le détour ; n’hésitez pas à le consulter ! Ou à découvrir celui sur le Met Gala."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#chatgpt-encore-et-toujours",
+    "href": "infolettre/infolettre_12/index.html#chatgpt-encore-et-toujours",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "ChatGPT encore et toujours",
+    "text": "ChatGPT encore et toujours\n\nChatGPT continue de focaliser l’attention. Dans la veine de l’article désignant les modèles de langages sous le terme de “stochastic parrots” (“perroquets stochastiques”), Arthur Charpentier parle lui de “société du bullshit” pour désigner la manière dont ChatGPT offre, sous un raisonnement en apparence logique, de manière indifférenciée des absurdités et des vérités.\nEspérons que lorsque ChatGPT sera embarqué dans les voitures General Motors, il ne nous donnera pas de fausse indication pour changer un pneu ou ne se retournera pas contre le conducteur comme le ferait HAL 9000.\nUn article intéressant de Wired questionne d’ailleurs l’empreinte carbone que pourrait impliquer la généralisation des modèles de langage dans les moteurs de recherche, qui font face à des milliards de requêtes quotidiennes.\nAu moment où OpenAI rend public GPT-4, une version plus riche de son modèle GPT-3 qui servait de base à ChatGPT, l’un des cofondateurs d’OpenAI revient sur la stratégie d’ouverture (ou plutôt l’absence d’ouverture) d’OpenAI : “Nous avions tord” (voir The Verge). Hasard du calendrier, cette déclaration a eu lieu presque au même moment que la publication d’un robot conversationnel ouvert OpenChatKit. La concurrence est néanmoins âpre puisqu’une équipe de Microsoft a déjà proposé l’intégration à ChatGPT d’un module permettant d’interagir avec ChatGPT également par le biais d’images."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#des-turbulences-dans-la-silicon-valley",
+    "href": "infolettre/infolettre_12/index.html#des-turbulences-dans-la-silicon-valley",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Des turbulences dans la Silicon Valley",
+    "text": "Des turbulences dans la Silicon Valley\n\nUne infographie des faillites bancaires par Mike Bostock. Source: Notebook Observable\nL’autre actualité phare des quinze derniers jours est la faillite de la Silicon Valley Bank. Aux Etats-Unis, il s’agit de la plus principale faillite bancaire depuis 2008 aux Etats-Unis.\nLa Fed est rapidement intervenue pour endiguer la panique bancaire, même si la banque était en fait déjà dans ses radars bien avant sa faillite (voir NYT)."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#retour-sur-les-évolutions-récentes-du-monde-de-la-data-science",
+    "href": "infolettre/infolettre_12/index.html#retour-sur-les-évolutions-récentes-du-monde-de-la-data-science",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Retour sur les évolutions récentes du monde de la data science",
+    "text": "Retour sur les évolutions récentes du monde de la data science\nLe panorama technologique 2023 de Matt Turck confirme la tendance à la diversification des technologies à maîtriser pour mener un projet de data science. Cette complexification des outils et des rôles dans l’écosystème de la donnée, évoquée dans l’article “Is Data Scientist Still the Sexiest Job of the 21st Century?”, est ici confirmée.\nLes derniers sondages auprès des recruteurs américains montrent la popularité des data engineers, plus spécialisés que les data scientists dans la mise en oeuvre d’infrastructures techniques pour valoriser des données. Le profil de data engineer apparaît en deuxième place dans le classement des profils les plus recherchés par les recruteurs alors que les data scientists n’apparaissent plus dans les premières places du classement."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#le-big-data-nest-pas-mort",
+    "href": "infolettre/infolettre_12/index.html#le-big-data-nest-pas-mort",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Le big data n’est pas mort",
+    "text": "Le big data n’est pas mort\nUne réponse intéressante à l’article “Big data is dead” (voir Newsletter #11) revient sur l’intérêt de disposer de données historiques longues pour l’entrainement de modèles d’apprentissage."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#r-directement-dans-le-navigateur",
+    "href": "infolettre/infolettre_12/index.html#r-directement-dans-le-navigateur",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "R directement dans le navigateur",
+    "text": "R directement dans le navigateur\nAvec un peu de retard sur Python, il devient maintenant possible de faire du R directement depuis le navigateur web, c’est-à-dire sans installation du logiciel R, grâce à WebR. Cette approche est typique du Web Assembly où les langages de programmation sont directement utilisés depuis le navigateur, sans installation préalable."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#première-journée-du-réseau-en-avril-17-avril",
+    "href": "infolettre/infolettre_12/index.html#première-journée-du-réseau-en-avril-17-avril",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Première journée du réseau en avril (17 avril)",
+    "text": "Première journée du réseau en avril (17 avril)\n\nDéjà annoncée dans la Newsletter #11, nous rappelons la journée du réseau le 17 avril, en présentiel 📅.\nLe nombre de places dans l’espace à disposition étant limité, une invitation par mail et un lien d’inscription seront communiqués dans la semaine pour pouvoir participer à cet événement en présentiel dans le tiers-lieu la Tréso à Malakoff."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#bonnes-pratiques-en-python-présentation-lors-des-ateliers-du-programme-10-30-mars",
+    "href": "infolettre/infolettre_12/index.html#bonnes-pratiques-en-python-présentation-lors-des-ateliers-du-programme-10-30-mars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Bonnes pratiques en Python : présentation lors des ateliers du programme 10% (30 mars)",
+    "text": "Bonnes pratiques en Python : présentation lors des ateliers du programme 10% (30 mars)\nDans le cadre du programme 10%, des présentations ont lieu avant certains ateliers de travail sur les projets communautaires.\nLa prochaine présentation, qui aura lieu le jeudi 30 mars de 14h à 15h 📅, sera donnée par des membres du réseau. Elle portera sur une présentation des outils favorisant les bonnes pratiques de développement en Python et de l’intérêt de ces bonnes pratiques pour faciliter la mise en production de projets de data science. Il s’agira d’une présentation succincte du contenu du cours de l’ENSAE “Bonnes pratiques et mise en production de projets data science”.\nPlus d’infos à venir par le biais du canal Tchap de notre réseau."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#un-événement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "href": "infolettre/infolettre_12/index.html#un-événement-autour-de-locrisation-avec-christopher-kermorvant-29-mars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Un événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)",
+    "text": "Un événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)\nLe mercredi 29 mars de 15h à 16h 📅 nous recevons Christopher Kermorvant, chercheur spécialisé en OCRisation et fondateur de Teklia. Christopher mène actuellement plusieurs projets de numérisation de textes anciens, notamment d’OCRisation de vieux recensements avec l’INED.\nPendant cet événement, Christopher nous fera un état de l’art de l’OCRisation puis nous présentera des projets qu’il a pu mener récemment avec Teklia.\nIl est possible de suivre la présentation via Zoom ou, pour les personnes présentes à l’Insee, en 2-C-496.\nInvitation outlook ici"
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "href": "infolettre/infolettre_12/index.html#présentation-de-la-documentation-collaborative-carpentries-28-mars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Présentation de la documentation collaborative Carpentries (28 mars)",
+    "text": "Présentation de la documentation collaborative Carpentries (28 mars)\nPour rappel, Kate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative Meta Academy / Carpentries le mardi 28 mars à 15h 📅. Plus de détails dans la Newsletter #11.\nInvitation Outlook ici."
+  },
+  {
+    "objectID": "infolettre/infolettre_12/index.html#post-de-blog-sur-polars",
+    "href": "infolettre/infolettre_12/index.html#post-de-blog-sur-polars",
+    "title": "Infolettre Mars 2023, deuxième quinzaine (#12)",
+    "section": "Post de blog sur Polars",
+    "text": "Post de blog sur Polars\n\nPour faire suite à la Newsletter #11 qui présentait l’écosystème autour du package Python Polars, Romain Tailhurat (Insee) nous propose un post de blog pour découvrir ce package.\nCelui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales fonctionnalités de la librairie. Il est possible de tester le notebook en un seul clic sur le SSP Cloud ou sur Google Colab.\nVous pouvez également retrouver ce tutoriel depuis l’espace formation du SSP Cloud."
+  },
+  {
+    "objectID": "infolettre/infolettre_14/index.html",
+    "href": "infolettre/infolettre_14/index.html",
+    "title": "Infolettre estivale, Juillet 2023 (#14)",
+    "section": "",
+    "text": "{{% callout %}}\nVous désirez intégrer la liste de diffusion ? L’inscription se fait ici.\n{{% /callout %}}\nCette newsletter propose un petit cahier de vacances de la data science afin de profiter de la période estivale pour en apprendre plus sur les sujets en vogue et ainsi être fin prêt pour la rentrée 📖⛱️."
+  },
+  {
+    "objectID": "infolettre/infolettre_14/index.html#lectures-estivales",
+    "href": "infolettre/infolettre_14/index.html#lectures-estivales",
+    "title": "Infolettre estivale, Juillet 2023 (#14)",
+    "section": "Lectures estivales",
+    "text": "Lectures estivales\nPour commencer, quelques conseils de lecture sur les grands modèles de langage :\n\nUn article du Washington Post pour en savoir plus sur le corpus d’entrainement des grands modèles de langage (large langage model, LLM) ;\nPour comprendre la manière dont ChatGPT et les grands modèles de langage traduisent vos phrases afin de vous répondre, consultez ce post de blog sur les tokenizers (décomposition d’une chaine de caractères en unité minimale comme un mot ou une syllabe);\nEntre deux épisodes de votre série préférée, vous pourrez alterner avec ce cours de 2 heures sur les grands modèles de langage ;\nVous serez ensuite prêts à approfondir le sujet avec ce cours complet d’Huggingface sur le traitement automatique du langage.\n\nN’hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des images avec StableDiffusion ou Dall-E 2.\nLa version Python de l’ouvrage de référence Introduction to Statistical Learning vient de sortir et est disponible, comme la version R, gratuitement. Si après la lecture de celui-ci vous désirez mieux comprendre la question de l’interprétabilité des modèles de machine learning, c’est-à-dire les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d’apprentissage aboutissent à une décision, ce site web vous sera très utile.\nSi vous désirez en apprendre plus sur la question de la reproductibilité, les ressources suivantes vous seront utiles :\n\nBuilding reproducible analytical pipelines with R ;\nCoding for economists ;\nFormation aux bonnes pratiques R et Git par l’INSEE ;\nUn cours de l’ENSAE sur la mise en production de projets data science et, pour approfondir sur la mise en production de modèles de machine learning, une formation de l’Insee sur le MLOps, ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles.\n\nSi les semestres de l’année scolaire ne vous ont pas suffi, vous pouvez aussi profiter de l’été pour compléter votre formation en data science en suivant le missing semester de votre cursus.\nVous pouvez également reprendre l’ensemble des ressources mises à disposition dans le cadre du Funathon 2023, un événement pour lequel les équipes innovation de l’Insee et du SSM Agriculture et alimentation ont mis à disposition de nombreuses ressources R ou Python sur six thèmes concernant l’alimentation et la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté et de techniques pour permettre à la fois aux débutants en code et aux data scientists plus aguerris d’y trouver leur compte.\nEt pour un parcours complet de formation, rien de mieux que d’explorer de fond en comble le portail de formation du SSP Cloud.\nAprès avoir lu tout ceci, vous serez prêts pour les événements data science de la rentrée comme le hackathon du mobidatalab sur le thème de l’amélioration des services de mobilité urbaine (15 et 16 septembre).\nBonnes vacances ! Et n’oubliez pas de profiter pleinement des vacances pour oublier ChatGPT quelques temps ! 🌞🌊⛰️"
   }
 ]

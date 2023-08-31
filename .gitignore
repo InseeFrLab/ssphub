@@ -10,3 +10,4 @@ go.sum
 .hugo_build.lock
 
 /.quarto/
+_site/

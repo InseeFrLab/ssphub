@@ -4,10 +4,13 @@ project:
     - index.qmd
     - about.qmd
     - event/*.qmd
-    - infolettre/*md
+    - infolettre/*.qmd
+    - infolettre/**/*.qmd
     - posts/*.qmd
     - course/*.qmd
 
+title-block-banner: "#6886bb"
+title-block-banner-color: white
 
 website:
   title: "SSPHub"
@@ -32,6 +35,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
-
-
+    page-layout: article
