@@ -1,0 +1,25 @@
+---
+title: R for Data Science
+description: |
+  Un incontournable écrit par Hadley Wickham
+  afin de faire découvrir l'univers du 
+  `tidyverse` (`ggplot`, `dplyr`...) de manière
+  thématique
+categories:
+- R
+- website
+- book
+
+date: "2021-04-27T00:00:00Z"
+image: featured.png
+
+# Optional external URL for project (replaces project detail page).
+external_link: "https://r4ds.had.co.nz/"
+
+links:
+url_code: ""
+url_pdf: ""
+url_slides: ""
+url_video: ""
+---
+

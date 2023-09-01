@@ -1,9 +1,9 @@
 ---
 title: Utiliser Git dans Jupyter Notebook ? 
-summary: |
+description: |
   Un extrait du cours
   de [_Python pour la data-science_](https://pythonds.linogaliana.fr/) de l'ENSAE
-tags:
+categories:
 - Git
 - Python
 date: "2022-01-01T00:00:00Z"
@@ -11,9 +11,7 @@ date: "2022-01-01T00:00:00Z"
 # Optional external URL for project (replaces project detail page).
 external_link: "https://pythonds.linogaliana.fr/course/git/"
 
-image:
-  caption: Git logo
-  focal_point: Smart
+image: featured.png
 
 links:
 - icon: blog

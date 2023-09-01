@@ -1,22 +1,22 @@
 ---
-title: "Apprentissage profond, par Yann LeCun"
-summary: |
-  Une formation avec l'une des pointures mondiales
-  du _Deep Learning_
-tags:
-- Machine Learning
-- Deep Learning
-date: "2016-04-27T00:00:00Z"
+title: Parcours complet sur le MLOps
+description: |
+  Un site web très complet qui fait un effort
+  de synthèse sur l'écosystème foisonnant du MLOps
+categories:
+- Python
+- MLOps
+- course
+
+date: "2023-02-01T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://atcold.github.io/pytorch-Deep-Learning/fr/"
+external_link: "https://madewithml.com/#mlops"
 
-image:
-  caption:
-  focal_point: Smart
+image: featured.png
 
 links:
-url_code: ""
+url_code: "https://github.com/GokuMohandas/Made-With-ML"
 url_pdf: ""
 url_slides: ""
 url_video: ""

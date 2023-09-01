@@ -1,0 +1,31 @@
+---
+title: Data visualisation with d3.js
+description: |
+  `d3.js` est la librairie favorite des spécialistes de 
+  _dataviz_ en `Javascript`. Dans cette série de notebooks, 
+  proposée par Arthur Katossky,
+  vous découvrirez comment utiliser la librairie pour
+  construire des visualisations de données réactives.
+categories:
+- observable
+- opensource
+- javascript
+- MadeByUs
+- dataviz
+date: "2023-01-16T00:00:00Z"
+image: featured.png
+
+# Optional external URL for project (replaces project detail page).
+external_link: "https://observablehq.com/collection/@katossky/data-visualisation-with-d3-js"
+
+
+links:
+- name: Découvrir d3.js !
+  url: https://observablehq.com/collection/@katossky/data-visualisation-with-d3-js
+url_code: "https://observablehq.com/collection/@katossky/data-visualisation-with-d3-js"
+url_pdf: ""
+url_slides: ""
+url_video: ""
+
+---
+
