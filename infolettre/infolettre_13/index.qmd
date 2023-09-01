@@ -1,55 +1,31 @@
 ---
-title: Infolettre Avril 2023, première quinzaine (#13)
-#subtitle: 
-toc: true
-summary: |
-  Infolettre du mois d'avril, première quinzaine
-# Link this post with a project
-#projects: [dataviz, recap2022]
+title: Infolettre n°13
+description: |
+  Infolettre du mois d'__Avril 2023__
 
 # Date published
-date: '2023-03-20T00:00:00Z'
+date: '2023-04-01'
+number: 13
 
-# Date updated
-lastmod: '2023-03-20T00:00:00Z'
-
-# Is this an unpublished draft?
-draft: false
-
-# Show this page in the Featured widget?
-featured: true
-
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-#image:
-#  focal_point: ''
-#  placement: 2
-#  preview_only: false
+image: featured.jpg
 
 authors:
-  - linogaliana
+  - Lino Galiana
 
 tags:
-#  - retrospective
-#  - observable
-#  - quarto
-#  - deep learning
   - infolettre
   - chatGPT
 
 categories:
-#  - Insee
-#  - Retrospective
   - Infolettre
 ---
 
-{{% callout %}}
+
+:::{.callout-note}
 
 __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
 
-{{% /callout %}}
-
-<br>
+:::
 
 # Actualités de la data science
 
@@ -65,8 +41,8 @@ Face à la recrudescence des montages utilisant `Midjourney`, qu'il s'agisse de 
 d'images à vocation humoristique, _Le Monde_ a publié un
 guide pour [reconnaître une image générée par une IA](https://www.lemonde.fr/les-decodeurs/article/2023/03/30/comment-reconnaitre-une-image-generee-par-midjourney_6167525_4355770.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D).
 
-![](https://preview.redd.it/pope-francis-goes-to-space-v0-7e9161rhoypa1.png?width=640&crop=smart&auto=webp&s=75d424b86993ca3b081e4182e774b51b4b6d3bce)
-_Source: [Reddit](https://www.reddit.com/r/midjourney/comments/1221l3j/pope_francis_goes_to_space/)_
+![Exemple d'image générée par IA (_source: [Reddit](https://www.reddit.com/r/midjourney/comments/1221l3j/pope_francis_goes_to_space/)_)](https://preview.redd.it/pope-francis-goes-to-space-v0-7e9161rhoypa1.png?width=640&crop=smart&auto=webp&s=75d424b86993ca3b081e4182e774b51b4b6d3bce)
+
 
 ## ... qui alimentent les débats autour de la place de l'IA dans la société et notre économie numérique...
 
@@ -78,7 +54,7 @@ Par ailleurs, la question de l'ouverture des corpus ayant servi à entraîner ce
 
 La publication en _open source_ de modèles de langage est donc un enjeu d'indépendance pour les organisations intéressées par l'utilisation de _chatbots_ ou l'extraction d'information. Cette publication continue à suivre un rythme presque quotidien. Cet [état de l'art des modèles publiés en open source](https://arxiv.org/pdf/2301.04655.pdf) publié en janvier est déjà largement dépassé. Et [celui-ci](https://arxiv.org/pdf/2303.18223.pdf) ne sera probablement plus à jour tout aussi rapidement.
 
-![](featured.jpg) 
+![](featured.jpg){fig-align="center"} 
 
 Dans la dernière quinzaine, l'une des principales annonces est la publication par [`LAION`](https://laion.ai/blog/)
 d'[`OpenFlamingo`](https://laion.ai/blog/open-flamingo/), une version _open source_
@@ -175,7 +151,7 @@ que nous organisons.
 
 ## Première journée du réseau le 17 avril
 
-<img src="treso.webp" alt="La Tréso" width="500"> 
+![](treso.webp){fig-align="center" width=30%}
 
 Nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅 ([_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/)).
 Les places en présentiel sont

@@ -1,54 +1,29 @@
 ---
-title: Infolettre estivale, Juillet 2023 (#14)
-#subtitle: 
-toc: true
-summary: |
-  Infolettre estivale
-# Link this post with a project
-#projects: [dataviz, recap2022]
+title: Infolettre n°14
+description: |
+  Infolettre estivale, __Juillet 2023__
 
 # Date published
-date: '2023-07-01T00:00:00Z'
+date: '2023-07-01'
+number: 14
 
-# Date updated
-lastmod: '2023-07-01T00:00:00Z'
-
-# Is this an unpublished draft?
-draft: false
-
-# Show this page in the Featured widget?
-featured: true
-
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-#image:
-#  focal_point: ''
-#  placement: 2
-#  preview_only: false
+image: featured.png
 
 authors:
-  - linogaliana
+  - Lino Galiana
 
 tags:
-#  - retrospective
-#  - observable
-#  - quarto
-#  - deep learning
   - infolettre
 
 categories:
-#  - Insee
-#  - Retrospective
   - Infolettre
 ---
 
-{{% callout %}}
+:::{.callout-note}
 
 __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
 
-{{% /callout %}}
-
-<br>
+:::
 
 
 Cette _newsletter_ propose un petit cahier de vacances
@@ -105,4 +80,4 @@ sur le thème de l'amélioration des services de mobilité urbaine (15 et 16 sep
 
 __Bonnes vacances ! Et n'oubliez pas de profiter pleinement des vacances pour oublier `ChatGPT` quelques temps !__ 🌞🌊⛰️
 
-![](bye.png)
+![](bye.png){fig-align="center"}
