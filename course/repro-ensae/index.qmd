@@ -17,14 +17,10 @@ date: "2022-04-27T00:00:00Z"
 image: featured.png
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://ensae-reproductibilite.netlify.app/"
-
-image:
-  caption: ENSAE
-  focal_point: Smart
+external_link: "https://ensae-reproductibilite.github.io/website/"
 
 links:
-url_code: "https://github.com/linogaliana/ensae-reproductibilite-website"
+url_code: "https://github.com/ensae-reproductibilite/website"
 url_pdf: ""
 url_slides: ""
 url_video: ""
