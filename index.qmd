@@ -9,14 +9,10 @@ css: homepage.css
 
 :::: {.grid .column-page}
 
-::::: {.headline .g-col-lg-6 .g-col-12 .g-col-md-12}
+::::: {.headline .g-col-lg-8 .g-col-12 .g-col-md-12}
 
 :::::: h1
 Le réseau des data scientists de la statistique publique
-::::::
-
-:::::: h2
-SSPHub
 ::::::
 
 ```{=html}
@@ -29,7 +25,7 @@ Le `SSPHub` centralise et vise à faire connaître le contenu créé par
 le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
 
 Les
-événements :date: organisés ou relayés
+événements 📅 organisés ou relayés
 par le réseau sont listés [plus bas 👇](#event).
 Sur ce site, vous pouvez découvrir les [projets 👉](./projects) menés 
 par les membres du réseau ou des [articles de blog 👉](./posts)
@@ -43,11 +39,11 @@ Pour en savoir plus sur les objectifs du réseau, sa philosophie,
 et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/manifeste)
 écrit collectivement. 
 
-
+<a href="/posts" class="hero-cta-alt btn-lg pl-md-4">Découvrir le blog ! {{< fa angle-right >}} </a>
 
 :::::
 
-::::: {.g-col-lg-6 .g-col-12 .g-col-md-12}
+::::: {.g-col-lg-4 .g-col-12 .g-col-md-12}
 ![](./assets/media/ssp-logo-reverse.png)
 :::::
 

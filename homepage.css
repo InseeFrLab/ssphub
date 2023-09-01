@@ -33,10 +33,14 @@
   .headline p {
     margin: 0;
     padding-bottom: 0.2rem;
+    font-weight: bolder;
+    line-height: 32px;   /* within paragraph */
+    margin-bottom: 30px; /* between paragraphs */
   }
   
   .headline a {
-    text-decoration: none;
+    text-decoration: underline;
+    color: white !important ;
   }
   
   .headline ul li {
