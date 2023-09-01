@@ -1,32 +1,16 @@
 ---
 title: Géomatique appliquée à la statistique
-summary: Une présentation simple des outils géomatiques récents qui permettent de stocker, traiter et diffuser l'information spatiale
+description: Une présentation simple des outils géomatiques récents qui permettent de stocker, traiter et diffuser l'information spatiale
 tags:
 - Dataviz
 - cartographie
 - Insee
-categories:
 - MadeByUs
 date: "2022-02-17T00:00:00Z"
+image: featured.jpg
 
 # Optional external URL for project (replaces project detail page).
 external_link: "https://www.insee.fr/fr/statistiques/6049652"
-
-image:
-  caption:
-  focal_point: Smart
-
-links:
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-# slides: example
 ---
 
 La cartographie thématique et les statistiques ont émergé progressivement au cours du 19e siècle du besoin des états naissants de se connaître, les deux disciplines ayant rapidement cultivé une forte interdépendance. La diffusion des statistiques territoriales a favorisé l'essor des représentations cartographiques modernes. En contrepartie, la cartographie a nourri les réflexions sur la prise en compte de l'espace dans l'étude des faits sociaux.

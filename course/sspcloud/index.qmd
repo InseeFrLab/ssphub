@@ -1,25 +1,27 @@
 ---
-title: R Packages
-summary: |
-  Un incontournable écrit par Hadley Wickham
-  afin d'apprendre à développer
-  des _packages_ `R`
-tags:
+title: Portail de la formation du SSPCloud
+description: |
+  Le SSPCloud, la plateforme _cloud_ 
+  développée par l'Insee, propose
+  un certain nombre de tutoriels
+  en `Python` ou `R`.
+categories:
 - R
-- website
-- book
+- Python
+- Bonnes pratiques
+- MadeByUs
+- Insee
 
-date: "2021-04-27T00:00:00Z"
+date: "2022-04-27T00:00:00Z"
+
+image: featured.png
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://r-pkgs.org/"
+external_link: "https://www.sspcloud.fr/formation"
 
-image:
-  caption: Couverture du livre
-  focal_point: Smart
 
 links:
-url_code: ""
+url_code: "https://www.sspcloud.fr/formation"
 url_pdf: ""
 url_slides: ""
 url_video: ""

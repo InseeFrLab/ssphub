@@ -1,23 +1,23 @@
 ---
-title: L'économétrie en grande dimension
-summary: 
-tags:
-- Econométrie
-- Insee
+title: Machine Learning in Python with scikit-learn
+description: |
+  Un MOOC de l'INRIA sur `scikit-learn`, l'écosystème
+  central du _Machine Learning_ en `Python`
 categories:
-- Insee
-date: "2022-02-17T00:00:00Z"
+- Machine Learning
+- Deep Learning
+- MOOC
+
+date: "2021-04-27T00:00:00Z"
+
+image: featured.png
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.insee.fr/fr/statistiques/4923129"
+external_link: "https://inria.github.io/scikit-learn-mooc/"
 
-image:
-  caption: Photo by rawpixel on Unsplash
-  focal_point: Smart
 
 links:
-- name: Git
-  url: https://github.com/InseeFrLab/grandedim
+url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""
@@ -29,5 +29,4 @@ url_video: ""
 #   Otherwise, set `slides = ""`.
 # slides: example
 ---
-
 

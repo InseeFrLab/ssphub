@@ -1,22 +1,23 @@
 ---
-title: Portail de la formation du SSPCloud
-summary: |
-  Le SSPCloud, la plateforme _cloud_ 
-  développée par l'Insee, propose
-  un certain nombre de tutoriels
-  en `Python` ou `R`.
-tags:
-- R
+title: Reproductibilité et bonnes pratiques pour les projets de data science
+description: |
+  Un site web complet pour découvrir la manière dont
+  des projets _data-science_ peuvent être valorisés
+  et maintenus dans le temps. 
+categories:
 - Python
+- Docker
 - Bonnes pratiques
 - MadeByUs
-categories:
+- book
 - Insee
 
 date: "2022-04-27T00:00:00Z"
 
+image: featured.png
+
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.sspcloud.fr/formation"
+external_link: "https://ensae-reproductibilite.netlify.app/"
 
 image:
   caption: ENSAE

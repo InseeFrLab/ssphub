@@ -1,6 +1,6 @@
 ---
 title: utilitR
-summary: |
+description: |
   Le projet `utilitR` est une documentation sur l’usage du logiciel
   `R` <i class="fa-brands fa-r-project"></i>, née à l’Insee,
   destinée à tout utilisateur intéressé par la manipulation de données.
@@ -13,7 +13,7 @@ summary: |
   Afin que les exemples soient concrets,
   tous les jeux de données sont issus du 
   [site de l'Insee](https://www.insee.fr/fr/accueil).
-tags:
+categories:
 - R
 - opensource
 - opendata
@@ -21,12 +21,10 @@ tags:
 - MadeByUs
 date: "2021-04-27T00:00:00Z"
 
+image: featured.png
+
 # Optional external URL for project (replaces project detail page).
 external_link: "https://www.utilitr.org/"
-
-image:
-  caption: Logo utilitR
-  focal_point: Smart
 
 links:
 - name: Découvrir utilitr.org !
@@ -35,12 +33,5 @@ url_code: "https://github.com/InseeFrLab/utilitR"
 url_pdf: ""
 url_slides: ""
 url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-# slides: example
 ---
 
