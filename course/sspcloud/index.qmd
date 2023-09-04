@@ -17,20 +17,6 @@ date: "2022-04-27T00:00:00Z"
 image: featured.png
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.sspcloud.fr/formation"
-
-
-links:
-url_code: "https://www.sspcloud.fr/formation"
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
-# Slides (optional).
-#   Associate this project with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
-#   Otherwise, set `slides = ""`.
-# slides: example
+website: "https://www.sspcloud.fr/formation"
 ---
 

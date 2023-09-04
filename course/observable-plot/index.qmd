@@ -1,0 +1,20 @@
+---
+title: Introduction à Observable Plot.js
+description: |
+  La librairie [`Plot.js`](https://observablehq.com/@observablehq/plot)
+  vise à faciliter l'utilisation des fonctionnalités graphiques de
+  `Javascript`. Elle propose une syntaxe très proche de celle 
+  des librairies `ggplot2` (`R`) ou `seaborn` (`Python`).
+categories:
+- observable
+- opensource
+- javascript
+- dataviz
+date: "2023-01-16T00:00:00Z"
+
+# Optional external URL for project (replaces project detail page).
+website: "https://observablehq.com/@observablehq/plot"
+
+image: featured.png
+---
+

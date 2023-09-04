@@ -11,12 +11,5 @@ date: "2016-04-27T00:00:00Z"
 image: featured.png
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://pandas.pydata.org/docs/user_guide/10min.html"
-
-links:
-url_code: ""
-url_pdf: ""
-url_slides: ""
-url_video: ""
-
+website: "https://pandas.pydata.org/docs/user_guide/10min.html"
 ---

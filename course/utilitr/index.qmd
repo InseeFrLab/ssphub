@@ -24,14 +24,8 @@ date: "2021-04-27T00:00:00Z"
 image: featured.png
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://www.utilitr.org/"
+website: "https://www.book.utilitr.org/"
 
-links:
-- name: Découvrir utilitr.org !
-  url: https://www.utilitr.org/
-url_code: "https://github.com/InseeFrLab/utilitR"
-url_pdf: ""
-url_slides: ""
-url_video: ""
+code: "https://github.com/InseeFrLab/utilitR"
 ---
 
