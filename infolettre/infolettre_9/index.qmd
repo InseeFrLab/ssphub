@@ -1,6 +1,6 @@
 ---
-title: Rétrospective 2022 de l'année du réseau
-subtitle: Une rétrospective interactive
+title: Infolettre n°9
+subtitle: Rétrospective 2022 de l'année du réseau
 description: |
   Après la rétrospective de l'année 2022
   de la _data science_, il est temps
@@ -19,6 +19,8 @@ categories:
   - Retrospective
   - Infolettre
   - Retrospective
+
+image: featured.png
 ---
 
 
@@ -212,25 +214,19 @@ de manière sécurisée un jeton pour l'API `Github`.
 <summary>
 Dérouler pour afficher une version non réactive
 </summary>
-
-<div>Projet <code>cartiflette</code></div>
-
+```
 
 
-<img src = "cartiflette.png" alt="Projet cartiflette"/>
+![Projet `cartiflette`](cartiflette.png)
 
-<div>Projet <code>Socratext</code></div>
+![Projet `Socratext`](socratext.png)
 
-<img src = "socratext.png" alt="Projet Socratext"/>
+![Projet `Gouvdown`](gouvdown.png)
 
-<div>Projet <code>gouvdown</code></div>
+![Projet `matchSIRET`](matchsiret.png)
 
-<img src = "gouvdown.png" alt="Projet gouvdown"/>
 
-<div>Projet <code>matchSIRET</code></div>
-
-<img src = "matchsiret.png" alt="Projet matchSIRET"/>
-
+```{=html}
 </details>
 ```
 
@@ -253,15 +249,10 @@ Réservez ce créneau pour découvrir cette librairie qui ouvre de nouvelles per
 
 [Télécharger l'invitation à l'événement sous format `Outlook`](gridviz.ics)
 
-
-<figure>
-    <img src="gridviz.png"
-         alt="Illustration de gridviz" width="70%">
-    <figcaption><i>Source: <a href="https://observablehq.com/@neocartocnrs/hello-gridviz" target="_blank">Notebook <code>Hello Gridviz</code> par <code>neocarto</code> sur <code>Observable</code></a></i></figcaption>
-</figure>
+![Source: [Notebook `Hello Gridviz` par `neocarto` sur `Observable`](https://observablehq.com/@neocartocnrs/hello-gridviz)](gridviz.png){width=70%}
 
 
-### Première place européenne au hackathon Big Data de l'ONU
+### Première place européenne au _hackathon_ Big Data de l'ONU
 
 Les résultats du _hackathon big data_ de l'ONU, ayant eu lieu du 7 au Novembre 2022, ont été annoncés ! 
 L'[équipe `Datadive`](https://github.com/InseeFrLab/hackathon-un-2022) - constituée de membres du réseau de l'INSEE, de la DGFIP et du CASD -

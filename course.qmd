@@ -5,6 +5,7 @@ listing:
   contents: course
   type: grid
   template: scripts/courses.ejs
+  sort: date
   #categories: true
 ---
 
