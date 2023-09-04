@@ -1,11 +1,11 @@
 ---
 title: R reproducibility toolkit for the practical researcher
-summary: |
+description: |
   Un site web très complet développé par des universitaires
   sud-américains pour présenter la manière dont les
   projets en `R` peuvent être construits de manière
   reproductible. 
-tags:
+categories:
 - R
 - website
 - Bonnes pratiques
@@ -15,9 +15,7 @@ date: "2021-04-27T00:00:00Z"
 # Optional external URL for project (replaces project detail page).
 external_link: "https://eliocamp.github.io/reproducibility-with-r/"
 
-image:
-  caption: Page d'accueil
-  focal_point: Smart
+image: featured.png
 
 links:
 url_code: "https://github.com/eliocamp/reproducibility-with-r"

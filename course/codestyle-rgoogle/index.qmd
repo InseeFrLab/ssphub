@@ -1,25 +1,22 @@
 ---
-title: DevOps for Data Science
-summary: |
-  Un site web très complet sur la manière
-  dont l'approche `DevOps` peut être
-  importée dans des projets _data-sciences_
-tags:
-- Docker
-- Bonnes Pratiques
-- website
+title: Google’s R Style Guide
+description: |
+  Un guide de référence sur les bonnes pratiques
+  dans l'écriture de code R
+categories:
+- R
+- book
+- bonnes pratiques
 
-date: "2021-04-27T00:00:00Z"
+date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://do4ds.com/"
+external_link: "https://google.github.io/styleguide/Rguide.html"
 
-image:
-  caption: Page d'accueil
-  focal_point: Smart
+image: featured.png
 
 links:
-url_code: "https://github.com/akgold/do4ds"
+url_code: ""
 url_pdf: ""
 url_slides: ""
 url_video: ""

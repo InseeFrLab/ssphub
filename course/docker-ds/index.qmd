@@ -1,23 +1,23 @@
 ---
-title: Formation Initiation au Deep Learning (FIDLE)
+title: DevOps for Data Science
 summary: |
-  Une formation du CNRS sur les problématiques
-  d'apprentissage automatique (_machine learning_)
-  et d'apprentissage profond (_deep learning_).
+  Un site web très complet sur la manière
+  dont l'approche `DevOps` peut être
+  importée dans des projets _data-sciences_
 tags:
-- Machine Learning
-- Deep Learning
-date: "2016-04-27T00:00:00Z"
+- Docker
+- Bonnes Pratiques
+- website
+
+date: "2021-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://gricad-gitlab.univ-grenoble-alpes.fr/talks/fidle/-/wikis/home"
+external_link: "https://do4ds.com/"
 
-image:
-  caption: FIDLE
-  focal_point: Smart
+image: featured.png
 
 links:
-url_code: ""
+url_code: "https://github.com/akgold/do4ds"
 url_pdf: ""
 url_slides: ""
 url_video: ""
