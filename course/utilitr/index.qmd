@@ -1,18 +1,24 @@
 ---
 title: utilitR
 description: |
-  Le projet `utilitR` est une documentation sur l’usage du logiciel
-  `R` <i class="fa-brands fa-r-project"></i>, née à l’Insee,
-  destinée à tout utilisateur intéressé par la manipulation de données.
+  <p>
+    Le projet <code>utilitR</code> est une documentation sur l’usage du logiciel
+    <i class="fa-brands fa-r-project"></i>, née à l’Insee,
+    destinée à tout utilisateur intéressé par la manipulation de données.
+  </p>
 
-  La documentation `utilitR` ne fait aucun pré-requis de niveau: 
-  à la fois le débutant
-  et l'utilisateur plus expert désirant découvrir un nouveau champ ou bénéficier
-  d'une aide-mémoire pourront trouver du contenu qui les intéresse.
+  <p>
+    La documentation <code>utilitR</code> ne fait aucun pré-requis de niveau: 
+    à la fois le débutant
+    et l'utilisateur plus expert désirant découvrir un nouveau champ ou bénéficier
+    d'une aide-mémoire pourront trouver du contenu qui les intéresse.
+  </p>
 
-  Afin que les exemples soient concrets,
-  tous les jeux de données sont issus du 
-  [site de l'Insee](https://www.insee.fr/fr/accueil).
+  <p>
+    Afin que les exemples soient concrets,
+    tous les jeux de données sont issus du 
+    <a href="https://www.insee.fr/fr/accueil">site de l'Insee</a>.
+  </p>
 categories:
 - R
 - opensource

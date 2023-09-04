@@ -1,10 +1,10 @@
 ---
 title: Portail de la formation du SSPCloud
 description: |
-  Le SSPCloud, la plateforme _cloud_ 
+  Le SSPCloud, la plateforme <em>cloud</em> 
   développée par l'Insee, propose
   un certain nombre de tutoriels
-  en `Python` ou `R`.
+  en <code>Python</code> <i class="fa-brands fa-python"></i> ou <code>R</code> <i class="fa-brands fa-r-project"></i>.
 categories:
 - R
 - Python

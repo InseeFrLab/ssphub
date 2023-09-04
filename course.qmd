@@ -3,5 +3,6 @@ title: "Liste de ressources utiles"
 listing:
   contents: course
   type: grid
-  #template: scripts/courses.ejs
+  template: scripts/courses.ejs
+  categories: true
 ---

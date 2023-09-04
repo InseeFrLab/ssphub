@@ -1,9 +1,9 @@
 ---
 title: DevOps for Data Science
-summary: |
+description: |
   Un site web très complet sur la manière
-  dont l'approche `DevOps` peut être
-  importée dans des projets _data-sciences_
+  dont l'approche <code>DevOps</code> peut être
+  importée dans des projets <em>data-science</em>.
 tags:
 - Docker
 - Bonnes Pratiques

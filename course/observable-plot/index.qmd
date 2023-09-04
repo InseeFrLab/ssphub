@@ -1,10 +1,10 @@
 ---
 title: Introduction à Observable Plot.js
 description: |
-  La librairie [`Plot.js`](https://observablehq.com/@observablehq/plot)
+  La librairie <a href="https://observablehq.com/@observablehq/plot"><code>Plot.js</code></a>
   vise à faciliter l'utilisation des fonctionnalités graphiques de
-  `Javascript`. Elle propose une syntaxe très proche de celle 
-  des librairies `ggplot2` (`R`) ou `seaborn` (`Python`).
+  <code>Javascript</code> <i class="fa-brands fa-js"></i>. Elle propose une syntaxe très proche de celle 
+  des librairies <code>ggplot2</code> (<i class="fa-brands fa-r-project"></i>) ou <code>seaborn</code> (<code>Python</code> <i class="fa-brands fa-python"></i>).
 categories:
 - observable
 - opensource

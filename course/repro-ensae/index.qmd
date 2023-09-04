@@ -1,9 +1,9 @@
 ---
-title: Reproductibilité et bonnes pratiques pour les projets de data science
+title: Mise en production de projets de data science
 description: |
   Un site web complet pour découvrir la manière dont
-  des projets _data-science_ peuvent être valorisés
-  et maintenus dans le temps. 
+  des projets <em>data-science</em> peuvent être valorisés
+  et maintenus dans le temps.
 categories:
 - Python
 - Docker
