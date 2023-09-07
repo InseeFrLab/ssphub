@@ -1,50 +1,28 @@
 ---
-title: Le plongement lexical, ou comment apprendre à lire à un ordinateur
-subtitle: Introduction aux méthodes de traitement du langage naturel
+title: "Le plongement lexical, ou comment apprendre à lire à un ordinateur"
+author: Lucas Malherbe
 
 # Summary for listings and search engines
-summary: Introduction aux méthodes de traitement du langage naturel
+description: |
+  Introduction aux méthodes de traitement du langage naturel
 
-
-# Link this post with a project
-projects: []
 
 # Date published
 date: '2022-09-19T00:00:00Z'
 
-# Date updated
-lastmod: '2022-09-19T00:00:00Z'
-
-# Is this an unpublished draft?
-draft: false
-
-# Show this page in the Featured widget?
-featured: false
-
 # Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-image:
-  focal_point: ''
-  placement: 2
-  preview_only: false
+image: featured.jpg
 
-authors:
-  - lucasmalherbe
-
-tags:
-  - NLP
 
 categories:
   - Insee
   - NLP
-
-toc: true
 ---
 
 
 Avec le développement de la collecte automatisée d'information numérique, les données textuelles sont devenues omniprésentes, que ce soit sous la forme d’e-mails, de réponses à des enquêtes, d'articles de presse ou encore de commentaires sur les réseaux sociaux. 
 Ces données peuvent être une source très riche d’informations mobilisable par les statisticiens, pour peu qu'ils parviennent à en faire un traitement statistique. Ainsi, une problématique récurrente dans la statistique publique consiste à classer des informations formulées en langage courant (professions, noms de produits, noms de communes, etc.) dans des nomenclatures
-standardisées (PCS[^1], NAF[^2], COG[^3]...). 
+standardisées (PCS[^1], NAF[^2], COG[^cog]...). 
 
 [^1]: La nomenclature `PCS` (professions et catégories socioprofessionnelles)
 sert à la codification des professions dans le recensement et les enquêtes auprès des ménages. 
@@ -61,7 +39,7 @@ ou de l'industrie automobile.
 Une description plus
 complète de cette nomenclature et de son historique est disponible sur [le site de l'Insee](https://www.insee.fr/fr/information/2406147)
 
-[^3]: Le Code Officiel Géographique est le référentiel permettant de relier des adresses, des noms de communes ou encore des noms de collectivités locales à un identifiant unique. Pour plus d'informations, voir le [site de l'Insee](https://www.insee.fr/fr/information/5230987)
+[^cog]: Le Code Officiel Géographique est le référentiel permettant de relier des adresses, des noms de communes ou encore des noms de collectivités locales à un identifiant unique. Pour plus d'informations, voir le [site de l'Insee](https://www.insee.fr/fr/information/5230987)
 
 Or, le traitement des données textuelles pose une difficulté particulière: __le langage naturel n'a pas de sens pour un ordinateur !__ Un ordinateur ne travaille qu'avec des nombres, et ne peut pas manipuler directement des mots, des expressions ou des phrases. C'est pourquoi de multiples méthodes ont été développées au cours des dernières décennies pour proposer des solutions génériques permettant de traiter des corpus de données textuelles à la fois peu structurés et hétérogènes. Cet ensemble de méthodes de traitement automatisé du langage, plus connues sous l'acronyme `NLP` (_natural langage processing_) constituent encore aujourd'hui un champ de recherche particulièrement actif. 
 
@@ -70,9 +48,9 @@ Ce billet de blog n'a pas l'ambition de proposer un aperçu des méthodes de NLP
 *   le [sac de mots (_bag of words_)](#bag-of-words),
 *   le [plongement lexical (_word embedding_)](#embedding).
 
-# Traiter un texte comme une information numérique : les approches possibles
+## Traiter un texte comme une information numérique : les approches possibles
 
-## L'approche _bag of words_ {#bag-of-words}
+### L'approche _bag of words_ {#bag-of-words}
 
 Le principe du _bag of words_ est qu'on peut décrire un document comme
 un dictionnaire de mots (un _sac de mots_) dans lequel on pioche plus ou moins fréquemment
@@ -100,14 +78,14 @@ La matrice document-terme associée à ce corpus est la suivante :
 | Transmettre sa passion du timbre    | 0       | 0  | 1  | 0  | 0  | 1       | 0        | 1  | 1      | 1           | 0      | 0     |
 | Vivre de sa passion                 | 0       | 1  | 0  | 0  | 0  | 1       | 0        | 1  | 0      | 0           | 0      | 1     |
 
-__Mission accomplie !__ :tada:
+__Mission accomplie !__ 🎉
 Chaque phrase du corpus est associée à un vecteur numérique.
 
 Il est maintenant possible de manipuler cette matrice comme des données tabulaires classiques. Par exemple, on pourrait appliquer l’un des algorithmes usuels de classification (régression logistique, forêt aléatoire, _gradient boosting_, etc.) pour classer ces phrases dans des catégories.
 
 L'approche _bag-of-words_ répond donc au besoin initial de transformer les données pour les rendre manipulables par une machine, en représentant les données textuelles sous la forme d'une matrice document-terme. Cette approche présente néanmoins une limite: elle traite tous les termes de façon indépendante et ne restitue pas la proximité de certains termes. Par exemple, rien dans la matrice document-terme de l'exemple précédent n'indique que les termes _'tricot"_ et _"crochet"_ relèvent du même champ lexical. Un autre type de représentation plus complexe et plus riche constitue souvent comme une meilleure option : le plongement lexical.
 
-## Le plongement lexical {#embedding}
+### Le plongement lexical {#embedding}
 
 Le plongement lexical (_word embedding_ en anglais)
 consiste à projeter l'ensemble des termes qui apparaissent dans le corpus dans un espace numérique à $n$ dimensions. Chaque mot est représenté par un vecteur de taille fixe (comprenant $n$ nombres),
@@ -130,7 +108,7 @@ a assuré le succès des _embeddings_, car elle permet à une machine d'appréhe
 
 Jusqu’ici, nous avons parlé du plongement de mots, mais comment obtenir le plongement d’un libellé textuel ? Une possibilité est de considérer tous les mots qui composent le libellé et de calculer la moyenne de leurs vecteurs de plongement.
 
-# Construction d’un plongement lexical
+## Construction d’un plongement lexical
 
 Un plongement lexical se construit en parcourant un grand corpus de textes et en repérant les mots qui apparaissent souvent dans le même contexte. L'ensemble des articles `Wikipedia` est un des corpus de prédilection des personnes ayant construit des plongements
 lexicaux. Il comporte en effet des phrases complètes, contrairement à des informations issues de commentaires de réseaux sociaux, 
@@ -147,7 +125,7 @@ Plus précisément, il existe deux approches :
 
 <div style="text-align: center"> Illustration de la différence entre les approches CBOW et Skip-gram. Source : Anwarvic sur  <a href="https://stackoverflow.com/questions/57507056/difference-between-max-length-of-word-ngrams-and-size-of-context-window" target="_blank">StackOverflow</a></div>  &nbsp;
 
-## Algorithmes célèbres
+### Algorithmes célèbres
 
 La méthode de construction d’un plongement lexical présentée ci-dessus est celle de l’algorithme [`Word2Vec`](https://fr.wikipedia.org/wiki/Word2vec).
 Il s’agit d’un modèle _open-source_ développé par une équipe de `Google` en 2013.
@@ -171,7 +149,7 @@ A `l’Insee`, plusieurs modèles de classification de libellés textuels dans d
 
  <div style="text-align: center"> Illustration du fonctionnement du modèle fastText sur un libellé de profession</div>  &nbsp;
 
-## Comment utiliser ces modèles en pratique ? 
+### Comment utiliser ces modèles en pratique ? 
 
 Collecter à nouveau les données ayant servi à entrainer un modèle puis le
 ré-entraîner implique énormément de ressources, ce qui est coûteux
@@ -195,7 +173,7 @@ ayant entraîné le modèle.
 En `R`, il faut utiliser les packages `word2vec`, `text2vec` (pour le modèle GloVe) et `fastTextR`.
 
 
-# Bonus : le plongement lexical en version ludique
+## Bonus : le plongement lexical en version ludique
 
 Le résultat d’un plongement lexical peut avoir de nombreux usages.
 Il rend notamment possible le calcul de la proximité entre deux mots quelconques.

@@ -1,0 +1,17 @@
+---
+title: "Blog"
+listing:
+  id: blog-listing
+  contents: post
+  type: grid
+  #template: scripts/courses.ejs
+  sort: date
+  #categories: true
+---
+
+Les articles de blog les plus récents
+
+<br>
+
+::: {#blog-listing}
+:::

@@ -3,49 +3,26 @@ title: Polars, une alternative fraîche à Pandas
 subtitle: Winter is coming
 
 # Summary for listings and search engines
-summary: Polars, une alternative moderne et fluide à Pandas
-
-
-# Link this post with a project
-projects: []
+description: |
+  Polars, une alternative moderne et fluide à Pandas
 
 # Date published
 date: '2023-02-10T00:00:00Z'
 
 # Date updated
-lastmod: '2023-02-10T00:00:00Z'
-
-# Is this an unpublished draft?
-draft: false
-
-# Show this page in the Featured widget?
-featured: false
-
-# Featured image
-# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
-image:
-  focal_point: ''
-  placement: 2
-  preview_only: false
+image: featured.jpg
 
 authors:
-  - romaintailhurat
-  - linogaliana
+  - Romain Tailhurat
+  - Lino Galiana
 
-tags:
+categories:
   - Python
   - Pandas
   - Polars
   - Data wrangling
-
-categories:
-  - Python
-  - Data wrangling
-
-toc: true
 ---
 
-> _Credit : [File:ZL-Ursus-maritimus.pngFile:Polar bear range map.png, CC BY-SA 3.0](https://commons.wikimedia.org/w/index.php?curid=17286219_)
 
 Le concept de **[_dataframe_](https://www.databricks.com/glossary/what-are-dataframes)** est central pour le _data scientist_ qui manipule des données tabulaires.
 En `Python`, [`Pandas`](https://pandas.pydata.org/) est la solution de loin la plus populaire. En moyenne, le _package_ est téléchargé
@@ -201,7 +178,7 @@ faire valoir.
 `DuckDB`, un autre _framework_ de manipulation de données, s'intègre quand à lui très bien
 avec  `Polars` dans la ménagerie.
 
-![](dalle_polar_duck.png)
+![](dalle_polar_duck.png){width=40% fig-align="center"}
 
 _Le duo DuckDB-Polars illustré par Dall-E-2_
 
@@ -209,8 +186,8 @@ _Le duo DuckDB-Polars illustré par Dall-E-2_
 
 - [_Awesome Polars_ par Damien Dotta (INSEE)](https://github.com/ddotta/awesome-polars)
 - [Polars pour R](https://rpolars.github.io/)
-- https://www.rhosignal.com/tags/polars/
-- https://kevinheavey.github.io/modern-polars/
+- [rhosignal.com/tags/polars/](https://www.rhosignal.com/tags/polars/)
+- [kevinheavey.github.io/modern-polars/](https://kevinheavey.github.io/modern-polars/)
 
 Le _notebook_ accompagnant ce _post_:
 

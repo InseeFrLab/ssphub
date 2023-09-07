@@ -3,11 +3,12 @@ project:
   render:
     - index.qmd
     - about.qmd
+    - course.qmd
+    - blog.qmd
     - event/*.qmd
     - infolettre/*.qmd
     - infolettre/**/*.qmd
-    - posts/*.qmd
-    - course.qmd
+    - post/**/*.qmd
     - course/**/*.qmd
 
 title-block-banner: "#6886bb"
@@ -25,7 +26,7 @@ website:
         text: A propos
       - href: infolettre/index.qmd
         text: Newsletters
-      - href: posts/index.qmd
+      - href: blog.qmd
         text: Blog
       - href: course.qmd
         text: Ressources utiles
