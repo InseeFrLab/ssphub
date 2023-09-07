@@ -35,8 +35,15 @@
   }
 
 
-  .description code {
+.description code {
     /*color: "" ;*/
     background-color: transparent !important;
     font-weight: bolder;
-  }
+}
+
+.title-ssp a {
+  text-decoration: none;
+  color: grey;
+  /* Add your custom styles for the underline here */
+}
+

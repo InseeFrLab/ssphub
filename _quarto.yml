@@ -10,6 +10,7 @@ project:
     - infolettre/*.qmd
     - infolettre/**/*.qmd
     - post/**/*.qmd
+    - partenaires/**/*.qmd
     - course/**/*.qmd
 
 title-block-banner: "#6886bb"
