@@ -5,7 +5,7 @@ project:
     - about.qmd
     - course.qmd
     - blog.qmd
-    - event/*.qmd
+    - event.qmd
     - infolettre/*.qmd
     - infolettre/**/*.qmd
     - post/**/*.qmd
@@ -20,7 +20,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: event/index.qmd
+      - href: event.qmd
         text: Événements
       - href: about.qmd
         text: A propos
