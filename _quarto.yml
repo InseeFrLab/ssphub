@@ -6,6 +6,7 @@ project:
     - course.qmd
     - blog.qmd
     - event.qmd
+    - additional/manifeste.qmd
     - infolettre/*.qmd
     - infolettre/**/*.qmd
     - post/**/*.qmd
@@ -30,6 +31,12 @@ website:
         text: Blog
       - href: course.qmd
         text: Ressources utiles
+      - href: additional/manifeste.qmd
+        text: Manifeste du réseau
+      - href: https://datalab.sspcloud.fr/
+        text: "`SSPCloud`"
+      - icon: github
+        href: https://github.com/InseeFrLab/ssphub
 
 
 format:
