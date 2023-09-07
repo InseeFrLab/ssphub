@@ -7,7 +7,7 @@ page-layout: full
 listing:
   id: partenaires
   contents: partenaires
-  #sort: "date desc"
+  template: scripts/courses.ejs
   type: grid
 ---
 

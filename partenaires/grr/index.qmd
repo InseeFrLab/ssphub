@@ -1,15 +1,15 @@
 ---
 title: grrr
 description: |
-    [`Grrr`](https://app.slack.com/client/T9ML8RLMP) (_"pour quand votre `R` fait `Grrr`"_) est un
-    groupe [`Slack`](https://app.slack.com/client/T9ML8RLMP) (plateforme de discussion instantanée)
-    francophone dédié aux échanges et à l’entraide autour de `R`. 
-    Il s'agit du point central de la communauté `R` francophone.
-    Il est ouvert à tou.te.s et se veut accessible aux débutants. Vous pouvez même utiliser un pseudonyme si vous préférez.
+  <a href="https://app.slack.com/client/T9ML8RLMP"><code>Grrr</code></a> (<em>"pour quand votre <code>R</code> fait <code>Grrr</code>"</em>) est un
+  groupe <a href="https://app.slack.com/client/T9ML8RLMP"><code>Slack</code></a> (plateforme de discussion instantanée)
+  francophone dédié aux échanges et à l’entraide autour de <code>R</code>. 
+  Il s'agit du point central de la communauté <code>R</code> francophone.
+  Il est ouvert à tou.te.s et se veut accessible aux débutants. Vous pouvez même utiliser un pseudonyme si vous préférez.
 #date: "2015-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://app.slack.com/client/T9ML8RLMP"
+website: "https://app.slack.com/client/T9ML8RLMP"
 
 image: featured.png
 ---
