@@ -7,7 +7,7 @@ project:
     - blog.qmd
     - event.qmd
     - additional/manifeste.qmd
-    - !additional/notebooks/*.qmd
+    - "!additional/notebooks/*.qmd"
     - infolettre/*.qmd
     - infolettre/**/*.qmd
     - post/**/*.qmd
