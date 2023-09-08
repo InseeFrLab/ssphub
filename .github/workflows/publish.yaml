@@ -10,7 +10,7 @@ jobs:
     name: Render-Blog
     runs-on: ubuntu-latest
     container: 
-        image: inseefrlab/onyxia-python-minimal:latest
+        image: inseefrlab/onyxia-python-datascience:latest
         options: --user root
     steps:
       - uses: actions/checkout@v4
