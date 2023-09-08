@@ -6,6 +6,7 @@ project:
     - course.qmd
     - blog.qmd
     - event.qmd
+    - talk/**/*.qmd
     - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
     - infolettre/*.qmd

@@ -1,0 +1,40 @@
+---
+title: Présentation de gridviz par Julien Gaffuri
+subtitle: Présentation de la librairie pour la diffusion de données carroyées
+categories:
+- gridviz
+- dataviz
+description: |
+  Evénement de présentation de [`gridviz`](https://eurostat.github.io/gridviz/)
+  par [Julien Gaffuri](https://github.com/jgaffuri) (Eurostat)
+date: '2023-01-20T11:00:00Z'
+authors: Lino Galiana
+
+# Is this a featured talk? (true/false)
+featured: true
+
+image: featured.png
+---
+
+Présentation par Julien Gaffuri de
+la [librairie `Gridviz`](https://eurostat.github.io/gridviz/). 
+Le __replay est [disponible plus bas 👇](#replay)__
+
+![](gridviz.png)
+
+`Gridviz` est une
+librairie _open source_ ([disponible sur `Github`](https://github.com/eurostat/gridviz))
+consacrée à la visualisation cartographique de données
+carroyées (ou données géolocalisées par des _(x,y)_ à carroyer).
+Très efficace, elle permet de représenter de manière fluide
+des volumes importants de données. 
+
+![Télécharger les supports](uploads/gridviz.pdf)
+
+
+
+## Replay {#replay}
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/gridviz-20230120.mp4" controls="yes" >}}
+

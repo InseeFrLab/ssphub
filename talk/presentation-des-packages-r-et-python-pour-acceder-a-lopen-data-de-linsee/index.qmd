@@ -1,0 +1,42 @@
+---
+title: Présentation des packages R et Python pour accéder à l'open data de l'Insee
+subtitle: Une présentation en deux temps autour des packages faits par des utilisateurs de données de l'Insee
+categories:
+- doremifasol
+- pynsee
+- open data 
+- Insee
+- event
+description: |
+  L'Insee met à disposition ses données par le biais d'[API](https://api.insee.fr/catalogue/) ou
+  par son [site web](https://www.insee.fr/fr/accueil). Pour faciliter
+  la récupération de données Insee par les data scientists, des packages `R` et `Python` ont
+  été développés par des utilisateurs de données. Pierre Lamarche nous présentera le package
+  `doremifasol` (`R`) et Hadrien Leclerc nous fera une démonstration du package `pynsee` (`Python`).
+date: '2023-02-13T15:00:00Z'
+authors:
+- admin
+image: featured.png
+links:
+  - icon: github
+    icon_pack: fab
+    name: Doremifasol
+    url: https://github.com/inseefrlab/doremifasol
+  - icon: github
+    icon_pack: fab
+    name: pynsee
+    url: https://github.com/inseefrlab/pynsee
+---
+
+Présentation autour des _packages_
+développés par des data scientists pour faciliter la récupération des données
+officielles de l'Insee :
+
+- Pierre Lamarche a présenté le package `R` [`doremifasol`](https://github.com/InseeFrLab/DoReMIFaSol). Les slides sont consultables
+sur ![https://presentation-doremifasol.lab.sspcloud.fr/](https://presentation-doremifasol.lab.sspcloud.fr/)
+- Hadrien Leclerc a présenté le package `Python` [`pynsee`](https://github.com/InseeFrLab/pynsee). Les slides sont [disponibles en téléchargement](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_opendata_2023/pynsee_slides.pdf)
+
+
+## Replay {#replay}
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/opendata-20230213.mp4" controls="yes" >}}
