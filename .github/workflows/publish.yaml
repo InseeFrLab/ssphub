@@ -1,22 +1,39 @@
 on:
-  workflow_dispatch:
-  push:
-    branches: main
-
-name: Quarto Publish
+  pull_request:
+    branches:
+      - main
+      - master
+      - dev
 
 jobs:
-  build-deploy:
+  pages:
+    name: Render-Blog
     runs-on: ubuntu-latest
+    container: inseefrlab/python-datascientist:latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3 
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Render and Publish 
-        uses: quarto-dev/quarto-actions/publish@v2
+      - uses: actions/checkout@v3
         with:
-          target: netlify
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{github.event.pull_request.head.repo.full_name}}
+      - name: Configure safe.directory  # Workaround for actions/checkout#760
+        run: git config --global --add safe.directory /__w/ssphub/ssphub
+      - name: Render website
+        run: |
+          quarto render
+      - name: Install npm
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        uses: actions/setup-node@v2          
+        with:
+          node-version: '14'        
+      - name: Deploy to Netlify
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        # NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID added in the repo's secrets
+        env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          BRANCHE_REF: ${{ github.event.pull_request.head.ref }}
+        run: |
+          npm init -y
+          npm install --unsafe-perm=true netlify-cli -g
+          netlify init
+          netlify deploy --alias=${BRANCHE_REF} --dir="_book" --message "Preview deploy from ${BRANCHE_REF}"
