@@ -1,0 +1,105 @@
+---
+title: Infolettre n°15
+description: |
+  Infolettre de rentrée, __Septembre 2023__
+
+# Date published
+date: '2023-09-10'
+number: 15
+
+image: featured.png
+
+authors:
+  - Lino Galiana
+
+tags:
+  - infolettre
+
+categories:
+  - Infolettre
+---
+
+:::{.callout-note}
+
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
+
+:::
+
+
+Cette _newsletter_ signe la rentrée 
+du réseau et revient sur l'actualité
+estivale de la _data science_ avec
+un focus sur le ré-entrainement de réseaux de neurone
+pour les spécialiser sur des tâches données. 
+
+# Actualités
+
+## De nouveaux grands modèles de langage (LLM)
+
+Pas de vacances pour les principaux acteurs de la _data science_ !
+Ce champ de recherche appliquée continue à connaître
+une actualité dense avec la publication, cet été, 
+de deux modèles importants:
+
+- [LLaMA-2](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respective, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards) ;
+- [Falcon](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur HuggingFace, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
+
+Ces deux modèles permettent d'envisager des réutilisations après un ré-entrainement sur des jeux de données _ad hoc_ pour améliorer leurs performances (technique du _fine tuning_). En effet, les grands modèles de langage sont généralement entraînés
+sur des corpus génériques de langage naturel principalement issus d'internet (@tbl-corpus-falcon).
+Cela les rend capables de comprendre les interactions avec des utilisateurs, notamment leurs instructions (_prompt_)
+et d'interagir avec eux de manière assez naturelle. Néanmoins, pour des tâches très spécialisées ou des corpus
+particuliers, ces modèles génériques peuvent nécessiter d'être spécialisés pour obtenir de meilleures performances. 
+
+::: {.callout-note collapse="true"}
+## Dérouler pour en savoir plus sur le corpus d'entraînement de `Falcon`
+
+: _[Corpus d'entraînement de Falcon 180B](https://huggingface.co/tiiuae/falcon-180B)_{#tbl-corpus-falcon}
+
+  | Source de données | Proportion dans le corpus 
+  |-----------|------------|
+  | `RefinedWeb-English` (_webscraping_)	| 75%	|
+  | `RefinedWeb-Europe`	(_webscraping_) | 7%	|
+  | Livres |	6%	|	
+  | Sites de conversations (`Reddit`, `StackOverflow`, `HackerNews`...) |	5%	|
+  | Code (`Github`...)	| 5% |
+  | Documents techniques (`arXiv`, `PubMed`...) |	2%	| 
+
+:::
+
+Comme l'explique [Andrew Ng](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/), 
+il existe une gradation dans la complexité à mettre en oeuvre pour ré-entrainer un modèle:
+
+- Améliorer les instructions (_prompt_) données au modèle. Par exemple, pour obtenir un code ou 
+des explications de meilleurs qualités, il peut être utile de guider un LLM avec des phrases
+_"As a data scientist"_ ;
+- Fournir quelques exemples à un modèle (_few shot learning_). Selon la difficulté de la tâche à 
+mettre en oeuvre, il peut suffire de très peu de cas pour spécialiser un modèle en modifiant les dernières
+couches du réseau de neurone. 
+- Réentrainement par spécialisation (_fine tuning_) pour affiner le modèle à être performant dans une tâche donnée. 
+Cette approche nécessite de disposer de données labellisées, c'est-à-dire de posséder une base de données 
+permettant de juger de la qualité des prédictions du modèle. Pour pallier cette absence, il est possible
+de mettre en oeuvre un processus humain d'annotation et fournir au modèle ces évaluations pour l'amener
+à s'améliorer ([reinformcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback))
+- Réentrainement complet avec un corpus adapté à la tâche à mettre en oeuvre. Cette 
+
+
+
+
+lien avec masterclass data scientest
+
+Sur l'aspect propriété intellectuelle
+https://www.deeplearning.ai/the-batch/time-to-update-copyright-for-generative-ai/
+
+
+https://www.lebonllm.fr/
+
+What’s new: Researchers at Stanford and UC Berkeley found that the performance of GPT-4 and GPT-3.5 has drifted in recent months. In a limited selection of tasks, some prompts yielded better results than before, some worse.
+
+
+changement de paradigme dans le développment d'un projet
+https://www.deeplearning.ai/the-batch/building-machine-learning-systems-is-more-debugging-than-development/
+https://www.deeplearning.ai/the-batch/ai-at-the-speed-of-prompting/
+
+
+https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/
+
