@@ -2,10 +2,11 @@
     display: none ;
   }
   
-  code {
-   color:#e83e8c;
-   background-color: transparent !important;
-  }
+  #hero-banner code {
+    color:white ;
+    background-color: transparent !important;
+    font-weight: bolder ;
+ }
   
 
 #hero-banner {
@@ -41,6 +42,7 @@
   .headline a {
     text-decoration: underline;
     color: white !important ;
+    font-weight: bolder;
   }
   
   .headline ul li {
