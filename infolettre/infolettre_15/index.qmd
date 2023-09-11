@@ -7,7 +7,7 @@ description: |
 date: '2023-09-10'
 number: 15
 
-image: featured.png
+image: learning.png
 
 authors:
   - Lino Galiana
@@ -18,6 +18,8 @@ tags:
 categories:
   - Infolettre
 ---
+
+![](learning.png){width=50% fig-align="center"}
 
 :::{.callout-note}
 
