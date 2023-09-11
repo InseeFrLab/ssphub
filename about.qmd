@@ -1,0 +1,35 @@
+---
+title: "Le réseau des data scientists"
+---
+
+::: {.grid .column-page}
+
+::: {.g-col-3}
+![](avatar.png)
+
+:::: {.title-ssp .test}
+_[Service Statistique Public](https://www.insee.fr/fr/information/1302192)_
+
+::::: {.g-col-1}
+:::::
+
+::::: {.g-col-1}
+[{{< fa envelope title="An envelope" >}}](mailto:ssphub-contact@insee.fr)
+:::::
+::::: {.g-col-1}
+:::::
+
+::::
+
+:::
+
+
+::: {.g-col-9}
+
+{{< include "_about.qmd" >}}
+
+:::
+
+:::
+
+
