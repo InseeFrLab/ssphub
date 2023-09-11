@@ -1,0 +1,20 @@
+---
+title: Observable pour la cartographie
+description: |
+  <a href="https://observablehq.com/@neocartocnrs">Nicolas Lambert (<code>neocarto</code>)</a> propose
+  beaucoup de ressources pédagogiques sur la cartographie depuis <code>Observable</code>. 
+  Beaucoup de ressources s'appuient
+  sur <a href="https://observablehq.com/collection/@neocartocnrs/bertin"><code>bertin.js</code></a>,
+  une librairie très puissante et flexible pour la représentation cartographique.
+categories:
+- observable
+- opensource
+- javascript
+- dataviz
+date: "2023-01-16T00:00:00Z"
+image: featured.jpg
+
+# Optional external URL for project (replaces project detail page).
+website: "https://observablehq.com/@neocartocnrs"
+---
+

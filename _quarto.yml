@@ -1,0 +1,49 @@
+project:
+  type: website
+  render:
+    - index.qmd
+    - about.qmd
+    - course.qmd
+    - blog.qmd
+    - event.qmd
+    - talk/**/*.qmd
+    - additional/manifeste.qmd
+    - "!additional/notebooks/*.qmd"
+    - infolettre/*.qmd
+    - infolettre/**/*.qmd
+    - post/**/*.qmd
+    - partenaires/**/*.qmd
+    - course/**/*.qmd
+
+title-block-banner: "#6886bb"
+title-block-banner-color: white
+
+website:
+  title: "SSPHub"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: event.qmd
+        text: Événements
+      - href: about.qmd
+        text: A propos
+      - href: infolettre/index.qmd
+        text: Newsletters
+      - href: blog.qmd
+        text: Blog
+      - href: course.qmd
+        text: Ressources utiles
+      - href: additional/manifeste.qmd
+        text: Manifeste du réseau
+      - href: https://datalab.sspcloud.fr/
+        text: "`SSPCloud`"
+      - icon: github
+        href: https://github.com/InseeFrLab/ssphub
+
+
+format:
+  html:
+    theme: [cosmo, styles.scss]
+    toc: true
+    page-layout: article
