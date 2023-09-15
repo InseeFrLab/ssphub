@@ -177,34 +177,33 @@ couches du réseau de neurone.
 Il s'agit d'une approche qui peut ressembler à l'apprentissage d'une nouvelle langue pour un humain: 
 à partir d'un certain stock de connaissances antérieures (une langue natale), on accumule
 des exemples bien choisis en série pour améliorer la compréhension d'une autre langue. 
+Cette approche permet une économie de ressources puisqu'elle consiste à spécialiser un modèle
+généraliste mais nécessite que la nature du problème pour lequel est ré-entrainé un modèle
+ressemble à celle pour lequel le modèle a été entraîné : de même qu'essayer de transposer des règles
+d'une langue latine aidera peu à apprendre le japonais, spécialiser un modèle d'analyse
+d'image pour une tâche de classification de données textuelles apportera peu. 
 
 
-Cette approche nécessite de disposer de données labellisées, c'est-à-dire de posséder une base de données 
-permettant de juger de la qualité des prédictions du modèle. Pour pallier cette absence, il est possible
+Le _fine tuning_ est ainsi une solution intéressante à condition d'avoir testé si des
+approches plus simples n'apportent pas déjà des solutions satisfaisantes.
+De plus, pour être en mesure de _fine tuner_ un modèle, outre 
+l'accès à des ressources computationnelles
+conséquentes (mais tout de même moindres qu'un entraînement _ex nihilo_),
+beaucoup de problèmes nécessitent de disposer 
+de données labellisées, c'est-à-dire impliquent de posséder une base de données 
+permettant de juger de la qualité des prédictions du modèle.
+Pour pallier cette absence, il est possible
 de mettre en oeuvre un processus humain d'annotation et fournir au modèle ces évaluations pour l'amener
-à s'améliorer ([reinformcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback))
+à s'améliorer ([reinformcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback)).
 
-Un réentrainement par spécialisation (_fine tuning_),
-qui nécessite des ressources conséquentes mais moindres qu'un entraînement _ex nihilo_,
-
-
+Comme l'évoque encore Andrew Ng, ceci a des implications importantes
+sur le [cycle de développement des projets utilisateurs d'IA](https://www.deeplearning.ai/the-batch/building-machine-learning-systems-is-more-debugging-than-development/)
 
 
-lien avec masterclass data scientest
-
-Sur l'aspect propriété intellectuelle
-https://www.deeplearning.ai/the-batch/time-to-update-copyright-for-generative-ai/
 
 
-https://www.lebonllm.fr/
+## Le reste de l'actualité
 
-What’s new: Researchers at Stanford and UC Berkeley found that the performance of GPT-4 and GPT-3.5 has drifted in recent months. In a limited selection of tasks, some prompts yielded better results than before, some worse.
-
-
-changement de paradigme dans le développment d'un projet
-https://www.deeplearning.ai/the-batch/building-machine-learning-systems-is-more-debugging-than-development/
-https://www.deeplearning.ai/the-batch/ai-at-the-speed-of-prompting/
-
-
-https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/
-
+- Une association française a émergé pour rassembler des ressources et offrir un espace communautaire autour des LLM
+francophones: [Le Bon LLM](https://www.lebonllm.fr/) ;
+- La qualité des réponses de `ChatGPT` pourrait s'être [dégradée](https://www.deeplearning.ai/the-batch/chatgpts-behavior-change-over-time/) au cours du temps; 
