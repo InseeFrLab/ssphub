@@ -103,9 +103,21 @@ du modèle
 économique du secteur numérique : si le co-créateur d'`OpenAI` 
 a pu affirmer ["_We were wrong_"](https://www.theverge.com/2023/3/15/23640180/openai-gpt-4-launch-closed-research-ilya-sutskever-interview),
 un [mémo interne de Google ayant fuité](https://www.theverge.com/2023/7/10/23790132/google-memo-moat-ai-leak-demis-hassabis)
-défendait quant à lui l'idée que les modèles _open source_, car ils
-peuvent bénéficier à plus grande échelle du travail d'experts, 
-sont  
+défendait quant à lui l'idée que les modèles _open source_ sont 
+amenés à prendre le dessus, car ils
+peuvent bénéficier à plus grande échelle du travail d'experts.
+
+La publication cet été de deux
+modèles _open source_ ([`LLaMA-2`](https://ai.meta.com/llama/) et [`Falcon`](https://falconllm.tii.ae/))
+ouvre de nouvelles perspectives pour une réutilisation
+de modèles dans une infrastructure interne, à condition de
+disposer des ressources computationnelles suffisantes
+et d'une stratégie adaptée de ré-apprentissage. 
+
+Pour aller plus loin sur ce sujet, la suite de cette _newsletter_
+évoque des détails plus techniques. La _masterclass_ sur le
+sujet du _fine-tuning_ que nous organisons avec `datascientest`
+permettra d'approfondir cette question. 
 
 
 # Actualités
@@ -117,8 +129,8 @@ Ce champ de recherche appliquée continue à connaître
 une actualité dense avec la publication, cet été, 
 de deux modèles importants:
 
-- [LLaMA-2](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respective, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards) ;
-- [Falcon](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur HuggingFace, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
+- [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respective, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards) ;
+- [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur HuggingFace, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
 
 Ces deux modèles permettent d'envisager des réutilisations après un ré-entrainement sur des jeux de données _ad hoc_ pour améliorer leurs performances (technique du _fine tuning_). En effet, les grands modèles de langage sont généralement entraînés
 sur des corpus génériques de langage naturel principalement issus d'internet (@tbl-corpus-falcon).
@@ -143,23 +155,34 @@ particuliers, ces modèles génériques peuvent nécessiter d'être spécialisé
 :::
 
 
+## Le réentrainement des modèles
 
-- La technique la plus simple est d'affiner les instructions fournies à
-un modèle
+[Andrew Ng](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/), 
+dans sa _newsletter_ estivale,
+revient sur les méthodes pour affiner les performances d'un modèle. 
 
-- Améliorer les instructions (_prompt_) données au modèle. Par exemple, pour obtenir un code ou 
+- La technique la plus simple est d'affiner les instructions (_prompt_) fournies à
+un modèle. Pour faire l'analogie avec l'apprentissage humain, pour obtenir une réponse
+mieux ciblée à une question, il est souvent nécessaire de reformuler une question. 
+Par exemple, pour obtenir un code ou 
 des explications de meilleurs qualités, il peut être utile de guider un LLM avec des phrases
 _"As a data scientist"_ ;
-- Fournir quelques exemples à un modèle (_few shot learning_). Selon la difficulté de la tâche à 
+- Fournir quelques exemples à un modèle (_few shot learning_). De même qu'avec les humains, fournir
+un petit nombre d'exemples peut suffire, par un raisonnement inductif,
+à un modèle à comprendre et réutiliser ce que désire son instructeur. 
+Selon la difficulté de la tâche à 
 mettre en oeuvre, il peut suffire de très peu de cas pour spécialiser un modèle en modifiant les dernières
 couches du réseau de neurone. 
-- Réentrainement par spécialisation (_fine tuning_) pour affiner le modèle à être performant dans une tâche donnée. 
+- Réentrainement par spécialisation (_fine tuning_) pour affiner le modèle sur une tâche donnée. 
+Il s'agit d'une approche qui peut ressembler à l'apprentissage d'une nouvelle langue pour un humain: 
+à partir d'un certain stock de connaissances antérieures (une langue natale), on accumule
+des exemples bien choisis en série pour améliorer la compréhension d'une autre langue. 
+
+
 Cette approche nécessite de disposer de données labellisées, c'est-à-dire de posséder une base de données 
 permettant de juger de la qualité des prédictions du modèle. Pour pallier cette absence, il est possible
 de mettre en oeuvre un processus humain d'annotation et fournir au modèle ces évaluations pour l'amener
 à s'améliorer ([reinformcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback))
-- Réentrainement complet avec un corpus adapté à la tâche à mettre en oeuvre. Cette 
-
 
 Un réentrainement par spécialisation (_fine tuning_),
 qui nécessite des ressources conséquentes mais moindres qu'un entraînement _ex nihilo_,
