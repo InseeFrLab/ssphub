@@ -28,11 +28,85 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 :::
 
 
-Cette _newsletter_ signe la rentrée 
-du réseau et revient sur l'actualité
-estivale de la _data science_ avec
-un focus sur le ré-entrainement de réseaux de neurone
-pour les spécialiser sur des tâches données. 
+C'est la rentrée ! Comme les élèves
+qui reviennent sur les bancs des écoles,
+les modèles de machine learning ont périodiquement
+besoin de mettre à jour leurs connaissances
+pour dialoguer de manière pertinente. 
+
+Cette _newsletter_ sera donc consacrée aux enjeux
+du ré-entrainement et de la spécialisation
+de modèles, une question
+d'actualité suite à la publication estivale de 
+plusieurs grands modèles de langage (LLM) _open source_.
+
+
+::: {.callout-note}
+La première partie de cette _newsletter_
+se concentrera sur les
+enjeux principaux. La suite sera plus technique 
+et évoquera plus en détail certains modèles
+ou méthodes de ré-entrainement.  
+:::
+
+# Enjeux
+
+Si de nombreuses tâches de modélisation ne nécessitent pas
+des modèles trop complexes, deux domaines de
+recherche - à savoir le traitement naturel du langage (NLP) et l'analyse d'image -
+ont connu ces dernières années des innovations
+importantes grâce à des réseaux de neurone à 
+l'architecture de plus en plus complexe. 
+
+Pour être en mesure d'entraîner
+un modèle complexe, du type LLM, il faut, _a minima_,
+disposer des intrants suivants:
+
+- Un __immense volume de données déstructurées__. La constitution de
+ces corpus implique le moissonnage en masse
+de ressources en ligne, ce qui n'est pas sans poser des
+[enjeux juridiques de propriété intellectuelle](https://www.deeplearning.ai/the-batch/time-to-update-copyright-for-generative-ai/) qui ne sont pas encore résolus. 
+La récupération de ces données 
+nécessite des ressources importantes et une bonne connaissance de la 
+structure et la nature des données nécessaires pour entrainer un modèle ;
+- Des __ressources informatiques hors du commun__. Les investissements importants
+pour les cartes graphiques (GPU), une [ressource en pénurie](https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html) et les
+coûts courants associés (électricité, maintenance...) font qu'une poignée d'acteurs du numérique
+disposent des ressources adéquates pour entraîner un modèle _ex nihilo_.
+Cet article de [Forbes](https://www.forbes.com/sites/craigsmith/2023/09/08/what-large-models-cost-you--there-is-no-free-ai-lunch/) 
+évoque des montants qui donnent le tournis. 
+- Des __experts__ à l'intersection entre la recherche en mathématique et informatique
+ainsi que des compétences en _data engineering_ également en pénurie sur le marché du travail. 
+
+La combinaison de ces facteurs rend difficile si ce n'est impossible
+l'entrainement _ex nihilo_ de tels modèles par la majorité
+des acteurs de la donnée. Seule une poignée de centres de recherche
+diposent de ces ressources pour entraîner _ex nihilo_ ce type de modèles.
+
+Néanmoins, les besoins de ces modèles dépassent le cercle
+des acteurs en mesure de les entraîner. 
+Plusieurs types de techniques, de [complexité graduelle](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/),
+ont ainsi émergé pour être en mesure de réutiliser
+un modèle pré-entraîné.
+
+Un frein à la réutilisation massive de modèles pré-entraînés est
+la nature propriétaire de certains modèles, dont les conditions
+de réutilisation peuvent être limitantes. Pour
+cette raison, l'émergence de modèles _open source_, dont la
+structure est plus transparente (on ne sait, par exemple, pas combien de paramètres
+comporte GPT-4) et dont les conditions de réutilisation
+sur des infrastructures internes
+sont moins restrictives, est devenu ces derniers mois
+un enjeu important dans l'écosystème de la donnée. 
+Il s'agit d'ailleurs d'un affrontement important entre deux visions
+du modèle
+économique du secteur numérique : si le co-créateur d'`OpenAI` 
+a pu affirmer ["_We were wrong_"](https://www.theverge.com/2023/3/15/23640180/openai-gpt-4-launch-closed-research-ilya-sutskever-interview),
+un [mémo interne de Google ayant fuité](https://www.theverge.com/2023/7/10/23790132/google-memo-moat-ai-leak-demis-hassabis)
+défendait quant à lui l'idée que les modèles _open source_, car ils
+peuvent bénéficier à plus grande échelle du travail d'experts, 
+sont  
+
 
 # Actualités
 
@@ -68,8 +142,10 @@ particuliers, ces modèles génériques peuvent nécessiter d'être spécialisé
 
 :::
 
-Comme l'explique [Andrew Ng](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/), 
-il existe une gradation dans la complexité à mettre en oeuvre pour ré-entrainer un modèle:
+
+
+- La technique la plus simple est d'affiner les instructions fournies à
+un modèle
 
 - Améliorer les instructions (_prompt_) données au modèle. Par exemple, pour obtenir un code ou 
 des explications de meilleurs qualités, il peut être utile de guider un LLM avec des phrases
@@ -83,6 +159,10 @@ permettant de juger de la qualité des prédictions du modèle. Pour pallier cet
 de mettre en oeuvre un processus humain d'annotation et fournir au modèle ces évaluations pour l'amener
 à s'améliorer ([reinformcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback))
 - Réentrainement complet avec un corpus adapté à la tâche à mettre en oeuvre. Cette 
+
+
+Un réentrainement par spécialisation (_fine tuning_),
+qui nécessite des ressources conséquentes mais moindres qu'un entraînement _ex nihilo_,
 
 
 
