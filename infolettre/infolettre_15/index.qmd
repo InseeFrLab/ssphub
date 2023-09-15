@@ -21,7 +21,7 @@ categories:
 
 ![](learning.png){width=50% fig-align="center"}
 
-:::{.callout-note}
+:::{.callout-tip}
 
 __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
 
@@ -51,15 +51,18 @@ ou méthodes de ré-entrainement.
 
 # Enjeux
 
+## Un entraînement _ex nihilo_ hors de portée
+
 Si de nombreuses tâches de modélisation ne nécessitent pas
 des modèles trop complexes, deux domaines de
 recherche - à savoir le traitement naturel du langage (NLP) et l'analyse d'image -
 ont connu ces dernières années des innovations
-importantes grâce à des réseaux de neurone à 
+importantes grâce
+à des [réseaux de neurones](https://www.cnil.fr/fr/definition/reseau-de-neurones-artificiels-artificial-neural-network) à 
 l'architecture de plus en plus complexe. 
 
 Pour être en mesure d'entraîner
-un modèle complexe, du type LLM, il faut, _a minima_,
+un modèle complexe, du type [grands modèles de langage (LLM)](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage), il faut, _a minima_,
 disposer des intrants suivants:
 
 - Un __immense volume de données déstructurées__. La constitution de
@@ -78,15 +81,17 @@ Cet article de [Forbes](https://www.forbes.com/sites/craigsmith/2023/09/08/what-
 - Des __experts__ à l'intersection entre la recherche en mathématique et informatique
 ainsi que des compétences en _data engineering_ également en pénurie sur le marché du travail. 
 
-La combinaison de ces facteurs rend difficile si ce n'est impossible
+La combinaison de ces facteurs rend difficile, si ce n'est impossible,
 l'entrainement _ex nihilo_ de tels modèles par la majorité
 des acteurs de la donnée. Seule une poignée de centres de recherche
 diposent de ces ressources pour entraîner _ex nihilo_ ce type de modèles.
 
+## La réutilisation en pratique
+
 Néanmoins, les besoins de ces modèles dépassent le cercle
 des acteurs en mesure de les entraîner. 
 Plusieurs types de techniques, de [complexité graduelle](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/),
-ont ainsi émergé pour être en mesure de réutiliser
+ont ainsi émergé pour être en mesure de réutiliser et améliorer
 un modèle pré-entraîné.
 
 Un frein à la réutilisation massive de modèles pré-entraînés est
@@ -98,14 +103,15 @@ comporte GPT-4) et dont les conditions de réutilisation
 sur des infrastructures internes
 sont moins restrictives, est devenu ces derniers mois
 un enjeu important dans l'écosystème de la donnée. 
+
 Il s'agit d'ailleurs d'un affrontement important entre deux visions
 du modèle
 économique du secteur numérique : si le co-créateur d'`OpenAI` 
 a pu affirmer ["_We were wrong_"](https://www.theverge.com/2023/3/15/23640180/openai-gpt-4-launch-closed-research-ilya-sutskever-interview),
-un [mémo interne de Google ayant fuité](https://www.theverge.com/2023/7/10/23790132/google-memo-moat-ai-leak-demis-hassabis)
+un [mémo interne de Google](https://www.theverge.com/2023/7/10/23790132/google-memo-moat-ai-leak-demis-hassabis)
 défendait quant à lui l'idée que les modèles _open source_ sont 
 amenés à prendre le dessus, car ils
-peuvent bénéficier à plus grande échelle du travail d'experts.
+peuvent bénéficier à plus grande échelle du travail d'experts et de retours d'utilisateurs.
 
 La publication cet été de deux
 modèles _open source_ ([`LLaMA-2`](https://ai.meta.com/llama/) et [`Falcon`](https://falconllm.tii.ae/))
@@ -115,8 +121,9 @@ disposer des ressources computationnelles suffisantes
 et d'une stratégie adaptée de ré-apprentissage. 
 
 Pour aller plus loin sur ce sujet, la suite de cette _newsletter_
-évoque des détails plus techniques. La _masterclass_ sur le
-sujet du _fine-tuning_ que nous organisons avec `datascientest`
+évoque des détails plus techniques.
+La _masterclass_ sur le
+sujet du _fine-tuning_ que nous organisons avec `datascientest` ([plus d'informations 👇️](#mc-datascientest))
 permettra d'approfondir cette question. 
 
 
@@ -129,14 +136,15 @@ Ce champ de recherche appliquée continue à connaître
 une actualité dense avec la publication, cet été, 
 de deux modèles importants:
 
-- [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respective, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards) ;
-- [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur HuggingFace, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
+- [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respectivement, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards). `LeBonLLM` propose, déjà, des exemples de [_fine tuning_ de `LLaMa`](https://www.lebonllm.fr/entrainer-son-llm-avec-llama-1-et-llama-2/)
+ ;
+- [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur `HuggingFace`, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
 
 Ces deux modèles permettent d'envisager des réutilisations après un ré-entrainement sur des jeux de données _ad hoc_ pour améliorer leurs performances (technique du _fine tuning_). En effet, les grands modèles de langage sont généralement entraînés
 sur des corpus génériques de langage naturel principalement issus d'internet (@tbl-corpus-falcon).
 Cela les rend capables de comprendre les interactions avec des utilisateurs, notamment leurs instructions (_prompt_)
 et d'interagir avec eux de manière assez naturelle. Néanmoins, pour des tâches très spécialisées ou des corpus
-particuliers, ces modèles génériques peuvent nécessiter d'être spécialisés pour obtenir de meilleures performances. 
+particuliers, ces modèles génériques peuvent nécessiter d'être spécialisés pour obtenir de meilleures performances.
 
 ::: {.callout-note collapse="true"}
 ## Dérouler pour en savoir plus sur le corpus d'entraînement de `Falcon`
@@ -155,37 +163,59 @@ particuliers, ces modèles génériques peuvent nécessiter d'être spécialisé
 :::
 
 
+Ces deux modèles proposent des licences permissives de réutilisation. Celle de [`Falcon`](https://falconllm.tii.ae/)
+est assez standard puisqu'il s'agit d'une [Apache 2.0](https://fr.wikipedia.org/wiki/Licence_Apache). 
+Celle de [`LLaMA-2`](https://ai.meta.com/llama/) est quant à elle moins traditionnelle. 
+La réutilisation est libre,
+y compris à des fins commerciale, sauf pour les gros acteurs du numérique, globalement les concurrents
+de `Meta` :
+
+> 2. Additional Commercial Terms. If, on the Llama 2 version release date, the 
+monthly active users of the products or services made available by or for Licensee, 
+or Licensee's affiliates, is greater than 700 million monthly active users in the 
+preceding calendar month, you must request a license from Meta, which Meta may 
+grant to you in its sole discretion, and you are not authorized to exercise any of the 
+rights under this Agreement unless or until Meta otherwise expressly grants you 
+such rights.
+>
+> [Licence de LLaMa-2 sur `Github`](https://github.com/facebookresearch/llama/blob/d7e2e37e163981fd674ea2a633fac2014550898d/LICENSE#L65-L71)
+
+
+
 ## Le réentrainement des modèles
 
-[Andrew Ng](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/), 
-dans sa _newsletter_ estivale,
-revient sur les méthodes pour affiner les performances d'un modèle. 
+L'ouverture de ces modèles laisse envisager des réutilisations
+sur de nouveaux jeux de données dans des infrastructures internes. 
+Cet été, [Andrew Ng](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/), 
+dans sa _newsletter_,
+est revenu sur les méthodes pour affiner les performances d'un modèle
+sur des données qu'il n'a pas rencontré dans son corpus d'entraînement. 
 
-- La technique la plus simple est d'affiner les instructions (_prompt_) fournies à
+- La technique la plus simple est d'__affiner les instructions__ (_prompt_) fournies à
 un modèle. Pour faire l'analogie avec l'apprentissage humain, pour obtenir une réponse
 mieux ciblée à une question, il est souvent nécessaire de reformuler une question. 
-Par exemple, pour obtenir un code ou 
-des explications de meilleurs qualités, il peut être utile de guider un LLM avec des phrases
-_"As a data scientist"_ ;
-- Fournir quelques exemples à un modèle (_few shot learning_). De même qu'avec les humains, fournir
-un petit nombre d'exemples peut suffire, par un raisonnement inductif,
-à un modèle à comprendre et réutiliser ce que désire son instructeur. 
+Par exemple, lors d'une interaction avec une IA assistante de code,
+il peut être utile de guider un LLM avec une instruction
+_"as a data scientist"_ ;
+- __Fournir quelques exemples à un modèle__ (_few shot learning_). De même qu'avec les humains, fournir
+un petit nombre d'exemples peut suffire à un modèle, par un raisonnement inductif, 
+à comprendre et répondre de manière juste à son instructeur. 
 Selon la difficulté de la tâche à 
 mettre en oeuvre, il peut suffire de très peu de cas pour spécialiser un modèle en modifiant les dernières
 couches du réseau de neurone. 
-- Réentrainement par spécialisation (_fine tuning_) pour affiner le modèle sur une tâche donnée. 
+- __Réentrainement par spécialisation__ (_fine tuning_) pour affiner le modèle sur une tâche donnée. 
 Il s'agit d'une approche qui peut ressembler à l'apprentissage d'une nouvelle langue pour un humain: 
 à partir d'un certain stock de connaissances antérieures (une langue natale), on accumule
-des exemples bien choisis en série pour améliorer la compréhension d'une autre langue. 
+en série des exemples bien choisis pour améliorer la compréhension d'une autre langue. 
 Cette approche permet une économie de ressources puisqu'elle consiste à spécialiser un modèle
 généraliste mais nécessite que la nature du problème pour lequel est ré-entrainé un modèle
-ressemble à celle pour lequel le modèle a été entraîné : de même qu'essayer de transposer des règles
+ressemble à celle pour lequel le modèle a été entraîné. De même qu'essayer de transposer des règles
 d'une langue latine aidera peu à apprendre le japonais, spécialiser un modèle d'analyse
-d'image pour une tâche de classification de données textuelles apportera peu. 
-
+d'image pour une tâche de classification de données textuelles sera inefficace. 
 
 Le _fine tuning_ est ainsi une solution intéressante à condition d'avoir testé si des
 approches plus simples n'apportent pas déjà des solutions satisfaisantes.
+
 De plus, pour être en mesure de _fine tuner_ un modèle, outre 
 l'accès à des ressources computationnelles
 conséquentes (mais tout de même moindres qu'un entraînement _ex nihilo_),
@@ -194,19 +224,62 @@ de données labellisées, c'est-à-dire impliquent de posséder une base de donn
 permettant de juger de la qualité des prédictions du modèle.
 Pour pallier cette absence, il est possible
 de mettre en oeuvre un processus humain d'annotation et fournir au modèle ces évaluations pour l'amener
-à s'améliorer ([reinformcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback)).
+à s'améliorer (technique nommée **_[reinforcement learning from human feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback)_**).
 
-Comme l'évoque encore Andrew Ng, ceci a des implications importantes
-sur le [cycle de développement des projets utilisateurs d'IA](https://www.deeplearning.ai/the-batch/building-machine-learning-systems-is-more-debugging-than-development/)
+Comme l'évoque encore Andrew Ng, l'accès à des modèles
+pré-entraînés change le [cycle de développement des projets utilisateurs d'IA](https://www.deeplearning.ai/the-batch/building-machine-learning-systems-is-more-debugging-than-development/).
+Ces projets ne consistent plus, comme les logiciels classiques,
+à développer en amont des spécifications et un modèle déployé ultérieurement 
+mais, au contraire, à rapidement mettre en oeuvre un prototype dont le comportement
+sera évalué et amélioré en continu par des méthodes comme l'apprentissage par renforcement. 
 
 
 ## Le reste de l'actualité
 
+- La commission d'accès aux documents administratifs (CADA) rend un [avis](https://www.cada.fr/20230314) très intéressant
+où elle s'oppose à considérer les poids des modèles d'apprentissage, _a contrario_ des codes sources, comme des documents administratifs
+pour lesquels la diffusion peut être publique ;
 - Une association française a émergé pour rassembler des ressources et offrir un espace communautaire autour des LLM
 francophones: [Le Bon LLM](https://www.lebonllm.fr/) ;
-- La qualité des réponses de `ChatGPT` pourrait s'être [dégradée](https://www.deeplearning.ai/the-batch/chatgpts-behavior-change-over-time/) au cours du temps; 
+- La qualité des réponses de `ChatGPT` pourrait s'être [dégradée](https://www.deeplearning.ai/the-batch/chatgpts-behavior-change-over-time/) au cours du temps ; 
+- Le _Financial Times_ présente de manière très pédagogique le [fonctionnement des LLM](https://ig.ft.com/generative-ai/) ;
+- Meta publie [`Nougat`](https://facebookresearch.github.io/nougat/), un modèle très efficace de numérisation de PDF ;
+- Le risque de disparition 
+d'emplois d'acteurs et scénaristes du fait des IA génératrices est l'un des
+facteurs à l'origine de la grève à Hollywood ([voir _Le Monde_](https://www.lemonde.fr/economie/article/2023/07/14/greve-a-hollywood-les-acteurs-craignent-d-etre-remplaces-par-des-machines_6181893_3234.html)) ;
+- Le modèle _open source_ de génération d'images `StableDiffusion` sort une [version XL (`sdxl`)](https://stability.ai/stable-diffusion)  
+améliorant encore la qualité des productions (interface [ici](https://clipdrop.co/fr/stable-diffusion));
+- Un [site interactif](https://unehistoireduconflitpolitique.fr/) très riche est associé au nouvel ouvrage de Thomas Piketty et Julia Cagé, _Une histoire du conflit politique_.
 
-# Evénements
+# Événements
 
-- MC datascientest
-- autres evenemtns en bullet point
+## Masterclass _datascientest_ sur le _fine-tuning_ {#mc-datascientest}
+
+![](../infolettre_11/datascientest.png){width=20% fig-align="center"}
+
+
+Notre cycle de _masterclass_ organisées en lien avec _datascientest_
+continue ! 
+
+Après avoir exploré en détail les thématiques du traitement
+automatique du langage et de l'analyse d'image, nous progressons
+dans notre parcours avec le sujet du _fine tuning_. 
+
+Au programme: 
+
+- Réutilisation de _transformers_ (`BERT`) et de LLM (`LLaMA`)
+avec les librairies d'`HuggingFace` ;
+- _Fine tuning_ de ces modèles.
+
+__Rendez-vous le 28 septembre de 10h à 12h__ !
+[Inscription ici](LIEN A CREER)
+
+## Autres événements
+
+Quelques événements ou informations intéressantes :
+
+- [Hackathon velib](https://blog.velib-metropole.fr/hackathon/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=website), fermeture des inscriptions le 29 septembre ;
+- [Hackahton de l'ONU](https://unstats.un.org/bigdata/events/2023/un-datathon/): fermeture des inscriptions à la fin du mois ;
+- [Prix du jeune statisticien de l'IAOS](https://mailings.isi-web.org/?na=v&nk=15226-43b0d8c9de&id=563) : article à envoyer avant le 10 février 2024
+
+Les personnes intéressées par former une équipe pour les _hackathons_ peuvent contecter <ssphub-contact@insee.fr>. 
