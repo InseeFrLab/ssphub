@@ -61,7 +61,7 @@ importantes grâce
 l'architecture de plus en plus complexe. 
 
 Pour être en mesure d'entraîner
-un modèle complexe, du type [grands modèles de langage (LLM)](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage), il faut, _a minima_,
+un modèle complexe, du type [grand modèle de langage (LLM)](https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage), il faut, _a minima_,
 disposer des intrants suivants:
 
 - Un __immense volume de données déstructurées__. La constitution de
@@ -78,16 +78,16 @@ disposent des ressources adéquates pour entraîner un modèle _ex nihilo_.
 Cet article de [Forbes](https://www.forbes.com/sites/craigsmith/2023/09/08/what-large-models-cost-you--there-is-no-free-ai-lunch/) 
 évoque des montants de l'ordre de plusieurs millions de dollars.
 - Des __experts__ aux compétences à l'intersection entre la recherche en mathématique et informatique
-ainsi que des compétences en _data engineering_ également en pénurie sur le marché du travail. 
+ainsi que des spécialistes en _data engineering_ actuellement en pénurie sur le marché du travail. 
 
 La combinaison de ces facteurs rend difficile, si ce n'est impossible,
 l'entrainement _ex nihilo_ de tels modèles par la majorité
 des acteurs de la donnée. Seule une poignée de centres de recherche
-diposent de ces ressources pour entraîner _ex nihilo_ ce type de modèles.
+diposent des ressources permettant d'entraîner _ex nihilo_ ce type de modèles.
 
 ## La réutilisation en pratique
 
-Néanmoins, les besoins de ces modèles dépassent le cercle
+Néanmoins, les besoins d'utilisation de ces modèles dépassent le cercle
 des acteurs en mesure de les entraîner. 
 Plusieurs types de techniques, de [complexité graduelle](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/),
 ont ainsi émergé pour être en mesure de réutiliser et améliorer
@@ -103,7 +103,7 @@ sur des infrastructures internes
 sont moins restrictives, est devenu ces derniers mois
 un enjeu important dans l'écosystème de la donnée. 
 
-Il s'agit d'ailleurs d'un affrontement important entre deux visions
+Les discussions sur l'ouverture des modèles s'inscrivent dans le contexte d'un affrontement important entre deux visions
 du modèle
 économique du secteur numérique : si le co-créateur d'`OpenAI` 
 a pu affirmer ["_We were wrong_"](https://www.theverge.com/2023/3/15/23640180/openai-gpt-4-launch-closed-research-ilya-sutskever-interview),
