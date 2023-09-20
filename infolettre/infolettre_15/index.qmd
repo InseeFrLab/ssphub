@@ -31,7 +31,7 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 C'est la rentrée ! Comme les élèves
 qui reviennent sur les bancs des écoles,
 les modèles de machine learning ont périodiquement
-besoin de mettre à jour leurs connaissances
+besoin de mettre à jour leurs connaissances.
 
 Cette _newsletter_ sera donc consacrée aux enjeux
 du ré-entrainement et de la spécialisation
@@ -45,15 +45,15 @@ La première partie de cette _newsletter_
 se concentrera sur les
 enjeux principaux. La suite sera plus technique 
 et évoquera plus en détail certains modèles
-ou méthodes de ré-entrainement.  
+et les méthodes de ré-entrainement.  
 :::
 
-# Enjeux
+# Enjeux associés au réentrainement des modèles de langage
 
 ## Un entraînement _ex nihilo_ hors de portée
 
 Si de nombreuses tâches de modélisation ne nécessitent pas
-des modèles trop complexes, deux domaines de
+des modèles très sophistiqués, deux domaines de
 recherche - à savoir le traitement naturel du langage (NLP) et l'analyse d'image -
 ont connu ces dernières années des innovations
 importantes grâce
