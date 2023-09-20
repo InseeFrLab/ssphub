@@ -229,7 +229,7 @@ Comme l'évoque encore Andrew Ng, l'accès à des modèles
 pré-entraînés change le [cycle de développement des projets utilisateurs d'IA](https://www.deeplearning.ai/the-batch/building-machine-learning-systems-is-more-debugging-than-development/).
 Ces projets ne consistent plus, comme les logiciels classiques,
 à développer en amont des spécifications puis déployer un modèle correspondant à ces spécifications
-mais, au contraire, à rapidement mettre en oeuvre un prototype dont le comportement
+mais, au contraire, à commencer par mettre en oeuvre rapidement un premier modèle dont le comportement
 sera évalué et amélioré en continu par des méthodes comme l'apprentissage par renforcement. 
 
 
