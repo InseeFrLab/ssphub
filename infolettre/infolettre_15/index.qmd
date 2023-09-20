@@ -218,7 +218,7 @@ approches plus simples n'apportent pas déjà des solutions satisfaisantes.
 De plus, pour être en mesure de _fine tuner_ un modèle, outre 
 l'accès à des ressources computationnelles
 conséquentes (mais tout de même moindres qu'un entraînement _ex nihilo_),
-beaucoup de problèmes nécessitent de disposer 
+beaucoup de méthodes nécessitent de disposer 
 de données labellisées, c'est-à-dire impliquent de posséder une base de données 
 permettant de juger de la qualité des prédictions du modèle.
 Pour pallier cette absence, il est possible
