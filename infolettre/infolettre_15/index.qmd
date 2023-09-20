@@ -85,13 +85,21 @@ l'entrainement _ex nihilo_ de tels modèles par la majorité
 des acteurs de la donnée. Seule une poignée de centres de recherche
 diposent des ressources permettant d'entraîner _ex nihilo_ ce type de modèles.
 
+
 ## La réutilisation en pratique
 
 Néanmoins, les besoins d'utilisation de ces modèles dépassent le cercle
 des acteurs en mesure de les entraîner. 
+En effet, les grands modèles de langage sont généralement entraînés
+sur des corpus génériques de langage naturel principalement issus d'internet (@tbl-corpus-falcon).
+Cela les rend capables de comprendre les interactions avec des utilisateurs, notamment leurs instructions (_prompt_)
+et d'interagir avec eux de manière assez naturelle. Néanmoins, pour des tâches très spécialisées ou alors face à des corpus
+particuliers, ces modèles génériques peuvent nécessiter d'être spécialisés pour obtenir de meilleures performances.
+
 Plusieurs types de techniques, de [complexité graduelle](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/),
 ont ainsi émergé pour être en mesure de réutiliser et améliorer
 un modèle pré-entraîné.
+
 
 Un frein à la réutilisation massive de modèles pré-entraînés est
 la nature propriétaire de certains modèles, dont les conditions
@@ -125,26 +133,6 @@ La _masterclass_ sur le
 sujet du _fine-tuning_ que nous organisons avec `datascientest` ([plus d'informations 👇️](#mc-datascientest))
 permettra également d'approfondir cette question. 
 
-
-# Actualités des modèles de langage
-
-## De nouveaux grands modèles de langage (LLM)
-
-Pas de vacances pour les principaux acteurs de la _data science_ !
-Ce champ de recherche appliquée continue à connaître
-une actualité dense avec la publication, cet été, 
-de deux modèles importants:
-
-- [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respectivement, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards). `LeBonLLM` propose, déjà, des exemples de [_fine tuning_ de `LLaMa`](https://www.lebonllm.fr/entrainer-son-llm-avec-llama-1-et-llama-2/)
- ;
-- [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur `HuggingFace`, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
-
-Ces deux modèles permettent d'envisager des réutilisations après un ré-entrainement sur des jeux de données _ad hoc_ pour améliorer leurs performances (technique du _fine tuning_). En effet, les grands modèles de langage sont généralement entraînés
-sur des corpus génériques de langage naturel principalement issus d'internet (@tbl-corpus-falcon).
-Cela les rend capables de comprendre les interactions avec des utilisateurs, notamment leurs instructions (_prompt_)
-et d'interagir avec eux de manière assez naturelle. Néanmoins, pour des tâches très spécialisées ou des corpus
-particuliers, ces modèles génériques peuvent nécessiter d'être spécialisés pour obtenir de meilleures performances.
-
 ::: {.callout-note collapse="true"}
 ## Dérouler pour en savoir plus sur le corpus d'entraînement de `Falcon`
 
@@ -162,7 +150,21 @@ particuliers, ces modèles génériques peuvent nécessiter d'être spécialisé
 :::
 
 
-Ces deux modèles proposent des licences permissives de réutilisation. Celle de [`Falcon`](https://falconllm.tii.ae/)
+# Actualités des modèles de langage
+
+## De nouveaux grands modèles de langage (LLM)
+
+Pas de vacances pour les principaux acteurs de la _data science_ !
+Ce champ de recherche appliquée continue à connaître
+une actualité dense avec la publication, cet été, 
+de deux modèles importants:
+
+- [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respectivement, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards). `LeBonLLM` propose, déjà, des exemples de [_fine tuning_ de `LLaMa`](https://www.lebonllm.fr/entrainer-son-llm-avec-llama-1-et-llama-2/)
+ ;
+- [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur `HuggingFace`, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
+
+Ces deux modèles permettent d'envisager des réutilisations après un ré-entrainement sur des jeux de données _ad hoc_ pour améliorer leurs performances (technique du _fine tuning_). 
+Ceci est possible grâce à leurs licences permissives de réutilisation. Celle de [`Falcon`](https://falconllm.tii.ae/)
 est assez standard puisqu'il s'agit d'une [Apache 2.0](https://fr.wikipedia.org/wiki/Licence_Apache). 
 Celle de [`LLaMA-2`](https://ai.meta.com/llama/) est quant à elle moins traditionnelle. 
 La réutilisation est libre,
@@ -202,6 +204,7 @@ un petit nombre d'exemples peut suffire à un modèle, par un raisonnement induc
 Selon la difficulté de la tâche à 
 mettre en oeuvre, il peut suffire de très peu de cas pour spécialiser un modèle en modifiant les dernières
 couches du réseau de neurone. 
+- __Fournir du contexte à un modèle avant de l'interroger__ (_retrieval augmented generation_). __TO BE COMPLETED__
 - __Réentrainement par spécialisation__ (_fine tuning_) pour affiner le modèle sur une tâche donnée. 
 Il s'agit d'une approche qui peut ressembler à l'apprentissage d'une nouvelle langue pour un humain: 
 à partir d'un certain stock de connaissances antérieures (une langue natale), on accumule
