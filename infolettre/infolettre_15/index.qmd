@@ -162,7 +162,7 @@ de deux modèles importants:
 
 - [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respectivement, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards). Le site web `LeBonLLM` propose, déjà, des exemples de [_fine tuning_ de `LLaMa`](https://www.lebonllm.fr/entrainer-son-llm-avec-llama-1-et-llama-2/)
  ;
-- [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur `HuggingFace`, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
+- [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu, cet été, un engougement important en se plaçant en tête des réutilisations sur `HuggingFace`. [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), sorti il y a quelques jours, rapproche les performances de celles des modèles propriétaires.
 
 Ces deux modèles permettent d'envisager des réutilisations après un ré-entrainement sur des jeux de données _ad hoc_ pour améliorer leurs performances (technique du _fine tuning_). 
 Ceci est possible grâce à leurs licences permissives de réutilisation. Celle de [`Falcon`](https://falconllm.tii.ae/)
