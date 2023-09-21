@@ -30,10 +30,10 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 C'est la rentrée ! Comme les élèves
 qui reviennent sur les bancs des écoles,
-les modèles de machine learning ont périodiquement
+les modèles de _machine learning_ ont périodiquement
 besoin de mettre à jour leurs connaissances.
 
-Cette _newsletter_ sera donc consacrée aux enjeux
+Cette _newsletter_ sera consacrée aux enjeux
 du ré-entrainement et de la spécialisation
 de modèles, une question
 d'actualité suite à la publication estivale de 
@@ -68,7 +68,7 @@ disposer des intrants suivants:
 ces corpus implique le moissonnage en masse
 de ressources en ligne, ce qui n'est pas sans poser des
 [enjeux juridiques de propriété intellectuelle](https://www.deeplearning.ai/the-batch/time-to-update-copyright-for-generative-ai/) qui ne sont pas encore résolus. 
-La récupération de ces données 
+La récupération de ces données nécessite
 une bonne connaissance de la 
 structure et la nature des données nécessaires pour entrainer un modèle ;
 - Des __ressources informatiques hors du commun__. Les investissements importants
@@ -76,7 +76,7 @@ pour les cartes graphiques (GPU), une [matière première en pénurie](https://w
 coûts courants associés (électricité, maintenance...) font qu'une poignée d'acteurs du numérique
 disposent des moyens financiers adéquats pour entraîner un modèle _ex nihilo_.
 Cet article de [Forbes](https://www.forbes.com/sites/craigsmith/2023/09/08/what-large-models-cost-you--there-is-no-free-ai-lunch/) 
-évoque des montants de l'ordre de plusieurs millions de dollars.
+évoque des montants de l'ordre de plusieurs dizaines voire centaines de millions de dollars.
 - Des __experts__ aux compétences à l'intersection entre la recherche en mathématique et informatique
 ainsi que des spécialistes en _data engineering_ actuellement en pénurie sur le marché du travail. 
 
@@ -204,7 +204,15 @@ un petit nombre d'exemples peut suffire à un modèle, par un raisonnement induc
 Selon la difficulté de la tâche à 
 mettre en oeuvre, il peut suffire de très peu de cas pour spécialiser un modèle en modifiant les dernières
 couches du réseau de neurone. 
-- __Fournir du contexte à un modèle avant de l'interroger__ (_retrieval augmented generation_). __TO BE COMPLETED__
+- __Fournir de nouvelles sources à un modèle avant de l'interroger__ (_retrieval augmented generation_). 
+Cette technique consiste à enrichir la base de connaissance d'un modèle pré-entraîné avec un nouveau corpus
+puis l'interroger sur la même thématique afin, par exemple, d'obtenir une synthèse
+ou alors une information contenue dans les documents
+mais nécessitant un temps d'extraction non négligeable à un humain. Dans cette approche,
+il ne s'agit pas de réentrainer le modèle pour mettre à jour ses paramètres mais de lui donner plus
+de contexte pour améliorer la pertinence des prédictions ou réponses du modèle. Pour continuer l'analogie
+avec l'apprentissage humain, cette technique se rapproche d'une situation où un humain assimile
+une bibliographie pour rentrer dans un nouveau sujet. 
 - __Réentrainement par spécialisation__ (_fine tuning_) pour affiner le modèle sur une tâche donnée. 
 Il s'agit d'une approche qui peut ressembler à l'apprentissage d'une nouvelle langue pour un humain: 
 à partir d'un certain stock de connaissances antérieures (une langue natale), on accumule
@@ -250,6 +258,7 @@ d'emplois d'acteurs et scénaristes du fait des IA génératrices est l'un des
 facteurs à l'origine de la grève à Hollywood ([voir _Le Monde_](https://www.lemonde.fr/economie/article/2023/07/14/greve-a-hollywood-les-acteurs-craignent-d-etre-remplaces-par-des-machines_6181893_3234.html)) ;
 - Le modèle _open source_ de génération d'images `StableDiffusion` sort une [version XL (`sdxl`)](https://stability.ai/stable-diffusion)  
 améliorant encore la qualité des productions (interface [ici](https://clipdrop.co/fr/stable-diffusion));
+-La dernière revue de presse de la [Gazette BlueHats #24](https://code.gouv.fr/fr/bluehats/bluehats_24/#revue-de-presse) recense de nombreux articles sur l'IA ;
 - Un [site interactif](https://unehistoireduconflitpolitique.fr/) riche de nombreuses data visualisations est associé au nouvel ouvrage de Thomas Piketty et Julia Cagé, _Une histoire du conflit politique_.
 
 # Événements
@@ -280,7 +289,7 @@ __Rendez-vous le 28 septembre de 10h à 12h__ !
 Quelques événements ou informations intéressantes :
 
 - [Hackathon velib](https://blog.velib-metropole.fr/hackathon/?utm_source=sendgrid.com&utm_medium=email&utm_campaign=website), fermeture des inscriptions le 29 septembre ;
-- [Hackahton de l'ONU](https://unstats.un.org/bigdata/events/2023/un-datathon/): fermeture des inscriptions à la fin du mois ;
+- [Hackathon de l'ONU](https://unstats.un.org/bigdata/events/2023/un-datathon/): fermeture des inscriptions à la fin du mois ;
 - [Prix du jeune statisticien de l'IAOS](https://mailings.isi-web.org/?na=v&nk=15226-43b0d8c9de&id=563) : article à envoyer avant le 10 février 2024
 
 Les personnes intéressées par former une équipe pour les _hackathons_ peuvent contacter <ssphub-contact@insee.fr>. 
