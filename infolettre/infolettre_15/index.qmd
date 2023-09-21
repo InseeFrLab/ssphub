@@ -93,9 +93,10 @@ des acteurs en mesure de les entraîner.
 En effet, les grands modèles de langage sont généralement entraînés
 sur des corpus génériques de langage naturel principalement issus d'internet (@tbl-corpus-falcon).
 Cela les rend capables de comprendre les interactions avec des utilisateurs, notamment leurs instructions (_prompt_)
-et d'interagir avec eux de manière assez naturelle. Néanmoins, pour des tâches très spécialisées ou alors face à des corpus
-particuliers, ces modèles génériques peuvent nécessiter d'être spécialisés pour obtenir de meilleures performances.
+et d'interagir avec eux de manière assez naturelle.
 
+Néanmoins, pour des tâches très spécialisées ou alors face à des corpus
+particuliers, ces modèles génériques peuvent nécessiter d'être spécialisés pour obtenir de meilleures performances.
 Plusieurs types de techniques, de [complexité graduelle](https://www.deeplearning.ai/the-batch/tips-for-taking-advantage-of-open-large-language-models/),
 ont ainsi émergé pour être en mesure de réutiliser et améliorer
 un modèle pré-entraîné.
@@ -159,7 +160,7 @@ Ce champ de recherche appliquée continue à connaître
 une actualité dense avec la publication, cet été, 
 de deux modèles importants:
 
-- [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respectivement, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards). `LeBonLLM` propose, déjà, des exemples de [_fine tuning_ de `LLaMa`](https://www.lebonllm.fr/entrainer-son-llm-avec-llama-1-et-llama-2/)
+- [`LLaMA-2`](https://ai.meta.com/llama/) par Meta, disponible en versions 7B, 13B et 70B c'est-à-dire, respectivement, 7, 13 et 70 milliards de paramètres. Dans le domaine des LLM actuels, c'est donc un modèle plutôt minimaliste (`GPT-3` comportait 175 milliards de paramètres, `GPT-4` en comporterait 1.7 trillions soit 1700 milliards). Le site web `LeBonLLM` propose, déjà, des exemples de [_fine tuning_ de `LLaMa`](https://www.lebonllm.fr/entrainer-son-llm-avec-llama-1-et-llama-2/)
  ;
 - [`Falcon`](https://falconllm.tii.ae/) par l'Institut d'Innovation et de Technologie d'Abu Dhabi. Alors que [Falcon-40B](https://huggingface.co/tiiuae/falcon-40b) avait déjà connu un engougement important en se plaçant en tête des réutilisations sur `HuggingFace`, la sortie il y a quelques jours de [Falcon 180B](https://huggingface.co/tiiuae/falcon-180B), dont les performances sont proches de celles des modèles propriétaires. 
 
@@ -239,7 +240,7 @@ de mettre en oeuvre un processus humain d'annotation et fournir au modèle ces �
 Comme l'évoque encore Andrew Ng, l'accès à des modèles
 pré-entraînés change le [cycle de développement des projets utilisateurs d'IA](https://www.deeplearning.ai/the-batch/building-machine-learning-systems-is-more-debugging-than-development/).
 Ces projets ne consistent plus, comme les logiciels classiques,
-à développer en amont des spécifications puis déployer un modèle correspondant à ces spécifications
+à développer en amont des spécifications puis déployer un modèle correspondant à celles-ci
 mais, au contraire, à commencer par mettre en oeuvre rapidement un premier modèle dont le comportement
 sera évalué et amélioré en continu par des méthodes comme l'apprentissage par renforcement. 
 
@@ -258,7 +259,7 @@ d'emplois d'acteurs et scénaristes du fait des IA génératrices est l'un des
 facteurs à l'origine de la grève à Hollywood ([voir _Le Monde_](https://www.lemonde.fr/economie/article/2023/07/14/greve-a-hollywood-les-acteurs-craignent-d-etre-remplaces-par-des-machines_6181893_3234.html)) ;
 - Le modèle _open source_ de génération d'images `StableDiffusion` sort une [version XL (`sdxl`)](https://stability.ai/stable-diffusion)  
 améliorant encore la qualité des productions (interface [ici](https://clipdrop.co/fr/stable-diffusion));
--La dernière revue de presse de la [Gazette BlueHats #24](https://code.gouv.fr/fr/bluehats/bluehats_24/#revue-de-presse) recense de nombreux articles sur l'IA ;
+- La dernière revue de presse de la [Gazette BlueHats #24](https://code.gouv.fr/fr/bluehats/bluehats_24/#revue-de-presse) recense de nombreux articles sur l'IA ;
 - Un [site interactif](https://unehistoireduconflitpolitique.fr/) riche de nombreuses data visualisations est associé au nouvel ouvrage de Thomas Piketty et Julia Cagé, _Une histoire du conflit politique_.
 
 # Événements
@@ -282,7 +283,7 @@ avec les librairies d'`HuggingFace` ;
 - _Fine tuning_ de ces modèles.
 
 __Rendez-vous le 28 septembre de 10h à 12h__ !
-[Inscription ici](LIEN A CREER)
+[Inscription ici](https://framaforms.org/inscription-aux-masterclass-datascientest-1695194241)
 
 ## Autres événements
 
