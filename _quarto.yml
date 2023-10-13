@@ -26,16 +26,18 @@ website:
         text: Home
       - href: event.qmd
         text: Événements
-      - href: about.qmd
-        text: À propos
       - href: infolettre/index.qmd
         text: Newsletters
       - href: blog.qmd
         text: Blog
       - href: course.qmd
         text: Ressources utiles
-      - href: additional/manifeste.qmd
-        text: Manifeste du réseau
+      - text: "À propos"
+        menu:
+          - href: about.qmd 
+            text: Présentation du réseau
+          - href: additional/manifeste.qmd
+            text: Manifeste du réseau
       - href: https://datalab.sspcloud.fr/
         text: "`SSPCloud`"
       - icon: github
