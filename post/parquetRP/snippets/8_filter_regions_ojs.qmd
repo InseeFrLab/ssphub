@@ -1,0 +1,8 @@
+```{{ojs}}
+liste_regions = ["11", "31", "34"]
+liste_regions_sql = liste_regions.map(item => `'${item}'`).join(",")
+Inputs.table(
+    db.query(`SELECT * FROM table_individu WHERE DEPT IN (${liste_regions_sql}) LIMIT 10`)
+)
+```
+

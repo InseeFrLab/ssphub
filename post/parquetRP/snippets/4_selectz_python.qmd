@@ -1,0 +1,5 @@
+```python
+duckdb.sql(
+  "SELECT * FROM documentation WHERE CONTAINS(code_modalite, 'Z')"
+)
+```

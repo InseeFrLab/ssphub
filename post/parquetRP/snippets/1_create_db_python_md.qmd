@@ -1,0 +1,25 @@
+```python
+import duckdb
+
+renommage_documentation = "SELECT " +\
+  "COD_VAR AS nom_variable, " +\
+  "LIB_VAR AS description_variable, " +\
+  "TYPE_VAR AS type_variable, "  +\
+  "COD_MOD AS code_modalite, " +\
+  "LIB_MOD AS description_modalite"
+    
+
+duckdb.sql(
+    'CREATE OR REPLACE VIEW table_individu ' +\
+    f'AS SELECT * FROM read_parquet("{path_data}/FD_INDCVI_2020.parquet")'
+    )
+duckdb.sql(
+    'CREATE OR REPLACE VIEW table_logement ' +\
+    f'AS SELECT * FROM read_parquet("{path_data}/FD_LOGEMT_2020.parquet")'
+    )
+duckdb.sql(
+    'CREATE OR REPLACE VIEW documentation ' +\
+    f'AS {renommage_documentation} ' +\
+    f'FROM read_csv_auto("{path_data}/dictionnaire_variables_2019.csv", header=true)'
+    )
+```

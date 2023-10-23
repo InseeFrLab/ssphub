@@ -1,0 +1,43 @@
+```r
+library(duckdb)
+library(glue)
+
+# Pour créer une base de données en mémoire
+con <- dbConnect(duckdb())
+
+
+renommage_documentation <- paste(
+"SELECT",
+"COD_VAR AS nom_variable,",
+"LIB_VAR AS description_variable,",
+"TYPE_VAR AS type_variable,",
+"COD_MOD AS code_modalite,",
+"LIB_MOD AS description_modalite"
+)
+
+
+dbExecute(
+  con,
+  glue(  
+    'CREATE OR REPLACE VIEW table_individu AS ',
+    'SELECT * FROM read_parquet("{path_data}/FD_INDCVI_2020.parquet")'
+  )
+)
+
+dbExecute(
+  con,
+  glue(  
+    'CREATE OR REPLACE VIEW table_logement AS ',
+    'SELECT * FROM read_parquet("{path_data}/FD_LOGEMT_2020.parquet")'
+  )
+)
+
+dbExecute(
+  con,
+  glue(
+  'CREATE OR REPLACE VIEW documentation AS ',
+  '{renommage_documentation} FROM ',
+  'read_csv_auto("{path_data}/dictionnaire_variables_2019.csv", header=true)'
+  )
+)
+```

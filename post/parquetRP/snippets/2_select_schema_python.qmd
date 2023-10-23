@@ -1,0 +1,6 @@
+```python
+schema_table_individu = duckdb.sql(
+  "SELECT * FROM documentation"
+  ).to_df()
+schema_table_individu.head(2)
+```

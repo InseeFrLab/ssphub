@@ -8,7 +8,7 @@ description: |
   données détaillées du recensement au format `Parquet`.
 
 # Date published
-date: 2023-10-19
+date: 2023-10-23
 bibliography: reference.bib
 
 # Date updated
@@ -27,6 +27,16 @@ categories:
 
 Ce guide présente quelques exemples d'utilisation des données du 
 recensement de la population diffusées au format `Parquet`. 
+Il s'agit d'une version HTML
+enrichissant le guide publié sur le site [insee.fr](https://www.insee.fr/fr/statistiques/7637890)
+pour les langages `Python` {{< fa brands python >}} et {{< fa brands r-project >}} avec
+des exemples interactifs pouvant être
+construits par le biais de `Quarto Markdown` et `Observable`.
+
+L'ensemble des codes utilisés pour produire cette note
+est disponible sur le
+dépôt [`Github` {{< fa brands github >}} InseeFrLab/exemples-recensement-parquet](https://github.com/InseeFrLab/exemples-recensement-parquet)
+au format [`Quarto Markdown`](https://quarto.org/).
 
 Pour plus d'informations sur le format `Parquet`, dans un contexte
 de statistique publique, se référer à @dondon-lamarche-2023. Pour
@@ -40,10 +50,7 @@ Par rapport à d'autres approches, [`DuckDB`](https://duckdb.org/) a été chois
 
 [^notealternative]: Des propositions d'enrichissements de cette documentation à partir d'implémentations alternatives, par exemple s'appuyant sur `Arrow` et `dbplyr` ou sur `Polars` sont bienvenues sur le [Github InseeFrLab/exemples-recensement-parquet](https://github.com/InseeFrLab/exemples-recensement-parquet).
 
-L'ensemble des codes utilisés pour produire cette note
-est disponible sur le
-dépôt [`Github` InseeFrLab/exemples-recensement-parquet](https://github.com/InseeFrLab/exemples-recensement-parquet)
-au format [`Quarto Markdown`](https://quarto.org/).
+
 
 
 <details>
@@ -95,6 +102,14 @@ Il vise à fournir
 une expérience plus ergonomique et des exemples supplémentaires liés
 au langage `Javascript` au guide PDF disponible sur la page du site
 [insee.fr](https://www.insee.fr/fr/statistiques/7706119?sommaire=7637890).
+
+⚠️ Cette page s'appuie sur l'exploitation de données qui sont préalablement
+téléchargées de manière automatique par le navigateur _web_. 
+Celles-ci représentent une volumétrie autour de 1Go, ce qui peut nécessiter
+un certain temps en fonction de la bande passante. Une fois téléchargées,
+l'exploitation
+de ces données nécessite néanmoins beaucoup moins de ressources
+grâce à l'optimisation permise par `DuckDB`. 
 :::
 
 
@@ -121,11 +136,12 @@ des fichiers.
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
 
-::: {.callout-caution collapse="true"}
-
 Les URL stables de mise à dispositon des
 données seront directement renseignées dans 
 la création de la base de données. 
+
+
+::: {.callout-caution collapse="true"}
 
 ## Emplacement des données pour les exemples `Observable` 
 
@@ -674,6 +690,7 @@ Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.11/dist/plot
 ```
 
 
+
 ```{ojs}
 //| echo: false
 pyramide_ages = db.query(
@@ -743,7 +760,7 @@ Inputs.table(
   db.query(
   `
   SELECT
-    SUM(IPONDI) AS individus_recenses,
+    CAST(SUM(IPONDI) AS INT) AS individus_recenses,
     DEPT
   FROM table_individu
     WHERE AGED >= 100
@@ -818,6 +835,10 @@ download.file(url, "cog.csv")
 </details>
 
 
+Après avoir récupérées les données, ce code peut permettre de créer
+une base de données intégrant le code officiel géographique:
+
+{{< include snippets/13_autres_sources_ojs.qmd >}}
 
 
 
@@ -851,10 +872,23 @@ db2 = {
 
 ```
 
+Les données du code officiel géographique présentent l'aspect suivant:
+
+```{ojs}
+//| code-fold: true
+//| code-summary: "Requête Observable pour explorer les premières lignes"
+Inputs.table(
+  db2.query(`SELECT * FROM cog2023 LIMIT 10`)
+)
+```
+
+Voici par exemple le résultat d'une fusion
+avec une agrégation produite à la volée sur la table logement:
 
 
 ```{ojs}
-//| echo: false
+//| code-fold: true
+//| code-summary: "Requête pour explorer les premières lignes"
 Inputs.table(
   db2.query(
     `
