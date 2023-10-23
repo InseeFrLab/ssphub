@@ -14,6 +14,7 @@ project:
     - post/**/*.qmd
     - partenaires/**/*.qmd
     - course/**/*.qmd
+    - "!*/parquetRP/snippets/*"
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
