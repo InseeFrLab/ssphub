@@ -21,7 +21,7 @@ duckdb.sql(
 """
 SELECT cog2023.NCCENR, CAST(SUM(table_logement.IPONDL) AS INT) AS recenses
 FROM table_logement
-LEFT OUTER JOIN cog2023 ON table_logement.CANTVILLE = cog2023.COM
+LEFT OUTER JOIN cog2023 ON table_logement.COMMUNE = cog2023.COM
 GROUP BY cog2023.NCCENR
 ORDER BY recenses;
 """
