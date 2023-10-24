@@ -5,7 +5,7 @@ SELECT CAST(
   SUM(IPONDL*CAST(INPER AS INT)) AS INT
 ) AS habitants_toulouse_demenagement
 FROM table_logement
-WHERE COMMUNE == '31555' AND IRANM NOT IN ('1', 'Z') AND INPER != 'Y'
+WHERE CANTVILLE == '31555' AND IRAN NOT IN ('1', 'Z') AND INPER != 'Y'
 """
 duckdb.sql(query).df()
 ```

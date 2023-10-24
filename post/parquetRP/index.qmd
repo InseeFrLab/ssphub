@@ -357,7 +357,7 @@ Pour un échantillon aléatoire, la commande à utiliser est `USING SAMPLE`.
 ```{ojs}
 //| echo: false
 Inputs.table(
-    db.query("SELECT * FROM table_logement USIN SAMPLE 5")
+    db.query("SELECT * FROM table_logement USING SAMPLE 5")
 )
 ```
 
@@ -544,10 +544,12 @@ la requête suivante peut être utilisée :
 //| echo: false
 Inputs.table(
     db.query(
-        "SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM > 2020"
+        "SELECT * FROM table_logement WHERE CANTVILLE = '06088' and AEMMR > 2020"
     )
 )
 ```
+
+
 
 # Statistiques agrégées
 
@@ -622,7 +624,7 @@ SELECT CAST(
   SUM(IPONDL*CAST(INPER AS INT)) AS INT
 ) AS habitants_toulouse_demenagement
 FROM table_logement
-WHERE COMMUNE == '31555' AND IRANM NOT IN ('1', 'Z') AND INPER != 'Y'
+WHERE CANTVILLE == '31555' AND IRAN NOT IN ('1', 'Z') AND INPER != 'Y'
 """
 duckdb.sql(query).df()
 ```
@@ -642,7 +644,7 @@ Inputs.table(
       SUM(IPONDL*CAST(INPER AS INT)) AS INT
     ) AS habitants_toulouse_demenagement
     FROM table_logement
-    WHERE COMMUNE == '31555' AND IRANM NOT IN ('1', 'Z') AND INPER != 'Y'
+    WHERE CANTVILLE == '31555' AND IRAN NOT IN ('1', 'Z') AND INPER != 'Y'
     `
   )
 )
@@ -899,7 +901,7 @@ Inputs.table(
     `
     SELECT cog2023.NCCENR, CAST(SUM(table_logement.IPONDL) AS INT) AS recenses
     FROM table_logement
-    LEFT OUTER JOIN cog2023 ON table_logement.COMMUNE = cog2023.COM
+    LEFT OUTER JOIN cog2023 ON table_logement.CANTVILLE = cog2023.COM
     GROUP BY cog2023.NCCENR
     ORDER BY recenses;
     `

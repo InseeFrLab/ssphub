@@ -1,6 +1,6 @@
 ```r
 dbGetQuery(
   con,
-  "SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM > 2020"
+  "SELECT * FROM table_logement WHERE CANTVILLE = '06088' and AEMM > 2020"
 )
 ```

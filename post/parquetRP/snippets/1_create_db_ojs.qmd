@@ -36,7 +36,7 @@ db = {
 
 ```{ojs}
 //| echo: false
-url_table_logement = "https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/20231023-122841/fd-indcvi-2020.parquet"
+url_table_logement = "https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/20231023-123618/fd-logemt-2020.parquet"
 url_table_individu = "https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/20231023-122841/fd-indcvi-2020.parquet"
 url_doc = "https://www.data.gouv.fr/fr/datasets/r/8a287ffb-7614-4b47-9cfa-7990ce89e1ce"
 
