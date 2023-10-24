@@ -115,18 +115,29 @@ grâce à l'optimisation permise par `DuckDB`.
 
 # Initialisation
 
-Les données sont disponibles sur le site `data.gouv` aux adresses suivantes:
+Les pages d'informations sur les données, où sont notamment disponibles
+la documentation de celles-ci,
+se retrouvent sur le site `insee.fr` aux adresses suivantes:
 
-* [Fichier détail individuel](https://www.insee.fr/fr/statistiques/7706119?sommaire=7637890) ;
-* [Fichier détail logement](https://www.insee.fr/fr/statistiques/7705908?sommaire=7637890).
+* [Fichier détail individuel](https://www.insee.fr/fr/statistiques/7706119?sommaire=7637890)
+* [Fichier détail logement](https://www.insee.fr/fr/statistiques/7705908?sommaire=7637890)
+
+Ces pages présentent aussi les données détaillées au format `CSV`. Néanmoins, le format `Parquet` 
+est plus intéressant pour le traitement de celles-ci comme expliqué 
+par @dondon-lamarche-2023. Les données au format `Parquet` sont mises à disposition sur 
+le site `data.gouv` aux adresses suivantes:
+
+* [Fichier détail individuel](https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1)
+* [Fichier détail logement](https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1)
 
 
-Dans la suite de ce guide, il sera fait l'hypothèse 
-pour `Python` et `R`
-que les données sont récupérées depuis les URL stables,
-enregistrées dans un même dossier
-et qu'il existe une variable _ad hoc_ enregistrant ce chemin 
-dans `Python` ou `R`. 
+Ces fichiers peuvent être téléchargés par la biais de `Python`
+ou de `R`.
+Dans la suite de ce guide, il sera fait l'hypothèse
+que les données sont téléchargées par le biais du code
+ci-dessous et
+stockées dans le dossier de travail utilisé par 
+`Python` ou `R`.
 En ce qui concerne `Observable`, il est proposé
 d'utiliser directement l'URL de mise à disposition
 des fichiers. 
@@ -161,19 +172,13 @@ peut ainsi prendre un peu plus de temps.
 
 ## `Python` {.unnumbered .unlisted}
 
-```python
-path_data = 'C:/MesDocuments/dossierpersonnel'
-# remplacer par l'emplacement où sont stockées 
-# les données
-```
+{{< include snippets/0_download_data_python_markdown.qmd >}}
+
 
 ## `R` {.unnumbered .unlisted}
 
-```r
-path_data <- 'C:/MesDocuments/dossierpersonnel'
-# remplacer par l'emplacement où sont stockées 
-# les données
-```
+{{< include snippets/0_download_data_r.qmd >}}
+
 
 :::
 
