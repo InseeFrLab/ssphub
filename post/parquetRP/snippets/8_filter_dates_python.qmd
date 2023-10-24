@@ -1,0 +1,4 @@
+```python
+query = "SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMMR > 2020"
+duckdb.sql(query)
+```

@@ -1,0 +1,13 @@
+```{{ojs}}
+db.query(
+`
+SELECT
+  CAST(SUM(IPONDI) AS INT) AS individus_recenses,
+  DEPT
+FROM table_individu
+  WHERE AGED >= 100
+GROUP BY DEPT
+ORDER BY individus_recenses DESC
+`
+)
+```

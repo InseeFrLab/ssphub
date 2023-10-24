@@ -1,0 +1,6 @@
+```r
+dbGetQuery(
+  con,
+  "SELECT * FROM table_individu WHERE DEPT IN ('11', '31', '34')"
+)
+```

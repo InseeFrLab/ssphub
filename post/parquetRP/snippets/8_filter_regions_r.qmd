@@ -1,0 +1,11 @@
+```r
+liste_regions <- c("11", "31", "34")
+liste_regions_sql <- glue_collapse(
+  lapply(
+    liste_regions, function(dep) glue("'{dep}'")
+    ),
+  ", "
+  )
+query <- glue("SELECT * FROM table_individu WHERE DEPT IN ({liste_regions_sql})")
+dbGetQuery(con, query)
+```

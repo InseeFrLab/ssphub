@@ -1,0 +1,4 @@
+```python
+query = "SELECT * FROM documentation WHERE CONTAINS(description_variable, 'Catégorie')"
+duckdb.sql(query)
+```

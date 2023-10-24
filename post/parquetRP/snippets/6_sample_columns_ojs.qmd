@@ -1,0 +1,7 @@
+```{{ojs}}
+Inputs.table(
+    db.query("SELECT IPONDI AS poids, AGED, VOIT FROM table_individu LIMIT 10")
+)
+```
+
+

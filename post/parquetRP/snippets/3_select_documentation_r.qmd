@@ -1,0 +1,4 @@
+```r
+query <- "SELECT * FROM documentation WHERE CONTAINS(description_variable, 'Catégorie')"
+dbGetQuery(con, query)
+```

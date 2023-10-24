@@ -1,0 +1,18 @@
+```{python}
+import requests
+import os
+
+def download_file(url, filename):
+    if not os.path.exists(filename):
+        response = requests.get(url)
+        with open(filename, 'wb') as f:
+            f.write(response.content)
+
+url_table_logement = "https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/20231023-123618/fd-logemt-2020.parquet"
+url_table_individu = "https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/20231023-122841/fd-indcvi-2020.parquet"
+url_doc = "https://www.data.gouv.fr/fr/datasets/r/1c4f92c0-e764-4b9f-af4e-6040883e17bd"
+
+download_file(url_table_logement, "FD_LOGEMT_2020.parquet")
+download_file(url_table_individu, "FD_INDCVI_2020.parquet")
+download_file(url_doc, "dictionnaire_variables_logemt_2020.csv")
+```
