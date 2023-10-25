@@ -1,31 +1,43 @@
 ```python
 import duckdb
+import os
 
-renommage_documentation = "SELECT " +\
-  "COD_VAR AS nom_variable, " +\
-  "LIB_VAR AS description_variable, " +\
-  "TYPE_VAR AS type_variable, "  +\
-  "COD_MOD AS code_modalite, " +\
-  "LIB_MOD AS description_modalite, " +\
-  "LONG_VAR as longueur_variable"
-    
+if not os.path.isdir(path_data):
+    raise ValueError("path_data n'est pas un répertoire valide.")
 
-duckdb.sql(
-    'CREATE OR REPLACE VIEW table_individu ' +\
-    f'AS SELECT * FROM read_parquet("{path_data}/FD_INDCVI_2020.parquet")'
-    )
-duckdb.sql(
-    'CREATE OR REPLACE VIEW table_logement ' +\
-    f'AS SELECT * FROM read_parquet("{path_data}/FD_LOGEMT_2020.parquet")'
-    )
-duckdb.sql(
-    'CREATE OR REPLACE VIEW documentation_indiv ' +\
-    f'AS {renommage_documentation} ' +\
-    f'FROM read_csv_auto("{path_data}/dictionnaire_variables_indcvi_2020.csv", header=true)'
-    )
-duckdb.sql(
-    'CREATE OR REPLACE VIEW documentation_logement ' +\
-    f'AS {renommage_documentation} ' +\
-    f'FROM read_csv_auto("{path_data}/dictionnaire_variables_logemt_2020.csv", header=true)'
-    )
+duckdb.sql(f'''
+  CREATE OR REPLACE VIEW table_individu
+  AS SELECT * FROM read_parquet("{path_data}/FD_INDCVI_2020.parquet")
+'''
+)
+
+duckdb.sql(f'''
+  CREATE OR REPLACE VIEW table_logement
+  AS SELECT * FROM read_parquet("{path_data}/FD_LOGEMT_2020.parquet")
+'''
+)
+
+duckdb.sql(f'''
+  CREATE OR REPLACE VIEW documentation_indiv
+  AS SELECT COD_VAR AS nom_variable,
+     LIB_VAR AS description_variable,
+     TYPE_VAR AS type_variable,
+     COD_MOD AS code_modalite,
+     LIB_MOD AS description_modalite,
+     LONG_VAR as longueur_variable
+  FROM read_csv_auto("{path_data}/dictionnaire_variables_indcvi_2020.csv", header=true)
+'''
+)
+
+duckdb.sql(f'''
+  CREATE OR REPLACE VIEW documentation_logement
+  AS SELECT COD_VAR AS nom_variable,
+     LIB_VAR AS description_variable,
+     TYPE_VAR AS type_variable,
+     COD_MOD AS code_modalite,
+     LIB_MOD AS description_modalite,
+     LONG_VAR as longueur_variable
+  FROM read_csv_auto("{path_data}/dictionnaire_variables_logemt_2020.csv", header=true)
+'''
+)
 ```

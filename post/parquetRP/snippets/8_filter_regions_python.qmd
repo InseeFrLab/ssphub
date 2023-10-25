@@ -1,5 +1,16 @@
 ```python
+con = duckdb.connect()
+
+con.execute('''
+  CREATE OR REPLACE VIEW table_individu
+  AS SELECT * FROM read_parquet("FD_INDCVI_2020.parquet")
+'''
+)
+
 liste_regions = ["11", "31", "34"]
+
+dep_slots = ", ".join(["?" for _ in liste_regions])
+query = "SELECT * FROM table_individu WHERE DEPT IN ({})".format(dep_slots)
 liste_regions_sql = ", ".join([f"'{dep}'" for dep in liste_regions])
-duckdb.sql(f"SELECT * FROM table_individu WHERE DEPT IN ({liste_regions_sql})")
+con.execute(query, liste_regions).fetchdf()
 ```

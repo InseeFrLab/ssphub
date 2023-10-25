@@ -6,7 +6,8 @@ dbExecute(
   con,
   glue_sql(
     "CREATE OR REPLACE VIEW cog2023 AS ",
-    "SELECT * FROM read_csv_auto("cog.csv", header=true)"
+    "SELECT * FROM read_csv_auto("cog.csv", header=true)",
+    .con=con
   )
 )
 

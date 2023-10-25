@@ -687,6 +687,11 @@ dont la syntaxe reproduit celle du _package_ `R` `ggplot2`, plutôt que sur
 
 {{< include snippets/11_pyramide_ages_python.qmd >}}
 
+::: {.callout-note}
+Il est proposé d'utiliser `Plotnine` plutôt que `Matplotlib`
+ou `Seaborn` par cohérence avec les
+exemples `ggplot`.
+:::
 
 ## `R` {.unnumbered .unlisted} 
 
@@ -697,7 +702,6 @@ dont la syntaxe reproduit celle du _package_ `R` `ggplot2`, plutôt que sur
 Pour utiliser une version compatible, par exemple la `0.6.11`, faire:
 
 ```{ojs}
-//| echo: false
 Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.11/dist/plot.umd.min.js")
 ```
 
