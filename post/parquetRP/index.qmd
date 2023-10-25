@@ -130,7 +130,6 @@ le site `data.gouv` aux adresses suivantes:
 * [Fichier détail individuel](https://www.data.gouv.fr/fr/datasets/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/)
 * [Fichier détail logement](https://www.data.gouv.fr/fr/datasets/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/)
 
-
 Ces fichiers peuvent être téléchargés par la biais de `Python`
 ou de `R`.
 Dans la suite de ce guide, il sera fait l'hypothèse
@@ -141,6 +140,7 @@ stockées dans le dossier de travail utilisé par
 En ce qui concerne `Observable`, il est proposé
 d'utiliser directement l'URL de mise à disposition
 des fichiers. 
+
 
 
 ::: {.panel-tabset group="language"}
@@ -235,8 +235,13 @@ le code ci-dessous peut être utilisé :
 
 ```{ojs}
 //| echo: false
+schema_table_logement = db.query(
+  "SELECT * FROM documentation_logement"
+  )
+Inputs.table(schema_table_logement)
+
 schema_table_individu = db.query(
-  "SELECT * FROM documentation"
+  "SELECT * FROM documentation_indiv"
   )
 Inputs.table(schema_table_individu)
 ```
@@ -271,7 +276,7 @@ extraire toutes les modalités des variables dont la description contient le ter
 
 ```{ojs}
 //| echo: false
-query = "SELECT * FROM documentation WHERE CONTAINS(description_variable, 'Catégorie')"
+query = "SELECT * FROM documentation_logement WHERE CONTAINS(description_variable, 'Catégorie')"
 Inputs.table(
     db.query(query)
 )
