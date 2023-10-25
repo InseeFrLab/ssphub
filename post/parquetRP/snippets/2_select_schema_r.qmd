@@ -1,9 +1,13 @@
 ```r
 schema_table_individu <- dbGetQuery(
   con,
-  "SELECT column_name AS colnames, data_type AS types
-  FROM INFORMATION_SCHEMA.COLUMNS
-  WHERE table_name = 'table_individu'"
+  "SELECT * FROM documentation_indiv"
 )
-print(schema_table_individu)
+print(head(schema_table_individu))
+
+schema_table_logement <- dbGetQuery(
+  con,
+  "SELECT * FROM documentation_logement"
+)
+print(head(schema_table_logement))
 ```

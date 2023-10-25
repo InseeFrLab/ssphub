@@ -1,6 +1,11 @@
 ```python
 schema_table_individu = duckdb.sql(
-  "SELECT * FROM documentation"
+  "SELECT * FROM documentation_indiv"
   ).to_df()
-schema_table_individu.head(2)
+display(schema_table_individu.head(2))
+
+schema_table_logement = duckdb.sql(
+  "SELECT * FROM documentation_logement"
+  ).to_df()
+display(schema_table_logement.head(2))
 ```

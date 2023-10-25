@@ -1,5 +1,6 @@
 ```r
-library(ggplot)
+library(labeling)
+library(ggplot2)
 
 query <- paste(
   "SELECT SUM(IPONDI) AS individus, AGED, DEPT AS departement",
@@ -9,12 +10,12 @@ query <- paste(
   "ORDER BY DEPT, AGED",
   sep = " "
 )
-dbGetQuery(con, query)
+pyramide_ages <- dbGetQuery(con, query)
 
-ggplot(pyramide_ages, aes(x = "AGED", y = "individus")) +
-  geom_bar(aes(fill = "departement"), stat = "identity", show_legend=False) +
+ggplot(pyramide_ages, aes(x = AGED, y = individus)) +
+  geom_bar(aes(fill = departement), stat = "identity") +
   geom_vline(xintercept = 18, color = "grey", linetype = "dashed") +
-  facet_wrap('departement', scales = "free_y", nrow = 3) +
+  facet_wrap(~departement, scales = "free_y", nrow = 3) +
   theme_minimal() +
   labs(y = "Individus recensés", x = "Âge")
 ```
