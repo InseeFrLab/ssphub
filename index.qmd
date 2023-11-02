@@ -5,10 +5,22 @@ title-block-style: none
 css: homepage.css
 page-layout: full
 listing:
-  id: partenaires
-  contents: partenaires
-  template: scripts/courses.ejs
-  type: grid
+  - id: newsletters
+    contents: infolettre
+    type: grid
+    sort:
+      - "number desc"
+    feed:
+        categories: [post, infolettre]
+  - id: blog
+    contents: post
+    type: grid
+    feed: true
+  - id: partenaires
+    contents: partenaires
+    template: scripts/courses.ejs
+    type: grid
+    feed: false
 ---
 
 ::: {#hero-banner .column-screen}
@@ -95,5 +107,23 @@ Quelques communautés de la data-science avec lesquels nous collaborons
 
 :::: {#partenaires}
 ::::
+
+
+## Les derniers billets de blog
+
+L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.qmd).
+
+
+:::: {#blog}
+::::
+
+## Les dernières _newsletters_
+
+Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/index.qmd).
+
+
+:::: {#newsletters}
+::::
+
 
 :::
