@@ -1,14 +1,16 @@
 ---
-title: "Le plongement lexical, ou comment apprendre à lire à un ordinateur"
-author: Lucas Malherbe
+title: Le plongement lexical ou comment apprendre à lire à un ordinateur
+subtitle: Un article pour découvrir la manière dont les ordinateurs comprennent la langue
+authors:
+  - Lucas Malherbe
 
 # Summary for listings and search engines
 description: |
-  Introduction aux méthodes de traitement du langage naturel
+  Introduction aux méthodes de traitement du langage naturel.
 
 
 # Date published
-date: '2022-09-19'
+date: 2022-10-03
 
 # Featured image
 image: featured.jpg

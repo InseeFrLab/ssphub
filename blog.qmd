@@ -1,6 +1,7 @@
 ---
 title: "Blog"
 listing:
+  feed: true
   id: blog-listing
   contents: post
   type: grid

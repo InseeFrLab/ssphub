@@ -22,6 +22,9 @@ title-block-banner-color: white
 website:
   title: "SSPHub"
   navbar:
+    right:
+      - icon: rss
+        href: index.xml  
     left:
       - href: index.qmd
         text: Home
@@ -43,10 +46,13 @@ website:
         text: "`SSPCloud`"
       - icon: github
         href: https://github.com/InseeFrLab/ssphub
-
+  site-url: https://ssphub.netlify.app/
+  description: "Blog du réseau des data scientists de la statistique publique"
 
 format:
   html:
     theme: [cosmo, styles.scss]
     toc: true
     page-layout: article
+
+
