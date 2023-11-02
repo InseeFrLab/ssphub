@@ -1,0 +1,6 @@
+```r
+table_logement %>%
+  filter(str_detect(ARM, "ZZZZZ", negate = TRUE)) %>%
+  summarise(ARM = distinct(ARM)) %>%
+  arrange(ARM)
+```

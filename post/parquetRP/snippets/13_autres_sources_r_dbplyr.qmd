@@ -1,0 +1,17 @@
+```r
+url <- "https://www.insee.fr/fr/statistiques/fichier/6800675/v_commune_2023.csv"
+download.file(url, "cog.csv")
+```
+
+```r
+cog <- tbl(con, glue('read_csv_auto("{path_data}/cog.csv", header = true)'))
+```
+
+```r
+table_logement %>%
+  left_join(cog, by = c("COMMUNE" = "COM")) %>%
+  group_by(NCCENR) %>%
+  summarise(recenses = as.integer(sum(IPONDL)), .groups = "drop") %>%
+  arrange(recenses)
+```
+

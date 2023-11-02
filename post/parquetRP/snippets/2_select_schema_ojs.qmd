@@ -2,10 +2,11 @@
 schema_table_logement = db.query(
   "SELECT * FROM documentation_logement"
   )
-Inputs.table(schema_table_logement)
+Inputs.table(documentation_logement)
 
 schema_table_individu = db.query(
   "SELECT * FROM documentation_indiv"
   )
 Inputs.table(schema_table_individu)
 ```
+
