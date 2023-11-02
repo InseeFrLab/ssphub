@@ -87,7 +87,7 @@ table_filtre_description = Inputs.table(
 
 ```{ojs}
 //| echo: false
-documentation = db.query(`SELECT * FROM documentation`)
+documentation = db.query(`SELECT * FROM documentation_indiv`)
 ```
 
 
