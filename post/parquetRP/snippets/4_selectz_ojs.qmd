@@ -1,7 +1,7 @@
 ```{{ojs}}
 Inputs.table(
   db.query(
-    "SELECT * FROM documentation WHERE CONTAINS(code_modalite, 'Z')"
+    "SELECT * FROM documentation_indiv WHERE CONTAINS(code_modalite, 'Z')"
   ),
   {
     columns: [

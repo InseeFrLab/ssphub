@@ -115,32 +115,21 @@ grâce à l'optimisation permise par `DuckDB`.
 
 # Initialisation
 
-Les pages d'informations sur les données, où sont notamment disponibles
-la documentation de celles-ci,
-se retrouvent sur le site `insee.fr` aux adresses suivantes:
+Les données sont disponibles sur le site `data.gouv` aux adresses suivantes :
 
-* [Fichier détail individuel](https://www.insee.fr/fr/statistiques/7706119?sommaire=7637890)
-* [Fichier détail logement](https://www.insee.fr/fr/statistiques/7705908?sommaire=7637890)
+* [Fichier détail individuel](https://www.insee.fr/fr/statistiques/7706119?sommaire=7637890) ;
+* [Fichier détail logement](https://www.insee.fr/fr/statistiques/7705908?sommaire=7637890).
 
-Ces pages présentent aussi les données détaillées au format `CSV`. Néanmoins, le format `Parquet` 
-est plus intéressant pour le traitement de celles-ci comme expliqué 
-par @dondon-lamarche-2023. Les données au format `Parquet` sont mises à disposition sur 
-le site `data.gouv` aux adresses suivantes:
 
-* [Fichier détail individuel](https://www.data.gouv.fr/fr/datasets/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/)
-* [Fichier détail logement](https://www.data.gouv.fr/fr/datasets/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/)
-
-Ces fichiers peuvent être téléchargés par la biais de `Python`
-ou de `R`.
-Dans la suite de ce guide, il sera fait l'hypothèse
-que les données sont téléchargées par le biais du code
-ci-dessous et
-stockées dans le dossier de travail utilisé par 
-`Python` ou `R`.
+Dans la suite de ce guide, il sera fait l'hypothèse 
+pour `Python` et `R`
+que les données sont récupérées depuis les URL stables,
+enregistrées dans un même dossier
+et qu'il existe une variable _ad hoc_ enregistrant ce chemin 
+dans `Python` ou `R`. 
 En ce qui concerne `Observable`, il est proposé
 d'utiliser directement l'URL de mise à disposition
 des fichiers. 
-
 
 
 ::: {.panel-tabset group="language"}
@@ -172,13 +161,27 @@ peut ainsi prendre un peu plus de temps.
 
 ## `Python` {.unnumbered .unlisted}
 
-{{< include snippets/0_download_data_python_markdown.qmd >}}
-
+```python
+path_data = 'C:/MesDocuments/dossierpersonnel'
+# remplacer par l'emplacement où sont stockées 
+# les données
+```
 
 ## `R` {.unnumbered .unlisted}
 
-{{< include snippets/0_download_data_r.qmd >}}
+```r
+path_data <- 'C:/MesDocuments/dossierpersonnel'
+# remplacer par l'emplacement où sont stockées 
+# les données
+```
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+```r
+path_data <- 'C:/MesDocuments/dossierpersonnel'
+# remplacer par l'emplacement où sont stockées 
+# les données
+```
 
 :::
 
@@ -196,7 +199,7 @@ alias (`table_logement` ou `table_individu`).
 
 <details>
 <summary>
-Dérouler pour découvrir le code <code>Observable</code> d'initiatialisation de la base de
+Dérouler pour découvrir le code <code>Observable</code> d'initialisation de la base de
 données avec <code>DuckDB</code>
 </summary>
 {{< include snippets/1_create_db_ojs.qmd >}}
@@ -210,6 +213,9 @@ données avec <code>DuckDB</code>
 
 {{< include snippets/1_create_db_r.qmd >}}
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/1_create_db_r_dbplyr.qmd >}}
 :::
 
 Pour rapidement avoir une idée des informations présentes dans ces données,
@@ -231,15 +237,14 @@ le code ci-dessous peut être utilisé :
 
 {{< include snippets/2_select_schema_r.qmd >}}
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/2_select_schema_r_dbplyr.qmd >}}
+
 :::
 
 ```{ojs}
 //| echo: false
-schema_table_logement = db.query(
-  "SELECT * FROM documentation_logement"
-  )
-Inputs.table(schema_table_logement)
-
 schema_table_individu = db.query(
   "SELECT * FROM documentation_indiv"
   )
@@ -251,8 +256,7 @@ Pour découvrir les informations présentes dans la base,
 il est possible d'utiliser les fonctions pré-implémentées
 de `DuckDB` pour la [manipulation de données textuelles](https://duckdb.org/docs/sql/functions/char.html).
 Par exemple, pour 
-extraire toutes les modalités des variables dont la description contient le terme _"catégorie"_:
-
+extraire toutes les modalités des variables dont la description contient le terme _"catégorie"_ :
 
 
 ::: {.panel-tabset group="language"}
@@ -272,6 +276,10 @@ extraire toutes les modalités des variables dont la description contient le ter
 
 {{< include snippets/3_select_documentation_r.qmd >}}
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/3_select_documentation_r_dbplyr.qmd >}}
+
 :::
 
 ```{ojs}
@@ -285,7 +293,6 @@ Inputs.table(
 Cette approche peut permettre de récupérer les modalités d'une variable.
 Dans cette base de données, les valeurs `Z` sont à part.
 Il est possible d'avoir du détail sur celles-ci avec la requête suivante :
-
 
 
 ::: {.panel-tabset group="language"}
@@ -303,13 +310,17 @@ Il est possible d'avoir du détail sur celles-ci avec la requête suivante :
 
 {{< include snippets/4_selectz_r.qmd >}}
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/4_selectz_r_dbplyr.qmd >}}
+
 :::
 
 ```{ojs}
 //| echo: false
 Inputs.table(
   db.query(
-    "SELECT * FROM documentation WHERE CONTAINS(code_modalite, 'Z')"
+    "SELECT * FROM documentation_indiv WHERE CONTAINS(code_modalite, 'Z')"
   ),
   {
     columns: [
@@ -332,13 +343,11 @@ deux approches sont possibles :
 Pour les premières lignes, la commande à utiliser est `LIMIT`.
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
 
 {{< include snippets/5_limit_ojs.qmd >}}
-
 
 ## `Python` {.unnumbered .unlisted}
 
@@ -347,6 +356,10 @@ Pour les premières lignes, la commande à utiliser est `LIMIT`.
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/5_limit_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/5_limit_r_dbplyr.qmd >}}
 
 :::
 
@@ -362,7 +375,7 @@ Pour un échantillon aléatoire, la commande à utiliser est `USING SAMPLE`.
 ```{ojs}
 //| echo: false
 Inputs.table(
-    db.query("SELECT * FROM table_logement USING SAMPLE 5")
+    db.query("SELECT * FROM table_logement USIN SAMPLE 5")
 )
 ```
 
@@ -382,6 +395,10 @@ Inputs.table(
 
 {{< include snippets/5_sample_r.qmd >}}
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/5_sample_r_dbplyr.qmd >}}
+
 :::
 
 ```{ojs}
@@ -399,7 +416,6 @@ La liste des colonnes à extraire du fichier peut être renseignée avec la clau
 Celles-ci peuvent être renommées en appliquant au passage la clause `AS`.
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
@@ -413,6 +429,10 @@ Celles-ci peuvent être renommées en appliquant au passage la clause `AS`.
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/6_sample_columns_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/6_sample_columns_r_dbplyr.qmd >}}
 
 :::
 
@@ -428,7 +448,6 @@ des colonnes à travers des [expressions régulières](https://fr.wikipedia.org/
 De nombreux exemples peuvent être trouvés sur [cette page](https://duckdb.org/2023/08/23/even-friendlier-sql.html).
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
@@ -442,6 +461,10 @@ De nombreux exemples peuvent être trouvés sur [cette page](https://duckdb.org/
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/7_use_regex_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/7_use_regex_r_dbplyr.qmd >}}
 
 :::
 
@@ -461,13 +484,11 @@ Par exemple, il est possible de ne conserver, du fichier national, que les donn�
 de la Haute-Garonne (31) et de l'Hérault (34). 
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
 
 {{< include snippets/8_filter_dpts_ojs.qmd >}}
-
 
 ## `Python` {.unnumbered .unlisted}
 
@@ -476,6 +497,11 @@ de la Haute-Garonne (31) et de l'Hérault (34).
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/8_filter_dpts_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/8_filter_dpts_r_dbplyr.qmd >}}
+
 
 :::
 
@@ -490,9 +516,7 @@ Inputs.table(
 
 Il est également possible de formater cette liste telle qu'attendue par SQL 
 à partir d'une liste `Python` ou d'un vecteur `R` plus classique.
-Pour cela, le code suivant
-peut servir de modèle :
-
+Pour cela, le code suivant peut servir de modèle :
 
 
 ::: {.panel-tabset group="language"}
@@ -500,7 +524,6 @@ peut servir de modèle :
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
 
 {{< include snippets/8_filter_regions_ojs.qmd >}}
-
 
 ## `Python` {.unnumbered .unlisted}
 
@@ -510,6 +533,10 @@ peut servir de modèle :
 
 {{< include snippets/8_filter_regions_r.qmd >}}
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/8_filter_regions_r_dbplyr.qmd >}}
+
 :::
 
 ```{ojs}
@@ -517,9 +544,15 @@ peut servir de modèle :
 liste_regions = ["11", "31", "34"]
 liste_regions_sql = liste_regions.map(item => `'${item}'`).join(",")
 Inputs.table(
-    db.query(`SELECT * FROM table_individu WHERE DEPT IN (?) LIMIT 10`, [liste_regions_sql])
+    db.query(`SELECT * FROM table_individu WHERE DEPT IN (${liste_regions_sql}) LIMIT 10`)
 )
 ```
+
+Pour en savoir plus sur les _prepared statements_ avec DuckDB en Python,
+et plus généralement pour avoir des exemples d'utilisations différentes,
+c'est [ici](https://duckdb.org/docs/api/python/dbapi.html) que ça se passe.
+
+<br>
 
 Les filtres sur les observations peuvent être faits à partir de critères
 sur plusieurs colonnes. Par exemple, pour ne conserver que les observations
@@ -527,13 +560,11 @@ de la ville de Nice où la date d'emménagement est postérieure à 2020,
 la requête suivante peut être utilisée :
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
 
 {{< include snippets/8_filter_dates_ojs.qmd >}}
-
 
 ## `Python` {.unnumbered .unlisted}
 
@@ -543,18 +574,20 @@ la requête suivante peut être utilisée :
 
 {{< include snippets/8_filter_dates_r.qmd >}}
 
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/8_filter_dates_r_dbplyr.qmd >}}
+
 :::
 
 ```{ojs}
 //| echo: false
 Inputs.table(
     db.query(
-        "SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMMR > 2020"
+        "SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM > 2020"
     )
 )
 ```
-
-
 
 # Statistiques agrégées
 
@@ -581,7 +614,6 @@ permet d'extraire la liste des codes arrondissements
 présents dans la base de données.
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
@@ -595,6 +627,11 @@ présents dans la base de données.
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/9_distinct_arrondissements_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/9_distinct_arrondissements_r_dbplyr.qmd >}}
+
 
 :::
 
@@ -612,31 +649,23 @@ par le biais d'une requête SQL plus complexe. Par exemple pour calculer
 le nombre d'habitants de Toulouse qui ont changé de logement en un an:
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
 
 {{< include snippets/10_use_cast_ojs.qmd >}}
 
-
 ## `Python` {.unnumbered .unlisted}
 
-```python
-query = \
-"""
-SELECT CAST(
-  SUM(IPONDL*CAST(INPER AS INT)) AS INT
-) AS habitants_toulouse_demenagement
-FROM table_logement
-WHERE COMMUNE == '31555' AND IRANM NOT IN ('1', 'Z') AND INPER != 'Y'
-"""
-duckdb.sql(query).df()
-```
+{{< include snippets/10_use_cast_python.qmd >}}
 
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/10_use_cast_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/10_use_cast_r_dbplyr.qmd >}}
 
 :::
 
@@ -665,7 +694,6 @@ et transformer ces résultats sous forme de _dataframe_
 graphique pour représenter la pyramide des âges.
 
 
-
 ::: {.callout-note}
 Pour illustrer le parallélisme possible entre les codes
 `R` et `Python`, l'exemple de représentation graphique ci-dessus s'appuie sur
@@ -675,36 +703,32 @@ dont la syntaxe reproduit celle du _package_ `R` `ggplot2`, plutôt que sur
 :::
 
 
-
 ::: {.panel-tabset group="language"}
 
 ## `Observable` via `Quarto` {.unnumbered .unlisted}
 
 {{< include snippets/11_pyramide_ages_ojs.qmd >}}
 
-
 ## `Python` {.unnumbered .unlisted}
 
 {{< include snippets/11_pyramide_ages_python.qmd >}}
 
-::: {.callout-note}
-Il est proposé d'utiliser `Plotnine` plutôt que `Matplotlib`
-ou `Seaborn` par cohérence avec les
-exemples `ggplot`.
-:::
-
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/11_pyramide_ages_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/11_pyramide_ages_r_dbplyr.qmd >}}
 
 :::
 
 Pour utiliser une version compatible, par exemple la `0.6.11`, faire:
 
 ```{ojs}
+//| echo: false
 Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.11/dist/plot.umd.min.js")
 ```
-
 
 
 ```{ojs}
@@ -759,7 +783,6 @@ ordre décroissant.
 
 {{< include snippets/12_centenaires_ojs.qmd >}}
 
-
 ## `Python` {.unnumbered .unlisted}
 
 {{< include snippets/12_centenaires_python.qmd >}}
@@ -767,6 +790,10 @@ ordre décroissant.
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/12_centenaires_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/12_centenaires_r_dbplyr.qmd >}}
 
 :::
 
@@ -806,7 +833,6 @@ de l'[extension `httpfs`](https://duckdb.org/docs/extensions/httpfs.html).
 L'association de sources de données passe généralement par un `JOIN`. Pour illustrer
 cette clause, il est possible d'associer les agrégats de la table logement
 à un niveau communal avec celles du COG grâce au code commune. 
-
 
 
 ::: {.panel-tabset group="language"}
@@ -856,8 +882,6 @@ une base de données intégrant le code officiel géographique:
 
 {{< include snippets/13_autres_sources_ojs.qmd >}}
 
-
-
 ## `Python` {.unnumbered .unlisted}
 
 {{< include snippets/13_autres_sources_python.qmd >}}
@@ -865,6 +889,10 @@ une base de données intégrant le code officiel géographique:
 ## `R` {.unnumbered .unlisted} 
 
 {{< include snippets/13_autres_sources_r.qmd >}}
+
+## `R (dbplyr)` {.unnumbered .unlisted} 
+
+{{< include snippets/13_autres_sources_r_dbplyr.qmd >}}
 
 :::
 
@@ -884,11 +912,9 @@ db2 = {
   return configuredClient ;
 
 }
-
-
 ```
 
-Les données du code officiel géographique présentent l'aspect suivant:
+Les données du code officiel géographique présentent l'aspect suivant :
 
 ```{ojs}
 //| code-fold: true
@@ -899,8 +925,7 @@ Inputs.table(
 ```
 
 Voici par exemple le résultat d'une fusion
-avec une agrégation produite à la volée sur la table logement:
-
+avec une agrégation produite à la volée sur la table logement :
 
 
 ```{ojs}

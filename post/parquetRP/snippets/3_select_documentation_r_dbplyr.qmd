@@ -1,0 +1,4 @@
+```r
+documentation_logement %>%
+  filter(str_detect(description_variable, "catégorie"))
+```

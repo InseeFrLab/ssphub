@@ -1,4 +1,4 @@
 ```python
-query = "SELECT * FROM documentation_indiv WHERE CONTAINS(description_variable, 'Catégorie')"
+query = "SELECT * FROM documentation_logement WHERE CONTAINS(description_variable, 'Catégorie')"
 duckdb.sql(query)
 ```

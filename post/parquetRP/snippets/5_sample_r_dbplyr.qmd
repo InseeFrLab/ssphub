@@ -1,0 +1,4 @@
+```r
+tbl(con, sql("SELECT * FROM table_logement USING SAMPLE 5"))
+```
+
