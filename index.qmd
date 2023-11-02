@@ -8,6 +8,8 @@ listing:
   - id: newsletters
     contents: infolettre
     type: grid
+    sort:
+      - "number desc"
     feed:
         categories: [post, infolettre]
   - id: blog
