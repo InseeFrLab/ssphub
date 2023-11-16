@@ -1,0 +1,226 @@
+---
+title: Infolettre n°16
+description: |
+  Infolettre, __Novembre 2023__
+
+# Date published
+date: '2023-11-15'
+number: 16
+
+image: canards.png
+
+authors:
+  - Lino Galiana
+
+tags:
+  - infolettre
+
+categories:
+  - Infolettre
+---
+
+![](canards.png){width=50% fig-align="center"}
+
+:::{.callout-tip}
+
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
+
+:::
+
+
+
+Comme la diffusion conjointe le mois dernier des données détaillées du recensement de la population au
+format `Parquet` et d'un guide d'exemples
+sous forme de [_post_ de blog du `SSPHub`](https://ssphub.netlify.app/post/parquetrp/) a suscité 
+de l'enthousiasme au-delà du cercle des statisticiens publics,
+cette _newsletter_ se propose de revenir sur les
+enjeux derrière ces choix techniques. 
+
+::: {.callout-note}
+La première partie de cette _newsletter_
+se concentrera sur les
+enjeux principaux. La suite sera plus technique 
+et évoquera plus en détail certains modèles
+et les méthodes de ré-entrainement.  
+:::
+
+# `Parquet` et `DuckDB`: des briques techniques certes mais également un choix stratégique
+
+## Le retour en grâce du stockage sous forme de fichiers
+
+Il existe principalement deux approches pour stocker, organiser et mettre 
+à disposition des jeux de données
+structurés sous forme tabulaire: les __fichiers__ et les __bases de données relationnelles__. 
+
+Par rapport à des bases de données, les fichiers
+sont plus faciles à créer, partager et stocker et ne nécessitent pas systématiquement
+des logiciels spécialisés pour leur manipulation (plus de détails dans la partie technique ).
+Comme les données peuvent être organisées de plusieurs manières, il existe plusieurs formats de stockage.
+Par exemple, les données tabulaires suivantes peuvent être stockées dans différents formats: 
+
+| Nom | Profession |
+|----------|-----------|
+| Astérix | |
+| Obélix | Tailleur de menhir |
+| Assurancetourix | Barde |
+
+
+<details>
+<summary>
+Exemple avec le format `CSV`
+</summary>
+```
+nom,profession 
+Astérix, 
+Obélix,Tailleur de menhir
+Assurancetourix,Barde
+```
+</details>
+
+
+<details>
+<summary>
+Exemple avec le format `JSON`
+</summary>
+```
+[
+  {
+    "nom": "Astérix"
+  },
+  {
+    "nom": "Obélix",
+    "profession": "Tailleur de menhir"
+  },
+  {
+    "nom": "Assurancetourix",
+    "profession": "Barde"
+  }
+]
+```
+</details>
+
+
+::: {.callout-note}
+
+Les bases de données relèvent d'une approche systémique.
+Un système de gestion de base de données (SGBD) 
+est un logiciel qui gère à la fois le stockage d’un ensemble de données reliées,
+permet de mettre à jour celles-ci (ajout ou suppression d’informations, modification des caractéristiques d’une table…) et qui gère également les modalités d’accès à la donnée (type de requête, utilisateurs ayant les droits en lecture ou en écriture...).
+L'un des logiciels les plus connus dans le domaine est `PostgreSQL`. 
+
+<!---------
+La relation entre les entités présentes dans une base de données prend souvent
+la forme d’un schéma en étoile. En général, une base centralise les informations disponibles qui seront ensuite détaillées dans des tables dédiées.
+
+![Logique du schéma en étoile. Source: [Databricks](https://www.databricks.com/fr/glossary/star-schema)](https://www.databricks.com/wp-content/uploads/2022/04/star-schema-erd.png)
+------------>
+
+D'un autre côté, le stockage de données tabulaires sous forme de fichiers offre une approche plus décentralisée et flexible. 
+Le stockage sous la forme de fichier consiste à organiser l'information
+présente dans un jeu de données dans des fichiers, de manière brute.
+Ces données peuvent être analysées sans recourir à un logiciel spécialisé. 
+Même dans le cadre de formats propriétaires, comme le `.xlsx`
+ou `sas7bdat`, le fait d'avoir une certaine forme de standardisation
+rend possible, même si ce n'est jamais parfaitement fiable, de lire ces données
+avec un autre logiciel que celui prévu initialement. 
+
+
+
+La logique de la base de données est donc très différente de celle du fichier.
+Par rapport à une base de données, l'approche des fichiers présente plusieurs
+avantages, à condition de privilégier des formats libres.
+
+En premier lieu, les fichiers sont
+moins adhérents à un logiciel gestionnaire.
+Une transition d'un logiciel de traitement vers un autre
+n'implique pas de changer la source brute. 
+Les _data scientists_ utilisateurs de `Python` ou `R` rencontrent un
+deuxième inconvénient aux bases de données par rapport aux fichiers.
+Les bases de données nécessitent l’intermédiation du logiciel de gestion
+adapté 
+là où, avec des fichiers, on peut se contenter d’une librairie, donc un système beaucoup plus léger, qui sait comment transformer la donnée pour la retravailler depuis `Python` ou `R`. 
+
+Pour ces raisons, entre autres, il est plus pratique pour des utilisateurs finaux de données
+d'avoir accès à des fichiers plutôt qu'à des bases de données, à condition d'avoir
+les ressources computationnelles suffisantes pour pouvoir traiter ces fichiers. 
+
+Néanmoins, cette condition d'accès à des ressources computationnelles suffisantes
+peut représenter une contrainte limitante dans un environnement où les données
+sont de volume croissant.
+Dans les environnements où la volumétrie des données était importante, 
+les bases de données ont connu une certaine
+popularité puisqu'elles permettaient de
+gérer efficacement de grandes quantités de données. Comme, de plus, les bases
+de données offraient une gestion plus fine et fiable
+des droits d'accès et d'écriture sur les bases que ne le permettent des fichiers, 
+cette approche a pu connaître une certaine popularité. 
+
+:::
+
+L’inconvénient de l’approche fichier, sous sa forme standard, est qu’elle ne permet pas une gestion fine des droits d’accès et amène généralement à une duplication de la donnée pour éviter que la source initiale soit ré-écrite (involontairement ou de manière intentionnelle par un utilisateur malveillant). Résoudre ce problème est l’une des innovations des systèmes cloud, sur lesquelles nous reviendrons en évoquant le système S3. 
+
+    la tendance actuelle montre un retour en force vers l'utilisation de fichiers, en particulier avec l'émergence de technologies telles que les systèmes de fichiers distribués et les outils d'analyse de données décentralisés. Autrefois, la préférence pour les bases de données reposait sur leur capacité à gérer efficacement de grandes quantités de données, à garantir la cohérence des informations et à offrir des fonctionnalités avancées de requêtage. Ces avantages étaient cruciaux à une époque où la taille des ensembles de données et la complexité des analyses augmentaient rapidement.
+
+    Cependant, avec l'avènement de systèmes de fichiers distribués comme Hadoop Distributed File System (HDFS) et de frameworks d'analyse de données tels que Apache Spark, les fichiers ont gagné en performance et en capacité de traitement parallèle. Ces technologies ont permis de surmonter certaines des limitations traditionnelles associées aux fichiers, ouvrant ainsi la voie à une utilisation plus répandue de cette approche.
+
+    De plus, la montée en puissance des environnements de calcul distribué et des solutions de conteneurisation comme Docker a simplifié la gestion des dépendances logicielles, réduisant ainsi les contraintes liées à la portabilité des fichiers. Ainsi, bien que les bases de données restent essentielles dans de nombreux contextes, les avantages liés à la simplicité, à la portabilité et à la flexibilité des fichiers contribuent à expliquer le regain d'intérêt pour cette approche, surtout dans des environnements où l'agilité et la rapidité de traitement deviennent des priorités.
+
+
+<!---
+L’inconvénient de l’approche fichier, sous sa forme standard, est qu’elle ne permet pas une gestion fine des droits d’accès et amène généralement à une duplication de la donnée pour éviter que la source initiale soit ré-écrite (involontairement ou de manière intentionnelle par un utilisateur malveillant). Résoudre ce problème est l’une des innovations des systèmes cloud, sur lesquelles nous reviendrons en évoquant le système S3. 
+
+Cependant, cette simplicité peut parfois entraîner des défis en termes de gestion et de cohérence des données, surtout lorsque plusieurs utilisateurs interagissent simultanément avec les fichiers. De plus, les fichiers peuvent manquer des fonctionnalités avancées de gestion de données, de sécurité et d'optimisation des performances, offertes par les systèmes de gestion de bases de données relationnelles. Les choix entre fichiers et bases de données dépendent souvent des besoins spécifiques du projet, du volume de données et des exigences en matière de traitement et d'analyse.
+----->
+
+
+La différence entre les formats de données va néanmoins au-delà d’un simple _"formattage"_
+des données. Certains formats sont plus adaptés à certaines structures de données. 
+
+
+
+## reste d'actualité
+
+- IA act
+
+
+
+# Événements
+
+## Masterclass _datascientest_ sur le traitement de séries temporelles {#mc-datascientest}
+
+![](../infolettre_11/datascientest.png){width=20% fig-align="center"}
+
+
+Notre cycle de _masterclass_ organisées en lien avec _datascientest_
+continue ! Après la série de _masterclass_ consacrée
+aux réseaux de neurone, nous revenons aux classiques avec
+une session sur les séries temporelles. 
+Il y sera question d'harmonisation de séries (désaisonnalisation, etc.), de prévision et de _nowcasting_.
+
+
+__Rendez-vous le 1er décembre de 10h à 12h__ !
+[Inscription ici](https://framaforms.org/inscription-aux-masterclass-datascientest-1695194241)
+
+## Mentorat `Python`
+
+TO BE COMPLETED
+
+## Autres événements
+
+Quelques événements ou informations intéressantes :
+
+- Conf Wiesbaden  
+
+Les personnes intéressées pour participer à ces événements peuvent contacter <ssphub-contact@insee.fr>
+pour bénéficier d'informations supplémentaires. 
+
+
+## Rejoindre le salon Tchap `SSP Hub`
+
+Pour échanger autour des activités du réseau et, plus largement, discuter entre pairs des sujets _data science_,
+il existe un __salon `SSP Hub`__ dans la messagerie sécurisée
+de l’État `Tchap`.
+Celui-ci réunit plus de 250 personnes et permet des échanges plus directs, plus fréquents et plus informels que la liste de diffusion mail.
+
+Si vous avez un compte sur `Tchap`, vous pouvez rejoindre ce salon en cherchant celui-ci par son nom __`« SSP Hub »`__. 
+En cas de problème pour le rejoindre, n’hésitez pas à envoyer un mail à <ssphub-contact@insee.fr>.
