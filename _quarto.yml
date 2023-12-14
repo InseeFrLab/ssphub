@@ -9,9 +9,10 @@ project:
     - talk/**/*.qmd
     - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
+    - infolettre/infolettre_16/*.qmd
     - infolettre/*.qmd
-    - infolettre/**/*.qmd
-    - post/**/*.qmd
+    #- infolettre/**/*.qmd
+    #- post/**/*.qmd
     - partenaires/**/*.qmd
     - course/**/*.qmd
     - "!*/parquetRP/snippets/*"

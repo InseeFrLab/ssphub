@@ -73,14 +73,13 @@ html`<div>${table_events}</div>`
 
 ### Du contenu qui intéresse au-delà des statisticiens publics
 
-Les deux dernières publications sur le site du réseau,
-à savoir
-l'[Infolettre #15](./infolettre/infolettre_15/index.qmd)
-sur le _fine tuning_ de réseaux de neurones
-et
-le [_post_ de blog](./blog/parquetRP/index.qmd) sur la publication du recensement de la population au format `Parquet`
-ont connu un écho important hors des 
-cercles des _data scientist_ du service statistique public.
+Si les statistiques concernant la composition du réseau
+parmi les institutions de la statistique publique
+sont relativement stables par rapport à l'an dernier, 
+le changement principal ayant eu lieu en 2023 est
+l'ouverture progressive à des publics hors de la
+statistique publique (administrations hors du SSP,
+chercheurs et étudiants...) 
 
 ```{ojs}
 //| echo: false
@@ -112,6 +111,19 @@ barplot_ssp = Plot.plot({
 ```
 
 </details>
+
+Les deux dernières publications sur le site du réseau,
+à savoir
+l'[infolettre #15](./infolettre/infolettre_15/index.qmd)
+sur le _fine tuning_ de réseaux de neurones
+et, surtout,
+le [_post_ de blog](./blog/parquetRP/index.qmd)
+sur la publication du recensement de la population au format `Parquet`
+ont connu un écho important hors des 
+cercles des _data scientist_ du service statistique public
+et ont amené de nouveaux publics à suivre les contenus 
+proposés par le réseau.
+
 
 # news
 
