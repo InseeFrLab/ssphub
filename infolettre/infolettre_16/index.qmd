@@ -17,6 +17,8 @@ tags:
 
 categories:
   - Infolettre
+
+css: style.css
 ---
 
 ![](learning.png){width=50% fig-align="center"}
@@ -27,6 +29,70 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 :::
 
+Noël approchant, avant de se jeter sur le sapin pour 
+ouvrir ses cadeaux, de dévorer une 
+bûche ou les autres mets délicieux qui nous attendent, 
+il est intéressant de se retourner pour regarder 
+la progression de l'audience du réseau.
+Cette newsletter sera ainsi principalement
+consacrée à une rétrospective du réseau, 
+similaire à celle de l'[année 2022](infolettre/infolettre_09/index.qmd).
+Une partie plus classique de présentation des actualités de
+la _data science_ suivra. 
+ 
+
+## Rétrospective du réseau
+
+### Une audience en progression
+
+{{< include _snippet_progress_participants.qmd >}}
+
+A l'exception du mois d'août (pause estivale oblige),
+la progression de l'audience a été assez régulière. 
+
+
+```{ojs}
+//| echo: false
+html`<div>Pendant l'année 2022, le réseau a connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("infolettre")}, ${countEvents("blog")}, ${countEvents("event")}, ${countEvents("masterclass")})</div>`
+```
+
+
+```{ojs}
+function countEvents(x){
+
+  const message = `<span style="border-bottom: solid 4px ${color_mapping_events[x]}; margin-bottom: -2px;">${nombre_events.get(x)} ${x}s</span>` ;
+
+  return message
+}
+```
+
+```{ojs}
+//| echo: false
+md`__Choisir les événements du réseau à afficher 👇️__`
+html`<div>${viewof events_chosen_figure1}</div>`
+```
+
+```{ojs}
+//| echo: false
+html`<div>${lineplot}</div>`
+html`<div>${warm_strip}</div>`
+html`<div>${table_events}</div>`
+```
+
+
+### Du contenu qui intéresse au-delà des statisticiens publics
+
+Les deux dernières publications sur le site du réseau,
+à savoir
+l'[Infolettre #15 sur le _fine tuning_ de modèles](./infolettre/infolettre_15/index.qmd)
+et
+le [_post_ de blog sur la publication du recensement de la population au format Parquet](./blog/parquetRP/index.qmd) ont connu un écho important hors des 
+cercles des _data scientist_ du service statistique public.
+
+Stat
+
+
+### Cartographie du réseau
 
 
 # news
@@ -35,3 +101,610 @@ Mistral AI: mixtral, levée de fond
 openai : sam altman, q*
 ia act
 post parquet
+onyxia viewer
+
+
+## old
+
+```{ojs}
+serie_contacts
+```
+
+```{ojs}
+events_data_figure1_b
+```
+
+```{ojs}
+function leftJoinArrays(array1, array2, key, mean, deviation) {
+  const randomNoise = d3.randomNormal(mean, deviation);
+
+  // Sort arrays by date
+  array1.sort((a, b) => new Date(a.date) - new Date(b.date));
+  array2.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  // Perform left join
+  const result = array1.map((item1, index) => {
+    const matchingItem = array2.find((item2) => item2[key] === item1[key]);
+    const noise = matchingItem ? randomNoise() : 0;
+    const noisedMail = matchingItem ? matchingItem.mail + noise : undefined;
+    return { rowNumber: index + 1, ...item1, ...matchingItem, noisedMail };
+  });
+
+  return result;
+}
+```
+
+```{ojs}
+events_data_figure1_b = leftJoinArrays(events_data_figure1, serie_contacts_complete, "date", 0, 40)
+```
+
+
+## serie
+
+```{ojs}
+dates_2023 = Array.from({length: 365}, (_, i) => {
+  const date = new Date(2019, 0, 1);
+  date.setDate(i + 1);
+  return date;
+})
+```
+
+```{ojs}
+viewof date_part1 = Scrubber(
+  dates_2023, {
+  delay: 1,
+  autoplay: false,
+  unique: true,
+  sort: true,
+  format: date => date.toLocaleString("en", {month: "long", day: "numeric"})
+})
+```
+
+
+```{ojs}
+color_mapping_events = {
+  return {
+    infolettre: "#4d78a6",
+    event: "#f28e2c",
+    blog: "#e05658",
+    masterclass: "#76b7b1"
+    }
+}
+```
+
+
+```{ojs}
+viewof events_chosen_figure1 = Inputs.checkbox(
+    unique(events.map(d => d.type)),
+    {
+        value: unique(events.map(d => d.type)),
+        format: x => html`<span style="text-transform: capitalize; border-bottom: solid 4px ${color_mapping_events[x]}; margin-bottom: -2px;">${x}</span>`
+    }
+)
+```
+
+<br>
+
+
+```{ojs}
+links_website_ssphub = {
+    const toto = {};
+
+    events_data_figure1_b.forEach(item => {
+    toto[item.event] = item.href;
+    });
+
+    return toto
+}
+links_website_ssphub
+```
+
+```{ojs}
+table_events = Inputs.table(
+    events_data_figure1_b,
+    {
+        columns: ["date", "event", "type"],
+        header: {
+            date: "Date",
+            event: "Evénement du réseau",
+            type: "Type d'événement"
+        },
+        format: {
+            type: (x) => html`
+            <span style="text-transform: capitalize; display: inline-flex; align-items: center;">
+    <span style="border-bottom: solid 1px ${color_mapping_events[x]}; margin-bottom: -2px;">${x}</span>
+    <span style="width: 10px; height: 10px; margin-left: 5px; background-color: ${color_mapping_events[x]};"></span>
+    </span>
+            `,
+        event: (x) => html`<a ${links_website_ssphub[x] !== undefined ? `href="${links_website_ssphub[x]}" target="_blank"` : ''}>${x}</a>`
+        }
+    })
+```
+
+```{ojs}
+// Inspired from https://observablehq.com/@observablehq/plot-warming-stripes
+warm_strip = Plot.plot({
+  height: 40,
+  marginLeft: 50,
+  color: {
+    scheme: "ylorrd",
+    },
+  marks: [
+    Plot.crosshair(serie_contacts_complete, {
+      x: (d) => new Date(d.date),
+      strokeOpacity: 0.2,
+      fill: "mail",
+      interval: d3.utcDay.every(3),
+      inset: 0 // no gaps
+    }),
+    Plot.barX(serie_contacts_complete, {
+      x: (d) => new Date(d.date),
+      strokeOpacity: 0.2,
+      fill: "mail",
+      interval: d3.utcDay.every(3),
+      inset: 0 // no gaps
+    })
+  ]
+})
+```
+
+
+```{ojs}
+serie_contacts_complete = interpolateDates(serie_contacts);
+```
+
+
+
+```{ojs}
+//| eval: true
+serie_contacts = db.sql`
+SELECT date, CAST(SUM(mail) AS int) AS mail
+FROM serie
+GROUP BY date
+`
+serie_contacts_domain = db.sql`
+SELECT date, domain, CAST(mail AS int) AS mail
+FROM serie
+`
+```
+
+```{ojs}
+lineplot = Plot.plot({
+    y: {
+        grid: true,
+        label: "Nombre d'inscrits"
+    },
+    x: {
+        label: "Date",
+        domain: [new Date("2023-01-10"), new Date("2023-12-09")]
+    },
+    color: {
+        range: Object.values(color_mapping_events),
+        domain: Object.keys(color_mapping_events),
+        label: "Type d'événement"
+    }, 
+    marginLeft: 50,
+    marks: [
+        Plot.line(serie_contacts, {
+            x: "date", y: "mail",
+            stroke: "#6886bb",
+            tip: "xy",
+            transition: { duration: 1000 } // Set the duration of the animation in milliseconds
+            }),
+        Plot.crosshairX(serie_contacts_complete, {
+            x: (d) => new Date(d.date), y: "mail", stroke: "red"
+            }),
+        Plot.dot(serie_contacts_complete, Plot.pointerX({x: (d) => new Date(d.date), y: "mail", stroke: "red"})),
+        Plot.dot(serie_contacts, {
+            x: "date", y: "mail",
+            stroke: "#6886bb",
+            fill: "#6886bb",
+            title: "Effectif"
+            }),
+        /*
+        Plot.dot(events_data_figure1_b, {
+                  x: (d) => new Date(d.date),
+                  y: "noisedMail",
+                  lineHeight: 1.3,
+                  fontSize: 15,
+                  fontWeight: "bold",
+                  width: 20,
+                  fill: "type",
+                  text: (d, i) => i + 1,
+                  textAnchor: "center"
+              }),
+        */
+        Plot.tickX(events_data_figure1_b, {
+            x: (d) => new Date(d.date), text: html``,
+            stroke: "type",
+            opacity: 0.1,
+            color: "x",
+            tip: true
+            }),            
+        Plot.axisX(events_data_figure1_b, {
+            x: (d) => new Date(d.date),
+            text: "",
+            color: "type"
+            }),
+        /*
+        Plot.tip(serie_contacts, Plot.pointer({
+            x: "date", y: "mail",
+            fill: "white",
+            filter: (d) => d.mail ,
+            title: (d) => [
+                `Effectif le <span>${dateFormat(d.date)}</span>:`,
+                d.mail
+                ].join("\n\n")
+    })),
+        Plot.crosshair(events_data_figure1_b, {x: (d) => new Date(d.date)}),
+        */
+       /*
+        Plot.tip(events_data_figure1_b, Plot.pointer({
+            x: (d) => new Date(d.date),
+            y: "noisedMail",
+            fill: "white",
+            filter: (d) => d.mail ,
+            title: (d) => [
+                `Evénement du réseau le <span>${dateFormat(new Date(d.date))}</span>:`,
+                d.event
+                ].join("\n\n")
+    }))
+    */
+
+    ]
+})
+```
+
+## barplot
+
+```{ojs}
+order_domain_all = d3.groupSort(
+  stats_tchap_vs_outlook,
+  (g) => d3.sum(g, (d) => -d.count),
+  (d) => d.domain
+)
+```
+
+```{ojs}
+repartition = addTooltips(
+    Plot.plot({
+    x: {
+        domain: order_domain_all,
+        label: "Institution"
+    },        
+    y: {
+        grid: true,
+        label: "↑ Nombre d'inscrits"
+        },
+    color: {
+        legend: true,
+        type: "categorical",
+        scheme: "pastel1",
+        domain: ["Diffusion mail et Tchap", "Diffusion mail"] // setting the order manually by specifying the array
+    },
+    marks: [
+        Plot.barY(stats_tchap_vs_outlook,
+        {
+            x: "domain", y: "count", sort: "source", fill: "source",
+            title: d => `${d.source}: ${d.count} \n (${(d.count / d3.sum(stats_tchap_vs_outlook.filter(t => t.domain == d.domain), d => d.count)).toLocaleString(undefined, {style: "percent"})})` 
+        }),
+        Plot.ruleY([0])
+    ],
+    style: { paddingTop: 50},
+    caption: html`<details><summary>Dérouler la note:</summary><i>Seules les institutions comportant au moins 10 inscrits sont présentées dans ce graphique</i></details>`
+    }),
+  // Set styles for the hovered element
+  { fill: "gray", opacity: 0.5, "stroke-width": "3px", stroke: "red" }    
+)
+```
+
+## treemap last date
+
+
+
+```{ojs}
+stats_all = db.query(`
+SELECT source, domain, CAST(COUNT(*) AS int) AS count
+FROM latest
+GROUP BY source, domain
+`)
+ssp = [
+    'INSEE', 'Santé', 'Développement Durable', 'Agriculture', 'Finances', 'Travail', 'Intérieur', 'Recherche'
+    ]
+autres_ssp = ['Justice', 'Culture', "Collectivités Locales", "Enseignement Supérieur",
+                "Jeunesse Sports", "Défense"]
+
+array1 = ssp.concat(autres_ssp)
+
+hors_ssp_all = serie_contacts_domain.map(d => d.domain).filter(d => !array1.includes(d))
+hors_ssp = [... new Set(hors_ssp_all)]
+
+colors_autres_ssp = Array(6).fill("orange")
+colors_hors_ssp = Array(hors_ssp.length).fill("#fb9a99")
+```
+
+```{ojs}
+treemap_network = {
+  let p = addTooltips(
+    Treemap(stats_all, {
+    value: d => d?.count, // size of each node (file); null for internal nodes (folders)
+    path: d => d.domain + "/" + d.source, // e.g., "flare/animate/Easing"
+    group: d => d.domain, // e.g., "animate" in "flare.animate.Easing"; for color
+    label: d => `${d.domain}\n${d.source}\n${d.count.toLocaleString()}`,
+    //title: d => `${d.domain}\n${d.count.toLocaleString()}\n`, // text to show on 
+    title: d => `${d.domain}\n${d.source}\n${d.count} \n(${(d.count / d3.sum(stats_all.filter(t => t.domain == d.domain), d => d.count)).toLocaleString(undefined, {style: "percent"})} des inscrits ${d.domain})`,
+    width: 1152,
+    height: 1152,
+    tile: d3.treemapSquarify,
+    colors: ["#5a5758", "#9cb5b8", "forestgreen", "#e8d630", "gold", "#2d378c", "brown", "lavender"].concat(colors_autres_ssp).concat(colors_hors_ssp), // array of colors
+    zDomain: ssp.concat(autres_ssp).concat(hors_ssp), // array of values for the color scale
+    stroke: d => d.domain
+    }),
+    { fill: "gray", opacity: 0.5, "stroke-width": "3px", stroke: "red" }    
+)
+
+  let sel = d3.select(p).selectAll("svg .hover").style("font-size", "15px")
+
+  return p
+}
+```
+
+## lolliplot
+
+```{ojs}
+viewof input_date = Scrubber(
+  date_selected, {
+  delay: 1000,
+  autoplay: false,
+  unique: true,
+  sort: true,
+  format: date => date.toLocaleString("en", {month: "long", day: "numeric"})
+})
+```
+
+
+```{ojs}
+Plot.plot({
+  y: {label: null, tickPadding: 6, tickSize: 0},
+  marks: [
+    Plot.ruleY(lollipop_data, {y: "domain", x: "mail", strokeWidth: 2, sort: {y: "-x"}}),
+    Plot.dot(lollipop_data, {
+        y: "domain", x: "mail",
+        fill: (d) => (dateFormat(d.date) == input_date) ? "red" : "white",
+        strokeOpacity: 0.7,
+        r: 10,
+        //strokeWidth: 2,
+        stroke: (d) => (dateFormat(d.date) == input_date) ? "black" : "black",
+        sort: {y: "-x"},
+        tip: "x",
+        })
+  ]
+})
+```
+
+```{ojs}
+import {addTooltips} from "@mkfreeman/plot-tooltip"
+import {addAnimation} from "@mkfreeman/plot-animation"
+import {Treemap} from "@d3/treemap"
+```
+
+
+
+```{ojs}
+dateFormat = d3.utcFormat("%Y-%m-%d")
+```
+
+```{ojs}
+function interpolateDates(data) {
+  // Sort the data by date
+  data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  // Create an array to store the interpolated data
+  const interpolatedData = [];
+
+  // Loop through the data to interpolate values between dates
+  for (let i = 0; i < data.length - 1; i++) {
+    const currentDate = new Date(data[i].date);
+    const nextDate = new Date(data[i + 1].date);
+    
+    // Calculate the difference in days between current and next date
+    const daysDiff = (nextDate - currentDate) / (1000 * 60 * 60 * 24);
+
+    // Calculate the daily increment
+    const dailyIncrement = (data[i + 1].mail - data[i].mail) / daysDiff;
+
+    // Interpolate values for each day between the current and next date
+    for (let j = 0; j < daysDiff; j++) {
+      const interpolatedDate = new Date(currentDate);
+      interpolatedDate.setDate(currentDate.getDate() + j);
+      
+      const interpolatedValue = data[i].mail + j * dailyIncrement;
+
+      interpolatedData.push({
+        date: interpolatedDate.toISOString().split('T')[0],
+        mail: Math.round(interpolatedValue), // Round to the nearest integer
+      });
+    }
+  }
+
+  // Add the last data point
+  interpolatedData.push({
+    date: data[data.length - 1].date,
+    mail: data[data.length - 1].mail,
+  });
+
+  return interpolatedData;
+}
+```
+
+## data
+
+{{< include _snippet_progress_participants_objects.qmd >}}
+
+
+```{ojs}
+start_count = serie_contacts.filter((d) => dateFormat(d.date) == "2023-01-10").map((d) => d.mail)[0]
+```
+
+```{ojs}
+end_count = serie_contacts.filter((d) => dateFormat(d.date) == "2023-12-09").map((d) => d.mail)[0]
+```
+
+
+
+
+```{ojs}
+url_events = `https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/retrospective-2023/events_orginazed_2023.json`
+url_latest = 's3://lgaliana/ssphub/files/retrospective-2023/list_contacts_latest.parquet'
+url_latest2 = 's3://lgaliana/ssphub/files/retrospective-2023/series_nombre_contact.parquet'
+```
+
+```{ojs}
+events = d3.json(url_events)
+events_data_figure1 = events.filter(d => events_chosen_figure1.includes(d.type))
+events_data_figure1
+```
+
+```{ojs}
+nombre_events = d3.rollup(events, (D) => D.length, (d) => d.type)
+```
+
+
+```{ojs}
+measured_dates = db.query(`SELECT DISTINCT strftime(date, '%Y-%m-%d') AS date FROM serie`)
+date_selected = measured_dates.map(d => d.date)
+list_dates2 = db.query(`SELECT DISTINCT strftime(date, '%Y-%m-%d') AS date FROM serie`)
+```
+
+
+```{ojs}
+lollipop_data = db.query(
+  `SELECT * FROM serie WHERE date <= '${input_date}' AND mail>10`
+)
+```
+
+```{ojs}
+all_data = db.query(
+  `SELECT * FROM serie`
+)
+```
+
+```{ojs}
+stats_tchap_vs_outlook = db.sql`
+SELECT source, domain, CAST(COUNT(*) AS int) AS count
+FROM latest
+WHERE domain IN (SELECT domain
+                FROM latest
+                GROUP BY domain
+                HAVING COUNT(*) > 10)
+GROUP BY source, domain
+`
+```
+
+
+
+```{ojs}
+configuredClient = {
+  const client = await DuckDBClient.of();
+  await client.sql`
+    SET s3_endpoint='minio.lab.sspcloud.fr'
+  `;
+  return client;
+}
+
+db = {
+  await configuredClient.query(`
+    CREATE VIEW latest AS 
+    SELECT * FROM read_parquet('${url_latest}') WHERE date > '2023-01-01' ;
+  `);
+  await configuredClient.query(`
+    CREATE VIEW serie AS 
+    SELECT * FROM read_parquet('${url_latest2}') WHERE date > '2023-01-01' ;
+  `);
+  return configuredClient
+}
+
+```
+
+
+```{ojs}
+Plot = require('@observablehq/plot@0.6.12/dist/plot.umd.min.js')
+```
+
+```{ojs}
+import {disposal} from "@mbostock/disposal"
+function Scrubber(
+  values,
+  {
+    format = value => value,
+    initial = 0,
+    delay = null,
+    autoplay = true,
+    loop = true,
+    alternate = false,
+    width = 500
+  } = {}
+) {
+  values = Array.from(values);
+  const form = html`<form style="font: 12px var(--sans-serif); font-variant-numeric: tabular-nums; display: flex; height: 33px; align-items: center;">
+  <button name=b type=button style="margin-right: 0.4em; width: 5em;"></button>
+  <label style="display: flex; align-items: center;">
+    <input name=i type=range min=0 max=${values.length -
+      1} value=${initial} step=1 class="slider" style="width: ${width}px;">
+    <output name=o style="margin-left: 0.4em;"></output>
+  </label>
+</form>`;
+  let timer = null;
+  let direction = 1;
+  function start() {
+    form.b.textContent = "Pause";
+    timer =
+      delay === null ? requestAnimationFrame(tick) : setInterval(tick, delay);
+  }
+
+  function stop() {
+    form.b.textContent = "Play";
+    if (delay === null) cancelAnimationFrame(timer);
+    else clearInterval(timer);
+    timer = null;
+  }
+  function tick() {
+    if (delay === null) timer = requestAnimationFrame(tick);
+    if (
+      form.i.valueAsNumber ===
+      (direction > 0 ? values.length - 1 : direction < 0 ? 0 : NaN)
+    ) {
+      if (!loop) return stop();
+      if (alternate) direction = -direction;
+    }
+    form.i.valueAsNumber =
+      (form.i.valueAsNumber + direction + values.length) % values.length;
+    form.i.dispatchEvent(new CustomEvent("input", { bubbles: true }));
+  }
+  form.i.oninput = event => {
+    if (event && event.isTrusted && timer) form.b.onclick();
+    form.value = values[form.i.valueAsNumber];
+    form.o.value = format(form.value, form.i.valueAsNumber, values);
+  };
+  form.b.onclick = () => {
+    if (timer) return stop();
+    direction =
+      alternate && form.i.valueAsNumber === values.length - 1 ? -1 : 1;
+    form.i.valueAsNumber = (form.i.valueAsNumber + direction) % values.length;
+    form.i.dispatchEvent(new CustomEvent("input", { bubbles: true }));
+    start();
+  };
+  form.i.oninput();
+  if (autoplay) start();
+  else stop();
+  disposal(form).then(stop);
+  return form;
+}
+```
+
+
+```{ojs}
+function unique(data, accessor) {
+  return Array.from(new Set(accessor ? data.map(accessor) : data));
+}
+```

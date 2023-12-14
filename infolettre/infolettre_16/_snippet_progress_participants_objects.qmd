@@ -1,0 +1,67 @@
+<!-----------------
+Objets temporaires
+------------------>
+
+```{ojs}
+message = {
+  const message_to_print = `` ;
+  if (scrubber_participants < end_count - 100) {
+    return message_to_print
+  }
+    const message_to_print2 = `En fin d'année, ce sont <span class = "underline-big">${end_count}</span> personnes qui étaient membres de la liste de diffusion 🚀🚀.`
+    return message_to_print2
+}
+```
+
+```{ojs}
+numbers2 = {
+  const startValue = start_count;
+  const endValue = end_count;
+
+  const numbers = Array.from({ length: endValue - startValue + 1 }, (_, i) => i + startValue);
+  return numbers
+}
+```
+
+
+```{ojs}
+current_bar = {
+  const startValue = 0;
+  const endValue = scrubber_participants;
+
+  const numbers = Array.from({ length: endValue - startValue + 1 }, (_, i) => i + startValue) ;
+  return numbers
+
+}
+```
+
+
+<!------------ 
+figure
+------------->
+
+```{ojs}
+plot_bar_participants = Plot.plot({
+  height: 40,
+  marginLeft: 60,
+  x: {label: "Frequency →", domain: [336, 552]},
+  y: {label: null},
+  color: {
+    scheme: "ylorrd",
+    domain: [236, scrubber_participants]
+    },
+  marks: [
+    Plot.barX(current_bar, {x: 1, inset: 0.5, fill: (d) => d}),    
+  ]
+})
+```
+
+<!---------
+scrubber
+---------->
+
+```{ojs}
+//| echo: false
+viewof scrubber_participants = Scrubber(numbers2, {loopDelay: 8000, initial: end_count})
+```
+
