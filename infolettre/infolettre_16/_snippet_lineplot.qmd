@@ -1,0 +1,186 @@
+<details>
+
+<summary>
+Code pour générer les différents blocs de cette figure
+</summary>
+
+
+
+<details>
+
+<summary>
+Code pour générer la figure principale
+</summary>
+
+
+```{ojs}
+// Voir plus bas 👇️ les arrays utilisés
+// Animation faite avec le Scrubber ci-dessous
+lineplot = Plot.plot({
+    y: {
+        grid: true,
+        label: "Nombre d'inscrits"
+    },
+    x: {
+        label: "Date",
+        domain: [new Date("2023-01-10"), new Date("2023-12-09")]
+    },
+    color: {
+        range: Object.values(color_mapping_events),
+        domain: Object.keys(color_mapping_events),
+        label: "Type d'événement"
+    }, 
+    marginLeft: 50,
+    marks: [
+        Plot.line(
+          serie_contacts_complete.filter((d) => new Date(d.date) < scrubber_lineplot), {
+            x: "date", y: "mail",
+            stroke: "#6886bb",
+            tip: "xy"
+            }),
+        Plot.crosshairX(serie_contacts_complete, {
+            x: (d) => new Date(d.date), y: "mail", stroke: "red"
+            }),
+        Plot.dot(
+          serie_contacts_complete.filter((d) => new Date(d.date) < scrubber_lineplot),
+          Plot.pointerX({x: (d) => new Date(d.date), y: "mail", stroke: "red"})),
+        Plot.dot(serie_contacts.filter((d) => new Date(d.date) < scrubber_lineplot), {
+            x: "date", y: "mail",
+            stroke: "#6886bb",
+            fill: "#6886bb",
+            title: "Effectif"
+            }),
+        Plot.tickX(events_data_figure1_b, {
+            x: (d) => new Date(d.date), text: html``,
+            stroke: "type",
+            opacity: 0.1,
+            color: "x",
+            tip: true
+            }),            
+        Plot.axisX(events_data_figure1_b, {
+            x: (d) => new Date(d.date),
+            text: "",
+            color: "type"
+            }),
+    ]
+})
+```
+
+</details>
+
+<details>
+
+<summary>
+Code pour générer le `Scrubber` pour animer cette figure
+</summary>
+
+
+```{ojs}
+//| output: false
+//| eval: false
+viewof scrubber_lineplot = Scrubber(dates_2023, {
+  autoplay: true,
+  loop: false,
+  format: date => date.toLocaleString("en", {month: "long", day: "numeric"})
+})
+```
+
+```{ojs}
+//| echo: false
+scrubber_lineplot = new Date("2023-12-10")
+```
+
+</details>
+
+
+<details>
+
+<summary>
+Code pour générer la bande sous la figure principale
+</summary>
+
+
+```{ojs}
+warm_strip = Plot.plot({ //<1>
+  height: 40,
+  marginLeft: 50,
+  color: {
+    scheme: "ylorrd",
+    },
+  marks: [
+    Plot.crosshair(serie_contacts_complete, {
+      x: (d) => new Date(d.date),
+      strokeOpacity: 0.2,
+      fill: "mail",
+      interval: d3.utcDay.every(3),
+      inset: 0 // no gaps
+    }),
+    Plot.barX(serie_contacts_complete, {
+      x: (d) => new Date(d.date),
+      strokeOpacity: 0.2,
+      fill: "mail",
+      interval: d3.utcDay.every(3),
+      inset: 0 // no gaps
+    })
+  ]
+})
+```
+1. Inspired from https://observablehq.com/@observablehq/plot-warming-stripes
+
+</details>
+
+
+<details>
+
+<summary>
+Code pour générer le sélecteur d'événements
+</summary>
+
+
+```{ojs}
+viewof events_chosen_figure1 = Inputs.checkbox(
+    unique(events.map(d => d.type)),
+    {
+        value: unique(events.map(d => d.type)),
+        format: x => html`<span style="text-transform: capitalize; border-bottom: solid 4px ${color_mapping_events[x]}; margin-bottom: -2px;">${x}</span>`
+    }
+)
+```
+
+</details>
+
+<details>
+
+<summary>
+Code pour générer la table interactive
+</summary>
+
+
+
+```{ojs}
+table_events = Inputs.table(
+    events_data_figure1_b,
+    {
+        columns: ["date", "event", "type"],
+        header: {
+            date: "Date",
+            event: "Evénement du réseau",
+            type: "Type d'événement"
+        },
+        format: {
+            type: (x) => html`
+            <span style="text-transform: capitalize; display: inline-flex; align-items: center;">
+    <span style="border-bottom: solid 1px ${color_mapping_events[x]}; margin-bottom: -2px;">${x}</span>
+    <span style="width: 10px; height: 10px; margin-left: 5px; background-color: ${color_mapping_events[x]};"></span>
+    </span>
+            `,
+        event: (x) => html`<a ${links_website_ssphub[x] !== undefined ? `href="${links_website_ssphub[x]}" target="_blank"` : ''}>${x}</a>`
+        }
+    })
+```
+
+</details>
+
+
+
+</details>

@@ -5,6 +5,7 @@ html`<div>${plot_bar_participants}</div><br>`
 html`<div>${message}</div><br>`
 ```
 
+
 <details>
 
 <summary>

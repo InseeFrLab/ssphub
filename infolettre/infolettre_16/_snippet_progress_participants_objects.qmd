@@ -8,7 +8,7 @@ message = {
   if (scrubber_participants < end_count - 100) {
     return message_to_print
   }
-    const message_to_print2 = `En fin d'année, ce sont <span class = "underline-big">${end_count}</span> personnes qui étaient membres de la liste de diffusion 🚀🚀.`
+    const message_to_print2 = `En fin d'année, <span class = "underline-big">${end_count}</span> personnes étaient membres de la liste de diffusion 🚀🚀.`
     return message_to_print2
 }
 ```
@@ -62,6 +62,6 @@ scrubber
 
 ```{ojs}
 //| echo: false
-viewof scrubber_participants = Scrubber(numbers2, {loopDelay: 8000, initial: end_count})
+viewof scrubber_participants = Scrubber(numbers2, {loopDelay: 4000, initial: start_count})
 ```
 
