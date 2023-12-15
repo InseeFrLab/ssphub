@@ -6,7 +6,8 @@ Objets temporaires
 message = {
   const message_to_print = `` ;
   if (scrubber_participants < end_count - 100) {
-    return message_to_print
+    const message_to_print2 = `En fin d'année, <span class = "blurred-element">${end_count}</span> personnes étaient membres de la liste de diffusion 🚀🚀.`
+    return message_to_print2
   }
     const message_to_print2 = `En fin d'année, <span class = "underline-big">${end_count}</span> personnes étaient membres de la liste de diffusion 🚀🚀.`
     return message_to_print2

@@ -4,4 +4,6 @@
     color: red ;
   }
 
-  
+.blurred-element {
+  filter: blur(5px); /* Adjust the pixel value for the desired level of blur */
+}

@@ -10,9 +10,31 @@ Compter les événements du réseau
 ------>
 
 ```{ojs}
+function pluralizeEvent(input) {
+  switch (input) {
+    case "Evénement virtuel ou présentiel":
+      return "événements virtuels ou présentiels";
+    case "Infolettre":
+      return "infolettres";
+    case "Post de blog":
+      return "posts de blog";
+    case "Masterclass":
+      return "masterclasses";
+    default:
+      return "unknown event type";
+  }
+}
+```
+
+```{ojs}
 function countEvents(x){
 
-  const message = `<span style="border-bottom: solid 4px ${color_mapping_events[x]}; margin-bottom: -2px;">${nombre_events.get(x)} ${x}s</span>` ;
+  const pluriel = pluralizeEvent(x);
+
+  const message = `
+  <span style="border-bottom: solid 4px ${color_mapping_events[x]}; margin-bottom: -2px;">${nombre_events.get(x)} ${pluriel}
+  </span>
+  ` ;
 
   return message
 }

@@ -30,6 +30,7 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 :::
 
+
 Noël approchant, avant de se jeter sur le sapin pour 
 ouvrir ses cadeaux, de dévorer une 
 bûche ou les autres mets délicieux qui nous attendent, 
@@ -65,9 +66,10 @@ la progression de l'audience a été assez régulière
 grâce aux événements et contenu publié sur le site
 du `SSP Hub`. 
 
+
 ```{ojs}
 //| echo: false
-html`<div>Pendant l'année 2022, le réseau a ainsi connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("Infolettre")}, ${countEvents("Post de blog")}, ${countEvents("Evénement virtuel ou présentiel")}, ${countEvents("Masterclass")})</div>`
+html`<div>Pendant l'année 2022, le réseau a ainsi connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("Infolettre")}, ${countEvents("Post de blog")}, ${countEvents("Evénement virtuel ou présentiel")}, ${countEvents("Masterclass")}).</div><br>`
 ```
 
 
@@ -287,7 +289,7 @@ une série d'article sur le format `Parquet`;
 ) de Romain Lesur sur le sujet pour l'atelier _Modernisation of Official Statistics_ de l'UNECE.
 :::
 
-# Le [SSPCloud](https://datalab.sspcloud.fr) se dote d'un visualiseur de fichiers basé sur `DuckDB`
+### Le [SSPCloud](https://datalab.sspcloud.fr) se dote d'un visualiseur de fichiers basé sur `DuckDB`
 
 `DuckDB` est un outil extrêmement efficace pour lire des
 fichiers `Parquet` et `CSV`. Outre son
@@ -329,9 +331,6 @@ fichier _open data _ 😍 !
 - [L'explorateur de fichier du `SSPCloud`](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) ;
 - [L'explorateur de fichiers de `data.gouv`](https://explore.data.gouv.fr/tableau) basé sur la même approche technologique. 
 :::
-
-## old
-
 
 
 ```{ojs}
