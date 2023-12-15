@@ -18,6 +18,27 @@ function countEvents(x){
 }
 ```
 
+```{ojs}
+function leftJoinArrays(array1, array2, key, mean, deviation) {
+  const randomNoise = d3.randomNormal(mean, deviation);
+
+  // Sort arrays by date
+  array1.sort((a, b) => new Date(a.date) - new Date(b.date));
+  array2.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  // Perform left join
+  const result = array1.map((item1, index) => {
+    const matchingItem = array2.find((item2) => item2[key] === item1[key]);
+    const noise = matchingItem ? randomNoise() : 0;
+    const noisedMail = matchingItem ? matchingItem.mail + noise : undefined;
+    return { rowNumber: index + 1, ...item1, ...matchingItem, noisedMail };
+  });
+
+  return result;
+}
+```
+
+
 <!----
 Manipulation de listes ou arrays
 ------>

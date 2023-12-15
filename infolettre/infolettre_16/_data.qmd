@@ -1,4 +1,17 @@
 ```{ojs}
+color_mapping_events = {
+  return {
+    infolettre: "#4d78a6",
+    event: "#f28e2c",
+    blog: "#e05658",
+    masterclass: "#76b7b1"
+    }
+}
+```
+
+
+
+```{ojs}
 dates_2023 = Array.from({length: 365}, (_, i) => {
   const date = new Date(2023, 0, 1);
   date.setDate(i + 1);
@@ -102,4 +115,21 @@ date_selected = measured_dates.map(d => d.date)
 list_dates2 = db.query(`SELECT DISTINCT strftime(date, '%Y-%m-%d') AS date FROM serie`)
 ```
 
+
+```{ojs}
+links_website_ssphub = {
+    const toto = {};
+
+    events_data_figure1_b.forEach(item => {
+    toto[item.event] = item.href;
+    });
+
+    return toto
+}
+links_website_ssphub
+```
+
+```{ojs}
+events_data_figure1_b = leftJoinArrays(events_data_figure1, serie_contacts_complete, "date", 0, 40)
+```
 

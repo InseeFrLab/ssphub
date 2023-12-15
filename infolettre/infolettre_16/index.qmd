@@ -40,7 +40,18 @@ consacrée à une rétrospective du réseau,
 similaire à celle de l'[année 2022](infolettre/infolettre_09/index.qmd).
 Une partie plus classique de présentation des actualités de
 la _data science_ suivra. 
- 
+
+
+<!-----
+__TO DO__:
+
+- featured image
+- animation noel ?
+- spoiler
+- mise en forme events.json
+- vérifier liens vers publis ssphub
+- box making of
+------>
 
 ## Rétrospective du réseau
 
@@ -320,32 +331,6 @@ fichier _open data _ 😍 !
 
 ## old
 
-```{ojs}
-function leftJoinArrays(array1, array2, key, mean, deviation) {
-  const randomNoise = d3.randomNormal(mean, deviation);
-
-  // Sort arrays by date
-  array1.sort((a, b) => new Date(a.date) - new Date(b.date));
-  array2.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-  // Perform left join
-  const result = array1.map((item1, index) => {
-    const matchingItem = array2.find((item2) => item2[key] === item1[key]);
-    const noise = matchingItem ? randomNoise() : 0;
-    const noisedMail = matchingItem ? matchingItem.mail + noise : undefined;
-    return { rowNumber: index + 1, ...item1, ...matchingItem, noisedMail };
-  });
-
-  return result;
-}
-```
-
-```{ojs}
-events_data_figure1_b = leftJoinArrays(events_data_figure1, serie_contacts_complete, "date", 0, 40)
-```
-
-
-## serie
 
 
 ```{ojs}
@@ -360,34 +345,6 @@ viewof date_part1 = Scrubber(
 ```
 
 
-```{ojs}
-color_mapping_events = {
-  return {
-    infolettre: "#4d78a6",
-    event: "#f28e2c",
-    blog: "#e05658",
-    masterclass: "#76b7b1"
-    }
-}
-```
-
-
-
-<br>
-
-
-```{ojs}
-links_website_ssphub = {
-    const toto = {};
-
-    events_data_figure1_b.forEach(item => {
-    toto[item.event] = item.href;
-    });
-
-    return toto
-}
-links_website_ssphub
-```
 
 
 
@@ -399,9 +356,6 @@ links_website_ssphub
 
 ```{ojs}
 Plot = require('@observablehq/plot@0.6.12/dist/plot.umd.min.js')
-```
-
-```{ojs}
 import {disposal} from "@mbostock/disposal"
 import {Scrubber} from "@mbostock/scrubber"
 ```
