@@ -125,10 +125,65 @@ et ont amené de nouveaux publics à suivre les contenus
 proposés par le réseau.
 
 
-# news
+# Actualités de la _data science_
+
+## La startup Mistral publie un modèle à l'état de l'art
+
+Mistral, une _startup_ française spécialisée dans l'intelligence artificielle,
+vient de publier un modèle nommé [`Mixtral`](https://mistral.ai/news/mixtral-of-experts/)
+qui repose sur le principe du [_mixture of experts_](https://huggingface.co/blog/moe).
+Cette technique consiste à privilégier une architecture construite à partir
+de sous-modèles spécialisés plutôt qu'un modèle généraliste qui s'adapte
+en fin de procédure à une question spécialisée. Dans ce type
+de mélanges d'experts, l'enjeu est ainsi d'interpréter la question pour 
+diriger la réponse vers l'expert adéquat : si une question porte sur un sujet de cuisine, 
+un.e expert.e spécialisé en code sera de peu de secours. 
+
+
+D'après les premières évaluations publiées, ce modèle surpasserait 
+les capacités des autres modèles ouverts (notamment `Llama 2`) 
+et s'approcherait des performances de GPT 3.5,
+le modèle derrière la version gratuite de ChatGPT. 
+Cette annonce a eu lieu en pleine période de levée de fonds
+pour Mistral qui aurait obtenu un financement de 385
+millions d'euros. 
+
+
+<details>
+<summary>
+Tableau des performances (source: [Mistral](https://mistral.ai/news/mixtral-of-experts/))
+</summary>
+![Tableau des performances publié par Mistral](https://mistral.ai/images/news/mixtral-of-experts/overview.png)
+</details>
+
+Pour en savoir plus:
+
+- Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/levee-de-fonds-de-mistral-ai-l-intelligence-artificielle-nous-projette-dans-un-emballement-temporel_6205157_3234.html) sur l'entreprise Mistral ;
+- Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral)
+et le code source sur [`Github`](https://github.com/mistralai/mistral-src)
+- Le principe des architectures _mixture of experts_: [wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts) et [huggingface](https://huggingface.co/blog/moe)
 
 Mistral AI: mixtral, levée de fond
-openai : sam altman, q*
+
+
+## OpenAI
+
+Alors qu'on s'apprêtait à célébrer le premier anniversaire de 
+ChatGPT, OpenAI a fait la une de l'actualité pour des raisons
+très différentes. Les raisons derrière le
+licenciement et le retour de Sam Altman à
+la tête de l'entreprise sont la source de nombreuses hypothèses. 
+Parmi celles-ci, l'une des plus récurrentes serait des
+désaccords entre le comité d'administration et les équipes
+d'OpenAI sur les recherches menées dans le cadre d'un projet
+nommé _Q*_ d'une intelligence artificielle en mesure de résoudre
+des problèmes de logiques mathématiques, un sujet sur lequel 
+les meilleures IA actuelles sont défaillantes. 
+
+- Pour en savoir plus: [une dépêche de _Reuters_](https://www.reuters.com/technology/sam-altmans-ouster-openai-was-precipitated-by-letter-board-about-ai-breakthrough-2023-11-22/)
+
+
+
 ia act
 post parquet
 onyxia viewer
