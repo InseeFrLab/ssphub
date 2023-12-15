@@ -1,4 +1,8 @@
+<details>
 
+<summary>
+Fonctions utilisées
+</summary>
 
 ```{ojs}
 dateFormat = d3.utcFormat("%Y-%m-%d")
@@ -114,3 +118,4 @@ function interpolateDates(data) {
 }
 ```
 
+</details>

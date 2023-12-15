@@ -33,18 +33,18 @@ lineplot = Plot.plot({
     marginLeft: 50,
     marks: [
         Plot.line(
-          serie_contacts_complete.filter((d) => new Date(d.date) < scrubber_lineplot), {
+          serie_contacts, {
             x: "date", y: "mail",
             stroke: "#6886bb",
             tip: "xy"
             }),
-        Plot.crosshairX(serie_contacts_complete, {
+        Plot.crosshairX(serie_contacts_complete, { //<1>
             x: (d) => new Date(d.date), y: "mail", stroke: "red"
             }),
         Plot.dot(
-          serie_contacts_complete.filter((d) => new Date(d.date) < scrubber_lineplot),
-          Plot.pointerX({x: (d) => new Date(d.date), y: "mail", stroke: "red"})),
-        Plot.dot(serie_contacts.filter((d) => new Date(d.date) < scrubber_lineplot), {
+          serie_contacts_complete,
+          Plot.pointerX({x: (d) => new Date(d.date), y: "mail", stroke: "red"})), //<2>
+        Plot.dot(serie_contacts, {
             x: "date", y: "mail",
             stroke: "#6886bb",
             fill: "#6886bb",
@@ -65,33 +65,10 @@ lineplot = Plot.plot({
     ]
 })
 ```
+1. Elément de réactivité lorsque la souris passe sur la figure.
+1. Elément de réactivité lorsque la souris passe sur la figure.
 
 </details>
-
-<details>
-
-<summary>
-Code pour générer le `Scrubber` pour animer cette figure
-</summary>
-
-
-```{ojs}
-//| output: false
-//| eval: false
-viewof scrubber_lineplot = Scrubber(dates_2023, {
-  autoplay: true,
-  loop: false,
-  format: date => date.toLocaleString("en", {month: "long", day: "numeric"})
-})
-```
-
-```{ojs}
-//| echo: false
-scrubber_lineplot = new Date("2023-12-10")
-```
-
-</details>
-
 
 <details>
 
@@ -125,7 +102,7 @@ warm_strip = Plot.plot({ //<1>
   ]
 })
 ```
-1. Inspired from https://observablehq.com/@observablehq/plot-warming-stripes
+1. Inspiration : https://observablehq.com/@observablehq/plot-warming-stripes
 
 </details>
 
@@ -138,11 +115,16 @@ Code pour générer le sélecteur d'événements
 
 
 ```{ojs}
+function underline_event(x){
+    const x_underlined = `<span style="text-transform: capitalize; border-bottom: solid 4px ${color_mapping_events[x]}; margin-bottom: -2px;">${x}</span>` ;
+    return x_underlined
+}
+
 viewof events_chosen_figure1 = Inputs.checkbox(
     unique(events.map(d => d.type)),
     {
         value: unique(events.map(d => d.type)),
-        format: x => html`<span style="text-transform: capitalize; border-bottom: solid 4px ${color_mapping_events[x]}; margin-bottom: -2px;">${x}</span>`
+        format: x => html`${underline_event(x)}`
     }
 )
 ```

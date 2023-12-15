@@ -31,6 +31,7 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 :::
 
 
+
 Noël approchant, avant de se jeter sur le sapin pour 
 ouvrir ses cadeaux, de dévorer une 
 bûche ou les autres mets délicieux qui nous attendent, 
@@ -48,12 +49,55 @@ __TO DO__:
 
 - featured image
 - animation noel ?
-- spoiler
-- mise en forme events.json
 - vérifier liens vers publis ssphub
 - box making of
 - show/hide code
 ------>
+
+::: {.callout-note collapse="true"}
+## Making of
+
+`Observable` est à la fois un langage visant à simplifier l'usage de 
+`JavaScript` {{< fa brands js-square >}} pour
+mettre en oeuvre des visualisations interactives
+et une [plateforme](https://observablehq.com/) permettant
+de simplifier la mise à disposition
+de ces visualisations sous une forme de _notebook_. 
+
+Les statistiques de comptage sont enregistrées sous format `Parquet` sur le système
+de stockage `S3` du `SSPCloud`. L'intégration native de `DuckDB`
+à `Observable` permet au navigateur _web_
+de lire et d'effectuer des manipulations de données à travers des requêtes
+SQL de manière très efficace. Sur ce sujet, outre
+la [documentation officielle d'`Observable`](https://observablehq.com/documentation/data/databases/database-clients#duckdb),
+il est recommandé de lire 
+le [tutoriel d'Eric Mauvière](https://observablehq.com/@ericmauviere/duckdb-redonne-nouvelle-vie-sql). 
+
+La librairie [`Plot`](https://observablehq.com/@observablehq/plot) propose de nombreuses fonctionalités
+utiles pour construire des visualisations interactives. Sa logique est assez proche de celle
+des _frameworks_ [`ggplot2` en `R`](https://observablehq.com/@observablehq/plot-from-ggplot2)
+ou [`matplotlib` en `Python`](https://observablehq.com/@observablehq/plot-overview-for-matplotlib-users). 
+
+Ce _post_ s'appuie sur 
+[`Quarto`](https://quarto.org/docs/interactive/ojs/) qui permet de créer une page _web_ 
+statique autosuffisante à partir d'une suite d'instructions dans des blocs `{ojs}`. Cette méthode est
+très intéressante pour l'intégration de figures `JavaScript` dans des sites _web_ complets générés de
+manière automatique. 
+Le code utilisé est mis à disposition pour les
+curieux par le biais de menus déroulants.
+
+L'ensemble des codes sources
+nécessaires à la reproduction de cette page
+sont disponibles
+sur le [`Github {{< fa brands github >}} inseefrlab/ssphub`](https://github.com/InseeFrLab/ssphub/blob/main/infolettre/infolettre_16/). Pour limiter les duplications de code,
+les scripts ont été modularisés dans des fichiers séparés.  
+Les éléments ne sont pas nécessairement présentés dans l'ordre
+car `JavaScript` est un langage _asynchrone_, les éléments
+ne sont pas executés dans l'ordre de définition mais 
+dans l'ordre par lequel ils sont nécessaires pour obtenir un
+objet donné. 
+
+:::
 
 ## Rétrospective du réseau
 
@@ -289,7 +333,7 @@ une série d'article sur le format `Parquet`;
 ) de Romain Lesur sur le sujet pour l'atelier _Modernisation of Official Statistics_ de l'UNECE.
 :::
 
-### Le [SSPCloud](https://datalab.sspcloud.fr) se dote d'un visualiseur de fichiers basé sur `DuckDB`
+## Le [SSPCloud](https://datalab.sspcloud.fr) se dote d'un explorateur de fichiers basé sur `DuckDB`
 
 `DuckDB` est un outil extrêmement efficace pour lire des
 fichiers `Parquet` et `CSV`. Outre son
@@ -332,19 +376,21 @@ fichier _open data _ 😍 !
 - [L'explorateur de fichiers de `data.gouv`](https://explore.data.gouv.fr/tableau) basé sur la même approche technologique. 
 :::
 
+# Annexe pour les curieux: le code `Observable` utilisé pour cette page
+
+<details>
+<summary>
+Les librairies ou imports externes utilisés
+</summary>
 
 ```{ojs}
-viewof date_part1 = Scrubber(
-  dates_2023, {
-  delay: 1,
-  autoplay: false,
-  unique: true,
-  sort: true,
-  format: date => date.toLocaleString("en", {month: "long", day: "numeric"})
-})
+Plot = require('@observablehq/plot@0.6.12/dist/plot.umd.min.js') //<1>
+import {disposal} from "@mbostock/disposal"
+import {Scrubber} from "@mbostock/scrubber"
 ```
+1. La librairie `Plot` embarquée par défaut dans `Quarto` est un peu vieille mais la mettre à jour est assez simple.
 
-
+</details>
 
 
 
@@ -353,15 +399,8 @@ viewof date_part1 = Scrubber(
 
 
 
-
-```{ojs}
-Plot = require('@observablehq/plot@0.6.12/dist/plot.umd.min.js')
-import {disposal} from "@mbostock/disposal"
-import {Scrubber} from "@mbostock/scrubber"
-```
-
-
 {{< include _functions.qmd >}}
 
 
 {{< include _data.qmd >}}
+

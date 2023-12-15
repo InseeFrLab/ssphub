@@ -1,26 +1,18 @@
-```{ojs}
-color_mapping_events = {
+<details>
 
-    const color_mapping_events = {
-    "Evénement virtuel ou présentiel": "#4d78a6",
-    "Infolettre": "#f28e2c",
-    "Post de blog": "#e05658",
-    "Masterclass": "#76b7b1"
-    };
+<summary>
 
-  return color_mapping_events
-}
-```
+_Inputs_ pour `DuckDB` 🦆
 
-
+</summary>
 
 ```{ojs}
-dates_2023 = Array.from({length: 365}, (_, i) => {
-  const date = new Date(2023, 0, 1);
-  date.setDate(i + 1);
-  return date;
-})
+url_events = `https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/retrospective-2023/events_orginazed_2023.json`
+url_latest = 's3://lgaliana/ssphub/files/retrospective-2023/list_contacts_latest.parquet'
+url_hors_ssp = 's3://lgaliana/ssphub/files/retrospective-2023/series_part_ssp.parquet'
+url_latest2 = 's3://lgaliana/ssphub/files/retrospective-2023/series_nombre_contact.parquet'
 ```
+
 
 ```{ojs}
 configuredClient = {
@@ -75,23 +67,26 @@ SELECT * FROM share_ssp WHERE date in ('2023-12-09', '2023-01-10')
 events = d3.json(url_events)
 ```
 
+</details>
+
+<details>
+
+<summary>
+
+_Arrays_ intermédiaire
+
+</summary>
+
+<!----
+computed objects
+------>
+
+<details>
 
 ```{ojs}
 serie_contacts_complete = interpolateDates(serie_contacts);
 ```
 
-
-```{ojs}
-url_events = `https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/retrospective-2023/events_orginazed_2023.json`
-url_latest = 's3://lgaliana/ssphub/files/retrospective-2023/list_contacts_latest.parquet'
-url_hors_ssp = 's3://lgaliana/ssphub/files/retrospective-2023/series_part_ssp.parquet'
-url_latest2 = 's3://lgaliana/ssphub/files/retrospective-2023/series_nombre_contact.parquet'
-```
-
-
-<!----
-computed objects
------->
 
 ```{ojs}
 start_count = serie_contacts.filter((d) => dateFormat(d.date) == "2023-01-10").map((d) => d.mail)[0]
@@ -136,3 +131,35 @@ links_website_ssphub
 events_data_figure1_b = leftJoinArrays(events_data_figure1, serie_contacts_complete, "date", 0, 40)
 ```
 
+</details>
+
+<details>
+<summary>
+Quelques _array_ utiles
+</summary>
+
+```{ojs}
+color_mapping_events = {
+
+    const color_mapping_events = {
+    "Evénement virtuel ou présentiel": "#4d78a6",
+    "Infolettre": "#f28e2c",
+    "Post de blog": "#e05658",
+    "Masterclass": "#76b7b1"
+    };
+
+  return color_mapping_events
+}
+```
+
+
+
+```{ojs}
+dates_2023 = Array.from({length: 365}, (_, i) => {
+  const date = new Date(2023, 0, 1);
+  date.setDate(i + 1);
+  return date;
+})
+```
+
+</details>

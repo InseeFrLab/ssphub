@@ -2,15 +2,21 @@
 Objets temporaires
 ------------------>
 
+<details>
+
+<summary>
+Objets réactifs nécessaires pour modifier en continu l'input de la figure 1
+</summary>
+
 ```{ojs}
 message = {
-  const message_to_print = `` ;
-  if (scrubber_participants < end_count - 100) {
-    const message_to_print2 = `En fin d'année, <span class = "blurred-element">${end_count}</span> personnes étaient membres de la liste de diffusion 🚀🚀.`
-    return message_to_print2
-  }
-    const message_to_print2 = `En fin d'année, <span class = "underline-big">${end_count}</span> personnes étaient membres de la liste de diffusion 🚀🚀.`
-    return message_to_print2
+  const class_to_use = (scrubber_participants < end_count - 100) ? "blurred-element" : "underline-big";
+
+  const message_to_print = `
+  En fin d'année, <span class = "${class_to_use}" >${end_count}</span> personnes étaient membres de la liste de diffusion 🚀🚀.
+  `
+
+  return message_to_print
 }
 ```
 
@@ -37,26 +43,6 @@ current_bar = {
 ```
 
 
-<!------------ 
-figure
-------------->
-
-```{ojs}
-plot_bar_participants = Plot.plot({
-  height: 40,
-  marginLeft: 60,
-  x: {label: "Frequency →", domain: [336, 552]},
-  y: {label: null},
-  color: {
-    scheme: "ylorrd",
-    domain: [236, scrubber_participants]
-    },
-  marks: [
-    Plot.barX(current_bar, {x: 1, inset: 0.5, fill: (d) => d}),    
-  ]
-})
-```
-
 <!---------
 scrubber
 ---------->
@@ -66,3 +52,34 @@ scrubber
 viewof scrubber_participants = Scrubber(numbers2, {loopDelay: 4000, initial: start_count})
 ```
 
+</details>
+
+<!------------ 
+figure
+------------->
+
+<details>
+
+<summary>
+La première figure, animée par la réactivité de ses inputs
+</summary>
+
+
+```{ojs}
+plot_bar_participants = Plot.plot({
+  height: 40,
+  marginLeft: 60,
+  x: {label: "Frequency →", domain: [336, 552]},
+  y: {label: null},
+  color: {
+    scheme: "ylorrd",
+    domain: [236, scrubber_participants] 
+    },
+  marks: [
+    Plot.barX(current_bar, {x: 1, inset: 0.5, fill: (d) => d}),    //<1>
+  ]
+})
+```
+1. Elément réactif
+
+</details>
