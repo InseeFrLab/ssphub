@@ -67,7 +67,7 @@ du `SSP Hub`.
 
 ```{ojs}
 //| echo: false
-html`<div>Pendant l'année 2022, le réseau a ainsi connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("infolettre")}, ${countEvents("blog")}, ${countEvents("event")}, ${countEvents("masterclass")})</div>`
+html`<div>Pendant l'année 2022, le réseau a ainsi connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("Infolettre")}, ${countEvents("Post de blog")}, ${countEvents("Evénement virtuel ou présentiel")}, ${countEvents("Masterclass")})</div>`
 ```
 
 

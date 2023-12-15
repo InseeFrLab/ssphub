@@ -1,11 +1,14 @@
 ```{ojs}
 color_mapping_events = {
-  return {
-    infolettre: "#4d78a6",
-    event: "#f28e2c",
-    blog: "#e05658",
-    masterclass: "#76b7b1"
-    }
+
+    const color_mapping_events = {
+    "Evénement virtuel ou présentiel": "#4d78a6",
+    "Infolettre": "#f28e2c",
+    "Post de blog": "#e05658",
+    "Masterclass": "#76b7b1"
+    };
+
+  return color_mapping_events
 }
 ```
 
