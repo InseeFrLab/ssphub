@@ -156,48 +156,169 @@ Tableau des performances (source: [Mistral](https://mistral.ai/news/mixtral-of-e
 ![Tableau des performances publié par Mistral](https://mistral.ai/images/news/mixtral-of-experts/overview.png)
 </details>
 
-Pour en savoir plus:
+::: {.callout-note}
+## Pour en savoir plus
 
 - Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/levee-de-fonds-de-mistral-ai-l-intelligence-artificielle-nous-projette-dans-un-emballement-temporel_6205157_3234.html) sur l'entreprise Mistral ;
 - Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral)
-et le code source sur [`Github`](https://github.com/mistralai/mistral-src)
-- Le principe des architectures _mixture of experts_: [wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts) et [huggingface](https://huggingface.co/blog/moe)
+et le code source sur [`Github`](https://github.com/mistralai/mistral-src) ;
+- Le principe des architectures _mixture of experts_: [wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts) et [huggingface](https://huggingface.co/blog/moe).
 
-Mistral AI: mixtral, levée de fond
+:::
 
-
-## OpenAI
+## Des remous à OpenAI
 
 Alors qu'on s'apprêtait à célébrer le premier anniversaire de 
 ChatGPT, OpenAI a fait la une de l'actualité pour des raisons
-très différentes. Les raisons derrière le
-licenciement et le retour de Sam Altman à
-la tête de l'entreprise sont la source de nombreuses hypothèses. 
-Parmi celles-ci, l'une des plus récurrentes serait des
+très différentes: Sam Altman, le PDG, 
+était licencié par le conseil d'administration
+avant d'être réembauché. 
+Parmi les hypothèses pour expliquer cette crise,
+l'une des plus récurrentes serait des
 désaccords entre le comité d'administration et les équipes
 d'OpenAI sur les recherches menées dans le cadre d'un projet
-nommé _Q*_ d'une intelligence artificielle en mesure de résoudre
+nommé $Q^*$ d'une intelligence artificielle en mesure de résoudre
 des problèmes de logiques mathématiques, un sujet sur lequel 
 les meilleures IA actuelles sont défaillantes. 
 
-- Pour en savoir plus: [une dépêche de _Reuters_](https://www.reuters.com/technology/sam-altmans-ouster-openai-was-precipitated-by-letter-board-about-ai-breakthrough-2023-11-22/)
+::: {.callout-note}
+## Pour en savoir plus sur $Q^*$:
+
+- Une [dépêche de _Reuters_](https://www.reuters.com/technology/sam-altmans-ouster-openai-was-precipitated-by-letter-board-about-ai-breakthrough-2023-11-22/)
+
+:::
+
+## L'Europe adopte un _"AI Act"_ historique
+
+Les Etats membres et le Parlement européen sont parvenus à un accord le 9 décembre
+sur des règles régissant les systèmes d’intelligence artificielle dans un accord nommé
+"Artificial Intelligence Act". 
+Cet accord est un compromis entre une régulation forte
+protégeant les données produites quotidiennement
+par les citoyens européens
+et une approche plus permissive, défendue
+par exemple par la France et l'Allemagne,
+pouvant favoriser l'innovation dans le domaine.
+
+Débutées en 2018, avant que les IA génératives ne deviennent
+si populaires, ces discussions dépassent le cadre exclusif de ces
+dernières. Néanmoins,
+concernant celles-ci, le compromis prévoit une approche à deux vitesses. 
+Outre le respect des règles européennes 
+de propriété intellectuelle, les développeurs de modèles génératifs
+devront s'assurer que les produits diffusés soient bien identifiés comme
+artificiels, afin de limiter la
+diffusion de [_deepfakes_](https://fr.wikipedia.org/wiki/Deepfake).
+Les développeurs de ces modèles
+devront également communiquer sur la qualité des données utilisées
+pour entraîner les modèles et sur le coût énergétique de ceux-ci. 
+Les modèles _open source_ et ceux construits à des fins de recherche bénéficient
+d'exemptions de ces règles. 
+
+Des contraintes renforcées s’appliqueront aux systèmes jugés à _"haut risque"_
+dans des domaines comme la défense, l'éducation, les ressources humaines
+ou encore la santé. 
+Pour ces systèmes, il sera nécessaire de réaliser une analyse d’impact avant la mise sur le marché. Par ailleurs, une obligation de transparence et d’explicabilité des modèles est mise en place
+afin d'être en mesure de comprendre les règles de décision de ces IA.
+
+L'AI Act interdit également l'utilisation de l'IA dans quelques domaines, jugés trop sensibles. 
+Par exemple, la reconnaissance faciale de masse est interdite, hormis lorsque celle-ci
+est justifiée par des motifs de sécurité nationale.  
+D'autres utilisations, porteuses potentiellement de dérives, comme
+la notation sociale basée sur le comportement ou des caractéristiques personnelles
+sont interdits. 
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/09/ai-act-l-union-europeenne-pionniere-dans-la-regulation-de-l-intelligence-artificielle_6204830_3234.html) (réservé aux abonnés) sur le sujet ;
+- L'[avis d'Andrew Ng](https://info.deeplearning.ai/googles-answer-to-gpt-4-europes-restrictions-on-ai-open-sources-new-champion-metas-vision-architecture-1) sur cet accord.
+
+:::
 
 
+## Nouveau _post_ de blog: diffusion du recensement de la population au format `Parquet`
 
-ia act
-post parquet
-onyxia viewer
+Chaque année, l'Insee diffuse des statistiques construites
+à partir du recensement
+de la population, l'une des enquêtes phares de l'institut.
+Pour accompagner ces résultats, et permettre à de nombreux
+acteurs de creuser ces données très riches dans des dimensions
+qui les intéresse, l'Insee diffuse également 
+des bases de données détaillées construites après
+anonymisation de près de 20 millions de données individuelles. 
 
+Ces données, d'une extrême richesse, étaient historiquement
+complexes à manipuler du fait de leur volumétrie. La diffusion
+de celles-ci sous le format `Parquet`, une première mondiale,
+vise à simplifier l'exploitation
+de celles-ci. Pour accompagner cette innovation,
+en partenariat avec les services de diffusion de l'Insee, 
+le [dernier _post_ de blog](https://ssphub.netlify.app/post/parquetrp/) du réseau présente un guide
+pratique d'utilisation de ces données dans plusieurs
+langages de traitement ({{< fa brands r-project >}} , `Python` {{< fa brands python >}} et `Observable` {{< fa brands js-square >}}) par le biais de `DuckDB`. 
+
+Combien d'habitants de Toulouse ont changé de logement sur l'année ? Quels sont les
+départements avec le plus de centenaires ? Le [_post_ de blog](https://ssphub.netlify.app/post/parquetrp/) vous montrera comment calculer ces statistiques. Et si vous désirez découvrir
+ce format avec des exemples additionnels, ce _post_ d'[Eric Mauvière](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) vous intéressera également.
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- Le [_post_ de blog](https://ssphub.netlify.app/post/parquetrp/) ;
+- Un [article](https://www.insee.fr/fr/information/7635842) sur le format `Parquet` dans le _Courrier des stats n°9_
+écrit par Alexis Dondon et Pierre Lamarche ;
+- Le blog d'[Eric Mauvière](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) qui présente
+une série d'article sur le format `Parquet`;
+- La [présentation](https://www.linkedin.com/feed/update/urn:li:activity:7133760348129505281?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7133760348129505281%29
+) de Romain Lesur sur le sujet pour l'atelier _Modernisation of Official Statistics_ de l'UNECE.
+:::
+
+# Le [SSPCloud](https://datalab.sspcloud.fr) se dote d'un visualiseur de fichiers basé sur `DuckDB`
+
+`DuckDB` est un outil extrêmement efficace pour lire des
+fichiers `Parquet` et `CSV`. Outre son
+efficacité, `DuckDB` présente l'avantage
+d'être disponible par le biais de plusieurs
+clients: {{< fa brands r-project >}}, {{< fa brands python >}}
+mais aussi un navigateur web. 
+Plusieurs acteurs majeurs de l'écosystème de
+la _data science_ (
+[HuggingFace](https://huggingface.co/docs/hub/datasets-viewer), [Observable](https://observablehq.com/documentation/data/databases/database-clients#duckdb) notamment) ont
+fait de `DuckDB` une pierre angulaire de leurs explorateurs de données. 
+L'avantage de cette approche, typique du _web assembly_,
+est que seul `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur, est
+nécessaire pour visualiser et effectuer des traitements analytiques
+sur des données. 
+
+Le [`SSPCloud`](https://datalab.sspcloud.fr), la plateforme moderne
+de traitement de données développée par l'Insee et mise
+à disposition de près de 3000 agents de l'administration ou étudiants, vient
+de mettre en oeuvre un [explorateur similaire](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) 🚀. 
+
+
+![Un exemple d'utilisation de cet explorateur sur les données détaillées du recensement 👆️](viewer-sspcloud.png)
+
+Celui-ci s'appuie également sur `DuckDB` et permet de visualiser de 
+manière très fluide les fichiers
+aux formats `Parquet` et `CSV`. Il ne se restreint pas aux données
+disponibles sur les espaces de stockage personnels du `SSPCloud`:
+n'importe quel fichier, au format adéquat et disponible sur internet,
+peut être lu avec
+ce visualiseur ! Il n'est d'ailleurs pas nécessaire d'avoir un compte
+sur le [`SSPCloud`](https://datalab.sspcloud.fr) pour l'utiliser, il suffit d'essayer de lire un
+fichier _open data _ 😍 ! 
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- [Des éléments](https://developer.mozilla.org/fr/docs/WebAssembly) sur le _web assembly_ ;
+- [L'explorateur de fichier du `SSPCloud`](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) ;
+- [L'explorateur de fichiers de `data.gouv`](https://explore.data.gouv.fr/tableau) basé sur la même approche technologique. 
+:::
 
 ## old
-
-```{ojs}
-serie_contacts
-```
-
-```{ojs}
-events_data_figure1_b
-```
 
 ```{ojs}
 function leftJoinArrays(array1, array2, key, mean, deviation) {
