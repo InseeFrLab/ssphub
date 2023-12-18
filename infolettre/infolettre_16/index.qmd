@@ -160,7 +160,7 @@ barplot_ssp = Plot.plot({
   x: {label: "Frequency"},
   y: {label: null},
   color: {
-    domain: ["Hors du SSP", "Institutions dans Service Statistique Public (SSP)"],
+    domain: ["Hors du SSP", "Service Statistique Public (SSP)"],
     range: ["forestgreen", "#6886bb"]
     },
   marks: [
@@ -169,7 +169,7 @@ barplot_ssp = Plot.plot({
       y: "SSP",
       fy: (d) => new Date(d.date).toLocaleString("fr", {
         "month": "long",
-        "year": "2-digit"
+        "year": "numeric"
       }),
       x: "mail", inset: 0.5, fill: "SSP", sort: "mail",
       tip: true, channels: {share: (d)  => `${100*d.share.toFixed(2)}%`}
