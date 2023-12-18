@@ -47,16 +47,6 @@ Une partie consacrée aux actualités de
 la _data science_ suivra. 
 
 
-<!-----
-__TO DO__:
-
-- featured image
-- animation noel ?
-- vérifier liens vers publis ssphub
-- box making of
-- show/hide code
------->
-
 ::: {.callout-note collapse="true"}
 ## Making of
 
@@ -238,7 +228,8 @@ Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-o
 
 ## L'Europe adopte un _"AI Act"_ historique
 
-Dans un accord signé le 9 décembre 2023 et nommé "Artificial Intelligence Act", les Etats membres et le Parlement européen ont établi
+Dans un accord signé le 9 décembre 2023 et nommé _"Artificial Intelligence Act"_,
+les Etats membres et le Parlement européen ont établi
 des règles régissant les systèmes d’intelligence artificielle.
 
 Débutées en 2018, avant que les IA génératives ne deviennent
@@ -291,11 +282,13 @@ anonymisation de près de 20 millions de données individuelles.
 
 Ces données, d'une extrême richesse, étaient historiquement
 complexes à manipuler du fait de leur volumétrie. La diffusion
-de celles-ci sous le format `Parquet`, une première mondiale,
+de celles-ci sous le format `Parquet`, une première mondiale
+parmi les instituts de statistique publique,
 vise à simplifier leur exploitation.
 Pour accompagner cette innovation,
 en partenariat avec les services de diffusion de l'Insee, 
-le [dernier _post_ de blog](https://ssphub.netlify.app/post/parquetrp/) du réseau présente un guide
+le [dernier _post_ de blog](https://ssphub.netlify.app/post/parquetrp/)
+du réseau présente un guide
 pratique d'utilisation de ces données dans plusieurs
 langages de traitement ({{< fa brands r-project >}} , `Python` {{< fa brands python >}} et `Observable` {{< fa brands js-square >}}) par le biais de `DuckDB`. 
 
@@ -335,7 +328,7 @@ sur des données.
 Le [`SSPCloud`](https://datalab.sspcloud.fr), la plateforme moderne
 de traitement de données développée par l'Insee et mise
 à disposition de près de 3000 agents de l'administration ou étudiants, vient
-de mettre en oeuvre un [permettant des fonctionnalités similaires](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) 🚀. 
+de mettre en oeuvre [un explorateur](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) aux fonctionnalités similaires 🚀. 
 
 
 ![Un exemple d'utilisation de cet explorateur sur les données détaillées du recensement 👆️](viewer-sspcloud.png)
