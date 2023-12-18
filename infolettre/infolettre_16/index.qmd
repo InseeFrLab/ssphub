@@ -221,8 +221,7 @@ Tableau des performances (source: [Mistral](https://mistral.ai/news/mixtral-of-e
 ## Pour en savoir plus
 
 - Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/levee-de-fonds-de-mistral-ai-l-intelligence-artificielle-nous-projette-dans-un-emballement-temporel_6205157_3234.html) sur l'entreprise Mistral ;
-- Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral)
-et le code source sur [`Github`](https://github.com/mistralai/mistral-src) ;
+- Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral) ;
 - Le principe des architectures _mixture of experts_: [wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts) et [huggingface](https://huggingface.co/blog/moe).
 
 :::
@@ -342,11 +341,10 @@ une série d'article sur le format `Parquet`;
 fichiers `Parquet` et `CSV`. Outre son
 efficacité, `DuckDB` présente l'avantage
 d'être disponible par le biais de plusieurs
-clients: {{< fa brands r-project >}}, {{< fa brands python >}}
-mais aussi un navigateur web. 
-Plusieurs acteurs majeurs de l'écosystème de
-la _data science_ (
-[HuggingFace](https://huggingface.co/docs/hub/datasets-viewer), [Observable](https://observablehq.com/documentation/data/databases/database-clients#duckdb) notamment) ont
+clients: {{< fa brands r-project >}}, `Python` {{< fa brands python >}}
+mais aussi un navigateur web grâce à `Javascript` {{< fa brands js-square >}} . 
+Des acteurs majeurs de l'écosystème de
+la _data science_, notamment [Observable](https://observablehq.com/documentation/data/databases/database-clients#duckdb) ont
 fait de `DuckDB` une pierre angulaire de leurs explorateurs de données. 
 L'avantage de cette approche, typique du _web assembly_,
 est que seul `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur, est
@@ -378,6 +376,35 @@ fichier _open data _ 😍 !
 - [L'explorateur de fichier du `SSPCloud`](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) ;
 - [L'explorateur de fichiers de `data.gouv`](https://explore.data.gouv.fr/tableau) basé sur la même approche technologique. 
 :::
+
+## L'accessibilité de `Jupyter` améliorée avec le concours de l'Insee
+
+Afin de ne pas pénaliser certains publics, les logiciels
+doivent respecter des critères d'accessibilité.
+Ils doivent notamment avoir de nombreuses
+fonctionnalités accessibles sans souris, exclusivement
+par le biais du clavier. Cependant, `Jupyter`, 
+logiciel bien connu des _data scientists_,
+par la structure complexe de son interface,
+présentait plusieurs problèmes à cet égard, comme
+la difficulté à naviguer dans la page pour trouver
+le menu nécessaire pour éditer du code. 
+
+Grâce à une subvention de l'Insee, ces travaux d'amélioration
+de l'accessibilité de `Jupyter` ont pu être mené. 
+Les prochaines versions du logiciel devraient être plus accessibles,
+et, entre autres, plus pratiques d'usage pour les _data scientists_ qui
+privilégient le clavier à la souris pour se déplacer dans un document. 
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- L'[annonce](https://blog.jupyter.org/recent-keyboard-navigation-improvements-in-jupyter-4df32f97628d) sur le blog de `Jupyter` ;
+- Le principe d'[accessibilité clavier](https://www.w3.org/WAI/WCAG21/Understanding/keyboard-accessible) du W3C.
+:::
+
+
+
 
 # Annexe pour les curieux: le code `Observable` utilisé pour cette page
 
