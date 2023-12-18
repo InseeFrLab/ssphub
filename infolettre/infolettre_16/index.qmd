@@ -318,7 +318,7 @@ mais aussi un navigateur web grâce à `Javascript` {{< fa brands js-square >}} 
 Des acteurs majeurs de l'écosystème de
 la _data science_, notamment [Observable](https://observablehq.com/documentation/data/databases/database-clients#duckdb) ont
 fait de `DuckDB` une pierre angulaire de leurs explorateurs de données. 
-L'avantage de cette approche, typique du _web assembly_,
+L'avantage de cette approche, typique du [_web assembly_](https://developer.mozilla.org/fr/docs/WebAssembly) (approche visant à mettre à disposition des logiciels de calculs scientifiques par le biais d'un simple navigateur),
 est que seul `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur, est
 nécessaire pour visualiser et effectuer des traitements analytiques
 sur des données. 
