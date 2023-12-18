@@ -7,7 +7,7 @@ description: |
 date: '2023-12-14'
 number: 16
 
-image: learning.png
+image: santa.png
 
 authors:
   - Lino Galiana
@@ -25,7 +25,7 @@ filters:
   - snow
 ---
 
-![](learning.png){width=50% fig-align="center"}
+![](santa.png){width=50% fig-align="center"}
 
 :::{.callout-tip}
 
