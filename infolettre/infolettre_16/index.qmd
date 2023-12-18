@@ -167,7 +167,10 @@ barplot_ssp = Plot.plot({
     Plot.barX(hors_ssp_data,
     {
       y: "SSP",
-      fy: (d) => new Date(d.date).toLocaleString("fr", {month: "long", year: "long"}),
+      fy: (d) => new Date(d.date).toLocaleString("fr", {
+        "month": "long",
+        "year": "2-digit"
+      }),
       x: "mail", inset: 0.5, fill: "SSP", sort: "mail",
       tip: true, channels: {share: (d)  => `${100*d.share.toFixed(2)}%`}
     }),
