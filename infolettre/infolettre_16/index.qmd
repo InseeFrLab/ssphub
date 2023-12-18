@@ -86,7 +86,7 @@ Ce _post_ s'appuie sur
 statique autosuffisante à partir d'une suite d'instructions dans des blocs `{ojs}`. Cette méthode est
 très intéressante pour l'intégration de figures `JavaScript` dans des sites _web_ complets générés de
 manière automatique. 
-Le code utilisé est mis à disposition pour les
+Le code utilisé est mis à disposition des
 curieux par le biais de menus déroulants.
 
 L'ensemble des codes sources
@@ -102,7 +102,7 @@ objet donné.
 
 :::
 
-## Rétrospective du réseau
+## Rétrospective du réseau en 2023
 
 ### Une audience en progression
 
@@ -110,13 +110,13 @@ objet donné.
 
 A l'exception du mois d'août (pause estivale oblige),
 la progression de l'audience a été assez régulière
-grâce aux événements et contenu publié sur le site
+grâce aux événements et contenus publiés sur le site
 du `SSP Hub`. 
 
 
 ```{ojs}
 //| echo: false
-html`<div>Pendant l'année 2022, le réseau a ainsi connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("Infolettre")}, ${countEvents("Post de blog")}, ${countEvents("Evénement virtuel ou présentiel")}, ${countEvents("Masterclass")}).</div><br>`
+html`<div>Pendant l'année 2023, le réseau a ainsi connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("Infolettre")}, ${countEvents("Post de blog")}, ${countEvents("Evénement virtuel ou présentiel")}, ${countEvents("Masterclass")}).</div><br>`
 ```
 
 
@@ -176,29 +176,29 @@ barplot_ssp = Plot.plot({
 Les deux dernières publications sur le site du réseau,
 à savoir
 l'[infolettre #15](./infolettre/infolettre_15/index.qmd)
-sur le _fine tuning_ de réseaux de neurones
+sur le réentrainement des modèles de langage
 et, surtout,
 le [_post_ de blog](./blog/parquetRP/index.qmd)
 sur la publication du recensement de la population au format `Parquet`
 ont connu un écho important hors des 
-cercles des _data scientist_ du service statistique public
+cercles de _data scientist_ du service statistique public
 et ont amené de nouveaux publics à suivre les contenus 
 proposés par le réseau.
 
 
 # Actualités de la _data science_
 
-## La startup Mistral publie un modèle à l'état de l'art
+## La startup Mistral AI publie un modèle à l'état de l'art
 
-Mistral, une _startup_ française spécialisée dans l'intelligence artificielle,
+Mistral AI, une _startup_ française spécialisée dans l'intelligence artificielle,
 vient de publier un modèle nommé [`Mixtral`](https://mistral.ai/news/mixtral-of-experts/)
 qui repose sur le principe du [_mixture of experts_](https://huggingface.co/blog/moe).
 Cette technique consiste à privilégier une architecture construite à partir
 de sous-modèles spécialisés plutôt qu'un modèle généraliste qui s'adapte
 en fin de procédure à une question spécialisée. Dans ce type
-de mélanges d'experts, l'enjeu est ainsi d'interpréter la question pour 
+de modèles, l'enjeu est ainsi d'interpréter la question pour 
 diriger la réponse vers l'expert adéquat : si une question porte sur un sujet de cuisine, 
-un.e expert.e spécialisé en code sera de peu de secours. 
+un.e expert.e spécialisé.e en code sera de peu de secours. 
 
 
 D'après les premières évaluations publiées, ce modèle surpasserait 
@@ -206,21 +206,21 @@ les capacités des autres modèles ouverts (notamment `Llama 2`)
 et s'approcherait des performances de GPT 3.5,
 le modèle derrière la version gratuite de ChatGPT. 
 Cette annonce a eu lieu en pleine période de levée de fonds
-pour Mistral qui aurait obtenu un financement de 385
+pour Mistral AI qui aurait obtenu un financement de 385
 millions d'euros. 
 
 
 <details>
 <summary>
-Tableau des performances (source: [Mistral](https://mistral.ai/news/mixtral-of-experts/))
+Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-of-experts/))
 </summary>
-![Tableau des performances publié par Mistral](https://mistral.ai/images/news/mixtral-of-experts/overview.png)
+![Tableau des performances publié par Mistral AI](https://mistral.ai/images/news/mixtral-of-experts/overview.png)
 </details>
 
 ::: {.callout-note}
 ## Pour en savoir plus
 
-- Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/levee-de-fonds-de-mistral-ai-l-intelligence-artificielle-nous-projette-dans-un-emballement-temporel_6205157_3234.html) sur l'entreprise Mistral ;
+- Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/levee-de-fonds-de-mistral-ai-l-intelligence-artificielle-nous-projette-dans-un-emballement-temporel_6205157_3234.html) sur l'entreprise Mistral AI ;
 - Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral) ;
 - Le principe des architectures _mixture of experts_: [wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts) et [huggingface](https://huggingface.co/blog/moe).
 
@@ -250,9 +250,8 @@ les meilleures IA actuelles sont défaillantes.
 
 ## L'Europe adopte un _"AI Act"_ historique
 
-Les Etats membres et le Parlement européen sont parvenus à un accord le 9 décembre
-sur des règles régissant les systèmes d’intelligence artificielle dans un accord nommé
-"Artificial Intelligence Act". 
+Dans un accord signé le 9 décembre 2023 et nommé "Artificial Intelligence Act", les Etats membres et le Parlement européen ont établi
+des règles régissant les systèmes d’intelligence artificielle.
 Cet accord est un compromis entre une régulation forte
 protégeant les données produites quotidiennement
 par les citoyens européens
@@ -263,7 +262,7 @@ pouvant favoriser l'innovation dans le domaine.
 Débutées en 2018, avant que les IA génératives ne deviennent
 si populaires, ces discussions dépassent le cadre exclusif de ces
 dernières. Néanmoins,
-concernant celles-ci, le compromis prévoit une approche à deux vitesses. 
+concernant celles-ci, le compromis prévoit une approche différenciée suivant le contexte de développement et l'usage de ces modèles. 
 Outre le respect des règles européennes 
 de propriété intellectuelle, les développeurs de modèles génératifs
 devront s'assurer que les produits diffusés soient bien identifiés comme
@@ -302,16 +301,16 @@ sont interdits.
 Chaque année, l'Insee diffuse des statistiques construites
 à partir du recensement
 de la population, l'une des enquêtes phares de l'institut.
-Pour accompagner ces résultats, et permettre à de nombreux
+Pour accompagner ces résultats et permettre à de nombreux
 acteurs de creuser ces données très riches dans des dimensions
-qui les intéresse, l'Insee diffuse également 
+qui les intéressent, l'Insee diffuse également 
 des bases de données détaillées construites après
 anonymisation de près de 20 millions de données individuelles. 
 
 Ces données, d'une extrême richesse, étaient historiquement
 complexes à manipuler du fait de leur volumétrie. La diffusion
 de celles-ci sous le format `Parquet`, une première mondiale,
-vise à simplifier l'exploitation
+vise à simplifier leur exploitation
 de celles-ci. Pour accompagner cette innovation,
 en partenariat avec les services de diffusion de l'Insee, 
 le [dernier _post_ de blog](https://ssphub.netlify.app/post/parquetrp/) du réseau présente un guide
