@@ -222,7 +222,7 @@ Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-o
 
 - Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/levee-de-fonds-de-mistral-ai-l-intelligence-artificielle-nous-projette-dans-un-emballement-temporel_6205157_3234.html) sur l'entreprise Mistral AI ;
 - Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral) ;
-- Le principe des architectures _mixture of experts_: [wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts) et [huggingface](https://huggingface.co/blog/moe).
+- Le principe des architectures _mixture of experts_: [article Wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts).
 
 :::
 
@@ -289,8 +289,8 @@ anonymisation de près de 20 millions de données individuelles.
 Ces données, d'une extrême richesse, étaient historiquement
 complexes à manipuler du fait de leur volumétrie. La diffusion
 de celles-ci sous le format `Parquet`, une première mondiale,
-vise à simplifier leur exploitation
-de celles-ci. Pour accompagner cette innovation,
+vise à simplifier leur exploitation.
+Pour accompagner cette innovation,
 en partenariat avec les services de diffusion de l'Insee, 
 le [dernier _post_ de blog](https://ssphub.netlify.app/post/parquetrp/) du réseau présente un guide
 pratique d'utilisation de ces données dans plusieurs
