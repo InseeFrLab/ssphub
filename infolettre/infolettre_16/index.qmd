@@ -175,10 +175,10 @@ barplot_ssp = Plot.plot({
 
 Les deux dernières publications sur le site du réseau,
 à savoir
-l'[infolettre #15](./infolettre/infolettre_15/index.qmd)
+l'[infolettre #15](/infolettre/infolettre_15/index.qmd)
 sur le réentrainement des modèles de langage
 et, surtout,
-le [_post_ de blog](./blog/parquetRP/index.qmd)
+le [_post_ de blog](/post/parquetRP/index.qmd)
 sur la publication du recensement de la population au format `Parquet`
 ont connu un écho important hors des 
 cercles de _data scientist_ du service statistique public
