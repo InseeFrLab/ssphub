@@ -365,7 +365,7 @@ aux formats `Parquet` et `CSV`. Il ne se restreint pas aux données
 disponibles sur les espaces de stockage personnels du `SSPCloud`:
 n'importe quel fichier, au format adéquat et disponible sur internet,
 peut être lu avec
-ce visualiseur ! Il n'est d'ailleurs pas nécessaire d'avoir un compte
+ce visualiseur. Il n'est d'ailleurs pas nécessaire d'avoir un compte
 sur le [`SSPCloud`](https://datalab.sspcloud.fr) pour l'utiliser, il suffit d'essayer de lire un
 fichier _open data _ 😍 ! 
 
