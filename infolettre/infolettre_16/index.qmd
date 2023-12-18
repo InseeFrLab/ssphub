@@ -359,7 +359,7 @@ de mettre en oeuvre un [explorateur similaire](https://datalab.sspcloud.fr/data-
 
 ![Un exemple d'utilisation de cet explorateur sur les données détaillées du recensement 👆️](viewer-sspcloud.png)
 
-Celui-ci s'appuie également sur `DuckDB` et permet de visualiser de 
+Celui-ci s'appuie sur `DuckDB` et permet de visualiser de 
 manière très fluide les fichiers
 aux formats `Parquet` et `CSV`. Il ne se restreint pas aux données
 disponibles sur les espaces de stockage personnels du `SSPCloud`:
