@@ -42,7 +42,7 @@ nous vous proposons de nous retourner pour regarder
 la progression de l'audience du réseau durant l'année 2023.
 Cette newsletter commencera ainsi par
 une rétrospective du réseau, 
-en écho à celle de l'[année 2022](infolettre/infolettre_09/index.qmd).
+en écho à celle de l'[année 2022](/infolettre/infolettre_09/index.qmd).
 Une partie consacrée aux actualités de
 la _data science_ suivra. 
 
@@ -164,7 +164,13 @@ barplot_ssp = Plot.plot({
     range: ["forestgreen", "#6886bb"]
     },
   marks: [
-    Plot.barX(hors_ssp_data, {y: "SSP", fy: "date", x: "mail", inset: 0.5, fill: "SSP", sort: "mail", tip: true, channels: {share: (d)  => `${100*d.share.toFixed(2)}%`}}),
+    Plot.barX(hors_ssp_data,
+    {
+      y: "SSP",
+      fy: (d) => new Date(d.date).toLocaleString("fr", {month: "long", year: "long"}),
+      x: "mail", inset: 0.5, fill: "SSP", sort: "mail",
+      tip: true, channels: {share: (d)  => `${100*d.share.toFixed(2)}%`}
+    }),
     Plot.axisY({textAnchor: "start", fill: "black", dx: 14}),
     Plot.ruleX([0])
   ]
@@ -256,7 +262,7 @@ afin d'être en mesure de comprendre les règles de décision de ces IA.
 L'AI Act interdit également l'utilisation de l'IA dans quelques domaines, jugés trop sensibles. 
 Par exemple, la reconnaissance faciale de masse est interdite, hormis lorsque celle-ci
 est justifiée par des motifs de sécurité nationale.  
-D'autres utilisations, porteuses potentiellement de dérives, comme
+D'autres utilisations, qui peuvent amener à des dérives, comme
 la notation sociale basée sur le comportement ou des caractéristiques personnelles
 sont interdits. 
 
