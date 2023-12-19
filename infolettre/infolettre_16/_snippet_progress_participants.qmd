@@ -1,6 +1,6 @@
 ```{ojs}
 //| echo: false
-html`<div><span class = "underline-big">${start_count}</span> personnes faisaient parti de la liste de diffusion en début d'année 2023.</div><br>`
+html`<div><span class = "underline-big">${start_count}</span> personnes faisaient partie de la liste de diffusion en début d'année 2023.</div><br>`
 html`<div>${plot_bar_participants}</div><br>`
 html`<div>${message}</div><br>`
 ```
