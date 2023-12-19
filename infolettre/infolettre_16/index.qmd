@@ -219,9 +219,9 @@ Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-o
 ::: {.callout-note}
 ## Pour en savoir plus
 
-- Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/levee-de-fonds-de-mistral-ai-l-intelligence-artificielle-nous-projette-dans-un-emballement-temporel_6205157_3234.html) sur l'entreprise Mistral AI ;
+- Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/la-start-up-francaise-mistral-ai-a-leve-385-millions-d-euros_6205065_3234.html) sur l'entreprise Mistral AI ;
 - Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral) ;
-- Le principe des architectures _mixture of experts_: [article Wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts).
+- Le principe des architectures _mixture of experts_: ([article Wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts)).
 
 :::
 
@@ -230,7 +230,7 @@ Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-o
 
 Dans un accord provisoire signé le 9 décembre 2023 et nommé _"Artificial Intelligence Act"_,
 les Etats membres et le Parlement européen ont établi
-une proposition relative à des règles harmonisées concernant l'intelligence artificielle (IA)
+une proposition relative à des règles harmonisées concernant l'intelligence artificielle (IA).
 
 Débutées en 2018, avant que les IA génératives ne deviennent
 si populaires, ces discussions dépassent le cadre exclusif de ces
@@ -255,11 +255,11 @@ afin d'être en mesure de comprendre les règles de décision de ces IA.
 
 L'accord provisoire interdit également l'utilisation de l'IA dans quelques domaines, jugés trop sensibles. 
 Par exemple, la reconnaissance faciale de masse est interdite, hormis lorsque celle-ci
-est justifiée par des motifs de sécurité nationale.  
-D'autres utilisations, qui peuvent amener à des dérives, comme
+est justifiée par des motifs de sécurité nationale. D'autres utilisations, qui peuvent amener à des dérives, comme
 la notation sociale basée sur le comportement ou des caractéristiques personnelles
 sont interdits. 
-Les travaux se poursuivront maintenant au niveau technique dans les semaines à venir afin de mettre au point les détails du nouveau règlement. Une fois ces travaux terminés, la présidence présentera le texte de compromis aux représentants des États membres pour approbation
+Les travaux se poursuivront maintenant au niveau technique dans les semaines à venir afin de mettre au point les détails du nouveau règlement. Une fois ces travaux terminés, la présidence présentera le texte de compromis aux représentants des États membres pour approbation.
+
 ::: {.callout-note}
 ## Pour en savoir plus
 
