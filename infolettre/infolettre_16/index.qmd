@@ -1,0 +1,410 @@
+---
+title: Infolettre n°16
+description: |
+  Infolettre __Décembre 2023__
+
+# Date published
+date: '2023-12-14'
+number: 16
+
+image: santa.png
+
+authors:
+  - Lino Galiana
+
+tags:
+  - infolettre
+
+categories:
+  - Infolettre
+
+css: style.css
+code-annotations: hover
+
+filters:
+  - snow
+---
+
+![](santa.png){width=50% fig-align="center"}
+
+:::{.callout-tip}
+
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
+
+:::
+
+
+
+Noël approchant, avant d'ouvrir vos cadeaux, de dévorer une 
+bûche ou tout autre met délicieux, 
+nous vous proposons de nous retourner sur
+la progression de l'audience du réseau durant l'année 2023.
+Cette newsletter commencera ainsi par
+une rétrospective du réseau, 
+en écho à celle de l'[année 2022](/infolettre/infolettre_09/index.qmd).
+Une partie consacrée aux actualités de
+la _data science_ suivra. 
+
+
+::: {.callout-note collapse="true"}
+## Making of
+
+`Observable` est à la fois un langage visant à simplifier l'usage de 
+`JavaScript` {{< fa brands js-square >}} pour
+mettre en oeuvre des visualisations interactives
+et une [plateforme](https://observablehq.com/) permettant
+de simplifier la mise à disposition
+de ces visualisations sous une forme de _notebook_. 
+
+Les statistiques de comptage sont enregistrées sous format `Parquet` sur le système
+de stockage `S3` du `SSPCloud`. L'intégration native de `DuckDB`
+à `Observable` permet au navigateur _web_
+de lire et d'effectuer des manipulations de données à travers des requêtes
+SQL de manière très efficace. Sur ce sujet, outre
+la [documentation officielle d'`Observable`](https://observablehq.com/documentation/data/databases/database-clients#duckdb),
+il est recommandé de lire 
+le [tutoriel d'Eric Mauvière](https://observablehq.com/@ericmauviere/duckdb-redonne-nouvelle-vie-sql). 
+
+La librairie [`Plot`](https://observablehq.com/@observablehq/plot) propose de nombreuses fonctionalités
+utiles pour construire des visualisations interactives. Sa logique est assez proche de celle
+des _frameworks_ [`ggplot2` en `R`](https://observablehq.com/@observablehq/plot-from-ggplot2)
+ou [`matplotlib` en `Python`](https://observablehq.com/@observablehq/plot-overview-for-matplotlib-users). 
+
+Ce _post_ s'appuie sur 
+[`Quarto`](https://quarto.org/docs/interactive/ojs/) qui permet de créer une page _web_ 
+statique autosuffisante à partir d'une suite d'instructions dans des blocs `{ojs}`. Cette méthode est
+très intéressante pour l'intégration de figures `JavaScript` dans des sites _web_ complets générés de
+manière automatique. 
+Le code utilisé est mis à disposition des
+curieux par le biais de menus déroulants.
+
+L'ensemble des codes sources
+nécessaires à la reproduction de cette page
+sont disponibles
+sur le [`Github {{< fa brands github >}} inseefrlab/ssphub`](https://github.com/InseeFrLab/ssphub/blob/main/infolettre/infolettre_16/). Pour limiter les duplications de code,
+les scripts ont été modularisés dans des fichiers séparés.  
+Les éléments ne sont pas nécessairement présentés dans l'ordre
+car `JavaScript` est un langage _asynchrone_, les éléments
+ne sont pas executés dans l'ordre de définition mais 
+dans l'ordre par lequel ils sont nécessaires pour obtenir un
+objet donné. 
+
+:::
+
+## Rétrospective du réseau en 2023
+
+### Une audience en progression
+
+{{< include _snippet_progress_participants.qmd >}}
+
+A l'exception du mois d'août (pause estivale oblige),
+la progression de l'audience a été assez régulière
+grâce aux événements et contenus publiés sur le site
+du `SSP Hub`. 
+
+
+```{ojs}
+//| echo: false
+html`<div>Pendant l'année 2023, le réseau a ainsi connu <span class="underline-big">${events.length}</span> événements et publications de contenu (${countEvents("Infolettre")}, ${countEvents("Post de blog")}, ${countEvents("Evénement virtuel ou présentiel")}, ${countEvents("Masterclass")}).</div><br>`
+```
+
+
+```{ojs}
+//| echo: false
+html`<div>${lineplot}</div>`
+html`<div>${warm_strip}</div>`
+md`__Choisir les événements du réseau à afficher 👇️__`
+html`<div>${viewof events_chosen_figure1}</div>`
+html`<div>${table_events}</div>`
+```
+
+{{< include _snippet_lineplot.qmd >}}
+
+
+### Du contenu qui intéresse au-delà des statisticiens publics
+
+Si les statistiques concernant la composition du réseau
+parmi les organismes de la statistique publique
+sont relativement stables par rapport à l'an dernier, 
+le changement principal ayant eu lieu en 2023 est
+l'ouverture progressive à des publics hors de la
+statistique publique (administrations hors du SSP,
+chercheurs et étudiants...) 
+
+```{ojs}
+//| echo: false
+html`<div>${barplot_ssp}</div>`
+```
+
+<details>
+
+<summary>
+Code pour générer la figure
+</summary>
+
+```{ojs}
+barplot_ssp = Plot.plot({
+  marginLeft: 60,
+  marginRight: 100,
+  x: {label: "Frequency"},
+  y: {label: null},
+  color: {
+    domain: ["Hors du SSP", "Service Statistique Public (SSP)"],
+    range: ["forestgreen", "#6886bb"]
+    },
+  marks: [
+    Plot.barX(hors_ssp_data,
+    {
+      y: "SSP",
+      fy: (d) => new Date(d.date).toLocaleString("fr", {
+        "month": "long",
+        "year": "numeric"
+      }),
+      x: "mail", inset: 0.5, fill: "SSP", sort: "mail",
+      tip: true, channels: {share: (d)  => `${100*d.share.toFixed(2)}%`}
+    }),
+    Plot.axisY({textAnchor: "start", fill: "black", dx: 14}),
+    Plot.ruleX([0])
+  ]
+})
+```
+
+</details>
+
+Les deux dernières publications sur le site du réseau,
+à savoir
+l'[infolettre #15](/infolettre/infolettre_15/index.qmd)
+sur le réentrainement des modèles de langage
+et, surtout,
+le [_post_ de blog](/post/parquetRP/index.qmd)
+sur la publication du recensement de la population au format `Parquet`
+ont connu un écho important hors des 
+cercles de _data scientist_ du service statistique public
+et ont amené de nouveaux publics à suivre les contenus 
+proposés par le réseau.
+
+
+# Actualités de la _data science_
+
+## La startup Mistral AI publie un modèle à l'état de l'art
+
+Mistral AI, une _startup_ française spécialisée dans l'intelligence artificielle,
+vient de publier un modèle nommé [`Mixtral`](https://mistral.ai/news/mixtral-of-experts/)
+qui repose sur le principe du [_mixture of experts_](https://huggingface.co/blog/moe).
+Cette technique consiste à privilégier une architecture construite à partir
+de sous-modèles spécialisés plutôt qu'un modèle généraliste qui s'adapte
+en fin de procédure à une question spécialisée. Dans ce type
+de modèles, l'enjeu est ainsi d'interpréter la question pour 
+diriger la réponse vers l'expert adéquat : si une question porte sur un sujet de cuisine, 
+un.e expert.e spécialisé.e en code sera de peu de secours. 
+
+
+D'après les premières évaluations publiées, ce modèle surpasserait 
+les capacités des autres modèles ouverts (notamment `Llama 2`) 
+et s'approcherait des performances de GPT 3.5,
+le modèle derrière la version gratuite de ChatGPT. 
+Cette annonce a eu lieu en pleine période de levée de fonds
+pour Mistral AI qui aurait obtenu un financement de 385
+millions d'euros. 
+
+
+<details>
+<summary>
+Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-of-experts/))
+</summary>
+![Tableau des performances publié par Mistral AI](https://mistral.ai/images/news/mixtral-of-experts/overview.png)
+</details>
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/la-start-up-francaise-mistral-ai-a-leve-385-millions-d-euros_6205065_3234.html) sur l'entreprise Mistral AI ;
+- Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral) ;
+- Le principe des architectures _mixture of experts_ ([article Wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts)).
+
+:::
+
+
+## L'Europe parvient à un accord sur les premières règles au monde en matière d'IA
+
+Dans un accord provisoire signé le 9 décembre 2023 et nommé _"Artificial Intelligence Act"_,
+les États Membres et le Parlement européen ont établi
+une proposition relative à des règles harmonisées concernant l'intelligence artificielle (IA).
+
+Débutées en 2018, avant que les IA génératives ne deviennent
+si populaires, ces discussions dépassent le cadre exclusif de ces
+dernières. Néanmoins,
+concernant celles-ci, le compromis prévoit une approche différenciée suivant le contexte de développement et l'usage de ces modèles. 
+Outre le respect des règles européennes 
+de propriété intellectuelle, les développeurs de modèles génératifs
+devront s'assurer que les produits diffusés sont bien identifiés comme
+artificiels, afin de limiter la
+diffusion de [_deepfakes_](https://fr.wikipedia.org/wiki/Deepfake).
+Les développeurs de ces modèles
+devront également communiquer sur la qualité des données utilisées
+pour entraîner les modèles et sur le coût énergétique de ceux-ci. 
+Les modèles _open source_ et ceux construits à des fins de recherche bénéficient
+d'exemptions de ces règles. 
+
+Des contraintes renforcées s’appliqueront aux systèmes jugés à _"haut risque"_
+dans des domaines comme la défense, l'éducation, les ressources humaines
+ou encore la santé. 
+Pour ces systèmes, il sera nécessaire de réaliser une analyse d’impact avant la mise sur le marché. Par ailleurs, une obligation de transparence et d’explicabilité des modèles est mise en place
+afin d'être en mesure de comprendre les règles de décision de ces IA.
+
+L'accord provisoire interdit également l'utilisation de l'IA dans quelques domaines, jugés trop sensibles. 
+Par exemple, la reconnaissance faciale de masse est interdite, hormis lorsque celle-ci
+est justifiée par des motifs de sécurité nationale. D'autres utilisations, qui peuvent amener à des dérives, comme
+la notation sociale basée sur le comportement ou des caractéristiques personnelles,
+sont interdits. 
+Les travaux se poursuivront maintenant au niveau technique dans les semaines à venir afin de mettre au point les détails du nouveau règlement. Une fois ces travaux terminés, la présidence présentera le texte de compromis aux représentants des États membres pour approbation.
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- La [présentation de l'accord](https://www.consilium.europa.eu/fr/press/press-releases/2023/12/09/artificial-intelligence-act-council-and-parliament-strike-a-deal-on-the-first-worldwide-rules-for-ai/
+) sur le site web du 
+Conseil de l'Europe. 
+
+:::
+
+
+## Nouveau _post_ de blog: diffusion du recensement de la population au format `Parquet`
+
+Chaque année, l'Insee diffuse des statistiques construites
+à partir du recensement
+de la population, l'une des enquêtes phares de l'institut.
+Pour accompagner ces résultats et permettre à de nombreux
+acteurs de creuser ces données très riches dans des dimensions
+qui les intéressent, l'Insee diffuse également 
+des bases de données détaillées construites après
+anonymisation de près de 20 millions de données individuelles. 
+
+Ces données, d'une extrême richesse, étaient historiquement
+complexes à manipuler du fait de leur volumétrie. La diffusion
+de celles-ci sous le format `Parquet`, une première mondiale
+parmi les instituts de statistique publique,
+vise à simplifier leur exploitation.
+Pour accompagner cette innovation,
+en partenariat avec les services de diffusion de l'Insee, 
+le [dernier _post_ de blog](https://ssphub.netlify.app/post/parquetrp/)
+du réseau présente un guide
+pratique d'utilisation de ces données dans plusieurs
+langages de traitement ({{< fa brands r-project >}} , `Python` {{< fa brands python >}} et `Observable` {{< fa brands js-square >}}) par le biais de `DuckDB`. 
+
+Combien d'habitants de Toulouse ont changé de logement sur l'année ? Quels sont les
+départements avec le plus de centenaires ? Le [_post_ de blog](https://ssphub.netlify.app/post/parquetrp/) vous montrera comment calculer ces statistiques. Et si vous désirez découvrir
+ce format avec des exemples additionnels, ce _post_ d'[Eric Mauvière](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) vous intéressera également.
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- Le [_post_ de blog](https://ssphub.netlify.app/post/parquetrp/) ;
+- Un [article](https://www.insee.fr/fr/information/7635827?sommaire=7635842) sur le format `Parquet` dans le _Courrier des stats n°9_
+écrit par Alexis Dondon et Pierre Lamarche ;
+- Le blog d'[Eric Mauvière](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) qui présente
+une série d'articles sur le format `Parquet`;
+- La [présentation](https://www.linkedin.com/feed/update/urn:li:activity:7133760348129505281?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7133760348129505281%29
+) de Romain Lesur sur le sujet pour l'atelier _Modernisation of Official Statistics_ de l'UNECE.
+:::
+
+## Le [SSPCloud](https://datalab.sspcloud.fr) se dote d'un explorateur de fichiers basé sur `DuckDB`
+
+`DuckDB` est un outil extrêmement efficace pour lire des
+fichiers `Parquet` et `CSV`. Outre son
+efficacité, `DuckDB` présente l'avantage
+d'être disponible par le biais de plusieurs
+clients: {{< fa brands r-project >}}, `Python` {{< fa brands python >}}
+mais aussi un navigateur web grâce à `Javascript` {{< fa brands js-square >}} . 
+Des acteurs majeurs de l'écosystème de
+la _data science_, notamment [Observable](https://observablehq.com/documentation/data/databases/database-clients#duckdb), ont
+fait de `DuckDB` une pierre angulaire de leurs explorateurs de données. 
+L'avantage de cette approche, typique du [_web assembly_](https://developer.mozilla.org/fr/docs/WebAssembly) (approche visant à mettre à disposition des logiciels de calculs scientifiques par le biais d'un simple navigateur),
+est que seul `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur, est
+nécessaire pour visualiser et effectuer des traitements analytiques
+sur des données. 
+
+Le [`SSPCloud`](https://datalab.sspcloud.fr), la plateforme moderne
+de traitement de données développée par l'Insee et mise
+à disposition de près de 3000 agents de l'administration ou étudiants, vient
+de mettre en oeuvre [un explorateur](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) aux fonctionnalités similaires 🚀. 
+
+
+![Un exemple d'utilisation de cet explorateur sur les données détaillées du recensement 👆️](viewer-sspcloud.png)
+
+Celui-ci s'appuie sur `DuckDB` et permet de visualiser de 
+manière très fluide les fichiers
+aux formats `Parquet` et `CSV`. Il ne se restreint pas aux données
+disponibles sur les espaces de stockage personnels du `SSPCloud`:
+n'importe quel fichier, au format adéquat et disponible sur internet,
+peut être lu avec
+ce visualiseur. Il n'est d'ailleurs pas nécessaire d'avoir un compte
+sur le [`SSPCloud`](https://datalab.sspcloud.fr) pour l'utiliser, il suffit que le fichier que l'on souhaite lire soit un
+fichier _open data _ 😍 ! 
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- [Des éléments](https://developer.mozilla.org/fr/docs/WebAssembly) sur le _web assembly_ ;
+- [L'explorateur de fichier du `SSPCloud`](https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&page=1&columnWidths=%7B%7D&columnVisibility=%7B%7D) ;
+- [L'explorateur de fichiers de `data.gouv`](https://explore.data.gouv.fr/tableau) basé sur la même approche technologique. 
+:::
+
+## L'accessibilité de `Jupyter` améliorée avec le concours de l'Insee
+
+Afin de ne pas pénaliser certains publics, les logiciels
+doivent respecter des critères d'accessibilité.
+Ils doivent notamment avoir de nombreuses
+fonctionnalités accessibles sans souris, exclusivement
+par le biais du clavier. Cependant, `Jupyter`, 
+logiciel bien connu des _data scientists_,
+par la structure complexe de son interface,
+présentait plusieurs défauts, comme
+la difficulté à naviguer dans la page pour trouver
+le menu nécessaire pour éditer du code. 
+
+Grâce à une subvention de l'Insee, des travaux d'amélioration
+de l'accessibilité de `Jupyter` ont pu être menés. 
+Les prochaines versions du logiciel devraient être plus accessibles,
+et, entre autres, plus pratiques d'usage pour les _data scientists_ qui
+privilégient le clavier à la souris pour se déplacer dans un document. 
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- L'[annonce](https://blog.jupyter.org/recent-keyboard-navigation-improvements-in-jupyter-4df32f97628d) sur le blog de `Jupyter` ;
+- Le principe d'[accessibilité clavier](https://www.w3.org/WAI/WCAG21/Understanding/keyboard-accessible) du W3C.
+:::
+
+
+
+
+# Annexe pour les curieux: le code `Observable` utilisé pour cette page
+
+<details>
+<summary>
+Les librairies ou imports externes utilisés
+</summary>
+
+```{ojs}
+Plot = require('@observablehq/plot@0.6.12/dist/plot.umd.min.js') //<1>
+import {disposal} from "@mbostock/disposal"
+import {Scrubber} from "@mbostock/scrubber"
+```
+1. La librairie `Plot` embarquée par défaut dans `Quarto` est un peu vieille mais la mettre à jour est assez simple.
+
+</details>
+
+
+
+
+{{< include _snippet_progress_participants_objects.qmd >}}
+
+
+
+{{< include _functions.qmd >}}
+
+
+{{< include _data.qmd >}}
+

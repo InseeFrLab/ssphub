@@ -23,7 +23,11 @@ categories:
   - Retrospective
 
 image: featured.png
+
+filters:
+  - snow
 ---
+
 
 
 *Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
@@ -380,3 +384,4 @@ new Runtime().module(define, name => {
   if (name === "grid") return new Inspector(document.querySelector("#observablehq-grid-bbfd8ffe"));
 });
 </script>
+

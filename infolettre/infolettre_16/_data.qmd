@@ -1,0 +1,165 @@
+<details>
+
+<summary>
+
+_Inputs_ pour `DuckDB` 🦆
+
+</summary>
+
+```{ojs}
+url_events = `https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/retrospective-2023/events_orginazed_2023.json`
+url_latest = 's3://lgaliana/ssphub/files/retrospective-2023/list_contacts_latest.parquet'
+url_hors_ssp = 's3://lgaliana/ssphub/files/retrospective-2023/series_part_ssp.parquet'
+url_latest2 = 's3://lgaliana/ssphub/files/retrospective-2023/series_nombre_contact.parquet'
+```
+
+
+```{ojs}
+configuredClient = {
+  const client = await DuckDBClient.of();
+  await client.sql`
+    SET s3_endpoint='minio.lab.sspcloud.fr'
+  `;
+  return client;
+}
+
+db = {
+  await configuredClient.query(`
+    CREATE VIEW share_ssp AS 
+    SELECT * FROM read_parquet('${url_hors_ssp}') ;
+  `);
+  await configuredClient.query(`
+    CREATE VIEW latest AS 
+    SELECT * FROM read_parquet('${url_latest}') WHERE date > '2023-01-01' ;
+  `);
+  await configuredClient.query(`
+    CREATE VIEW serie AS 
+    SELECT * FROM read_parquet('${url_latest2}') WHERE date > '2023-01-01' ;
+  `);
+  return configuredClient
+}
+
+```
+
+
+
+```{ojs}
+//| eval: true
+serie_contacts = db.sql`
+SELECT date, CAST(SUM(mail) AS int) AS mail
+FROM serie
+GROUP BY date
+`
+serie_contacts_domain = db.sql`
+SELECT date, domain, CAST(mail AS int) AS mail
+FROM serie
+`
+```
+
+```{ojs}
+hors_ssp_data = db.query(`
+SELECT * FROM share_ssp WHERE date in ('2023-12-09', '2023-01-10')
+`)
+```
+
+
+```{ojs}
+events = d3.json(url_events)
+```
+
+</details>
+
+<details>
+
+<summary>
+
+_Arrays_ intermédiaire
+
+</summary>
+
+<!----
+computed objects
+------>
+
+<details>
+
+```{ojs}
+serie_contacts_complete = interpolateDates(serie_contacts);
+```
+
+
+```{ojs}
+start_count = serie_contacts.filter((d) => dateFormat(d.date) == "2023-01-10").map((d) => d.mail)[0]
+```
+
+```{ojs}
+end_count = serie_contacts.filter((d) => dateFormat(d.date) == "2023-12-09").map((d) => d.mail)[0]
+```
+
+
+```{ojs}
+events_data_figure1 = events.filter(d => events_chosen_figure1.includes(d.type))
+events_data_figure1
+```
+
+```{ojs}
+nombre_events = d3.rollup(events, (D) => D.length, (d) => d.type)
+```
+
+
+```{ojs}
+measured_dates = db.query(`SELECT DISTINCT strftime(date, '%Y-%m-%d') AS date FROM serie`)
+date_selected = measured_dates.map(d => d.date)
+list_dates2 = db.query(`SELECT DISTINCT strftime(date, '%Y-%m-%d') AS date FROM serie`)
+```
+
+
+```{ojs}
+links_website_ssphub = {
+    const toto = {};
+
+    events_data_figure1_b.forEach(item => {
+    toto[item.event] = item.href;
+    });
+
+    return toto
+}
+links_website_ssphub
+```
+
+```{ojs}
+events_data_figure1_b = leftJoinArrays(events_data_figure1, serie_contacts_complete, "date", 0, 40)
+```
+
+</details>
+
+<details>
+<summary>
+Quelques _array_ utiles
+</summary>
+
+```{ojs}
+color_mapping_events = {
+
+    const color_mapping_events = {
+    "Evénement virtuel ou présentiel": "#4d78a6",
+    "Infolettre": "#f28e2c",
+    "Post de blog": "#e05658",
+    "Masterclass": "#76b7b1"
+    };
+
+  return color_mapping_events
+}
+```
+
+
+
+```{ojs}
+dates_2023 = Array.from({length: 365}, (_, i) => {
+  const date = new Date(2023, 0, 1);
+  date.setDate(i + 1);
+  return date;
+})
+```
+
+</details>
