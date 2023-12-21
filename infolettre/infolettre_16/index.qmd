@@ -35,10 +35,9 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 
 
-Noël approchant, avant d'
-ouvrir ses cadeaux, de dévorer une 
+Noël approchant, avant d'ouvrir vos cadeaux, de dévorer une 
 bûche ou tout autre met délicieux, 
-nous vous proposons de nous retourner pour regarder 
+nous vous proposons de nous retourner sur
 la progression de l'audience du réseau durant l'année 2023.
 Cette newsletter commencera ainsi par
 une rétrospective du réseau, 
@@ -125,7 +124,7 @@ html`<div>${table_events}</div>`
 ### Du contenu qui intéresse au-delà des statisticiens publics
 
 Si les statistiques concernant la composition du réseau
-parmi les institutions de la statistique publique
+parmi les organismes de la statistique publique
 sont relativement stables par rapport à l'an dernier, 
 le changement principal ayant eu lieu en 2023 est
 l'ouverture progressive à des publics hors de la
@@ -221,7 +220,7 @@ Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-o
 
 - Un [article du _Monde_](https://www.lemonde.fr/economie/article/2023/12/11/la-start-up-francaise-mistral-ai-a-leve-385-millions-d-euros_6205065_3234.html) sur l'entreprise Mistral AI ;
 - Le modèle `Mixtral` sur [Huggingface](https://huggingface.co/docs/transformers/model_doc/mixtral) ;
-- Le principe des architectures _mixture of experts_: ([article Wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts)).
+- Le principe des architectures _mixture of experts_ ([article Wikipedia](https://en.wikipedia.org/wiki/Mixture_of_experts)).
 
 :::
 
@@ -229,7 +228,7 @@ Tableau des performances (source: [Mistral AI](https://mistral.ai/news/mixtral-o
 ## L'Europe parvient à un accord sur les premières règles au monde en matière d'IA
 
 Dans un accord provisoire signé le 9 décembre 2023 et nommé _"Artificial Intelligence Act"_,
-les Etats membres et le Parlement européen ont établi
+les États Membres et le Parlement européen ont établi
 une proposition relative à des règles harmonisées concernant l'intelligence artificielle (IA).
 
 Débutées en 2018, avant que les IA génératives ne deviennent
@@ -238,7 +237,7 @@ dernières. Néanmoins,
 concernant celles-ci, le compromis prévoit une approche différenciée suivant le contexte de développement et l'usage de ces modèles. 
 Outre le respect des règles européennes 
 de propriété intellectuelle, les développeurs de modèles génératifs
-devront s'assurer que les produits diffusés soient bien identifiés comme
+devront s'assurer que les produits diffusés sont bien identifiés comme
 artificiels, afin de limiter la
 diffusion de [_deepfakes_](https://fr.wikipedia.org/wiki/Deepfake).
 Les développeurs de ces modèles
@@ -256,7 +255,7 @@ afin d'être en mesure de comprendre les règles de décision de ces IA.
 L'accord provisoire interdit également l'utilisation de l'IA dans quelques domaines, jugés trop sensibles. 
 Par exemple, la reconnaissance faciale de masse est interdite, hormis lorsque celle-ci
 est justifiée par des motifs de sécurité nationale. D'autres utilisations, qui peuvent amener à des dérives, comme
-la notation sociale basée sur le comportement ou des caractéristiques personnelles
+la notation sociale basée sur le comportement ou des caractéristiques personnelles,
 sont interdits. 
 Les travaux se poursuivront maintenant au niveau technique dans les semaines à venir afin de mettre au point les détails du nouveau règlement. Une fois ces travaux terminés, la présidence présentera le texte de compromis aux représentants des États membres pour approbation.
 
@@ -319,7 +318,7 @@ d'être disponible par le biais de plusieurs
 clients: {{< fa brands r-project >}}, `Python` {{< fa brands python >}}
 mais aussi un navigateur web grâce à `Javascript` {{< fa brands js-square >}} . 
 Des acteurs majeurs de l'écosystème de
-la _data science_, notamment [Observable](https://observablehq.com/documentation/data/databases/database-clients#duckdb) ont
+la _data science_, notamment [Observable](https://observablehq.com/documentation/data/databases/database-clients#duckdb), ont
 fait de `DuckDB` une pierre angulaire de leurs explorateurs de données. 
 L'avantage de cette approche, typique du [_web assembly_](https://developer.mozilla.org/fr/docs/WebAssembly) (approche visant à mettre à disposition des logiciels de calculs scientifiques par le biais d'un simple navigateur),
 est que seul `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur, est
@@ -361,7 +360,7 @@ fonctionnalités accessibles sans souris, exclusivement
 par le biais du clavier. Cependant, `Jupyter`, 
 logiciel bien connu des _data scientists_,
 par la structure complexe de son interface,
-présentait plusieurs problèmes à cet égard, comme
+présentait plusieurs défauts, comme
 la difficulté à naviguer dans la page pour trouver
 le menu nécessaire pour éditer du code. 
 
