@@ -15,6 +15,7 @@ project:
     - partenaires/**/*.qmd
     - course/**/*.qmd
     - "!*/parquetRP/snippets/*"
+    - "!*/polars/polars-tuto.qmd"
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
