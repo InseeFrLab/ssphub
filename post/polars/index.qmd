@@ -35,7 +35,7 @@ Ses atouts ? D'excellentes performances et une expressibilité qui le rapproche 
 Ce post de blog revient sur les principaux atouts de `Polars`, sans vouloir être exhaustif. Un _notebook_ illustrant les principales
 fonctionnalités du package vise à le compléter : 
 
-<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
+<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?version=1.13.22&autoLaunch=true&init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2F6322c25d65f61f7874e7900f38c4b2774e007ea7%2Fpost%2Fpolars%2Finit.sh»&init.personalInitArgs=«polars-tuto»&onyxia.friendlyName=«Tutoriel%20Polars»" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
 <a href="https://colab.research.google.com/github/inseefrlab/ssphub/blob/main/post/polars/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
