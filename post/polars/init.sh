@@ -4,7 +4,7 @@ NOTEBOOK_NAME=$1
 WORK_DIR="/home/onyxia/work"
 CLONE_DIR="${WORK_DIR}/repo-git"
 
-COURSE_DIR="${CLONE_DIR}/content/notebooks"
+COURSE_DIR="${CLONE_DIR}/post/polars"
 
 # Clone course repository
 REPO_URL="https://github.com/inseefrlab/ssphub.git"
