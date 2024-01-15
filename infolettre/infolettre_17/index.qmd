@@ -1,0 +1,69 @@
+---
+title: Infolettre n°17
+description: |
+  Infolettre, __Janvier 2024__
+
+# Date published
+date: '2024-01-20'
+number: 16
+
+image: learning.png
+
+authors:
+  - Lino Galiana
+
+tags:
+  - infolettre
+
+categories:
+  - Infolettre
+---
+
+![](learning.png){width=50% fig-align="center"}
+
+:::{.callout-tip}
+
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
+
+:::
+
+
+
+## IA 
+
+L'intelligence artificielle a été au coeur des débats de l'année 2023,
+notamment les IA génératives qui ont été très médiatisées, dans la continuité
+de la sortie de ChatGPT en décembre 2022. 
+
+Outre la publication de GPT-4 en mars (modèle embarqué dans la version Pro de ChatGPT),
+de nombreux grands modèles de langage (LLM) ont été publiés cette année:
+Llama 2 (Méta), Mixtral 7B (Mistral), Falcon 180B (XXX), PaLM 2 (Google)...
+Ces publications à un rythme effrené ont permis de mettre en avant le caractère
+stratégique de la mise à disposition de modèles _open source_. 
+La récupération et la structuration de corpus massifs,
+l'entraînement de modèles intégrant des
+milliards de paramètres et l'évaluation _ex post_ de ceux-ci étant à la portée d'un
+nombre restreint d'acteur,
+la publication en _open source_ de modèles et de codes sources
+est indispensable pour pouvoir évaluer la pertinence scientifique de modèles et adopter
+ceux-ci dans des structures n'ayant pas ces moyens techniques et humains. 
+
+
+- besoins GPU
+
+HuggingFace
+
+
+Un certain nombre de grands modèles de langage (LLM) ont émergé en alternative 
+aux modèles GPT (GPT 4 3.5 et 3)
+
+Parmi les débats les plus
+
+- conflits légaux sur droits d'auteur
+- RAG
+
+Les IA génératives ont été au centre de l'attention. Néanmoins, d'autres innovations dans
+le domaine, plus large, des modèles d'apprentissage ont eu lieu pendant l'année
+ex: segmentanything
+
+## DuckDB
