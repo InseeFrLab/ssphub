@@ -5,7 +5,7 @@ description: |
 
 # Date published
 date: '2024-01-20'
-number: 16
+number: 17
 
 image: learning.png
 
@@ -29,41 +29,94 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 
 
-## IA 
+## Panorama des enjeux de 2023 dans le domaine de l'Intelligence Artificielle
 
-L'intelligence artificielle a été au coeur des débats de l'année 2023,
-notamment les IA génératives qui ont été très médiatisées, dans la continuité
-de la sortie de ChatGPT en décembre 2022. 
+### Les IA génératives au coeur des débats
 
+Dans la continuité
+de la sortie de ChatGPT en décembre 2022, les IA génératives sont restées très
+médiatisées en 2023. Celles-ci ont focalisé une part importante de l'attention portée
+à la _data science_. 
 Outre la publication de GPT-4 en mars (modèle embarqué dans la version Pro de ChatGPT),
 de nombreux grands modèles de langage (LLM) ont été publiés cette année:
-Llama 2 (Méta), Mixtral 7B (Mistral), Falcon 180B (XXX), PaLM 2 (Google)...
-Ces publications à un rythme effrené ont permis de mettre en avant le caractère
+Llama-2 (Méta), Mixtral 7B (Mistral), Falcon 180B (Technology Innovation Institute), PaLM 2 (Google)...
+Ces publications ont permis de mettre en avant le caractère
 stratégique de la mise à disposition de modèles _open source_. 
+
 La récupération et la structuration de corpus massifs,
 l'entraînement de modèles intégrant des
 milliards de paramètres et l'évaluation _ex post_ de ceux-ci étant à la portée d'un
 nombre restreint d'acteur,
 la publication en _open source_ de modèles et de codes sources
-est indispensable pour pouvoir évaluer la pertinence scientifique de modèles et adopter
-ceux-ci dans des structures n'ayant pas ces moyens techniques et humains. 
+est en effet indispensable pour, entre autres, être en mesure d'évaluer
+la pertinence scientifique des modèles ou permettre aux
+acteurs n'ayant pas ces moyens techniques et humains
+de pouvoir tout de même réutiliser ces modèles sur leurs
+propres données sans dépendre d'acteurs spécialisés.
+
+Néanmoins, malgré l'ouverture progressive de modèles, notamment par le biais d'une 
+mise à disposition sur la plateforme `Hugging Face`, 
+des contraintes persistent pour la réutilisation de ces modèles sur des données confidentielles
+dans des infrastructures internes. 
+Les réseaux de neurone étant très gourmands en calculs du fait
+de leur architecture complexe (des milliards de paramètres pour les grands modèles de langage),
+pour obtenir une réponse du modèle, il est généralement nécessaire d'effectuer 
+les calculs nécessaires par le biais de
+cartes graphiques (GPU), celles-ci permettant plus de parallélisme dans les calculs
+que les processeurs (CPU).
+Cependant, depuis plusieurs années, la demande excède largement l'offre, ce qui limite
+l'accès à des GPU pour de nombreux acteurs. 
+Le retour à des modèles plus légers, pouvant être exploités depuis des architectures
+informatiques plus accessibles, constitue l'un des [défis de l'année 2024](https://www.linkedin.com/posts/julienchaumond_my-prediction-for-2024-yes-i-have-only-activity-7142887026193809409-L3i7?utm_source=share&utm_medium=member_desktop). 
 
 
-- besoins GPU
+Les débats concernant les droits d'exploitation commerciale d'informations collectées
+sur internet ont été relancés à la fin de l'année 2023. 
+Après les plaintes médiatisées de Getty Images (envers Stability AI), 
+d'un collectif d'auteurs célèbres (envers OpenAI), la grève des acteurs à Hollywood
+contre l'exploitation de leur image par des AI et des scénaristes contre l'utilisation
+des générateurs de texte, 
+c'est cette fois le _New York Times_ qui dépose une plainte envers OpenAI auprès de la Cour
+Fédérale de Manhattan.
+A partir d'exemples, le journal américain met en avant le degré de confiance
+qu'apporte `ChatGPT` aux informations issues des articles du quotidien mais
+dont il ne cite pas la provenance, ce qui réduit le trafic potentiel sur le site
+du _New York Times_. A contrario, le journal met en avant l'effet négatif sur son
+image que peuvent avoir des hallucinations attribuées au quotidien. 
+Cette plainte fait suite à l'échec des négociations entre les deux acteurs au cours
+de l'année 2023.  
 
-HuggingFace
+::: {.callout-note}
+## Pour en savoir plus
+
+- Un [tutoriel](https://huggingface.co/docs/transformers/llm_tutorial) sur les LLM par `Hugging Face` ;
+- https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html
+- Un article du site spécialisé _[The Verge](https://www.theverge.com/2023/12/4/23988403/getty-lawsuit-stability-ai-copyright-infringement)_
+sur les dernières évolutions de la plainte de _Getty Images_ ; 
+- Un article de [_Courrier International_](https://www.courrierinternational.com/article/litterature-george-r-r-martin-jonathan-franzen-et-john-grisham-partent-en-guerre-contre-chatgpt) sur la plainte des auteurs envers OpenAI ;
+- _New York Times vs OpenAI_ par [le _Monde_](https://www.lemonde.fr/pixels/article/2023/12/27/le-new-york-times-poursuit-en-justice-microsoft-et-openai-createur-de-chatgpt-pour-violation-de-droits-d-auteur_6207946_4408996.html
+) et le [_New York Times_](https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html).
+
+:::
 
 
-Un certain nombre de grands modèles de langage (LLM) ont émergé en alternative 
-aux modèles GPT (GPT 4 3.5 et 3)
+### Des avancées scientifiques en arrière plan
 
-Parmi les débats les plus
+Si les IA génératives ont été très médiatisées, le champ scientifique des réseaux de neurone
+a connu quelques évolutions marquantes. Les deux principales sont des acronymes de trois lettres:
+RAG et DPO qui sont deux techniques intervenant à un niveau différent dans la mise en oeuvre
+d'une architecture de réseau de neurone.  
 
-- conflits légaux sur droits d'auteur
+La première 
+
+- l'émergence 
+
 - RAG
 
 Les IA génératives ont été au centre de l'attention. Néanmoins, d'autres innovations dans
 le domaine, plus large, des modèles d'apprentissage ont eu lieu pendant l'année
 ex: segmentanything
+
+https://www.langchain.com/
 
 ## DuckDB
