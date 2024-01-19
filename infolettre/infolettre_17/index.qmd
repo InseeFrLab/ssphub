@@ -38,7 +38,7 @@ de la sortie de ChatGPT en décembre 2022, les IA génératives sont restées tr
 médiatisées en 2023. Celles-ci ont focalisé une part importante de l'attention portée
 à la _data science_. 
 Outre la publication de GPT-4 en mars (modèle embarqué dans la version Pro de ChatGPT),
-de nombreux grands modèles de langage (LLM) ont été publiés cette année:
+de nombreux grands modèles de langage (LLM) généralistes ont été publiés cette année:
 Llama-2 (Méta), Mixtral 7B (Mistral), Falcon 180B (Technology Innovation Institute), PaLM 2 (Google)...
 Ces publications ont permis de mettre en avant le caractère
 stratégique de la mise à disposition de modèles _open source_. 
@@ -100,7 +100,8 @@ sur les dernières évolutions de la plainte de _Getty Images_ ;
 - Un article de [_Courrier International_](https://www.courrierinternational.com/article/litterature-george-r-r-martin-jonathan-franzen-et-john-grisham-partent-en-guerre-contre-chatgpt) sur la plainte des auteurs envers OpenAI ;
 - _New York Times vs OpenAI_ par [le _Monde_](https://www.lemonde.fr/pixels/article/2023/12/27/le-new-york-times-poursuit-en-justice-microsoft-et-openai-createur-de-chatgpt-pour-violation-de-droits-d-auteur_6207946_4408996.html
 ) et le [_New York Times_](https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html).
-
+- Les chartes relatives au contenu produit par des IA génératives du [gouvernement britannique](https://www.gov.uk/government/publications/generative-ai-framework-for-hmg/generative-ai-framework-for-hmg-html) et d'une vingtaine de médias français
+recensés par l'[INA](https://larevuedesmedias.ina.fr/les-medias-face-lintelligence-artificielle-20-chartes-passees-au-crible).
 :::
 
 
@@ -109,11 +110,12 @@ sur les dernières évolutions de la plainte de _Getty Images_ ;
 
 Si les IA génératives ont fait la une, 
 deux avancées moins médiatisées mais néanmoins fondamentales 
-ont fait l'objet de débats scientifiques. Ces
+ont fait l'objet de débats scientifiques intéressants. Ces
 deux avancées méthodologiques sont deux acronymes de trois lettres:
 RAG (_retrieval augmentated generation_) et DPO (_Direct Preference Optimization_). 
 
-Elles interviennent à différents niveaux dans le cycle de vie d'un réseau de neurone:
+Elles interviennent à différents niveaux dans le cycle de vie d'une
+IA génératrice :
 
 ![Résumé du _pipeline_ de construction d'un modèle type GPT par Andrew Karpathy dans sa vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A)](karpathyGPT.png)
 
@@ -193,17 +195,33 @@ Dans le domaine de la diffusion des données _open data_, l'Insee a expériment�
 données du [Répertoire Electoral Unique](https://www.insee.fr/fr/metadonnees/source/serie/s1046). 
 Plus récemment, ce sont les données détaillées du recensement de la population
 qui ont été diffusées dans ce format, accompagnées d'un guide sur ce blog (lien newsletter #16). 
+__tobecontinued__
 
+::: {.callout-note}
+## Pour en savoir plus
 
-- formation BCEAO
-- https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/#/resources
-- post de blog
-- post romain linkedin
-- newsletter #16
-- présentation parquet ?
-- blog polars, complément à duckdb
-- Viewer SSPCloud
-- courrier des stats
+Ressources techniques: 
+
+- Un [_notebook_ {{< fa brands r-project >}}](https://datalab.sspcloud.fr/launcher/ide/rstudio-sparkr?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fformation-bceao%2Fmain%2Ftp%2Finit-tp.sh%C2%BB&resources.limits.memory=%C2%AB100Gi%C2%BB&persistence.size=%C2%AB40Gi%C2%BB) sur `DuckDB` issu d'une [formation de l'Insee](https://inseefrlab.github.io/formation-bceao/) donnée à la BCEAO ;
+- Le [post de blog](/post/polars/) sur la librairie {{< fa brands python >}} `Polars`, une approche alternative à `DuckDB` ;
+- L'[explorateur de données du SSPCloud](https://datalab.sspcloud.fr/data-explorer?source=https%3A%2F%2Fstatic.data.gouv.fr%2Fresources%2Frecensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1%2F20231023-122841%2Ffd-indcvi-2020.parquet) qui repose sur `DuckDB`.
+
+Données diffusées par l'Insee au format `Parquet` :
+
+- Les données du [Répertoire Electoral Unique](https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/#/resources)
+- Le guide d’utilisation des données du recensement de la population au format Parquet sous forme de [billet de blog](/post/parquetRP/). 
+Voir aussi l'[_infolettre #16_](/infolettre/infolettre_16)
+
+Sur le format `Parquet` :
+
+- Un [article](https://www.insee.fr/fr/information/7635827?sommaire=7635842) sur le format `Parquet` dans le _Courrier des stats n°9_
+écrit par Alexis Dondon et Pierre Lamarche ;
+- Le blog d'[Eric Mauvière](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) qui présente
+une série d'articles sur le format `Parquet`;
+- La [présentation](https://www.linkedin.com/feed/update/urn:li:activity:7133760348129505281?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7133760348129505281%29
+) de Romain Lesur sur le sujet pour l'atelier _Modernisation of Official Statistics_ de l'UNECE.
+
+:::
 
 ::: {.callout-tip collapse="true"}
 ## Des éléments plus techniques
