@@ -31,7 +31,7 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 ## Panorama des enjeux de 2023 dans le domaine de l'Intelligence Artificielle
 
-### Les IA génératives au coeur des débats
+### Les IA génératives toujours au coeur des débats
 
 Dans la continuité
 de la sortie de ChatGPT en décembre 2022, les IA génératives sont restées très
@@ -93,7 +93,7 @@ de l'_"Artificial Intelligence Act"_ européen (voir [Infolettre #16](/infolettr
 ## Pour en savoir plus
 
 - Un [tutoriel](https://huggingface.co/docs/transformers/llm_tutorial) sur les LLM par `Hugging Face` ;
-- Un [article][https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html] du _New York Times_ sur 
+- Un [article](https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html) du _New York Times_ sur 
 la pénurie de GPU ;
 - Un article du site spécialisé _[The Verge](https://www.theverge.com/2023/12/4/23988403/getty-lawsuit-stability-ai-copyright-infringement)_
 sur les dernières évolutions de la plainte de _Getty Images_ ; 
@@ -159,7 +159,117 @@ d'_Hugging Face_.
 :::
 
 
+## `DuckDB`
+
+Dans le domaine de l'analyse de données traditionnelles, 
+cette année a été marquée par la montée en puissance de `DuckDB`
+comme outil de traitement de données volumineuses. 
+`DuckDB` est un logiciel qui est utilisable par le biais de librairies
+clientes dans les principaux langages maitrisés par les 
+_data scientists_: [`Python`](XXX), [`R`](XXX), [`JavaScript`](XX) ou directement en ligne de commande. 
+
+Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées
+rend `DuckDB` particulièrement approprié pour le traitement de données de taille intermédiaires du type
+données administratives.
+`DuckDB` est pensé pour le traitement de données sur des fichiers, ce qui le distingue 
+de l'approche plus systémique, et donc plus exigeant du point de vue de l'infratructure, des  
+système de gestion de base de données (SGBD) du type `PostGreSQL` (voir la partie plus technique). 
+Pour des utilisateurs de l'écosystème de l'_open data_, ou pour des organisations
+dont le patrimoine de données prend plus la forme de fichiers que de bases PostGreSQL,
+`DuckDB` représente
+une opportunité de saut de grenouille
+pour valoriser des données qui nécessitaient autrement des ressources
+computationnelles importantes. 
+
+Techniquement, `DuckDB` fonctionne de manière optimale avec des fichiers au format `Parquet`.
+Ce format de données, orienté colonne, permet en effet d'optimiser des traitements
+classiques des _data scientists_: sélectionner seulement certaines colonnes d'un jeu de
+données, regrouper des données pour faire des calculs d'agrégats, etc. 
+
+![Une illustration du principe du stockage orienté colonne (Source: [Michael Berk](https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705))](parquet.png)
+
+Dans le domaine de la diffusion des données _open data_, l'Insee a expérimenté ce format
+à deux reprises pendant l'année 2023. En premier lieu, pour la diffusion des
+données du [Répertoire Electoral Unique](https://www.insee.fr/fr/metadonnees/source/serie/s1046). 
+Plus récemment, ce sont les données détaillées du recensement de la population
+qui ont été diffusées dans ce format, accompagnées d'un guide sur ce blog (lien newsletter #16). 
+
+
+- formation BCEAO
+- https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/#/resources
+- post de blog
+- post romain linkedin
+- newsletter #16
+- présentation parquet ?
+- blog polars, complément à duckdb
+- Viewer SSPCloud
+- courrier des stats
+
+::: {.callout-tip collapse="true"}
+## Des éléments plus techniques
+
+Il existe principalement deux approches pour stocker, organiser et mettre 
+à disposition des jeux de données
+structurés sous forme tabulaire: les __fichiers__ et les __bases de données relationnelles__. 
+
+Les bases de données relèvent d'une approche systémique.
+Un système de gestion de base de données (SGBD) 
+est un logiciel qui gère à la fois le stockage d’un ensemble de données reliées,
+permet de mettre à jour celles-ci (ajout ou suppression d’informations, modification des caractéristiques d’une table…)
+et qui gère également les modalités d’accès à la donnée (type de requête, utilisateurs ayant les droits en lecture ou en écriture...).
+L'un des logiciels les plus connus dans le domaine est `PostgreSQL`. 
+
+D'un autre côté, le stockage de données tabulaires sous forme de fichiers offre une approche plus décentralisée et flexible. 
+Par rapport à des bases de données, les fichiers
+sont plus faciles à créer, partager et stocker et ne nécessitent pas systématiquement
+des logiciels spécialisés pour leur manipulation.
+Le stockage sous la forme de fichier consiste à organiser l'information
+présente dans un jeu de données dans des fichiers, de manière brute.
+Ces données peuvent être analysées sans recourir à un logiciel spécialisé. 
+Même dans le cadre de formats propriétaires, comme le `.xlsx`
+ou `sas7bdat`, le fait d'avoir une certaine forme de standardisation
+rend possible, même si ce n'est jamais parfaitement fiable, de lire ces données
+avec un autre logiciel que celui prévu initialement. 
+
+La logique de la base de données est donc très différente de celle du fichier.
+Par rapport à une base de données, l'approche des fichiers présente plusieurs
+avantages, à condition de privilégier des formats libres.
+
+En premier lieu, les fichiers sont
+moins adhérents à un logiciel gestionnaire.
+Une transition d'un logiciel de traitement vers un autre
+n'implique pas de changer la source brute. 
+Les _data scientists_ utilisateurs de `Python` ou `R` rencontrent un
+deuxième inconvénient aux bases de données par rapport aux fichiers.
+Les bases de données nécessitent l’intermédiation du logiciel de gestion
+adapté 
+là où, avec des fichiers, on peut se contenter d’une librairie,
+donc un système beaucoup plus léger, qui sait comment transformer la donnée pour la retravailler depuis `Python` ou `R`. 
+
+Pour ces raisons, entre autres, il est plus pratique pour des utilisateurs finaux de données
+d'avoir accès à des fichiers plutôt qu'à des bases de données, à condition d'avoir
+les ressources computationnelles suffisantes pour pouvoir traiter ces fichiers. 
+
+Néanmoins, cette condition d'accès à des ressources computationnelles suffisantes
+peut représenter une contrainte limitante dans un environnement où les données
+sont de volume croissant.
+Dans les environnements où la volumétrie des données était importante, 
+les bases de données ont connu une certaine
+popularité puisqu'elles permettaient de
+gérer efficacement de grandes quantités de données. Comme, de plus, les bases
+de données offraient une gestion plus fine et fiable
+des droits d'accès et d'écriture sur les bases que ne le permettent des fichiers, 
+cette approche a pu connaître une certaine popularité. 
+
+Le développement conjoint
+de formats de stockages orientés
+objets (comme le protocole S3, utilisé par les systèmes _Cloud_ modernes à l'image
+du SSPCloud)
+et d'outils de traitement efficaces comme DuckDB permettent 
+de 
+
+:::
 
 
 
-## DuckDB
+## WASM
