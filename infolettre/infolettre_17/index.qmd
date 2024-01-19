@@ -84,13 +84,17 @@ dont il ne cite pas la provenance, ce qui réduit le trafic potentiel sur le sit
 du _New York Times_. A contrario, le journal met en avant l'effet négatif sur son
 image que peuvent avoir des hallucinations attribuées au quotidien. 
 Cette plainte fait suite à l'échec des négociations entre les deux acteurs au cours
-de l'année 2023.  
+de l'année 2023. Ces actualités relatives aux droits d'auteurs interviennent
+dans un contexte où il s'agit de l'un des principaux axes d'intervention
+de l'_"Artificial Intelligence Act"_ européen (voir [Infolettre #16](/infolettre/infolettre_16)).
+
 
 ::: {.callout-note}
 ## Pour en savoir plus
 
 - Un [tutoriel](https://huggingface.co/docs/transformers/llm_tutorial) sur les LLM par `Hugging Face` ;
-- https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html
+- Un [article][https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html] du _New York Times_ sur 
+la pénurie de GPU ;
 - Un article du site spécialisé _[The Verge](https://www.theverge.com/2023/12/4/23988403/getty-lawsuit-stability-ai-copyright-infringement)_
 sur les dernières évolutions de la plainte de _Getty Images_ ; 
 - Un article de [_Courrier International_](https://www.courrierinternational.com/article/litterature-george-r-r-martin-jonathan-franzen-et-john-grisham-partent-en-guerre-contre-chatgpt) sur la plainte des auteurs envers OpenAI ;
@@ -102,21 +106,60 @@ sur les dernières évolutions de la plainte de _Getty Images_ ;
 
 ### Des avancées scientifiques en arrière plan
 
-Si les IA génératives ont été très médiatisées, le champ scientifique des réseaux de neurone
-a connu quelques évolutions marquantes. Les deux principales sont des acronymes de trois lettres:
-RAG et DPO qui sont deux techniques intervenant à un niveau différent dans la mise en oeuvre
-d'une architecture de réseau de neurone.  
 
-La première 
+Si les IA génératives ont fait la une, 
+deux avancées moins médiatisées mais néanmoins fondamentales 
+ont fait l'objet de débats scientifiques. Ces
+deux avancées méthodologiques sont deux acronymes de trois lettres:
+RAG (_retrieval augmentated generation_) et DPO (_Direct Preference Optimization_). 
 
-- l'émergence 
+Elles interviennent à différents niveaux dans le cycle de vie d'un réseau de neurone:
 
-- RAG
+![Résumé du _pipeline_ de construction d'un modèle type GPT par Andrew Karpathy dans sa vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A)](karpathyGPT.png)
 
-Les IA génératives ont été au centre de l'attention. Néanmoins, d'autres innovations dans
-le domaine, plus large, des modèles d'apprentissage ont eu lieu pendant l'année
-ex: segmentanything
+Le __RAG (_retrieval augmentated generation_)__ est une manière d'enrichir
+la base de connaissance d'un réseau de neurone pour limiter sa tendance à l'hallucination
+et augmenter la pertinence des réponses.
+Cela intervient donc ainsi au niveau du 2e pilier du _pipeline_ proposé par Andrew Karpathy en 
+substitut ou en complément du réentrainement.
+L'objectif est de fournir au modèle une base de données faisant
+office de contexte supplémentaire au corpus d'entrainement pour améliorer
+la pertinence des réponses.
 
-https://www.langchain.com/
+La **DPO (_Direct Preference Optimization_)** intervient quant à elle à un niveau plus tardif dans le
+cycle de vie d'un modèle. Il s'agit de simplifier la prise en compte de retours sur la qualité
+de la prédiction en ne dissociant plus les troisième
+et quatrième piliers du _pipeline_ de Karpathy. L'objectif de la DPO
+est de créer une intégration plus directe des retours sur la qualité d'un modèle
+que ne le permettait le _reinforcement learning with human feedback_ (RLHF),
+la technique dominante au début de l'année 2023.
+Cette problématique de 
+supervision et d'amélioration continue d'un modèle
+dépasse d'ailleurs le cadre des modèles de langage: afin de
+s'assurer que les algorithmes ne perdent pas en qualité, l'évaluation
+humaine par le biais, par exemple, de campagnes de labellisation
+ou de retours des utilisateurs, est
+un enjeu important dans le cycle de vie d'un modèle.
+
+![Une illustration de la différence entre les deux approches (source: [https://arxiv.org/pdf/2305.18290.pdf](https://arxiv.org/pdf/2305.18290.pdf) et [HuggingFace](https://huggingface.co/blog/pref-tuning))](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/pref_tuning/dpo.png)
+
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- La vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A) par Andrew Karpathy ;
+- Un [tutoriel](https://huggingface.co/blog/ray-rag) sur le RAG par _Hugging Face_ ; 
+- Le _framework_ [`LangChain`](https://www.langchain.com/) qui permet
+qui permet de construire des applications utilisant des LLM par le biais de `Python` ;
+- Le [blog](https://openai.com/research/learning-from-human-preferences) présentant la technique du _Reinforcement learning with human feedbacks_ par OpenAI ;
+- L'[article académique](https://arxiv.org/pdf/2305.18290.pdf) présentant la DPO et un [tutoriel](https://huggingface.co/blog/pref-tuning)
+d'_Hugging Face_.
+- Un [article de blog](https://www.deeplearning.ai/the-batch/issue-231/) d'Andrew Ng sur la DPO.
+:::
+
+
+
+
 
 ## DuckDB
