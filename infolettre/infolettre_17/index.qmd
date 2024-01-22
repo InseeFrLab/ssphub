@@ -17,6 +17,13 @@ tags:
 
 categories:
   - Infolettre
+
+filters:
+  - webr
+
+webr:
+  packages: ['ggplot2']
+  autoload-packages: false
 ---
 
 ![](learning.png){width=50% fig-align="center"}
@@ -58,14 +65,14 @@ Néanmoins, malgré l'ouverture progressive de modèles, notamment par le biais 
 mise à disposition sur la plateforme `Hugging Face`, 
 des contraintes persistent pour la réutilisation de ces modèles sur des données confidentielles
 dans des infrastructures internes. 
-Les réseaux de neurone étant très gourmands en calculs du fait
+Ces réseaux de neurone étant très gourmands en calculs du fait
 de leur architecture complexe (des milliards de paramètres pour les grands modèles de langage),
-pour obtenir une réponse du modèle, il est généralement nécessaire d'effectuer 
+afin d'obtenir une réponse du modèle il est généralement nécessaire d'effectuer 
 les calculs nécessaires par le biais de
 cartes graphiques (GPU), celles-ci permettant plus de parallélisme dans les calculs
 que les processeurs (CPU).
 Cependant, depuis plusieurs années, la demande excède largement l'offre, ce qui limite
-l'accès à des GPU pour de nombreux acteurs. 
+l'accès à cette ressource pour de nombreux acteurs. 
 Le retour à des modèles plus légers, pouvant être exploités depuis des architectures
 informatiques plus accessibles, constitue l'un des [défis de l'année 2024](https://www.linkedin.com/posts/julienchaumond_my-prediction-for-2024-yes-i-have-only-activity-7142887026193809409-L3i7?utm_source=share&utm_medium=member_desktop). 
 
@@ -74,13 +81,14 @@ Les débats concernant les droits d'exploitation commerciale d'informations coll
 sur internet ont été relancés à la fin de l'année 2023. 
 Après les plaintes médiatisées de Getty Images (envers Stability AI), 
 d'un collectif d'auteurs célèbres (envers OpenAI), la grève des acteurs à Hollywood
-contre l'exploitation de leur image par des AI et des scénaristes contre l'utilisation
+contre l'exploitation de leur image par des IA et des scénaristes contre l'utilisation
 des générateurs de texte, 
 c'est cette fois le _New York Times_ qui dépose une plainte envers OpenAI auprès de la Cour
 Fédérale de Manhattan.
 A partir d'exemples, le journal américain met en avant le degré de confiance
 qu'apporte `ChatGPT` aux informations issues des articles du quotidien mais
-dont il ne cite pas la provenance, ce qui réduit le trafic potentiel sur le site
+dont il ne cite pas la provenance, ce qui entraînerait un
+préjudice commercial en réduisant le trafic potentiel sur le site
 du _New York Times_. A contrario, le journal met en avant l'effet négatif sur son
 image que peuvent avoir des hallucinations attribuées au quotidien. 
 Cette plainte fait suite à l'échec des négociations entre les deux acteurs au cours
@@ -92,12 +100,15 @@ de l'_"Artificial Intelligence Act"_ européen (voir [Infolettre #16](/infolettr
 ::: {.callout-note}
 ## Pour en savoir plus
 
+- Un [article](https://ig.ft.com/generative-ai/) du _Financial Times_ qui présente de manière très
+pédagogique la manière dont fonctionnent les LLM ;
 - Un [tutoriel](https://huggingface.co/docs/transformers/llm_tutorial) sur les LLM par `Hugging Face` ;
 - Un [article](https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html) du _New York Times_ sur 
 la pénurie de GPU ;
+- Un [article](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) du _Washington Post_ sur le corpus d'entraînement des LLM ;
 - Un article du site spécialisé _[The Verge](https://www.theverge.com/2023/12/4/23988403/getty-lawsuit-stability-ai-copyright-infringement)_
 sur les dernières évolutions de la plainte de _Getty Images_ ; 
-- Un article de [_Courrier International_](https://www.courrierinternational.com/article/litterature-george-r-r-martin-jonathan-franzen-et-john-grisham-partent-en-guerre-contre-chatgpt) sur la plainte des auteurs envers OpenAI ;
+- Un article de [_Courrier International_](https://www.courrierinternational.com/article/litterature-george-r-r-martin-jonathan-franzen-et-john-grisham-partent-en-guerre-contre-chatgpt) sur la plainte d'un collectif d'auteurs envers OpenAI ;
 - _New York Times vs OpenAI_ par [le _Monde_](https://www.lemonde.fr/pixels/article/2023/12/27/le-new-york-times-poursuit-en-justice-microsoft-et-openai-createur-de-chatgpt-pour-violation-de-droits-d-auteur_6207946_4408996.html
 ) et le [_New York Times_](https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html).
 - Les chartes relatives au contenu produit par des IA génératives du [gouvernement britannique](https://www.gov.uk/government/publications/generative-ai-framework-for-hmg/generative-ai-framework-for-hmg-html) et d'une vingtaine de médias français
@@ -111,19 +122,22 @@ recensés par l'[INA](https://larevuedesmedias.ina.fr/les-medias-face-lintellige
 Si les IA génératives ont fait la une, 
 deux avancées moins médiatisées mais néanmoins fondamentales 
 ont fait l'objet de débats scientifiques intéressants. Ces
-deux avancées méthodologiques sont deux acronymes de trois lettres:
-RAG (_retrieval augmentated generation_) et DPO (_Direct Preference Optimization_). 
+deux avancées méthodologiques sont résumées par
+deux acronymes de trois lettres:
+RAG (_Retrieval Augmented Generation_) et DPO (_Direct Preference Optimization_). 
 
-Elles interviennent à différents niveaux dans le cycle de vie d'une
-IA génératrice :
+Ces deux techniques interviennent à différents niveaux dans le cycle de vie d'une
+IA génératrice, évoquée
+par Andrew Karpathy dans sa vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A): 
 
 ![Résumé du _pipeline_ de construction d'un modèle type GPT par Andrew Karpathy dans sa vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A)](karpathyGPT.png)
 
 Le __RAG (_retrieval augmentated generation_)__ est une manière d'enrichir
-la base de connaissance d'un réseau de neurone pour limiter sa tendance à l'hallucination
+la base de connaissance d'un réseau de neurones pour limiter sa tendance à l'hallucination
 et augmenter la pertinence des réponses.
-Cela intervient donc ainsi au niveau du 2e pilier du _pipeline_ proposé par Andrew Karpathy en 
-substitut ou en complément du réentrainement.
+Cela intervient ainsi au niveau du 2e pilier du _pipeline_ proposé
+par Andrew Karpathy (_"Supervised Finetuning"_) en 
+substitut ou en complément du réentrainement (_fine tuning_).
 L'objectif est de fournir au modèle une base de données faisant
 office de contexte supplémentaire au corpus d'entrainement pour améliorer
 la pertinence des réponses.
@@ -131,7 +145,8 @@ la pertinence des réponses.
 La **DPO (_Direct Preference Optimization_)** intervient quant à elle à un niveau plus tardif dans le
 cycle de vie d'un modèle. Il s'agit de simplifier la prise en compte de retours sur la qualité
 de la prédiction en ne dissociant plus les troisième
-et quatrième piliers du _pipeline_ de Karpathy. L'objectif de la DPO
+et quatrième piliers du _pipeline_ de
+Karpathy (_reward modeling_ et _reinforcement learning_). L'objectif de la DPO
 est de créer une intégration plus directe des retours sur la qualité d'un modèle
 que ne le permettait le _reinforcement learning with human feedback_ (RLHF),
 la technique dominante au début de l'année 2023.
@@ -141,18 +156,16 @@ dépasse d'ailleurs le cadre des modèles de langage: afin de
 s'assurer que les algorithmes ne perdent pas en qualité, l'évaluation
 humaine par le biais, par exemple, de campagnes de labellisation
 ou de retours des utilisateurs, est
-un enjeu important dans le cycle de vie d'un modèle.
+un enjeu important dans le cycle de vie de tout modèle
+mis en production.
 
 ![Une illustration de la différence entre les deux approches (source: [https://arxiv.org/pdf/2305.18290.pdf](https://arxiv.org/pdf/2305.18290.pdf) et [HuggingFace](https://huggingface.co/blog/pref-tuning))](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/pref_tuning/dpo.png)
-
-
 
 ::: {.callout-note}
 ## Pour en savoir plus
 
 - La vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A) par Andrew Karpathy ;
 - Un [tutoriel](https://huggingface.co/blog/ray-rag) sur le RAG par _Hugging Face_ ; 
-- Le _framework_ [`LangChain`](https://www.langchain.com/) qui permet
 qui permet de construire des applications utilisant des LLM par le biais de `Python` ;
 - Le [blog](https://openai.com/research/learning-from-human-preferences) présentant la technique du _Reinforcement learning with human feedbacks_ par OpenAI ;
 - L'[article académique](https://arxiv.org/pdf/2305.18290.pdf) présentant la DPO et un [tutoriel](https://huggingface.co/blog/pref-tuning)
@@ -161,41 +174,94 @@ d'_Hugging Face_.
 :::
 
 
-## `DuckDB`
+### Les bases de données vectorielles gagnent en popularité
+
+En ce qui concerne les outils, `Python` reste le [point d'entrée de référence](https://www.tiobe.com/tiobe-index/)
+dans le domaine de la _data science_.
+Pour des besoins plus spécialisés, des logiciels 
+dédiés viennent s'intégrer à ce langage. 
+
+C'est le cas notamment
+des bases de données vectorielles
+comme [ChromaDB](https://www.trychroma.com/). 
+Ces bases facilitent la recherche
+de similarité entre documents textuels en exploitant
+des transformations de 
+ceux-ci en vecteurs numériques (technique des [_embeddings_](https://ig.ft.com/generative-ai/)).
+
+Dans l'image ci-dessous, par exemple, une base de données vectorielle pourra 
+évaluer de manière efficace la similarité entre les termes en utilisant
+des techniques d'algèbre linéaire de manière plus efficace que ne le permettrait
+`Python` qui est trop généraliste pour cela. 
+
+![Un exemple d'_embedding_ et de rapprochement de textes. Source: [_Financial Times_](https://ig.ft.com/generative-ai/).](embeddings.png)
+
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- Le _framework_ [`LangChain`](https://www.langchain.com/) qui permet
+qui permet de construire des applications utilisant des LLM par le biais de `Python` ;
+- Un [tutoriel de realpython.com](https://realpython.com/chromadb-vector-database/) sur [`ChromaDB`](https://www.trychroma.com/).
+:::
+
+
+
+## `DuckDB`: le petit canard au service des _data scientists_
 
 Dans le domaine de l'analyse de données traditionnelles, 
 cette année a été marquée par la montée en puissance de `DuckDB`
 comme outil de traitement de données volumineuses. 
-`DuckDB` est un logiciel qui est utilisable par le biais de librairies
-clientes dans les principaux langages maitrisés par les 
+`DuckDB` est un logiciel qui est utilisable par le biais
+des principaux langages maitrisés par les 
 _data scientists_: [`Python`](XXX), [`R`](XXX), [`JavaScript`](XX) ou directement en ligne de commande. 
 
 Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées
 rend `DuckDB` particulièrement approprié pour le traitement de données de taille intermédiaires du type
 données administratives.
 `DuckDB` est pensé pour le traitement de données sur des fichiers, ce qui le distingue 
-de l'approche plus systémique, et donc plus exigeant du point de vue de l'infratructure, des  
+de l'approche plus systémique, et donc plus exigeant du point de vue de l'infrastructure, des  
 système de gestion de base de données (SGBD) du type `PostGreSQL` (voir la partie plus technique). 
 Pour des utilisateurs de l'écosystème de l'_open data_, ou pour des organisations
-dont le patrimoine de données prend plus la forme de fichiers que de bases PostGreSQL,
+dont le patrimoine de données prend plus la forme de fichiers que de bases `PostGreSQL`,
 `DuckDB` représente
 une opportunité de saut de grenouille
-pour valoriser des données qui nécessitaient autrement des ressources
+pour valoriser des données qui nécessitaient auparavant des ressources
 computationnelles importantes. 
-
-Techniquement, `DuckDB` fonctionne de manière optimale avec des fichiers au format `Parquet`.
-Ce format de données, orienté colonne, permet en effet d'optimiser des traitements
-classiques des _data scientists_: sélectionner seulement certaines colonnes d'un jeu de
-données, regrouper des données pour faire des calculs d'agrégats, etc. 
-
-![Une illustration du principe du stockage orienté colonne (Source: [Michael Berk](https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705))](parquet.png)
 
 Dans le domaine de la diffusion des données _open data_, l'Insee a expérimenté ce format
 à deux reprises pendant l'année 2023. En premier lieu, pour la diffusion des
 données du [Répertoire Electoral Unique](https://www.insee.fr/fr/metadonnees/source/serie/s1046). 
 Plus récemment, ce sont les données détaillées du recensement de la population
-qui ont été diffusées dans ce format, accompagnées d'un guide sur ce blog (lien newsletter #16). 
-__tobecontinued__
+qui ont été diffusées dans ce format, accompagnées d'un [guide sur ce blog](/post/parquetRP) (lien [Infolettre #16](/infolettre/infolettre_16)). 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/retour_utilisateur_1.png){width=700px}
+:::
+
+::: {.column width="50%"}
+![](https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/retour_utilisateur_2.png){width=700px}
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/img3.png){width=700px}
+:::
+
+::: {.column width="50%"}
+![](https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/img4.png){width=700px}
+:::
+
+::::
+
+_Quelques exemples de retours sur la publication des données détaillées du recensement au format `Parquet`._
+
 
 ::: {.callout-note}
 ## Pour en savoir plus
@@ -283,11 +349,93 @@ Le développement conjoint
 de formats de stockages orientés
 objets (comme le protocole S3, utilisé par les systèmes _Cloud_ modernes à l'image
 du SSPCloud)
-et d'outils de traitement efficaces comme DuckDB permettent 
-de 
+et d'outils de traitement efficaces comme DuckDB permet d'associer
+les avantages de ce dernier à ceux d'un système
+cohérent de fichiers partagés (lecture/écriture optimisées, dissociation
+des utilisateurs pouvant lire et écrire un fichier...).  
+
+Techniquement, `DuckDB` fonctionne de manière optimale avec des fichiers au format `Parquet`.
+Ce format de données, orienté colonne, permet en effet d'optimiser des traitements
+classiques des _data scientists_: sélectionner seulement certaines colonnes d'un jeu de
+données, regrouper des données pour faire des calculs d'agrégats, etc. 
+
+![Une illustration du principe du stockage orienté colonne (Source: [Michael Berk](https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705))](parquet.png)
+
+Par exemple, dans le schéma ci-dessus, si on ne s'intéresse qu'aux dates enregistrées,
+il suffit de ne prendre que le bloc de données _ad hoc_. Il n'est pas nécessaire
+de lire tout le fichier pour ne garder que les dates, comme ce serait le cas
+avec un format CSV. 
+
 
 :::
 
 
+## De la _data science_ depuis un navigateur
 
-## WASM
+Le gain de popularité de `DuckDB` au cours de l'année 2024 
+s'explique en partie grâce à sa version web qui permet
+d'exécuter des traitements de données par le biais de
+navigateurs web, sans avoir à installer de logiciel 
+spécialisé comme `Python` {{< fa brands python >}} ou {{< fa brands r-project >}}. C'est une approche typique du [_web assembly_](https://developer.mozilla.org/fr/docs/WebAssembly) 
+qui consiste à mettre à disposition des logiciels de calculs scientifiques par le biais d'un simple navigateur
+grâce à `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur.
+Ce langage est depuis des années le langage de la _data visualisation_.
+Néanmoins, grâce au 
+développement
+de librairies `Javascript` {{< fa brands js-square >}} pour la manipulation
+de données et de plateformes de partage comme [`Observable`](https://observablehq.com), 
+les spécialistes de _data visualisation_ et les _data scientists_
+tendent à se rapprocher. 
+
+D'ailleurs, il est maintenant possible de faire du `R` directement depuis
+un navigateur _web_ grâce à [`webR`](https://docs.r-wasm.org/webr/latest/),
+une librairie développée par _Posit_ qui
+porte la grammaire `R` dans le navigateur (exemple à tester 👇️).
+Ce portage de `R` s'inspire de celui qui existait déjà
+en `Python` avec [`Pyodide`](https://pyodide.org/en/stable/usage/quickstart.html).
+Cette approche est assez similaire à celle adoptée 
+dans la rétropsective du réseau en 2023 ([infolettre #16](/infolettre/infolettre_16)),
+à l'exception
+que cette page privilégiait l'utilisation directe de `Javascript` plutôt que
+l'intermédiaire d'une grammaire `R`. 
+
+Amener les logiciels statistiques dans le navigateur
+est une inversion de l'approche antérieure qui consistait à encapsuler du
+`Javascript` dans des applications `R` ou `Python` par le biais
+de `Shiny`, de `Dash` ou de `Streamlit`. 
+Cette approche, qui apparaît attractive au premier abord 
+puisqu'elle permet de relier une 
+application interactive à des traitements sur des données, présente l'inconvénient
+d'être exigeante lorsqu'il est nécessaire de partager cette application. 
+Pour qu'une application `Shiny` renvoie une réponse à la personne qui y accède
+par le biais d'un navigateur web, il faut connecter l'application à un serveur 
+effectuant des calculs `R` ce qui nécessite l'utilisation de
+services spécialisés ou la mise en place de serveurs dédiés capables
+d'être  XXX
+
+```{webr-r}
+head(mtcars)
+
+fit = lm(mpg ~ am, data = mtcars)
+
+summary(fit)
+```
+
+Un exemple plus complexe, utilisant le _package_ `ggplot2`:
+
+```{webr-r}
+library("ggplot2")
+
+ggplot(mpg, aes(displ, hwy, colour = class)) + 
+  geom_point()
+```
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- L'extension [`quarto-webR`](https://quarto-webr.thecoatlessprofessor.com/)
+qui permet d'encapsuler du code `webR` dans un site web statique construit
+avec `Quarto` ;
+
+:::
