@@ -41,21 +41,21 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 ### Les IA génératives toujours au coeur des débats
 
 Dans la continuité
-de la sortie de ChatGPT en décembre 2022, les IA génératives sont restées très
+de la sortie de `ChatGPT` en décembre 2022, les IA génératives sont restées très
 médiatisées en 2023. Celles-ci ont focalisé une part importante de l'attention portée
 à la _data science_. 
-Outre la publication de GPT-4 en mars (modèle embarqué dans la version Pro de ChatGPT),
+Outre la publication de GPT-4 en mars (modèle embarqué dans la version Pro de `ChatGPT`),
 de nombreux grands modèles de langage (LLM) généralistes ont été publiés cette année:
-Llama-2 (Méta), Mixtral 7B (Mistral), Falcon 180B (Technology Innovation Institute), PaLM 2 (Google)...
-Ces publications ont permis de mettre en avant le caractère
-stratégique de la mise à disposition de modèles _open source_. 
+`Llama-2` (Méta), `Mixtral 7B` (Mistral), `Falcon 180B` (Technology Innovation Institute), `PaLM 2` (Google)...
 
-La récupération et la structuration de corpus massifs,
+Ces publications ont permis de mettre en avant le caractère
+stratégique de la mise à disposition de modèles _open source_. La
+récupération et la structuration de corpus massifs,
 l'entraînement de modèles intégrant des
-milliards de paramètres et l'évaluation _ex post_ de ceux-ci étant à la portée d'un
-nombre restreint d'acteur,
-la publication en _open source_ de modèles et de codes sources
-est en effet indispensable pour, entre autres, être en mesure d'évaluer
+milliards de paramètres et l'évaluation _ex post_ de ceux-ci est à la portée d'un
+nombre restreint d'acteur. 
+La publication en _open source_ de modèles et de codes sources
+est dès lors indispensable pour, entre autres, être en mesure d'évaluer
 la pertinence scientifique des modèles ou permettre aux
 acteurs n'ayant pas ces moyens techniques et humains
 de pouvoir tout de même réutiliser ces modèles sur leurs
@@ -65,7 +65,7 @@ Néanmoins, malgré l'ouverture progressive de modèles, notamment par le biais 
 mise à disposition sur la plateforme `Hugging Face`, 
 des contraintes persistent pour la réutilisation de ces modèles sur des données confidentielles
 dans des infrastructures internes. 
-Ces réseaux de neurone étant très gourmands en calculs du fait
+Ces réseaux de neurones étant très gourmands en calculs du fait
 de leur architecture complexe (des milliards de paramètres pour les grands modèles de langage),
 afin d'obtenir une réponse du modèle il est généralement nécessaire d'effectuer 
 les calculs nécessaires par le biais de
@@ -79,7 +79,7 @@ informatiques plus accessibles, constitue l'un des [défis de l'année 2024](htt
 
 Les débats concernant les droits d'exploitation commerciale d'informations collectées
 sur internet ont été relancés à la fin de l'année 2023. 
-Après les plaintes médiatisées de Getty Images (envers Stability AI), 
+Après les plaintes médiatisées de _Getty Images_ (envers Stability AI), 
 d'un collectif d'auteurs célèbres (envers OpenAI), la grève des acteurs à Hollywood
 contre l'exploitation de leur image par des IA et des scénaristes contre l'utilisation
 des générateurs de texte, 
@@ -100,12 +100,12 @@ de l'_"Artificial Intelligence Act"_ européen (voir [Infolettre #16](/infolettr
 ::: {.callout-note}
 ## Pour en savoir plus
 
+- Un [article](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) du _Washington Post_ sur le corpus d'entraînement des LLM ;
 - Un [article](https://ig.ft.com/generative-ai/) du _Financial Times_ qui présente de manière très
 pédagogique la manière dont fonctionnent les LLM ;
 - Un [tutoriel](https://huggingface.co/docs/transformers/llm_tutorial) sur les LLM par `Hugging Face` ;
 - Un [article](https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html) du _New York Times_ sur 
 la pénurie de GPU ;
-- Un [article](https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1) du _Washington Post_ sur le corpus d'entraînement des LLM ;
 - Un article du site spécialisé _[The Verge](https://www.theverge.com/2023/12/4/23988403/getty-lawsuit-stability-ai-copyright-infringement)_
 sur les dernières évolutions de la plainte de _Getty Images_ ; 
 - Un article de [_Courrier International_](https://www.courrierinternational.com/article/litterature-george-r-r-martin-jonathan-franzen-et-john-grisham-partent-en-guerre-contre-chatgpt) sur la plainte d'un collectif d'auteurs envers OpenAI ;
@@ -124,7 +124,7 @@ deux avancées moins médiatisées mais néanmoins fondamentales
 ont fait l'objet de débats scientifiques intéressants. Ces
 deux avancées méthodologiques sont résumées par
 deux acronymes de trois lettres:
-RAG (_Retrieval Augmented Generation_) et DPO (_Direct Preference Optimization_). 
+**RAG (_Retrieval Augmented Generation_)** et **DPO (_Direct Preference Optimization_)**. 
 
 Ces deux techniques interviennent à différents niveaux dans le cycle de vie d'une
 IA génératrice, évoquée
@@ -189,10 +189,11 @@ de similarité entre documents textuels en exploitant
 des transformations de 
 ceux-ci en vecteurs numériques (technique des [_embeddings_](https://ig.ft.com/generative-ai/)).
 
-Dans l'image ci-dessous, par exemple, une base de données vectorielle pourra 
+Par exemple, dans l'image ci-dessous, une base de données vectorielle pourra 
 évaluer de manière efficace la similarité entre les termes en utilisant
 des techniques d'algèbre linéaire de manière plus efficace que ne le permettrait
-`Python` qui est trop généraliste pour cela. 
+`Python`, un langage trop généraliste pour pouvoir faire cette recherche de similarité
+dans des corpus massifs. 
 
 ![Un exemple d'_embedding_ et de rapprochement de textes. Source: [_Financial Times_](https://ig.ft.com/generative-ai/).](embeddings.png)
 
@@ -236,6 +237,14 @@ données du [Répertoire Electoral Unique](https://www.insee.fr/fr/metadonnees/s
 Plus récemment, ce sont les données détaillées du recensement de la population
 qui ont été diffusées dans ce format, accompagnées d'un [guide sur ce blog](/post/parquetRP) (lien [Infolettre #16](/infolettre/infolettre_16)). 
 
+<details>
+
+<summary>
+
+_Quelques exemples de retours sur la publication des données détaillées du recensement au format `Parquet`._
+
+</summary>
+
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -260,8 +269,7 @@ qui ont été diffusées dans ce format, accompagnées d'un [guide sur ce blog](
 
 ::::
 
-_Quelques exemples de retours sur la publication des données détaillées du recensement au format `Parquet`._
-
+</details>
 
 ::: {.callout-note}
 ## Pour en savoir plus
@@ -347,9 +355,9 @@ cette approche a pu connaître une certaine popularité.
 
 Le développement conjoint
 de formats de stockages orientés
-objets (comme le protocole S3, utilisé par les systèmes _Cloud_ modernes à l'image
-du SSPCloud)
-et d'outils de traitement efficaces comme DuckDB permet d'associer
+objets (comme le protocole `S3`, utilisé par les systèmes _cloud_ modernes à l'image
+du `SSPCloud`)
+et d'outils de traitement efficaces comme `DuckDB` permet d'associer
 les avantages de ce dernier à ceux d'un système
 cohérent de fichiers partagés (lecture/écriture optimisées, dissociation
 des utilisateurs pouvant lire et écrire un fichier...).  
@@ -379,30 +387,22 @@ navigateurs web, sans avoir à installer de logiciel
 spécialisé comme `Python` {{< fa brands python >}} ou {{< fa brands r-project >}}. C'est une approche typique du [_web assembly_](https://developer.mozilla.org/fr/docs/WebAssembly) 
 qui consiste à mettre à disposition des logiciels de calculs scientifiques par le biais d'un simple navigateur
 grâce à `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur.
-Ce langage est depuis des années le langage de la _data visualisation_.
-Néanmoins, grâce au 
-développement
-de librairies `Javascript` {{< fa brands js-square >}} pour la manipulation
-de données et de plateformes de partage comme [`Observable`](https://observablehq.com), 
-les spécialistes de _data visualisation_ et les _data scientists_
-tendent à se rapprocher. 
 
 D'ailleurs, il est maintenant possible de faire du `R` directement depuis
 un navigateur _web_ grâce à [`webR`](https://docs.r-wasm.org/webr/latest/),
-une librairie développée par _Posit_ qui
-porte la grammaire `R` dans le navigateur (exemple à tester 👇️).
-Ce portage de `R` s'inspire de celui qui existait déjà
-en `Python` avec [`Pyodide`](https://pyodide.org/en/stable/usage/quickstart.html).
-Cette approche est assez similaire à celle adoptée 
-dans la rétropsective du réseau en 2023 ([infolettre #16](/infolettre/infolettre_16)),
-à l'exception
-que cette page privilégiait l'utilisation directe de `Javascript` plutôt que
-l'intermédiaire d'une grammaire `R`. 
+une librairie développée par _Posit_ en 2024 et qui
+porte la grammaire `R` dans le navigateur (exemple à tester 👇️)
+L'idée est que le code d'analyse de données est en `R`
+mais que c'est du `Javascript` qui servira, en arrière-plan, à l'exécution.
+La librairie est encore jeune mais est prometteuse pour faciliter la transition
+entre du code d'analyse de données en `R` et une application interactive. 
 
+<!----
+laisser tomber ce paragraphe ?
 Amener les logiciels statistiques dans le navigateur
 est une inversion de l'approche antérieure qui consistait à encapsuler du
-`Javascript` dans des applications `R` ou `Python` par le biais
-de `Shiny`, de `Dash` ou de `Streamlit`. 
+`Javascript` dans des applications `R` comme le prévoit
+`Shiny`. 
 Cette approche, qui apparaît attractive au premier abord 
 puisqu'elle permet de relier une 
 application interactive à des traitements sur des données, présente l'inconvénient
@@ -410,8 +410,13 @@ d'être exigeante lorsqu'il est nécessaire de partager cette application.
 Pour qu'une application `Shiny` renvoie une réponse à la personne qui y accède
 par le biais d'un navigateur web, il faut connecter l'application à un serveur 
 effectuant des calculs `R` ce qui nécessite l'utilisation de
-services spécialisés ou la mise en place de serveurs dédiés capables
-d'être  XXX
+services spécialisés ou la mise en place de ressources de calculs
+dédiées. Avec [`webR`](https://docs.r-wasm.org/webr/latest/) ou 
+son équivalent `Python` [`pyodide`](https://pyodide.org/en/stable/),
+la mise en ligne ne nécessite pas ......
+---->
+
+
 
 ```{webr-r}
 head(mtcars)
