@@ -437,5 +437,6 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
 - L'extension [`quarto-webR`](https://quarto-webr.thecoatlessprofessor.com/)
 qui permet d'encapsuler du code `webR` dans un site web statique construit
 avec `Quarto` ;
-
+- Une [démonstration](https://observablehq.com/@hrbrmstr/webr-0-2-2-in-observable)
+de `WebR` sur `Observable`.
 :::
