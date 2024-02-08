@@ -53,7 +53,7 @@ stratégique de la mise à disposition de modèles _open source_. La
 récupération et la structuration de corpus massifs,
 l'entraînement de modèles intégrant des
 milliards de paramètres et l'évaluation _ex post_ de ceux-ci est à la portée d'un
-nombre restreint d'acteur. 
+nombre restreint d'acteurs. 
 La publication en _open source_ de modèles et de codes sources
 est dès lors indispensable pour, entre autres, être en mesure d'évaluer
 la pertinence scientifique des modèles ou permettre aux
@@ -78,17 +78,17 @@ informatiques plus accessibles, constitue l'un des [défis de l'année 2024](htt
 
 
 Les débats concernant les droits d'exploitation commerciale d'informations collectées
-sur internet ont été relancés à la fin de l'année 2023. 
+sur internet ont été nombreux en 2023. 
 Après les plaintes médiatisées de _Getty Images_ (envers Stability AI), 
 d'un collectif d'auteurs célèbres (envers OpenAI), la grève des acteurs à Hollywood
 contre l'exploitation de leur image par des IA et des scénaristes contre l'utilisation
 des générateurs de texte, 
-c'est cette fois le _New York Times_ qui dépose une plainte envers OpenAI auprès de la Cour
+c'est maintenant le _New York Times_ qui a déposé en décembre 2023 une plainte envers OpenAI auprès de la Cour
 Fédérale de Manhattan.
-A partir d'exemples, le journal américain met en avant le degré de confiance
-qu'apporte `ChatGPT` aux informations issues des articles du quotidien mais
-dont il ne cite pas la provenance, ce qui entraînerait un
-préjudice commercial en réduisant le trafic potentiel sur le site
+A partir d'exemples, le journal américain met en avant le degré de confiance élevé
+que `ChatGPT` attribue aux informations issues des articles du quotidien, sans pour autant en 
+citer la provenance, ni compenser financièrement le journal. Cela entraînerait un
+préjudice commercial du à la réduction du trafic sur le site
 du _New York Times_. A contrario, le journal met en avant l'effet négatif sur son
 image que peuvent avoir des hallucinations attribuées au quotidien. 
 Cette plainte fait suite à l'échec des négociations entre les deux acteurs au cours
@@ -119,7 +119,7 @@ recensés par l'[INA](https://larevuedesmedias.ina.fr/les-medias-face-lintellige
 ### Des avancées scientifiques en arrière plan
 
 
-Si les IA génératives ont fait la une, 
+Dans le domaine des IA génératives, 
 deux avancées moins médiatisées mais néanmoins fondamentales 
 ont fait l'objet de débats scientifiques intéressants. Ces
 deux avancées méthodologiques sont résumées par
@@ -190,7 +190,7 @@ des transformations de
 ceux-ci en vecteurs numériques (technique des [_embeddings_](https://ig.ft.com/generative-ai/)).
 
 Par exemple, dans l'image ci-dessous, une base de données vectorielle pourra 
-évaluer de manière efficace la similarité entre les termes en utilisant
+évaluer la similarité entre les termes en utilisant
 des techniques d'algèbre linéaire de manière plus efficace que ne le permettrait
 `Python`, un langage trop généraliste pour pouvoir faire cette recherche de similarité
 dans des corpus massifs. 
@@ -211,7 +211,7 @@ qui permet de construire des applications utilisant des LLM par le biais de `Pyt
 
 ## `DuckDB`: le petit canard au service des _data scientists_
 
-Dans le domaine de l'analyse de données traditionnelles, 
+Dans le domaine de l'analyse de données, 
 cette année a été marquée par la montée en puissance de `DuckDB`
 comme outil de traitement de données volumineuses. 
 `DuckDB` est un logiciel qui est utilisable par le biais
@@ -219,16 +219,16 @@ des principaux langages maitrisés par les
 _data scientists_: [`Python`](XXX), [`R`](XXX), [`JavaScript`](XX) ou directement en ligne de commande. 
 
 Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées
-rend `DuckDB` particulièrement approprié pour le traitement de données de taille intermédiaires du type
+rend `DuckDB` particulièrement approprié pour le traitement de données de taille intermédiaires telles que les
 données administratives.
-`DuckDB` est pensé pour le traitement de données sur des fichiers, ce qui le distingue 
-de l'approche plus systémique, et donc plus exigeant du point de vue de l'infrastructure, des  
+`DuckDB` est pensé pour le traitement de données stockées sur des fichiers, ce qui le distingue 
+de l'approche plus exigeante du point de vue de l'infrastructure, des  
 système de gestion de base de données (SGBD) du type `PostGreSQL` (voir la partie plus technique). 
 Pour des utilisateurs de l'écosystème de l'_open data_, ou pour des organisations
 dont le patrimoine de données prend plus la forme de fichiers que de bases `PostGreSQL`,
-`DuckDB` représente
-une opportunité de saut de grenouille
-pour valoriser des données qui nécessitaient auparavant des ressources
+`DuckDB` est
+une opportunité technologique permettant de
+valoriser des données dont le traitement et la diffusion nécessitait jusqu'à présent des ressources
 computationnelles importantes. 
 
 Dans le domaine de la diffusion des données _open data_, l'Insee a expérimenté ce format
