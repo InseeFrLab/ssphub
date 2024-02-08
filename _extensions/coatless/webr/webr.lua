@@ -57,7 +57,21 @@ local qwebrCapturedCodeBlocks = {}
 
 -- Initialize a table that contains the default cell-level options
 local qwebRDefaultCellOptions = {
-  ["context"] = "interactive"
+  ["context"] = "interactive",
+  ["warning"] = "true",
+  ["message"] = "true",
+  ["results"] = "markup",
+  ["output"] = "true",
+  ["comment"] = "",
+  ["label"] = "",
+  ["autorun"] = "",
+  ["classes"] = "",
+  ["dpi"] = 72,
+  ["fig-cap"] = "",
+  ["fig-width"] = 7,
+  ["fig-height"] = 5,
+  ["out-width"] = "700px",
+  ["out-height"] = ""
 }
 
 ----
@@ -102,6 +116,9 @@ local function mergeCellOptions(localOptions)
 
   -- Override default options with local options
   for key, value in pairs(localOptions) do
+    if type(value) == "string" then
+      value = value:gsub("[\"']", "")
+    end
     mergedOptions[key] = value
   end
 
@@ -512,7 +529,7 @@ local function enableWebRCodeCell(el)
   
   -- Verify the element has attributes and the document type is HTML
   -- not sure if this will work with an epub (may need html:js)
-  if not (el.attr and quarto.doc.is_format("html")) then
+  if not (el.attr and (quarto.doc.is_format("html") or quarto.doc.is_format("markdown"))) then
     return el
   end
 
@@ -547,6 +564,19 @@ local function enableWebRCodeCell(el)
 
   -- Convert webr-specific option commands into attributes
   cellCode, cellOptions = extractCodeBlockOptions(el)
+
+  -- Ensure we have a label representation
+  if cellOptions["label"] == '' then
+    cellOptions["label"] = "unnamed-chunk-" .. qwebrCounter
+  end
+  -- Set autorun to false if interactive
+  if cellOptions["autorun"] == "" then
+    if cellOptions["context"] == "interactive" then
+      cellOptions["autorun"] = "false"
+    else
+      cellOptions["autorun"] = "true"
+    end
+  end
 
   -- Remove space left between options and code contents
   cellCode = removeEmptyLinesUntilContent(cellCode)

@@ -14,6 +14,16 @@ globalThis.qwebrEscapeHTMLCharacters = function(unsafe) {
       .replace(/'/g, "&#039;");
   };
 
+// Passthrough results
+globalThis.qwebrIdentity = function(x) {
+    return x;
+};
+
+// Append a comment
+globalThis.qwebrPrefixComment = function(x, comment) {
+    return `${comment}${x}`;
+};
+
 // Function to parse the pager results
 globalThis.qwebrParseTypePager = async function (msg) { 
 
@@ -62,13 +72,27 @@ globalThis.qwebrComputeEngine = async function(
     // Create a pager variable for help/file contents
     let pager = [];
 
+    // Handle how output is processed
+    let showMarkup = options.results === "markup" && options.output !== "asis";
+    let processOutput;
+
+    if (showMarkup) {
+        processOutput = qwebrEscapeHTMLCharacters;
+    } else {
+        processOutput = qwebrIdentity;
+    }
+
     // ---- 
+    // Convert from Inches to Pixels by using DPI (dots per inch)
+    // for bitmap devices (dpi * inches = pixels)
+    let fig_width = options["fig-width"] * options["dpi"]
+    let fig_height = options["fig-height"] * options["dpi"]
 
     // Initialize webR
     await mainWebR.init();
 
     // Setup a webR canvas by making a namespace call into the {webr} package
-    await mainWebR.evalRVoid(`webr::canvas(width=${options["fig-width"]}, height=${options["fig-height"]})`);
+    await mainWebR.evalRVoid(`webr::canvas(width=${fig_width}, height=${fig_height})`);
 
     const result = await mainWebRCodeShelter.captureR(codeToRun, {
         withAutoprint: true,
@@ -80,17 +104,27 @@ globalThis.qwebrComputeEngine = async function(
     // -----
 
     // Start attempting to parse the result data
-    try {
+    processResultOutput:try {
 
         // Stop creating images
         await mainWebR.evalRVoid("dev.off()");
+        
+        // Avoid running through output processing
+        if (options.results === "hide" || options.output === "false") { 
+            break processResultOutput; 
+        }
 
         // Merge output streams of STDOUT and STDErr (messages and errors are combined.)
+        // Require both `warning` and `message` to be true to display `STDErr`. 
         const out = result.output
-        .filter(evt => evt.type === "stdout" || evt.type === "stderr")
+        .filter(
+            evt => evt.type === "stdout" || 
+            ( evt.type === "stderr" && (options.warning === "true" && options.message === "true")) 
+        )
         .map((evt, index) => {
             const className = `qwebr-output-code-${evt.type}`;
-            return `<code id="${className}-editor-${elements.id}-result-${index + 1}" class="${className}">${qwebrEscapeHTMLCharacters(evt.data)}</code>`;
+            const outputResult = qwebrPrefixComment(processOutput(evt.data), options.comment);
+            return `<code id="${className}-editor-${elements.id}-result-${index + 1}" class="${className}">${outputResult}</code>`;
         })
         .join("\n");
 
@@ -109,11 +143,15 @@ globalThis.qwebrComputeEngine = async function(
             if (msg.data.event === 'canvasImage') {
                 canvas.getContext('2d').drawImage(msg.data.image, 0, 0);
             } else if (msg.data.event === 'canvasNewPage') {
+
                 // Generate a new canvas element
                 canvas = document.createElement("canvas");
-                canvas.setAttribute("width", 2 * options["fig-width"]);
-                canvas.setAttribute("height", 2 * options["fig-height"]);
-                canvas.style.width = "700px";
+                canvas.setAttribute("width", 2 * fig_width);
+                canvas.setAttribute("height", 2 * fig_height);
+                canvas.style.width = options["out-width"] ? options["out-width"] : `${fig_width}px`;
+                if (options["out-height"]) {
+                    canvas.style.height = options["out-height"];
+                }
                 canvas.style.display = "block";
                 canvas.style.margin = "auto";
             }
@@ -149,7 +187,21 @@ globalThis.qwebrComputeEngine = async function(
 
         // Place the graphics on the canvas
         if (canvas) {
-            elements.outputGraphDiv.appendChild(canvas);
+            // Create figure element
+            const figureElement = document.createElement('figure');
+
+            // Append canvas to figure
+            figureElement.appendChild(canvas);
+
+            if (options['fig-cap']) {
+                // Create figcaption element
+                const figcaptionElement = document.createElement('figcaption');
+                figcaptionElement.innerText = options['fig-cap'];
+                // Append figcaption to figure
+                figureElement.appendChild(figcaptionElement);    
+            }
+
+            elements.outputGraphDiv.appendChild(figureElement);
         }
 
         // Display the pager data
@@ -173,12 +225,18 @@ globalThis.qwebrComputeEngine = async function(
 globalThis.qwebrExecuteCode = async function (
     codeToRun,
     id,
-    evalType = EvalTypes.Interactive,
     options = {}) {
 
     // If options are not passed, we fall back on the bare minimum to handle the computation
     if (qwebrIsObjectEmpty(options)) {
-        options = { "fig-width": 504, "fig-height": 360 };
+        options = { 
+            "context": "interactive", 
+            "fig-width": 7, "fig-height": 5, 
+            "out-width": "700px", "out-height": "", 
+            "dpi": 72,
+            "results": "markup", 
+            "warning": "true", "message": "true",
+        };
     }
 
     // Next, we access the compute areas values
@@ -194,7 +252,7 @@ globalThis.qwebrExecuteCode = async function (
         btn.disabled = true;
     });
 
-    if (evalType == EvalTypes.Interactive) {
+    if (options.context == EvalTypes.Interactive) {
         // Emphasize the active code cell
         elements.runButton.innerHTML = '<i class="fa-solid fa-spinner fa-spin qwebr-icon-status-spinner"></i> <span>Run Code</span>';
     }
@@ -207,7 +265,7 @@ globalThis.qwebrExecuteCode = async function (
         btn.disabled = false;
     });
 
-    if (evalType == EvalTypes.Interactive) {
+    if (options.context == EvalTypes.Interactive) {
         // Revert to the initial code cell state
         elements.runButton.innerHTML = '<i class="fa-solid fa-play qwebr-icon-run-code"></i> <span>Run Code</span>';
     }
