@@ -32,7 +32,9 @@ webr:
 
 __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
 
-::: En ce début d'année 2024, nous prenons un peu de recul sur l'année écoulée et vous présentons les avancées marquantes de l'année 2023 dans le domaine de la data science. Ces avancées concernent l'intelligence artificielle générative, au cœur des débats médiatisés, mais aussi plusieurs développements technologiques très utiles pour l'analyse et la diffusion de bases de données. 
+::: 
+
+En ce début d'année 2024, nous prenons un peu de recul sur l'année écoulée et vous présentons les avancées marquantes de l'année 2023 dans le domaine de la data science. Ces avancées concernent l'intelligence artificielle générative, au cœur des débats médiatisés, mais aussi plusieurs développements technologiques très utiles pour l'analyse et la diffusion de bases de données. 
 
 
 
@@ -59,7 +61,7 @@ est dès lors indispensable pour, entre autres, être en mesure d'évaluer
 la pertinence scientifique des modèles ou permettre aux
 acteurs n'ayant pas ces moyens techniques et humains
 de pouvoir tout de même réutiliser ces modèles sur leurs
-propres données sans dépendre d'acteurs spécialisés.
+propres données.
 
 Néanmoins, malgré l'ouverture progressive de modèles, notamment par le biais d'une 
 mise à disposition sur la plateforme `Hugging Face`, 
@@ -183,7 +185,7 @@ dédiés viennent s'intégrer à ce langage.
 
 C'est le cas notamment
 des bases de données vectorielles
-comme [ChromaDB](https://www.trychroma.com/). 
+comme [`ChromaDB`](https://www.trychroma.com/). 
 Ces bases facilitent la recherche
 de similarité entre documents textuels en exploitant
 des transformations de 
@@ -202,8 +204,11 @@ dans des corpus massifs.
 ::: {.callout-note}
 ## Pour en savoir plus
 
-- Le _framework_ [`LangChain`](https://www.langchain.com/) qui permet
-qui permet de construire des applications utilisant des LLM par le biais de `Python` ;
+- Le _framework_ [`LangChain`](https://www.langchain.com/) pour construire
+par le biais de `Python`
+des applications utilisant des LLM: création d'une interface
+pour poser des questions à un LLM, transformation de la question en vecteur numérique par
+le biais d'une base vectorielle comme `ChromaDB`, interrogation du LLM, renvoie à l'utilisateur d'une réponse...   ;
 - Un [tutoriel de realpython.com](https://realpython.com/chromadb-vector-database/) sur [`ChromaDB`](https://www.trychroma.com/).
 :::
 
@@ -222,8 +227,8 @@ Sa capacité à gérer de grandes quantités de données en faisant des requête
 rend `DuckDB` particulièrement approprié pour le traitement de données de taille intermédiaires telles que les
 données administratives.
 `DuckDB` est pensé pour le traitement de données stockées sur des fichiers, ce qui le distingue 
-de l'approche plus exigeante du point de vue de l'infrastructure, des  
-système de gestion de base de données (SGBD) du type `PostGreSQL` (voir la partie plus technique). 
+de l'approche plus exigeante du point de vue de l'infrastructure, des 
+systèmes de gestion de base de données (SGBD) du type `PostGreSQL` (voir la partie plus technique). 
 Pour des utilisateurs de l'écosystème de l'_open data_, ou pour des organisations
 dont le patrimoine de données prend plus la forme de fichiers que de bases `PostGreSQL`,
 `DuckDB` est
@@ -439,6 +444,8 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
 ::: {.callout-note}
 ## Pour en savoir plus
 
+- La [documentation officielle](https://docs.r-wasm.org/webr/latest/) de `WebR` ;
+- [Un _post_](https://thinkr.fr/retour-vers-le-turfu-r-le-web-et-webr/) didactique sur le _web assembly_ par _ThinkR_ ;
 - L'extension [`quarto-webR`](https://quarto-webr.thecoatlessprofessor.com/)
 qui permet d'encapsuler du code `webR` dans un site web statique construit
 avec `Quarto` ;
