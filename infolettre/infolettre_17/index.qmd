@@ -332,8 +332,8 @@ moins adhérents à un logiciel gestionnaire.
 Une transition d'un logiciel de traitement vers un autre
 n'implique pas de changer la source brute. 
 Les _data scientists_ utilisateurs de `Python` ou `R` sont confrontés à un
-deuxième inconvénient aux bases de données par rapport aux fichiers.
-Les bases de données nécessitent l’intermédiation du logiciel de gestion
+deuxième inconvénient des bases de données.
+Le traitement des bases de données nécessite l’intermédiation du logiciel de gestion
 adapté 
 là où, avec des fichiers, on peut se contenter d’une librairie,
 donc un système beaucoup plus léger, qui sait comment transformer la donnée pour la retravailler depuis `Python` ou `R`. 
@@ -380,7 +380,7 @@ avec un format CSV.
 
 ## De la _data science_ depuis un navigateur
 
-Le gain de popularité de `DuckDB` au cours de l'année 2024 
+Le gain de popularité de `DuckDB` au cours de l'année 2023
 s'explique en partie grâce à sa version web qui permet
 d'exécuter des traitements de données par le biais de
 navigateurs web, sans avoir à installer de logiciel 
@@ -390,7 +390,7 @@ grâce à `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout 
 
 D'ailleurs, il est maintenant possible de faire du `R` directement depuis
 un navigateur _web_ grâce à [`webR`](https://docs.r-wasm.org/webr/latest/),
-une librairie développée par _Posit_ en 2024 et qui
+une librairie développée par _Posit_ en 2023 et qui
 porte la grammaire `R` dans le navigateur (exemple à tester 👇️)
 L'idée est que le code d'analyse de données est en `R`
 mais que c'est du `Javascript` qui servira, en arrière-plan, à l'exécution.
