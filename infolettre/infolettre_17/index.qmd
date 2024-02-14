@@ -48,7 +48,7 @@ focaliser une part importante de l'attention portée
 à la _data science_. 
 Outre la publication de GPT-4 en mars (modèle embarqué dans la version Pro de `ChatGPT`),
 de nombreux grands modèles de langage (LLM) généralistes ont été publiés cette année:
-`Llama-2` (Méta), `Mixtral 7B` (Mistral), `Falcon 180B` (Technology Innovation Institute), `PaLM 2` (Google)...
+`Llama-2` (Meta), `Mixtral 7B` (Mistral), `Falcon 180B` (Technology Innovation Institute), `PaLM 2` (Google)...
 
 Ces publications ont mis en avant le caractère
 stratégique de la mise à disposition de modèles _open source_. La
@@ -76,7 +76,7 @@ que les processeurs (CPU).
 Cependant, depuis plusieurs années, la demande excède largement l'offre, ce qui limite
 l'accès à cette ressource pour de nombreux acteurs. 
 Le retour à des modèles plus légers, pouvant être exploités depuis des architectures
-informatiques plus accessibles, constitue l'un des [défis de l'année 2024](https://www.linkedin.com/posts/julienchaumond_my-prediction-for-2024-yes-i-have-only-activity-7142887026193809409-L3i7?utm_source=share&utm_medium=member_desktop). 
+informatiques plus accessibles, constitue l'un des défis de l'année 2024. 
 
 
 Les débats concernant les droits d'exploitation commerciale d'informations collectées
@@ -120,7 +120,38 @@ recensés par l'[INA](https://larevuedesmedias.ina.fr/les-medias-face-lintellige
 
 ### Des avancées scientifiques en arrière plan
 
+La tendance des LLM à l'hallucination, c'est-à-dire à la production
+de contenu plausible par sa forme
+mais factuellement faux, 
+a été l'objet de controverses scientifiques et médiatiques au cours de l'année. 
+Au cours de l'année 2023, pour faire face à ce défi,
+les équipes de conception des LLM ont utilisé
+de manière croissante la technique du __RAG (_retrieval augmentated generation_)__.
+Celle-ci consiste à cadrer le comportement du LLM en faisant
+en sorte qu'il privilégie des informations issues d'un corpus adapté
+spécialement à une tâche. Pour faire l'analogie avec l'apprentissage humain,
+les modèles où le RAG intervient peuvent être comparés à des étudiants préparant
+une dissertation s'appuyant sur un dossier préparé par les évaluateurs. Ce contexte
+pourra être utilisé pour construire une réponse argumentée et des exemples plus pertinents. 
 
+Le succès des IA de discussion comme `ChatGPT` est intrinsèquement lié au travail humain
+qui a été mis en oeuvre pour évaluer la pertinence des réponses proposées par le modèle.
+Sur une question donnée, l'humain évalue la réponse la plus pertinente faite par l'IA. A partir
+de ces évaluations, l'algorithme pourra, dans les prochaines situations similaires, 
+faire un choix plus pertinent s'il apprend de ses erreurs. La technique ayant gagné en popularité
+pour cette tâche est la **DPO (_Direct Preference Optimization_)** qui vise à simplifier l'intégration
+des retours humains dans le cycle de réentraînement d'un modèle. 
+Cette problématique de 
+supervision et d'amélioration continue d'un modèle
+dépasse d'ailleurs le cadre des modèles de langage: afin de
+s'assurer que les algorithmes ne perdent pas en qualité, l'évaluation
+humaine par le biais, par exemple, de campagnes de labellisation
+ou de retours des utilisateurs, est
+un enjeu important dans le cycle de vie de tout modèle
+mis en production.
+
+
+<!--------------
 Dans le domaine des IA génératives, 
 deux avancées moins médiatisées mais néanmoins fondamentales 
 ont fait l'objet de débats scientifiques intéressants. Ces
@@ -162,6 +193,7 @@ un enjeu important dans le cycle de vie de tout modèle
 mis en production.
 
 ![Une illustration de la différence entre les deux approches (source: [https://arxiv.org/pdf/2305.18290.pdf](https://arxiv.org/pdf/2305.18290.pdf) et [HuggingFace](https://huggingface.co/blog/pref-tuning))](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/pref_tuning/dpo.png)
+------>
 
 ::: {.callout-note}
 ## Pour en savoir plus
