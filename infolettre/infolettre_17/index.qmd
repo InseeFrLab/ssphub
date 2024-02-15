@@ -35,7 +35,10 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 ::: 
 
 En ce début d'année 2024, nous prenons un peu de recul sur l'année écoulée et vous présentons les avancées marquantes de l'année 2023 dans le domaine de la data science. Ces avancées concernent l'intelligence artificielle générative, au cœur des débats médiatisés, mais aussi plusieurs développements technologiques très utiles pour l'analyse et la diffusion de bases de données. 
+Des éléments plus techniques, qui ne sont pas nécessaires à la compréhension globale, sont présents 
+dans des encadrés qui sont déroulables ou sont référencés dans les sections _"Pour en savoir plus"_.  
 
+La fin de la _newsletter_ est consacrée à quelques annonces sur les prochains événements communautaires du réseau.
 
 
 ## Panorama des avancées de 2023 dans le domaine de la data science
@@ -126,7 +129,6 @@ mais factuellement faux,
 a été l'objet d'inquiétudes quant à la véracité des informations
 pouvant être mises en avant par les IA amenées à occuper
 une place croissante dans la diffusion de contenu. 
-
 Pour faire face à ce défi, au cours de l'année 2023,
 les équipes de conception des LLM ont utilisé
 de manière croissante la technique du __RAG (_retrieval augmentated generation_)__.
@@ -157,56 +159,11 @@ un enjeu important dans le cycle de vie de tout modèle
 mis en production.
 
 
-<!--------------
-Dans le domaine des IA génératives, 
-deux avancées moins médiatisées mais néanmoins fondamentales 
-ont fait l'objet de débats scientifiques intéressants. Ces
-deux avancées méthodologiques sont résumées par
-deux acronymes de trois lettres:
-**RAG (_Retrieval Augmented Generation_)** et **DPO (_Direct Preference Optimization_)**. 
-
-Ces deux techniques interviennent à différents niveaux dans le cycle de vie d'une
-IA génératrice, évoquée
-par Andrew Karpathy dans sa vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A): 
-
-![Résumé du _pipeline_ de construction d'un modèle type GPT par Andrew Karpathy dans sa vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A)](karpathyGPT.png)
-
-Le __RAG (_retrieval augmentated generation_)__ est une manière d'enrichir
-la base de connaissance d'un réseau de neurones pour limiter sa tendance à l'hallucination
-et augmenter la pertinence des réponses.
-Cela intervient ainsi au niveau du 2e pilier du _pipeline_ proposé
-par Andrew Karpathy (_"Supervised Finetuning"_) en 
-substitut ou en complément du réentrainement (_fine tuning_).
-L'objectif est de fournir au modèle une base de données faisant
-office de contexte supplémentaire au corpus d'entrainement pour améliorer
-la pertinence des réponses.
-
-La **DPO (_Direct Preference Optimization_)** intervient quant à elle à un niveau plus tardif dans le
-cycle de vie d'un modèle. Il s'agit de simplifier la prise en compte de retours sur la qualité
-de la prédiction en ne dissociant plus les troisième
-et quatrième piliers du _pipeline_ de
-Karpathy (_reward modeling_ et _reinforcement learning_). L'objectif de la DPO
-est de créer une intégration plus directe des retours sur la qualité d'un modèle
-que ne le permettait le _reinforcement learning with human feedback_ (RLHF),
-la technique dominante au début de l'année 2023.
-Cette problématique de 
-supervision et d'amélioration continue d'un modèle
-dépasse d'ailleurs le cadre des modèles de langage: afin de
-s'assurer que les algorithmes ne perdent pas en qualité, l'évaluation
-humaine par le biais, par exemple, de campagnes de labellisation
-ou de retours des utilisateurs, est
-un enjeu important dans le cycle de vie de tout modèle
-mis en production.
-
-![Une illustration de la différence entre les deux approches (source: [https://arxiv.org/pdf/2305.18290.pdf](https://arxiv.org/pdf/2305.18290.pdf) et [HuggingFace](https://huggingface.co/blog/pref-tuning))](https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/blog/pref_tuning/dpo.png)
------->
-
 ::: {.callout-note}
 ## Pour en savoir plus
 
 - La vidéo ["State of GPT"](https://www.youtube.com/watch?v=bZQun8Y4L2A) par Andrew Karpathy ;
 - Un [tutoriel](https://huggingface.co/blog/ray-rag) sur le RAG par _Hugging Face_ ; 
-qui permet de construire des applications utilisant des LLM par le biais de `Python` ;
 - Le [blog](https://openai.com/research/learning-from-human-preferences) présentant la technique du _Reinforcement learning with human feedbacks_ par OpenAI ;
 - L'[article académique](https://arxiv.org/pdf/2305.18290.pdf) présentant la DPO et un [tutoriel](https://huggingface.co/blog/pref-tuning)
 d'_Hugging Face_.
@@ -216,7 +173,7 @@ d'_Hugging Face_.
 
 ### Les bases de données vectorielles gagnent en popularité
 
-En ce qui concerne les outils, `Python` reste le [point d'entrée de référence](https://www.tiobe.com/tiobe-index/)
+Sur un plan plus technique, `Python` reste le [point d'entrée de référence](https://www.tiobe.com/tiobe-index/)
 dans le domaine de la _data science_.
 Pour des besoins plus spécialisés, des logiciels 
 dédiés viennent s'intégrer à ce langage. 
@@ -259,33 +216,14 @@ le biais d'une base vectorielle comme `ChromaDB`, interrogation du LLM, renvoie 
 
 
 
-## `DuckDB`: le petit canard au service des _data scientists_
+## Diffuser des données au format `Parquet` pour simplifier leur usage
 
-Dans le domaine de l'analyse de données, 
-cette année a été marquée par la montée en puissance de `DuckDB`
-comme outil de traitement de données volumineuses. 
-`DuckDB` est un logiciel qui est utilisable par le biais
-des principaux langages maitrisés par les 
-_data scientists_: [`Python`](https://duckdb.org/docs/api/python/overview.html), [`R`](https://duckdb.org/docs/api/r.html), [`JavaScript`](https://duckdb.org/docs/api/wasm/overview.html) ou directement en ligne de commande. 
-
-Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées
-rend `DuckDB` particulièrement approprié pour le traitement de données de taille intermédiaires telles que les
-données administratives.
-`DuckDB` est pensé pour le traitement de données stockées sur des fichiers, ce qui le distingue 
-de l'approche plus exigeante du point de vue de l'infrastructure, des 
-systèmes de gestion de base de données (SGBD) du type `PostGreSQL` (voir la partie plus technique). 
-Pour des utilisateurs de l'écosystème de l'_open data_, ou pour des organisations
-dont le patrimoine de données prend plus la forme de fichiers que de bases `PostGreSQL`,
-`DuckDB` est
-une opportunité technologique permettant de
-valoriser des données dont le traitement et la diffusion nécessitait jusqu'à présent des ressources
-computationnelles importantes. 
-
-Dans le domaine de la diffusion des données _open data_, l'Insee a expérimenté ce format
+Dans le domaine de la diffusion des données _open data_, l'Insee a expérimenté
+le format `Parquet` 
 à deux reprises pendant l'année 2023. En premier lieu, pour la diffusion des
 données du [Répertoire Electoral Unique](https://www.insee.fr/fr/metadonnees/source/serie/s1046). 
 Plus récemment, ce sont les données détaillées du recensement de la population
-qui ont été diffusées dans ce format, accompagnées d'un [guide sur ce blog](/post/parquetRP) (lien [Infolettre #16](/infolettre/infolettre_16)). 
+qui ont été diffusées dans ce format, accompagnées d'un [guide sur ce blog](/post/parquetRP) (plus de détails dans l'[infolettre #16](/infolettre/infolettre_16)). 
 
 <details>
 
@@ -321,12 +259,40 @@ _Quelques exemples de retours sur la publication des données détaillées du re
 
 </details>
 
+
+Le format de données `Parquet` est très intéressant pour
+les _data scientists_ intéressés par le traitement de données
+volumineuses. Il permet des gains de performance importants par rapport au
+CSV sans être dépendant d'un logiciel propriétaire
+(comme les formats `.sas7bdat`, `dbase`, etc.). Par exemple, les données détaillées du 
+recensement diffusées par l'Insee pèsent 450Mo au format `Parquet` contre 5Go au format
+CSV. 
+Des outils de traitement optimisés existent
+pour faciliter l'utilisation de ce format. Parmi ceux-ci, 
+cette année a été marquée par la montée en puissance de `DuckDB`.
+Il s'agit d'un logiciel qui est utilisable par le biais
+des principaux langages maîtrisés par les 
+_data scientists_: [`Python`](https://duckdb.org/docs/api/python/overview.html), [`R`](https://duckdb.org/docs/api/r.html), [`JavaScript`](https://duckdb.org/docs/api/wasm/overview.html) ou directement en ligne de commande. 
+
+Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées
+rend `DuckDB` particulièrement approprié pour le traitement de données volumineuses (voir la partie plus technique). 
+Avec ce logiciel, les données du recensement peuvent être lues en quelques secondes alors
+qu'il fallait plusieurs dizaines de minutes dans les précédents formats.
+Pour des utilisateurs de l'écosystème de l'_open data_, ou pour des organisations
+dont le patrimoine de données prend plus la forme de fichiers que de bases de données `PostGreSQL`,
+`DuckDB` est
+une opportunité technologique permettant de
+valoriser des données dont le traitement et la diffusion nécessitait jusqu'à présent des ressources
+computationnelles importantes. 
+
+
 ::: {.callout-note}
 ## Pour en savoir plus
 
 Ressources techniques: 
 
 - Un [_notebook_ {{< fa brands r-project >}}](https://datalab.sspcloud.fr/launcher/ide/rstudio-sparkr?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fformation-bceao%2Fmain%2Ftp%2Finit-tp.sh%C2%BB&resources.limits.memory=%C2%AB100Gi%C2%BB&persistence.size=%C2%AB40Gi%C2%BB) sur `DuckDB` issu d'une [formation de l'Insee](https://inseefrlab.github.io/formation-bceao/) donnée à la BCEAO ;
+- Une [fiche sur `Arrow`](https://www.book.utilitr.org/03_fiches_thematiques/fiche_arrow), l'écosystème sous-jacent à `DuckDB`, dans la documentation collaborative `utilitR` ;
 - Le [post de blog](/post/polars/) sur la librairie {{< fa brands python >}} `Polars`, une approche alternative à `DuckDB` ;
 - L'[explorateur de données du SSPCloud](https://datalab.sspcloud.fr/data-explorer?source=https%3A%2F%2Fstatic.data.gouv.fr%2Fresources%2Frecensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1%2F20231023-122841%2Ffd-indcvi-2020.parquet) qui repose sur `DuckDB`.
 
@@ -348,7 +314,7 @@ une série d'articles sur le format `Parquet`;
 :::
 
 ::: {.callout-tip collapse="true"}
-## Des éléments plus techniques
+## Des éléments plus techniques sur la gestion de la volumétrie des données
 
 Il existe principalement deux approches pour stocker, organiser et mettre 
 à disposition des jeux de données
@@ -369,7 +335,7 @@ Le stockage sous la forme de fichier consiste à organiser l'information
 présente dans un jeu de données dans des fichiers, de manière brute.
 Ces données peuvent être analysées sans recourir à un logiciel spécialisé. 
 Même dans le cadre de formats propriétaires, comme le `.xlsx`
-ou `sas7bdat`, le fait d'avoir une certaine forme de standardisation
+ou `.sas7bdat`, le fait d'avoir une certaine forme de standardisation
 rend possible, même si ce n'est jamais parfaitement fiable, de lire ces données
 avec un autre logiciel que celui prévu initialement. 
 
@@ -437,36 +403,24 @@ navigateurs web, sans avoir à installer de logiciel
 spécialisé comme `Python` {{< fa brands python >}} ou {{< fa brands r-project >}}. C'est une approche typique du [_web assembly_](https://developer.mozilla.org/fr/docs/WebAssembly) 
 qui consiste à mettre à disposition des logiciels de calculs scientifiques par le biais d'un simple navigateur
 grâce à `Javascript` {{< fa brands js-square >}}, qui est disponible sur tout navigateur.
+Cette approche est intéressante pour les institutions proposant
+des _data visualisations_ car elle peut permettre de mettre en oeuvre des manipulations
+de données
+complexes directement depuis la source brute par le biais du navigateur, donc
+sans recourir à des serveurs externes hébergés dans des _cloud_. 
 
-D'ailleurs, il est maintenant possible de faire du `R` directement depuis
+::: {.callout-note collapse="true"}
+## Faire du {{< fa brands r-project >}} depuis le navigateur avec `webR`
+
+Il est maintenant possible de faire du `R` directement depuis
 un navigateur _web_ grâce à [`webR`](https://docs.r-wasm.org/webr/latest/),
 une librairie développée par _Posit_ en 2023 et qui
-porte la grammaire `R` dans le navigateur (exemple à tester 👇️)
+porte la grammaire `R` dans le navigateur (exemple à tester 👇️).
+
 L'idée est que le code d'analyse de données est en `R`
 mais que c'est du `Javascript` qui servira, en arrière-plan, à l'exécution.
-La librairie est encore jeune mais est prometteuse pour faciliter la transition
+La librairie est encore jeune mais celle-ci est prometteuse pour faciliter la transition
 entre du code d'analyse de données en `R` et une application interactive. 
-
-<!----
-laisser tomber ce paragraphe ?
-Amener les logiciels statistiques dans le navigateur
-est une inversion de l'approche antérieure qui consistait à encapsuler du
-`Javascript` dans des applications `R` comme le prévoit
-`Shiny`. 
-Cette approche, qui apparaît attractive au premier abord 
-puisqu'elle permet de relier une 
-application interactive à des traitements sur des données, présente l'inconvénient
-d'être exigeante lorsqu'il est nécessaire de partager cette application. 
-Pour qu'une application `Shiny` renvoie une réponse à la personne qui y accède
-par le biais d'un navigateur web, il faut connecter l'application à un serveur 
-effectuant des calculs `R` ce qui nécessite l'utilisation de
-services spécialisés ou la mise en place de ressources de calculs
-dédiées. Avec [`webR`](https://docs.r-wasm.org/webr/latest/) ou 
-son équivalent `Python` [`pyodide`](https://pyodide.org/en/stable/),
-la mise en ligne ne nécessite pas ......
----->
-
-
 
 ```{webr-r}
 head(mtcars)
@@ -485,15 +439,74 @@ ggplot(mpg, aes(displ, hwy, colour = class)) +
   geom_point()
 ```
 
+:::
 
 ::: {.callout-note}
 ## Pour en savoir plus
 
 - La [documentation officielle](https://docs.r-wasm.org/webr/latest/) de `WebR` ;
-- [Un _post_](https://thinkr.fr/retour-vers-le-turfu-r-le-web-et-webr/) didactique sur le _web assembly_ par _ThinkR_ ;
+- [Un _post_](https://thinkr.fr/retour-vers-le-turfu-r-le-web-et-webr/) sur le _web assembly_ par _ThinkR_ ;
 - L'extension [`quarto-webR`](https://quarto-webr.thecoatlessprofessor.com/)
 qui permet d'encapsuler du code `webR` dans un site web statique construit
 avec `Quarto` ;
 - Une [démonstration](https://observablehq.com/@hrbrmstr/webr-0-2-2-in-observable)
 de `WebR` sur `Observable`.
 :::
+
+
+## Prochains événements du réseau
+
+### "La dataviz pour donner du sens aux données et communiquer un message" par Eric Mauvière (📅 29 février, 15h-16h)
+
+Le __29 février entre 15h et 16h__, Eric Mauvière nous fera une présentation, avec de nombreux exemples
+issus de la statistique publique, de la manière dont une visualisation de données peut être construite
+pour transmettre un message clair aux lecteurs. Cette
+présentation aura lieu sur [Zoom](https://insee-fr.zoom.us/j/92487784559?pwd=WVdsNUFNWXhUNnJYUW56WFdyNHlNdz09). 
+
+Cette présentation permettra d’évoquer les bonnes pratiques, les règles opérationnelles et les outils simples pour construire des visualisations et valorisations de données, des graphiques faciles à lire et à comprendre, permettant de rendre leur message intelligible, efficace et utile à un spectre large de publics.
+
+Éric Mauvière est statisticien, passé par la diffusion et les études régionales de l'Insee. Il a ensuite créé le logiciel cartographique web `Géoclip` utilisé, par exemple, par le site [https://statistiques-locales.insee.fr/](https://statistiques-locales.insee.fr/#c=home). Plus récemment, il a participé à la conception du site [https://vizagreste.agriculture.gouv.fr/](https://vizagreste.agriculture.gouv.fr/), portail de visualisation de données du service statistique ministériel du Ministère de l'Agriculture et de la Souveraineté Alimentaire. Depuis 3 ans, au sein d'`Icem7`, il participe à la diffusion de connaissances sur les problématiques de _dataviz_ et forme sur mesure en sémiologie graphique et analyse de données.
+
+- [Invitation outlook](XXXXX)
+
+
+### Masterclass datascientest
+
+### Programme 10%
+
+La saison 3 du programme 10% démarre prochainement. 
+Ce programme, issu des
+recommandations du [rapport de l'Inspection Générale de l'Insee et de la DINUM](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf),
+permet à des experts de la donnée de l'administration de consacrer jusqu'à 10% de leur temps de travail afin de monter 
+en compétence en participant à des projets transversaux, à des formations ou encore à des moments informels pour
+échanger entre pairs. 
+
+Le premier événement de la saison aura lieu le __11 mars 2024 au Lieu de la Transformation Publique__ (Paris XV). 
+L'objectif de cette journée est de définir collectivement les projets mutualisables pouvant entraîner
+des collaborations entre _data scientists_ de différentes administrations pendant l'année 2024.  
+Plus d'informations à venir sur le [site du programme](https://www.10pourcent.etalab.gouv.fr/). 
+
+- Inscription sur [Eventbrite](https://www.eventbrite.fr/e/billets-programme-10-journee-dideation-829916611927).
+
+
+### Autoformation de découverte à `Python`
+
+Depuis quelques semaines, une nouvelle formation
+est apparue au catalogue de formation de l'Insee et sur le
+[portail de formation du SSPCloud](https://www.sspcloud.fr/formation), une
+__auto-formation de découverte de `Python`__, construite par
+les équipes innovation de l'Insee.
+Il s'agit d'une expérimentation d'un nouveau
+mode de formation : l'e-formation tutorée. 
+
+En principe, la formation a lieu sur une durée longue (2 mois), période pendant laquelle vous pouvez exécuter à votre rythme les différents notebooks disponibles. Chaque chapitre de formation, disponible sous la forme de _notebooks jupyter_, peut être testé en un clic à partir du [catalogue de formation](https://www.sspcloud.fr/formation?search=&path=%5B%22Initiation%20%C3%A0%20Python%22%5D) du `SSPCloud`.
+Ces ressources restent d'ailleurs disponibles en continue pour permettre de revenir dessus ultérieurement si besoin. 
+Ce système de formation a l'avantage à la fois de favoriser une pédagogie par la pratique continue qui a fait ses preuves pour l'apprentissage des langages de programmation, tout en laissant à chacun la possibilité d'avancer à son rythme. 
+
+Ces ressources sont accompagnées d'un système de mentorat prenant deux formes :
+
+- tout au long de la formation : vous pouvez poser toutes vos questions sur un canal Tchap dédié, auxquelles les mentors de la formation répondent rapidement, afin de ne jamais rester bloqué ;
+- ponctuellement : une visio est réalisée avec 1-2 mentors afin de pouvoir discuter plus en détail des problèmes que vous pouvez rencontrer.
+
+Un [canal Tchap `SSPy - Formation "Initiation à Python"`](https://matrix.to/#/#sspy:agent.finances.tchap.gouv.fr) est disponible pour les agents publics ayant un compte `Tchap` afin d'échanger sur cette formation (poser des questions de compréhension, comprendre un _bug_, assister les collègues bloqués, etc.).
+Les premiers formés ont commencé leur apprentissage en ce début d'année 2024. Il est possible de les rejoindre à tout moment si vous désirez découvrir `Python`. 
