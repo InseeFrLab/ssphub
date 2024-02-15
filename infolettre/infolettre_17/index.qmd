@@ -72,9 +72,9 @@ de leur architecture complexe (des milliards de paramètres pour les grands mod�
 afin d'obtenir une réponse du modèle il est généralement nécessaire d'effectuer 
 les calculs nécessaires par le biais de
 cartes graphiques (GPU), celles-ci permettant plus de parallélisme dans les calculs
-que les processeurs (CPU).
-Cependant, depuis plusieurs années, la demande excède largement l'offre, ce qui limite
-l'accès à cette ressource pour de nombreux acteurs. 
+que les processeurs (CPU). Cependant, comme les GPU sont plus consommatrices
+d'énergies et plus coûteuses à l'achat du fait d'une demandant excédant l'offre,
+l'accès à cette ressource est limité pour de nombreux acteurs.
 Le retour à des modèles plus légers, pouvant être exploités depuis des architectures
 informatiques plus accessibles, constitue l'un des défis de l'année 2024. 
 
@@ -266,7 +266,7 @@ cette année a été marquée par la montée en puissance de `DuckDB`
 comme outil de traitement de données volumineuses. 
 `DuckDB` est un logiciel qui est utilisable par le biais
 des principaux langages maitrisés par les 
-_data scientists_: [`Python`](XXX), [`R`](XXX), [`JavaScript`](XX) ou directement en ligne de commande. 
+_data scientists_: [`Python`](https://duckdb.org/docs/api/python/overview.html), [`R`](https://duckdb.org/docs/api/r.html), [`JavaScript`](https://duckdb.org/docs/api/wasm/overview.html) ou directement en ligne de commande. 
 
 Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées
 rend `DuckDB` particulièrement approprié pour le traitement de données de taille intermédiaires telles que les
