@@ -123,11 +123,15 @@ recensés par l'[INA](https://larevuedesmedias.ina.fr/les-medias-face-lintellige
 La tendance des LLM à l'hallucination, c'est-à-dire à la production
 de contenu plausible par sa forme
 mais factuellement faux, 
-a été l'objet de controverses scientifiques et médiatiques au cours de l'année. 
-Au cours de l'année 2023, pour faire face à ce défi,
+a été l'objet d'inquiétudes quant à la véracité des informations
+pouvant être mises en avant par les IA amenées à occuper
+une place croissante dans la diffusion de contenu. 
+
+Pour faire face à ce défi, au cours de l'année 2023,
 les équipes de conception des LLM ont utilisé
 de manière croissante la technique du __RAG (_retrieval augmentated generation_)__.
-Celle-ci consiste à cadrer le comportement du LLM en faisant
+Celle-ci consiste, pour les modélisateurs, 
+à cadrer le comportement du LLM en faisant
 en sorte qu'il privilégie des informations issues d'un corpus adapté
 spécialement à une tâche. Pour faire l'analogie avec l'apprentissage humain,
 les modèles où le RAG intervient peuvent être comparés à des étudiants préparant
@@ -135,10 +139,12 @@ une dissertation s'appuyant sur un dossier préparé par les évaluateurs. Ce co
 pourra être utilisé pour construire une réponse argumentée et des exemples plus pertinents. 
 
 Le succès des IA de discussion comme `ChatGPT` est intrinsèquement lié au travail humain
-qui a été mis en oeuvre pour évaluer la pertinence des réponses proposées par le modèle.
+qui a été mis en oeuvre pour évaluer la pertinence des réponses proposées par le modèle
+afin de régulièrement mettre à jour le comportement du modèle. 
 Sur une question donnée, l'humain évalue la réponse la plus pertinente faite par l'IA. A partir
-de ces évaluations, l'algorithme pourra, dans les prochaines situations similaires, 
-faire un choix plus pertinent s'il apprend de ses erreurs. La technique ayant gagné en popularité
+d'un volume suffisant d'évaluations, l'algorithme pourra, dans les prochaines situations similaires, 
+faire un choix plus pertinent s'il apprend de ses erreurs. La technique ayant gagné cette année
+en popularité
 pour cette tâche est la **DPO (_Direct Preference Optimization_)** qui vise à simplifier l'intégration
 des retours humains dans le cycle de réentraînement d'un modèle. 
 Cette problématique de 
@@ -226,10 +232,17 @@ ceux-ci en vecteurs numériques (technique des [_embeddings_](https://ig.ft.com/
 Par exemple, dans l'image ci-dessous, une base de données vectorielle pourra 
 évaluer la similarité entre les termes en utilisant
 des techniques d'algèbre linéaire de manière plus efficace que ne le permettrait
-`Python`, un langage trop généraliste pour pouvoir faire cette recherche de similarité
-dans des corpus massifs. 
+`Python`. Ce dernier est en effet un langage informatique généraliste, moins performant
+que des logiciels spécialisés pour faire de la recherche de similarité
+dans des corpus massifs. Dans une chaîne de production exploitant
+ce type de technique, `Python` servira de point d'entrée et déléguera ensuite les calculs
+complexes à la base de données vectorielle. 
 
-![Un exemple d'_embedding_ et de rapprochement de textes. Source: [_Financial Times_](https://ig.ft.com/generative-ai/).](embeddings.png)
+![
+Un exemple d'_embedding_ et de rapprochement de textes. Chaque bande représente une dimension latente de notre langage. 
+Il est possible de rapprocher les termes à partir de celles-ci. 
+Source: [_Financial Times_](https://ig.ft.com/generative-ai/).
+](embeddings.png)
 
 
 
