@@ -274,7 +274,8 @@ Il s'agit d'un logiciel qui est utilisable par le biais
 des principaux langages maîtrisés par les 
 _data scientists_: [`Python`](https://duckdb.org/docs/api/python/overview.html), [`R`](https://duckdb.org/docs/api/r.html), [`JavaScript`](https://duckdb.org/docs/api/wasm/overview.html) ou directement en ligne de commande. 
 
-Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées
+Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées sur un fichier
+au format `Parquet`
 rend `DuckDB` particulièrement approprié pour le traitement de données volumineuses (voir la partie plus technique). 
 Avec ce logiciel, les données du recensement peuvent être lues en quelques secondes alors
 qu'il fallait plusieurs dizaines de minutes dans les précédents formats.
@@ -415,10 +416,10 @@ sans recourir à des serveurs externes hébergés dans des _cloud_.
 Il est maintenant possible de faire du `R` directement depuis
 un navigateur _web_ grâce à [`webR`](https://docs.r-wasm.org/webr/latest/),
 une librairie développée par _Posit_ en 2023 et qui
-porte la grammaire `R` dans le navigateur (exemple à tester 👇️).
+porte la grammaire `R` dans le navigateur sans recourir à `Shiny` (exemple à tester 👇️).
 
 L'idée est que le code d'analyse de données est en `R`
-mais que c'est du `Javascript` qui servira, en arrière-plan, à l'exécution.
+mais qu'en arrière plan c'est du `Javascript` qui servira à l'exécution.
 La librairie est encore jeune mais celle-ci est prometteuse pour faciliter la transition
 entre du code d'analyse de données en `R` et une application interactive. 
 
