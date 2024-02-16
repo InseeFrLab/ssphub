@@ -470,7 +470,7 @@ Cette présentation permettra d’évoquer les bonnes pratiques, les règles op�
 
 Éric Mauvière est statisticien, passé par la diffusion et les études régionales de l'Insee. Il a ensuite créé le logiciel cartographique web `Géoclip` utilisé, par exemple, par le site [https://statistiques-locales.insee.fr/](https://statistiques-locales.insee.fr/#c=home). Plus récemment, il a participé à la conception du site [https://vizagreste.agriculture.gouv.fr/](https://vizagreste.agriculture.gouv.fr/), portail de visualisation de données du service statistique ministériel du Ministère de l'Agriculture et de la Souveraineté Alimentaire. Depuis 3 ans, au sein d'`Icem7`, il participe à la diffusion de connaissances sur les problématiques de _dataviz_ et forme sur mesure en sémiologie graphique et analyse de données.
 
-- [Invitation outlook](XXXXX)
+- [Invitation outlook](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_mauviere_2024/_La%20dataviz%20pour%20donner%20du%20sens%20aux%20donn%C3%A9es%20et%20communiquer%20un%20message_%20par%20Eric%20Mauvi%C3%A8re.ics)
 
 
 ### Masterclass datascientest
@@ -501,10 +501,8 @@ est apparue au catalogue de formation de l'Insee et sur le
 [portail de formation du SSPCloud](https://www.sspcloud.fr/formation), une
 __auto-formation de découverte de `Python`__, construite par
 les équipes innovation de l'Insee.
-Il s'agit d'une expérimentation d'un nouveau
-mode de formation : l'e-formation tutorée. 
 
-En principe, la formation a lieu sur une durée longue (2 mois), période pendant laquelle vous pouvez exécuter à votre rythme les différents notebooks disponibles. Chaque chapitre de formation, disponible sous la forme de _notebooks jupyter_, peut être testé en un clic à partir du [catalogue de formation](https://www.sspcloud.fr/formation?search=&path=%5B%22Initiation%20%C3%A0%20Python%22%5D) du `SSPCloud`.
+Chaque chapitre de formation, disponible sous la forme de _notebooks jupyter_, peut être testé en un clic à partir du [catalogue de formation](https://www.sspcloud.fr/formation?search=&path=%5B%22Initiation%20%C3%A0%20Python%22%5D) du `SSPCloud`.
 Ces ressources restent d'ailleurs disponibles en continue pour permettre de revenir dessus ultérieurement si besoin. 
 Ce système de formation a l'avantage à la fois de favoriser une pédagogie par la pratique continue qui a fait ses preuves pour l'apprentissage des langages de programmation, tout en laissant à chacun la possibilité d'avancer à son rythme. 
 
