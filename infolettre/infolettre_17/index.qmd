@@ -459,8 +459,8 @@ de `WebR` sur `Observable`.
 
 ### "La dataviz pour donner du sens aux données et communiquer un message" par Eric Mauvière (📅 29 février, 15h-16h)
 
-Le __29 février entre 15h et 16h__, Eric Mauvière nous fera une présentation, avec de nombreux exemples
-issus de la statistique publique, de la manière dont une visualisation de données peut être construite
+Le __29 février entre 15h et 16h__, Eric Mauvière nous présentera, avec de nombreux exemples
+issus de la statistique publique, la manière dont une visualisation de données peut être construite
 pour transmettre un message clair aux lecteurs. Cette
 présentation aura lieu sur [Zoom](https://insee-fr.zoom.us/j/92487784559?pwd=WVdsNUFNWXhUNnJYUW56WFdyNHlNdz09), elle
 est ouverte à tous. Pour les agents de la DG de l'Insee, vous pouvez venir en __4-C-458__ assister à la présentation et
@@ -468,7 +468,7 @@ est ouverte à tous. Pour les agents de la DG de l'Insee, vous pouvez venir en _
 
 Cette présentation permettra d’évoquer les bonnes pratiques, les règles opérationnelles et les outils simples pour construire des visualisations et valorisations de données, des graphiques faciles à lire et à comprendre, permettant de rendre leur message intelligible, efficace et utile à un spectre large de publics.
 
-Éric Mauvière est statisticien, passé par la diffusion et les études régionales de l'Insee. Il a ensuite créé le logiciel cartographique web `Géoclip` utilisé, par exemple, par le site [https://statistiques-locales.insee.fr/](https://statistiques-locales.insee.fr/#c=home). Plus récemment, il a participé à la conception du site [https://vizagreste.agriculture.gouv.fr/](https://vizagreste.agriculture.gouv.fr/), portail de visualisation de données du service statistique ministériel du Ministère de l'Agriculture et de la Souveraineté Alimentaire. Depuis 3 ans, au sein d'`Icem7`, il participe à la diffusion de connaissances sur les problématiques de _dataviz_ et forme sur mesure en sémiologie graphique et analyse de données.
+Éric Mauvière est statisticien, passé par la diffusion et les études régionales de l'Insee. Il a ensuite créé le logiciel cartographique web `Géoclip` utilisé, par exemple, par le site [https://statistiques-locales.insee.fr/](https://statistiques-locales.insee.fr/#c=home). Plus récemment, il a participé à la conception du site [https://vizagreste.agriculture.gouv.fr/](https://vizagreste.agriculture.gouv.fr/), portail de visualisation de données du service statistique ministériel du Ministère de l'Agriculture et de la Souveraineté Alimentaire. Depuis 3 ans, au sein d'`Icem7`, il participe à la diffusion de connaissances sur les problématiques de _dataviz_ et donne des formations sur mesure en sémiologie graphique et analyse de données.
 
 - [Invitation outlook](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_mauviere_2024/_La%20dataviz%20pour%20donner%20du%20sens%20aux%20donn%C3%A9es%20et%20communiquer%20un%20message_%20par%20Eric%20Mauvi%C3%A8re.ics)
 
@@ -482,9 +482,9 @@ TO DO
 La saison 3 du programme 10% démarre prochainement. 
 Ce programme, issu des
 recommandations du [rapport de l'Inspection Générale de l'Insee et de la DINUM](https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf),
-permet à des experts de la donnée de l'administration de consacrer jusqu'à 10% de leur temps de travail afin de monter 
-en compétence en participant à des projets transversaux, à des formations ou encore à des moments informels pour
-échanger entre pairs. 
+permet à des experts de la donnée de l'administration de monter en compétence en consacrant jusqu'à 10% de leur temps de travail 
+à des projets transversaux, à des formations ou encore à des moments informels qui favorisent
+l'échange entre pairs. 
 
 Le premier événement de la saison aura lieu le __11 mars 2024 au Lieu de la Transformation Publique__ (Paris XV). 
 L'objectif de cette journée est de définir collectivement les projets mutualisables pouvant entraîner
@@ -498,8 +498,8 @@ Plus d'informations à venir sur le [site du programme](https://www.10pourcent.e
 
 Depuis quelques semaines, une nouvelle formation
 est apparue au catalogue de formation de l'Insee et sur le
-[portail de formation du SSPCloud](https://www.sspcloud.fr/formation), une
-__auto-formation de découverte de `Python`__, construite par
+[portail de formation du SSPCloud](https://www.sspcloud.fr/formation) : une
+__auto-formation de découverte de `Python`__, construite et mentorée par
 les équipes innovation de l'Insee.
 
 Chaque chapitre de formation, disponible sous la forme de _notebooks jupyter_, peut être testé en un clic à partir du [catalogue de formation](https://www.sspcloud.fr/formation?search=&path=%5B%22Initiation%20%C3%A0%20Python%22%5D) du `SSPCloud`.
