@@ -497,14 +497,27 @@ est apparue au catalogue de formation de l'Insee et sur le
 __auto-formation de découverte de `Python`__, construite et mentorée par
 les équipes innovation de l'Insee.
 
-Chaque chapitre de formation, disponible sous la forme de _notebooks jupyter_, peut être ouvert en un clic à partir du [catalogue de formation](https://www.sspcloud.fr/formation?search=&path=%5B%22Initiation%20%C3%A0%20Python%22%5D) du `SSPCloud`.
-Ces ressources restent d'ailleurs disponibles en continu pour permettre d'y retourner ultérieurement si besoin. 
-Ce système de formation a l'avantage à la fois de favoriser une pédagogie par la pratique continue qui a fait ses preuves pour l'apprentissage des langages de programmation, tout en laissant à chacun la possibilité d'avancer à son rythme. 
+Chaque chapitre de formation, disponible sous la forme de _notebooks `Jupyter`_,
+peut être ouvert en un clic à partir du [catalogue de formation](https://www.sspcloud.fr/formation?search=&path=%5B%22Initiation%20%C3%A0%20Python%22%5D) du `SSPCloud`.
+Ces ressources sont disponibles en continu, au-delà des périodes délimitées
+pour la formation.  
 
-Ces ressources sont accompagnées d'un système de mentorat prenant deux formes :
+Des cycles de 6 semaines pendant lesquels les participants
+peuvent bénéficier d'un mentorat ont vocation à être
+organisés régulièrement.
+Les premiers formés selon cette modalité
+ont commencé leur apprentissage en ce début d'année 2024.
 
-- tout au long de la formation : vous pouvez poser toutes vos questions sur un canal Tchap dédié ; les mentors de la formation répondent rapidement, afin que vous ne restiez jamais bloqué ;
-- ponctuellement : une visio est réalisée avec 1-2 mentors afin de pouvoir discuter plus en détail des problèmes que vous pouvez rencontrer.
+Ce système de mentorat prend deux formes :
 
-Le [canal Tchap dédié à la formation : `SSPy - Formation "Initiation à Python"`](https://matrix.to/#/#sspy:agent.finances.tchap.gouv.fr) est disponible pour les agents publics ayant un compte `Tchap` afin d'échanger sur cette formation (poser des questions de compréhension, comprendre un _bug_, assister les collègues bloqués, etc.).
-Les premiers formés ont commencé leur apprentissage en ce début d'année 2024. Il est possible de les rejoindre à tout moment si vous désirez découvrir `Python` ! 
+- tout au long de la formation : vous pouvez poser toutes vos questions sur le canal Tchap dédié ; les mentors de la formation répondent rapidement, afin que vous ne restiez jamais bloqué ;
+- ponctuellement : une visio est réalisée si vous le désirez avec 1-2 mentors afin de pouvoir discuter plus en détail des problèmes que vous pouvez rencontrer.
+
+Ce système de mentorat a l'avantage à la fois de favoriser une pédagogie par la pratique continue qui a fait ses preuves pour l'apprentissage des langages de programmation, tout en laissant à chacun la possibilité d'avancer à son rythme. 
+
+Les dates des prochains cycles de mentorat ne sont pas encore arrêtées. 
+Il est néanmoins possible, en attendant, d'explorer les ressources disponibles 
+sur le `SSPCloud`
+ainsi que rejoindre le
+[canal `Tchap` `SSPy - Formation "Initiation à Python"`](https://matrix.to/#/#sspy:agent.finances.tchap.gouv.fr) 
+afin d'échanger sur celle-ci (poser des questions de compréhension, comprendre un _bug_, assister les collègues bloqués, etc.).
