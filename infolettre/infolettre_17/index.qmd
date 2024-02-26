@@ -297,11 +297,12 @@ Ressources techniques:
 - Le [post de blog](/post/polars/) sur la librairie {{< fa brands python >}} `Polars`, une approche alternative à `DuckDB` ;
 - L'[explorateur de données du SSPCloud](https://datalab.sspcloud.fr/data-explorer?source=https%3A%2F%2Fstatic.data.gouv.fr%2Fresources%2Frecensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1%2F20231023-122841%2Ffd-indcvi-2020.parquet) qui repose sur `DuckDB`.
 
-Données diffusées par l'Insee au format `Parquet` :
+Données diffusées par la statistique publique au format `Parquet` :
 
 - Les données du [Répertoire Electoral Unique](https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/#/resources) ;
 - Le guide d’utilisation des données du recensement de la population au format Parquet sous forme de [billet de blog](/post/parquetRP/). 
-Voir aussi l'[_infolettre #16_](/infolettre/infolettre_16).
+Voir aussi l'[_infolettre #16_](/infolettre/infolettre_16) ;
+- Les [données de la délinquance enregistrée par la police et gendarmerie nationales](https://www.linkedin.com/feed/update/urn:li:activity:7163102904906678272/) publiées par le service statistique ministériel de la sécurité intérieur publiées au format Parquet.
 
 Sur le format `Parquet` :
 
