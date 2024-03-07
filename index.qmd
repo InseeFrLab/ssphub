@@ -21,21 +21,34 @@ listing:
     template: scripts/courses.ejs
     type: grid
     feed: false
+echo: false
 ---
 
-::: {#hero-banner .column-screen}
+```{ojs}
+// echo: false
+// output: false
+inscrits = 623
+```
 
-:::: {.grid .column-page}
-
-::::: {.headline .g-col-lg-8 .g-col-12 .g-col-md-12}
-
-:::::: h1
-Le réseau des data scientists de la statistique publique
-::::::
-
-```{=html}
-<a href="https://framaforms.org/integration-reseau-des-data-scientists-1676407156"><img alt="Static Badge" src="https://img.shields.io/badge/597_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fframaforms.org%2Fintegration-reseau-des-data-scientists-1676407156">
+```{ojs}
+// echo: false
+badge = html`<a href="https://framaforms.org/integration-reseau-des-data-scientists-1676407156"><img alt="Static Badge" src="https://img.shields.io/badge/${inscrits}_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fframaforms.org%2Fintegration-reseau-des-data-scientists-1676407156">
 </a>
+`
+```
+
+
+::::: {#hero-banner .column-screen}
+::: {.grid .column-page}
+::: {.headline .g-col-lg-6 .g-col-12 .g-col-md-12}
+
+:::: h1
+Le réseau des data scientists de la statistique publique
+::::
+
+```{ojs}
+// echo: false
+html`${badge}`
 ```
 
 <br>
@@ -44,7 +57,7 @@ Le `SSPHub` centralise et vise à faire connaître le contenu créé par
 le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
 
 Une présentation du réseau est 
-disponible [plus bas 👇](#about). 
+disponible sur la page [à propos](#about). 
 Pour en savoir plus sur les objectifs du réseau, sa philosophie,
 et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/manifeste)
 écrit collectivement. 
@@ -52,61 +65,31 @@ et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/manifeste)
 <a href="/posts" class="hero-cta-alt btn-lg pl-md-4">Découvrir le blog ! {{< fa angle-right >}} </a>
 <a href="/infolettre" class="hero-cta-alt btn-lg pl-md-4">Relire nos _newsletters_ {{< fa angle-right >}} </a>
 
-:::::
+:::
 
-::::: {.g-col-lg-4 .g-col-12 .g-col-md-12}
+::: {.g-col-lg-4 .g-col-12 .g-col-md-12}
 ![](./assets/media/ssp-logo-reverse.png)
-:::::
-
-::::
+:::
 
 :::
 
+:::::
+
+```{=html}
 <br>
+```
 
 
-
-::: {.grid .column-page}
-
-::: {.g-col-3}
-![](avatar.png)
-
-:::: {.title-ssp .test}
-_[Service Statistique Public](https://www.insee.fr/fr/information/1302192)_
-
-::::: {.g-col-1}
-:::::
-
-::::: {.g-col-1}
-[{{< fa envelope title="An envelope" >}}](mailto:ssphub-contact@insee.fr)
-:::::
-::::: {.g-col-1}
-:::::
-
-::::
-
-:::
-
-
-::: {.g-col-9}
-
-{{< include "_about.qmd" >}}
-
-:::
-
-:::
-
------------------------
 
 ::: {.column-page}
 
-## Les réseaux partenaires
+## Les dernières _newsletters_
 
-Quelques communautés de la data-science avec lesquels nous collaborons
+Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/index.qmd).
 
-
-:::: {#partenaires}
+:::: {#newsletters}
 ::::
+
 
 
 ## Les derniers billets de blog
@@ -117,13 +100,23 @@ L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.
 :::: {#blog}
 ::::
 
-## Les dernières _newsletters_
+<!----
+## A propos
 
-Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/index.qmd).
+{{< include "_about.qmd" >}}
+----->
+
+## Les réseaux partenaires
+
+Quelques communautés de la data-science avec lesquels nous collaborons
 
 
-:::: {#newsletters}
+:::: {#partenaires}
 ::::
 
 
+
 :::
+
+
+

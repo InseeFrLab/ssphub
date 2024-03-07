@@ -1,0 +1,77 @@
+---
+title: "Eric Mauvière, \"La dataviz pour donner du sens aux données et communiquer un message\""
+subtitle: Présentation par Eric Mauvière des bonnes pratiques de visualisation de données
+
+categories:
+- dataviz
+- event
+
+description: |
+  Le __29 février (15h - 16h)__, Eric Mauvière nous fera une présentation, avec de nombreux exemples issus de la statistique publique, de la manière dont une visualisation de données peut être construite pour transmettre un message clair aux lecteurs. Cette présentation permettra d’évoquer les bonnes pratiques et les outils simples pour construire des visualisations de données faciles à lire et à comprendre afin de rendre le message intelligible, efficace et utile à un large spectre de publics.
+date: '2024-02-29T15:00:00Z'
+image: mauviere.png
+echo: false
+---
+
+
+Replay de l'événement: 
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/video1991622347.mp4" controls="yes" >}}
+
+Slides présentées par Eric téléchargeables : 
+
+```{=html}
+<iframe width="780" height="500" src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf" title="Quarto Documentation"></iframe>
+```
+
+
+```{ojs}
+html`${slides_button}`
+```
+
+
+```{ojs}
+slides = "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf"
+```
+
+```{ojs}
+slides_button = html`<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
+  </a>
+</p>`
+```
+
+
+
+
+Un exemple issu de la présentation d'Eric :
+
+![](mauviere.png)
+
+
+```{css}
+#title-block-header .description {
+    display: none;
+}
+```
+
+```{css}
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+```
