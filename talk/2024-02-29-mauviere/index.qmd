@@ -13,21 +13,16 @@ image: mauviere.png
 echo: false
 ---
 
+## Eric Mauvière, \"La dataviz pour donner du sens aux données et communiquer un message\"
 
-Replay de l'événement: 
-
-{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/video1991622347.mp4" controls="yes" >}}
-
-Slides présentées par Eric téléchargeables : 
-
-```{=html}
-<iframe width="780" height="500" src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf" title="Quarto Documentation"></iframe>
-```
-
+__29 février (15h - 16h)__
 
 ```{ojs}
 html`${slides_button}`
 ```
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/video1991622347.mp4" controls="yes" >}}
 
 
 ```{ojs}
@@ -43,35 +38,6 @@ slides_button = html`<p class="text-center">
 ```
 
 
-
-
 Un exemple issu de la présentation d'Eric :
 
 ![](mauviere.png)
-
-
-```{css}
-#title-block-header .description {
-    display: none;
-}
-```
-
-```{css}
-.embed-container {
-    position: relative;
-    padding-bottom: 129%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-```
