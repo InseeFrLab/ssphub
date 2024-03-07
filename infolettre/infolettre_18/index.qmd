@@ -1,0 +1,121 @@
+---
+title: Infolettre n°18
+description: |
+  Infolettre __Mars 2024__
+
+# Date published
+date: '2024-03-07'
+number: 18
+
+image: http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/hitchcock_robot.webp
+
+authors:
+  - Lino Galiana
+
+tags:
+  - infolettre
+
+categories:
+  - Infolettre
+---
+
+::: {#fig-news layout-ncol=2}
+
+![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/hitchcock_robot.webp)
+![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/cat.png)
+
+:::
+
+:::{.callout-tip}
+
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
+
+::: 
+
+Intro
+
+
+## "Le Chat" 🐱 : un concurrent à ChatGPT par Mistral AI
+
+Fin février, la _startup_ française Mistral AI a
+rendu public, en accès libre,
+une
+IA conversationnelle aux fonctionnalités similaires
+à `ChatGPT` nommée [_"Le Chat"_](https://mistral.ai/fr/news/le-chat-mistral/).
+
+Ce service utilise le grand modèle de langage (LLM) `Mistral Large`, dernier
+né des LLM multilangues entraînés par Mistral AI. 
+Contrairement à d'autres modèles de Mistral AI,
+celui-ci n'est pas ouvert ; l'accès à celui-ci n'est possible que
+par le biais des services de Mistral ou par le biais du _cloud_ 
+Microsoft Azure, suite à un partenariat entre l'entreprise américaine
+et la startup française. 
+
+
+Selon les évaluations réalisées fin février, avant la sortie de Claude 3 (voir plus bas), ce
+modèle présentait des performances supérieures à celles des modèles _open source_,
+notamment `LLaMa-2`, sur une série d'évaluations sur la véracité des réponses
+proposées par une IA et sur les capacités de raisonnement de celle-ci.
+
+<details>
+<summary>
+Classement des principaux modèles de langage lors de la sortie de `Mistral Large`
+</summary>
+![Performance des principaux LLM sur la métrique [MMLU](https://arxiv.org/abs/2009.03300), une série de 57 tests sur la fiabilité des réponses et les capacités de raisonnement des IA conversationnelles. Source: [Mistral AI](https://mistral.ai/fr/news/mistral-large/), fin février](https://mistral.ai/images/news/mistral-large/mistral-large-bar-plot.png)
+</details>
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- [https://chat.mistral.ai/](https://chat.mistral.ai/chat), l'IA conversationnelle
+proposée par Mistral AI ;
+- Le [_post_ de blog](https://mistral.ai/fr/news/mistral-large/) par Mistral AI annonçant `Mistral Large` ;
+- La [_newsletter_ d'Andrew Ng](https://info.deeplearning.ai/mistral-living-large-googles-open-source-challenger-robot-chemist-schooling-language-models-in-math-1) consacrée à Mistral Large ;
+- L'[article d'Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300) à l'origine de la métrique MMLU utilisée pour classer les modèles.
+:::
+
+
+## Claude 3 & Gemini
+
+Quelques jours seulement après la sortie de Mistral Large, un autre
+modèle de langage est venu concurrencer GPT-4, le modèle d'OpenAI. 
+Développé par Anthropic, une entreprise largement financée par Amazon
+et Google, ce modèle est le premier à obtenir des performances supérieures
+à GPT-4 sur les principaux tests de qualité des modèles.
+
+
+
+https://www.nytimes.com/2024/02/20/technology/anthropic-funding-ai.html
+https://www.lemondeinformatique.fr/actualites/lire-dans-la-guerre-des-llm-anthropic-degaine-ses-modeles-claude-3-93134.html
+https://www.lemonde.fr/pixels/article/2024/02/22/google-met-en-pause-la-creation-d-images-de-personnes-sur-gemini-son-outil-d-intelligence-artificielle-generative_6217918_4408996.html
+
+
+## Sora
+
+video -> text
+https://openai.com/sora
+partage auprès d'utilisateurs sélectionnés avant la mise à disposition publique
+travail sur les biais, la violence, deepfakes, etc.
+does not accurately model the physics of many basic interactions, like glass shattering. (cf. les mains à 8 dpogts de dallE)
+https://openai.com/research/video-generation-models-as-world-simulators
+
+https://www.lemonde.fr/videos/video/2024/02/18/openai-devoile-sora-un-outil-qui-transforme-les-textes-en-videos-ultrarealistes_6217183_1669088.html
+
+
+## Observable 2.0
+
+changement de modèle : notebook -> site statique
+de l'expérimentation à la mise en oeuvre réelle
+
+mélanger des langages de préparation de données puis site statique avec exécution en JS
+optique proche de quarto (transition événements)
+
+https://observablehq.com/framework/
+https://quarto.org/docs/interactive/ojs/
+
+
+# Actus du réseau
+
+Questionnaire besoin formation
+Annonce event Quarto
+Replay Mauvière
