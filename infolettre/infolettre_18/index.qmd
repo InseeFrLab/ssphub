@@ -34,8 +34,102 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 Intro
 
+## `Sora`, la nouvelle IA d'OpenAI pour générer des vidéos
 
-## "Le Chat" 🐱 : un concurrent à ChatGPT par Mistral AI
+<br>
+
+{{< video https://vp.nyt.com/video/2024/02/14/115628_1_15OPENAI-VIDEO-1_wg_720p.mp4 >}}
+_Source : [New York Times](https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html) d'après OpenAI._
+
+<details>
+<summary>
+Instruction utilisée pour générer cette vidéo
+</summary>
+_“Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.”_
+</details>
+
+<br>
+
+Après avoir révolutionné le champ de la génération d'image avec `DallE` (texte $\to$ image), 
+de la génération de textes avec `ChatGPT` (texte $\to$ texte), OpenAI a
+officialisé un 
+un modèle de génération de vidéos à partir d'instructions (texte $\to$ vidéo). Ce
+produit, nommé `Sora`, 
+génère des vidéos d'un réalisme qui n'avait encore jamais été atteint. Jusqu'à 
+présent, les modèles de ce type
+généraient des images dont les formes étaient grossières, la résolution
+d'une qualité faible et dont les mouvements étaient peu vraisemblables. 
+
+
+```{=html}
+<br>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8sw8om" width="100%" height="100%" allowfullscreen title="Dailymotion Video Player" > </iframe> </div>
+```
+_Source_ : [Le Monde](https://www.lemonde.fr/videos/video/2024/02/18/openai-devoile-sora-un-outil-qui-transforme-les-textes-en-videos-ultrarealistes_6217183_1669088.html)
+
+```{=html}
+<br>
+```
+
+`Sora` n'est pas directement mis à disposition du grand public,
+comme les autres services d'OpenAI. Ce produit n'est partagé qu'à 
+des utilisateurs identifiés par OpenAI comme
+pouvant représenter le public cible - des réalisateurs
+par exemple - ou
+ayant une expertise 
+sur des sujets comme la désinformation, les biais,
+la connaissance des algorithmes de recommandation, etc. Cette diffusion
+restreinte vise à recevoir des retours de la part 
+de potentiels clients ou d'experts sur les risques
+de ces technologies. La communication
+par le biais de quelques vidéos choisies par OpenAI permet, dans le même temps,
+de créer une attente du grand public avant la mise à disposition
+plus large. 
+
+Comme Dall-E, Midjourney et consorts
+qui généraient [trop de doigts](https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands),
+le modèle derrière Sora a encore des difficultés à respecter certaines
+règles élémentaires de vraisemblance. Par exemple, dans la vidéo ci-dessous,
+les événements liés à un bris de glace s'enchaînent dans un ordre incohérent. 
+
+
+{{< video https://cdn.openai.com/tmp/s/discussion_0.mp4 >}}
+_Source : [OpenAI](https://openai.com/research/video-generation-models-as-world-simulators)_
+
+
+OpenAI a déjà prévu de nombreuses [applications](https://openai.com/research/video-generation-models-as-world-simulators) 
+à ce modèle. Outre la génération de vidéos à partir d'instructions verbales, 
+`Sora` est capable d'animer une image, de compléter une vidéo déjà existante,
+d'éditer une vidéo déjà existante pour changer des éléments...
+Les secteurs de la communication, de la création et de la diffusion de contenu
+sont concernés au premier chef mais la richesse des fonctionnalités possibles et
+la simplicité d'usage des produits d'OpenAI laisse penser
+que les applications iront bien au-delà de ces secteurs économiques. 
+
+Ce modèle soulève, comme `Dall-E` ou `ChatGPT` avant lui, des enjeux de propriété intellectuelle
+puisque celui-ci aussi a été entraîné sur des corpus massifs collectés depuis internet.
+Le réalisme des vidéos générées
+peut également laisser craindre, sans _watermark_ claire, des dérives autour de
+la mésinformation, notamment des _deepfakes_, ou la prolifération
+de contenus choquants si les garde-fous dans la génération de contenus sont 
+outrepassés. 
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- La [présentation de `Sora`](https://openai.com/sora) sur le site d'OpenAI ;
+- Un [article](https://openai.com/research/video-generation-models-as-world-simulators) plus technique d'OpenAI
+sur les fonctionnalités de Sora ; 
+- Les [10mn de vidéos de présentation](https://www.youtube.com/watch?v=HK6y8DAPN_0) de `Sora` par OpenAI ;
+- Un [article](https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html) du _New York Times_ présentant `Sora`
+- Un [article](https://theconversation.com/openais-new-generative-tool-sora-could-revolutionize-marketing-and-content-creation-223806) sur le site _The Conversation_ sur les enjeux pour certains secteurs économiques. 
+:::
+
+
+
+
+## "`Le Chat`" : un concurrent à `ChatGPT` par Mistral AI 🐱
 
 Fin février, la _startup_ française Mistral AI a
 rendu public, en accès libre,
@@ -61,7 +155,7 @@ proposées par une IA et sur les capacités de raisonnement de celle-ci.
 <summary>
 Classement des principaux modèles de langage lors de la sortie de `Mistral Large`
 </summary>
-![Performance des principaux LLM sur la métrique [MMLU](https://arxiv.org/abs/2009.03300), une série de 57 tests sur la fiabilité des réponses et les capacités de raisonnement des IA conversationnelles. Source: [Mistral AI](https://mistral.ai/fr/news/mistral-large/), fin février](https://mistral.ai/images/news/mistral-large/mistral-large-bar-plot.png)
+![Performance des principaux LLM sur la métrique [MMLU](https://arxiv.org/abs/2009.03300), une série de 57 tests sur la fiabilité des réponses et les capacités de raisonnement des IA conversationnelles. Source : [Mistral AI](https://mistral.ai/fr/news/mistral-large/), fin février](https://mistral.ai/images/news/mistral-large/mistral-large-bar-plot.png)
 </details>
 
 ::: {.callout-note}
@@ -88,18 +182,6 @@ et Google, ce modèle est le premier à obtenir des performances supérieures
 https://www.nytimes.com/2024/02/20/technology/anthropic-funding-ai.html
 https://www.lemondeinformatique.fr/actualites/lire-dans-la-guerre-des-llm-anthropic-degaine-ses-modeles-claude-3-93134.html
 https://www.lemonde.fr/pixels/article/2024/02/22/google-met-en-pause-la-creation-d-images-de-personnes-sur-gemini-son-outil-d-intelligence-artificielle-generative_6217918_4408996.html
-
-
-## Sora
-
-video -> text
-https://openai.com/sora
-partage auprès d'utilisateurs sélectionnés avant la mise à disposition publique
-travail sur les biais, la violence, deepfakes, etc.
-does not accurately model the physics of many basic interactions, like glass shattering. (cf. les mains à 8 dpogts de dallE)
-https://openai.com/research/video-generation-models-as-world-simulators
-
-https://www.lemonde.fr/videos/video/2024/02/18/openai-devoile-sora-un-outil-qui-transforme-les-textes-en-videos-ultrarealistes_6217183_1669088.html
 
 
 ## Observable 2.0
