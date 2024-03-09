@@ -151,6 +151,8 @@ modèle présentait des performances supérieures à celles des modèles _open s
 notamment `LLaMa-2`, sur une série d'évaluations sur la véracité des réponses
 proposées par une IA et sur les capacités de raisonnement de celle-ci.
 
+![Exemple de questions de niveau licence posées pour évaluer la qualité d'un modèle selon la métrique MMLU proposée par Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300)](MMLU_examples.png)
+
 <details>
 <summary>
 Classement des principaux modèles de langage lors de la sortie de `Mistral Large`
@@ -173,16 +175,60 @@ proposée par Mistral AI ;
 
 Quelques jours seulement après la sortie de Mistral Large, un autre
 modèle de langage est venu concurrencer GPT-4, le modèle d'OpenAI. 
-Développé par Anthropic, une entreprise largement financée par Amazon
-et Google, ce modèle est le premier à obtenir des performances supérieures
-à GPT-4 sur les principaux tests de qualité des modèles.
+Ce modèle nommé `Claude 3` est le premier
+à obtenir des performances supérieures
+à `GPT-4` (le modèle derrière la version Pro de `ChatGPT`)
+sur les principaux tests de qualité des modèles.
+Ce modèle, disponible en trois versions plus ou moins
+puissantes (Haiku, Sonnet et Opus)
+n'est pas encore disponible pour les utilisateurs
+dans l'Union Européenne. 
+
+<details>
+<summary>
+Les trois modèles `Claude-3` disponibles
+</summary>
+![Source: [Anthropic](https://www.anthropic.com/news/claude-3-family)](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F5d20371eeb8d045465bb22cacfd269b5958b004d-2200x1174.png&w=3840&q=75)
+</details>
+
+<details>
+<summary>
+Comparaison des performances des LLM</summary>
+![Figure construite avec _DataWrapper_ à partir des données fournies par [Anthropic](https://www.anthropic.com/news/claude-3-family)](eval_llm_generales.png)
+![Figure construite avec _DataWrapper_ à partir des données fournies par [Anthropic](https://www.anthropic.com/news/claude-3-family)](eval_llm_math.png)
+</details>
 
 
+Les modèles `Claude` sont développés par l'entreprise Anthropic, créée
+par des anciens employés d'OpenAI considérant que 
+la problématique de la [sécurité des IA](https://fr.wikipedia.org/wiki/S%C3%BBret%C3%A9_des_intelligences_artificielles)
+n'était pas assez mise en avant par OpenAI. 
+Valorisée autour de 18 milliards d'euros en ce début d'année 2024,
+elle a bénéficié de financements importants
+d'Amazon et de Google, ces deux entreprises ayant investi
+respectivement 4 et 2 milliards de dollars. 
+Les modèles `Claude` sont disponibles pour les utilisateurs
+des _cloud_ d'Amazon (AWS) ou de _Google_ (GCP) à l'instar
+des modèles GPT disponibles aux utilisateurs du _cloud_
+de Microsoft (Azure). La concurrence entre
+OpenAI et Anthropic est ainsi l'occasion d'un
+affrontement entre les trois principaux acteurs du _cloud_. 
+Au-delà de la question des investisseurs, le
+modèle économique d'Anthropic diffère de celui d'OpenAI. 
+Anthropic vise plutôt à proposer des services à des entreprises
+accessibles par le biais d'API 
+là où OpenAI propose plutôt des outils grands publics avec
+des fonctionnalités supplémentaires pour les acteurs spécialisés. 
+Parmi les partenaires principaux d'Anthropic, on retrouve
+Gitlab, Quora ou Salesforce (l'éditeur de logiciel derrière Slack).
 
-https://www.nytimes.com/2024/02/20/technology/anthropic-funding-ai.html
-https://www.lemondeinformatique.fr/actualites/lire-dans-la-guerre-des-llm-anthropic-degaine-ses-modeles-claude-3-93134.html
-https://www.lemonde.fr/pixels/article/2024/02/22/google-met-en-pause-la-creation-d-images-de-personnes-sur-gemini-son-outil-d-intelligence-artificielle-generative_6217918_4408996.html
+::: {.callout-note}
+## Pour en savoir plus
 
+- L'[annonce de Claude 3](https://www.anthropic.com/news/claude-3-family) par Anthropic ;
+- Un [article](https://www.nytimes.com/2024/02/20/technology/anthropic-funding-ai.html) sur Anthropic par le _New York Times_
+et [un autre](https://www.forbes.com/sites/alexkonrad/2024/03/04/anthropic-releases-claude-3-claims-beat-openai/) par Forbes.
+:::
 
 ## Observable 2.0
 
