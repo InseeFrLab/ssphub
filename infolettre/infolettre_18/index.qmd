@@ -19,12 +19,8 @@ categories:
   - Infolettre
 ---
 
-::: {#fig-news layout-ncol=2}
+![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/infolettre18.png)
 
-![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/hitchcock_robot.webp)
-![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/cat.png)
-
-:::
 
 :::{.callout-tip}
 
@@ -32,7 +28,16 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 ::: 
 
-Intro
+Ce mois-ci, la première partie de
+la _newsletter_ est consacrée
+à l'actualité dense dans le domaine des
+IA génératives, 
+à l'annonce d'un nouveau générateur
+de site web pour les _data scientists_.
+Suivent ensuite les actualités du réseau et
+le replay de la présentation d'Eric Mauvière
+sur le sujet des bonnes pratiques de _dataviz_.  
+
 
 ## `Sora`, la nouvelle IA d'OpenAI pour générer des vidéos
 
@@ -43,7 +48,7 @@ _Source : [New York Times](https://www.nytimes.com/2024/02/15/technology/openai-
 
 <details>
 <summary>
-Instruction utilisée pour générer cette vidéo
+Instruction utilisée par OpenAI pour générer cette vidéo
 </summary>
 _“Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.”_
 </details>
@@ -52,10 +57,10 @@ _“Animated scene features a close-up of a short fluffy monster kneeling beside
 
 Après avoir révolutionné le champ de la génération d'image avec `DallE` (texte $\to$ image), 
 de la génération de textes avec `ChatGPT` (texte $\to$ texte), OpenAI a
-officialisé un 
-un modèle de génération de vidéos à partir d'instructions (texte $\to$ vidéo). Ce
+rendu public les premières productions d'un
+modèle de génération de vidéos à partir d'instructions (texte $\to$ vidéo). Ce
 produit, nommé `Sora`, 
-génère des vidéos d'un réalisme qui n'avait encore jamais été atteint. Jusqu'à 
+génère des vidéos d'un réalisme qui n'avait encore jamais été atteint par les IA génératrices de vidéos. Jusqu'à 
 présent, les modèles de ce type
 généraient des images dont les formes étaient grossières, la résolution
 d'une qualité faible et dont les mouvements étaient peu vraisemblables. 
@@ -86,9 +91,9 @@ par le biais de quelques vidéos choisies par OpenAI permet, dans le même temps
 de créer une attente du grand public avant la mise à disposition
 plus large. 
 
-Comme Dall-E, Midjourney et consorts
+Comme `Dall-E`, `Midjourney` et consorts
 qui généraient [trop de doigts](https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands),
-le modèle derrière Sora a encore des difficultés à respecter certaines
+le réseau de neurone derrière `Sora` a encore des difficultés à respecter certaines
 règles élémentaires de vraisemblance. Par exemple, dans la vidéo ci-dessous,
 les événements liés à un bris de glace s'enchaînent dans un ordre incohérent. 
 
@@ -97,14 +102,14 @@ les événements liés à un bris de glace s'enchaînent dans un ordre incohére
 _Source : [OpenAI](https://openai.com/research/video-generation-models-as-world-simulators)_
 
 
-OpenAI a déjà prévu de nombreuses [applications](https://openai.com/research/video-generation-models-as-world-simulators) 
+OpenAI a déjà prévu de [nombreuses applications](https://openai.com/research/video-generation-models-as-world-simulators) 
 à ce modèle. Outre la génération de vidéos à partir d'instructions verbales, 
-`Sora` est capable d'animer une image, de compléter une vidéo déjà existante,
+`Sora` est capable d'animer une image, de compléter une vidéo déjà existante avec une vidéo fictionnelle,
 d'éditer une vidéo déjà existante pour changer des éléments...
 Les secteurs de la communication, de la création et de la diffusion de contenu
 sont concernés au premier chef mais la richesse des fonctionnalités possibles et
 la simplicité d'usage des produits d'OpenAI laisse penser
-que les applications iront bien au-delà de ces secteurs économiques. 
+que les applications iront bien au-delà de ces secteurs économiques puisque la vidéo occupe une place prédominante dans la diffusion d'information sur internet. 
 
 Ce modèle soulève, comme `Dall-E` ou `ChatGPT` avant lui, des enjeux de propriété intellectuelle
 puisque celui-ci aussi a été entraîné sur des corpus massifs collectés depuis internet.
@@ -146,12 +151,11 @@ Microsoft Azure, suite à un partenariat entre l'entreprise américaine
 et la startup française. 
 
 
-Selon les évaluations réalisées fin février, avant la sortie de Claude 3 (voir plus bas), ce
+Selon les évaluations réalisées fin février, avant la sortie de Claude 3 (voir plus bas 👇️), ce
 modèle présentait des performances supérieures à celles des modèles _open source_,
 notamment `LLaMa-2`, sur une série d'évaluations sur la véracité des réponses
-proposées par une IA et sur les capacités de raisonnement de celle-ci.
-
-![Exemple de questions de niveau licence posées pour évaluer la qualité d'un modèle selon la métrique MMLU proposée par Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300)](MMLU_examples.png)
+proposées par une IA et sur les capacités de raisonnement de celle-ci. Sur des questions d'un niveau de premier cycle universitaire (métrique MMLU proposée par  [Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300), Mistral Large propose la bonne réponse dans 81% des cas, ce qui l'amène presque au niveau de GPT-4 (86%) et bien au-dessus de Llama-2 (70%), le 
+meilleur modèle _opensource_ à l'heure actuelle.
 
 <details>
 <summary>
@@ -159,6 +163,10 @@ Classement des principaux modèles de langage lors de la sortie de `Mistral Larg
 </summary>
 ![Performance des principaux LLM sur la métrique [MMLU](https://arxiv.org/abs/2009.03300), une série de 57 tests sur la fiabilité des réponses et les capacités de raisonnement des IA conversationnelles. Source : [Mistral AI](https://mistral.ai/fr/news/mistral-large/), fin février](https://mistral.ai/images/news/mistral-large/mistral-large-bar-plot.png)
 </details>
+
+
+![Exemple de questions de niveau licence posées pour évaluer la qualité d'un modèle selon la métrique MMLU proposée par [Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300)](MMLU_examples.png)
+
 
 ::: {.callout-note}
 ## Pour en savoir plus
@@ -171,7 +179,7 @@ proposée par Mistral AI ;
 :::
 
 
-## Claude 3 & Gemini
+## Les performances de GPT-4 dépassées pour la première fois 
 
 Quelques jours seulement après la sortie de Mistral Large, un autre
 modèle de langage est venu concurrencer GPT-4, le modèle d'OpenAI. 
@@ -180,7 +188,7 @@ Ce modèle nommé `Claude 3` est le premier
 à `GPT-4` (le modèle derrière la version Pro de `ChatGPT`)
 sur les principaux tests de qualité des modèles.
 Ce modèle, disponible en trois versions plus ou moins
-puissantes (Haiku, Sonnet et Opus)
+puissantes (Haiku, Sonnet et Opus),
 n'est pas encore disponible pour les utilisateurs
 dans l'Union Européenne. 
 
@@ -213,14 +221,16 @@ des modèles GPT disponibles aux utilisateurs du _cloud_
 de Microsoft (Azure). La concurrence entre
 OpenAI et Anthropic est ainsi l'occasion d'un
 affrontement entre les trois principaux acteurs du _cloud_. 
-Au-delà de la question des investisseurs, le
-modèle économique d'Anthropic diffère de celui d'OpenAI. 
+Au-delà de la concurrence entre 
+leurs investisseurs, les
+modèles économiques d'Anthropic
+et d'OpenAI diffèrent. 
 Anthropic vise plutôt à proposer des services à des entreprises
 accessibles par le biais d'API 
 là où OpenAI propose plutôt des outils grands publics avec
 des fonctionnalités supplémentaires pour les acteurs spécialisés. 
 Parmi les partenaires principaux d'Anthropic, on retrouve
-Gitlab, Quora ou Salesforce (l'éditeur de logiciel derrière Slack).
+Gitlab, Quora ou Salesforce (l'éditeur de logiciel derrière Slack). A l'instar des modèles Mistral Large ou GPT-4, le modèle Claude 3 n'est pas _open source_. 
 
 ::: {.callout-note}
 ## Pour en savoir plus
@@ -234,15 +244,15 @@ et [un autre](https://www.forbes.com/sites/alexkonrad/2024/03/04/anthropic-relea
 ## `Observable` propose un constructeur de sites statiques, pour s'abstraire des _notebooks_
 
 Afin de démocratiser l'utilisation de `Javascript`
-au-delà des cercles des développeurs _web_, Mike
+au-delà du cercle des développeurs _web_, Mike
 Bostock, ancien responsable des _dataviz_ du _New York Times_, la
 référence en la matière, a créé il y a quelques années
-`Observable`. En plus de proposer une extension du langage
+`Observable`. En plus d'être une extension du langage
 `Javascript` à la grammaire familière aux connaisseurs de 
 `Python` et `R`, `Observable` vise à créer une communauté
 d'utilisateurs de `Javascript`
 à l'interface entre _data scientists_ et développeurs _web_. 
-Pour cela, le site [observablehq.com](observablehq.com/)
+Pour cela, le site [observablehq.com](https://observablehq.com/)
 se propose d'être un réseau social de _notebooks_ 
 en `Javascript`, un peu comme `Github` faisant office de réseau
 social du code.
@@ -250,8 +260,8 @@ Les notebooks _Observable_ permettent
 de rapidement prendre en main du code `Javascript` pour créer
 des analyses de données interactives qui peuvent ensuite
 être facilement partagées par le biais du site
-[observablehq](observablehq.com/) pour simplifier les réutilisations
-des données ou des figures construites. 
+[observablehq.com](https://observablehq.com/) pour simplifier les réutilisations sur d'autres
+_notebooks_ du code proposé ou des données sous-jacentes. 
 
 Cependant, si les _notebooks_ sont un terrain fertile pour l'expérimentation,
 ils montrent rapidement leurs limites dès qu'on désire s'abstraire
@@ -282,17 +292,17 @@ est déjà en train de le faire. Le site [observablehq.com](observablehq.com/)
 ne va pas pour autant disparaître: celui-ci restera un lieu où on peut
 tirer avantage de la simplicité des _notebooks_ pour l'expérimentation
 ou pour la mise à disposition de tutoriels pédagogiques. 
-Ce virage correspond bien à celui pris, depuis quelques années, par `Python`
+Ce virage est similaire à celui pris, depuis quelques années, par `Python`
 dans la communauté des _data scientists_
 où les _notebooks_, après avoir eu une phase d'hégémonie, sont revenus à leur
-fonction initiale: des carnets pour gribouiller de manière expérimentale
-ou de belles pages pour présenter une démarche, en fin de projet. 
+fonction initiale: des carnets pour expérimenter avant de passer à des scripts standards 
+ou alors de belles pages pour présenter une démarche de manière pédagogique. 
 
 
 ::: {.callout-note}
 ## Pour en savoir plus
 
-- L'annonce d'[`Observable Framework`](https://observablehq.com/framework/)
+- L'annonce d'[`Observable Framework`](https://observablehq.com/framework/) ;
 - L'[interactivité dans `Quarto`](https://quarto.org/docs/interactive/ojs/) grâce aux cellules `Observable`
 - Cours de mise en prod ?
 :::
