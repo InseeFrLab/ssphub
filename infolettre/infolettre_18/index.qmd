@@ -230,20 +230,71 @@ Gitlab, Quora ou Salesforce (l'éditeur de logiciel derrière Slack).
 et [un autre](https://www.forbes.com/sites/alexkonrad/2024/03/04/anthropic-releases-claude-3-claims-beat-openai/) par Forbes.
 :::
 
-## Observable 2.0
 
-changement de modèle : notebook -> site statique
-de l'expérimentation à la mise en oeuvre réelle
+## `Observable` propose un constructeur de sites statiques, pour s'abstraire des _notebooks_
 
-mélanger des langages de préparation de données puis site statique avec exécution en JS
-optique proche de quarto (transition événements)
+Afin de démocratiser l'utilisation de `Javascript`
+au-delà des cercles des développeurs _web_, Mike
+Bostock, ancien responsable des _dataviz_ du _New York Times_, la
+référence en la matière, a créé il y a quelques années
+`Observable`. En plus de proposer une extension du langage
+`Javascript` à la grammaire familière aux connaisseurs de 
+`Python` et `R`, `Observable` vise à créer une communauté
+d'utilisateurs de `Javascript`
+à l'interface entre _data scientists_ et développeurs _web_. 
+Pour cela, le site [observablehq.com](observablehq.com/)
+se propose d'être un réseau social de _notebooks_ 
+en `Javascript`, un peu comme `Github` faisant office de réseau
+social du code.
+Les notebooks _Observable_ permettent 
+de rapidement prendre en main du code `Javascript` pour créer
+des analyses de données interactives qui peuvent ensuite
+être facilement partagées par le biais du site
+[observablehq](observablehq.com/) pour simplifier les réutilisations
+des données ou des figures construites. 
 
-https://observablehq.com/framework/
-https://quarto.org/docs/interactive/ojs/
+Cependant, si les _notebooks_ sont un terrain fertile pour l'expérimentation,
+ils montrent rapidement leurs limites dès qu'on désire s'abstraire
+de l'hébergement sur [observablehq.com](observablehq.com/). Pour 
+mettre à disposition des visualisations interactives sur d'autres sites, 
+les sites statiques sont plus simples d'usage. Historiquement,
+l'écosystème Javascript est construit autour d'imposants _frameworks_ 
+comme [`React`](https://fr.legacy.reactjs.org/), bien connus des développeurs web mais méconnus des
+_data scientists_ qui sont néanmoins amenés à livrer de plus en plus 
+d'applications interactives pour valoriser des données. 
 
+L'annonce d'[`Observable Framework`](https://observablehq.com/blog/observable-2-0), un constructeur de sites statiques,
+représente un changement d'approche. `Observable Framework` vise à être un _framework_ 
+permettant aux _data scientists_ de construire des sites web 
+en mélangeant des étapes de préparation de données en `R`, `Python` ou `SQL` (via `DuckDB`)
+et du formattage de texte en `Markdown`. L'approche est ainsi similaire à celle
+de `Quarto`, la référence pour les _data scientists_ désirant construire des
+publications reproductibles.
+
+Les évolutions à venir d'`Observable Framework` sont donc
+à surveiller, cet écosystème pouvant être amené, s'il rencontre du succès,
+à rentrer dans la boîte à outil standard des _data scientists_ comme `Quarto`
+est déjà en train de le faire. Le site [observablehq.com](observablehq.com/)
+ne va pas pour autant disparaître: celui-ci restera un lieu où on peut
+tirer avantage de la simplicité des _notebooks_ pour l'expérimentation
+ou pour la mise à disposition de tutoriels pédagogiques. 
+Ce virage correspond bien à celui pris, depuis quelques années, par `Python`
+dans la communauté des _data scientists_
+où les _notebooks_, après avoir eu une phase d'hégémonie, sont revenus à leur
+fonction initiale: des carnets pour gribouiller de manière expérimentale
+ou de belles pages pour présenter une démarche, en fin de projet. 
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- L'annonce d'[`Observable Framework`](https://observablehq.com/framework/)
+- L'[interactivité dans `Quarto`](https://quarto.org/docs/interactive/ojs/) grâce aux cellules `Observable`
+- Cours de mise en prod ?
+:::
 
 # Actus du réseau
 
-Questionnaire besoin formation
 Annonce event Quarto
+Questionnaire besoin formation
 Replay Mauvière
