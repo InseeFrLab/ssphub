@@ -266,10 +266,14 @@ d'applications interactives pour valoriser des données.
 L'annonce d'[`Observable Framework`](https://observablehq.com/blog/observable-2-0), un constructeur de sites statiques,
 représente un changement d'approche. `Observable Framework` vise à être un _framework_ 
 permettant aux _data scientists_ de construire des sites web 
-en mélangeant des étapes de préparation de données en `R`, `Python` ou `SQL` (via `DuckDB`)
-et du formattage de texte en `Markdown`. L'approche est ainsi similaire à celle
+en mélangeant des étapes de préparation de données en `R`, `Python` ou `SQL` (via `DuckDB`),
+du formattage de texte en `Markdown` et de l'interactivité grâce au langage
+`Observable`. L'approche est ainsi similaire à celle
 de `Quarto`, la référence pour les _data scientists_ désirant construire des
-publications reproductibles.
+publications reproductibles. Ce dernier écosystème permet déjà 
+depuis quelques temps de compléter du travail de données en `R` ou `Python`
+avec des traitements en `Observable` pour obtenir un site web interactif
+sans besoin de solutions techniques complexes comme `Shiny` ou `Streamlit`.
 
 Les évolutions à venir d'`Observable Framework` sont donc
 à surveiller, cet écosystème pouvant être amené, s'il rencontre du succès,
