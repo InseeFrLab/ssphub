@@ -311,9 +311,29 @@ ou alors de belles pages pour présenter une démarche de manière pédagogique.
 
 ##  Chistophe Dervieux, "`Quarto`: Une évolution de `R Markdown` pour des travaux statistiques reproductibles"
 
-Le __23 avril de 15h à 16h__, Christophe Dervieux (Posit) nous présentera `Quarto`, l'écosystème de publications reproductibles qui succède à `R Markdown`.
+Pour fiabiliser la production de documents construits en
+valorisant
+des données (tableaux, graphiques, etc.), `RStudio` (devenu `Posit` depuis) 
+a construit il y a quelques années l'écosystème `R Markdown`
+permettant de produire du document en mélangeant 
+code et texte.
 
-Comme pour l'événement dataviz avec Eric Mauvière (replay dispo 👆️), vous pourrez suivre la retransmission par le biais de Zoom ou venir en salle 4-C-458 si vous êtes à la DG.
+Cette problématique des publications reproductibles est
+devenue incontournable dans l'écosystème `R` et
+est dorénavant largement utilisé. Pour étendre
+les vertus de cette approche à d'autres langages, 
+Posit a commencé à développer `Quarto`, un écosystème
+reprenant le principe de `R Markdown` mais étendant 
+ces fonctionnalités à d'autres langages de programmation,
+notamment `Python` et `Observable`. 
+
+Le __23 avril de 15h à 16h__,
+Christophe Dervieux (Posit) nous présentera `Quarto`,
+l'écosystème de publications reproductibles qui succède à RMarkdown.
+Cet événement est proposé de manière hybride: par
+le biais de Zoom ou, pour les agents en poste 
+à la Direction Générale de l'Insee, en salle 4-C-458.
+
 
 ## Vos besoins de formation
 
