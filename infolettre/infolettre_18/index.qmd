@@ -145,7 +145,7 @@ IA conversationnelle aux fonctionnalités similaires
 Ce service utilise le grand modèle de langage (LLM) `Mistral Large`, dernier
 né des LLM multilangues entraînés par Mistral AI. 
 Contrairement à d'autres modèles de Mistral AI,
-celui-ci n'est pas ouvert ; l'accès à celui-ci n'est possible que
+celui-ci n'est pas ouvert ; l'accès n'y est possible que
 par le biais des services de Mistral ou par le biais du _cloud_ 
 Microsoft Azure, suite à un partenariat entre l'entreprise américaine
 et la startup française. 
