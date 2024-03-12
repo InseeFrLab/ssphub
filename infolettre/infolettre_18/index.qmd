@@ -309,6 +309,74 @@ ou alors de belles pages pour présenter une démarche de manière pédagogique.
 
 # Actus du réseau
 
-Annonce event Quarto
-Questionnaire besoin formation
-Replay Mauvière
+##  Chistophe Dervieux, "`Quarto`: Une évolution de `R Markdown` pour des travaux statistiques reproductibles"
+
+Pour fiabiliser la production de documents construits en
+valorisant
+des données (tableaux, graphiques, etc.), `RStudio` (devenu `Posit` depuis) 
+a construit il y a quelques années l'écosystème `R Markdown`
+permettant de produire du document en mélangeant 
+code et texte.
+
+Cette problématique des publications reproductibles est
+devenue incontournable dans l'écosystème `R` et
+est dorénavant largement utilisé. Pour étendre
+les vertus de cette approche à d'autres langages, 
+Posit a commencé à développer `Quarto`, un écosystème
+reprenant le principe de `R Markdown` mais étendant 
+ces fonctionnalités à d'autres langages de programmation,
+notamment `Python` et `Observable`. 
+
+Le __23 avril de 15h à 16h__,
+Christophe Dervieux (Posit) nous présentera `Quarto`,
+l'écosystème de publications reproductibles qui succède à RMarkdown.
+Cet événement est proposé de manière hybride: par
+le biais de Zoom ou, pour les agents en poste 
+à la Direction Générale de l'Insee, en salle 4-C-458.
+
+
+## Vos besoins de formation
+
+L'an dernier, nous avions organisé un questionnaire
+pour connaître les besoins de formations des membres
+réseaux. 
+Ce questionnaire est utile pour mieux cibler les besoins et les centres d'intérêt pour organiser des événements dans le cadre du réseau.
+
+Afin de connaître les besoins et centre d'intérêt en cette année 2024,
+nous vous proposons un nouveau questionnaire. Celui-ci est
+également l'occasion d'accueillir vos retours sur les
+_masterclass_ menées en 2023 en collaboration avec _Datascientest_. 
+
+- [👉️ Questionnaire](https://framaforms.org/besoin-de-formations-en-data-science-en-2024-1709718778)
+
+
+## Replay de la présentation d'Eric Mauvière "La dataviz pour donner du sens aux données et communiquer un message" 
+
+La présentation d'Eric Mauvière sur les bonnes pratiques
+de _dataviz_ a rencontré un réel succès avec près de 150 
+participants. 
+
+
+![](/talk/2024-02-29-mauviere/mauviere.png)
+
+
+```{ojs}
+html`${slides_button}`
+```
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/video1991622347.mp4" controls="yes" >}}
+
+
+```{ojs}
+slides = "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf"
+```
+
+```{ojs}
+slides_button = html`<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
+  </a>
+</p>`
+```
+
