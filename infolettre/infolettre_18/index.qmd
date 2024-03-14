@@ -17,6 +17,8 @@ tags:
 
 categories:
   - Infolettre
+
+bibliography: references.bib
 ---
 
 ![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/infolettre18.png)
@@ -93,7 +95,7 @@ plus large.
 
 Comme `Dall-E`, `Midjourney` et consorts
 qui généraient des mains avec [trop de doigts](https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands),
-le réseau de neurone derrière `Sora` a encore des difficultés à respecter certaines
+le réseau de neurones derrière `Sora` a encore des difficultés à respecter certaines
 règles élémentaires de vraisemblance. Par exemple, dans la vidéo ci-dessous,
 les événements liés à un bris de verre s'enchaînent dans un ordre incohérent. 
 
@@ -117,7 +119,7 @@ Le réalisme des vidéos générées
 peut également laisser craindre, sans marque d'identification claire du fait que la vidéo
 est générée numériquement (principe du [_watermark_](https://fr.wikipedia.org/wiki/Tatouage_num%C3%A9rique)),
 des dérives autour de
-la mésinformation, notamment des vidéos malveillantes et réalistes de personnes dans des situations inventées (des _deepfakes_),
+la mésinformation, notamment des vidéos malveillantes et réalistes de personnes dans des situations inventées (des _deepfakes_)
 ou la prolifération
 de contenus choquants si les garde-fous dans la génération de contenus sont 
 outrepassés. 
@@ -158,7 +160,7 @@ et la startup française (tarification en fonction du volume de requêtes).
 Selon les évaluations réalisées fin février, avant la sortie de Claude 3 (voir plus bas 👇️), ce
 modèle présentait des performances supérieures à celles des modèles _open source_,
 notamment `LLaMa-2`, sur une série d'évaluations sur la véracité des réponses
-proposées par une IA et sur les capacités de raisonnement de celle-ci. Sur des questions d'un niveau de premier cycle universitaire (métrique MMLU proposée par  [Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300), Mistral Large propose la bonne réponse dans 81% des cas, ce qui l'amène presque au niveau de GPT-4 (86%) et bien au-dessus de Llama-2 (70%), le 
+proposées par une IA et sur les capacités de raisonnement de celle-ci. Sur des questions d'un niveau de premier cycle universitaire (métrique MMLU proposée par @hendrycks2021measuring), Mistral Large propose la bonne réponse dans 81% des cas, ce qui l'amène presque au niveau de GPT-4 (86%) et bien au-dessus de Llama-2 (70%), le 
 meilleur modèle _opensource_ à l'heure actuelle.
 
 <details>
@@ -169,7 +171,7 @@ Classement des principaux modèles de langage lors de la sortie de `Mistral Larg
 </details>
 
 
-![Exemple de questions de niveau licence posées pour évaluer la qualité d'un modèle selon la métrique MMLU proposée par [Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300)](MMLU_examples.png)
+![Exemple de questions de niveau licence posées pour évaluer la qualité d'un modèle selon la métrique MMLU proposée par @hendrycks2021measuring ([accéder à l'article de recherche](https://arxiv.org/abs/2009.03300))](MMLU_examples.png)
 
 
 ::: {.callout-note}
@@ -179,20 +181,20 @@ Classement des principaux modèles de langage lors de la sortie de `Mistral Larg
 proposée par Mistral AI ;
 - Le [_post_ de blog](https://mistral.ai/fr/news/mistral-large/) par Mistral AI annonçant `Mistral Large` ;
 - La [_newsletter_ d'Andrew Ng](https://info.deeplearning.ai/mistral-living-large-googles-open-source-challenger-robot-chemist-schooling-language-models-in-math-1) consacrée à Mistral Large ;
-- L'[article d'Hendrycks et al. (2020)](https://arxiv.org/abs/2009.03300) à l'origine de la métrique MMLU utilisée pour classer les modèles.
+- L'[article d'Hendrycks et al. (2021)](https://arxiv.org/abs/2009.03300) à l'origine de la métrique MMLU utilisée pour classer les modèles.
 :::
 
 
 ## Les performances de GPT-4 dépassées pour la première fois 
 
 Quelques jours seulement après la sortie de Mistral Large, un autre
-modèle de langage est venu concurrencer GPT-4, le modèle d'OpenAI. 
+modèle de langage est venu concurrencer `GPT-4`, le modèle d'OpenAI. 
 Ce modèle nommé `Claude 3` est le premier
 à obtenir des performances supérieures
 à `GPT-4` (le modèle derrière la version Pro de `ChatGPT`)
 sur les principaux tests de qualité des modèles.
 Ce modèle, disponible en trois versions plus ou moins
-puissantes (Haiku, Sonnet et Opus),
+puissantes (_Haiku_, _Sonnet_ et _Opus_),
 n'est pas encore disponible pour les utilisateurs
 résidant dans l'Union Européenne. 
 
@@ -200,12 +202,13 @@ résidant dans l'Union Européenne.
 <summary>
 Les trois modèles `Claude-3` disponibles
 </summary>
-![Source: [Anthropic](https://www.anthropic.com/news/claude-3-family)](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F5d20371eeb8d045465bb22cacfd269b5958b004d-2200x1174.png&w=3840&q=75)
+![Source : [Anthropic](https://www.anthropic.com/news/claude-3-family)](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F5d20371eeb8d045465bb22cacfd269b5958b004d-2200x1174.png&w=3840&q=75)
 </details>
 
 <details>
 <summary>
-Comparaison des performances des LLM</summary>
+Comparaison des performances des LLM
+</summary>
 ![Figure construite avec _DataWrapper_ à partir des données fournies par [Anthropic](https://www.anthropic.com/news/claude-3-family)](eval_llm_generales.png)
 ![Figure construite avec _DataWrapper_ à partir des données fournies par [Anthropic](https://www.anthropic.com/news/claude-3-family)](eval_llm_math.png)
 </details>
@@ -264,8 +267,8 @@ Les notebooks _Observable_ permettent
 de rapidement prendre en main du code `Javascript` pour créer
 des analyses de données interactives qui peuvent ensuite
 être facilement partagées par le biais du site
-[observablehq.com](https://observablehq.com/) pour simplifier les réutilisations sur d'autres
-_notebooks_ du code proposé ou des données sous-jacentes. 
+[observablehq.com](https://observablehq.com/) pour simplifier les réutilisations 
+du code proposé ou des données sous-jacentes. 
 
 Cependant, si les _notebooks_ sont un terrain fertile pour l'expérimentation,
 ils montrent rapidement leurs limites dès qu'on désire s'abstraire
@@ -284,7 +287,8 @@ en mélangeant des étapes de préparation de données en `R`, `Python` ou `SQL`
 du formattage de texte en `Markdown` et de l'interactivité grâce au langage
 `Observable`. L'approche est ainsi similaire à celle
 de `Quarto`, la référence pour les _data scientists_ désirant construire des
-publications reproductibles. Ce dernier écosystème permet déjà 
+publications reproductibles (voir la section événements 👇️ pour en apprendre plus ). Ce
+dernier écosystème permet déjà 
 depuis quelques temps de compléter du travail de données en `R` ou `Python`
 avec des traitements en `Observable` pour obtenir un site web interactif
 sans besoin de solutions techniques complexes comme `Shiny` ou `Streamlit`.
@@ -293,49 +297,51 @@ Les évolutions à venir d'`Observable Framework` sont donc
 à surveiller, cet écosystème pouvant être amené, s'il rencontre du succès,
 à rentrer dans la boîte à outil standard des _data scientists_ comme `Quarto`
 est déjà en train de le faire. Le site [observablehq.com](observablehq.com/)
-ne va pas pour autant disparaître: celui-ci restera un lieu où on peut
+ne va pas pour autant disparaître : celui-ci restera un lieu où on peut
 tirer avantage de la simplicité des _notebooks_ pour l'expérimentation
 ou pour la mise à disposition de tutoriels pédagogiques. 
-Ce virage est similaire à celui pris, depuis quelques années, par `Python`
+Ce virage est similaire à celui pris par `Python`
 dans la communauté des _data scientists_
-où les _notebooks_, après avoir eu une phase d'hégémonie, sont revenus à leur
-fonction initiale: des carnets pour expérimenter avant de passer à des scripts standards 
-ou alors de belles pages pour présenter une démarche de manière pédagogique. 
+où les _notebooks_, après avoir connu une phase hégémonique, sont revenus à leur
+fonction initiale : des carnets pour expérimenter servant de brouillon avant l'écriture de
+scripts ou alors de belles pages, mélant texte et code, 
+pour présenter une démarche de manière pédagogique. 
 
 
 ::: {.callout-note}
 ## Pour en savoir plus
 
 - L'annonce d'[`Observable Framework`](https://observablehq.com/framework/) ;
-- L'[interactivité dans `Quarto`](https://quarto.org/docs/interactive/ojs/) grâce aux cellules `Observable`
-- Cours de mise en prod ?
+- L'[interactivité dans `Quarto`](https://quarto.org/docs/interactive/ojs/) grâce aux cellules `Observable` ;
+- Le [cours de "Mise en production de projets data science"](https://ensae-reproductibilite.github.io/website/)
+de l'ENSAE où les enjeux techniques et humains de la mise à disposition de tels sites sont évoqués.
 :::
 
 # Actus du réseau
 
-##  Chistophe Dervieux, "`Quarto`: Une évolution de `R Markdown` pour des travaux statistiques reproductibles"
+##  Chistophe Dervieux, "`Quarto` : Une évolution de `R Markdown` pour des travaux statistiques reproductibles"
 
 Pour fiabiliser la production de documents construits en
 valorisant
-des données (tableaux, graphiques, etc.), `RStudio` (devenu `Posit` depuis) 
+des données (tableaux, graphiques, etc.), _RStudio_ (devenu _Posit_ depuis) 
 a construit il y a quelques années l'écosystème `R Markdown`
 permettant de produire du document en mélangeant 
 code et texte.
 
 Cette problématique des publications reproductibles est
-devenue incontournable dans l'écosystème `R` et
-`R Markdown` est dorénavant largement utilisé. Pour étendre
+devenue incontournable dans l'écosystème `R` et la solution
+`R Markdown` est dorénavant largement utilisée. Pour étendre
 les vertus de cette approche à d'autres langages, 
-Posit a commencé à développer `Quarto`, un écosystème
+_Posit_ a commencé à développer `Quarto`, un écosystème
 reprenant le principe de `R Markdown` mais étendant 
 ces fonctionnalités à d'autres langages de programmation,
 notamment `Python` et `Observable`. 
 
-Le __23 avril de 15h à 16h__,
-Christophe Dervieux (Posit) nous présentera `Quarto`,
-l'écosystème de publications reproductibles qui succède à RMarkdown.
-Cet événement est proposé de manière hybride: par
-le biais de Zoom ou, pour les agents en poste 
+Le __2 mai de 15h à 16h__,
+Christophe Dervieux (_Posit_) nous présentera `Quarto`,
+l'écosystème de publications reproductibles qui succède à `R Markdown`.
+Cet événement est proposé de manière hybride : par
+le biais de _Zoom_ ou, pour les agents en poste 
 à la Direction Générale de l'Insee, en salle 4-C-458.
 
 
@@ -349,22 +355,24 @@ Ce questionnaire est utile pour que les événements organisés dans le cadre du
 Afin de connaître les attentes et centres d'intérêt en cette année 2024,
 nous vous proposons un nouveau questionnaire. Celui-ci est
 également l'occasion d'accueillir vos retours sur les
-_masterclass_ menées en 2023 en collaboration avec _Datascientest_. 
+_masterclass_ menées en 2023 en collaboration avec _Datascientest_
+si vous avez participé à celles-ci. 
 
 - [👉️ Questionnaire](https://framaforms.org/besoin-de-formations-en-data-science-en-2024-1709718778)
 
 
 ## Replay de la présentation d'Eric Mauvière "La dataviz pour donner du sens aux données et communiquer un message" 
 
+![](/talk/2024-02-29-mauviere/mauviere.png)
+
 La présentation d'Eric Mauvière sur les bonnes pratiques
 de _dataviz_ a rencontré un réel succès avec près de 150 
-participants. 
-
-
-![](/talk/2024-02-29-mauviere/mauviere.png)
+participants.  Le _replay_ et les _slides_ sont
+disponibles ci-dessous :
 
 
 ```{ojs}
+//| echo: false
 html`${slides_button}`
 ```
 
@@ -373,10 +381,12 @@ html`${slides_button}`
 
 
 ```{ojs}
+//| echo: false
 slides = "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf"
 ```
 
 ```{ojs}
+//| echo: false
 slides_button = html`<p class="text-center">
   <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
     <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
