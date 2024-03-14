@@ -324,7 +324,7 @@ code et texte.
 
 Cette problématique des publications reproductibles est
 devenue incontournable dans l'écosystème `R` et
-est dorénavant largement utilisé. Pour étendre
+`R Markdown` est dorénavant largement utilisé. Pour étendre
 les vertus de cette approche à d'autres langages, 
 Posit a commencé à développer `Quarto`, un écosystème
 reprenant le principe de `R Markdown` mais étendant 
