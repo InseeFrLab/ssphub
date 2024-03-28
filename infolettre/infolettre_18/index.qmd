@@ -36,7 +36,7 @@ la _newsletter_ est consacrée
 IA génératives et 
 à l'annonce d'un nouveau générateur
 de site web pour les _data scientists_.
-Suivent les actualités du réseau et
+Suivent les actualités du réseau, notamment une présentation de `Quarto` par Christophe Dervieux (Posit) et
 le replay de la présentation d'Eric Mauvière
 sur le sujet des bonnes pratiques de _dataviz_.  
 
@@ -255,7 +255,9 @@ Afin de démocratiser l'utilisation de `Javascript`
 au-delà du cercle des développeurs _web_, Mike
 Bostock, ancien responsable des _dataviz_ du _New York Times_, la
 référence en la matière, a créé il y a quelques années
-`Observable`. En plus d'être une extension du langage
+`Observable`. 
+
+En plus d'être une extension du langage
 `Javascript` à la grammaire familière aux connaisseurs de 
 `Python` et `R`, `Observable` vise à créer une communauté
 d'utilisateurs de `Javascript`
@@ -320,7 +322,7 @@ de l'ENSAE où les enjeux techniques et humains de la mise à disposition de tel
 
 # Actus du réseau
 
-##  Chistophe Dervieux, "`Quarto` : Une évolution de `R Markdown` pour des travaux statistiques reproductibles"
+##  Chistophe Dervieux, "`Quarto` : Une évolution de `R Markdown` pour des travaux statistiques reproductibles" (📅 __2 mai__)
 
 Pour fiabiliser la production de documents construits en
 valorisant
