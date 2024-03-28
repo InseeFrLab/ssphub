@@ -110,11 +110,12 @@ OpenAI a déjà prévu de [nombreuses applications](https://openai.com/research/
 d'éditer une vidéo déjà existante pour changer des éléments...
 Les secteurs de la communication, de la création et de la diffusion de contenu
 sont concernés au premier chef mais la richesse des fonctionnalités possibles et
-la simplicité d'usage des produits d'OpenAI laisse penser
-que les applications iront bien au-delà de ces secteurs économiques puisque la vidéo occupe une place prédominante dans la diffusion d'information sur internet. 
+la simplicité d'usage des produits d'OpenAI laissent penser
+que les applications iront bien au-delà de ces secteurs économiques ; la vidéo occupe maintenant 
+une place prédominante sur internet et sur les réseaux sociaux pour de multiples usages. 
 
 Ce modèle soulève, comme `Dall-E` ou `ChatGPT` avant lui, des enjeux de propriété intellectuelle
-puisque celui-ci aussi a été entraîné sur des corpus massifs collectés depuis internet.
+puisqu'il a aussi été entraîné sur des corpus massifs collectés depuis internet.
 Le réalisme des vidéos générées
 peut également laisser craindre, sans marque d'identification claire du fait que la vidéo
 est générée numériquement (principe du [_watermark_](https://fr.wikipedia.org/wiki/Tatouage_num%C3%A9rique)),
@@ -159,8 +160,8 @@ et la startup française (tarification en fonction du volume de requêtes).
 
 Selon les évaluations réalisées fin février, avant la sortie de Claude 3 (voir plus bas 👇️), ce
 modèle présentait des performances supérieures à celles des modèles _open source_,
-notamment `LLaMa-2`, sur une série d'évaluations sur la véracité des réponses
-proposées par une IA et sur les capacités de raisonnement de celle-ci. Sur des questions d'un niveau de premier cycle universitaire (métrique MMLU proposée par @hendrycks2021measuring), Mistral Large propose la bonne réponse dans 81% des cas, ce qui l'amène presque au niveau de GPT-4 (86%) et bien au-dessus de Llama-2 (70%), le 
+notamment `LLaMa-2`, sur une série d'évaluations de la véracité des réponses
+proposées par une IA et sur les capacités de raisonnement de celle-ci à partir de tests standardisés. Sur des questions d'un niveau de premier cycle universitaire (métrique MMLU proposée par @hendrycks2021measuring), Mistral Large propose la bonne réponse dans 81% des cas, ce qui l'amène presque au niveau de GPT-4 (86%) et bien au-dessus de Llama-2 (70%), le 
 meilleur modèle _opensource_ à l'heure actuelle.
 
 <details>
@@ -188,12 +189,12 @@ proposée par Mistral AI ;
 ## Les performances de GPT-4 dépassées pour la première fois 
 
 Quelques jours seulement après la sortie de Mistral Large, un autre
-modèle de langage est venu concurrencer `GPT-4`, le modèle d'OpenAI. 
+modèle de langage est venu concurrencer le modèle d'OpenAI GPT-4. 
 Ce modèle nommé `Claude 3` est le premier
 à obtenir des performances supérieures
-à `GPT-4` (le modèle derrière la version Pro de `ChatGPT`)
+à GPT-4 (le modèle derrière la version Pro de `ChatGPT`)
 sur les principaux tests de qualité des modèles.
-Ce modèle, disponible en trois versions plus ou moins
+Ce modèle, créé par Anthropic et disponible en trois versions plus ou moins
 puissantes (_Haiku_, _Sonnet_ et _Opus_),
 n'est pas encore disponible pour les utilisateurs
 résidant dans l'Union Européenne. 
@@ -287,7 +288,7 @@ en mélangeant des étapes de préparation de données en `R`, `Python` ou `SQL`
 du formattage de texte en `Markdown` et de l'interactivité grâce au langage
 `Observable`. L'approche est ainsi similaire à celle
 de `Quarto`, la référence pour les _data scientists_ désirant construire des
-publications reproductibles (voir la section événements 👇️ pour en apprendre plus ). Ce
+publications reproductibles (voir la section événements 👇️ pour en apprendre plus). Ce
 dernier écosystème permet déjà 
 depuis quelques temps de compléter du travail de données en `R` ou `Python`
 avec des traitements en `Observable` pour obtenir un site web interactif
@@ -304,7 +305,7 @@ Ce virage est similaire à celui pris par `Python`
 dans la communauté des _data scientists_
 où les _notebooks_, après avoir connu une phase hégémonique, sont revenus à leur
 fonction initiale : des carnets pour expérimenter servant de brouillon avant l'écriture de
-scripts ou alors de belles pages, mélant texte et code, 
+scripts ou alors de belles pages, mêlant texte et code, 
 pour présenter une démarche de manière pédagogique. 
 
 
