@@ -1,0 +1,399 @@
+---
+title: Infolettre n°18
+description: |
+  Infolettre __Mars 2024__
+
+# Date published
+date: '2024-03-07'
+number: 18
+
+image: http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/hitchcock_robot.webp
+
+authors:
+  - Lino Galiana
+
+tags:
+  - infolettre
+
+categories:
+  - Infolettre
+
+bibliography: references.bib
+---
+
+![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/infolettre18.png)
+
+
+:::{.callout-tip}
+
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
+
+::: 
+
+Ce mois-ci, la première partie de
+la _newsletter_ est consacrée
+à l'actualité dense dans le domaine des
+IA génératives et 
+à l'annonce d'un nouveau générateur
+de site web pour les _data scientists_.
+Suivent les actualités du réseau, notamment une présentation de `Quarto` par Christophe Dervieux (Posit) et
+le replay de la présentation d'Eric Mauvière
+sur le sujet des bonnes pratiques de _dataviz_.  
+
+
+## `Sora`, la nouvelle IA d'OpenAI pour générer des vidéos
+
+<br>
+
+{{< video https://vp.nyt.com/video/2024/02/14/115628_1_15OPENAI-VIDEO-1_wg_720p.mp4 >}}
+_Source : [New York Times](https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html) d'après OpenAI._
+
+<details>
+<summary>
+Instruction utilisée par OpenAI pour générer cette vidéo
+</summary>
+_“Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.”_
+</details>
+
+<br>
+
+Après avoir révolutionné le champ de la génération d'image avec `DallE` (texte $\to$ image), 
+de la génération de textes avec `ChatGPT` (texte $\to$ texte), OpenAI a
+rendu public les premières productions d'un
+modèle de génération de vidéos à partir d'instructions (texte $\to$ vidéo). Ce
+produit, nommé `Sora`, 
+génère des vidéos d'un réalisme qui n'avait encore jamais été atteint par les IA génératrices de vidéos. Jusqu'à 
+présent, les modèles de ce type
+généraient des images dont les formes étaient grossières, la résolution
+d'une qualité faible et dont les mouvements étaient peu vraisemblables. 
+
+
+```{=html}
+<br>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8sw8om" width="100%" height="100%" allowfullscreen title="Dailymotion Video Player" > </iframe> </div>
+```
+_Source_ : [Le Monde](https://www.lemonde.fr/videos/video/2024/02/18/openai-devoile-sora-un-outil-qui-transforme-les-textes-en-videos-ultrarealistes_6217183_1669088.html)
+
+```{=html}
+<br>
+```
+
+`Sora` n'est pas directement mis à disposition du grand public,
+contrairement aux autres services d'OpenAI. Ce produit n'est partagé qu'à 
+des utilisateurs identifiés par OpenAI comme
+pouvant représenter le public cible - des réalisateurs
+par exemple - ou
+ayant une expertise 
+sur des sujets comme la désinformation, les biais,
+la connaissance des algorithmes de recommandation, etc. Cette diffusion
+restreinte vise à recevoir des retours de la part 
+de potentiels clients ou d'experts sur les risques
+de ces technologies. La communication
+par le biais de quelques vidéos choisies par OpenAI permet, dans le même temps,
+de créer une attente du grand public avant la mise à disposition
+plus large. 
+
+Comme `Dall-E`, `Midjourney` et consorts
+qui généraient des mains avec [trop de doigts](https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands),
+le réseau de neurones derrière `Sora` a encore des difficultés à respecter certaines
+règles élémentaires de vraisemblance. Par exemple, dans la vidéo ci-dessous,
+les événements liés à un bris de verre s'enchaînent dans un ordre incohérent. 
+
+
+{{< video https://cdn.openai.com/tmp/s/discussion_0.mp4 >}}
+_Source : [OpenAI](https://openai.com/research/video-generation-models-as-world-simulators)_
+
+
+OpenAI a déjà prévu de [nombreuses applications](https://openai.com/research/video-generation-models-as-world-simulators) 
+à ce modèle. Outre la génération de vidéos à partir d'instructions verbales, 
+`Sora` est capable d'animer une image, de compléter une vidéo déjà existante avec une vidéo fictionnelle,
+d'éditer une vidéo déjà existante pour changer des éléments...
+Les secteurs de la communication, de la création et de la diffusion de contenu
+sont concernés au premier chef mais la richesse des fonctionnalités possibles et
+la simplicité d'usage des produits d'OpenAI laissent penser
+que les applications iront bien au-delà de ces secteurs économiques ; la vidéo occupe maintenant 
+une place prédominante sur internet et sur les réseaux sociaux pour de multiples usages. 
+
+Ce modèle soulève, comme `Dall-E` ou `ChatGPT` avant lui, des enjeux de propriété intellectuelle
+puisqu'il a aussi été entraîné sur des corpus massifs collectés depuis internet.
+Le réalisme des vidéos générées
+peut également laisser craindre, sans marque d'identification claire du fait que la vidéo
+est générée numériquement (principe du [_watermark_](https://fr.wikipedia.org/wiki/Tatouage_num%C3%A9rique)),
+des dérives autour de
+la mésinformation, notamment des vidéos malveillantes et réalistes de personnes dans des situations inventées (des _deepfakes_)
+ou la prolifération
+de contenus choquants si les garde-fous dans la génération de contenus sont 
+outrepassés. 
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- La [présentation de `Sora`](https://openai.com/sora) sur le site d'OpenAI ;
+- Un [article](https://openai.com/research/video-generation-models-as-world-simulators) plus technique d'OpenAI
+sur les fonctionnalités de Sora ; 
+- Les [10mn de vidéos de présentation](https://www.youtube.com/watch?v=HK6y8DAPN_0) de `Sora` par OpenAI ;
+- Un [article](https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html) du _New York Times_ présentant `Sora`
+- Un [article](https://theconversation.com/openais-new-generative-tool-sora-could-revolutionize-marketing-and-content-creation-223806) sur le site _The Conversation_ sur les enjeux pour certains secteurs économiques. 
+:::
+
+
+
+
+## "`Le Chat`" : un concurrent à `ChatGPT` par Mistral AI 🐱
+
+Fin février, la _startup_ française Mistral AI a
+rendu public, en accès libre,
+une
+IA conversationnelle aux fonctionnalités similaires
+à `ChatGPT` nommée [_"Le Chat"_](https://mistral.ai/fr/news/le-chat-mistral/).
+
+Ce service utilise le grand modèle de langage (LLM) `Mistral Large`, dernier
+né des LLM multilangues entraînés par Mistral AI. 
+Contrairement à d'autres modèles de Mistral AI,
+celui-ci n'est pas ouvert ; l'accès n'y est possible que
+par le biais des services de Mistral ou par le biais du _cloud_ 
+Microsoft Azure,
+suite à un partenariat entre l'entreprise américaine
+et la startup française (tarification en fonction du volume de requêtes). 
+
+
+Selon les évaluations réalisées fin février, avant la sortie de Claude 3 (voir plus bas 👇️), ce
+modèle présentait des performances supérieures à celles des modèles _open source_,
+notamment `LLaMa-2`, sur une série d'évaluations de la véracité des réponses
+proposées par une IA et sur les capacités de raisonnement de celle-ci à partir de tests standardisés. Sur des questions d'un niveau de premier cycle universitaire (métrique MMLU proposée par @hendrycks2021measuring), Mistral Large propose la bonne réponse dans 81% des cas, ce qui l'amène presque au niveau de GPT-4 (86%) et bien au-dessus de Llama-2 (70%), le 
+meilleur modèle _opensource_ à l'heure actuelle.
+
+<details>
+<summary>
+Classement des principaux modèles de langage lors de la sortie de `Mistral Large`
+</summary>
+![Performance des principaux LLM sur la métrique [MMLU](https://arxiv.org/abs/2009.03300), une série de 57 tests sur la fiabilité des réponses et les capacités de raisonnement des IA conversationnelles. Source : [Mistral AI](https://mistral.ai/fr/news/mistral-large/), fin février](https://mistral.ai/images/news/mistral-large/mistral-large-bar-plot.png)
+</details>
+
+
+![Exemple de questions de niveau licence posées pour évaluer la qualité d'un modèle selon la métrique MMLU proposée par @hendrycks2021measuring ([accéder à l'article de recherche](https://arxiv.org/abs/2009.03300))](MMLU_examples.png)
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- [https://chat.mistral.ai/](https://chat.mistral.ai/chat), l'IA conversationnelle
+proposée par Mistral AI ;
+- Le [_post_ de blog](https://mistral.ai/fr/news/mistral-large/) par Mistral AI annonçant `Mistral Large` ;
+- La [_newsletter_ d'Andrew Ng](https://info.deeplearning.ai/mistral-living-large-googles-open-source-challenger-robot-chemist-schooling-language-models-in-math-1) consacrée à Mistral Large ;
+- L'[article d'Hendrycks et al. (2021)](https://arxiv.org/abs/2009.03300) à l'origine de la métrique MMLU utilisée pour classer les modèles.
+:::
+
+
+## Les performances de GPT-4 dépassées pour la première fois 
+
+Quelques jours seulement après la sortie de Mistral Large, un autre
+modèle de langage est venu concurrencer le modèle d'OpenAI GPT-4. 
+Ce modèle nommé `Claude 3` est le premier
+à obtenir des performances supérieures
+à GPT-4 (le modèle derrière la version Pro de `ChatGPT`)
+sur les principaux tests de qualité des modèles.
+Ce modèle, créé par Anthropic et disponible en trois versions plus ou moins
+puissantes (_Haiku_, _Sonnet_ et _Opus_),
+n'est pas encore disponible pour les utilisateurs
+résidant dans l'Union Européenne. 
+
+<details>
+<summary>
+Les trois modèles `Claude-3` disponibles
+</summary>
+![Source : [Anthropic](https://www.anthropic.com/news/claude-3-family)](https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F5d20371eeb8d045465bb22cacfd269b5958b004d-2200x1174.png&w=3840&q=75)
+</details>
+
+<details>
+<summary>
+Comparaison des performances des LLM
+</summary>
+![Figure construite avec _DataWrapper_ à partir des données fournies par [Anthropic](https://www.anthropic.com/news/claude-3-family)](eval_llm_generales.png)
+![Figure construite avec _DataWrapper_ à partir des données fournies par [Anthropic](https://www.anthropic.com/news/claude-3-family)](eval_llm_math.png)
+</details>
+
+
+Les modèles `Claude` sont développés par l'entreprise Anthropic, créée
+par des anciens employés d'OpenAI considérant que 
+la problématique de la [sécurité des IA](https://fr.wikipedia.org/wiki/S%C3%BBret%C3%A9_des_intelligences_artificielles)
+n'était pas assez mise en avant par OpenAI. 
+Valorisée autour de 18 milliards d'euros en ce début d'année 2024,
+elle a bénéficié de financements importants
+d'Amazon et de Google, ces deux entreprises ayant investi
+respectivement 4 et 2 milliards de dollars. 
+Les modèles `Claude` sont disponibles pour les utilisateurs
+des _cloud_ d'Amazon (AWS) ou de _Google_ (GCP) à l'instar
+des modèles GPT disponibles aux utilisateurs du _cloud_
+de Microsoft (Azure). La concurrence entre
+OpenAI et Anthropic est ainsi l'occasion d'un
+affrontement entre les trois principaux acteurs du _cloud_. 
+Au-delà de la concurrence entre 
+leurs investisseurs, les
+modèles économiques d'Anthropic
+et d'OpenAI diffèrent. 
+Anthropic vise plutôt à proposer des services à des entreprises
+accessibles par le biais d'API 
+là où OpenAI propose plutôt des outils grands publics avec
+des fonctionnalités supplémentaires pour les acteurs spécialisés. 
+Parmi les partenaires principaux d'Anthropic, on retrouve
+Gitlab, Quora ou Salesforce (l'éditeur de logiciel derrière Slack). A l'instar des modèles Mistral Large ou GPT-4, le modèle Claude 3 n'est pas _open source_. 
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- L'[annonce de Claude 3](https://www.anthropic.com/news/claude-3-family) par Anthropic ;
+- Un [article](https://www.nytimes.com/2024/02/20/technology/anthropic-funding-ai.html) sur Anthropic par le _New York Times_
+et [un autre](https://www.forbes.com/sites/alexkonrad/2024/03/04/anthropic-releases-claude-3-claims-beat-openai/) par Forbes.
+:::
+
+
+## `Observable` propose un constructeur de sites statiques, pour s'abstraire des _notebooks_
+
+Afin de démocratiser l'utilisation de `Javascript`
+au-delà du cercle des développeurs _web_, Mike
+Bostock, ancien responsable des _dataviz_ du _New York Times_, la
+référence en la matière, a créé il y a quelques années
+`Observable`. 
+
+En plus d'être une extension du langage
+`Javascript` à la grammaire familière aux connaisseurs de 
+`Python` et `R`, `Observable` vise à créer une communauté
+d'utilisateurs de `Javascript`
+à l'interface entre _data scientists_ et développeurs _web_. 
+Pour cela, le site [observablehq.com](https://observablehq.com/)
+se propose d'être un réseau social de _notebooks_ 
+en `Javascript`, un peu comme `Github` faisant office de réseau
+social du code.
+Les notebooks _Observable_ permettent 
+de rapidement prendre en main du code `Javascript` pour créer
+des analyses de données interactives qui peuvent ensuite
+être facilement partagées par le biais du site
+[observablehq.com](https://observablehq.com/) pour simplifier les réutilisations 
+du code proposé ou des données sous-jacentes. 
+
+Cependant, si les _notebooks_ sont un terrain fertile pour l'expérimentation,
+ils montrent rapidement leurs limites dès qu'on désire s'abstraire
+de l'hébergement sur [observablehq.com](observablehq.com/). Pour 
+mettre à disposition des visualisations interactives sur d'autres sites, 
+les sites statiques sont plus simples d'usage. Historiquement,
+l'écosystème Javascript est construit autour d'imposants _frameworks_ 
+comme [`React`](https://fr.legacy.reactjs.org/), bien connus des développeurs web mais méconnus des
+_data scientists_ qui sont néanmoins amenés à livrer de plus en plus 
+d'applications interactives pour valoriser des données. 
+
+L'annonce d'[`Observable Framework`](https://observablehq.com/blog/observable-2-0), un constructeur de sites statiques,
+représente un changement d'approche. `Observable Framework` vise à être un _framework_ 
+permettant aux _data scientists_ de construire des sites web 
+en mélangeant des étapes de préparation de données en `R`, `Python` ou `SQL` (via `DuckDB`),
+du formattage de texte en `Markdown` et de l'interactivité grâce au langage
+`Observable`. L'approche est ainsi similaire à celle
+de `Quarto`, la référence pour les _data scientists_ désirant construire des
+publications reproductibles (voir la section événements 👇️ pour en apprendre plus). Ce
+dernier écosystème permet déjà 
+depuis quelques temps de compléter du travail de données en `R` ou `Python`
+avec des traitements en `Observable` pour obtenir un site web interactif
+sans besoin de solutions techniques complexes comme `Shiny` ou `Streamlit`.
+
+Les évolutions à venir d'`Observable Framework` sont donc
+à surveiller, cet écosystème pouvant être amené, s'il rencontre du succès,
+à rentrer dans la boîte à outil standard des _data scientists_ comme `Quarto`
+est déjà en train de le faire. Le site [observablehq.com](observablehq.com/)
+ne va pas pour autant disparaître : celui-ci restera un lieu où on peut
+tirer avantage de la simplicité des _notebooks_ pour l'expérimentation
+ou pour la mise à disposition de tutoriels pédagogiques. 
+Ce virage est similaire à celui pris par `Python`
+dans la communauté des _data scientists_
+où les _notebooks_, après avoir connu une phase hégémonique, sont revenus à leur
+fonction initiale : des carnets pour expérimenter servant de brouillon avant l'écriture de
+scripts ou alors de belles pages, mêlant texte et code, 
+pour présenter une démarche de manière pédagogique. 
+
+
+::: {.callout-note}
+## Pour en savoir plus
+
+- L'annonce d'[`Observable Framework`](https://observablehq.com/framework/) ;
+- L'[interactivité dans `Quarto`](https://quarto.org/docs/interactive/ojs/) grâce aux cellules `Observable` ;
+- Le [cours de "Mise en production de projets data science"](https://ensae-reproductibilite.github.io/website/)
+de l'ENSAE où les enjeux techniques et humains de la mise à disposition de tels sites sont évoqués.
+:::
+
+# Actus du réseau
+
+##  Chistophe Dervieux, "`Quarto` : Une évolution de `R Markdown` pour des travaux statistiques reproductibles" (📅 __2 mai__)
+
+Pour fiabiliser la production de documents construits en
+valorisant
+des données (tableaux, graphiques, etc.), _RStudio_ (devenu _Posit_ depuis) 
+a construit il y a quelques années l'écosystème `R Markdown`
+permettant de produire du document en mélangeant 
+code et texte.
+
+Cette problématique des publications reproductibles est
+devenue incontournable dans l'écosystème `R` et la solution
+`R Markdown` est dorénavant largement utilisée. Pour étendre
+les vertus de cette approche à d'autres langages, 
+_Posit_ a commencé à développer `Quarto`, un écosystème
+reprenant le principe de `R Markdown` mais étendant 
+ces fonctionnalités à d'autres langages de programmation,
+notamment `Python` et `Observable`. 
+
+Le __2 mai de 15h à 16h__,
+Christophe Dervieux (_Posit_) nous présentera `Quarto`,
+l'écosystème de publications reproductibles qui succède à `R Markdown`.
+Cet événement est proposé de manière hybride : par
+le biais de _Zoom_ ou, pour les agents en poste 
+à la Direction Générale de l'Insee, en salle 4-C-458.
+
+
+## Vos besoins de formation
+
+L'an dernier, nous avions organisé un questionnaire
+pour connaître les besoins de formations des membres
+du réseau. 
+Ce questionnaire est utile pour que les événements organisés dans le cadre du réseau répondent au mieux aux besoins.
+
+Afin de connaître les attentes et centres d'intérêt en cette année 2024,
+nous vous proposons un nouveau questionnaire. Celui-ci est
+également l'occasion d'accueillir vos retours sur les
+_masterclass_ menées en 2023 en collaboration avec _Datascientest_
+si vous avez participé à celles-ci. 
+
+- [👉️ Questionnaire](https://framaforms.org/besoin-de-formations-en-data-science-en-2024-1709718778)
+
+
+## Replay de la présentation d'Eric Mauvière "La dataviz pour donner du sens aux données et communiquer un message" 
+
+![](/talk/2024-02-29-mauviere/mauviere.png)
+
+La présentation d'Eric Mauvière sur les bonnes pratiques
+de _dataviz_ a rencontré un réel succès avec près de 150 
+participants.  Le _replay_ et les _slides_ sont
+disponibles ci-dessous :
+
+
+```{ojs}
+//| echo: false
+html`${slides_button}`
+```
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/video1991622347.mp4" controls="yes" >}}
+
+
+```{ojs}
+//| echo: false
+slides = "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf"
+```
+
+```{ojs}
+//| echo: false
+slides_button = html`<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
+  </a>
+</p>`
+```
+
