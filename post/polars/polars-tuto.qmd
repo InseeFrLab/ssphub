@@ -153,7 +153,7 @@ l'URL : https://minio.lab.sspcloud.fr/donnees-insee/diffusion/BPE/2019/BPE_ENS.c
 ```{python}
 url = "https://minio.lab.sspcloud.fr/donnees-insee/diffusion/BPE/2019/BPE_ENS.csv"
 df_bpe = pl.read_csv(
-    url, sep = ";",
+    url, separator = ";",
     dtypes={
         "DEP": pl.Categorical,
         "DEPCOM": pl.Categorical
@@ -188,7 +188,7 @@ BUCKET = "donnees-insee/diffusion/BPE/2019"
 
 with fs.open(f"{BUCKET}/BPE_ENS.csv") as bpe_csv:
     df_bpe = pl.read_csv(
-        bpe_csv, sep = ";",
+        bpe_csv, separator = ";",
         dtypes={
             "DEP": pl.Categorical,
             "DEPCOM": pl.Categorical
@@ -559,7 +559,7 @@ une requête SQL s'écrira de la manière suivante:
 ```{python}
 import duckdb 
 
-df_duckdb = duckdb.sql('SELECT * FROM df_bpe WHERE DEP in (75, 92)')
+df_duckdb = duckdb.sql("SELECT * FROM df_bpe WHERE CAST(DEP AS VARCHAR) in ('75', '92')")
 df_duckdb
 ```
 
@@ -587,7 +587,7 @@ des manipulations de données ultérieures. Cette approche fonctionne en deux te
 la méthode `pl`:
 
 ```{python}
-duckdb.sql('SELECT * FROM read_parquet("bpe.parquet") WHERE DEP in (75, 92)').pl()
+duckdb.sql("SELECT * FROM read_parquet(\"bpe.parquet\") WHERE CAST(DEP AS VARCHAR) in ('75', '92')").pl()
 ```
 
 Cette approche est intéressante pour effectuer les opérations de sélection
