@@ -214,7 +214,7 @@ df_bpe = pl.read_parquet("bpe.parquet")
 
 A l'instar d'autres outils modernes d'exploitation des données,
 `Polars` expose un modèle de traitement basé sur des fonctions de haut niveau,
-comme `select`, `filter` ou `groupby`, qui empruntent au langage SQL
+comme `select`, `filter` ou `group_by`, qui empruntent au langage SQL
 une logique expressive du _"quoi ?"_ plutôt que du _"comment ?"_.
 
 La différence avec un package comme `Pandas` ou `dplyr` (`R`) est que `Polars`
@@ -234,10 +234,10 @@ Puis on exprime à l'aide des fonctions de haut niveau ce que l'on veut faire :
 ```{python}
 df_stations_service = df_bpe.lazy().filter( # 1.
     pl.col("TYPEQU") == "B316"
-).groupby( # 2.
+).group_by( # 2.
     "DEP"
 ).agg( # 3.
-    pl.count().alias("NB_STATION_SERVICE")
+    pl.len().alias("NB_STATION_SERVICE")
 ).collect() # 4.
 
 df_stations_service.head(5)
@@ -282,7 +282,7 @@ Le reste de l'expression (les transformations antérieures) sera exécuté lorsq
 
 Les actions qui déclenchent des opérations sont les suivantes:
 
-- l'aggrégation (`df.groupby(..).agg(..)`)
+- l'aggrégation (`df.group_by(..).agg(..)`)
 - l'affichage de valeurs (`df.head(...)`)
 - l'appel explicite à une exécution (`df.collect()`)
 
@@ -448,14 +448,14 @@ df_bpe.lazy()\
 La création de nouvelles variables se fera via `with_columns`. Dans l'exemple qui suit :
 
 - on convertit en entier numérique la variable `NB_EQUIP`
-- on calcule la somme cumulée (avec `cumsum`)
+- on calcule la somme cumulée (avec `cum_sum`)
 - on nomme la nouvelle colonne `NB_EQUIP_SUM`
 
 ```{python}
 df_bpe.lazy()\
     .with_columns(pl.col('NB_EQUIP').cast(pl.Int64, strict=False))\
     .with_columns(
-        pl.col("NB_EQUIP").cumsum().alias("NB_EQUIP_SUM"),
+        pl.col("NB_EQUIP").cum_sum().alias("NB_EQUIP_SUM"),
         pl.when(pl.col("NB_EQUIP") > 3).then(True).otherwise(False).alias("NB_EQUIP_3PLUS")
     ).head(5).collect()
 ```
@@ -484,15 +484,15 @@ df_bpe.describe()
 df_bpe.glimpse()
 ```
 
-Les fonctions `groupby` et `agg` sont mobilisées pour créer des aggrégats. Dans l'exemple ci-dessous :
+Les fonctions `group_by` et `agg` sont mobilisées pour créer des aggrégats. Dans l'exemple ci-dessous :
 
-1. On précise que l'on veut grouper au niveau départemental (`groupby("DEP")`) ;
+1. On précise que l'on veut grouper au niveau départemental (`group_by("DEP")`) ;
 2. On somme les occurences d'équipement de type boulangerie (`pl.col("TYPEQU") == "B203").sum()`) ;
 3. On donne un nom à la colonne portant la somme (`alias("NB_BOULANGERIES_TOT")`)
 
 
 ```{python}
-df_bpe.lazy().groupby("DEP").agg(
+df_bpe.lazy().group_by("DEP").agg(
     (pl.col("TYPEQU") == "B203").sum().alias("NB_BOULANGERIES_TOT")
 ).sort("NB_BOULANGERIES_TOT", descending=True).head(5).collect()
 ```
