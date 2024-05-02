@@ -41,8 +41,13 @@ slides = "https://cderv.github.io/2024-quarto-evolution-rmd/#/title-slide"
 ```{ojs}
 slides_button = html`<p class="text-center">
   <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Voir les slides
   </a>
 </p>`
 ```
 
+```{=html}
+<div>
+<iframe class="slide-deck" style="width: 100%; height: 500px" src="https://cderv.github.io/2024-quarto-evolution-rmd/#/title-slide/"></iframe>
+</div>
+```
