@@ -1,0 +1,130 @@
+---
+title: Infolettre n°19
+description: |
+  Infolettre __Juin 2024__
+
+# Date published
+date: '2024-06-01'
+number: 19
+
+image: http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/hitchcock_robot.webp
+
+authors:
+  - Lino Galiana
+
+tags:
+  - infolettre
+
+categories:
+  - Infolettre
+
+bibliography: references.bib
+---
+
+![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/infolettre18.png)
+
+
+:::{.callout-tip}
+
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://framaforms.org/integration-reseau-des-data-scientists-1676407156).*__
+
+**Le contenu proposé par le `SSPHub` n'engage que ses auteurs, pas leur institution d'origine**
+
+::: 
+
+Dans cette _newsletter_
+
+# Prochains événements
+
+## L'Insee organise le Funathon, un nouvel événement de formation autour de la _data science_
+
+![](https://inseefrlab.github.io/funathon2024/img/best_image_funathon.png)
+
+Pour la 4e année consécutive, les équipes innovation de l'Insee organisent un événement de formation à la _data science_ pendant 2 jours. Cet hackathon non compétitif, connu sous le nom de _Funathon_, se déroulera les **25 et 26 juin** entièrement en **distanciel**.
+
+Cette année, le thème de l'événement est _"Décollage imminent pour la data science"_ suite à un partenariat avec la Direction Générale de l'Aviation Civile (DGAC).
+
+Deux types de participation sont possibles:
+
+- Inscription formelle: l'événement est reconnu comme un événement de formation classique par l'Insee et les services statistiques ministériels. Les modalités d'inscription sont rappelées sur l'intranet insee ou l'extranet SSM.
+- Inscription informelle: vous pouvez tout à fait participer sans inscription formelle et dédier le temps que vous désirez au sujet. Pour ce type de participation, vous pouvez envoyer un mail à <ssphub-contact@insee.fr> pour être inclus dans la liste de diffusion des informations de cet événement. 
+
+
+L’ensemble des ressources associées à l’événement seront disponibles prochainement sur le [site de l’événement](https://inseefrlab.github.io/funathon2024/).
+
+Les applications se feront sous `R` et `Python` sur la plateforme [SSPCloud](https://datalab.sspcloud.fr/home). Pendant ces deux jours, il sera possible de mener des projets pas à pas grâce à des _notebooks_ détaillés mis à disposition par les organisateurs (situation adaptée aux débutants), ou d’avancer de façon plus autonome à partir de _notebooks_ moins détaillés (situation adaptée aux agents plus avancés). Pendant l’ensemble de l’événement, l’équipe d’organisation sera disponible pour répondre aux questions et aider les participants en cas de difficulté, via `Tchap` et `Zoom`.
+
+Une session de présentation des sujets, des données et de l’environnement technique aura lieu le __18 juin de 15h à 17h__ ([lien Zoom](https://insee-fr.zoom.us/j/98657886771?pwd=MTl6bUN2T3pRZ09PY3BnMHlMQ1VUUT09)).
+
+
+Les ressources de l'an dernier, sur le thème _"du champ à l'assiette"_ (partenariat avec le ministère de l'Agriculture et de la Souveraineté alimentaire) sont toujours disponibles sur [le site dédié](https://inseefrlab.github.io/funathon2023/).
+
+
+# _Replay_ de nos derniers événements
+
+## _Replay_ de la présentation de Christophe Dervieux "`Quarto` : Une évolution de `R Markdown` pour des travaux statistiques reproductibles"
+
+![](/talk/2024-05-02-quarto/quarto.png)
+
+La présentation de Christophe Dervieux sur l'écosystème de publications reproductibles `Quarto` a rencontré un réel succès avec près de 130
+participants.  Le _replay_ et les _slides_ sont
+disponibles ci-dessous :
+
+```{ojs}
+html`${slides_button}`
+```
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/dervieux_quarto_20240502.mp4" controls="yes" >}}
+
+
+```{ojs}
+slides = "https://cderv.github.io/2024-quarto-evolution-rmd/#/title-slide"
+```
+
+```{ojs}
+slides_button = html`<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Voir les slides
+  </a>
+</p>`
+```
+
+```{=html}
+<div>
+<iframe class="slide-deck" style="width: 100%; height: 500px" src="https://cderv.github.io/2024-quarto-evolution-rmd/#/title-slide/"></iframe>
+</div>
+```
+
+
+## _Replay_ de la présentation d'Eric Mauvière "La dataviz pour donner du sens aux données et communiquer un message" 
+
+![](/talk/2024-02-29-mauviere/mauviere.png)
+
+La présentation d'Eric Mauvière sur les bonnes pratiques
+de _dataviz_ reste disponible sur notre site et peut être revue avec les liens suivants:
+
+
+```{ojs}
+//| echo: false
+html`${slides_button}`
+```
+
+
+{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/video1991622347.mp4" controls="yes" >}}
+
+
+```{ojs}
+//| echo: false
+slides = "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf"
+```
+
+```{ojs}
+//| echo: false
+slides_button = html`<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
+  </a>
+</p>`
+```
+
