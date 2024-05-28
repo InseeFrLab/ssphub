@@ -32,7 +32,8 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 
 ::: 
 
-Dans cette _newsletter_
+Cette _newsletter_
+
 
 # Prochains événements
 
@@ -46,7 +47,7 @@ Cette année, le thème de l'événement est _"Décollage imminent pour la data 
 
 Deux types de participation sont possibles:
 
-- Inscription formelle: l'événement est reconnu comme un événement de formation classique par l'Insee et les services statistiques ministériels. Les modalités d'inscription sont rappelées sur l'intranet insee ou l'extranet SSM.
+- Inscription formelle: l'événement est reconnu comme un événement de formation classique par l'Insee et les services statistiques ministériels. Les modalités d'inscription sont rappelées sur l'intranet Insee ou l'extranet SSM.
 - Inscription informelle: vous pouvez tout à fait participer sans inscription formelle et dédier le temps que vous désirez au sujet. Pour ce type de participation, vous pouvez envoyer un mail à <ssphub-contact@insee.fr> pour être inclus dans la liste de diffusion des informations de cet événement. 
 
 
@@ -58,6 +59,20 @@ Une session de présentation des sujets, des données et de l’environnement te
 
 
 Les ressources de l'an dernier, sur le thème _"du champ à l'assiette"_ (partenariat avec le ministère de l'Agriculture et de la Souveraineté alimentaire) sont toujours disponibles sur [le site dédié](https://inseefrlab.github.io/funathon2023/).
+
+
+## Prochaine _masterclass_ `datascientest`
+
+
+La prochaine _masterclass_ organisée en lien avec l'organisme `datascientest`
+sera consacrée à l'utilisation d'API pour récupérer
+des données par le biais de `Python`. Elle aura lieu le __14 juin de 10h à 12h__. 
+
+Au programme de cette _masterclass_,
+des explications sur le principe des API et l'utilisation de celles-ci pour récupérer des données. 
+Ces éléments seront illustrés par l'utilisation de plusieurs API _open data_ françaises: API Ban, API de l'INPI et bien sûr les API de l'Insee. 
+
+Pour s'inscrire, il suffit de suivre [ce lien](https://framaforms.org/inscription-aux-masterclass-datascientest-1695194241).
 
 
 # _Replay_ de nos derniers événements
