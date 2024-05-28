@@ -35,6 +35,18 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](h
 Cette _newsletter_
 
 
+# Actualités
+
+## L'Insee partenaire des ["Rencontres R"](https://rr2024.sciencesconf.org/)
+
+Chaque année, la communauté {{< fa brands r-project >}} francophone se retrouve lors des _"Rencontres {{< fa brands r-project >}}"_,
+un événement d'échange et de partage autour du logiciel {{< fa brands r-project >}}. 
+
+L'édition 2024 est organisée à Vannes du 12 au 14 juin 2024. Le programme complet (tutoriels et conférences) est disponible sur le [site de l'événement](https://rr2024.sciencesconf.org/program).
+Parmi les participants, la statistique publique est représentée par Romain Lesur (Insee) qui évoquera en conférence plénière la manière dont Onyxia (le logiciel derrière le [SSPCloud](https://datalab.sspcloud.fr/)) permet de tirer parti des technologies à l'état de l'art de la science des données sans être enfermé par des logiciels propriétaires. Tanguy Barthélémy, de l'Insee également, présentera quant à lui [`RJDemetra`](https://rjdverse.github.io/rjdemetra/), un _package_ consacré à l'ajustement saisonnier de séries temporelles. 
+L'Insee, qui utilise de manière croissante cet écosystème _open source_, est également partenaire de l'événement. 
+
+
 # Prochains événements
 
 ## L'Insee organise le Funathon, un nouvel événement de formation autour de la _data science_
@@ -59,7 +71,6 @@ Une session de présentation des sujets, des données et de l’environnement te
 
 
 Les ressources de l'an dernier, sur le thème _"du champ à l'assiette"_ (partenariat avec le ministère de l'Agriculture et de la Souveraineté alimentaire) sont toujours disponibles sur [le site dédié](https://inseefrlab.github.io/funathon2023/).
-
 
 ## Prochaine _masterclass_ `datascientest`
 
