@@ -49,6 +49,12 @@ website:
         href: https://github.com/InseeFrLab/ssphub
   site-url: https://ssphub.netlify.app/
   description: "Blog du réseau des data scientists de la statistique publique"
+  announcement: 
+    icon: bi-megaphone
+    dismissable: true
+    content: "2e journée du réseau le __14 octobre 2024__ à la Tréso. Plus d'infos [ici](/eve)"
+    type: primary
+    position: below-navbar
 
 format:
   html:
