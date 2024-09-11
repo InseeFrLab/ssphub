@@ -52,7 +52,7 @@ website:
   announcement: 
     icon: bi-megaphone
     dismissable: true
-    content: "2e journée du réseau le __14 octobre 2024__ à la Tréso. Plus d'infos [ici](/eve)"
+    content: "2e journée du réseau le __14 octobre 2024__ à la Tréso. Plus d'infos [ici](/talk/2024-10-14-network-day/index.qmd)"
     type: primary
     position: below-navbar
 
