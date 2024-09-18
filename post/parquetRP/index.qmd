@@ -117,8 +117,8 @@ grâce à l'optimisation permise par `DuckDB`.
 
 Les données sont disponibles sur le site `data.gouv` aux adresses suivantes :
 
-* [Fichier détail individuel](https://www.data.gouv.fr/fr/datasets/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/) ([documentation sur insee.fr](https://www.insee.fr/fr/statistiques/7706119?sommaire=7637890)) ;
-* [Fichier détail logement](https://www.data.gouv.fr/fr/datasets/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/#/resources) ([documentation sur insee.fr](https://www.insee.fr/fr/statistiques/7705908?sommaire=7637890)).
+* [Fichier détail individuel](https://www.insee.fr/fr/statistiques/7706119?sommaire=7637890) ;
+* [Fichier détail logement](https://www.insee.fr/fr/statistiques/7705908?sommaire=7637890).
 
 
 Dans la suite de ce guide, il sera fait l'hypothèse 
@@ -248,7 +248,37 @@ le code ci-dessous peut être utilisé :
 schema_table_individu = db.query(
   "SELECT * FROM documentation_indiv"
   )
-Inputs.table(schema_table_individu)
+schema_table_logement = db.query(
+  "SELECT * FROM documentation_logement"
+  )
+```
+
+Voici le dictionnaire des variables de la table logement:
+
+```{ojs}
+//| echo: false
+viewof search_logement = Inputs.search(schema_table_logement, {
+  placeholder: "Rechercher une information dans la table logement"
+})
+```
+
+```{ojs}
+//| echo: false
+Inputs.table(search_logement)
+```
+
+Et voici celui de la table individus:
+
+```{ojs}
+//| echo: false
+viewof search_individus = Inputs.search(schema_table_individu, {
+  placeholder: "Rechercher une information dans la table individus"
+})
+```
+
+```{ojs}
+//| echo: false
+Inputs.table(search_individus)
 ```
 
 
@@ -722,13 +752,6 @@ dont la syntaxe reproduit celle du _package_ `R` `ggplot2`, plutôt que sur
 {{< include snippets/11_pyramide_ages_r_dbplyr.qmd >}}
 
 :::
-
-Pour utiliser une version compatible, par exemple la `0.6.11`, faire:
-
-```{ojs}
-//| echo: false
-Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.11/dist/plot.umd.min.js")
-```
 
 
 ```{ojs}
