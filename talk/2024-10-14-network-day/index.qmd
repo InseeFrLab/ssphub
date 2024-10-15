@@ -13,26 +13,94 @@ image: https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limi
 echo: false
 ---
 
-## Deuxième journée du  SSPHub le 14 octobre
+## Replay de la deuxième journée du SSPHub le 14 octobre 2024
 
-Nous avons le plaisir de proposer une deuxième journée autour de la communauté des data scientists de la statistique publique.
+Les sessions plénières de la journée du réseau sont disponibles ci-dessous:
 
-* 📅 Date : __Lundi 14 octobre 2024__
-* 🕒 Horaire : De __9h30 à 19h30__
-* 📍 Lieu : Le __Tiers-Lieu [la Tréso](https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/573463_972121.png) à Malakoff__.
+<details>
 
-
-❓️ La journée sera organisée autour de présentations thématiques sur des projets de data science menés par des membres du réseau et des temps d’ateliers (voir programme ⬇️)
-
-👉️ __Pour s’inscrire à cette journée, suivez [ce lien](https://www.eventbrite.com/e/2e-journee-du-reseau-des-data-scientists-tickets-1004564869567).__ 
-
-Deux types d'inscriptions sont possibles:
-
-* 🙋‍♀️ inscription en présentiel pour l'ensemble de la journée (⚠️ nombre de places limitées) ;
-* 📹️ inscription en distanciel pour la retransmission en direct via Zoom (à l'exception des ateliers, non retransmis). 
+<summary>
+Séquencement de la vidéo et _slides_
+</summary>
 
 
-## Au programme
+* __00:00-03:30__: Introduction de la journée par Romain Lesur
+
+* __03:30-46:30__: _"Le blé vu du ciel : images satellitaires et prédiction des rendements agricoles à l’échelle de la parcelle"_ (Service statistique ministériel du Ministère de l'Agriculture, de la souveraineté alimentaire et de la Forêt).
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/agriculture.pdf",
+  "Télécharger les slides du SSM Agriculture"
+)
+```
+
+* __46:30-83:00__: _"Identifier et classer les causes de décès en automatisant le traitement des certificats en langage naturel"_ (CépiDC, Inserm)
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/cepidc.pdf",
+  "Télécharger les slides du CépiDC"
+)
+```
+
+* __86:00-123:00__: _Keynote_ de Pascal Rivière (chef de l'Inspection générale de l'Insee) _"Data science et statistique publique : contexte institutionnel et évolutions"_
+
+* __123:00-164:00__: _"Extraction automatisée de tableaux dans des PDF pour la construction de statistiques d’entreprises"_ (Insee)
+
+```{ojs}
+createButton(
+  "https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/#/title-slide",
+  "Voir les slides de l'Insee"
+)
+```
+
+* __164:00-205:00__: _"Scraper et retravailler les offres d’emploi en ligne pour permettre des analyses fines du marché du travail, le projet JOCAS"_ (Dares: Service statistique ministériel du Ministère du Travail et de l'Emploi)
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/jocas.pptx",
+  "Voir les slides de la DARES"
+)
+```
+
+* __A partir de 205:00__: _Keynote_ de Pierre Etienne Devineau (ex-DINUM) sur les enjeux rencontrés par le projet Albert autour de l’entraînement et de la mise en production de grands modèles de langage (LLM) francophones.
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/albert.pptx",
+  "Voir les slides de Pierre Etienne Devineau"
+)
+```
+
+</details>
+
+
+
+{{< video https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/GMT20241014-080309_Recording_3840x2160.mp4 >}}
+
+
+Les _slides_ des différentes présentations peuvent être téléchargées ⬆️
+
+
+```{ojs}
+//| echo: false
+function createButton(slides, message="Télécharger les slides"){
+  const button = html`
+  <p class="text-center">
+    <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+      <i class="fa-solid fa-file-arrow-down"></i>&ensp;${message}
+    </a>
+  </p>`
+  return button
+}
+```
+
+<details>
+
+<summary>
+Rappel du programme de la journée
+</summary>
 
 * __9h30-10h__: __Accueil__, moment de convivialité autour d’un café.
 * __10h-11h30__: __Retours d’expérience__ de projets innovants autour de la classification de textes ou d’images :
@@ -48,10 +116,8 @@ Deux types d'inscriptions sont possibles:
 * __16h30-17h30__: **_Keynote_** par Pierre Etienne Devineau (Ministères sociaux) et Léo Guillaume (Dinum). Les enjeux rencontrés par le projet Albert autour de l’entraînement et de la mise en production de grands modèles de langage (LLM) francophones.
 * __17h30-19h30__: __Pot__, moment de convivialité.
 
-Le repas et le pot sont offerts aux participants sur place.
-
-__Pour les inscriptions présentielles, afin de laisser la place à des personnes pouvant être présentes, merci de vous désinscrire si finalement vous n'êtes pas disponible.__
+</details>
 
 Pour toute information : <ssphub-contact@insee.fr>
 
-📺️ Pour revoir en replay la première journée du réseau, [cliquer ici](/talk/2023-ssphubday/index.qmd).
+📺️ La première journée du réseau ayant eu lieu en 2023 est également [disponible en replay](/talk/2023-ssphubday/index.qmd).
