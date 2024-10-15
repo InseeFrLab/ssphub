@@ -60,7 +60,7 @@ createButton(
 ```{ojs}
 createButton(
   "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/jocas.pptx",
-  "Voir les slides de la DARES"
+  "Télécharger les slides de la DARES"
 )
 ```
 
@@ -69,7 +69,7 @@ createButton(
 ```{ojs}
 createButton(
   "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/albert.pptx",
-  "Voir les slides de Pierre Etienne Devineau"
+  "Télécharger les slides de la keynote"
 )
 ```
 
