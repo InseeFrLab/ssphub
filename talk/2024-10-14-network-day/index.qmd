@@ -11,9 +11,11 @@ description: |
 date: '2024-10-14T15:00:00Z'
 image: https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png
 echo: false
+lightbox: true
 ---
 
 ## Replay de la deuxième journée du SSPHub le 14 octobre 2024
+
 
 Les sessions plénières de la journée du réseau sont disponibles ci-dessous:
 
@@ -75,9 +77,27 @@ createButton(
 
 </details>
 
-
+Quelques photos de l'événement:
 
 {{< video https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/GMT20241014-080309_Recording_3840x2160.mp4 >}}
+
+::: {#fig-ssphub-images layout-ncol=2}
+
+![](https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img1.jpg){group="my-gallery"}
+
+![](https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img2.jpg){group="my-gallery"}
+
+![](https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img3.jpg){group="my-gallery"}
+
+![](https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img4.jpg){group="my-gallery"}
+
+![](https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img5.jpg){group="my-gallery"}
+
+![](https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img6.jpg){group="my-gallery"}
+
+![](https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img7.jpg){group="my-gallery"}
+:::
+
 
 
 Les _slides_ des différentes présentations peuvent être téléchargées ⬆️
