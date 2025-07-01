@@ -23,28 +23,29 @@ title-block-banner-color: white
 website:
   title: "SSPHub"
   navbar:
+    search: true
     right:
       - icon: rss
         href: index.xml  
     left:
       - href: index.qmd
-        text: Home
+        text: "Home"
       - href: event.qmd
-        text: Événements
+        text: "Événements"
       - href: infolettre/index.qmd
-        text: Newsletters
+        text: "Newsletters"
       - href: blog.qmd
-        text: Blog
+        text: "Blog"
       - href: course.qmd
-        text: Ressources utiles
+        text: "Ressources utiles"
       - text: "À propos"
         menu:
           - href: about.qmd 
-            text: Présentation du réseau
+            text: "Présentation du réseau"
           - href: additional/manifeste.qmd
-            text: Manifeste du réseau
+            text: "Manifeste du réseau"
       - href: https://datalab.sspcloud.fr/
-        text: "`SSPCloud`"
+        text: "Le SSPCloud"
       - icon: github
         href: https://github.com/InseeFrLab/ssphub
   site-url: https://ssphub.netlify.app/
