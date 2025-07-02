@@ -5,6 +5,7 @@ subtitle: Présentation par Christopher Kermorvant de la problématique de l'OCR
 categories:
 - OCR
 - deep learning
+- event
 
 description: |
   Le 29 mars de 15h à 16h nous recevons Christopher Kermorvant, chercheur spécialisé en OCRisation et fondateur de Teklia. Il nous fera un état de l'art de l'OCRisation puis nous parlera des projets qu'il a pu mener avec Teklia comme son projet actuel d'OCRisation de vieux recensements avec l'INED.
@@ -12,13 +13,11 @@ date: '2023-03-29T15:00:00Z'
 image: ocr.png
 ---
 
-Replay de l'événement: 
+Le replay de l'événement est disponible ci-dessous.  
 
 {{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_ocrisation/replay.mp4" controls="yes" >}}
 
 
-Slides présentées par Christopher Kermorvant:
-
-https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_ocrisation/slides.pptx
+Les slides présentées par Christopher Kermorvant sont aussi disponibles [ici](https://minio.lab.sspcloud.fr/lgaliana/ssphub/files/event_ocrisation/slides.pptx).
 
 ![](ocr.png)
