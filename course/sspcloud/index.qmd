@@ -4,7 +4,7 @@ description: |
   Le SSPCloud, la plateforme <em>cloud</em> 
   développée par l'Insee, propose
   un certain nombre de tutoriels
-  en `Python` ou `R`.
+  en <code>Python</code> <i class="fa-brands fa-python"></i> ou <code>R</code> <i class="fa-brands fa-r-project"></i>.
 categories:
 - R
 - Python
@@ -19,4 +19,3 @@ image: featured.png
 # Optional external URL for project (replaces project detail page).
 website: "https://www.sspcloud.fr/formation"
 ---
-

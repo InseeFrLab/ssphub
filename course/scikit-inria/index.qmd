@@ -1,8 +1,8 @@
 ---
 title: Machine Learning in Python with scikit-learn
 description: |
-  Un MOOC de l'INRIA sur `scikit-learn`, l'écosystème
-  central du machine learning en `Python`.
+  Un MOOC de l'INRIA sur <code>scikit-learn</code>, l'écosystème
+  central du <em>Machine Learning</em> en <code>Python</code>.
 categories:
 - Machine Learning
 - Deep Learning
@@ -15,4 +15,3 @@ image: featured.png
 # Optional external URL for project (replaces project detail page).
 website: "https://inria.github.io/scikit-learn-mooc/"
 ---
-

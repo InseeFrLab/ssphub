@@ -4,6 +4,7 @@ listing:
   id: course-listings
   contents: course
   type: grid
+  template: scripts/courses.ejs
   sort: "date desc"
   #categories: true
 ---

@@ -2,7 +2,7 @@
 title: Mise en production de projets de data science
 description: |
   Un site web complet pour découvrir la manière dont
-  des projets data-science peuvent être valorisés
+  des projets <em>data-science</em> peuvent être valorisés
   et maintenus dans le temps.
 categories:
 - Python
@@ -19,4 +19,3 @@ image: featured.png
 # Optional external URL for project (replaces project detail page).
 website: "https://ensae-reproductibilite.github.io/website/"
 ---
-

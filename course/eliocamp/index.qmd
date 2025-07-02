@@ -3,7 +3,7 @@ title: R reproducibility toolkit for the practical researcher
 description: |
   Un site web très complet développé par des universitaires
   sud-américains pour présenter la manière dont les
-  projets en `R` peuvent être construits de manière
+  projets en <code>R</code> peuvent être construits de manière
   reproductible.
 categories:
 - R
@@ -17,4 +17,3 @@ website: "https://eliocamp.github.io/reproducibility-with-r/"
 
 image: featured.png
 ---
-
