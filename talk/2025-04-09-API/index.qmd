@@ -10,7 +10,7 @@ description: |
 
 date: '2025-04-09T14:00:00Z'
 echo: false
-image: 2025-04-09-Atelier-API.png
+image: Atelier-API.png
 ---
 
 
@@ -37,7 +37,7 @@ slides_button = html`<p class="text-center">
 </p>`
 ```
 
-# Documentation de l'atelier & replay
+# Documentation de l'atelier & _replay_
 Le matériel lié à l'atelier, y compris le replay, est disponible [ici](https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html){target="_blank"}.
 ![](API-site-preview.png)
 

@@ -53,7 +53,7 @@ website:
   announcement: 
     icon: bi-megaphone
     dismissable: true
-    content: "📺️ Le replay de la 2e journée du réseau ayant eu lieu le __14 octobre 2024__ est déjà disponible [ici](/talk/2024-10-14-network-day/index.qmd)"
+    content: "📺️ Le replay des ateliers du __9 et 16 avril 2025__ sont disponibles [ici (API)](/talk/2025-04-09-API/index.qmd) et [ici (pour le format Parquet)](/talk/2025-04-16-Parquet/index.qmd)"
     type: primary
     position: below-navbar
 
