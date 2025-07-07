@@ -23,28 +23,29 @@ title-block-banner-color: white
 website:
   title: "SSPHub"
   navbar:
+    search: true
     right:
       - icon: rss
         href: index.xml  
     left:
       - href: index.qmd
-        text: Home
+        text: "Home"
       - href: event.qmd
-        text: Événements
+        text: "Événements"
       - href: infolettre/index.qmd
-        text: Newsletters
+        text: "Newsletters"
       - href: blog.qmd
-        text: Blog
+        text: "Blog"
       - href: course.qmd
-        text: Ressources utiles
+        text: "Ressources utiles"
       - text: "À propos"
         menu:
           - href: about.qmd 
-            text: Présentation du réseau
+            text: "Présentation du réseau"
           - href: additional/manifeste.qmd
-            text: Manifeste du réseau
+            text: "Manifeste du réseau"
       - href: https://datalab.sspcloud.fr/
-        text: "`SSPCloud`"
+        text: "Le SSPCloud"
       - icon: github
         href: https://github.com/InseeFrLab/ssphub
   site-url: https://ssphub.netlify.app/
@@ -52,7 +53,7 @@ website:
   announcement: 
     icon: bi-megaphone
     dismissable: true
-    content: "📺️ Le replay de la 2e journée du réseau ayant eu lieu le __14 octobre 2024__ est déjà disponible [ici](/talk/2024-10-14-network-day/index.qmd)"
+    content: "📺️ Le replay des ateliers du __9 et 16 avril 2025__ sont disponibles [ici (API)](/talk/2025-04-09-API/index.qmd) et [ici (pour le format Parquet)](/talk/2025-04-16-Parquet/index.qmd)"
     type: primary
     position: below-navbar
 
