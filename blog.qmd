@@ -1,16 +1,16 @@
 ---
-title: "Blog"
+title: "Blog & projets innovants du SSP"
 listing:
   feed: true
   id: blog-listing
   contents: post
   type: grid
-  #template: scripts/courses.ejs
-  sort: date
-  #categories: true
+  sort: 
+    - "date desc"
+  categories: true
 ---
 
-Les articles de blog les plus récents
+Vous pouvez trouver ici les articles de blog et des projets innovants portés par des membres du SSP.
 
 <br>
 
