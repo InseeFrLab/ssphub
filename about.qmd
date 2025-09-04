@@ -2,29 +2,6 @@
 title: "Le réseau des data scientists"
 ---
 
-::: {.grid .column-page}
-
-::: {.g-col-3}
-![](avatar.png)
-
-:::: {.title-ssp .test}
-_[Service Statistique Public](https://www.insee.fr/fr/information/1302192)_
-
-::::: {.g-col-1}
-:::::
-
-::::: {.g-col-1}
-[{{< fa envelope title="An envelope" >}}](mailto:ssphub-contact@insee.fr)
-:::::
-::::: {.g-col-1}
-:::::
-
-::::
-
-:::
-
-
-::: {.g-col-9}
 
 Le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192) est constitué principalement, mais non exclusivement, par
 les administrations en charge de la production de statistiques officielles
@@ -40,9 +17,4 @@ dont les principaux sont:
 Afin de mieux cerner les objectifs, le public cible, les thèmes abordés par le réseau, et les moyens associés, un [Manifeste 📜](/additional/manifeste.html) a été rédigé de manière collective.  
 
 Le réseau peut être rejoint de diverses manières ! Pour intégrer notre canal de discussion `Tchap`, recevoir l'infolettre mensuelle ou connaître les évènements _data_ à venir, vous pouvez écrire à <ssphub-contact@insee.fr>. Pour participer à la création de contenu sur ce site, cela se passe sur [`Github` {{< fa brands github >}}](https://github.com/linogaliana/ssphub).  
-
-:::
-
-:::
-
 
