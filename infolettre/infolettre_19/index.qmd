@@ -23,7 +23,7 @@ categories:
 
 :::{.callout-tip}
 
-__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](XXXXXX).*__
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103).*__
 
 ::: 
 
@@ -36,8 +36,13 @@ __*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](X
 - continuer de parler à tout le monde intéressé par la science des données, quel que soit son niveau d'expertise
 - contribuer à mettre en avant plus facilement des personnes ou des projets au sein du réseau.  
 
-Nouvelle structure, moins longue, plus ramassée, vous aurez plus de travail pour creuser plus loin les sujets !
+Nouvelle structure, moins longue, plus ramassée, vous aurez plus de travail pour creuser plus loin les sujets ! L'idée est ainsi d'insérer au moins dans chaque veille : 
+- une datavisualisation 
+- une veille d'éléments jugés pertinents
+- une interview de quelqu'un ou d'une équipe selon un canevas à peu près stable. 
+
 Bonne lecture !
+
 
 # Actus du réseau
 
@@ -50,6 +55,10 @@ Comme les années précédentes, l'événement sera en présentiel et à distanc
 
 - 👉️ [Ajouter cet événement à votre agenda `Outlook`](A FAIRE) 
 - 👉️ [Lien visio](https://insee-fr.zoom.us/j/92214881849?pwd=k0o7oTnCWBDCFQZds1T0nBRRsobcBW.1)
+
+## Le site du réseau évolue
+Le processus d'inscription à la liste de diffusion a été revu et est maintenant basé sur Grist. Pour s'inscrire à la liste de diffusion, c'est par [ici](https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103). Une fois inscrit, vous pouvez créer un compte sur [Grist](https://grist.numerique.gouv.fr) et vous connecter directement sur [l'annuaire](https://grist.numerique.gouv.fr/o/ssphub/iTFX7gryL8jK/Annuaire?utm_id=share-doc) pour mettre à jour vos données, demander votre désinscription en cochant la case "Supprimez mon compte". 
+Par ailleurs, le site du réseau devrait évoluer dans les prochaines semaines. Si vous avez des idées ou des envies, n'hésitez pas à les partager ! 
 
 # Actualité
 Vous voyez un sujet d'actualité intéressant ? N'hésitez pas à le partager sur le [groupe Tchap 💬](https://tchap.gouv.fr/#/room/#ssphub:agent.finances.tchap.gouv.fr) directement ! En attendant, voici une liste de sujets de cet été jugés subjectivement intéressants. 
@@ -71,7 +80,7 @@ Comme toujours, une flopée d'article a été publiée sur l'IA : déploiement d
 ## Parquet 
 - Le site [Hyperparam](https://hyperparam.app/) permet d'afficher très rapidement des données Parquet volumineuses sur son explorateur web très rapidement (en moins de 500ms). Pour la tuyauterie, tout est expliqué [sur ce blog](https://blog.hyperparam.app/2025/07/24/quest-for-instant-data/). 
 
-# Kubernetes
+## Kubernetes
 - Comment détecter facilement des pod Kubernetes peu actifs et les désactiver? Un début de processus a été publié sur [Devops.dev](https://blog.devops.dev/reclaiming-idle-gpus-in-kubernetes-a-practical-approach-and-a-call-for-ideas-08cbad89f988).  
 
 ## Nouveautés
@@ -83,12 +92,29 @@ Comme toujours, une flopée d'article a été publiée sur l'IA : déploiement d
 - Vous vous êtes déjà demandés comment résoudre un [SUTOM](https://sutom.nocle.fr/) avec les **dépendances de Python** ? Non ? Et bien quelqu'un a trouvé le moyen de résoudre des Sudoku et des Motus grâce à cela ! Tout est expliqué [ici](https://mildbyte.xyz/blog/solving-wordle-with-uv-dependency-resolver/)
 - Avez-vous déjà vu une **intelligence artificielle jouer au Loup-Garou** ? Des étudiants de l'ENSAE ~~se sont amusés~~ ont [étudié](https://werewolf.foaster.ai/) quelles IA étaient meilleurs au jeu du Loup-Garou, nécessitant de mentir, convaincre, adapter sa stratégie pour survivre. A la fin, GPT-5 gagne dans 97% des 60 matchs joués, contre 15% pour GPT-OSS-120b.
 
-J'ai essayé de trouver des idées en demandant à un moteur d'IA. Voici les questions qu'il m'a proposées : 
 
+# Interview  
+Première interview, je propose donc humblement de m'auto-interviewer pour lancer ce format. 
 
+|     |     |
+| --- | --- |
+| **Présente-toi** | Je m'appelle Nicolas, j'ai 33 ans. De formation ingénieure, j'ai travaillé huit ans dans l'administration publique avec un parcours jusque là plutôt atypique. J'ai en effet notamment travaillé au sein de la DG Trésor et puis de la Commission européenne, sur des sujets de prévision de finances publiques, de négociations européennes et de suivi de la Banque centrale européenne. La donnée n'a pas été jusque là au centre de mes postes jusque là mais l'importance des outils et de traitement plus robuste aurait facilité la vie à certains moments. J'arrive donc à l'Insee pour la première fois mais je suis content de "découvrir la maison".| 
+
+| **Peux-tu donner un conseil que tu aurais aimé recevoir en lien avec la data ?** | Question difficile, étant donné que je n'ai pas mené beaucoup de projets data jusqu'ici. Mais j'ai remarqué que l'ordinateur avait rarement tort et qu'être persévérant était utile. Avoir un code propre aussi, quand on est même pas capable de comprendre ce qu'on a codé soit-même en rentrant de vacances, cela donne une leçon pour la suite. J'aurai surement plus d'exemple d'ici un an ou deux 😉 | 
+
+| **As-tu un projet qui a particulièrement marché, et pourquoi a-t-il marché ? A l'inverse, as-tu un projet qui n'a pas marché et pourquoi ?** |  J'avais codé des petits programmes pour m'aider dans mon travail quotidien, sans rapport direct avec la donnée. Ce qui a aidé dans les deux cas c'est que le besoin métier était bien défini et bien compris, puisque j'étais à la fois le métier et le développeur. Cependant, ces programmes font partie d'un shadow IT qui n'a pas dû me survivre bien longtemps. | 
+
+| **Pourquoi travailles-tu dans la fonction publique ?**|  | 
+
+| **Dans quel domaine le service public pourrait être aidé par une utilisation plus importante des données ?** | Un usage plus important de la donnée serait fort bénéfique pour la simplification des démarches pour les citoyens, permettre de diminuer le non-recours aux subventions et différents dispositifs publics tout en renforçant la qualité des données échangées entre administrations.     | 
+
+|  **La dernière découverte technologique qui t'a marqué**| J'avais un peu laissé de côté markdown depuis huit ans. En revenant dans le domaine de la data, je découvre à quel point ce milieu a évolué grâce à Posit, Quarto et l'apport de tous ces projets open source, auxquels des gens contribuent souvent naturellement.  L'open source, c'est un peu comme les pompiers ou le secours en mer : ce sont des bénévoles qui font tenir et maintiennent des outils extraordinaires.  | 
+
+## L'interview à laquelle vous avez échappé
+J'ai essayé de trouver des idées en demandant à un moteur d'IA. Voici les questions qu'il m'a proposées et que j'ai proposé de ne pas suivre.  
+
+```{r}
 Voici une proposition de questions adaptées à des data scientists ou des managers de data scientists travaillant dans l'administration publique :
-
-### Questions pour les interviews mensuelles
 
 1. **Formations et influences**
    *"Quelle formation ou influence majeure a façonné votre approche des données et de la gestion dans l'administration ?"*
@@ -121,4 +147,5 @@ Voici une proposition de questions adaptées à des data scientists ou des manag
     *"Si vous deviez partager une philosophie ou un credo concernant la gestion ou l'analyse des données dans l'administration, quelle serait-elle ?"*
 
 Ces questions devraient aider à explorer les nuances spécifiques du travail des data scientists et de leurs managers dans le secteur public. Si vous souhaitez ajuster davantage ou ajouter des thèmes spécifiques, n'hésitez pas à me le faire savoir !
+```
 
