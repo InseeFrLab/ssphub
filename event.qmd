@@ -10,6 +10,18 @@ listing:
       description: "Séminaire de Méthodologie statistique et de sciences des données du 12 avril 2021 : revue des méthodes d'appariement et des principaux concepts et quelques exemples de traitement mis en oeuvre récemment en termes d'appariement"
       date: "2021-04-21"
       categories: [Seminaire]
+    - path: https://www.insee.fr/fr/information/5357816
+      image: assets/media/logo_Insee.png
+      title: "Nouvelles approches pour coder dans une nomenclature : machine learning et autocomplétion"
+      description: "Séminaire de Méthodologie statistique et de sciences des données du 14 janvier 2020 : innovation et expériences pratiques récentes pour réaliser des tâches de classification avec des outils d'analyse textuelle et d'apprentissage statistique supervisé"
+      date: "2020-01-14"
+      categories: [Seminaire]
+    - path: https://www.insee.fr/fr/information/2653115
+      image: assets/media/logo_Insee.png
+      title: "Big Data et Statistiques publiques : questions de méthodes et lancement du SSPLab"
+      description: "Séminaire de Méthodologie statistique et de sciences des données du 30 novembre 2016 : enjeu technique et statistique de l'utilisation de la science des données pour la statistique publique, aperçu des innovations en cours"
+      date: "2016-11-30"
+      categories: [Seminaire]
 
     type: grid
     sort:
