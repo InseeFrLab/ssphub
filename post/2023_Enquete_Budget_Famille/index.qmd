@@ -4,7 +4,7 @@ title: "Travaux méthodologiques sur l'enquête Budget de Famille"
 
 # Summary for listings and search engines
 description: |
-  La fiche du projet mené par l'Insee sur la modernisation de l'enquête budget des familles. 
+  Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique
 
 format: html
 
@@ -23,19 +23,57 @@ categories :
 - Python
 ---
 
+# Synthèse du projet
+
 |              | Travaux méthodologiques sur l'enquête budget de famille                            |
 |--------------|------------------------------------------------------------------------------------|
 | **Détail du projet**         | La collecte de la prochaine enquête budget de famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). Deux axes existent dans cette expérimentation : <br> -- Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> -- Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.                                                                                             |
 | **Sponsor**                  | Insee (DG/DSDS - division des conditions de vie des ménages)         |
-| **Équipe**                   | SSP Lab (Lino Galiana, Tom Seimandi) - DCVM (Simon Moreau)           |
+| **Équipe**                   | SSP Lab (Lino Galiana, Tom S.) - DCVM (Simon M.)           |
 | **Point de contact**         | Lino Galiana                                                         |
 | **Résultats du projet**      | Projet en cours                                                      |
 | **Code du projet**           |[https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf) |
 
 
-Et ici des détails sur le projet en cours
+<!-- <script src="https://git.lab.sspcloud.fr/ssplab/bdf/-/raw/main/README.md"></script>  
+https://github.com/mcanouil/quarto-external/blob/main/example.qmd to insert an external file
+ -->
 
-Embed the Readme file : 
-<script src="https://git.lab.sspcloud.fr/ssplab/bdf/-/raw/main/README.md?ref_type=heads"></script>
+# Détails
+
+## Code source
+
+Code à remettre en ordre légèrement, peut-être en séparant le code relatif à l'extraction de tickets de caisse des quelques scripts relatifs à la codification des produits.
+
+### Codification des produits
+
+- `predicat.py`: Classe qui permet de faire des appels à l'API predicat
+- `convert_bdf_data.py`: Conversion de données de l'enquête BDF du format SAS au format parquet
+
+### Tickets de caisse
+
+- `load_labeled_data.py`: Pour récupérer localement des annotations, avec `python load_labeled_data.py labels_remote_path local_file`, qui sauvegarde les annotations dans un json à l'emplacement `local_file`. Par exemple `python src/load_labeled_data.py projet-budget-famille/labelstudio/tickets/diffusion/legacy_labels/ data/labeled_sample.json`
+- `train.py`: Script pour fine-tuner un modèle d'extraction avec des données, voir "Fine-tuning d'un modèle extraction" ci-dessous
+- `test.py`: Script pour inférence avec un modèle fine-tuned, en utilisant l'OCR de `LayoutXLMProcessor`. A tester mais préférer le script suivant ?
+- `test_ocr.py`: Script pour inférence avec un modèle fine-tuned, avec OCR ad hoc utilisant DocTR. A tester.
+- `read_labels.py`: Script pour lire des labels au format .json Label Studio. A tester.
+- `prelabel_images.py` permet de pré-annoter des images stockées sur S3 avec DocTR et d'exporter les annotations au format Label Studio sur S3
+- `filter_labelstudio.py` permet de filtrer les pré-annotations en fonction des images qui ont déjà été annotées
+
+
+### Fine-tuning d'un modèle extraction
+
+- Import des images dans `data/sample/`, avec `mc cp -r s3/projet-budget-famille/labelstudio/tickets/diffusion/ls_data/ data/sample/`
+- Lancement d'un entraînement MLFlow avec:
+
+```
+export MLFLOW_S3_ENDPOINT_URL='https://minio.lab.sspcloud.fr'
+export MLFLOW_TRACKING_URI="https://projet-budget-famille-mlflow.user.lab.sspcloud.fr/"
+export MLFLOW_EXPERIMENT_NAME="ticket_extraction"
+
+mlflow run ~/work/bdf/ --entry-point ticket_extraction --env-manager=local -P remote_server_uri=$MLFLOW_TRACKING_URI
+```
+
+
 
 
