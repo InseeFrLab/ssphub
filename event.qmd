@@ -2,7 +2,15 @@
 title: "Evénements"
 listing:
   - id: archives
-    contents: talk/**/index.qmd
+    contents: 
+    - talk/**/index.qmd
+    - path: https://www.insee.fr/fr/information/6529555
+      image: assets/media/logo_Insee.png
+      title: "La méthodologie des appariements"
+      description: "Séminaire de Méthodologie statistique et de sciences des données du 12 avril 2021 : revue des méthodes d'appariement et des principaux concepts et quelques exemples de traitement mis en oeuvre récemment en termes d'appariement"
+      date: "2021-04-21"
+      categories: [Seminaire]
+
     type: grid
     sort:
       - "date desc"
