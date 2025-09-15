@@ -1,19 +1,30 @@
 ---
 title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+# subtitle: Article à venir
+
+# Summary for listings and search engines
+description: |
+  La fiche du projet mené par l'Insee sur la modernisation de l'enquête budget des familles. 
+
 format: html
+
 authors: 
 - Lino Galiana
 - Tom Seimandi
 
+# Date published
 date: 2023-10-03
+
+# Date updated
+image: ducks.png
 
 categories : 
 - Projets
-
+- Python
 ---
 
-|              | Travaux méthodologiques sur l'enquête budget de famille                               |
-|--------------|---------------------------------------------------------------------------------------|
+|              | Travaux méthodologiques sur l'enquête budget de famille                            |
+|--------------|------------------------------------------------------------------------------------|
 | **Détail du projet**         | La collecte de la prochaine enquête budget de famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). Deux axes existent dans cette expérimentation : <br> -- Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> -- Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.                                                                                             |
 | **Sponsor**                  | Insee (DG/DSDS - division des conditions de vie des ménages)         |
 | **Équipe**                   | SSP Lab (Lino Galiana, Tom Seimandi) - DCVM (Simon Moreau)           |
@@ -23,3 +34,8 @@ categories :
 
 
 Et ici des détails sur le projet en cours
+
+Embed the Readme file : 
+<script src="https://git.lab.sspcloud.fr/ssplab/bdf/-/raw/main/README.md?ref_type=heads"></script>
+
+
