@@ -7,7 +7,7 @@ description: |
 date: '2024-03-07'
 number: 18
 
-image: http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/hitchcock_robot.webp
+image: hitchcock_robot-1.webp
 
 authors:
   - Lino Galiana
@@ -21,7 +21,7 @@ categories:
 bibliography: references.bib
 ---
 
-![](http://minio.lab.sspcloud.fr/lgaliana/generative-art/ssphub/infolettre18.png)
+![](infolettre18.png)
 
 
 :::{.callout-tip}
@@ -383,12 +383,12 @@ html`${slides_button}`
 ```
 
 
-{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/video1991622347.mp4" controls="yes" >}}
+{{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4" controls="yes" >}}
 
 
 ```{ojs}
 //| echo: false
-slides = "https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20240229-dataviz-mauviere/conf_ssphub_icem7.pdf"
+slides = "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/conf_ssphub_item7-1.pdf"
 ```
 
 ```{ojs}
