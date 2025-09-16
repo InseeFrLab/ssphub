@@ -12,6 +12,6 @@ image: https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limi
 echo: false
 ---
 
-{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20230417_journee_reseau.mp4" controls="yes" >}}
+{{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-04-17-reseau/20230417_journee_reseau.mp4" controls="yes" >}}
 
 
