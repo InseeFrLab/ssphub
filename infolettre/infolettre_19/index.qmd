@@ -47,14 +47,12 @@ An interactive chart of this figure can be found on the Wall Street Journal [web
 
 # Actus du réseau
 
-## Événement open-source 📅 15 novembre (tbc)
-
 ##  La troisième journée du réseau 📅 1 décembre - La Tréso (Malakoff)
 **Réservez votre 1er décembre !** Pour la troisième année consécutive, le SSPLab organise la journée du réseau pour rassembler les data-scientist de la statistique publique. Au menu : présentation de projets innovants, retour d'expérience et moments d'échanges informels (autrement appelés "pots"🎉). 
 
 Comme les années précédentes, l'événement sera en présentiel et à distance pour permettre à tous de participer. Les détails seront publiés sur le [site du réseau](../../talk/2025-12-01-network-day/index.qmd) et si jamais vous voulez déjà vous inscrire alors que l'agenda n'est pas finalisé, c'est possible [ici](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). 
 
-- 👉️ [Ajouter cet événement à votre agenda `Outlook`](https://minio.lab.sspcloud.fr/nicolastlm/ssphub/public/files/2025_12_3ejournee_SSPHub.ics) 
+- 👉️ [Ajouter cet événement à votre agenda `Outlook`](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2025_12_3ejournee_SSPHub.ics) 
 - 👉️ [Lien visio](https://insee-fr.zoom.us/j/92214881849?pwd=k0o7oTnCWBDCFQZds1T0nBRRsobcBW.1)
 
 ## Le site du réseau évolue
@@ -113,7 +111,7 @@ Première interview, je propose donc humblement de m'auto-interviewer pour lance
 ## L'interview à laquelle vous avez échappé
 Quelle est la plus value de l'IA ou de l'humain ? J'ai comparé les questions que j'avais trouvées avec des idées produites par une IA. Voici les questions qu'il m'a proposées, que j'ai proposé de ne pas suivre. Remarquez, ces questions sont le résultat de deux ou trois échanges avec l'IA, je n'y ai pas passé beaucoup plus de temps. 
 
-```
+```markdown
 Voici une proposition de questions adaptées à des data scientists ou des managers de data scientists travaillant dans l'administration publique :
 
 1. **Formations et influences**
@@ -150,4 +148,6 @@ Voici une proposition de questions adaptées à des data scientists ou des manag
 Ces questions devraient aider à explorer les nuances spécifiques du travail des data scientists et de leurs managers dans le secteur public. 
 Si vous souhaitez ajuster davantage ou ajouter des thèmes spécifiques, n'hésitez pas à me le faire savoir !
 ```
+
+
 
