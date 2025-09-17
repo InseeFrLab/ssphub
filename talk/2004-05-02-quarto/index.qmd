@@ -31,7 +31,7 @@ html`${slides_button}`
 ```
 
 
-{{< video src="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/dervieux_quarto_20240502.mp4" controls="yes" >}}
+{{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-05-02-quarto/dervieux_quarto_20240502.mp4" controls="yes" >}}
 
 
 ```{ojs}

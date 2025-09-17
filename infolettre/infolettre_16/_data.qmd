@@ -7,10 +7,10 @@ _Inputs_ pour `DuckDB` 🦆
 </summary>
 
 ```{ojs}
-url_events = `https://minio.lab.sspcloud.fr/ssphub/diffusion/website/restrospective-2023/events_orginazed_2023.json`
-url_latest = 's3://lgaliana/ssphub/files/retrospective-2023/list_contacts_latest.parquet'
-url_hors_ssp = 's3://lgaliana/ssphub/files/retrospective-2023/series_part_ssp.parquet'
-url_latest2 = 's3://lgaliana/ssphub/files/retrospective-2023/series_nombre_contact.parquet'
+url_events = `https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-12-retrospective/events_orginazed_2023.json`
+url_latest = 's3://ssphub/diffusion/website/2023-12-retrospective/list_contacts_latest.parquet'
+url_hors_ssp = 's3://ssphub/diffusion/website/2023-12-retrospective/series_part_ssp.parquet'
+url_latest2 = 's3://ssphub/diffusion/website/2023-12-retrospective/series_nombre_contact.parquet'
 ```
 
 
