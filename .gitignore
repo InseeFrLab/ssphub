@@ -12,3 +12,4 @@ go.sum
 /.quarto/
 _site/
 rp_parquet/
+**/*.quarto_ipynb
