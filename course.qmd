@@ -4,18 +4,6 @@ listing:
   id: course-listings
   contents: 
     - course/**/index.qmd
-    - path: https://www.insee.fr/fr/statistiques/7644535
-      image: assets/media/logo_Insee.png
-      title: "Appariements de données individuelles : concepts, méthodes, conseils"
-      description: "Un appariement consiste à rapprocher deux bases de données d’origine distincte partageant des unités statistiques communes mais contenant des informations différentes. Ce document de travail porte sur les cas où un identifiant commun n'existe pas et introduit en pratique les appariements de données individuelles sur traits d'identité."
-      date: "2023-07-03"
-      categories: [Document de travail]
-    - path: https://www.insee.fr/fr/statistiques/6801092
-      image: assets/media/logo_Insee.png
-      title: "Les réseaux de neurones appliqués à la statistique publique : méthodes et cas d’usages"
-      description: "Ce document de travail propose une introduction rapide aux réseaux de neurones, de leurs fondements théoriques jusqu’à leur mise en oeuvre pratique en R et python sur des problématiques spécifiques de statistique publique. Il  illustre les possibilités et les limites à travers trois cas d’usage détaillés sur  l’imputation de valeurs manquantes dans une enquête, l’exploitation de fichiers d’images et la réduction de dimension."
-      date: "2023-02-16"
-      categories: [Document de travail]
   type: grid
   template: scripts/courses.ejs
   sort: "date desc"
