@@ -1,5 +1,5 @@
 ---
-title: "La rentrée 2025: actualités, des craintes sur l'IA en terme de bulle ou de sécurité, interview de rentrée"
+title: "La rentrée 2025: actualités, des craintes sur l'IA en termes de bulle ou de sécurité, interview de rentrée"
 
 description: |
   Infolettre du mois de __Septembre 2025__
@@ -49,7 +49,7 @@ Une version interactive est disponible sur le site du [Wall Street Journal](http
 # Actus du réseau
 
 ##  La troisième journée du réseau 📅 1 décembre - La Tréso (Malakoff)
-**Réservez votre 1er décembre !** Pour la troisième année consécutive, le SSPLab organise la journée du réseau pour rassembler les data-scientist de la statistique publique. Au menu : présentation de projets innovants, retour d'expérience et moments d'échanges informels (autrement appelés "pots"🎉). 
+**Réservez votre 1er décembre !** Pour la troisième année consécutive, le SSPLab organise la journée du réseau pour rassembler les data-scientist de la statistique publique. Au menu : présentation de projets innovants, retour d'expérience et moments d'échanges informels (autrement appelés "pots" 🎉). 
 
 Comme les années précédentes, l'événement sera en présentiel et à distance pour permettre à tous de participer. Les détails seront publiés sur le [site du réseau](../../talk/2025-12-01-network-day/index.qmd) et si jamais vous voulez déjà vous inscrire alors que l'agenda n'est pas finalisé, c'est possible [ici](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). 
 
@@ -64,20 +64,20 @@ Comme les années précédentes, l'événement sera en présentiel et à distanc
 Par ailleurs, le **site du réseau devrait évoluer dans les prochaines semaines**. Il va s'étoffer pour présenter plus de projets en cours et permettre ainsi à tout un chacun de savoir qu'un projet existe et pouvoir échanger entre pairs. Si vous avez des idées ou des envies, n'hésitez pas à les partager ! 
 
 # Actualités
-Voici une liste de sujets d'actualité depuis cet été été jugés subjectivement intéressants. 
+Voici une liste de sujets d'actualité depuis cet été jugés subjectivement intéressants. 
 
 ## IA 
 Comme toujours, une flopée d'article a été publiée sur l'IA : le nouveau modèle d'OpenAI (GPT-5) a été déployé cet été, des craintes se font entendre sur l'existence d'une bulle financière et, avec l'augmentation de l'utilisation de l'IA, de plus en plus de failles de sécurité liées à l'utilisation de l'IA sont découvertes. Un petit florilège rapide : 
 
 - Sur l'**impact de l'IA sur le travail, la productivité** : 
-   - Selon un [article](https://arxiv.org/abs/2507.09089) publié sur arXiv, un essai randomisé avec des développeurs ayant quelques années d'expérience montre que l'usage de l'IA ferait **baisser leur productivité de 19%**. Les gains de l'IA pour les développeurs seraient ainsi largement surestimés. 
+   - Selon un [article](https://arxiv.org/abs/2507.09089) publié sur arXiv, un essai randomisé avec des développeurs ayant quelques années d'expérience montre que l'usage de l'IA ferait **baisser leur productivité de 19 %**. Les gains de l'IA pour les développeurs seraient ainsi largement surestimés. 
    - A l'inverse, en se basant sur les données d'un éditeur américain de logiciel de paye, des [chercheurs](https://digitaleconomy.stanford.edu/publications/canaries-in-the-coal-mine/) confirment que **l'IA commence à avoir un impact significatif sur l'emploi** : la technologie aurait ainsi réduit de 13% le nombre d'emploi pour les jeunes employés. L'impact serait plus fort quand l'IA est capable d'automatiser les tâches effectuées par l'humain et passerait principalement par une diminution des emplois et non par un ajustement des salaires. 
 - Concernant la **technologie en soit**, des chercheurs ont fabriqué un modèle d'IA pour classifier du texte aussi efficace qu'un gros modèle et nécessitant bien moins de données pour l'entraîner. Pour ce faire, ils ont couplé un modèle de régression pénalisée (type Lasso/Ridge) à un modèle d'IA. Plus de détails dans [leur article](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5303840). 
 - De nombreux articles font craindre l'existence d'une **bulle financière autour de l'IA**. 
    - Edward Zitron, un publiciste britannique, auteur et podcasteur, rappelle sur [son blog](https://www.wheresyoured.at/the-haters-gui/) toutes les raisons pour laquelle une bulle existerait actuellement sur l'IA. Il rappelle notamment que les 560Md$ investis par les GAFAM dans l'IA n'ont généré que très peu de bénéfices et que le seul gagnant est Nvidia. Comme le dit le proverbe, __"Pendant la ruée vers l’or, ce n’est pas les chercheurs d’or qui se sont le plus enrichis, mais les vendeurs de pelles et de pioches"__.
-   - Selon article du MIT qui a  fait beaucoup de bruit, **95% des pilotes d'utilisation de l'IA en entreprise ne marchent pas**. L'article n'est plus librement accessible mais a été [sauvegardé](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/).
+   - Selon article du MIT qui a  fait beaucoup de bruit, **95 % des pilotes d'utilisation de l'IA en entreprise ne marchent pas**. L'article n'est plus librement accessible mais a été [sauvegardé](https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/).
 - Enfin, la **sécurité de la technologie** commence à poser question : 
-   - Des **données confidentielles de Microsoft** ont fuité en hackant des agents de Copilot. Les [hackeurs](https://x.com/mbrg0/status/1953815729947447770/photo/1) ont ainsi reçu par mail des extraits des contacts et des ventes de Microsoft. 
+   - Des **données confidentielles de Microsoft** ont fuité après le piratage d'agents Copilot. Les [hackeurs](https://x.com/mbrg0/status/1953815729947447770/photo/1) ont ainsi reçu par mail des extraits des contacts et des ventes de Microsoft. 
    - Selon le [rapport d'Anthropic](https://www-cdn.anthropic.com/b2a76c6f6992465c09a6f2fce282f6c0cea8c200.pdf) sur les menaces liées à l'IA, cette technologie a notamment été détournée pour : 
 
       1/ s'assurer des postes bien payés pour des **Nord-Coréens**, qui leur ont permis de rapatrier les capitaux au pays  ;
@@ -88,16 +88,16 @@ Comme toujours, une flopée d'article a été publiée sur l'IA : le nouveau mod
 - Le site [Hyperparam](https://hyperparam.app/) permet **d'afficher très rapidement des données Parquet volumineuses** sur son explorateur web très rapidement (en moins de 500ms). Pour la tuyauterie, tout est expliqué [sur ce blog](https://blog.hyperparam.app/2025/07/24/quest-for-instant-data/). 
 
 ## Kubernetes
-- **Comment détecter facilement des pod Kubernetes peu actifs et les désactiver?** Un début de processus a été publié sur [Devops.dev](https://blog.devops.dev/reclaiming-idle-gpus-in-kubernetes-a-practical-approach-and-a-call-for-ideas-08cbad89f988).  
+- **Comment détecter facilement des pods Kubernetes peu actifs et les désactiver?** Un début de processus a été publié sur [Devops.dev](https://blog.devops.dev/reclaiming-idle-gpus-in-kubernetes-a-practical-approach-and-a-call-for-ideas-08cbad89f988).  
 
 ## Nouveautés
-- Une **nouvelle version des notebooks Observable** est disponible en pré-production, avec un kit open source pour générer des notebooks et des sites statiques et une application pour Mac pour éditer ses notebooks en local, intégrant de manière plus fluide les apports de l'IA. Plus de détails par [ici]([https://observablehq.com/notebook-kit/]) et une [galerie](https://observablehq.com/notebook-kit/gallery) d'exemples de sites.
+- Une **nouvelle version des notebooks Observable** est disponible en pré-production, avec un kit open source pour générer des notebooks et des sites statiques et une application pour Mac pour éditer ses notebooks en local, intégrant de manière plus fluide les apports de l'IA. Plus de détails par [ici](https://observablehq.com/notebook-kit/) et une [galerie](https://observablehq.com/notebook-kit/gallery) d'exemples de sites.
 - L'université allemande de Hanovre [a publié](https://geovectors.l3s.uni-hannover.de/) une **base d'embeddings des entités d'Openstreetmap** directement utilisable pour entraîner des modèles de machine learning. 
 - Selon une [étude de Posit](https://posit.co/blog/python-llm-evaluation/), le **meilleur modèle d'IA pour aider à coder en Python** serait ceux d'OpenAI (o3-mini, o4-mini) ou d'Anthropic (Claude Sonnet 4).
 
 ## Fun
-- Vous vous êtes déjà demandés comment résoudre un [SUTOM](https://sutom.nocle.fr/) avec les **dépendances de Python** ? Non ? Et bien quelqu'un a trouvé le moyen de résoudre des Sudoku et des Motus grâce à cela ! Tout est expliqué [ici](https://mildbyte.xyz/blog/solving-wordle-with-uv-dependency-resolver/)
-- Avez-vous déjà vu une **intelligence artificielle jouer au Loup-Garou** ? Des étudiants de l'ENSAE ~~se sont amusés~~ ont [étudié](https://werewolf.foaster.ai/) quelles IA étaient meilleures au jeu du Loup-Garou. Ce jeu nécessite en effet de mentir, de convaincre, et d'adapter sa stratégie pour survivre (pour les villageois) ou tuer tous les villageois (pour les loup-garous). A la fin, **GPT-5 gagne dans 97% des 60 matchs joués, contre 15% pour GPT-OSS-120b**.
+- Vous vous êtes déjà demandé comment résoudre un [SUTOM](https://sutom.nocle.fr/) avec les **dépendances de Python** ? Non ? Et bien quelqu'un a trouvé le moyen de résoudre des Sudoku et des Motus grâce à cela ! Tout est expliqué [ici](https://mildbyte.xyz/blog/solving-wordle-with-uv-dependency-resolver/)
+- Avez-vous déjà vu une **intelligence artificielle jouer au Loup-Garou** ? Des étudiants de l'ENSAE ~~se sont amusés~~ ont [étudié](https://werewolf.foaster.ai/) quelles IA étaient meilleures au jeu du Loup-Garou. Ce jeu nécessite en effet de mentir, de convaincre, et d'adapter sa stratégie pour survivre (pour les villageois) ou tuer tous les villageois (pour les loup-garous). A la fin, **GPT-5 gagne dans 97 % des 60 matchs joués, contre 15% pour GPT-OSS-120b**.
 
 ::: {.callout-tip}
 Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les partager sur le [groupe Tchap 💬](https://tchap.gouv.fr/#/room/#ssphub:agent.finances.tchap.gouv.fr) directement !
