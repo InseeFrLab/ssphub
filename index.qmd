@@ -32,7 +32,7 @@ inscrits = 798
 
 ```{ojs}
 // echo: false
-badge = html`<a href="https://framaforms.org/integration-reseau-des-data-scientists-1676407156"><img alt="Static Badge" src="https://img.shields.io/badge/${inscrits}_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fframaforms.org%2Fintegration-reseau-des-data-scientists-1676407156">
+badge = html`<a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103"><img alt="Static Badge" src="https://img.shields.io/badge/${inscrits}_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103">
 </a>
 `
 ```
