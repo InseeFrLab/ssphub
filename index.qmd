@@ -5,6 +5,16 @@ title-block-style: none
 css: homepage.css
 page-layout: full
 listing:
+  - id: projects
+    contents: project/**/index.qmd
+    type: grid
+    feed: true
+    sort:
+      - "date desc"
+  - id: blog
+    contents: post
+    type: grid
+    feed: true
   - id: newsletters
     contents: infolettre/infolettre_*/**/index.qmd
     type: grid
@@ -12,10 +22,6 @@ listing:
       - "number desc"
     feed:
         categories: [post, infolettre]
-  - id: blog
-    contents: post
-    type: grid
-    feed: true
   - id: partenaires
     contents: partenaires
     template: scripts/courses.ejs
@@ -56,7 +62,7 @@ Le `SSPHub` centralise et vise à faire connaître le contenu créé par
 le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
 
 Une présentation du réseau est 
-disponible sur la page [à propos](#about). 
+disponible sur la page [à propos](about.html). 
 Pour en savoir plus sur les objectifs du réseau, sa philosophie,
 et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/manifeste.html)
 écrit collectivement. 
@@ -76,14 +82,13 @@ et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/m
 
 
 ::: {.column-page}
+## Les projets innovants du SSPHub
 
-## Les dernières _newsletters_
+L'ensemble des projets innovants peut être retrouvé sur la [page dédiée](projects.qmd).
 
-Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/index.qmd).
 
-:::: {#newsletters}
+:::: {#projects}
 ::::
-
 
 
 ## Les derniers billets de blog
@@ -92,6 +97,14 @@ L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.
 
 
 :::: {#blog}
+::::
+
+
+## Les dernières _newsletters_
+
+Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre.qmd).
+
+:::: {#newsletters}
 ::::
 
 ## Les réseaux partenaires

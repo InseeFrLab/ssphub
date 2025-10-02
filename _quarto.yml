@@ -1,19 +1,21 @@
 project:
   type: website
   render:
-    - index.qmd
     - about.qmd
-    - course.qmd
-    - blog.qmd
-    - event.qmd
-    - talk/**/*.qmd
     - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
-    - infolettre/*.qmd
-    - infolettre/**/*.qmd
-    - post/**/*.qmd
-    - partenaires/**/*.qmd
+    - blog.qmd
+    - blog/**/*.qmd
+    - course.qmd
     - course/**/*.qmd
+    - event.qmd
+    - talk/**/*.qmd
+    - index.qmd
+    - infolettre.qmd
+    - infolettre/**/*.qmd
+    - partenaires/**/*.qmd
+    - project.qmd
+    - project/**/*.qmd
     - "!*/parquetRP/snippets/*"
     - "!*/polars/polars-tuto.qmd"
 
@@ -32,14 +34,16 @@ website:
         text: "Home"
       - href: event.qmd
         text: "Événements"
-      - href: infolettre/index.qmd
-        text: "Newsletters"
       - href: blog.qmd
         text: "Blog"
+      - href: projects.qmd
+        text: "Projets"
       - href: course.qmd
         text: "Ressources utiles"
       - text: "À propos"
         menu:
+          - href: infolettre.qmd
+            text: "Newsletters"
           - href: about.qmd 
             text: "Présentation du réseau"
           - href: additional/manifeste.qmd

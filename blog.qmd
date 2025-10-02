@@ -1,9 +1,9 @@
 ---
-title: "Blog & projets innovants du SSP"
+title: "Blog"
 listing:
   feed: true
   id: blog-listing
-  contents: post
+  contents: blog/**/index.qmd
   type: grid
   sort: 
     - "date desc"
