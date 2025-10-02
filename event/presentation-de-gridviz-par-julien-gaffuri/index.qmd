@@ -29,9 +29,9 @@ carroyées (ou données géolocalisées par des _(x,y)_ à carroyer).
 Très efficace, elle permet de représenter de manière fluide
 des volumes importants de données. 
 
+## Support et replay {#replay}
 
-## Replay {#replay}
-
+Le support est disponible [ici](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-01-gridviz/gridviz.pdf). 
 
 {{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-01-gridviz/gridviz-20230120.mp4" controls="yes" >}}
 

@@ -63,7 +63,7 @@ website:
 
 format:
   html:
-    theme: [cosmo, styles.scss]
+    theme: [cosmo, assets/scss/styles.scss]
     toc: true
     page-layout: article
 
