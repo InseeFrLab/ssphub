@@ -5,7 +5,7 @@ title-block-style: none
 css: assets/css/homepage.css
 page-layout: full
 listing:
-  - id: projects
+  - id: project
     contents: project/**/index.qmd
     type: grid
     feed: true
@@ -99,16 +99,16 @@ L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.
 
 ## Les projets innovants du SSPHub
 
-L'ensemble des projets innovants peut être retrouvé sur la [page dédiée](projects.qmd).
+L'ensemble des projets innovants peut être retrouvé sur la [page dédiée](project.qmd).
 
 
-:::: {#projects}
+:::: {#project}
 ::::
 
 
 ## Les dernières _newsletters_
 
-Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre.qmd).
+Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/infolettre.qmd).
 
 :::: {#newsletters}
 ::::

@@ -13,7 +13,7 @@ project:
     - event.qmd
     - event/**/*.qmd
     - index.qmd
-    - infolettre.qmd
+    - infolettre/infolettre.qmd
     - infolettre/**/*.qmd
     - partenaires/**/*.qmd
     - project.qmd
@@ -36,13 +36,13 @@ website:
         text: "Événements"
       - href: blog.qmd
         text: "Blog"
-      - href: projects.qmd
+      - href: project.qmd
         text: "Projets"
       - href: course.qmd
         text: "Ressources utiles"
       - text: "À propos"
         menu:
-          - href: infolettre.qmd
+          - href: infolettre/infolettre.qmd
             text: "Newsletters"
           - href: about.qmd 
             text: "Présentation du réseau"
