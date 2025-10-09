@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Classification des données de caisse dans des nomenclatures à partir de machine learning"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°9"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-26
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_8.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,12 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Classification des données de caisse dans des nomenclatures à partir de machine learning                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | Les données de caisse donnent pour chaque code-barres (ou GTIN), chaque jour et chaque point de ventes les quantités vendues ainsi que le chiffre d’affaires et/ou le prix auquel le produit est vendu. Pour exploiter ces données, il est toutefois nécessaire de savoir quel produit se trouve derrière un code-barres. Actuellement, l’IPC se fonde sur un référentiel de codes-barres, acheté à un prestataire et qui donne une information très détaillée et structurée des caractéristiques de ces produits. Cette information est payante et ne couvre pas l’ensemble des produits. L’expérimentation vise à identifier les étapes de traitement textuel des libellés, ainsi que les méthodes de classification ou autres, permettant de coder automatiquement les libellés, sans passer par le référentiel, dans la nomenclature Coicop pour l’IPC et sur les regroupements utilisés pour Emagsa dans le cadre du projet Nosica qui vise à intégrer notamment les données de caisse dans la production des indicateurs d'activité de court-terme. Elle tester aussi leur performance sur des jeux de données tests. La division IPC ayant déjà classé les codes-barres dans la nomenclature Coicop grâce au référentiel de codes-barres, fournira des jeux de données d’apprentissage et de test pour entraîner et évaluer les performances des algorithmes et évaluer la pertinence des résultats de l’expérimentation.          |
+| **Acteurs**                  | Insee         |
+| **Résultats du projet**      | [note point d'étape été 2020](https://intranet.insee.fr/jcms/1345453_DBFileDocument/paul-ean-phaseb?details=true)
+[note point d'étape hiver 2020-2021](https://intranet.insee.fr/jcms/1345448_DBFileDocument/2021-3657-dg75-l401?details=true)
+API expérimentale de prédiction dans les nomenclatures NA2008 ou Coicop déployée sur le SSP Cloud et accessible [ici](https://api.lab.sspcloud.fr/predicat/).          |
+| **Code du projet**           | https://gitlab.insee.fr/ssplab/paul-ean et https://github.com/InseeFrLab/predica       |
 

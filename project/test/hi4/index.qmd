@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Extraction automatique du tableau des filiales et participations des comptes sociaux des entreprises"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°4"
 
 format: html
 
@@ -11,26 +11,27 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-18
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_3.png
 
 categories : 
 - Projets
-- codification automatique
+- Python
 - extraction de données
-- données de caisse
 
 ---
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Extraction automatique du tableau des filiales et participations des comptes sociaux des entreprises                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | Une expérimentation autour de l'extraction automatisée du tableau des filiales et participations des comptes sociaux des entreprises a été démarrée en 2022 à la suite d'un stage dans la division PTGU. Ce tableau est exploité à la main au cours des opérations de profilage des entreprises, ce qui constitue un travail fastidieux. L'expérimentation a été menée avec la Banque de France qui est intéressé par le même cas d'usage que l'Insee, avec deux objectifs principaux : - développer un prototype d'application permettant à des utilisateurs de récupérer un tableau des filiales et participations automatiquement pour un numéro Siren et une année donnés ; - comparer les performances de différentes méthodes d'extraction automatique de tableaux, basées d’une part sur des outils open-source et d’autre part sur des solutions commerciales.         |
+| **Acteurs**                  | Insee (DSE)         |
+| **Résultats du projet**      | Note à télécharger [ici](https://git.lab.sspcloud.fr/ssplab/table-extraction-evaluation/-/raw/main/doc/bilan/index.pdf?ref_type=heads\&inline=false)- <https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/> : présentation au séminaire de la DSE du 27 juin 2024         |
+| **Code du projet**           | https://github.com/InseeFrLab/ca-document-querier/ : wrapper Python autour de l'API entreprises de l'Inpi
+- https://github.com/InseeFrLab/extraction-comptes-sociaux : dépôt « core » où se trouvent les éléments pour la détection de page/extraction de tableaux
+- https://git.lab.sspcloud.fr/ssplab/comptes-sociaux/extraction-api : dépôt pour l'API de détection de page/extraction de tableaux
+- https://github.com/InseeFrLab/extract-table-ui : dépôt de code du dashboard déployé à l'URL <https://extract-table-ui.lab.sspcloud.fr/>       |
 

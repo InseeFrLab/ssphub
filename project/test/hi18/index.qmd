@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Utilisation des méthodes de machine learning pour la détection et le traitement des valeurs aberrantes ou manquantes, application à la Déclaration Sociale Nominative"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°18"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-27
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_17.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,13 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Utilisation des méthodes de machine learning pour la détection et le traitement des valeurs aberrantes ou manquantes, application à la Déclaration Sociale Nominative                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | À l'occasion de la reconstruction de la chaîne de production, ce projet invite à repenser la méthodologie de détection des anomalies et de redressement des salaires. En effet, la gestion de nouvelles données mensuelles DSN incite à tester des méthodes d'apprentissage statistique (*machine learning*) pour détecter automatiquement les anomalies sur le triplet de variables (salaire brut, salaire net et nombre d'heures).         |
+| **Acteurs**                  | Insee (DSDS)         |
+| **Résultats du projet**      | présentation aux Journées de la Méthodologie Statistique(http://jms-insee.fr/jms2018s25_4)
+présentation à la conférence [BigSurv 2018](https://www.bigsurv18.org/)
+présentation aux ateliers mensuels du Dera (jcms/1344433_DBFileDocument/presentation-dsn-dera?details=true)
+note de fin d'expérimentation adressée au Dera (jcms/1344418_DBFileDocument/note-de-recommandations-pour-la-detection-d-anomalies-dans-la-dsn?details=true)         |
+| **Code du projet**           |        |
 

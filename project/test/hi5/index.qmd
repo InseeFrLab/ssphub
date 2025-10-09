@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Utilisation des images satellites pour la statistique publique"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°5"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-3
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_4.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,15 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Utilisation des images satellites pour la statistique publique                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | Fin 2022, un groupe de travail expérimental sur l'utilisation des données satellites pour la statistique publique a été lancé. Cette initiative, intégrant un agent de la Dirag et trois agents de la DMCSI (2 SSP Lab, 1 DMRG) visait à améliorer l'organisation des enquêtes cartographiques dans les départements d'outre-mer, particulièrement en Guyane et à Mayotte. L'objectif initial était de faciliter l'organisation des enquêtes cartographiques servant à mettre à jour le RIL chaque année, en particulier en facilitant l'identification en amont des enquêtes de nouvelles zones d'habitations spontanées ou temporaires. Des algorithmes appliqués à des photographies du sol permettent d'identifier de telles zones, qui à une année d'exercice donnée nécessiteront plus d'enquêteurs qu'à l'exercice précédent (5 ans auparavant). La phase d'expérimentation s'est achevée avec: - La transmission de statistiques d'évolution de bâti par îlot à Mayotte. Ces statistiques ont servi à l'organisation de l'enquête cartographique complémentaire 2024 à Mayotte ; - Le développement d'une application de visualisation intégrant des fonds de carte construits à partir de tuiles Pleiades et les bâtiments détectés sur ces tuiles avec nos algorithmes, ainsi que des couches de détection de changement.         |
+| **Acteurs**                  | Insee (DG et Direction interrégionale Réunion-Mayotte)         |
+| **Résultats du projet**      | Une bonne partie de la documentation autour du projet, des supports de présentation, etc. est centralisée à l'URL https://inseefrlab.github.io/satellite-images-docs/         |
+| **Code du projet**           | Dépôts de code accessibles à l'URL https://github.com/orgs/InseeFrLab/teams/satellite-images/repositories
+- Package Python pour travailler avec des données satellites: https://github.com/InseeFrLab/astrovision
+- https://github.com/InseeFrLab/astrovision : code de l'application de visualisation
+- https://github.com/InseeFrLab/satellite-images-preprocess : code de pré-processing des données
+- https://github.com/InseeFrLab/satellite-images-train : code pour l'entraînement des modèles
+- https://github.com/InseeFrLab/satellite-images-inference : code pour l'inférence       |
 

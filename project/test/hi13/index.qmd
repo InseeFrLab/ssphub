@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Prévoir la croissance en lisant le journal - extensions et approfondissement"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°13"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-27
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_12.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,13 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Prévoir la croissance en lisant le journal - extensions et approfondissement                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | L’information produite par les media présente l’avantage d’être réactive, fournie et aborde de nombreux domaines économiques. En outre les techniques récentes d’analyse textuelle (text mining) et de collecte automatisée des données en ligne (web scraping) permettent d’élaborer des indicateurs synthétisant cette richesse. Plus généralement, l’estimation en continu d’un indicateur médiatique associé à l’activité économique peut présenter un intérêt de par sa complémentarité avec les autres enquêtes de conjoncture existantes. Dans l’article « Prévoir la croissance du PIB en lisant le journal » de C. Bartoli, S. Combes et T. Renault, les archives du journal Le Monde sont utilisées afin de construire un indicateur aidant à prédire le PIB. Le but de l’expérimentation est de mettre à jour les modèles estimés dans cette étude en mobilisant des sources journalistiques complémentaires.          |
+| **Acteurs**                  | Insee (DEE)         |
+| **Résultats du projet**      | Dans la batterie des indicateurs avancés mobilisés pour suivre l’activité économique lors de cette période, le SSP Lab et la division Synthèses conjoncturelles ont pu mettre en oeuvre un indicateur de sentiment médiatique conjoncturel construit à partir des tonalités des articles de presse.
+[Fiche point de conjoncture 17 juin 2020](https://www.insee.fr/fr/statistiques/4513040?sommaire=4473296), 
+[Eclairage "L'activité économique française au travers d'articles de presse", Note de conjoncture de mars 2021](https://www.insee.fr/fr/statistiques/5232051?sommaire=5232077). 
+Article et communication aux journées de la méthodologie statistique 2022 : "[Prédire l'activité à partir d'articles de presse](http://jms-insee.fr/jms2022s19_2/)"         |
+| **Code du projet**           |        |
 

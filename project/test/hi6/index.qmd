@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Codification automatique de l'activité principale des entreprises"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°6"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-4
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_5.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,15 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Codification automatique de l'activité principale des entreprises                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | La codification de l'activité principale exercée (APE) des entreprises à partir de descriptions d'activité (sous forme de texte libre) dans le répertoire Sirene était auparavant réalisée grâce à 6 environnements de codification déterministes mobilisant un nombre énorme de règles de décision. Le but de l’expérimentation était de tester les performances des modèles d’apprentissage statistique pour prédire la catégorie d’APE.         |
+| **Acteurs**                  | Insee         |
+| **Résultats du projet**      | Les présentations et supports écrits concernant le projet sont accessibles à l'URL https://inseefrlab.github.io/codif-ape-prez/         |
+| **Code du projet**           | Dépôts de code accessibles à l'URL https://github.com/search?q=org%3AInseeFrLab%20codif-ape&type=repositories&p=1
+Code relatif à l'annotation de données à l'aide de Label Studio
+Code d'une API web de codification déployée sur le SSP Cloud
+Code qui implémente un dashboard de visualisation permettant de surveiller l'activité d'un modèle de codification en production et accessible via une API web 
+Code pour l'entraînement de modèles de classification de l'APE
+       |
 

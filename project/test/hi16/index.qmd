@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Codage automatique de l'activité des associations à partir de méthodes de machine learning"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°16"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-17
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_15.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,14 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Codage automatique de l'activité des associations à partir de méthodes de machine learning                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | L’enjeu de l’expérimentation est d’attribuer un domaine d’activité aux associations pour améliorer le tirage de l’échantillon de l’enquête associations. En effet, une partie des associations est répertoriée dans Sirène (employeuses, subventionnées…) mais 50 % d’entre elles ont un code APE 9499Z ne permettant pas de déterminer leur domaine d’activité de façon précise. Par ailleurs, les associations loi 1901 sont enregistrées dans le répertoire national des associations (RNA), géré par le ministère de l’intérieur. Dans ce répertoire, un champ "objet social" rempli en clair décrit rapidement les activités de chaque association. L’expérimentation vise à analyser textuellement ce champ pour en prédire l'activité. L'enquête 2014 appariée au RNA sert de jeu d'apprentissage et de jeu de test. Le modèle XGboost a montré des performances plus élevés que les autres (avec une précision et un rappel de l’ordre de 69%). Le meilleur modèle s’obtient en combinant les différents modèles testés.         |
+| **Acteurs**                  | Insee (DSE)         |
+| **Résultats du projet**      | en production : l'échantillon de l'enquête Association 2019 a été tiré selon une stratification tirant profit de la prédiction du secteur d'activité par machine learning (XGboost) mené dans le cadre de cette expérimentation : [note sur l'échantillonnage de l'enquête](https://intranet.insee.fr/jcms/1344428_DBFileDocument/note-echantillonnage-enquetes-associations?details=true)
+présentation interne des résultats (https://intranet.insee.fr/jcms/1344408_DBFileDocument/avancement-travaux-prediction-avril2019?details=true).
+Les résultats approfondis sont disponibles dans le mémoire de master Evaluation et Décision Publiques, majeure méthodologie de la statistique publique de F Lécrivain ([note d'étape](https://intranet.insee.fr/jcms/1344423_DBFileDocument/note-d-etape-stage-master-fl?details=true), [rapport](https://intranet.insee.fr/jcms/1344413_DBFileDocument/memoire-master-flecrivain?details=true)). 
+En pratique, après prétraitements et exploration des données textuelles et de ses thématiques (allocation latente de Dirichlet), un dictionnaire des mots a été constitué, avec des variantes pour en réduire la dimension (tf-idf, seuil, thèmes d’une LDA). La prédiction proprement dite s’est appuyée sur divers modèles d’apprentissage supervisé (forêts aléatoires, support vector machine, modèle linéaires généralisés pénalisés GLMnet et Extrem Gradient Boosting (XGBoost), le jeu d’apprentissage (et les jeux de tests) étant fournis par la précédente enquête (2014) appariée avec le RNA. Le modèle XGboost a montré des performances plus élevés que les autres (avec une précision et un rappel de l’ordre de 69%). Le meilleur modèle s’obtient en combinant les différents modèles testés.
+         |
+| **Code du projet**           |        |
 

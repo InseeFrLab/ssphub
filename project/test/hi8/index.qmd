@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Evaluation du programme Action Coeur de Ville"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°8"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-16
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_7.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,12 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Evaluation du programme Action Coeur de Ville                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | L’Insee a travaillé en collaboration avec la Chaire Finance Digitale et le Groupement des Cartes Bancaires CB pour évaluer la possibilité d’utiliser des données de transactions par carte bancaire CB dans le cadre de projets d’évaluation de politiques publiques, en considérant un exemple précis, le plan Action Cœur de Ville, un plan d’investissement public sur cinq ans de 2018 à 2022 à destination de 234 villes de taille intermédiaire. Les données CB présentent un vrai potentiel. Elles sont disponibles quasiment en temps réel et l’information existe aux niveau des établissements et non pas uniquement des entreprises, comme c’est le cas pour les chiffres d'affaires que l’on peut déduire des déclarations TVA. En supposant que la carte bancaire CB soit un moyen de paiement souvent utilisé dans les commerces ciblés, le montant de transactions par cartes bancaires CB au sein d’un centre-ville est corrélé à son niveau de « développement économique et commercial ». On décide ainsi de comparer l’évolution des montants des transactions par carte CB des commerces situés dans les centres-villes des villes bénéficiant du plan avec celle de l’activité des commerces situés dans des centres-villes témoins, de villes similaires mais qui n’ont pas bénéficié du programme ACV.         |
+| **Acteurs**                  | Chaire Finance Digitale et Insee         |
+| **Résultats du projet**      | [Présentation ACV Nov 22 VF2](https://intranet.insee.fr/jcms/37979842_DBFileDocument/fr/presentation-acv-nov-22-vf2) : Présentation donnée en séminaire DDAR
+[prog coeurdeville cdc](https://intranet.insee.fr/jcms/37979847_DBFileDocument/fr/prog-coeurdeville-cdc) : Note condensée transmise à la Cour des Comptes
+[prog coeurdeville-note](https://intranet.insee.fr/jcms/37979852_DBFileDocument/fr/prog-coeurdeville-note) : Note sur le travail réalisé         |
+| **Code du projet**           | https://git.lab.sspcloud.fr/ssplab/action-coeur-ville       |
 

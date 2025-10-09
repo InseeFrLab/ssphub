@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Webscraping du prix et des caractéristiques des ordinateurs portables, estimation de modèles hédoniques pour améliorer la qualité statistique de l’indice des prix à la consommation"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°15"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-6
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_14.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,13 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Webscraping du prix et des caractéristiques des ordinateurs portables, estimation de modèles hédoniques pour améliorer la qualité statistique de l’indice des prix à la consommation                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | L’IPC mesure l’évolution « pure » des prix, à qualité constante. Il suit un certain nombre de produits identiques dans le temps. Lorsque ceux-ci disparaissent, ils sont remplacés par des produits qui peuvent ne pas être équivalents. Il convient alors de distinguer, dans l’évolution des prix des remplaçants par rapport aux produits remplacés, un effet qualité (différence de prix pour un mois fixé) d’un effet inflation. Les méthodes « hédoniques » estiment cet effet qualité à partir de coefficients correspondant aux prix sous-jacents des différentes caractéristiques techniques du produit (par exemple la marque de l’ordinateur, la mémoire vive d’un ordinateur, le modèle et la fréquence du processeur, etc.). L’expérimentation a pour but l’amélioration des modèles hédoniques utilisés dans l’Indice des Prix à la Consommation (IPC). Ces modèles sont aujourd’hui de qualités médiocres (en particulier pour les produits électroniques) à cause du faible volume de données sur lesquelles ils s’appuient. L’expérimentation se concentre sur les ordinateurs portables. Elle vise à augmenter les échantillons utilisés (en termes de relevés de prix et de caractéristiques) par une collecte de données en ligne (webscraping) puis à mettre en place une procédure de sélection automatique des caractéristiques expliquant les prix.         |
+| **Acteurs**                  | Insee (DSDS)         |
+| **Résultats du projet**      | [Présentation au groupe d’OTTAWA](https://intranet.insee.fr/jcms/1344443_DBFileDocument/presentation-ottawa-corrected?details=true),
+[présentation à la conférence sur la mesure des prix et des volumes dans un monde digitalisé de l’OCDE](https://intranet.insee.fr/jcms/1345188_DBFileDocument/presentation-ocde-v1?details=true)
+Une liste de caractéristiques explicatives du prix des ordinateurs portables a été transmise aux équipes de production de l'indice. 
+[Note bilan d'expérimentation](https://intranet.insee.fr/jcms/1344403_DBFileDocument/2020-21398-dg75-l401?details=true)         |
+| **Code du projet**           |        |
 

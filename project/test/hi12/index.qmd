@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Estimation de la population résidente à partir de signes de vie"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°12"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-19
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_11.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,11 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Estimation de la population résidente à partir de signes de vie                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | Le programme de Répertoires Statistiques d’Individus et de Logements (RéSIL) vise à construire un système de répertoires statistiques d’individus, de ménages et de locaux d’habitation, durable et évolutif, mis à jour régulièrement à partir de sources administratives diverses. Ce système de répertoire permettra en particulier d’identifier, sur une période donnée, différents signes de vie potentiels pour chaque individu existant dans au moins une des sources administratives utilisées. Par exemple, il sera possible à partir de Résil de déterminer si un individu donné a fait une déclaration aux services fiscaux sur l’année précédente, et le cas échéant avec quelle adresse déclarée, et si le même individu a bénéficié sur cette même période d’aides sociales, à la même adresse ou non. De telles informations peuvent être interprétées comme un ensemble de signes de vie manifestés localement sur une période donnée. Il est possible qu’un tel ensemble de signes de vie, s’il est assez riche, permette d’estimer des probabilités de résidence locales. Cette expérimentation vise à établir une stratégie concrète de réalisation, c'est-à-dire une première modélisation cohérente accompagnée d'estimations sur un jeu de données réduit. Elle doit permettre de valider la faisabilité de l'idée et d'identifier les enjeux principaux et les difficultés potentielles de mise en œuvre.          |
+| **Acteurs**                  | Insee (DSDS)         |
+| **Résultats du projet**      | [Note de bilan de l'expérimentation](https://intranet.insee.fr/jcms/2711285_DBFileDocument/chapo-note-signes-de-vie)
+[résultats associés](https://intranet.insee.fr/jcms/2711028_DBFileDocument/note-signes-de-vie)         |
+| **Code du projet**           | https://git.lab.sspcloud.fr/ssplab/signes-de-vie       |
 

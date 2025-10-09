@@ -1,9 +1,9 @@
 ---
-title: "Travaux méthodologiques sur l'enquête Budget de Famille"
+title: "Amélioration de l’identification de l’établissement employeur dans les données du recensement de population"
 
 # Summary for listings and search engines
 description: |
-  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique"
+  "Modernisation de l'enquête budget des familles par utilisation d'outils de classification automatique n°10"
 
 format: html
 
@@ -11,13 +11,14 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-10
+date: 2023-12-15
 
 # Date updated
-image: visuel_Budget_des_familles.png
+image: visuel_Budget_des_familles_9.png
 
 categories : 
 - Projets
+- Python
 - codification automatique
 - extraction de données
 - données de caisse
@@ -26,11 +27,14 @@ categories :
 
 # Synthèse du projet
 
-|              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
+|              | Amélioration de l’identification de l’établissement employeur dans les données du recensement de population                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017). En effet, une partie des données de consommation des ménages sera remontée à travers une application mobile mise à disposition des ménages enquêtés. De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique (Teklia). **Deux axes existent dans cette expérimentation :** <br> - Le premier axe consiste à tester les solutions open-source d'extraction automatique du contenu de tickets de caisse, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la codification automatique des produits de consommation dans la nomenclature COICOP : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
-| **Résultats du projet**      | Projet en cours               |
-| **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf])
-- [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
+| **Détail du projet**         | L’enjeu de l’expérimentation est d’améliorer le codage automatique de l’établissement employeur, avec l’ambition à terme de réduire la charge de recodage manuel. Il s’agit notamment de retrouver dans le répertoire Sirus l’établissement employeur à partir des informations déclarées dans les enquêtes annuelles de recensement qui peuvent comporter des erreurs, des inversions de champs, et qui ne sont pas normalisées au sens des nomenclatures. L’expérimentation s’appuie sur les idées et les résultats du hackathon “Les champs de Sirene” ([github](http://github.com/SSP-Lab/Hackathon-2018), lettre Big Data n°7) et poursuit les pistes qui y ont été développées.         |
+| **Acteurs**                  | Insee         |
+| **Résultats du projet**      | [notebook de résultats ](https://gitlab.insee.fr/ssplab/aiee2/-/blob/main/stat_final.pdf?ref_type=heads)
+AIEE 1 : [note de synthèse des résultats présentée en CD](https://intranet.insee.fr/jcms/1345458_DBFileDocument/note-bilan-exper-aiee-cd-190325?details=true), séminaire Big Data ["Recensement et identification de l'employeur ; plateformes et "micro-travail"](https://intranet.insee.fr/jcms/c_2034721/seances-sciences-des-donnees-et-big-data)
+AIEE 2: note de bilan d'expérimentation [N°2021_28527_DG75-L401](https://intranet.insee.fr/jcms/3185326_DBFileDocument/2021-28527-dg75-l401?details=true])
+         |
+| **Code du projet**           | https://gitlab.insee.fr/ssplab/aiee2
+https://gitlab.insee.fr/ssplab/aiee2-web        |
 
