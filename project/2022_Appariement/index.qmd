@@ -2,8 +2,7 @@
 title: "Comparaison des méthodes d'appariement et apport du machine learning"
 
 # Summary for listings and search engines
-description: |
-  "Tester et comparer différentes méthodes d’appariements afin de dégager des recommandations pour les travaux nécessaires à la construction des répertoires, notamment dans le cadre du programme pluriannuel RESIL."
+description: "Tester et comparer différentes méthodes d’appariements afin de dégager des recommandations pour les travaux nécessaires à la construction des répertoires, notamment dans le cadre du programme pluriannuel RESIL."
 
 format: html
 
@@ -11,7 +10,7 @@ authors:
 - Nicolas
 
 # Date published
-date: 2023-12-18
+date: 2021-01-01
 
 # Date updated
 image: Resil.png
@@ -19,7 +18,7 @@ image: Resil.png
 categories : 
 - appariement
 - données administratives
-- en production
+- Resil
 
 ---
 

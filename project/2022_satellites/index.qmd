@@ -2,8 +2,7 @@
 title: "Utilisation des images satellites pour la statistique publique"
 
 # Summary for listings and search engines
-description: |
-  "Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins"
+description: "Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins"
 
 format: html
 
@@ -20,7 +19,7 @@ categories :
 - Python
 - package
 - deep learning
-- projet images satellites
+- images satellites
 - en production
 
 ---
@@ -29,8 +28,8 @@ categories :
 
 |              | Utilisation des images satellites pour la statistique publique                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | Fin 2022, un groupe de travail expérimental sur l'utilisation des données satellites pour la statistique publique a été lancé. Cette initiative visait à améliorer l'organisation des enquêtes cartographiques dans les départements d'outre-mer, particulièrement en Guyane et à Mayotte. L'objectif initial était de faciliter l'organisation des enquêtes cartographiques servant à mettre à jour le RIL chaque année, en particulier en facilitant l'identification en amont des enquêtes de nouvelles zones d'habitations spontanées ou temporaires. Des algorithmes appliqués à des photographies du sol permettent d'identifier de telles zones, qui à une année d'exercice donnée nécessiteront plus d'enquêteurs qu'à l'exercice précédent (5 ans auparavant).          |
+| **Détail du projet**         | Fin 2022, un groupe de travail expérimental sur l'utilisation des données satellites pour la statistique publique a été lancé. Cette initiative visait à **améliorer l'organisation des enquêtes cartographiques dans les départements d'outre-mer**, particulièrement en Guyane et à Mayotte. Ces enquêtes servent à mettre à jour le répertoire individus / logement (RIL) chaque année, et facilitent l'identification en amont des enquêtes de nouvelles zones d'habitations spontanées ou temporaires. Des algorithmes appliqués à des **photographies satellites** permettent d'identifier de telles zones, qui à une année d'exercice donnée nécessiteront plus d'enquêteurs qu'à l'exercice précédent.  <br> Le projet est présenté plus précisément [ici](https://inseefrlab.github.io/satellite-images-docs/src/documentation/index.html).          |
 | **Acteurs**                  | Insee (DG et Direction interrégionale Réunion-Mayotte)         |
-| **Résultats du projet**      | La phase d'expérimentation s'est achevée avec:  <br>  <br> - La transmission de statistiques d'évolution de bâti par îlot à Mayotte. Ces statistiques ont servi à l'organisation de l'enquête cartographique complémentaire 2024 à Mayotte ; <br> - Le développement d'une [application de visualisation](https://inseefrlab.github.io/satellite-images-webapp/) intégrant des fonds de carte construits à partir de tuiles Pleiades et les bâtiments détectés sur ces tuiles avec nos algorithmes, ainsi que des couches de détection de changement ; <br> - La création du package Python de traitement d'images satellites [Astrovision](https://pypi.org/project/astrovision/)         |
-| **Code du projet**           | - https://github.com/InseeFrLab/astrovision :  package Python pour travailler avec des données satellites:  <br> - https://github.com/InseeFrLab/astrovision : code de l'application de visualisation <br> - https://github.com/InseeFrLab/satellite-images-preprocess : code de pré-processing des données <br> - https://github.com/InseeFrLab/satellite-images-train : code pour l'entraînement des modèles <br> - https://github.com/InseeFrLab/satellite-images-inference : code pour l'inférence       |
+| **Résultats du projet**      | La phase d'expérimentation s'est achevée avec:  <br> - La transmission de **statistiques d'évolution de bâti** par îlot à Mayotte. Ces statistiques ont servi à l'organisation de l'enquête cartographique complémentaire 2024 à Mayotte ; <br> - Le développement d'une [**application de visualisation**](https://inseefrlab.github.io/satellite-images-webapp/) intégrant des fonds de carte construits à partir de tuiles Pleiades et les bâtiments détectés sur ces tuiles avec nos algorithmes, ainsi que des couches de détection de changement ; <br> - La création du**package Python de traitement d'images satellites** [**Astrovision**](https://pypi.org/project/astrovision/)         |
+| **Code du projet**           | - [https://github.com/InseeFrLab/astrovision](https://github.com/InseeFrLab/astrovision) :  **package Python** pour travailler avec des données satellites:  <br> - [https://inseefrlab.github.io/satellite-images-webapp/](https://inseefrlab.github.io/satellite-images-webapp/): code de l'**application de visualisation** <br> - [https://github.com/InseeFrLab/satellite-images-preprocess ](https://github.com/InseeFrLab/satellite-images-preprocess): code de **pré-processing des données** <br> - [https://github.com/InseeFrLab/satellite-images-train](https://github.com/InseeFrLab/satellite-images-train) : code pour l'**entraînement des modèles** <br> - [https://github.com/InseeFrLab/satellite-images-inference](https://github.com/InseeFrLab/satellite-images-inference) : code pour l'**inférence**       |
 
