@@ -6,9 +6,7 @@ description: |
   <b>Description :</b> Slideshow presentation of the project Detecting changes in buildings in French overseas departments for Work Package 7,
   Artificial Intelligence and Machine Learning for Official Statistics, organized by Eurostat.
 author: Raya Berova, Thomas Faria et Clément Guillo
-slides:
-  text: Slides
-  url: src/aiml4os-wp7/index.html
+website: https://inseefrlab.github.io/satellite-images-docs/src/aiml4os-wp7/index.html
 order: 5
 lang: fr-FR
 ---

@@ -5,9 +5,7 @@ date: "2025-07-03"
 description: |
   <b>Description :</b> Slides pour le séminaire de Méthodologie Statistique & Sciences des données de la DMCSI - La terre vue d’en haut : images satellites, images aériennes et statistique publique.
 author: Raya Berova et Thomas Faria
-slides:
-  text: Slides
-  url: src/seminaire-dmcsi/index.html
+website: https://inseefrlab.github.io/satellite-images-docs/src/seminaire-dmcsi/index.html
 order: 7
 lang: fr-FR
 ---
