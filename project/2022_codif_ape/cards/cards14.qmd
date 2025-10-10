@@ -1,0 +1,34 @@
+---
+title: PyData Paris
+image: /cards/img/pydata-logo-final.png
+date: "2025-10-01"
+description: |
+  <b>Description :</b> Presentation at PyData Paris 2025
+author: Cédric Couralet, Meilame Tayebjee
+slides:
+  text: Slides
+  url: /slides/pydata/index.html
+order: 14
+---
+
+<!-- I - Partie Historique / Contexte
+
+Pq librairie 
+		- archivage FastText
+		- PyTorch ouvre de nouvelles perspectives
+		- Réutulisable, transparent, reverser à la communauté, collaboration
+
+II - MLOps pipeline, nouvelle librarie
+
+pq pytorch, pq Lightning
+entraînement GPU, inférence CPU 
+
+III - Focus sur la librarie - 
+
+Implém 
+Rajout (explicabilité)
+Perspective : modèles plus compliqués - mutualiser l'archi
+--> Faciliter l'entraînement mais pas forcément -->
+
+
+

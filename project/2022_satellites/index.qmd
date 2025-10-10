@@ -27,6 +27,7 @@ listing:
   contents: cards/*.qmd
   sort: "order desc"
   categories: false
+  type: grid
 
 ---
 
