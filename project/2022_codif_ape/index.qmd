@@ -23,14 +23,26 @@ categories :
 - en production
 - MLFlow
 
+listing:
+  id: presentations
+  contents: cards/*.qmd
+  sort: "order desc"
+  categories: false
+  type: grid
+
 ---
 
 # Synthèse du projet
 
 |              | Codification automatique de l'activité principale des entreprises                           |
 |--------------|------------------------------------------------------------------------------------|
-| **Détail du projet**         | La codification de l'activité principale exercée (APE) des entreprises à partir de descriptions d'activité (sous forme de texte libre) dans le répertoire Sirene était auparavant réalisée grâce à 6 environnements de codification déterministes mobilisant un nombre énorme de règles de décision. Le but de l’expérimentation était de tester les performances des modèles d’apprentissage statistique pour prédire la catégorie d’APE dans le cadre de la refonte du répertoire Sirene et de la mise en place d'un guichet unique.  <br>          |
+| **Détail du projet**         | La codification de l'activité principale exercée (APE) des entreprises à partir de descriptions d'activité (sous forme de texte libre) dans le répertoire Sirene était auparavant réalisée grâce à 6 environnements de codification déterministes mobilisant un nombre énorme de règles de décision. Le but de l’expérimentation est de **tester les performances des modèles d’apprentissage statistique pour prédire la catégorie d’APE** dans le cadre de la refonte du répertoire Sirene et de la mise en place d'un guichet unique.  <br>          |
 | **Acteurs**                  | Insee         |
-| **Résultats du projet**      | Le modèle développé présente des performances similaires aux modèles anciens, en les automatisant, et propose par ailleurs une aide à la décision. Le modèle a par ailleurs été mis en production, en appliquant quand cela était possible les principes MLOps.  <br>  <br> Les présentations et supports écrits concernant le projet sont accessibles sur [ce site](https://inseefrlab.github.io/codif-ape-prez/)         |
-| **Code du projet**           | Dépôts de code accessibles [ici](https://github.com/search?q=org%3AInseeFrLab%20codif-ape&type=repositories&p=1). Il comprend :  <br> - Code relatif à l'annotation de données à l'aide de Label Studio ; <br> - Code d'une API web de codification déployée sur le SSP Cloud ; <br> - Code qui implémente un dashboard de visualisation permettant de surveiller l'activité d'un modèle de codification en production et accessible via une API web ; <br> - Code pour l'entraînement de modèles de classification de l'APE. <br>        |
+| **Résultats du projet**      | Le modèle développé présente des **performances similaires aux modèles précédents**, en les automatisant, et propose par ailleurs une aide à la décision. Le modèle a par ailleurs été mis en production, en appliquant quand cela était possible les principes MLOps.  <br> Les présentations et supports écrits concernant le projet sont accessibles sur [ce site](https://inseefrlab.github.io/codif-ape-prez/).         |
+| **Code du projet**           | Dépôts de code accessibles [ici](https://github.com/search?q=org%3AInseeFrLab%20codif-ape&type=repositories&p=1). Ils comprennent :  <br> - Code relatif à l'annotation de données à l'aide de Label Studio ; <br> - Code d'une API web de codification déployée sur le SSP Cloud ; <br> - Code qui implémente un dashboard de visualisation permettant de surveiller l'activité d'un modèle de codification en production et accessible via une API web ; <br> - Code pour l'entraînement de modèles de classification de l'APE. <br>        |
 
+# Documents relatifs au projet
+
+
+::: {#presentations}
+:::
