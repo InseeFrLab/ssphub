@@ -28,6 +28,7 @@ listing:
   sort: "order desc"
   categories: false
   type: grid
+  template: ../../scripts/courses.ejs
 
 ---
 
