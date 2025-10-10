@@ -24,10 +24,9 @@ categories :
 
 listing:
   id: presentations
-  contents: cards
-  sort: "order asc"
+  contents: cards/*.qmd
+  sort: "order desc"
   categories: false
-  template: style/listing-grid.ejs
 
 ---
 
