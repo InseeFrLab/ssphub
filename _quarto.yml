@@ -67,4 +67,5 @@ format:
     toc: true
     page-layout: article
 
-
+execute:
+  freeze: auto
