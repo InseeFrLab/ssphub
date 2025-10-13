@@ -35,9 +35,9 @@ communautaires de visualisations de données:
 
 Quelques ressources supplémentaires utiles:
 
-- Les habitués de `ggplot2` trouveront sans doute ce _notebook_ utile: https://observablehq.com/@observablehq/plot-from-ggplot2
-- Présentation de l'utilisation de `duckdb` pour l'utilisation dans `Observable` de données volumineuses: https://observablehq.com/@observablehq/duckdb
-- Documentation sur l'usage d'`Observable` avec `quarto`: https://quarto.org/docs/interactive/ojs/
+- Les habitués de `ggplot2` trouveront sans doute [ce _notebook_](https://observablehq.com/@observablehq/plot-from-ggplot2) utile ;
+- Présentation de l'utilisation de `duckdb` pour l'utilisation dans `Observable` de données volumineuses par [ici](https://observablehq.com/@observablehq/duckdb) ;
+- Documentation sur l'usage d'`Observable` avec `quarto` par [là](https://quarto.org/docs/interactive/ojs/).
 
 
 ## Replay {#replay}
