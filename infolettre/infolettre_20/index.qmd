@@ -1,0 +1,79 @@
+---
+title: "La rentrée 2025: actualités, nouveautés, interview de rentrée"
+
+description: |
+  Infolettre du mois d'__octobre 2025__
+
+# Date published
+date: '2025-10-15'
+number: 20
+
+authors:
+  - Nicolas Toulemonde
+
+image: 2025_09_back_school.png
+
+tags:
+  - datavis
+  - IA
+  - Python
+  - Parquet
+  - Kubernetes 
+
+categories:
+  - Infolettre
+
+---
+
+
+Bienvenue à la **vingtième infolettre** ! L'âge où l'on apprend toujours, et on l'on se dit que ça peut encore être long la vie.  
+
+- une périodicité mensuelle "garantie", quitte à avoir des infolettres moins denses que d'autres ;
+- simplifier la rédaction et le contenu ;
+- continuer de parler à toutes les personnes intéressées par la science des données, quel que soit son niveau d'expertise ;
+- contribuer à mettre en avant plus facilement des personnes ou des projets au sein du réseau.  
+
+Nouvelle structure, moins longue, plus ramassée, vous aurez plus de travail pour creuser plus loin les sujets ! L'idée est ainsi d'insérer au moins dans chaque veille :
+
+- une datavisualisation 
+- les actualités du réseau et une veille
+- une interview de quelqu'un ou d'une équipe selon un canevas à peu près stable. 
+
+Bonne lecture 📔 ! 
+
+# La datavisualisation 
+![](measles-cases-historical-us-states-heatmap.png)
+
+Une version interactive est disponible sur le site du [Wall Street Journal](https://graphics.wsj.com/infectious-diseases-and-vaccines/).
+
+# Actus du réseau
+
+##  La troisième journée du réseau 📅 1 décembre - La Tréso (Malakoff)
+**Réservez votre 1^er^ décembre !** Pour la troisième année consécutive, le SSPLab organise la journée du réseau pour rassembler les data-scientists de la statistique publique. Au menu : présentation de projets innovants, retour d'expérience et moments d'échanges informels (autrement appelés "pots" 🎉). 
+
+Comme les années précédentes, l'événement sera en présentiel et à distance pour permettre à tous de participer. Les détails seront publiés sur le [site du réseau](../../talk/2025-12-01-network-day/index.qmd) et si jamais vous voulez déjà vous inscrire alors que l'agenda n'est pas finalisé, c'est possible [ici](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). 
+
+- 👉️ [Ajouter cet événement à votre agenda `Outlook`](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2025_12_3ejournee_SSPHub.ics) 
+
+# Actualités
+Voici une liste de sujets d'actualité depuis cet été jugés subjectivement intéressants. 
+
+
+::: {.callout-tip}
+Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les partager sur le [groupe Tchap 💬](https://tchap.gouv.fr/#/room/#ssphub:agent.finances.tchap.gouv.fr) directement !
+:::
+
+# L'interview avec Nicolas, qui travaille à l'Insee (SSPLab)
+Deuxième interview, je propose donc humblement de m'auto-interviewer pour lancer ce format et de comparer les questions que j'ai trouvées avec celles proposées par une IA. 
+
+
+|    |         |
+| -- | ------- |
+| **Peux-tu te présenter?** |  | 
+| **Peux-tu donner un conseil que tu aurais aimé recevoir en lien avec la data ?** | | 
+| **As-tu un projet qui a particulièrement marché, et pourquoi a-t-il marché ? A l'inverse, as-tu un projet qui n'a pas marché et pourquoi ?** |   | 
+| **Dans quel domaine le service public pourrait être aidé par une utilisation plus importante des données ?** |     | 
+|  **La dernière découverte technologique qui t'a marqué**|  | 
+
+
+
