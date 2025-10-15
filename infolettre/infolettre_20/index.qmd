@@ -35,18 +35,18 @@ Beaucoup d'infographie ce mois-ci, le choix a été dur. Pour une fois, partons 
 
 ![](2025_10_gypaete.png)
 
-La vidéo, vraie infographie, est disponible [ici](https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj).
+La vraie infographie, en format vidéo, est disponible [ici](https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj).
 
 # Actus du réseau
 
 ##  La troisième journée du réseau 📅 1 décembre - La Tréso (Malakoff)
-Les inscriptions pour la troisième journée du réseau le 1er décembre 2025 sont ouvertes [ici](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). Si vous souhaitez présenter un sujet, n'hésitez pas à me contacter ! 
+Les **inscriptions** pour la troisième journée du réseau le 1er décembre 2025 sont [ouvertes](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). Si vous souhaitez présenter un sujet, n'hésitez pas à me contacter ! 
 
-## Présentation de Cartographia - 📅 13 janvier 2026 
+## Présentation de Cartographia - 📅 13 janvier 2026 - format mixte (Malakoff et en ligne)
 Françoise Bahoken et Nicolas Lambert vont venir nous parler de leur livre [Cartographia](https://neocarto.hypotheses.org/22669) et des questions de cartographie (!) passionnantes qu'ils y abordent. Cela se passe **le 13 janvier 2026** en début d'après-midi, en format mixte: présentiel (à l'Insee) et à distance. Nicolas Lambert était déjà intervenu pour nous présenter Observable, une librairie Javascript très pratique pour faire des infographies ([ici](../../talk/presentation-dobservable-par-nicolas-lambert/index.qmd), pour rappel). Si cela vous intéresse, réservez donc votre début d'après-midi ! 
 
 # Actualités
-Voici une liste de sujets d'actualité jugés subjectivement intéressants. Ce mois-ci, beaucoup de belles images et d'actualités en cartographie. L'IA domine aussi toujours le paysage, avec les institutions qui cherchent à maximiser la réutilisation de leurs données par les IA, des personnes qui entourloupent l'IA en écrivant des instructions en blanc sur blanc, et l'importance donnée aux données d'entraînement. 
+Voici une liste de sujets d'actualité jugés subjectivement intéressants. Ce mois-ci, beaucoup de belles images et de cartographie. L'IA domine aussi toujours le paysage, avec les institutions qui cherchent à maximiser la réutilisation de leurs données, des personnes qui entourloupent les LLM en écrivant des instructions en blanc sur blanc, et l'importance donnée aux données d'entraînement. 
 
 ::: {.callout-tip}
 Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les partager sur le [groupe Tchap 💬](https://tchap.gouv.fr/#/room/#ssphub:agent.finances.tchap.gouv.fr) directement !
@@ -58,14 +58,14 @@ Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les pa
 - Pour les autres candidats à l'infographie du mois: 
   - pour voir l'ensemble des **livres publiés** en une seule carte interactive, cela donne [cela](https://phiresky.github.io/isbn-visualization/?).
   - la cheffe de l’infographie d’Epsiloon (magazine de données) a publié les étapes [avant / après](https://www.figma.com/proto/C8xDR9mlWX8kBV0crJr1IK/Les-infographies-d-Epsiloon?page-id=3102%3A2581&node-id=3102-2979&viewport=1040%2C640%2C0.18&t=h0dF40xsTRgqYfJi-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3102%3A2583&hide-ui=1) de ses infographies. Je vous recommande celle sur les **habitudes de sommeil par pays**. 
-- Enfin, un petit jeu à la SUTOM en version graphique : un **graphique par jour**, devinez le pays ! C'est par [ici](https://chartle.cc/).
+- Enfin, un petit jeu à la SUTOM en version graphique : un [**graphique par jour**](https://chartle.cc/), devinez le pays ! 
 
 
 ## Cartographie
 - Des chercheurs de l'Université de Charles (en Tchéquie) et de Freiburg ont publié une (très belle) **taxonomie des bâtiments urbains**, disponible en ligne. Tout est [ici](https://urbantaxonomy.org) et vous pouvez explorer le bâti urbain de six pays d'Europe centrale et de l'est.  
-- L'IGN a publié [une cartographie](https://www.ign.fr/atlas-cartographier-anthropocene-2025-risque-inondation) très détaillée des **risques d'inondation et de submersion** sur tout le territoire national, notamment grâce aux images LIDAR. Vous pouvez y voir les risques et des simulations d'inondations de manière extrêmement précise.   
+- L'IGN a publié [une cartographie](https://www.ign.fr/publications-de-l-ign/institut/kiosque/publications/atlas_anthropocene/2025/Atlas-2025-risque-inondation.pdf) très détaillée des **risques d'inondation et de submersion** sur tout le territoire national, notamment grâce aux images LIDAR. Par exemple, vous habitez à Saint-Maur-des-Fossés? Vous pouvez y voir la simulation d'une inondation majeure chez vous.   
 - Utiliser l'**IA pour faire des fonds de carte** à partir d'image satellite ? Cela semble bien fonctionner d'après ce [post](https://www.linkedin.com/posts/davidoesch_map-generation-geospatial-activity-7379129420801875968-yNzj).
-- A partir de données des utilisateurs de Facebook, des [chercheurs](https://www.pnas.org/doi/10.1073/pnas.2409418122) ont bâti des **indicateurs mensuels de flux migratoires** couvrant 181 pays. 
+- A partir des données d'utilisateurs de Facebook, des [chercheurs](https://www.pnas.org/doi/10.1073/pnas.2409418122) ont bâti des **indicateurs mensuels de flux migratoires** couvrant 181 pays. 
 - Après la prévisualisation de données Parquet en ligne, cette fois [ce site](https://developmentseed.org/stac-map/) permet de **visualiser très facilement des fichiers de données géographiques** types STAC (dont Geoparquet). Explications sur la plomberie [ici](https://developmentseed.org/blog/2025-09-02-stacmap/).
 - La communauté Apache Sedona publie [SedonaDB](https://sedona.apache.org/latest/blog/2025/09/24/introducing-sedonadb-a-single-node-analytical-database-engine-with-geospatial-as-a-first-class-citizen/), un moteur de base de données analytique open source et pensé nativement aussi pour des données spatiales. 
 
