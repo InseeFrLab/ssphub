@@ -9,7 +9,7 @@ categories:
 description: |
   Programme et modalités d'inscription à la 3e journée du réseau
 date: '2025-09-15'
-image: https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img7.jpg
+image: https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg
 echo: false
 lightbox: true
 ---
@@ -19,9 +19,34 @@ lightbox: true
 
 # Agenda
 
+* __Agenda en construction__ : 
 * __9h30-10h__: __Accueil__, moment de convivialité autour d’un café.
-* __Agenda en construction__ 
+* __10h-11h30__: __Retours d’expérience__ autour de la classification automatique ; 
+    + 
+    + 
+* __11h30-12h15__: __Atelier de réflexion__ nouvelles données ? 
+* __12h15-14h__: __Pause déjeuner__, moment de convivialité.
+* __14h-14h30__: témoin / invité : le DG ? 
+* __14h30-16h__: __Retours d’expérience__ de projets faisant intervenir un processus innovant d’extraction de données :
+    + ;
+    + Scraper et retravailler les offres d’emploi en ligne pour permettre des analyses fines du marché du travail, le projet JOCAS” (Dares: Service statistique ministériel du Ministère du Travail et de l’Emploi) ;
+* __16h-16h30__: __Pause__, moment de convivialité.
+* __16h30-17h30__: **_Keynote_** témoin / invité
 * __17h30-19h30__: __Pot__, moment de convivialité.
+
+
+* __Ancien agenda__ : 
+* __10h-11h30__: __Retours d’expérience__ de projets innovants autour de la classification de textes ou d’images :
+    + Le blé vu du ciel : images satellitaires et prédiction des rendements agricoles à l'échelle de la parcelle (SSM Agriculture) ;
+    + Identifier et classer les causes de décès en automatisant le traitement des certificats en langage naturel (CépiDC, Inserm).
+* __11h30-12h15__: __Atelier de réflexion__ autour des applications des méthodes de classification de textes ou d’images sur les données des * participants.
+* __12h15-14h__: __Pause déjeuner__, moment de convivialité.
+* __14h-14h30__: Pascal Rivière (Chef de l’inspection générale de l’Insee) interviendra sur le thème __"Data science et statistique publique : contexte institutionnel et évolutions"__.
+* __14h30-16h__: __Retours d’expérience__ de projets faisant intervenir un processus innovant d’extraction de données :
+    + Extraction automatisée de tableaux dans des PDF pour la construction de statistiques d’entreprises (Insee) ;
+    + Scraper et retravailler les offres d’emploi en ligne pour permettre des analyses fines du marché du travail, le projet JOCAS (Dares, SSM Travail) ;
+* __16h-16h30__: __Pause__, moment de convivialité.
+* __16h30-17h30__: **_Keynote_** par Pierre Etienne Devineau (Ministères sociaux) et Léo Guillaume (Dinum). Les enjeux rencontrés par le projet Albert autour de l’entraînement et de la mise en production de grands modèles de langage (LLM) francophones.
 
 
 Pour toute information : <ssphub-contact@insee.fr>
