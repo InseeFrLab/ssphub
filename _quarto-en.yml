@@ -1,0 +1,29 @@
+project: 
+  render:
+    - en/about.qmd
+    - en/index.qmd
+    - project/**/*.qmd
+
+website:
+  title: "SSPHub"
+  navbar:
+    search: true
+    right:
+      - href: ../
+        text: 🇫🇷 Français
+    left:
+      - href: en/index.qmd
+        text: "Home"
+      - href: en/index.qmd
+        text: "Innovative projects"
+      - href: en/about.qmd 
+        text: "About the SSPHub"
+
+      - href: https://datalab.sspcloud.fr/
+        text: "SSPCloud"
+      - icon: github
+        href: https://github.com/InseeFrLab/ssphub
+  site-url: https://ssphub.netlify.app/
+  description: "Network of data scientists working for the French administration"
+
+lang: en-US

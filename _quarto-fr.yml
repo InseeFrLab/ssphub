@@ -1,0 +1,63 @@
+project: 
+  render:
+    - about.qmd
+    - additional/manifeste.qmd
+    - "!additional/notebooks/*.qmd"
+    - blog.qmd
+    - blog/**/*.qmd
+    - "!*/parquetRP/snippets/*"
+    - "!*/polars/polars-tuto.qmd"
+    - course.qmd
+    - course/**/*.qmd
+    - event.qmd
+    - event/**/*.qmd
+    - index.qmd
+    - infolettre/infolettre.qmd
+    - infolettre/**/*.qmd
+    - partenaires/**/*.qmd
+    - project.qmd
+    - project/**/*.qmd
+
+website:
+  title: "SSPHub"
+  navbar:
+    search: true
+    right:
+      - href: en
+        text: 🇬🇧 English
+      - icon: rss
+        href: index.xml 
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: event.qmd
+        text: "Événements"
+      - href: blog.qmd
+        text: "Blog"
+      - href: project.qmd
+        text: "Projets"
+      - href: course.qmd
+        text: "Ressources utiles"
+      - text: "About"
+        menu:
+          - href: infolettre/infolettre.qmd
+            text: "Newsletters"
+          - href: about.qmd 
+            text: "Présentation du réseau"
+          - href: additional/manifeste.qmd
+            text: "Manifeste du réseau"
+      - href: https://datalab.sspcloud.fr/
+        text: "Le SSPCloud"
+      - icon: github
+        href: https://github.com/InseeFrLab/ssphub
+  site-url: https://ssphub.netlify.app/
+  description: "Blog du réseau des data scientists de la statistique publique"
+  
+  announcement: 
+    icon: bi-megaphone
+    dismissable: true
+    content: "📺️ Le replay des ateliers du __9 et 16 avril 2025__ sont disponibles [ici (API)](/event/2025-04-09-API/index.qmd) et [ici (pour le format Parquet)](/event/2025-04-16-Parquet/index.qmd)"
+    type: primary
+    position: below-navbar
+
+lang: fr

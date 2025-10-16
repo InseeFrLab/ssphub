@@ -1,0 +1,36 @@
+---
+toc: false
+sidebar: false
+title-block-style: none
+css: ../assets/css/homepage.css
+page-layout: full
+listing:
+  - id: project
+    contents: ../project/**/index.qmd
+    type: grid
+    feed: true
+    sort:
+      - "date desc"
+echo: false
+---
+
+
+::: {.content-visible when-profile="en"}
+
+# Le réseau des data scientists de la statistique publique
+
+Some english content
+
+
+# With some projects
+L'ensemble des projets innovants. 
+
+
+:::: {#project}
+::::
+
+
+
+:::
+
+
