@@ -24,7 +24,7 @@ image: featured.png
 ---
 
 
-*Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
+*Vous désirez intégrer la liste de diffusion ? Un mail à {{< var contact.email >}} suffit*
 
 La [rétrospective de l'année 2022](https://ssphub.netlify.app/blog/retrospective2022/) promettait
 une version plus personnalisée, inspirée des visualisations proposées par
@@ -274,7 +274,7 @@ il est nécessaire d'avoir le plus d'enseignants possibles pour cette formation.
 cela, un appel à candidat pour une __formation de formateurs__ a été diffusée
 à l'Insee et dans les services
 statistiques ministériels. Si vous êtes intéressés et ne l'avez pas reçu, n'hésitez pas à envoyer
-un mail à ssphub-contact@insee.fr
+un mail à {{< var contact.email >}}.
 
 En attendant,
 les supports de ces formations sont déjà disponibles

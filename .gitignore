@@ -9,6 +9,9 @@ node_modules/
 go.sum
 .hugo_build.lock
 
+# Quarto 
+_freeze/
+
 # For gh-pages
 /.quarto/
 _site/

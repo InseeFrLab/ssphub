@@ -147,7 +147,7 @@ Pour des sujets plus transversaux, ou pour discuter avec les autres
 membres du réseau, il est possible de rejoindre le salon de discussion dédié
 sur le service de messagerie `Tchap`. Il s'agit d'un salon privé auquel vous
 pouvez demander l'accès en envoyant un message privé à Lino Galiana ou un
-mail à ssphub-contact@insee.fr
+mail à {{< var contact.email >}}
 
 ## :four: Comment ajouter une référence dans l'une des rubriques événements, ressources ou projets ? 
 

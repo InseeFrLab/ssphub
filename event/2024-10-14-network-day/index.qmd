@@ -138,6 +138,6 @@ Rappel du programme de la journée
 
 </details>
 
-Pour toute information : <ssphub-contact@insee.fr>
+Pour toute information : {{< var contact.email >}}
 
 📺️ La première journée du réseau ayant eu lieu en 2023 est également [disponible en replay](/event/2023-ssphubday/index.qmd).

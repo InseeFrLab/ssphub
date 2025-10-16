@@ -58,7 +58,7 @@ Comme les années précédentes, l'événement sera en présentiel et à distanc
 
 ## Le site du réseau évolue
 
-**L'inscription** à la liste de diffusion a été revue et utilise maintenant [Grist](https://lasuite.numerique.gouv.fr/produits/grist). Pour s'inscrire à la liste de diffusion, c'est par [ici](https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103). Une fois inscrit, vous pouvez créer un compte sur [Grist](https://grist.numerique.gouv.fr) et vous connecter directement sur [l'annuaire](https://grist.numerique.gouv.fr/o/ssphub/iTFX7gryL8jK/Annuaire?utm_id=share-doc) pour mettre à jour vos données, demander votre désinscription en cochant la case "Supprimez mon compte". 
+**L'inscription** à la liste de diffusion a été revue et utilise maintenant [Grist](https://lasuite.numerique.gouv.fr/produits/grist). Pour s'inscrire à la liste de diffusion, c'est par [ici]({{< var signup.form >}}). Une fois inscrit, vous pouvez créer un compte sur [Grist](https://grist.numerique.gouv.fr) et vous connecter directement sur [l'annuaire](https://grist.numerique.gouv.fr/o/ssphub/iTFX7gryL8jK/Annuaire?utm_id=share-doc) pour mettre à jour vos données, demander votre désinscription en cochant la case "Supprimez mon compte". 
 
 
 Par ailleurs, le **site du réseau devrait évoluer dans les prochaines semaines**. Il va s'étoffer pour présenter plus de projets en cours et permettre ainsi à tout un chacun de savoir qu'un projet existe et pouvoir échanger entre pairs. Si vous souhaitez valoriser un projet, n'hésitez pas à nous le faire savoir ! 
@@ -104,7 +104,7 @@ Comme toujours, une flopée d'articles a été publiée sur l'IA : le nouveau mo
 - Avez-vous déjà vu une **intelligence artificielle jouer au Loup-Garou** ? Des étudiants de l'ENSAE ~~se sont amusés~~ ont [étudié](https://werewolf.foaster.ai/) quelles IA étaient meilleures au jeu du Loup-Garou. Ce jeu nécessite en effet de mentir, de convaincre, et d'adapter sa stratégie pour survivre (pour les villageois) ou tuer tous les villageois (pour les loup-garous). A la fin, **GPT-5 gagne dans 97 % des 60 matchs joués, contre 15% pour GPT-OSS-120b**.
 
 ::: {.callout-tip}
-Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les partager sur le [groupe Tchap 💬](https://tchap.gouv.fr/#/room/#ssphub:agent.finances.tchap.gouv.fr) directement !
+Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les partager sur le [groupe Tchap 💬]({{< var contact.tchap >}}) directement !
 :::
 
 # L'interview
