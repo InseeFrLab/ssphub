@@ -1,8 +1,10 @@
 ---
 title: "Classification des données de caisse à partir de machine learning"
+title-en: "Transaction data classification with machine learning"
 
 # Summary for listings and search engines
 description: "Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l'IPC"
+description-en: "Classify transaction data in Eurostat's COICOP with machine learning for PCI"
 
 format: html
 
@@ -24,8 +26,16 @@ categories :
 - conjoncture
 - production
 
+categories-en : 
+- Python
+- automatic clustering
+- transaction data
+- COICOP
+- PCI
+- production
 ---
 
+::: {.content-visible when-profile="fr"}
 # Synthèse du projet
 
 |              | Classification des données de caisse à partir de machine learning                           |
@@ -35,3 +45,16 @@ categories :
 | **Résultats du projet**      | Les données de caisse sont aujourd'hui utilisées en production pour le calcul de l'inflation et pour le calcul d'indicateurs d'activité conjoncturelle.  <br> [note point d'étape été 2020](https://intranet.insee.fr/jcms/1345453_DBFileDocument/paul-ean-phaseb?details=true) <br> [note point d'étape hiver 2020-2021](https://intranet.insee.fr/jcms/1345448_DBFileDocument/2021-3657-dg75-l401?details=true) <br>          |
 | **Code du projet**           | - [https://github.com/InseeFrLab/predicat](https://github.com/InseeFrLab/predicat) : API pour classification des libellés de caisse <br> - [https://github.com/InseeFrLab/product-labelling](https://github.com/InseeFrLab/product-labelling) : Application de labellisation des données de caisse       |
 
+:::
+
+::: {.content-visible when-profile="en"}
+# Synthèse du projet
+
+|              | Classify transaction data in Eurostat's COICOP with machine learning for PCI                           |
+|--------------|------------------------------------------------------------------------------------|
+| **Project summary**         | My English summary         |
+| **Stakeholders**                  | Insee         |
+| **Results**      | Transaction data is used to produce IPC       |
+| **Code repo**           | - [https://github.com/InseeFrLab/predicat](https://github.com/InseeFrLab/predicat) : API pour classification des libellés de caisse <br> - [https://github.com/InseeFrLab/product-labelling](https://github.com/InseeFrLab/product-labelling) : Application de labellisation des données de caisse       |
+
+:::

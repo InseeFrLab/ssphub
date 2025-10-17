@@ -11,57 +11,35 @@ listing:
     feed: true
     sort:
       - "date desc"
-  - id: blog_event
-    contents: 
-    - blog
-    - event
-    type: grid
-    feed: true
-    sort:
-      - "date desc"
-    page-size: 9
-  - id: newsletters
-    contents: infolettre/infolettre_*/**/index.qmd
-    type: grid
-    sort:
-      - "number desc"
-    feed: true
-    page-size: 9
-  - id: partenaires
-    contents: partenaires
-    template: scripts/courses.ejs
-    type: grid
-    feed: false
+  # - id: blog_event
+  #   contents: 
+  #   - blog
+  #   - event
+  #   type: grid
+  #   feed: true
+  #   sort:
+  #     - "date desc"
+  #   page-size: 9
+  # - id: newsletters
+  #   contents: infolettre/infolettre_*/index.qmd
+  #   type: grid
+  #   sort:
+  #     - "number desc"
+  #   feed: true
+  #   page-size: 9
+  # - id: partenaires
+  #   contents: partenaires
+  #   template: scripts/courses.ejs
+  #   type: grid
+  #   feed: false
 echo: false
 ---
 
-```{ojs}
-// echo: false
-// output: false
-inscrits = 730
-```
-
-```{ojs}
-// echo: false
-badge = html`<a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103"><img alt="Static Badge" src="https://img.shields.io/badge/${inscrits}_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103">
-</a>
-`
-```
 
 
-::::: {#hero-banner .column-screen}
-::: {.grid .column-page}
-::: {.headline .g-col-lg-12 .g-col-12 .g-col-md-12}
+::: {.content-visible when-profile="fr"}
 
-:::: h1
-Le réseau des data scientists de la statistique publique
-::::
-
-```{ojs}
-// echo: false
-html`${badge}`
-```
-
+# Le réseau des data scientists de la statistique publique
 
 Le `SSPHub` centralise et vise à faire connaître le contenu créé par
 le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
@@ -69,32 +47,33 @@ le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https:/
 Une présentation du réseau est 
 disponible sur la page [à propos](about.html). 
 Pour en savoir plus sur les objectifs du réseau, sa philosophie,
-et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/manifeste.html)
+et ses modes d'actions, vous pouvez découvrir le Manifeste 📜.
 écrit collectivement. 
 
 :::
 
+::: {.content-visible when-profile="en"}
 
+# Data scientist of the Official Statistical Office
 
+Some english content
 :::
 
-:::::
 
-```{=html}
-<br>
-```
+
 
 
 
 ::: {.column-page}
 
+::: {.content-visible when-profile="fr"}
+
 ## Les derniers billets de blog et événements
 
-L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.qmd), tout comme les [événements](event.qmd).
+L'ensemble des billets de blog peut être retrouvé sur la page dédiée, tout comme les événements.
 
 
-:::: {#blog_event}
-::::
+
 
 
 ## Les projets innovants du SSPHub
@@ -106,24 +85,35 @@ L'ensemble des projets innovants peut être retrouvé sur la [page dédiée](pro
 ::::
 
 
+
+
 ## Les dernières _newsletters_
 
-Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/infolettre.qmd).
+Toutes les _newsletters_ précédemment publiées sont disponibles sur la page dédiée.
 
-:::: {#newsletters}
-::::
+
+
 
 ## Les réseaux partenaires
 
 Quelques communautés de la data-science avec lesquels nous collaborons
 
+:::
 
-:::: {#partenaires}
+
+
+::: {.content-visible when-profile="en"}
+
+
+# With some projects
+L'ensemble des projets innovants. 
+
+
+:::: {#project}
 ::::
-
-
 
 :::
 
+:::
 
 

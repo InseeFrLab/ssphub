@@ -1,11 +1,22 @@
 project:
   type: website
+  # render: 
+    # - blog.qmd
+    # - blog/**/index.qmd
+    # - event.qmd
+    # - event/**/index.qmd
+    # - infolettre/infolettre.qmd
+    # - infolettre/**/index.qmd
+    # - partenaires/**/index.qmd
+    # - "!additional/notebooks/*.qmd"
+    # - "!*/parquetRP/snippets/*"
+    # - "!*/polars/polars-tuto.qmd"
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
 
 profile:
-  default: en
+  default: fr
   group: [fr, en]
   
 format:
@@ -14,7 +25,7 @@ format:
     toc: true
     page-layout: article
 
-execute:
-  freeze: auto
+# execute:
+#   freeze: auto
 
 
