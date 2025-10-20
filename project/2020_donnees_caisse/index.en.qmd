@@ -1,0 +1,35 @@
+---
+title: "Transaction data classification with machine learning"
+
+# Summary for listings and search engines
+description: "Classify transaction data in Eurostat's COICOP with machine learning for PCI"
+
+format: html
+
+authors: 
+- Nicolas
+
+# Date published
+date: 2020-01-01
+
+# Date updated
+image: 2020_donnees_caisse.png
+
+categories-en: 
+- Python
+- automatic clustering
+- transaction data
+- COICOP
+- PCI
+- production
+---
+
+# Project presentation
+
+|              | Classify transaction data in Eurostat's COICOP with machine learning for PCI                           |
+|--------------|------------------------------------------------------------------------------------|
+| **Project summary**         | My English summary         |
+| **Stakeholders**                  | Insee         |
+| **Results**      | Transaction data is used to produce IPC       |
+| **Code repo**           | - [https://github.com/InseeFrLab/predicat](https://github.com/InseeFrLab/predicat) : API pour classification des libellés de caisse <br> - [https://github.com/InseeFrLab/product-labelling](https://github.com/InseeFrLab/product-labelling) : Application de labellisation des données de caisse       |
+

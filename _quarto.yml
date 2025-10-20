@@ -12,6 +12,10 @@ project:
     # - "!*/parquetRP/snippets/*"
     # - "!*/polars/polars-tuto.qmd"
 
+website: 
+  title: "SSPHub"
+  site-url: https://ssphub.netlify.app/
+
 title-block-banner: "#6886bb"
 title-block-banner-color: white
 
@@ -25,7 +29,15 @@ format:
     toc: true
     page-layout: article
 
-# execute:
-#   freeze: auto
+babelquarto:
+  languagelinks: navbar
+  languagecodes:
+  - name: en
+    text: "🇬🇧 English"
+  - name: fr
+    text: "🇫🇷 Français"
+  mainlanguage: 'fr'
+  languages: ['en']
+  icon: ""
 
 

@@ -7,13 +7,12 @@ project:
     - project/**/index.qmd
 
 website:
-  title: "SSPHub"
   description: "Blog du réseau des data scientists de la statistique publique"
   navbar:
     search: true
     right:
-      - href: en/index.html
-        text: 🇬🇧 English
+      # - href: en/
+      #   text: 🇬🇧 English
       # - icon: rss
       #   href: index.xml 
     left:
@@ -27,7 +26,7 @@ website:
         text: "Projets"
       # - href: course.qmd
       #   text: "Ressources utiles"
-      - text: "About"
+      - text: "À propos"
         menu:
           # - href: infolettre/infolettre.qmd
           #   text: "Newsletters"
@@ -39,7 +38,6 @@ website:
         text: "Le SSPCloud"
       - icon: github
         href: https://github.com/InseeFrLab/ssphub
-  site-url: https://ssphub.netlify.app/
   
   announcement: 
     icon: bi-megaphone
