@@ -1,6 +1,6 @@
 project:
   type: website
-  # render: 
+  render: 
     # - blog.qmd
     # - blog/**/index.qmd
     # - event.qmd
@@ -8,13 +8,20 @@ project:
     # - infolettre/infolettre.qmd
     # - infolettre/**/index.qmd
     # - partenaires/**/index.qmd
-    # - "!additional/notebooks/*.qmd"
-    # - "!*/parquetRP/snippets/*"
-    # - "!*/polars/polars-tuto.qmd"
+    - '*.en.qmd'
+    - index.qmd
+    - about.qmd
+    # - event.qmd
+    # - event/**/index.qmd
+    - project.qmd
+    - project/**/index.qmd
+    - "!additional/notebooks/*.qmd"
+    - "!*/parquetRP/snippets/*"
+    - "!*/polars/polars-tuto.qmd"
 
 website: 
   title: "SSPHub"
-  site-url: https://ssphub.netlify.app/
+  site-url: https://user-nicolastlm-796670-0.user.lab.sspcloud.fr/proxy/4321/
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white

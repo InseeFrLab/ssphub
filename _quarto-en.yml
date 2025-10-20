@@ -1,15 +1,15 @@
-project: 
-  render: 
-    - '*.en.qmd'
+# project: 
+#   render: 
+#     - '*.en.qmd'
     # - about.en.qmd
     # - project.qmd
     # - project/**/index.qmd
 
 website:
   description: "Network of data scientists working for the French administration"
-  site-url: https://ssphub.netlify.app/en
+  # site-url: https://user-nicolastlm-796670-0.user.lab.sspcloud.fr/proxy/4321/en
   navbar:
-    search: true
+    # search: true
     # right:
     #   - href: index.html
     #     text: 🇫🇷 Français
@@ -20,7 +20,6 @@ website:
         text: "Innovative projects"
       - href: about.qmd 
         text: "About the SSPHub"
-
       - href: https://datalab.sspcloud.fr/
         text: "SSPCloud"
       - icon: github

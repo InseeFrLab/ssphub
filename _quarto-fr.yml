@@ -1,23 +1,25 @@
-project:
-  output-dir: ./_site/
-  render: 
-    - index.qmd
-    - about.qmd
-    - project.qmd
-    - project/**/index.qmd
+# project:
+  # output-dir: ./_site/
+  # render: 
+  #   - index.qmd
+  #   - about.qmd
+  #   - event.qmd
+  #   - event/**/index.qmd
+  #   - project.qmd
+  #   - project/**/index.qmd
 
 website:
   description: "Blog du réseau des data scientists de la statistique publique"
   navbar:
     search: true
-    right:
+    # right:
       # - href: en/
       #   text: 🇬🇧 English
       # - icon: rss
       #   href: index.xml 
     left:
       - href: index.qmd
-        text: "Home"
+        text: "Accueil"
       # - href: event.qmd
       #   text: "Événements"
       # - href: blog.qmd

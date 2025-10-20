@@ -1,0 +1,16 @@
+---
+title: "Innovative data science projects"
+listing:
+  feed: true
+  id: project-listing
+  contents: project/**/index.qmd
+  type: grid
+  sort: 
+    - "date desc"
+  categories: true
+---
+
+Here is a list of the innovative data science projects. 
+
+::: {#project-listing}
+:::
