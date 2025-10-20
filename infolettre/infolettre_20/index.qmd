@@ -25,13 +25,13 @@ categories:
 ---
 
 
-Bienvenue à la **vingtième infolettre** ! Il est temps de se mettre au défi de respecter ce qui a été dit il y a quelques semaines: une newsletter par mois ga-ran-tie je vous ai dit. Bon, à l'époque, je ne savais pas qu'un mois ça voulait dire 4 semaines et que 4, c'est pas beaucoup 🙃. Allez, on y va !  
+Bienvenue à la **vingtième infolettre** ! Il est temps de se mettre au défi de respecter ce qui a été dit il y a quelques semaines : une newsletter par mois ga-ran-tie je vous ai dit. Bon, à l'époque, je ne savais pas qu'un mois ça voulait dire 4 semaines et que 4, c'est pas beaucoup 🙃. Allez, on y va !  
 
 Bonne lecture 📔 ! 
 
 # L'infographie
 
-Beaucoup d'infographie ce mois-ci, le choix a été dur. Pour une fois, partons sur une vidéo réalisée par [Fabian Lang](https://www.fabianlang.net/schweizer-bergwelten/) : le trajet d'un gypaète barbu suivi par GPS en 3D dans les Alpes suisses. La vraie infographie, en format vidéo, est disponible [ici](https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj). Attention, vertige. 
+Beaucoup d'infographies ce mois-ci, le choix a été dur. Pour une fois, partons sur une vidéo réalisée par [Fabian Lang](https://www.fabianlang.net/schweizer-bergwelten/) : le trajet d'un gypaète barbu suivi par GPS en 3D dans les Alpes suisses. La vraie infographie, en format vidéo, est disponible [ici](https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj). Attention, vertige. 
 
 ![](2025_10_gypaete.png)
 
@@ -60,9 +60,9 @@ Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les pa
 ## Datavisualisation
 - Une [belle carte](https://neocarto.hypotheses.org/21980) de **migration simulée au niveau infra-national** en zone endémique paludéenne africaine. Françoise Bahoken, son autrice, sera notre invitée début 2026.  
 - Pour les passionnés d'espace, voici une [**carte en 3D et dynamique**](https://atlasof.space/) du système solaire, comprenant les planètes mais aussi les astéroïdes! Vous pouvez jouer avec le temps pour savoir où sera la Terre quand vous aurez 30/40/50/60/70 ans (spoiler alert : c'est cyclique), et vérifier aussi qu'aucun astéroïde ne passe sur la Terre d'ici là. 
-- Pour les autres candidats à l'infographie du mois: 
+- Pour les autres candidats à l'infographie du mois : 
   - pour voir l'ensemble des **livres publiés** en une seule carte interactive, cela donne [cela](https://phiresky.github.io/isbn-visualization/?).
-  - la cheffe de l’infographie d’Epsiloon (magazine de données) a publié les étapes [avant / après](https://www.figma.com/proto/C8xDR9mlWX8kBV0crJr1IK/Les-infographies-d-Epsiloon?page-id=3102%3A2581&node-id=3102-2979&viewport=1040%2C640%2C0.18&t=h0dF40xsTRgqYfJi-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3102%3A2583&hide-ui=1) de ses infographies. Je vous recommande celle sur les **habitudes de sommeil par pays**. 
+  - la cheffe de l’infographie d’Epsiloon (magazine de sciences) a publié les étapes [avant / après](https://www.figma.com/proto/C8xDR9mlWX8kBV0crJr1IK/Les-infographies-d-Epsiloon?page-id=3102%3A2581&node-id=3102-2979&viewport=1040%2C640%2C0.18&t=h0dF40xsTRgqYfJi-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3102%3A2583&hide-ui=1) de ses infographies. Je vous recommande celle sur les **habitudes de sommeil par pays**. 
 - Enfin, un petit jeu à la SUTOM en version graphique : un [**graphique par jour**](https://chartle.cc/), devinez le pays ! 
 
 
@@ -86,7 +86,7 @@ Vous voyez d'autres sujets d'actualité intéressants ? N'hésitez pas à les pa
   - Un programme d'**harmonisation des metadata et d'API**, l'[Open Semantic Interchange Initiative](https://www.snowflake.com/en/blog/open-semantic-interchange-ai-standard/), a été lancé pour enrichir les données d'apprentissage et la précision des IA. L'idée est d'avoir un langage YAML commun pour permettre aux IA d'échanger des données de manière robuste, par exemple par API et sans perte de sens au fur et à mesure de leur traitement par des agents d'IA. 
   - Une fois que l'on a les données, on cherche ensuite à savoir de **combien de GPU j'ai besoin pour entraîner mon modèle**. La Dinum a développé [un outil](https://github.com/etalab-ia/InfraScale) pour estimer ses besoins pour cette étape. 
 - Des faiblesses des modèles de LLM sont, comme toujours, remontées, notamment sur **l'importance des données d'apprentissage et d'un prompt propre**. Cela met notamment en valeur le fait que les modèles ne sont pour le moment pas très efficaces quand il s'agit de trier des CV ou des articles.
-  - Le "prompt injection" : c'est l'idée de truquer l'IA dans son CV/projet d'article scientifique/sur Linkedin, pour avoir plus de chance d'être sélectionné/de détecter les messages écrits par l'IA. Cela marche à presque 100% des cas selon [cet article](https://arxiv.org/pdf/2509.10248), d'autant plus que l'IA a un biais positif naturel. 
+  - Le "prompt injection" : c'est l'idée de truquer l'IA dans son CV/projet d'article scientifique/sur Linkedin, par exemple avec des instructions écrites en « blanc sur blanc », pour avoir plus de chance d'être sélectionné/de détecter les messages écrits par l'IA. Cela marche à presque 100 % des cas selon [cet article](https://arxiv.org/pdf/2509.10248), d'autant plus que l'IA a un biais positif naturel. 
   - Une [étude](https://www.anthropic.com/research/small-samples-poison) confirme que l'IA est **particulièrement sensible à la qualité de la donnée d'apprentissage**. Ainsi, 250 observations fausses suffisent pour empoisonner durablement un LLM, et ce **quel que soit sa taille**. Une [présentation intéressante](https://www.youtube.com/watch?v=zKW8sVIOCTY) à une conférence PyData présentait par ailleurs ce qu'il se passait quand on entraîne une IA sur des images générés par une IA, avec des résultats similaires.  
 - Le site [**AI Darwin Awards**](https://aidarwinawards.org/nominees-2025.html) rassemble des exemples d'usage raté d'IA. Globalement, les cas d'usage où l'IA est mis directement face à un client peuvent rapidement mal tourner...  Peut-être que [Diella](https://www.politico.eu/article/albania-apppoints-worlds-first-virtual-minister-edi-rama-diella/), la première et seule ministre à être une IA dans le monde, rejoindra cette liste ?
 - Si vous voulez **comparer le résultat de deux LLM et leur empreinte carbone**, n'oubliez pas l'outil [ComparIA](https://comparia.beta.gouv.fr/) créé par une start-up d'État du ministère de la Culture.
