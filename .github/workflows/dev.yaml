@@ -73,6 +73,8 @@ jobs:
           to: html
         # env: # For Quarto profiles
         #   QUARTO_PROFILE: preview
+        # env: # For Quarto profiles
+        #   QUARTO_PROFILE: preview
 
       - name: Install npm
         if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
