@@ -45,6 +45,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # DELETE IF WORKS
       # To publish to GitHub Pages - 1 create directory
       # - name: Create directory
       #   run: |
@@ -55,6 +56,7 @@ jobs:
       #     mkdir -p ./$PUBLISH_DIR
       #     echo ./$PUBLISH_DIR
     
+      # DELETE IF WORKS
       # # To publish to GitHub Pages - 2 render and publish
       # - name: Publish to GitHub Pages (and render)
       #   uses: quarto-dev/quarto-actions/publish@v2
@@ -64,20 +66,23 @@ jobs:
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 
-      # Render Quarto
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          to: html
+      # Render Quarto  
+      # UNCOMMENT
+      # - name: Render Quarto Project
+      #   uses: quarto-dev/quarto-actions/render@v2
+      #   with:
+      #     to: html
         # env: # For Quarto profiles
         #   QUARTO_PROFILE: preview
 
-      - name: Install npm
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-        uses: actions/setup-node@v2          
-        with:
-          node-version: '18'
+      # - name: Install npm
+      # UNCOMMENT
+      #   if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+      #   uses: actions/setup-node@v2          
+      #   with:
+      #     node-version: '18'
 
+      # DELETE IF WORKS
       # - name: Fetch comments  # To see if a comment has previously been posted
       #   id: fetch-comments
       #   uses: actions/github-script@v6
@@ -100,6 +105,7 @@ jobs:
       #         core.setOutput('commentId', '');
       #       }
 
+      # UPDATE IF WORKS
       # - name: Delete existing comment if exists
       #   if: steps.fetch-comments.outputs.commentId != ''
       #   uses: actions/github-script@v6
@@ -111,6 +117,7 @@ jobs:
       #         comment_id: ${{ steps.fetch-comments.outputs.commentId }},
       #       });
 
+      # DELETE IF WORKS
       # - name: Comment PR with preview URL
       #   uses: actions/github-script@v6
       #   with:
@@ -133,14 +140,15 @@ jobs:
     steps:
       - name: Deploy preview
         id: deploy-preview
-        uses: rossjrw/pr-preview-action@v1
+        uses: rossjrw/pr-preview-action@v1.6.2
         with:
-          source-dir: ./_site/
+          source-dir: ./
           preview-branch: gh-pages
       
       - name: Comment PR
         run: echo "Preview visible at ${{ steps.deploy-preview.outputs.preview-url }}"
     
+    # DELETE IF ROSSJRW WORKS
     # environment:
     #   name: github-pages
     #   url: needs.build.outputs.previewUrl
@@ -175,6 +183,7 @@ jobs:
     if: github.event.action == 'closed'  # Only run when PR is closed
     runs-on: ubuntu-latest
     steps:
+    # UPDATE WITH ROSSJRW IF IT WORKS
       - name: Remove preview from GitHub Pages
         uses: peaceiris/actions-gh-pages@v4.0.0  # https://github.com/marketplace/actions/github-pages-action
         with:
