@@ -14,7 +14,8 @@ project:
     - event/**/*.qmd
     - index.qmd
     - infolettre/infolettre.qmd
-    - infolettre/**/*.qmd
+    - infolettre/infolettre_20/index.qmd  # DELETE
+    # - infolettre/**/*.qmd  # UNCOMMENT
     - partenaires/**/*.qmd
     - project.qmd
     - project/**/*.qmd

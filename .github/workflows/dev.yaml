@@ -37,7 +37,8 @@ jobs:
           python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
       
       # Jupyter
-      - run: pip install jupyter nbformat
+      # UNCOMMENT
+      # - run: pip install jupyter nbformat
 
       # Quarto
       - name: Set up Quarto
@@ -67,20 +68,18 @@ jobs:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 
       # Render Quarto  
-      # UNCOMMENT
-      # - name: Render Quarto Project
-      #   uses: quarto-dev/quarto-actions/render@v2
-      #   with:
-      #     to: html
-        # env: # For Quarto profiles
-        #   QUARTO_PROFILE: preview
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          to: html
+        env: # For Quarto profiles
+          QUARTO_PROFILE: preview
 
-      # - name: Install npm
-      # UNCOMMENT
-      #   if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-      #   uses: actions/setup-node@v2          
-      #   with:
-      #     node-version: '18'
+      - name: Install npm
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        uses: actions/setup-node@v2          
+        with:
+          node-version: '18'
 
       # DELETE IF WORKS
       # - name: Fetch comments  # To see if a comment has previously been posted
