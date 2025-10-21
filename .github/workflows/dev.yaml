@@ -59,18 +59,51 @@ jobs:
         with:
           node-version: '18'
 
-      # - name: Comment PR with preview URL
-      #   uses: actions/github-script@v6
-      #   with:
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
-      #     script: |
-      #       const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}`;
-      #       github.rest.issues.createComment({
-      #         issue_number: context.issue.number,
-      #         owner: context.repo.owner,
-      #         repo: context.repo.repo,
-      #         body: `✅ Preview site is ready: [${previewUrl}](${previewUrl})`
-      #       })
+      - name: Fetch comments  # To see if a comment has previously been posted
+        id: fetch-comments
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+
+            // Check if there is a comment including "✅ Preview site is ready:"
+            const hasPreviewSiteReadyComment = comments.some(comment => comment.body.includes('✅ Preview site is ready:'));
+
+            // Set the output
+            if (previewSiteReadyComment) {
+              core.setOutput('commentId', previewSiteReadyComment.id);
+            } else {
+              core.setOutput('commentId', '');
+            }
+
+      - name: Delete existing comment
+        if: steps.fetch-comments.outputs.commentId != ''
+        uses: actions/github-script@v6
+        with:
+          script: |
+            await github.rest.issues.deleteComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: ${{ steps.fetch-comments.outputs.commentId }},
+            });
+
+      - name: Comment PR with preview URL
+        if: steps.fetch-comments.outputs.hasPreviewSiteReadyComment == 'false'
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}`;
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `✅ Preview site is ready: [${previewUrl}](${previewUrl})`
+            })
   
   delete-preview:
     if: github.event.action == 'closed'  # Only run when PR is closed
