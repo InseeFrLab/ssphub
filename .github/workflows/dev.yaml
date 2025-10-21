@@ -27,8 +27,8 @@ jobs:
       
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
-      # - name: Configure safe.directory  # Workaround for actions/checkout#760
-      #   run: git config --global --add safe.directory /__w/ssphub/ssphub
+      - name: Configure safe.directory  # Workaround for actions/checkout#760
+        run: git config --global --add safe.directory /__w/ssphub/ssphub
       
       # Python
       - name: Setup Python
@@ -136,6 +136,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build  # Job build is done beforehand and creates previewUrl
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        # with:
+        #   ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
+        #   repository: ${{github.event.pull_request.head.repo.full_name}}
       - name: Deploy preview
         id: deploy-preview
         uses: rossjrw/pr-preview-action@v1.6.2
