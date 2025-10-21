@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-deploy:
+  build:
     if: github.event.action != 'closed'  # If closing the PR, no publishing
     runs-on: ubuntu-latest
     steps:
@@ -114,6 +114,28 @@ jobs:
               repo: context.repo.repo,
               body: `✅ Preview site is ready: [${previewUrl}](${previewUrl})`
             })
+
+            echo "PREVIEW_URL=$previewUrl" >> $GITHUB_ENV
+
+  deploy:
+    if: github.event.action != 'closed'  # Deploying if PR not closed 
+    environment:
+      name: github-pages
+      url: ${{ env.PREVIEW_URL }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: ./${{ env.PUBLISH_DIR }}
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
   
   delete-preview:
     if: github.event.action == 'closed'  # Only run when PR is closed
