@@ -9,12 +9,6 @@ on:
       - main
 
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-# permissions:
-#   contents: read
-#   pages: write
-#   id-token: write
-
 jobs:
   build:
     if: github.event.action != 'closed'  # If closing the PR, no publishing
@@ -136,6 +130,11 @@ jobs:
     concurrency:
       group: "pages"
       cancel-in-progress: false
+    # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
