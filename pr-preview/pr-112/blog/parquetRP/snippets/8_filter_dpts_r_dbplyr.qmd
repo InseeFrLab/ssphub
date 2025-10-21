@@ -1,0 +1,6 @@
+```r
+table_individu %>%
+  filter(DEPT %in% c("11", "31", "34")) %>%
+  head(10)
+```
+

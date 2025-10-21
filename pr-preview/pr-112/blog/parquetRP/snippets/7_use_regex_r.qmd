@@ -1,0 +1,6 @@
+```r
+dbGetQuery(
+  con,
+  "SELECT IPONDI AS poids, COLUMNS('.*AGE.*') FROM table_individu LIMIT 10"
+)
+```

@@ -1,0 +1,64 @@
+::: {.callout-caution collapse="true"}
+## Version de `Plot` embarquée dans `Quarto`
+
+Pour les versions de `Quarto` antérieures à la v1.4, la version embarquée par défaut
+de la librairie `Plot` ne propose pas d'interactivité par le
+biais des [_tooltips_](https://observablehq.com/plot/marks/tip).
+
+Pour utiliser une version compatible, par exemple la `0.6.11`, faire:
+
+```{{ojs}}
+Plot = require("https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6.11/dist/plot.umd.min.js")
+```
+
+:::
+
+
+<details>
+<summary>
+Code pour structurer les données pour la représentation graphique.
+</summary>
+
+```{{ojs}}
+pyramide_ages = db.query(
+`
+SELECT
+  CAST(SUM(IPONDI) AS INT) AS individus,
+  CAST(AGED AS INT) AS AGED,
+  DEPT AS departement
+FROM table_individu
+  WHERE DEPT IN ('11', '31', '34')
+GROUP BY AGED, DEPT ORDER BY DEPT, AGED
+`
+)
+Inputs.table(pyramide_ages)
+```
+
+</details>
+
+<details>
+<summary>
+Code pour produire la représentation graphique.
+</summary>
+
+```{{ojs}}
+Plot.plot({
+  x: {label: null},
+  y: {percent: true},
+  marks: [
+    Plot.barY(
+        pyramide_ages,
+        {x: "AGED", y: d => d.individus/1000, fy: 'departement', fill: "departement", tip: true}
+        ),
+    Plot.ruleX([18], {stroke: "red"}),
+    Plot.tickY(
+        pyramide_ages,
+        {x: "AGED", y: d => d.individus/1000, fy: 'departement'}
+        ),
+    Plot.ruleY([0]),
+    Plot.axisY({label: "Population (en milliers)"}),
+    Plot.axisX({ticks: d3.ticks(0, 120, 10), label: "Âge", fontSize: 12})
+  ]
+})
+```
+</details>

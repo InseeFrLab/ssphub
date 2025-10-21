@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: "8aa026d7-5eef-462d-ac27-533c1a7efd91"
+      url: "https://ssphub.netlify.app/"

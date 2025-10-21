@@ -1,0 +1,10 @@
+```{{ojs}}
+query = "SELECT * FROM documentation_logement WHERE CONTAINS(description_variable, 'Catégorie')"
+Inputs.table(
+    db.query(query)
+)
+```
+
+
+
+

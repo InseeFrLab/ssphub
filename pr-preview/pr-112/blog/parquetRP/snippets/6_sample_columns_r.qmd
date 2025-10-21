@@ -1,0 +1,6 @@
+```r
+dbGetQuery(
+  con,
+  "SELECT IPONDI AS poids, AGED, VOIT FROM table_individu LIMIT 10"
+)
+```

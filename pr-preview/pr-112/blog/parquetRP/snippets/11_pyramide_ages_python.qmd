@@ -1,0 +1,28 @@
+```python
+import matplotlib.pyplot as plt
+from plotnine import *
+
+pyramide_ages = duckdb.sql(
+"""
+SELECT
+  SUM(IPONDI) AS individus,
+  CAST(AGED AS int) AS AGED,
+  DEPT AS departement
+FROM table_individu
+  WHERE DEPT IN ('11', '31', '34')
+GROUP BY AGED, DEPT ORDER BY DEPT, AGED
+"""
+).to_df()
+
+(
+    ggplot(pyramide_ages, aes(x = "AGED", y = "individus")) +
+    geom_bar(
+      aes(fill = "departement"),
+      stat = "identity", show_legend=False
+    ) +
+    geom_vline(xintercept = 18, color = "grey", linetype = "dashed") +
+    facet_wrap('departement', scales = "free_y", nrow = 3) +
+    theme_minimal() +
+    labs(y = "Individus recensés", x = "Âge")
+)
+```

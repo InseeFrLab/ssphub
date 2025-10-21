@@ -1,0 +1,8 @@
+```r
+table_logement %>%
+  filter(COMMUNE == "06088") %>%
+  filter(AEMM > 2020)
+# Peut aussi s'écrire en une fois :
+# table_logement %>% filter(COMMUNE == "06088", AEMM > 2020)
+```
+

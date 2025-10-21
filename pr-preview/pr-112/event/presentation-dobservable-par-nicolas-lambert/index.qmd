@@ -1,0 +1,51 @@
+---
+title: Présentation d'Observable par Nicolas Lambert
+subtitle: Présentation du nouveau réseau social de la dataviz
+categories:
+- observable
+- dataviz
+description: |
+  [observable](https://observablehq.com/) est la nouvelle plateforme
+  de dataviz réactive. Initiée par Mike Bostock (créateur de D3.js),
+  ce réseau social de la dataviz a pour objectif de permettre 
+  aux _data scientists_ de publier et réutiliser des _notebooks_  
+  de visualisations réactives, basées sur JavaScript. L'un des principaux
+  usages de cette plateforme est la mise à disposition de cartographies
+  réactives. Nicolas Lambert (alias [neocarto](https://observablehq.com/@neocartocnrs))
+  nous présentera quelques fonctionnalités de la plateforme pour
+  les _data scientists_ désirant valoriser des données géographiques.
+date: '2022-11-16T10:00:00Z'
+image: featured.png
+---
+
+Présentation d'[`observable`](https://observablehq.com/explore)
+par [Nicolas Lambert](https://observablehq.com/@neocartocnrs)
+sous la forme d'un [_notebook_ interactif](https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales).
+
+Le replay est [disponible plus bas 👇](#replay)
+
+[`observable`](https://observablehq.com/) est
+une plateforme
+de dataviz réactive qui propose des notebooks
+communautaires de visualisations de données:
+
+![](observable2.png)
+
+![](observable1.png)
+
+Quelques ressources supplémentaires utiles:
+
+- Les habitués de `ggplot2` trouveront sans doute [ce _notebook_](https://observablehq.com/@observablehq/plot-from-ggplot2) utile ;
+- Présentation de l'utilisation de `duckdb` pour l'utilisation dans `Observable` de données volumineuses par [ici](https://observablehq.com/@observablehq/duckdb) ;
+- Documentation sur l'usage d'`Observable` avec `quarto` par [là](https://quarto.org/docs/interactive/ojs/).
+
+
+## Replay {#replay}
+
+
+
+{{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2022-11-observable/observable-20221116.mp4" controls="yes" >}}
+
+
+
+

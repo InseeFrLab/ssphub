@@ -1,0 +1,6 @@
+```r
+dbGetQuery(
+  con,
+  "SELECT * FROM table_logement USING SAMPLE 5"
+)
+```

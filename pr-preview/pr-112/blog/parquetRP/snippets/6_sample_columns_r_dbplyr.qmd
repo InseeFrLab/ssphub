@@ -1,0 +1,6 @@
+```r
+table_individu %>%
+  select(poids = IPONDI, AGED, VOIT) %>%
+  head(10)
+```
+

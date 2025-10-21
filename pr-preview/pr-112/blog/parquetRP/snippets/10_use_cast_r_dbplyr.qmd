@@ -1,0 +1,6 @@
+```r
+table_logement %>%
+  filter(COMMUNE == '31555', !IRANM %in% c('1', 'Z'), INPER != "Y") %>%
+  mutate(INPER = as.integer(INPER)) %>%
+  summarise(habitants_toulouse_demenagement = as.integer(sum(IPONDL * INPER)))
+```

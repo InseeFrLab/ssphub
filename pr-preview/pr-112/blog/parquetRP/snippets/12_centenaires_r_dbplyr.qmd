@@ -1,0 +1,8 @@
+```r
+table_individu %>%
+  filter(AGED >= 100) %>%
+  group_by(DEPT) %>%
+  summarise(individus_recenses = as.integer(sum(IPONDI)), .groups = "drop") %>%
+  arrange(desc(individus_recenses))
+```
+

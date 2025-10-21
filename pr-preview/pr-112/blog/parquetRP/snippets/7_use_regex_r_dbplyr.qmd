@@ -1,0 +1,6 @@
+```r
+table_individu %>%
+  select(poids = IPONDI, contains("AGE")) %>%
+  head(10)
+```
+
