@@ -70,8 +70,9 @@ jobs:
               issue_number: context.issue.number,
             });
 
-            // Check if there is a comment including "✅ Preview site is ready:"
-            const hasPreviewSiteReadyComment = comments.some(comment => comment.body.includes('✅ Preview site is ready:'));
+            // Find the comment with the body containing "✅ Preview site is ready:"
+            const previewSiteReadyComment = comments.find(comment => comment.body.includes('✅ Preview site is ready:'));
+
 
             // Set the output
             if (previewSiteReadyComment) {
