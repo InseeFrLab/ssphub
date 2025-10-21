@@ -139,7 +139,6 @@ jobs:
           preview-branch: gh-pages
       
       - name: Comment PR
-        if: steps.deploy-preview.outputs.deployment-action == "deploy"
         run: echo "Preview visible at ${{ steps.deploy-preview.outputs.preview-url }}"
     
     # environment:
