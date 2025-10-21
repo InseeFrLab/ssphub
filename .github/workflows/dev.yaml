@@ -142,7 +142,7 @@ jobs:
         id: deploy-preview
         uses: rossjrw/pr-preview-action@v1.6.2
         with:
-          source-dir: ./
+          source-dir: .
           preview-branch: gh-pages
       
       - name: Comment PR
