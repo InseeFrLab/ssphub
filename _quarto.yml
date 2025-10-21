@@ -5,7 +5,8 @@ project:
     - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
     - blog.qmd
-    - blog/**/*.qmd
+    - blog/embedding/index.qmd  # DELETE
+    # - blog/**/*.qmd  # UNCOMMENT
     - "!*/parquetRP/snippets/*"
     - "!*/polars/polars-tuto.qmd"
     - course.qmd
