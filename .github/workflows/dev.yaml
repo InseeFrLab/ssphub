@@ -129,7 +129,7 @@ jobs:
       #         body: `✅ Preview site is ready: [${previewUrl}](${previewUrl})`
       #       })
 
-      #       core.setOutput('previewUrl', previewUrl)
+      #       core.setOutput('previewUrl', previewUrl) 
 
   deploy-preview:
     if: github.event.action != 'closed'  # Deploying if PR not closed 
