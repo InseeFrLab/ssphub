@@ -5,8 +5,18 @@ on:
       - reopened
       - synchronize
       - closed   # Including closed to remove preview when PR is closed. 
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed   # Including closed to remove preview when PR is closed. 
     branches:
       - main
+
+# To cancel previous actions that could run on this PR
+concurrency:
+  group: preview-${{ github.ref }}
+  cancel-in-progress: true
 
 # To cancel previous actions that could run on this PR
 concurrency:
@@ -16,11 +26,21 @@ concurrency:
 jobs:
   build-deploy:
     if: github.event.action != 'closed'  # If closing the PR, no publishing
+  build-deploy:
+    if: github.event.action != 'closed'  # If closing the PR, no publishing
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
         with:
+          fetch-depth: 0  # To enable full access to Git repo
+          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
+          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
+      
+      # add software dependencies here and any libraries
+      # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
           fetch-depth: 0  # To enable full access to Git repo
           ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
           repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
@@ -33,7 +53,14 @@ jobs:
       # Python
       - name: Setup Python
         uses: actions/setup-python@v4
+      
+      # Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
+          python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+      
+      # Jupyter
           python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
       
       # Jupyter
@@ -48,7 +75,21 @@ jobs:
       # To publish to GitHub Pages
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
+
+      # Quarto
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # To publish to GitHub Pages
+      - name: Publish to GitHub Pages (and render)
+        uses: quarto-dev/quarto-actions/publish@v2
         with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
