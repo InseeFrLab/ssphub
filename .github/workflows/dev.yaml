@@ -47,14 +47,19 @@ jobs:
 
       # To publish to GitHub Pages - 1 create directory
       - name: Create directory
-        run: mkdir -p ./preview-${{ github.event.pull_request.number }}-${{ github.event.pull_request.title }} 
-      
+        run: |
+          PR_TITLE_WITH_SPACE="${{ github.event.pull_request.title }}"
+          SANITIZED_TITLE=$(echo "$PR_TITLE_WITH_SPACE" | tr ' ' '_')
+          PUBLISH_DIR=preview-${{ github.event.pull_request.number }}-$SANITIZED_TITLE
+          echo "PUBLISH_DIR=$PUBLISH_DIR" >> $GITHUB_ENV
+          mkdir -p ./$PUBLISH_DIR
+    
       # To publish to GitHub Pages - 2 render and publish
       - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
-          path: preview-${{ github.event.pull_request.number }}-${{ github.event.pull_request.title }}
+          path: ${{ env.PUBLISH_DIR }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 
@@ -102,7 +107,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/preview-${{ github.event.pull_request.number }}-${{ github.event.pull_request.title }}`
+            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/${{ env.PUBLISH_DIR }}`
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -119,7 +124,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages  
-          publish_dir: ./preview-${{ github.event.pull_request.number }}-${{ github.event.pull_request.title }}
+          publish_dir: ./${{ env.PUBLISH_DIR }}
           keep_files: false
           force_orphan: true  # This allows you to make your publish branch with only the latest commit.
           enable_jekyll: false
