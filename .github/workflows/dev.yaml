@@ -50,6 +50,7 @@ jobs:
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
+          path: preview-${{ github.event.pull_request.number }}-${{ github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
 
@@ -81,7 +82,7 @@ jobs:
               core.setOutput('commentId', '');
             }
 
-      - name: Delete existing comment
+      - name: Delete existing comment if exists
         if: steps.fetch-comments.outputs.commentId != ''
         uses: actions/github-script@v6
         with:
@@ -93,12 +94,11 @@ jobs:
             });
 
       - name: Comment PR with preview URL
-        if: steps.fetch-comments.outputs.hasPreviewSiteReadyComment == 'false'
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}`;
+            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/preview-${{ github.event.pull_request.number }}-${{ github.ref }}`
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
@@ -115,7 +115,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages  
-          publish_dir: ./
+          publish_dir: ./preview-${{ github.event.pull_request.number }}-${{ github.ref }}
           keep_files: false
           force_orphan: true  # This allows you to make your publish branch with only the latest commit.
           enable_jekyll: false
