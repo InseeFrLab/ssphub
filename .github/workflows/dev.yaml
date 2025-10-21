@@ -37,8 +37,7 @@ jobs:
           python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
       
       # Jupyter
-      # UNCOMMENT
-      # - run: pip install jupyter nbformat
+      - run: pip install jupyter nbformat
 
       # Quarto
       - name: Set up Quarto

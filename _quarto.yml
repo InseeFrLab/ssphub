@@ -5,8 +5,8 @@ project:
     - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
     - blog.qmd
-    - blog/embedding/index.qmd  # DELETE
-    # - blog/**/*.qmd  # UNCOMMENT
+    # - blog/embedding/index.qmd  # DELETE
+    - blog/**/*.qmd  # UNCOMMENT
     - "!*/parquetRP/snippets/*"
     - "!*/polars/polars-tuto.qmd"
     - course.qmd
@@ -15,8 +15,8 @@ project:
     - event/**/*.qmd
     - index.qmd
     - infolettre/infolettre.qmd
-    - infolettre/infolettre_20/index.qmd  # DELETE
-    # - infolettre/**/*.qmd  # UNCOMMENT
+    # - infolettre/infolettre_20/index.qmd  # DELETE
+    - infolettre/**/*.qmd  # UNCOMMENT
     - partenaires/**/*.qmd
     - project.qmd
     - project/**/*.qmd
