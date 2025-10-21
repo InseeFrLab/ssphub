@@ -8,15 +8,21 @@ on:
     branches:
       - main
 
-# To cancel previous actions that could run on this PR
-concurrency:
-  group: preview-${{ github.ref }}
-  cancel-in-progress: true
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
     if: github.event.action != 'closed'  # If closing the PR, no publishing
     runs-on: ubuntu-latest
+    # To cancel previous actions that could run on this PR
+    concurrency:
+      group: preview-${{ github.ref }}
+      cancel-in-progress: true
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -53,6 +59,7 @@ jobs:
           PUBLISH_DIR=preview-${{ github.event.pull_request.number }}-$SANITIZED_TITLE
           echo "PUBLISH_DIR=$PUBLISH_DIR" >> $GITHUB_ENV
           mkdir -p ./$PUBLISH_DIR
+          echo ./$PUBLISH_DIR
     
       # To publish to GitHub Pages - 2 render and publish
       - name: Publish to GitHub Pages (and render)
@@ -115,24 +122,33 @@ jobs:
               body: `✅ Preview site is ready: [${previewUrl}](${previewUrl})`
             })
 
-            echo "PREVIEW_URL=$previewUrl" >> $GITHUB_ENV
+            core.setOutput('previewUrl', previewUrl)
 
-  deploy:
+  deploy-preview:
     if: github.event.action != 'closed'  # Deploying if PR not closed 
+    runs-on: ubuntu-latest
+    needs: build  # Job build is done beforehand and creates previewUrl
     environment:
       name: github-pages
-      url: ${{ env.PREVIEW_URL }}
-    runs-on: ubuntu-latest
+      url: needs.build.outputs.previewUrl
+    # Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+    # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+    concurrency:
+      group: "pages"
+      cancel-in-progress: false
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: ./${{ env.PUBLISH_DIR }}
+  
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
