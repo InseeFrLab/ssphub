@@ -16,11 +16,24 @@ if (! "DEEPL_API_KEY" %in% names(Sys.getenv())){
     stop("DEEPL API KEY not set", call.=FALSE)
 }
 
+input_path = args[1]  # sth like directory/sub/index.qmd
+out_path = paste0(substr(input_path, 1, nchar(input_path) - 4), ".en.qmd")
+
 babeldown::deepl_translate(
-  path = args[1],
-  out_path = args[2],
+  path = input_path,
+  out_path = out_path,
   source_lang = "FR",
   target_lang = "EN-GB",
-  formality = "default"
+  formality = "default", 
+  yaml_fields = c("title", "description", "categories")
 )
 
+# Shell command to list all files 
+# find project/ -type f -name "index.qmd"
+# Rscript scripts/translate.R project/2022_Appariement/index.qmd
+# Rscript scripts/translate.R project/2020_donnees_caisse/index.qmd
+# Rscript scripts/translate.R project/2022_Enquete_Budget_Famille/index.qmd
+# Rscript scripts/translate.R project/2022_satellites/index.qmd
+# Rscript scripts/translate.R project/2021_Extraction_CS/index.qmd
+# Rscript scripts/translate.R project/2021_codif_PCS/index.qmd
+# Rscript scripts/translate.R project/2022_codif_ape/index.qmd

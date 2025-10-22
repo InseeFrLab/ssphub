@@ -1,0 +1,30 @@
+---
+title: Comparison of matching methods and the contribution of machine learning
+description: To test and compare different matching methods in order to draw up recommendations
+  for the work needed to build directories, particularly as part of the RESIL multiannual
+  programme.
+format: html
+authors:
+- Nicolas
+date: '2021-01-01'
+image: Resil.png
+categories:
+- matching
+- administrative data
+- Resil
+---
+
+# Project summary
+
+|  | Comparison of matching methods and the contribution of machine learning                                                                                                                                                                                                            | 
+|  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Project details** | The Resil programme aims to build a sustainable and scalable system of directories of individuals, households and residential premises, updated from a variety of administrative sources. It requires the aggregation of several data sources without a common direct identifier. <br> The aim of the experiment is to **test and compare different matching methods** in order to draw up recommendations for the work needed to build the directories. These will be based on performance criteria (quality of matching) but also on operational considerations (ease of deployment, calculation time, etc.). In particular, the aim is to **assess the contribution and constraints of probabilistic methods and machine learning** in matching tasks. This work will be accompanied by a reflection on the prior normalisation of data and the evaluation of matching results. | 
+| **Players** | Insee (DSDS)                                                                                                                                                                                                                                                                       | 
+| **Project results** | Results presented at the Statistical Methodology Days 2022:  <br> - 
+ [Methodology for matching individual data](https://journees-methodologie-statistique.insee.net/methodologie-des-appariements-de-donnees-individuelles/) ; <br> - 
+ [Probabilistic or deterministic, matching methods put to the test by the RéSIL programme](https://journees-methodologie-statistique.insee.net/probabilistes-ou-deterministes-des-methodes-dappariements-au-banc-dessai-du-programme-resil/) ; <br> - 
+ [Impact of data cleaning on the quality of a match](https://journees-methodologie-statistique.insee.net/impact-du-nettoyage-des-donnees-sur-la-qualite-dun-appariement/) <br>  <br> Writing a working document: <br> - 
+ [Matching: aims, practices and quality issues, July 2024](https://www.insee.fr/fr/information/8203044) <br>  <br> In production : <br> - ??                                                                                                                                                                                                                      | 
+| **Project code** |                                                                                                                                                                                                                                                                                    | 
+
+
