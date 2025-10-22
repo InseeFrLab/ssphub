@@ -1,27 +1,30 @@
 project:
   type: website
   render: 
-    # - blog.qmd
-    # - blog/**/index.qmd
-    # - event.qmd
-    # - event/**/index.qmd
-    # - infolettre/infolettre.qmd
-    # - infolettre/**/index.qmd
-    # - partenaires/**/index.qmd
-    - '*.en.qmd'
-    - index.qmd
     - about.qmd
-    # - event.qmd
-    # - event/**/index.qmd
-    - project.qmd
-    - project/**/index.qmd
+    - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
+    # - blog.qmd
+    # - blog/**/*.qmd
     - "!*/parquetRP/snippets/*"
     - "!*/polars/polars-tuto.qmd"
-
+    - course.qmd
+    - course/**/*.qmd
+    - event.qmd
+    - event/**/index.qmd
+    - index.qmd
+    - infolettre/infolettre.qmd
+    - infolettre/**/index.qmd
+    - partenaires/**/index.qmd
+    - project.qmd
+    - project/**/index.qmd
+    # English version - dealt with babelquarto and not with Quarto profiles
+    - '*.en.qmd'
+  
 website: 
   title: "SSPHub"
-  site-url: https://user-nicolastlm-796670-0.user.lab.sspcloud.fr/proxy/4321/
+  # site-url: https://ssphub.netlify.app/  # For production
+  site-url: https://user-nicolastlm-796670-0.user.lab.sspcloud.fr/proxy/4321/  # For development
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
@@ -45,6 +48,6 @@ babelquarto:
     text: "🇫🇷 Français"
   mainlanguage: 'fr'
   languages: ['en']
-  icon: ""
+  icon: ""  # No bootstrap icon
 
 

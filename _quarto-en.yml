@@ -1,18 +1,7 @@
-# project: 
-#   render: 
-#     - '*.en.qmd'
-    # - about.en.qmd
-    # - project.qmd
-    # - project/**/index.qmd
-
 website:
   description: "Network of data scientists working for the French administration"
-  # site-url: https://user-nicolastlm-796670-0.user.lab.sspcloud.fr/proxy/4321/en
   navbar:
-    # search: true
-    # right:
-    #   - href: index.html
-    #     text: 🇫🇷 Français
+    search: true
     left:
       - href: index.qmd
         text: "Home"

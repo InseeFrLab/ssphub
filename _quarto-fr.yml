@@ -1,41 +1,29 @@
-# project:
-  # output-dir: ./_site/
-  # render: 
-  #   - index.qmd
-  #   - about.qmd
-  #   - event.qmd
-  #   - event/**/index.qmd
-  #   - project.qmd
-  #   - project/**/index.qmd
-
 website:
   description: "Blog du réseau des data scientists de la statistique publique"
   navbar:
     search: true
-    # right:
-      # - href: en/
-      #   text: 🇬🇧 English
-      # - icon: rss
-      #   href: index.xml 
+    right:
+      - icon: rss
+        href: index.xml 
     left:
       - href: index.qmd
         text: "Accueil"
-      # - href: event.qmd
-      #   text: "Événements"
-      # - href: blog.qmd
-      #   text: "Blog"
+      - href: event.qmd
+        text: "Événements"
+      - href: blog.qmd
+        text: "Blog"
       - href: project.qmd
         text: "Projets"
-      # - href: course.qmd
-      #   text: "Ressources utiles"
+      - href: course.qmd
+        text: "Ressources utiles"
       - text: "À propos"
         menu:
-          # - href: infolettre/infolettre.qmd
-          #   text: "Newsletters"
+          - href: infolettre/infolettre.qmd
+            text: "Newsletters"
           - href: about.qmd 
             text: "Présentation du réseau"
-          # - href: additional/manifeste.qmd
-          #   text: "Manifeste du réseau"
+          - href: additional/manifeste.qmd
+            text: "Manifeste du réseau"
       - href: https://datalab.sspcloud.fr/
         text: "Le SSPCloud"
       - icon: github
