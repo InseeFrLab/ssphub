@@ -1,6 +1,0 @@
-```{{ojs}}
-Inputs.table(
-    db.query("SELECT IPONDI AS poids, COLUMNS('.*AGE.*') FROM table_individu LIMIT 10")
-)
-```
-

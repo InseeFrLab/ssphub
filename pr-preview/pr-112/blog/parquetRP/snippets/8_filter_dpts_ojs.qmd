@@ -1,7 +1,0 @@
-```{{ojs}}
-Inputs.table(
-    db.query("SELECT * FROM table_individu WHERE DEPT IN ('11', '31', '34') LIMIT 10")
-)
-```
-
-

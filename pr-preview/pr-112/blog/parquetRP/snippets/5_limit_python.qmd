@@ -1,3 +1,0 @@
-```python
-duckdb.sql("SELECT * FROM table_logement LIMIT 5")
-```
