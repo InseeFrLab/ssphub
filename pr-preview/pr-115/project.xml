@@ -1,0 +1,1688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>SSPHub</title>
+<link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project.html</link>
+<atom:link href="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project.xml" rel="self" type="application/rss+xml"/>
+<description>Blog du réseau des data scientists de la statistique publique</description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Sat, 01 Oct 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Utilisation des images satellites pour la statistique publique</title>
+  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+<h1>Synthèse du projet</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Utilisation des images satellites pour la statistique publique</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>Fin 2022, un groupe de travail expérimental sur l’utilisation des données satellites pour la statistique publique a été lancé. Cette initiative visait à <strong>améliorer l’organisation des enquêtes cartographiques dans les départements d’outre-mer</strong>, particulièrement en Guyane et à Mayotte. Ces enquêtes servent à mettre à jour le répertoire individus / logement (RIL) chaque année, et facilitent l’identification en amont des enquêtes de nouvelles zones d’habitations spontanées ou temporaires. Des algorithmes appliqués à des <strong>photographies satellites</strong> permettent d’identifier de telles zones, qui à une année d’exercice donnée nécessiteront plus d’enquêteurs qu’à l’exercice précédent. <br> Le projet est présenté plus précisément <a href="https://inseefrlab.github.io/satellite-images-docs/src/documentation/index.html">ici</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee (DG et Direction interrégionale Réunion-Mayotte)</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Les résultats du projet sont présentés plus précisément <a href="https://inseefrlab.github.io/satellite-images-docs/">sur le site dédié</a>. La phase d’expérimentation s’est achevée avec: <br> - La transmission de <strong>statistiques d’évolution de bâti</strong> par îlot à Mayotte. Ces statistiques ont servi à l’organisation de l’enquête cartographique complémentaire 2024 à Mayotte ; <br> - Le développement d’une <a href="https://inseefrlab.github.io/satellite-images-webapp/"><strong>application de visualisation</strong></a> intégrant des fonds de carte construits à partir de tuiles Pleiades et les bâtiments détectés sur ces tuiles avec nos algorithmes, ainsi que des couches de détection de changement ; <br> - La création du<strong>package Python de traitement d’images satellites</strong> <a href="https://pypi.org/project/astrovision/"><strong>Astrovision</strong></a></td>
+</tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td>- <a href="https://github.com/InseeFrLab/astrovision">https://github.com/InseeFrLab/astrovision</a> : <strong>package Python</strong> pour travailler avec des données satellites: <br> - <a href="https://inseefrlab.github.io/satellite-images-webapp/">https://inseefrlab.github.io/satellite-images-webapp/</a>: code de l’<strong>application de visualisation</strong> <br> - <a href="https://github.com/InseeFrLab/satellite-images-preprocess">https://github.com/InseeFrLab/satellite-images-preprocess</a>: code de <strong>pré-processing des données</strong> <br> - <a href="https://github.com/InseeFrLab/satellite-images-train">https://github.com/InseeFrLab/satellite-images-train</a> : code pour l’<strong>entraînement des modèles</strong> <br> - <a href="https://github.com/InseeFrLab/satellite-images-inference">https://github.com/InseeFrLab/satellite-images-inference</a> : code pour l’<strong>inférence</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="documents-relatifs-au-projet-sur-les-données-satellites-à-linsee" class="level1">
+<h1>Documents relatifs au projet sur les données satellites à l’Insee</h1>
+<div id="listing-presentations" class="quarto-listing quarto-listing-container-custom">
+
+<link href="../../assets/css/all.css" rel="stylesheet">
+
+<div class="list grid quarto-listing-cols-3">
+
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1764028800000" data-listing-file-modified-sort="1761164154548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/article_jms/index.pdf" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/toad_DT.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title" data-anchor-id="documents-relatifs-au-projet-sur-les-données-satellites-à-linsee">Article JMS 2025</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Utilisation des images satellites pour améliorer le repérage des logements à Mayotte.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Maëlys Bernard, Raya Berova et Thomas Faria</div>
+                <div class="listing-date">25 nov. 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              article_jms.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1751500800000" data-listing-file-modified-sort="1761164154550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/seminaire-dmcsi/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/seminaire_dmcsi_satellite.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Utilisation des images satellites pour améliorer le repérage des logements dans les départements d'outre-mer</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Slides pour le séminaire de Méthodologie Statistique &amp; Sciences des données de la DMCSI - La terre vue d’en haut : images satellites, images aériennes et statistique publique.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova et Thomas Faria</div>
+                <div class="listing-date">3 juil. 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              seminaire_dmcsi_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="2" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1761164154550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/ntts-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/ntts_bruxelles.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Conference on New Techniques and Technologies for official Statistics (NTTS 2025)</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Slide deck for the NTTS 2025 conference.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova, Thomas Faria et Clément Guillo</div>
+                <div class="listing-date">12 mars 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              ntts_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="3" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1761164154550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/aiml4os-wp7/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/toad_wp7.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">AIML4OS Workshop on Earth Observation</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Slideshow presentation of the project Detecting changes in buildings in French overseas departments for Work Package 7,
+Artificial Intelligence and Machine Learning for Official Statistics, organized by Eurostat.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova, Thomas Faria et Clément Guillo</div>
+                <div class="listing-date">13 nov. 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              wp7_paris_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="4" data-listing-date-sort="1716854400000" data-listing-file-modified-sort="1761164154550" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/seminaire-dirag/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/toad_guada.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Séminaire à la Dirag</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Ce séminaire marque la fin des travaux d’expérimentation. À cette occasion, nous présenterons l’intégralité de la chaîne de traitement, de la récupération des images jusqu’à l’application d’aide à la décision, en mettant l’accent sur les difficultés rencontrées. La poursuite de ces travaux dépendra des besoins réels de l’Insee et nécessitera des compétences variées et une technicité élevée pour maintenir et/ou améliorer la chaîne de traitement.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova, Gaëtan Carrere, Thomas Faria, Clément Guillo et Tom Seimandi</div>
+                <div class="listing-date">28 mai 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              seminaire_dirage_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="5" data-listing-date-sort="1715817600000" data-listing-file-modified-sort="1761164154548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/DT/index.pdf" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/toad_DT.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Document de travail</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Document retraçant les avancées et résultats obtenus sur les travaux exploratoires utilisant des images satellitaires
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova, Gaëtan Carrere, Thomas Faria, Clément Guillo et Tom Seimandi</div>
+                <div class="listing-date">16 mai 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              dt_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="6" data-listing-date-sort="1761164154000" data-listing-file-modified-sort="1761164154548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-webapp/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/toad_cratt.jpeg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Application web</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Application web à destination des agents facilitant l'utilisation des résultats fournis par le modèle de segmentation.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date">22 oct. 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cratt_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="7" data-listing-date-sort="1761164154000" data-listing-file-modified-sort="1761164154548" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/documentation/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/toad_doc.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Documentation</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Ici est rassemblée toute la documentation technique sur le travail effectué au cours de l'expérimentation sur les données satellite
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova, Gaëtan Carrere, Thomas Faria, Clément Guillo et Tom Seimandi</div>
+                <div class="listing-date">22 oct. 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              documentation_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+</div>
+
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>package</category>
+  <category>deep learning</category>
+  <category>images satellites</category>
+  <category>en production</category>
+  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/</guid>
+  <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/Satellites_Mayotte.png" medium="image" type="image/png" height="187" width="144"/>
+</item>
+<item>
+  <title>Travaux méthodologiques sur l’enquête Budget de Famille</title>
+  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Enquete_Budget_Famille/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Travaux méthodologiques sur l’enquête Budget de Famille</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l’enquête précédente (2017). <br> - En effet, une partie des données de consommation des ménages sera remontée à travers une <strong>application mobile</strong> mise à disposition des ménages enquêtés. <br> - De plus, l’enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d’extraction automatique. <br> Deux axes existent dans cette expérimentation : <br> - Le premier axe consiste à tester les solutions open-source d’<strong>extraction automatique du contenu de tickets de caisse</strong>, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la <strong>codification automatique des produits de consommation dans la nomenclature COICOP</strong> : entraînement d’un modèle de classification sur les données de l’enquête précédente et élaboration d’une stratégie de reprise optimale.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee (DSDS)</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Projet en cours</td>
+</tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td>- <a href="https://git.lab.sspcloud.fr/ssplab/bdf">https://git.lab.sspcloud.fr/ssplab/bdf</a> <br> - <a href="https://git.lab.sspcloud.fr/ssplab/experimentation-bdf">https://git.lab.sspcloud.fr/ssplab/experimentation-bdf</a></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>Projets</category>
+  <category>codification automatique</category>
+  <category>extraction de données</category>
+  <category>données de caisse</category>
+  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Enquete_Budget_Famille/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Codification automatique de l’activité principale des entreprises</title>
+  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+<h1>Synthèse du projet</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Codification automatique de l’activité principale des entreprises</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>La codification de l’activité principale exercée (APE) des entreprises à partir de descriptions d’activité (sous forme de texte libre) dans le répertoire Sirene était auparavant réalisée grâce à 6 environnements de codification déterministes mobilisant un nombre énorme de règles de décision. Le but de l’expérimentation est de <strong>tester les performances des modèles d’apprentissage statistique pour prédire la catégorie d’APE</strong> dans le cadre de la refonte du répertoire Sirene et de la mise en place d’un guichet unique. <br></td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Le modèle développé présente des <strong>performances similaires aux modèles précédents</strong>, en les automatisant, et propose par ailleurs une aide à la décision. Le modèle a par ailleurs été mis en production, en appliquant quand cela était possible les principes MLOps. <br> Les présentations et supports écrits concernant le projet sont accessibles sur <a href="https://inseefrlab.github.io/codif-ape-prez/">ce site</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td>Dépôts de code accessibles <a href="https://github.com/search?q=org%3AInseeFrLab%20codif-ape&amp;type=repositories&amp;p=1">ici</a>. Ils comprennent : <br> - Code relatif à l’annotation de données à l’aide de Label Studio ; <br> - Code d’une API web de codification déployée sur le SSP Cloud ; <br> - Code qui implémente un dashboard de visualisation permettant de surveiller l’activité d’un modèle de codification en production et accessible via une API web ; <br> - Code pour l’entraînement de modèles de classification de l’APE. <br></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="documents-relatifs-au-projet" class="level1">
+<h1>Documents relatifs au projet</h1>
+<div id="listing-presentations" class="quarto-listing quarto-listing-container-custom">
+
+<link href="../../assets/css/all.css" rel="stylesheet">
+
+<div class="list grid quarto-listing-cols-3">
+
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1758585600000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statec-echange-label-studio/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/cards/img/statec_logo.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title" data-anchor-id="documents-relatifs-au-projet">Échange avec Statec - Luxembourg</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Cas d'usage de Label Studio à la DSE de l'Insee
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Nathan Randriamanana</div>
+                <div class="listing-date">23 sept. 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards15.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1759276800000" data-listing-file-modified-sort="1761164154546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/pydata/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/cards/img/pydata-logo-final.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">PyData Paris</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Presentation at PyData Paris 2025
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Cédric Couralet, Meilame Tayebjee</div>
+                <div class="listing-date">1 oct. 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards14.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="2" data-listing-date-sort="1747872000000" data-listing-file-modified-sort="1761164154546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/wp10-country-project/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://cros.ec.europa.eu/system/files/inline-images/profilo%20linkedin.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">WP10 Project Presentation</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Presentation given during the WP10
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria, Meilame Tayebjee</div>
+                <div class="listing-date">22 mai 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards13.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="3" data-listing-date-sort="1747008000000" data-listing-file-modified-sort="1761164154546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://geneve-int.ch/sites/default/files/styles/scale_450x450/public/2021-06/UNECE-logo.png?itok=h7fLK1Qa" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Conférence UNECE</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Presentation given during the UNECE Generative AI and Official Statistics Workshop 2025
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria</div>
+                <div class="listing-date">12 mai 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards12.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="4" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1761164154546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/ateliers-concepteurs/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/cards/img/APE_CODE.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Ateliers concepteurs</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Présentation non technique de la codification automatique de la NAF
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Meilame Tayebjee</div>
+                <div class="listing-date">4 avr. 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards11.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="5" data-listing-date-sort="1741132800000" data-listing-file-modified-sort="1761164154546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/grp-veille-codif-auto-10/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/cards/img/logo-card-10.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Groupe de veille Codification Automatique n°10</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Présentation du package torchFastText et ses performances sur la codification de l'APE
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Meilame Tayebjee</div>
+                <div class="listing-date">5 mars 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards10.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="6" data-listing-date-sort="1730851200000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/grp-veille-codif-auto-9/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/cards/img/logo-card-9.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Groupe de veille Codification Automatique n°9</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Travaux sur le passage de la nomenclature NAF2008 Rev2.1 à la NAF2025
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria, Nathan Randriamanana</div>
+                <div class="listing-date">6 nov. 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards9.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="7" data-listing-date-sort="1716508800000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/estoril-slides/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://assets-global.website-files.com/648c7faf76cc874ddfcc8040/6554e80926bb869643d77f7b_Q2024%20-%20Logo-p-800.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">European Conference for Quality in Official Statistics 2024</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Retraining strategies for an economic activity classification model
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria, Nathan Randriamanana, Tom Seimandi</div>
+                <div class="listing-date">24 mai 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards8.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="8" data-listing-date-sort="1715040000000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/inserm-echange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Inserm.svg/1200px-Inserm.svg.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Échange avec l'Inserm</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Codification automatique de l'APE à l'Insee
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria et Nathan Randriamanana</div>
+                <div class="listing-date">7 mai 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards7.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="9" data-listing-date-sort="1714435200000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/eurostat-nace-rev-2024/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Eurostat_Newlogo.png/800px-Eurostat_Newlogo.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Eurostat webinar</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Presentation given during the NACE implementation webinar
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Nathan Randriamanana</div>
+                <div class="listing-date">30 avr. 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards6.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="10" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statcan-exchange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Statistics_Canada_logo.svg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">MLOps exhange with StatCan</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Slides used for an exchange with StatCan on MLOps
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Romain Avouac, Thomas Faria et Tom Seimandi</div>
+                <div class="listing-date">19 mars 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards5.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="11" data-listing-date-sort="1695772800000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/bceao-2023/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/a/a1/BCEAO-logo.png?20211030215428" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Formation BCEAO 2023</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Présentation pour la formation Big Data donné à la BCEAO à Dakar
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Romain Avouac, Thomas Faria et Tom Seimandi</div>
+                <div class="listing-date">27 sept. 2023</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards4.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="12" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-conf/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://geneve-int.ch/sites/default/files/styles/scale_450x450/public/2021-06/UNECE-logo.png?itok=h7fLK1Qa" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Conférence UNECE</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Presentation given during the UNECE Machine Learning for Official Statistics Workshop 2023
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria and Tom Seimandi</div>
+                <div class="listing-date">5 juin 2023</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards3.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="13" data-listing-date-sort="1681689600000" data-listing-file-modified-sort="1761164154547" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/journee-ssphub/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/cards/img/avatar.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Journée SSP Hub</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Présentation lors de l'évènement de lancement du SSP Hub
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria et Tom Seimandi</div>
+                <div class="listing-date">17 avr. 2023</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards2.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="14" data-listing-date-sort="1693526400000" data-listing-file-modified-sort="1761164154546" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/seminaire-dms-oct-2022/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/1/10/Logo_Insee.svg/1200px-Logo_Insee.svg.png" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Séminaire DMS</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Séminaire interne du département des méthodes statistiques de l'Insee
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria et Tom Seimandi</div>
+                <div class="listing-date">1 sept. 2023</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards1.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              22/10/2025 20:15:54
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+</div>
+
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>codification automatique</category>
+  <category>fasttest</category>
+  <category>package</category>
+  <category>en production</category>
+  <category>MLFlow</category>
+  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/codif_ape_overall.png" medium="image" type="image/png" height="82" width="144"/>
+</item>
+<item>
+  <title>Extraction automatique du tableau des filiales et participations des comptes sociaux des entreprises</title>
+  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_Extraction_CS/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Extraction automatique du tableau des filiales et participations des comptes sociaux des entreprises</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>Une expérimentation autour de l’extraction automatisée du tableau des filiales et participations des comptes sociaux des entreprises a été démarrée en 2022 à la suite d’un stage dans la division PTGU. Ce tableau est exploité à la main au cours des opérations de profilage des entreprises, ce qui constitue un travail fastidieux. L’expérimentation a été menée avec la Banque de France qui est intéressé par le même cas d’usage que l’Insee, avec deux objectifs principaux : <br> <br> - développer un prototype d’application permettant à des utilisateurs de récupérer un tableau des filiales et participations automatiquement pour un numéro Siren et une année donnés ; <br> - comparer les performances de différentes méthodes d’extraction automatique de tableaux, basées d’une part sur des outils open-source et d’autre part sur des solutions commerciales.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee (DSE), Inpi, Banque de France</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>- Une <a href="https://extraction-cs.lab.sspcloud.fr/docs">API expérimentale</a> et une <a href="https://extract-table-ui.lab.sspcloud.fr/">interface expérimentale</a> ont été mises en place pour répondre au besoin métier. <br> - Le projet a par ailleurs été présenté le 27 juin 2024 à un séminaire interne Insee <a href="https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/">slides</a> <br></td>
+</tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td>- <a href="https://github.com/InseeFrLab/ca-document-querier/">https://github.com/InseeFrLab/ca-document-querier/</a> : wrapper Python autour de l’API entreprises de l’Inpi <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux">https://github.com/InseeFrLab/extraction-comptes-sociaux</a> : dépôt « core » où se trouvent les éléments pour la détection de page/extraction de tableaux <br> - <a href="https://github.com/InseeFrLab/extract-table-ui">https://github.com/InseeFrLab/extract-table-ui</a> : dépôt de code de l’<a href="https://extract-table-ui.lab.sspcloud.fr/">interface expérimentale</a> <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux-llm">https://github.com/InseeFrLab/extraction-comptes-sociaux-llm</a> : code source de l’architecture globale, comprenant des microservices conteneurisés et orchestrés par Kubernetes. Il combine des appels à des API externes (INPI), le traitement de PDF, et l’utilisation de modèles de langage (LLM) pour l’analyse et l’extraction de données.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>extraction de données</category>
+  <category>API</category>
+  <category>Machine learning</category>
+  <category>en production</category>
+  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_Extraction_CS/</guid>
+  <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_Extraction_CS/Extraction_CS_API.png" medium="image" type="image/png" height="73" width="144"/>
+</item>
+<item>
+  <title>Codification automatique des professions dans la nomenclature PCS 2020</title>
+  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_codif_PCS/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Codification automatique des professions dans la nomenclature PCS 2020</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>La rénovation de la nomenclature des PCS en 2020 s’accompagne de la promotion d’un <strong>outil d’autocomplétion des libellés de profession</strong> dans une liste de libellés enrichis permettant le <strong>codage direct</strong> dans la case de la nomenclature ou des regroupements ad hoc complémentaires de la nomenclature. Or, l’outil d’autocomplétion ne sera disponible que pour des collectes informatisées et par ailleurs il comprend la possibilité de répondre “hors-liste”. Pour pouvoir intégrer la nouvelle PCS 2020 dans le recensement de population à la collecte 2024 et être en mesure de coder aussi les bulletins papier tout comme les réponses informatisées “hors-liste”, un <strong>algorithme de codification automatique</strong> en PCS 2020 de ces bulletins doit être créé. Suite au report de l’enquête de recensement 2021, des gestionnaires ont annoté en PCS 2020, avec double codage et arbitrage, 119 000 bulletins issus de l’EAR 2020. Le but de l’expérimentation est de tester et comparer différents modèles d’apprentissage statistique et méthodes de prétraitement pour le codage des professions dans la nomenclature PCS 2020 à partir du libellé de profession ainsi que des variables annexes utilisées lors de la phase d’annotation (statut de l’employeur, etc.) et d’en retenir le plus performant. L’objectif est de maintenir le taux de codifications correctes ainsi que le taux d’envoi en reprise manuelle à des niveaux similaires à l’existant.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>- <a href="https://intranet.insee.fr/jcms/1492866_DBFileDocument/2021-26934-dg75-l401?details=true">note bilan de l’expérimentation</a> et <a href="https://intranet.insee.fr/jcms/1492871_DBFileDocument/bilan-exper-pcs2020?details=true">résultats associés</a> (décembre 2021) <br> - article et communication aux journées de méthodologie statistiques 2022 “<a href="https://journees-methodologie-statistique.insee.net/application-de-techniques-de-machine-learning-pour-coder-les-professions-dans-la-nomenclature-des-professions-et-categories-socio-professionnelles-2020/">Application de techniques de machine learning pour coder les professions dans la nomenclature des professions et catégories socio-professionnelles 2020</a>” <br> <a href="https://intranet.insee.fr/jcms/8751512_DBFileDocument/confq-pcs-20200505-copie?details=true">article</a> et <a href="https://intranet.insee.fr/jcms/8751517_DBFileDocument/q2022-slides?details=true">slides</a> présentés à la Conférence Q2022 “Machine learning for coding occupations in the Census: first lessons from experiments to production”.</td>
+</tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>Projets</category>
+  <category>Python</category>
+  <category>codification automatique</category>
+  <category>fasttext</category>
+  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_codif_PCS/</guid>
+  <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_codif_PCS/2021_codif_PCS.png" medium="image" type="image/png" height="80" width="144"/>
+</item>
+<item>
+  <title>Comparaison des méthodes d’appariement et apport du machine learning</title>
+  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Appariement/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Comparaison des méthodes d’appariement et apport du machine learning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>Le programme Resil vise à construire un système de répertoires d’individus, de ménages et de locaux d’habitation, durable et évolutif, mis à jour à partir de sources administratives diverses. Il nécessite l’agrégation de plusieurs sources de données sans identifiant direct commun. <br> Le but de l’expérimentation est de <strong>tester et de comparer différentes méthodes d’appariements</strong> afin de dégager des recommandations pour les travaux nécessaires à la construction des répertoires. Celles-ci seront fondées sur des critères de performance (qualité de l’appariement) mais aussi sur des considérations opérationnelles (facilité de déploiement, temps de calcul, etc.). L’objectif est notamment <strong>d’évaluer l’apport et les contraintes des méthodes probabilistes ainsi que du machine learning</strong> dans les tâches d’appariement. Ce travail s’accompagnera d’une réflexion sur la normalisation préalable des données et l’évaluation des résultats d’un appariement.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee (DSDS)</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Résultats présentés aux journées de la méthodologique statistique 2022: <br> - <a href="https://journees-methodologie-statistique.insee.net/methodologie-des-appariements-de-donnees-individuelles/">Méthodologie d’appariement de données individuelles</a> ; <br> - <a href="https://journees-methodologie-statistique.insee.net/probabilistes-ou-deterministes-des-methodes-dappariements-au-banc-dessai-du-programme-resil/">Probabilistes ou déterministes, des méthodes d’appariements au banc d’essai du programme RéSIL</a> ; <br> - <a href="https://journees-methodologie-statistique.insee.net/impact-du-nettoyage-des-donnees-sur-la-qualite-dun-appariement/">Impact du nettoyage des données sur la qualité d’un appariement</a> <br> <br> Écriture d’un document de travail: <br> - <a href="https://www.insee.fr/fr/information/8203044">Les appariements : finalités, pratiques et enjeux de qualité, juillet 2024</a> <br> <br> En production : <br> - ??</td>
+</tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>appariement</category>
+  <category>données administratives</category>
+  <category>Resil</category>
+  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Appariement/</guid>
+  <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Appariement/Resil.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Classification des données de caisse à partir de machine learning</title>
+  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2020_donnees_caisse/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Classification des données de caisse à partir de machine learning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>Les données de caisse sont utilisées à l’Insee pour le calcul de l’IPC depuis 2010 (cf le <a href="https://www.insee.fr/fr/information/4254225?%20sommaire=4254170">document de travail</a> sur le sujet). Les données de caisses donnent en effet pour chaque code-barres, chaque jour et chaque point de ventes les quantités vendues ainsi que le chiffre d’affaires et/ou le prix auquel le produit est vendu. Pour exploiter ces données, il est toutefois nécessaire de savoir <strong>quel produit se trouve derrière un code-barres</strong>. Actuellement, l’IPC se fonde sur un référentiel de codes-barres, acheté à un prestataire et qui donne une information très détaillée et structurée des caractéristiques de ces produits. Cette information est payante et ne couvre pas l’ensemble des produits. <strong>L’expérimentation vise à identifier les étapes de traitement textuel des libellés, ainsi que les méthodes de classification ou autres, permettant de coder automatiquement les libellés, sans passer par le référentiel, dans la nomenclature Coicop pour l’IPC</strong> et sur les regroupements utilisés pour Emagsa dans le cadre du projet Nosica qui vise à intégrer notamment les données de caisse dans la production des indicateurs d’activité de court-terme. Elle teste aussi leur performance sur des jeux de données tests.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Les données de caisse sont aujourd’hui utilisées en production pour le calcul de l’inflation et pour le calcul d’indicateurs d’activité conjoncturelle. <br> <a href="https://intranet.insee.fr/jcms/1345453_DBFileDocument/paul-ean-phaseb?details=true">note point d’étape été 2020</a> <br> <a href="https://intranet.insee.fr/jcms/1345448_DBFileDocument/2021-3657-dg75-l401?details=true">note point d’étape hiver 2020-2021</a> <br></td>
+</tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td>- <a href="https://github.com/InseeFrLab/predicat">https://github.com/InseeFrLab/predicat</a> : API pour classification des libellés de caisse <br> - <a href="https://github.com/InseeFrLab/product-labelling">https://github.com/InseeFrLab/product-labelling</a> : Application de labellisation des données de caisse</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>codification automatique</category>
+  <category>données de caisse</category>
+  <category>COICOP</category>
+  <category>IPC</category>
+  <category>conjoncture</category>
+  <category>production</category>
+  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2020_donnees_caisse/</guid>
+  <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2020_donnees_caisse/2020_donnees_caisse.png" medium="image" type="image/png" height="88" width="144"/>
+</item>
+</channel>
+</rss>
