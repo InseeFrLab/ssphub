@@ -80,6 +80,16 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Check out repository
+        uses: actions/checkout@v5
+    
+      - name: Deploy preview
+        id: deploy-preview
+        uses: rossjrw/pr-preview-action@v1.6.2
+        with:
+          source-dir: ./_site/
+          preview-branch: gh-pages
+
       # DELETE IF WORKS
       # - name: Fetch comments  # To see if a comment has previously been posted
       #   id: fetch-comments
@@ -131,13 +141,6 @@ jobs:
 
       #       core.setOutput('previewUrl', previewUrl) 
 
-
-      - name: Deploy preview
-        id: deploy-preview
-        uses: rossjrw/pr-preview-action@v1.6.2
-        with:
-          source-dir: ./_site/
-          preview-branch: gh-pages
       
     
     # DELETE IF ROSSJRW WORKS
