@@ -84,6 +84,13 @@ jobs:
     if: github.event.action == 'closed'  # Only run when PR is closed
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # To enable full access to Git repo
+          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
+          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
+
       - name: Remove preview
         id: remove-preview
         uses: rossjrw/pr-preview-action@v1.6.2
