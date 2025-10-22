@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  PREVIEW_BRANCH: gh-pages
+
 jobs:
   build-render:
     if: github.event.action != 'closed'  # If closing the PR, no publishing
@@ -63,7 +66,7 @@ jobs:
         uses: rossjrw/pr-preview-action@v1.6.2
         with:
           source-dir: ./_site/
-          preview-branch: gh-pages
+          preview-branch: ${{ env.PREVIEW_BRANCH }}
           action: deploy
           comment: false
 
@@ -72,9 +75,10 @@ jobs:
         with:
           header: pr-preview
           message: |
+            
             :---:
-            | <p></p> :rocket: View preview at <br> ${{ steps.preview-step.outputs.preview-url }} <br><br>
-            | <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.preview-step.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br><br> </h6>
+            | <p></p> :rocket: View preview at <br> ${{ steps.deploy-preview.outputs.preview-url }} <br><br>
+            | <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br><br> </h6>
 
 
   delete-preview:
@@ -85,8 +89,6 @@ jobs:
         id: remove-preview
         uses: rossjrw/pr-preview-action@v1.6.2
         with:
-          source-dir: ./_site/
-          preview-branch: gh-pages
           action: remove
 
       - name: Comment PR that preview was removed
@@ -96,4 +98,4 @@ jobs:
           message: |
             :---:
             Preview removed because the pull request was closed.
-            ${{ steps.preview-step.outputs.action-start-time }}
+            ${{ steps.remove-preview.outputs.action-start-time }}
