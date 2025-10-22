@@ -27,8 +27,8 @@ jobs:
       
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
-      - name: Configure safe.directory  # Workaround for actions/checkout#760
-        run: git config --global --add safe.directory /__w/ssphub/ssphub
+      # - name: Configure safe.directory  # Workaround for actions/checkout#760
+      #   run: git config --global --add safe.directory /__w/ssphub/ssphub
       
       # Python
       - name: Setup Python
@@ -79,9 +79,6 @@ jobs:
         uses: actions/setup-node@v2          
         with:
           node-version: '18'
-
-      - name: Check out repository
-        uses: actions/checkout@v5
     
       - name: Deploy preview
         id: deploy-preview
