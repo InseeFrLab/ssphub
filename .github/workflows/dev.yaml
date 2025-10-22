@@ -39,6 +39,12 @@ jobs:
       # Jupyter
       - run: pip install jupyter nbformat
 
+      - name: Install npm
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        uses: actions/setup-node@v2          
+        with:
+          node-version: '18'
+
       # Quarto
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -73,14 +79,13 @@ jobs:
           to: html
         # env: # For Quarto profiles
         #   QUARTO_PROFILE: preview
-        # env: # For Quarto profiles
-        #   QUARTO_PROFILE: preview
-
-      - name: Install npm
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-        uses: actions/setup-node@v2          
+    
+      - name: Deploy preview
+        id: deploy-preview
+        uses: rossjrw/pr-preview-action@v1.6.2
         with:
-          node-version: '18'
+          source-dir: ./_site/
+          preview-branch: gh-pages
 
       # DELETE IF WORKS
       # - name: Fetch comments  # To see if a comment has previously been posted
@@ -133,25 +138,7 @@ jobs:
 
       #       core.setOutput('previewUrl', previewUrl) 
 
-  deploy-preview:
-    if: github.event.action != 'closed'  # Deploying if PR not closed 
-    runs-on: ubuntu-latest
-    needs: build  # Job build is done beforehand and creates previewUrl
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v5
-        # with:
-        #   ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
-        #   repository: ${{github.event.pull_request.head.repo.full_name}}
-      - name: Deploy preview
-        id: deploy-preview
-        uses: rossjrw/pr-preview-action@v1.6.2
-        with:
-          source-dir: ./${{ env.QUARTO_OUTPUT }}
-          preview-branch: gh-pages
       
-      - name: Comment PR
-        run: echo "Preview visible at ${{ steps.deploy-preview.outputs.preview-url }}"
     
     # DELETE IF ROSSJRW WORKS
     # environment:
