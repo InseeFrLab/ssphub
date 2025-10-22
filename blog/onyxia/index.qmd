@@ -22,6 +22,8 @@ categories:
 
 bibliography: references.bib
 
+fig-cap-location: top
+
 # Date published
 date: 2023-05-10
 ---
@@ -135,18 +137,11 @@ sur un serveur, est permise par la technologie d'orchestration [`Kubernetes`](ht
 
 <br>
 
-```{python}
-#| output: asis
-#| echo: false
-with open('onyxia_logic.svg') as f:
-    s = f.read()
-print(s)
-```
-_Centralisation des ressources par `Onyxia`_
+![_Centralisation des ressources par `Onyxia`_](onyxia_logic.svg)
 
 <br>
 
-
+ 
 ::: {.callout-note collapse="true"}
 ## Plus de détails pour comprendre le changement de paradigme vers la conteuneurisation 👇
 
@@ -481,8 +476,6 @@ Dans le cadre du [TOSIT](https://tosit.fr/), association qui réunit de gros act
 _open source_, un certain nombre d'entreprises s'intéressent à `Onyxia`. 
 
 ## Vidéo de présentation d'`Onyxia`
-
-{{< youtube zwKiO6LcIWE >}}
 
 {{< video https://youtu.be/zwKiO6LcIWE >}}
 

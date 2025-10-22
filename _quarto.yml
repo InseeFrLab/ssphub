@@ -4,8 +4,8 @@ project:
     - about.qmd
     - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
-    # - blog.qmd
-    # - blog/**/*.qmd
+    - blog.qmd
+    - blog/**/*.qmd
     - "!*/parquetRP/snippets/*"
     - "!*/polars/polars-tuto.qmd"
     - course.qmd

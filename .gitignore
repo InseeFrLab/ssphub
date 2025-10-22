@@ -14,6 +14,7 @@ _freeze/
 *.html
 *.json
 *.feed*
+site_libs/
 
 # For gh-pages
 /.quarto/
