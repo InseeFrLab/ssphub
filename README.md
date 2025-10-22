@@ -7,6 +7,10 @@ Contenu disponible sur https://ssphub.netlify.app.
 
 Site web construit avec `Quarto`
 
+# Besoin 
+- VSCode avec Python, R installé
+- accès github
+
 # Architecture
 
 # Version bilingue

@@ -17,14 +17,14 @@ project:
     - infolettre/**/index.qmd
     - partenaires/**/index.qmd
     - project.qmd
-    - project/**/index.qmd
+    - project/**/*.qmd
     # English version - dealt with babelquarto and not with Quarto profiles
     - '*.en.qmd'
   
 website: 
   title: "SSPHub"
   # site-url: https://ssphub.netlify.app/  # For production
-  site-url: https://user-nicolastlm-796670-0.user.lab.sspcloud.fr/proxy/4321/  # For development
+  site-url: https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/  # For development
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
