@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project.html</link>
-<atom:link href="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project.xml" rel="self" type="application/rss+xml"/>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project.html</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project.xml" rel="self" type="application/rss+xml"/>
 <description>Network of data scientists working for the French administration</description>
 <generator>quarto-1.8.25</generator>
 <lastBuildDate>Sat, 01 Oct 2022 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Using satellite images for official statistics</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_satellites/</link>
   <description><![CDATA[ 
 
 
@@ -37,12 +37,12 @@
 
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1761164211742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1761164774020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/ntts-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
           <p class="card-img-top">
-            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/ntts_bruxelles.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+            <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_satellites/cards/img/ntts_bruxelles.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
           </p>
          
         
@@ -85,7 +85,7 @@
               ntts_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              22/10/2025, 20:16:51
+              22/10/2025, 20:26:14
             </div>
         </div> -->
 
@@ -93,12 +93,12 @@
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1761164211742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1761164774020" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/aiml4os-wp7/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
           <p class="card-img-top">
-            <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/cards/img/toad_wp7.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+            <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_satellites/cards/img/toad_wp7.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
           </p>
          
         
@@ -142,7 +142,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               wp7_paris_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              22/10/2025, 20:16:51
+              22/10/2025, 20:26:14
             </div>
         </div> -->
 
@@ -165,13 +165,13 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <category>deep learning</category>
   <category>satellite imagery</category>
   <category>in production</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_satellites/</guid>
   <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_satellites/Satellites_Mayotte.png" medium="image" type="image/png" height="187" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_satellites/Satellites_Mayotte.png" medium="image" type="image/png" height="187" width="144"/>
 </item>
 <item>
   <title>Methodological work on the Family Budget survey</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Enquete_Budget_Famille/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_Enquete_Budget_Famille/</link>
   <description><![CDATA[ 
 
 
@@ -195,13 +195,13 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <category>automatic coding</category>
   <category>data extraction</category>
   <category>POS data</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Enquete_Budget_Famille/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_Enquete_Budget_Famille/</guid>
   <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Automatic coding of companies’ main activity</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_codif_ape/</link>
   <description><![CDATA[ 
 
 
@@ -225,7 +225,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1761164211739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1761164774017" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statcan-exchange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -273,7 +273,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               cards5.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              22/10/2025, 20:16:51
+              22/10/2025, 20:26:14
             </div>
         </div> -->
 
@@ -281,7 +281,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1761164211739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1761164774017" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-conf/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -329,7 +329,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               cards3.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              22/10/2025, 20:16:51
+              22/10/2025, 20:26:14
             </div>
         </div> -->
 
@@ -353,13 +353,13 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <category>package</category>
   <category>in production</category>
   <category>MLFlow</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_codif_ape/</guid>
   <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_codif_ape/codif_ape_overall.png" medium="image" type="image/png" height="82" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_codif_ape/codif_ape_overall.png" medium="image" type="image/png" height="82" width="144"/>
 </item>
 <item>
   <title>Automatic extraction of the table of subsidiaries and holdings from company accounts</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_Extraction_CS/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2021_Extraction_CS/</link>
   <description><![CDATA[ 
 
 
@@ -384,13 +384,13 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <category>API</category>
   <category>Machine learning</category>
   <category>in production</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_Extraction_CS/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2021_Extraction_CS/</guid>
   <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_Extraction_CS/Extraction_CS_API.png" medium="image" type="image/png" height="73" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2021_Extraction_CS/Extraction_CS_API.png" medium="image" type="image/png" height="73" width="144"/>
 </item>
 <item>
   <title>Automatic coding of occupations in the PCS 2020 nomenclature</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_codif_PCS/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2021_codif_PCS/</link>
   <description><![CDATA[ 
 
 
@@ -414,13 +414,13 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <category>Python</category>
   <category>automatic coding</category>
   <category>fasttext</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_codif_PCS/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2021_codif_PCS/</guid>
   <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2021_codif_PCS/2021_codif_PCS.png" medium="image" type="image/png" height="80" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2021_codif_PCS/2021_codif_PCS.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>Comparison of matching methods and the contribution of machine learning</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Appariement/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_Appariement/</link>
   <description><![CDATA[ 
 
 
@@ -443,13 +443,13 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <category>matching</category>
   <category>administrative data</category>
   <category>Resil</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Appariement/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_Appariement/</guid>
   <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2022_Appariement/Resil.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2022_Appariement/Resil.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>Classification of checkout data using machine learning</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2020_donnees_caisse/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2020_donnees_caisse/</link>
   <description><![CDATA[ 
 
 
@@ -476,9 +476,9 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <category>IPC</category>
   <category>situation</category>
   <category>production</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2020_donnees_caisse/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2020_donnees_caisse/</guid>
   <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/project/2020_donnees_caisse/2020_donnees_caisse.png" medium="image" type="image/png" height="88" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/project/2020_donnees_caisse/2020_donnees_caisse.png" medium="image" type="image/png" height="88" width="144"/>
 </item>
 </channel>
 </rss>

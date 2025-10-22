@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog.html</link>
-<atom:link href="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog.html</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.8.25</generator>
 <lastBuildDate>Mon, 23 Oct 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Guide d’utilisation des données du recensement de la population au format Parquet</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/parquetRP/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/parquetRP/</link>
   <description><![CDATA[ 
 
 
@@ -4466,13 +4466,13 @@ Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nb
   <category>Python</category>
   <category>R</category>
   <category>Parquet</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/parquetRP/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/parquetRP/</guid>
   <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/parquetRP/ducks.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/parquetRP/ducks.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Onyxia: l’infrastructure cloud mère des dragons</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/</link>
   <description><![CDATA[ 
 
 
@@ -4511,7 +4511,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption><em>Centralisation des ressources par <code>Onyxia</code></em></figcaption>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_logic.svg" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_logic.svg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p><br></p>
@@ -4562,13 +4562,13 @@ Note
 </section>
 <section id="onyxia-en-bref" class="level2">
 <h2 class="anchored" data-anchor-id="onyxia-en-bref">Onyxia en bref</h2>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ecailles.svg" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ecailles.svg" class="img-fluid"></p>
 <p><code>Onyxia</code> propose principalement deux composants de valeur :</p>
 <ul>
 <li>une <strong>interface web</strong> qui agit comme la porte d’entrée du <em>data scientist</em> sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L’interface ergonomique permet aux utilisateurs de données néophytes de démarrer des services standardisés sans se préoccuper de la configuration mais aussi aux <em>data scientists</em> plus aguerris de bénéficier de vastes possibilités de personnalisation du service.</li>
 <li>des <strong>catalogues de logiciels</strong> : une petite vingtaine de services interactifs dont les plus utilisés sont <code>RStudio</code>, <code>Jupyter</code>, <code>VScode</code>, une quinzaine de services spécialisés dans les bases de données (<code>Postgres</code>, <code>ElasticSearch</code>…), 5 services d’automatisation (<code>MLflow</code>…) et 2 services de <em>dataviz</em> (<code>Redash</code> et <code>Superset</code>)</li>
 </ul>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/catalogue.svg" alt="Le catalogue Onyxia"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/catalogue.svg" alt="Le catalogue Onyxia"></p>
 <p><em>Le catalogue des services disponibles dans <code>Onyxia</code>.</em></p>
 <p><br></p>
 <p>Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation. Tous les services interactifs sont automatiquement connectés à l’espace de stockage <code>S3</code>, et au coffre de secret <code>Vault</code>. La gestion des droits d’accès aux données stockées dans l’espace de stockage <code>S3</code> ou dans des services de bases de données (<code>ElasticSearch</code>, <code>PostGreSQL</code>…) est automatisée afin que chaque service puisse accéder aux données sur lesquelles l’utilisateur détient des droits.</p>
@@ -4579,21 +4579,21 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption><em>Onyxia offre des marges de manoeuvre sur l’interface</em></figcaption>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/multiple_instances.svg" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/multiple_instances.svg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p>L’une des principales forces d’<code>Onyxia</code> est d’offrir une multiplicité de services différents avec une interconnexion entre eux gérée de manière cohérente.</p>
 <p>Les conteneurs sont démarrés comme des services à la demande et la configuration automatique de ceux-ci permet d’assurer aux <em>data scientists</em> l’accès aux données disponibles dans des espaces de stockage ou des bases de données créées par l’utilisateur.</p>
 <p>Le catalogue de services se présente par le biais d’un formulaire ergonomique où l’utilisateur choisit la brique qu’il désire utiliser:</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui1.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui1.png" class="img-fluid"></p>
 <p>Les <em>data scientists</em> et statisticiens n’ont donc pas besoin de connaître les détails du fonctionnement des briques techniques d’<code>Onyxia</code> pour utiliser la plateforme. Les éléments techniques comme la connexion au système de stockage sont, par défaut, déjà configurés :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui2.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui2.png" class="img-fluid"></p>
 <p>L’interface ergonomique permet de paramétrer certaines configurations si besoin, notamment les ressources à disposition du conteneur. Néanmoins l’allocation dynamique des ressources offre déjà de la flexibilité :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui3.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui3.png" class="img-fluid"></p>
 <p>L’utilisateur a accès à l’ensemble des services qu’il a ouvert depuis une page dédiée :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui4.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui4.png" class="img-fluid"></p>
 <p>Les services interactifs comme <code>Jupyter</code>, <code>VSCode</code> ou <code>RStudio</code> permettent alors à l’utilisateur d’accéder à une interface pour exécuter des traitements <code>Python</code> ou <code>R</code>.</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui5.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui5.png" class="img-fluid"></p>
 <p>L’accès aux données peut se faire depuis la ligne de commande (via un utilitaire <a href="https://min.io/docs/minio/linux/reference/minio-mc.html">Minio Client</a>) ou par un package <code>Python</code> ou <code>R</code> dédié qui permet de traiter le système de stockage distant comme un système local. Les traitements sont exécutés sur les serveurs de la plateforme qui héberge les notebooks, indépendamment de la machine par laquelle l’utilisateur accède au service. Par exemple, dans le cas du <code>SSPCloud</code>, les traitements sont exécutés depuis des serveurs hébergés à l’Insee.</p>
 </section>
 <section id="la-communauté-onyxia" class="level2">
@@ -4644,13 +4644,13 @@ Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still th
 </section></div> ]]></description>
   <category>Insee</category>
   <category>sspcloud</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/</guid>
   <pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/featured.png" medium="image" type="image/png" height="161" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/featured.png" medium="image" type="image/png" height="161" width="144"/>
 </item>
 <item>
   <title>Polars, une alternative fraîche à Pandas</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/polars/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/polars/</link>
   <description><![CDATA[ 
 
 
@@ -4668,7 +4668,7 @@ Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still th
 <p>Le benchmark suivant, <a href="https://h2oai.github.io/db-benchmark/">effectué par H2O</a>, propose un comparatif de la vitesse des principaux frameworks de manipulation de données pour effectuer une agrégation par groupe avec un jeu de données de 50GB:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/polars/polars-benchmark-short.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/polars/polars-benchmark-short.png" class="img-fluid figure-img"></p>
 <figcaption>Benchmark H2O</figcaption>
 </figure>
 </div>
@@ -4762,7 +4762,7 @@ font-style: inherit;">sum</span>())</span>
 <p><code>Polars</code> parallélise les traitements dès que cela est possible, notamment dans le cas d’agrégation. Chaque coeur se charge d’une partie de l’agrégation et envoie des données plus légères à <code>Python</code> qui va finaliser l’agrégation.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/polars/polars-split-parallel-apply-combine.svg" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/polars/polars-split-parallel-apply-combine.svg" class="img-fluid figure-img"></p>
 <figcaption>Parallélisation</figcaption>
 </figure>
 </div>
@@ -4821,7 +4821,7 @@ font-style: inherit;">"NB_STATION_SERVICE"</span>)</span>
 <p><code>Pandas</code> et <code>Polars</code> ne sont pas seuls dans le grand zoo de la manipulation de données en Python : des solutions comme <a href="https://github.com/vaexio/vaex">Vaex</a> ou <a href="https://github.com/dask/dask">Dask</a> ont des arguments à faire valoir. <code>DuckDB</code>, un autre <em>framework</em> de manipulation de données, s’intègre quand à lui très bien avec <code>Polars</code> dans la ménagerie.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/polars/dalle_polar_duck.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/polars/dalle_polar_duck.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p><em>Le duo DuckDB-Polars illustré par Dall-E-2</em></p>
@@ -4845,13 +4845,13 @@ font-style: inherit;">"NB_STATION_SERVICE"</span>)</span>
   <category>Pandas</category>
   <category>Polars</category>
   <category>Data wrangling</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/polars/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/polars/</guid>
   <pubDate>Fri, 10 Feb 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/polars/featured.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/polars/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Infolettre n°9</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/</link>
   <description><![CDATA[ 
 
 
@@ -4941,25 +4941,25 @@ Dérouler pour afficher une version non réactive
 </summary>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/cartiflette.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/cartiflette.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>cartiflette</code></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/socratext.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/socratext.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>Socratext</code></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/gouvdown.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/gouvdown.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>Gouvdown</code></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/matchsiret.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/matchsiret.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>matchSIRET</code></figcaption>
 </figure>
 </div>
@@ -4976,7 +4976,7 @@ Dérouler pour afficher une version non réactive
 <p><a href="gridviz.ics">Télécharger l’invitation à l’événement sous format <code>Outlook</code></a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/gridviz.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/gridviz.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <figcaption>Source: <a href="https://observablehq.com/@neocartocnrs/hello-gridviz">Notebook <code>Hello Gridviz</code> par <code>neocarto</code> sur <code>Observable</code></a></figcaption>
 </figure>
 </div>
@@ -5087,13 +5087,13 @@ new Runtime().module(define, name => {
   <category>Retrospective</category>
   <category>Infolettre</category>
   <category>Retrospective</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/</guid>
   <pubDate>Tue, 10 Jan 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/recap2022/featured.png" medium="image" type="image/png" height="80" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/featured.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>Infolettre n°8</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/retrospective2022/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/</link>
   <description><![CDATA[ 
 
 
@@ -5133,7 +5133,7 @@ new Runtime().module(define, name => {
 </figure>
 <p>Ensuite, pour générer une image à partir d’une description inédite intervient le <a href="https://en.wikipedia.org/wiki/Diffusion_model">modèle de diffusion</a> qui reconstruit une image à partir du mélange de l’ensemble des pixels qui traduisent les concepts principaux d’une instruction. L’une des explications les plus pédagogiques pour comprendre le fonctionnement de ces modèles vient du <a href="https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/"><em>Washington Post</em></a>.</p>
 <p>Sinon, on peut demander directement à <code>ChatGPT</code> de nous expliquer:</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/retrospective2022/diffusion.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/diffusion.png" class="img-fluid"></p>
 </section>
 <section id="lactualité-dans-le-monde-du-deep-learning" class="level1">
 <h1>L’actualité dans le monde du <em>deep learning</em></h1>
@@ -5154,7 +5154,7 @@ new Runtime().module(define, name => {
 <p>Afin de permettre une diffusion accrue de visualisations en <code>JavaScript</code>, <a href="https://en.wikipedia.org/wiki/Mike_Bostock">Mike Bostock</a>, déjà créateur de la librairie de dataviz de référence <a href="https://en.wikipedia.org/wiki/D3.js"><code>D3.js</code></a>, est à l’origine de la plateforme <a href="https://observablehq.com/"><code>observable</code></a>, sorte de <code>Github</code> de la <em>dataviz</em> permettant du partage et de la réutilisation de <em>notebooks</em> réactifs. En cette année 2022, la plateforme a connu un véritable <em>boom</em> et est devenu un incontournable dans le domaine. L’une des raisons est l’ajout de fonctionalités qui permettent d’étendre le public cible au delà des développeurs <em>web</em>, déjà accoutumés à <code>Javascript</code>. Parmi les fonctionalités les plus remarquables, la possibilité depuis Novembre d’utiliser des <a href="https://observablehq.com/@ericmauviere/duckdb-redonne-nouvelle-vie-sql">requêtes SQL</a> grâce à <a href="https://observablehq.com/@observablehq/duckdb"><code>DuckDB</code></a> permet aux habitués de <code>R</code> ou de <code>Python</code> de retrouver des manipulations auxquels ils sont habitués. La librairie <a href="https://observablehq.com/@observablehq/plot"><code>Plot</code></a> offre une <a href="https://observablehq.com/@observablehq/plot-from-ggplot2">grammaire proche de <code>ggplot2</code></a>.</p>
 <p>La communauté des cartographes a été particulièrement active sur <code>Observable</code>, notamment à l’occasion du <a href="https://observablehq.com/collection/@observablehq/30-day-map-challenge">#30daymapchallenge</a>. <a href="https://observablehq.com/@neocartocnrs">Nicolas Bertin (<code>neocarto</code>)</a>, dont on ne peut que recommander l’<a href="../../event/presentation-dobservable-par-nicolas-lambert/">introduction à <code>Observable</code></a> faite pour le réseau, ou <a href="https://observablehq.com/@ericmauviere">Eric Mauvière</a> font partie des comptes à suivre dans la communauté francophone.</p>
 <p><code>Observable</code>, en tant que langage construit sur <code>JavaScript</code>, est également disponible pour les utilisateurs de <a href="https://quarto.org/docs/interactive/ojs/"><code>Quarto</code></a>, ce qui permet de mettre à disposition des visualisation réactives sans passer nécessairement par la plateforme <a href="https://observablehq.com/">observablehq.com</a> pour mettre à disposition des visualisations réactives, ce qui constitue une alternative intéressante aux applications qui nécessitent un serveur en arrière plan, comme <code>Shiny</code> ou <code>Dash</code>.</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/retrospective2022/observable1.png" class="img-fluid"> <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/retrospective2022/observable2.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/observable1.png" class="img-fluid"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/observable2.png" class="img-fluid"></p>
 </section>
 <section id="les-autres-actualités-en-france" class="level1">
 <h1>Les autres actualités en France</h1>
@@ -5179,13 +5179,13 @@ new Runtime().module(define, name => {
   <category>Insee</category>
   <category>Retrospective</category>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/retrospective2022/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/</guid>
   <pubDate>Sat, 31 Dec 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/retrospective2022/featured.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/featured.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Le plongement lexical ou comment apprendre à lire à un ordinateur</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/embedding/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/embedding/</link>
   <description><![CDATA[ 
 
 
@@ -5302,7 +5302,7 @@ new Runtime().module(define, name => {
 <p>Le plongement lexical (<em>word embedding</em> en anglais) consiste à projeter l’ensemble des termes qui apparaissent dans le corpus dans un espace numérique à <img src="https://latex.codecogs.com/png.latex?n"> dimensions. Chaque mot est représenté par un vecteur de taille fixe (comprenant <img src="https://latex.codecogs.com/png.latex?n"> nombres), de façon à ce que deux mots dont le sens est proche possèdent des représentations numériques proches. Ainsi les mots « chat » et « chaton » devraient avoir des vecteurs de plongement assez similaires, eux-mêmes également assez proches de celui du mot « chien » et plus éloignés de la représentation du mot « maison ».</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/embedding/word_embedding.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/embedding/word_embedding.png" class="img-fluid figure-img"></p>
 <figcaption>Illustration du word embedding</figcaption>
 </figure>
 </div>
@@ -5329,7 +5329,7 @@ Illustration du plongement lexical. Source : Post de blog <a href="https://mediu
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/embedding/CBOW_Skipgram_training.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/embedding/CBOW_Skipgram_training.png" class="img-fluid figure-img"></p>
 <figcaption>Illustration de la différence entre les approches CBOW et Skip-gram</figcaption>
 </figure>
 </div>
@@ -5349,7 +5349,7 @@ Illustration de la différence entre les approches CBOW et Skip-gram. Source : A
 <p>A <code>l’Insee</code>, plusieurs modèles de classification de libellés textuels dans des nomenclatures reposent sur l’algorithme de plongement lexical <a href="https://fasttext.cc/"><code>FastText</code></a>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/embedding/fasttext.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/embedding/fasttext.png" class="img-fluid figure-img"></p>
 <figcaption>Illustration du modèle fastText</figcaption>
 </figure>
 </div>
@@ -5371,7 +5371,7 @@ Illustration du fonctionnement du modèle fastText sur un libellé de profession
 <p>Une manière de procéder est de calculer la similarité cosinus entre les vecteurs de plongement des deux mots. Plus précisément, la similarité entre deux mots de représentations vectorielles \(u\) et \(v\) est définie comme le cosinus de leur angle \( \) : <img src="https://latex.codecogs.com/png.latex?cos(%5Ctheta)%20=%20%5Cfrac%7Bu%20%5Ccdot%20v%7D%7B%5ClVert%20u%5CrVert%20%5ClVert%20v%5CrVert%7D"></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/embedding/similarite_cosinus.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/embedding/similarite_cosinus.png" class="img-fluid figure-img"></p>
 <figcaption>Illustration de la similarité cosinus</figcaption>
 </figure>
 </div>
@@ -5397,9 +5397,9 @@ Illustration de la similarité cosinus en deux dimensions
 </section></div> ]]></description>
   <category>Insee</category>
   <category>NLP</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/embedding/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/embedding/</guid>
   <pubDate>Mon, 03 Oct 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/embedding/featured.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/embedding/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>

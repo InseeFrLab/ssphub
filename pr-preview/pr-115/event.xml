@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event.html</link>
-<atom:link href="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event.xml" rel="self" type="application/rss+xml"/>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event.html</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.8.25</generator>
 <lastBuildDate>Mon, 15 Sep 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Troisième journée du SSPHub</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-12-01-network-day/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-12-01-network-day/</link>
   <description><![CDATA[ 
 
 
@@ -40,13 +40,13 @@
  ]]></description>
   <category>network</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-12-01-network-day/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-12-01-network-day/</guid>
   <pubDate>Mon, 15 Sep 2025 00:00:00 GMT</pubDate>
   <media:content url="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données sous format Parquet ?</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/</link>
   <description><![CDATA[ 
 
 
@@ -106,7 +106,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -118,13 +118,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>Parquet</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/</guid>
   <pubDate>Wed, 16 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données par API ?</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/</link>
   <description><![CDATA[ 
 
 
@@ -184,7 +184,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -196,13 +196,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>API</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/</guid>
   <pubDate>Wed, 09 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>Deuxième journée du SSPHub</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-10-14-network-day/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-10-14-network-day/</link>
   <description><![CDATA[ 
 
 
@@ -457,13 +457,13 @@ Rappel du programme de la journée
  ]]></description>
   <category>dataviz</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-10-14-network-day/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-10-14-network-day/</guid>
   <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
   <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Quarto : Une évolution de R Markdown pour des travaux statistiques reproductibles</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-05-02-quarto/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-05-02-quarto/</link>
   <description><![CDATA[ 
 
 
@@ -546,13 +546,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>quarto</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-05-02-quarto/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-05-02-quarto/</guid>
   <pubDate>Thu, 02 May 2024 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
 </item>
 <item>
   <title>Eric Mauvière, “La dataviz pour donner du sens aux données et communiquer un message”</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/</link>
   <description><![CDATA[ 
 
 
@@ -626,7 +626,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </div>
 </div>
 <p>Un exemple issu de la présentation d’Eric :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
 
 
 </section>
@@ -634,13 +634,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>dataviz</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/</guid>
   <pubDate>Thu, 29 Feb 2024 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>Première journée du SSPHub</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2023-ssphubday/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2023-ssphubday/</link>
   <description><![CDATA[ 
 
 
@@ -653,13 +653,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 
  ]]></description>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2023-ssphubday/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2023-ssphubday/</guid>
   <pubDate>Wed, 29 Mar 2023 15:00:00 GMT</pubDate>
   <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>“OCRisation, état de l’art et projets auxquels participe Teklia” par Christopher Kermorvant</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/</link>
   <description><![CDATA[ 
 
 
@@ -669,7 +669,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 <p>Le replay de l’événement est disponible ci-dessous.</p>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/2023-ocrisation-replay.mp4"></video></div>
 <p>Les slides présentées par Christopher Kermorvant sont aussi disponibles <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/slides.pptx">ici</a>.</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/ocr.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/ocr.png" class="img-fluid"></p>
 
 
 
@@ -677,13 +677,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
   <category>OCR</category>
   <category>deep learning</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/</guid>
   <pubDate>Wed, 29 Mar 2023 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/ocr.png" medium="image" type="image/png" height="68" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/ocr.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 <item>
   <title>Présentation du projet Meta Academy - Carpentries</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-du-projet-meta-academy-carpentries/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-du-projet-meta-academy-carpentries/</link>
   <description><![CDATA[ 
 
 
@@ -697,13 +697,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 
  ]]></description>
   <category>documentation</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-du-projet-meta-academy-carpentries/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-du-projet-meta-academy-carpentries/</guid>
   <pubDate>Tue, 28 Mar 2023 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-du-projet-meta-academy-carpentries/2023-03-MetaAcademy.png" medium="image" type="image/png" height="89" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-du-projet-meta-academy-carpentries/2023-03-MetaAcademy.png" medium="image" type="image/png" height="89" width="144"/>
 </item>
 <item>
   <title>Présentation des packages R et Python pour accéder à l’open data de l’Insee</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/</link>
   <description><![CDATA[ 
 
 
@@ -728,13 +728,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
   <category>open data</category>
   <category>Insee</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/</guid>
   <pubDate>Mon, 13 Feb 2023 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/featured.png" medium="image" type="image/png" height="106" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/featured.png" medium="image" type="image/png" height="106" width="144"/>
 </item>
 <item>
   <title>Présentation de gridviz par Julien Gaffuri</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-de-gridviz-par-julien-gaffuri/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-de-gridviz-par-julien-gaffuri/</link>
   <description><![CDATA[ 
 
 
@@ -742,7 +742,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 
 
 <p>Présentation par Julien Gaffuri de la <a href="https://eurostat.github.io/gridviz/">librairie <code>Gridviz</code></a>. Le <strong>replay est disponible plus bas 👇</strong></p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-de-gridviz-par-julien-gaffuri/gridviz.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-de-gridviz-par-julien-gaffuri/gridviz.png" class="img-fluid"></p>
 <p><code>Gridviz</code> est une librairie <em>open source</em> (<a href="https://github.com/eurostat/gridviz">disponible sur <code>Github</code></a>) consacrée à la visualisation cartographique de données carroyées (ou données géolocalisées par des <em>(x,y)</em> à carroyer). Très efficace, elle permet de représenter de manière fluide des volumes importants de données.</p>
 <section id="replay" class="level2">
 <h2 class="anchored" data-anchor-id="replay">Support et replay</h2>
@@ -755,13 +755,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>gridviz</category>
   <category>dataviz</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-de-gridviz-par-julien-gaffuri/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-de-gridviz-par-julien-gaffuri/</guid>
   <pubDate>Fri, 20 Jan 2023 11:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-de-gridviz-par-julien-gaffuri/featured.png" medium="image" type="image/png" height="141" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-de-gridviz-par-julien-gaffuri/featured.png" medium="image" type="image/png" height="141" width="144"/>
 </item>
 <item>
   <title>Présentation d’Observable par Nicolas Lambert</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-dobservable-par-nicolas-lambert/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-dobservable-par-nicolas-lambert/</link>
   <description><![CDATA[ 
 
 
@@ -771,8 +771,8 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 <p>Présentation d’<a href="https://observablehq.com/explore"><code>observable</code></a> par <a href="https://observablehq.com/@neocartocnrs">Nicolas Lambert</a> sous la forme d’un <a href="https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales"><em>notebook</em> interactif</a>.</p>
 <p>Le replay est disponible plus bas 👇</p>
 <p><a href="https://observablehq.com/"><code>observable</code></a> est une plateforme de dataviz réactive qui propose des notebooks communautaires de visualisations de données:</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-dobservable-par-nicolas-lambert/observable2.png" class="img-fluid"></p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-dobservable-par-nicolas-lambert/observable1.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-dobservable-par-nicolas-lambert/observable2.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-dobservable-par-nicolas-lambert/observable1.png" class="img-fluid"></p>
 <p>Quelques ressources supplémentaires utiles:</p>
 <ul>
 <li>Les habitués de <code>ggplot2</code> trouveront sans doute <a href="https://observablehq.com/@observablehq/plot-from-ggplot2">ce <em>notebook</em></a> utile ;</li>
@@ -789,13 +789,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>observable</category>
   <category>dataviz</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-dobservable-par-nicolas-lambert/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-dobservable-par-nicolas-lambert/</guid>
   <pubDate>Wed, 16 Nov 2022 10:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-dobservable-par-nicolas-lambert/featured.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-dobservable-par-nicolas-lambert/featured.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Funathon de juin 2022</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2022-06-20-funathon/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2022-06-20-funathon/</link>
   <description><![CDATA[ 
 
 
@@ -838,13 +838,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
   <category>funathon</category>
   <category>R</category>
   <category>Python</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2022-06-20-funathon/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2022-06-20-funathon/</guid>
   <pubDate>Sun, 19 Jun 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2021-06-22-funathon/funathon.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2021-06-22-funathon/funathon.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Funathon de juin 2021</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2021-06-22-funathon/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2021-06-22-funathon/</link>
   <description><![CDATA[ 
 
 
@@ -873,36 +873,36 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
   <category>funathon</category>
   <category>R</category>
   <category>Python</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2021-06-22-funathon/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2021-06-22-funathon/</guid>
   <pubDate>Sun, 20 Jun 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2021-06-22-funathon/funathon.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2021-06-22-funathon/funathon.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Séminaire - la méthodologie des appariements</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/</link>
   <description>Séminaire de Méthodologie statistique et de sciences des données du 12 avril 2021 : revue des méthodes d&#39;appariement et des principaux concepts et quelques exemples de traitement mis en oeuvre récemment en termes d&#39;appariement</description>
   <category>Seminaire</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/</guid>
   <pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 <item>
   <title>Séminaire - nouvelles approches pour coder dans une nomenclature : machine learning et autocomplétion</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/</link>
   <description>Séminaire de Méthodologie statistique et de sciences des données du 14 janvier 2020 : innovation et expériences pratiques récentes pour réaliser des tâches de classification avec des outils d&#39;analyse textuelle et d&#39;apprentissage statistique supervisé</description>
   <category>Seminaire</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/</guid>
   <pubDate>Tue, 14 Jan 2020 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 <item>
   <title>Séminaire - Big Data et statistiques publiques : questions de méthodes et lancement du SSPLab</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/</link>
   <description>Séminaire de Méthodologie statistique et de sciences des données du 30 novembre 2016 : enjeu technique et statistique de l&#39;utilisation de la science des données pour la statistique publique, aperçu des innovations en cours</description>
   <category>Seminaire</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/</guid>
   <pubDate>Wed, 30 Nov 2016 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 </channel>
 </rss>

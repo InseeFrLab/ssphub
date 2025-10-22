@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/</link>
-<atom:link href="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.8.25</generator>
 <lastBuildDate>Sat, 25 Oct 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>De belles cartographies, des packages R et l’importance des données d’entraînement pour l’IA</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_20/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_20/</link>
   <description><![CDATA[ 
 
 
@@ -25,7 +25,7 @@
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
 <p>Beaucoup d’infographies ce mois-ci, le choix a été dur. Pour une fois, partons sur une vidéo réalisée par <a href="https://www.fabianlang.net/schweizer-bergwelten/">Fabian Lang</a> : le trajet d’un gypaète barbu suivi par GPS en 3D dans les Alpes suisses. La vraie infographie, en format vidéo, est disponible <a href="https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj">ici</a>. Attention, vertige.</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
 </section>
 <section id="actus-du-réseau" class="level1">
 <h1>Actus du réseau</h1>
@@ -120,13 +120,13 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_20/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_20/</guid>
   <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>La rentrée 2025: actualités, nouveautés, interview de rentrée</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_19/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_19/</link>
   <description><![CDATA[ 
 
 
@@ -152,7 +152,7 @@ Astuce
 </section>
 <section id="la-datavisualisation" class="level1">
 <h1>La datavisualisation</h1>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
 <p>Une version interactive est disponible sur le site du <a href="https://graphics.wsj.com/infectious-diseases-and-vaccines/">Wall Street Journal</a>.</p>
 </section>
 <section id="actus-du-réseau" class="level1">
@@ -300,13 +300,13 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_19/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_19/</guid>
   <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
 </item>
 <item>
   <title>Troisième journée du SSPHub</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-12-01-network-day/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-12-01-network-day/</link>
   <description><![CDATA[ 
 
 
@@ -333,13 +333,13 @@ Astuce
  ]]></description>
   <category>network</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-12-01-network-day/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-12-01-network-day/</guid>
   <pubDate>Mon, 15 Sep 2025 00:00:00 GMT</pubDate>
   <media:content url="https://minio.lab.sspcloud.fr/lgaliana/ssphub/replay/20241015_ssphub_day/img7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données sous format Parquet ?</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/</link>
   <description><![CDATA[ 
 
 
@@ -399,7 +399,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -411,13 +411,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>Parquet</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/</guid>
   <pubDate>Wed, 16 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données par API ?</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/</link>
   <description><![CDATA[ 
 
 
@@ -477,7 +477,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -489,13 +489,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>API</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/</guid>
   <pubDate>Wed, 09 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>Deuxième journée du SSPHub</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-10-14-network-day/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-10-14-network-day/</link>
   <description><![CDATA[ 
 
 
@@ -750,13 +750,13 @@ Rappel du programme de la journée
  ]]></description>
   <category>dataviz</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-10-14-network-day/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-10-14-network-day/</guid>
   <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
   <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Quarto : Une évolution de R Markdown pour des travaux statistiques reproductibles</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-05-02-quarto/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-05-02-quarto/</link>
   <description><![CDATA[ 
 
 
@@ -839,20 +839,20 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>quarto</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-05-02-quarto/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-05-02-quarto/</guid>
   <pubDate>Thu, 02 May 2024 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
 </item>
 <item>
   <title>Sora, la nouvelle IA d’OpenIA pour générer des vidéos ; Le Chat, le nouveau modèle de Mistral ; Observable, pour s’abstraire des notebooks</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_18/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_18/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_18/infolettre18.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_18/infolettre18.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -926,7 +926,7 @@ Classement des principaux modèles de langage lors de la sortie de <code>Mistral
 </details>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_18/MMLU_examples.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_18/MMLU_examples.png" class="img-fluid figure-img"></p>
 <figcaption>Exemple de questions de niveau licence posées pour évaluer la qualité d’un modèle selon la métrique MMLU proposée par <span class="citation" data-cites="hendrycks2021measuring">Hendrycks et al. (2021)</span> (<a href="https://arxiv.org/abs/2009.03300">accéder à l’article de recherche</a>)</figcaption>
 </figure>
 </div>
@@ -967,7 +967,7 @@ Les trois modèles <code>Claude-3</code> disponibles
 <summary>
 Comparaison des performances des LLM
 </summary>
-<img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_18/eval_llm_generales.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic"> <img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_18/eval_llm_math.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic">
+<img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_18/eval_llm_generales.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_18/eval_llm_math.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic">
 </details>
 <p>Les modèles <code>Claude</code> sont développés par l’entreprise Anthropic, créée par des anciens employés d’OpenAI considérant que la problématique de la <a href="https://fr.wikipedia.org/wiki/S%C3%BBret%C3%A9_des_intelligences_artificielles">sécurité des IA</a> n’était pas assez mise en avant par OpenAI. Valorisée autour de 18 milliards d’euros en ce début d’année 2024, elle a bénéficié de financements importants d’Amazon et de Google, ces deux entreprises ayant investi respectivement 4 et 2 milliards de dollars. Les modèles <code>Claude</code> sont disponibles pour les utilisateurs des <em>cloud</em> d’Amazon (AWS) ou de <em>Google</em> (GCP) à l’instar des modèles GPT disponibles aux utilisateurs du <em>cloud</em> de Microsoft (Azure). La concurrence entre OpenAI et Anthropic est ainsi l’occasion d’un affrontement entre les trois principaux acteurs du <em>cloud</em>. Au-delà de la concurrence entre leurs investisseurs, les modèles économiques d’Anthropic et d’OpenAI diffèrent. Anthropic vise plutôt à proposer des services à des entreprises accessibles par le biais d’API là où OpenAI propose plutôt des outils grands publics avec des fonctionnalités supplémentaires pour les acteurs spécialisés. Parmi les partenaires principaux d’Anthropic, on retrouve Gitlab, Quora ou Salesforce (l’éditeur de logiciel derrière Slack). A l’instar des modèles Mistral Large ou GPT-4, le modèle Claude 3 n’est pas <em>open source</em>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1034,7 +1034,7 @@ Comparaison des performances des LLM
 </section>
 <section id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message" class="level2">
 <h2 class="anchored" data-anchor-id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message">Replay de la présentation d’Eric Mauvière “La dataviz pour donner du sens aux données et communiquer un message”</h2>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
 <p>La présentation d’Eric Mauvière sur les bonnes pratiques de <em>dataviz</em> a rencontré un réel succès avec près de 150 participants. Le <em>replay</em> et les <em>slides</em> de cette présentation essentielle sont disponibles ci-dessous :</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="381" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 380;"><span id="cb1-381"><span class="fu" style="color: #4758AB;
@@ -1111,13 +1111,13 @@ Hendrycks, Dan, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song
 </div>
 </div></section></div> ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_18/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_18/</guid>
   <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_18/hitchcock_robot-1.webp" medium="image" type="image/webp"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_18/hitchcock_robot-1.webp" medium="image" type="image/webp"/>
 </item>
 <item>
   <title>Eric Mauvière, “La dataviz pour donner du sens aux données et communiquer un message”</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/</link>
   <description><![CDATA[ 
 
 
@@ -1191,7 +1191,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </div>
 </div>
 <p>Un exemple issu de la présentation d’Eric :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
 
 
 </section>
@@ -1199,13 +1199,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>dataviz</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/</guid>
   <pubDate>Thu, 29 Feb 2024 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>Le RAG pour limiter l’hallucination par l’IA ; l’avancée des bases de données vectorielles ; le format Parquet pour simplifier leur usage ; DuckDB débarque en version web</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_17/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_17/</link>
   <description><![CDATA[ 
 <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
 <script type="module" id="qwebr-monaco-editor-init">
@@ -1387,7 +1387,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_17/robotroma.jfif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_17/robotroma.jfif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1467,7 +1467,7 @@ Astuce
 <p>Par exemple, dans l’image ci-dessous, une base de données vectorielle pourra évaluer la similarité entre les termes en utilisant des techniques d’algèbre linéaire de manière plus efficace que ne le permettrait <code>Python</code>. Ce dernier est en effet un langage informatique généraliste, moins performant que des logiciels spécialisés pour faire de la recherche de similarité dans des corpus massifs. Dans une chaîne de production exploitant ce type de technique, <code>Python</code> servira de point d’entrée et déléguera ensuite les calculs complexes à la base de données vectorielle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_17/embeddings.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_17/embeddings.png" class="img-fluid figure-img"></p>
 <figcaption>Un exemple d’<em>embedding</em> et de rapprochement de textes. Chaque bande représente une dimension latente de notre langage. Il est possible de rapprocher les termes à partir de celles-ci. Source: <a href="https://ig.ft.com/generative-ai/"><em>Financial Times</em></a>.</figcaption>
 </figure>
 </div>
@@ -1567,7 +1567,7 @@ Astuce
 <p>Techniquement, <code>DuckDB</code> fonctionne de manière optimale avec des fichiers au format <code>Parquet</code>. Ce format de données, orienté colonne, permet en effet d’optimiser des traitements classiques des <em>data scientists</em> : sélectionner seulement certaines colonnes d’un jeu de données, regrouper des données pour faire des calculs d’agrégats, etc.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_17/parquet.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_17/parquet.png" class="img-fluid figure-img"></p>
 <figcaption>Une illustration du principe du stockage orienté colonne (Source: <a href="https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705">Michael Berk</a>)</figcaption>
 </figure>
 </div>
@@ -1664,13 +1664,13 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_17/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_17/</guid>
   <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_17/robotroma.jfif" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_17/robotroma.jfif" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Rétrospective du réseau en 2023 (cocorico, beaucoup de nouveaux inscrits !) ; des nouvelles règles européennes pour l’IA ; le recensement de la population au format parquet ; un explorateur de fichier sur le SSPCloud</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_16/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_16/</link>
   <description><![CDATA[ 
 
 
@@ -1679,7 +1679,7 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_16/santa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_16/santa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -3327,7 +3327,7 @@ Tableau des performances (source: <a href="https://mistral.ai/news/mixtral-of-ex
 <p>Le <a href="https://datalab.sspcloud.fr"><code>SSPCloud</code></a>, la plateforme moderne de traitement de données développée par l’Insee et mise à disposition de près de 3000 agents de l’administration ou étudiants, vient de mettre en oeuvre <a href="https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&amp;page=1&amp;columnWidths=%7B%7D&amp;columnVisibility=%7B%7D">un explorateur</a> aux fonctionnalités similaires 🚀.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_16/viewer-sspcloud.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_16/viewer-sspcloud.png" class="img-fluid figure-img"></p>
 <figcaption>Un exemple d’utilisation de cet explorateur sur les données détaillées du recensement 👆️</figcaption>
 </figure>
 </div>
@@ -5366,13 +5366,13 @@ font-style: inherit;">;</span></span>
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_16/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_16/</guid>
   <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_16/santa.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_16/santa.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Guide d’utilisation des données du recensement de la population au format Parquet</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/parquetRP/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/parquetRP/</link>
   <description><![CDATA[ 
 
 
@@ -9825,13 +9825,13 @@ Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nb
   <category>Python</category>
   <category>R</category>
   <category>Parquet</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/parquetRP/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/parquetRP/</guid>
   <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/parquetRP/ducks.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/parquetRP/ducks.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Coûts d’entrée trop élevés pour l’entraînement des modèles de langage qui s’orientent vers l’opensource ; LlaMaA et Falcon les nouveaux LLM</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_15/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_15/</link>
   <description><![CDATA[ 
 
 
@@ -9840,7 +9840,7 @@ Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nb
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_15/learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_15/learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -10009,7 +10009,7 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
 <h2 class="anchored" data-anchor-id="mc-datascientest">Masterclass <em>datascientest</em> sur le <em>fine-tuning</em></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
 </figure>
 </div>
 <p>Notre cycle de <em>masterclass</em> organisées en lien avec <em>datascientest</em> continue !</p>
@@ -10042,13 +10042,13 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_15/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_15/</guid>
   <pubDate>Sun, 10 Sep 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_15/learning.png" medium="image" type="image/png" height="142" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_15/learning.png" medium="image" type="image/png" height="142" width="144"/>
 </item>
 <item>
   <title>Propositions de lecture estivale</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_14/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_14/</link>
   <description><![CDATA[ 
 
 
@@ -10094,7 +10094,7 @@ Note
 <p><strong>Bonnes vacances ! Et n’oubliez pas de profiter pleinement des vacances pour oublier <code>ChatGPT</code> quelques temps !</strong> 🌞🌊⛰️</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 
@@ -10103,13 +10103,13 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_14/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_14/</guid>
   <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="140" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="140" width="144"/>
 </item>
 <item>
   <title>Onyxia: l’infrastructure cloud mère des dragons</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/</link>
   <description><![CDATA[ 
 
 
@@ -10148,7 +10148,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption><em>Centralisation des ressources par <code>Onyxia</code></em></figcaption>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_logic.svg" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_logic.svg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p><br></p>
@@ -10199,13 +10199,13 @@ Note
 </section>
 <section id="onyxia-en-bref" class="level2">
 <h2 class="anchored" data-anchor-id="onyxia-en-bref">Onyxia en bref</h2>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ecailles.svg" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ecailles.svg" class="img-fluid"></p>
 <p><code>Onyxia</code> propose principalement deux composants de valeur :</p>
 <ul>
 <li>une <strong>interface web</strong> qui agit comme la porte d’entrée du <em>data scientist</em> sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L’interface ergonomique permet aux utilisateurs de données néophytes de démarrer des services standardisés sans se préoccuper de la configuration mais aussi aux <em>data scientists</em> plus aguerris de bénéficier de vastes possibilités de personnalisation du service.</li>
 <li>des <strong>catalogues de logiciels</strong> : une petite vingtaine de services interactifs dont les plus utilisés sont <code>RStudio</code>, <code>Jupyter</code>, <code>VScode</code>, une quinzaine de services spécialisés dans les bases de données (<code>Postgres</code>, <code>ElasticSearch</code>…), 5 services d’automatisation (<code>MLflow</code>…) et 2 services de <em>dataviz</em> (<code>Redash</code> et <code>Superset</code>)</li>
 </ul>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/catalogue.svg" alt="Le catalogue Onyxia"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/catalogue.svg" alt="Le catalogue Onyxia"></p>
 <p><em>Le catalogue des services disponibles dans <code>Onyxia</code>.</em></p>
 <p><br></p>
 <p>Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation. Tous les services interactifs sont automatiquement connectés à l’espace de stockage <code>S3</code>, et au coffre de secret <code>Vault</code>. La gestion des droits d’accès aux données stockées dans l’espace de stockage <code>S3</code> ou dans des services de bases de données (<code>ElasticSearch</code>, <code>PostGreSQL</code>…) est automatisée afin que chaque service puisse accéder aux données sur lesquelles l’utilisateur détient des droits.</p>
@@ -10216,21 +10216,21 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <figcaption><em>Onyxia offre des marges de manoeuvre sur l’interface</em></figcaption>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/multiple_instances.svg" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/multiple_instances.svg" class="img-fluid figure-img"></p>
 </figure>
 </div>
 <p>L’une des principales forces d’<code>Onyxia</code> est d’offrir une multiplicité de services différents avec une interconnexion entre eux gérée de manière cohérente.</p>
 <p>Les conteneurs sont démarrés comme des services à la demande et la configuration automatique de ceux-ci permet d’assurer aux <em>data scientists</em> l’accès aux données disponibles dans des espaces de stockage ou des bases de données créées par l’utilisateur.</p>
 <p>Le catalogue de services se présente par le biais d’un formulaire ergonomique où l’utilisateur choisit la brique qu’il désire utiliser:</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui1.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui1.png" class="img-fluid"></p>
 <p>Les <em>data scientists</em> et statisticiens n’ont donc pas besoin de connaître les détails du fonctionnement des briques techniques d’<code>Onyxia</code> pour utiliser la plateforme. Les éléments techniques comme la connexion au système de stockage sont, par défaut, déjà configurés :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui2.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui2.png" class="img-fluid"></p>
 <p>L’interface ergonomique permet de paramétrer certaines configurations si besoin, notamment les ressources à disposition du conteneur. Néanmoins l’allocation dynamique des ressources offre déjà de la flexibilité :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui3.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui3.png" class="img-fluid"></p>
 <p>L’utilisateur a accès à l’ensemble des services qu’il a ouvert depuis une page dédiée :</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui4.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui4.png" class="img-fluid"></p>
 <p>Les services interactifs comme <code>Jupyter</code>, <code>VSCode</code> ou <code>RStudio</code> permettent alors à l’utilisateur d’accéder à une interface pour exécuter des traitements <code>Python</code> ou <code>R</code>.</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/onyxia_ui5.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/onyxia_ui5.png" class="img-fluid"></p>
 <p>L’accès aux données peut se faire depuis la ligne de commande (via un utilitaire <a href="https://min.io/docs/minio/linux/reference/minio-mc.html">Minio Client</a>) ou par un package <code>Python</code> ou <code>R</code> dédié qui permet de traiter le système de stockage distant comme un système local. Les traitements sont exécutés sur les serveurs de la plateforme qui héberge les notebooks, indépendamment de la machine par laquelle l’utilisateur accède au service. Par exemple, dans le cas du <code>SSPCloud</code>, les traitements sont exécutés depuis des serveurs hébergés à l’Insee.</p>
 </section>
 <section id="la-communauté-onyxia" class="level2">
@@ -10281,13 +10281,13 @@ Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still th
 </section></div> ]]></description>
   <category>Insee</category>
   <category>sspcloud</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/</guid>
   <pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/blog/onyxia/featured.png" medium="image" type="image/png" height="161" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/featured.png" medium="image" type="image/png" height="161" width="144"/>
 </item>
 <item>
   <title>Des innovations rapides sur l’IA qui lancent un débat sur sa place dans la société ; algorithme de recommandation de Twitter</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_13/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_13/</link>
   <description><![CDATA[ 
 
 
@@ -10329,7 +10329,7 @@ Note
 <p>La publication en <em>open source</em> de modèles de langage est donc un enjeu d’indépendance pour les organisations intéressées par l’utilisation de <em>chatbots</em> ou l’extraction d’information. Cette publication continue à suivre un rythme presque quotidien. Cet <a href="https://arxiv.org/pdf/2301.04655.pdf">état de l’art des modèles publiés en open source</a> publié en janvier est déjà largement dépassé. Et <a href="https://arxiv.org/pdf/2303.18223.pdf">celui-ci</a> ne sera probablement plus à jour tout aussi rapidement.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_13/featured.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_13/featured.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Dans la dernière quinzaine, l’une des principales annonces est la publication par <a href="https://laion.ai/blog/"><code>LAION</code></a> d’<a href="https://laion.ai/blog/open-flamingo/"><code>OpenFlamingo</code></a>, une version <em>open source</em> de <a href="https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model">Flamingo</a>, modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.</p>
@@ -10359,7 +10359,7 @@ Note
 <h2 class="anchored" data-anchor-id="première-journée-du-réseau-le-17-avril">Première journée du réseau le 17 avril</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_13/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_13/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 <p>Nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅 (<a href="https://ssphub.netlify.app/infolettre/infolettre_12/"><em>Newsletter #12</em></a>). Les places en présentiel sont presque épuisées, ne tardez pas à vous inscrire ! Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom.</p>
@@ -10399,13 +10399,13 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_13/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_13/</guid>
   <pubDate>Sat, 01 Apr 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_13/featured.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_13/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Première journée du SSPHub</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2023-ssphubday/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2023-ssphubday/</link>
   <description><![CDATA[ 
 
 
@@ -10418,13 +10418,13 @@ Note
 
  ]]></description>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/2023-ssphubday/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/2023-ssphubday/</guid>
   <pubDate>Wed, 29 Mar 2023 15:00:00 GMT</pubDate>
   <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>“OCRisation, état de l’art et projets auxquels participe Teklia” par Christopher Kermorvant</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/</link>
   <description><![CDATA[ 
 
 
@@ -10434,7 +10434,7 @@ Note
 <p>Le replay de l’événement est disponible ci-dessous.</p>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/2023-ocrisation-replay.mp4"></video></div>
 <p>Les slides présentées par Christopher Kermorvant sont aussi disponibles <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/slides.pptx">ici</a>.</p>
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/ocr.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/ocr.png" class="img-fluid"></p>
 
 
 
@@ -10442,13 +10442,13 @@ Note
   <category>OCR</category>
   <category>deep learning</category>
   <category>event</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/</guid>
   <pubDate>Wed, 29 Mar 2023 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/ocrisation-teklia/ocr.png" medium="image" type="image/png" height="68" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/ocrisation-teklia/ocr.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 <item>
   <title>Présentation du projet Meta Academy - Carpentries</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-du-projet-meta-academy-carpentries/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-du-projet-meta-academy-carpentries/</link>
   <description><![CDATA[ 
 
 
@@ -10462,13 +10462,13 @@ Note
 
  ]]></description>
   <category>documentation</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-du-projet-meta-academy-carpentries/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-du-projet-meta-academy-carpentries/</guid>
   <pubDate>Tue, 28 Mar 2023 15:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/event/presentation-du-projet-meta-academy-carpentries/2023-03-MetaAcademy.png" medium="image" type="image/png" height="89" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/event/presentation-du-projet-meta-academy-carpentries/2023-03-MetaAcademy.png" medium="image" type="image/png" height="89" width="144"/>
 </item>
 <item>
   <title>Tapis rouge et graph de l’Insee ; questionnement sur l’IA ; faillite dans la Silicon Valley</title>
-  <link>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_12/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/</link>
   <description><![CDATA[ 
 
 
@@ -10496,7 +10496,7 @@ Note
 <p>La semaine dernière avait lieu la cérémonie des Oscars. Grâce à un <a href="https://twitter.com/claradealberto/status/1635310454628298753">fil de Clara Dealberto</a>, on peut mesurer l’influence des graphistes de l’Insee sur les stylistes des stars :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_12/oscars.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/oscars.png" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Tweet de Clara Dealberto</figcaption>
 </figure>
 </div>
@@ -10518,7 +10518,7 @@ Note
 <h2 class="anchored" data-anchor-id="des-turbulences-dans-la-silicon-valley">Des turbulences dans la Silicon Valley</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_12/bank_failures.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/bank_failures.png" class="img-fluid figure-img" style="width:80.0%"></p>
 <figcaption>Une infographie des faillites bancaires par Mike Bostock. Source: <a href="https://observablehq.com/@mbostock/bank-failures">Notebook Observable</a></figcaption>
 </figure>
 </div>
@@ -10546,7 +10546,7 @@ Note
 <h2 class="anchored" data-anchor-id="première-journée-du-réseau-en-avril-17-avril">Première journée du réseau en avril (17 avril)</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_12/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 <p>Déjà annoncée dans la <a href="https://ssphub.netlify.app/infolettre/infolettre_11/"><em>Newsletter #11</em></a>, nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅.</p>
@@ -10576,7 +10576,7 @@ Note
 <h2 class="anchored" data-anchor-id="post-de-blog-sur-polars">Post de blog sur <code>Polars</code></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_12/polar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/polar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>Pour faire suite à la <a href="https://ssphub.netlify.app/infolettre/infolettre_11/"><em>Newsletter #11</em></a> qui présentait l’écosystème autour du package <a href="https://www.pola.rs/"><code>Python</code> <code>Polars</code></a>, Romain Tailhurat (Insee) nous propose un <a href="https://ssphub.netlify.app/blog/polars/">post de blog</a> pour découvrir ce <em>package</em>.</p>
@@ -10589,9 +10589,9 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_12/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/</guid>
   <pubDate>Wed, 15 Mar 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/infolettre/infolettre_12/oscars.png" medium="image" type="image/png" height="121" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/oscars.png" medium="image" type="image/png" height="121" width="144"/>
 </item>
 </channel>
 </rss>
