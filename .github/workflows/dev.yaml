@@ -75,10 +75,8 @@ jobs:
         with:
           header: pr-preview
           message: |
-            
-            :---:
-            | <p></p> :rocket: View preview at <br> ${{ steps.deploy-preview.outputs.preview-url }} <br><br>
-            | <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br><br> </h6>
+            :rocket: View preview at <br> ${{ steps.deploy-preview.outputs.preview-url }} <br>
+            <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br> </h6>
 
 
   delete-preview:
@@ -96,6 +94,5 @@ jobs:
         with:
           header: pr-preview
           message: |
-            :---:
             Preview removed because the pull request was closed.
             ${{ steps.remove-preview.outputs.action-start-time }}
