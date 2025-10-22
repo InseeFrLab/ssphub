@@ -39,6 +39,12 @@ jobs:
       # Jupyter
       - run: pip install jupyter nbformat
 
+      - name: Install npm
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        uses: actions/setup-node@v2          
+        with:
+          node-version: '18'
+
       # Quarto
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -73,12 +79,6 @@ jobs:
           to: html
         # env: # For Quarto profiles
         #   QUARTO_PROFILE: preview
-
-      - name: Install npm
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-        uses: actions/setup-node@v2          
-        with:
-          node-version: '18'
     
       - name: Deploy preview
         id: deploy-preview
