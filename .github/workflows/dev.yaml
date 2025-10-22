@@ -51,11 +51,10 @@ jobs:
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
-      - name: Install packages
+      - name: Install babelquarto
         uses: r-lib/actions/setup-r-dependencies@v2
-        with:
           packages: |
-            any::babelquarto 
+            github::ropensci-review-tools/babelquarto@a485fea
 
       - name: Render bilingual project
         run: Rscript scripts/render.R
