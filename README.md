@@ -27,7 +27,10 @@ Pour rendre le site, faire dans Terminal :
 - speed up R set up in Github actions (with renv?)
 - move image to S3 to have smaller repo (impact on newsletter download image function)
 - have a developpement Quarto profile ?
- 
+- doublon blog/polars/polars-tuto.qmd et additional/notebooks
+
 ## Useful 
 - move blog/polars/polars-tuto.qmd to another repo ? 
 - move blog/parquetRP/snippets ?
+- init.sh ??
+
