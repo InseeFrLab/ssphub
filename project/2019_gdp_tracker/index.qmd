@@ -1,0 +1,30 @@
+---
+title: "« GDP Tracker » : un outil pour des prévisions économiques en continu"
+
+# Summary for listings and search engines
+description: "Modèles de _machine learning_ pour effectuer des prévisions en temps réel (_nowcasting_)  pour alimenter les analyses conjoncturelles de l'Insee"
+
+format: html
+
+# Date published
+date: 2019-12-01
+
+# Date updated
+image: visuel_Budget_des_familles_1.png
+
+categories: 
+- Projets
+- machine learning
+- expérimentation
+- prévisions
+
+---
+
+# Synthèse du projet
+
+|              | Prévisions du PIB en continu                         |
+|--------------|------------------------------------------------------------------------------------|
+| **Détail du projet**         | Le projet `GDP Tracker` consiste à construire un outil de prévision économique en continu, alimenté par l’ensemble des indicateurs conjoncturels récents disponibles à l’instant _t_. L'objectif de ce projet est d'exploiter, au mieux, les sources les plus récentes pour estimer la dynamique des agrégats macroéconomiques majeurs au cours des dernières semaines.  Ces sources sont de nature diverse: enquêtes de conjoncture, comptes nationaux trimestriels, remontées statistiques en dur mais aussi de données issues de sources moins traditionnelles (recherches internet, etc.) <br> <br> À partir de cet ensemble hétérogènes d’informations, l’outil effectue une prévision de croissance  des agrégats macroéconomiques les plus scrutés pour connaître la conjoncture française (PIB, consommation des ménages, investissement…). Cette prévision est faite pour le trimestre contemporain ou les trimestres suivants, à partir de modèles de _machine learning_ (LASSO, forêts aléatoires…). <br> <br> L’outil a été initialement développé pour une [Note de conjoncture en 2019](https://www.insee.fr/fr/statistiques/fichier/4268833/122019_ndc.pdf). Celui-ci a été repris suite à la crise sanitaire pour une utilisation plus systématique. D’abord centré sur la France et sur le seul PIB du trimestre contemporain, il a été décliné à d’autres pays (Allemagne, Italie, Espagne) et est en cours  d’élargissement à des agrégats autres que le PIB et à des horizons de prévision plus lointains.         |
+| **Acteurs**                  |  Insee         |
+| **Résultats du projet**      | - Dossier [Prévoir en continu la croissance française](https://www.insee.fr/fr/statistiques/4268739?sommaire=4268833)  <br> -         |
+| **Code du projet**           |     |
