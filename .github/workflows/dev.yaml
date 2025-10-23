@@ -6,7 +6,7 @@ on:
       - synchronize
       - closed   # Including closed to remove preview when PR is closed. 
     branches:
-      - fusion_site_ssplab
+      - main
 
 env:
   PREVIEW_BRANCH: gh-pages
