@@ -13,6 +13,7 @@ Site web construit avec `Quarto`
 
 # Architecture
 
+
 # Version bilingue
 Faite avec [babelquarto](https://docs.ropensci.org/babelquarto/)
 Pour rendre le site, faire dans Terminal :
@@ -21,3 +22,12 @@ Pour rendre le site, faire dans Terminal :
 - preview: `Rscript scripts/preview.R`
 - render and preview : `Rscript scripts/render.R && Rscript scripts/preview.R`
 
+# To do
+
+- speed up R set up in Github actions (with renv?)
+- move image to S3 to have smaller repo (impact on newsletter download image function)
+- have a developpement Quarto profile ?
+ 
+## Useful 
+- move blog/polars/polars-tuto.qmd to another repo ? 
+- move blog/parquetRP/snippets ?
