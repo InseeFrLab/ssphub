@@ -10,9 +10,9 @@ def create_folder_and_file(folder_name, template_path='ssphub/scripts/project_te
     new_file_path = os.path.join("ssphub/project", folder_name, "index.qmd")
 
     # Copy the template to the new file
-    shutil.copy(template_path, new_file_path)
+    add_categories_to_yaml(new_file_path, template_path=template_path, root_folder="ssphub/project")
 
-# create_folder_and_file("new_project")
+create_folder_and_file("new_project")
 
 def find_index_qmd_files(root_folder='ssphub/project'):
     index_qmd_files = []
@@ -22,6 +22,7 @@ def find_index_qmd_files(root_folder='ssphub/project'):
                 index_qmd_files.append(os.path.join(root, file))
     return index_qmd_files
 
+# find_index_qmd_files()
 
 def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
     """
@@ -40,62 +41,48 @@ def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
 
     # Split the YAML header and the HTML content
     yaml_header = qmd_content.split('---', 2)[1]
-    yaml.safe_load(yaml_header)
+    yaml_header = yaml.safe_load(yaml_header)
+
+    return yaml_header.get('categories', '')
+    
+
+def conc_yaml_categories(root_folder='ssphub/project'):
+    # Parse the YAML header1
+    categories_conc_list=[]
+
+    for file_path in find_index_qmd_files(root_folder):
+        categories_list = extract_categories(file_path)
+        categories_conc_list = categories_conc_list + categories_list
+
+    categories_conc_list = list(set(categories_conc_list))
+
+    return categories_conc_list
+
+
+conc_yaml_categories()
+
+def add_categories_to_yaml(qmd_output_file, template_path='ssphub/scripts/project_template.qmd', root_folder='ssphub/project'):
+    with open(template_path, mode='r') as file:
+        qmd_content=file.read()
+    parts = qmd_content.split('---', 2)
+    
+    yaml_header = parts[1]
+    md_content = parts[2]
 
     # Clean the YAML header
-    cleaned_yaml_header = clean_yaml_header(yaml_header, newsletter_url)
+    yaml_header = yaml.safe_load(yaml_header)
 
+    # Keep only the specified keys
+    yaml_header['categories'] = conc_yaml_categories(root_folder=root_folder)
+
+    # Convert the cleaned YAML back to a string
+    yaml_header_str = yaml.dump(yaml_header, sort_keys=False,  allow_unicode=True, width=4096)
+    
     # Combine the cleaned YAML header and HTML content
-    processed_qmd_content = f"---\n{cleaned_yaml_header}---\n{html_content}"
+    processed_qmd_content = f"---\n{yaml_header_str}---\n{md_content}"
 
     # Save the processed QMD content to a file
     with open(qmd_output_file, 'w', encoding='utf-8') as f:
         f.write(processed_qmd_content)
 
-
-def clean_yaml_header(yaml_header, newsletter_url):
-    """
-    Function to transform Yaml header of an index.qmd file and transform it for a qmd file that will be
-    knitted to html. It keeps only title, updates the description with the link to the website,
-    add lang, format and format options, including a css file.
-
-    Arg :
-        yaml_header: input yaml_header to clean, as string
-        newsletter_url: url of the newsletter to insert a link to that newsletter
-
-    Returns:
-        (string, with Unicode formating) url to raw Qmd newsletter
-
-    Example:
-        >>> clean_yaml_header(
-            '\ntitle: "La rentrée 2025:"\n\ndescription: |\n  Infolettre de __Septembre 2025__
-            \n\n# Date published\ndate: \'2025-09-29\'\nnumber: 19\n\nauthors:\n  - Nicolas\n\nimage: mage.png\n\ntags:\n
-            - datavis\n  - IA \n\ncategories:\n  - Infolettre\n\n',
-            'https://ssphub.netlify.app/infolettre/'
-            )
-        "title: 'La rentrée 2025:'\ndescription: '*Infolettre de __Septembre 2025__ disponible sur le site du [réseau](https://ssphub.netlify.app/infolettre/)*'\nlang: fr\nformat:\n  html:\n    self-contained: true\n    css: ../newsletter_tools/email/css/style.css\n"
-
-    """
-
-    # Parse the YAML header1
-    yaml_data = yaml.safe_load(yaml_header)
-
-    # Keep only the specified keys
-    # We put the link
-    cleaned_yaml = {
-        'title': yaml_data.get('title', '').strip(),
-        'description': description
-                }
-
-    # Add missing params
-    cleaned_yaml['lang'] = 'fr'
-    cleaned_yaml['format'] = {
-        'html': {
-            'self-contained': True,  # To have images inside the email
-            'css': '../newsletter_tools/email/css/style.css'
-            }
-        }
-
-    # Convert the cleaned YAML back to a string
-    cleaned_yaml_str = yaml.dump(cleaned_yaml, sort_keys=False,  allow_unicode=True, width=4096)
-    return cleaned_yaml_str
+add_categories_to_yaml('test.qmd')
