@@ -34,3 +34,48 @@ categories:
 | **Acteurs**                  | Insee         |
 | **Résultats du projet**      | Les données de caisse sont aujourd'hui utilisées en production pour le calcul de l'inflation et pour le calcul d'indicateurs d'activité conjoncturelle.  <br> [note point d'étape été 2020](https://intranet.insee.fr/jcms/1345453_DBFileDocument/paul-ean-phaseb?details=true) <br> [note point d'étape hiver 2020-2021](https://intranet.insee.fr/jcms/1345448_DBFileDocument/2021-3657-dg75-l401?details=true) <br>          |
 | **Code du projet**           | - [https://github.com/InseeFrLab/predicat](https://github.com/InseeFrLab/predicat) : API pour classification des libellés de caisse <br> - [https://github.com/InseeFrLab/product-labelling](https://github.com/InseeFrLab/product-labelling) : Application de labellisation des données de caisse       |
+
+
+<!-- ```{=html}
+<table style="width: 100%">
+    <colgroup>
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 85%;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th colspan="2"><b>Classification des données de caisse à partir de machine learning</b></th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td><b>Détail du projet</b></td>
+        <td>Les données de caisse sont utilisées à l'Insee pour le calcul de l'IPC depuis 2010 (cf le <a href="https://www.insee.fr/fr/information/4254225?%20sommaire=4254170">document de travail</a> sur le sujet).
+        Les données de caisses donnent en effet pour chaque code-barres, chaque jour et chaque point de ventes les quantités vendues ainsi que le chiffre d’affaires et/ou le prix auquel le produit est vendu. 
+        Pour exploiter ces données, il est toutefois nécessaire de savoir <b>quel produit se trouve derrière un code-barres</b>. 
+        Actuellement, l’IPC se fonde sur un référentiel de codes-barres, acheté à un prestataire et qui donne une information très détaillée et structurée des caractéristiques de ces produits. 
+        Cette information est payante et ne couvre pas l’ensemble des produits. <br>
+
+        <b>L’expérimentation vise à identifier les étapes de traitement textuel des libellés, ainsi que les méthodes de classification ou autres, permettant de coder automatiquement les libellés, sans passer par le référentiel, dans la nomenclature Coicop pour l’IPC</b> et sur les regroupements utilisés pour Emagsa dans le cadre du projet Nosica qui vise à intégrer notamment les données de caisse dans la production des indicateurs d'activité de court-terme.
+        Elle teste aussi leur performance sur des jeux de données tests.</td>
+    </tr>
+    <tr>
+        <td><b>Acteurs</b></td>
+        <td>Insee</td>
+    </tr>
+    <tr>
+        <td><b>Résultats du projet</b></td>
+        <td>Les données de caisse sont aujourd'hui utilisées en production pour le calcul de l'inflation et pour le calcul d'indicateurs d'activité conjoncturelle.  <br> 
+        
+        - <a href="https://intranet.insee.fr/jcms/1345453_DBFileDocument/paul-ean-phaseb?details=true">note point d'étape été 2020</a> <br> 
+        - <a href="https://intranet.insee.fr/jcms/1345448_DBFileDocument/2021-3657-dg75-l401?details=true">note point d'étape hiver 2020-2021</a> <br></td>
+    </tr>
+    <tr>
+        <td><b>Code du projet</b></td>
+        <td>
+            - <a href="https://github.com/InseeFrLab/predicat">https://github.com/InseeFrLab/predicat</a> : API pour classification des libellés de caisse <br>
+            - <a href="https://github.com/InseeFrLab/product-labelling">https://github.com/InseeFrLab/product-labelling</a> : Application de labellisation des données de caisse</td>
+    </tr>
+    </tbody>
+</table>
+```  -->
