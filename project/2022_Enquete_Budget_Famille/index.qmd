@@ -28,7 +28,7 @@ categories:
 |              | Travaux méthodologiques sur l'enquête Budget de Famille                           |
 |--------------|------------------------------------------------------------------------------------|
 | **Détail du projet**         | La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l'enquête précédente (2017).  <br> - En effet, une partie des données de consommation des ménages sera remontée à travers une **application mobile** mise à disposition des ménages enquêtés. <br> - De plus, l'enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d'extraction automatique. <br> Deux axes existent dans cette expérimentation : <br>  - Le premier axe consiste à tester les solutions open-source d'**extraction automatique du contenu de tickets de caisse**, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la **codification automatique des produits de consommation dans la nomenclature COICOP** : entraînement d'un modèle de classification sur les données de l'enquête précédente et élaboration d'une stratégie de reprise optimale.         |
-| **Acteurs**                  |  Insee (DSDS)         |
+| **Acteurs**                  |  Insee         |
 | **Résultats du projet**      | Projet en cours               |
 | **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf) <br> - [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
 
