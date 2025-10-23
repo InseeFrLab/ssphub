@@ -287,20 +287,20 @@ parmi les instituts de statistique publique,
 vise à simplifier leur exploitation.
 Pour accompagner cette innovation,
 en partenariat avec les services de diffusion de l'Insee, 
-le [dernier _post_ de blog](https://ssphub.netlify.app/blog/parquetrp/)
+le [dernier _post_ de blog](../../blog/parquetRP/index.qmd)
 du réseau présente un guide
 pratique d'utilisation de ces données dans plusieurs
 langages de traitement ({{< fa brands r-project >}} , `Python` {{< fa brands python >}} et `Observable` {{< fa brands js-square >}}) par le biais de `DuckDB`. 
 
 Combien d'habitants de Toulouse ont changé de logement sur l'année ? Quels sont les
-départements avec le plus de centenaires ? Le [_post_ de blog](https://ssphub.netlify.app/blog/parquetrp/) vous montrera comment calculer ces statistiques. Et si vous désirez découvrir
+départements avec le plus de centenaires ? Le [_post_ de blog](../../blog/parquetRP/index.qmd) vous montrera comment calculer ces statistiques. Et si vous désirez découvrir
 ce format avec des exemples additionnels, ce _post_ d'[Eric Mauvière](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) vous intéressera également.
 
 
 ::: {.callout-note}
 ## Pour en savoir plus
 
-- Le [_post_ de blog](https://ssphub.netlify.app/blog/parquetrp/) ;
+- Le [_post_ de blog](../../blog/parquetRP/index.qmd) ;
 - Un [article](https://www.insee.fr/fr/information/7635827?sommaire=7635842) sur le format `Parquet` dans le _Courrier des stats n°9_
 écrit par Alexis Dondon et Pierre Lamarche ;
 - Le blog d'[Eric Mauvière](https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/) qui présente

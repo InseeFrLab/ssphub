@@ -50,7 +50,7 @@ n'hésitez pas à le consulter ! Ou à découvrir celui sur le [_Met Gala_](http
 
 ## ChatGPT encore et toujours
 
-![](https://ssphub.netlify.app/blog/retrospective2022/featured.png){fig-align="center" width=40%}
+![](../../blog/retrospective2022/featured.png){fig-align="center" width=40%}
 
 `ChatGPT` continue de focaliser l'attention.
 Dans la veine de l'article désignant les modèles de langages
@@ -117,7 +117,7 @@ du classement.
 
 Une [réponse intéressante](https://ponder.io/big-data-is-dead-long-live-big-data/)
 à l'article _"Big data is dead"_
-([voir Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
+([voir Newsletter #11](../infolettre_11/index.qmd))
 revient sur l'intérêt de disposer de données historiques longues pour
 l'entrainement de modèles d'apprentissage. 
 
@@ -140,7 +140,7 @@ que nous organisons.
 
 ![](treso.webp){fig-align="center" width=30%}
 
-Déjà annoncée dans la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/),
+Déjà annoncée dans la [_Newsletter #11_](../infolettre_11/index.qmd),
 nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅.
 
 Le nombre de places dans l'espace à disposition étant limité,
@@ -181,7 +181,7 @@ Il est possible de suivre la présentation via [__Zoom__](https://insee-fr.zoom.
 
 Pour rappel, Kate Burnett-Isaacs, de Statistics Canada, nous présentera 
 l'initiative Meta Academy / Carpentries le __mardi 28 mars à 15h__ 📅.
-Plus de détails dans la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/).
+Plus de détails dans la [_Newsletter #11_](../infolettre_11/index.qmd).
 
 __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-carpentries/carpentries.ics)__.
 
@@ -194,9 +194,9 @@ __[Invitation `Outlook` ici](https://minio.lab.sspcloud.fr/ssphub/diffusion/webs
 
 
 
-Pour faire suite à la [_Newsletter #11_](https://ssphub.netlify.app/infolettre/infolettre_11/)
+Pour faire suite à la [_Newsletter #11_](../infolettre_11/index.qmd)
 qui présentait l'écosystème autour du package [`Python` `Polars`](https://www.pola.rs/), 
-Romain Tailhurat (Insee) nous propose un [post de blog](https://ssphub.netlify.app/blog/polars/) pour découvrir ce _package_. 
+Romain Tailhurat (Insee) nous propose un [post de blog](../../blog/polars/index.qmd) pour découvrir ce _package_. 
 
 Celui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales
 fonctionnalités de la librairie. Il est possible de tester 

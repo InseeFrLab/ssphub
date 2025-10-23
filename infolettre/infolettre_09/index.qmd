@@ -16,7 +16,6 @@ categories:
   - Insee
   - Retrospective
   - Infolettre
-  - Retrospective
 
 image: featured.png
 
@@ -28,7 +27,7 @@ filters:
 
 *Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
 
-La [rétrospective de l'année 2022](https://ssphub.netlify.app/blog/retrospective2022/) promettait
+La [rétrospective de l'année 2022](../../blog/retrospective2022/index.qmd) promettait
 une version plus personnalisée, inspirée des visualisations proposées par
 les réseaux sociaux pour synthétiser l'activité de leurs utilisateurs.
 
@@ -39,7 +38,7 @@ Vous pourrez retrouver à la fin de la _newsletter_ des informations plus classi
 événements, retour sur les actions du réseau, formations, etc. 
 
 Elle permet aussi d'illustrer le potentiel d'outils qui ont été présentés
-dans la [rétrospective de l'année 2022](https://ssphub.netlify.app/blog/retrospective2022/).
+dans la [rétrospective de l'année 2022](../../blog/retrospective2022/index.qmd).
 Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. 
 Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la 
 première partie de la rétrospective, sont `Observable`, `Quarto` et `DuckDB`. Les données
