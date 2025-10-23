@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_Extraction_CS/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2021_Extraction_CS/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2019_gdp_tracker/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="dcterms.date" content="2021-01-01">
-<meta name="description" content="Extract information from company accounts tables, in particular tables of subsidiaries and holdings, contained in scanned images made available by INPI via an API">
-<title>Automatic extraction of the table of subsidiaries and holdings from company accounts – SSPHub</title>
+<meta name="dcterms.date" content="2022-01-01">
+<meta name="description" content="Models of machine learning for real-time forecasting (nowcasting) to feed INSEE’s economic analyses">
+<title>“GDP Tracker: a tool for continuous economic forecasting – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,7 +90,7 @@ background: #6886bb;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_Extraction_CS/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
@@ -120,18 +120,17 @@ background: #6886bb;
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Automatic extraction of the table of subsidiaries and holdings from company accounts</h1>
+      <h1 class="title">“GDP Tracker: a tool for continuous economic forecasting</h1>
                   <div>
         <div class="description">
-          Extract information from company accounts tables, in particular tables of subsidiaries and holdings, contained in scanned images made available by INPI via an API
+          Models of <em>machine learning</em> for real-time forecasting (<em>nowcasting</em>) to feed INSEE’s economic analyses
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Python</div>
-                <div class="quarto-category">data extraction</div>
-                <div class="quarto-category">API</div>
-                <div class="quarto-category">Machine learning</div>
-                <div class="quarto-category">in production</div>
+                <div class="quarto-category">Projects</div>
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">experiment</div>
+                <div class="quarto-category">forecasts</div>
               </div>
                   </div>
   </div>
@@ -139,17 +138,11 @@ background: #6886bb;
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Nicolas </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 January 2021</p>
+        <p class="date">1 January 2022</p>
       </div>
     </div>
     
@@ -169,31 +162,11 @@ background: #6886bb;
 </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
-<table class="caption-top table">
-<thead><tr class="header">
-<th></th>
-<th>Automatic extraction of the table of subsidiaries and holdings from company accounts</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td><strong>Project details</strong></td>
-<td>A trial on the automated extraction of the table of subsidiaries and holdings from the company accounts was started in 2022 following an internship in the PTGU division. This table is used manually during company profiling operations, which is tedious work. The experiment was conducted with the Banque de France, which is interested in the same use case as Insee, with two main objectives: <br><br> - to develop a prototype application enabling users to retrieve a table of subsidiaries and holdings automatically for a given Siren number and year; <br> - compare the performance of different automatic table extraction methods, based on open-source tools on the one hand and commercial solutions on the other.</td>
-</tr>
-<tr class="even">
-<td><strong>Players</strong></td>
-<td>Insee, Inpi, Banque de France</td>
-</tr>
-<tr class="odd">
-<td><strong>Project results</strong></td>
-<td>- A new <a href="https://extraction-cs.lab.sspcloud.fr/docs">experimental IPA</a> and a <a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> were put in place to meet the business need. <br> - The project was also presented at an internal Insee seminar on 27 June 2024. <a href="https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/">slides</a> <br>
-</td>
-</tr>
-<tr class="even">
-<td><strong>Project code</strong></td>
-<td>- <a href="https://github.com/InseeFrLab/ca-document-querier/" class="uri">https://github.com/InseeFrLab/ca-document-querier/</a> Python wrapper for Inpi’s enterprise API <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux</a> core” repository containing elements for page detection/table extraction <br> - <a href="https://github.com/InseeFrLab/extract-table-ui" class="uri">https://github.com/InseeFrLab/extract-table-ui</a> code repository for the<a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux-llm" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux-llm</a> Kubernetes: source code for the overall architecture, comprising containerised microservices orchestrated by Kubernetes. It combines calls to external APIs (INPI), PDF processing and the use of language models (LLM) for data analysis and extraction.</td>
-</tr>
-</tbody>
-</table></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<div class="line-block"> | Nowcasting GDP with GDP Tracker |<br>
+ | ———————- |<br><strong>Details of the project</strong> | The project <code>GDP Tracker</code> consists of building a continuous economic forecasting tool, fed by all the recent economic indicators available at any given time. <em>t</em>. The aim of this project is to make the best possible use of the most recent sources to estimate the dynamics of the major macroeconomic aggregates over the last few weeks. These sources are diverse in nature: business and consumer surveys, quarterly national accounts, hard-copy statistical data, as well as data from less traditional sources (internet searches, etc.). <br><br> Using this heterogeneous set of data, the tool produces a growth forecast for the macroeconomic aggregates that are most closely scrutinised for French economic conditions (GDP, household consumption, investment, etc.). This forecast is made for the current quarter or the following quarters, based on models of <em>machine learning</em> (LASSO, random forests, etc.). <br><br> The tool was initially developed for a <a href="https://www.insee.fr/en/statistiques/fichier/4269288/122019_dossier1E.pdf">Business conditions in 2019</a>. Following the health crisis, it was taken up again for more systematic use. Initially focused on France and only on GDP for the current quarter, it has been extended to other countries (Germany, Italy, Spain) and is currently being extended to aggregates other than GDP and to more distant forecasting horizons. |<br><strong>Players</strong> | Insee |<br><strong>Project results</strong> | - Project file <a href="https://www.insee.fr/en/statistiques/4269288?sommaire=4269398">Continuous forecasting of French growth</a> |</div>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();

@@ -13,7 +13,7 @@
     ]
   },
   {
-    "listing": "/project.html",
+    "listing": "/index.html",
     "items": [
       "/project/2022_satellites/index.html",
       "/project/2022_Enquete_Budget_Famille/index.html",
@@ -21,12 +21,29 @@
       "/project/2021_Extraction_CS/index.html",
       "/project/2021_codif_PCS/index.html",
       "/project/2022_Appariement/index.html",
-      "/project/2020_donnees_caisse/index.html"
-    ]
-  },
-  {
-    "listing": "/infolettre/infolettre.html",
-    "items": [
+      "/project/2020_donnees_caisse/index.html",
+      "/project/2019_gdp_tracker/index.html",
+      "/event/2025-12-01-network-day/index.html",
+      "/event/2025-04-16-Parquet/index.html",
+      "/event/2025-04-09-API/index.html",
+      "/event/2024-10-14-network-day/index.html",
+      "/event/2024-05-02-quarto/index.html",
+      "/event/2024-02-29-mauviere/index.html",
+      "/blog/parquetRP/index.html",
+      "/blog/onyxia/index.html",
+      "/event/2023-ssphubday/index.html",
+      "/event/ocrisation-teklia/index.html",
+      "/event/presentation-du-projet-meta-academy-carpentries/index.html",
+      "/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html",
+      "/blog/polars/index.html",
+      "/event/presentation-de-gridviz-par-julien-gaffuri/index.html",
+      "/blog/recap2022/index.html",
+      "/blog/retrospective2022/index.html",
+      "/event/2022-12-10prcent/index.html",
+      "/event/presentation-dobservable-par-nicolas-lambert/index.html",
+      "/blog/embedding/index.html",
+      "/event/2022-06-20-funathon/index.html",
+      "/event/2021-06-22-funathon/index.html",
       "/infolettre/infolettre_20/index.html",
       "/infolettre/infolettre_19/index.html",
       "/infolettre/infolettre_18/index.html",
@@ -40,7 +57,16 @@
       "/infolettre/infolettre_10/index.html",
       "/infolettre/infolettre_09/index.html",
       "/infolettre/infolettre_08/index.html",
-      "/infolettre/infolettre_old/index.html"
+      "/infolettre/infolettre_old/index.html",
+      "/partenaires/oecd/index.html",
+      "/partenaires/eurostat/index.html",
+      "/partenaires/genes/index.html",
+      "/partenaires/chair_finance_digital/index.html",
+      "/partenaires/etalab/index.html",
+      "/partenaires/onyxia/index.html",
+      "/partenaires/spyrales/index.html",
+      "/partenaires/uneceML/index.html",
+      "/partenaires/grr/index.html"
     ]
   },
   {
@@ -57,6 +83,7 @@
       "/event/presentation-du-projet-meta-academy-carpentries/index.html",
       "/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html",
       "/event/presentation-de-gridviz-par-julien-gaffuri/index.html",
+      "/event/2022-12-10prcent/index.html",
       "/event/presentation-dobservable-par-nicolas-lambert/index.html",
       "/event/2022-06-20-funathon/index.html",
       "/event/2021-06-22-funathon/index.html"
@@ -105,35 +132,8 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/infolettre/infolettre.html",
     "items": [
-      "/project/2022_satellites/index.html",
-      "/project/2022_Enquete_Budget_Famille/index.html",
-      "/project/2022_codif_ape/index.html",
-      "/project/2021_Extraction_CS/index.html",
-      "/project/2021_codif_PCS/index.html",
-      "/project/2022_Appariement/index.html",
-      "/project/2020_donnees_caisse/index.html",
-      "/event/2025-12-01-network-day/index.html",
-      "/event/2025-04-16-Parquet/index.html",
-      "/event/2025-04-09-API/index.html",
-      "/event/2024-10-14-network-day/index.html",
-      "/event/2024-05-02-quarto/index.html",
-      "/event/2024-02-29-mauviere/index.html",
-      "/blog/parquetRP/index.html",
-      "/blog/onyxia/index.html",
-      "/event/2023-ssphubday/index.html",
-      "/event/ocrisation-teklia/index.html",
-      "/event/presentation-du-projet-meta-academy-carpentries/index.html",
-      "/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html",
-      "/blog/polars/index.html",
-      "/event/presentation-de-gridviz-par-julien-gaffuri/index.html",
-      "/blog/recap2022/index.html",
-      "/blog/retrospective2022/index.html",
-      "/event/presentation-dobservable-par-nicolas-lambert/index.html",
-      "/blog/embedding/index.html",
-      "/event/2022-06-20-funathon/index.html",
-      "/event/2021-06-22-funathon/index.html",
       "/infolettre/infolettre_20/index.html",
       "/infolettre/infolettre_19/index.html",
       "/infolettre/infolettre_18/index.html",
@@ -147,16 +147,20 @@
       "/infolettre/infolettre_10/index.html",
       "/infolettre/infolettre_09/index.html",
       "/infolettre/infolettre_08/index.html",
-      "/infolettre/infolettre_old/index.html",
-      "/partenaires/oecd/index.html",
-      "/partenaires/eurostat/index.html",
-      "/partenaires/genes/index.html",
-      "/partenaires/chair_finance_digital/index.html",
-      "/partenaires/etalab/index.html",
-      "/partenaires/onyxia/index.html",
-      "/partenaires/spyrales/index.html",
-      "/partenaires/uneceML/index.html",
-      "/partenaires/grr/index.html"
+      "/infolettre/infolettre_old/index.html"
+    ]
+  },
+  {
+    "listing": "/project.html",
+    "items": [
+      "/project/2022_satellites/index.html",
+      "/project/2022_Enquete_Budget_Famille/index.html",
+      "/project/2022_codif_ape/index.html",
+      "/project/2021_Extraction_CS/index.html",
+      "/project/2021_codif_PCS/index.html",
+      "/project/2022_Appariement/index.html",
+      "/project/2020_donnees_caisse/index.html",
+      "/project/2019_gdp_tracker/index.html"
     ]
   },
   {

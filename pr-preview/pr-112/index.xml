@@ -5389,25 +5389,25 @@ Afficher le dictionnaire des variables
 </summary>
 <p>Il est possible de rechercher dans la documentation des noms de variables ou des informations dans les descriptions. Lorsqu’une variable présente de nombreuses modalités, seules la première est la dernière sont retournées. Un exemple ci-dessous montre comment utiliser une requête SQL pour récupérer l’ensemble des valeurs d’une telle variable.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="68" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 67;"><span id="cb1-68">viewof unique_description_filter <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="67" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 66;"><span id="cb1-67">viewof unique_description_filter <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">search</span>(</span>
-<span id="cb1-69">  documentation<span class="op" style="color: #5E5E5E;
+<span id="cb1-68">  documentation<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span> {</span>
-<span id="cb1-70">    <span class="dt" style="color: #AD0000;
+<span id="cb1-69">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">placeholder</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Trouver une information dans la documentation"</span></span>
-<span id="cb1-71">  }</span>
-<span id="cb1-72">  )</span></code></pre></div></div>
+<span id="cb1-70">  }</span>
+<span id="cb1-71">  )</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -5415,32 +5415,32 @@ font-style: inherit;">"Trouver une information dans la documentation"</span></sp
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="77" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 76;"><span id="cb2-77">table_filtre_description <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="76" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 75;"><span id="cb2-76">table_filtre_description <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb2-78">  unique_description_filter<span class="op" style="color: #5E5E5E;
+<span id="cb2-77">  unique_description_filter<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb2-79">  {</span>
-<span id="cb2-80">    <span class="dt" style="color: #AD0000;
+<span id="cb2-78">  {</span>
+<span id="cb2-79">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">header</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> {</span>
-<span id="cb2-81">      <span class="dt" style="color: #AD0000;
+<span id="cb2-80">      <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">description_variable</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Description de la variable"</span></span>
-<span id="cb2-82">    }    </span>
-<span id="cb2-83">  }</span>
-<span id="cb2-84">)</span></code></pre></div></div>
+<span id="cb2-81">    }    </span>
+<span id="cb2-82">  }</span>
+<span id="cb2-83">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
@@ -5448,7 +5448,7 @@ font-style: inherit;">"Description de la variable"</span></span>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="89" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 88;"><span id="cb3-89">documentation <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="88" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 87;"><span id="cb3-88">documentation <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> db<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -5758,55 +5758,55 @@ font-style: inherit;">return</span> configuredClient</span>
 background-color: null;
 font-style: inherit;">```</span></span></code></pre></div></div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="248" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 247;"><span id="cb8-248">url_table_logement <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="247" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 246;"><span id="cb8-247">url_table_logement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/20231023-123618/fd-logemt-2020.parquet"</span></span>
-<span id="cb8-249">url_table_individu <span class="op" style="color: #5E5E5E;
+<span id="cb8-248">url_table_individu <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/20231023-122841/fd-indcvi-2020.parquet"</span></span>
-<span id="cb8-250">url_doc_logement <span class="op" style="color: #5E5E5E;
+<span id="cb8-249">url_doc_logement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://www.data.gouv.fr/fr/datasets/r/c274705f-98db-4d9b-9674-578e04f03198"</span></span>
-<span id="cb8-251">url_doc_individu <span class="op" style="color: #5E5E5E;
+<span id="cb8-250">url_doc_individu <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://www.data.gouv.fr/fr/datasets/r/1c6c6ab2-b766-41a4-90f0-043173d5e9d1"</span></span>
-<span id="cb8-252"></span>
-<span id="cb8-253">renommage_documentation <span class="op" style="color: #5E5E5E;
+<span id="cb8-251"></span>
+<span id="cb8-252">renommage_documentation <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`SELECT </span></span>
-<span id="cb8-254"><span class="vs" style="color: #20794D;
+<span id="cb8-253"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  COD_VAR AS nom_variable, </span></span>
-<span id="cb8-255"><span class="vs" style="color: #20794D;
+<span id="cb8-254"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  LIB_VAR AS description_variable, </span></span>
-<span id="cb8-256"><span class="vs" style="color: #20794D;
+<span id="cb8-255"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  TYPE_VAR AS type_variable, </span></span>
-<span id="cb8-257"><span class="vs" style="color: #20794D;
+<span id="cb8-256"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  COD_MOD AS code_modalite, </span></span>
-<span id="cb8-258"><span class="vs" style="color: #20794D;
+<span id="cb8-257"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  LIB_MOD AS description_modalite,</span></span>
-<span id="cb8-259"><span class="vs" style="color: #20794D;
+<span id="cb8-258"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  LONG_VAR as longueur_variable`</span></span>
-<span id="cb8-260"></span>
-<span id="cb8-261">db <span class="op" style="color: #5E5E5E;
+<span id="cb8-259"></span>
+<span id="cb8-260">db <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> {</span>
-<span id="cb8-262">  <span class="kw" style="color: #003B4F;
+<span id="cb8-261">  <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> configuredClient <span class="op" style="color: #5E5E5E;
@@ -5821,8 +5821,8 @@ background-color: null;
 font-style: inherit;">of</span>()<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb8-263"></span>
-<span id="cb8-264">  <span class="cf" style="color: #003B4F;
+<span id="cb8-262"></span>
+<span id="cb8-263">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">await</span> configuredClient<span class="op" style="color: #5E5E5E;
@@ -5832,13 +5832,13 @@ background-color: null;
 font-style: inherit;">query</span>(<span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb8-265"><span class="vs" style="color: #20794D;
+<span id="cb8-264"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    CREATE OR REPLACE VIEW table_individu </span></span>
-<span id="cb8-266"><span class="vs" style="color: #20794D;
+<span id="cb8-265"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    AS SELECT *</span></span>
-<span id="cb8-267"><span class="vs" style="color: #20794D;
+<span id="cb8-266"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    FROM read_parquet('</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5847,11 +5847,11 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">')`</span></span>
-<span id="cb8-268">  ) <span class="op" style="color: #5E5E5E;
+<span id="cb8-267">  ) <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb8-269"></span>
-<span id="cb8-270">  <span class="cf" style="color: #003B4F;
+<span id="cb8-268"></span>
+<span id="cb8-269">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">await</span> configuredClient<span class="op" style="color: #5E5E5E;
@@ -5861,13 +5861,13 @@ background-color: null;
 font-style: inherit;">query</span>(<span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb8-271"><span class="vs" style="color: #20794D;
+<span id="cb8-270"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    CREATE OR REPLACE VIEW table_logement </span></span>
-<span id="cb8-272"><span class="vs" style="color: #20794D;
+<span id="cb8-271"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    AS SELECT *</span></span>
-<span id="cb8-273"><span class="vs" style="color: #20794D;
+<span id="cb8-272"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    FROM read_parquet('</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5876,11 +5876,11 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">')`</span></span>
-<span id="cb8-274">  ) <span class="op" style="color: #5E5E5E;
+<span id="cb8-273">  ) <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb8-275">  </span>
-<span id="cb8-276">  <span class="cf" style="color: #003B4F;
+<span id="cb8-274">  </span>
+<span id="cb8-275">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">await</span> configuredClient<span class="op" style="color: #5E5E5E;
@@ -5890,10 +5890,10 @@ background-color: null;
 font-style: inherit;">query</span>(<span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb8-277"><span class="vs" style="color: #20794D;
+<span id="cb8-276"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    CREATE OR REPLACE VIEW documentation_indiv</span></span>
-<span id="cb8-278"><span class="vs" style="color: #20794D;
+<span id="cb8-277"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    AS </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5908,11 +5908,11 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">', header=true)`</span></span>
-<span id="cb8-279">  ) <span class="op" style="color: #5E5E5E;
+<span id="cb8-278">  ) <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb8-280"></span>
-<span id="cb8-281">  <span class="cf" style="color: #003B4F;
+<span id="cb8-279"></span>
+<span id="cb8-280">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">await</span> configuredClient<span class="op" style="color: #5E5E5E;
@@ -5922,10 +5922,10 @@ background-color: null;
 font-style: inherit;">query</span>(<span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb8-282"><span class="vs" style="color: #20794D;
+<span id="cb8-281"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    CREATE OR REPLACE VIEW documentation_logement</span></span>
-<span id="cb8-283"><span class="vs" style="color: #20794D;
+<span id="cb8-282"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    AS </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -5940,15 +5940,15 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">', header=true)`</span></span>
-<span id="cb8-284">  ) <span class="op" style="color: #5E5E5E;
+<span id="cb8-283">  ) <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb8-285"></span>
-<span id="cb8-286">  <span class="cf" style="color: #003B4F;
+<span id="cb8-284"></span>
+<span id="cb8-285">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> configuredClient</span>
-<span id="cb8-287">}</span></code></pre></div></div>
+<span id="cb8-286">}</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-4-1" data-nodetype="declaration">
@@ -6589,28 +6589,28 @@ font-style: inherit;">head</span>(documentation_logement))</span></code></pre></
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb16" data-startfrom="260" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 259;"><span id="cb16-260">schema_table_individu <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb16" data-startfrom="259" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 258;"><span id="cb16-259">schema_table_individu <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb16-261">  <span class="st" style="color: #20794D;
+<span id="cb16-260">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM documentation_indiv"</span></span>
-<span id="cb16-262">  )</span>
-<span id="cb16-263">schema_table_logement <span class="op" style="color: #5E5E5E;
+<span id="cb16-261">  )</span>
+<span id="cb16-262">schema_table_logement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb16-264">  <span class="st" style="color: #20794D;
+<span id="cb16-263">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM documentation_logement"</span></span>
-<span id="cb16-265">  )</span></code></pre></div></div>
+<span id="cb16-264">  )</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-5-1" data-nodetype="declaration">
@@ -6628,7 +6628,7 @@ font-style: inherit;">"SELECT * FROM documentation_logement"</span></span>
 </div>
 <p>Voici le dictionnaire des variables de la table logement:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb17" data-startfrom="266" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 265;"><span id="cb17-266">viewof search_logement <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb17" data-startfrom="265" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 264;"><span id="cb17-265">viewof search_logement <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -6637,14 +6637,14 @@ background-color: null;
 font-style: inherit;">search</span>(schema_table_logement<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span> {</span>
-<span id="cb17-267">  <span class="dt" style="color: #AD0000;
+<span id="cb17-266">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">placeholder</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Rechercher une information dans la table logement"</span></span>
-<span id="cb17-268">})</span></code></pre></div></div>
+<span id="cb17-267">})</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="declaration">
 
@@ -6652,7 +6652,7 @@ font-style: inherit;">"Rechercher une information dans la table logement"</span>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="273" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 272;"><span id="cb18-273">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="272" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 271;"><span id="cb18-272">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -6665,7 +6665,7 @@ font-style: inherit;">table</span>(search_logement)</span></code></pre></div></d
 </div>
 <p>Et voici celui de la table individus:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb19" data-startfrom="280" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 279;"><span id="cb19-280">viewof search_individus <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb19" data-startfrom="279" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 278;"><span id="cb19-279">viewof search_individus <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -6674,14 +6674,14 @@ background-color: null;
 font-style: inherit;">search</span>(schema_table_individu<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span> {</span>
-<span id="cb19-281">  <span class="dt" style="color: #AD0000;
+<span id="cb19-280">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">placeholder</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Rechercher une information dans la table individus"</span></span>
-<span id="cb19-282">})</span></code></pre></div></div>
+<span id="cb19-281">})</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="declaration">
 
@@ -6689,7 +6689,7 @@ font-style: inherit;">"Rechercher une information dans la table individus"</span
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb20" data-startfrom="316" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 315;"><span id="cb20-316">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb20" data-startfrom="315" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 314;"><span id="cb20-315">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -6761,22 +6761,22 @@ font-style: inherit;">"catégorie"</span>))</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb25" data-startfrom="351" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 350;"><span id="cb25-351">query <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb25" data-startfrom="350" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 349;"><span id="cb25-350">query <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM documentation_logement WHERE CONTAINS(description_variable, 'Catégorie')"</span></span>
-<span id="cb25-352">Inputs<span class="op" style="color: #5E5E5E;
+<span id="cb25-351">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb25-353">    db<span class="op" style="color: #5E5E5E;
+<span id="cb25-352">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(query)</span>
-<span id="cb25-354">)</span></code></pre></div></div>
+<span id="cb25-353">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-10-1" data-nodetype="declaration">
@@ -6882,29 +6882,29 @@ font-style: inherit;">"Z"</span>))</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb30" data-startfrom="397" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 396;"><span id="cb30-397">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb30" data-startfrom="396" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 395;"><span id="cb30-396">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb30-398">  db<span class="op" style="color: #5E5E5E;
+<span id="cb30-397">  db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb30-399">    <span class="st" style="color: #20794D;
+<span id="cb30-398">    <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM documentation_indiv WHERE CONTAINS(code_modalite, 'Z')"</span></span>
-<span id="cb30-400">  )<span class="op" style="color: #5E5E5E;
+<span id="cb30-399">  )<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb30-401">  {</span>
-<span id="cb30-402">    <span class="dt" style="color: #AD0000;
+<span id="cb30-400">  {</span>
+<span id="cb30-401">    <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">columns</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> [</span>
-<span id="cb30-403">      <span class="st" style="color: #20794D;
+<span id="cb30-402">      <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"nom_variable"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -6913,7 +6913,7 @@ background-color: null;
 font-style: inherit;">"code_modalite"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb30-404">      <span class="st" style="color: #20794D;
+<span id="cb30-403">      <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"description_modalite"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -6922,12 +6922,12 @@ background-color: null;
 font-style: inherit;">"description_variable"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb30-405">      <span class="st" style="color: #20794D;
+<span id="cb30-404">      <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"type_variable"</span></span>
-<span id="cb30-406">      ]</span>
-<span id="cb30-407">  }</span>
-<span id="cb30-408">)</span></code></pre></div></div>
+<span id="cb30-405">      ]</span>
+<span id="cb30-406">  }</span>
+<span id="cb30-407">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-11" data-nodetype="expression">
 
@@ -6994,19 +6994,19 @@ font-style: inherit;">5</span>)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb35" data-startfrom="406" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 405;"><span id="cb35-406">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb35" data-startfrom="405" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 404;"><span id="cb35-405">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb35-407">    db<span class="op" style="color: #5E5E5E;
+<span id="cb35-406">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM table_logement LIMIT 5"</span>)</span>
-<span id="cb35-408">)</span></code></pre></div></div>
+<span id="cb35-407">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-12" data-nodetype="expression">
 
@@ -7015,19 +7015,19 @@ font-style: inherit;">"SELECT * FROM table_logement LIMIT 5"</span>)</span>
 </div>
 <p>Pour un échantillon aléatoire, la commande à utiliser est <code>USING SAMPLE</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb36" data-startfrom="435" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 434;"><span id="cb36-435">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb36" data-startfrom="434" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 433;"><span id="cb36-434">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb36-436">    db<span class="op" style="color: #5E5E5E;
+<span id="cb36-435">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM table_logement USIN SAMPLE 5"</span>)</span>
-<span id="cb36-437">)</span></code></pre></div></div>
+<span id="cb36-436">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-13" data-nodetype="expression">
 
@@ -7085,19 +7085,19 @@ font-style: inherit;">"SELECT * FROM table_logement USING SAMPLE 5"</span>))</sp
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb41" data-startfrom="470" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 469;"><span id="cb41-470">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb41" data-startfrom="469" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 468;"><span id="cb41-469">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb41-471">    db<span class="op" style="color: #5E5E5E;
+<span id="cb41-470">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM table_logement USING SAMPLE 5"</span>)</span>
-<span id="cb41-472">)</span></code></pre></div></div>
+<span id="cb41-471">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-14" data-nodetype="expression">
 
@@ -7169,19 +7169,19 @@ font-style: inherit;">10</span>)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb46" data-startfrom="502" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 501;"><span id="cb46-502">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb46" data-startfrom="501" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 500;"><span id="cb46-501">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb46-503">    db<span class="op" style="color: #5E5E5E;
+<span id="cb46-502">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT IPONDI AS poids, AGED, VOIT FROM table_individu LIMIT 10"</span>)</span>
-<span id="cb46-504">)</span></code></pre></div></div>
+<span id="cb46-503">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-15" data-nodetype="expression">
 
@@ -7252,19 +7252,19 @@ font-style: inherit;">10</span>)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb51" data-startfrom="540" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 539;"><span id="cb51-540">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb51" data-startfrom="539" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 538;"><span id="cb51-539">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb51-541">    db<span class="op" style="color: #5E5E5E;
+<span id="cb51-540">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT IPONDI AS poids, COLUMNS('.*AGE.*') FROM table_individu LIMIT 10"</span>)</span>
-<span id="cb51-542">)</span></code></pre></div></div>
+<span id="cb51-541">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-16" data-nodetype="expression">
 
@@ -7342,19 +7342,19 @@ font-style: inherit;">10</span>)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb56" data-startfrom="573" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 572;"><span id="cb56-573">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb56" data-startfrom="572" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 571;"><span id="cb56-572">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb56-574">    db<span class="op" style="color: #5E5E5E;
+<span id="cb56-573">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM table_individu WHERE DEPT IN ('11', '31', '34') LIMIT 10"</span>)</span>
-<span id="cb56-575">)</span></code></pre></div></div>
+<span id="cb56-574">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-17" data-nodetype="expression">
 
@@ -7580,7 +7580,7 @@ font-style: inherit;">%in%</span> liste_regions)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb61" data-startfrom="615" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 614;"><span id="cb61-615">liste_regions <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb61" data-startfrom="614" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 613;"><span id="cb61-614">liste_regions <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
 background-color: null;
@@ -7593,7 +7593,7 @@ background-color: null;
 font-style: inherit;">,</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"34"</span>]</span>
-<span id="cb61-616">liste_regions_sql <span class="op" style="color: #5E5E5E;
+<span id="cb61-615">liste_regions_sql <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> liste_regions<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -7617,12 +7617,12 @@ background-color: null;
 font-style: inherit;">join</span>(<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">","</span>)</span>
-<span id="cb61-617">Inputs<span class="op" style="color: #5E5E5E;
+<span id="cb61-616">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb61-618">    db<span class="op" style="color: #5E5E5E;
+<span id="cb61-617">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -7635,7 +7635,7 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">) LIMIT 10`</span>)</span>
-<span id="cb61-619">)</span></code></pre></div></div>
+<span id="cb61-618">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-18-1" data-nodetype="declaration">
@@ -7735,21 +7735,21 @@ font-style: inherit;"># table_logement %&gt;% filter(COMMUNE == "06088", AEMM &g
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb66" data-startfrom="669" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 668;"><span id="cb66-669">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb66" data-startfrom="668" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 667;"><span id="cb66-668">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb66-670">    db<span class="op" style="color: #5E5E5E;
+<span id="cb66-669">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb66-671">        <span class="st" style="color: #20794D;
+<span id="cb66-670">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM &gt; 2020"</span></span>
-<span id="cb66-672">    )</span>
-<span id="cb66-673">)</span></code></pre></div></div>
+<span id="cb66-671">    )</span>
+<span id="cb66-672">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-19" data-nodetype="expression">
 
@@ -7880,21 +7880,21 @@ font-style: inherit;">arrange</span>(ARM)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb71" data-startfrom="703" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 702;"><span id="cb71-703">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb71" data-startfrom="702" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 701;"><span id="cb71-702">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb71-704">    db<span class="op" style="color: #5E5E5E;
+<span id="cb71-703">    db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb71-705">        <span class="st" style="color: #20794D;
+<span id="cb71-704">        <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"SELECT DISTINCT(ARM) FROM table_logement WHERE NOT CONTAINS(ARM, 'ZZZZZ') ORDER BY ARM"</span></span>
-<span id="cb71-706">    )</span>
-<span id="cb71-707">)</span></code></pre></div></div>
+<span id="cb71-705">    )</span>
+<span id="cb71-706">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-20" data-nodetype="expression">
 
@@ -8053,39 +8053,39 @@ font-style: inherit;">*</span> INPER)))</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb76" data-startfrom="758" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 757;"><span id="cb76-758">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb76" data-startfrom="757" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 756;"><span id="cb76-757">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb76-759">  db<span class="op" style="color: #5E5E5E;
+<span id="cb76-758">  db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb76-760">    <span class="vs" style="color: #20794D;
+<span id="cb76-759">    <span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb76-761"><span class="vs" style="color: #20794D;
+<span id="cb76-760"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    SELECT CAST(</span></span>
-<span id="cb76-762"><span class="vs" style="color: #20794D;
+<span id="cb76-761"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">      SUM(IPONDL*CAST(INPER AS INT)) AS INT</span></span>
-<span id="cb76-763"><span class="vs" style="color: #20794D;
+<span id="cb76-762"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    ) AS habitants_toulouse_demenagement</span></span>
-<span id="cb76-764"><span class="vs" style="color: #20794D;
+<span id="cb76-763"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    FROM table_logement</span></span>
-<span id="cb76-765"><span class="vs" style="color: #20794D;
+<span id="cb76-764"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    WHERE COMMUNE == '31555' AND IRANM NOT IN ('1', 'Z') AND INPER != 'Y'</span></span>
-<span id="cb76-766"><span class="vs" style="color: #20794D;
+<span id="cb76-765"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    `</span></span>
-<span id="cb76-767">  )</span>
-<span id="cb76-768">)</span></code></pre></div></div>
+<span id="cb76-766">  )</span>
+<span id="cb76-767">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-21" data-nodetype="expression">
 
@@ -8792,42 +8792,42 @@ font-style: inherit;">"Âge"</span>)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb83" data-startfrom="776" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 775;"><span id="cb83-776">pyramide_ages <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb83" data-startfrom="775" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 774;"><span id="cb83-775">pyramide_ages <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
+<span id="cb83-776"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
 <span id="cb83-777"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">`</span></span>
+font-style: inherit;">SELECT</span></span>
 <span id="cb83-778"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">SELECT</span></span>
+font-style: inherit;">  CAST(SUM(IPONDI) AS INT) AS individus,</span></span>
 <span id="cb83-779"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">  CAST(SUM(IPONDI) AS INT) AS individus,</span></span>
+font-style: inherit;">  CAST(AGED AS INT) AS AGED,</span></span>
 <span id="cb83-780"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">  CAST(AGED AS INT) AS AGED,</span></span>
+font-style: inherit;">  DEPT AS departement</span></span>
 <span id="cb83-781"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">  DEPT AS departement</span></span>
+font-style: inherit;">FROM table_individu</span></span>
 <span id="cb83-782"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">FROM table_individu</span></span>
+font-style: inherit;">  WHERE DEPT IN ('11', '31', '34')</span></span>
 <span id="cb83-783"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">  WHERE DEPT IN ('11', '31', '34')</span></span>
+font-style: inherit;">GROUP BY AGED, DEPT ORDER BY DEPT, AGED</span></span>
 <span id="cb83-784"><span class="vs" style="color: #20794D;
 background-color: null;
-font-style: inherit;">GROUP BY AGED, DEPT ORDER BY DEPT, AGED</span></span>
-<span id="cb83-785"><span class="vs" style="color: #20794D;
-background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb83-786">)</span>
-<span id="cb83-787">Inputs<span class="op" style="color: #5E5E5E;
+<span id="cb83-785">)</span>
+<span id="cb83-786">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -8848,12 +8848,12 @@ font-style: inherit;">table</span>(pyramide_ages)</span></code></pre></div></div
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb84" data-startfrom="825" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 824;"><span id="cb84-825">Plot<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb84" data-startfrom="824" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 823;"><span id="cb84-824">Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot</span>({</span>
-<span id="cb84-826">  <span class="dt" style="color: #AD0000;
+<span id="cb84-825">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">x</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8867,7 +8867,7 @@ font-weight: bold;
 font-style: inherit;">null</span>}<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-827">  <span class="dt" style="color: #AD0000;
+<span id="cb84-826">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">y</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8881,20 +8881,20 @@ font-weight: bold;
 font-style: inherit;">true</span>}<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-828">  <span class="dt" style="color: #AD0000;
+<span id="cb84-827">  <span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">marks</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">:</span> [</span>
-<span id="cb84-829">    Plot<span class="op" style="color: #5E5E5E;
+<span id="cb84-828">    Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">barY</span>(</span>
-<span id="cb84-830">        pyramide_ages<span class="op" style="color: #5E5E5E;
+<span id="cb84-829">        pyramide_ages<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-831">        {<span class="dt" style="color: #AD0000;
+<span id="cb84-830">        {<span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">x</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -8943,10 +8943,10 @@ font-style: inherit;">:</span> <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">true</span>}</span>
-<span id="cb84-832">        )<span class="op" style="color: #5E5E5E;
+<span id="cb84-831">        )<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-833">    Plot<span class="op" style="color: #5E5E5E;
+<span id="cb84-832">    Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -8963,15 +8963,15 @@ background-color: null;
 font-style: inherit;">"red"</span>})<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-834">    Plot<span class="op" style="color: #5E5E5E;
+<span id="cb84-833">    Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">tickY</span>(</span>
-<span id="cb84-835">        pyramide_ages<span class="op" style="color: #5E5E5E;
+<span id="cb84-834">        pyramide_ages<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-836">        {<span class="dt" style="color: #AD0000;
+<span id="cb84-835">        {<span class="dt" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">x</span><span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -9003,10 +9003,10 @@ background-color: null;
 font-style: inherit;">:</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'departement'</span>}</span>
-<span id="cb84-837">        )<span class="op" style="color: #5E5E5E;
+<span id="cb84-836">        )<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-838">    Plot<span class="op" style="color: #5E5E5E;
+<span id="cb84-837">    Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -9015,7 +9015,7 @@ background-color: null;
 font-style: inherit;">0</span>])<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-839">    Plot<span class="op" style="color: #5E5E5E;
+<span id="cb84-838">    Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -9028,7 +9028,7 @@ background-color: null;
 font-style: inherit;">"Population (en milliers)"</span>})<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb84-840">    Plot<span class="op" style="color: #5E5E5E;
+<span id="cb84-839">    Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -9067,8 +9067,8 @@ background-color: null;
 font-style: inherit;">:</span> <span class="dv" style="color: #AD0000;
 background-color: null;
 font-style: inherit;">12</span>})</span>
-<span id="cb84-841">  ]</span>
-<span id="cb84-842">})</span></code></pre></div></div>
+<span id="cb84-840">  ]</span>
+<span id="cb84-841">})</span></code></pre></div></div>
 <div id="fig-ojs-cell-23" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ojs-cell-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -9231,45 +9231,45 @@ font-style: inherit;">desc</span>(individus_recenses))</span></code></pre></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb89" data-startfrom="923" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 922;"><span id="cb89-923">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb89" data-startfrom="922" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 921;"><span id="cb89-922">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb89-924">  db<span class="op" style="color: #5E5E5E;
+<span id="cb89-923">  db<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb89-925">  <span class="vs" style="color: #20794D;
+<span id="cb89-924">  <span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb89-926"><span class="vs" style="color: #20794D;
+<span id="cb89-925"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  SELECT</span></span>
-<span id="cb89-927"><span class="vs" style="color: #20794D;
+<span id="cb89-926"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    CAST(SUM(IPONDI) AS INT) AS individus_recenses,</span></span>
-<span id="cb89-928"><span class="vs" style="color: #20794D;
+<span id="cb89-927"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    DEPT</span></span>
-<span id="cb89-929"><span class="vs" style="color: #20794D;
+<span id="cb89-928"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  FROM table_individu</span></span>
-<span id="cb89-930"><span class="vs" style="color: #20794D;
+<span id="cb89-929"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    WHERE AGED &gt;= 100</span></span>
-<span id="cb89-931"><span class="vs" style="color: #20794D;
+<span id="cb89-930"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  GROUP BY DEPT</span></span>
-<span id="cb89-932"><span class="vs" style="color: #20794D;
+<span id="cb89-931"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  ORDER BY individus_recenses DESC</span></span>
-<span id="cb89-933"><span class="vs" style="color: #20794D;
+<span id="cb89-932"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  `</span></span>
-<span id="cb89-934">  )</span>
-<span id="cb89-935">)</span></code></pre></div></div>
+<span id="cb89-933">  )</span>
+<span id="cb89-934">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-24" data-nodetype="expression">
 
@@ -9648,20 +9648,20 @@ font-style: inherit;">arrange</span>(recenses)</span></code></pre></div></div>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb101" data-startfrom="944" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 943;"><span id="cb101-944">proxy <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb101" data-startfrom="943" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 942;"><span id="cb101-943">proxy <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://corsproxy.io/?"</span></span>
-<span id="cb101-945">url_cog <span class="op" style="color: #5E5E5E;
+<span id="cb101-944">url_cog <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://www.insee.fr/fr/statistiques/fichier/6800675/v_commune_2023.csv"</span></span>
-<span id="cb101-946">db2 <span class="op" style="color: #5E5E5E;
+<span id="cb101-945">db2 <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> {</span>
-<span id="cb101-947">  <span class="kw" style="color: #003B4F;
+<span id="cb101-946">  <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> configuredClient <span class="op" style="color: #5E5E5E;
@@ -9672,7 +9672,7 @@ font-weight: bold;
 font-style: inherit;">await</span> db <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb101-948">  <span class="cf" style="color: #003B4F;
+<span id="cb101-947">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">await</span> configuredClient<span class="op" style="color: #5E5E5E;
@@ -9680,13 +9680,13 @@ background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(</span>
-<span id="cb101-949">    <span class="vs" style="color: #20794D;
+<span id="cb101-948">    <span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb101-950"><span class="vs" style="color: #20794D;
+<span id="cb101-949"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    CREATE OR REPLACE VIEW cog2023 AS</span></span>
-<span id="cb101-951"><span class="vs" style="color: #20794D;
+<span id="cb101-950"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    SELECT * FROM read_csv_auto('</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -9697,19 +9697,19 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">', header = true)</span></span>
-<span id="cb101-952"><span class="vs" style="color: #20794D;
+<span id="cb101-951"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    `</span></span>
-<span id="cb101-953">    )</span>
-<span id="cb101-954"></span>
-<span id="cb101-955">  <span class="cf" style="color: #003B4F;
+<span id="cb101-952">    )</span>
+<span id="cb101-953"></span>
+<span id="cb101-954">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> configuredClient <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">;</span></span>
-<span id="cb101-956"></span>
-<span id="cb101-957">}</span></code></pre></div></div>
+<span id="cb101-955"></span>
+<span id="cb101-956">}</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-25-1" data-nodetype="declaration">
@@ -9736,19 +9736,19 @@ font-style: inherit;">;</span></span>
 <div class="cell">
 <details class="code-fold">
 <summary>Requête Observable pour explorer les premières lignes</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb102" data-startfrom="956" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 955;"><span id="cb102-956">Inputs<span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb102" data-startfrom="955" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 954;"><span id="cb102-955">Inputs<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">table</span>(</span>
-<span id="cb102-957">  db2<span class="op" style="color: #5E5E5E;
+<span id="cb102-956">  db2<span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">.</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">query</span>(<span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`SELECT * FROM cog2023 LIMIT 10`</span>)</span>
-<span id="cb102-958">)</span></code></pre></div></div>
+<span id="cb102-957">)</span></code></pre></div></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-26" data-nodetype="expression">

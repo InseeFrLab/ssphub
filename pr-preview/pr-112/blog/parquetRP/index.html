@@ -315,11 +315,11 @@ Afficher le dictionnaire des variables
 </summary>
 <p>Il est possible de rechercher dans la documentation des noms de variables ou des informations dans les descriptions. Lorsqu’une variable présente de nombreuses modalités, seules la première est la dernière sont retournées. Un exemple ci-dessous montre comment utiliser une requête SQL pour récupérer l’ensemble des valeurs d’une telle variable.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="68" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 67;"><span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>viewof unique_description_filter <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(</span>
-<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>  documentation<span class="op">,</span> {</span>
-<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Trouver une information dans la documentation"</span></span>
-<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="67" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 66;"><span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>viewof unique_description_filter <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>  documentation<span class="op">,</span> {</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>    <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Trouver une information dans la documentation"</span></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -327,14 +327,14 @@ Afficher le dictionnaire des variables
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="77" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 76;"><span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>table_filtre_description <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  unique_description_filter<span class="op">,</span></span>
-<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>    <span class="dt">header</span><span class="op">:</span> {</span>
-<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>      <span class="dt">description_variable</span><span class="op">:</span> <span class="st">"Description de la variable"</span></span>
-<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>    }    </span>
-<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="76" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 75;"><span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>table_filtre_description <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  unique_description_filter<span class="op">,</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>    <span class="dt">header</span><span class="op">:</span> {</span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>      <span class="dt">description_variable</span><span class="op">:</span> <span class="st">"Description de la variable"</span></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>    }    </span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
@@ -342,7 +342,7 @@ Afficher le dictionnaire des variables
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="89" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 88;"><span id="cb3-89"><a href="#cb3-89" aria-hidden="true" tabindex="-1"></a>documentation <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT * FROM documentation_indiv`</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="88" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 87;"><span id="cb3-88"><a href="#cb3-88" aria-hidden="true" tabindex="-1"></a>documentation <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT * FROM documentation_indiv`</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="declaration">
 
@@ -465,46 +465,46 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 <span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="248" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 247;"><span id="cb8-248"><a href="#cb8-248" aria-hidden="true" tabindex="-1"></a>url_table_logement <span class="op">=</span> <span class="st">"https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/20231023-123618/fd-logemt-2020.parquet"</span></span>
-<span id="cb8-249"><a href="#cb8-249" aria-hidden="true" tabindex="-1"></a>url_table_individu <span class="op">=</span> <span class="st">"https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/20231023-122841/fd-indcvi-2020.parquet"</span></span>
-<span id="cb8-250"><a href="#cb8-250" aria-hidden="true" tabindex="-1"></a>url_doc_logement <span class="op">=</span> <span class="st">"https://www.data.gouv.fr/fr/datasets/r/c274705f-98db-4d9b-9674-578e04f03198"</span></span>
-<span id="cb8-251"><a href="#cb8-251" aria-hidden="true" tabindex="-1"></a>url_doc_individu <span class="op">=</span> <span class="st">"https://www.data.gouv.fr/fr/datasets/r/1c6c6ab2-b766-41a4-90f0-043173d5e9d1"</span></span>
-<span id="cb8-252"><a href="#cb8-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-253"><a href="#cb8-253" aria-hidden="true" tabindex="-1"></a>renommage_documentation <span class="op">=</span> <span class="vs">`SELECT </span></span>
-<span id="cb8-254"><a href="#cb8-254" aria-hidden="true" tabindex="-1"></a><span class="vs">  COD_VAR AS nom_variable, </span></span>
-<span id="cb8-255"><a href="#cb8-255" aria-hidden="true" tabindex="-1"></a><span class="vs">  LIB_VAR AS description_variable, </span></span>
-<span id="cb8-256"><a href="#cb8-256" aria-hidden="true" tabindex="-1"></a><span class="vs">  TYPE_VAR AS type_variable, </span></span>
-<span id="cb8-257"><a href="#cb8-257" aria-hidden="true" tabindex="-1"></a><span class="vs">  COD_MOD AS code_modalite, </span></span>
-<span id="cb8-258"><a href="#cb8-258" aria-hidden="true" tabindex="-1"></a><span class="vs">  LIB_MOD AS description_modalite,</span></span>
-<span id="cb8-259"><a href="#cb8-259" aria-hidden="true" tabindex="-1"></a><span class="vs">  LONG_VAR as longueur_variable`</span></span>
-<span id="cb8-260"><a href="#cb8-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-261"><a href="#cb8-261" aria-hidden="true" tabindex="-1"></a>db <span class="op">=</span> {</span>
-<span id="cb8-262"><a href="#cb8-262" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> configuredClient <span class="op">=</span> <span class="cf">await</span> DuckDBClient<span class="op">.</span><span class="fu">of</span>()<span class="op">;</span></span>
-<span id="cb8-263"><a href="#cb8-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-264"><a href="#cb8-264" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
-<span id="cb8-265"><a href="#cb8-265" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW table_individu </span></span>
-<span id="cb8-266"><a href="#cb8-266" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS SELECT *</span></span>
-<span id="cb8-267"><a href="#cb8-267" aria-hidden="true" tabindex="-1"></a><span class="vs">    FROM read_parquet('</span><span class="sc">${</span>url_table_individu<span class="sc">}</span><span class="vs">')`</span></span>
-<span id="cb8-268"><a href="#cb8-268" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
-<span id="cb8-269"><a href="#cb8-269" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-270"><a href="#cb8-270" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
-<span id="cb8-271"><a href="#cb8-271" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW table_logement </span></span>
-<span id="cb8-272"><a href="#cb8-272" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS SELECT *</span></span>
-<span id="cb8-273"><a href="#cb8-273" aria-hidden="true" tabindex="-1"></a><span class="vs">    FROM read_parquet('</span><span class="sc">${</span>url_table_logement<span class="sc">}</span><span class="vs">')`</span></span>
-<span id="cb8-274"><a href="#cb8-274" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
-<span id="cb8-275"><a href="#cb8-275" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb8-276"><a href="#cb8-276" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
-<span id="cb8-277"><a href="#cb8-277" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW documentation_indiv</span></span>
-<span id="cb8-278"><a href="#cb8-278" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS </span><span class="sc">${</span>renommage_documentation<span class="sc">}</span><span class="vs"> FROM read_csv_auto('</span><span class="sc">${</span>url_doc_individu<span class="sc">}</span><span class="vs">', header=true)`</span></span>
-<span id="cb8-279"><a href="#cb8-279" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
-<span id="cb8-280"><a href="#cb8-280" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-281"><a href="#cb8-281" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
-<span id="cb8-282"><a href="#cb8-282" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW documentation_logement</span></span>
-<span id="cb8-283"><a href="#cb8-283" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS </span><span class="sc">${</span>renommage_documentation<span class="sc">}</span><span class="vs"> FROM read_csv_auto('</span><span class="sc">${</span>url_doc_logement<span class="sc">}</span><span class="vs">', header=true)`</span></span>
-<span id="cb8-284"><a href="#cb8-284" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
-<span id="cb8-285"><a href="#cb8-285" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-286"><a href="#cb8-286" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> configuredClient</span>
-<span id="cb8-287"><a href="#cb8-287" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="247" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 246;"><span id="cb8-247"><a href="#cb8-247" aria-hidden="true" tabindex="-1"></a>url_table_logement <span class="op">=</span> <span class="st">"https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-logements-ordinaires-en-2020-1/20231023-123618/fd-logemt-2020.parquet"</span></span>
+<span id="cb8-248"><a href="#cb8-248" aria-hidden="true" tabindex="-1"></a>url_table_individu <span class="op">=</span> <span class="st">"https://static.data.gouv.fr/resources/recensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1/20231023-122841/fd-indcvi-2020.parquet"</span></span>
+<span id="cb8-249"><a href="#cb8-249" aria-hidden="true" tabindex="-1"></a>url_doc_logement <span class="op">=</span> <span class="st">"https://www.data.gouv.fr/fr/datasets/r/c274705f-98db-4d9b-9674-578e04f03198"</span></span>
+<span id="cb8-250"><a href="#cb8-250" aria-hidden="true" tabindex="-1"></a>url_doc_individu <span class="op">=</span> <span class="st">"https://www.data.gouv.fr/fr/datasets/r/1c6c6ab2-b766-41a4-90f0-043173d5e9d1"</span></span>
+<span id="cb8-251"><a href="#cb8-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-252"><a href="#cb8-252" aria-hidden="true" tabindex="-1"></a>renommage_documentation <span class="op">=</span> <span class="vs">`SELECT </span></span>
+<span id="cb8-253"><a href="#cb8-253" aria-hidden="true" tabindex="-1"></a><span class="vs">  COD_VAR AS nom_variable, </span></span>
+<span id="cb8-254"><a href="#cb8-254" aria-hidden="true" tabindex="-1"></a><span class="vs">  LIB_VAR AS description_variable, </span></span>
+<span id="cb8-255"><a href="#cb8-255" aria-hidden="true" tabindex="-1"></a><span class="vs">  TYPE_VAR AS type_variable, </span></span>
+<span id="cb8-256"><a href="#cb8-256" aria-hidden="true" tabindex="-1"></a><span class="vs">  COD_MOD AS code_modalite, </span></span>
+<span id="cb8-257"><a href="#cb8-257" aria-hidden="true" tabindex="-1"></a><span class="vs">  LIB_MOD AS description_modalite,</span></span>
+<span id="cb8-258"><a href="#cb8-258" aria-hidden="true" tabindex="-1"></a><span class="vs">  LONG_VAR as longueur_variable`</span></span>
+<span id="cb8-259"><a href="#cb8-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-260"><a href="#cb8-260" aria-hidden="true" tabindex="-1"></a>db <span class="op">=</span> {</span>
+<span id="cb8-261"><a href="#cb8-261" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> configuredClient <span class="op">=</span> <span class="cf">await</span> DuckDBClient<span class="op">.</span><span class="fu">of</span>()<span class="op">;</span></span>
+<span id="cb8-262"><a href="#cb8-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-263"><a href="#cb8-263" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb8-264"><a href="#cb8-264" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW table_individu </span></span>
+<span id="cb8-265"><a href="#cb8-265" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS SELECT *</span></span>
+<span id="cb8-266"><a href="#cb8-266" aria-hidden="true" tabindex="-1"></a><span class="vs">    FROM read_parquet('</span><span class="sc">${</span>url_table_individu<span class="sc">}</span><span class="vs">')`</span></span>
+<span id="cb8-267"><a href="#cb8-267" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
+<span id="cb8-268"><a href="#cb8-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-269"><a href="#cb8-269" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb8-270"><a href="#cb8-270" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW table_logement </span></span>
+<span id="cb8-271"><a href="#cb8-271" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS SELECT *</span></span>
+<span id="cb8-272"><a href="#cb8-272" aria-hidden="true" tabindex="-1"></a><span class="vs">    FROM read_parquet('</span><span class="sc">${</span>url_table_logement<span class="sc">}</span><span class="vs">')`</span></span>
+<span id="cb8-273"><a href="#cb8-273" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
+<span id="cb8-274"><a href="#cb8-274" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb8-275"><a href="#cb8-275" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb8-276"><a href="#cb8-276" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW documentation_indiv</span></span>
+<span id="cb8-277"><a href="#cb8-277" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS </span><span class="sc">${</span>renommage_documentation<span class="sc">}</span><span class="vs"> FROM read_csv_auto('</span><span class="sc">${</span>url_doc_individu<span class="sc">}</span><span class="vs">', header=true)`</span></span>
+<span id="cb8-278"><a href="#cb8-278" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
+<span id="cb8-279"><a href="#cb8-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-280"><a href="#cb8-280" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb8-281"><a href="#cb8-281" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW documentation_logement</span></span>
+<span id="cb8-282"><a href="#cb8-282" aria-hidden="true" tabindex="-1"></a><span class="vs">    AS </span><span class="sc">${</span>renommage_documentation<span class="sc">}</span><span class="vs"> FROM read_csv_auto('</span><span class="sc">${</span>url_doc_logement<span class="sc">}</span><span class="vs">', header=true)`</span></span>
+<span id="cb8-283"><a href="#cb8-283" aria-hidden="true" tabindex="-1"></a>  ) <span class="op">;</span></span>
+<span id="cb8-284"><a href="#cb8-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-285"><a href="#cb8-285" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> configuredClient</span>
+<span id="cb8-286"><a href="#cb8-286" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-4-1" data-nodetype="declaration">
@@ -772,12 +772,12 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb16" data-startfrom="260" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 259;"><span id="cb16-260"><a href="#cb16-260" aria-hidden="true" tabindex="-1"></a>schema_table_individu <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb16-261"><a href="#cb16-261" aria-hidden="true" tabindex="-1"></a>  <span class="st">"SELECT * FROM documentation_indiv"</span></span>
-<span id="cb16-262"><a href="#cb16-262" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb16-263"><a href="#cb16-263" aria-hidden="true" tabindex="-1"></a>schema_table_logement <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb16-264"><a href="#cb16-264" aria-hidden="true" tabindex="-1"></a>  <span class="st">"SELECT * FROM documentation_logement"</span></span>
-<span id="cb16-265"><a href="#cb16-265" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb16" data-startfrom="259" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 258;"><span id="cb16-259"><a href="#cb16-259" aria-hidden="true" tabindex="-1"></a>schema_table_individu <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb16-260"><a href="#cb16-260" aria-hidden="true" tabindex="-1"></a>  <span class="st">"SELECT * FROM documentation_indiv"</span></span>
+<span id="cb16-261"><a href="#cb16-261" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb16-262"><a href="#cb16-262" aria-hidden="true" tabindex="-1"></a>schema_table_logement <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb16-263"><a href="#cb16-263" aria-hidden="true" tabindex="-1"></a>  <span class="st">"SELECT * FROM documentation_logement"</span></span>
+<span id="cb16-264"><a href="#cb16-264" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-5-1" data-nodetype="declaration">
@@ -795,9 +795,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 <p>Voici le dictionnaire des variables de la table logement:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb17" data-startfrom="266" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 265;"><span id="cb17-266"><a href="#cb17-266" aria-hidden="true" tabindex="-1"></a>viewof search_logement <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(schema_table_logement<span class="op">,</span> {</span>
-<span id="cb17-267"><a href="#cb17-267" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Rechercher une information dans la table logement"</span></span>
-<span id="cb17-268"><a href="#cb17-268" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb17" data-startfrom="265" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 264;"><span id="cb17-265"><a href="#cb17-265" aria-hidden="true" tabindex="-1"></a>viewof search_logement <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(schema_table_logement<span class="op">,</span> {</span>
+<span id="cb17-266"><a href="#cb17-266" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Rechercher une information dans la table logement"</span></span>
+<span id="cb17-267"><a href="#cb17-267" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="declaration">
 
@@ -805,7 +805,7 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="273" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 272;"><span id="cb18-273"><a href="#cb18-273" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(search_logement)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="272" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 271;"><span id="cb18-272"><a href="#cb18-272" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(search_logement)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-7" data-nodetype="expression">
 
@@ -814,9 +814,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 <p>Et voici celui de la table individus:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb19" data-startfrom="280" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 279;"><span id="cb19-280"><a href="#cb19-280" aria-hidden="true" tabindex="-1"></a>viewof search_individus <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(schema_table_individu<span class="op">,</span> {</span>
-<span id="cb19-281"><a href="#cb19-281" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Rechercher une information dans la table individus"</span></span>
-<span id="cb19-282"><a href="#cb19-282" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb19" data-startfrom="279" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 278;"><span id="cb19-279"><a href="#cb19-279" aria-hidden="true" tabindex="-1"></a>viewof search_individus <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(schema_table_individu<span class="op">,</span> {</span>
+<span id="cb19-280"><a href="#cb19-280" aria-hidden="true" tabindex="-1"></a>  <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Rechercher une information dans la table individus"</span></span>
+<span id="cb19-281"><a href="#cb19-281" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="declaration">
 
@@ -824,7 +824,7 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb20" data-startfrom="316" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 315;"><span id="cb20-316"><a href="#cb20-316" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(search_individus)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb20" data-startfrom="315" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 314;"><span id="cb20-315"><a href="#cb20-315" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(search_individus)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="expression">
 
@@ -858,10 +858,10 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb25" data-startfrom="351" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 350;"><span id="cb25-351"><a href="#cb25-351" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> <span class="st">"SELECT * FROM documentation_logement WHERE CONTAINS(description_variable, 'Catégorie')"</span></span>
-<span id="cb25-352"><a href="#cb25-352" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb25-353"><a href="#cb25-353" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(query)</span>
-<span id="cb25-354"><a href="#cb25-354" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb25" data-startfrom="350" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 349;"><span id="cb25-350"><a href="#cb25-350" aria-hidden="true" tabindex="-1"></a>query <span class="op">=</span> <span class="st">"SELECT * FROM documentation_logement WHERE CONTAINS(description_variable, 'Catégorie')"</span></span>
+<span id="cb25-351"><a href="#cb25-351" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb25-352"><a href="#cb25-352" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(query)</span>
+<span id="cb25-353"><a href="#cb25-353" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-10-1" data-nodetype="declaration">
@@ -913,18 +913,18 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb30" data-startfrom="397" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 396;"><span id="cb30-397"><a href="#cb30-397" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb30-398"><a href="#cb30-398" aria-hidden="true" tabindex="-1"></a>  db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb30-399"><a href="#cb30-399" aria-hidden="true" tabindex="-1"></a>    <span class="st">"SELECT * FROM documentation_indiv WHERE CONTAINS(code_modalite, 'Z')"</span></span>
-<span id="cb30-400"><a href="#cb30-400" aria-hidden="true" tabindex="-1"></a>  )<span class="op">,</span></span>
-<span id="cb30-401"><a href="#cb30-401" aria-hidden="true" tabindex="-1"></a>  {</span>
-<span id="cb30-402"><a href="#cb30-402" aria-hidden="true" tabindex="-1"></a>    <span class="dt">columns</span><span class="op">:</span> [</span>
-<span id="cb30-403"><a href="#cb30-403" aria-hidden="true" tabindex="-1"></a>      <span class="st">"nom_variable"</span><span class="op">,</span><span class="st">"code_modalite"</span><span class="op">,</span></span>
-<span id="cb30-404"><a href="#cb30-404" aria-hidden="true" tabindex="-1"></a>      <span class="st">"description_modalite"</span><span class="op">,</span> <span class="st">"description_variable"</span><span class="op">,</span></span>
-<span id="cb30-405"><a href="#cb30-405" aria-hidden="true" tabindex="-1"></a>      <span class="st">"type_variable"</span></span>
-<span id="cb30-406"><a href="#cb30-406" aria-hidden="true" tabindex="-1"></a>      ]</span>
-<span id="cb30-407"><a href="#cb30-407" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb30-408"><a href="#cb30-408" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb30" data-startfrom="396" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 395;"><span id="cb30-396"><a href="#cb30-396" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb30-397"><a href="#cb30-397" aria-hidden="true" tabindex="-1"></a>  db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb30-398"><a href="#cb30-398" aria-hidden="true" tabindex="-1"></a>    <span class="st">"SELECT * FROM documentation_indiv WHERE CONTAINS(code_modalite, 'Z')"</span></span>
+<span id="cb30-399"><a href="#cb30-399" aria-hidden="true" tabindex="-1"></a>  )<span class="op">,</span></span>
+<span id="cb30-400"><a href="#cb30-400" aria-hidden="true" tabindex="-1"></a>  {</span>
+<span id="cb30-401"><a href="#cb30-401" aria-hidden="true" tabindex="-1"></a>    <span class="dt">columns</span><span class="op">:</span> [</span>
+<span id="cb30-402"><a href="#cb30-402" aria-hidden="true" tabindex="-1"></a>      <span class="st">"nom_variable"</span><span class="op">,</span><span class="st">"code_modalite"</span><span class="op">,</span></span>
+<span id="cb30-403"><a href="#cb30-403" aria-hidden="true" tabindex="-1"></a>      <span class="st">"description_modalite"</span><span class="op">,</span> <span class="st">"description_variable"</span><span class="op">,</span></span>
+<span id="cb30-404"><a href="#cb30-404" aria-hidden="true" tabindex="-1"></a>      <span class="st">"type_variable"</span></span>
+<span id="cb30-405"><a href="#cb30-405" aria-hidden="true" tabindex="-1"></a>      ]</span>
+<span id="cb30-406"><a href="#cb30-406" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb30-407"><a href="#cb30-407" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-11" data-nodetype="expression">
 
@@ -965,9 +965,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb35" data-startfrom="406" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 405;"><span id="cb35-406"><a href="#cb35-406" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb35-407"><a href="#cb35-407" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_logement LIMIT 5"</span>)</span>
-<span id="cb35-408"><a href="#cb35-408" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb35" data-startfrom="405" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 404;"><span id="cb35-405"><a href="#cb35-405" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb35-406"><a href="#cb35-406" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_logement LIMIT 5"</span>)</span>
+<span id="cb35-407"><a href="#cb35-407" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-12" data-nodetype="expression">
 
@@ -976,9 +976,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 <p>Pour un échantillon aléatoire, la commande à utiliser est <code>USING SAMPLE</code>.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb36" data-startfrom="435" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 434;"><span id="cb36-435"><a href="#cb36-435" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb36-436"><a href="#cb36-436" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_logement USIN SAMPLE 5"</span>)</span>
-<span id="cb36-437"><a href="#cb36-437" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb36" data-startfrom="434" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 433;"><span id="cb36-434"><a href="#cb36-434" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb36-435"><a href="#cb36-435" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_logement USIN SAMPLE 5"</span>)</span>
+<span id="cb36-436"><a href="#cb36-436" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-13" data-nodetype="expression">
 
@@ -1010,9 +1010,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb41" data-startfrom="470" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 469;"><span id="cb41-470"><a href="#cb41-470" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb41-471"><a href="#cb41-471" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_logement USING SAMPLE 5"</span>)</span>
-<span id="cb41-472"><a href="#cb41-472" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb41" data-startfrom="469" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 468;"><span id="cb41-469"><a href="#cb41-469" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb41-470"><a href="#cb41-470" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_logement USING SAMPLE 5"</span>)</span>
+<span id="cb41-471"><a href="#cb41-471" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-14" data-nodetype="expression">
 
@@ -1052,9 +1052,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb46" data-startfrom="502" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 501;"><span id="cb46-502"><a href="#cb46-502" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb46-503"><a href="#cb46-503" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT IPONDI AS poids, AGED, VOIT FROM table_individu LIMIT 10"</span>)</span>
-<span id="cb46-504"><a href="#cb46-504" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb46" data-startfrom="501" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 500;"><span id="cb46-501"><a href="#cb46-501" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb46-502"><a href="#cb46-502" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT IPONDI AS poids, AGED, VOIT FROM table_individu LIMIT 10"</span>)</span>
+<span id="cb46-503"><a href="#cb46-503" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-15" data-nodetype="expression">
 
@@ -1089,9 +1089,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb51" data-startfrom="540" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 539;"><span id="cb51-540"><a href="#cb51-540" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb51-541"><a href="#cb51-541" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT IPONDI AS poids, COLUMNS('.*AGE.*') FROM table_individu LIMIT 10"</span>)</span>
-<span id="cb51-542"><a href="#cb51-542" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb51" data-startfrom="539" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 538;"><span id="cb51-539"><a href="#cb51-539" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb51-540"><a href="#cb51-540" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT IPONDI AS poids, COLUMNS('.*AGE.*') FROM table_individu LIMIT 10"</span>)</span>
+<span id="cb51-541"><a href="#cb51-541" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-16" data-nodetype="expression">
 
@@ -1129,9 +1129,9 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb56" data-startfrom="573" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 572;"><span id="cb56-573"><a href="#cb56-573" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb56-574"><a href="#cb56-574" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_individu WHERE DEPT IN ('11', '31', '34') LIMIT 10"</span>)</span>
-<span id="cb56-575"><a href="#cb56-575" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb56" data-startfrom="572" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 571;"><span id="cb56-572"><a href="#cb56-572" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb56-573"><a href="#cb56-573" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="st">"SELECT * FROM table_individu WHERE DEPT IN ('11', '31', '34') LIMIT 10"</span>)</span>
+<span id="cb56-574"><a href="#cb56-574" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-17" data-nodetype="expression">
 
@@ -1189,11 +1189,11 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb61" data-startfrom="615" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 614;"><span id="cb61-615"><a href="#cb61-615" aria-hidden="true" tabindex="-1"></a>liste_regions <span class="op">=</span> [<span class="st">"11"</span><span class="op">,</span> <span class="st">"31"</span><span class="op">,</span> <span class="st">"34"</span>]</span>
-<span id="cb61-616"><a href="#cb61-616" aria-hidden="true" tabindex="-1"></a>liste_regions_sql <span class="op">=</span> liste_regions<span class="op">.</span><span class="fu">map</span>(item <span class="kw">=&gt;</span> <span class="vs">`'</span><span class="sc">${</span>item<span class="sc">}</span><span class="vs">'`</span>)<span class="op">.</span><span class="fu">join</span>(<span class="st">","</span>)</span>
-<span id="cb61-617"><a href="#cb61-617" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb61-618"><a href="#cb61-618" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT * FROM table_individu WHERE DEPT IN (</span><span class="sc">${</span>liste_regions_sql<span class="sc">}</span><span class="vs">) LIMIT 10`</span>)</span>
-<span id="cb61-619"><a href="#cb61-619" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb61" data-startfrom="614" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 613;"><span id="cb61-614"><a href="#cb61-614" aria-hidden="true" tabindex="-1"></a>liste_regions <span class="op">=</span> [<span class="st">"11"</span><span class="op">,</span> <span class="st">"31"</span><span class="op">,</span> <span class="st">"34"</span>]</span>
+<span id="cb61-615"><a href="#cb61-615" aria-hidden="true" tabindex="-1"></a>liste_regions_sql <span class="op">=</span> liste_regions<span class="op">.</span><span class="fu">map</span>(item <span class="kw">=&gt;</span> <span class="vs">`'</span><span class="sc">${</span>item<span class="sc">}</span><span class="vs">'`</span>)<span class="op">.</span><span class="fu">join</span>(<span class="st">","</span>)</span>
+<span id="cb61-616"><a href="#cb61-616" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb61-617"><a href="#cb61-617" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT * FROM table_individu WHERE DEPT IN (</span><span class="sc">${</span>liste_regions_sql<span class="sc">}</span><span class="vs">) LIMIT 10`</span>)</span>
+<span id="cb61-618"><a href="#cb61-618" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-18-1" data-nodetype="declaration">
@@ -1251,11 +1251,11 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb66" data-startfrom="669" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 668;"><span id="cb66-669"><a href="#cb66-669" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb66-670"><a href="#cb66-670" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb66-671"><a href="#cb66-671" aria-hidden="true" tabindex="-1"></a>        <span class="st">"SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM &gt; 2020"</span></span>
-<span id="cb66-672"><a href="#cb66-672" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb66-673"><a href="#cb66-673" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb66" data-startfrom="668" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 667;"><span id="cb66-668"><a href="#cb66-668" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb66-669"><a href="#cb66-669" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb66-670"><a href="#cb66-670" aria-hidden="true" tabindex="-1"></a>        <span class="st">"SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM &gt; 2020"</span></span>
+<span id="cb66-671"><a href="#cb66-671" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb66-672"><a href="#cb66-672" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-19" data-nodetype="expression">
 
@@ -1316,11 +1316,11 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb71" data-startfrom="703" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 702;"><span id="cb71-703"><a href="#cb71-703" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb71-704"><a href="#cb71-704" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb71-705"><a href="#cb71-705" aria-hidden="true" tabindex="-1"></a>        <span class="st">"SELECT DISTINCT(ARM) FROM table_logement WHERE NOT CONTAINS(ARM, 'ZZZZZ') ORDER BY ARM"</span></span>
-<span id="cb71-706"><a href="#cb71-706" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb71-707"><a href="#cb71-707" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb71" data-startfrom="702" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 701;"><span id="cb71-702"><a href="#cb71-702" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb71-703"><a href="#cb71-703" aria-hidden="true" tabindex="-1"></a>    db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb71-704"><a href="#cb71-704" aria-hidden="true" tabindex="-1"></a>        <span class="st">"SELECT DISTINCT(ARM) FROM table_logement WHERE NOT CONTAINS(ARM, 'ZZZZZ') ORDER BY ARM"</span></span>
+<span id="cb71-705"><a href="#cb71-705" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb71-706"><a href="#cb71-706" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-20" data-nodetype="expression">
 
@@ -1375,17 +1375,17 @@ Dérouler pour découvrir le code <code>Observable</code> d’initialisation de 
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb76" data-startfrom="758" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 757;"><span id="cb76-758"><a href="#cb76-758" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb76-759"><a href="#cb76-759" aria-hidden="true" tabindex="-1"></a>  db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb76-760"><a href="#cb76-760" aria-hidden="true" tabindex="-1"></a>    <span class="vs">`</span></span>
-<span id="cb76-761"><a href="#cb76-761" aria-hidden="true" tabindex="-1"></a><span class="vs">    SELECT CAST(</span></span>
-<span id="cb76-762"><a href="#cb76-762" aria-hidden="true" tabindex="-1"></a><span class="vs">      SUM(IPONDL*CAST(INPER AS INT)) AS INT</span></span>
-<span id="cb76-763"><a href="#cb76-763" aria-hidden="true" tabindex="-1"></a><span class="vs">    ) AS habitants_toulouse_demenagement</span></span>
-<span id="cb76-764"><a href="#cb76-764" aria-hidden="true" tabindex="-1"></a><span class="vs">    FROM table_logement</span></span>
-<span id="cb76-765"><a href="#cb76-765" aria-hidden="true" tabindex="-1"></a><span class="vs">    WHERE COMMUNE == '31555' AND IRANM NOT IN ('1', 'Z') AND INPER != 'Y'</span></span>
-<span id="cb76-766"><a href="#cb76-766" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span></span>
-<span id="cb76-767"><a href="#cb76-767" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb76-768"><a href="#cb76-768" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb76" data-startfrom="757" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 756;"><span id="cb76-757"><a href="#cb76-757" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb76-758"><a href="#cb76-758" aria-hidden="true" tabindex="-1"></a>  db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb76-759"><a href="#cb76-759" aria-hidden="true" tabindex="-1"></a>    <span class="vs">`</span></span>
+<span id="cb76-760"><a href="#cb76-760" aria-hidden="true" tabindex="-1"></a><span class="vs">    SELECT CAST(</span></span>
+<span id="cb76-761"><a href="#cb76-761" aria-hidden="true" tabindex="-1"></a><span class="vs">      SUM(IPONDL*CAST(INPER AS INT)) AS INT</span></span>
+<span id="cb76-762"><a href="#cb76-762" aria-hidden="true" tabindex="-1"></a><span class="vs">    ) AS habitants_toulouse_demenagement</span></span>
+<span id="cb76-763"><a href="#cb76-763" aria-hidden="true" tabindex="-1"></a><span class="vs">    FROM table_logement</span></span>
+<span id="cb76-764"><a href="#cb76-764" aria-hidden="true" tabindex="-1"></a><span class="vs">    WHERE COMMUNE == '31555' AND IRANM NOT IN ('1', 'Z') AND INPER != 'Y'</span></span>
+<span id="cb76-765"><a href="#cb76-765" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span></span>
+<span id="cb76-766"><a href="#cb76-766" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb76-767"><a href="#cb76-767" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-21" data-nodetype="expression">
 
@@ -1549,18 +1549,18 @@ Code pour produire la représentation graphique.
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb83" data-startfrom="776" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 775;"><span id="cb83-776"><a href="#cb83-776" aria-hidden="true" tabindex="-1"></a>pyramide_ages <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb83-777"><a href="#cb83-777" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
-<span id="cb83-778"><a href="#cb83-778" aria-hidden="true" tabindex="-1"></a><span class="vs">SELECT</span></span>
-<span id="cb83-779"><a href="#cb83-779" aria-hidden="true" tabindex="-1"></a><span class="vs">  CAST(SUM(IPONDI) AS INT) AS individus,</span></span>
-<span id="cb83-780"><a href="#cb83-780" aria-hidden="true" tabindex="-1"></a><span class="vs">  CAST(AGED AS INT) AS AGED,</span></span>
-<span id="cb83-781"><a href="#cb83-781" aria-hidden="true" tabindex="-1"></a><span class="vs">  DEPT AS departement</span></span>
-<span id="cb83-782"><a href="#cb83-782" aria-hidden="true" tabindex="-1"></a><span class="vs">FROM table_individu</span></span>
-<span id="cb83-783"><a href="#cb83-783" aria-hidden="true" tabindex="-1"></a><span class="vs">  WHERE DEPT IN ('11', '31', '34')</span></span>
-<span id="cb83-784"><a href="#cb83-784" aria-hidden="true" tabindex="-1"></a><span class="vs">GROUP BY AGED, DEPT ORDER BY DEPT, AGED</span></span>
-<span id="cb83-785"><a href="#cb83-785" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
-<span id="cb83-786"><a href="#cb83-786" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb83-787"><a href="#cb83-787" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(pyramide_ages)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb83" data-startfrom="775" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 774;"><span id="cb83-775"><a href="#cb83-775" aria-hidden="true" tabindex="-1"></a>pyramide_ages <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb83-776"><a href="#cb83-776" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
+<span id="cb83-777"><a href="#cb83-777" aria-hidden="true" tabindex="-1"></a><span class="vs">SELECT</span></span>
+<span id="cb83-778"><a href="#cb83-778" aria-hidden="true" tabindex="-1"></a><span class="vs">  CAST(SUM(IPONDI) AS INT) AS individus,</span></span>
+<span id="cb83-779"><a href="#cb83-779" aria-hidden="true" tabindex="-1"></a><span class="vs">  CAST(AGED AS INT) AS AGED,</span></span>
+<span id="cb83-780"><a href="#cb83-780" aria-hidden="true" tabindex="-1"></a><span class="vs">  DEPT AS departement</span></span>
+<span id="cb83-781"><a href="#cb83-781" aria-hidden="true" tabindex="-1"></a><span class="vs">FROM table_individu</span></span>
+<span id="cb83-782"><a href="#cb83-782" aria-hidden="true" tabindex="-1"></a><span class="vs">  WHERE DEPT IN ('11', '31', '34')</span></span>
+<span id="cb83-783"><a href="#cb83-783" aria-hidden="true" tabindex="-1"></a><span class="vs">GROUP BY AGED, DEPT ORDER BY DEPT, AGED</span></span>
+<span id="cb83-784"><a href="#cb83-784" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
+<span id="cb83-785"><a href="#cb83-785" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb83-786"><a href="#cb83-786" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(pyramide_ages)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-22-1" data-nodetype="declaration">
@@ -1577,24 +1577,24 @@ Code pour produire la représentation graphique.
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb84" data-startfrom="825" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 824;"><span id="cb84-825"><a href="#cb84-825" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb84-826"><a href="#cb84-826" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
-<span id="cb84-827"><a href="#cb84-827" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
-<span id="cb84-828"><a href="#cb84-828" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb84-829"><a href="#cb84-829" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(</span>
-<span id="cb84-830"><a href="#cb84-830" aria-hidden="true" tabindex="-1"></a>        pyramide_ages<span class="op">,</span></span>
-<span id="cb84-831"><a href="#cb84-831" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"AGED"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">individus</span><span class="op">/</span><span class="dv">1000</span><span class="op">,</span> <span class="dt">fy</span><span class="op">:</span> <span class="st">'departement'</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"departement"</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>}</span>
-<span id="cb84-832"><a href="#cb84-832" aria-hidden="true" tabindex="-1"></a>        )<span class="op">,</span></span>
-<span id="cb84-833"><a href="#cb84-833" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([<span class="dv">18</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span>})<span class="op">,</span></span>
-<span id="cb84-834"><a href="#cb84-834" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">tickY</span>(</span>
-<span id="cb84-835"><a href="#cb84-835" aria-hidden="true" tabindex="-1"></a>        pyramide_ages<span class="op">,</span></span>
-<span id="cb84-836"><a href="#cb84-836" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"AGED"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">individus</span><span class="op">/</span><span class="dv">1000</span><span class="op">,</span> <span class="dt">fy</span><span class="op">:</span> <span class="st">'departement'</span>}</span>
-<span id="cb84-837"><a href="#cb84-837" aria-hidden="true" tabindex="-1"></a>        )<span class="op">,</span></span>
-<span id="cb84-838"><a href="#cb84-838" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>])<span class="op">,</span></span>
-<span id="cb84-839"><a href="#cb84-839" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisY</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Population (en milliers)"</span>})<span class="op">,</span></span>
-<span id="cb84-840"><a href="#cb84-840" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisX</span>({<span class="dt">ticks</span><span class="op">:</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span><span class="op">,</span> <span class="dv">10</span>)<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Âge"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">12</span>})</span>
-<span id="cb84-841"><a href="#cb84-841" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb84-842"><a href="#cb84-842" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb84" data-startfrom="824" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 823;"><span id="cb84-824"><a href="#cb84-824" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb84-825"><a href="#cb84-825" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
+<span id="cb84-826"><a href="#cb84-826" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">percent</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb84-827"><a href="#cb84-827" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb84-828"><a href="#cb84-828" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barY</span>(</span>
+<span id="cb84-829"><a href="#cb84-829" aria-hidden="true" tabindex="-1"></a>        pyramide_ages<span class="op">,</span></span>
+<span id="cb84-830"><a href="#cb84-830" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"AGED"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">individus</span><span class="op">/</span><span class="dv">1000</span><span class="op">,</span> <span class="dt">fy</span><span class="op">:</span> <span class="st">'departement'</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"departement"</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span>}</span>
+<span id="cb84-831"><a href="#cb84-831" aria-hidden="true" tabindex="-1"></a>        )<span class="op">,</span></span>
+<span id="cb84-832"><a href="#cb84-832" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([<span class="dv">18</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span>})<span class="op">,</span></span>
+<span id="cb84-833"><a href="#cb84-833" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">tickY</span>(</span>
+<span id="cb84-834"><a href="#cb84-834" aria-hidden="true" tabindex="-1"></a>        pyramide_ages<span class="op">,</span></span>
+<span id="cb84-835"><a href="#cb84-835" aria-hidden="true" tabindex="-1"></a>        {<span class="dt">x</span><span class="op">:</span> <span class="st">"AGED"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">individus</span><span class="op">/</span><span class="dv">1000</span><span class="op">,</span> <span class="dt">fy</span><span class="op">:</span> <span class="st">'departement'</span>}</span>
+<span id="cb84-836"><a href="#cb84-836" aria-hidden="true" tabindex="-1"></a>        )<span class="op">,</span></span>
+<span id="cb84-837"><a href="#cb84-837" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>])<span class="op">,</span></span>
+<span id="cb84-838"><a href="#cb84-838" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisY</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Population (en milliers)"</span>})<span class="op">,</span></span>
+<span id="cb84-839"><a href="#cb84-839" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisX</span>({<span class="dt">ticks</span><span class="op">:</span> d3<span class="op">.</span><span class="fu">ticks</span>(<span class="dv">0</span><span class="op">,</span> <span class="dv">120</span><span class="op">,</span> <span class="dv">10</span>)<span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"Âge"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">12</span>})</span>
+<span id="cb84-840"><a href="#cb84-840" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb84-841"><a href="#cb84-841" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div id="fig-ojs-cell-23" class="cell-output cell-output-display quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ojs-cell-23-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -1661,19 +1661,19 @@ Figure&nbsp;1: Un exemple de représentation graphique produite à partir du rec
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb89" data-startfrom="923" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 922;"><span id="cb89-923"><a href="#cb89-923" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb89-924"><a href="#cb89-924" aria-hidden="true" tabindex="-1"></a>  db<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb89-925"><a href="#cb89-925" aria-hidden="true" tabindex="-1"></a>  <span class="vs">`</span></span>
-<span id="cb89-926"><a href="#cb89-926" aria-hidden="true" tabindex="-1"></a><span class="vs">  SELECT</span></span>
-<span id="cb89-927"><a href="#cb89-927" aria-hidden="true" tabindex="-1"></a><span class="vs">    CAST(SUM(IPONDI) AS INT) AS individus_recenses,</span></span>
-<span id="cb89-928"><a href="#cb89-928" aria-hidden="true" tabindex="-1"></a><span class="vs">    DEPT</span></span>
-<span id="cb89-929"><a href="#cb89-929" aria-hidden="true" tabindex="-1"></a><span class="vs">  FROM table_individu</span></span>
-<span id="cb89-930"><a href="#cb89-930" aria-hidden="true" tabindex="-1"></a><span class="vs">    WHERE AGED &gt;= 100</span></span>
-<span id="cb89-931"><a href="#cb89-931" aria-hidden="true" tabindex="-1"></a><span class="vs">  GROUP BY DEPT</span></span>
-<span id="cb89-932"><a href="#cb89-932" aria-hidden="true" tabindex="-1"></a><span class="vs">  ORDER BY individus_recenses DESC</span></span>
-<span id="cb89-933"><a href="#cb89-933" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span></span>
-<span id="cb89-934"><a href="#cb89-934" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb89-935"><a href="#cb89-935" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb89" data-startfrom="922" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 921;"><span id="cb89-922"><a href="#cb89-922" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb89-923"><a href="#cb89-923" aria-hidden="true" tabindex="-1"></a>  db<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb89-924"><a href="#cb89-924" aria-hidden="true" tabindex="-1"></a>  <span class="vs">`</span></span>
+<span id="cb89-925"><a href="#cb89-925" aria-hidden="true" tabindex="-1"></a><span class="vs">  SELECT</span></span>
+<span id="cb89-926"><a href="#cb89-926" aria-hidden="true" tabindex="-1"></a><span class="vs">    CAST(SUM(IPONDI) AS INT) AS individus_recenses,</span></span>
+<span id="cb89-927"><a href="#cb89-927" aria-hidden="true" tabindex="-1"></a><span class="vs">    DEPT</span></span>
+<span id="cb89-928"><a href="#cb89-928" aria-hidden="true" tabindex="-1"></a><span class="vs">  FROM table_individu</span></span>
+<span id="cb89-929"><a href="#cb89-929" aria-hidden="true" tabindex="-1"></a><span class="vs">    WHERE AGED &gt;= 100</span></span>
+<span id="cb89-930"><a href="#cb89-930" aria-hidden="true" tabindex="-1"></a><span class="vs">  GROUP BY DEPT</span></span>
+<span id="cb89-931"><a href="#cb89-931" aria-hidden="true" tabindex="-1"></a><span class="vs">  ORDER BY individus_recenses DESC</span></span>
+<span id="cb89-932"><a href="#cb89-932" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span></span>
+<span id="cb89-933"><a href="#cb89-933" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb89-934"><a href="#cb89-934" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-24" data-nodetype="expression">
 
@@ -1798,20 +1798,20 @@ Code <code>R</code> pour récupérer le code officiel géographique
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb101" data-startfrom="944" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 943;"><span id="cb101-944"><a href="#cb101-944" aria-hidden="true" tabindex="-1"></a>proxy <span class="op">=</span> <span class="st">"https://corsproxy.io/?"</span></span>
-<span id="cb101-945"><a href="#cb101-945" aria-hidden="true" tabindex="-1"></a>url_cog <span class="op">=</span> <span class="st">"https://www.insee.fr/fr/statistiques/fichier/6800675/v_commune_2023.csv"</span></span>
-<span id="cb101-946"><a href="#cb101-946" aria-hidden="true" tabindex="-1"></a>db2 <span class="op">=</span> {</span>
-<span id="cb101-947"><a href="#cb101-947" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> configuredClient <span class="op">=</span> <span class="cf">await</span> db <span class="op">;</span></span>
-<span id="cb101-948"><a href="#cb101-948" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(</span>
-<span id="cb101-949"><a href="#cb101-949" aria-hidden="true" tabindex="-1"></a>    <span class="vs">`</span></span>
-<span id="cb101-950"><a href="#cb101-950" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW cog2023 AS</span></span>
-<span id="cb101-951"><a href="#cb101-951" aria-hidden="true" tabindex="-1"></a><span class="vs">    SELECT * FROM read_csv_auto('</span><span class="sc">${</span>proxy <span class="op">+</span> url_cog<span class="sc">}</span><span class="vs">', header = true)</span></span>
-<span id="cb101-952"><a href="#cb101-952" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span></span>
-<span id="cb101-953"><a href="#cb101-953" aria-hidden="true" tabindex="-1"></a>    )</span>
-<span id="cb101-954"><a href="#cb101-954" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb101-955"><a href="#cb101-955" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> configuredClient <span class="op">;</span></span>
-<span id="cb101-956"><a href="#cb101-956" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb101-957"><a href="#cb101-957" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb101" data-startfrom="943" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 942;"><span id="cb101-943"><a href="#cb101-943" aria-hidden="true" tabindex="-1"></a>proxy <span class="op">=</span> <span class="st">"https://corsproxy.io/?"</span></span>
+<span id="cb101-944"><a href="#cb101-944" aria-hidden="true" tabindex="-1"></a>url_cog <span class="op">=</span> <span class="st">"https://www.insee.fr/fr/statistiques/fichier/6800675/v_commune_2023.csv"</span></span>
+<span id="cb101-945"><a href="#cb101-945" aria-hidden="true" tabindex="-1"></a>db2 <span class="op">=</span> {</span>
+<span id="cb101-946"><a href="#cb101-946" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> configuredClient <span class="op">=</span> <span class="cf">await</span> db <span class="op">;</span></span>
+<span id="cb101-947"><a href="#cb101-947" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(</span>
+<span id="cb101-948"><a href="#cb101-948" aria-hidden="true" tabindex="-1"></a>    <span class="vs">`</span></span>
+<span id="cb101-949"><a href="#cb101-949" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE OR REPLACE VIEW cog2023 AS</span></span>
+<span id="cb101-950"><a href="#cb101-950" aria-hidden="true" tabindex="-1"></a><span class="vs">    SELECT * FROM read_csv_auto('</span><span class="sc">${</span>proxy <span class="op">+</span> url_cog<span class="sc">}</span><span class="vs">', header = true)</span></span>
+<span id="cb101-951"><a href="#cb101-951" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span></span>
+<span id="cb101-952"><a href="#cb101-952" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb101-953"><a href="#cb101-953" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-954"><a href="#cb101-954" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> configuredClient <span class="op">;</span></span>
+<span id="cb101-955"><a href="#cb101-955" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb101-956"><a href="#cb101-956" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-25-1" data-nodetype="declaration">
@@ -1838,9 +1838,9 @@ Code <code>R</code> pour récupérer le code officiel géographique
 <div class="cell">
 <details class="code-fold">
 <summary>Requête Observable pour explorer les premières lignes</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb102" data-startfrom="956" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 955;"><span id="cb102-956"><a href="#cb102-956" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
-<span id="cb102-957"><a href="#cb102-957" aria-hidden="true" tabindex="-1"></a>  db2<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT * FROM cog2023 LIMIT 10`</span>)</span>
-<span id="cb102-958"><a href="#cb102-958" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb102" data-startfrom="955" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 954;"><span id="cb102-955"><a href="#cb102-955" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb102-956"><a href="#cb102-956" aria-hidden="true" tabindex="-1"></a>  db2<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT * FROM cog2023 LIMIT 10`</span>)</span>
+<span id="cb102-957"><a href="#cb102-957" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-26" data-nodetype="expression">

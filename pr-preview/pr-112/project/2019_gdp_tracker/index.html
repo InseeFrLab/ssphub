@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_Extraction_CS/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2021_Extraction_CS/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2019_gdp_tracker/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="dcterms.date" content="2021-01-01">
-<meta name="description" content="Extract information from company accounts tables, in particular tables of subsidiaries and holdings, contained in scanned images made available by INPI via an API">
-<title>Automatic extraction of the table of subsidiaries and holdings from company accounts – SSPHub</title>
+<meta name="description" content="Modèles de machine learning pour effectuer des prévisions en temps réel (nowcasting) pour alimenter les analyses conjoncturelles de l’Insee">
+<title>« GDP Tracker » : un outil pour des prévisions économiques en continu – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -42,17 +41,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script><style>
 
@@ -83,33 +82,67 @@ background: #6886bb;
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_Extraction_CS/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2019_gdp_tracker/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../event.html"> 
+<span class="menu-text">Événements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../project.html"> 
-<span class="menu-text">Innovative projects</span></a>
+<span class="menu-text">Projets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About the SSPHub</span></a>
+    <a class="nav-link" href="../../course.html"> 
+<span class="menu-text">Ressources utiles</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">À propos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">
+<li>
+    <a class="dropdown-item" href="../../infolettre/infolettre.html">
+ <span class="dropdown-text">Newsletters</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about.html">
+ <span class="dropdown-text">Présentation du réseau</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../manifeste.html">
+ <span class="dropdown-text">Manifeste du réseau</span></a>
+  </li>  
+    </ul>
+</li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
-<span class="menu-text">SSPCloud</span></a>
+<span class="menu-text">Le SSPCloud</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -118,20 +151,25 @@ background: #6886bb;
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav><div id="quarto-announcement" data-announcement-id="d14fcd9fc2e806dcc24e12ea5d639735" class="alert alert-primary hidden">
+<i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>📺️ Le replay des ateliers du <strong>9 et 16 avril 2025</strong> sont disponibles <a href="../../event/2025-04-09-API/index.html">ici (API)</a> et <a href="../../event/2025-04-16-Parquet/index.html">ici (pour le format Parquet)</a></p>
+</div>
+<i class="bi bi-x-lg quarto-announcement-action"></i>
+</div>
+</header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Automatic extraction of the table of subsidiaries and holdings from company accounts</h1>
+      <h1 class="title">« GDP Tracker » : un outil pour des prévisions économiques en continu</h1>
                   <div>
         <div class="description">
-          Extract information from company accounts tables, in particular tables of subsidiaries and holdings, contained in scanned images made available by INPI via an API
+          Modèles de <em>machine learning</em> pour effectuer des prévisions en temps réel (<em>nowcasting</em>) pour alimenter les analyses conjoncturelles de l’Insee
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Python</div>
-                <div class="quarto-category">data extraction</div>
-                <div class="quarto-category">API</div>
-                <div class="quarto-category">Machine learning</div>
-                <div class="quarto-category">in production</div>
+                <div class="quarto-category">Projets</div>
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">expérimentation</div>
+                <div class="quarto-category">prévisions</div>
               </div>
                   </div>
   </div>
@@ -139,17 +177,11 @@ background: #6886bb;
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Nicolas </p>
-            </div>
-    </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 January 2021</p>
+        <p class="date">1 décembre 2019</p>
       </div>
     </div>
     
@@ -161,36 +193,35 @@ background: #6886bb;
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-<li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
+<li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
   </ul></nav>
 </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>Automatic extraction of the table of subsidiaries and holdings from company accounts</th>
+<th>Prévisions du PIB en continu</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><strong>Project details</strong></td>
-<td>A trial on the automated extraction of the table of subsidiaries and holdings from the company accounts was started in 2022 following an internship in the PTGU division. This table is used manually during company profiling operations, which is tedious work. The experiment was conducted with the Banque de France, which is interested in the same use case as Insee, with two main objectives: <br><br> - to develop a prototype application enabling users to retrieve a table of subsidiaries and holdings automatically for a given Siren number and year; <br> - compare the performance of different automatic table extraction methods, based on open-source tools on the one hand and commercial solutions on the other.</td>
+<td><strong>Détail du projet</strong></td>
+<td>Le projet <code>GDP Tracker</code> consiste à construire un outil de prévision économique en continu, alimenté par l’ensemble des indicateurs conjoncturels récents disponibles à l’instant <em>t</em>. L’objectif de ce projet est d’exploiter, au mieux, les sources les plus récentes pour estimer la dynamique des agrégats macroéconomiques majeurs au cours des dernières semaines. Ces sources sont de nature diverse: enquêtes de conjoncture, comptes nationaux trimestriels, remontées statistiques en dur mais aussi de données issues de sources moins traditionnelles (recherches internet, etc.) <br><br> À partir de cet ensemble hétérogènes d’informations, l’outil effectue une prévision de croissance des agrégats macroéconomiques les plus scrutés pour connaître la conjoncture française (PIB, consommation des ménages, investissement…). Cette prévision est faite pour le trimestre contemporain ou les trimestres suivants, à partir de modèles de <em>machine learning</em> (LASSO, forêts aléatoires…). <br><br> L’outil a été initialement développé pour une <a href="https://www.insee.fr/fr/statistiques/fichier/4268833/122019_ndc.pdf">Note de conjoncture en 2019</a>. Celui-ci a été repris suite à la crise sanitaire pour une utilisation plus systématique. D’abord centré sur la France et sur le seul PIB du trimestre contemporain, il a été décliné à d’autres pays (Allemagne, Italie, Espagne) et est en cours d’élargissement à des agrégats autres que le PIB et à des horizons de prévision plus lointains.</td>
 </tr>
 <tr class="even">
-<td><strong>Players</strong></td>
-<td>Insee, Inpi, Banque de France</td>
+<td><strong>Acteurs</strong></td>
+<td>Insee</td>
 </tr>
 <tr class="odd">
-<td><strong>Project results</strong></td>
-<td>- A new <a href="https://extraction-cs.lab.sspcloud.fr/docs">experimental IPA</a> and a <a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> were put in place to meet the business need. <br> - The project was also presented at an internal Insee seminar on 27 June 2024. <a href="https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/">slides</a> <br>
-</td>
+<td><strong>Résultats du projet</strong></td>
+<td>- Dossier <a href="https://www.insee.fr/fr/statistiques/4268739?sommaire=4268833">Prévoir en continu la croissance française</a> <br> -</td>
 </tr>
 <tr class="even">
-<td><strong>Project code</strong></td>
-<td>- <a href="https://github.com/InseeFrLab/ca-document-querier/" class="uri">https://github.com/InseeFrLab/ca-document-querier/</a> Python wrapper for Inpi’s enterprise API <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux</a> core” repository containing elements for page detection/table extraction <br> - <a href="https://github.com/InseeFrLab/extract-table-ui" class="uri">https://github.com/InseeFrLab/extract-table-ui</a> code repository for the<a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux-llm" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux-llm</a> Kubernetes: source code for the overall architecture, comprising containerised microservices orchestrated by Kubernetes. It combines calls to external APIs (INPI), PDF processing and the use of language models (LLM) for data analysis and extraction.</td>
+<td><strong>Code du projet</strong></td>
+<td></td>
 </tr>
 </tbody>
 </table></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
@@ -218,12 +249,12 @@ background: #6886bb;
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

@@ -57,7 +57,7 @@
 
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1761216205461" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1761231693739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/ntts-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -105,7 +105,7 @@
               ntts_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              23/10/2025, 10:43:25
+              23/10/2025, 15:01:33
             </div>
         </div> -->
 
@@ -113,7 +113,7 @@
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1761216205461" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1761231693739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/aiml4os-wp7/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -162,7 +162,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               wp7_paris_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              23/10/2025, 10:43:25
+              23/10/2025, 15:01:33
             </div>
         </div> -->
 
@@ -190,6 +190,35 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/Satellites_Mayotte.png" medium="image" type="image/png" height="187" width="144"/>
 </item>
 <item>
+  <title>“GDP Tracker: a tool for continuous economic forecasting</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<div class="line-block">&nbsp;| Nowcasting GDP with GDP Tracker |<br>
+&nbsp;| ———————- |<br>
+<strong>Details of the project</strong> | The project <code>GDP Tracker</code> consists of building a continuous economic forecasting tool, fed by all the recent economic indicators available at any given time. <em>t</em>. The aim of this project is to make the best possible use of the most recent sources to estimate the dynamics of the major macroeconomic aggregates over the last few weeks. These sources are diverse in nature: business and consumer surveys, quarterly national accounts, hard-copy statistical data, as well as data from less traditional sources (internet searches, etc.). <br> <br> Using this heterogeneous set of data, the tool produces a growth forecast for the macroeconomic aggregates that are most closely scrutinised for French economic conditions (GDP, household consumption, investment, etc.). This forecast is made for the current quarter or the following quarters, based on models of <em>machine learning</em> (LASSO, random forests, etc.). <br> <br> The tool was initially developed for a <a href="https://www.insee.fr/en/statistiques/fichier/4269288/122019_dossier1E.pdf">Business conditions in 2019</a>. Following the health crisis, it was taken up again for more systematic use. Initially focused on France and only on GDP for the current quarter, it has been extended to other countries (Germany, Italy, Spain) and is currently being extended to aggregates other than GDP and to more distant forecasting horizons. |<br>
+<strong>Players</strong> | Insee |<br>
+<strong>Project results</strong> | - Project file <a href="https://www.insee.fr/en/statistiques/4269288?sommaire=4269398">Continuous forecasting of French growth</a> |</div>
+
+
+</section>
+
+ ]]></description>
+  <category>Projects</category>
+  <category>machine learning</category>
+  <category>experiment</category>
+  <category>forecasts</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/evol_growth_en.png" medium="image" type="image/png" height="59" width="144"/>
+</item>
+<item>
   <title>Methodological work on the Family Budget survey</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/</link>
   <description><![CDATA[ 
@@ -214,7 +243,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 </tr>
 <tr class="even">
 <td><strong>Players</strong></td>
-<td>Insee (DSDS)</td>
+<td>Insee</td>
 </tr>
 <tr class="odd">
 <td><strong>Project results</strong></td>
@@ -285,7 +314,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1761216205458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1761231693738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statcan-exchange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -333,7 +362,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               cards5.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              23/10/2025, 10:43:25
+              23/10/2025, 15:01:33
             </div>
         </div> -->
 
@@ -341,7 +370,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1761216205458" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1761231693738" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-conf/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -389,7 +418,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               cards3.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              23/10/2025, 10:43:25
+              23/10/2025, 15:01:33
             </div>
         </div> -->
 
@@ -442,7 +471,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 </tr>
 <tr class="even">
 <td><strong>Players</strong></td>
-<td>Insee (DSE), Inpi, Banque de France</td>
+<td>Insee, Inpi, Banque de France</td>
 </tr>
 <tr class="odd">
 <td><strong>Project results</strong></td>
@@ -543,7 +572,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 </tr>
 <tr class="even">
 <td><strong>Players</strong></td>
-<td>Insee (DSDS)</td>
+<td>Insee</td>
 </tr>
 <tr class="odd">
 <td><strong>Project results</strong></td>
