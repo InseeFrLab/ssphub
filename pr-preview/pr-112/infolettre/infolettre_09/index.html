@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/infolettre/infolettre_09/index.en.html" />
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
 
@@ -112,7 +114,7 @@ background: #6886bb;
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../event.html"> 
@@ -244,9 +246,9 @@ background: #6886bb;
 
 
 <p><em>Vous désirez intégrer la liste de diffusion ? Un mail à <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a> suffit</em></p>
-<p>La <a href="https://ssphub.netlify.app/blog/retrospective2022/">rétrospective de l’année 2022</a> promettait une version plus personnalisée, inspirée des visualisations proposées par les réseaux sociaux pour synthétiser l’activité de leurs utilisateurs.</p>
+<p>La <a href="../../blog/retrospective2022/index.html">rétrospective de l’année 2022</a> promettait une version plus personnalisée, inspirée des visualisations proposées par les réseaux sociaux pour synthétiser l’activité de leurs utilisateurs.</p>
 <p>Cette <em>newsletter</em> un peu spéciale propose un retour sur la première année du réseau des data scientists de la statistique publique dont la préfiguration a commencé en mars 2022 et qui a été lancé officiellement en septembre. Vous pourrez retrouver à la fin de la <em>newsletter</em> des informations plus classiques: événements, retour sur les actions du réseau, formations, etc.</p>
-<p>Elle permet aussi d’illustrer le potentiel d’outils qui ont été présentés dans la <a href="https://ssphub.netlify.app/blog/retrospective2022/">rétrospective de l’année 2022</a>. Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la première partie de la rétrospective, sont <code>Observable</code>, <code>Quarto</code> et <code>DuckDB</code>. Les données sont stockées sur le système de stockage <code>S3</code> du <code>SSPCloud</code>.</p>
+<p>Elle permet aussi d’illustrer le potentiel d’outils qui ont été présentés dans la <a href="../../blog/retrospective2022/index.html">rétrospective de l’année 2022</a>. Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la première partie de la rétrospective, sont <code>Observable</code>, <code>Quarto</code> et <code>DuckDB</code>. Les données sont stockées sur le système de stockage <code>S3</code> du <code>SSPCloud</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -541,7 +543,7 @@ new Runtime().module(define, name => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/ssphub\.netlify\.app\/");
+        var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/ssphub\/pr-preview\/pr-112\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

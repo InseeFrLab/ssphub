@@ -6,10 +6,10 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://ssphub.netlify.app/event.html#category=post</link>
-<atom:link href="https://ssphub.netlify.app/event-post.xml" rel="self" type="application/rss+xml"/>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event.html#category=post</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event-post.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.8.25</generator>
-<lastBuildDate>Wed, 22 Oct 2025 15:27:57 GMT</lastBuildDate>
+<lastBuildDate>Thu, 23 Oct 2025 09:55:53 GMT</lastBuildDate>
 </channel>
 </rss>
