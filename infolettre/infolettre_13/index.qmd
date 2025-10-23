@@ -67,7 +67,7 @@ de reconnaissance d'image et sur un jeu de données ouvertes. Des exemples de r�
 en `Python` sont disponibles sur le [dépôt `Github`](https://github.com/mlfoundations/open_flamingo).
 
 Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a
-mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [Newsletter #11](https://ssphub.netlify.app/infolettre/infolettre_11/))
+mis en oeuvre un `chatbot` ouvert, à partir des modèles `LLaMA` (Meta, voir [Newsletter #11](../infolettre_11/index.qmd))
 ou `Alpaca` (Stanford) : [`Vicuna`](https://vicuna.lmsys.org/).
 Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. 
 En plus de s'appuyer sur des modèles ouverts, ce qui peut faciliter sa ré-utilisation dans
@@ -135,7 +135,7 @@ aux ré-utilisateurs de modèles
 des applications prêtes à l'emploi
 pour tester ou enrichir un modèle sur des infrastructures compatibles 
 avec la technique de la conteneurisation, approche utilisée
-par les principales plateformes de _data science_ modernes (notamment par celles s'appuyant sur le logiciel [`Onyxia`](https://ssphub.netlify.app/blog/onyxia/)).
+par les principales plateformes de _data science_ modernes (notamment par celles s'appuyant sur le logiciel [`Onyxia`](../../blog/onyxia/index.qmd)).
 
 La plateforme `Observable` propose
 un [comparatif](https://observablehq.com/@observablehq/data-wrangling-translations) des principales syntaxes
@@ -153,7 +153,7 @@ que nous organisons.
 
 ![](treso.webp){fig-align="center" width=30%}
 
-Nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅 ([_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/)).
+Nous rappelons la __journée du réseau le 17 avril, en présentiel__ 📅 ([_Newsletter #12_](../infolettre_12/index.qmd)).
 Les places en présentiel sont
 presque épuisées, ne tardez pas à vous inscrire !
 Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom. 
@@ -177,7 +177,7 @@ Inscription [ici](https://framaforms.org/participation-aux-masterclass-datascien
 ## Replay "Bonnes pratiques pour la mise en production de projets _data science_" (30 mars)
 
 Le replay de la présentation succincte 
-du contenu du cours de l'ENSAE ["Bonnes pratiques pour la mise en production de projets _data science_"](https://ensae-reproductibilite.netlify.app/) ayant eu lieu dans le cadre du programme 10% (voir [_Newsletter #12_](https://ssphub.netlify.app/infolettre/infolettre_12/))
+du contenu du cours de l'ENSAE ["Bonnes pratiques pour la mise en production de projets _data science_"](https://ensae-reproductibilite.netlify.app/) ayant eu lieu dans le cadre du programme 10% (voir [_Newsletter #12_](../infolettre_12/index.qmd))
 est disponible [sur le site du programme 10%](https://bbb-dinum-scalelite.visio.education.fr/playback/presentation/2.3/871ab1ad6290d683201d2996582dffe96174d9a6-1680176731865). 
 
 
@@ -193,7 +193,7 @@ ainsi bénéficié d'une excellente introduction à l'histoire des techniques d'
 et la manière dont aujourd'hui ces modèles fonctionnent en associant reconnaissance d'image
 et analyse textuelle. 
 
-Le replay est [ici](https://ssphub.netlify.app/event/ocrisation-teklia/) !
+Le replay est [ici](../../event/ocrisation-teklia/index.qmd) !
 
 
 ## Replay de la présentation de la documentation collaborative _Carpentries_ (28 mars)
@@ -203,4 +203,4 @@ l'initiative Meta Academy / Carpentries permettant de
 construire une documentation francophone de référence
 sur `R`, `Python` et `Git` à destination des utilisateurs de données.
 
-Le replay est [ici](https://ssphub.netlify.app/event/presentation-du-projet-meta-academy-carpentries/) !
+Le replay est [ici](../../event/presentation-du-projet-meta-academy-carpentries/index.qmd) !

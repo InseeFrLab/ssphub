@@ -11,6 +11,10 @@ go.sum
 
 # Quarto 
 _freeze/
+*.html
+*.json
+*.feed*
+site_libs/
 
 # For gh-pages
 /.quarto/

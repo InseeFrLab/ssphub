@@ -15,7 +15,7 @@ date: 2020-01-01
 # Date updated
 image: 2020_donnees_caisse.png
 
-categories : 
+categories: 
 - Python
 - codification automatique
 - données de caisse
@@ -34,4 +34,3 @@ categories :
 | **Acteurs**                  | Insee         |
 | **Résultats du projet**      | Les données de caisse sont aujourd'hui utilisées en production pour le calcul de l'inflation et pour le calcul d'indicateurs d'activité conjoncturelle.  <br> [note point d'étape été 2020](https://intranet.insee.fr/jcms/1345453_DBFileDocument/paul-ean-phaseb?details=true) <br> [note point d'étape hiver 2020-2021](https://intranet.insee.fr/jcms/1345448_DBFileDocument/2021-3657-dg75-l401?details=true) <br>          |
 | **Code du projet**           | - [https://github.com/InseeFrLab/predicat](https://github.com/InseeFrLab/predicat) : API pour classification des libellés de caisse <br> - [https://github.com/InseeFrLab/product-labelling](https://github.com/InseeFrLab/product-labelling) : Application de labellisation des données de caisse       |
-

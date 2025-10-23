@@ -1,6 +1,6 @@
 project:
   type: website
-  render:
+  render: 
     - about.qmd
     - additional/manifeste.qmd
     - "!additional/notebooks/*.qmd"
@@ -11,64 +11,44 @@ project:
     - course.qmd
     - course/**/*.qmd
     - event.qmd
-    - event/**/*.qmd
+    - event/**/index.qmd
     - index.qmd
     - infolettre/infolettre.qmd
-    - infolettre/**/*.qmd
-    - partenaires/**/*.qmd
+    - infolettre/**/index.qmd
+    - partenaires/**/index.qmd
     - project.qmd
     - project/**/*.qmd
+    # English version - dealt with babelquarto and not with Quarto profiles
+    - '*.en.qmd'
+  
+website: 
+  title: "SSPHub"
+  # site-url: https://ssphub.netlify.app/  # For production
+  # site-url: https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/  # For development
+  site-url: https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/  # when PR open
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
 
-website:
-  title: "SSPHub"
-  navbar:
-    search: true
-    right:
-      - icon: rss
-        href: index.xml  
-    left:
-      - href: index.qmd
-        text: "Home"
-      - href: event.qmd
-        text: "Événements"
-      - href: blog.qmd
-        text: "Blog"
-      - href: project.qmd
-        text: "Projets"
-      - href: course.qmd
-        text: "Ressources utiles"
-      - text: "À propos"
-        menu:
-          - href: infolettre/infolettre.qmd
-            text: "Newsletters"
-          - href: about.qmd 
-            text: "Présentation du réseau"
-          - href: additional/manifeste.qmd
-            text: "Manifeste du réseau"
-      - href: https://datalab.sspcloud.fr/
-        text: "Le SSPCloud"
-      - icon: github
-        href: https://github.com/InseeFrLab/ssphub
-  site-url: https://ssphub.netlify.app/
-  description: "Blog du réseau des data scientists de la statistique publique"
+profile:
+  default: fr
+  group: [fr, en]
   
-  announcement: 
-    icon: bi-megaphone
-    dismissable: true
-    content: "📺️ Le replay des ateliers du __9 et 16 avril 2025__ sont disponibles [ici (API)](/event/2025-04-09-API/index.qmd) et [ici (pour le format Parquet)](/event/2025-04-16-Parquet/index.qmd)"
-    type: primary
-    position: below-navbar
-
 format:
   html:
     theme: [cosmo, assets/scss/styles.scss]
     toc: true
     page-layout: article
 
-execute:
-  freeze: auto
+babelquarto:
+  languagelinks: navbar
+  languagecodes:
+  - name: en
+    text: "🇬🇧 English"
+  - name: fr
+    text: "🇫🇷 Français"
+  mainlanguage: 'fr'
+  languages: ['en']
+  icon: ""  # No bootstrap icon
 
-lang: fr
+

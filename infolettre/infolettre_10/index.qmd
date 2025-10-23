@@ -136,7 +136,7 @@ possibilité de surligner ou de prendre des notes.
 
 ![](write-blogpost.jpg){fig-align="center" width="30%"} 
 
-Le site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. 
+Le site web du réseau ({{< var site.url >}}) propose depuis septembre une section blog. 
 __Vos idées et contributions sont les bienvenues pour l'enrichir !__
 
 Pour souligner l'aspect collectif de cette section,

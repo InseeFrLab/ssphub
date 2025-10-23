@@ -1,0 +1,29 @@
+---
+title: Automatic extraction of the table of subsidiaries and holdings from company
+  accounts
+description: Extract information from company accounts tables, in particular tables
+  of subsidiaries and holdings, contained in scanned images made available by INPI
+  via an API
+format: html
+authors:
+- Nicolas
+date: '2021-01-01'
+image: Extraction_CS_API.png
+categories:
+- Python
+- data extraction
+- API
+- Machine learning
+- in production
+---
+
+# Project summary
+
+|  | Automatic extraction of the table of subsidiaries and holdings from company accounts       | 
+| --- | --------------------------------------------------------------------------------- |
+| **Project details** | A trial on the automated extraction of the table of subsidiaries and holdings from the company accounts was started in 2022 following an internship in the PTGU division. This table is used manually during company profiling operations, which is tedious work. The experiment was conducted with the Banque de France, which is interested in the same use case as Insee, with two main objectives: <br>  <br> - to develop a prototype application enabling users to retrieve a table of subsidiaries and holdings automatically for a given Siren number and year; <br> - compare the performance of different automatic table extraction methods, based on open-source tools on the one hand and commercial solutions on the other. | 
+| **Players** | Insee (DSE), Inpi, Banque de France    | 
+| **Project results** | \- A new [experimental IPA](https://extraction-cs.lab.sspcloud.fr/docs) and a [experimental interface](https://extract-table-ui.lab.sspcloud.fr/) were put in place to meet the business need. <br> - The project was also presented at an internal Insee seminar on 27 June 2024. [slides](https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/) <br>   | 
+| **Project code** | -  <https://github.com/InseeFrLab/ca-document-querier/> Python wrapper for Inpi's enterprise API <br> -  <https://github.com/InseeFrLab/extraction-comptes-sociaux> core" repository containing elements for page detection/table extraction <br> -  <https://github.com/InseeFrLab/extract-table-ui> code repository for the[experimental interface](https://extract-table-ui.lab.sspcloud.fr/) <br> -  <https://github.com/InseeFrLab/extraction-comptes-sociaux-llm> Kubernetes: source code for the overall architecture, comprising containerised microservices orchestrated by Kubernetes. It combines calls to external APIs (INPI), PDF processing and the use of language models (LLM) for data analysis and extraction.                                   | 
+
+
