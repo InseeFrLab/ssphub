@@ -2675,8 +2675,8 @@ Tableau des performances (source: <a href="https://mistral.ai/news/mixtral-of-ex
 <section id="nouveau-post-de-blog-diffusion-du-recensement-de-la-population-au-format-parquet" class="level2">
 <h2 class="anchored" data-anchor-id="nouveau-post-de-blog-diffusion-du-recensement-de-la-population-au-format-parquet">Nouveau <em>post</em> de blog: diffusion du recensement de la population au format <code>Parquet</code></h2>
 <p>Chaque année, l’Insee diffuse des statistiques construites à partir du recensement de la population, l’une des enquêtes phares de l’institut. Pour accompagner ces résultats et permettre à de nombreux acteurs de creuser ces données très riches dans des dimensions qui les intéressent, l’Insee diffuse également des bases de données détaillées construites après anonymisation de près de 20 millions de données individuelles.</p>
-<p>Ces données, d’une extrême richesse, étaient historiquement complexes à manipuler du fait de leur volumétrie. La diffusion de celles-ci sous le format <code>Parquet</code>, une première mondiale parmi les instituts de statistique publique, vise à simplifier leur exploitation. Pour accompagner cette innovation, en partenariat avec les services de diffusion de l’Insee, le <a href="https://ssphub.netlify.app/blog/parquetrp/">dernier <em>post</em> de blog</a> du réseau présente un guide pratique d’utilisation de ces données dans plusieurs langages de traitement (<i class="fa-brands fa-r-project" aria-label="r-project"></i> , <code>Python</code> <i class="fa-brands fa-python" aria-label="python"></i> et <code>Observable</code> <i class="fa-brands fa-js-square" aria-label="js-square"></i>) par le biais de <code>DuckDB</code>.</p>
-<p>Combien d’habitants de Toulouse ont changé de logement sur l’année ? Quels sont les départements avec le plus de centenaires ? Le <a href="https://ssphub.netlify.app/blog/parquetrp/"><em>post</em> de blog</a> vous montrera comment calculer ces statistiques. Et si vous désirez découvrir ce format avec des exemples additionnels, ce <em>post</em> d’<a href="https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/">Eric Mauvière</a> vous intéressera également.</p>
+<p>Ces données, d’une extrême richesse, étaient historiquement complexes à manipuler du fait de leur volumétrie. La diffusion de celles-ci sous le format <code>Parquet</code>, une première mondiale parmi les instituts de statistique publique, vise à simplifier leur exploitation. Pour accompagner cette innovation, en partenariat avec les services de diffusion de l’Insee, le <a href="../../blog/parquetRP/index.html">dernier <em>post</em> de blog</a> du réseau présente un guide pratique d’utilisation de ces données dans plusieurs langages de traitement (<i class="fa-brands fa-r-project" aria-label="r-project"></i> , <code>Python</code> <i class="fa-brands fa-python" aria-label="python"></i> et <code>Observable</code> <i class="fa-brands fa-js-square" aria-label="js-square"></i>) par le biais de <code>DuckDB</code>.</p>
+<p>Combien d’habitants de Toulouse ont changé de logement sur l’année ? Quels sont les départements avec le plus de centenaires ? Le <a href="../../blog/parquetRP/index.html"><em>post</em> de blog</a> vous montrera comment calculer ces statistiques. Et si vous désirez découvrir ce format avec des exemples additionnels, ce <em>post</em> d’<a href="https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/">Eric Mauvière</a> vous intéressera également.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -2688,7 +2688,7 @@ Tableau des performances (source: <a href="https://mistral.ai/news/mixtral-of-ex
 </div>
 <div class="callout-body-container callout-body">
 <ul>
-<li>Le <a href="https://ssphub.netlify.app/blog/parquetrp/"><em>post</em> de blog</a> ;</li>
+<li>Le <a href="../../blog/parquetRP/index.html"><em>post</em> de blog</a> ;</li>
 <li>Un <a href="https://www.insee.fr/fr/information/7635827?sommaire=7635842">article</a> sur le format <code>Parquet</code> dans le <em>Courrier des stats n°9</em> écrit par Alexis Dondon et Pierre Lamarche ;</li>
 <li>Le blog d’<a href="https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/">Eric Mauvière</a> qui présente une série d’articles sur le format <code>Parquet</code>;</li>
 <li>La <a href="https://www.linkedin.com/feed/update/urn:li:activity:7133760348129505281?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7133760348129505281%29">présentation</a> de Romain Lesur sur le sujet pour l’atelier <em>Modernisation of Official Statistics</em> de l’UNECE.</li>
@@ -5072,7 +5072,7 @@ Note
 </div>
 <p>Dans la dernière quinzaine, l’une des principales annonces est la publication par <a href="https://laion.ai/blog/"><code>LAION</code></a> d’<a href="https://laion.ai/blog/open-flamingo/"><code>OpenFlamingo</code></a>, une version <em>open source</em> de <a href="https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model">Flamingo</a>, modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.</p>
 <p>Afin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d’image et textuelle, celui-ci s’appuie sur des composantes <em>open source</em> pour les modèles de langage et de reconnaissance d’image et sur un jeu de données ouvertes. Des exemples de réutilisation en <code>Python</code> sont disponibles sur le <a href="https://github.com/mlfoundations/open_flamingo">dépôt <code>Github</code></a>.</p>
-<p>Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a mis en oeuvre un <code>chatbot</code> ouvert, à partir des modèles <code>LLaMA</code> (Meta, voir <a href="https://ssphub.netlify.app/infolettre/infolettre_11/">Newsletter #11</a>) ou <code>Alpaca</code> (Stanford) : <a href="https://vicuna.lmsys.org/"><code>Vicuna</code></a>. Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. En plus de s’appuyer sur des modèles ouverts, ce qui peut faciliter sa ré-utilisation dans un cadre interne, ce <em>chat</em> présente un avantage technique puisqu’il s’appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4.</p>
+<p>Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a mis en oeuvre un <code>chatbot</code> ouvert, à partir des modèles <code>LLaMA</code> (Meta, voir <a href="../../infolettre/infolettre_11/index.html">Newsletter #11</a>) ou <code>Alpaca</code> (Stanford) : <a href="https://vicuna.lmsys.org/"><code>Vicuna</code></a>. Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. En plus de s’appuyer sur des modèles ouverts, ce qui peut faciliter sa ré-utilisation dans un cadre interne, ce <em>chat</em> présente un avantage technique puisqu’il s’appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4.</p>
 <p>Dans le même temps, <code>Databricks</code> s’est également appuyé sur <code>LLaMA</code> et <code>Alpaca</code> pour proposer un autre modèle de langage ouvert avec lequel il est possible d’échanger. Ce modèle s’appelle <a href="https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html"><code>Dolly</code></a> et est pensé comme premier clone du modèle <a href="https://github.com/tatsu-lab/stanford_alpaca"><code>Alpaca</code></a>. <code>Dolly</code> peut être entrainé en 30 minutes sur un corpus massif et ne présente <em>“que”</em> 6 milliards de paramètres (qu’il hérite d’<code>Alpaca</code>) ce qui en fait, dans l’écosystème actuel des modèles de langage (LLM), un nain : à titre de comparaison <code>GPT-3</code> comporte 175 milliards de paramètres et le nombre de paramètres de <code>GPT-4</code> est inconnu mais pourrait être de l’ordre de la centaine de trillions.</p>
 <p>Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la <em>startup</em> <a href="https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/">Mozilla.ai</a>. Pour Mozilla, cette startup sert à adapter la philosophie à l’origine du navigateur Firefox au développement d’intelligences artificielles : proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé.</p>
 <p>La question de la sécurité et de la confidentialité des informations fournies à <code>OpenAI</code> a également été au centre de l’attention au cours de la dernière quinzaine. <code>OpenAI</code> a révélé une faille de sécurité à l’origine d’une <a href="https://twitter.com/OpenAI/status/1639297361729191936?t=j1gdTehqAT8OraZRC34iqg&amp;s=19">fuite de données</a>. Cette question de la confidentialité des informations fournies à <code>ChatGPT</code> a d’ailleurs amené la CNIL italienne à demander le blocage temporaire de l’outil d’OpenAI (<a href="https://www.lefigaro.fr/secteur/high-tech/rgpd-la-cnil-italienne-bloque-temporairement-l-acces-au-robot-conversationnel-chatgpt-20230331">voir ici</a>).</p>
@@ -5085,7 +5085,7 @@ Note
 <p>Ainsi, la <a href="https://www.lesechos.fr/tech-medias/medias/elon-musk-ouvre-une-partie-de-twitter-en-open-source-les-annonceurs-mefiants-1921111">publication en open source de l’algorithme de recommandation de Twitter</a> permet de mieux comprendre la manière dont fonctionne l’<a href="https://www.theverge.com/2023/3/31/23664849/twitter-releases-algorithm-musk-open-source">algorithme de recommandation</a> de <code>Twitter</code>, notamment la manière dont des <a href="https://www.cnil.fr/fr/definition/bulle-de-filtre">bulles de filtre</a> peuvent advenir après avoir cliqué sur un <em>post</em> par curiosité.</p>
 <p>La publication de ce code prend place quelques jours après la découverte qu’une partie importante du code de <code>Twitter</code> était <a href="https://www.theverge.com/2023/3/27/23657928/twitter-source-code-leak-github">déjà sur <code>Github</code></a>, sans doute suite à une fuite après l’un des licenciements massifs des derniers mois.</p>
 <p>Peut-être n’avez-vous pas remarqué mais Twitter n’a plus le même logo depuis lundi. L’oiseau bleu a été remplacé par un chien (un Shiba Inu), logo d’une cryptomonnaie, le <em>dogecoin</em>, dont Elon Musk avait fait une <a href="https://gizmodo.com/elon-musk-crypto-dogecoin-tesla-1850293273">promotion controversée</a> et dont les cours ont <a href="https://techcrunch.com/2023/04/03/twitters-new-dog-icon-is-sending-dogecoin-sigh-to-the-moon/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly90LmNvLw&amp;guce_referrer_sig=AQAAAJNxrMnEUPBmdQSt0itSK2mkXlYk2q2oU6Xlfk4DvUuTbtY0ycbsOICeiE4h9nfrCDw7vMehvG9RnBo3-AtvTmylVThzobsrraE27Rr-5pKjCdFf6fp97WB-dWGKoIxuYhipoFCua_PzoJG8x1PR5STbJqGbZqXhmos0IdWM26Rr">connu une envolée depuis</a>.</p>
-<p>Le logiciel de création d’applications <a href="https://fr.wikipedia.org/wiki/Docker_(logiciel)"><code>Docker</code></a> (principal logiciel de <a href="https://www.redhat.com/fr/topics/cloud-native-apps/what-is-containerization">conteneurisation</a>) noue un <a href="https://www.docker.com/blog/docker-and-hugging-face-partner-to-democratize-ai/">partenariat</a> avec <a href="https://huggingface.co/"><code>HuggingFace</code></a>, qui rassemble une immense bibliothèque de modèles, pour faciliter la réutilisation de modèles de <em>deep learning</em>. Avec cette approche, il est plus facile de proposer aux ré-utilisateurs de modèles des applications prêtes à l’emploi pour tester ou enrichir un modèle sur des infrastructures compatibles avec la technique de la conteneurisation, approche utilisée par les principales plateformes de <em>data science</em> modernes (notamment par celles s’appuyant sur le logiciel <a href="https://ssphub.netlify.app/blog/onyxia/"><code>Onyxia</code></a>).</p>
+<p>Le logiciel de création d’applications <a href="https://fr.wikipedia.org/wiki/Docker_(logiciel)"><code>Docker</code></a> (principal logiciel de <a href="https://www.redhat.com/fr/topics/cloud-native-apps/what-is-containerization">conteneurisation</a>) noue un <a href="https://www.docker.com/blog/docker-and-hugging-face-partner-to-democratize-ai/">partenariat</a> avec <a href="https://huggingface.co/"><code>HuggingFace</code></a>, qui rassemble une immense bibliothèque de modèles, pour faciliter la réutilisation de modèles de <em>deep learning</em>. Avec cette approche, il est plus facile de proposer aux ré-utilisateurs de modèles des applications prêtes à l’emploi pour tester ou enrichir un modèle sur des infrastructures compatibles avec la technique de la conteneurisation, approche utilisée par les principales plateformes de <em>data science</em> modernes (notamment par celles s’appuyant sur le logiciel <a href="../../blog/onyxia/index.html"><code>Onyxia</code></a>).</p>
 <p>La plateforme <code>Observable</code> propose un <a href="https://observablehq.com/@observablehq/data-wrangling-translations">comparatif</a> des principales syntaxes de manipulation de données (<code>JavaScript</code>, <code>Python</code>, <code>R</code> et <code>SQL</code>).</p>
 <p>Enfin, si vous appréciez les cartes, un <em>hashtag</em> à suivre est le <a href="https://twitter.com/hashtag/MapPromptMonday">#MapPromptMonday</a>.</p>
 </section>
@@ -5100,7 +5100,7 @@ Note
 <p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_13/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
-<p>Nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅 (<a href="https://ssphub.netlify.app/infolettre/infolettre_12/"><em>Newsletter #12</em></a>). Les places en présentiel sont presque épuisées, ne tardez pas à vous inscrire ! Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom.</p>
+<p>Nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅 (<a href="../../infolettre/infolettre_12/index.html"><em>Newsletter #12</em></a>). Les places en présentiel sont presque épuisées, ne tardez pas à vous inscrire ! Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom.</p>
 </section>
 <section id="les-masterclass-avec-datascientest-continuent" class="level2">
 <h2 class="anchored" data-anchor-id="les-masterclass-avec-datascientest-continuent">Les masterclass avec <code>DataScientest</code> continuent</h2>
@@ -5118,18 +5118,18 @@ Note
 <h1>Actualités du réseau: dernières nouveautés</h1>
 <section id="replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars" class="level2">
 <h2 class="anchored" data-anchor-id="replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars">Replay “Bonnes pratiques pour la mise en production de projets <em>data science</em>” (30 mars)</h2>
-<p>Le replay de la présentation succincte du contenu du cours de l’ENSAE <a href="https://ensae-reproductibilite.netlify.app/">“Bonnes pratiques pour la mise en production de projets <em>data science</em>”</a> ayant eu lieu dans le cadre du programme 10% (voir <a href="https://ssphub.netlify.app/infolettre/infolettre_12/"><em>Newsletter #12</em></a>) est disponible <a href="https://bbb-dinum-scalelite.visio.education.fr/playback/presentation/2.3/871ab1ad6290d683201d2996582dffe96174d9a6-1680176731865">sur le site du programme 10%</a>.</p>
+<p>Le replay de la présentation succincte du contenu du cours de l’ENSAE <a href="https://ensae-reproductibilite.netlify.app/">“Bonnes pratiques pour la mise en production de projets <em>data science</em>”</a> ayant eu lieu dans le cadre du programme 10% (voir <a href="../../infolettre/infolettre_12/index.html"><em>Newsletter #12</em></a>) est disponible <a href="https://bbb-dinum-scalelite.visio.education.fr/playback/presentation/2.3/871ab1ad6290d683201d2996582dffe96174d9a6-1680176731865">sur le site du programme 10%</a>.</p>
 </section>
 <section id="replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars" class="level2">
 <h2 class="anchored" data-anchor-id="replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars">Replay de l’événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)</h2>
 <p><a href="https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr">Christopher Kermorvant</a>, chercheur spécialisé en OCRisation et fondateur de <a href="https://teklia.com/">Teklia</a>, a proposé au réseau une présentation très pédagogique sur l’extraction de texte avec des méthodes de <em>deep learning</em>.</p>
 <p>A partir de l’exemple de recensements de la fin du XIXe siècle, nous avons ainsi bénéficié d’une excellente introduction à l’histoire des techniques d’OCRisation et la manière dont aujourd’hui ces modèles fonctionnent en associant reconnaissance d’image et analyse textuelle.</p>
-<p>Le replay est <a href="https://ssphub.netlify.app/event/ocrisation-teklia/">ici</a> !</p>
+<p>Le replay est <a href="../../event/ocrisation-teklia/index.html">ici</a> !</p>
 </section>
 <section id="replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars" class="level2">
 <h2 class="anchored" data-anchor-id="replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars">Replay de la présentation de la documentation collaborative <em>Carpentries</em> (28 mars)</h2>
 <p>Kate Burnett-Isaacs, de Statistics Canada, nous a présenté l’initiative Meta Academy / Carpentries permettant de construire une documentation francophone de référence sur <code>R</code>, <code>Python</code> et <code>Git</code> à destination des utilisateurs de données.</p>
-<p>Le replay est <a href="https://ssphub.netlify.app/event/presentation-du-projet-meta-academy-carpentries/">ici</a> !</p>
+<p>Le replay est <a href="../../event/presentation-du-projet-meta-academy-carpentries/index.html">ici</a> !</p>
 
 
 </section>
@@ -5181,7 +5181,7 @@ Note
 <h2 class="anchored" data-anchor-id="chatgpt-encore-et-toujours">ChatGPT encore et toujours</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://ssphub.netlify.app/blog/retrospective2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p><code>ChatGPT</code> continue de focaliser l’attention. Dans la veine de l’article désignant les modèles de langages sous le terme de <a href="https://dl.acm.org/doi/10.1145/3442188.3445922"><em>“stochastic parrots”</em></a> (“perroquets stochastiques”), Arthur Charpentier parle lui de <a href="https://freakonometrics.hypotheses.org/66144">“société du bullshit”</a> pour désigner la manière dont <code>ChatGPT</code> offre, sous un raisonnement en apparence logique, de manière indifférenciée des absurdités et des vérités.</p>
@@ -5207,7 +5207,7 @@ Note
 </section>
 <section id="le-big-data-nest-pas-mort" class="level2">
 <h2 class="anchored" data-anchor-id="le-big-data-nest-pas-mort">Le big data n’est pas mort</h2>
-<p>Une <a href="https://ponder.io/big-data-is-dead-long-live-big-data/">réponse intéressante</a> à l’article <em>“Big data is dead”</em> (<a href="https://ssphub.netlify.app/infolettre/infolettre_11/">voir Newsletter #11</a>) revient sur l’intérêt de disposer de données historiques longues pour l’entrainement de modèles d’apprentissage.</p>
+<p>Une <a href="https://ponder.io/big-data-is-dead-long-live-big-data/">réponse intéressante</a> à l’article <em>“Big data is dead”</em> (<a href="../../infolettre/infolettre_11/index.html">voir Newsletter #11</a>) revient sur l’intérêt de disposer de données historiques longues pour l’entrainement de modèles d’apprentissage.</p>
 </section>
 <section id="r-directement-dans-le-navigateur" class="level2">
 <h2 class="anchored" data-anchor-id="r-directement-dans-le-navigateur"><code>R</code> directement dans le navigateur</h2>
@@ -5224,7 +5224,7 @@ Note
 <p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
-<p>Déjà annoncée dans la <a href="https://ssphub.netlify.app/infolettre/infolettre_11/"><em>Newsletter #11</em></a>, nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅.</p>
+<p>Déjà annoncée dans la <a href="../../infolettre/infolettre_11/index.html"><em>Newsletter #11</em></a>, nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅.</p>
 <p>Le nombre de places dans l’espace à disposition étant limité, une invitation par mail et un lien d’inscription seront communiqués dans la semaine pour pouvoir participer à cet événement en présentiel dans le tiers-lieu <a href="https://www.latreso.fr/">la Tréso</a> à Malakoff.</p>
 </section>
 <section id="bonnes-pratiques-en-python-présentation-lors-des-ateliers-du-programme-10-30-mars" class="level2">
@@ -5241,7 +5241,7 @@ Note
 </section>
 <section id="présentation-de-la-documentation-collaborative-carpentries-28-mars" class="level2">
 <h2 class="anchored" data-anchor-id="présentation-de-la-documentation-collaborative-carpentries-28-mars">Présentation de la documentation collaborative <em>Carpentries</em> (28 mars)</h2>
-<p>Pour rappel, Kate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative Meta Academy / Carpentries le <strong>mardi 28 mars à 15h</strong> 📅. Plus de détails dans la <a href="https://ssphub.netlify.app/infolettre/infolettre_11/"><em>Newsletter #11</em></a>.</p>
+<p>Pour rappel, Kate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative Meta Academy / Carpentries le <strong>mardi 28 mars à 15h</strong> 📅. Plus de détails dans la <a href="../../infolettre/infolettre_11/index.html"><em>Newsletter #11</em></a>.</p>
 <p><strong><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-carpentries/carpentries.ics">Invitation <code>Outlook</code> ici</a></strong>.</p>
 </section>
 </section>
@@ -5254,7 +5254,7 @@ Note
 <p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_12/polar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
-<p>Pour faire suite à la <a href="https://ssphub.netlify.app/infolettre/infolettre_11/"><em>Newsletter #11</em></a> qui présentait l’écosystème autour du package <a href="https://www.pola.rs/"><code>Python</code> <code>Polars</code></a>, Romain Tailhurat (Insee) nous propose un <a href="https://ssphub.netlify.app/blog/polars/">post de blog</a> pour découvrir ce <em>package</em>.</p>
+<p>Pour faire suite à la <a href="../../infolettre/infolettre_11/index.html"><em>Newsletter #11</em></a> qui présentait l’écosystème autour du package <a href="https://www.pola.rs/"><code>Python</code> <code>Polars</code></a>, Romain Tailhurat (Insee) nous propose un <a href="../../blog/polars/index.html">post de blog</a> pour découvrir ce <em>package</em>.</p>
 <p>Celui-ci est accompagné par un tutoriel pas-à-pas pour découvrir les principales fonctionnalités de la librairie. Il est possible de tester le <em>notebook</em> en un seul clic sur le <code>SSP Cloud</code> ou sur <code>Google Colab</code>.</p>
 <p>Vous pouvez également retrouver ce tutoriel depuis l’<a href="https://www.sspcloud.fr/formation">espace formation</a> du SSP Cloud.</p>
 
@@ -5297,7 +5297,7 @@ Note
 <h2 class="anchored" data-anchor-id="chatgpt-continue-de-faire-parler">ChatGPT continue de faire parler</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://ssphub.netlify.app/blog/retrospective2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>L’actualité est encore largement dominée par les discussions autour de <code>ChatGPT</code>. Les débats continuent notamment sur la pertinence de ce type d’outil dans l’enseignement (<a href="https://www.telerama.fr/enfants/chatgpt-a-l-ecole-et-si-c-etait-bien-7014474.php">cf.&nbsp;Télérama</a>). L’article du <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_424"><em>New Yorker</em> “ChatGPT is a blurry JPEG of the web”</a> propose une analyse en profondeur de la manière dont les modèles de langage reconstruisent des réponses originales en mélangeant des corpus rencontrés lors de la phase d’entraînement.</p>
@@ -5325,7 +5325,7 @@ Note
 <p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_11/hf-js.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
-<p><code>Huggingface</code> et <code>Observable</code> sont chacun devenus des incontournables dans leur domaine (voir notre <a href="https://ssphub.netlify.app/blog/retrospective2022/"><em>newsletter</em> de décembre</a>). Alors un rapprochement entre ces deux univers, permettant d’utiliser de nombreux modèles d’apprentissage via l’API d’<code>HuggingFace</code> directement dans le navigateur, ça donne envie de s’amuser.</p>
+<p><code>Huggingface</code> et <code>Observable</code> sont chacun devenus des incontournables dans leur domaine (voir notre <a href="../../blog/recap2022/index.html"><em>newsletter</em> de décembre</a>). Alors un rapprochement entre ces deux univers, permettant d’utiliser de nombreux modèles d’apprentissage via l’API d’<code>HuggingFace</code> directement dans le navigateur, ça donne envie de s’amuser.</p>
 <p>Le <em>notebook</em>, disponible sur <a href="https://observablehq.com/@huggingface/hello-huggingface-js-inference"><code>Observable</code></a>, illustre la richesse des fonctionnalités disponibles.</p>
 </section>
 </section>
@@ -5347,7 +5347,7 @@ Note
 <h2 class="anchored" data-anchor-id="présentation-de-la-documentation-collaborative-carpentries">Présentation de la documentation collaborative <em>Carpentries</em></h2>
 <p>Pour favoriser l’adoption des langages <code>R</code>, <code>Python</code> et <code>Git</code> dans les administrations, le programme <code>ModernStat</code> piloté par l’OCDE et Statistics Canada, a lancé un projet nommé <code>Meta Academy</code> et s’est rapproché de l’organisation américaine <code>Carpentries</code> dont l’objectif est de proposer des parcours progressifs de formation dans les langages <em>open source</em>, associés à des documentations disponibles de manière ouverte.</p>
 <p>L’absence de contenu en Français et l’orientation principalement académique des <a href="https://datacarpentry.org/lessons/">contenus</a> a amené le programme <code>ModernStat</code> à proposer aux <em>Carpentries</em> de créer de nouveaux parcours de formations en Français. Ces programmes seraient créés par des membres de la communauté francophone des utilisateurs des langages <code>R</code>, <code>Python</code> et <code>Git</code>.</p>
-<p>Kate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative le <strong>mardi 28 mars à 15h</strong> 📅 (<a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-carpentries/carpentries.ics">invitation <code>Outlook</code></a>). La présentation aura lieu en Anglais et sera suivie d’un échange (Français et Anglais possibles). Si vous êtes intéressés par la manière dont les nombreux contenus créés par les membres du réseau pourraient prendre place dans ce cadre, n’hésitez pas à venir pour en savoir plus ! Informations pratiques <a href="https://ssphub.netlify.app/event/presentation-du-projet-meta-academy-carpentries/">ici</a> !</p>
+<p>Kate Burnett-Isaacs, de Statistics Canada, nous présentera l’initiative le <strong>mardi 28 mars à 15h</strong> 📅 (<a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-carpentries/carpentries.ics">invitation <code>Outlook</code></a>). La présentation aura lieu en Anglais et sera suivie d’un échange (Français et Anglais possibles). Si vous êtes intéressés par la manière dont les nombreux contenus créés par les membres du réseau pourraient prendre place dans ce cadre, n’hésitez pas à venir pour en savoir plus ! Informations pratiques <a href="../../event/presentation-du-projet-meta-academy-carpentries/index.html">ici</a> !</p>
 </section>
 <section id="masterclass-datascientest" class="level2">
 <h2 class="anchored" data-anchor-id="masterclass-datascientest">Masterclass datascientest</h2>
@@ -5380,11 +5380,11 @@ Note
 <h2 class="anchored" data-anchor-id="onyxia">Onyxia</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://ssphub.netlify.app/blog/onyxia/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/onyxia/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
 </figure>
 </div>
-<p>Le <a href="https://ssphub.netlify.app/blog/onyxia/">dernier post</a> sur le site web du réseau revient sur le projet <code>Onyxia</code>, le logiciel initié par l’équipe innovation de l’Insee et mis à disposition sur <a href="https://github.com/InseeFrLab/onyxia-web"><code>Github</code></a> pour permettre à d’autres organisations de développer une infrastructure de <em>data science</em> à l’état de l’art.</p>
-<p>Pour en savoir plus sur le contexte de naissance d’Onyxia, les choix techniques mis en oeuvre ou la communauté des réutilisateurs, c’est <a href="https://ssphub.netlify.app/blog/onyxia/">par ici</a>.</p>
+<p>Le <a href="../../blog/onyxia/index.html">dernier post</a> sur le site web du réseau revient sur le projet <code>Onyxia</code>, le logiciel initié par l’équipe innovation de l’Insee et mis à disposition sur <a href="https://github.com/InseeFrLab/onyxia-web"><code>Github</code></a> pour permettre à d’autres organisations de développer une infrastructure de <em>data science</em> à l’état de l’art.</p>
+<p>Pour en savoir plus sur le contexte de naissance d’Onyxia, les choix techniques mis en oeuvre ou la communauté des réutilisateurs, c’est <a href="../../blog/onyxia/index.html">par ici</a>.</p>
 </section>
 <section id="replay-de-lévénement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee" class="level2">
 <h2 class="anchored" data-anchor-id="replay-de-lévénement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee">Replay de l’événement autour des packages facilitant l’accès à l’open data de l’Insee</h2>
@@ -5394,7 +5394,7 @@ Note
 </figure>
 </div>
 <p>Le <em>replay</em> des présentations des packages <a href="https://inseefrlab.github.io/DoReMIFaSol/"><code>Doremifasol</code></a> (<code>R</code>) et <a href="https://github.com/InseeFrLab/pynsee"><code>Pynsee</code></a> (<code>Python</code>) lors de notre événement du <strong>13 février</strong> autour des packages facilitant l’accès à l’open data de l’Insee est en ligne !</p>
-<p>La vidéo et les supports présentés sont mis à disposition sur le <a href="https://ssphub.netlify.app/event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/">site web du réseau</a></p>
+<p>La vidéo et les supports présentés sont mis à disposition sur le <a href="../../event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html">site web du réseau</a></p>
 </section>
 <section id="programme-10" class="level2">
 <h2 class="anchored" data-anchor-id="programme-10">Programme 10%</h2>
@@ -5559,9 +5559,9 @@ l'écosystème de la data science.
 
 
 <p><em>Vous désirez intégrer la liste de diffusion ? Un mail à <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a> suffit</em></p>
-<p>La <a href="https://ssphub.netlify.app/blog/retrospective2022/">rétrospective de l’année 2022</a> promettait une version plus personnalisée, inspirée des visualisations proposées par les réseaux sociaux pour synthétiser l’activité de leurs utilisateurs.</p>
+<p>La <a href="../../blog/retrospective2022/index.html">rétrospective de l’année 2022</a> promettait une version plus personnalisée, inspirée des visualisations proposées par les réseaux sociaux pour synthétiser l’activité de leurs utilisateurs.</p>
 <p>Cette <em>newsletter</em> un peu spéciale propose un retour sur la première année du réseau des data scientists de la statistique publique dont la préfiguration a commencé en mars 2022 et qui a été lancé officiellement en septembre. Vous pourrez retrouver à la fin de la <em>newsletter</em> des informations plus classiques: événements, retour sur les actions du réseau, formations, etc.</p>
-<p>Elle permet aussi d’illustrer le potentiel d’outils qui ont été présentés dans la <a href="https://ssphub.netlify.app/blog/retrospective2022/">rétrospective de l’année 2022</a>. Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la première partie de la rétrospective, sont <code>Observable</code>, <code>Quarto</code> et <code>DuckDB</code>. Les données sont stockées sur le système de stockage <code>S3</code> du <code>SSPCloud</code>.</p>
+<p>Elle permet aussi d’illustrer le potentiel d’outils qui ont été présentés dans la <a href="../../blog/retrospective2022/index.html">rétrospective de l’année 2022</a>. Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la première partie de la rétrospective, sont <code>Observable</code>, <code>Quarto</code> et <code>DuckDB</code>. Les données sont stockées sur le système de stockage <code>S3</code> du <code>SSPCloud</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -5786,7 +5786,6 @@ new Runtime().module(define, name => {
   <category>Insee</category>
   <category>Retrospective</category>
   <category>Infolettre</category>
-  <category>Retrospective</category>
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_09/</guid>
   <pubDate>Tue, 10 Jan 2023 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_09/featured.png" medium="image" type="image/png" height="80" width="144"/>
@@ -5803,7 +5802,7 @@ new Runtime().module(define, name => {
 <p><em>Vous désirez intégrer la liste de diffusion ? Un mail à <a href="mailto:contact-ssphub@insee.fr" class="email">contact-ssphub@insee.fr</a> suffit</em></p>
 <p>La fin de l’année est généralement synonyme de bétisiers, <em>best of</em> ou rétrospectives personnalisées qui nous permettent de nous rappeler les événements marquants de l’année.</p>
 <p>Pour célébrer la fin de l’année 2022, la <em>newsletter</em> de janvier adopte un format un peu spécial pour proposer, en deux temps, deux rétrospectives.</p>
-<p>Cette première <em>newsletter</em> revient sur les principaux événements de l’année 2022 dans le monde de la <em>data science</em>. La <a href="https://ssphub.netlify.app/blog/recap2022/">seconde <em>newsletter</em></a> proposera une rétrospective quantitative sur le réseau des <em>data scientists</em> de la statistique publique, à la manière des rétrospectives personnalisées de nos applications préférées.</p>
+<p>Cette première <em>newsletter</em> revient sur les principaux événements de l’année 2022 dans le monde de la <em>data science</em>. La <a href="../../blog/recap2022/index.html">seconde <em>newsletter</em></a> proposera une rétrospective quantitative sur le réseau des <em>data scientists</em> de la statistique publique, à la manière des rétrospectives personnalisées de nos applications préférées.</p>
 <section id="les-ia-créatrices-de-contenu-à-lhonneur" class="level1">
 <h1>Les IA créatrices de contenu à l’honneur</h1>
 <p>Si l’année 2022 a été particulièrement riche dans le domaine de la <em>data science</em>, c’est principalement grâce à deux coups médiatiques d’<a href="https://openai.com/">OpenAI</a>, à savoir <a href="https://openai.com/dall-e-2/"><code>Dall-E</code></a> et <a href="https://openai.com/blog/chatgpt/"><code>ChatGPT</code></a>.</p>
@@ -5872,7 +5871,6 @@ new Runtime().module(define, name => {
 
  ]]></description>
   <category>NLP</category>
-  <category>Retrospective</category>
   <category>Observable</category>
   <category>Quarto</category>
   <category>Deep learning</category>
@@ -5934,7 +5932,6 @@ new Runtime().module(define, name => {
   <category>Quarto</category>
   <category>Deep learning</category>
   <category>Insee</category>
-  <category>Retrospective</category>
   <category>Infolettre</category>
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/infolettre/infolettre_old/</guid>
   <pubDate>Wed, 31 Aug 2022 00:00:00 GMT</pubDate>

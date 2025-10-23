@@ -4661,7 +4661,7 @@ Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still th
 <p>Un petit nouveau apporte un vent de fraîcheur dans le domaine : <a href="https://www.pola.rs/"><code>Polars</code></a>.</p>
 <p>Ses atouts ? D’excellentes performances et une expressibilité qui le rapproche d’un <a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>.</p>
 <p>Ce post de blog revient sur les principaux atouts de <code>Polars</code>, sans vouloir être exhaustif. Un <em>notebook</em> illustrant les principales fonctionnalités du package vise à le compléter :</p>
-<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?version=1.13.22&amp;autoLaunch=true&amp;init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fmain%2Fpost%2Fpolars%2Finit.sh»&amp;init.personalInitArgs=«polars-tuto»&amp;onyxia.friendlyName=«Tutoriel Polars»" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="https://colab.research.google.com/github/inseefrlab/ssphub/blob/main/blog/polars/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?version=1.13.22&amp;autoLaunch=true&amp;init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fmain%2Fblog%2Fpolars%2Finit.sh»&amp;init.personalInitArgs=«polars-tuto»&amp;onyxia.friendlyName=«Tutoriel Polars»" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="https://colab.research.google.com/github/inseefrlab/ssphub/blob/main/blog/polars/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 <section id="les-secrets-de-la-performance" class="level1">
 <h1>Les secrets de la performance</h1>
 <p>Les <em>benchmarks</em> disponibles <a href="https://h2oai.github.io/db-benchmark/">sont clairs</a> : <code>Polars</code> est un ours qui court vite !</p>
@@ -4835,7 +4835,7 @@ font-style: inherit;">"NB_STATION_SERVICE"</span>)</span>
 <li><a href="https://kevinheavey.github.io/modern-polars/">kevinheavey.github.io/modern-polars/</a></li>
 </ul>
 <p>Le <em>notebook</em> accompagnant ce <em>post</em>:</p>
-<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2Fromaintailhurat%2Fssphub%2Fblog%2Fpolars%2Fcontent%2Fnotebooks%2Finit.sh%C2%BB&amp;init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&amp;onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Frefs%2Fheads%2Fmain%2Fblog%2Fpolars%2Finit.sh%C2%BB&amp;init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&amp;onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 
 
 </section>
@@ -4859,9 +4859,9 @@ font-style: inherit;">"NB_STATION_SERVICE"</span>)</span>
 
 
 <p><em>Vous désirez intégrer la liste de diffusion ? Un mail à <a href="mailto:contact-ssphub@insee.fr" class="email">contact-ssphub@insee.fr</a> suffit</em></p>
-<p>La <a href="https://ssphub.netlify.app/blog/retrospective2022/">rétrospective de l’année 2022</a> promettait une version plus personnalisée, inspirée des visualisations proposées par les réseaux sociaux pour synthétiser l’activité de leurs utilisateurs.</p>
+<p>La <a href="../../blog/retrospective2022/index.html">rétrospective de l’année 2022</a> promettait une version plus personnalisée, inspirée des visualisations proposées par les réseaux sociaux pour synthétiser l’activité de leurs utilisateurs.</p>
 <p>Cette <em>newsletter</em> un peu spéciale propose un retour sur la première année du réseau des data scientists de la statistique publique dont la préfiguration a commencé en mars 2022 et qui a été lancé officiellement en septembre. Vous pourrez retrouver à la fin de la <em>newsletter</em> des informations plus classiques: événements, retour sur les actions du réseau, formations, etc.</p>
-<p>Elle permet aussi d’illustrer le potentiel d’outils qui ont été présentés dans la <a href="https://ssphub.netlify.app/blog/retrospective2022/">rétrospective de l’année 2022</a>. Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la première partie de la rétrospective, sont <code>Observable</code>, <code>Quarto</code> et <code>DuckDB</code>. Les données sont stockées sur le système de stockage <code>S3</code> du <code>SSPCloud</code>.</p>
+<p>Elle permet aussi d’illustrer le potentiel d’outils qui ont été présentés dans la <a href="../../blog/retrospective2022/index.html">rétrospective de l’année 2022</a>. Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la première partie de la rétrospective, sont <code>Observable</code>, <code>Quarto</code> et <code>DuckDB</code>. Les données sont stockées sur le système de stockage <code>S3</code> du <code>SSPCloud</code>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -5086,13 +5086,12 @@ new Runtime().module(define, name => {
   <category>Insee</category>
   <category>Retrospective</category>
   <category>Infolettre</category>
-  <category>Retrospective</category>
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/</guid>
   <pubDate>Tue, 10 Jan 2023 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/recap2022/featured.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
-  <title>Infolettre n°8</title>
+  <title>Rétrospective de l’année 2022</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-115/blog/retrospective2022/</link>
   <description><![CDATA[ 
 
@@ -5103,7 +5102,7 @@ new Runtime().module(define, name => {
 <p><em>Vous désirez intégrer la liste de diffusion ? Un mail à <a href="mailto:contact-ssphub@insee.fr" class="email">contact-ssphub@insee.fr</a> suffit</em></p>
 <p>La fin de l’année est généralement synonyme de bétisiers, <em>best of</em> ou rétrospectives personnalisées qui nous permettent de nous rappeler les événements marquants de l’année.</p>
 <p>Pour célébrer la fin de l’année 2022, la <em>newsletter</em> de janvier adopte un format un peu spécial pour proposer, en deux temps, deux rétrospectives.</p>
-<p>Cette première <em>newsletter</em> revient sur les principaux événements de l’année 2022 dans le monde de la <em>data science</em>. La <a href="https://ssphub.netlify.app/blog/recap2022/">seconde <em>newsletter</em></a> proposera une rétrospective quantitative sur le réseau des <em>data scientists</em> de la statistique publique, à la manière des rétrospectives personnalisées de nos applications préférées.</p>
+<p>Cette première <em>newsletter</em> revient sur les principaux événements de l’année 2022 dans le monde de la <em>data science</em>. La <a href="../../blog/retrospective2022/index.html">seconde <em>newsletter</em></a> proposera une rétrospective quantitative sur le réseau des <em>data scientists</em> de la statistique publique, à la manière des rétrospectives personnalisées de nos applications préférées.</p>
 <section id="les-ia-créatrices-de-contenu-à-lhonneur" class="level1">
 <h1>Les IA créatrices de contenu à l’honneur</h1>
 <p>Si l’année 2022 a été particulièrement riche dans le domaine de la <em>data science</em>, c’est principalement grâce à deux coups médiatiques d’<a href="https://openai.com/">OpenAI</a>, à savoir <a href="https://openai.com/dall-e-2/"><code>Dall-E</code></a> et <a href="https://openai.com/blog/chatgpt/"><code>ChatGPT</code></a>.</p>
@@ -5172,7 +5171,6 @@ new Runtime().module(define, name => {
 
  ]]></description>
   <category>NLP</category>
-  <category>Retrospective</category>
   <category>Observable</category>
   <category>Quarto</category>
   <category>Deep learning</category>

@@ -169,11 +169,31 @@ background: #6886bb;
 </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
-<div class="line-block"> | Automatic extraction of the table of subsidiaries and holdings from company accounts |<br>
- | ——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————- |<br><strong>Project details</strong> | A trial on the automated extraction of the table of subsidiaries and holdings from the company accounts was started in 2022 following an internship in the PTGU division. This table is used manually during company profiling operations, which is tedious work. The experiment was conducted with the Banque de France, which is interested in the same use case as Insee, with two main objectives: <br><br> - to develop a prototype application enabling users to retrieve a table of subsidiaries and holdings automatically for a given Siren number and year; <br> - compare the performance of different automatic table extraction methods, based on open-source tools on the one hand and commercial solutions on the other. |<br><strong>Players</strong> | Insee (DSE), Inpi, Banque de France |<br><strong>Project results</strong> | - A new <a href="https://extraction-cs.lab.sspcloud.fr/docs">experimental IPA</a> and a <a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> were put in place to meet the business need. <br> - The project was also presented at an internal Insee seminar on 27 June 2024. <a href="https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/">slides</a> <br> |<br><strong>Project code</strong> | - <a href="https://github.com/InseeFrLab/ca-document-querier/" class="uri">https://github.com/InseeFrLab/ca-document-querier/</a> Python wrapper for Inpi’s enterprise API <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux</a> core” repository containing elements for page detection/table extraction <br> - <a href="https://github.com/InseeFrLab/extract-table-ui" class="uri">https://github.com/InseeFrLab/extract-table-ui</a> code repository for the<a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux-llm" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux-llm</a> Kubernetes: source code for the overall architecture, comprising containerised microservices orchestrated by Kubernetes. It combines calls to external APIs (INPI), PDF processing and the use of language models (LLM) for data analysis and extraction. |</div>
-
-
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<table class="caption-top table">
+<thead><tr class="header">
+<th></th>
+<th>Automatic extraction of the table of subsidiaries and holdings from company accounts</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>A trial on the automated extraction of the table of subsidiaries and holdings from the company accounts was started in 2022 following an internship in the PTGU division. This table is used manually during company profiling operations, which is tedious work. The experiment was conducted with the Banque de France, which is interested in the same use case as Insee, with two main objectives: <br><br> - to develop a prototype application enabling users to retrieve a table of subsidiaries and holdings automatically for a given Siren number and year; <br> - compare the performance of different automatic table extraction methods, based on open-source tools on the one hand and commercial solutions on the other.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee (DSE), Inpi, Banque de France</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>- A new <a href="https://extraction-cs.lab.sspcloud.fr/docs">experimental IPA</a> and a <a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> were put in place to meet the business need. <br> - The project was also presented at an internal Insee seminar on 27 June 2024. <a href="https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/">slides</a> <br>
+</td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- <a href="https://github.com/InseeFrLab/ca-document-querier/" class="uri">https://github.com/InseeFrLab/ca-document-querier/</a> Python wrapper for Inpi’s enterprise API <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux</a> core” repository containing elements for page detection/table extraction <br> - <a href="https://github.com/InseeFrLab/extract-table-ui" class="uri">https://github.com/InseeFrLab/extract-table-ui</a> code repository for the<a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux-llm" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux-llm</a> Kubernetes: source code for the overall architecture, comprising containerised microservices orchestrated by Kubernetes. It combines calls to external APIs (INPI), PDF processing and the use of language models (LLM) for data analysis and extraction.</td>
+</tr>
+</tbody>
+</table></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
