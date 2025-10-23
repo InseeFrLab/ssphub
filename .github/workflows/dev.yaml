@@ -33,14 +33,14 @@ jobs:
       - name: Configure safe.directory  # Workaround for actions/checkout#760
         run: git config --global --add safe.directory /__w/ssphub/ssphub
       
-      # Python
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+      # # Python
+      # - name: Setup Python
+      #   uses: actions/setup-python@v4
+      #   with:
+      #     python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
       
-      # Jupyter
-      - run: pip install jupyter nbformat
+      # # Jupyter
+      # - run: pip install jupyter nbformat
 
       - name: Install npm
         if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
