@@ -22,7 +22,7 @@ website:
             text: "Newsletters"
           - href: about.qmd 
             text: "Présentation du réseau"
-          - href: additional/manifeste.qmd
+          - href: manifeste.qmd
             text: "Manifeste du réseau"
       - href: https://datalab.sspcloud.fr/
         text: "Le SSPCloud"

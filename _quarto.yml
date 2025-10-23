@@ -2,7 +2,7 @@ project:
   type: website
   render: 
     - about.qmd
-    - additional/manifeste.qmd
+    - manifeste.qmd
     - "!additional/notebooks/*.qmd"
     - blog.qmd
     - blog/**/*.qmd
