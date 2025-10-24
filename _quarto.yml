@@ -1,66 +1,54 @@
 project:
   type: website
-  render:
-    - index.qmd
+  render: 
     - about.qmd
-    - course.qmd
-    - blog.qmd
-    - event.qmd
-    - talk/**/*.qmd
-    - additional/manifeste.qmd
+    - manifeste.qmd
     - "!additional/notebooks/*.qmd"
-    - infolettre/*.qmd
-    - infolettre/**/*.qmd
-    - post/**/*.qmd
-    - partenaires/**/*.qmd
-    - course/**/*.qmd
+    - blog.qmd
+    - blog/**/*.qmd
     - "!*/parquetRP/snippets/*"
     - "!*/polars/polars-tuto.qmd"
+    - course.qmd
+    - course/**/*.qmd
+    - event.qmd
+    - event/**/index.qmd
+    - index.qmd
+    - infolettre/infolettre.qmd
+    - infolettre/**/index.qmd
+    - partenaires/**/index.qmd
+    - project.qmd
+    - project/**/*.qmd
+    # English version - dealt with babelquarto and not with Quarto profiles
+    - '*.en.qmd'
+  
+website: 
+  title: "SSPHub"
+  # site-url: https://ssphub.netlify.app/  # For production
+  # site-url: https://user-nicolastlm-455756-0.user.lab.sspcloud.fr/proxy/4321/  # For development
+  site-url: https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/  # when PR open
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
 
-website:
-  title: "SSPHub"
-  navbar:
-    search: true
-    right:
-      - icon: rss
-        href: index.xml  
-    left:
-      - href: index.qmd
-        text: "Home"
-      - href: event.qmd
-        text: "Événements"
-      - href: infolettre/index.qmd
-        text: "Newsletters"
-      - href: blog.qmd
-        text: "Blog"
-      - href: course.qmd
-        text: "Ressources utiles"
-      - text: "À propos"
-        menu:
-          - href: about.qmd 
-            text: "Présentation du réseau"
-          - href: additional/manifeste.qmd
-            text: "Manifeste du réseau"
-      - href: https://datalab.sspcloud.fr/
-        text: "Le SSPCloud"
-      - icon: github
-        href: https://github.com/InseeFrLab/ssphub
-  site-url: https://ssphub.netlify.app/
-  description: "Blog du réseau des data scientists de la statistique publique"
-  announcement: 
-    icon: bi-megaphone
-    dismissable: true
-    content: "📺️ Le replay des ateliers du __9 et 16 avril 2025__ sont disponibles [ici (API)](/talk/2025-04-09-API/index.qmd) et [ici (pour le format Parquet)](/talk/2025-04-16-Parquet/index.qmd)"
-    type: primary
-    position: below-navbar
-
+profile:
+  default: fr
+  group: [fr, en]
+  
 format:
   html:
-    theme: [cosmo, styles.scss]
+    theme: [cosmo, assets/scss/styles.scss]
     toc: true
     page-layout: article
+
+babelquarto:
+  languagelinks: navbar
+  languagecodes:
+  - name: en
+    text: "🇬🇧 English"
+  - name: fr
+    text: "🇫🇷 Français"
+  mainlanguage: 'fr'
+  languages: ['en']
+  icon: ""  # No bootstrap icon
 
 

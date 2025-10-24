@@ -9,7 +9,18 @@ node_modules/
 go.sum
 .hugo_build.lock
 
+# Quarto 
+_freeze/
+*.html
+*.json
+*.feed*
+site_libs/
+
+# For gh-pages
 /.quarto/
 _site/
+
 rp_parquet/
+*.quarto_ipynb
 **/*.quarto_ipynb
+course_files/

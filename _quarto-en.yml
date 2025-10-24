@@ -1,0 +1,17 @@
+website:
+  description: "Network of data scientists working for the French administration"
+  navbar:
+    search: true
+    left:
+      - href: index.qmd
+        text: "Home"
+      - href: project.qmd
+        text: "Innovative projects"
+      - href: about.qmd 
+        text: "About the SSPHub"
+      - href: https://datalab.sspcloud.fr/
+        text: "SSPCloud"
+      - icon: github
+        href: https://github.com/InseeFrLab/ssphub
+
+lang: en-GB

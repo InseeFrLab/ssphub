@@ -1,0 +1,18 @@
+---
+title: "Projets innovants du SSP"
+listing:
+  feed: true
+  id: project-listing
+  contents: project/**/index.qmd
+  type: grid
+  sort: 
+    - "date desc"
+  categories: true
+---
+
+Vous pouvez trouver ici les projets innovants portés par des membres du SSP.
+
+<br>
+
+::: {#project-listing}
+:::

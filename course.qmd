@@ -2,7 +2,8 @@
 title: "Ressources utiles"
 listing:
   id: course-listings
-  contents: course
+  contents: 
+    - course/**/index.qmd
   type: grid
   template: scripts/courses.ejs
   sort: "date desc"

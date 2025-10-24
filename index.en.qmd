@@ -1,0 +1,28 @@
+---
+toc: false
+sidebar: false
+title-block-style: none
+css: assets/css/homepage.css
+page-layout: full
+listing:
+  - id: project
+    contents: project/**/index.qmd
+    type: grid
+    feed: true
+    sort:
+      - "date desc"
+---
+
+# Network of data scientists working 
+
+The `SSPHub` aims at fostering collaboration and exchange among  _data scientists_ from the [French Official Statistical Office](https://www.insee.fr/fr/information/1302192).
+
+Details about the network are available on the [about webpage](about.qmd). 
+
+## Projects
+
+Innovative projects can be found on the [dedicated webpage](project.qmd).
+
+
+:::: {#project}
+::::
