@@ -2,17 +2,6 @@ import os
 import shutil
 import yaml
 
-def create_folder_and_file(folder_name, template_path='ssphub/scripts/project_template.qmd'):
-    # Create the folder in the 'project' directory
-    os.makedirs(os.path.join("ssphub/project", folder_name), exist_ok=True)
-
-    # Define the path for the new file
-    new_file_path = os.path.join("ssphub/project", folder_name, "index.qmd")
-
-    # Copy the template to the new file
-    add_categories_to_yaml(new_file_path, template_path=template_path, root_folder="ssphub/project")
-
-create_folder_and_file("new_project")
 
 def find_index_qmd_files(root_folder='ssphub/project'):
     index_qmd_files = []
@@ -59,7 +48,7 @@ def conc_yaml_categories(root_folder='ssphub/project'):
     return categories_conc_list
 
 
-conc_yaml_categories()
+# conc_yaml_categories()
 
 def add_categories_to_yaml(qmd_output_file, template_path='ssphub/scripts/project_template.qmd', root_folder='ssphub/project'):
     with open(template_path, mode='r') as file:
@@ -85,4 +74,16 @@ def add_categories_to_yaml(qmd_output_file, template_path='ssphub/scripts/projec
     with open(qmd_output_file, 'w', encoding='utf-8') as f:
         f.write(processed_qmd_content)
 
-add_categories_to_yaml('test.qmd')
+# add_categories_to_yaml('test.qmd')
+
+def create_folder_and_file(folder_name, template_path='ssphub/scripts/project_template.qmd'):
+    # Create the folder in the 'project' directory
+    os.makedirs(os.path.join("ssphub/project", folder_name), exist_ok=True)
+
+    # Define the path for the new file
+    new_file_path = os.path.join("ssphub/project", folder_name, "index.qmd")
+
+    # Copy the template to the new file
+    add_categories_to_yaml(new_file_path, template_path=template_path, root_folder="ssphub/project")
+
+create_folder_and_file("2022_JOCAS")
