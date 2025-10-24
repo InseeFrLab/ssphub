@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
-<head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_codif_ape/index.en.html" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_JOCAS/index.en.html" />
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.25">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="dcterms.date" content="2022-01-01">
-<meta name="description" content="Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production">
-<title>Automatic coding of companies’ main activity – SSPHub</title>
+
+<meta name="description" content="Le projet Jocas (Job offers collection and analysis system) permet à la DARES (Service statistique ministériel Travail) de collecter automatique des offres d’emploi en ligne pour construire des statistiques sur le marché du travail.">
+
+<title>Jocas, webscraping des offres d’emploi en ligne – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,10 +24,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script><script src="../../site_libs/quarto-listing/quarto-listing.js"></script><script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -42,47 +58,20 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
-}</script><script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-presentations .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-title-block-banner','listing-title-block-banner-color','listing-format','listing-babelquarto','listing-lang','listing-_quarto-vars','listing-language','listing-title','listing-image','listing-date','listing-description','listing-author','listing-order','listing-path','listing-outputHref','listing-date-modified','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-title-block-banner","listing-title-block-banner-color","listing-format","listing-babelquarto","listing-lang","listing-_quarto-vars","listing-language","listing-title","listing-image","listing-date","listing-description","listing-author","listing-order","listing-path","listing-outputHref","listing-date-modified","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-presentations'] = new List('listing-presentations', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script><style>
+}</script>
+<style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -99,37 +88,16 @@ ul.task-list li input[type="checkbox"] {
 background: #6886bb;
       }
 </style>
-<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+
+
 </head>
+
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
@@ -137,30 +105,54 @@ window.Quarto = {
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
-</div></li>
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../event.html"> 
+<span class="menu-text">Événements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../project.html"> 
-<span class="menu-text">Innovative projects</span></a>
+<span class="menu-text">Projets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About the SSPHub</span></a>
+    <a class="nav-link" href="../../course.html"> 
+<span class="menu-text">Ressources utiles</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">À propos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">    
+        <li>
+    <a class="dropdown-item" href="../../infolettre/infolettre.html">
+ <span class="dropdown-text">Newsletters</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about.html">
+ <span class="dropdown-text">Présentation du réseau</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../manifeste.html">
+ <span class="dropdown-text">Manifeste du réseau</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
-<span class="menu-text">SSPCloud</span></a>
+<span class="menu-text">Le SSPCloud</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
@@ -168,25 +160,36 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="d14fcd9fc2e806dcc24e12ea5d639735" class="alert alert-primary hidden"><i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>📺️ Le replay des ateliers du <strong>9 et 16 avril 2025</strong> sont disponibles <a href="../../event/2025-04-09-API/index.html">ici (API)</a> et <a href="../../event/2025-04-16-Parquet/index.html">ici (pour le format Parquet)</a></p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Automatic coding of companies’ main activity</h1>
+      <h1 class="title">Jocas, webscraping des offres d’emploi en ligne</h1>
                   <div>
         <div class="description">
-          Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production
+          Le projet <code>Jocas</code> (Job offers collection and analysis system) permet à la DARES (Service statistique ministériel Travail) de collecter automatique des offres d’emploi en ligne pour construire des statistiques sur le marché du travail.
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">Python</div>
-                <div class="quarto-category">automatic coding</div>
-                <div class="quarto-category">fasttext</div>
-                <div class="quarto-category">package</div>
-                <div class="quarto-category">in production</div>
-                <div class="quarto-category">MLFlow</div>
+                <div class="quarto-category">webscrapping</div>
+                <div class="quarto-category">en production</div>
+                <div class="quarto-category">codification automatique</div>
               </div>
                   </div>
   </div>
@@ -194,17 +197,11 @@ window.Quarto = {
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Nicolas </p>
-            </div>
-    </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 January 2022</p>
+        <p class="date">1 janvier 2022</p>
       </div>
     </div>
     
@@ -216,166 +213,55 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-<li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
-  <li><a href="#project-documents" id="toc-project-documents" class="nav-link" data-scroll-target="#project-documents">Project documents</a></li>
-  </ul></nav>
-</div>
+  <li><a href="#synthèse-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+<h1>Synthèse du projet</h1>
 <table class="caption-top table">
-<thead><tr class="header">
+<thead>
+<tr class="header">
 <th></th>
-<th>Automatic coding of companies’ main activity</th>
-</tr></thead>
+<th>Les offres d’emploi en ligne, nouvelle source de données sur le marché du travail</th>
+</tr>
+</thead>
 <tbody>
 <tr class="odd">
-<td><strong>Project details</strong></td>
-<td>The coding of companies’ main activity (APE) on the basis of activity descriptions (in the form of free text) in the Sirene register was previously carried out using 6 deterministic coding environments mobilising a huge number of decision rules. The aim of the experiment is to <strong>test the performance of statistical learning models in predicting the category of APE</strong> category as part of the overhaul of the Sirene register and the introduction of a one-stop shop. <br>
-</td>
+<td><strong>Détail du projet</strong></td>
+<td>En quelques années, Internet est devenu une nouvelle source d’information sur le marché du travail. Selon l’enquête Offre d’emploi et recrutement (Ofer) de la Dares, 95 % des annonces d’offres d’emploi ont fait l’objet d’une publication sur Internet en 2016 contre 53 % en 2005. Forte de ce constat, la Dares a décidé de collecter les offres d’emploi en ligne publiées sur une quinzaine de sites pour en faire une nouvelle base de données sur les offres d’emploi : Jocas (Job offers collection and analysis system). Différents outils sont utilisés pour construire cette nouvelle base de données : webscraping, algorithme de classification automatique de texte, déduplication. <br> Sur l’année 2019, la base Jocas peut être comparée aux sources usuelles de la statistique publique sur l’offre d’emploi, qu’il s’agisse de sources administratives, comme les offres diffusées par Pôle emploi et les Déclarations préalables à l’embauche (DPAE) des Urssaf, ou bien des données issues d’enquête telles que celle sur les Besoins en main-d’œuvre (BMO) de Pôle emploi, l’enquête Emploi de l’Insee, l’enquête Activité et conditions d’emploi de la main-d’œuvre (Acemo) de la Dares. Il en ressort que les métiers sont inégalement couverts par Jocas. Les domaines professionnels avec une forte proportion de cadres ou effectuant beaucoup de recrutements en ligne ont tendance à être surreprésentés. Au contraire, ceux comptabilisant beaucoup de recrutements multiples ou mobilisant des canaux de recrutement informels sont plutôt sous-représentés.</td>
 </tr>
 <tr class="even">
-<td><strong>Players</strong></td>
-<td>Insee</td>
+<td><strong>Acteurs</strong></td>
+<td>DARES</td>
 </tr>
 <tr class="odd">
-<td><strong>Project results</strong></td>
-<td>The model developed presents <strong>similar performance to previous models</strong> by automating them, and also offers decision support. The model has also been put into production, applying MLOps principles where possible. <br> Presentations and written materials relating to the project can be accessed at <a href="https://inseefrlab.github.io/codif-ape-prez/">this site</a>.</td>
+<td><strong>Résultats du projet</strong></td>
+<td>Les données d’offres en ligne ont notamment été intégrées au calcul des tensions sur le marché du travail. Elles ont également été utilisées pour la production du tableau de suivi de la situation du marché du travail en 2020-2021 lors de la crise du Covid-19. les données Jocas sont en accès libre pour les étudiants, les chercheurs et les agents de la fonction publique. L’accès aux données peut également être accordé pour un usage statistique et non commercial, sur demande auprès de la Dares. La base est notamment accessible sur la plateforme <a href="https://datalab.sspcloud.fr/">SSPCloud de l’Insee</a>, en suivant le chemin d’accès ‘projet-jocas-prod/diffusion/JOCAS’.<br> <br> - <a href="https://dares.travail-emploi.gouv.fr/publication/les-offres-demploi-en-ligne-nouvelle-source-de-donnees-sur-le-marche-du-travail">Description sur le site de la DARES</a> <br> - <a href="https://dares.travail-emploi.gouv.fr/sites/default/files/ed7db1ecec02433585a7654411102726/DE%20258%20Offres%20demploi%20en%20ligne.pdf">Document de travail</a> <br> - <a href="https://dares.travail-emploi.gouv.fr/actualite/un-hackathon-pour-dedoubler-les-offres-demploi-en-ligne">Hackathon en mars 2023</a> sur le dédoublement des offres d’emploi <br> - <a href="https://dares.travail-emploi.gouv.fr/actualite/suivre-les-offres-demploi-en-ligne-pour-mieux-comprendre-le-marche-du-travail">Actualités du projet</a> <br> - <a href="https://dares.travail-emploi.gouv.fr/enquete-source/job-offers-collection-and-analysis-system">Formation</a> pour utiliser la base JOCAS</td>
 </tr>
 <tr class="even">
-<td><strong>Project code</strong></td>
-<td>Accessible code repositories <a href="https://github.com/search?q=org%3AInseeFrLab%20codif-ape&amp;type=repositories&amp;p=1">here</a>. They include: <br> - Code for annotating data using Label Studio ; <br> - Code for a coding web API deployed on the SSP Cloud ; <br> - Code implementing a visualisation dashboard for monitoring the activity of a coding model in production and accessible via a web API; <br> - Code for training APE classification models. <br>
-</td>
+<td><strong>Code du projet</strong></td>
+<td>- Repo <a href="https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR">GitHub</a></td>
 </tr>
 </tbody>
-</table></section><section id="project-documents" class="level1"><h1>Project documents</h1>
-<div id="listing-presentations" class="quarto-listing quarto-listing-container-custom">
-
-<link href="../../assets/css/all.css" rel="stylesheet">
-<div class="list grid quarto-listing-cols-3">
-
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1761322635278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statcan-exchange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
-      <div class="quarto-grid-item card h-100 card-left">
-        
-          <p class="card-img-top">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Statistics_Canada_logo.svg" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
-         
-        
-          <div class="card-body post-contents">
-            <h5 class="no-anchor card-title listing-title" data-anchor-id="project-documents">MLOps exhange with StatCan</h5>
-            <div class="card-subtitle listing-subtitle"></div>
-
-            
-              <div class="card-text listing-description delink">
-<b>Description :</b> Slides used for an exchange with StatCan on MLOps
-</div>
-            
-
-            
-            
-              <div class="card-attribution card-text-small justify">
-                <div class="listing-author">Romain Avouac, Thomas Faria et Tom Seimandi</div>
-                <div class="listing-date">19 Mar 2024</div>
-              </div>
-            
-            <style>
-              .listing-categories .listing-category .listing-href {
-                color: inherit; /* blue colors for links too */
-                text-decoration: inherit; /* no underline */
-              }
-            </style>
-<!-----
-            <div class="listing-categories" style="padding-top: 1em;">
-              
-                <div class="listing-category">
-                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
-                </div>
-                      
-            </div>
-            ------------>
-</div>
-        
-
-        <!-- <div class="card-footer">
-            <div class="card-filename listing-filename">
-              cards5.qmd
-            </div>
-            <div class="card-file-modified listing-file-modified">
-              24/10/2025, 16:17:15
-            </div>
-        </div> -->
-
-      </div>
-    </a> <!-- Added link wrapper -->
-  </div>
-
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1761322635278" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-conf/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
-      <div class="quarto-grid-item card h-100 card-left">
-        
-          <p class="card-img-top">
-            <img src="https://geneve-int.ch/sites/default/files/styles/scale_450x450/public/2021-06/UNECE-logo.png?itok=h7fLK1Qa" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
-         
-        
-          <div class="card-body post-contents">
-            <h5 class="no-anchor card-title listing-title">Conférence UNECE</h5>
-            <div class="card-subtitle listing-subtitle"></div>
-
-            
-              <div class="card-text listing-description delink">
-<b>Description :</b> Presentation given during the UNECE Machine Learning for Official Statistics Workshop 2023
-</div>
-            
-
-            
-            
-              <div class="card-attribution card-text-small justify">
-                <div class="listing-author">Thomas Faria and Tom Seimandi</div>
-                <div class="listing-date">5 Jun 2023</div>
-              </div>
-            
-            <style>
-              .listing-categories .listing-category .listing-href {
-                color: inherit; /* blue colors for links too */
-                text-decoration: inherit; /* no underline */
-              }
-            </style>
-<!-----
-            <div class="listing-categories" style="padding-top: 1em;">
-              
-                <div class="listing-category">
-                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
-                </div>
-                      
-            </div>
-            ------------>
-</div>
-        
-
-        <!-- <div class="card-footer">
-            <div class="card-filename listing-filename">
-              cards3.qmd
-            </div>
-            <div class="card-file-modified listing-file-modified">
-              24/10/2025, 16:17:15
-            </div>
-        </div> -->
-
-      </div>
-    </a> <!-- Added link wrapper -->
-  </div>
-
-</div>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+</table>
 
 
+</section>
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -400,12 +286,12 @@ window.Quarto = {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -780,5 +666,4 @@ window.Quarto = {
 
 
 
-</body>
-</html>
+</body></html>
