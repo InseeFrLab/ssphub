@@ -16,11 +16,11 @@ categories:
 
 # Project summary
 
-|  | Methodological work on the Family Budget survey                                       | 
+|  | Methodological work on the Family Budget survey                                       |
 | --- | --------------------------------------------------------------------------------- |
-| **Details of the project** | The collection of the next Family Budget survey in 2026 will be very different from that of the previous survey (2017). <br> - In fact, some of the household consumption data will be collected through a **mobile application** made available to the households surveyed. <br> - In addition, the products derived from the consumption data will no longer be recorded in the database by the interviewers, but by a data entry or automatic extraction service provider. <br> There are two main strands to this experiment: <br>  - The first involves testing open-source solutions from**automatic extraction of the contents of till receipts** in order to be able to work more effectively with partners such as Teklia and potentially carry out some of the extraction work in-house; <br> - The second (main) axis is around the **automatic coding of consumer products in the COICOP nomenclature** nomenclature: training of a classification model on data from the previous survey and development of an optimal recovery strategy.                  | 
-| **Players** | Insee                      | 
-| **Project results** | Project in progress               | 
-| **Project code** | -  <https://git.lab.sspcloud.fr/ssplab/bdf> <br> -  <https://git.lab.sspcloud.fr/ssplab/experimentation-bdf>                              | 
+| **Details of the project** | The collection of the next Family Budget survey in 2026 will be very different from that of the previous survey (2017). <br> - In fact, some of the household consumption data will be collected through a **mobile application** made available to the households surveyed. <br> - In addition, the products derived from the consumption data will no longer be recorded in the database by the interviewers, but by a data entry or automatic extraction service provider. <br> There are two main strands to this experiment: <br>  - The first involves testing open-source solutions from**automatic extraction of the contents of till receipts** in order to be able to work more effectively with partners such as Teklia and potentially carry out some of the extraction work in-house; <br> - The second (main) axis is around the **automatic coding of consumer products in the COICOP nomenclature** nomenclature: training of a classification model on data from the previous survey and development of an optimal recovery strategy.                  |
+| **Stakeholders** | Insee                      |
+| **Project results** | Project in progress               |
+| **Project code** | -  <https://git.lab.sspcloud.fr/ssplab/bdf> <br> -  <https://git.lab.sspcloud.fr/ssplab/experimentation-bdf>                              |
 
 
