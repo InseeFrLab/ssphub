@@ -4,7 +4,9 @@ website:
     search: true
     right:
       - icon: rss
-        href: index.xml 
+        href: index.xml
+      - icon: github
+        href: https://github.com/InseeFrLab/ssphub
     left:
       - href: index.qmd
         text: "Accueil"
@@ -20,14 +22,14 @@ website:
         menu:
           - href: infolettre/infolettre.qmd
             text: "Newsletters"
-          - href: about.qmd 
+          - href: about.qmd
             text: "Présentation du réseau"
           - href: manifeste.qmd
             text: "Manifeste du réseau"
       - href: https://datalab.sspcloud.fr/
         text: "Le SSPCloud"
-  
-  announcement: 
+
+  announcement:
     icon: bi-megaphone
     dismissable: true
     content: "📺️ Le replay des ateliers du __9 et 16 avril 2025__ sont disponibles [ici (API)](/event/2025-04-09-API/index.qmd) et [ici (pour le format Parquet)](/event/2025-04-16-Parquet/index.qmd)"
