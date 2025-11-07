@@ -10,7 +10,26 @@ listing:
   categories: true
 ---
 
-Vous pouvez trouver ici les projets innovants portés par des membres du SSP.
+Vous pouvez trouver ici des exemples de projets innovants portés par des membres du SSP.
+ 
+# Qu'est-ce qu'un projet innovant ? 
+Il est toujours délicat de définir _ex-ante_ ce qu'est un projet innovant. 
+L'innovation technologique est par définition mouvante et évolue très vite.
+Cependant, comme rappelé dans le [manifeste](manifeste.qmd), les innovations technologiques récentes visent à **simplifier et accélérer** certains processus de production, à **faciliter l’exploitation de sources de données non traditionnelles ou volumineuses**, à **automatiser certaines tâches**, à **communiquer** auprès de publics plus larges avec des visualisations réactives ou encore, entre autres, à réduire le hiatus entre statisticiens et informaticiens. 
+
+Par exemple, la modernisation d'une chaîne de traitement par l'utilisation de nouveaux packages ou de nouvelles méthodes de traitement d'information est une innovation. 
+Elle peut ne pas être assez ambitieuse à elle-seule cependant pour définir un véritable projet innovant, et donc ne figurera pas forcément dans les projets présentés ici.
+L'usage de webscrapping pour constituer une base de données, alimentée de manière automatique, sera considéré comme un projet innovant.  
+
+A l'inverse, la simple mise à jour de code, ou l'utilisation de nouvelles bases administratives, si elle ne contient pas d'obstacles technologiques particuliers, n'est pas considéré en soit comme de l'innovation technologique. 
+Cela ne veut pas dire que ce projet n'est pas nécessaire et bienvenu 😉.
+
+Par ailleurs, un projet innovant à la date t peut ne plus l'être quelques mois ou années plus tard, quand l'innovation s'est assez répandue pour être considéré comme un savoir classique. 
+
+L'innovation se produit par ailleurs partout et n'est pas réservé aux divers laboratoires en innovation en data-science. 
+
+# Quel est le champ des projets présentés ici ? 
+La liste des projets présentés ici ne vise pas à être exhaustive. Elle est basée sur le volontariat. L'objectif est d'offrir un point central de partage entre data-scientist du SSP, comme rappelé dans le [manifeste](manifeste.qmd). **Toute proposition d'ajout par fusion sur notre est la bienvenue !** 
 
 <br>
 
