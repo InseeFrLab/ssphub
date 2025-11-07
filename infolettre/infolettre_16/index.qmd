@@ -81,7 +81,7 @@ curieux par le biais de menus déroulants.
 L'ensemble des codes sources
 nécessaires à la reproduction de cette page
 sont disponibles
-sur le [`Github {{< fa brands github >}} inseefrlab/ssphub`](https://github.com/InseeFrLab/ssphub/blob/main/infolettre/infolettre_16/). Pour limiter les duplications de code,
+sur le `Github {{< fa brands github >}} inseefrlab/ssphub` dont le lien est disponible. Pour limiter les duplications de code,
 les scripts ont été modularisés dans des fichiers séparés.  
 Les éléments ne sont pas nécessairement présentés dans l'ordre
 car `JavaScript` est un langage _asynchrone_, les éléments

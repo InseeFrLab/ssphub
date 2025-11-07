@@ -26,8 +26,6 @@ website:
             text: "Manifeste du réseau"
       - href: https://datalab.sspcloud.fr/
         text: "Le SSPCloud"
-      - icon: github
-        href: https://github.com/InseeFrLab/ssphub
   
   announcement: 
     icon: bi-megaphone

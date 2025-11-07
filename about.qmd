@@ -21,7 +21,7 @@ Le réseau est ouvert à toute personne travaillant dans la production de statis
 
 - Vous pouvez intégrer notre canal de discussion [`Tchap`]({{< var contact.tchap >}}) ;
 - Vous pouvez recevoir l'infolettre en vous inscrivant [ici]({{< var signup.form >}}) ;
-- Vous pouvez participer à la création de contenu sur ce site sur [notre `Github` {{< fa brands github >}}](https://github.com/InseeFrLab/ssphub) ;
+- Vous pouvez participer à la création de contenu sur ce site sur [notre `Github` {{< fa brands github >}}]({{< var site.github >}}) ;
 - Pour toute question, volonté d'échanger, etc, vous pouvez aussi écrire par mail 📧 à {{< var contact.email >}}. 
 
 # Le SSP Lab, le laboratoire d'innovation en data science de l'Insee et qui, notamment, anime le SSPHub 

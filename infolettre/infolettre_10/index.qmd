@@ -143,7 +143,7 @@ Pour souligner l'aspect collectif de cette section,
 un [guide des contributeurs](https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md) 
 vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de 
 discussion pour définir le sujet du billet aux outils proposés pour faciliter la rédaction 
-et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i>](https://github.com/InseeFrLab/ssphub).
+et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i>]({{< var site.github >}}).
 
 
 ## La saison 2 du programme 10% arrive 
