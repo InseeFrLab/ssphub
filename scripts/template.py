@@ -1,7 +1,7 @@
 import os
-import shutil
 import yaml
 import sys
+
 
 def find_index_qmd_files(root_folder='ssphub/project'):
     index_qmd_files = []
@@ -12,6 +12,7 @@ def find_index_qmd_files(root_folder='ssphub/project'):
     return index_qmd_files
 
 # find_index_qmd_files()
+
 
 def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
     """
@@ -26,7 +27,7 @@ def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
         >>>
     """
     with open(file_path, mode='r') as file:
-        qmd_content=file.read()
+        qmd_content = file.read()
 
     # Split the YAML header and the HTML content
     yaml_header = qmd_content.split('---', 2)[1]
@@ -37,7 +38,7 @@ def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
 
 def conc_yaml_categories(root_folder='ssphub/project'):
     # Parse the YAML header1
-    categories_conc_list=[]
+    categories_conc_list = []
 
     for file_path in find_index_qmd_files(root_folder):
         categories_list = extract_categories(file_path)
@@ -52,7 +53,7 @@ def conc_yaml_categories(root_folder='ssphub/project'):
 
 def add_categories_to_yaml(qmd_output_file, template_path='project_template.qmd', root_folder='../project'):
     with open(template_path, mode='r') as file:
-        qmd_content=file.read()
+        qmd_content = file.read()
     parts = qmd_content.split('---', 2)
 
     yaml_header = parts[1]
@@ -76,6 +77,7 @@ def add_categories_to_yaml(qmd_output_file, template_path='project_template.qmd'
 
 # add_categories_to_yaml('test.qmd')
 
+
 def create_folder_and_file(folder_name, template_path='project_template.qmd'):
     # Create the folder in the 'project' directory
     os.makedirs(os.path.join("../project", folder_name), exist_ok=True)
@@ -94,5 +96,3 @@ if __name__ == '__main__':
         create_folder_and_file(foldername, template_path)
     else:
         create_folder_and_file(foldername)
-
-
