@@ -1,0 +1,26 @@
+---
+title: Open Science Monitor
+description: To be able to monitor the opening up of scientific publications (the
+  objective of the **national plan for open science**), the statistical service of
+  the Ministry of Higher Education and Research (SIES) has created a tool to monitor
+  the implementation of public policy measures in favour of open science.
+format: html
+date: '2022-01-01'
+image: bso_en.png
+categories:
+- webscrapping
+- datavisualisation
+- open-data
+- in production
+---
+
+# Project summary
+
+|  | French Open Science Monitor   |
+| ----- | --------------------------------- |
+| **Project details** | The generalisation of open access to scientific publications is one of the axes of the French national open science strategy, with the objective of a 100% open access rate in 2030. It facilitates, broadens and accelerates the dissemination of the results of research to scientific communities and to society in general: teachers, students, companies, associations, public policy actors, etc. <br> <br> The French Open Science Monitor thus constructs open science indicators for publications, data, software and codes in order to measure the achievement of this objective. <br> As far as publications are concerned, as much metadata as possible is collected. It is then filtered to keep only French affiliations and enriched to track the open status of publications by identified discipline. The data is then published as open data. This method makes it possible to create the most exhaustive database of French publications in the world. <br> For data, software and codes, the scientific production is first listed. The text of the publication is then analysed to detect the availability of open access data, software or codes. Finally, monitoring indicators are produced and published. |
+| **Players** | Statistical Service of the Ministry of Higher Education and Research ([SIES](https://www.enseignementsup-recherche.gouv.fr/fr/sies))             |
+| **Project results** | The project is presented on the dedicated website : <https://frenchopensciencemonitor.esr.gouv.fr/>. It includes a [methodology](https://frenchopensciencemonitor.esr.gouv.fr/about/methodology)                                 |
+| **Project code** | The code files are available on [GitHub {{< fa brands github >}}](https://github.com/search?q=org%3Adataesr%20bso&type=repositories)     |
+
+

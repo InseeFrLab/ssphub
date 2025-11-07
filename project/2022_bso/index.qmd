@@ -1,0 +1,23 @@
+---
+title: Baromètre de la science ouverte
+description: Pour être en mesure de suivre l'ouverture des publications scientifiques (objectif de la __stratégie nationale de science ouverte__), le service statistique du Ministère de l'Enseignement Supérieur et de la Recherche (le SIES) a créé un outil de suivi de la mise en oeuvre des mesures de politiques publiques en faveur de la science ouverte.
+format: html
+date: '2022-01-01'
+image: bso.png
+categories:
+- webscrapping
+- datavisualisation
+- open-data
+- en production
+---
+
+
+# Synthèse du projet
+
+|           |         Baromètre français de la science ouverte             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |   La généralisation de l'accès ouvert aux publications scientifiques est l'un des axes de la stratégie nationale de science ouverte, avec pour objectif un taux d'accès ouvert de 100 % en 2030 pour les articles de revue. En effet, l'accès ouvert facilite, élargit et accélère la diffusion des résultats de la recherche auprès des communautés scientifiques et des acteurs de la société en général : enseignants, étudiants, entreprises, associations, acteurs des politiques publiques, etc. <br> <br> Le baromètre construit ainsi des indicateurs de la science ouverte pour les publications, données, logiciels et codes afin de mesurer l'atteinte de cet objectif. <br> Concernant les publications, un maximum de métadonnées sur les publications est collecté. Il est ensuite filtré pour ne garder que les affiliations françaises et puis enrichi pour suivre le statut d'ouverture des publications par discipline identifiée. Les données sont ensuite publiées en open-data. Cette méthode permet ainsi de constituer la base de données des publications françaises la plus exhaustive au monde. <br> Concernant les données, logiciels et codes, la production scientifique est d'abord répertoriée. Le texte de la publication est ensuite analysé pour détecter la mise à disposition de données, logiciels ou codes en accès ouvert. Des indicateurs de suivi sont enfin produits et publiés.   |
+| **Acteurs**                  |   Service statistique du Ministère de l'Enseignement Supérieur et de la Recherche ([SIES](https://www.enseignementsup-recherche.gouv.fr/fr/sies))   |
+| **Résultats du projet**      |   Le projet est présenté sur le site dédié : https://barometredelascienceouverte.esr.gouv.fr/. Il comprend notamment une [méthodologie](https://barometredelascienceouverte.esr.gouv.fr/a-propos/methodologie)    |
+| **Code du projet**           |    Les dossiers de code sont disponibles sur [GitHub {{< fa brands github >}}](https://github.com/search?q=org%3Adataesr%20bso&type=repositories)   |
+
