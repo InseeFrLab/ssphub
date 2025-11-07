@@ -1,0 +1,24 @@
+---
+title: pynsee, a Python package for retrieving INSEE data
+description: The package {{\< fa brands python >}} `pynsee` package makes it easier
+  for data scientists to retrieve INSEE data. The library is *open source* available
+  at {{\< fa brands github >}}</i>.
+format: html
+date: '2023-01-01'
+image: example_pynsee.webp
+categories:
+- in production
+- Insee
+- package
+- Python
+---
+
+# Project summary
+
+|  | `pynsee` A Python package to retrieve data from INSEE     |
+| --- | --------------------- |
+| **Project details** | pynsee provides rapid access to more than 150,000 macroeconomic series, around ten local data sets, numerous sources available on insee.fr as well as key metadata and a SIRENE database containing data on all French businesses. Visit the portal-api.insee.fr API details page.<br> This package is a contribution to reproducible research and to the transparency of public data. It benefits from developments made by the teams working on APIs at INSEE and IGN. |
+| **Players** | Insee   |
+| **Project results** | The pynsee package is in production and can be downloaded from GitHub. The documentation is also published [here](https://pynsee.readthedocs.io/en/latest/).    |
+| **Project code** | \- Repo [GitHub](https://github.com/InseeFrLab/pynsee)  |
+
