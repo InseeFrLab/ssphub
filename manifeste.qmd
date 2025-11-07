@@ -16,7 +16,7 @@ Ce manifeste est une production collective.
 Pour proposer des modifications à celui-ci,
 qui seront discutées collégialement,
 vous pouvez 
-suivre [ce lien vers {{< fa brands github >}}](https://github.com/InseeFrLab/ssphub/edit/main/content/manifeste/index.md).
+suivre [ce lien vers {{< fa brands github >}}](https://github.com/InseeFrLab/ssphub/edit/main/manifeste/index.md).
 :::
 
 # Contexte institutionnel
@@ -82,26 +82,22 @@ un site web, nommé _« SSP Hub »_, permettant de diffuser
 les projets et
 les connaissances
 acquises, qu'elles soient produites par des membres du réseau ou non.
-Ce site relaye à la fois les actions du réseau (posts de blog, projets menés, événéments
+Ce site relaye à la fois les actions du réseau (posts de blog, présentation de projets menés, événements
 organisés) mais aussi des ressources utiles pour les _data scientists_ 
 de l'administration qui désirent suivre des événements liés à la _data-science_
 ou explorer des ressources éducatives sur le sujet.  
 
 # Objectifs 
 
-À court terme, les objectifs du réseau sont :
+À court terme, les objectifs du réseau sont de :
 
-1. __Faciliter l’échange entre pairs__, notamment les retours d'expérience sur des problématiques génériques de la _data science_ appliquées aux tâches du SSP[^sspagain]. Ces échanges doivent aider à résoudre les problèmes concrets que les agents rencontrent dans leur pratique de la _data science_ et favoriser la mutualisation des connaissances ;
+1. __Faciliter l’échange entre pairs__, notamment les retours d'expérience sur des problématiques génériques de la _data science_ appliquées aux tâches du SSP. Ces échanges doivent aider à résoudre les problèmes concrets que les agents rencontrent dans leur pratique de la _data science_ et favoriser la mutualisation des connaissances ;
 2. **Promouvoir et démystifier la _data science_** en acculturant un public non aguerri à cette thématique en montrant par l'exemple ses apports concrets mais aussi en mettant à disposition les ressources et formations disponibles pour son appréhension.
-
-[^sspagain]: Le Service Statistique Public (SSP) regroupe les institutions en charge de la production de statistiques officielles. Il est principalement constitué de l'Insee et des services statistiques ministériels (SSM). Pour en savoir plus, le [site de l'Insee](https://www.insee.fr/fr/information/1302192) propose des éléments supplémentaires.
 
 A plus long terme, selon la réussite initiale du réseau, les demandes exprimées par les participants et les moyens dégagés, le _SSP Hub_ pourrait :
 
-1. **Offrir une vitrine des initiatives de _data science_** au sein du SSP[^sspagain2] et favoriser la visibilité et le dialogue avec d'autres acteurs de la _data science_ (autres institutions françaises, institutions internationales, enseignement supérieur et recherche académique...)
+1. **Offrir une vitrine des initiatives de _data science_** au sein du SSP et favoriser la visibilité et le dialogue avec d'autres acteurs de la _data science_ (autres institutions françaises, institutions internationales, enseignement supérieur et recherche académique...)
 2. **Accompagner de manière ponctuelle des équipes** dans l'amélioration de processus de production existants grâce aux outils ou méthodes de la _data science_. Ces accompagnements offrent un complément utile aux formations en proposant l'acquisition de compétences sur un projet sur lequel les agents travaillent à une fréquence élevée.
-
-[^sspagain2]: Le Service Statistique Public (SSP) regroupe les institutions en charge de la production de statistiques officielles. Il est principalement constitué de l'Insee et des services statistiques ministériels (SSM). Pour en savoir plus, le [site de l'Insee](https://www.insee.fr/fr/information/1302192) propose des éléments supplémentaires.
 
 # Publics
 
@@ -118,7 +114,7 @@ Plusieurs éléments sont mis en place pour atteindre les objectifs du réseau :
 - Un ensemble d’__évènements ouverts__. Afin de répondre aux différents besoins, ceux-ci visent des publics, durées et finalités variés. Le premier type d'évènement, testé en 2022, est l'_Open Hour_ dont le rôle est de choisir pour chaque occurence un thème en amont et d'en discuter informellement entre agents travaillant sur cette thématique et ceux désireux d'en apprendre plus. D'autres évènements seront mis en place progressivement selon les formats et contenus identifiés comme pertinents ;
 - Des canaux de communication sur l’actualité du réseau (infolettre mensuelle) et d’échanges en continu entre agents du réseau (à travers un canal `Tchap`[^5])
 
-[^5]: Il est possible de rejoindre ce canal `Tchap` sur simple demande à {{< var contact.email >}}
+[^5]: Il est possible de rejoindre ce canal `Tchap` en cliquant [ici]({{< var contact.tchap >}})
 
 # Résumé
 
