@@ -1,6 +1,7 @@
 project:
   type: website
-  render: 
+  render:
+    - index.qmd
     - about.qmd
     - manifeste.qmd
     - "!additional/notebooks/*.qmd"
@@ -12,7 +13,6 @@ project:
     - course/**/*.qmd
     - event.qmd
     - event/**/index.qmd
-    - index.qmd
     - infolettre/infolettre.qmd
     - infolettre/**/index.qmd
     - partenaires/**/index.qmd
@@ -20,8 +20,8 @@ project:
     - project/**/*.qmd
     # English version - dealt with babelquarto and not with Quarto profiles
     - '*.en.qmd'
-  
-website: 
+
+website:
   title: "SSPHub"
   # site-url: https://ssphub.netlify.app/  # For production
   site-url: https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/  # when PR open
@@ -34,7 +34,7 @@ title-block-banner-color: white
 profile:
   default: fr
   group: [fr, en]
-  
+
 format:
   html:
     theme: [cosmo, assets/scss/styles.scss]
