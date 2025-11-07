@@ -2,41 +2,76 @@
 
 Code of the [`SSPHub`](https://ssphub.netlify.app.), a website for data scientists of the French Official Statistical System.
 
-# How to use this repo ? 
-## Set up 
+# How to use this repo ?
+## Set up
 Assumes you have an account on [https://datalab.sspcloud.fr/](https://datalab.sspcloud.fr/)
 - Open a service (VSCode or other IDE) with **R installed**
-- Github account, (with credentials to InseeFrLab/ssphub if you want to deploy the website) 
+- Github account, (with credentials to InseeFrLab/ssphub if you want to deploy the website)
 
 ## How to contribute
 Specified in [contributing.md](CONTRIBUTING.md)
 
-## How to 
+## How to
 
 ### Render / preview when coding
 - render: `Rscript scripts/render.R`
 - preview: `Rscript scripts/preview.R`
 - render and preview : `Rscript scripts/render.R && Rscript scripts/preview.R`
 
-If a PR is opened, a website preview is automatically generated. The link to the preview is in the Github PR details. Every push to the remote repo will trigger an update of the website preview. 
+If a PR is opened, a website preview is automatically generated. The link to the preview is in the Github PR details. Every push to the remote repo will trigger an update of the website preview.
+
+###  Create a project
+used with Python. `create_folder_and_file("2022_JOCAS")`
+
+```{shell}
+cd scripts
+uv sync
+uv run template.py name_of_the_folder (optional: name_of_the_template.qmd)
+```
+
+Example :
+```{shell}
+cd scripts
+uv sync
+uv run template.py test
+```
+
+### Translate a page to english
+Config :
+- have a deepl API KEY stored as `DEEPL_API_KEY`
+- working directory must be ssphub
+
+```{shell}
+# it will take the "index.qmd" file and translate it into "index.en.qmd
+Rscript scripts/translate.R dir/subdir
+```
+
+Example
+```{shell}
+Rscript scripts/translate.R project/2023_doremifasol
+```
+
+
+Be careful with table and special characters, as sometimes the automated translation
+adds a backslash.
 
 ### Publish
-Publishing is automated with CI in the [prod.yaml](.github/workflows/prod.yaml) file. 
+Publishing is automated with CI in the [prod.yaml](.github/workflows/prod.yaml) file.
 
 # Credits
-Thanks to : 
+Thanks to :
 
 - [babelquarto](https://docs.ropensci.org/babelquarto/)
-- Quarto 
+- Quarto
 
-# Personnal 
+# Personnal
 
-## To do 
+## To do
 - speed up R set up in Github actions (with renv? / dependencies set to '"hard"'?)
 - move image to S3 to have smaller repo (impact on newsletter download image function)
 - have a developpement Quarto profile ?
 - doublon blog/polars/polars-tuto.qmd et additional/notebooks
 
-## Useful 
+## Useful
 - init.sh ??
 
