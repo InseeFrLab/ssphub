@@ -4,7 +4,7 @@ if (! "pak" %in% installed.packages() ) {
     pak::pak("ropensci-review-tools/babeldown")
 }
 
-# Arguments for the preview 
+# Arguments for the preview
 args = commandArgs(trailingOnly=TRUE)
 
 # test if there is at least one argument: if not, return an error
@@ -16,19 +16,19 @@ if (! "DEEPL_API_KEY" %in% names(Sys.getenv())){
     stop("DEEPL API KEY not set", call.=FALSE)
 }
 
-input_path = args[1]  # sth like directory/sub/index.qmd
-out_path = paste0(substr(input_path, 1, nchar(input_path) - 4), ".en.qmd")
+input_path = paste0(args[1], "/index.qmd")  # sth like directory/sub
+out_path = paste0(args[1], "/index.en.qmd")
 
 babeldown::deepl_translate(
   path = input_path,
   out_path = out_path,
   source_lang = "FR",
   target_lang = "EN-GB",
-  formality = "default", 
+  formality = "default",
   yaml_fields = c("title", "description", "categories")
 )
 
-# Shell command to list all files 
+# Shell command to list all files
 # find project/ -type f -name "index.qmd"
 # Rscript scripts/translate.R project/2022_Appariement/index.qmd
 # Rscript scripts/translate.R project/2020_donnees_caisse/index.qmd
