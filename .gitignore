@@ -9,7 +9,7 @@ node_modules/
 go.sum
 .hugo_build.lock
 
-# Quarto 
+# Quarto
 _freeze/
 *.html
 *.json
@@ -24,3 +24,9 @@ rp_parquet/
 *.quarto_ipynb
 **/*.quarto_ipynb
 course_files/
+
+# Venv
+.venv/
+*/.venv/
+__pycache__/
+*/__pycache__/
