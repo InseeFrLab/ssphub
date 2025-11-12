@@ -18,4 +18,4 @@ categories:
 | **Détail du projet** | Le package doremifasol (Données en R Mises à disposition par l’Insee et Facilement Sollicitables) permet d’importer facilement dans R des données mises à disposition sur le site de l’Insee. <br> <br> Il offre deux fonctionnalités principales : <br> - télécharger et importer dans R des fichiers disponibles sur insee.fr (Base Permanente des Équipements, Recensement de Population, Filosofi...), y compris les données mises à disposition via Melodi ; <br> - requêter l’API Sirene et recupérer les résultats dans R. |
 | **Acteurs** | Insee |
 | **Résultats du projet** | Le package DoReMiFaSol est en production et téléchargeable depuis GitHub. La documentation est aussi publiée [ici](https://inseefrlab.github.io/DoReMIFaSol/). |
-| **Code du projet** | - Repo [GitHub {{< fa brands github >}}](https://github.com/InseeFrLab/DoReMIFaSol) |
+| **Code du projet** | - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/InseeFrLab/DoReMIFaSol](https://github.com/InseeFrLab/DoReMIFaSol) |

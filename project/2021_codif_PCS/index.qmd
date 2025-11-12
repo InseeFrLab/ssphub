@@ -11,7 +11,7 @@ date: 2021-01-01
 
 image: 2021_codif_PCS.png
 
-categories: 
+categories:
 - Python
 - codification automatique
 - fasttext
@@ -25,5 +25,4 @@ categories:
 | **Détail du projet**         | La rénovation de la nomenclature des PCS en 2020 s'accompagne de la promotion d'un **outil d'autocomplétion des libellés de profession** dans une liste de libellés enrichis permettant le **codage direct** dans la case de la nomenclature ou des regroupements ad hoc complémentaires de la nomenclature. Or, l'outil d'autocomplétion ne sera disponible que pour des collectes informatisées et par ailleurs il comprend la possibilité de répondre "hors-liste". Pour pouvoir intégrer la nouvelle PCS 2020 dans le recensement de population à la collecte 2024 et être en mesure de coder aussi les bulletins papier tout comme les réponses informatisées "hors-liste", un **algorithme de codification automatique** en PCS 2020 de ces bulletins doit être créé. Suite au report de l'enquête de recensement 2021, des gestionnaires ont annoté en PCS 2020, avec double codage et arbitrage, 119 000 bulletins issus de l'EAR 2020. Le but de l'expérimentation est de tester et comparer différents modèles d'apprentissage statistique et méthodes de prétraitement pour le codage des professions dans la nomenclature PCS 2020 à partir du libellé de profession ainsi que des variables annexes utilisées lors de la phase d'annotation (statut de l'employeur, etc.) et d'en retenir le plus performant. L'objectif est de maintenir le taux de codifications correctes ainsi que le taux d'envoi en reprise manuelle à des niveaux similaires à l'existant.          |
 | **Acteurs**                  | Insee         |
 | **Résultats du projet**      | - [note bilan de l'expérimentation](https://intranet.insee.fr/jcms/1492866_DBFileDocument/2021-26934-dg75-l401?details=true) et [résultats associés](https://intranet.insee.fr/jcms/1492871_DBFileDocument/bilan-exper-pcs2020?details=true) (décembre 2021) <br> - article et communication aux journées de méthodologie statistiques 2022 "[Application de techniques de machine learning pour coder les professions dans la nomenclature des professions et catégories socio-professionnelles 2020](https://journees-methodologie-statistique.insee.net/application-de-techniques-de-machine-learning-pour-coder-les-professions-dans-la-nomenclature-des-professions-et-categories-socio-professionnelles-2020/)" <br> [article](https://intranet.insee.fr/jcms/8751512_DBFileDocument/confq-pcs-20200505-copie?details=true) et [slides](https://intranet.insee.fr/jcms/8751517_DBFileDocument/q2022-slides?details=true) présentés à la Conférence Q2022 "Machine learning for coding occupations in the Census: first lessons from experiments to production".         |
-| **Code du projet**           |        |
 

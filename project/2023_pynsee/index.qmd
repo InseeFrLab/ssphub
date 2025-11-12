@@ -22,6 +22,6 @@ categories:
 | **Détail du projet**         |    pynsee donne un accès rapide à plus de 150 000 séries macroéconomiques, une dizaine d’ensembles de données locales, de nombreuses sources disponibles sur insee.fr ainsi que des métadonnées clés et une base de données SIRENE contenant des données sur toutes les entreprises françaises. Consultez la page détaillée de l'API [portail-api.insee.fr](portail-api.insee.fr). <br> Ce paquet est une contribution à la recherche reproductible et à la transparence des données publiques. Il bénéficie des développements réalisés par les équipes travaillant sur les API à l’Insee et à l’IGN.    |
 | **Acteurs**                  |  Insee     |
 | **Résultats du projet**      |  Le package pynsee est en production et téléchargeable depuis GitHub. La documentation est aussi publiée [ici](https://pynsee.readthedocs.io/en/latest/). |
-| **Code du projet** | - Repo [GitHub {{< fa brands github >}}](https://github.com/InseeFrLab/pynsee) |
+| **Code du projet** | - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/InseeFrLab/pynsee](https://github.com/InseeFrLab/pynsee) |
 
 
