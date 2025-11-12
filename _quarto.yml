@@ -24,8 +24,8 @@ project:
 website:
   title: "SSPHub"
   # site-url: https://ssphub.netlify.app/  # For production
-  # site-url: https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/  # when PR open
-  site-url: https://user-nicolastlm-497263-0.user.lab.sspcloud.fr/proxy/4321/  # For dev
+  site-url: https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/  # when PR open
+  # site-url: https://user-nicolastlm-497263-0.user.lab.sspcloud.fr/proxy/4321/  # For dev
   repo-url: https://github.com/InseeFrLab/ssphub
   repo-actions: [source, issue, edit]
 
