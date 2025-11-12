@@ -42,18 +42,21 @@ Config :
 - working directory must be ssphub
 
 ```{shell}
-# it will take the "index.qmd" file and translate it into "index.en.qmd
-Rscript scripts/translate.R dir/subdir
+# it will take the "index.qmd" file of the project/subdir dir and translate it into "index.en.qmd
+Rscript scripts/translate.R project_subdir
 ```
 
 Example
 ```{shell}
-Rscript scripts/translate.R project/2023_doremifasol
+Rscript scripts/translate.R 2023_doremifasol
 ```
 
 
-Be careful with table and special characters, as sometimes the automated translation
-adds a backslash.
+Have a careful check with the proposed translated webpage. The automated translation often
+adds a backslash or "-" at some spots that creates bugs when rendering the website. For example :
+    - `description: | -` for `description: |`
+    - `{{\< fa brands github >}}` for `{{< fa brands github >}}`
+    - Markdown table structure contains many whitespace and ---
 
 ### Publish
 Publishing is automated with CI in the [prod.yaml](.github/workflows/prod.yaml) file.
