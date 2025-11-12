@@ -1,0 +1,22 @@
+---
+title: Détecter la cybercriminalité dans les procédures
+description: Détection des infractions relevant de la cyberdélinquance à partir d'une analyse textuelle des manières d'opérer
+format: html
+date: '2023-01-01'
+image: monimage.png
+categories:
+- fasttext
+- en production ??
+- SSMSI
+- deep learning
+---
+
+
+# Synthèse du projet
+
+|           |         Détecter la cybercriminalité dans les procédures             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |   La cybercriminalité est une nouvelle forme de criminalité en plein essor, et la lutte contre celle-ci est un enjeu important pour les services de police et de gendarmerie. Elle s’avère toutefois particulièrement difficile à quantifier. Elle regroupe toutes les infractions pénales tentées ou commises à l'encontre ou principalement au moyen des systèmes d'information et de communication. La nomenclature des infractions ne permet de repérer qu'une partie de ce type de délinquance. Pour obtenir une meilleure mesure statistique, il est nécessaire d'utiliser des informations fournies dans des zones textuelles des procédures. L'enjeu de l'expérimentation est d'explorer le potentiel des méthodes d'analyse textuelle sur ces données pour mesurer l'ampleur de ce type de délinquance.    |
+| **Acteurs**                  |   Insee et service statistique ministériel de la sécurité intérieure ([SSMSI](https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-statistique-ministeriel-de-securite))    |
+| **Résultats du projet**      |  Les travaux ont été repris par le SSMSI pour en déduire notamment une nomenclature à deux dimensions des délits relevant du cyber. L’algorithme prédit à plus de 95% les infractions comme relevant de la cybercriminalité au sens de la définition. De même, il prédit moins de 1% d’infractions comme ne relevant pas de la cybercriminalité au sens de notre définition. <br> - [Détection des infractions relevant de la cyberdélinquance à partir d'une analyse textuelle des manières d'opérer](https://journees-methodologie-statistique.insee.net/detection-des-infractions-relevant-de-la-cyberdelinquance-a-partir-dune-analyse-textuelle-des-manieres-doperer/), Journée de méthodologie statistique, 2022     |
+
