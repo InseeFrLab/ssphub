@@ -1,0 +1,36 @@
+---
+title: Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile
+description: |
+  L'Insee a eu accès à des données de téléphonie mobile
+  dans le cadre du suivi de la crise sanitaire de 2020.
+  Ces données ont permis de produire les statistiques
+  sur les déplacements de population entre les
+  régions françaises avant et après le confinement.
+  Outre une publication grand public,
+  ce projet a amené à diffuser une visualisation
+  dynamique des flux et à publier le jeu de données au
+  titre de statistiques expérimentales.
+
+format: html
+date: '2020-11-01'
+image: mvtpop.png
+categories:
+- datavisualisation
+- machine learning
+- Insee
+- expérimentation
+- open-data
+- données de téléphone mobile (MNO)
+---
+
+
+# Synthèse du projet
+
+|           |         Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |  Dans le cadre de ses missions d'analyse et de production de statistiques, l'Insee a estimé, à partir de nouvelles données privées d'opérateurs de téléphonie mobile, les mouvements de population internes en France pendant le premier confinement de mars 2020. Les données expérimentales ont été publiées en 2021. <br> Profitant des quelques jours entre l'annonce du confinement et son entrée en vigueur, la population a parfois pu choisir où passer cette période. En se basant sur les données privées de téléphonie mobile, sur lesquelles l'Insee travaillait déjà, l'Insee a ainsi estimé qu'environ 1,5 million de métropolitains avait rejoint leur département de résidence et que Paris avait perdu environ 450 000 habitants métropolitains par rapport aux premiers mois de 2020, dont la moitié étaient des résidents habituels de Paris. Ces excédents de population étaient largement répartis sur l'ensemble du territoire français. De manière générale (hormis Paris), la population était plus proche de son lieu de résidence habituel pendant le confinement : les motifs de nuitées dans d'autres régions, tels que le tourisme, les visites familiales ou les voyages d'affaires, étaient fortement restreints. <br> Un an plus tard, un ensemble de données plus riche a été publié par l'Insee avec la même méthode afin de visualiser les nuitées agrégées par lieu de résidence, en comparant la période avant et après le confinement. Une datavisualisation a par ailleurs été partagée. |
+| **Acteurs**                  | Insee      |
+| **Résultats du projet**      |  - [Population présente sur le territoire avant et après le début du confinement – Premiers résultats](https://www.insee.fr/fr/information/4477356), avril 2020 <br> - [Population présente sur le territoire avant et après le début du confinement : résultats consolidés](https://www.insee.fr/fr/information/4493611), mai 2020 <br> - [Retour partiel des mouvements de population avec le déconfinement](https://www.insee.fr/fr/statistiques/4635407), Insee Analyses n°54, juillet 2020 <br> - [La mixité sociale est plus forte en journée sur les lieux d’activité que pendant la nuit dans les quartiers de résidence](https://www.insee.fr/fr/statistiques/4930403), Insee Analyses n°59, novembre 2020  <br> - [Déplacements de population lors du confinement au printemps 2020, données expérimentales publiées](https://www.insee.fr/fr/statistiques/5350073), avril 2021 <br> - [Datavisualisation publiée sur les mouvements de population](https://inseefrlab.github.io/lockdown-maps-R/inflows_FR.html)    |
+| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/InseeFrLab/lockdown-maps-R](https://github.com/InseeFrLab/lockdown-maps-R)       |
+
+
