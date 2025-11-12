@@ -1,0 +1,23 @@
+---
+title: Improved identification of the employing establishment in population census
+  data
+description: Improved identification of the employing establishment in population
+  census data
+format: html
+date: '2021-01-01'
+image: recensement_2026_logo.webp
+categories:
+- in production ??
+- Insee
+- automatic coding
+- machine learning
+---
+
+# Project summary
+
+|  | Improving the identification of the employing establishment in population census data          |
+|---  | ---------------------------------------------------------------------- |
+| **Project details** | The aim of the experiment is to**improve the automatic coding of the employing establishment** with the aim of reducing the burden of manual recoding. In particular, the aim is to find the employing establishment in the Sirus register using information declared in the annual census surveys, which may contain errors or field inversions, and which are not standardised within the meaning of the nomenclatures.  The aim is therefore twofold: to limit the manual re-entry workload for managers (automatic coding), but also to save time for these same managers when manual re-entry is necessary. The experiment is based on the ideas and results of the hackathon "Les champs de Sirene" ([github {{< fa brands github >}}](http://github.com/SSP-Lab/Hackathon-2018), [Big Data newsletter n°7](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Lettre_BigData_n07.pdf)) and is pursuing the avenues developed there. It involved two stages: <br> - a stage involving the construction of an automatic identification model and an interface to improve the experience and performance of managers; <br> - a full-scale test phase via a labelling operation carried out with the help of several census managers.          |
+| **Players** | Insee       |
+| **Project results** | The model and the interface developed offer promising avenues for improvement. Automatic coding would reduce the number of bulletins coded manually by around 30%, making it easier and quicker to code them manually.     |
+

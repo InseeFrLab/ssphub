@@ -1,0 +1,23 @@
+---
+title: Amélioration de l’identification de l’établissement employeur dans les données du recensement de population
+description: Amélioration de l'identification de l'établissement employeur dans les données du recensement de la population
+format: html
+date: '2021-01-01'
+image: recensement_2026_logo.webp
+categories:
+- en production ??
+- Insee
+- codification automatique
+- machine learning
+
+---
+
+
+# Synthèse du projet
+
+|           |         Amélioration de l’identification de l’établissement employeur dans les données du recensement de population             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         | L’enjeu de l’expérimentation est d’**améliorer le codage automatique de l’établissement employeur**, avec l’ambition de réduire la charge de recodage manuel. Il s’agit notamment de retrouver dans le répertoire Sirus l’établissement employeur à partir des informations déclarées dans les enquêtes annuelles de recensement qui peuvent comporter des erreurs, des inversions de champs, et qui ne sont pas normalisées au sens des nomenclatures.  L'objectif est donc double : limiter la charge de reprise manuelle par les gestionnaires (codage automatique), mais aussi faire gagner du temps à ces mêmes gestionnaires quand une reprise manuelle est nécessaire. L’expérimentation s’appuie sur les idées et les résultats du hackathon “Les champs de Sirene” ([github {{< fa brands github >}}](http://github.com/SSP-Lab/Hackathon-2018), [lettre Big Data n°7](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Lettre_BigData_n07.pdf)) et poursuit les pistes qui y ont été développées. Elle a comporté deux étapes : <br> - une étape de construction d’un modèle d’identification automatique et d’une interface améliorant l’expérience et la performance des gestionnaires ; <br> - une phase de test grandeur nature via une opération de labellisation menée avec le concours de plusieurs gestionnaires du recensement.      |
+| **Acteurs**                  |  Insee     |
+| **Résultats du projet**      |   Le modèle ainsi que l’interface développée constituent des pistes prometteuses d’amélioration. La codification automatique ferait baisser d’environ 30 % le nombre de bulletins codés manuellement, en faciliterait et améliorerait les conditions et la rapidité de leur codage manuel. |
+
