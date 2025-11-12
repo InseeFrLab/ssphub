@@ -15,18 +15,18 @@ lightbox: true
 ---
 
 # Inscription
-👉️ Les inscriptions se font [ici](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). 👈️ Possibilité de participer en présentiel et en ligne. 
+👉️ Les inscriptions se font [ici](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). 👈️ Possibilité de participer en présentiel et en ligne.
 
 # Agenda
 
-* __Agenda en construction__ : 
+* __Agenda en construction__ :
 * __9h30-10h__: __Accueil__, moment de convivialité autour d’un café.
-* __10h-11h30__: __Retours d’expérience__  ; 
+* __10h-11h30__: __Retours d’expérience__  ;
     + Automatisation des  Infostats Justice (SSM Justice) : https://www.justice.gouv.fr/documentation/etudes-et-statistiques/dix-ans-traitement-affaires-penales-justice (tbc)
-    + 
-* __11h30-12h15__: __Atelier de réflexion__ nouvelles données ? 
+    +
+* __11h30-12h15__: __Atelier de réflexion__ nouvelles données ?
 * __12h15-14h__: __Pause déjeuner__, moment de convivialité.
-* __14h-14h45__: témoin / invité : la Dinum pour présenter La suite ? (tbc)
+* __14h-14h45__: témoin / invité : la Dinum pour présenter la feuille de route data.gouv (en cours confirmation)
 * __14h45-16h15__: __Retours d’expérience__ de projets faisant intervenir un processus innovant d’extraction de données :
     + Présentation du package torchTextClassifiers - A unified, extensible framework for text classification built on PyTorch and PyTorch Lightning (Meilame et Cédric) ;
     + Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi & Insee - DEE) ;
@@ -35,7 +35,7 @@ lightbox: true
 * __17h30-19h30__: __Pot__, moment de convivialité.
 
 
-* __Ancien agenda__ : 
+* __Ancien agenda__ :
 * __10h-11h30__: __Retours d’expérience__ de projets innovants autour de la classification de textes ou d’images :
     + Le blé vu du ciel : images satellitaires et prédiction des rendements agricoles à l'échelle de la parcelle (SSM Agriculture) ;
     + Identifier et classer les causes de décès en automatisant le traitement des certificats en langage naturel (CépiDC, Inserm).
