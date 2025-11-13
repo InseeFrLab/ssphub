@@ -1,0 +1,60 @@
+---
+title: Le _machine learning_ aux Journées de la Méthodologie Statistique 2022 (JMS)
+
+# Summary for listings and search engines
+description: |
+  Revue des présentations en lien avec les travaux en _machine learning_ aux JMS de 2022
+
+# Date published
+date: 2022-04-06
+
+# Featured image
+image: jms2022.png
+
+
+categories:
+  - Insee
+  - evenement
+---
+
+Signes des temps, l'édition 2022 des Journées de la Méthodologie Statistique (JMS) a mis en lumière la part croissante du *machine learning* dans les travaux menés au sein de la statistique publique, et au delà. Ainsi, cette année, ce sont 12 papiers utilisant ce type de méthodes qui ont été présentés - contre, à titre de comparaison, 4 en 2018.
+
+En particulier, quatre types d'utilisation de telles méthodes ont été mises en avant :
+
+-   Le redressement de données manquantes
+-   La codification automatique
+-   Les appariements
+-   Les études
+
+# Le redressement de données manquantes
+
+Cette thématique est la plus représentée, grâce à une session dédiée au traitement de données manquantes. Au sein de cette session, 4 communications présentaient des tentatives d'utilisation de méthodes de machine Learning à cette fin. L'objectif de ces 4 publications est différent :
+
+-   Évaluer de façon théorique la possibilité d'utiliser les forêts aléatoires pour redresser les enquêtes par sondage en grande dimension, dans quel cas les modèles paramétriques sont parfois instables et inefficaces ([Forêts aléatoires : D’une approche par modélisation assistée au traitement de la non-réponse](https://journees-methodologie-statistique.insee.net/forets-aleatoires-dune-approche-par-modelisation-assistee-au-traitement-de-la-non-reponse/)) ;
+-   Évaluer l'intérêt des réseaux de neurones dans le cadre du redressement de la non réponse, de façon théorique et en appliquant au cas de l'enquête emploi ([Imputation de valeurs manquantes avec des réseaux de neurones : Prédiction des salaires dans l’enquête emploi :](https://journees-methodologie-statistique.insee.net/imputation-de-valeurs-manquantes-avec-des-reseaux-de-neurones-prediction-des-salaires-dans-lenquete-emploi/)) ;
+-   Comparer les différentes méthodes de *machine learning* de façon empirique dans le cadre d'une imputation de non réponse ([Traitement de la non-réponse au moyen de méthodes de machine learning](https://journees-methodologie-statistique.insee.net/traitement-de-la-non-reponse-au-moyen-de-methodes-de-machine-learning/)) ;
+-   Évaluer un processus complet de correction de non-réponse, dans lequel le machine Learning n'est qu'une facette ([Estimation des montants manquants de versements de TVA : Exploitation des données du contrôle fiscal](https://journees-methodologie-statistique.insee.net/estimation-des-montants-manquants-de-versements-de-tva-exploitation-des-donnees-du-controle-fiscal/)).
+
+# La codification automatique et l'extraction de données
+
+Trois communications sur ces thèmes ont été présentées :
+
+-   Une tentative de codification automatique de la PCS au moyen de méthodes de machine Learning ([Application de techniques de machine learning pour coder les professions dans la nomenclature des professions et catégories socio-professionnelles 2020](https://journees-methodologie-statistique.insee.net/application-de-techniques-de-machine-learning-pour-coder-les-professions-dans-la-nomenclature-des-professions-et-categories-socio-professionnelles-2020/)) - *cf.* la page dédiée au [projet](../../project/2021_codif_PCS/index.qmd) sur le site ;
+-   Une tentative d'extraction automatique d'informations des documents scannés issues des comptes sociaux des entreprises ([Extraction automatique de données issues d’images scannées : Une illustration par les comptes sociaux d’entreprises](https://journees-methodologie-statistique.insee.net/extraction-automatique-de-donnees-issues-dimages-scannees-une-illustration-par-les-comptes-sociaux-dentreprises/)) - *cf.* la page dédiée au [projet](../../project/2021_Extraction_CS/index.qmd) sur le site ;
+-   Une classification automatique des infractions commises à partir d'une analyse textuelle et de l'utilisation de réseau de neurones ([Détection des infractions relevant de la cyberdélinquance](https://journees-methodologie-statistique.insee.net/detection-des-infractions-relevant-de-la-cyberdelinquance-a-partir-dune-analyse-textuelle-des-manieres-doperer/)) - *cf.* la page dédiée au [projet](../../project/2021_detection_cyber/index.qmd) sur le site.
+
+# Méthodes d'appariements
+
+Le *machine learning* peut également être utilisé pour faciliter les appariements. A cet égard, deux communications ont été présentées :
+
+-   Une communication discutant globalement des méthodes d'appariements, incluant - sans se restreindre - le *machine learning* ([Probabilistes ou déterministes, des méthodes d’appariements au banc d’essai du programme RéSIL](https://journees-methodologie-statistique.insee.net/probabilistes-ou-deterministes-des-methodes-dappariements-au-banc-dessai-du-programme-resil/))  - *cf.* la page dédiée au [projet](../../project/2022_Appariement/index.qmd) sur le site ;
+-   Une communication présentant une méthode innovante d'appariement flou à partir de l'utilisation d'Elastic Search et d'un réseau de neurone pré-entraîné ([Enrichissement de données de caisses à partir d’informations nutritionnelles : Une approche par appariement flou sur données de grande dimension](https://journees-methodologie-statistique.insee.net/enrichissement-de-donnees-de-caisses-a-partir-dinformations-nutritionnelles-une-approche-par-appariement-flou-sur-donnees-de-grande-dimension/))  - *cf.* la page dédiée au [projet](../../project/2020_donnees_caisse/index.qmd) sur le site.
+
+# Etudes
+
+La sphère la plus large d'exploitation est bien sûr les études. Les sujets sont alors variés :
+
+-   L'estimation d'un parc de véhicules roulants, en modélisant à la fois la probabilité qu'un véhicule roule encore, et le nombre de kilomètres parcourus ([Modélisation de l’appartenance au parc des véhicules routiers et de son utilisation](https://journees-methodologie-statistique.insee.net/modelisation-de-lappartenance-au-parc-des-vehicules-routiers-et-de-son-utilisation/)) ;
+-   L'estimation de la valeur d'un patrimoine immobilier dans le cadre du projet FidelImmo ([Estimation de la valeur du patrimoine immobilier des ménages à partir de données exhaustives](https://journees-methodologie-statistique.insee.net/estimation-de-la-valeur-du-patrimoine-immobilier-des-menages-a-partir-de-donnees-exhaustives/)) ;
+-   L'utilisation des données du site MeilleursAgents.com pour modéliser les loyers, et mieux comprendre les déterminants sous-jacents ([Appréhender la rentabilité locative pour comprendre les mécaniques qui sous-tendent les loyers et les prix à l’aide de méthodes de machine learning](https://journees-methodologie-statistique.insee.net/apprehender-la-rentabilite-locative-pour-comprendre-les-mecaniques-qui-sous-tendent-les-loyers-et-les-prix-a-laide-de-methodes-de-machine-learning/)) ;
+-   L'utilisation de méthodes de machine Learning pour améliorer la prévision du PIB (méthodes de *nowcasting*) ([*Nowcasting* PIB : imputation de variables non encore publiées](https://journees-methodologie-statistique.insee.net/nowcasting-pib-imputation-de-variables-non-encore-publiees/)).
