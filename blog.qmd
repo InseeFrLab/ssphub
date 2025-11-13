@@ -5,14 +5,19 @@ listing:
   id: blog-listing
   contents: blog/**/index.qmd
   type: grid
-  sort: 
+  sort:
     - "date desc"
   categories: true
 ---
 
 Vous pouvez trouver ici les articles de blog et des projets innovants portés par des membres du SSP.
 
+
 <br>
 
 ::: {#blog-listing}
 :::
+
+# A propos de ce blog
+
+Les informations qui y sont diffusées n'engagent que les contributeurs et en aucun cas les institutions dont ils dépendent.
