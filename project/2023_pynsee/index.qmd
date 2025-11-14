@@ -12,6 +12,14 @@ categories:
 - Insee
 - package
 - Python
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["package"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 
@@ -24,4 +32,8 @@ categories:
 | **Résultats du projet**      |  Le package pynsee est en production et téléchargeable depuis GitHub. La documentation est aussi publiée [ici](https://pynsee.readthedocs.io/en/latest/). |
 | **Code du projet** | - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/InseeFrLab/pynsee](https://github.com/InseeFrLab/pynsee) |
 
+# Projets similaires ayant abouti à la création de package
+
+::: {#similar-project}
+:::
 
