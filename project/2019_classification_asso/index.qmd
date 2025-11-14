@@ -1,0 +1,23 @@
+---
+title: Codification automatique de l'activité des associations
+description: Codification automatique de l'activité des associations à partir de méthodes de machine learning
+format: html
+date: '2019-06-01'
+image: enquete_asso.png
+categories:
+- en production ??
+- Insee
+- codification automatique
+- machine learning
+---
+
+
+# Synthèse du projet
+
+|           |         Codification automatique de l'activité des associations             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |   L’enjeu de l’expérimentation est d’attribuer un domaine d’activité aux associations pour améliorer le tirage de l’échantillon de l’enquête associations. En effet, une partie des associations est répertoriée dans Sirène (employeuses, subventionnées…) mais 50 % d’entre elles ont un code APE 9499Z ne permettant pas de déterminer leur domaine d’activité de façon précise. Par ailleurs, les associations loi 1901 sont enregistrées dans le répertoire national des associations (RNA), géré par le ministère de l’intérieur. Dans ce répertoire, un champ "objet social" rempli en clair décrit rapidement les activités de chaque association. L’expérimentation vise à analyser textuellement ce champ pour en prédire l'activité en 10 modalités.  <br> En pratique, après prétraitements et exploration des données textuelles et de ses thématiques (allocation latente de Dirichlet), un dictionnaire des mots a été constitué, avec des variantes pour en réduire la dimension. La prédiction proprement dite s’est appuyée sur divers modèles d’apprentissage supervisé (forêts aléatoires, support vector machine, modèle linéaires généralisés pénalisés GLMnet et Extrem Gradient Boosting (XGBoost)), le jeu d’apprentissage (et les jeux de tests) étant fournis par la précédente enquête (2014) appariée avec le RNA. Le modèle XGboost a montré des performances plus élevés que les autres (avec une précision et un rappel de l’ordre de 69%). Le meilleur modèle s’obtient en combinant les différents modèles testés.   |
+| **Acteurs**                  | Insee      |
+| **Résultats du projet**      |  L'échantillon de l'enquête Association a été tiré selon une stratification tirant profit de la prédiction du secteur d'activité par machine learning mené dans le cadre de cette expérimentation.  |
+
+

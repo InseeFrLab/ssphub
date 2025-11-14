@@ -1,0 +1,22 @@
+---
+title: Automatic coding of association activity
+description: Automatic coding of association activity using machine learning methods
+format: html
+date: '2019-06-01'
+image: enquete_asso.png
+categories:
+- in production ??
+- Insee
+- automatic coding
+- machine learning
+---
+
+# Project summary
+
+|  | Automatic coding of associations' activities |
+| --- | --------------------------------------------------------------- |
+| **Project details** | The aim of the experiment is to assign a field of activity to the associations in order to improve the selection of the sample for the associations survey. Some associations are registered in Sirène (as employers, subsidised organisations, etc.) but 50% of them have an APE code of 9499Z, which makes it impossible to determine their field of activity precisely. Associations governed by the 1901 Act are registered in the National Directory of Associations (RNA), managed by the Ministry of the Interior. In this directory, a "corporate purpose" field filled in plain text quickly describes the activities of each association. The aim of the experiment is to analyse this field textually in order to predict the activity in 10 modalities. <br> In practice, after pre-processing and exploration of the textual data and its themes (Dirichlet latent allocation), a dictionary of words was compiled, with variants to reduce its size. The actual prediction was based on various supervised learning models (random forests, support vector machine, penalised generalised linear models GLMnet and Extrem Gradient Boosting (XGBoost)), with the training set (and test sets) being provided by the previous survey (2014) matched with the RNA. The XGboost model performed better than the others (with precision and recall of the order of 69%). The best model is obtained by combining the different models tested. |
+| **Players** | Insee |
+| **Project results** | The sample for the Association survey was drawn according to a stratification process taking advantage of the prediction of the sector of activity by machine learning carried out as part of this experiment.  |
+
+
