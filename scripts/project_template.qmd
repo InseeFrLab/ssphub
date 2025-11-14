@@ -19,6 +19,7 @@ listing:
       categories: ["machine learning"]
     sort:
       - "date desc"
+    page-size: 6
 ---
 
 # Synthèse du projet
