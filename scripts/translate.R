@@ -28,12 +28,13 @@ babeldown::deepl_translate(
   yaml_fields = c("title", "description", "categories")
 )
 
-# Shell command to list all files
-# find project/ -type f -name "index.qmd"
-# Rscript scripts/translate.R project/2022_Appariement/index.qmd
-# Rscript scripts/translate.R project/2020_donnees_caisse/index.qmd
-# Rscript scripts/translate.R project/2022_Enquete_Budget_Famille/index.qmd
-# Rscript scripts/translate.R project/2022_satellites/index.qmd
-# Rscript scripts/translate.R project/2021_Extraction_CS/index.qmd
-# Rscript scripts/translate.R project/2021_codif_PCS/index.qmd
-# Rscript scripts/translate.R project/2022_codif_ape/index.qmd
+# NO WORK - TO DO LATER
+# # Glossary
+# filename <- "glossary-fr-en.csv"
+
+# # create (or update) glossary
+# babeldown::deepl_upsert_glossary(
+#   filename,
+#   target_lang = "en",
+#   source_lang = "fr"
+# )
