@@ -39,11 +39,11 @@ uv run template.py test
 ### Translate a page to english
 Config :
 - have a deepl API KEY stored as `DEEPL_API_KEY`
-- working directory must be ssphub
+- working directory must be ssphub/scripts
 
 ```{shell}
-# it will take the "index.qmd" file of the project/subdir dir and translate it into "index.en.qmd
-Rscript scripts/translate.R project_subdir
+# it will take the "index.qmd" file of the project/project_subdir dir and translate it into "index.en.qmd
+Rscript translate.R project_subdir
 ```
 
 Example
