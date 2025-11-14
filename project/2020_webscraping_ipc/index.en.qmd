@@ -6,14 +6,25 @@ format: html
 date: '2020-06-01'
 image: webscraping_ipc.png
 listing:
-- id: similar-project
+- id: similar-project-codifauto
   contents: ../*/index.qmd
   type: grid
   include:
-    categories:
-    - webscraping
-    - IPC
-    - mobile phone data
+    categories: ["automatic coding"]
+  sort: "date desc"
+  page-size: 6
+- id: similar-project-ipc
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping", "IPC"]
+  sort: "date desc"
+  page-size: 6
+- id: similar-project-newdata
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["mobile phone data"]
   sort: "date desc"
   page-size: 6
 categories:
@@ -32,8 +43,24 @@ categories:
 | **Players** | Insee   |
 | **Project results** | The study made it possible to increase the samples used (in terms of price surveys and characteristics) by collecting data online (*webscraping*) and to set up a procedure for automatically selecting the characteristics that explain prices using automatic learning (random forest, Lasso-type regression). <br> Ultimately, 15 characteristics were selected to estimate the quality effect, such as brand, RAM, storage capacity, brand of processor, processor frequency, screen resolution, etc. The forms used by the surveyors have been amended to include the relevant characteristics that determine the price of computers.  |
 
+
 # Similar projects
 
-::: {#similar-project}
+## Related to webscraping and IPC
+Online data collection (web scraping) is not only used in the production of inflation figures.
+It is also used in other areas and by other entities within the public statistics service besides INSEE.
+Since 2020, INSEE has also been using checkout data in the definition of the CPI, as noted in the article [Using Scanner Data to Calculate the Consumer Price Index](https://www.insee.fr/en/information/5014725?sommaire=5014796) in the 2019 statistics newsletter.
+
+::: {#similar-project-ipc}
+:::
+
+## Related to new data sources
+
+::: {#similar-project-newdata}
+:::
+
+## Related to automatic coding
+
+::: {#similar-project-codifauto}
 :::
 

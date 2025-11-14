@@ -5,11 +5,25 @@ format: html
 date: '2020-06-01'
 image: webscraping_ipc.png
 listing:
-- id: similar-project
+- id: similar-project-codifauto
   contents: ../*/index.qmd
   type: grid
   include:
-    categories: ["webscraping", "IPC", "données de téléphonie mobile"]
+    categories: ["codification automatique"]
+  sort: "date desc"
+  page-size: 6
+- id: similar-project-ipc
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping", "IPC"]
+  sort: "date desc"
+  page-size: 6
+- id: similar-project-newdata
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["données de téléphonie mobile"]
   sort: "date desc"
   page-size: 6
 categories:
@@ -31,5 +45,19 @@ categories:
 
 # Projets similaires
 
-::: {#similar-project}
+## En lien avec le webscraping et l'IPC
+La récolte de données en ligne (_webscraping_) n'est pas utilisée que dans le cadre de la production de l'inflation. Elle est aussi utilisée dans d'autres domaines et par d'autres entités que l'Insee au sein du service statistique public.
+L'Insee utilise par ailleurs depuis 2020 les données de caisse dans la définition de l'IPC, comme rappelé dans l'article [Utiliser les données de caisses pour le calcul de l’indice des prix à la consommation](https://www.insee.fr/fr/information/4254225?sommaire=4254170) du courrier des statistiques de 2019.
+
+::: {#similar-project-ipc}
+:::
+
+## En lien avec l'usage de nouvelles sources de données
+
+::: {#similar-project-newdata}
+:::
+
+## En lien avec les problématiques de classification automatique
+
+::: {#similar-project-codifauto}
 :::
