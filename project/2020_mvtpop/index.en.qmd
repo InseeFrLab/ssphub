@@ -19,15 +19,15 @@ categories:
 - Insee
 - experiment
 - open-data
-- mobile phone data (MNO)
+- mobile phone data
 listing:
   - id: similar-project
     contents: ../*/index.qmd
     type: grid
     include:
-      categories: "mobile phone data (MNO)"
-    sort:
-      - "date desc"
+      categories: ["mobile phone data", "scanner data"]
+    sort: "date desc"
+    page-size: 6
 ---
 
 # Project summary
@@ -39,7 +39,7 @@ listing:
 | **Project results** | - [Population present in the area before and after the start of containment - Initial results](https://www.insee.fr/fr/information/4477356), April 2020 (French) <br> - [Population present in the area before and after the start of containment: consolidated results](https://www.insee.fr/fr/information/4493611), May 2020 (French) <br> - [Partial return of population movements at the end of the lockdown period](https://www.insee.fr/en/statistiques/4656992), Insee Analyses n°54, July 2020 <br> - [Social mix is stronger during daytime in places of activity than at night in residential neighborhoods](https://www.insee.fr/en/statistiques/5019739), Insee Analyses n°59, November 2020  <br> - [Population movements during containment in spring 2020, published experimental data](https://www.insee.fr/fr/statistiques/5350073), April 2021 (French) <br> - [Datavisualisation published on population movements](https://inseefrlab.github.io/lockdown-maps-R/inflows_EN)    |
 | **Project code** | - The code is available on GitHub {{< fa brands github >}} <https://github.com/InseeFrLab/lockdown-maps-R>      |
 
-# Similar projects related to new data 
+# Similar projects related to new data
 
 ::: {#similar-project}
 :::

@@ -20,16 +20,16 @@ categories:
 - Insee
 - expérimentation
 - open-data
-- données de téléphonie mobile (MNO)
+- données de téléphonie mobile
 
 listing:
   - id: similar-project
     contents: ../*/index.qmd
     type: grid
     include:
-      categories: "données de téléphonie mobile (MNO)"
-    sort:
-      - "date desc"
+      categories: ["données de téléphonie mobile", "données de caisse"]
+    sort: "date desc"
+    page-size: 6
 ---
 
 
