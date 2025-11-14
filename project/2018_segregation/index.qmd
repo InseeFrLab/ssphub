@@ -1,0 +1,34 @@
+---
+title: "Ségrégation urbaine : un éclairage par les données de téléphonie mobile"
+subtitle: Croisement de données administratives et de données de téléphonie pour analyser la ségrégation au niveau local
+format: html
+date: '2018-01-01'
+categories:
+- Insee
+- expérimentation
+- données de téléphonie mobile (MNO)
+- données administratives
+image: indice_segregation.png
+listing:
+  - id: similar-project
+    contents: ../*/index.qmd
+    type: grid
+    include:
+      categories: ["données de téléphonie mobile (MNO)"]
+    sort:
+      - "date desc"
+---
+
+
+# Synthèse du projet
+
+|           |   Ségrégation urbaine : un éclairage par les données de téléphonie mobile   |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |  En couplant des données de téléphonie mobile et des données administratives fiscales, cette étude analyse la ségrégation dans les principaux pôles urbains français. Des indices de ségrégation sociale et spatiale sont construits en utilisant la fréquence des interactions entre chaque clients de l’opérateur. Ces indicateurs synthétiques permettent de dresser un portrait de la ségrégation sociale, de son niveau comme de son évolution dans le temps – à l’horizon de la semaine comme de l’année civile. Les indices permettent également de mesurer la propension à communiquer plus fortement au sein d’un même groupe social, défini par un critère de revenu, ou au contraire une interaction forte entre plusieurs groupes sociaux. En particulier, cela permet de mesurer le contraste dans le comportement des groupes sociaux extrêmes. Le profil de ségrégation que les données de téléphonie mobile permettent de dégager est comparé à la littérature existante sur le sujet. Une attention particulière est portée aux quartiers « politique de la ville » où la question de la ségrégation a été particulièrement documentée. |
+| **Acteurs**                  | Insee      |
+| **Résultats du projet**      |  - Présentation aux JMS 2018 : [Ségrégation urbaine : un éclairage par les données de téléphonie mobile](https://journees-methodologie-statistique.insee.net/segregation-urbaine-un-eclairage-par-les-donnees-de-telephonie-mobile/)    |
+
+# Projets similaires liées aux données de téléphonie mobile
+
+::: {#similar-project}
+:::
