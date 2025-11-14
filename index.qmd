@@ -11,8 +11,9 @@ listing:
     feed: true
     sort:
       - "date desc"
+    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
   - id: blog_event
-    contents: 
+    contents:
     - blog
     - event
     type: grid
@@ -20,6 +21,7 @@ listing:
     sort:
       - "date desc"
     page-size: 9
+    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
   - id: newsletters
     contents: infolettre/infolettre_*/**/index.qmd
     type: grid
@@ -27,11 +29,13 @@ listing:
       - "number desc"
     feed: true
     page-size: 9
+    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
   - id: partenaires
     contents: partenaires
     template: scripts/courses.ejs
     type: grid
     feed: false
+    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
 echo: false
 ---
 
@@ -66,11 +70,11 @@ html`${badge}`
 Le `SSPHub` centralise et vise à faire connaître le contenu créé par
 le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
 
-Une présentation du réseau est 
-disponible sur la page [à propos](about.html). 
+Une présentation du réseau est
+disponible sur la page [à propos](about.html).
 Pour en savoir plus sur les objectifs du réseau, sa philosophie,
 et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](manifeste.qmd)
-écrit collectivement. 
+écrit collectivement.
 
 :::
 

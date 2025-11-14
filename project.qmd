@@ -8,6 +8,7 @@ listing:
   sort:
     - "date desc"
   categories: true
+  image-placeholder: assets/media/logo_ssm_insee.webp  # default image
 ---
 
 Vous pouvez trouver ici des exemples de projets innovants portés par des membres du SSP.

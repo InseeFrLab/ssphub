@@ -5,12 +5,13 @@ listing:
   id: project-listing
   contents: project/**/index.qmd
   type: grid
-  sort: 
+  sort:
     - "date desc"
   categories: true
+  image-placeholder: assets/media/logo_ssm_insee.webp  # default image
 ---
 
-Here is a list of the innovative data science projects. 
+Here is a list of the innovative data science projects.
 
 ::: {#project-listing}
 :::
