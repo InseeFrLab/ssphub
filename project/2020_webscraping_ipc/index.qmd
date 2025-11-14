@@ -1,0 +1,35 @@
+---
+title: Webscrapper les caractéristiques des produits pour améliorer la mesure de l'inflation
+description: Collecter sur le web les caractéristiques des produits pour améliorer la prise en compte des effets qualité dans l'indice des prix à la consommation
+format: html
+date: '2020-06-01'
+image: webscraping_ipc.png
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping", "IPC", "données de téléphonie mobile"]
+  sort: "date desc"
+  page-size: 6
+categories:
+- en production ??
+- Insee
+- IPC
+- webscraping
+- forêt aléatoire
+---
+
+
+# Synthèse du projet
+
+|           |          Webscraping du prix et des caractéristiques des ordinateurs portables, estimation de modèles hédoniques pour améliorer la qualité statistique de l’indice des prix à la consommation              |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         | L’IPC mesure l’évolution « pure » des prix, à qualité constante. Il suit un certain nombre de produits identiques dans le temps. Lorsque ceux-ci disparaissent, ils sont remplacés par des produits qui peuvent ne pas être équivalents. Il convient alors de distinguer, dans l’évolution des prix des remplaçants par rapport aux produits remplacés, un effet qualité (différence de prix pour un mois fixé) d’un effet inflation. <br> Les méthodes « hédoniques » estiment cet effet qualité à partir de coefficients correspondant aux prix sous-jacents des différentes caractéristiques techniques du produit (par exemple la marque de l’ordinateur, la mémoire vive d’un ordinateur, le modèle et la fréquence du processeur, etc.). Le but du projet est de renforcer ces méthodes d'estimation de l'effet qualité par l'extension de la base de données et l'usage de méthode d'apprentissage statistique.         |
+| **Acteurs**                  |   Insee    |
+| **Résultats du projet**      |   L'étude a permis d'augmenter les échantillons utilisés (en termes de relevés de prix et de caractéristiques) par une collecte de données en ligne (_webscraping_) et de mettre en place une procédure de sélection automatique des caractéristiques expliquant les prix par apprentissage automatique (forêt aléatoire, régression de type Lasso). <br> In fine, 15 caractéristiques ont été retenues pour estimer l'effet qualité, comme par exemple la marque, la RAM, la capacité de stockage, la marque du processeur, sa fréquence, la résolution de l'écran ... Les formulaires utilisés par les enquêteurs ont été amendés pour qu’ils relèvent désormais les caractéristiques pertinentes déterminant le prix des ordinateurs.    |
+
+# Projets similaires
+
+::: {#similar-project}
+:::
