@@ -13,6 +13,14 @@ categories:
 - open-data
 - in production
 - SIES
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Project summary
@@ -24,4 +32,7 @@ categories:
 | **Project results** | The project is presented on the dedicated website : <https://frenchopensciencemonitor.esr.gouv.fr/>. It includes a [methodology](https://frenchopensciencemonitor.esr.gouv.fr/about/methodology)                                 |
 | **Project code** | The code files are available on [GitHub {{< fa brands github >}}](https://github.com/search?q=org%3Adataesr%20bso&type=repositories)     |
 
+# Similar projects related to webscraping
 
+::: {#similar-project}
+:::

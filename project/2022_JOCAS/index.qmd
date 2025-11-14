@@ -9,7 +9,14 @@ categories:
 - en production
 - codification automatique
 - DARES
-
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 
@@ -21,4 +28,9 @@ categories:
 | **Acteurs**                  | DARES    |
 | **Résultats du projet**      |   Les données d’offres en ligne ont notamment été intégrées au calcul des tensions sur le marché du travail. Elles ont également été utilisées pour la production du tableau de suivi de la situation du marché du travail en 2020-2021 lors de la crise du Covid-19. les données Jocas sont en accès libre pour les étudiants, les chercheurs et les agents de la fonction publique. L’accès aux données peut également être accordé pour un usage statistique et non commercial, sur demande auprès de la Dares. La base est notamment accessible sur la  plateforme [SSPCloud de l’Insee](https://datalab.sspcloud.fr/), en suivant le chemin d’accès ‘projet-jocas-prod/diffusion/JOCAS’.<br> <br> - [Description sur le site de la DARES](https://dares.travail-emploi.gouv.fr/publication/les-offres-demploi-en-ligne-nouvelle-source-de-donnees-sur-le-marche-du-travail) <br> - [Document de travail](https://dares.travail-emploi.gouv.fr/sites/default/files/ed7db1ecec02433585a7654411102726/DE%20258%20Offres%20demploi%20en%20ligne.pdf) <br> - [Hackathon en mars 2023](https://dares.travail-emploi.gouv.fr/actualite/un-hackathon-pour-dedoubler-les-offres-demploi-en-ligne) sur le dédoublement des offres d'emploi <br> - [Actualités du projet](https://dares.travail-emploi.gouv.fr/actualite/suivre-les-offres-demploi-en-ligne-pour-mieux-comprendre-le-marche-du-travail) <br> - [Formation](https://dares.travail-emploi.gouv.fr/enquete-source/job-offers-collection-and-analysis-system) pour utiliser la base JOCAS|
 | **Code du projet**           |  - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR](https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR)     |
+
+# Projets similaires en lien avec le webscraping
+
+::: {#similar-project}
+:::
 

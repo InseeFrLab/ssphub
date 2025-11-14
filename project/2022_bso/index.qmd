@@ -10,6 +10,14 @@ categories:
 - open-data
 - en production
 - SIES
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 
@@ -21,4 +29,9 @@ categories:
 | **Acteurs**                  |   Service statistique du Ministère de l'Enseignement Supérieur et de la Recherche ([SIES](https://www.enseignementsup-recherche.gouv.fr/fr/sies))   |
 | **Résultats du projet**      |   Le projet est présenté sur le site dédié : https://barometredelascienceouverte.esr.gouv.fr/. Il comprend notamment une [méthodologie](https://barometredelascienceouverte.esr.gouv.fr/a-propos/methodologie)    |
 | **Code du projet**           |    Les dossiers de code sont disponibles sur [GitHub {{< fa brands github >}}](https://github.com/search?q=org%3Adataesr%20bso&type=repositories)   |
+
+# Projets similaires en lien avec le webscraping
+
+::: {#similar-project}
+:::
 
