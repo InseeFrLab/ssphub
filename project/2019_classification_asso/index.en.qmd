@@ -9,6 +9,14 @@ categories:
 - Insee
 - automatic coding
 - machine learning
+listing:
+  - id: similar-project
+    contents: ../*/index.qmd
+    type: grid
+    include:
+      categories: ["automatic coding"]
+    sort:
+      - "date desc"
 ---
 
 # Project summary
@@ -19,4 +27,9 @@ categories:
 | **Players** | Insee |
 | **Project results** | The sample for the Association survey was drawn according to a stratification process taking advantage of the prediction of the sector of activity by machine learning carried out as part of this experiment.  |
 
+
+# Similar projects related to automatic coding
+
+::: {#similar-project}
+:::
 

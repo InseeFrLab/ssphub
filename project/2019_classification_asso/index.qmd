@@ -9,6 +9,15 @@ categories:
 - Insee
 - codification automatique
 - machine learning
+
+listing:
+  - id: similar-project
+    contents: ../*/index.qmd
+    type: grid
+    include:
+      categories: ["codification automatique"]
+    sort:
+      - "date desc"
 ---
 
 
@@ -21,3 +30,7 @@ categories:
 | **Résultats du projet**      |  L'échantillon de l'enquête Association a été tiré selon une stratification tirant profit de la prédiction du secteur d'activité par machine learning mené dans le cadre de cette expérimentation.  |
 
 
+# Projets similaires liés à de la codification automatique
+
+::: {#similar-project}
+:::

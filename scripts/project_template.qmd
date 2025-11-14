@@ -11,6 +11,14 @@ date: '2023-01-01'
 
 image: monimage.png
 
+listing:
+  - id: similar-project
+    contents: ../*/index.qmd
+    type: grid
+    include:
+      categories: ["machine learning"]
+    sort:
+      - "date desc"
 ---
 
 # Synthèse du projet
@@ -22,3 +30,7 @@ image: monimage.png
 | **Résultats du projet**      |       |
 | **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       |
 
+# Projets similaires
+
+::: {#similar-project}
+:::
