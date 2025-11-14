@@ -4,7 +4,7 @@ on:
       - opened
       - reopened
       - synchronize
-      - closed   # Including closed to remove preview when PR is closed. 
+      - closed   # Including closed to remove preview when PR is closed.
     branches:
       - main
 
@@ -27,24 +27,15 @@ jobs:
           fetch-depth: 0  # To enable full access to Git repo
           ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
           repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
-      
+
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
       - name: Configure safe.directory  # Workaround for actions/checkout#760
         run: git config --global --add safe.directory /__w/ssphub/ssphub
-      
-      # # Python
-      # - name: Setup Python
-      #   uses: actions/setup-python@v4
-      #   with:
-      #     python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-      
-      # # Jupyter
-      # - run: pip install jupyter nbformat
 
       - name: Install npm
         if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-        uses: actions/setup-node@v2          
+        uses: actions/setup-node@v2
         with:
           node-version: '18'
 
@@ -60,20 +51,6 @@ jobs:
       - name: Render bilingual project
         run: Rscript scripts/render.R
 
-      # # Quarto
-      # - name: Set up Quarto
-      #   uses: quarto-dev/quarto-actions/setup@v2
-      #   env:
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # # Render Quarto  
-      # - name: Render Quarto Project
-      #   uses: quarto-dev/quarto-actions/render@v2
-      #   with:
-      #     to: html
-      #   # env: # For Quarto profiles
-        #   QUARTO_PROFILE: preview
-    
       - name: Deploy preview
         id: deploy-preview
         uses: rossjrw/pr-preview-action@v1.6.2
