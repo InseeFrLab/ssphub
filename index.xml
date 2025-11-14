@@ -10,7 +10,120 @@
 <atom:link href="https://ssphub.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 29 Sep 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 25 Oct 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>De belles cartographies, des packages R et l’importance des données d’entraînement pour l’IA</title>
+  <link>https://ssphub.netlify.app/infolettre/infolettre_20/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Bienvenue à la <strong>vingtième infolettre</strong> ! Il est temps de se mettre au défi de respecter ce qui a été dit il y a quelques semaines : une newsletter par mois ga-ran-tie je vous ai dit. Bon, à l’époque, je ne savais pas qu’un mois ça voulait dire 4 semaines et que 4, c’est pas beaucoup 🙃. Allez, on y va !</p>
+<p>Bonne lecture 📔 !</p>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>Beaucoup d’infographies ce mois-ci, le choix a été dur. Pour une fois, partons sur une vidéo réalisée par <a href="https://www.fabianlang.net/schweizer-bergwelten/">Fabian Lang</a> : le trajet d’un gypaète barbu suivi par GPS en 3D dans les Alpes suisses. La vraie infographie, en format vidéo, est disponible <a href="https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj">ici</a>. Attention, vertige.</p>
+<p><img src="https://ssphub.netlify.app/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
+</section>
+<section id="actus-du-réseau" class="level1">
+<h1>Actus du réseau</h1>
+<section id="la-troisième-journée-du-réseau-1-décembre---la-tréso-malakoff" class="level2">
+<h2 class="anchored" data-anchor-id="la-troisième-journée-du-réseau-1-décembre---la-tréso-malakoff">La troisième journée du réseau 📅 1 décembre - La Tréso (Malakoff)</h2>
+<p>Les <strong>inscriptions</strong> pour la troisième journée du réseau le 1<sup>er</sup> décembre 2025 sont <a href="https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator">ouvertes</a>. Si vous souhaitez présenter un sujet, n’hésitez pas à me contacter !</p>
+</section>
+<section id="présentation-de-cartographia---13-janvier-2026---format-mixte-montrouge-et-en-ligne" class="level2">
+<h2 class="anchored" data-anchor-id="présentation-de-cartographia---13-janvier-2026---format-mixte-montrouge-et-en-ligne">Présentation de Cartographia - 📅 13 janvier 2026 - format mixte (Montrouge et en ligne)</h2>
+<p><a href="https://bsky.app/profile/fbahoken.bsky.social">Françoise Bahoken</a> et <a href="https://bsky.app/profile/neocarto.bsky.social">Nicolas Lambert</a> vont venir nous parler de leur livre <a href="https://neocarto.hypotheses.org/22669">Cartographia</a> et des questions de cartographie (!) passionnantes qu’ils y abordent. Cela se passera <strong>le 13 janvier 2026</strong> en début d’après-midi, en format mixte : présentiel (à la DG de l’Insee) et à distance. Nicolas Lambert était déjà intervenu pour nous présenter Observable, une librairie Javascript très pratique pour faire des dataviz (<a href="../../talk/presentation-dobservable-par-nicolas-lambert/index.html">ici</a>, pour rappel). Si cela vous intéresse, réservez donc votre début d’après-midi !</p>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<p>Ce mois-ci, place aux belles images et à la cartographie. L’IA reste omniprésente : les institutions cherchent à favoriser la réutilisation de leurs données, certains contournent les LLM avec des consignes écrites « en blanc sur blanc », et les données d’entraînement sont au centre de l’attention.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Vous voyez d’autres sujets d’actualité intéressants ? N’hésitez pas à les partager sur le <a href="https://tchap.gouv.fr/#/room/#ssphub:agent.finances.tchap.gouv.fr">groupe Tchap 💬</a> directement !</p>
+</div>
+</div>
+<section id="datavisualisation" class="level2">
+<h2 class="anchored" data-anchor-id="datavisualisation">Datavisualisation</h2>
+<ul>
+<li>Une <a href="https://neocarto.hypotheses.org/21980">belle carte</a> de <strong>migration simulée au niveau infra-national</strong> en zone endémique paludéenne africaine. Françoise Bahoken, son autrice, sera notre invitée début 2026.<br>
+</li>
+<li>Pour les passionnés d’espace, voici une <a href="https://atlasof.space/"><strong>carte en 3D et dynamique</strong></a> du système solaire, comprenant les planètes mais aussi les astéroïdes! Vous pouvez jouer avec le temps pour savoir où sera la Terre quand vous aurez 30/40/50/60/70 ans (spoiler alert : c’est cyclique), et vérifier aussi qu’aucun astéroïde ne passe sur la Terre d’ici là.</li>
+<li>Pour les autres candidats à l’infographie du mois :
+<ul>
+<li>pour voir l’ensemble des <strong>livres publiés</strong> en une seule carte interactive, cela donne <a href="https://phiresky.github.io/isbn-visualization/?">cela</a>.</li>
+<li>la cheffe de l’infographie d’Epsiloon (magazine de sciences) a publié les étapes <a href="https://www.figma.com/proto/C8xDR9mlWX8kBV0crJr1IK/Les-infographies-d-Epsiloon?page-id=3102%3A2581&amp;node-id=3102-2979&amp;viewport=1040%2C640%2C0.18&amp;t=h0dF40xsTRgqYfJi-8&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;starting-point-node-id=3102%3A2583&amp;hide-ui=1">avant / après</a> de ses infographies. Je vous recommande celle sur les <strong>habitudes de sommeil par pays</strong>.</li>
+</ul></li>
+<li>Enfin, un petit jeu à la SUTOM en version graphique : un <a href="https://chartle.cc/"><strong>graphique par jour</strong></a>, devinez le pays !</li>
+</ul>
+</section>
+<section id="cartographie" class="level2">
+<h2 class="anchored" data-anchor-id="cartographie">Cartographie</h2>
+<ul>
+<li>Des chercheurs de l’Université de Charles (en Tchéquie) et de Freiburg ont publié une (très belle) <strong>taxonomie des bâtiments urbains</strong>, disponible en ligne. Tout est <a href="https://urbantaxonomy.org">ici</a> et vous pouvez explorer le bâti urbain de six pays d’Europe centrale et de l’est.<br>
+</li>
+<li>L’IGN a publié <a href="https://www.ign.fr/publications-de-l-ign/institut/kiosque/publications/atlas_anthropocene/2025/Atlas-2025-risque-inondation.pdf">une cartographie</a> très détaillée des <strong>risques d’inondation et de submersion</strong> sur tout le territoire national, notamment grâce aux images LIDAR. Par exemple, vous habitez à Saint-Maur-des-Fossés? Vous pouvez y voir la simulation d’une inondation majeure chez vous.<br>
+</li>
+<li>Utiliser l’<strong>IA pour faire des fonds de carte</strong> à partir d’image satellite ? Cela semble bien fonctionner d’après ce <a href="https://www.linkedin.com/posts/davidoesch_map-generation-geospatial-activity-7379129420801875968-yNzj">post</a>.</li>
+<li>A partir des données d’utilisateurs de Facebook, des <a href="https://www.pnas.org/doi/10.1073/pnas.2409418122">chercheurs</a> ont bâti des <strong>indicateurs mensuels de flux migratoires</strong> couvrant 181 pays.</li>
+<li>Après la prévisualisation de données Parquet en ligne, cette fois <a href="https://developmentseed.org/stac-map/">ce site</a> permet de <strong>visualiser très facilement des fichiers de données géographiques</strong> types STAC (dont Geoparquet). Explications sur la plomberie <a href="https://developmentseed.org/blog/2025-09-02-stacmap/">ici</a>.</li>
+<li>La communauté Apache Sedona publie <a href="https://sedona.apache.org/latest/blog/2025/09/24/introducing-sedonadb-a-single-node-analytical-database-engine-with-geospatial-as-a-first-class-citizen/"><strong>SedonaDB</strong></a>, un moteur de base de données analytique open source et pensé nativement aussi pour des données spatiales.</li>
+</ul>
+</section>
+<section id="le-reste-cest-le-r" class="level2">
+<h2 class="anchored" data-anchor-id="le-reste-cest-le-r">Le reste c’est le R</h2>
+<ul>
+<li>Le <a href="https://vincentarelbundock.github.io/tinytable/">package R tinytable</a>, permet de faire des <strong>tableaux de qualité</strong> en de multiples formats. L’ambition de ce package est d’être simple, léger (0 dépendance à des packages externes), flexible et de différencier les données de l’affichage.</li>
+<li>Le <a href="https://r-consortium.org/all-projects/2025-group-1.html#reviving-redoc">package R redoc</a> devrait être mis à jour. Il permet notamment de <strong>faire le lien entre Quarto, et la suite Office</strong>, par exemple si vous générez des documents qui seront relus par des personnes utilisant Word comme outil de travail 😉.<br>
+</li>
+<li>En machine learning, quels sont les problèmes posés par des <strong>classes d’apprentissage de tailles très différentes</strong> ? Selon cet <a href="https://datascience.stackexchange.com/questions/134389/is-class-imbalance-really-a-problem-in-machine-learning">article</a>, il s’agit surtout 1/ d’avoir des métriques de performance adéquates, 2/ d’avoir un nombre absolu d’observations dans la classe minoritaire suffisant (et non une part dans le total) et enfin 3/ de faire attention à la fongibilité entre classes.</li>
+</ul>
+</section>
+<section id="ia" class="level2">
+<h2 class="anchored" data-anchor-id="ia">IA</h2>
+<ul>
+<li>Qu’est-ce que les <strong>paramètres des modèles publiés</strong> disent des données d’entraînement sous-jacentes, confidentielles ? Des chercheurs sont <a href="https://fi-le.net/oss/">allés fouiller</a> ce que cache GPT-5.</li>
+<li>Du côté de <strong>l’entraînement des modèles</strong>, la gamme des données disponibles s’enrichit pour que ses données soient mieux reprises par l’IA. C’est un nouvel épisode de la course à ne pas finir page 15 des résultats Google ou page 259 des blogs Myspace.
+<ul>
+<li><strong>Wikidata</strong>, qui stocke les données structurées de Wikipédia et consorts, propose maintenant ses données sous format de <a href="https://www.wikidata.org/wiki/Wikidata:Embedding_Project/October_1_2025_Release">données vectorielles</a>.</li>
+<li>Un programme d’<strong>harmonisation des metadata et d’API</strong>, l’<a href="https://www.snowflake.com/en/blog/open-semantic-interchange-ai-standard/">Open Semantic Interchange Initiative</a>, a été lancé pour enrichir les données d’apprentissage et la précision des IA. L’idée est d’avoir un langage YAML commun pour permettre aux IA d’échanger des données de manière robuste, par exemple par API et sans perte de sens au fur et à mesure de leur traitement par des agents d’IA.</li>
+<li>Une fois que l’on a les données, on cherche ensuite à savoir de <strong>combien de GPU j’ai besoin pour entraîner mon modèle</strong>. La Dinum a développé <a href="https://github.com/etalab-ia/InfraScale">un outil</a> pour estimer ses besoins pour cette étape.</li>
+</ul></li>
+<li>Des faiblesses des modèles de LLM sont, comme toujours, remontées, notamment sur <strong>l’importance des données d’apprentissage et d’un prompt propre</strong>. Cela met notamment en valeur le fait que les modèles ne sont pour le moment pas très efficaces quand il s’agit de trier des CV ou des articles.
+<ul>
+<li>Le “prompt injection” : c’est l’idée de truquer l’IA dans son CV/projet d’article scientifique/sur Linkedin, par exemple avec des instructions écrites en « blanc sur blanc », pour avoir plus de chance d’être sélectionné/de détecter les messages écrits par l’IA. Cela marche à presque 100 % des cas selon <a href="https://arxiv.org/pdf/2509.10248">cet article</a>, d’autant plus que l’IA a un biais positif naturel.</li>
+<li>Une <a href="https://www.anthropic.com/research/small-samples-poison">étude</a> confirme que l’IA est <strong>particulièrement sensible à la qualité de la donnée d’apprentissage</strong>. Ainsi, 250 observations fausses suffisent pour empoisonner durablement un LLM, et ce <strong>quel que soit sa taille</strong>. Une <a href="https://www.youtube.com/watch?v=zKW8sVIOCTY">présentation intéressante</a> à une conférence PyData présentait par ailleurs ce qu’il se passait quand on entraîne une IA sur des images générés par une IA, avec des résultats similaires.<br>
+</li>
+</ul></li>
+<li>Le site <a href="https://aidarwinawards.org/nominees-2025.html"><strong>AI Darwin Awards</strong></a> rassemble des exemples d’usage raté d’IA. Globalement, les cas d’usage où l’IA est mis directement face à un client peuvent rapidement mal tourner… Peut-être que <a href="https://www.politico.eu/article/albania-apppoints-worlds-first-virtual-minister-edi-rama-diella/">Diella</a>, la première et seule ministre à être une IA dans le monde, rejoindra cette liste ?</li>
+<li>Si vous voulez <strong>comparer le résultat de deux LLM et leur empreinte carbone</strong>, n’oubliez pas l’outil <a href="https://comparia.beta.gouv.fr/">ComparIA</a> créé par une start-up d’État du ministère de la Culture.</li>
+</ul>
+</section>
+</section>
+<section id="la-non-interview-du-mois" class="level1">
+<h1>La non interview du mois</h1>
+<p>Pas d’interview finie en temps et en heure ce mois-ci, priorité au direct, ce sera donc (peut-être) le mois prochain !</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Infolettre</category>
+  <guid>https://ssphub.netlify.app/infolettre/infolettre_20/</guid>
+  <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
 <item>
   <title>La rentrée 2025: actualités, nouveautés, interview de rentrée</title>
   <link>https://ssphub.netlify.app/infolettre/infolettre_19/</link>
@@ -11214,23 +11327,6 @@ Illustration de la similarité cosinus en deux dimensions
   <guid>https://ssphub.netlify.app/infolettre/infolettre_old/</guid>
   <pubDate>Wed, 31 Aug 2022 00:00:00 GMT</pubDate>
   <media:content url="https://ssphub.netlify.app/infolettre/infolettre_old/archive.png" medium="image" type="image/png" height="144" width="144"/>
-</item>
-<item>
-  <title>CoP OCDE</title>
-  <link>https://ssphub.netlify.app/partenaires/oecd/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-
-
- ]]></description>
-  <guid>https://ssphub.netlify.app/partenaires/oecd/</guid>
-  <pubDate>Thu, 13 Nov 2025 15:17:21 GMT</pubDate>
-  <media:content url="https://ssphub.netlify.app/partenaires/oecd/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 </channel>
 </rss>
