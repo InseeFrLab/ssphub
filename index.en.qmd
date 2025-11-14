@@ -12,6 +12,7 @@ listing:
     sort:
       - "date desc"
     image-placeholder: assets/media/logo_ssm_insee.webp  # default image
+    page-size: 6
 ---
 
 # Network of data scientists working
