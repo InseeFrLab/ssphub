@@ -10,6 +10,8 @@ on:
     branches:
       - main  # PR to main only
 
+name: Preview
+
 env:
   PREVIEW_BRANCH: gh-pages
 
