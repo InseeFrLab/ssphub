@@ -14,26 +14,37 @@ categories:
 - satellite imagery
 - in production
 listing:
-  id: presentations
+- id: presentations
   contents: cards/*.qmd
   sort: order desc
   categories: false
   type: grid
   template: ../../scripts/courses.ejs
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["package", "satellite imagery" ]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Project summary
 
-|  | Using satellite images for official statistics       | 
+|  | Using satellite images for official statistics       |
 | --- | --------------------------------------------------------------------------------- |
-| **Project details** | At the end of 2022, an experimental working group on the use of satellite data for official statistics was launched. The aim of this initiative was to **improve the organisation of mapping surveys in overseas departments** particularly in French Guiana and Mayotte. These surveys are used to update the individual/housing register (RIL) each year, and make it easier to identify new spontaneous or temporary housing areas in advance of the surveys. Algorithms applied to **satellite photographs** are used to identify such areas, which in a given year will require more surveyors than in the previous year. <br> The project is presented in more detail [here](https://inseefrlab.github.io/satellite-images-docs/src/documentation/index.html).                                               | 
-| **Actors** | Insee (DG and Réunion-Mayotte Interregional Directorate)                                      | 
-| **Project results** | The results of the project are presented in more detail [on the dedicated website](https://inseefrlab.github.io/satellite-images-docs/). The experimentation phase ended with: <br> - The transmission of **building evolution statistics** in Mayotte. These statistics were used to organise the 2024 complementary mapping survey in Mayotte; <br> - The development of a [**visualisation application**](https://inseefrlab.github.io/satellite-images-webapp/) integrating background maps built from Pleiades tiles and buildings detected on these tiles using our algorithms, as well as change detection layers; <br> - The creation of the**Python package for processing satellite images** [**Astrovision**](https://pypi.org/project/astrovision/)                                      | 
-| **Project code** | -  <https://github.com/InseeFrLab/astrovision> : **Python package** package for working with satellite data: <br> -  <https://inseefrlab.github.io/satellite-images-webapp/> code of the**viewing application** <br> -  [https://github.com/InseeFrLab/satellite-images-preprocess ](https://github.com/InseeFrLab/satellite-images-preprocess) code of **data pre-processing** <br> -  <https://github.com/InseeFrLab/satellite-images-train> code for the**model training** <br> -  <https://github.com/InseeFrLab/satellite-images-inference> code for the**inference**                                                 | 
+| **Project details** | At the end of 2022, an experimental working group on the use of satellite data for official statistics was launched. The aim of this initiative was to **improve the organisation of mapping surveys in overseas departments** particularly in French Guiana and Mayotte. These surveys are used to update the individual/housing register (RIL) each year, and make it easier to identify new spontaneous or temporary housing areas in advance of the surveys. Algorithms applied to **satellite photographs** are used to identify such areas, which in a given year will require more surveyors than in the previous year. <br> The project is presented in more detail [here](https://inseefrlab.github.io/satellite-images-docs/src/documentation/index.html).                                               |
+| **Actors** | Insee (DG and Réunion-Mayotte Interregional Directorate)                                      |
+| **Project results** | The results of the project are presented in more detail [on the dedicated website](https://inseefrlab.github.io/satellite-images-docs/). The experimentation phase ended with: <br> - The transmission of **building evolution statistics** in Mayotte. These statistics were used to organise the 2024 complementary mapping survey in Mayotte; <br> - The development of a [**visualisation application**](https://inseefrlab.github.io/satellite-images-webapp/) integrating background maps built from Pleiades tiles and buildings detected on these tiles using our algorithms, as well as change detection layers; <br> - The creation of the**Python package for processing satellite images** [**Astrovision**](https://pypi.org/project/astrovision/)                                      |
+| **Project code** | -  <https://github.com/InseeFrLab/astrovision> : **Python package** package for working with satellite data: <br> -  <https://inseefrlab.github.io/satellite-images-webapp/> code of the**viewing application** <br> -  [https://github.com/InseeFrLab/satellite-images-preprocess ](https://github.com/InseeFrLab/satellite-images-preprocess) code of **data pre-processing** <br> -  <https://github.com/InseeFrLab/satellite-images-train> code for the**model training** <br> -  <https://github.com/InseeFrLab/satellite-images-inference> code for the**inference**                                                 |
 
 # Documents relating to the INSEE satellite data project
 
 ::: {#presentations}
 :::
 
+# Similar projets
+
+::: {#similar-project}
+:::
 

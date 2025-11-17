@@ -9,6 +9,14 @@ categories:
 - R
 - en production
 - Insee
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["package"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Synthèse du projet
@@ -19,3 +27,8 @@ categories:
 | **Acteurs** | Insee |
 | **Résultats du projet** | Le package DoReMiFaSol est en production et téléchargeable depuis GitHub. La documentation est aussi publiée [ici](https://inseefrlab.github.io/DoReMIFaSol/). |
 | **Code du projet** | - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/InseeFrLab/DoReMIFaSol](https://github.com/InseeFrLab/DoReMIFaSol) |
+
+# Projets similaires
+
+::: {#similar-project}
+:::
