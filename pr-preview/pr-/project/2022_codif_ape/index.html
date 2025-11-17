@@ -83,6 +83,35 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-similar-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 6,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script><style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -254,6 +283,7 @@ window.Quarto = {
   <ul>
 <li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
   <li><a href="#documents-relatifs-au-projet" id="toc-documents-relatifs-au-projet" class="nav-link" data-scroll-target="#documents-relatifs-au-projet">Documents relatifs au projet</a></li>
+  <li><a href="#projets-similaires" id="toc-projets-similaires" class="nav-link" data-scroll-target="#projets-similaires">Projets similaires</a></li>
   </ul>
 <div class="toc-actions"><ul>
 <li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_codif_ape/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
@@ -294,7 +324,7 @@ window.Quarto = {
 <link href="../../assets/css/all.css" rel="stylesheet">
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1758585600000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1758585600000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statec-echange-label-studio/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -342,7 +372,7 @@ window.Quarto = {
               cards15.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -350,7 +380,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1759276800000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1759276800000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/pydata/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -398,7 +428,7 @@ window.Quarto = {
               cards14.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -406,7 +436,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="2" data-listing-date-sort="1747872000000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="2" data-listing-date-sort="1747872000000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/wp10-country-project/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -454,7 +484,7 @@ window.Quarto = {
               cards13.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -462,7 +492,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="3" data-listing-date-sort="1747008000000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="3" data-listing-date-sort="1747008000000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -510,7 +540,7 @@ window.Quarto = {
               cards12.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -518,7 +548,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="4" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="4" data-listing-date-sort="1743724800000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/ateliers-concepteurs/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -566,7 +596,7 @@ window.Quarto = {
               cards11.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -574,7 +604,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="5" data-listing-date-sort="1741132800000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="5" data-listing-date-sort="1741132800000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/grp-veille-codif-auto-10/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -622,7 +652,7 @@ window.Quarto = {
               cards10.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -630,7 +660,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="6" data-listing-date-sort="1730851200000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="6" data-listing-date-sort="1730851200000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/grp-veille-codif-auto-9/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -678,7 +708,7 @@ window.Quarto = {
               cards9.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -686,7 +716,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="7" data-listing-date-sort="1716508800000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="7" data-listing-date-sort="1716508800000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/estoril-slides/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -734,7 +764,7 @@ window.Quarto = {
               cards8.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -742,7 +772,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="8" data-listing-date-sort="1715040000000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="8" data-listing-date-sort="1715040000000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/inserm-echange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -790,7 +820,7 @@ window.Quarto = {
               cards7.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -798,7 +828,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="9" data-listing-date-sort="1714435200000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="9" data-listing-date-sort="1714435200000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/eurostat-nace-rev-2024/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -846,7 +876,7 @@ window.Quarto = {
               cards6.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -854,7 +884,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="10" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="10" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statcan-exchange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -902,7 +932,7 @@ window.Quarto = {
               cards5.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -910,7 +940,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="11" data-listing-date-sort="1695772800000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="11" data-listing-date-sort="1695772800000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/bceao-2023/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -958,7 +988,7 @@ window.Quarto = {
               cards4.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -966,7 +996,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="12" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="12" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-conf/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -1014,7 +1044,7 @@ window.Quarto = {
               cards3.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -1022,7 +1052,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="13" data-listing-date-sort="1681689600000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="13" data-listing-date-sort="1681689600000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/journee-ssphub/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -1070,7 +1100,7 @@ window.Quarto = {
               cards2.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -1078,7 +1108,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="14" data-listing-date-sort="1693526400000" data-listing-file-modified-sort="1763397414364" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="14" data-listing-date-sort="1693526400000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/seminaire-dms-oct-2022/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -1126,7 +1156,7 @@ window.Quarto = {
               cards1.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025 16:36:54
+              17/11/2025 17:43:53
             </div>
         </div> -->
 
@@ -1137,6 +1167,220 @@ window.Quarto = {
 </div>
 
 <div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+</section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401433831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+Doremifasol
+</h5>
+<div class="card-text listing-description delink">
+<p>Le package <i class="fa-brands fa-r-project" aria-label="r-project"></i> R Doremifasol facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401433831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i> pour récupérer les données de l’Insee
+</h5>
+<div class="card-text listing-description delink">
+<p>Le package <i class="fa-brands fa-python" aria-label="python"></i> <code>pynsee</code> facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur Github.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763401433831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Utilisation des images satellites pour la statistique publique
+</h5>
+<div class="card-text listing-description delink">
+<p>Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 oct. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Travaux méthodologiques sur l’enquête Budget de Famille
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401433827" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping des offres d’emploi en ligne
+</h5>
+<div class="card-text listing-description delink">
+<p>Le projet <code>Jocas</code> (Job offers collection and analysis system) permet à la DARES (Service statistique ministériel Travail) de collecter automatique des offres d’emploi en…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401433825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Amélioration de l’identification de l’établissement employeur dans les données du recensement de population
+</h5>
+<div class="card-text listing-description delink">
+<p>Amélioration de l’identification de l’établissement employeur dans les données du recensement de la population</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401433826" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="402">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Codification automatique des professions dans la nomenclature PCS 2020
+</h5>
+<div class="card-text listing-description delink">
+<p>Codifier automatiquement les professions dans le cadre de la bascule vers la nouvelle nomenclature PCS (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401433825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="491">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification des données de caisse à partir de machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401433825" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Codification automatique de l’activité des associations
+</h5>
+<div class="card-text listing-description delink">
+<p>Codification automatique de l’activité des associations à partir de méthodes de machine learning</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+<nav id="similar-project-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
 </div>
 
 

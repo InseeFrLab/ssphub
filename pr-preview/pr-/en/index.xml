@@ -68,7 +68,7 @@
 
 
 <section id="project-summary" class="level1">
-
+<h1>Project summary</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -95,6 +95,87 @@
 </tr>
 </tbody>
 </table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="aW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
+<a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+pynsee, a <i class="fa-brands fa-python" aria-label="python"></i> Python package for retrieving INSEE data
+</h5>
+<div class="card-text listing-description delink">
+<p>The <i class="fa-brands fa-python" aria-label="python"></i> package <code>pynsee</code> package makes it easier for data scientists to retrieve INSEE data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ3NhdGVsbGl0ZSUyMGltYWdlcnklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="454">
+<a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Using satellite images for official statistics
+</h5>
+<div class="card-text listing-description delink">
+<p>Using satellite images to improve population censuses in the French overseas territories</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Oct 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -146,18 +227,18 @@
 </tbody>
 </table>
 </section>
-<section id="similar-projets-related-to-package-creation" class="level1">
-<h1>Similar projets related to package creation</h1>
+<section id="similar-projects-related-to-package-creation" class="level1">
+<h1>Similar projects related to package creation</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNpbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763397484405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNpbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projets-related-to-package-creation">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects-related-to-package-creation">
 Doremifasol
 </h5>
 <div class="card-text listing-description delink">
@@ -174,7 +255,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ3NhdGVsbGl0ZSUyMGltYWdlcnklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763397484405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="456">
+<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ3NhdGVsbGl0ZSUyMGltYWdlcnklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="454">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -198,7 +279,7 @@ Using satellite images for official statistics
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -285,7 +366,7 @@ Automatic coding of companies’ main activity
 
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1763397484405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/ntts-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -333,7 +414,7 @@ Automatic coding of companies’ main activity
               ntts_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025, 16:38:04
+              17/11/2025, 17:45:02
             </div>
         </div> -->
 
@@ -341,7 +422,7 @@ Automatic coding of companies’ main activity
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1763397484405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/aiml4os-wp7/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -390,7 +471,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               wp7_paris_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025, 16:38:04
+              17/11/2025, 17:45:02
             </div>
         </div> -->
 
@@ -400,6 +481,86 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 
 </div>
 
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNpbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
+<a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Doremifasol
+</h5>
+<div class="card-text listing-description delink">
+<p>The package <i class="fa-brands fa-r-project" aria-label="r-project"></i> <code>Doremifasol</code> makes it easier for data scientists to retrieve Insee data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="aW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
+<a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+pynsee, a <i class="fa-brands fa-python" aria-label="python"></i> Python package for retrieving INSEE data
+</h5>
+<div class="card-text listing-description delink">
+<p>The <i class="fa-brands fa-python" aria-label="python"></i> package <code>pynsee</code> package makes it easier for data scientists to retrieve INSEE data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 
@@ -479,7 +640,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 
 
 <section id="project-summary" class="level1">
-
+<h1>Project summary</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -506,6 +667,111 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 </tr>
 </tbody>
 </table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Open Science Monitor
+</h5>
+<div class="card-text listing-description delink">
+<p>To be able to monitor the opening up of scientific publications (the objective of the <strong>national plan for open science</strong>), the statistical service of the Ministry of Higher…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Predicting growth by reading the newspaper
+</h5>
+<div class="card-text listing-description delink">
+<p>Use continuous press articles to build an indicator to help forecast growth</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Mar 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webscrape product characteristics to improve inflation measurement
+</h5>
+<div class="card-text listing-description delink">
+<p>Collect product characteristics on the web to improve the way quality effects are taken into account in the consumer price index.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -529,7 +795,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 
 
 <section id="project-summary" class="level1">
-
+<h1>Project summary</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -556,6 +822,159 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 </tr>
 </tbody>
 </table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Improved identification of the employing establishment in population census data
+</h5>
+<div class="card-text listing-description delink">
+<p>Improved identification of the employing establishment in population census data</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of occupations in the PCS 2020 nomenclature
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of association activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatic coding of association activity using machine learning methods</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -606,18 +1025,18 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 </tbody>
 </table>
 </section>
-<section id="similar-projects-related-to-webscraping" class="level1">
-<h1>Similar projects related to webscraping</h1>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
 <a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects-related-to-webscraping">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
 Curiexplore, the platform for comparing national education and research policies
 </h5>
 <div class="card-text listing-description delink">
@@ -634,7 +1053,31 @@ Curiexplore, the platform for comparing national education and research policies
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<div class="g-col-1" data-index="1" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
 <a href="../../project/2022_bso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -658,7 +1101,31 @@ Open Science Monitor
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -682,11 +1149,59 @@ Predicting growth by reading the newspaper
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Improved identification of the employing establishment in population census data
+</h5>
+<div class="card-text listing-description delink">
+<p>Improved identification of the employing establishment in population census data</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of occupations in the PCS 2020 nomenclature
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
 <a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" data-src="../../project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -706,8 +1221,57 @@ Webscrape product characteristics to improve inflation measurement
 </div>
 </div></a>
 </div>
+<div class="g-col-1" data-index="8" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of association activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatic coding of association activity using machine learning methods</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
+
 </div>
 
 
@@ -765,7 +1329,7 @@ Webscrape product characteristics to improve inflation measurement
 <h1>Similar projects related to webscraping</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
 <a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -789,7 +1353,7 @@ Curiexplore, the platform for comparing national education and research policies
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -813,7 +1377,7 @@ Jocas, webscraping online job offers
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -837,7 +1401,7 @@ Predicting growth by reading the newspaper
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
 <a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -925,7 +1489,7 @@ Webscrape product characteristics to improve inflation measurement
 
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statcan-exchange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -973,7 +1537,7 @@ Webscrape product characteristics to improve inflation measurement
               cards5.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025, 16:38:04
+              17/11/2025, 17:45:02
             </div>
         </div> -->
 
@@ -981,7 +1545,7 @@ Webscrape product characteristics to improve inflation measurement
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-conf/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -1029,7 +1593,7 @@ Webscrape product characteristics to improve inflation measurement
               cards3.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025, 16:38:04
+              17/11/2025, 17:45:02
             </div>
         </div> -->
 
@@ -1040,6 +1604,231 @@ Webscrape product characteristics to improve inflation measurement
 </div>
 
 <div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNpbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
+<a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Doremifasol
+</h5>
+<div class="card-text listing-description delink">
+<p>The package <i class="fa-brands fa-r-project" aria-label="r-project"></i> <code>Doremifasol</code> makes it easier for data scientists to retrieve Insee data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="aW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
+<a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+pynsee, a <i class="fa-brands fa-python" aria-label="python"></i> Python package for retrieving INSEE data
+</h5>
+<div class="card-text listing-description delink">
+<p>The <i class="fa-brands fa-python" aria-label="python"></i> package <code>pynsee</code> package makes it easier for data scientists to retrieve INSEE data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ3NhdGVsbGl0ZSUyMGltYWdlcnklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="454">
+<a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Using satellite images for official statistics
+</h5>
+<div class="card-text listing-description delink">
+<p>Using satellite images to improve population censuses in the French overseas territories</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Oct 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Improved identification of the employing establishment in population census data
+</h5>
+<div class="card-text listing-description delink">
+<p>Improved identification of the employing establishment in population census data</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of occupations in the PCS 2020 nomenclature
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of association activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatic coding of association activity using machine learning methods</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+
 </div>
 
 
@@ -1112,7 +1901,7 @@ Webscrape product characteristics to improve inflation measurement
 
 
 <section id="project-summary" class="level1">
-
+<h1>Project summary</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1135,6 +1924,111 @@ Webscrape product characteristics to improve inflation measurement
 </tr>
 </tbody>
 </table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
+<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Curiexplore, the platform for comparing national education and research policies
+</h5>
+<div class="card-text listing-description delink">
+<p>Interactive visualisation of the teaching environment and research environment in different countries.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Open Science Monitor
+</h5>
+<div class="card-text listing-description delink">
+<p>To be able to monitor the opening up of scientific publications (the objective of the <strong>national plan for open science</strong>), the statistical service of the Ministry of Higher…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webscrape product characteristics to improve inflation measurement
+</h5>
+<div class="card-text listing-description delink">
+<p>Collect product characteristics on the web to improve the way quality effects are taken into account in the consumer price index.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -1210,7 +2104,7 @@ Webscrape product characteristics to improve inflation measurement
 
 
 <section id="project-summary" class="level1">
-
+<h1>Project summary</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1233,6 +2127,159 @@ Webscrape product characteristics to improve inflation measurement
 </tr>
 </tbody>
 </table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of occupations in the PCS 2020 nomenclature
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of association activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatic coding of association activity using machine learning methods</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -1256,7 +2303,7 @@ Webscrape product characteristics to improve inflation measurement
 
 
 <section id="project-summary" class="level1">
-
+<h1>Project summary</h1>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -1279,6 +2326,159 @@ Webscrape product characteristics to improve inflation measurement
 </tr>
 </tbody>
 </table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Improved identification of the employing establishment in population census data
+</h5>
+<div class="card-text listing-description delink">
+<p>Improved identification of the employing establishment in population census data</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of association activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatic coding of association activity using machine learning methods</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
 
 
 </section>
@@ -1379,7 +2579,7 @@ Webscrape product characteristics to improve inflation measurement
 <h1>Similar projects related to new data</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1403,7 +2603,7 @@ Methodological work on the Family Budget survey
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1427,7 +2627,7 @@ Classification of checkout data using machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763397484399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1515,7 +2715,7 @@ Urban segregation: insights from mobile phone data
 <p>Online data collection (web scraping) is not only used in the production of inflation figures. It is also used in other areas and by other entities within the public statistics service besides INSEE. Since 2020, INSEE has also been using checkout data in the definition of the CPI, as noted in the article <a href="https://www.insee.fr/en/information/5014725?sommaire=5014796">Using Scanner Data to Calculate the Consumer Price Index</a> in the 2019 statistics newsletter.</p>
 <div id="listing-similar-project-ipc" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
 <a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1539,7 +2739,7 @@ Curiexplore, the platform for comparing national education and research policies
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1563,7 +2763,7 @@ Jocas, webscraping online job offers
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
 <a href="../../project/2022_bso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1587,7 +2787,7 @@ Open Science Monitor
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1611,7 +2811,7 @@ Predicting growth by reading the newspaper
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1643,7 +2843,7 @@ Classification of checkout data using machine learning
 <h2 class="anchored" data-anchor-id="related-to-new-data-sources">Related to new data sources</h2>
 <div id="listing-similar-project-newdata" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
+<div class="g-col-1" data-index="0" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1667,7 +2867,7 @@ Population movements around the March 2020 containment using mobile phone networ
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763397484399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1699,7 +2899,7 @@ Urban segregation: insights from mobile phone data
 <h2 class="anchored" data-anchor-id="related-to-automatic-coding">Related to automatic coding</h2>
 <div id="listing-similar-project-codifauto" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1723,7 +2923,7 @@ Methodological work on the Family Budget survey
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1747,7 +2947,7 @@ Jocas, webscraping online job offers
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1771,7 +2971,7 @@ Automatic coding of companies’ main activity
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265">
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268">
 <a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1795,7 +2995,7 @@ Improved identification of the employing establishment in population census data
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
 <a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1819,7 +3019,7 @@ Automatic coding of occupations in the PCS 2020 nomenclature
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1843,7 +3043,7 @@ Classification of checkout data using machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763397484399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<div class="g-col-1" data-index="6" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
 <a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1932,7 +3132,7 @@ Automatic coding of association activity
 <p>Online data collection (web scraping) is not only used in the production of inflation figures. It is also used in other areas and by other entities within the public statistics service besides INSEE. Since 2020, INSEE has also been using checkout data in the definition of the CPI, as noted in the article <a href="https://www.insee.fr/en/information/5014725?sommaire=5014796">Using Scanner Data to Calculate the Consumer Price Index</a> in the 2019 statistics newsletter.</p>
 <div id="listing-similar-project-ipc" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
 <a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1956,7 +3156,7 @@ Curiexplore, the platform for comparing national education and research policies
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1980,7 +3180,7 @@ Jocas, webscraping online job offers
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
 <a href="../../project/2022_bso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2004,7 +3204,7 @@ Open Science Monitor
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2028,7 +3228,7 @@ Predicting growth by reading the newspaper
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<div class="g-col-1" data-index="4" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
 <a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2060,7 +3260,7 @@ Webscrape product characteristics to improve inflation measurement
 <h2 class="anchored" data-anchor-id="related-to-new-data-sources">Related to new data sources</h2>
 <div id="listing-similar-project-newdata" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
+<div class="g-col-1" data-index="0" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2084,7 +3284,7 @@ Population movements around the March 2020 containment using mobile phone networ
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763397484399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2116,7 +3316,7 @@ Urban segregation: insights from mobile phone data
 <h2 class="anchored" data-anchor-id="related-to-automatic-coding">Related to automatic coding</h2>
 <div id="listing-similar-project-codifauto" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2140,7 +3340,7 @@ Methodological work on the Family Budget survey
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2164,7 +3364,7 @@ Jocas, webscraping online job offers
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2188,7 +3388,7 @@ Automatic coding of companies’ main activity
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265">
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268">
 <a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2212,7 +3412,7 @@ Improved identification of the employing establishment in population census data
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
 <a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2236,7 +3436,7 @@ Automatic coding of occupations in the PCS 2020 nomenclature
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763397484399" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
 <a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2322,7 +3522,7 @@ Automatic coding of association activity
 <h1>Similar projects related to automatic coding</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484401" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2346,7 +3546,7 @@ Methodological work on the Family Budget survey
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484402" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502820" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2370,7 +3570,7 @@ Jocas, webscraping online job offers
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763397484403" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2394,7 +3594,7 @@ Automatic coding of companies’ main activity
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265">
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="268">
 <a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2418,7 +3618,7 @@ Improved identification of the employing establishment in population census data
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763401502819" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="381">
 <a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2442,7 +3642,7 @@ Automatic coding of occupations in the PCS 2020 nomenclature
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763397484400" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763401502818" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">

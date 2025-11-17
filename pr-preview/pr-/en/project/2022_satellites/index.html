@@ -28,6 +28,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,6 +73,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-presentations'] = new List('listing-presentations', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-similar-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -220,6 +250,7 @@ window.Quarto = {
   <ul>
 <li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
   <li><a href="#documents-relating-to-the-insee-satellite-data-project" id="toc-documents-relating-to-the-insee-satellite-data-project" class="nav-link" data-scroll-target="#documents-relating-to-the-insee-satellite-data-project">Documents relating to the INSEE satellite data project</a></li>
+  <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
   </ul>
 <div class="toc-actions"><ul>
 <li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_satellites/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
@@ -260,7 +291,7 @@ window.Quarto = {
 <link href="../../assets/css/all.css" rel="stylesheet">
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1763397484405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/ntts-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -308,7 +339,7 @@ window.Quarto = {
               ntts_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025, 16:38:04
+              17/11/2025, 17:45:02
             </div>
         </div> -->
 
@@ -316,7 +347,7 @@ window.Quarto = {
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1763397484405" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://inseefrlab.github.io/satellite-images-docs/src/aiml4os-wp7/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -365,7 +396,7 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
               wp7_paris_card.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/11/2025, 16:38:04
+              17/11/2025, 17:45:02
             </div>
         </div> -->
 
@@ -375,6 +406,81 @@ Artificial Intelligence and Machine Learning for Official Statistics, organized 
 
 </div>
 
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNpbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="200">
+<a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Doremifasol
+</h5>
+<div class="card-text listing-description delink">
+<p>The package <i class="fa-brands fa-r-project" aria-label="r-project"></i> <code>Doremifasol</code> makes it easier for data scientists to retrieve Insee data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="aW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763401502824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="151">
+<a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+pynsee, a <i class="fa-brands fa-python" aria-label="python"></i> Python package for retrieving INSEE data
+</h5>
+<div class="card-text listing-description delink">
+<p>The <i class="fa-brands fa-python" aria-label="python"></i> package <code>pynsee</code> package makes it easier for data scientists to retrieve INSEE data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763401502821" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 
