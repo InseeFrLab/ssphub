@@ -11,6 +11,14 @@ categories:
 - experiment
 - forecasts
 - webscraping
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Project summary
@@ -21,4 +29,8 @@ categories:
 | **Players** | Insee    |
 | **Project results** | An indicator of current media sentiment was constructed on the basis of the tone of press articles. <br> -  [Information gleaned from press articles can help predict economic activity in real time](https://www.insee.fr/en/statistiques/4620524?sommaire=4473307) Economic outlook, December 2020 ; <br> -  [French economic activity through press articles](https://www.insee.fr/en/statistiques/5351871) Economic Outlook, March 2021 ; <br> - [Predicting economic activity from press articles](https://journees-methodologie-statistique.insee.net/predire-lactivite-economique-a-partir-darticles-de-presse/) presentation at the Journées de méthodologie statistiques de 2022 (French)     |
 
+# Similar projects
+
+::: {#similar-project}
+:::
 

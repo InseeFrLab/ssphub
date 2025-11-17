@@ -11,6 +11,14 @@ categories:
 - in production
 - datavisualisation
 - SIES
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Project summary
@@ -22,4 +30,8 @@ categories:
 | **Project results** | The project is now in production, with a dedicated website available at [curiexplore.enseignementsup-recherche.gouv.fr (in French)](https://curiexplore.enseignementsup-recherche.gouv.fr/).    |
 | **Project code** | - The code is available on GitHub {{< fa brands github >}} [https://github.com/dataesr/curiexplore-ui](https://github.com/dataesr/curiexplore-ui).     |
 
+# Similar projects
+
+::: {#similar-project}
+:::
 

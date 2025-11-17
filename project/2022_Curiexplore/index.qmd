@@ -11,6 +11,14 @@ categories:
 - en production
 - datavisualisation
 - SIES
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 
@@ -22,4 +30,9 @@ categories:
 | **Acteurs**                  |  Service statistique du Ministère de l'Enseignement Supérieur et de la Recherche ([SIES](https://www.enseignementsup-recherche.gouv.fr/fr/sies))     |
 | **Résultats du projet**      |   Le projet est en production, avec un site dédié disponible sur [curiexplore.enseignementsup-recherche.gouv.fr](https://curiexplore.enseignementsup-recherche.gouv.fr/).    |
 | **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/dataesr/curiexplore-ui](https://github.com/dataesr/curiexplore-ui).       |
+
+# Projets similaires
+
+::: {#similar-project}
+:::
 
