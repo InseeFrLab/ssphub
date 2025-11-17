@@ -15,7 +15,14 @@ categories:
 - Python
 - codification automatique
 - fasttext
-
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["codification automatique"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Synthèse du projet
@@ -26,3 +33,7 @@ categories:
 | **Acteurs**                  | Insee         |
 | **Résultats du projet**      | - [note bilan de l'expérimentation](https://intranet.insee.fr/jcms/1492866_DBFileDocument/2021-26934-dg75-l401?details=true) et [résultats associés](https://intranet.insee.fr/jcms/1492871_DBFileDocument/bilan-exper-pcs2020?details=true) (décembre 2021) <br> - article et communication aux journées de méthodologie statistiques 2022 "[Application de techniques de machine learning pour coder les professions dans la nomenclature des professions et catégories socio-professionnelles 2020](https://journees-methodologie-statistique.insee.net/application-de-techniques-de-machine-learning-pour-coder-les-professions-dans-la-nomenclature-des-professions-et-categories-socio-professionnelles-2020/)" <br> [article](https://intranet.insee.fr/jcms/8751512_DBFileDocument/confq-pcs-20200505-copie?details=true) et [slides](https://intranet.insee.fr/jcms/8751517_DBFileDocument/q2022-slides?details=true) présentés à la Conférence Q2022 "Machine learning for coding occupations in the Census: first lessons from experiments to production".         |
 
+# Projets similaires
+
+::: {#similar-project}
+:::

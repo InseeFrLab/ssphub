@@ -20,12 +20,19 @@ categories:
 - MLFlow
 
 listing:
-  id: presentations
+- id: presentations
   contents: cards/*.qmd
   sort: "order desc"
   categories: false
   type: grid
   template: ../../scripts/courses.ejs
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["codification automatique", "package"]
+  sort: "date desc"
+  page-size: 6
 
 ---
 
@@ -43,3 +50,10 @@ listing:
 
 ::: {#presentations}
 :::
+
+# Projets similaires
+
+::: {#similar-project}
+:::
+
+

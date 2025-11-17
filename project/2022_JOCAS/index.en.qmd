@@ -16,7 +16,7 @@ listing:
   contents: ../*/index.qmd
   type: grid
   include:
-    categories: ["webscraping"]
+    categories: ["webscraping", "automatic coding"]
   sort: "date desc"
   page-size: 6
 ---
@@ -30,7 +30,7 @@ listing:
 | **Project results** | Online vacancy data has been used to calculate tensions on the labour market. They were also used to produce the table monitoring the labour market situation in 2020-2021 during the Covid-19 crisis. Jocas data is freely accessible to students, researchers and civil servants. Access to the data may also be granted for statistical and non-commercial use, on request from DARES. The database is accessible on the [INSEE's SSPCloud pl](https://datalab.sspcloud.fr/) by following the path 'projet-jocas-prod/diffusion/JOCAS'.<br> <br> - [Description on the DARES website](https://dares.travail-emploi.gouv.fr/publication/les-offres-demploi-en-ligne-nouvelle-source-de-donnees-sur-le-marche-du-travail) <br> - [Working document](https://dares.travail-emploi.gouv.fr/sites/default/files/ed7db1ecec02433585a7654411102726/DE%20258%20Offres%20demploi%20en%20ligne.pdf) <br> - [Hackathon in March 2023](https://dares.travail-emploi.gouv.fr/actualite/un-hackathon-pour-dedoubler-les-offres-demploi-en-ligne) on the duplication of job offers <br> - [Project news](https://dares.travail-emploi.gouv.fr/actualite/suivre-les-offres-demploi-en-ligne-pour-mieux-comprendre-le-marche-du-travail) <br> - [Training](https://dares.travail-emploi.gouv.fr/enquete-source/job-offers-collection-and-analysis-system) to use the JOCAS database             |
 | **Project code** | - Code repo is available on GitHub {{< fa brands github >}} [https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR](https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR)       |
 
-# Similar projects related to webscraping
+# Similar projects
 
 ::: {#similar-project}
 :::

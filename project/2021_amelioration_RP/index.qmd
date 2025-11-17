@@ -9,7 +9,14 @@ categories:
 - Insee
 - codification automatique
 - machine learning
-
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["codification automatique"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 
@@ -21,3 +28,7 @@ categories:
 | **Acteurs**                  |  Insee     |
 | **Résultats du projet**      |   Le modèle ainsi que l’interface développée constituent des pistes prometteuses d’amélioration. La codification automatique ferait baisser d’environ 30 % le nombre de bulletins codés manuellement, en faciliterait et améliorerait les conditions et la rapidité de leur codage manuel. |
 
+# Projets similaires
+
+::: {#similar-project}
+:::

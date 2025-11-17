@@ -11,6 +11,14 @@ categories:
 - Insee
 - automatic coding
 - machine learning
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["automatic coding"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Project summary
@@ -21,3 +29,7 @@ categories:
 | **Players** | Insee       |
 | **Project results** | The model and the interface developed offer promising avenues for improvement. Automatic coding would reduce the number of bulletins coded manually by around 30%, making it easier and quicker to code them manually.     |
 
+# Similar projets
+
+::: {#similar-project}
+:::

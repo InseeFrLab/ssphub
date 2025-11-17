@@ -11,11 +11,19 @@ date: 2022-01-01
 
 image: visuel_Budget_des_familles_1.png
 
-categories: 
+categories:
 - codification automatique
 - extraction de données
 - données de caisse
 
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["codification automatique"]
+  sort: "date desc"
+  page-size: 6
 ---
 
 # Synthèse du projet
@@ -27,3 +35,7 @@ categories:
 | **Résultats du projet**      | Projet en cours               |
 | **Code du projet**           | - [https://git.lab.sspcloud.fr/ssplab/bdf](https://git.lab.sspcloud.fr/ssplab/bdf) <br> - [https://git.lab.sspcloud.fr/ssplab/experimentation-bdf](https://git.lab.sspcloud.fr/ssplab/experimentation-bdf)       |
 
+# Projets similaires
+
+::: {#similar-project}
+:::
