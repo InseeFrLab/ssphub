@@ -1,7 +1,4 @@
 on:
-  push:
-    branches:
-      - '**'  # All branches
   pull_request:
     types:
       - opened
@@ -20,12 +17,7 @@ concurrency:
 
 jobs:
   build-render:
-    # If :
-    # If closing the PR, no publishing
-    # If event is push to a branch (contains ...) and a PR from that branch is opened
-    if: |
-      github.event_name == 'pull_request' && github.event.action != 'closed' ||  
-      (github.event_name == 'push' && contains(github.ref, 'refs/heads/') && github.repository == github.event.pull_request.head.repo.full_name)
+    if: github.event.action != 'closed'  # If closing the PR, no publishing
     runs-on: ubuntu-latest
     # To cancel previous actions that could run on this PR
     steps:
