@@ -1,108 +1,28 @@
 on:
+  workflow_dispatch:
   push:
-    branches:
-      - '**'  # All branches
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - closed   # Including closed to remove preview when PR is closed. 
-    branches:
-      - main
+    branches: main
 
-# To cancel previous actions that could run on this PR
-concurrency:
-  group: preview-${{ github.ref }}
-  cancel-in-progress: true
+name: Quarto Publish
 
 jobs:
   build-deploy:
-    # If :
-    # If closing the PR, no publishing
-    # If event is push to a branch (contains ...) and a PR from that branch is opened
-    if: |
-      github.event_name == 'pull_request' && github.event.action != 'closed' ||  
-      (github.event_name == 'push' && contains(github.ref, 'refs/heads/') && github.repository == github.event.pull_request.head.repo.full_name)
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
         with:
-          fetch-depth: 0  # To enable full access to Git repo
-          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
-          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
-      
-      # add software dependencies here and any libraries
-      # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
-      - name: Configure safe.directory  # Workaround for actions/checkout#760
-        run: git config --global --add safe.directory /__w/ssphub/ssphub
-      
-      # Python
-      - name: Setup Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.13' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-      
-      # Jupyter
+          python-version: '3.10' # Version range or exact version of a Python version to use, using SemVer's version range syntax
       - run: pip install jupyter nbformat
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.7.31
 
-      # Quarto
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # To publish to GitHub Pages
-      - name: Publish to GitHub Pages (and render)
+      - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
-
-      - name: Install npm
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-        uses: actions/setup-node@v2          
-        with:
-          node-version: '18'
-
-      - name: Comment PR with preview URL
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const previewUrl = `https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}`;
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `✅ Preview site is ready: [${previewUrl}](${previewUrl})`
-            })
-  
-  delete-preview:
-    if: github.event.action == 'closed'  # Only run when PR is closed
-    runs-on: ubuntu-latest
-    steps:
-      - name: Remove preview from GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4.0.0  # https://github.com/marketplace/actions/github-pages-action
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages  
-          publish_dir: ./
-          keep_files: false
-          force_orphan: true  # This allows you to make your publish branch with only the latest commit.
-          enable_jekyll: false
-          allow_empty_commit: true
-
-      - name: Comment PR that preview was removed
-        uses: actions/github-script@v6
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: `🗑️ Preview site has been removed.`
-            })
+          target: netlify
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
