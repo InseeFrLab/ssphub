@@ -1,3 +1,5 @@
+name: Build and deploy preview
+
 on:
   workflow_dispatch:  # To allow for manuel trigger of this workflow. Cf
   # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
@@ -5,12 +7,10 @@ on:
     types:
       - opened
       - reopened
-      - synchronize
+      - synchronize  # When the ref of the branch is updated (= commit to the branch to merge)
       - closed   # Including closed to remove preview when PR is closed.
     branches:
       - main  # PR to main only
-
-name: Preview
 
 env:
   PREVIEW_BRANCH: gh-pages
@@ -63,6 +63,7 @@ jobs:
           preview-branch: ${{ env.PREVIEW_BRANCH }}
           action: deploy
           comment: false
+          pr_number: ${{ github.event.pull_request.number }}
 
       - name: Comment PR (custom)
         uses: marocchino/sticky-pull-request-comment@v2
