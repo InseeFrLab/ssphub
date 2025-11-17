@@ -1,16 +1,23 @@
+# Workflow run only on pushes to main and manual trigger
 on:
   workflow_dispatch:
+  # cf https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   push:
     branches: main
 
-name: Quarto Publish
+name: CI - Quarto Publish
+
+# Cancel previous workflow of ci that could be running
+concurrency:
+  group: ci-${{ github.ref }}  # preview followed by the reference of the branch or tag that triggered the workflow
+  cancel-in-progress: true
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3 
+        uses: actions/checkout@v3
 
       - uses: actions/setup-python@v4
         with:
@@ -20,7 +27,7 @@ jobs:
         with:
           version: 1.7.31
 
-      - name: Render and Publish 
+      - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: netlify

@@ -1,28 +1,102 @@
 on:
-  workflow_dispatch:
+  workflow_dispatch:  # To allow for manuel trigger of this workflow. Cf
+  # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   push:
-    branches: main
+    branches-ignore:  # Triggers for push to all branches but main
+      - main
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed   # Including closed to remove preview when PR is closed.
+    branches:
+      - main  # PR to main only
 
-name: Quarto Publish
+name: Preview
+
+env:
+  PREVIEW_BRANCH: gh-pages
+
+concurrency:
+  group: preview-${{ github.ref }}  # preview followed by the reference of the branch or tag that triggered the workflow
+  cancel-in-progress: true
 
 jobs:
-  build-deploy:
+  build-render:
+    if: github.event.action != 'closed'  # If closing the PR, no publishing
+    runs-on: ubuntu-latest
+    # To cancel previous actions that could run on this PR
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # To enable full access to Git repo
+          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
+          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
+
+      # add software dependencies here and any libraries
+      # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
+      - name: Configure safe.directory  # Workaround for actions/checkout#760
+        run: git config --global --add safe.directory /__w/ssphub/ssphub
+
+      - name: Install npm
+        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install babelquarto
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            github::ropensci-review-tools/babelquarto@a485fea
+
+      - name: Render bilingual project
+        run: Rscript scripts/render.R
+
+      - name: Deploy preview
+        id: deploy-preview
+        uses: rossjrw/pr-preview-action@v1.6.2
+        with:
+          source-dir: ./_site/
+          preview-branch: ${{ env.PREVIEW_BRANCH }}
+          action: deploy
+          comment: false
+
+      - name: Comment PR (custom)
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: pr-preview
+          message: |
+            :rocket: View preview at <br> ${{ steps.deploy-preview.outputs.preview-url }} <br>
+            <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br> </h6>
+
+
+  delete-preview:
+    if: github.event.action == 'closed'  # Only run when PR is closed
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0  # To enable full access to Git repo
+          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
+          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
 
-      - uses: actions/setup-python@v4
+      - name: Remove preview
+        id: remove-preview
+        uses: rossjrw/pr-preview-action@v1.6.2
         with:
-          python-version: '3.10' # Version range or exact version of a Python version to use, using SemVer's version range syntax
-      - run: pip install jupyter nbformat
-      - uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: 1.7.31
+          action: remove
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Comment PR that preview was removed
+        uses: marocchino/sticky-pull-request-comment@v2
         with:
-          target: netlify
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          header: pr-preview
+          message: |
+            Preview removed because the pull request was closed.
+            ${{ steps.remove-preview.outputs.action-start-time }}
