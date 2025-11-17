@@ -11,7 +11,20 @@ listing:
   image-placeholder: assets/media/logo_ssm_insee.webp  # default image
 ---
 
-Here is a list of the innovative data science projects.
+Here you can find examples of innovative projects led by SSP members.
+
+# What is an innovative project?
+It is always difficult to define ex ante what constitutes an innovative project. Technological innovation is by definition fluid and evolves very quickly. However, as stated in the [manifesto (in French)](manifeste.qmd), recent technological innovations aim to **simplify and accelerate** certain production processes, **facilitate the exploitation of non-traditional or large data sources**, **automate certain tasks**, **communicate** with wider audiences using responsive visualisations, and, among other things, reduce the gap between statisticians and computer scientists. For example, modernising a processing chain through the use of new packages or new methods of information processing is an innovation. However, this may not be ambitious enough on its own to constitute a truly innovative project, and therefore will not necessarily be included in the projects presented here. The use of web scraping to build a database that is automatically populated will be considered an innovative project. Conversely, simply updating code or using new administrative databases, if it does not involve any particular technological obstacles, is not considered technological innovation in itself. This does not mean that such a project is unnecessary or unwelcome 😉.
+
+Furthermore, a project that is innovative at a given point in time may no longer be so a few months or years later, when the innovation has become widespread enough to be considered conventional knowledge.
+
+Innovation also occurs everywhere and is not limited to various data science innovation laboratories.
+
+# What is the scope of the projects presented here?
+
+The list of projects presented here is not intended to be exhaustive.
+It is based on voluntary participation. The aim is to provide a central hub for sharing between SSP data scientists, as outlined in the [manifesto (in French)](manifesto.qmd).
+**Any proposals for additions or mergers on our platform are welcome!**
 
 ::: {#project-listing}
 :::
