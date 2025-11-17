@@ -1,0 +1,2731 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/index.en.html" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>SSPHub</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+<script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script><script src="site_libs/quarto-listing/quarto-listing.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-438168c6864485e01d50a9688026e8cc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script><script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 6,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-project'] = new List('listing-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-blog_event .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 6,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-blog_event'] = new List('listing-blog_event', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-newsletters .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 6,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-newsletters'] = new List('listing-newsletters', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-partenaires .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-title-block-banner','listing-title-block-banner-color','listing-format','listing-babelquarto','listing-lang','listing-_quarto-vars','listing-language','listing-title','listing-description','listing-image','listing-path','listing-outputHref','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 6,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-title-block-banner","listing-title-block-banner-color","listing-format","listing-babelquarto","listing-lang","listing-_quarto-vars","listing-language","listing-title","listing-description","listing-image","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-partenaires'] = new List('listing-partenaires', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script><style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #6886bb;
+      }
+</style>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script><link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script><link rel="stylesheet" href="assets/css/homepage.css">
+<link rel="alternate" type="application/rss+xml" title="SSPHub" href="index.xml" data-external="1">
+</head>
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SSPHub</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item"><div class="dropdown" id="languages-links-parent">
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
+</div></li>
+<li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./event.html"> 
+<span class="menu-text">Événements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">Projets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./course.html"> 
+<span class="menu-text">Ressources utiles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">À propos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">
+<li>
+    <a class="dropdown-item" href="./infolettre/infolettre.html">
+ <span class="dropdown-text">Newsletters</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./about.html">
+ <span class="dropdown-text">Présentation du réseau</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./manifeste.html">
+ <span class="dropdown-text">Manifeste du réseau</span></a>
+  </li>  
+    </ul>
+</li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
+<span class="menu-text">Le SSPCloud</span></a>
+  </li>  
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="./index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+</div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav><div id="quarto-announcement" data-announcement-id="d14fcd9fc2e806dcc24e12ea5d639735" class="alert alert-primary hidden">
+<i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>📺️ Le replay des ateliers du <strong>9 et 16 avril 2025</strong> sont disponibles <a href="./event/2025-04-09-API/index.html">ici (API)</a> et <a href="./event/2025-04-16-Parquet/index.html">ici (pour le format Parquet)</a></p>
+</div>
+<i class="bi bi-x-lg quarto-announcement-action"></i>
+</div>
+</header><!-- content --><header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content"><div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="44" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 43;"><span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="co">// output: false</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>inscrits <span class="op">=</span> <span class="dv">730</span></span></code></pre></div>
+<button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="50" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 49;"><span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>badge <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103"&gt;&lt;img alt="Static Badge" src="https://img.shields.io/badge/</span><span class="sc">${</span>inscrits<span class="sc">}</span><span class="vs">_inscrits-blue?style=social&amp;label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&amp;color=8A2BE2&amp;link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103"&gt;</span></span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;</span></span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span></code></pre></div>
+<button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div id="hero-banner" class="column-screen page-columns page-full">
+<div class="grid column-page">
+<div class="headline g-col-lg-12 g-col-12 g-col-md-12">
+<div class="h1">
+<p>Le réseau des data scientists de la statistique publique</p>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold">
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="66" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 65;"><span id="cb3-66"><a href="#cb3-66" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
+<span id="cb3-67"><a href="#cb3-67" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>badge<span class="sc">}</span><span class="vs">`</span></span></code></pre></div>
+<button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<p>Le <code>SSPHub</code> centralise et vise à faire connaître le contenu créé par le réseau des <em>data scientists</em> du <a href="https://www.insee.fr/fr/information/1302192">Service Statistique Publique (SSP)</a>.</p>
+<p>Une présentation du réseau est disponible sur la page <a href="about.html">à propos</a>. Pour en savoir plus sur les objectifs du réseau, sa philosophie, et ses modes d’actions, vous pouvez découvrir le <a href="./manifeste.html">Manifeste 📜</a> écrit collectivement.</p>
+</div>
+</div>
+</div>
+<br><div class="column-page">
+<section id="les-derniers-billets-de-blog-et-événements" class="level2"><h2 class="anchored" data-anchor-id="les-derniers-billets-de-blog-et-événements">Les derniers billets de blog et événements</h2>
+<p>L’ensemble des billets de blog peut être retrouvé sur la <a href="./blog.html">page dédiée</a>, tout comme les <a href="./event.html">événements</a>.</p>
+<div id="listing-blog_event" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1763387232864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<a href="./event/2025-12-01-network-day/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Troisième journée du SSPHub
+</h5>
+<div class="card-text listing-description delink">
+<p>Programme et modalités d’inscription à la 3e journée du réseau</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+15 sept. 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UGFycXVldCUyQ2V2ZW50" data-listing-date-sort="1744812000000" data-listing-file-modified-sort="1763387232864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<a href="./event/2025-04-16-Parquet/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./event/2025-04-16-Parquet/Atelier-Parquet.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Atelier - Comment récupérer des données sous format Parquet ?
+</h5>
+<div class="card-text listing-description delink">
+<p>Le format <code>Parquet</code> est un format de données connaissant une popularité importante du fait de ses caractéristiques techniques (orientation colonne, compression…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+16 avr. 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="QVBJJTJDZXZlbnQ=" data-listing-date-sort="1744207200000" data-listing-file-modified-sort="1763387232863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<a href="./event/2025-04-09-API/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./event/2025-04-09-API/Atelier-API.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Atelier - Comment récupérer des données par API ?
+</h5>
+<div class="card-text listing-description delink">
+<p>Les API <strong>(Application Programming Interface)</strong> sont un mode d’accès aux données en expansion. Grâce aux API, l’automatisation de scripts est facilitée puisqu’il n’est plus…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+9 avr. 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="ZGF0YXZpeiUyQ2V2ZW50" data-listing-date-sort="1728918000000" data-listing-file-modified-sort="1763387232862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532">
+<a href="./event/2024-10-14-network-day/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Deuxième journée du SSPHub
+</h5>
+<div class="card-text listing-description delink">
+<p>Programme et modalités d’inscription à la 2e journée du réseau</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+14 oct. 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="cXVhcnRvJTJDZXZlbnQ=" data-listing-date-sort="1714662000000" data-listing-file-modified-sort="1763387232862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<a href="./event/2024-05-02-quarto/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./event/2024-05-02-quarto/quarto.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Quarto : Une évolution de R Markdown pour des travaux statistiques reproductibles
+</h5>
+<div class="card-text listing-description delink">
+<p>Pour fiabiliser la production de documents construits en valorisant des données (tableaux, graphiques, etc.), <em>RStudio</em> (devenu <em>Posit</em> depuis) a construit il y a quelques…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+2 mai 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpeiUyQ2V2ZW50" data-listing-date-sort="1709218800000" data-listing-file-modified-sort="1763387232862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<a href="./event/2024-02-29-mauviere/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./event/2024-02-29-mauviere/mauviere.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Eric Mauvière, “La dataviz pour donner du sens aux données et communiquer un message”
+</h5>
+<div class="card-text listing-description delink">
+<p>Le <strong>29 février (15h - 16h)</strong>, Eric Mauvière nous fera une présentation, avec de nombreux exemples issus de la statistique publique, de la manière dont une visualisation de…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+29 févr. 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDUiUyQ1BhcnF1ZXQ=" data-listing-date-sort="1698019200000" data-listing-file-modified-sort="1763387232846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2675">
+<a href="./blog/parquetRP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/parquetRP/ducks.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Guide d’utilisation des données du recensement de la population au format <code>Parquet</code>
+</h5>
+<div class="card-text listing-description delink">
+<p>Un post de blog pour accompagner la mise à disposition des données détaillées du recensement au format <code>Parquet</code>.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+23 oct. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNzc3BjbG91ZA==" data-listing-date-sort="1683676800000" data-listing-file-modified-sort="1763387232843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="15" data-listing-word-count-sort="2838">
+<a href="./blog/onyxia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/onyxia/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Onyxia: l’infrastructure cloud mère des dragons
+</h5>
+<div class="card-text listing-description delink">
+<p>Les technologies cloud sont incontournables dans l’écosystème de la donnée. Pour ne pas se rendre dépendante de fournisseurs de services externes, l’Insee a développé un…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+10 mai 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="ZXZlbnQ=" data-listing-date-sort="1680102000000" data-listing-file-modified-sort="1763387232862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<a href="./event/2023-ssphubday/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Première journée du SSPHub
+</h5>
+<div class="card-text listing-description delink">
+<p>Replay de la première journée de présentation du SSPHub</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+29 mars 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="T0NSJTJDZGVlcCUyMGxlYXJuaW5nJTJDZXZlbnQ=" data-listing-date-sort="1680102000000" data-listing-file-modified-sort="1763387232864" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<a href="./event/ocrisation-teklia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/ocrisation-teklia/ocr.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+“OCRisation, état de l’art et projets auxquels participe Teklia” par Christopher Kermorvant
+</h5>
+<div class="card-text listing-description delink">
+<p>Le 29 mars de 15h à 16h nous recevons Christopher Kermorvant, chercheur spécialisé en OCRisation et fondateur de Teklia. Il nous fera un état de l’art de l’OCRisation puis…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+29 mars 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="ZG9jdW1lbnRhdGlvbg==" data-listing-date-sort="1680015600000" data-listing-file-modified-sort="1763387232867" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<a href="./event/presentation-du-projet-meta-academy-carpentries/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/presentation-du-projet-meta-academy-carpentries/2023-03-MetaAcademy.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Présentation du projet Meta Academy - Carpentries
+</h5>
+<div class="card-text listing-description delink">
+<p>Pour favoriser l’adoption des langages <code>R</code>, <code>Python</code> et <code>Git</code> dans les administrations, le programme <code>ModernStat</code> piloté par l’OCDE et Statistics Canada, a lancé un projet…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+28 mars 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="ZG9yZW1pZmFzb2wlMkNweW5zZWUlMkNvcGVuJTIwZGF0YSUyQ0luc2VlJTJDZXZlbnQ=" data-listing-date-sort="1676300400000" data-listing-file-modified-sort="1763387232866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<a href="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left">
+<a href="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+</a><div class="card-body post-contents">
+<a href="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Présentation des packages R et Python pour accéder à l’open data de l’Insee
+</h5>
+</a><div class="card-text listing-description delink">
+<a href="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html" class="quarto-grid-link">
+</a><p><a href="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html" class="quarto-grid-link">L’Insee met à disposition ses données par le biais d’</a><a href="https://api.insee.fr/catalogue/">API</a> ou par son <a href="https://www.insee.fr/fr/accueil">site web</a>. Pour faciliter la…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+13 févr. 2023
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-1" data-index="12" data-categories="UHl0aG9uJTJDUGFuZGFzJTJDUG9sYXJzJTJDRGF0YSUyMHdyYW5nbGluZw==" data-listing-date-sort="1675987200000" data-listing-file-modified-sort="1763387232849" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="762">
+<a href="./blog/polars/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/polars/featured.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Polars, une alternative fraîche à Pandas
+</h5>
+<div class="card-text listing-description delink">
+<p>Polars, une alternative moderne et fluide à <code>Pandas</code></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+10 févr. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="13" data-categories="Z3JpZHZpeiUyQ2RhdGF2aXo=" data-listing-date-sort="1674212400000" data-listing-file-modified-sort="1763387232866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<a href="./event/presentation-de-gridviz-par-julien-gaffuri/index.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left">
+<a href="./event/presentation-de-gridviz-par-julien-gaffuri/index.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/presentation-de-gridviz-par-julien-gaffuri/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+</a><div class="card-body post-contents">
+<a href="./event/presentation-de-gridviz-par-julien-gaffuri/index.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Présentation de gridviz par Julien Gaffuri
+</h5>
+</a><div class="card-text listing-description delink">
+<a href="./event/presentation-de-gridviz-par-julien-gaffuri/index.html" class="quarto-grid-link">
+</a><p><a href="./event/presentation-de-gridviz-par-julien-gaffuri/index.html" class="quarto-grid-link">Evénement de présentation de </a><a href="https://eurostat.github.io/gridviz/"><code>gridviz</code></a> par <a href="https://github.com/jgaffuri">Julien Gaffuri</a> (Eurostat)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+20 janv. 2023
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-1" data-index="14" data-categories="SW5zZWUlMkNSZXRyb3NwZWN0aXZlJTJDSW5mb2xldHRyZQ==" data-listing-date-sort="1673308800000" data-listing-file-modified-sort="1763387232850" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1698">
+<a href="./blog/recap2022/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/recap2022/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Infolettre n°9
+</h5>
+<div class="card-text listing-description delink">
+<p>Après la rétrospective de l’année 2022 de la <em>data science</em>, il est temps de se pencher sur l’année du réseau avec des visualisations interactives produites grâce à…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+10 janv. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="15" data-categories="TkxQJTJDT2JzZXJ2YWJsZSUyQ1F1YXJ0byUyQ0RlZXAlMjBsZWFybmluZyUyQ0luc2VlJTJDUmV0cm9zcGVjdGl2ZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1763387232851" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1386">
+<a href="./blog/retrospective2022/index.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left">
+<a href="./blog/retrospective2022/index.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/retrospective2022/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+</a><div class="card-body post-contents">
+<a href="./blog/retrospective2022/index.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Rétrospective de l’année 2022
+</h5>
+</a><div class="card-text listing-description delink">
+<a href="./blog/retrospective2022/index.html" class="quarto-grid-link">
+</a><p><a href="./blog/retrospective2022/index.html" class="quarto-grid-link">La <em>data science</em> a beaucoup fait parler d’elle en 2022, notamment du fait des deux coups médiatiques d’</a><a href="https://openai.com/">openAI</a>, à savoir…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+31 déc. 2022
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-1" data-index="16" data-categories="ZXZlbnQlMkMxMCUyNSUyQ1B5dGhvbg==" data-listing-date-sort="1670198400000" data-listing-file-modified-sort="1763387232862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556">
+<a href="./event/2022-12-10prcent/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/2022-12-10prcent/Lieu_Transf_logo.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Evénement de clôture de la saison 1 du programme 10%
+</h5>
+<div class="card-text listing-description delink">
+<p>Le <strong>5 décembre</strong>, a lieu l’<strong>événement de clotûre de la saison 1 du programme 10%</strong>. Au programme, restitution des [projets portés cette…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+5 déc. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="17" data-categories="b2JzZXJ2YWJsZSUyQ2RhdGF2aXo=" data-listing-date-sort="1668592800000" data-listing-file-modified-sort="1763387232866" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<a href="./event/presentation-dobservable-par-nicolas-lambert/index.html" class="quarto-grid-link">
+</a><div class="quarto-grid-item card h-100 card-left">
+<a href="./event/presentation-dobservable-par-nicolas-lambert/index.html" class="quarto-grid-link">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/presentation-dobservable-par-nicolas-lambert/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+</a><div class="card-body post-contents">
+<a href="./event/presentation-dobservable-par-nicolas-lambert/index.html" class="quarto-grid-link">
+<h5 class="no-anchor card-title listing-title">
+Présentation d’Observable par Nicolas Lambert
+</h5>
+</a><div class="card-text listing-description delink">
+<a href="./event/presentation-dobservable-par-nicolas-lambert/index.html" class="quarto-grid-link">
+</a><p><a href="./event/presentation-dobservable-par-nicolas-lambert/index.html" class="quarto-grid-link"></a><a href="https://observablehq.com/">observable</a> est la nouvelle plateforme de dataviz réactive. Initiée par Mike Bostock (créateur de D3.js), ce réseau social de la dataviz a pour…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+16 nov. 2022
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="g-col-1" data-index="18" data-categories="SW5zZWUlMkNOTFA=" data-listing-date-sort="1664755200000" data-listing-file-modified-sort="1763387232840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2249">
+<a href="./blog/embedding/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/embedding/featured.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Le plongement lexical ou comment apprendre à lire à un ordinateur
+</h5>
+<div class="card-text listing-description delink">
+<p>Introduction aux méthodes de traitement du langage naturel.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+3 oct. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="19" data-categories="ZXZlbnQlMkNmdW5hdGhvbiUyQ1IlMkNQeXRob24=" data-listing-date-sort="1655596800000" data-listing-file-modified-sort="1763387232862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
+<a href="./event/2022-06-20-funathon/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/2021-06-22-funathon/funathon.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Funathon de juin 2022
+</h5>
+<div class="card-text listing-description delink">
+<p>Présentation du deuxième Funathon du SSPLab organisé le 20 juin 2022 autour de 9 sujets, en R et en Python.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+19 juin 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="20" data-categories="SW5zZWUlMkNldmVuZW1lbnQ=" data-listing-date-sort="1649203200000" data-listing-file-modified-sort="1763387232839" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="701">
+<a href="./blog/2022_jms/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/2022_jms/jms2022.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Le <em>machine learning</em> aux Journées de la Méthodologie Statistique 2022 (JMS)
+</h5>
+<div class="card-text listing-description delink">
+<p>Revue des présentations en lien avec les travaux en <em>machine learning</em> aux JMS de 2022</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+6 avr. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="21" data-categories="ZXZlbnQlMkNmdW5hdGhvbiUyQ1IlMkNQeXRob24=" data-listing-date-sort="1624147200000" data-listing-file-modified-sort="1763387232862" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<a href="./event/2021-06-22-funathon/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./event/2021-06-22-funathon/funathon.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Funathon de juin 2021
+</h5>
+<div class="card-text listing-description delink">
+<p>Présentation du premier Funathon du SSPLab organisé le 21 juin 2021 autour de 8 sujets, en R et en Python, à partir de données Airbnb</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+20 juin 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="22" data-categories="ZG9ubiVDMyVBOWVzJTIwdm9sdW1pbmV1c2Vz" data-listing-date-sort="1464739200000" data-listing-file-modified-sort="1763387232841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="744">
+<a href="./blog/hadoop_spark/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./blog/hadoop_spark/hadoop_spark.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Parallélisation des traitements : Hadoop MapReduce vs Spark
+</h5>
+<div class="card-text listing-description delink">
+À la base des systèmes dits « big data », il y a un principe central : la distribution, à la fois des données et des traitements, sur un ensemble de machines/ordinateurs…<em></em><code></code><code></code>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2016
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+<nav id="blog_event-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
+</div>
+</section><section id="les-projets-innovants-du-ssphub" class="level2"><h2 class="anchored" data-anchor-id="les-projets-innovants-du-ssphub">Les projets innovants du SSPHub</h2>
+<p>L’ensemble des projets innovants peut être retrouvé sur la <a href="./project.html">page dédiée</a>.</p>
+<div id="listing-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UiUyQ2RhdGF2aXN1YWxpc2F0aW9uJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ0RSRUVTJTJDb3Blbi1kYXRh" data-listing-date-sort="1685577600000" data-listing-file-modified-sort="1763387232898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
+<a href="./project/2022_drees_dataviz/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./project/2022_drees_dataviz/dataviz.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Visualisations des données liées aux tests du SARS-Cov2
+</h5>
+<div class="card-text listing-description delink">
+<p>Publication hebdomadaire des données liées aux tests de détection du SARS-Cov2 par Shiny à partir du système d’information SI-DEP</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763387232899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="145">
+<a href="./project/2023_doremifasol/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Doremifasol
+</h5>
+<div class="card-text listing-description delink">
+<p>Le package <i class="fa-brands fa-r-project" aria-label="r-project"></i> R Doremifasol facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763387232900" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<a href="./project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i> pour récupérer les données de l’Insee
+</h5>
+<div class="card-text listing-description delink">
+<p>Le package <i class="fa-brands fa-python" aria-label="python"></i> <code>pynsee</code> facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur Github.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763387232899" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<a href="./project/2022_satellites/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Utilisation des images satellites pour la statistique publique
+</h5>
+<div class="card-text listing-description delink">
+<p>Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 oct. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387232897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="238">
+<a href="./project/2022_Curiexplore/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Curiexplore, la plateforme de comparaison des politiques nationales d’enseignement et de recherche
+</h5>
+<div class="card-text listing-description delink">
+<p>Visualisation interactive de l’environnement de l’enseignement et de la recherche dans les différents pays.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387232897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="320">
+<a href="./project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Travaux méthodologiques sur l’enquête Budget de Famille
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387232897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="517">
+<a href="./project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping des offres d’emploi en ligne
+</h5>
+<div class="card-text listing-description delink">
+<p>Le projet <code>Jocas</code> (Job offers collection and analysis system) permet à la DARES (Service statistique ministériel Travail) de collecter automatique des offres d’emploi en…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387232897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
+<a href="./project/2022_bso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2022_bso/bso.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Baromètre de la science ouverte
+</h5>
+<div class="card-text listing-description delink">
+<p>Pour être en mesure de suivre l’ouverture des publications scientifiques (objectif de la stratégie nationale de science ouverte), le service statistique du Ministère de…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dCUyQ3BhY2thZ2UlMkNlbiUyMHByb2R1Y3Rpb24lMkNNTEZsb3c=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387232898" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="360">
+<a href="./project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Codification automatique de l’activité principale des entreprises
+</h5>
+<div class="card-text listing-description delink">
+<p>Développer un algorithme de machine learning pour automatiser la classification de l’activité principale des entreprises et mise en production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDU1NNU0klMkNkZWVwJTIwbGVhcm5pbmc=" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1763387232897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="301">
+<a href="./project/2021_detection_cyber/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2021_detection_cyber/cybercriminalite.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Détecter la cybercriminalité dans les procédures
+</h5>
+<div class="card-text listing-description delink">
+<p>Détection des infractions relevant de la cyberdélinquance à partir d’une analyse textuelle des manières d’opérer</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763387232897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
+<a href="./project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2021_gdp_media/gdp_media.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Prévoir la croissance en lisant le journal
+</h5>
+<div class="card-text listing-description delink">
+<p>Utiliser les articles de presse en continu pour construire un indicateur aidant à prévoir la croissance</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 mars 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="UHl0aG9uJTJDZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVzJTJDQVBJJTJDbWFjaGluZSUyMGxlYXJuaW5nJTJDZW4lMjBwcm9kdWN0aW9u" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="425">
+<a href="./project/2021_Extraction_CS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2021_Extraction_CS/Extraction_CS_API.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Extraction automatique du tableau des filiales et participations des comptes sociaux des entreprises
+</h5>
+<div class="card-text listing-description delink">
+<p>Extraire les informations de tableaux de comptes sociaux, en particulier des tableaux des filiales et participations, contenus dans des images scannées mises à disposition…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
+<a href="./project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Amélioration de l’identification de l’établissement employeur dans les données du recensement de population
+</h5>
+<div class="card-text listing-description delink">
+<p>Amélioration de l’identification de l’établissement employeur dans les données du recensement de la population</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="13" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="399">
+<a href="./project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Codification automatique des professions dans la nomenclature PCS 2020
+</h5>
+<div class="card-text listing-description delink">
+<p>Codifier automatiquement les professions dans le cadre de la bascule vers la nouvelle nomenclature PCS (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="14" data-categories="YXBwYXJpZW1lbnQlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXMlMkNSZXNpbA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387232897" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<a href="./project/2022_Appariement/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2022_Appariement/Resil.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Comparaison des méthodes d’appariement et apport du machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Tester et comparer différentes méthodes d’appariements afin de dégager des recommandations pour les travaux nécessaires à la construction des répertoires, notamment dans le…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="15" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="478">
+<a href="./project/2020_mvtpop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile
+</h5>
+<div class="card-text listing-description delink">
+<p>L’Insee a eu accès à des données de téléphonie mobile dans le cadre du suivi de la crise sanitaire de 2020. Ces données ont permis de produire les statistiques sur les…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 nov. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="16" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ2ZvciVDMyVBQXQlMjBhbCVDMyVBOWF0b2lyZQ==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="465">
+<a href="./project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webscrapper les caractéristiques des produits pour améliorer la mesure de l’inflation
+</h5>
+<div class="card-text listing-description delink">
+<p>Collecter sur le web les caractéristiques des produits pour améliorer la prise en compte des effets qualité dans l’indice des prix à la consommation</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="17" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="491">
+<a href="./project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification des données de caisse à partir de machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="18" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNwciVDMyVBOXZpc2lvbnMlMkNJbnNlZQ==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="362">
+<a href="./project/2019_gdp_tracker/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2019_gdp_tracker/evol_croissance_fr.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+« GDP Tracker » : un outil pour des prévisions économiques en continu
+</h5>
+<div class="card-text listing-description delink">
+<p>Modèles de <em>machine learning</em> pour effectuer des prévisions en temps réel (<em>nowcasting</em>) pour alimenter les analyses conjoncturelles de l’Insee</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="19" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
+<a href="./project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Codification automatique de l’activité des associations
+</h5>
+<div class="card-text listing-description delink">
+<p>Codification automatique de l’activité des associations à partir de méthodes de machine learning</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="20" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMjAlM0YlM0YlMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="278">
+<a href="./project/2018_outlier_dsn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2018_outlier_dsn/dsn.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Détecter et traiter les valeurs aberrantes ou manquantes, application à la Déclaration Sociale Nominative
+</h5>
+<div class="card-text listing-description delink">
+<p>Utilisation des méthodes de machine learning pour la détection et le traitement des valeurs aberrantes ou manquantes, application à la Déclaration Sociale Nominative</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="21" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763387232896" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
+<a href="./project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ségrégation urbaine : un éclairage par les données de téléphonie mobile
+</h5>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+<nav id="project-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
+</div>
+</section><section id="les-dernières-newsletters" class="level2"><h2 class="anchored" data-anchor-id="les-dernières-newsletters">Les dernières <em>newsletters</em>
+</h2>
+<p>Toutes les <em>newsletters</em> précédemment publiées sont disponibles sur la <a href="./infolettre/infolettre.html">page dédiée</a>.</p>
+<div id="listing-newsletters" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1761350400000" data-listing-file-modified-sort="1763387232893" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1281">
+<a href="./infolettre/infolettre_20/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./infolettre/infolettre_20/newsletter_20.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+De belles cartographies, des packages R et l’importance des données d’entraînement pour l’IA
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois d’<strong>octobre 2025</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+25 oct. 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1763387232892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2655">
+<a href="./infolettre/infolettre_19/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./infolettre/infolettre_19/2025_09_back_school.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+La rentrée 2025: actualités, nouveautés, interview de rentrée
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Septembre 2025</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+29 sept. 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1709769600000" data-listing-file-modified-sort="1763387232890" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2102">
+<a href="./infolettre/infolettre_18/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./infolettre/infolettre_18/hitchcock_robot-1.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sora, la nouvelle IA d’OpenIA pour générer des vidéos ; Le Chat, le nouveau modèle de Mistral ; Observable, pour s’abstraire des notebooks
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Mars 2024</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+7 mars 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1705708800000" data-listing-file-modified-sort="1763387232888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3355">
+<a href="./infolettre/infolettre_17/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./infolettre/infolettre_17/robotroma.jfif" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Le RAG pour limiter l’hallucination par l’IA ; l’avancée des bases de données vectorielles ; le format Parquet pour simplifier leur usage ; DuckDB débarque en version web
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Février 2024</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+20 janv. 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1703116800000" data-listing-file-modified-sort="1763387232886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1879">
+<a href="./infolettre/infolettre_16/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./infolettre/infolettre_16/santa.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Rétrospective du réseau en 2023 (cocorico, beaucoup de nouveaux inscrits !) ; des nouvelles règles européennes pour l’IA ; le recensement de la population au format parquet ; un explorateur de fichier sur le SSPCloud
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Décembre 2023</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+21 déc. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1694304000000" data-listing-file-modified-sort="1763387232884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2026">
+<a href="./infolettre/infolettre_15/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./infolettre/infolettre_15/learning.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Coûts d’entrée trop élevés pour l’entraînement des modèles de langage qui s’orientent vers l’opensource ; LlaMaA et Falcon les nouveaux LLM
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre de rentrée, <strong>Septembre 2023</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+10 sept. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1688169600000" data-listing-file-modified-sort="1763387232882" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="517">
+<a href="./infolettre/infolettre_14/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_14/featured_copy.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Propositions de lecture estivale
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre estivale, <strong>Juillet 2023</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juil. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1680307200000" data-listing-file-modified-sort="1763387232877" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1549">
+<a href="./infolettre/infolettre_13/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_13/featured.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Des innovations rapides sur l’IA qui lancent un débat sur sa place dans la société ; algorithme de recommandation de Twitter
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois d’<strong>Avril 2023</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 avr. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="8" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1678838400000" data-listing-file-modified-sort="1763387232875" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="967">
+<a href="./infolettre/infolettre_12/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_12/oscars.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Tapis rouge et graph de l’Insee ; questionnement sur l’IA ; faillite dans la Silicon Valley
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Mars 2023</strong>, deuxième quinzaine</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+15 mars 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="9" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1677628800000" data-listing-file-modified-sort="1763387232874" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
+<a href="./infolettre/infolettre_11/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_11/polars-arrow.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ChatGPT continue de faire parler ; Arrow et Polars pour le traitement de données tabulaires ; l’API Huggingface accessible depuis un navigateur web
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Mars 2023</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 mars 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="10" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1675036800000" data-listing-file-modified-sort="1763387232871" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="982">
+<a href="./infolettre/infolettre_10/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_10/dessin-opendata.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+DoReMiFaSol pour récupérer des données de l’Insee ; une masterclass datascientest sur les NLP et l’analyse d’images
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Février 2023</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+30 janv. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="11" data-categories="SW5zZWUlMkNSZXRyb3NwZWN0aXZlJTJDSW5mb2xldHRyZQ==" data-listing-date-sort="1673308800000" data-listing-file-modified-sort="1763387232870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1695">
+<a href="./infolettre/infolettre_09/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_09/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Retex sur 2022, première année du réseau des datascientists ; snapshot de l’état du réseau à date ; présentation de Gridviz
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Janvier 2023</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+10 janv. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="12" data-categories="TkxQJTJDT2JzZXJ2YWJsZSUyQ1F1YXJ0byUyQ0RlZXAlMjBsZWFybmluZyUyQ0luc2VlJTJDUmV0cm9zcGVjdGl2ZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1763387232868" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1386">
+<a href="./infolettre/infolettre_08/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_08/featured.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+L’année 2022 dans le monde de la data science : IA, transformation de RStudio, Observable
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>Décembre 2022</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+31 déc. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="13" data-categories="TkxQJTJDUmV0cm9zcGVjdGl2ZSUyQ09ic2VydmFibGUlMkNRdWFydG8lMkNEZWVwJTIwbGVhcm5pbmclMkNJbnNlZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1661904000000" data-listing-file-modified-sort="1763387232894" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="147">
+<a href="./infolettre/infolettre_old/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="./infolettre/infolettre_old/archive.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Archive des infolettres et lettres Big Data
+</h5>
+<div class="card-text listing-description delink">
+<p>Les infolettres et lettres Big Data antérieures 👵👴, avant la publication sous forme de blog</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+31 août 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+<nav id="newsletters-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
+</div>
+</section><section id="les-réseaux-partenaires" class="level2"><h2 class="anchored" data-anchor-id="les-réseaux-partenaires">Les réseaux partenaires</h2>
+<p>Quelques communautés de la data-science avec lesquels nous collaborons</p>
+<div id="listing-partenaires" class="quarto-listing quarto-listing-container-custom">
+
+<link href="./assets/css/all.css" rel="stylesheet">
+<div class="list grid quarto-listing-cols-3">
+
+  <div class="g-col-1" data-index="0" data-listing-file-modified-sort="1763387232895" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://oecd-opsi.org/work-areas/mission-community-of-practice/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/oecd/oecd_logo.jpg" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">CoP OCDE</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink">Le groupe <em>Community of Practice</em> de l'OCDE est un réseau informel organisé autour des sujets d'innovation statistique.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="1" data-listing-file-modified-sort="1763387232894" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://ec.europa.eu/newsroom/estat_tss/items" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/eurostat/eurostat_logo.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Eurostat &amp; les <i> trusted smart statistics (TSS) </i>
+</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink">Eurostat encadre les réseaux des instituts nationaux de statistiques et les travaux européens autour de l'exploration de nouvelles sources de données et des nouveaux outils de datascience pour la statistique officielle</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="2" data-listing-file-modified-sort="1763387232894" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://groupe-genes.fr/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/genes/genes_logo.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">L'ENSAE, l'ENSAI et le CREST</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink">L'ENSAE, l'ENSAI sont des écoles d'ingénieur en statistiques, science des données et analyse économique. Le CREST est un centre rassemblant des enseignants-chercheurs d’économie de l’École polytechnique et du CNRS</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="3" data-listing-file-modified-sort="1763387232894" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://digital-finances.com/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/chair_finance_digital/telecom_logo.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">La chaire Finance digitale</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink">L’objectif de la chaire est de conduire des travaux de recherche sur l’ensemble des innovations, de services, de produits ou d’organisations en lien avec le numérique, susceptibles de modifier le métier de l’intermédiaire financier. Elle est le fruit d'un partenariat entre Télécom Paris, l’université Paris II Panthéon-Assas, l’Institut Louis Bachelier, le Groupement des Cartes Bancaires (CB), la Caisse des Dépôts et l'Insee.</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="4" data-listing-file-modified-sort="1763387232894" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://www.etalab.gouv.fr/communaute" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/etalab/etalab_logo.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Lab IA (Etalab) &amp; la DINUM</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink">La communauté des data scientists et acteurs de l’IA pour l’administration française et plus généralement la DINUM</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="5" data-listing-file-modified-sort="1763387232895" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://datalab.sspcloud.fr/home" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      </a><div class="quarto-grid-item card h-100 card-left">
+<a href="https://datalab.sspcloud.fr/home" target="_blank" rel="noopener" class="grid-item-link">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/onyxia/onyxia_logo.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          </a><div class="card-body post-contents">
+<a href="https://datalab.sspcloud.fr/home" target="_blank" rel="noopener" class="grid-item-link">
+            <h5 class="no-anchor card-title listing-title">Onyxia</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              </a><div class="card-text listing-description delink">
+<a href="https://datalab.sspcloud.fr/home" target="_blank" rel="noopener" class="grid-item-link">La communauté Onyxia, à l'origine du </a><a href="https://datalab.sspcloud.fr/">SSPCloud</a>,
+a pour objectif de fournir une plateforme flexible pour expérimenter
+les outils modernes de la <em>data-science</em>.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+     <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="6" data-listing-file-modified-sort="1763387232895" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="%5Bobject%20Object%5D" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/spyrales/spyrales_logo.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Spyrales</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink">Une communauté d'agents de l'Etat pour s'entraider en R et Python</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="7" data-listing-file-modified-sort="1763387232895" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://statswiki.unece.org/display/ML/Machine+Learning+Group+2021" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/uneceML/uneceML_logo.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">UNECE ML Group</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink">Le travail de recherche du Groupe ML est divisé en 5 groupes de travail visant à traiter différentes problématiques liées à l'utilisation de l'apprentissage automatique pour les statistiques officielles.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="8" data-listing-file-modified-sort="1763387232895" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://app.slack.com/client/T9ML8RLMP" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      </a><div class="quarto-grid-item card h-100 card-left">
+<a href="https://app.slack.com/client/T9ML8RLMP" target="_blank" rel="noopener" class="grid-item-link">
+        
+          <p class="card-img-top">
+            <img src="./partenaires/grr/grr.png" class="thumbnail-image card-img" style="height: auto;" alt=""></p>
+         
+        
+          </a><div class="card-body post-contents">
+<a href="https://app.slack.com/client/T9ML8RLMP" target="_blank" rel="noopener" class="grid-item-link">
+            <h5 class="no-anchor card-title listing-title">grrr</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              </a><div class="card-text listing-description delink">
+<a href="https://app.slack.com/client/T9ML8RLMP" target="_blank" rel="noopener" class="grid-item-link"></a><a href="https://app.slack.com/client/T9ML8RLMP"><code>Grrr</code></a> (<em>"pour quand votre <code>R</code> fait <code>Grrr</code>"</em>) est un
+groupe <a href="https://app.slack.com/client/T9ML8RLMP"><code>Slack</code></a> (plateforme de discussion instantanée)
+francophone dédié aux échanges et à l’entraide autour de <code>R</code>.
+Il s'agit du point central de la communauté <code>R</code> francophone.
+Il est ouvert à tou.te.s et se veut accessible aux débutants. Vous pouvez même utiliser un pseudonyme si vous préférez.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author"></div>
+                <div class="listing-date"></div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+<!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+</div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              index.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025 13:47:12
+            </div>
+        </div> -->
+
+      </div>
+     <!-- Added link wrapper -->
+  </div>
+
+</div>
+
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+<nav id="partenaires-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
+</div>
+</section>
+</div>
+
+
+
+
+</main><!-- /main --><script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIGVjaG86IGZhbHNlXG4vLyBvdXRwdXQ6IGZhbHNlXG5pbnNjcml0cyA9IDczMFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gZWNobzogZmFsc2VcbmJhZGdlID0gaHRtbGA8YSBocmVmPVwiaHR0cHM6Ly9ncmlzdC5udW1lcmlxdWUuZ291di5mci9vL3NzcGh1Yi9mb3Jtcy9qU2pBVjNMMkY4bW1pUlZ1VkVwZkY3LzEwM1wiPjxpbWcgYWx0PVwiU3RhdGljIEJhZGdlXCIgc3JjPVwiaHR0cHM6Ly9pbWcuc2hpZWxkcy5pby9iYWRnZS8ke2luc2NyaXRzfV9pbnNjcml0cy1ibHVlP3N0eWxlPXNvY2lhbCZsYWJlbD3irZDvuI8lMjBSZWpvaW5kcmUlMjBsYSUyMGxpc3RlJTIwZGUlMjBkaWZmdXNpb24mY29sb3I9OEEyQkUyJmxpbms9aHR0cHMlM0ElMkYlMkZncmlzdC5udW1lcmlxdWUuZ291di5mciUyRm8lMkZzc3BodWIlMkZmb3JtcyUyRmpTakFWM0wyRjhtbWlSVnVWRXBmRjclMkYxMDNcIj5cbjwvYT5cbmBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIGVjaG86IGZhbHNlXG5odG1sYCR7YmFkZ2V9YFxuIn1dfQ==
+</script><script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copié");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copié");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/ssphub\/pr-preview\/pr-112\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+</ul></div></div></div></footer>
+</body>
+</html>

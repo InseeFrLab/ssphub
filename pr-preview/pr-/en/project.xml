@@ -1,0 +1,2487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>SSPHub</title>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project.html</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project.xml" rel="self" type="application/rss+xml"/>
+<description>Network of data scientists working for the French administration</description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Thu, 01 Jun 2023 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Visualisations of SARS-Cov2 test data</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Automatic publication and data-visualisation of Covid-19 test data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>In recent years, the <code>DREES</code> (the statistical department of the Ministry of Health), has been making available, as part of its strategy <em>open-data</em> as part of its open-data strategy, is making available interactive visualisations of data on a variety of topics (Covid, of course, but also the number of healthcare professionals, pensions and retirement ages, etc.). These visualisations are based on <i class="fa-brands fa-r-project" aria-label="r-project"></i> <code>Shiny</code> and give users the freedom to play with the data and update exploratory graphs. <br> Between October 2020 and June 2023,3 DREES provided data on the volume and validation times for RT-PCR and antigen tests on a weekly basis. These results are based on data from the SI-DEP information system.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>DREES</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The project published automatically updated information on Covid-19 tests and deadlines between 2020 and mid-2023. The data is still available on the <a href="https://drees.shinyapps.io/delais_test_app/" class="uri">https://drees.shinyapps.io/delais_test_app/</a> but has not been updated since June 2023.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>datavisualisation</category>
+  <category>experiment stopped</category>
+  <category>DREES</category>
+  <category>open-data</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/</guid>
+  <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/dataviz.png" medium="image" type="image/png" height="39" width="144"/>
+</item>
+<item>
+  <title>Doremifasol</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Package <i class="fa-brands fa-r-project" aria-label="r-project"></i> to retrieve data from the Insee website</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>doremifasol (data with R made available by Insee and easily retrievable in French) is a R package mainly aiming at showing off data available on Insee’s website, helping the user to put them on stage and extract the information they carry. So it is about analysing data, creating maps, quantifying phenomenons and in general using the data without the painful effort to retrieve them on the website, as well as import them into R’s memory. The name of the package stands for the five first notes of music, and pushing the metaphore, underlines its aim at helping the users to easily pratice their solfège in <i class="fa-brands fa-r-project" aria-label="r-project"></i>.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The DoReMiFaSol package is open source and can be downloaded from GitHub. The documentation is also published <a href="https://inseefrlab.github.io/DoReMIFaSol/">here</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- Code is available on GitHub <i class="fa-brands fa-github" aria-label="github"></i> repo <a href="https://github.com/InseeFrLab/DoReMIFaSol">https://github.com/InseeFrLab/DoReMIFaSol</a></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>package</category>
+  <category>R</category>
+  <category>in production</category>
+  <category>Insee</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/</guid>
+  <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/doremifasol.png" medium="image" type="image/png" height="167" width="144"/>
+</item>
+<item>
+  <title>pynsee, a  Python package for retrieving INSEE data</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th><code>pynsee</code>, a <i class="fa-brands fa-python" aria-label="python"></i> Python package to retrieve data from INSEE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>pynsee provides rapid access to more than 150,000 macroeconomic series, around ten local data sets, numerous sources available on insee.fr as well as key metadata and a SIRENE database containing data on all French businesses. Visit the <a href="portal-api.insee.fr">API details page</a>.<br> This package is a contribution to reproducible research and to the transparency of public data. It benefits from developments made by the teams working on APIs at INSEE and IGN.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The pynsee package is in production and can be downloaded from GitHub. The documentation is also published <a href="https://pynsee.readthedocs.io/en/latest/">here</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- Repo <a href="https://github.com/InseeFrLab/pynsee">GitHub <i class="fa-brands fa-github" aria-label="github"></i></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="similar-projets-related-to-package-creation" class="level1">
+<h1>Similar projets related to package creation</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNpbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763387292978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="197">
+<a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projets-related-to-package-creation">
+Doremifasol
+</h5>
+<div class="card-text listing-description delink">
+<p>The package <i class="fa-brands fa-r-project" aria-label="r-project"></i> <code>Doremifasol</code> makes it easier for data scientists to retrieve Insee data. The library is open source.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ3NhdGVsbGl0ZSUyMGltYWdlcnklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763387292978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="456">
+<a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Using satellite images for official statistics
+</h5>
+<div class="card-text listing-description delink">
+<p>Using satellite images to improve population censuses in the French overseas territories</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Oct 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>in production</category>
+  <category>Insee</category>
+  <category>package</category>
+  <category>Python</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/</guid>
+  <pubDate>Sun, 01 Jan 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/example_pynsee.webp" medium="image" type="image/webp"/>
+</item>
+<item>
+  <title>Using satellite images for official statistics</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Using satellite images for official statistics</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>At the end of 2022, an experimental working group on the use of satellite data for official statistics was launched. The aim of this initiative was to <strong>improve the organisation of mapping surveys in overseas departments</strong> particularly in French Guiana and Mayotte. These surveys are used to update the individual/housing register (RIL) each year, and make it easier to identify new spontaneous or temporary housing areas in advance of the surveys. Algorithms applied to <strong>satellite photographs</strong> are used to identify such areas, which in a given year will require more surveyors than in the previous year. <br> The project is presented in more detail <a href="https://inseefrlab.github.io/satellite-images-docs/src/documentation/index.html">here</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Actors</strong></td>
+<td>Insee (DG and Réunion-Mayotte Interregional Directorate)</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The results of the project are presented in more detail <a href="https://inseefrlab.github.io/satellite-images-docs/">on the dedicated website</a>. The experimentation phase ended with: <br> - The transmission of <strong>building evolution statistics</strong> in Mayotte. These statistics were used to organise the 2024 complementary mapping survey in Mayotte; <br> - The development of a <a href="https://inseefrlab.github.io/satellite-images-webapp/"><strong>visualisation application</strong></a> integrating background maps built from Pleiades tiles and buildings detected on these tiles using our algorithms, as well as change detection layers; <br> - The creation of the<strong>Python package for processing satellite images</strong> <a href="https://pypi.org/project/astrovision/"><strong>Astrovision</strong></a></td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- <a href="https://github.com/InseeFrLab/astrovision" class="uri">https://github.com/InseeFrLab/astrovision</a> : <strong>Python package</strong> package for working with satellite data: <br> - <a href="https://inseefrlab.github.io/satellite-images-webapp/" class="uri">https://inseefrlab.github.io/satellite-images-webapp/</a> code of the<strong>viewing application</strong> <br> - <a href="https://github.com/InseeFrLab/satellite-images-preprocess">https://github.com/InseeFrLab/satellite-images-preprocess</a> code of <strong>data pre-processing</strong> <br> - <a href="https://github.com/InseeFrLab/satellite-images-train" class="uri">https://github.com/InseeFrLab/satellite-images-train</a> code for the<strong>model training</strong> <br> - <a href="https://github.com/InseeFrLab/satellite-images-inference" class="uri">https://github.com/InseeFrLab/satellite-images-inference</a> code for the<strong>inference</strong></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="documents-relating-to-the-insee-satellite-data-project" class="level1">
+<h1>Documents relating to the INSEE satellite data project</h1>
+<div id="listing-presentations" class="quarto-listing quarto-listing-container-custom">
+
+<link href="../../assets/css/all.css" rel="stylesheet">
+
+<div class="list grid quarto-listing-cols-3">
+
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1741737600000" data-listing-file-modified-sort="1763387292978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/ntts-2025/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/cards/img/ntts_bruxelles.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title" data-anchor-id="documents-relating-to-the-insee-satellite-data-project">Conference on New Techniques and Technologies for official Statistics (NTTS 2025)</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Slide deck for the NTTS 2025 conference.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova, Thomas Faria et Clément Guillo</div>
+                <div class="listing-date">12 Mar 2025</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              ntts_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025, 13:48:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1731456000000" data-listing-file-modified-sort="1763387292978" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/satellite-images-docs/src/aiml4os-wp7/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/cards/img/toad_wp7.jpg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">AIML4OS Workshop on Earth Observation</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Slideshow presentation of the project Detecting changes in buildings in French overseas departments for Work Package 7,
+Artificial Intelligence and Machine Learning for Official Statistics, organized by Eurostat.
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Raya Berova, Thomas Faria et Clément Guillo</div>
+                <div class="listing-date">13 Nov 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              wp7_paris_card.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025, 13:48:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+</div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>package</category>
+  <category>deep learning</category>
+  <category>satellite imagery</category>
+  <category>in production</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/</guid>
+  <pubDate>Sat, 01 Oct 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/Satellites_Mayotte.png" medium="image" type="image/png" height="187" width="144"/>
+</item>
+<item>
+  <title>GDP Tracker: a tool for continuous economic forecasting</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Nowcasting GDP with GDP Tracker</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Details of the project</strong></td>
+<td>The project <code>GDP Tracker</code> consists of building a continuous economic forecasting tool, fed by all the recent economic indicators available at any given time. <em>t</em>. The aim of this project is to make the best possible use of the most recent sources to estimate the dynamics of the major macroeconomic aggregates over the last few weeks. These sources are diverse in nature: business and consumer surveys, quarterly national accounts, hard-copy statistical data, as well as data from less traditional sources (internet searches, etc.). <br> <br> Using this heterogeneous set of data, the tool produces a growth forecast for the macroeconomic aggregates that are most closely scrutinised for French economic conditions (GDP, household consumption, investment, etc.). This forecast is made for the current quarter or the following quarters, based on models of <em>machine learning</em> (LASSO, random forests, etc.). <br> <br> The tool was initially developed for a <a href="https://www.insee.fr/en/statistiques/fichier/4269288/122019_dossier1E.pdf">Business conditions in 2019</a>. Following the health crisis, it was taken up again for more systematic use. Initially focused on France and only on GDP for the current quarter, it has been extended to other countries (Germany, Italy, Spain) and is currently being extended to aggregates other than GDP and to more distant forecasting horizons.</td>
+</tr>
+<tr class="even">
+<td><strong>Stakeholders</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>- Project file <a href="https://www.insee.fr/en/statistiques/4269288?sommaire=4269398">Continuous forecasting of French growth</a><sup>1</sup></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Regarding nowcasting, an experiment was also conducted in 2022 to impute unpublished variables and forecast growth, see presentation <a href="https://journees-methodologie-statistique.insee.net/nowcasting-pib-imputation-de-variables-non-encore-publiees/">GDP nowcasting: imputation of variables not yet published</a> at the 2022 statistical methodology conference.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>machine learning</category>
+  <category>experiment</category>
+  <category>forecasts</category>
+  <category>Insee</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/evol_growth_en.png" medium="image" type="image/png" height="59" width="144"/>
+</item>
+<item>
+  <title>Curiexplore, the platform for comparing national education and research policies</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Curiexplore, the platform for comparing national education and research policies</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The <code>CurieXplore</code> project, developed by <code>SIES</code> (the statistical department of the French Ministry of Higher Education and Research) offers an interactive visualisation of the teaching and research environment in different countries. <br> The platform combines textual content collected by SIES from the French diplomatic network and regularly webscrapped data from international statistical sources (UNESCO, World Bank, OECD, Eurostat, etc.) or private sources (ranking of HE institutions such as Shanghai, UMULTIRANK or THE).</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Statistical Service of the Ministry of Higher Education and Research (<a href="https://www.enseignementsup-recherche.gouv.fr/fr/sies">SIES</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The project is now in production, with a dedicated website available at <a href="https://curiexplore.enseignementsup-recherche.gouv.fr/">curiexplore.enseignementsup-recherche.gouv.fr (in French)</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- The code is available on GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/dataesr/curiexplore-ui">https://github.com/dataesr/curiexplore-ui</a>.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>webscraping</category>
+  <category>in production</category>
+  <category>datavisualisation</category>
+  <category>SIES</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" medium="image" type="image/png" height="114" width="144"/>
+</item>
+<item>
+  <title>Methodological work on the Family Budget survey</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Methodological work on the Family Budget survey</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Details of the project</strong></td>
+<td>The collection of the next Family Budget survey in 2026 will be very different from that of the previous survey (2017). <br> - In fact, some of the household consumption data will be collected through a <strong>mobile application</strong> made available to the households surveyed. <br> - In addition, the products derived from the consumption data will no longer be recorded in the database by the interviewers, but by a data entry or automatic extraction service provider. <br> There are two main strands to this experiment: <br> - The first involves testing open-source solutions from<strong>automatic extraction of the contents of till receipts</strong> in order to be able to work more effectively with partners such as Teklia and potentially carry out some of the extraction work in-house; <br> - The second (main) axis is around the <strong>automatic coding of consumer products in the COICOP nomenclature</strong> nomenclature: training of a classification model on data from the previous survey and development of an optimal recovery strategy.</td>
+</tr>
+<tr class="even">
+<td><strong>Stakeholders</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>Project in progress</td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- <a href="https://git.lab.sspcloud.fr/ssplab/bdf" class="uri">https://git.lab.sspcloud.fr/ssplab/bdf</a> <br> - <a href="https://git.lab.sspcloud.fr/ssplab/experimentation-bdf" class="uri">https://git.lab.sspcloud.fr/ssplab/experimentation-bdf</a></td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>automatic coding</category>
+  <category>data extraction</category>
+  <category>scanner data</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Jocas, webscraping online job offers</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Online job vacancies, a new source of labour market data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>In just a few years, the Internet has become a new source of information on the job market. According to the Dares Job Offer and Recruitment survey (Ofer), 95% of job advertisements were published on the Internet in 2016, compared with 53% in 2005. With this in mind, Dares decided to collect online job offers published on around fifteen websites to create a new database of job offers: Jocas (Job offers collection and analysis system). Various tools are being used to build this new database: webscraping, automatic text classification algorithms and de-duplication. <br> For 2019, the Jocas database can be compared with the usual sources of public statistics on job vacancies, whether administrative sources, such as vacancies advertised by Pôle emploi and Declarations Préliminaires à l’embauche (DPAE) from Urssaf, or data from surveys such as Pôle emploi’s “Besoins en main-d’œuvre” (BMO), INSEE’s “Emploi” survey, and DARES’ “Activité et conditions d’emploi de la main-d’œuvre” (Acemo) survey. The results show that Jocas covers occupations unevenly. Occupations with a high proportion of managerial staff or that recruit a lot of people online tend to be over-represented. Conversely, those with a high proportion of multiple recruitments or using informal recruitment channels tend to be under-represented.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>DARES</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>Online vacancy data has been used to calculate tensions on the labour market. They were also used to produce the table monitoring the labour market situation in 2020-2021 during the Covid-19 crisis. Jocas data is freely accessible to students, researchers and civil servants. Access to the data may also be granted for statistical and non-commercial use, on request from DARES. The database is accessible on the <a href="https://datalab.sspcloud.fr/">INSEE’s SSPCloud pl</a> by following the path ‘projet-jocas-prod/diffusion/JOCAS’.<br> <br> - <a href="https://dares.travail-emploi.gouv.fr/publication/les-offres-demploi-en-ligne-nouvelle-source-de-donnees-sur-le-marche-du-travail">Description on the DARES website</a> <br> - <a href="https://dares.travail-emploi.gouv.fr/sites/default/files/ed7db1ecec02433585a7654411102726/DE%20258%20Offres%20demploi%20en%20ligne.pdf">Working document</a> <br> - <a href="https://dares.travail-emploi.gouv.fr/actualite/un-hackathon-pour-dedoubler-les-offres-demploi-en-ligne">Hackathon in March 2023</a> on the duplication of job offers <br> - <a href="https://dares.travail-emploi.gouv.fr/actualite/suivre-les-offres-demploi-en-ligne-pour-mieux-comprendre-le-marche-du-travail">Project news</a> <br> - <a href="https://dares.travail-emploi.gouv.fr/enquete-source/job-offers-collection-and-analysis-system">Training</a> to use the JOCAS database</td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- Code repo is available on GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR">https://github.com/OnlineJobVacanciesESSnetBigData/JobTitleProcessing_FR</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="similar-projects-related-to-webscraping" class="level1">
+<h1>Similar projects related to webscraping</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects-related-to-webscraping">
+Curiexplore, the platform for comparing national education and research policies
+</h5>
+<div class="card-text listing-description delink">
+<p>Interactive visualisation of the teaching environment and research environment in different countries.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Open Science Monitor
+</h5>
+<div class="card-text listing-description delink">
+<p>To be able to monitor the opening up of scientific publications (the objective of the <strong>national plan for open science</strong>), the statistical service of the Ministry of Higher…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Predicting growth by reading the newspaper
+</h5>
+<div class="card-text listing-description delink">
+<p>Use continuous press articles to build an indicator to help forecast growth</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Mar 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webscrape product characteristics to improve inflation measurement
+</h5>
+<div class="card-text listing-description delink">
+<p>Collect product characteristics on the web to improve the way quality effects are taken into account in the consumer price index.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>webscraping</category>
+  <category>in production</category>
+  <category>automatic coding</category>
+  <category>DARES</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" medium="image" type="image/png" height="32" width="144"/>
+</item>
+<item>
+  <title>Open Science Monitor</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>French Open Science Monitor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The generalisation of open access to scientific publications is one of the axes of the French national open science strategy, with the objective of a 100% open access rate in 2030. It facilitates, broadens and accelerates the dissemination of the results of research to scientific communities and to society in general: teachers, students, companies, associations, public policy actors, etc. <br> <br> The French Open Science Monitor thus constructs open science indicators for publications, data, software and codes in order to measure the achievement of this objective. <br> As far as publications are concerned, as much metadata as possible is collected. It is then filtered to keep only French affiliations and enriched to track the open status of publications by identified discipline. The data is then published as open data. This method makes it possible to create the most exhaustive database of French publications in the world. <br> For data, software and codes, the scientific production is first listed. The text of the publication is then analysed to detect the availability of open access data, software or codes. Finally, monitoring indicators are produced and published.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Statistical Service of the Ministry of Higher Education and Research (<a href="https://www.enseignementsup-recherche.gouv.fr/fr/sies">SIES</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The project is presented on the dedicated website : <a href="https://frenchopensciencemonitor.esr.gouv.fr/" class="uri">https://frenchopensciencemonitor.esr.gouv.fr/</a>. It includes a <a href="https://frenchopensciencemonitor.esr.gouv.fr/about/methodology">methodology</a></td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>The code files are available on <a href="https://github.com/search?q=org%3Adataesr%20bso&amp;type=repositories">GitHub <i class="fa-brands fa-github" aria-label="github"></i></a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="similar-projects-related-to-webscraping" class="level1">
+<h1>Similar projects related to webscraping</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects-related-to-webscraping">
+Curiexplore, the platform for comparing national education and research policies
+</h5>
+<div class="card-text listing-description delink">
+<p>Interactive visualisation of the teaching environment and research environment in different countries.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Predicting growth by reading the newspaper
+</h5>
+<div class="card-text listing-description delink">
+<p>Use continuous press articles to build an indicator to help forecast growth</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Mar 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webscrape product characteristics to improve inflation measurement
+</h5>
+<div class="card-text listing-description delink">
+<p>Collect product characteristics on the web to improve the way quality effects are taken into account in the consumer price index.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>webscraping</category>
+  <category>datavisualisation</category>
+  <category>open-data</category>
+  <category>in production</category>
+  <category>SIES</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso_en.png" medium="image" type="image/png" height="44" width="144"/>
+</item>
+<item>
+  <title>Automatic coding of companies’ main activity</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Automatic coding of companies’ main activity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The coding of companies’ main activity (APE) on the basis of activity descriptions (in the form of free text) in the Sirene register was previously carried out using 6 deterministic coding environments mobilising a huge number of decision rules. The aim of the experiment is to <strong>test the performance of statistical learning models in predicting the category of APE</strong> category as part of the overhaul of the Sirene register and the introduction of a one-stop shop. <br></td>
+</tr>
+<tr class="even">
+<td><strong>Stakeholders</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The model developed presents <strong>similar performance to previous models</strong> by automating them, and also offers decision support. The model has also been put into production, applying MLOps principles where possible. <br> Presentations and written materials relating to the project can be accessed at <a href="https://inseefrlab.github.io/codif-ape-prez/">this site</a>.</td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>Accessible code repositories on <a href="https://github.com/search?q=org%3AInseeFrLab%20codif-ape&amp;type=repositories&amp;p=1">Github <i class="fa-brands fa-github" aria-label="github"></i></a>. They include: <br> - Code for annotating data using Label Studio ; <br> - Code for a coding web API deployed on the SSP Cloud ; <br> - Code implementing a visualisation dashboard for monitoring the activity of a coding model in production and accessible via a web API; <br> - Code for training APE classification models. <br></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="project-documents" class="level1">
+<h1>Project documents</h1>
+<div id="listing-presentations" class="quarto-listing quarto-listing-container-custom">
+
+<link href="../../assets/css/all.css" rel="stylesheet">
+
+<div class="list grid quarto-listing-cols-3">
+
+  <div class="g-col-1" data-index="0" data-listing-date-sort="1710806400000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/statcan-exchange/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Statistics_Canada_logo.svg" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title" data-anchor-id="project-documents">MLOps exhange with StatCan</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Slides used for an exchange with StatCan on MLOps
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Romain Avouac, Thomas Faria et Tom Seimandi</div>
+                <div class="listing-date">19 Mar 2024</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards5.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025, 13:48:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+  <div class="g-col-1" data-index="1" data-listing-date-sort="1685923200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+    <a href="https://inseefrlab.github.io/codif-ape-prez/slides/unece-conf/index.html" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
+      <div class="quarto-grid-item card h-100 card-left">
+        
+          <p class="card-img-top">
+            <img src="https://geneve-int.ch/sites/default/files/styles/scale_450x450/public/2021-06/UNECE-logo.png?itok=h7fLK1Qa" class="thumbnail-image card-img" style="height: auto;" alt="">
+          </p>
+         
+        
+          <div class="card-body post-contents">
+            <h5 class="no-anchor card-title listing-title">Conférence UNECE</h5>
+            <div class="card-subtitle listing-subtitle"></div>
+
+            
+              <div class="card-text listing-description delink"><b>Description :</b> Presentation given during the UNECE Machine Learning for Official Statistics Workshop 2023
+</div>
+            
+
+            
+            
+              <div class="card-attribution card-text-small justify">
+                <div class="listing-author">Thomas Faria and Tom Seimandi</div>
+                <div class="listing-date">5 Jun 2023</div>
+              </div>
+            
+            <style>
+              .listing-categories .listing-category .listing-href {
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+              }
+            </style>
+            <!-----
+            <div class="listing-categories" style="padding-top: 1em;">
+              
+                <div class="listing-category">
+                  <a class="listing-href" href="" target="_blank" rel="noopener">Github <i class="fa-brands fa-github"></i></a>
+                </div>
+                      
+            </div>
+            ------------>
+          </div>
+        
+
+        <!-- <div class="card-footer">
+            <div class="card-filename listing-filename">
+              cards3.qmd
+            </div>
+            <div class="card-file-modified listing-file-modified">
+              17/11/2025, 13:48:12
+            </div>
+        </div> -->
+
+      </div>
+    </a> <!-- Added link wrapper -->
+  </div>
+
+</div>
+
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>automatic coding</category>
+  <category>fasttext</category>
+  <category>package</category>
+  <category>in production</category>
+  <category>MLFlow</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/</guid>
+  <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" medium="image" type="image/png" height="82" width="144"/>
+</item>
+<item>
+  <title>Detecting cybercrime in procedures</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_detection_cyber/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Detecting cybercrime in procedures</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>Cybercrime is a new and fast-growing form of criminality, and the fight against it is a major challenge for the police and gendarmerie. However, it is proving particularly difficult to quantify. It covers all criminal offences attempted or committed against or mainly using information and communication systems. The nomenclature of offences allows only part of this type of crime to be identified. To obtain a better statistical measure, it is necessary to use information provided in textual areas of procedures. The aim of the experiment is to explore the potential of textual analysis methods on these data to measure the extent of this type of crime.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>INSEE and the Ministerial Statistical Service for Internal Security (<a href="https://www.police-nationale.interieur.gouv.fr/nous-decouvrir/notre-organisation/organisation/service-statistique-ministeriel-de-securite">SSMSI</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The work was taken up by the SSMSI to derive a two-dimensional nomenclature of cyber-related offences. The algorithm predicts more than 95% of offences as falling within the definition of cybercrime. Similarly, it predicts less than 1% of offences as not falling within the scope of cybercrime as defined. <br> - <a href="https://journees-methodologie-statistique.insee.net/detection-des-infractions-relevant-de-la-cyberdelinquance-a-partir-dune-analyse-textuelle-des-manieres-doperer/">Detection of cybercrime offences based on textual analysis of modus operandi</a> Statistical Methodology Day, 2022</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>in production ??</category>
+  <category>SSMSI</category>
+  <category>deep learning</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_detection_cyber/</guid>
+  <pubDate>Tue, 01 Jun 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_detection_cyber/cybercriminalite.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Predicting growth by reading the newspaper</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Construction of an economic sentiment indicator based on press articles to forecast economic growth</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The information produced by the media is reactive, abundant and covers a wide range of economic fields. In addition, text analysis (text mining) and automated online data collection (webscraping) techniques can be used to develop indicators that summarise this wealth of information. The aim of the experiment is to estimate the added value of a media indicator associated with economic activity by complementing existing business surveys. This experiment complements pre-existing work, which is seeking to construct an indicator to help predict GDP on the basis of the archives of the newspaper Le Monde, by mobilising complementary journalistic sources and reviewing the models used.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>An indicator of current media sentiment was constructed on the basis of the tone of press articles. <br> - <a href="https://www.insee.fr/en/statistiques/4620524?sommaire=4473307">Information gleaned from press articles can help predict economic activity in real time</a> Economic outlook, December 2020 ; <br> - <a href="https://www.insee.fr/en/statistiques/5351871">French economic activity through press articles</a> Economic Outlook, March 2021 ; <br> - <a href="https://journees-methodologie-statistique.insee.net/predire-lactivite-economique-a-partir-darticles-de-presse/">Predicting economic activity from press articles</a> presentation at the Journées de méthodologie statistiques de 2022 (French)</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>Insee</category>
+  <category>machine learning</category>
+  <category>experiment</category>
+  <category>forecasts</category>
+  <category>webscraping</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/</guid>
+  <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/gdp_media_en.png" medium="image" type="image/png" height="53" width="144"/>
+</item>
+<item>
+  <title>Automatic extraction of the table of subsidiaries and holdings from company accounts</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_Extraction_CS/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Automatic extraction of the table of subsidiaries and holdings from company accounts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>A trial on the automated extraction of the table of subsidiaries and holdings from the company accounts was started in 2022 following an internship in the PTGU division. This table is used manually during company profiling operations, which is tedious work. The experiment was conducted with the Banque de France, which is interested in the same use case as Insee, with two main objectives: <br> <br> - to develop a prototype application enabling users to retrieve a table of subsidiaries and holdings automatically for a given Siren number and year; <br> - compare the performance of different automatic table extraction methods, based on open-source tools on the one hand and commercial solutions on the other.</td>
+</tr>
+<tr class="even">
+<td><strong>Stakeholders</strong></td>
+<td>Insee, Inpi, Banque de France</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>- A new <a href="https://extraction-cs.lab.sspcloud.fr/docs">experimental IPA</a> and a <a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> were put in place to meet the business need. <br> - The project was also presented at an internal Insee seminar on 27 June 2024. <a href="https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/">slides</a> <br></td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- <a href="https://github.com/InseeFrLab/ca-document-querier/" class="uri">https://github.com/InseeFrLab/ca-document-querier/</a> Python wrapper for Inpi’s enterprise API <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux</a> core” repository containing elements for page detection/table extraction <br> - <a href="https://github.com/InseeFrLab/extract-table-ui" class="uri">https://github.com/InseeFrLab/extract-table-ui</a> code repository for the<a href="https://extract-table-ui.lab.sspcloud.fr/">experimental interface</a> <br> - <a href="https://github.com/InseeFrLab/extraction-comptes-sociaux-llm" class="uri">https://github.com/InseeFrLab/extraction-comptes-sociaux-llm</a> Kubernetes: source code for the overall architecture, comprising containerised microservices orchestrated by Kubernetes. It combines calls to external APIs (INPI), PDF processing and the use of language models (LLM) for data analysis and extraction.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>data extraction</category>
+  <category>API</category>
+  <category>machine learning</category>
+  <category>in production</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_Extraction_CS/</guid>
+  <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_Extraction_CS/Extraction_CS_API.png" medium="image" type="image/png" height="73" width="144"/>
+</item>
+<item>
+  <title>Improved identification of the employing establishment in population census data</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Improving the identification of the employing establishment in population census data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The aim of the experiment is to<strong>improve the automatic coding of the employing establishment</strong> with the aim of reducing the burden of manual recoding. In particular, the aim is to find the employing establishment in the Sirus register using information declared in the annual census surveys, which may contain errors or field inversions, and which are not standardised within the meaning of the nomenclatures. The aim is therefore twofold: to limit the manual re-entry workload for managers (automatic coding), but also to save time for these same managers when manual re-entry is necessary. The experiment is based on the ideas and results of the hackathon “Les champs de Sirene” (<a href="http://github.com/SSP-Lab/Hackathon-2018">github <i class="fa-brands fa-github" aria-label="github"></i></a>, <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Lettre_BigData_n07.pdf">Big Data newsletter n°7</a>) and is pursuing the avenues developed there. It involved two stages: <br> - a stage involving the construction of an automatic identification model and an interface to improve the experience and performance of managers; <br> - a full-scale test phase via a labelling operation carried out with the help of several census managers.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The model and the interface developed offer promising avenues for improvement. Automatic coding would reduce the number of bulletins coded manually by around 30%, making it easier and quicker to code them manually.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>in production ??</category>
+  <category>Insee</category>
+  <category>automatic coding</category>
+  <category>machine learning</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/</guid>
+  <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" medium="image" type="image/webp"/>
+</item>
+<item>
+  <title>Automatic coding of occupations in the PCS 2020 nomenclature</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Automatic coding of occupations in the PCS 2020 nomenclature</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The renewal of the PCS nomenclature in 2020 is accompanied by the promotion of a <strong>autocompletion tool for occupation labels</strong> in a list of enriched headings enabling the <strong>direct coding</strong> in the box of the nomenclature or ad hoc groupings complementary to the nomenclature. However, the autocomplete tool will only be available for computerised data collection, and moreover it includes the possibility of answering “off-list”. In order to be able to integrate the new 2020 PCS into the population census for the 2024 collection and also to be able to code paper ballots as well as computerised “off-list” responses, a <strong>automatic coding algorithm</strong> in PCS 2020 of these ballots must be created. Following the postponement of the 2021 census survey, managers have annotated in PCS 2020, with double coding and arbitration, 119,000 bulletins from the EAR 2020. The aim of the experiment is to test and compare different statistical learning models and pre-processing methods for coding occupations in the PCS 2020 nomenclature on the basis of the occupation wording and ancillary variables used during the annotation phase (employer status, etc.), and to select the best performing model. The aim is to maintain the rate of correct codings and the rate of manual data transmission at levels similar to the current situation.</td>
+</tr>
+<tr class="even">
+<td><strong>Stakeholders</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>- <a href="https://intranet.insee.fr/jcms/1492866_DBFileDocument/2021-26934-dg75-l401?details=true">report on the experiment</a> and <a href="https://intranet.insee.fr/jcms/1492871_DBFileDocument/bilan-exper-pcs2020?details=true">results</a> (December 2021) <br> - paper and presentation at the “statistiques 2022” methodology days<a href="https://journees-methodologie-statistique.insee.net/application-de-techniques-de-machine-learning-pour-coder-les-professions-dans-la-nomenclature-des-professions-et-categories-socio-professionnelles-2020/">Application of machine learning techniques to code occupations in the nomenclature of occupations and socio-professional categories 2020</a>” <br> <a href="https://intranet.insee.fr/jcms/8751512_DBFileDocument/confq-pcs-20200505-copie?details=true">article</a> and <a href="https://intranet.insee.fr/jcms/8751517_DBFileDocument/q2022-slides?details=true">slides</a> presented at the Q2022 Conference “Machine learning for coding occupations in the Census: first lessons from experiments to production”.</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>Projects</category>
+  <category>Python</category>
+  <category>automatic coding</category>
+  <category>fasttext</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/</guid>
+  <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/2021_codif_PCS.png" medium="image" type="image/png" height="80" width="144"/>
+</item>
+<item>
+  <title>Comparison of matching methods and the contribution of machine learning</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Appariement/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Comparison of matching methods and the contribution of machine learning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The Resil programme aims to build a sustainable and scalable system of directories of individuals, households and residential premises, updated from a variety of administrative sources. It requires the aggregation of several data sources without a common direct identifier. <br> The aim of the experiment is to <strong>test and compare different matching methods</strong> in order to draw up recommendations for the work needed to build the directories. These will be based on performance criteria (quality of matching) but also on operational considerations (ease of deployment, calculation time, etc.). In particular, the aim is to <strong>assess the contribution and constraints of probabilistic methods and machine learning</strong> in matching tasks. This work will be accompanied by a reflection on the prior normalisation of data and the evaluation of matching results.</td>
+</tr>
+<tr class="even">
+<td><strong>Stakeholders</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>Results presented at the Statistical Methodology Days 2022: <br> - <a href="https://journees-methodologie-statistique.insee.net/methodologie-des-appariements-de-donnees-individuelles/">Methodology for matching individual data</a> ; <br> - <a href="https://journees-methodologie-statistique.insee.net/probabilistes-ou-deterministes-des-methodes-dappariements-au-banc-dessai-du-programme-resil/">Probabilistic or deterministic, matching methods put to the test by the RéSIL programme</a> ; <br> - <a href="https://journees-methodologie-statistique.insee.net/impact-du-nettoyage-des-donnees-sur-la-qualite-dun-appariement/">Impact of data cleaning on the quality of a match</a> <br> <br> Writing a working document: <br> - <a href="https://www.insee.fr/fr/information/8203044">Matching: aims, practices and quality issues, July 2024</a> <br> <br> In production : ??</td>
+</tr>
+</tbody>
+</table>
+
+
+</section>
+
+ ]]></description>
+  <category>matching</category>
+  <category>administrative data</category>
+  <category>Resil</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Appariement/</guid>
+  <pubDate>Fri, 01 Jan 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Appariement/Resil.png" medium="image" type="image/png" height="96" width="144"/>
+</item>
+<item>
+  <title>Population movements around the March 2020 containment using mobile phone network operators data</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Population movements around the March 2020 containment using mobile phone data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>As part of its statistical analysis and production work, INSEE used new private data from mobile phone operators to estimate internal population movements in France during the first containment period in March 2020. The experimental data were published in 2021. <br> Taking advantage of the few days between the announcement of the containment and its entry into force, the population was able to choose where to spend this period. Based on private mobile phone data, which INSEE was already working on, INSEE estimated that around 1.5 million metropolitan residents had returned to their home département and that Paris had lost around 450,000 metropolitan residents compared with the first few months of 2020, half of whom were usual Paris residents. These population surpluses were widely distributed throughout France. In general (apart from Paris), the population was closer to its usual place of residence during the confinement: the reasons for overnight stays in other regions, such as tourism, family visits or business trips, were severely restricted. <br> A year later, a richer dataset was published by INSEE using the same method to visualise overnight stays aggregated by place of residence, comparing the period before and after the confinement. A datavisualisation was also shared.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>- <a href="https://www.insee.fr/fr/information/4477356">Population present in the area before and after the start of containment - Initial results</a>, April 2020 (French) <br> - <a href="https://www.insee.fr/fr/information/4493611">Population present in the area before and after the start of containment: consolidated results</a>, May 2020 (French) <br> - <a href="https://www.insee.fr/en/statistiques/4656992">Partial return of population movements at the end of the lockdown period</a>, Insee Analyses n°54, July 2020 <br> - <a href="https://www.insee.fr/en/statistiques/5019739">Social mix is stronger during daytime in places of activity than at night in residential neighborhoods</a>, Insee Analyses n°59, November 2020 <br> - <a href="https://www.insee.fr/fr/statistiques/5350073">Population movements during containment in spring 2020, published experimental data</a>, April 2021 (French) <br> - <a href="https://inseefrlab.github.io/lockdown-maps-R/inflows_EN">Datavisualisation published on population movements</a></td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- The code is available on GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/InseeFrLab/lockdown-maps-R" class="uri">https://github.com/InseeFrLab/lockdown-maps-R</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="similar-projects-related-to-new-data" class="level1">
+<h1>Similar projects related to new data</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects-related-to-new-data">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763387292974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Urban segregation: insights from mobile phone data
+</h5>
+<div class="card-text listing-description delink">
+<!-- desc(5A0113B34292)[max=175]:project/2018_segregation/index.html -->
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>datavisualisation</category>
+  <category>machine learning</category>
+  <category>Insee</category>
+  <category>experiment</category>
+  <category>open-data</category>
+  <category>mobile phone data</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/</guid>
+  <pubDate>Sun, 01 Nov 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/mvtpop.png" medium="image" type="image/png" height="98" width="144"/>
+</item>
+<item>
+  <title>Webscrape product characteristics to improve inflation measurement</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 95%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Webscraping of laptop prices and characteristics, estimation of hedonic models to improve the statistical quality of the consumer price index</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The CPI measures “pure” price movements, assuming constant quality. It tracks a certain number of identical products over time. When these disappear, they are replaced by products that may not be equivalent. In this case, it is important to distinguish between a quality effect (price difference for a given month) and an inflation effect in the change in prices of the replacements compared with the products replaced. <br> Hedonic” methods estimate this quality effect on the basis of coefficients corresponding to the underlying prices of the various technical characteristics of the product (for example, the brand of computer, the RAM of a computer, the model and frequency of the processor, etc.). The aim of the project is to strengthen these methods of estimating the quality effect by extending the database and using statistical learning methods.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The study made it possible to increase the samples used (in terms of price surveys and characteristics) by collecting data online (<em>webscraping</em>) and to set up a procedure for automatically selecting the characteristics that explain prices using automatic learning (random forest, Lasso-type regression). <br> Ultimately, 15 characteristics were selected to estimate the quality effect, such as brand, RAM, storage capacity, brand of processor, processor frequency, screen resolution, etc. The forms used by the surveyors have been amended to include the relevant characteristics that determine the price of computers.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<section id="related-to-webscraping-and-ipc" class="level2">
+<h2 class="anchored" data-anchor-id="related-to-webscraping-and-ipc">Related to webscraping and IPC</h2>
+<p>Online data collection (web scraping) is not only used in the production of inflation figures. It is also used in other areas and by other entities within the public statistics service besides INSEE. Since 2020, INSEE has also been using checkout data in the definition of the CPI, as noted in the article <a href="https://www.insee.fr/en/information/5014725?sommaire=5014796">Using Scanner Data to Calculate the Consumer Price Index</a> in the 2019 statistics newsletter.</p>
+<div id="listing-similar-project-ipc" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Curiexplore, the platform for comparing national education and research policies
+</h5>
+<div class="card-text listing-description delink">
+<p>Interactive visualisation of the teaching environment and research environment in different countries.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Open Science Monitor
+</h5>
+<div class="card-text listing-description delink">
+<p>To be able to monitor the opening up of scientific publications (the objective of the <strong>national plan for open science</strong>), the statistical service of the Ministry of Higher…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Predicting growth by reading the newspaper
+</h5>
+<div class="card-text listing-description delink">
+<p>Use continuous press articles to build an indicator to help forecast growth</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Mar 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="related-to-new-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="related-to-new-data-sources">Related to new data sources</h2>
+<div id="listing-similar-project-newdata" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
+<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Population movements around the March 2020 containment using mobile phone network operators data
+</h5>
+<div class="card-text listing-description delink">
+<p>INSEE has had access to mobile telephony data as part of the monitoring of the 2020 health crisis. These data were used to produce the following statistics on population…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Nov 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763387292974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Urban segregation: insights from mobile phone data
+</h5>
+<div class="card-text listing-description delink">
+<!-- desc(5A0113B34292)[max=175]:project/2018_segregation/index.html -->
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="related-to-automatic-coding" class="level2">
+<h2 class="anchored" data-anchor-id="related-to-automatic-coding">Related to automatic coding</h2>
+<div id="listing-similar-project-codifauto" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Improved identification of the employing establishment in population census data
+</h5>
+<div class="card-text listing-description delink">
+<p>Improved identification of the employing establishment in population census data</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of occupations in the PCS 2020 nomenclature
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763387292974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of association activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatic coding of association activity using machine learning methods</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+
+</div>
+
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>in production ??</category>
+  <category>Insee</category>
+  <category>IPC</category>
+  <category>webscraping</category>
+  <category>random forest</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/</guid>
+  <pubDate>Mon, 01 Jun 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/webscraping_ipc.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+<item>
+  <title>Classification of checkout data using machine learning</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Classification of checkout data using machine learning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>scanner data has been used by INSEE to calculate the CPI since 2010 (see the <a href="https://www.insee.fr/fr/information/4254225?%20sommaire=4254170">working paper</a> on the subject). For each barcode, each day and each point of sale, till data gives the quantities sold as well as the turnover and/or the price at which the product was sold. To use this data, however, you need to know <strong>which product is behind a barcode</strong>. Currently, the IPC relies on a barcode repository, purchased from a service provider, which provides very detailed and structured information on the characteristics of these products. This information is subject to a charge and does not cover all products. <strong>The aim of the experiment is to identify the steps involved in textual processing of the labels, as well as the classification or other methods that would enable the labels to be coded automatically, without going through the repository, in the Coicop nomenclature for the IPC</strong> and on the groupings used for Emagsa as part of the Nosica project, which aims to integrate cashier data into the production of short-term activity indicators. It is also testing their performance on test data sets.</td>
+</tr>
+<tr class="even">
+<td><strong>Stakeholders</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>scanner data is now used in production to calculate inflation and business activity indicators. <br> <a href="https://intranet.insee.fr/jcms/1345453_DBFileDocument/paul-ean-phaseb?details=true">summer 2020 update</a> <br> <a href="https://intranet.insee.fr/jcms/1345448_DBFileDocument/2021-3657-dg75-l401?details=true">progress report winter 2020-2021</a> <br></td>
+</tr>
+<tr class="even">
+<td><strong>Project code</strong></td>
+<td>- <a href="https://github.com/InseeFrLab/predicat" class="uri">https://github.com/InseeFrLab/predicat</a> API for classifying checkout labels <br> - <a href="https://github.com/InseeFrLab/product-labelling" class="uri">https://github.com/InseeFrLab/product-labelling</a> : Application for labelling scanner data</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="similar-projects" class="level1">
+<h1>Similar projects</h1>
+<section id="related-to-webscraping-and-ipc" class="level2">
+<h2 class="anchored" data-anchor-id="related-to-webscraping-and-ipc">Related to webscraping and IPC</h2>
+<p>Online data collection (web scraping) is not only used in the production of inflation figures. It is also used in other areas and by other entities within the public statistics service besides INSEE. Since 2020, INSEE has also been using checkout data in the definition of the CPI, as noted in the article <a href="https://www.insee.fr/en/information/5014725?sommaire=5014796">Using Scanner Data to Calculate the Consumer Price Index</a> in the 2019 statistics newsletter.</p>
+<div id="listing-similar-project-ipc" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="171">
+<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Curiexplore, the platform for comparing national education and research policies
+</h5>
+<div class="card-text listing-description delink">
+<p>Interactive visualisation of the teaching environment and research environment in different countries.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
+<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Open Science Monitor
+</h5>
+<div class="card-text listing-description delink">
+<p>To be able to monitor the opening up of scientific publications (the objective of the <strong>national plan for open science</strong>), the statistical service of the Ministry of Higher…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Predicting growth by reading the newspaper
+</h5>
+<div class="card-text listing-description delink">
+<p>Use continuous press articles to build an indicator to help forecast growth</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Mar 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
+<a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Webscrape product characteristics to improve inflation measurement
+</h5>
+<div class="card-text listing-description delink">
+<p>Collect product characteristics on the web to improve the way quality effects are taken into account in the consumer price index.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="related-to-new-data-sources" class="level2">
+<h2 class="anchored" data-anchor-id="related-to-new-data-sources">Related to new data sources</h2>
+<div id="listing-similar-project-newdata" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="380">
+<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Population movements around the March 2020 containment using mobile phone network operators data
+</h5>
+<div class="card-text listing-description delink">
+<p>INSEE has had access to mobile telephony data as part of the monitoring of the 2020 health crisis. These data were used to produce the following statistics on population…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Nov 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763387292974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="195">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Urban segregation: insights from mobile phone data
+</h5>
+<div class="card-text listing-description delink">
+<!-- desc(5A0113B34292)[max=175]:project/2018_segregation/index.html -->
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="related-to-automatic-coding" class="level2">
+<h2 class="anchored" data-anchor-id="related-to-automatic-coding">Related to automatic coding</h2>
+<div id="listing-similar-project-codifauto" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Improved identification of the employing establishment in population census data
+</h5>
+<div class="card-text listing-description delink">
+<p>Improved identification of the employing establishment in population census data</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of occupations in the PCS 2020 nomenclature
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763387292974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
+<a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of association activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatic coding of association activity using machine learning methods</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Python</category>
+  <category>automatic coding</category>
+  <category>scanner data</category>
+  <category>COICOP</category>
+  <category>IPC</category>
+  <category>in production</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/</guid>
+  <pubDate>Wed, 01 Jan 2020 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" medium="image" type="image/png" height="88" width="144"/>
+</item>
+<item>
+  <title>Automatic coding of association activity</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_classification_asso/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="project-summary" class="level1">
+<h1>Project summary</h1>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 95%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Automatic coding of associations’ activities</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Project details</strong></td>
+<td>The aim of the experiment is to assign a field of activity to the associations in order to improve the selection of the sample for the associations survey. Some associations are registered in Sirène (as employers, subsidised organisations, etc.) but 50% of them have an APE code of 9499Z, which makes it impossible to determine their field of activity precisely. Associations governed by the 1901 Act are registered in the National Directory of Associations (RNA), managed by the Ministry of the Interior. In this directory, a “corporate purpose” field filled in plain text quickly describes the activities of each association. The aim of the experiment is to analyse this field textually in order to predict the activity in 10 modalities. <br> In practice, after pre-processing and exploration of the textual data and its themes (Dirichlet latent allocation), a dictionary of words was compiled, with variants to reduce its size. The actual prediction was based on various supervised learning models (random forests, support vector machine, penalised generalised linear models GLMnet and Extrem Gradient Boosting (XGBoost)), with the training set (and test sets) being provided by the previous survey (2014) matched with the RNA. The XGboost model performed better than the others (with precision and recall of the order of 69%). The best model is obtained by combining the different models tested.</td>
+</tr>
+<tr class="even">
+<td><strong>Players</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Project results</strong></td>
+<td>The sample for the Association survey was drawn according to a stratification process taking advantage of the prediction of the sector of activity by machine learning carried out as part of this experiment.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="similar-projects-related-to-automatic-coding" class="level1">
+<h1>Similar projects related to automatic coding</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="325">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects-related-to-automatic-coding">
+Methodological work on the Family Budget survey
+</h5>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Jocas, webscraping online job offers
+</h5>
+<div class="card-text listing-description delink">
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Service for Labour) to automatically collect job offers…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763387292976" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="284">
+<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of companies’ main activity
+</h5>
+<div class="card-text listing-description delink">
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="265">
+<a href="../../project/2021_amelioration_RP/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/recensement_2026_logo.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Improved identification of the employing establishment in population census data
+</h5>
+<div class="card-text listing-description delink">
+<p>Improved identification of the employing establishment in population census data</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Automatic coding of occupations in the PCS 2020 nomenclature
+</h5>
+<div class="card-text listing-description delink">
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763387292975" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="356">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>in production ??</category>
+  <category>Insee</category>
+  <category>automatic coding</category>
+  <category>machine learning</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_classification_asso/</guid>
+  <pubDate>Sat, 01 Jun 2019 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_classification_asso/enquete_asso.png" medium="image" type="image/png" height="134" width="144"/>
+</item>
+</channel>
+</rss>
