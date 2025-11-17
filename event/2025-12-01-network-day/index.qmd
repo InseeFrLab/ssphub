@@ -8,7 +8,6 @@ categories:
 
 description: |
   Programme et modalités d'inscription à la 3e journée du réseau
-
 date: '2025-09-15'
 image: https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg
 echo: false
@@ -28,12 +27,12 @@ echo: false
     - quels assistants de code pour un _data scientist_ / statisticien  ?
     - assistants, agents & vibe coding : partage d'expériences
 - **12h15-14h**: **Pause déjeuner**, moment de convivialité
-- **14h-14h45**: invité (tbc)
+- **14h-14h45**: invité : Quelles évolutions récentes et à venir sur [data.gouv](https://www.data.gouv.fr/) (Dinum)
 - **14h45-16h15**: **Retours d’expérience** sur l’extraction de données et la classification :
     - Automatisation des [Infos rapides Justice](https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&items_per_page=10) grâce au package R `chartegraphique.sser` (SSER - SSM Justice) ;
     - Présentation du package torchTextClassifiers, qui propose un cadre unifié et agile pour la classification de texte, basé sur PyTorch et PyTorch Lightning (Insee - SSPLab) ;
 - **16h15-16h45**: **Pause**, moment de convivialité
-- **16h45-17h30**: **_Keynote_** présentation du portail https://data.ina.fr/, le service de l’exploration des médias utilisant l'IA pour établir les indicateurs sur les médias (personnalités les plus mentionnées, répartition du temps de parole entre femme et homme ...)
+- **16h45-17h30**: **_Keynote_** présentation du portail <https://data.ina.fr/>, le service de l’exploration des médias utilisant l'IA pour établir les indicateurs sur les médias (personnalités les plus mentionnées, répartition du temps de parole entre femme et homme ...)
 - **17h30-19h30**: **Pot**, moment de convivialité
 
 
