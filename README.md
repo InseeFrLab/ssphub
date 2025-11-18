@@ -57,6 +57,11 @@ adds a backslash or "-" at some spots that creates bugs when rendering the websi
     - `description: | -` for `description: |`
     - `{{\< fa brands github >}}` for `{{< fa brands github >}}`
     - Markdown table structure contains many whitespace and ---
+The translate programm removes some issues but not all. It deletes all "\", multiple spaces and multiple "----".
+But some ENTER remain, and it doesn't translate categories of listing.
+A careful look is needed :
+- listing categories in the YAML part must be translated
+- inside Qmd table to ensure that a row is always coded in 1 line of code.
 
 ### Publish
 Publishing is automated with CI in the [prod.yaml](.github/workflows/prod.yaml) file.

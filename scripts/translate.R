@@ -28,6 +28,32 @@ babeldown::deepl_translate(
   yaml_fields = c("title", "description", "categories")
 )
 
+replace_in_qmd <- function(input_file) {
+  # Read the input file
+  content <- readLines(input_file)
+
+  # Replace multiple spaces with empty string
+  content <- gsub("\\s{5,}", "", content)
+
+  # Replace too many "-"s with as many necessary to fill the first line
+  content <- gsub("-{77,}", "-------------------------------------------------------------------------", content)
+
+  # Replace "|  | ----"
+  content <- gsub("\\|\\s{2}\\|\\s---", "|---|---", content)
+
+  # Replace "\" with "", for ex for "\-" and  "{{\< fa brands"
+  content <- gsub("\\\\", "", content)
+
+  # Replace "description: |-" or "description: | -" with "description: |"
+  content <- gsub("description:\\s\\|-|description:\\s\\|\\s-", "description: |", content)
+
+  # Write the modified content to the output file
+  writeLines(content, input_file)
+
+}
+
+replace_in_qmd(out_path)
+
 # NO WORK - TO DO LATER
 # # Glossary
 # filename <- "glossary-fr-en.csv"
