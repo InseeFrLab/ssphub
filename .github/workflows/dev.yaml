@@ -1,6 +1,10 @@
 name: Build and deploy preview
 
+name: Build and deploy preview
+
 on:
+  workflow_dispatch:  # To allow for manuel trigger of this workflow. Cf
+  # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   workflow_dispatch:  # To allow for manuel trigger of this workflow. Cf
   # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   pull_request:
@@ -9,7 +13,13 @@ on:
       - reopened
       - synchronize  # When the ref of the branch is updated (= commit to the branch to merge)
       - closed   # Including closed to remove preview when PR is closed.
+      - synchronize  # When the ref of the branch is updated (= commit to the branch to merge)
+      - closed   # Including closed to remove preview when PR is closed.
     branches:
+      - main  # PR to main only
+
+env:
+  PREVIEW_BRANCH: gh-pages
       - main  # PR to main only
 
 env:
@@ -17,20 +27,25 @@ env:
 
 concurrency:
   group: preview-${{ github.ref }}  # preview followed by the reference of the branch or tag that triggered the workflow
+  group: preview-${{ github.ref }}  # preview followed by the reference of the branch or tag that triggered the workflow
   cancel-in-progress: true
 
 jobs:
   build-render:
+  build-render:
     if: github.event.action != 'closed'  # If closing the PR, no publishing
     runs-on: ubuntu-latest
     # To cancel previous actions that could run on this PR
+    # To cancel previous actions that could run on this PR
     steps:
       - name: Check out repository
+        uses: actions/checkout@v5
         uses: actions/checkout@v5
         with:
           fetch-depth: 0  # To enable full access to Git repo
           ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
           repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
+
 
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
@@ -40,9 +55,34 @@ jobs:
       - name: Install npm
         if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         uses: actions/setup-node@v2
+        uses: actions/setup-node@v2
         with:
           node-version: '18'
 
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install babelquarto
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            github::ropensci-review-tools/babelquarto@a485fea
+
+      - name: Render bilingual project
+        run: Rscript scripts/render.R
+
+      - name: Deploy preview
+        id: deploy-preview
+        uses: rossjrw/pr-preview-action@v1.6.2
+        with:
+          source-dir: ./_site/
+          preview-branch: ${{ env.PREVIEW_BRANCH }}
+          action: deploy
+          comment: false
+          pr_number: ${{ github.event.pull_request.number }}
+
+      - name: Comment PR (custom)
+        uses: marocchino/sticky-pull-request-comment@v2
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
 
@@ -88,10 +128,22 @@ jobs:
       - name: Remove preview
         id: remove-preview
         uses: rossjrw/pr-preview-action@v1.6.2
+      - name: Check out repository
+        uses: actions/checkout@v5
         with:
+          fetch-depth: 0  # To enable full access to Git repo
+          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
+          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
+
+      - name: Remove preview
+        id: remove-preview
+        uses: rossjrw/pr-preview-action@v1.6.2
+        with:
+          action: remove
           action: remove
 
       - name: Comment PR that preview was removed
+        uses: marocchino/sticky-pull-request-comment@v2
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: pr-preview
