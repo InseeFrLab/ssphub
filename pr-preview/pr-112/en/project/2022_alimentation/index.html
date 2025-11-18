@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_Enquete_Budget_Famille/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_alimentation/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_alimentation/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique">
-<title>Travaux méthodologiques sur l’enquête Budget de Famille – SSPHub</title>
+<meta name="dcterms.date" content="2022-01-01">
+<title>Enriching case data with nutritional information to analyse the impact of consumption on health – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,17 +41,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Pas de résultats",
-    "search-matching-documents-text": "documents trouvés",
-    "search-copy-link-title": "Copier le lien vers la recherche",
-    "search-hide-matches-text": "Cacher les correspondances additionnelles",
-    "search-more-match-text": "correspondance de plus dans ce document",
-    "search-more-matches-text": "correspondances de plus dans ce document",
-    "search-clear-button-title": "Effacer",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Annuler",
-    "search-submit-button-title": "Envoyer",
-    "search-label": "Recherche"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script><script>
 
@@ -63,9 +63,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 6,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -134,66 +135,34 @@ window.Quarto = {
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_Enquete_Budget_Famille/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_alimentation/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Accueil</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../event.html"> 
-<span class="menu-text">Événements</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../project.html"> 
-<span class="menu-text">Projets</span></a>
+<span class="menu-text">Innovative projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../course.html"> 
-<span class="menu-text">Ressources utiles</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About the SSPHub</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">À propos</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">
-<li>
-    <a class="dropdown-item" href="../../infolettre/infolettre.html">
- <span class="dropdown-text">Newsletters</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../about.html">
- <span class="dropdown-text">Présentation du réseau</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../manifeste.html">
- <span class="dropdown-text">Manifeste du réseau</span></a>
-  </li>  
-    </ul>
-</li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
-<span class="menu-text">Le SSPCloud</span></a>
+<span class="menu-text">SSPCloud</span></a>
   </li>  
 </ul>
 <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -203,24 +172,18 @@ window.Quarto = {
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav><div id="quarto-announcement" data-announcement-id="d14fcd9fc2e806dcc24e12ea5d639735" class="alert alert-primary hidden">
-<i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>📺️ Le replay des ateliers du <strong>9 et 16 avril 2025</strong> sont disponibles <a href="../../event/2025-04-09-API/index.html">ici (API)</a> et <a href="../../event/2025-04-16-Parquet/index.html">ici (pour le format Parquet)</a></p>
-</div>
-<i class="bi bi-x-lg quarto-announcement-action"></i>
-</div>
-</header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Travaux méthodologiques sur l’enquête Budget de Famille</h1>
-                  <div>
-        <div class="description">
-          Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">codification automatique</div>
-                <div class="quarto-category">extraction de données</div>
-                <div class="quarto-category">données de caisse</div>
+      <h1 class="title">Enriching case data with nutritional information to analyse the impact of consumption on health</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">machine learning</div>
+                <div class="quarto-category">Insee</div>
+                <div class="quarto-category">COICOP</div>
+                <div class="quarto-category">scanner data</div>
+                <div class="quarto-category">matching</div>
+                <div class="quarto-category">experiment stopped</div>
+                <div class="quarto-category">fasttext</div>
+                <div class="quarto-category">automatic coding</div>
               </div>
                   </div>
   </div>
@@ -230,9 +193,9 @@ window.Quarto = {
 
       
       <div>
-      <div class="quarto-title-meta-heading">Date de publication</div>
+      <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 janvier 2022</p>
+        <p class="date">1 January 2022</p>
       </div>
     </div>
     
@@ -244,188 +207,370 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sur cette page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
-  <li><a href="#projets-similaires" id="toc-projets-similaires" class="nav-link" data-scroll-target="#projets-similaires">Projets similaires</a></li>
+<li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
+  <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_Enquete_Budget_Famille/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_Enquete_Budget_Famille/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></nav>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_alimentation/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_alimentation/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+</ul></div></nav><h5 class="quarto-listing-category-title">Categories</h5>
+<div class="quarto-listing-category category-default">
+<div class="category" data-category="">All <span class="quarto-category-count">(8)</span>
+</div>
+<div class="category" data-category="YWRtaW5pc3RyYXRpdmUlMjBkYXRh">administrative data <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="YXV0b21hdGljJTIwY29kaW5n">automatic coding <span class="quarto-category-count">(6)</span>
+</div>
+<div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="REFSRVM=">DARES <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZGF0YSUyMGV4dHJhY3Rpb24=">data extraction <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZmFzdHRleHQ=">fasttext <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="aW4lMjBwcm9kdWN0aW9u">in production <span class="quarto-category-count">(6)</span>
+</div>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="SVBD">IPC <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bWF0Y2hpbmc=">matching <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="TUxGbG93">MLFlow <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="cGFja2FnZQ==">package <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="UHJvamVjdHM=">Projects <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="UmVzaWw=">Resil <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="c2Nhbm5lciUyMGRhdGE=">scanner data <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="U0RFUw==">SDES <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="d2Vic2NyYXBpbmc=">webscraping <span class="quarto-category-count">(1)</span>
+</div>
+</div>
 </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>Travaux méthodologiques sur l’enquête Budget de Famille</th>
+<th>Enriching case data with nutritional information to analyse the impact of consumption on health</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>La collecte de la prochaine enquête Budget de Famille en 2026 sera largement différente de celle de l’enquête précédente (2017). <br> - En effet, une partie des données de consommation des ménages sera remontée à travers une <strong>application mobile</strong> mise à disposition des ménages enquêtés. <br> - De plus, l’enregistrement en base de données des produits issus des données de consommation ne se fera plus par les enquêteurs mais par un prestataire de saisie ou d’extraction automatique. <br> Deux axes existent dans cette expérimentation : <br> - Le premier axe consiste à tester les solutions open-source d’<strong>extraction automatique du contenu de tickets de caisse</strong>, afin de pouvoir mieux dialoguer avec des partenaires comme Teklia et potentiellement pouvoir procéder à une partie des extractions en interne ; <br> - Le second axe (principal) est autour de la <strong>codification automatique des produits de consommation dans la nomenclature COICOP</strong> : entraînement d’un modèle de classification sur les données de l’enquête précédente et élaboration d’une stratégie de reprise optimale.</td>
+<td><strong>Project details</strong></td>
+<td>In addition to the many well-documented dimensions of inequality (income, wealth, education, housing, access to healthcare and public services in general), disparities in food consumption are also likely to be a source of health inequalities, as well as social and territorial markers. Checkout data could provide a very rich description of local consumption, provided that product identifiers allow enrichment with external sources, such as nutritional information. The aim of this project is to enrich supermarket data with nutritional information extracted from Open Food Facts, supplemented by Ciqual data from Anses.</td>
 </tr>
 <tr class="even">
-<td><strong>Acteurs</strong></td>
+<td><strong>Players</strong></td>
 <td>Insee</td>
 </tr>
 <tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Projet en cours</td>
+<td><strong>Project results</strong></td>
+<td>To compensate for the partial matching via the barcode, a method for efficiently matching short labels was implemented. After a pre-processing stage to normalise short labels, fuzzy matching techniques are implemented. These are based on several tokenizers (including n-grams) by querying an ElasticSearch custom index and validating candidate echoes with a Levenstein distance. The pipeline consists of several stages successively relaxing constraints to find relevant candidates. Finally, the final match is evaluated using a similarity measure based on word embedding obtained by training a Siamese network on the exact match via barcodes. The data used, covering the period 2015-2018, is that of several chains belonging to the same mass retail group (relevanC).</td>
 </tr>
 <tr class="even">
-<td><strong>Code du projet</strong></td>
-<td>- <a href="https://git.lab.sspcloud.fr/ssplab/bdf">https://git.lab.sspcloud.fr/ssplab/bdf</a> <br> - <a href="https://git.lab.sspcloud.fr/ssplab/experimentation-bdf">https://git.lab.sspcloud.fr/ssplab/experimentation-bdf</a>
-</td>
+<td><strong>Project products and documentation</strong></td>
+<td>- <a href="https://journees-methodologie-statistique.insee.net/enrichissement-de-donnees-de-caisses-a-partir-dinformations-nutritionnelles-une-approche-par-appariement-flou-sur-donnees-de-grande-dimension/">Enriching checkout data with nutritional information: a fuzzy matching approach on high-dimensional data</a>, 2022 Statistical Methodology Days (Journées de méthodologie statistique 2022)</td>
 </tr>
 </tbody>
-</table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
+</table></section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763480012139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
+<div class="g-col-1" data-index="0" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763480074496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Methodological work on the Family Budget survey
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGV4dHJhY3Rpb24='); return false;">data extraction</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Modernisation of the family budget survey using automatic classification tools</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763480074496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="406">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
-Jocas, webscraping des offres d’emploi en ligne
-</h5>
-<div class="card-text listing-description delink">
-<p>Le projet <code>Jocas</code> (Job offers collection and analysis system) permet à la DARES (Service statistique ministériel Travail) de collecter automatique des offres d’emploi en…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763480012139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
-<a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="visuel_Budget_des_familles_1.png" style="height: 150px;" class="thumbnail-image card-img"></p>
-<div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Enrichissement de données de caisses à partir de données d’informations nutritionnelles pour analyser l’impact de la consommation sur la santé
+Jocas, webscraping online job offers
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('REFSRVM='); return false;">DARES</div>
+
+</div>
 <div class="card-text listing-description delink">
-
-
-
+<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Office for Labour) to automatically collect job offers…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 janv. 2022
+1 Jan 2022
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dCUyQ3BhY2thZ2UlMkNlbiUyMHByb2R1Y3Rpb24lMkNNTEZsb3c=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763480012140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDZmFzdHRleHQlMkNwYWNrYWdlJTJDaW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763480074497" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="287">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Codification automatique de l’activité principale des entreprises
+Automatic coding of companies’ main activity
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cGFja2FnZQ=='); return false;">package</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TUxGbG93'); return false;">MLFlow</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>Développer un algorithme de machine learning pour automatiser la classification de l’activité principale des entreprises et mise en production</p>
+<p>Develop a machine learning algorithm to automate the classification of companies’ main activities and put it into production</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 janv. 2022
+1 Jan 2022
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763480012138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
+<div class="g-col-1" data-index="3" data-categories="aW4lMjBwcm9kdWN0aW9uJTJDbWF0Y2hpbmclMkNTREVTJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1763480074496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="263">
+<a href="../../project/2021_vehicules/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="../2022_Appariement/Resil.png" style="height: 150px;" class="thumbnail-image card-img"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Modelling road vehicle fleet ownership and use
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0Y2hpbmc='); return false;">matching</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U0RFUw=='); return false;">SDES</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHJvamVjdHMlMkNQeXRob24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763480074496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="353">
 <a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../project/2021_codif_PCS/2021_codif_PCS.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Codification automatique des professions dans la nomenclature PCS 2020
+Automatic coding of occupations in the PCS 2020 nomenclature
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdHM='); return false;">Projects</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>Codifier automatiquement les professions dans le cadre de la bascule vers la nouvelle nomenclature PCS (PCS 2020)</p>
+<p>Automatically code occupations as part of the switch to the new PCS nomenclature (PCS 2020)</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 janv. 2021
+1 Jan 2021
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763480012138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="475">
+<div class="g-col-1" data-index="5" data-categories="bWF0Y2hpbmclMkNhZG1pbmlzdHJhdGl2ZSUyMGRhdGElMkNSZXNpbCUyQ2luJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763480074496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
+<a href="../../project/2022_Appariement/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_Appariement/Resil.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Comparison of matching methods and the contribution of machine learning
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0Y2hpbmc='); return false;">matching</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzaWw='); return false;">Resil</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>To test and compare different matching methods in order to draw up recommendations for the work needed to build directories, particularly as part of the RESIL multiannual…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763480074495" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" data-src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Classification des données de caisse à partir de machine learning
+Classification of checkout data using machine learning
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SVBD'); return false;">IPC</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 janv. 2020
+1 Jan 2020
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763480012138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
+<div class="g-col-1" data-index="7" data-categories="aW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNtYWNoaW5lJTIwbGVhcm5pbmc=" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1763480074495" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="286">
 <a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" data-src="../../project/2019_classification_asso/enquete_asso.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Codification automatique de l’activité des associations
+Automatic coding of association activity
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>Codification automatique de l’activité des associations à partir de méthodes de machine learning</p>
+<p>Automatic coding of association activity using machine learning methods</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 juin 2019
+1 Jun 2019
 </div>
 </div>
 </div>
 </div></a>
 </div>
 </div>
-<div class="listing-no-matching d-none">Aucun article correspondant</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="similar-project-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
 </div>
 
 
@@ -455,12 +600,12 @@ Codification automatique de l’activité des associations
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copié");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copié");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -836,9 +981,9 @@ Codification automatique de l’activité des associations
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_Enquete_Budget_Famille/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_Enquete_Budget_Famille/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_alimentation/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_alimentation/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>

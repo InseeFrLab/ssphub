@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2021_amelioration_RP/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_vehicules/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2021_vehicules/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="dcterms.date" content="2021-01-01">
-<meta name="description" content="Improved identification of the employing establishment in population census data">
-<title>Improved identification of the employing establishment in population census data – SSPHub</title>
+<meta name="dcterms.date" content="2021-06-01">
+<title>Modelling road vehicle fleet ownership and use – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,12 +23,10 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../../site_libs/quarto-listing/list.min.js"></script><script src="../../site_libs/quarto-listing/quarto-listing.js"></script><script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -56,7 +53,35 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>
+}</script><script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-similar-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script><style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -73,6 +98,32 @@ ul.task-list li input[type="checkbox"] {
 background: #6886bb;
       }
 </style>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 </head>
 <body class="nav-fixed quarto-light">
 
@@ -90,7 +141,7 @@ background: #6886bb;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_amelioration_RP/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_vehicules/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
@@ -122,17 +173,12 @@ background: #6886bb;
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Improved identification of the employing establishment in population census data</h1>
-                  <div>
-        <div class="description">
-          Improved identification of the employing establishment in population census data
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">in production ??</div>
-                <div class="quarto-category">Insee</div>
-                <div class="quarto-category">automatic coding</div>
-                <div class="quarto-category">machine learning</div>
+      <h1 class="title">Modelling road vehicle fleet ownership and use</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">in production</div>
+                <div class="quarto-category">matching</div>
+                <div class="quarto-category">SDES</div>
+                <div class="quarto-category">administrative data</div>
               </div>
                   </div>
   </div>
@@ -144,7 +190,7 @@ background: #6886bb;
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 January 2021</p>
+        <p class="date">1 June 2021</p>
       </div>
     </div>
     
@@ -160,35 +206,233 @@ background: #6886bb;
    
   <ul>
 <li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
+  <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2021_amelioration_RP/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2021_vehicules/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2021_amelioration_RP/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
-</ul></div></nav>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2021_vehicules/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+</ul></div></nav><h5 class="quarto-listing-category-title">Categories</h5>
+<div class="quarto-listing-category category-default">
+<div class="category" data-category="">All <span class="quarto-category-count">(4)</span>
+</div>
+<div class="category" data-category="YWRtaW5pc3RyYXRpdmUlMjBkYXRh">administrative data <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="YXV0b21hdGljJTIwY29kaW5n">automatic coding <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZGF0YSUyMGVkaXRpbmc=">data editing <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXhwZXJpbWVudCUyMHN0b3BwZWQ=">experiment stopped <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZmFzdHRleHQ=">fasttext <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="aW4lMjBwcm9kdWN0aW9u">in production <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNG">in production ?? <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="bWF0Y2hpbmc=">matching <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="bW9iaWxlJTIwcGhvbmUlMjBkYXRh">mobile phone data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="UmVzaWw=">Resil <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="c2Nhbm5lciUyMGRhdGE=">scanner data <span class="quarto-category-count">(1)</span>
+</div>
+</div>
 </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>Improving the identification of the employing establishment in population census data</th>
+<th>Modelling road vehicle fleet ownership and use</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td><strong>Project details</strong></td>
-<td>The aim of the experiment is to<strong>improve the automatic coding of the employing establishment</strong> with the aim of reducing the burden of manual recoding. In particular, the aim is to find the employing establishment in the Sirus register using information declared in the annual census surveys, which may contain errors or field inversions, and which are not standardised within the meaning of the nomenclatures. The aim is therefore twofold: to limit the manual re-entry workload for managers (automatic coding), but also to save time for these same managers when manual re-entry is necessary. The experiment is based on the ideas and results of the hackathon “Les champs de Sirene” (<a href="http://github.com/SSP-Lab/Hackathon-2018">github <i class="fa-brands fa-github" aria-label="github"></i></a>, <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Lettre_BigData_n07.pdf">Big Data newsletter n°7</a>) and is pursuing the avenues developed there. It involved two stages: <br> - a stage involving the construction of an automatic identification model and an interface to improve the experience and performance of managers; <br> - a full-scale test phase via a labelling operation carried out with the help of several census managers.</td>
+<td>In 2019, the Ministerial Statistical Office of the French Ministry of Ecological Transition (SDES) will be overhauling the statistical register of road vehicles (RSVero). The main innovation of this project is the use of technical inspection data to ensure that registered vehicles are still in circulation and to determine their annual use, thanks to the odometer reading taken at each visit. However, the integration of this data raises methodological issues: inspections take place on variable dates, sometimes with a delay, and we cannot be sure of the status of vehicles whose last inspection preceded the date on which we wish to determine the fleet. The project will enable us to estimate, for all the cars in the inventory, the probability that they are still in circulation on a given date and, where appropriate, the annual distance travelled. More broadly, this project is part of the drive to develop methodologies for processing administrative sources.</td>
 </tr>
 <tr class="even">
 <td><strong>Players</strong></td>
-<td>Insee</td>
+<td>Insee, <a href="https://www.statistiques.developpement-durable.gouv.fr/english-contents">MSO of the French Ministry of Ecological Transition (SDES)</a>
+</td>
 </tr>
 <tr class="odd">
 <td><strong>Project results</strong></td>
-<td>The model and the interface developed offer promising avenues for improvement. Automatic coding would reduce the number of bulletins coded manually by around 30%, making it easier and quicker to code them manually.</td>
+<td>The methodology is now in production and is used to determine the vehicles on the road each year, their characteristics and their use.</td>
+</tr>
+<tr class="even">
+<td><strong>Project products and documentation</strong></td>
+<td>- <a href="https://www.statistiques.developpement-durable.gouv.fr/media/7230/download?inline">Methodology for estimating vehicle fleets and distances travelled (abstract in English)</a> Working document, March 2024 <br> - <a href="https://journees-methodologie-statistique.insee.net/modelisation-de-lappartenance-au-parc-des-vehicules-routiers-et-de-son-utilisation/">Modelling road vehicle fleet ownership and use</a> Journées de méthodologie statistique 2022</td>
 </tr>
 </tbody>
-</table></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</table></section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNzY2FubmVyJTIwZGF0YSUyQ21hdGNoaW5nJTJDZXhwZXJpbWVudCUyMHN0b3BwZWQlMkNmYXN0dGV4dCUyQ2F1dG9tYXRpYyUyMGNvZGluZw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763480074496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
+<a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="../2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" style="height: 150px;" class="thumbnail-image card-img"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Enriching case data with nutritional information to analyse the impact of consumption on health
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0Y2hpbmc='); return false;">matching</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudCUyMHN0b3BwZWQ='); return false;">experiment stopped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bWF0Y2hpbmclMkNhZG1pbmlzdHJhdGl2ZSUyMGRhdGElMkNSZXNpbCUyQ2luJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1763480074496" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="273">
+<a href="../../project/2022_Appariement/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_Appariement/Resil.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Comparison of matching methods and the contribution of machine learning
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0Y2hpbmc='); return false;">matching</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVzaWw='); return false;">Resil</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>To test and compare different matching methods in order to draw up recommendations for the work needed to build directories, particularly as part of the RESIL multiannual…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="YWRtaW5pc3RyYXRpdmUlMjBkYXRhJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNpbiUyMHByb2R1Y3Rpb24lMjAlM0YlM0YlMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763480074495" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="221">
+<a href="../../project/2018_outlier_dsn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2018_outlier_dsn/dsn.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Detecting and processing outliers or missing values, application to the Déclaration Sociale Nominative (Social Nominative Declarations)
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNG'); return false;">in production ??</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGVkaXRpbmc='); return false;">data editing</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Use of machine learning methods to detect and process outliers or missing values, application to the Social Nominative Declarations (Déclaration Sociale Nominative)</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763480074495" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Urban segregation: insights from mobile phone data
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -594,9 +838,9 @@ background: #6886bb;
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2021_amelioration_RP/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2021_vehicules/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2021_amelioration_RP/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2021_vehicules/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>
