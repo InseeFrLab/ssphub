@@ -1,19 +1,16 @@
+name: Build and deploy preview
+
 on:
   workflow_dispatch:  # To allow for manuel trigger of this workflow. Cf
   # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
-  push:
-    branches-ignore:  # Triggers for push to all branches but main
-      - main
   pull_request:
     types:
       - opened
       - reopened
-      - synchronize
+      - synchronize  # When the ref of the branch is updated (= commit to the branch to merge)
       - closed   # Including closed to remove preview when PR is closed.
     branches:
       - main  # PR to main only
-
-name: Preview
 
 env:
   PREVIEW_BRANCH: gh-pages
@@ -66,6 +63,7 @@ jobs:
           preview-branch: ${{ env.PREVIEW_BRANCH }}
           action: deploy
           comment: false
+          pr_number: ${{ github.event.pull_request.number }}
 
       - name: Comment PR (custom)
         uses: marocchino/sticky-pull-request-comment@v2
@@ -74,7 +72,6 @@ jobs:
           message: |
             :rocket: View preview at <br> ${{ steps.deploy-preview.outputs.preview-url }} <br>
             <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br> </h6>
-
 
   delete-preview:
     if: github.event.action == 'closed'  # Only run when PR is closed
@@ -100,3 +97,5 @@ jobs:
           message: |
             Preview removed because the pull request was closed.
             ${{ steps.remove-preview.outputs.action-start-time }}
+
+
