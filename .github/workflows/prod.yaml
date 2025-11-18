@@ -1,11 +1,13 @@
+# Workflow run only on pushes to main and manual trigger
 on:
-  workflow_dispatch:  # To allow for manuel trigger of this workflow. Cf
-  # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
+  workflow_dispatch:
+  # cf https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   push:
     branches: main
 
-name: Quarto Publish
+name: CI - Quarto Publish
 
+# Cancel previous workflow of ci that could be running
 concurrency:
   group: ci-${{ github.ref }}  # preview followed by the reference of the branch or tag that triggered the workflow
   cancel-in-progress: true
@@ -31,3 +33,5 @@ jobs:
           target: netlify
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
+
