@@ -20,6 +20,7 @@ listing:
     sort:
       - "date desc"
     page-size: 6
+    categories: true
 ---
 
 # Synthèse du projet
