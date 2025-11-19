@@ -1,22 +1,22 @@
 import os
 import yaml
 import sys
+import polars as pl
 
-
-def find_index_qmd_files(root_folder='ssphub/project'):
+def find_index_qmd_files(root_folder='ssphub/project', pattern='index.qmd'):
     index_qmd_files = []
     for root, dirs, files in os.walk(root_folder):
         for file in files:
-            if file == 'index.qmd':
+            if file == pattern:
                 index_qmd_files.append(os.path.join(root, file))
     return index_qmd_files
 
 # find_index_qmd_files()
 
 
-def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
+def extract_yaml_key(file_path='ssphub/project/2019_gdp_tracker/index.qmd', yaml_key='categories'):
     """
-    Extract categories of the YAML part of index.qmd
+    Extract selected key of a YAML part of the given Qmd file
 
     Args:
 
@@ -33,7 +33,23 @@ def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
     yaml_header = qmd_content.split('---', 2)[1]
     yaml_header = yaml.safe_load(yaml_header)
 
-    return yaml_header.get('categories', '')
+    return yaml_header.get(yaml_key, '')
+
+
+def extract_categories(file_path='ssphub/project/2019_gdp_tracker/index.qmd'):
+    """
+    Extract categories of the YAML part of index.qmd
+
+    Args:
+
+    Returns:
+        list
+
+    Example:
+        >>>
+    """
+
+    return extract_yaml_key(file_path=file_path, yaml_key='categories')
 
 
 def conc_yaml_categories(root_folder='ssphub/project'):
@@ -76,6 +92,49 @@ def add_categories_to_yaml(qmd_output_file, template_path='project_template.qmd'
         f.write(processed_qmd_content)
 
 # add_categories_to_yaml('test.qmd')
+
+
+def create_table_of_all_qmd(root_folder='ssphub/project'):
+    """
+    Extract all Qmd file (named index.qmd and index.en.qmd) details of a folder
+
+    Args:
+        root_folder (string) : folder to search index.qmd files into
+
+    Returns:
+        a pl dataframe with project title, file path, folder name, description
+        and path to english version if any
+
+    Example:
+        >>> create_table_of_all_qmd()
+        shape: (24, 6)
+        ┌─────────────────────────────────┬────────────────────────────┬─────────────────────────────────┬─────────────────────────────────┬─────────────────────────────────┬─────────────────────────────────┐
+        │ path                            ┆ folder                     ┆ title_fr                        ┆ description_fr                  ┆ categories_fr                   ┆ path_en                         │
+        │ ---                             ┆ ---                        ┆ ---                             ┆ ---                             ┆ ---                             ┆ ---                             │
+        │ str                             ┆ str                        ┆ str                             ┆ str                             ┆ list[str]                       ┆ str                             │
+        ╞═════════════════════════════════╪════════════════════════════╪═════════════════════════════════╪═════════════════════════════════╪═════════════════════════════════╪═════════════════════════════════╡
+        │ ssphub/project/2020_donnees_ca… ┆ 2020_donnees_caisse        ┆ Classification des données de … ┆ Classifier des données de cais… ┆ ["Python", "codification autom… ┆ ssphub/project/2020_donnees_ca… │
+        │ ssphub/project/2020_webscrapin… ┆ 2020_webscraping_ipc       ┆ Webscrapper les caractéristiqu… ┆ Collecter sur le web les carac… ┆ ["en production ??", "Insee", … ┆ ssphub/project/2020_webscrapin… │
+    """
+    # List all projects
+    df = pl.DataFrame({'path':find_index_qmd_files(root_folder=root_folder, pattern='index.qmd')})
+    # Add project details
+    df = df.with_columns(
+        folder=pl.col('path').str.extract(r"project/(\w+)", group_index=1),
+        title_fr=pl.col('path').map_elements(lambda x: extract_yaml_key(file_path=x, yaml_key='title'), return_dtype=pl.String()),
+        description_fr=pl.col('path').map_elements(lambda x: extract_yaml_key(file_path=x, yaml_key='description'), return_dtype=pl.String()),
+        categories_fr=pl.col('path').map_elements(lambda x: extract_yaml_key(file_path=x, yaml_key='categories'), return_dtype=pl.List(pl.String()))
+    )
+
+    # Add english version if exists
+    df_en = pl.DataFrame({'path_en':find_index_qmd_files(root_folder=root_folder, pattern='index.en.qmd')})
+    df_en = df_en.with_columns(
+        folder=pl.col('path_en').str.extract(r"project/(\w+)", group_index=1),
+    )
+
+    df = df.join(df_en, on='folder', how='full', coalesce=True)  # Coalesce: to merge similar column
+
+    return df
 
 
 def create_folder_and_file(folder_name, template_path='project_template.qmd'):
