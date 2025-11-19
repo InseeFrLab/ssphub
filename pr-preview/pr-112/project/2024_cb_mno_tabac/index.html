@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Appariement/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_Appariement/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2024_cb_mno_tabac/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="Tester et comparer différentes méthodes d’appariements afin de dégager des recommandations pour les travaux nécessaires à la construction des répertoires, notamment dans le cadre du programme pluriannuel RESIL.">
-<title>Comparaison des méthodes d’appariement et apport du machine learning – SSPHub</title>
+<title>Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,7 +22,7 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../../site_libs/quarto-listing/list.min.js"></script><script src="../../site_libs/quarto-listing/quarto-listing.js"></script><script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -53,7 +52,35 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Envoyer",
     "search-label": "Recherche"
   }
-}</script><style>
+}</script><script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-similar-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script><style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -70,6 +97,32 @@ ul.task-list li input[type="checkbox"] {
 background: #6886bb;
       }
 </style>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 </head>
 <body class="nav-fixed quarto-light">
 
@@ -87,7 +140,7 @@ background: #6886bb;
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_Appariement/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2024_cb_mno_tabac/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
@@ -157,17 +210,12 @@ background: #6886bb;
 </div>
 </header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Comparaison des méthodes d’appariement et apport du machine learning</h1>
-                  <div>
-        <div class="description">
-          Tester et comparer différentes méthodes d’appariements afin de dégager des recommandations pour les travaux nécessaires à la construction des répertoires, notamment dans le cadre du programme pluriannuel RESIL.
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">appariement</div>
-                <div class="quarto-category">données administratives</div>
-                <div class="quarto-category">Resil</div>
-                <div class="quarto-category">en production</div>
+      <h1 class="title">Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">expérimentation</div>
+                <div class="quarto-category">données de téléphonie mobile</div>
+                <div class="quarto-category">données CB</div>
+                <div class="quarto-category">Insee</div>
               </div>
                   </div>
   </div>
@@ -179,7 +227,7 @@ background: #6886bb;
       <div>
       <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 janvier 2021</p>
+        <p class="date">1 janvier 2024</p>
       </div>
     </div>
     
@@ -195,35 +243,314 @@ background: #6886bb;
    
   <ul>
 <li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
+  <li><a href="#projets-similaires" id="toc-projets-similaires" class="nav-link" data-scroll-target="#projets-similaires">Projets similaires</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_Appariement/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_Appariement/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></nav>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+</ul></div></nav><h5 class="quarto-listing-category-title">Catégories</h5>
+<div class="quarto-listing-category category-default">
+<div class="category" data-category="">Tous <span class="quarto-category-count">(6)</span>
+</div>
+<div class="category" data-category="YXBwYXJpZW1lbnQ=">appariement <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=">codification automatique <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz">données administratives <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwQ0I=">données CB <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U=">données de caisse <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==">données de téléphonie mobile <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="ZW4lMjBwcm9kdWN0aW9u">en production <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXhwJUMzJUE5cmltZW50YXRpb24=">expérimentation <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ==">expérimentation arrêtée <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz">extraction de données <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZmFzdHRleHQ=">fasttext <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(4)</span>
+</div>
+<div class="category" data-category="SVBD">IPC <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="cHIlQzMlQTl2aXNpb25z">prévisions <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span>
+</div>
+</div>
 </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>Comparaison des méthodes d’appariement et apport du machine learning</th>
+<th>Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td><strong>Détail du projet</strong></td>
-<td>Le programme Resil vise à construire un système de répertoires d’individus, de ménages et de locaux d’habitation, durable et évolutif, mis à jour à partir de sources administratives diverses. Il nécessite l’agrégation de plusieurs sources de données sans identifiant direct commun. <br> Le but de l’expérimentation est de <strong>tester et de comparer différentes méthodes d’appariements</strong> afin de dégager des recommandations pour les travaux nécessaires à la construction des répertoires. Celles-ci seront fondées sur des critères de performance (qualité de l’appariement) mais aussi sur des considérations opérationnelles (facilité de déploiement, temps de calcul, etc.). L’objectif est notamment <strong>d’évaluer l’apport et les contraintes des méthodes probabilistes ainsi que du machine learning</strong> dans les tâches d’appariement. Ce travail s’accompagnera d’une réflexion sur la normalisation préalable des données et l’évaluation des résultats d’un appariement.</td>
+<td>Le tabagisme est un problème majeur de santé publique, à l’origine de nombreuses maladies évitables à travers le monde. Au cours des dernières décennies, l’augmentation du prix du tabac s’est imposée comme la principale stratégie des États pour lutter contre le tabagisme. Toutefois, les différences de prix entre certains pays frontaliers sont susceptibles de limiter l’efficacité de cette mesure en permettant à certains consommateurs d’acheter du tabac à un prix inférieur dans un État voisin. Si le problème des achats transfrontaliers n’est pas nouveau, l’ampleur du phénomène reste mal connue et fait encore l’objet de débats réguliers. Cette étude contribue à son évaluation en France en exploitant une expérience naturelle sans précédent : la fermeture des frontières terrestres entre mars 2020 et juin 2020 dans le cadre de la lutte contre la pandémie de Covid-19.</td>
 </tr>
 <tr class="even">
 <td><strong>Acteurs</strong></td>
 <td>Insee</td>
 </tr>
 <tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Les résultats montrent que la fermeture des frontières a généré un surplus d’achats de tabac de 9,5 % en France métropolitaine, par rapport à la situation contrefactuelle où les frontières seraient restées ouvertes. Il s’agit probablement d’une estimation basse des achats transfrontaliers. En effet, une partie de la consommation de tabac en provenance de l’étranger a pu persister pendant le premier confinement, les frontières n’ayant pas été complètement fermées, notamment aux travailleurs frontaliers. En extrapolant la consommation observée dans le reste du pays aux régions frontalières, à caractéristiques identiques, les recettes générées en France seraient environ 13,5 % plus élevées s’il n’existait pas d’alternatives moins chères à l’étranger.</td>
+</tr>
+<tr class="even">
 <td><strong>Produits et documentation du projet</strong></td>
-<td>- <a href="https://journees-methodologie-statistique.insee.net/methodologie-des-appariements-de-donnees-individuelles/">Méthodologie d’appariement de données individuelles</a>, Journées de méthodologie statistique 2022 ; <br> - <a href="https://journees-methodologie-statistique.insee.net/probabilistes-ou-deterministes-des-methodes-dappariements-au-banc-dessai-du-programme-resil/">Probabilistes ou déterministes, des méthodes d’appariements au banc d’essai du programme RéSIL</a>, Journées de méthodologie statistique 2022 ; <br> - <a href="https://journees-methodologie-statistique.insee.net/impact-du-nettoyage-des-donnees-sur-la-qualite-dun-appariement/">Impact du nettoyage des données sur la qualité d’un appariement</a>, Journées de méthodologie statistique 2022 <br> - <a href="https://www.insee.fr/fr/information/8203044">Les appariements : finalités, pratiques et enjeux de qualité</a>, document de travail de l’Insee, juillet 2024</td>
+<td>- <a href="https://www.insee.fr/fr/statistiques/8172202">Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</a>, Documents de travail de l’Insee n°2024-06, avril 2024</td>
 </tr>
 </tbody>
-</table></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+</table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567794911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+Travaux méthodologiques sur l’enquête Budget de Famille
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz'); return false;">extraction de données</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567794911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="tabac.png" style="height: 150px;" class="thumbnail-image card-img"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Enrichissement de données de caisses à partir de données d’informations nutritionnelles pour analyser l’impact de la consommation sur la santé
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXBwYXJpZW1lbnQ='); return false;">appariement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1763567794909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
+<a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyée sur les données…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763567794909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>L’Insee a eu accès à des données de téléphonie mobile dans le cadre du suivi de la crise sanitaire de 2020. Ces données ont permis de produire les statistiques sur les…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 nov. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763567794909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="475">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification des données de caisse à partir de machine learning
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SVBD'); return false;">IPC</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763567794909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ségrégation urbaine : un éclairage par les données de téléphonie mobile
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz'); return false;">données administratives</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -629,9 +956,9 @@ background: #6886bb;
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_Appariement/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_Appariement/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>

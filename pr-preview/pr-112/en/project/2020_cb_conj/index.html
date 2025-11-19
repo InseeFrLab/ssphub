@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2023_doremifasol/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_cb_conj/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2020_cb_conj/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="Le package  R Doremifasol facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur GitHub .">
-<title>Doremifasol – SSPHub</title>
+<meta name="dcterms.date" content="2020-12-01">
+<meta name="description" content="The 2020 health crisis required a review of forecasting processes to be more responsive to events. INSEE used credit card transaction data to forecast economic activity.">
+<title>Using credit card data and mobile phone data to forecast economic activity – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,8 +28,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -43,17 +42,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "Pas de résultats",
-    "search-matching-documents-text": "documents trouvés",
-    "search-copy-link-title": "Copier le lien vers la recherche",
-    "search-hide-matches-text": "Cacher les correspondances additionnelles",
-    "search-more-match-text": "correspondance de plus dans ce document",
-    "search-more-matches-text": "correspondances de plus dans ce document",
-    "search-clear-button-title": "Effacer",
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Annuler",
-    "search-submit-button-title": "Envoyer",
-    "search-label": "Recherche"
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script><script>
 
@@ -65,9 +64,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -136,66 +135,34 @@ window.Quarto = {
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Recherche"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2023_doremifasol/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_cb_conj/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Accueil</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../event.html"> 
-<span class="menu-text">Événements</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
-<span class="menu-text">Blog</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../project.html"> 
-<span class="menu-text">Projets</span></a>
+<span class="menu-text">Innovative projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../course.html"> 
-<span class="menu-text">Ressources utiles</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About the SSPHub</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">À propos</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">
-<li>
-    <a class="dropdown-item" href="../../infolettre/infolettre.html">
- <span class="dropdown-text">Newsletters</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../about.html">
- <span class="dropdown-text">Présentation du réseau</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../manifeste.html">
- <span class="dropdown-text">Manifeste du réseau</span></a>
-  </li>  
-    </ul>
-</li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
-<span class="menu-text">Le SSPCloud</span></a>
+<span class="menu-text">SSPCloud</span></a>
   </li>  
 </ul>
 <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -205,25 +172,20 @@ window.Quarto = {
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav><div id="quarto-announcement" data-announcement-id="d14fcd9fc2e806dcc24e12ea5d639735" class="alert alert-primary hidden">
-<i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>📺️ Le replay des ateliers du <strong>9 et 16 avril 2025</strong> sont disponibles <a href="../../event/2025-04-09-API/index.html">ici (API)</a> et <a href="../../event/2025-04-16-Parquet/index.html">ici (pour le format Parquet)</a></p>
-</div>
-<i class="bi bi-x-lg quarto-announcement-action"></i>
-</div>
-</header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Doremifasol</h1>
+      <h1 class="title">Using credit card data and mobile phone data to forecast economic activity</h1>
                   <div>
         <div class="description">
-          Le package <i class="fa-brands fa-r-project" aria-label="r-project"></i> R Doremifasol facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i>.
+          <p>The 2020 health crisis required a review of forecasting processes to be more responsive to events. INSEE used credit card transaction data to forecast economic activity.</p>
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">package</div>
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">en production</div>
+                <div class="quarto-category">forecasts</div>
+                <div class="quarto-category">experiment</div>
                 <div class="quarto-category">Insee</div>
+                <div class="quarto-category">credit card data</div>
+                <div class="quarto-category">mobile phone data</div>
               </div>
                   </div>
   </div>
@@ -233,9 +195,9 @@ window.Quarto = {
 
       
       <div>
-      <div class="quarto-title-meta-heading">Date de publication</div>
+      <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 janvier 2023</p>
+        <p class="date">1 December 2020</p>
       </div>
     </div>
     
@@ -247,118 +209,311 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sur cette page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
    
   <ul>
-<li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
-  <li><a href="#projets-similaires" id="toc-projets-similaires" class="nav-link" data-scroll-target="#projets-similaires">Projets similaires</a></li>
+<li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
+  <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></nav>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+</ul></div></nav><h5 class="quarto-listing-category-title">Categories</h5>
+<div class="quarto-listing-category category-default">
+<div class="category" data-category="">All <span class="quarto-category-count">(6)</span>
+</div>
+<div class="category" data-category="YWRtaW5pc3RyYXRpdmUlMjBkYXRh">administrative data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="YXV0b21hdGljJTIwY29kaW5n">automatic coding <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="Y3JlZGl0JTIwY2FyZCUyMGRhdGE=">credit card data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZGF0YSUyMGV4dHJhY3Rpb24=">data extraction <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="ZXhwZXJpbWVudCUyMHN0b3BwZWQ=">experiment stopped <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZmFzdHRleHQ=">fasttext <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="aW4lMjBwcm9kdWN0aW9u">in production <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(4)</span>
+</div>
+<div class="category" data-category="SVBD">IPC <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="bWF0Y2hpbmc=">matching <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bW9iaWxlJTIwcGhvbmUlMjBkYXRh">mobile phone data <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="c2Nhbm5lciUyMGRhdGE=">scanner data <span class="quarto-category-count">(3)</span>
+</div>
+</div>
 </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>Package <i class="fa-brands fa-r-project" aria-label="r-project"></i> pour récupérer des données du site de l’Insee</th>
+<th>Using credit card and mobile phone data to forecast economic activity</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>Le package doremifasol (Données en R Mises à disposition par l’Insee et Facilement Sollicitables) permet d’importer facilement dans R des données mises à disposition sur le site de l’Insee. <br><br> Il offre deux fonctionnalités principales : <br> - télécharger et importer dans R des fichiers disponibles sur insee.fr (Base Permanente des Équipements, Recensement de Population, Filosofi…), y compris les données mises à disposition via Melodi ; <br> - requêter l’API Sirene et recupérer les résultats dans R.</td>
+<td><strong>Project details</strong></td>
+<td>The March 24, 2020 Economic Outlook, prepared by INSEE during the first quarter of 2020, was never published in its original form. The health crisis and the measures taken to limit the spread of the pandemic, starting with containment, have turned standard economic forecasts on their head and necessitated the use of alternative, more responsive sources. Traditional data, available for the most part on a monthly basis, were unable to provide reliable and relevant information on the economic situation within the time available: for example, the most recent business surveys, which are a key source for forecasting, were collected mainly between the end of February and the beginning of March, i.e. before the first containment was announced. The first quantitative indicators for March, based on surveys or administrative sources, were not available until April or May. INSEE therefore mobilised other sources of data, of various kinds although essentially high frequency, such as supermarket scanner data, rail freight, mobile phone data, electricity consumption, internet use, and credit card transaction data.</td>
 </tr>
 <tr class="even">
-<td><strong>Acteurs</strong></td>
+<td><strong>Players</strong></td>
 <td>Insee</td>
 </tr>
 <tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Le package DoReMiFaSol est en production et téléchargeable depuis GitHub. La documentation est aussi publiée <a href="https://inseefrlab.github.io/DoReMIFaSol/">ici</a>.</td>
+<td><strong>Project results</strong></td>
+<td>The use of aggregated and anonymised credit card transaction data to monitor economic activity and household consumption proved particularly appropriate and relevant in 2020, when measures were put in place to curb the spread of Covid-19. They will make it possible to document in real time an exceptional shock for which the standard measurement tools appeared late or sometimes unsuitable. The wealth of information available leads to particularly diverse analyses. However, these sources present significant conceptual differences with the usual statistics used to monitor economic activity. Failure to take them into account would lead to distorted analyses, both in terms of levels and trends. Mobile phone data was also used to track the return to normal activity during the lifting of lockdown restrictions in June 2020. The relevance of these private sources for public studies therefore depends largely on the degree of granularity of the information available and the ability of the producer and user to converge towards a common framework.</td>
 </tr>
 <tr class="even">
-<td><strong>Code du projet</strong></td>
-<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/InseeFrLab/DoReMIFaSol">https://github.com/InseeFrLab/DoReMIFaSol</a>
-</td>
+<td><strong>Project products and documentation</strong></td>
+<td>- <a href="https://www.insee.fr/fr/statistiques/4478165?sommaire=4473296">What do bankcard transaction data have to say about the behaviour of ‘confined’ consumers? (French)</a> INSEE Economic Outlook - April 2020 <br> - <a href="https://www.insee.fr/en/statistiques/4496160?sommaire=4473307">What do bankcard transaction data say about recent trends in household consumption?</a> Insee Economic Outlook - May 2020 <br> - <a href="https://www.insee.fr/en/statistiques/4496166?sommaire=4473307">Regional disparities in consumption: what do bank card transaction data tell us?</a> Insee Economic Outlook - May 2020 <br> - <a href="https://www.insee.fr/fr/statistiques/4513042?sommaire=4473296">By the end of May, morning commutes had only reached 60% of their usual level</a>, Insee Economic Outlook - June 2020 <br> - <a href="https://journees-methodologie-statistique.insee.net/apports-limites-et-perspectives-des-donnees-de-transactions-carte-bancaire-cb-dans-le-suivi-de-lactivite-economique/">Contributions, limitations and prospects of bankcard (CB) transaction data in monitoring economic activity (abstract in English)</a>, 2022 Statistical Methodology Days (Journées de méthodologie statistique 2022)</td>
 </tr>
 </tbody>
-</table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
+</table></section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763567794916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
-<a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="ZXhwZXJpbWVudCUyQ21vYmlsZSUyMHBob25lJTIwZGF0YSUyQ2NyZWRpdCUyMGNhcmQlMjBkYXRhJTJDSW5zZWU=" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1763567867078" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
+<a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2024_cb_mno_tabac/tabac.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
-pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i> pour récupérer les données de l’Insee
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+An assessment of cross-border tobacco purchases and associated tax losses in France
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y3JlZGl0JTIwY2FyZCUyMGRhdGE='); return false;">credit card data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>Le package <i class="fa-brands fa-python" aria-label="python"></i> <code>pynsee</code> facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur Github.</p>
+
+
+
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 janv. 2023
+1 Jan 2024
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763567794915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
-<a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567867074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Utilisation des images satellites pour la statistique publique
-</h5>
-<div class="card-text listing-description delink">
-<p>Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 oct. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dCUyQ3BhY2thZ2UlMkNlbiUyMHByb2R1Y3Rpb24lMkNNTEZsb3c=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567794913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
-<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Codification automatique de l’activité principale des entreprises
+Methodological work on the Family Budget survey
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGV4dHJhY3Rpb24='); return false;">data extraction</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>Développer un algorithme de machine learning pour automatiser la classification de l’activité principale des entreprises et mise en production</p>
+<p>Modernisation of the family budget survey using automatic classification tools</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 janv. 2022
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNzY2FubmVyJTIwZGF0YSUyQ21hdGNoaW5nJTJDZXhwZXJpbWVudCUyMHN0b3BwZWQlMkNmYXN0dGV4dCUyQ2F1dG9tYXRpYyUyMGNvZGluZw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567867074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
+<a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="../2024_cb_mno_tabac/tabac.png" style="height: 150px;" class="thumbnail-image card-img"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Enriching case data with nutritional information to analyse the impact of consumption on health
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0Y2hpbmc='); return false;">matching</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudCUyMHN0b3BwZWQ='); return false;">experiment stopped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763567867072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
+<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Population movements around the March 2020 containment using mobile phone network operators data
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>INSEE has had access to mobile telephony data as part of the monitoring of the 2020 health crisis. These data were used to produce the following statistics on population…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Nov 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNJUEMlMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763567867072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification of checkout data using machine learning
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SVBD'); return false;">IPC</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763567867072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Urban segregation: insights from mobile phone data
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jan 2018
 </div>
 </div>
 </div>
 </div></a>
 </div>
 </div>
-<div class="listing-no-matching d-none">Aucun article correspondant</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 
 
@@ -388,12 +543,12 @@ Codification automatique de l’activité principale des entreprises
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copié");
+      button.setAttribute("title", "Copied!");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copié");
+        button.setAttribute("data-bs-title", "Copied!");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -769,9 +924,9 @@ Codification automatique de l’activité principale des entreprises
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>

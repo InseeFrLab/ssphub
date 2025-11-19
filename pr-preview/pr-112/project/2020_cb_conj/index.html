@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2023_doremifasol/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_cb_conj/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2020_cb_conj/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="Le package  R Doremifasol facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur GitHub .">
-<title>Doremifasol – SSPHub</title>
+<meta name="description" content="La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyée sur les données de paiement par carte bancaire CB pour prédire l’activité économique.">
+<title>Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -27,8 +27,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -65,9 +63,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -143,7 +141,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2023_doremifasol/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2020_cb_conj/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
@@ -213,17 +211,18 @@ window.Quarto = {
 </div>
 </header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Doremifasol</h1>
+      <h1 class="title">Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique</h1>
                   <div>
         <div class="description">
-          Le package <i class="fa-brands fa-r-project" aria-label="r-project"></i> R Doremifasol facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i>.
+          <p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyée sur les données de paiement par carte bancaire CB pour prédire l’activité économique.</p>
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">package</div>
-                <div class="quarto-category">R</div>
-                <div class="quarto-category">en production</div>
+                <div class="quarto-category">prévisions</div>
+                <div class="quarto-category">expérimentation</div>
                 <div class="quarto-category">Insee</div>
+                <div class="quarto-category">données CB</div>
+                <div class="quarto-category">données de téléphonie mobile</div>
               </div>
                   </div>
   </div>
@@ -235,7 +234,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 janvier 2023</p>
+        <p class="date">1 décembre 2020</p>
       </div>
     </div>
     
@@ -254,22 +253,62 @@ window.Quarto = {
   <li><a href="#projets-similaires" id="toc-projets-similaires" class="nav-link" data-scroll-target="#projets-similaires">Projets similaires</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></nav>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+</ul></div></nav><h5 class="quarto-listing-category-title">Catégories</h5>
+<div class="quarto-listing-category category-default">
+<div class="category" data-category="">Tous <span class="quarto-category-count">(6)</span>
+</div>
+<div class="category" data-category="YXBwYXJpZW1lbnQ=">appariement <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=">codification automatique <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz">données administratives <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwQ0I=">données CB <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U=">données de caisse <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==">données de téléphonie mobile <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="ZW4lMjBwcm9kdWN0aW9u">en production <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXhwJUMzJUE5cmltZW50YXRpb24=">expérimentation <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ==">expérimentation arrêtée <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz">extraction de données <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZmFzdHRleHQ=">fasttext <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(4)</span>
+</div>
+<div class="category" data-category="SVBD">IPC <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
+</div>
+<div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span>
+</div>
+</div>
 </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>Package <i class="fa-brands fa-r-project" aria-label="r-project"></i> pour récupérer des données du site de l’Insee</th>
+<th>Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td><strong>Détail du projet</strong></td>
-<td>Le package doremifasol (Données en R Mises à disposition par l’Insee et Facilement Sollicitables) permet d’importer facilement dans R des données mises à disposition sur le site de l’Insee. <br><br> Il offre deux fonctionnalités principales : <br> - télécharger et importer dans R des fichiers disponibles sur insee.fr (Base Permanente des Équipements, Recensement de Population, Filosofi…), y compris les données mises à disposition via Melodi ; <br> - requêter l’API Sirene et recupérer les résultats dans R.</td>
+<td>La Note de conjoncture du 24 mars 2020, préparée par l’Insee pendant le premier trimestre 2020, n’aura jamais été publiée en l’état. La crise sanitaire et les mesures de limitation de propagation de la pandémie, en premier lieu le confinement, ont bouleversé les prédictions conjoncturelles standards et nécessité l’utilisation de sources alternatives plus réactives. Les données traditionnelles, disponibles pour la plupart mensuellement, n’étaient pas à même de fournir, dans les délais impartis, des informations fiables et pertinentes sur la situation économique : par exemple, les enquêtes de conjoncture les plus récentes auprès des entreprises, qui constituent une source privilégiée pour la prévision, avaient été collectées entre fin février et début mars principalement, donc avant l’annonce du premier confinement. Les premiers indicateurs quantitatifs sur mars, basés sur des enquêtes ou des sources administratives, n’ont été quant à eux disponibles qu’en avril ou mai. L’Insee a donc mobilisé d’autres sources de données, de nature diverse bien qu’essentiellement à haute fréquence, comme les données de caisse des grandes surfaces, le fret ferroviaire, les activations de réseaux de téléphonie mobile, la consommation électrique, l’utilisation d’internet, ou les données de transactions par carte bancaire CB.</td>
 </tr>
 <tr class="even">
 <td><strong>Acteurs</strong></td>
@@ -277,74 +316,72 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td><strong>Résultats du projet</strong></td>
-<td>Le package DoReMiFaSol est en production et téléchargeable depuis GitHub. La documentation est aussi publiée <a href="https://inseefrlab.github.io/DoReMIFaSol/">ici</a>.</td>
+<td>L’utilisation des données de transactions de paiement par carte bancaire CB agrégées et anonymisées pour la mesure du suivi de l’activité économique et de la consommation des ménages s’est révélée particulièrement appropriée et pertinente en 2020, lors de la mise en place des mesures de freinage de la propagation du Covid-19. Elles permettent de documenter en temps réel un choc exceptionnel pour lequel les outils de mesure standards apparaissaient tardifs ou parfois inadaptés. La richesse des informations conduit à des analyses particulièrement diverses. Toutefois, ces sources présentent des différences conceptuelles importantes avec les statistiques usuelles de suivi de l’activité économique. Ne pas les prendre en compte conduirait à des analyses faussées, en niveau et en évolution. Les données de téléphonie mobile ont aussi été utilisées pour suivre le retour de l’activité lors du déconfinement de juin 2020. La pertinence de ces sources privées pour les études publiques dépend donc grandement du degré de granularité de l’information disponible et de la capacité du producteur et de l’utilisateur à converger vers un cadre commun.</td>
 </tr>
 <tr class="even">
-<td><strong>Code du projet</strong></td>
-<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/InseeFrLab/DoReMIFaSol">https://github.com/InseeFrLab/DoReMIFaSol</a>
-</td>
+<td><strong>Produits et documentation du projet</strong></td>
+<td>- <a href="https://www.insee.fr/fr/statistiques/4478165?sommaire=4473296">Que disent les données de transactions par carte bancaire sur les comportements de consommateurs « confinés » ?</a>, Note et point de conjoncture de l’Insee - avril 2020 <br> - <a href="https://www.insee.fr/fr/statistiques/4488580?sommaire=4473296">Que disent les données de transactions par carte bancaire sur l’évolution récente de la consommation des ménages ?</a>, Note et point de conjoncture de l’Insee - mai 2020 <br> - <a href="https://www.insee.fr/fr/statistiques/4488582?sommaire=4473296">Disparités territoriales de consommation : que disent les données de transaction par carte bancaire ?</a>, Note et point de conjoncture de l’Insee - mai 2020 <br> - <a href="https://www.insee.fr/fr/statistiques/4513042?sommaire=4473296">Fin mai, les trajets matinaux n’atteignaient que 60 % de leur volume habituel</a>, Note et point de conjoncture, juin 2020 <br> - <a href="https://journees-methodologie-statistique.insee.net/apports-limites-et-perspectives-des-donnees-de-transactions-carte-bancaire-cb-dans-le-suivi-de-lactivite-economique/">Apports, limites et perspectives des données de transactions carte bancaire (CB) dans le suivi de l’activité économique</a>, Journées de méthodologie statistique 2022</td>
 </tr>
 </tbody>
 </table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1763567794916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
-<a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1763567794916" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2024_cb_mno_tabac/tabac.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
-pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i> pour récupérer les données de l’Insee
+Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France
 </h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+</div>
 <div class="card-text listing-description delink">
-<p>Le package <i class="fa-brands fa-python" aria-label="python"></i> <code>pynsee</code> facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur Github.</p>
+
+
+
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 janv. 2023
+1 janv. 2024
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1763567794915" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
-<a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567794911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Utilisation des images satellites pour la statistique publique
+Travaux méthodologiques sur l’enquête Budget de Famille
 </h5>
-<div class="card-text listing-description delink">
-<p>Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz'); return false;">extraction de données</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
 
 </div>
-<div class="listing-date">
-1 oct. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dCUyQ3BhY2thZ2UlMkNlbiUyMHByb2R1Y3Rpb24lMkNNTEZsb3c=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567794913" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
-<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Codification automatique de l’activité principale des entreprises
-</h5>
 <div class="card-text listing-description delink">
-<p>Développer un algorithme de machine learning pour automatiser la classification de l’activité principale des entreprises et mise en production</p>
+<p>Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -352,6 +389,161 @@ Codification automatique de l’activité principale des entreprises
 </div>
 <div class="listing-date">
 1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1763567794911" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="../2024_cb_mno_tabac/tabac.png" style="height: 150px;" class="thumbnail-image card-img"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Enrichissement de données de caisses à partir de données d’informations nutritionnelles pour analyser l’impact de la consommation sur la santé
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXBwYXJpZW1lbnQ='); return false;">appariement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1763567794909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>L’Insee a eu accès à des données de téléphonie mobile dans le cadre du suivi de la crise sanitaire de 2020. Ces données ont permis de produire les statistiques sur les…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 nov. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1763567794909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="475">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification des données de caisse à partir de machine learning
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SVBD'); return false;">IPC</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1763567794909" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ségrégation urbaine : un éclairage par les données de téléphonie mobile
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz'); return false;">données administratives</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2018
 </div>
 </div>
 </div>
@@ -769,9 +961,9 @@ Codification automatique de l’activité principale des entreprises
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2023_doremifasol/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2020_cb_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>
