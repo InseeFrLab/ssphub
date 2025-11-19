@@ -11,7 +11,6 @@ listing:
     feed: true
     sort:
       - "date desc"
-    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
     page-size: 6
   - id: blog_event
     contents:
@@ -21,7 +20,6 @@ listing:
     feed: true
     sort:
       - "date desc"
-    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
     page-size: 6
   - id: newsletters
     contents: infolettre/infolettre_*/**/index.qmd
@@ -29,14 +27,12 @@ listing:
     sort:
       - "number desc"
     feed: true
-    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
     page-size: 6
   - id: partenaires
     contents: partenaires
     template: scripts/courses.ejs
     type: grid
     feed: false
-    image-placeholder: assets/media/logo_ssm_insee.webp  # default image
     page-size: 6
 echo: false
 ---

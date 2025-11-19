@@ -5,6 +5,7 @@ description: |
   de véhicules routiers en France
 format: html
 date: '2021-06-01'
+image: ../../assets/media/logo_ssm_insee.webp
 listing:
 - id: similar-project
   contents: ../*/index.qmd
