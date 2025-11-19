@@ -63,7 +63,6 @@ jobs:
           preview-branch: ${{ env.PREVIEW_BRANCH }}
           action: deploy
           comment: false
-          pr_number: ${{ github.event.pull_request.number }}
 
       - name: Comment PR (custom)
         uses: marocchino/sticky-pull-request-comment@v2
