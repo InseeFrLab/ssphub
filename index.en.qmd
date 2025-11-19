@@ -14,16 +14,37 @@ listing:
     page-size: 6
 ---
 
-# Network of data scientists working
+:::::: {#hero-banner .column-screen}
+::::: {.grid .column-page}
+:::: {.headline .g-col-lg-12 .g-col-12 .g-col-md-12}
+::: h1
+Welcome to the `SSPHub`, the website for _data scientists_ working for the French Official Statistical Office
+:::
+::::
+:::::
+::::::
 
-The `SSPHub` aims at fostering collaboration and exchange among  _data scientists_ from the [French Official Statistical Office](https://www.insee.fr/fr/information/1302192).
+# Network of data scientists working for the French Official Statistical Office
 
-Details about the network are available on the [about webpage](about.qmd).
+This website is made for the `SSPHub`, a network to foster collaboration and exchange among *data scientists* from the [French Official Statistical Office](https://www.insee.fr/en/information/2386424). Indeed, in France, the French Official Statistical Office is decentralized :
+
+-   INSEE has its headquarters in Paris region but also has a network of regional offices.
+
+-   The other part of the French Officiel Statistical Office is composed of INSEE and 16 Ministerial Statistical Offices (MSOs). MSOs carry out statistical operations in their field of competence.
+
+-   INSEE coordinates the public statistics production work of the various MSOs.
+
+The English version of the website aims at sharing code and innovative projects produced by the *data scientists* from the [French Official Statistical Office](https://www.insee.fr/en/information/2386424).
+
+The French version of the website offers broader resources to *data scientists* (newsletter, courses ... ). As it has limited value added for people outside of the French administration, it has not been translated. But, if you're interested🙂, you are more than welcome to have a look (by using automated translation tools).
+
+Find out more information about the `SSPHub` network on the [dedicated page](about.qmd).
 
 ## Projects
 
-Innovative projects can be found on the [dedicated webpage](project.qmd).
+An indicative list of innovative projects is presented on this website. As recalled on the [dedicated webpage](project.qmd), this list is neither intended to be exhaustive nor replaces the information available on official websites.
 
+The [dedicated webpage](project.qmd) presents all the projects.
 
-:::: {#project-en}
-::::
+::: {#project-en}
+:::
