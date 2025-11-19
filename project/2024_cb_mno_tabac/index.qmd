@@ -1,0 +1,40 @@
+---
+title: Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France
+format: html
+date: '2024-01-01'
+image: tabac.png
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - données de caisse
+    - données de téléphonie mobile
+    - données CB
+    - données comptes bancaires
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:
+- expérimentation
+- données de téléphonie mobile
+- données CB
+- Insee
+---
+
+
+# Synthèse du projet
+
+|           |         Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         | Le tabagisme est un problème majeur de santé publique, à l’origine de nombreuses maladies évitables à travers le monde. Au cours des dernières décennies, l’augmentation du prix du tabac s’est imposée comme la principale stratégie des États pour lutter contre le tabagisme. Toutefois, les différences de prix entre certains pays frontaliers sont susceptibles de limiter l’efficacité de cette mesure en permettant à certains consommateurs d’acheter du tabac à un prix inférieur dans un État voisin. Si le problème des achats transfrontaliers n’est pas nouveau, l’ampleur du phénomène reste mal connue et fait encore l’objet de débats réguliers. Cette étude contribue à son évaluation en France en exploitant une expérience naturelle sans précédent : la fermeture des frontières terrestres entre mars 2020 et juin 2020 dans le cadre de la lutte contre la pandémie de Covid-19. |
+| **Acteurs**                  |    Insee   |
+| **Résultats du projet**      |  Les résultats montrent que la fermeture des frontières a généré un surplus d’achats de tabac de 9,5 % en France métropolitaine, par rapport à la situation contrefactuelle où les frontières seraient restées ouvertes. Il s’agit probablement d’une estimation basse des achats transfrontaliers. En effet, une partie de la consommation de tabac en provenance de l’étranger a pu persister pendant le premier confinement, les frontières n’ayant pas été complètement fermées, notamment aux travailleurs frontaliers. En extrapolant la consommation observée dans le reste du pays aux régions frontalières, à caractéristiques identiques, les recettes générées en France seraient environ 13,5 % plus élevées s’il n’existait pas d’alternatives moins chères à l’étranger.     |
+| **Produits et documentation du projet**      | - [Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France](https://www.insee.fr/fr/statistiques/8172202), Documents de travail de l’Insee n°2024-06, avril 2024 |
+
+# Projets similaires
+
+::: {#similar-project}
+:::

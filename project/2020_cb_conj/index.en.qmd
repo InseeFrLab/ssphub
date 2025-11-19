@@ -13,9 +13,10 @@ listing:
   type: grid
   include:
     categories:
-    - credit card data
     - scanner data
     - mobile phone data
+    - credit card data
+    - bank account data
   sort:
   - date desc
   page-size: 6

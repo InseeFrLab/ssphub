@@ -18,10 +18,13 @@ listing:
   type: grid
   include:
     categories:
-    - scanner data
     - matching
     - automatic coding
     - fasttext
+    - scanner data
+    - mobile phone data
+    - credit card data
+    - bank account data
   sort: date desc
   page-size: 6
   categories: true

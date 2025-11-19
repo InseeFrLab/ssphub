@@ -15,9 +15,10 @@ listing:
   type: grid
   include:
     categories:
-    - données CB
     - données de caisse
     - données de téléphonie mobile
+    - données CB
+    - données comptes bancaires
   sort:
   - date desc
   page-size: 6

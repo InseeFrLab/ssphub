@@ -31,7 +31,11 @@ listing:
   contents: ../*/index.qmd
   type: grid
   include:
-    categories: ["mobile phone data"]
+    categories:
+    - scanner data
+    - mobile phone data
+    - credit card data
+    - bank account data
   sort: "date desc"
   page-size: 6
 ---

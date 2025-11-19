@@ -23,7 +23,11 @@ listing:
   contents: ../*/index.qmd
   type: grid
   include:
-    categories: ["données de téléphonie mobile"]
+    categories:
+    - données de caisse
+    - données de téléphonie mobile
+    - données CB
+    - données comptes bancaires
   sort: "date desc"
   page-size: 6
 categories:
