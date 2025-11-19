@@ -36,6 +36,24 @@ uv sync
 uv run template.py test
 ```
 
+
+### Harmonization of categories
+private data sources : introduce code snippets for YAML part.
+```{json}
+	"add private data tags (FR)": {
+		"prefix": "prdata",
+		"body": "    - données de caisse\n    - données de téléphonie mobile\n    - données CB\n    - données comptes bancaires",
+		"description": "adds categories for listing of similar projects related to private data sources"
+	},
+
+	"add private data tags (EN)": {
+		"prefix": "en_prdata",
+		"body": "    - scanner data\n    - mobile phone data\n    - credit card data\n    - bank account data",
+		"description": "adds categories for listing of similar projects related to private data sources"
+	},
+```
+When a new category is created, do a find and replace all to add this category to all the listing to ensure consistency.
+
 ### Translate a page to english
 Config :
 - have a deepl API KEY stored as `DEEPL_API_KEY`
