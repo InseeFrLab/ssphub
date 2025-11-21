@@ -11,7 +11,7 @@ listing:
   include:
     categories:
     - webscraping
-    - IPC
+    - CPI
     - mobile phone data
     - scanner data
   sort: date desc
@@ -20,7 +20,7 @@ listing:
 categories:
 - in production
 - webscraping
-- IPC
+- CPI
 - Insee
 ---
 

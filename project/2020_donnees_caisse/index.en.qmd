@@ -10,7 +10,7 @@ categories:
 - automatic coding
 - scanner data
 - COICOP
-- IPC
+- CPI
 - in production
 listing:
 - id: similar-project-codifauto
@@ -44,9 +44,10 @@ listing:
 
 |  | Classification of checkout data using machine learning |
 | --- | --------------------------------------------------------------------------------- |
-| **Project details** | scanner data has been used by INSEE to calculate the CPI since 2010 (see the [working paper](https://www.insee.fr/fr/information/4254225?%20sommaire=4254170) on the subject). For each barcode, each day and each point of sale, till data gives the quantities sold as well as the turnover and/or the price at which the product was sold. To use this data, however, you need to know **which product is behind a barcode**. Currently, the IPC relies on a barcode repository, purchased from a service provider, which provides very detailed and structured information on the characteristics of these products. This information is subject to a charge and does not cover all products. **The aim of the experiment is to identify the steps involved in textual processing of the labels, as well as the classification or other methods that would enable the labels to be coded automatically, without going through the repository, in the Coicop nomenclature for the IPC** and on the groupings used for Emagsa as part of the Nosica project, which aims to integrate cashier data into the production of short-term activity indicators. It is also testing their performance on test data sets.   |
+| **Project details** | scanner data has been used by INSEE to calculate the CPI since 2010. For each barcode, each day and each point of sale, till data gives the quantities sold as well as the turnover and/or the price at which the product was sold. To use this data, however, you need to know **which product is behind a barcode**. Currently, the IPC relies on a barcode repository, purchased from a service provider, which provides very detailed and structured information on the characteristics of these products. This information is subject to a charge and does not cover all products. **The aim of the experiment is to identify the steps involved in textual processing of the labels, as well as the classification or other methods that would enable the labels to be coded automatically, without going through the repository, in the Coicop nomenclature for the IPC** and on the groupings used for Emagsa as part of the Nosica project, which aims to integrate cashier data into the production of short-term activity indicators. It is also testing their performance on test data sets.   |
 | **Stakeholders** | Insee      |
 | **Project results** | scanner data is now used in production to calculate inflation and business activity indicators.  |
+| **Project products and documentation** |- [Using Scanner Data to Calculate the Consumer Price Index](https://www.insee.fr/en/information/5014725?%20sommaire=5014796), courrier des statistiques n°3 de l'Insee, décembre 2019 <br> - [Scanner data and quality adjustment](https://www.insee.fr/en/statistiques/2912652), documents de travail n°F1704 de l'Insee, août 2017  |
 | **Project code** |  - <https://github.com/InseeFrLab/predicat> API for classifying checkout labels <br> -  <https://github.com/InseeFrLab/product-labelling> : Application for labelling scanner data       |
 
 # Similar projects
