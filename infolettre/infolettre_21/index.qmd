@@ -72,7 +72,7 @@ Une foule d'article a été publiée dernièrement sur l'open-source, l'inter-d�
 
 ### L'open source dépend du travail gratuit d'inconnus
 - De récents incidents ont rappelé que **notre monde numérique est très interdépendant** de solutions parfois lointaines et qu'un bug dans un logiciel critique, open-source ou payant, se répercute rapidement à échelle mondiale.
-Cloudflare a par exemple connu une [panne le 18 novembre 2025[^1]](https://blog.cloudflare.com/18-november-2025-outage/), mettant KO de nombreux sites, y compris ceux qui détectent les pannes. La panne était due à une mise en production (ratée du coup).
+Cloudflare a par exemple connu une [panne le 18 novembre 2025](https://blog.cloudflare.com/18-november-2025-outage/)[^1], mettant KO de nombreux sites, y compris ceux qui détectent les pannes. La panne était due à une mise en production (ratée du coup).
 
 ::: {layout-ncol="2"}
 ![En 2020, par [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="333"}
