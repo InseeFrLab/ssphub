@@ -24,21 +24,21 @@ categories:
 
 # Bienvenue à la **vingt et unième infolettre** !
 
-Début décembre, c'est le deuxième moment dur de l'année, après juin. En septembre, on se disait qu'on aurait le temps de faire toutes ces choses-là d'ici Noël, large, et peut-être même un peu plus. Et puis paf, on se réveille, c'est déjà début décembre, la TO DO est loin d'être finie et la préparation des fêtes de fin d'année arrive à grands pas.
+Début décembre, c'est le deuxième moment dur de l'année, après juin. En septembre, on se disait qu'on aurait le temps de faire toutes ces choses-là d'ici Noël, large, et peut-être même un peu plus. Et puis paf, on se réveille, c'est déjà début décembre, la to-do est loin d'être finie et la préparation des fêtes de fin d'année arrive à grand pas.
 Allez, courage, dernier sprint de 2025 !
 
 # L'infographie
 
-Ce mois-ci, découvrez un outil pour visualiser les **panaches de pollution aux particules fines (PM2.5)** émis par 9 500 sites les plus polluants dans plus de 2 500 zones urbaines. En appliquant des modèles scientifiques aux conditions météorologiques réelles, **[ClimateTRACE](https://climatetrace.org/air-pollution)** reconstitue une journée type de pollution par ces sites. Spoiler : la pollution de la centrale électrique d'Ivry s'envole jusque très très loin ...
+Ce mois-ci, découvrez un outil pour visualiser les **panaches de pollution aux particules fines (PM2.5)** émis par 9 500 sites les plus polluants dans plus de 2 500 zones urbaines. En appliquant des modèles scientifiques aux conditions météorologiques réelles, [**ClimateTRACE**](https://climatetrace.org) reconstitue une journée type de pollution par ces sites. Spoiler : la pollution de la centrale électrique d'Ivry s'envole jusque très très loin ...
 
-![](climatetrace.png){width="800"}
+![source: [ClimateTRACE](https://climatetrace.org/air-pollution)](climatetrace.png){width="800"}
 
 
 # Actus du réseau
 
 ## La troisième journée du réseau a eu lieu le 1^er^ décembre
 
-Le 1er décembre 2025 a eu lieu la troisième journée annuelle du réseau.
+Le 1^er^ décembre 2025, le réseau a organisé sa troisième journée annuelle.
 Avec quatre présentations, deux interventions extérieures et un atelier de partage, cette édition a réuni une soixantaine de participants en présentiel et distanciel pour des échanges riches et constructifs.
 Merci à tous les participants pour votre participation active !
 
@@ -52,7 +52,7 @@ Merci à tous les participants pour votre participation active !
 Un atelier d’échange entre les participants a permis d’explorer l’utilisation des outils d’IA pour les data scientists et statisticiens au quotidien :
 1.	Quels sont nos cas d’usage?
 2.	Quels outils privilégier, et quels sont leurs avantages et limites ?
-Nos échanges, fluides et nombreux, ont permis de partager des retours d’expérience concrets et de partager nos bonnes (et moins bonnes) pratiques.
+Nos échanges, riches et nombreux, ont permis de partager des retours d’expérience concrets et nos bonnes (et moins bonnes) pratiques.
 
 ### Invités
 - La **Dinum** a présenté les dernières évolutions de [data.gouv.fr](https://www.data.gouv.fr/), dont `data.pass`.
@@ -71,7 +71,7 @@ Une foule d'article a été publiée dernièrement sur l'open-source, l'inter-d�
 ## Open-source et souveraineté
 
 ### L'open source dépend du travail gratuit d'inconnus
-- Des récents incidents ont rappelé que **notre monde numérique est très très interdépendant** et qu'un bug dans un logiciel critique, open-source ou payant, se répercute rapidement à échelle mondiale.
+- De récents incidents ont rappelé que **notre monde numérique est très interdépendant** de solutions parfois lointaines et qu'un bug dans un logiciel critique, open-source ou payant, se répercute rapidement à échelle mondiale.
 Cloudflare a par exemple connu une [panne le 18 novembre 2025[^1]](https://blog.cloudflare.com/18-november-2025-outage/), mettant KO de nombreux sites, y compris ceux qui détectent les pannes. La panne était due à une mise en production (ratée du coup).
 
 ::: {layout-ncol="2"}
@@ -85,29 +85,29 @@ La dépendance numérique en images
 [^1]: Ils ont même eu la bonne idée d'avoir une deuxième panne, plus rapidement réglée, le jour de rédaction de cette infolettre 🙃.
 
 - Au delà de la simple inter-dépendance à des logiciels payant, le code open-source est souvent **maintenu gratuitement par des inconnus**, comme les secours en mer ou les pompiers volontaires.
-Par exemple, un [débat](https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/) est apparu après que Google, utilisant ses algorithmes d'IA, a mis en avant trop de bugs à FFmpeg, un framework vidéo open source utilisé notamment par Chrome, Firefox et YouTube.
-Ces bugs étant réparés par des mainteneurs, tous bénévoles, qui ne peuvent plus suivre le rythme, certaines personnes appellent Google, et plus largement les entreprises qui bénéficient de l'open-source, à financer directement la maintenance.
-Sur cette histoire, FFmpeg a décidé de ne plus s'engager à réparer tous les bugs qui lui sont remontés.
+Par exemple, un [débat](https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/) est apparu après que FFmpeg, un framework open-source essentiel (utilisé par Chrome, Firefox, YouTube…), s’est retrouvé submergé de bugs trouvés par l’IA de Google.
+Ces bugs étant réparés par des mainteneurs, tous bénévoles, qui ne peuvent plus suivre le rythme, certaines personnes appellent Google, et plus largement les entreprises qui bénéficient de l'open-source et génèrent des revenus supérieurs aux PIB de certains pays, à financer directement la maintenance des frameworks qu'ils utilisent.
 
 - Des sous, des sous, oui mais combien ? On parle étonnamment de sommes plutôt faibles : à titre de comparaison, la fondation qui gère **Python** a un budget annuel de 5 millions de dollars.
-On l'apprend notamment dans ce [blog de post](https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html) où la fondation explique pourquoi elle a refusé un financement de 1,5 million de dollars du gouvernement américain après l'avoir demandé (si vous n'avez pas le temps: c'est parce que les clauses incluait de ne pas faire de programme DEI sur tout l'ensemble de l'activité de la fondation).
+On l'apprend notamment dans ce [billet de blog](https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html) où la fondation explique pourquoi elle a refusé un financement de 1,5 million de dollars du gouvernement américain après l'avoir demandé (si vous n'avez pas le temps: c'est parce que le financement venait avec l'engagement de ne pas faire de promotion sur les thèmes de la diversité, de l'équité et de l'inclusion ).
 
 ### Des alternatives existent
 - **Blois** : La ville a choisi de prendre la fin des mises à jour de Windows 10 comme une opportunité et de basculer vers [PrimTux](https://www.blois.fr/info/2025/11/numeriquelibre-primtux), une distribution Linux éducative.
 - **Cour internationale de justice (ICC)** : En 2025, la Cour internationale de justice (qui dépend de l'ONU) a été ciblée par des sanctions américaines.
-Des versions contradictoires existent ensuite pour savoir si Microsoft a  volontairement coupé l'accès du président de la Cour à ses mails avant de le rétablir ou si cela était juste un incident.
-Toujours est-il que la Cour internationale de justice a annoncé en octobre 2025 souhaiter utiliser dorénavant **des solutions européennes**, comme rapporté par le [Handelsblatt (auf Deutsch)](https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html).
+Les versions divergent ensuite : Microsoft a-t-il volontairement coupé l'accès du président de la Cour à ses mails avant de le rétablir ou cela était-il juste un incident?
+Toujours est-il que la Cour internationale de justice a annoncé en octobre 2025 son intention de basculer vers **des solutions européennes**, comme rapporté par le [Handelsblatt (auf Deutsch)](https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html).
 
 
 ## IA, IA, IA
 
 ### Les modèles de langage seraient inversibles
-Une étude récente ([Nikolaou et al., 2025](https://arxiv.org/abs/2510.15511)) montre que les modèles de language sont **injectifs**[^2] : chaque entrée est mappée à une représentation interne unique. Le papier met en place un algorithme, **SipIt**, qui est ainsi capable de reconstruire le prompt original !
+Une étude récente ([Nikolaou et al., 2025](https://arxiv.org/abs/2510.15511)) montre que les modèles de language sont **injectifs**[^2] : chaque entrée est mappée à une représentation interne unique.
+Le papier propose par ailleurs un algorithme, **SipIt**, capable de reconstruire le prompt original avec 100% de réussite et rapidement.
 
 [^2]: vieux rappel de maths : injectif veut dire à peu près que si deux objects transformés sont les mêmes, c'est qu'à les objets avant transformation sont les mêmes.
 
 ## Very big data isn't dead
-- Du mal à faire tourner des tables de 2Go ?
+- Du mal à faire tourner des tables de 2 Go ?
 Imaginez le CERN, où le laboratoire du LHCb génère **25 millions de collisions de protons par seconde**, soit la paille de 4 To de données par seconde.
 Comment faire ?
 Comme expliqué dans [ce post](https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/), ils ont mis en place l'infrastructure pour filtrer les données et ne garder que 10 Go de données générées par seconde.
@@ -119,14 +119,14 @@ C'est un peu la citation de Einstein "Do not worry about your difficulties in ma
 
 ### Nouveaux outils
 - **R** : [Jarl](https://r-consortium.org/posts/jarl-just-another-r-linter/), un nouveau linter pour R, conçu pour être simple et efficace.
-- **[Murmure](https://murmure.al1x-ai.com/).** : Un outil d'IA pour générer des résumés et des analyses de texte en local.
+- [**Murmure**](https://murmure.al1x-ai.com/) : Un outil d'IA open-source pour générer des résumés et des analyses de texte hors ligne et en local, développé par [`Al1X-AI`](https://www.al1x-ai.com/).
 
 ### Ressources et formation
 - **IA** : [Gender Bias in Large Language Models](https://mikexcohen.substack.com/p/gender-bias-in-large-language-models) explique de manière très pédagogique le fonctionnement des LLM
 - **Python** : [Python is Not a Great Language for Data Science](https://blog.genesmindsmachines.com/p/python-is-not-a-great-language-for) : comment démarrer en Python, et une comparaison (subjective) entre Python et R
-- **Docker** : Pour (un peu) démystifier les conteneurs, [voici un tuto pour](https://muhammadraza.me/2024/building-container-runtime-python/) en construire un avec Python
+- **Docker** : [Voici un tuto](https://muhammadraza.me/2024/building-container-runtime-python/) pour (un peu) démystifier les conteneurs et en construire un avec Python.
 
 ### Fun
-- [**Advent of Code**](https://adventofcode.com/) : Un arbre de Noël pour développeurs (au niveau certain). Côté Insee, un canal Tchap existe !
-- **GenZ vs Boomers** : Si vous ne savez pas si vous êtes côté boomer ou genZ, allez faire un tour sur [genzplyr](https://github.com/hadley/genzplyr) et [boomerplyr](https://bradlindblad.github.io/boomerplyr/) : vous comprendrez qu'il y a l'un des deux packages que vous ne comprenez pas. Je sais de quel côté je suis 👴.
+- [**Advent of Code**](https://adventofcode.com/) : Un arbre de Noël pour développeurs (au niveau certain).
+- **GenZ vs Boomers** : Si vous ne savez pas si vous êtes côté boomer ou genZ, allez faire un tour sur [genzplyr](https://github.com/hadley/genzplyr) et [boomerplyr](https://bradlindblad.github.io/boomerplyr/) : vous comprendrez vite qu'il y a l'un des deux packages que vous ne comprenez pas. Je sais de quel côté je suis 👴.
 
