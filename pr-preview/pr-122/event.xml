@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>SSPHub</title>
+<link>https://ssphub.netlify.app/event.html</link>
+<atom:link href="https://ssphub.netlify.app/event.xml" rel="self" type="application/rss+xml"/>
+<description>Blog du réseau des data scientists de la statistique publique</description>
+<generator>quarto-1.8.26</generator>
+<lastBuildDate>Mon, 15 Sep 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Troisième journée du SSPHub</title>
+  <link>https://ssphub.netlify.app/talk/2025-12-01-network-day/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="inscription" class="level1">
+<h1>Inscription</h1>
+<p>👉️ Les inscriptions se font <a href="https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator">ici</a>. 👈️ Possibilité de participer en présentiel et en ligne.</p>
+</section>
+<section id="agenda" class="level1">
+<h1>Agenda</h1>
+<ul>
+<li><strong>9h30-10h</strong>: <strong>Accueil</strong>, moment de convivialité autour d’un café.</li>
+<li><strong>10h-11h30</strong>: <strong>Retours d’expérience</strong> ;
+<ul>
+<li>Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT) ;</li>
+<li>Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE) ;</li>
+</ul></li>
+<li><strong>11h30-12h15</strong>: <strong>Atelier de partage</strong> sur l’usage de l’IA pour les <em>data scientists</em> et statisticiens :
+<ul>
+<li>quels assistants de code pour un <em>data scientist</em> / statisticien ?</li>
+<li>assistants, agents &amp; vibe coding : partage d’expériences</li>
+</ul></li>
+<li><strong>12h15-14h</strong>: <strong>Pause déjeuner</strong>, moment de convivialité</li>
+<li><strong>14h-14h45</strong>: invité : Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</li>
+<li><strong>14h45-16h15</strong>: <strong>Retours d’expérience</strong> sur l’extraction de données et la classification :
+<ul>
+<li>Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice) ;</li>
+<li>Présentation du package torchTextClassifiers, qui propose un cadre unifié et agile pour la classification de texte, basé sur PyTorch et PyTorch Lightning (Insee - SSPLab) ;</li>
+</ul></li>
+<li><strong>16h15-16h45</strong>: <strong>Pause</strong>, moment de convivialité</li>
+<li><strong>16h45-17h30</strong>: <strong><em>Keynote</em></strong> présentation du portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, le service de l’exploration des médias utilisant l’IA pour établir les indicateurs sur les médias (personnalités les plus mentionnées, répartition du temps de parole entre femme et homme …)</li>
+<li><strong>17h30-19h30</strong>: <strong>Pot</strong>, moment de convivialité</li>
+</ul>
+<p>Pour toute information : <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></p>
+<p>📺️ La deuxième journée du réseau ayant eu lieu en 2024 est également <a href="../../talk/2024-10-14-network-day/index.html">disponible en replay</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>network</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/2025-12-01-network-day/</guid>
+  <pubDate>Mon, 15 Sep 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Atelier - Comment récupérer des données sous format Parquet ?</title>
+  <link>https://ssphub.netlify.app/talk/2025-04-16-Parquet/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>L’atelier a eu lieu le <strong>16 avril 2025 (15h - 16h30)</strong>, en présentiel à l’Insee et en distanciel pour les membres du réseau du SSP Hub. Environ 35 personnes ont participé de l’Insee (DG ou directions régionales), de différents services statistiques ministériels ou d’autres horizons. Merci à tous pour les échanges !</p>
+<section id="slides-de-la-présentation" class="level1">
+<h1>Slides de la présentation</h1>
+<div>
+<iframe class="slide-deck" style="width: 100%; height: 500px" src="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/parquet#/title-slide"></iframe>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides_button<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="32" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb2-32">slides_button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;p class="text-center"&gt;</span></span>
+<span id="cb2-33"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;a class="btn btn-primary btn-lg cv-download" href="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/parquet#/title-slide" target="_blank"&gt;</span></span>
+<span id="cb2-34"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;Voir les slides</span></span>
+<span id="cb2-35"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/a&gt;</span></span>
+<span id="cb2-36"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</section>
+<section id="documentation-de-latelier-replay" class="level1">
+<h1>Documentation de l’atelier &amp; <em>replay</em></h1>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://ssphub.netlify.app/talk/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
+</section>
+<section id="questions-contact" class="level1">
+<h1>Questions / contact</h1>
+<p>Si vous avez la moindre question 🤨, n’hésitez pas à contacter 📧 <em><a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></em>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Parquet</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/2025-04-16-Parquet/</guid>
+  <pubDate>Wed, 16 Apr 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+<item>
+  <title>Atelier - Comment récupérer des données par API ?</title>
+  <link>https://ssphub.netlify.app/talk/2025-04-09-API/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>L’atelier a eu lieu le <strong>9 avril 2025 (15h - 16h30)</strong>, en présentiel à l’Insee et en distanciel pour les membres du réseau du SSP Hub. Environ 35 personnes ont participé de l’Insee (DG ou directions régionales), de différents services statistiques ministériels ou d’autres horizons. Merci à tous pour les échanges !</p>
+<section id="slides-de-la-présentation" class="level1">
+<h1>Slides de la présentation</h1>
+<div>
+<iframe class="slide-deck" style="width: 100%; height: 500px" src="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/api.html#/title-slide/"></iframe>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides_button<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="32" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb2-32">slides_button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;p class="text-center"&gt;</span></span>
+<span id="cb2-33"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;a class="btn btn-primary btn-lg cv-download" href="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/api.html#/title-slide" target="_blank"&gt;</span></span>
+<span id="cb2-34"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;Voir les slides</span></span>
+<span id="cb2-35"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/a&gt;</span></span>
+<span id="cb2-36"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</section>
+<section id="documentation-de-latelier-replay" class="level1">
+<h1>Documentation de l’atelier &amp; <em>replay</em></h1>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://ssphub.netlify.app/talk/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
+</section>
+<section id="questions-contact" class="level1">
+<h1>Questions / contact</h1>
+<p>Si vous avez la moindre question 🤨, n’hésitez pas à contacter 📧 <em><a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></em>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>API</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/2025-04-09-API/</guid>
+  <pubDate>Wed, 09 Apr 2025 14:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
+</item>
+<item>
+  <title>Deuxième journée du SSPHub</title>
+  <link>https://ssphub.netlify.app/talk/2024-10-14-network-day/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="replay-de-la-deuxième-journée-du-ssphub-le-14-octobre-2024" class="level2">
+<h2 class="anchored" data-anchor-id="replay-de-la-deuxième-journée-du-ssphub-le-14-octobre-2024">Replay de la deuxième journée du SSPHub le 14 octobre 2024</h2>
+<p>Les sessions plénières de la journée du réseau sont disponibles ci-dessous:</p>
+<details>
+<summary>
+Séquencement de la vidéo et <em>slides</em>
+</summary>
+<ul>
+<li><p><strong>00:00-03:30</strong>: Introduction de la journée par Romain Lesur</p></li>
+<li><p><strong>03:30-46:30</strong>: <em>“Le blé vu du ciel : images satellitaires et prédiction des rendements agricoles à l’échelle de la parcelle”</em> (Service statistique ministériel du Ministère de l’Agriculture, de la souveraineté alimentaire et de la Forêt).</p></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="33" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 32;"><span id="cb1-33"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-34">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/agriculture.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-35">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides du SSM Agriculture"</span></span>
+<span id="cb1-36">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<ul>
+<li><strong>46:30-83:00</strong>: <em>“Identifier et classer les causes de décès en automatisant le traitement des certificats en langage naturel”</em> (CépiDC, Inserm)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="42" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 41;"><span id="cb2-42"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb2-43">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/cepidc.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-44">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides du CépiDC"</span></span>
+<span id="cb2-45">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<ul>
+<li><p><strong>86:00-123:00</strong>: <em>Keynote</em> de Pascal Rivière (chef de l’Inspection générale de l’Insee) <em>“Data science et statistique publique : contexte institutionnel et évolutions”</em></p></li>
+<li><p><strong>123:00-164:00</strong>: <em>“Extraction automatisée de tableaux dans des PDF pour la construction de statistiques d’entreprises”</em> (Insee)</p></li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="53" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 52;"><span id="cb3-53"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb3-54">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/#/title-slide"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb3-55">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Voir les slides de l'Insee"</span></span>
+<span id="cb3-56">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<ul>
+<li><strong>164:00-205:00</strong>: <em>“Scraper et retravailler les offres d’emploi en ligne pour permettre des analyses fines du marché du travail, le projet JOCAS”</em> (Dares: Service statistique ministériel du Ministère du Travail et de l’Emploi)</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="62" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 61;"><span id="cb4-62"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb4-63">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/jocas.pptx"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb4-64">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides de la DARES"</span></span>
+<span id="cb4-65">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<ul>
+<li><strong>A partir de 205:00</strong>: <em>Keynote</em> de Pierre Etienne Devineau (ex-DINUM) sur les enjeux rencontrés par le projet Albert autour de l’entraînement et de la mise en production de grands modèles de langage (LLM) francophones.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="71" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 70;"><span id="cb5-71"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb5-72">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/albert.pptx"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb5-73">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides de la keynote"</span></span>
+<span id="cb5-74">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</details>
+<p>Quelques photos de l’événement:</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/GMT20241014-080309_Recording_3840x2160.mp4"></video></div>
+<div id="fig-ssphub-images" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ssphub-images-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img1.jpg" class="lightbox" data-gallery="my-gallery" title="Figure&nbsp;1: "><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img1.jpg" class="img-fluid figure-img"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img2.jpg" class="lightbox" data-gallery="my-gallery" title="Figure&nbsp;1: "><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img2.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img3.jpg" class="lightbox" data-gallery="my-gallery" title="Figure&nbsp;1: "><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img3.jpg" class="img-fluid figure-img"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img4.jpg" class="lightbox" data-gallery="my-gallery" title="Figure&nbsp;1: "><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img4.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img5.jpg" class="lightbox" data-gallery="my-gallery" title="Figure&nbsp;1: "><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img5.jpg" class="img-fluid figure-img"></a></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img6.jpg" class="lightbox" data-gallery="my-gallery" title="Figure&nbsp;1: "><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img6.jpg" class="img-fluid figure-img"></a></p>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ssphub-images-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" class="lightbox" data-gallery="my-gallery" title="Figure&nbsp;1: "><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" class="img-fluid figure-img"></a>
+</figcaption>
+</figure>
+</div>
+<p>Les <em>slides</em> des différentes présentations peuvent être téléchargées ⬆️</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="107" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 106;"><span id="cb6-107"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb6-108">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb6-109"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb6-110"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb6-111"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb6-112"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb6-113"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb6-114">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb6-115">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<details>
+<summary>
+Rappel du programme de la journée
+</summary>
+<ul>
+<li><strong>9h30-10h</strong>: <strong>Accueil</strong>, moment de convivialité autour d’un café.</li>
+<li><strong>10h-11h30</strong>: <strong>Retours d’expérience</strong> de projets innovants autour de la classification de textes ou d’images :
+<ul>
+<li>Le blé vu du ciel : images satellitaires et prédiction des rendements agricoles à l’échelle de la parcelle (SSM Agriculture) ;</li>
+<li>Identifier et classer les causes de décès en automatisant le traitement des certificats en langage naturel (CépiDC, Inserm).</li>
+</ul></li>
+<li><strong>11h30-12h15</strong>: <strong>Atelier de réflexion</strong> autour des applications des méthodes de classification de textes ou d’images sur les données des * participants.</li>
+<li><strong>12h15-14h</strong>: <strong>Pause déjeuner</strong>, moment de convivialité.</li>
+<li><strong>14h-14h30</strong>: Pascal Rivière (Chef de l’inspection générale de l’Insee) interviendra sur le thème <strong>“Data science et statistique publique : contexte institutionnel et évolutions”</strong>.</li>
+<li><strong>14h30-16h</strong>: <strong>Retours d’expérience</strong> de projets faisant intervenir un processus innovant d’extraction de données :
+<ul>
+<li>Extraction automatisée de tableaux dans des PDF pour la construction de statistiques d’entreprises (Insee) ;</li>
+<li>Scraper et retravailler les offres d’emploi en ligne pour permettre des analyses fines du marché du travail, le projet JOCAS (Dares, SSM Travail) ;</li>
+</ul></li>
+<li><strong>16h-16h30</strong>: <strong>Pause</strong>, moment de convivialité.</li>
+<li><strong>16h30-17h30</strong>: <strong><em>Keynote</em></strong> par Pierre Etienne Devineau (Ministères sociaux) et Léo Guillaume (Dinum). Les enjeux rencontrés par le projet Albert autour de l’entraînement et de la mise en production de grands modèles de langage (LLM) francophones.</li>
+<li><strong>17h30-19h30</strong>: <strong>Pot</strong>, moment de convivialité.</li>
+</ul>
+</details>
+<p>Pour toute information : <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></p>
+<p>📺️ La première journée du réseau ayant eu lieu en 2023 est également <a href="../../talk/2023-ssphubday/index.html">disponible en replay</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>dataviz</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/2024-10-14-network-day/</guid>
+  <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
+  <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>Quarto : Une évolution de R Markdown pour des travaux statistiques reproductibles</title>
+  <link>https://ssphub.netlify.app/talk/2004-05-02-quarto/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="christophe-dervieux-quarto-une-évolution-de-r-markdown-pour-des-travaux-statistiques-reproductibles" class="level2">
+<h2 class="anchored" data-anchor-id="christophe-dervieux-quarto-une-évolution-de-r-markdown-pour-des-travaux-statistiques-reproductibles">Christophe Dervieux, "<code>Quarto</code> : Une évolution de <code>R Markdown</code> pour des travaux statistiques reproductibles"</h2>
+<p><strong>2 mai (15h - 16h30)</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="29" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 28;"><span id="cb1-29"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides_button<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-05-02-quarto/dervieux_quarto_20240502.mp4"></video></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="37" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 36;"><span id="cb2-37">slides <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://cderv.github.io/2024-quarto-evolution-rmd/#/title-slide"</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="41" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 40;"><span id="cb3-41">slides_button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;p class="text-center"&gt;</span></span>
+<span id="cb3-42"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb3-43"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;Voir les slides</span></span>
+<span id="cb3-44"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/a&gt;</span></span>
+<span id="cb3-45"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div>
+<iframe class="slide-deck" style="width: 100%; height: 500px" src="https://cderv.github.io/2024-quarto-evolution-rmd/#/title-slide/"></iframe>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>quarto</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/2004-05-02-quarto/</guid>
+  <pubDate>Thu, 02 May 2024 15:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/2004-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
+</item>
+<item>
+  <title>Eric Mauvière, “La dataviz pour donner du sens aux données et communiquer un message”</title>
+  <link>https://ssphub.netlify.app/talk/2024-02-29-mauviere/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="eric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message" class="level2">
+<h2 class="anchored" data-anchor-id="eric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message">Eric Mauvière, "La dataviz pour donner du sens aux données et communiquer un message"</h2>
+<p><strong>29 février (15h - 16h)</strong></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="20" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 19;"><span id="cb1-20"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides_button<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="28" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb2-28">slides <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/conf_ssphub_item7-1.pdf"</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="32" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb3-32">slides_button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`&lt;p class="text-center"&gt;</span></span>
+<span id="cb3-33"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb3-34"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;Télécharger les slides</span></span>
+<span id="cb3-35"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/a&gt;</span></span>
+<span id="cb3-36"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<p>Un exemple issu de la présentation d’Eric :</p>
+<p><img src="https://ssphub.netlify.app/talk/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
+
+
+</section>
+
+ ]]></description>
+  <category>dataviz</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/2024-02-29-mauviere/</guid>
+  <pubDate>Thu, 29 Feb 2024 15:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
+</item>
+<item>
+  <title>Première journée du SSPHub</title>
+  <link>https://ssphub.netlify.app/talk/2023-ssphubday/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-04-17-reseau/20230417_journee_reseau.mp4"></video></div>
+
+
+
+ ]]></description>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/2023-ssphubday/</guid>
+  <pubDate>Wed, 29 Mar 2023 15:00:00 GMT</pubDate>
+  <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
+</item>
+<item>
+  <title>“OCRisation, état de l’art et projets auxquels participe Teklia” par Christopher Kermorvant</title>
+  <link>https://ssphub.netlify.app/talk/ocrisation-teklia/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Le replay de l’événement est disponible ci-dessous.</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/2023-ocrisation-replay.mp4"></video></div>
+<p>Les slides présentées par Christopher Kermorvant sont aussi disponibles <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/slides.pptx">ici</a>.</p>
+<p><img src="https://ssphub.netlify.app/talk/ocrisation-teklia/ocr.png" class="img-fluid"></p>
+
+
+
+ ]]></description>
+  <category>OCR</category>
+  <category>deep learning</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/ocrisation-teklia/</guid>
+  <pubDate>Wed, 29 Mar 2023 15:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/ocrisation-teklia/ocr.png" medium="image" type="image/png" height="68" width="144"/>
+</item>
+<item>
+  <title>Présentation du projet Meta Academy - Carpentries</title>
+  <link>https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Replay de l’événement:</p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-carpentries/video1849039065.mp4"></video></div>
+
+
+
+ ]]></description>
+  <category>documentation</category>
+  <guid>https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/</guid>
+  <pubDate>Tue, 28 Mar 2023 15:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/2023-03-MetaAcademy.png" medium="image" type="image/png" height="89" width="144"/>
+</item>
+<item>
+  <title>Présentation des packages R et Python pour accéder à l’open data de l’Insee</title>
+  <link>https://ssphub.netlify.app/talk/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Présentation autour des <em>packages</em> développés par des data scientists pour faciliter la récupération des données officielles de l’Insee :</p>
+<ul>
+<li>Pierre Lamarche a présenté le package <code>R</code> <a href="https://github.com/InseeFrLab/DoReMIFaSol"><code>doremifasol</code></a>. Les slides sont consultables sur <a href="https://presentation-doremifasol.lab.sspcloud.fr/">https://presentation-doremifasol.lab.sspcloud.fr/</a></li>
+<li>Hadrien Leclerc a présenté le package <code>Python</code> <a href="https://github.com/InseeFrLab/pynsee"><code>pynsee</code></a>. Les slides sont <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-02-opendata_Insee/pynsee_slides.pdf">disponibles en téléchargement</a></li>
+</ul>
+<section id="replay" class="level2">
+<h2 class="anchored" data-anchor-id="replay">Replay</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-02-opendata_Insee/opendata-20230213.mp4"></video></div>
+
+
+</section>
+
+ ]]></description>
+  <category>doremifasol</category>
+  <category>pynsee</category>
+  <category>open data</category>
+  <category>Insee</category>
+  <category>event</category>
+  <guid>https://ssphub.netlify.app/talk/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/</guid>
+  <pubDate>Mon, 13 Feb 2023 15:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/featured.png" medium="image" type="image/png" height="106" width="144"/>
+</item>
+<item>
+  <title>Présentation de gridviz par Julien Gaffuri</title>
+  <link>https://ssphub.netlify.app/talk/presentation-de-gridviz-par-julien-gaffuri/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Présentation par Julien Gaffuri de la <a href="https://eurostat.github.io/gridviz/">librairie <code>Gridviz</code></a>. Le <strong>replay est disponible plus bas 👇</strong></p>
+<p><img src="https://ssphub.netlify.app/talk/presentation-de-gridviz-par-julien-gaffuri/gridviz.png" class="img-fluid"></p>
+<p><code>Gridviz</code> est une librairie <em>open source</em> (<a href="https://github.com/eurostat/gridviz">disponible sur <code>Github</code></a>) consacrée à la visualisation cartographique de données carroyées (ou données géolocalisées par des <em>(x,y)</em> à carroyer). Très efficace, elle permet de représenter de manière fluide des volumes importants de données.</p>
+<section id="replay" class="level2">
+<h2 class="anchored" data-anchor-id="replay">Replay</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-01-gridviz/gridviz-20230120.mp4"></video></div>
+
+
+</section>
+
+ ]]></description>
+  <category>gridviz</category>
+  <category>dataviz</category>
+  <guid>https://ssphub.netlify.app/talk/presentation-de-gridviz-par-julien-gaffuri/</guid>
+  <pubDate>Fri, 20 Jan 2023 11:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/presentation-de-gridviz-par-julien-gaffuri/featured.png" medium="image" type="image/png" height="141" width="144"/>
+</item>
+<item>
+  <title>Présentation d’Observable par Nicolas Lambert</title>
+  <link>https://ssphub.netlify.app/talk/presentation-dobservable-par-nicolas-lambert/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Présentation d’<a href="https://observablehq.com/explore"><code>observable</code></a> par <a href="https://observablehq.com/@neocartocnrs">Nicolas Lambert</a> sous la forme d’un <a href="https://observablehq.com/@neocartocnrs/observable-et-donnees-spatiales"><em>notebook</em> interactif</a>.</p>
+<p>Le replay est disponible plus bas 👇</p>
+<p><a href="https://observablehq.com/"><code>observable</code></a> est une plateforme de dataviz réactive qui propose des notebooks communautaires de visualisations de données:</p>
+<p><img src="https://ssphub.netlify.app/talk/presentation-dobservable-par-nicolas-lambert/observable2.png" class="img-fluid"></p>
+<p><img src="https://ssphub.netlify.app/talk/presentation-dobservable-par-nicolas-lambert/observable1.png" class="img-fluid"></p>
+<p>Quelques ressources supplémentaires utiles:</p>
+<ul>
+<li>Les habitués de <code>ggplot2</code> trouveront sans doute <a href="https://observablehq.com/@observablehq/plot-from-ggplot2">ce <em>notebook</em></a> utile ;</li>
+<li>Présentation de l’utilisation de <code>duckdb</code> pour l’utilisation dans <code>Observable</code> de données volumineuses par <a href="https://observablehq.com/@observablehq/duckdb">ici</a> ;</li>
+<li>Documentation sur l’usage d’<code>Observable</code> avec <code>quarto</code> par <a href="https://quarto.org/docs/interactive/ojs/">là</a>.</li>
+</ul>
+<section id="replay" class="level2">
+<h2 class="anchored" data-anchor-id="replay">Replay</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2022-11-observable/observable-20221116.mp4"></video></div>
+
+
+</section>
+
+ ]]></description>
+  <category>observable</category>
+  <category>dataviz</category>
+  <guid>https://ssphub.netlify.app/talk/presentation-dobservable-par-nicolas-lambert/</guid>
+  <pubDate>Wed, 16 Nov 2022 10:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/talk/presentation-dobservable-par-nicolas-lambert/featured.png" medium="image" type="image/png" height="144" width="144"/>
+</item>
+</channel>
+</rss>
