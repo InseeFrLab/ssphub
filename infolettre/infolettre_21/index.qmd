@@ -20,85 +20,102 @@ categories:
   - Infolettre
 ---
 
-Bienvenue à la **vingt et unième infolettre** ! Début décembre, c'est le deuxième moment dur de l'année, après juin. En septembre on se disait qu'on aurait le temps de faire toutes ces choses là d'ici Noël, large, et puis même peut-être un peu plus. Et puis paf, on se réveille, c'est déjà début décembre, la TO DO est loin d'être finie et la préparation des fêtes de fin d'année arrive à grands pas.
+# Bienvenue à la **vingt et unième infolettre** !
 
+Début décembre, c'est le deuxième moment dur de l'année, après juin. En septembre, on se disait qu'on aurait le temps de faire toutes ces choses-là d'ici Noël, large, et peut-être même un peu plus. Et puis paf, on se réveille, c'est déjà début décembre, la TO DO est loin d'être finie et la préparation des fêtes de fin d'année arrive à grands pas.
 Allez, courage, dernier sprint de 2025 !
 
 # L'infographie
 
-https://climatetrace.org/air-pollution/ghs-fua_2702
+Ce mois-ci, découvrez un outil pour visualiser les **panaches de pollution aux particules fines (PM2.5)** émis par 9 500 sites les plus polluants dans plus de 2 500 zones urbaines. En appliquant des modèles scientifiques aux conditions météorologiques réelles, **[ClimateTRACE](https://climatetrace.org/air-pollution)** reconstitue une journée type de pollution par ces sites. Spoiler : la pollution de la centrale électrique d'Ivry s'envole jusque très très loin ...
 
-Ce mois-ci, un dessin humoristique, mais pas tant que cela, sur ces systèmes dont on dépend sans s'en rendre compte. Ces derniers mois, des incidents (déploiement raté chez un [fournisseur inconnu (de moi)](https://blog.cloudflare.com/18-november-2025-outage/), une [coupure de courant aux États-Unis](https://datacentremagazine.com/news/aws-down-the-billion-dollar-impact-of-cloud-dependency)) ont conduit internet à ralentir voire ne plus fonctionner parce qu'on s'est trouvé dépendants de choses inattendues. Cela mérite une pause de quelques secondes si l'on parle de souveraineté ...
+![](climatetrace.png){width="800"}
 
-::: {layout-ncol="2"}
-![Version de 2020, de [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="315"}
-
-![Version de 2025, de [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:op6wni25fodc5lwc423al3qh/bafkreigvn33occzi5rpgvkxprghjuhe3pvs2hz5momapkv2wxcqaczqhvq@jpeg){width="333"}
-:::
 
 # Actus du réseau
 
-## La troisième journée du réseau a eu lieu 📅 1 décembre - La Tréso (Malakoff)
+## La troisième journée du réseau a eu lieu le 1^er^ décembre
 
-Le 1er décembre 2025, le réseau SSP Hub a organisé sa journée annuelle dédiée à la data-science et à l’innovation. Avec quatre présentations, deux interventions extérieures et un atelier de partage, cette édition a réuni une soixantaine de participants en présentiel et distanciel pour des échanges riches et constructifs. Merci à tous les participants pour leur participation active !
+Le 1er décembre 2025 a eu lieu la troisième journée annuelle du réseau. Avec quatre présentations, deux interventions extérieures et un atelier de partage, cette édition a réuni une soixantaine de participants en présentiel et distanciel pour des échanges riches et constructifs. Merci à tous les participants pour leur participation active !
 
-Les présentations
-1.	Offre LLM du SSPCloud : L’Insee (DIIT) a présenté les nouvelles fonctionnalités basées sur les modèles de langage (LLM) disponibles sur le SSPCloud, intégrant de manière plus poussée des fonctionnalités de complétion de code et d'analyses de données.
-2.	Extraction des compétences dans JOCAS : La DARES et l’Insee (DEE) ont partagé une version test de leur projet d’extraction des compétences numériques dans les offres d’emploi, combinant reconnaissance d’entités nommées et classification par LLM. Ce projet vise à améliorer l’analyse des métiers et des parcours professionnels.
-3.	Automatisation des infos rapides justice : Le SSER (SSM Justice) a présenté son package R chartegraphique.sser, conçu pour automatiser la production des infos rapides justice. Les détails techniques sont disponibles sur le site des Journées de Méthodologie Statistique (JMS).
-4.	Package de classification textuelle : L’Insee (SSPLab) a présenté torchTextClassifiers, un package Python de classification textuelle, étendant fastText et reposant sur PyTorch. Ce package permet d’entraîner des modèles maisons à taille réduite en gardant le contrôle de leur architecture.
+### Les présentations
+1.	**Offre LLM du SSPCloud** : L’Insee (DIIT) a présenté les nouvelles fonctionnalités basées sur les modèles de langage (LLM) disponibles sur le SSPCloud, intégrant de manière plus poussée des fonctionnalités de complétion de code et d'analyses de données.
+2.	**Extraction des compétences dans JOCAS** : La DARES et l’Insee (DEE) ont partagé une version test de leur projet d’extraction des compétences numériques dans les offres d’emploi, combinant reconnaissance d’entités nommées et classification par LLM. Ce projet vise à améliorer l’analyse des métiers et des parcours professionnels.
+3.	**Automatisation des infos rapides justice** : Le SSER (SSM Justice) a présenté son package R `chartegraphique.sser`, conçu pour automatiser la production des infos rapides justice. Les détails techniques sont disponibles sur le site des Journées de Méthodologie Statistique (JMS).
+4.	**Package de classification textuelle** : L’Insee (SSPLab) a présenté torchTextClassifiers, un package Python de classification textuelle, étendant fastText et reposant sur PyTorch. Ce package permet d’entraîner des modèles maisons à taille réduite en gardant le contrôle de leur architecture.
 
-Atelier collaboratif : l’IA de code au quotidien
+### Atelier collaboratif
 Un atelier d’échange entre les participants a permis d’explorer l’utilisation des outils d’IA pour les data scientists et statisticiens au quotidien :
 1.	Quels sont nos cas d’usage?
 2.	Quels outils privilégier, et quels sont leurs avantages et limites ?
 Nos échanges, fluides et nombreux, ont permis de partager des retours d’expérience concrets et de partager nos bonnes (et moins bonnes) pratiques.
 
-Invités
-Deux invités ont élargi nos horizons et présenté leurs projets data :
-1.	La Dinum a présenté les dernières évolutions de data.gouv.fr, dont notamment data.pass qui vise à numériser l’accès aux données entre administrations.
-2.	L’INA a présenté data.ina, un portail permettant de construire des indicateurs de suivi des médias grâce à des modèles de transcription automatisée et de reconnaissance d’entités nommées.
-
-Le détail des présentations et le replay de la journée sera publié sur la page de l’événement.
+### Invités
+- La **Dinum** a présenté les dernières évolutions de [data.gouv.fr](https://www.data.gouv.fr/), dont `data.pass`.
+- L’**INA** a présenté [data.ina](https://data.ina.fr/), un portail pour construire des indicateurs de suivi des médias.
 
 
-## Présentation de Cartographia - 📅 13 janvier 2026 - format mixte (Montrouge et en ligne)
+## Prochain événement : présentation de Cartographia - 📅 13 janvier 2026 - format mixte (Montrouge et en ligne)
 
-[Françoise Bahoken](https://bsky.app/profile/fbahoken.bsky.social) et [Nicolas Lambert](https://bsky.app/profile/neocarto.bsky.social) vont venir nous parler de leur livre [Cartographia](https://neocarto.hypotheses.org/22669) et des questions de cartographie (!) passionnantes qu'ils y abordent. Cela se passera **le 13 janvier 2026** en début d'après-midi, en format mixte : présentiel (à la DG de l'Insee) et à distance. Nicolas Lambert était déjà intervenu pour nous présenter Observable, une librairie Javascript très pratique pour faire des dataviz ([ici](../../talk/presentation-dobservable-par-nicolas-lambert/index.qmd), pour rappel). Si cela vous intéresse, réservez donc votre début d'après-midi !
+Le prochain événement du réseau sera le 13 janvier 2026. [Françoise Bahoken](https://bsky.app/profile/fbahoken.bsky.social) et [Nicolas Lambert](https://bsky.app/profile/neocarto.bsky.social) viendront nous parler de leur livre [Cartographia](https://neocarto.hypotheses.org/22669) et des questions de cartographie passionnantes qu'ils y abordent. Nicolas Lambert était déjà intervenu pour présenter [Observable](https://observablehq.com/), une librairie JavaScript très pratique pour faire des dataviz.
+
 
 # Actualités
 
-Ce mois-ci, place aux belles images et à la cartographie. L'IA reste omniprésente : les institutions cherchent à favoriser la réutilisation de leurs données, certains contournent les LLM avec des consignes écrites « en blanc sur blanc », et les données d'entraînement sont au centre de l'attention.
-
-
 ## Open-source et souveraineté
-https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html
-https://www.ccomptes.fr/sites/default/files/2025-10/20251031-S2025-1479-Enjeux-souverainete-des-SI-civils-de-l-Etat.pdf
-https://www.blois.fr/info/2025/11/numeriquelibre-primtux
-https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science/european-open-science-cloud-eosc_en
-https://securite.developpez.com/actu/377480/La-Norvege-decouvre-des-fonctionnalites-d-acces-a-distance-cachees-dans-les-bus-electriques-Yutong-produits-en-Chine-dont-des-cartes-SIM-et-des-portes-derobees-permettant-l-arret-a-distance-depuis-l-etranger/
-https://www.linkedin.com/pulse/langle-mort-de-la-souverainet%C3%A9-num%C3%A9rique-pourquoi-lopen-franck-rouxel-ztrge
-FFmpeg to Google: Fund Us or Stop Sending Bugs : https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/
 
-## IA, IA, encore IA
-Language Models are Injective and Hence Invertible
+### L'open source dépend du travail gratuit d'inconnus
+Les récents incidents – pannes de Cloudflare, bugs dans FFmpeg, vulnérabilités dans les bus Yutong – ont rappelé que **notre monde numérique dépend de code open-source maintenu gratuitement par des inconnus**. Comme les secours en mer ou les pompiers volontaires, ces contributeurs assurent la sécurité d'infrastructures ou de logiciels très répandus, souvent sans financement.
 
-## Big-data
-https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/
+::: {layout-ncol="2"}
+![En 2020, par [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="333"}
 
-Fun
--https://github.com/hadley/genzplyr
-https://bradlindblad.github.io/boomerplyr/
-- https://adventofcode.com/ avec un événement Insee
+![En 2025, par [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:op6wni25fodc5lwc423al3qh/bafkreigvn33occzi5rpgvkxprghjuhe3pvs2hz5momapkv2wxcqaczqhvq@jpeg){width="333"}
 
-Ressources :
-- IA :
-  https://mikexcohen.substack.com/p/gender-bias-in-large-language-models
-- Logiciels :
-  - https://murmure.al1x-ai.com/
-- Python :
-  - https://blog.genesmindsmachines.com/p/python-is-not-a-great-language-for
-- R :
-  - Jarl: just another R linter https://r-consortium.org/posts/jarl-just-another-r-linter/
-- Docker :
-  Pour un peu démystifier les environnements conteneurisés: en construire un avec python : https://muhammadraza.me/2024/building-container-runtime-python/
+La dépendance numérique en images
+:::
+
+**Exemples marquants** :
+- **FFmpeg** : Ce framework, utilisé par Chrome, Firefox et YouTube, a dû patcher un bug lié à un jeu vidéo de 1995, soulignant l’absurdité de la situation. Google utilise des outils d’IA pour trouver des vulnérabilités, mais ne finance pas leur correction. [Lire l’article ici](https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/).
+- **Python** : La [Python Software Foundation a refusé un financement de 1,5 million de dollars de la NSF](https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html) en raison de clauses restrictives sur la diversité, l’équité et l’inclusion (DEI). Ce refus rappelle que les valeurs de l’open source ne sont pas négociables.
+- **Bus Yutong en Norvège** : Des [fonctionnalités d’accès à distance cachées](https://securite.developpez.com/actu/377480/La-Norvege-decouvre-des-fonctionnalites-d-acces-a-distance-cachees-dans-les-bus-electriques-Yutong-produits-en-Chine-dont-des-cartes-SIM-et-des-portes-derobees-permettant-l-arret-a-distance-depuis-l-etranger/) ont été découvertes, permettant l’arrêt à distance des bus depuis la Chine. Un rappel que la souveraineté ne se limite pas au logiciel.
+
+### Des alternatives existent
+- **Blois** : La ville a choisi de basculer vers [PrimTux](https://www.blois.fr/info/2025/11/numeriquelibre-primtux), une distribution Linux éducative, montrant que des choix souverains sont possibles même pour des usages critiques.
+- **Cour internationale de justice (ICC)** : En 2020, la Cour a dû migrer en urgence ses systèmes après des rumeurs de coupure d’accès à ses outils de travail par Microsoft, dans un contexte de sanctions américaines. Bien que [l’étendue réelle de ces restrictions reste floue](https://www.politico.eu/article/microsoft-did-not-cut-services-international-criminal-court-president-american-sanctions-trump-tech-icc-amazon-google/), l’ICC a **lancé un processus officiel pour remplacer Microsoft par des solutions européennes**, comme rapporté par le [Handelsblatt](https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html). Ce cas illustre à quel point la dépendance aux acteurs privés peut devenir un risque géopolitique – et pourquoi la souveraineté numérique exige des actions concrètes.
+
+
+## IA, IA, IA
+
+### Les modèles de langage seraient inversibles
+Une étude récente ([Nikolaou et al., 2025](https://arxiv.org/abs/2510.15511)) montre que les modèles de language sont **injectifs** (vieux rappel de maths : injectif veut dire à peu près que si deux objects transformés sont les mêmes, c'est qu'à les objets avant transformation sont les mêmes) : chaque entrée est mappée à une représentation interne unique. Le papier met en place un algorithme, **SipIt**, qui est ainsi capable de reconstruire le prompt original ! Cela
+
+
+### FFmpeg vs Google : qui paie pour la sécurité ?
+FFmpeg, le framework open source utilisé par Chrome, Firefox et YouTube, a appelé Google à financer le projet ou à cesser de signaler des bugs trouvés par ses outils d'IA. Les mainteneurs, tous bénévoles, ne peuvent plus suivre le rythme des rapports de vulnérabilités sans ressources supplémentaires. [Lire l'article ici](https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/).
+
+**Points clés** :
+- Google utilise des outils d'IA pour trouver des bugs, mais ne contribue pas à leur correction.
+- FFmpeg a patché un bug lié à un jeu vidéo de 1995, soulignant l'absurdité de la situation.
+- La communauté open source demande un financement équitable pour les projets critiques.
+
+## Very big data isn't dead
+- Du mal à faire tourner des tables de 2Go ? Imaginez le CERN, où le laboratoire du LHCb génère **25 millions de collisions de protons par seconde**, soit la paille de 4 To de données par seconde. Comment faire ? Comme expliqué dans [ce post](https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/), ils ont mis en place l'infrastructure pour filtrer les données et ne garder que 10 Go de données générées par seconde. C'est un peu la citation de Einstein "Do not worry about your difficulties in mathematics; I can assure you that mine are still greater."
+
+![Filtering data in real time, LHCb](https://lhcb-outreach.web.cern.ch/wp-content/uploads/2022/08/Run3_Trigger_LHCb-1024x560.png)
+
+## Ressources et fun
+
+### Nouveaux outils
+- **R** : [Jarl](https://r-consortium.org/posts/jarl-just-another-r-linter/), un nouveau linter pour R, conçu pour être simple et efficace.
+- **[Murmure](https://murmure.al1x-ai.com/).** : Un outil d'IA pour générer des résumés et des analyses de texte en local.
+
+### Ressources et formation
+- **IA** : [Gender Bias in Large Language Models](https://mikexcohen.substack.com/p/gender-bias-in-large-language-models) explique de manière très pédagogique le fonctionnement des LLM
+- **Python** : [Python is Not a Great Language for Data Science](https://blog.genesmindsmachines.com/p/python-is-not-a-great-language-for) : comment démarrer en Python, et une comparaison (subjective) entre Python et R
+- **Docker** : Pour (un peu) démystifier les conteneurs, [voici un tuto pour](https://muhammadraza.me/2024/building-container-runtime-python/) en construire un avec Python
+
+### Fun
+- **Advent of Code** : L'Insee organise un événement autour de l'Advent of Code 2025. Une excellente occasion de se challenger en programmation !
+- **GenZ vs Boomers** : Si vous ne savez pas si vous êtes côté boomer ou genZ, allez faire un tour sur [genzplyr](https://github.com/hadley/genzplyr) et [boomerplyr](https://bradlindblad.github.io/boomerplyr/) : vous comprendrez qu'il y a l'un des deux packages que vous ne comprenez pas.
+
