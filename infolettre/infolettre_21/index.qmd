@@ -1,0 +1,104 @@
+---
+title: ""
+
+description: |
+  Infolettre du mois de __décembre 2025__
+
+# Date published
+date: '2025-12-10'
+number: 21
+
+authors:
+  - Nicolas
+
+image: newsletter_21.png
+
+tags:
+
+
+categories:
+  - Infolettre
+---
+
+Bienvenue à la **vingt et unième infolettre** ! Début décembre, c'est le deuxième moment dur de l'année, après juin. En septembre on se disait qu'on aurait le temps de faire toutes ces choses là d'ici Noël, large, et puis même peut-être un peu plus. Et puis paf, on se réveille, c'est déjà début décembre, la TO DO est loin d'être finie et la préparation des fêtes de fin d'année arrive à grands pas.
+
+Allez, courage, dernier sprint de 2025 !
+
+# L'infographie
+
+https://climatetrace.org/air-pollution/ghs-fua_2702
+
+Ce mois-ci, un dessin humoristique, mais pas tant que cela, sur ces systèmes dont on dépend sans s'en rendre compte. Ces derniers mois, des incidents (déploiement raté chez un [fournisseur inconnu (de moi)](https://blog.cloudflare.com/18-november-2025-outage/), une [coupure de courant aux États-Unis](https://datacentremagazine.com/news/aws-down-the-billion-dollar-impact-of-cloud-dependency)) ont conduit internet à ralentir voire ne plus fonctionner parce qu'on s'est trouvé dépendants de choses inattendues. Cela mérite une pause de quelques secondes si l'on parle de souveraineté ...
+
+::: {layout-ncol="2"}
+![Version de 2020, de [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="315"}
+
+![Version de 2025, de [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:op6wni25fodc5lwc423al3qh/bafkreigvn33occzi5rpgvkxprghjuhe3pvs2hz5momapkv2wxcqaczqhvq@jpeg){width="333"}
+:::
+
+# Actus du réseau
+
+## La troisième journée du réseau a eu lieu 📅 1 décembre - La Tréso (Malakoff)
+
+Le 1er décembre 2025, le réseau SSP Hub a organisé sa journée annuelle dédiée à la data-science et à l’innovation. Avec quatre présentations, deux interventions extérieures et un atelier de partage, cette édition a réuni une soixantaine de participants en présentiel et distanciel pour des échanges riches et constructifs. Merci à tous les participants pour leur participation active !
+
+Les présentations
+1.	Offre LLM du SSPCloud : L’Insee (DIIT) a présenté les nouvelles fonctionnalités basées sur les modèles de langage (LLM) disponibles sur le SSPCloud, intégrant de manière plus poussée des fonctionnalités de complétion de code et d'analyses de données.
+2.	Extraction des compétences dans JOCAS : La DARES et l’Insee (DEE) ont partagé une version test de leur projet d’extraction des compétences numériques dans les offres d’emploi, combinant reconnaissance d’entités nommées et classification par LLM. Ce projet vise à améliorer l’analyse des métiers et des parcours professionnels.
+3.	Automatisation des infos rapides justice : Le SSER (SSM Justice) a présenté son package R chartegraphique.sser, conçu pour automatiser la production des infos rapides justice. Les détails techniques sont disponibles sur le site des Journées de Méthodologie Statistique (JMS).
+4.	Package de classification textuelle : L’Insee (SSPLab) a présenté torchTextClassifiers, un package Python de classification textuelle, étendant fastText et reposant sur PyTorch. Ce package permet d’entraîner des modèles maisons à taille réduite en gardant le contrôle de leur architecture.
+
+Atelier collaboratif : l’IA de code au quotidien
+Un atelier d’échange entre les participants a permis d’explorer l’utilisation des outils d’IA pour les data scientists et statisticiens au quotidien :
+1.	Quels sont nos cas d’usage?
+2.	Quels outils privilégier, et quels sont leurs avantages et limites ?
+Nos échanges, fluides et nombreux, ont permis de partager des retours d’expérience concrets et de partager nos bonnes (et moins bonnes) pratiques.
+
+Invités
+Deux invités ont élargi nos horizons et présenté leurs projets data :
+1.	La Dinum a présenté les dernières évolutions de data.gouv.fr, dont notamment data.pass qui vise à numériser l’accès aux données entre administrations.
+2.	L’INA a présenté data.ina, un portail permettant de construire des indicateurs de suivi des médias grâce à des modèles de transcription automatisée et de reconnaissance d’entités nommées.
+
+Le détail des présentations et le replay de la journée sera publié sur la page de l’événement.
+
+
+## Présentation de Cartographia - 📅 13 janvier 2026 - format mixte (Montrouge et en ligne)
+
+[Françoise Bahoken](https://bsky.app/profile/fbahoken.bsky.social) et [Nicolas Lambert](https://bsky.app/profile/neocarto.bsky.social) vont venir nous parler de leur livre [Cartographia](https://neocarto.hypotheses.org/22669) et des questions de cartographie (!) passionnantes qu'ils y abordent. Cela se passera **le 13 janvier 2026** en début d'après-midi, en format mixte : présentiel (à la DG de l'Insee) et à distance. Nicolas Lambert était déjà intervenu pour nous présenter Observable, une librairie Javascript très pratique pour faire des dataviz ([ici](../../talk/presentation-dobservable-par-nicolas-lambert/index.qmd), pour rappel). Si cela vous intéresse, réservez donc votre début d'après-midi !
+
+# Actualités
+
+Ce mois-ci, place aux belles images et à la cartographie. L'IA reste omniprésente : les institutions cherchent à favoriser la réutilisation de leurs données, certains contournent les LLM avec des consignes écrites « en blanc sur blanc », et les données d'entraînement sont au centre de l'attention.
+
+
+## Open-source et souveraineté
+https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html
+https://www.ccomptes.fr/sites/default/files/2025-10/20251031-S2025-1479-Enjeux-souverainete-des-SI-civils-de-l-Etat.pdf
+https://www.blois.fr/info/2025/11/numeriquelibre-primtux
+https://research-and-innovation.ec.europa.eu/strategy/strategy-research-and-innovation/our-digital-future/open-science/european-open-science-cloud-eosc_en
+https://securite.developpez.com/actu/377480/La-Norvege-decouvre-des-fonctionnalites-d-acces-a-distance-cachees-dans-les-bus-electriques-Yutong-produits-en-Chine-dont-des-cartes-SIM-et-des-portes-derobees-permettant-l-arret-a-distance-depuis-l-etranger/
+https://www.linkedin.com/pulse/langle-mort-de-la-souverainet%C3%A9-num%C3%A9rique-pourquoi-lopen-franck-rouxel-ztrge
+FFmpeg to Google: Fund Us or Stop Sending Bugs : https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/
+
+## IA, IA, encore IA
+Language Models are Injective and Hence Invertible
+
+## Big-data
+https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/
+
+Fun
+-https://github.com/hadley/genzplyr
+https://bradlindblad.github.io/boomerplyr/
+- https://adventofcode.com/ avec un événement Insee
+
+Ressources :
+- IA :
+  https://mikexcohen.substack.com/p/gender-bias-in-large-language-models
+- Logiciels :
+  - https://murmure.al1x-ai.com/
+- Python :
+  - https://blog.genesmindsmachines.com/p/python-is-not-a-great-language-for
+- R :
+  - Jarl: just another R linter https://r-consortium.org/posts/jarl-just-another-r-linter/
+- Docker :
+  Pour un peu démystifier les environnements conteneurisés: en construire un avec python : https://muhammadraza.me/2024/building-container-runtime-python/
