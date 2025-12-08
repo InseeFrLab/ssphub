@@ -53,7 +53,7 @@ website:
   announcement:
     icon: bi-megaphone
     dismissable: true
-    content: "📺️ Les présentations et le replay de la journée du réseau, le 1^er^ décembre 2025, [sont disponibles](/talk/2025-12-01-network-day/index.qmd)
+    content: "📺️ Les présentations et le replay de la journée du réseau, le 1^er^ décembre 2025, [sont disponibles](/talk/2025-12-01-network-day/index.qmd)"
     position: below-navbar
 
 format:
