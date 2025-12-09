@@ -16,7 +16,6 @@ categories:
   - Insee
   - Retrospective
   - Infolettre
-  - Retrospective
 
 image: featured.png
 
@@ -28,7 +27,7 @@ filters:
 
 *Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
 
-La [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/) promettait
+La [rétrospective de l'année 2022](../../blog/retrospective2022/index.qmd) promettait
 une version plus personnalisée, inspirée des visualisations proposées par
 les réseaux sociaux pour synthétiser l'activité de leurs utilisateurs.
 
@@ -39,7 +38,7 @@ Vous pourrez retrouver à la fin de la _newsletter_ des informations plus classi
 événements, retour sur les actions du réseau, formations, etc. 
 
 Elle permet aussi d'illustrer le potentiel d'outils qui ont été présentés
-dans la [rétrospective de l'année 2022](https://ssphub.netlify.app/post/retrospective2022/).
+dans la [rétrospective de l'année 2022](../../blog/retrospective2022/index.qmd).
 Toutes les figures sont réactives, notamment quand vous passez votre souris dessus. 
 Les principaux ingrédients qui ont été ici utilisés, et qui avaient été mentionnés dans la 
 première partie de la rétrospective, sont `Observable`, `Quarto` et `DuckDB`. Les données
@@ -102,7 +101,7 @@ disponible sur [la plateforme](https://observablehq.com/@linogaliana/2022-year-r
 pour les utilisateurs intéressés par la réutilisation des figures, des données sous-jacentes ou
 des utilitaires ayant permis d'aboutir à certaines visualisations. 
 Le code source de cette page, disponible
-sur le [`Github inseefrlab/ssphub`](https://raw.githubusercontent.com/InseeFrLab/ssphub/main/content/post/recap2022/index.md)
+sur le [`Github inseefrlab/ssphub`](https://raw.githubusercontent.com/InseeFrLab/ssphub/main/content/blog/recap2022/index.md)
 illustre la manière dont les figures peuvent être intégrées à un site _web_ depuis la
 plateforme [`observablehq`](https://observablehq.com/). Bien que j'ai privilégié la
 méthode `Runtime JS`, qui permet d'intégrer la visualisation sans le 
@@ -132,7 +131,7 @@ Le réseau a organisé __trois événements__ pendant l'année 2022. D'abord, av
 deux _open hours_ ont eu lieu. Cet événement informel prenant la forme
 de retour d'expérience a été l'occasion de discussions stimulantes 
 autour de d'usage de la _data science_ pour l'administration.
-En novembre, l'[événement autour d'`Observable`](/talk/presentation-dobservable-par-nicolas-lambert/)
+En novembre, l'[événement autour d'`Observable`](/event/presentation-dobservable-par-nicolas-lambert/)
 animé par [Nicolas Lambert](https://observablehq.com/@neocartocnrs)
 a réuni près de 50 personnes. 
 
@@ -276,7 +275,7 @@ il est nécessaire d'avoir le plus d'enseignants possibles pour cette formation.
 cela, un appel à candidat pour une __formation de formateurs__ a été diffusée
 à l'Insee et dans les services
 statistiques ministériels. Si vous êtes intéressés et ne l'avez pas reçu, n'hésitez pas à envoyer
-un mail à ssphub-contact@insee.fr
+un mail à {{< var contact.email >}}.
 
 En attendant,
 les supports de ces formations sont déjà disponibles
