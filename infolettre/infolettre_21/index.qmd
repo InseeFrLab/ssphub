@@ -80,36 +80,43 @@ Nicolas Lambert était déjà intervenu pour présenter [Observable](https://obs
 
 
 # Actualités
-Une foule d'article a été publiée dernièrement sur l'open-source, l'inter-dépendance avec des solutions payantes, le coût caché de la souveraineté numérique. Et, bizarrement, il y a plutôt moins d'articles sur l'IA.
+Une foule d'article a été publiée dernièrement sur l'importance de l'open-source, son inter-dépendance avec les solutions payantes, le coût caché de sa maintenance et enfin l'impact sur la souveraineté numérique.
+Et, bizarrement, il y a moins d'articles sur l'IA ce mois-ci 🤷‍♀️.
 
 ## Open-source et souveraineté
 
 ### L'open source dépend du travail gratuit d'inconnus
-- De récents incidents ont rappelé que **notre monde numérique est très interdépendant** de solutions parfois lointaines et qu'un bug dans un logiciel critique, open-source ou payant, se répercute rapidement à échelle mondiale.
-Cloudflare a par exemple connu une [panne le 18 novembre 2025](https://blog.cloudflare.com/18-november-2025-outage/)[^1], mettant KO de nombreux sites, y compris ceux qui détectent les pannes. La panne était due à une mise en production (ratée du coup).
+- De récents incidents ont rappelé que **notre monde numérique est très interdépendant** de solutions parfois lointaines.
+Un bug dans un logiciel critique, open-source ou payant, se répercute ainsi rapidement à échelle mondiale.
+Cloudflare a par exemple connu une [panne le 18 novembre 2025](https://blog.cloudflare.com/18-november-2025-outage/)[^1], mettant KO de nombreux sites, y compris [downdetector](https://downdetector.fr/) qui signale les pannes.
+La panne était due à une mise en production (ratée du coup).
 
 ::: {layout-ncol="2"}
 ![En 2020, par [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="333"}
 
-![En 2025, par [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](xkcd_2025.jpg){width="333"}
+![En 2025, par [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](xkcd_2025.jpg){width="350"}
 
 La dépendance numérique en images
 :::
 
 [^1]: Ils ont même eu la bonne idée d'avoir une deuxième panne, plus rapidement réglée, le jour de rédaction de cette infolettre 🙃.
 
-- Au delà de la simple inter-dépendance à des logiciels payant, le code open-source est souvent **maintenu gratuitement par des inconnus**, comme les secours en mer ou les pompiers volontaires.
-Par exemple, un [débat](https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/) est apparu après que FFmpeg, un framework open-source essentiel (utilisé par Chrome, Firefox, YouTube…), s’est retrouvé submergé de bugs trouvés par l’IA de Google.
-Ces bugs étant réparés par des mainteneurs, tous bénévoles, qui ne peuvent plus suivre le rythme, certaines personnes appellent Google, et plus largement les entreprises qui bénéficient de l'open-source et génèrent des revenus supérieurs aux PIB de certains pays, à financer directement la maintenance des frameworks qu'ils utilisent.
+- Au delà de la simple inter-dépendance à des logiciels payant, le code open-source est souvent **maintenu gratuitement par des inconnus**, comme les secours en mer ou les pompiers volontaires qui sont assurés en partie par des bénévoles.
 
-- Des sous, des sous, oui mais combien ? On parle étonnamment de sommes plutôt faibles : à titre de comparaison, la fondation qui gère **Python** a un budget annuel de 5 millions de dollars.
-On l'apprend notamment dans ce [billet de blog](https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html) où la fondation explique pourquoi elle a refusé un financement de 1,5 million de dollars du gouvernement américain après l'avoir demandé (si vous n'avez pas le temps: c'est parce que le financement venait avec l'engagement de ne pas faire de promotion sur les thèmes de la diversité, de l'équité et de l'inclusion ).
+Un [débat](https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/) est ainsi apparu après que FFmpeg, un framework open-source vidéo largement utilisé (notamment par Chrome, Firefox ou YouTube), s’est retrouvé submergé de demande de correction de bugs, trouvés par l’IA de Google.
+Or dans l'open source, les bugs sont réparés par des mainteneurs, tous bénévoles, et qui ne peuvent plus suivre le rythme.
+Certaines personnes appellent ainsi Google, et plus largement les entreprises qui bénéficient de l'open-source et génèrent des revenus ~~supérieurs aux PIB de certains pays du monde~~, à financer directement la maintenance des outils qu'ils utilisent même si ce n'est pas qu'une question de financement.
+
+- L'open source veut des sous, des sous, des sous, oui mais combien ? On parle étonnamment de sommes plutôt faibles : à titre de comparaison, la fondation qui gère **Python** a un budget annuel de 5 millions de dollars.
+On l'apprend notamment dans ce [billet de blog](https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html) où la fondation explique pourquoi elle a refusé un financement de 1,5 million de dollars du gouvernement américain après l'avoir demandé
+(si vous n'avez pas le temps: c'est parce que le financement venait avec l'engagement de ne pas faire de promotion sur les thèmes de la diversité, de l'équité et de l'inclusion).
+
 
 ### Des alternatives existent
 - **Blois** : La ville a choisi de prendre la fin des mises à jour de Windows 10 comme une opportunité et de basculer vers [PrimTux](https://www.blois.fr/info/2025/11/numeriquelibre-primtux), une distribution Linux éducative.
 - **Cour internationale de justice (ICC)** : En 2025, la Cour internationale de justice (qui dépend de l'ONU) a été ciblée par des sanctions américaines.
 Les versions divergent ensuite : Microsoft a-t-il volontairement coupé l'accès du président de la Cour à ses mails avant de le rétablir ou cela était-il juste un incident?
-Toujours est-il que la Cour internationale de justice a annoncé en octobre 2025 son intention de basculer vers **des solutions européennes**, comme rapporté par le [Handelsblatt (auf Deutsch)](https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html).
+Toujours est-il que la Cour internationale de justice a annoncé en octobre 2025 son intention de basculer vers **des solutions européennes**, comme rapporté par le [Handelsblatt (auf Deutsch 🇩🇪)](https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html).
 
 
 ## IA, IA, IA
@@ -125,9 +132,11 @@ Le papier propose par ailleurs un algorithme, **SipIt**, capable de reconstruire
 Imaginez le CERN, où le laboratoire du LHCb génère **25 millions de collisions de protons par seconde**, soit la paille de 4 To de données par seconde.
 Comment faire ?
 Comme expliqué dans [ce post](https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/), ils ont mis en place l'infrastructure pour filtrer les données et ne garder que 10 Go de données générées par seconde.
-C'est un peu la citation de Einstein "Do not worry about your difficulties in mathematics; I can assure you that mine are still greater."
+C'est un peu la citation de Einstein :
 
-![Filtering data in real time, LHCb](https://lhcb-outreach.web.cern.ch/wp-content/uploads/2022/08/Run3_Trigger_LHCb-1024x560.png)
+> Do not worry about your difficulties in mathematics; I can assure you that mine are still greater.
+
+![Filtering data in real time, [LHCb](https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/)](https://lhcb-outreach.web.cern.ch/wp-content/uploads/2022/08/Run3_Trigger_LHCb-1024x560.png)
 
 ## Ressources et fun
 
