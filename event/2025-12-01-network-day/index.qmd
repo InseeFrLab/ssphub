@@ -14,6 +14,22 @@ echo: false
 
 ---
 
+# Photos de l'événement
+
+:::{.column-page}
+
+::: {layout-ncol=2}
+
+![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122703_diff.jpg)
+
+![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122643_diff.jpg)
+
+:::
+
+![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201115612_diff.jpg){width=100%}
+
+:::
+
 # Inscription
 👉️ Les inscriptions se font [ici](https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator). 👈️ Possibilité de participer en présentiel et en ligne.
 
@@ -35,6 +51,84 @@ echo: false
 - **16h45-17h30**: **_Keynote_** présentation du portail <https://data.ina.fr/>, le service de l’exploration des médias utilisant l'IA pour établir les indicateurs sur les médias (personnalités les plus mentionnées, répartition du temps de parole entre femme et homme ...)
 - **17h30-19h30**: **Pot**, moment de convivialité
 
+# Replay et présentations
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode yaml code-with-copy" src="https://ssphub.github.io/2025_network_day/"></iframe></div>
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf",
+  "Télécharger les slides"
+)
+```
+
+## Présentation de l'offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT)
+
+{{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4 >}}
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.pdf",
+  "Télécharger les slides"
+)
+```
+
+## Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi & Insee - DEE)
+{{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4 >}}
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.pdf",
+  "Télécharger les slides"
+)
+```
+
+
+## Quelles évolutions récentes et à venir sur [data.gouv](https://www.data.gouv.fr/) (Dinum)
+{{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4 >}}
+
+Présentation disponible sur [Figma](https://www.figma.com/deck/bGTGzYw9ZDrLGzbOzJbwJp/D%C3%89MO-INSEE-1-DECEMBRE?node-id=4-3555&viewport=-145%2C-74%2C0.69&t=wS4mpPXywS1FgL52-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1){target="_blank"}
+
+## Automatisation des [Infos rapides Justice](https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&items_per_page=10) grâce au package R `chartegraphique.sser` (SSER - SSM Justice)
+{{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4 >}}
+
+Le papier a été publié lors des [journées de méthodologie statistique 2025](https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/).
+
+
+## Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)
+{{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4 >}}
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode yaml code-with-copy" src="https://inseefrlab.github.io/codif-ape-prez/slides/jms-ttc-prez/"></iframe></div>
+
+
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.pdf",
+  "Télécharger les slides"
+)
+```
+
+
+## Le portail <https://data.ina.fr/>, produire des indicateurs de suivi des médias grâce à l'IA
+
+_Cf._ le portail <https://data.ina.fr/>
+
+
+```{ojs}
+//| echo: false
+function createButton(slides, message="Télécharger les slides"){
+  const button = html`
+  <p class="text-center">
+    <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+      <i class="fa-solid fa-file-arrow-down"></i>&ensp;${message}
+    </a>
+  </p>`
+  return button
+}
+```
+
+
+# Contact
 
 Pour toute information : <ssphub-contact@insee.fr>
 
