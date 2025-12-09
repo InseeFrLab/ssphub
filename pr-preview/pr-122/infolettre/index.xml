@@ -78,7 +78,7 @@ sur l&#39;actualité interne du réseau.
 </section>
 <section id="actualités" class="level1">
 <h1>Actualités</h1>
-<p>Une foule d’article a été publiée dernièrement sur l’importance de l’open-source, son inter-dépendance avec les solutions payantes, le coût caché de sa maintenance et enfin l’impact sur la souveraineté numérique. Et, bizarrement, il y a moins d’articles sur l’IA ce mois-ci 🤷‍♀️.</p>
+<p>Une foule d’articles a été publiée dernièrement sur l’importance de l’open-source, son inter-dépendance avec les solutions payantes, le coût caché de sa maintenance et enfin l’impact sur la souveraineté numérique. Et, bizarrement, il y a moins d’articles sur l’IA ce mois-ci 🤷‍♀️.</p>
 <section id="open-source-et-souveraineté" class="level2">
 <h2 class="anchored" data-anchor-id="open-source-et-souveraineté">Open-source et souveraineté</h2>
 <section id="lopen-source-dépend-du-travail-gratuit-dinconnus" class="level3">
@@ -112,9 +112,9 @@ sur l&#39;actualité interne du réseau.
 </div>
 </div>
 <ul>
-<li>Au delà de la simple inter-dépendance à des logiciels payant, le code open-source est souvent <strong>maintenu gratuitement par des inconnus</strong>, comme les secours en mer ou les pompiers volontaires qui sont assurés en partie par des bénévoles.</li>
+<li>Au delà de la simple inter-dépendance à des logiciels payants, le code open-source est souvent <strong>maintenu bénévolement par des inconnus</strong>, comme les secours en mer ou les pompiers volontaires qui sont assurés en partie par des bénévoles.</li>
 </ul>
-<p>Un <a href="https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/">débat</a> est ainsi apparu après que FFmpeg, un framework open-source vidéo largement utilisé (notamment par Chrome, Firefox ou YouTube), s’est retrouvé submergé de demande de correction de bugs, trouvés par l’IA de Google. Or dans l’open source, les bugs sont réparés par des mainteneurs, tous bénévoles, et qui ne peuvent plus suivre le rythme. Certaines personnes appellent ainsi Google, et plus largement les entreprises qui bénéficient de l’open-source et génèrent des revenus <del>supérieurs aux PIB de certains pays du monde</del>, à financer directement la maintenance des outils qu’ils utilisent même si ce n’est pas qu’une question de financement.</p>
+<p>Un <a href="https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/">débat</a> est ainsi apparu après que FFmpeg, un framework open-source vidéo largement utilisé (notamment par Chrome, Firefox ou YouTube), s’est retrouvé submergé de demande de correction de bugs, trouvés par l’IA de Google. Or dans l’open source, les bugs sont réparés par des mainteneurs, tous bénévoles, et qui ne peuvent plus suivre le rythme. Certaines personnes appellent ainsi Google, et plus largement les entreprises qui bénéficient de l’open-source et génèrent des revenus <del>supérieurs aux PIB de certains pays du monde</del>, à financer directement la maintenance des logiciels open-source qu’ils utilisent même si ce n’est pas qu’une question de financement.</p>
 <ul>
 <li>L’open source veut des sous, des sous, des sous, oui mais combien ? On parle étonnamment de sommes plutôt faibles : à titre de comparaison, la fondation qui gère <strong>Python</strong> a un budget annuel de 5 millions de dollars. On l’apprend notamment dans ce <a href="https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html">billet de blog</a> où la fondation explique pourquoi elle a refusé un financement de 1,5 million de dollars du gouvernement américain après l’avoir demandé (si vous n’avez pas le temps: c’est parce que le financement venait avec l’engagement de ne pas faire de promotion sur les thèmes de la diversité, de l’équité et de l’inclusion).</li>
 </ul>
