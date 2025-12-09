@@ -76,13 +76,13 @@
 </section>
 <section id="actualités" class="level1">
 <h1>Actualités</h1>
-<p>Une foule d’article a été publiée dernièrement sur l’open-source, l’inter-dépendance avec des solutions payantes, le coût caché de la souveraineté numérique. Et, bizarrement, il y a plutôt moins d’articles sur l’IA.</p>
+<p>Une foule d’article a été publiée dernièrement sur l’importance de l’open-source, son inter-dépendance avec les solutions payantes, le coût caché de sa maintenance et enfin l’impact sur la souveraineté numérique. Et, bizarrement, il y a moins d’articles sur l’IA ce mois-ci 🤷‍♀️.</p>
 <section id="open-source-et-souveraineté" class="level2">
 <h2 class="anchored" data-anchor-id="open-source-et-souveraineté">Open-source et souveraineté</h2>
 <section id="lopen-source-dépend-du-travail-gratuit-dinconnus" class="level3">
 <h3 class="anchored" data-anchor-id="lopen-source-dépend-du-travail-gratuit-dinconnus">L’open source dépend du travail gratuit d’inconnus</h3>
 <ul>
-<li>De récents incidents ont rappelé que <strong>notre monde numérique est très interdépendant</strong> de solutions parfois lointaines et qu’un bug dans un logiciel critique, open-source ou payant, se répercute rapidement à échelle mondiale. Cloudflare a par exemple connu une <a href="https://blog.cloudflare.com/18-november-2025-outage/">panne le 18 novembre 2025</a><sup>1</sup>, mettant KO de nombreux sites, y compris ceux qui détectent les pannes. La panne était due à une mise en production (ratée du coup).</li>
+<li>De récents incidents ont rappelé que <strong>notre monde numérique est très interdépendant</strong> de solutions parfois lointaines. Un bug dans un logiciel critique, open-source ou payant, se répercute ainsi rapidement à échelle mondiale. Cloudflare a par exemple connu une <a href="https://blog.cloudflare.com/18-november-2025-outage/">panne le 18 novembre 2025</a><sup>1</sup>, mettant KO de nombreux sites, y compris <a href="https://downdetector.fr/">downdetector</a> qui signale les pannes. La panne était due à une mise en production (ratée du coup).</li>
 </ul>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
@@ -97,7 +97,7 @@
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://ssphub.netlify.app/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="333"></p>
+<p><img src="https://ssphub.netlify.app/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
 <figcaption>En 2025, par <a href="https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d">Timothy A.</a></figcaption>
 </figure>
 </div>
@@ -110,15 +110,18 @@
 </div>
 </div>
 <ul>
-<li><p>Au delà de la simple inter-dépendance à des logiciels payant, le code open-source est souvent <strong>maintenu gratuitement par des inconnus</strong>, comme les secours en mer ou les pompiers volontaires. Par exemple, un <a href="https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/">débat</a> est apparu après que FFmpeg, un framework open-source essentiel (utilisé par Chrome, Firefox, YouTube…), s’est retrouvé submergé de bugs trouvés par l’IA de Google. Ces bugs étant réparés par des mainteneurs, tous bénévoles, qui ne peuvent plus suivre le rythme, certaines personnes appellent Google, et plus largement les entreprises qui bénéficient de l’open-source et génèrent des revenus supérieurs aux PIB de certains pays, à financer directement la maintenance des frameworks qu’ils utilisent.</p></li>
-<li><p>Des sous, des sous, oui mais combien ? On parle étonnamment de sommes plutôt faibles : à titre de comparaison, la fondation qui gère <strong>Python</strong> a un budget annuel de 5 millions de dollars. On l’apprend notamment dans ce <a href="https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html">billet de blog</a> où la fondation explique pourquoi elle a refusé un financement de 1,5 million de dollars du gouvernement américain après l’avoir demandé (si vous n’avez pas le temps: c’est parce que le financement venait avec l’engagement de ne pas faire de promotion sur les thèmes de la diversité, de l’équité et de l’inclusion ).</p></li>
+<li>Au delà de la simple inter-dépendance à des logiciels payant, le code open-source est souvent <strong>maintenu gratuitement par des inconnus</strong>, comme les secours en mer ou les pompiers volontaires qui sont assurés en partie par des bénévoles.</li>
+</ul>
+<p>Un <a href="https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/">débat</a> est ainsi apparu après que FFmpeg, un framework open-source vidéo largement utilisé (notamment par Chrome, Firefox ou YouTube), s’est retrouvé submergé de demande de correction de bugs, trouvés par l’IA de Google. Or dans l’open source, les bugs sont réparés par des mainteneurs, tous bénévoles, et qui ne peuvent plus suivre le rythme. Certaines personnes appellent ainsi Google, et plus largement les entreprises qui bénéficient de l’open-source et génèrent des revenus <del>supérieurs aux PIB de certains pays du monde</del>, à financer directement la maintenance des outils qu’ils utilisent même si ce n’est pas qu’une question de financement.</p>
+<ul>
+<li>L’open source veut des sous, des sous, des sous, oui mais combien ? On parle étonnamment de sommes plutôt faibles : à titre de comparaison, la fondation qui gère <strong>Python</strong> a un budget annuel de 5 millions de dollars. On l’apprend notamment dans ce <a href="https://pyfound.blogspot.com/2025/10/NSF-funding-statement.html">billet de blog</a> où la fondation explique pourquoi elle a refusé un financement de 1,5 million de dollars du gouvernement américain après l’avoir demandé (si vous n’avez pas le temps: c’est parce que le financement venait avec l’engagement de ne pas faire de promotion sur les thèmes de la diversité, de l’équité et de l’inclusion).</li>
 </ul>
 </section>
 <section id="des-alternatives-existent" class="level3">
 <h3 class="anchored" data-anchor-id="des-alternatives-existent">Des alternatives existent</h3>
 <ul>
 <li><strong>Blois</strong> : La ville a choisi de prendre la fin des mises à jour de Windows 10 comme une opportunité et de basculer vers <a href="https://www.blois.fr/info/2025/11/numeriquelibre-primtux">PrimTux</a>, une distribution Linux éducative.</li>
-<li><strong>Cour internationale de justice (ICC)</strong> : En 2025, la Cour internationale de justice (qui dépend de l’ONU) a été ciblée par des sanctions américaines. Les versions divergent ensuite : Microsoft a-t-il volontairement coupé l’accès du président de la Cour à ses mails avant de le rétablir ou cela était-il juste un incident? Toujours est-il que la Cour internationale de justice a annoncé en octobre 2025 son intention de basculer vers <strong>des solutions européennes</strong>, comme rapporté par le <a href="https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html">Handelsblatt (auf Deutsch)</a>.</li>
+<li><strong>Cour internationale de justice (ICC)</strong> : En 2025, la Cour internationale de justice (qui dépend de l’ONU) a été ciblée par des sanctions américaines. Les versions divergent ensuite : Microsoft a-t-il volontairement coupé l’accès du président de la Cour à ses mails avant de le rétablir ou cela était-il juste un incident? Toujours est-il que la Cour internationale de justice a annoncé en octobre 2025 son intention de basculer vers <strong>des solutions européennes</strong>, comme rapporté par le <a href="https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html">Handelsblatt (auf Deutsch 🇩🇪)</a>.</li>
 </ul>
 </section>
 </section>
@@ -132,12 +135,15 @@
 <section id="very-big-data-isnt-dead" class="level2">
 <h2 class="anchored" data-anchor-id="very-big-data-isnt-dead">Very big data isn’t dead</h2>
 <ul>
-<li>Du mal à faire tourner des tables de 2 Go ? Imaginez le CERN, où le laboratoire du LHCb génère <strong>25 millions de collisions de protons par seconde</strong>, soit la paille de 4 To de données par seconde. Comment faire ? Comme expliqué dans <a href="https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/">ce post</a>, ils ont mis en place l’infrastructure pour filtrer les données et ne garder que 10 Go de données générées par seconde. C’est un peu la citation de Einstein “Do not worry about your difficulties in mathematics; I can assure you that mine are still greater.”</li>
+<li>Du mal à faire tourner des tables de 2 Go ? Imaginez le CERN, où le laboratoire du LHCb génère <strong>25 millions de collisions de protons par seconde</strong>, soit la paille de 4 To de données par seconde. Comment faire ? Comme expliqué dans <a href="https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/">ce post</a>, ils ont mis en place l’infrastructure pour filtrer les données et ne garder que 10 Go de données générées par seconde. C’est un peu la citation de Einstein :</li>
 </ul>
+<blockquote class="blockquote">
+<p>Do not worry about your difficulties in mathematics; I can assure you that mine are still greater.</p>
+</blockquote>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://lhcb-outreach.web.cern.ch/wp-content/uploads/2022/08/Run3_Trigger_LHCb-1024x560.png" class="img-fluid figure-img"></p>
-<figcaption>Filtering data in real time, LHCb</figcaption>
+<figcaption>Filtering data in real time, <a href="https://lhcb-outreach.web.cern.ch/filtering-data-in-real-time/">LHCb</a></figcaption>
 </figure>
 </div>
 </section>
