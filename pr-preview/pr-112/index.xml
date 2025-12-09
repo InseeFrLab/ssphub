@@ -313,6 +313,22 @@ Astuce
 
 
 
+<section id="photos-de-lévénement" class="level1 page-columns page-full">
+<h1>Photos de l’événement</h1>
+<div class="column-page">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122703_diff.jpg" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122643_diff.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201115612_diff.jpg" class="img-fluid" style="width:100.0%"></p>
+</div>
+</section>
 <section id="inscription" class="level1">
 <h1>Inscription</h1>
 <p>👉️ Les inscriptions se font <a href="https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator">ici</a>. 👈️ Possibilité de participer en présentiel et en ligne.</p>
@@ -342,6 +358,183 @@ Astuce
 <li><strong>16h45-17h30</strong>: <strong><em>Keynote</em></strong> présentation du portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, le service de l’exploration des médias utilisant l’IA pour établir les indicateurs sur les médias (personnalités les plus mentionnées, répartition du temps de parole entre femme et homme …)</li>
 <li><strong>17h30-19h30</strong>: <strong>Pot</strong>, moment de convivialité</li>
 </ul>
+</section>
+<section id="replay-et-présentations" class="level1">
+<h1>Replay et présentations</h1>
+<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
+<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
+<iframe class="sourceCode yaml code-with-copy" src="https://ssphub.github.io/2025_network_day/">
+</iframe>
+</div></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="58" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 57;"><span id="cb1-58"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-59">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-60">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb1-61">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<section id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit" class="level2">
+<h2 class="anchored" data-anchor-id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit">Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4"></video></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="69" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 68;"><span id="cb2-69"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb2-70">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-71">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb2-72">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee" class="level2">
+<h2 class="anchored" data-anchor-id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee">Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4"></video></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb3-80">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb3-81">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb3-82">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum" class="level2">
+<h2 class="anchored" data-anchor-id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum">Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4"></video></div>
+<p>Présentation disponible sur <a href="https://www.figma.com/deck/bGTGzYw9ZDrLGzbOzJbwJp/D%C3%89MO-INSEE-1-DECEMBRE?node-id=4-3555&amp;viewport=-145%2C-74%2C0.69&amp;t=wS4mpPXywS1FgL52-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" target="_blank">Figma</a></p>
+</section>
+<section id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice" class="level2">
+<h2 class="anchored" data-anchor-id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice">Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
+<p>Le papier a été publié lors des <a href="https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/">journées de méthodologie statistique 2025</a>.</p>
+</section>
+<section id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab" class="level2">
+<h2 class="anchored" data-anchor-id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab">Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4"></video></div>
+<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
+<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
+<iframe class="sourceCode yaml code-with-copy" src="https://inseefrlab.github.io/codif-ape-prez/slides/jms-ttc-prez/">
+</iframe>
+</div></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="104" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 103;"><span id="cb4-104"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb4-105">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb4-106">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb4-107">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="le-portail-httpsdata.ina.fr-produire-des-indicateurs-de-suivi-des-médias-grâce-à-lia" class="level2">
+<h2 class="anchored" data-anchor-id="le-portail-httpsdata.ina.fr-produire-des-indicateurs-de-suivi-des-médias-grâce-à-lia">Le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, produire des indicateurs de suivi des médias grâce à l’IA</h2>
+<p><em>Cf.</em> le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="118" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 117;"><span id="cb5-118"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb5-119">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb5-120"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb5-121"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb5-122"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb5-123"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb5-124"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb5-125">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb5-126">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="contact" class="level1">
+<h1>Contact</h1>
 <p>Pour toute information : <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></p>
 <p>📺️ La deuxième journée du réseau ayant eu lieu en 2024 est également <a href="../../event/2024-10-14-network-day/index.html">disponible en replay</a>.</p>
 
@@ -1728,7 +1921,7 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1764921807425" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765285492393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1761,7 +1954,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1764921807426" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765285492394" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1804,7 +1997,7 @@ Enrichissement de données de caisses à partir de données d’informations nut
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1764921807424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765285492392" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1841,7 +2034,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1764921807424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="3" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1765285492393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1880,7 +2073,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1764921807424" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1765285492393" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1919,7 +2112,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1764921807423" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="5" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765285492392" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
