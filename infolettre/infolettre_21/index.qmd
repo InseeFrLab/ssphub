@@ -24,12 +24,18 @@ categories:
 
 # Bienvenue à la **vingt et unième infolettre** !
 
-Début décembre, c'est le deuxième moment dur de l'année, après juin. En septembre, on se disait qu'on aurait le temps de faire toutes ces choses-là d'ici Noël, large, et peut-être même un peu plus. Et puis paf, on se réveille, c'est déjà début décembre, la to-do est loin d'être finie et la préparation des fêtes de fin d'année arrive à grand pas.
-Allez, courage, dernier sprint de 2025 !
+Début décembre, c'est le deuxième moment dur de l'année après juin.
+En septembre, on se dit qu'on fera tout cela d'ici Noël, large.
+Et puis on se réveille, c'est déjà début décembre, la to-do est loin d'être finie et la préparation des fêtes de fin d'année arrive à grand pas.
+
+Allez, courage, **dernier sprint** de 2025 !
 
 # L'infographie
 
-Ce mois-ci, découvrez un outil pour visualiser les **panaches de pollution aux particules fines (PM2.5)** émis par 9 500 sites les plus polluants dans plus de 2 500 zones urbaines. En appliquant des modèles scientifiques aux conditions météorologiques réelles, [**ClimateTRACE**](https://climatetrace.org) reconstitue une journée type de pollution par ces sites. Spoiler : la pollution de la centrale électrique d'Ivry s'envole jusque très très loin ...
+Ce mois-ci, découvrez un outil pour visualiser les **panaches de pollution aux particules fines (PM2.5)** émis par 9 500 sites les plus polluants dans plus de 2 500 zones urbaines.
+[**ClimateTRACE**](https://climatetrace.org) reconstitue une journée type de pollution par ces sites à partir des conditions météorologiques réelles.
+
+Spoiler : la pollution de la centrale électrique d'Ivry s'envole jusque très très loin ...
 
 ![source: [ClimateTRACE](https://climatetrace.org/air-pollution)](climatetrace.png){width="800"}
 
@@ -43,25 +49,33 @@ Avec quatre présentations, deux interventions extérieures et un atelier de par
 Merci à tous les participants pour votre participation active !
 
 ### Les présentations
-1.	**Offre LLM du SSPCloud** : L’Insee (DIIT) a présenté les nouvelles fonctionnalités basées sur les modèles de langage (LLM) disponibles sur le SSPCloud, intégrant de manière plus poussée des fonctionnalités de complétion de code et d'analyses de données.
-2.	**Extraction des compétences dans JOCAS** : La DARES et l’Insee (DEE) ont partagé une version test de leur projet d’extraction des compétences numériques dans les offres d’emploi, combinant reconnaissance d’entités nommées et classification par LLM. Ce projet vise à améliorer l’analyse des métiers et des parcours professionnels.
-3.	**Automatisation des infos rapides justice** : Le SSER (SSM Justice) a présenté son package R `chartegraphique.sser`, conçu pour automatiser la production des infos rapides justice. Les détails techniques sont disponibles sur le site des Journées de Méthodologie Statistique (JMS).
-4.	**Package de classification textuelle** : L’Insee (SSPLab) a présenté torchTextClassifiers, un package Python de classification textuelle, étendant fastText et reposant sur PyTorch. Ce package permet d’entraîner des modèles maisons à taille réduite en gardant le contrôle de leur architecture.
+1.	**Offre LLM du SSPCloud** : L’Insee (DIIT) a présenté les [nouvelles fonctionnalités](https://llm.lab.sspcloud.fr/) basées sur les modèles de langage (LLM) disponibles sur le SSPCloud, intégrant de manière plus poussée des fonctionnalités de complétion de code et d'analyses de données.
+2.	**Extraction des compétences dans [JOCAS](https://dares.travail-emploi.gouv.fr/enquete-source/job-offers-collection-and-analysis-system)** : La DARES et l’Insee (DEE) ont partagé une version test de leur projet d’extraction des compétences numériques dans les offres d’emploi, combinant reconnaissance d’entités nommées et classification par LLM.
+Ce projet vise à améliorer l’analyse des métiers et des parcours professionnels.
+3.	**Automatisation des infos rapides justice** : Le SSER (SSM Justice) a présenté son package R `chartegraphique.sser`, conçu pour automatiser la production des [infos rapides justice](https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&items_per_page=10).
+Les détails techniques sont disponibles sur le site des [Journées de Méthodologie Statistique (JMS)](https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/).
+4.	**Package de classification textuelle** : L’Insee (SSPLab) a présenté [torchTextClassifiers](https://pypi.org/project/torchtextclassifiers/), un package Python de classification textuelle, étendant fastText et reposant sur PyTorch.
+Ce package permet d’entraîner des modèles maisons à taille réduite en gardant le contrôle de leur architecture.
 
 ### Atelier collaboratif
-Un atelier d’échange entre les participants a permis d’explorer l’utilisation des outils d’IA pour les data scientists et statisticiens au quotidien :
+Un atelier d’échange entre les participants a permis de partager nos pratiques quotidiennes d’utilisation des outils d’IA pour les data scientists et statisticiens :
+
 1.	Quels sont nos cas d’usage?
 2.	Quels outils privilégier, et quels sont leurs avantages et limites ?
+
 Nos échanges, riches et nombreux, ont permis de partager des retours d’expérience concrets et nos bonnes (et moins bonnes) pratiques.
 
 ### Invités
-- La **Dinum** a présenté les dernières évolutions de [data.gouv.fr](https://www.data.gouv.fr/), dont `data.pass`.
-- L’**INA** a présenté [data.ina](https://data.ina.fr/), un portail pour construire des indicateurs de suivi des médias.
+1. La **Dinum** a présenté les dernières évolutions de [data.gouv.fr](https://www.data.gouv.fr/), dont `data.pass`.
+2. L’**INA** a présenté [data.ina](https://data.ina.fr/), un portail pour construire des indicateurs de suivi des médias.
 
+Les présentations et le replay de la journée sont disponibles sur la [page de l'événement](../../talk/2025-12-01-network-day/index.qmd).
 
 ## Prochain événement : présentation de Cartographia - 📅 13 janvier 2026 - format mixte (Montrouge et en ligne)
 
-Le prochain événement du réseau sera le 13 janvier 2026. [Françoise Bahoken](https://bsky.app/profile/fbahoken.bsky.social) et [Nicolas Lambert](https://bsky.app/profile/neocarto.bsky.social) viendront nous parler de leur livre [Cartographia](https://neocarto.hypotheses.org/22669) et des questions de cartographie passionnantes qu'ils y abordent.
+Le prochain événement du réseau sera le **13 janvier 2026**.
+[Françoise Bahoken](https://bsky.app/profile/fbahoken.bsky.social) et [Nicolas Lambert](https://bsky.app/profile/neocarto.bsky.social) viendront nous parler de leur livre [**Cartographia**](https://neocarto.hypotheses.org/22669) et des questions de cartographie passionnantes qu'ils y abordent.
+
 Nicolas Lambert était déjà intervenu pour présenter [Observable](https://observablehq.com/), une librairie JavaScript très pratique pour faire des dataviz.
 
 
@@ -77,7 +91,7 @@ Cloudflare a par exemple connu une [panne le 18 novembre 2025](https://blog.clou
 ::: {layout-ncol="2"}
 ![En 2020, par [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="333"}
 
-![En 2025, par [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:op6wni25fodc5lwc423al3qh/bafkreigvn33occzi5rpgvkxprghjuhe3pvs2hz5momapkv2wxcqaczqhvq@jpeg){width="333"}
+![En 2025, par [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](xkcd_2025.jpg){width="333"}
 
 La dépendance numérique en images
 :::
