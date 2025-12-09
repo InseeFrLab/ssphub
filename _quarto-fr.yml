@@ -32,7 +32,7 @@ website:
   announcement:
     icon: bi-megaphone
     dismissable: true
-    content: "📺️ Le replay des ateliers du __9 et 16 avril 2025__ sont disponibles [ici (API)](/event/2025-04-09-API/index.qmd) et [ici (pour le format Parquet)](/event/2025-04-16-Parquet/index.qmd)"
+    content: "📺️ Les présentations et le replay de la journée du réseau, le 1^er^ décembre 2025, [sont disponibles](/event/2025-12-01-network-day/index.qmd)"
     type: primary
     position: below-navbar
 
