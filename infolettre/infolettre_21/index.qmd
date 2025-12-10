@@ -37,7 +37,7 @@ Ce mois-ci, découvrez un outil pour visualiser les **panaches de pollution aux 
 
 Spoiler : la pollution de la centrale électrique d'Ivry s'envole jusque très très loin ...
 
-![source: [ClimateTRACE](https://climatetrace.org/air-pollution)](climatetrace.png){width="800"}
+![*source: [ClimateTRACE](https://climatetrace.org/air-pollution)*](climatetrace.png){width="800"}
 
 
 # Actus du réseau
@@ -80,12 +80,12 @@ Nicolas Lambert était déjà intervenu pour présenter [Observable](https://obs
 
 
 # Actualités
-Une foule d'articles a été publiée dernièrement sur l'importance de l'open-source, son inter-dépendance avec les solutions payantes et le coût caché de sa maintenance.
+Une foule d'articles a été publiée dernièrement sur l'importance de l'open-source, son interdépendance avec les solutions payantes et le coût caché de sa maintenance.
 Et, bizarrement, il y a moins d'articles sur l'IA ce mois-ci 🤷‍♀️.
 
 ##  Résilience et open-source
 
-### Le monde numérique est très inter-dépendant
+### Le monde numérique est très interdépendant
 - De récents incidents ont rappelé que **notre monde numérique est très interdépendant** de solutions parfois lointaines.
 Un bug dans un logiciel ou service critique, open-source ou payant, se répercute ainsi rapidement à échelle mondiale.
 Cloudflare a par exemple connu une [panne le 18 novembre 2025](https://blog.cloudflare.com/18-november-2025-outage/)[^1], mettant KO de nombreux sites, y compris [downdetector](https://downdetector.fr/) qui signale les pannes.
@@ -93,17 +93,17 @@ La panne était due à une mise en production (ratée du coup).
 De la même manière, une [panne de DNS chez Amazon Web Services](https://www.lemonde.fr/pixels/article/2025/10/21/aws-le-service-cloud-d-amazon-annonce-avoir-resolu-la-panne-qui-a-touche-des-applications-dans-le-monde-entier_6648232_4408997.html) le 20 octobre 2025 a perturbé de nombreuses applications dans le monde.
 
 ::: {layout-ncol="2"}
-![En 2020, par [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="333"}
+![*En 2020, par [XKCD](https://www.explainxkcd.com/wiki/index.php/2347:_Dependency)*](https://www.explainxkcd.com/wiki/images/d/d7/dependency.png){width="333"}
 
-![En 2025, par [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)](xkcd_2025.jpg){width="350"}
+![*En 2025, par [Timothy A.](https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d)*](xkcd_2025.jpg){width="350"}
 
-La dépendance numérique en images
+*La dépendance numérique en images*
 :::
 
 [^1]: Ils ont même eu la bonne idée d'avoir une deuxième panne, plus rapidement réglée, le jour de rédaction de cette infolettre 🙃.
 
 ### L'open source dépend du travail gratuit d'inconnus
-- Au delà de la simple inter-dépendance à des logiciels payants, le code open-source est souvent **maintenu bénévolement par des inconnus**, comme les secours en mer ou les pompiers volontaires.
+- Au delà de la simple interdépendance à des logiciels payants, le code open-source est souvent **maintenu bénévolement par des inconnus**, comme les secours en mer ou les pompiers volontaires.
 
 Un [débat](https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/) est ainsi apparu après que FFmpeg, un framework open-source vidéo largement utilisé (notamment par Chrome, Firefox ou YouTube), s’est retrouvé submergé de demande de correction de bugs, trouvés par l’IA de Google.
 Or dans l'open source, les bugs sont réparés par des mainteneurs, le plus souvent bénévoles, et qui ne peuvent plus suivre le rythme.
