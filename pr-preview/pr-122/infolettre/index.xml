@@ -34,7 +34,7 @@ sur l&#39;actualité interne du réseau.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://ssphub.netlify.app/infolettre/infolettre_21/climatetrace.png" class="img-fluid figure-img" width="800"></p>
-<figcaption>source: <a href="https://climatetrace.org/air-pollution">ClimateTRACE</a></figcaption>
+<figcaption><em>source: <a href="https://climatetrace.org/air-pollution">ClimateTRACE</a></em></figcaption>
 </figure>
 </div>
 </section>
@@ -78,11 +78,11 @@ sur l&#39;actualité interne du réseau.
 </section>
 <section id="actualités" class="level1">
 <h1>Actualités</h1>
-<p>Une foule d’articles a été publiée dernièrement sur l’importance de l’open-source, son inter-dépendance avec les solutions payantes et le coût caché de sa maintenance. Et, bizarrement, il y a moins d’articles sur l’IA ce mois-ci 🤷‍♀️.</p>
+<p>Une foule d’articles a été publiée dernièrement sur l’importance de l’open-source, son interdépendance avec les solutions payantes et le coût caché de sa maintenance. Et, bizarrement, il y a moins d’articles sur l’IA ce mois-ci 🤷‍♀️.</p>
 <section id="résilience-et-open-source" class="level2">
 <h2 class="anchored" data-anchor-id="résilience-et-open-source">Résilience et open-source</h2>
-<section id="le-monde-numérique-est-très-inter-dépendant" class="level3">
-<h3 class="anchored" data-anchor-id="le-monde-numérique-est-très-inter-dépendant">Le monde numérique est très inter-dépendant</h3>
+<section id="le-monde-numérique-est-très-interdépendant" class="level3">
+<h3 class="anchored" data-anchor-id="le-monde-numérique-est-très-interdépendant">Le monde numérique est très interdépendant</h3>
 <ul>
 <li>De récents incidents ont rappelé que <strong>notre monde numérique est très interdépendant</strong> de solutions parfois lointaines. Un bug dans un logiciel ou service critique, open-source ou payant, se répercute ainsi rapidement à échelle mondiale. Cloudflare a par exemple connu une <a href="https://blog.cloudflare.com/18-november-2025-outage/">panne le 18 novembre 2025</a><sup>1</sup>, mettant KO de nombreux sites, y compris <a href="https://downdetector.fr/">downdetector</a> qui signale les pannes. La panne était due à une mise en production (ratée du coup). De la même manière, une <a href="https://www.lemonde.fr/pixels/article/2025/10/21/aws-le-service-cloud-d-amazon-annonce-avoir-resolu-la-panne-qui-a-touche-des-applications-dans-le-monde-entier_6648232_4408997.html">panne de DNS chez Amazon Web Services</a> le 20 octobre 2025 a perturbé de nombreuses applications dans le monde.</li>
 </ul>
@@ -92,7 +92,7 @@ sur l&#39;actualité interne du réseau.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://www.explainxkcd.com/wiki/images/d/d7/dependency.png" class="img-fluid figure-img" width="333"></p>
-<figcaption>En 2020, par <a href="https://www.explainxkcd.com/wiki/index.php/2347:_Dependency">XKCD</a></figcaption>
+<figcaption><em>En 2020, par <a href="https://www.explainxkcd.com/wiki/index.php/2347:_Dependency">XKCD</a></em></figcaption>
 </figure>
 </div>
 </div>
@@ -100,14 +100,14 @@ sur l&#39;actualité interne du réseau.
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://ssphub.netlify.app/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
-<figcaption>En 2025, par <a href="https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d">Timothy A.</a></figcaption>
+<figcaption><em>En 2025, par <a href="https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d">Timothy A.</a></em></figcaption>
 </figure>
 </div>
 </div>
 </div>
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
-<p>La dépendance numérique en images</p>
+<p><em>La dépendance numérique en images</em></p>
 </div>
 </div>
 </div>
@@ -115,7 +115,7 @@ sur l&#39;actualité interne du réseau.
 <section id="lopen-source-dépend-du-travail-gratuit-dinconnus" class="level3">
 <h3 class="anchored" data-anchor-id="lopen-source-dépend-du-travail-gratuit-dinconnus">L’open source dépend du travail gratuit d’inconnus</h3>
 <ul>
-<li>Au delà de la simple inter-dépendance à des logiciels payants, le code open-source est souvent <strong>maintenu bénévolement par des inconnus</strong>, comme les secours en mer ou les pompiers volontaires.</li>
+<li>Au delà de la simple interdépendance à des logiciels payants, le code open-source est souvent <strong>maintenu bénévolement par des inconnus</strong>, comme les secours en mer ou les pompiers volontaires.</li>
 </ul>
 <p>Un <a href="https://thenewstack.io/ffmpeg-to-google-fund-us-or-stop-sending-bugs/">débat</a> est ainsi apparu après que FFmpeg, un framework open-source vidéo largement utilisé (notamment par Chrome, Firefox ou YouTube), s’est retrouvé submergé de demande de correction de bugs, trouvés par l’IA de Google. Or dans l’open source, les bugs sont réparés par des mainteneurs, le plus souvent bénévoles, et qui ne peuvent plus suivre le rythme. Certaines personnes appellent ainsi Google, et plus largement les entreprises qui bénéficient de l’open-source et génèrent des revenus <del>supérieurs aux PIB de certains pays du monde</del>, à financer directement la maintenance des logiciels open-source qu’ils utilisent même si ce n’est pas qu’une question de financement.</p>
 <ul>
