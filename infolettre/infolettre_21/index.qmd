@@ -26,7 +26,7 @@ categories:
 
 Début décembre, c'est le deuxième moment dur de l'année après juin.
 En septembre, on se dit qu'on fera tout cela d'ici Noël, large.
-Et puis on se réveille, c'est déjà début décembre, la to-do est loin d'être finie et la préparation des fêtes de fin d'année arrive à grand pas.
+Et puis on se réveille, c'est déjà début décembre, la to-do-list est loin d'être finie et la préparation des fêtes de fin d'année arrive à grand pas.
 
 Allez, courage, **dernier sprint** de 2025 !
 
@@ -46,11 +46,11 @@ Spoiler : la pollution de la centrale électrique d'Ivry s'envole jusque très t
 
 Le 1^er^ décembre 2025, le réseau a organisé sa troisième journée annuelle.
 Avec quatre présentations, deux interventions extérieures et un atelier de partage, cette édition a réuni une soixantaine de participants en présentiel et distanciel pour des échanges riches et constructifs.
-Merci à tous les participants pour votre participation active !
+Merci à tous les participants pour leur participation active !
 
 ### Les présentations
 1.	**Offre LLM du SSPCloud** : L’Insee (DIIT) a présenté les [nouvelles fonctionnalités](https://llm.lab.sspcloud.fr/) basées sur les modèles de langage (LLM) disponibles sur le SSPCloud, intégrant de manière plus poussée des fonctionnalités de complétion de code et d'analyses de données.
-2.	**Extraction des compétences dans [JOCAS](https://dares.travail-emploi.gouv.fr/enquete-source/job-offers-collection-and-analysis-system)** : La DARES et l’Insee (DEE) ont partagé une version test de leur projet d’extraction des compétences numériques dans les offres d’emploi, combinant reconnaissance d’entités nommées et classification par LLM.
+2.	**Extraction des compétences dans [JOCAS](https://dares.travail-emploi.gouv.fr/enquete-source/job-offers-collection-and-analysis-system)** : La Dares et l’Insee (DEE) ont partagé une version test de leur projet d’extraction des compétences numériques dans les offres d’emploi, combinant reconnaissance d’entités nommées et classification par LLM.
 Ce projet vise à améliorer l’analyse des métiers et des parcours professionnels.
 3.	**Automatisation des infos rapides justice** : Le SSER (SSM Justice) a présenté son package R `chartegraphique.sser`, conçu pour automatiser la production des [infos rapides justice](https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&items_per_page=10).
 Les détails techniques sont disponibles sur le site des [Journées de Méthodologie Statistique (JMS)](https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/).
@@ -100,7 +100,7 @@ De la même manière, une [panne de DNS chez Amazon Web Services](https://www.le
 *La dépendance numérique en images*
 :::
 
-[^1]: Ils ont même eu la bonne idée d'avoir une deuxième panne, plus rapidement réglée, le jour de rédaction de cette infolettre 🙃.
+[^1]: Ils ont même eu la bonne idée d'avoir une deuxième panne, plus rapidement réglée, le jour de la rédaction de cette infolettre 🙃.
 
 ### L'open source dépend du travail gratuit d'inconnus
 - Au-delà de la simple interdépendance à des logiciels payants, le code open-source est souvent **maintenu bénévolement par des inconnus**, comme les secours en mer ou les pompiers volontaires.
@@ -116,7 +116,7 @@ On l'apprend notamment dans ce [billet de blog](https://pyfound.blogspot.com/202
 ### Des alternatives existent
 - **Blois** : La ville a choisi de prendre la fin des mises à jour de Windows 10 comme une opportunité et de basculer vers [PrimTux](https://www.blois.fr/info/2025/11/numeriquelibre-primtux), une distribution Linux éducative.
 - **Cour internationale de justice (ICC)** : En 2025, la Cour internationale de justice (qui dépend de l'ONU) et 9 de ses magistrats ont été ciblés par des sanctions américaines.
-Cela serait en soit une histoire en terme de souveraineté, mais vous avez déjà plus d'info en bas de page [^4].
+Cela serait en soit une histoire en termes de souveraineté, mais vous avez déjà plus d'info en bas de page [^4].
 Le président de la Cour a ensuite perdu l'accès à ses mails.
 Les versions divergent ensuite : Microsoft a-t-il volontairement coupé l'accès du président à ses mails avant de le rétablir ou cela était-il juste un incident?
 Toujours est-il que la Cour internationale de justice a annoncé en octobre 2025 son intention de basculer vers **des solutions européennes[^3]**, comme rapporté par le [Handelsblatt (auf Deutsch 🇩🇪)](https://www.handelsblatt.com/technik/it-internet/software-strafgerichtshof-ersetzt-microsoft-durch-deutsche-loesung/100166382.html).
@@ -135,7 +135,7 @@ Or, beaucoup de fonctionnaires français ont des enfants américains : il suffit
 Une étude récente ([Nikolaou et al., 2025](https://arxiv.org/abs/2510.15511)) montre que les modèles de language sont **injectifs**[^2] : chaque entrée est mappée à une représentation interne unique.
 Le papier propose par ailleurs un algorithme, **SipIt**, capable de reconstruire le prompt original avec 100% de réussite et rapidement.
 
-[^2]: vieux rappel de maths : injectif veut dire à peu près que si deux objects transformés sont les mêmes, c'est qu'à les objets avant transformation sont les mêmes.
+[^2]: vieux rappel de maths : injectif veut dire à peu près que si deux objects transformés sont les mêmes, c'est que les objets avant transformation sont les mêmes.
 
 ## Very big data isn't dead
 - Du mal à faire tourner des tables de 2 Go ?
