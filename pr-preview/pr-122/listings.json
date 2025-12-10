@@ -1,0 +1,111 @@
+[
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/post/embedding/index.html",
+      "/post/retrospective2022/index.html",
+      "/post/recap2022/index.html",
+      "/post/polars/index.html",
+      "/post/onyxia/index.html",
+      "/post/parquetRP/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/infolettre/infolettre_21/index.html",
+      "/infolettre/infolettre_20/index.html",
+      "/infolettre/infolettre_19/index.html",
+      "/infolettre/infolettre_18/index.html",
+      "/infolettre/infolettre_17/index.html",
+      "/infolettre/infolettre_16/index.html",
+      "/infolettre/infolettre_15/index.html",
+      "/infolettre/infolettre_14/index.html",
+      "/infolettre/infolettre_13/index.html",
+      "/infolettre/infolettre_12/index.html",
+      "/infolettre/infolettre_11/index.html",
+      "/infolettre/infolettre_10/index.html",
+      "/infolettre/infolettre_09/index.html",
+      "/infolettre/infolettre_08/index.html",
+      "/infolettre/infolettre_old/index.html",
+      "/post/parquetRP/index.html",
+      "/post/retrospective2022/index.html",
+      "/post/recap2022/index.html",
+      "/post/embedding/index.html",
+      "/post/onyxia/index.html",
+      "/post/polars/index.html",
+      "/partenaires/oecd/index.html",
+      "/partenaires/etalab/index.html",
+      "/partenaires/onyxia/index.html",
+      "/partenaires/spyrales/index.html",
+      "/partenaires/uneceML/index.html",
+      "/partenaires/grr/index.html"
+    ]
+  },
+  {
+    "listing": "/course.html",
+    "items": [
+      "/course/madewithml/index.html",
+      "/course/neural-network-zero-hero/index.html",
+      "/course/observable-geographes/index.html",
+      "/course/observable-katossky/index.html",
+      "/course/observable-mauviere/index.html",
+      "/course/observable-plot/index.html",
+      "/course/python-lino/index.html",
+      "/course/repro-ensae/index.html",
+      "/course/sspcloud/index.html",
+      "/course/ssplab-geomatique/index.html",
+      "/course/ssplab-grandedimension/index.html",
+      "/course/git-lino-python/index.html",
+      "/course/sies-tdbord/index.html",
+      "/course/docker-ds/index.html",
+      "/course/eliocamp/index.html",
+      "/course/r-for-ds/index.html",
+      "/course/r-packages/index.html",
+      "/course/rzine/index.html",
+      "/course/scikit-inria/index.html",
+      "/course/utilitr/index.html",
+      "/course/codestyle-hitchhiker/index.html",
+      "/course/codestyle-rgoogle/index.html",
+      "/course/fidle-cnrs/index.html",
+      "/course/pandas-10min/index.html"
+    ]
+  },
+  {
+    "listing": "/event.html",
+    "items": [
+      "/talk/2025-12-01-network-day/index.html",
+      "/talk/2025-04-16-Parquet/index.html",
+      "/talk/2025-04-09-API/index.html",
+      "/talk/2024-10-14-network-day/index.html",
+      "/talk/2004-05-02-quarto/index.html",
+      "/talk/2024-02-29-mauviere/index.html",
+      "/talk/2023-ssphubday/index.html",
+      "/talk/ocrisation-teklia/index.html",
+      "/talk/presentation-du-projet-meta-academy-carpentries/index.html",
+      "/talk/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html",
+      "/talk/presentation-de-gridviz-par-julien-gaffuri/index.html",
+      "/talk/presentation-dobservable-par-nicolas-lambert/index.html"
+    ]
+  },
+  {
+    "listing": "/infolettre/index.html",
+    "items": [
+      "/infolettre/infolettre_21/index.html",
+      "/infolettre/infolettre_20/index.html",
+      "/infolettre/infolettre_19/index.html",
+      "/infolettre/infolettre_18/index.html",
+      "/infolettre/infolettre_17/index.html",
+      "/infolettre/infolettre_16/index.html",
+      "/infolettre/infolettre_15/index.html",
+      "/infolettre/infolettre_14/index.html",
+      "/infolettre/infolettre_13/index.html",
+      "/infolettre/infolettre_12/index.html",
+      "/infolettre/infolettre_11/index.html",
+      "/infolettre/infolettre_10/index.html",
+      "/infolettre/infolettre_09/index.html",
+      "/infolettre/infolettre_08/index.html",
+      "/infolettre/infolettre_old/index.html"
+    ]
+  }
+]
