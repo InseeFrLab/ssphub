@@ -14,6 +14,7 @@ listing:
     - mobile phone data
     - credit card data
     - bank account data
+    - private data
   sort:
   - date desc
   page-size: 6
