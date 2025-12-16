@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_webscraping_ipc_hotel/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2021_webscraping_ipc_hotel/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_electricite_conj/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2020_electricite_conj/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="dcterms.date" content="2021-06-01">
-<title>Consumer price indices for hotel overnight stays: the experience of webscraping an online booking platform – SSPHub</title>
+<meta name="dcterms.date" content="2020-12-01">
+<meta name="description" content="Using electricity production and consumption data to predict economic activity">
+<title>What do the electricity production and consumption data say about economic activity during the containment period? – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,7 +143,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_webscraping_ipc_hotel/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_electricite_conj/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
@@ -170,12 +171,17 @@ window.Quarto = {
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Consumer price indices for hotel overnight stays: the experience of webscraping an online booking platform</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">in production</div>
-                <div class="quarto-category">webscraping</div>
-                <div class="quarto-category">CPI</div>
+      <h1 class="title">What do the electricity production and consumption data say about economic activity during the containment period?</h1>
+                  <div>
+        <div class="description">
+          Using electricity production and consumption data to predict economic activity
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">Insee</div>
+                <div class="quarto-category">forecasts</div>
+                <div class="quarto-category">private data</div>
+                <div class="quarto-category">experiment</div>
               </div>
                   </div>
   </div>
@@ -187,7 +193,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 June 2021</p>
+        <p class="date">1 December 2020</p>
       </div>
     </div>
     
@@ -206,62 +212,52 @@ window.Quarto = {
   <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2021_webscraping_ipc_hotel/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2020_electricite_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2021_webscraping_ipc_hotel/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2020_electricite_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
 </ul></div></nav><h5 class="quarto-listing-category-title">Categories</h5>
 <div class="quarto-listing-category category-default">
-<div class="category" data-category="">All <span class="quarto-category-count">(13)</span>
+<div class="category" data-category="">All <span class="quarto-category-count">(8)</span>
 </div>
 <div class="category" data-category="YWRtaW5pc3RyYXRpdmUlMjBkYXRh">administrative data <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="YXV0b21hdGljJTIwY29kaW5n">automatic coding <span class="quarto-category-count">(4)</span>
+<div class="category" data-category="YXV0b21hdGljJTIwY29kaW5n">automatic coding <span class="quarto-category-count">(3)</span>
+</div>
+<div class="category" data-category="YmFuayUyMGFjY291bnQlMjBkYXRh">bank account data <span class="quarto-category-count">(1)</span>
 </div>
 <div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(2)</span>
 </div>
-<div class="category" data-category="Q1BJ">CPI <span class="quarto-category-count">(2)</span>
+<div class="category" data-category="Q1BJ">CPI <span class="quarto-category-count">(1)</span>
 </div>
 <div class="category" data-category="Y3JlZGl0JTIwY2FyZCUyMGRhdGE=">credit card data <span class="quarto-category-count">(2)</span>
 </div>
-<div class="category" data-category="REFSRVM=">DARES <span class="quarto-category-count">(1)</span>
-</div>
 <div class="category" data-category="ZGF0YSUyMGV4dHJhY3Rpb24=">data extraction <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(3)</span>
+<div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(6)</span>
+<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(5)</span>
 </div>
 <div class="category" data-category="ZXhwZXJpbWVudCUyMHN0b3BwZWQ=">experiment stopped <span class="quarto-category-count">(1)</span>
 </div>
 <div class="category" data-category="ZmFzdHRleHQ=">fasttext <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="Zm9yZWNhc3Rz">forecasts <span class="quarto-category-count">(3)</span>
+<div class="category" data-category="Zm9yZWNhc3Rz">forecasts <span class="quarto-category-count">(2)</span>
 </div>
-<div class="category" data-category="aW4lMjBwcm9kdWN0aW9u">in production <span class="quarto-category-count">(4)</span>
+<div class="category" data-category="aW4lMjBwcm9kdWN0aW9u">in production <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNG">in production ?? <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(6)</span>
 </div>
-<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(8)</span>
-</div>
-<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(3)</span>
+<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
 </div>
 <div class="category" data-category="bWF0Y2hpbmc=">matching <span class="quarto-category-count">(1)</span>
 </div>
 <div class="category" data-category="bW9iaWxlJTIwcGhvbmUlMjBkYXRh">mobile phone data <span class="quarto-category-count">(4)</span>
 </div>
-<div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="cHJpdmF0ZSUyMGRhdGE=">private data <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(1)</span>
 </div>
 <div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="cmFuZG9tJTIwZm9yZXN0">random forest <span class="quarto-category-count">(1)</span>
-</div>
 <div class="category" data-category="c2Nhbm5lciUyMGRhdGE=">scanner data <span class="quarto-category-count">(3)</span>
-</div>
-<div class="category" data-category="U0lFUw==">SIES <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="d2Vic2NyYXBpbmc=">webscraping <span class="quarto-category-count">(5)</span>
 </div>
 </div>
 </div>
@@ -270,13 +266,12 @@ window.Quarto = {
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>
-<em>Webscraping</em> of the prices of hotel nights to construct the consumer price index</th>
+<th>What do the electricity production and consumption data say about economic activity during the containment period?</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td><strong>Project details</strong></td>
-<td>The consumer price index for overnight stays in hotels is calculated from data collected in the field by INSEE surveyors, who record the price of a room for one night on the same day for 2 people, including breakfast. In order to improve the index and overcome some of the limitations of the current method, this project is exploring an innovative collection method, the <em>webscraping</em> from a booking site. <br> Once the data has been collected online, it is raw and needs to be cleaned up: for example, the value for a characteristic is not necessarily described in the same way between two observations. To overcome the problems associated with a fixed basket index, the final index is constructed from homogeneous classes. Finally, the results of the index calculated using data from the online booking platform are compared with the published index.</td>
+<td>Data from <strong>electricity production and consumption</strong> are a useful source for tracking changes in the activity of businesses and households in real time. Electricity is one of the most widely used forms of energy in the production process, so changes in its production and consumption reflect major trends in gross domestic product. <strong>Electricity consumption, in particular, reflects the change in behaviour brought about by the coronavirus crisis.</strong> - crisis, whether in terms of the drop in production in electricity-intensive sectors such as transport, or the transformed lifestyle of confined households. <br> Since climate and seasonality have a major impact on electricity production and consumption, the time comparisons are made after adjusting for the effects of variations in temperature, working days and months of the year. <br> According to RTE (Réseau de transport d’électricité) data, total consumption during the period from 23 March to 26 April 2020 was 14% lower than during a normal period. In a manner that is relatively consistent with the order of magnitude of the reductions in activity estimated elsewhere, consumption by companies directly connected to RTE (mostly large industrial companies) is 24% lower. During the period from 23 March to 3 April, according to data from Enedis, non-residential consumption (businesses - excluding those directly connected to RTE - and the public sector) was around 27% lower, while household consumption was around 4% higher than normal.</td>
 </tr>
 <tr class="even">
 <td><strong>Players</strong></td>
@@ -284,11 +279,11 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td><strong>Project results</strong></td>
-<td>The new price collection methodology is now used in production.</td>
+<td>Electricity data has been used to predict economic activity in times of crisis.</td>
 </tr>
 <tr class="even">
 <td><strong>Project products and documentation</strong></td>
-<td>- <a href="https://journees-methodologie-statistique.insee.net/indices-des-prix-a-la-consommation-des-nuitees-hotelieres-lexperience-du-webscraping-dune-plateforme-de-reservation-en-ligne/">Consumer price indices for hotel overnight stays: the experience of webscraping an online booking platform</a>, 2022 Statistical Methodology Days (Journées de méthodologie statistique 2022)</td>
+<td>- <a href="https://www.insee.fr/en/statistiques/4496154?sommaire=4473307">What do electricity production and consumption data tell us about economic activity during lockdown?</a> Economic Outlook - December 2020</td>
 </tr>
 </tbody>
 </table></section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
@@ -330,41 +325,7 @@ An assessment of cross-border tobacco purchases and associated tax losses in Fra
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="174">
-<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Curiexplore, the platform for comparing national education and research policies
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Interactive visualisation of the teaching environment and research environment in different countries.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Jan 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<div class="g-col-1" data-index="1" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -396,41 +357,7 @@ Methodological work on the Family Budget survey
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="d2Vic2NyYXBpbmclMkNpbiUyMHByb2R1Y3Rpb24lMkNhdXRvbWF0aWMlMjBjb2RpbmclMkNEQVJFUw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="406">
-<a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_JOCAS/jocas.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Jocas, webscraping online job offers
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('REFSRVM='); return false;">DARES</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>The project <code>Jocas</code> (Job offers collection and analysis system) project enables the DARES (Ministerial Statistical Office for Labour) to automatically collect job offers…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Jan 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNzY2FubmVyJTIwZGF0YSUyQ21hdGNoaW5nJTJDZXhwZXJpbWVudCUyMHN0b3BwZWQlMkNmYXN0dGV4dCUyQ2F1dG9tYXRpYyUyMGNvZGluZw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
+<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNzY2FubmVyJTIwZGF0YSUyQ21hdGNoaW5nJTJDZXhwZXJpbWVudCUyMHN0b3BwZWQlMkNmYXN0dGV4dCUyQ2F1dG9tYXRpYyUyMGNvZGluZw==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="306">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -474,83 +401,47 @@ Enriching case data with nutritional information to analyse the impact of consum
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2luJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
-<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNmb3JlY2FzdHMlMkNiYW5rJTIwYWNjb3VudCUyMGRhdGElMkNleHBlcmltZW50" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1765898972410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="465">
+<a href="../../project/2021_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2022_bso/bso_en.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2021_comptes_bancaires_conj/money.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Open Science Monitor
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>To be able to monitor the opening up of scientific publications (the objective of the <strong>national plan for open science</strong>), the statistical service of the Ministry of Higher…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Jan 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1765898972411" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
-<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" data-src="../../project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Predicting growth by reading the newspaper
+In 2020, the drop in consumption fuelled savings, with a particular increase in the financial wealth of the most well-off: some results obtained by analysing banking data
 </h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YmFuayUyMGFjY291bnQlMjBkYXRh'); return false;">bank account data</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
 </div>
 <div class="card-text listing-description delink">
-<p>Use continuous press articles to build an indicator to help forecast growth</p>
+
+
+
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Mar 2021
+1 Apr 2021
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="Zm9yZWNhc3RzJTJDZXhwZXJpbWVudCUyQ0luc2VlJTJDY3JlZGl0JTIwY2FyZCUyMGRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765898972408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="476">
+<div class="g-col-1" data-index="4" data-categories="Zm9yZWNhc3RzJTJDZXhwZXJpbWVudCUyQ0luc2VlJTJDY3JlZGl0JTIwY2FyZCUyMGRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765898972408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="476">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" data-src="../../project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Using credit card data and mobile phone data to forecast economic activity
@@ -582,45 +473,11 @@ Using credit card data and mobile phone data to forecast economic activity
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="SW5zZWUlMkNmb3JlY2FzdHMlMkNwcml2YXRlJTIwZGF0YSUyQ2V4cGVyaW1lbnQ=" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765898972409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
-<a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" data-src="../../project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-What do the electricity production and consumption data say about economic activity during the containment period?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHJpdmF0ZSUyMGRhdGE='); return false;">private data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Using electricity production and consumption data to predict economic activity</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Dec 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1765898972409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1765898972409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" data-src="../../project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Population movements around the March 2020 containment using mobile phone network operators data
@@ -654,43 +511,7 @@ Population movements around the March 2020 containment using mobile phone networ
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNDUEklMkN3ZWJzY3JhcGluZyUyQ3JhbmRvbSUyMGZvcmVzdA==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1765898972409" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="354">
-<a href="../../project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" data-src="../../project/2020_webscraping_ipc/webscraping_ipc.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Webscrape product characteristics to improve inflation measurement
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNG'); return false;">in production ??</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q1BJ'); return false;">CPI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmFuZG9tJTIwZm9yZXN0'); return false;">random forest</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Collect product characteristics on the web to improve the way quality effects are taken into account in the consumer price index.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Jun 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNDUEklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1765898972408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNDUEklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1765898972408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -728,7 +549,7 @@ Classification of checkout data using machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765898972408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765898972408" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="208">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1177,9 +998,9 @@ Urban segregation: insights from mobile phone data
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2021_webscraping_ipc_hotel/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2020_electricite_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2021_webscraping_ipc_hotel/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2020_electricite_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>
