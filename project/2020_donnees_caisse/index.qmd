@@ -42,7 +42,9 @@ listing:
     - données de téléphonie mobile
     - données CB
     - données comptes bancaires
-  sort: "date desc"
+    - données privées
+  sort:
+  - date desc
   page-size: 6
 ---
 

@@ -10,16 +10,18 @@ categories:
 - données administratives
 image: indice_segregation.png
 listing:
-  - id: similar-project
-    contents: ../*/index.qmd
-    type: grid
-    include:
-      categories:
-      - données de caisse
-      - données CB
-      - données de téléphonie mobile
-      - données comptes bancaires
-    sort: "date desc"
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - données de caisse
+    - données CB
+    - données de téléphonie mobile
+    - données comptes bancaires
+    - données privées
+    sort:
+    - date desc
     page-size: 6
 ---
 

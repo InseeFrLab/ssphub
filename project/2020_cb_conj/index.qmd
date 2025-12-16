@@ -19,6 +19,7 @@ listing:
     - données de téléphonie mobile
     - données CB
     - données comptes bancaires
+    - données privées
   sort:
   - date desc
   page-size: 6
