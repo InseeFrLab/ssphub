@@ -2,7 +2,7 @@
 title: 'In 2020, the drop in consumption fuelled savings, with a particular increase in the financial wealth of the most well-off: some results obtained by analysing banking data'
 format: html
 date: '2021-04-01'
-image: money.png
+image: money.jpg
 listing:
 - id: similar-project
   contents:
@@ -21,7 +21,7 @@ listing:
   categories: true
 - id: autres-comptes-bancaires
   contents:
-  - _other_bank_account_ven.yml
+  - 'other_bank_account_ven.yml'
   type: grid
   sort:
   - date desc

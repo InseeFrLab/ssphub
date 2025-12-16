@@ -3,7 +3,7 @@ title: 'En 2020, la chute de la consommation a alimenté l’épargne, faisant p
 description: Analyse du comportement des ménages pendant la crise sanitaire de 2020 à partir de données de comptes bancaires
 format: html
 date: '2021-04-01'
-image: money.png
+image: money.jpg
 listing:
 - id: similar-project
   contents:
@@ -22,7 +22,7 @@ listing:
   categories: true
 - id: autres-comptes-bancaires
   contents:
-  - _other_bank_account_vfr.yml
+  - 'other_bank_account_vfr.yml'
   type: grid
   sort:
   - date desc
