@@ -1,0 +1,57 @@
+---
+title: 'En 2020, la chute de la consommation a alimenté l’épargne, faisant progresser notamment les hauts patrimoines financiers :  quelques résultats de l’exploitation de données bancaires'
+description: Analyse du comportement des ménages pendant la crise sanitaire de 2020 à partir de données de comptes bancaires
+format: html
+date: '2021-04-01'
+image: money.jpg
+listing:
+- id: similar-project
+  contents:
+  - ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - données de caisse
+    - données de téléphonie mobile
+    - données CB
+    - données comptes bancaires
+    - données privées
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+- id: autres-comptes-bancaires
+  contents:
+  - 'other_bank_account_vfr.yml'
+  type: grid
+  sort:
+  - date desc
+  page-size: 6
+  categories: false
+categories:
+- Insee
+- prévisions
+- données comptes bancaires
+- expérimentation
+---
+
+
+# Synthèse du projet
+
+|           |   En 2020, la chute de la consommation a alimenté l’épargne, faisant progresser notamment les hauts patrimoines financiers :  quelques résultats de l’exploitation de données bancaires    |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         | Les données de comptes bancaires constituent une source d’information avancée sur la consommation et l’épargne des ménages en 2020, aussi bien à l’échelle microéconomique qu’infra-annuelle. À travers l’exploitation de données anonymisées mises à disposition par le Crédit Mutuel Alliance Fédérale, il est possible d’étudier comment la crise sanitaire a pu modifier la situation financière des ménages clients de cette banque, selon leur niveau de revenu, leur âge ou encore leur catégorie socio-professionnelle.  <br> Les données bancaires utilisées ne permettent pas d’identifier directement les revenus des ménages mais peuvent tout de même être mobilisées pour en déduire une approximation, grâce à l’ensemble des virements et chèques entrant sur les comptes. Ces flux entrants chutent lors du premier confinement avant de rebondir en juin. Le deuxième confinement n’aurait pas provoqué de baisse de ces flux entrants, en moyenne.      |
+| **Acteurs**                  |  Insee     |
+| **Résultats du projet**      |  Cette étude se situe  dans le prolongement des travaux menés sur les ménages à partir des données de compte bancaire. <br> Pendant les deux confinements de 2020, tous les groupes de ménages étudiés, quels que soient leurs niveaux de revenus, auraient diminué leur consommation, laquelle s’est recentrée, en particulier en avril, aux biens de première nécessité. Les ménages qui consommaient le plus avant la crise, essentiellement des cadres et des hauts revenus, auraient donc davantage diminué leur consommation. <br> La chute de la consommation a provoqué un surcroît d’épargne qui a alimenté les comptes courants des ménages et leurs comptes sur livrets. Le patrimoine financier brut des ménages (épargne liquide, comptes-titres et assurances- vie, crédits exclus) aurait fortement augmenté en 2020. Cette hausse s’observe chez tous les groupes de ménages, quel que soit leur niveau de patrimoine financier. Elle est plus élevée en euros chez les ménages à hauts patrimoines financiers, qui ont pu épargner davantage en diminuant leur consommation. Les ménages à faibles patrimoines, ont également mis de l’argent de côté notamment pendant le premier confinement. Cependant, les montants en jeu pour ces ménages, quelques dizaines ou centaines d’euros en général, demeurent faibles bien qu’ils représentent une part importante de leur patrimoine initial. Parmi les ménages actifs, certains auraient été davantage touchés que d’autres par une baisse de leurs revenus et auraient donc moins augmenté leur épargne : c’est le cas des artisans et commerçants, ou encore des salariés du secteur privé, par contraste avec ceux du secteur public.      |
+| **Produits et documentation du projet**      | - [En 2020, la chute de la consommation a alimenté l’épargne, faisant progresser notamment les hauts patrimoines financiers : quelques résultats de l’exploitation de données bancaires](https://www.insee.fr/fr/statistiques/5232043), Note de conjoncture de l'Insee - mars 2021  |
+
+# Projets similaires
+
+::: {#similar-project}
+:::
+
+# Autres études menées grâces aux données bancaires
+Par ailleurs, d'autres études ont été menées par l'Insee en utilisant des données de compte bancaires. Elles sont disponibles sur le site de l'Insee :
+
+::: {#autres-comptes-bancaires}
+:::

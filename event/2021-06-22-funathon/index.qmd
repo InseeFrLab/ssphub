@@ -1,0 +1,37 @@
+---
+title: "Funathon de juin 2021"
+
+categories:
+- event
+- funathon 
+- R
+- Python
+
+description: |
+  Présentation du premier Funathon du SSPLab organisé le 21 juin 2021 autour de 8 sujets, en R et en Python, à partir de données Airbnb
+
+date: '2021-06-20'
+
+image: funathon.jpg
+
+---
+
+# Présentation 
+
+La première édition du Funathon a eu lieu le 21 et 22 juin 2021 et a réuni environ 150 agents,  souvent réunis en équipe. Cette première édition a tourné autour de l'utilisation des données d'Airbnb, 8 sujets plus ou moins guidés étant proposés, avec chaque fois des notebooks (en R et en Python) permettant d'entrer facilement dans les sujets. **Tous les niveaux d'expertise étaient les bievenus**. Merci à tous !
+
+# Détails du programme des deux jours
+Cher.e.s Funambules,
+
+Vous allez pouvoir vous consacrer cœur et âme pendant deux jours aux joies de la Datascience. Cette expérience sera à la fois longue et courte. Longue car nos calendriers surchargés nous permettent rarement de travailler en collaboration sur un sujet statistique. Mais trop courte, car s’approprier les données, imaginer leurs usages, tester des méthodes de Machine Learning demandent du temps et de la patience. Avant de commencer votre exploration, nous vous recommandons de bien lire les documents et les aides mis à disposition (nous remercions l’équipe du SSPLab pour son coup de main). Nous vous suggérons également de ne pas négliger la partie statistique descriptive, sans quoi vous risquez de mal interpréter les résultats de vos analyses plus complexes.
+
+Les données proviennent du site Inside Airbnb qui est devenu un acteur de premier plan dans la connaissance de Airbnb. Soutenu par les grandes métropoles européennes et mondiales, le site propose des données scrappées du site Airbnb. Ces données sont utilisées par les agences d’urbanismes (Urban planning)  et la recherche académique pour documenter les conséquences des locations Airbnb sur les systèmes urbains. Ces données contiennent par construction des informations personnelles éventuellement identifiantes. Il est interdit d’en faire un usage commercial, ce qui va de soi dans le cadre du Funathon qui est une opération de formation et d’appropriation des outils de Machine Learning. En revanche, en tant que données personnelles, elles doivent être traitées par nous les Funambules, acteurs de la connaissance statistique, avec la même exigence de rigueur et d'éthique que toutes autres sources de données statistiques ou administratives.
+
+Pendant ces deux jours, certain.e.s Funambules vont découvrir un nouvel outil de travail, le Datalab. Cet outil que nous offre l’équipe de la DIIT (que nous remercions chaleureusement) est l’Armageddon de la Datascience. Sa puissance est redoutable et grisante. En contrepartie, en tant qu’outil en devenir, son appropriation demande plus de temps. N’hésitez pas à consulter le canal général de slack pour poser des questions et y trouver éventuellement des réponses à vos interrogations.
+
+La Datascience n’est pas seulement l’apanage des plus aguerri.e.s ou des plus virtuoses en informatique. Les esprits curieux ont toute leur place pour penser les données et proposer des approches innovantes. La critique dans les équipes des résultats obtenus nous semble indispensable et ce d'autant plus que les données ne sont pas parfaites. Vos analyses seront forcément biaisées et il est important de connaître et discuter leurs limites.
+
+N’oubliez pas, nous sommes **des nains sur des épaules de géants**, alors n'hesitez pas à recopier du code.
+
+L'ensemble du materiel des deux jours est disponible [ici](https://git.lab.sspcloud.fr/ssplab/2021-06-funathon). Premier élément à ouvrir : 0_Kit_De_Demarrage. Puis, laissez vous guider !
+

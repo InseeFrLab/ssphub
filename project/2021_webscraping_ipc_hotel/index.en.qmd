@@ -1,0 +1,44 @@
+---
+title: 'Consumer price indices for hotel overnight stays: the experience of webscraping
+  an online booking platform'
+description: Exploring webscraping tools to fetch hotel overnight stays in CPI
+format: html
+date: '2021-06-01'
+image: webscraping_ipc.png
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - webscraping
+    - CPI
+    - mobile phone data
+    - scanner data
+    - private data
+  sort: date desc
+  page-size: 6
+  categories: true
+categories:
+- in production
+- webscraping
+- CPI
+- Insee
+---
+
+# Project summary
+
+|  | *Webscraping* of the prices of hotel nights to construct the consumer price index   |
+|---| -------------------------------------------------------------------------|
+| **Project details** | The consumer price index for overnight stays in hotels is calculated from data collected in the field by INSEE surveyors, who record the price of a room for one night on the same day for 2 people, including breakfast. In order to improve the index and overcome some of the limitations of the current method, this project is exploring an innovative collection method, the *webscraping* from a booking site. <br> Once the data has been collected online, it is raw and needs to be cleaned up: for example, the value for a characteristic is not necessarily described in the same way between two observations. To overcome the problems associated with a fixed basket index, the final index is constructed from homogeneous classes. Finally, the results of the index calculated using data from the online booking platform are compared with the published index.      |
+| **Players** | Insee      |
+| **Project results** | The new price collection methodology is now used in production.       |
+| **Project products and documentation** | - [Consumer price indices for hotel overnight stays: the experience of webscraping an online booking platform](https://journees-methodologie-statistique.insee.net/indices-des-prix-a-la-consommation-des-nuitees-hotelieres-lexperience-du-webscraping-dune-plateforme-de-reservation-en-ligne/), 2022 Statistical Methodology Days (Journées de méthodologie statistique 2022)       |
+
+# Similar projects
+
+::: {#similar-project}
+:::
+
+
+

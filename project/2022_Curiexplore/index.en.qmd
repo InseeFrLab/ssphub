@@ -1,0 +1,38 @@
+---
+title: Curiexplore, the platform for comparing national education and research policies
+description: |
+  Interactive visualisation of the teaching environment
+  and research environment in different countries.
+format: html
+date: '2022-01-01'
+image: curiexplore.png
+categories:
+- webscraping
+- in production
+- datavisualisation
+- SIES
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort:
+  - date desc
+  page-size: 6
+---
+
+# Project summary
+
+|  | Curiexplore, the platform for comparing national education and research policies             |
+| ---- | --------------------- |
+| **Project details** | The `CurieXplore` project, developed by `SIES` (the statistical department of the French Ministry of Higher Education and Research) offers an interactive visualisation of the teaching and research environment in different countries. <br>  The platform combines textual content collected by SIES from the French diplomatic network and regularly webscrapped data from international statistical sources (UNESCO, World Bank, OECD, Eurostat, etc.) or private sources (ranking of HE institutions such as Shanghai, UMULTIRANK or THE). |
+| **Players** | Statistical Service of the Ministry of Higher Education and Research ([SIES](https://www.enseignementsup-recherche.gouv.fr/fr/sies))        |
+| **Project results** | The project is now in production, with a dedicated website available at [curiexplore.enseignementsup-recherche.gouv.fr (in French)](https://curiexplore.enseignementsup-recherche.gouv.fr/).    |
+| **Project code** | - The code is available on GitHub {{< fa brands github >}} [https://github.com/dataesr/curiexplore-ui](https://github.com/dataesr/curiexplore-ui).     |
+
+# Similar projects
+
+::: {#similar-project}
+:::
+

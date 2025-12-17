@@ -1,0 +1,74 @@
+---
+title: Webscrape product characteristics to improve inflation measurement
+description: Collect product characteristics on the web to improve the way quality
+  effects are taken into account in the consumer price index.
+format: html
+date: '2020-06-01'
+image: webscraping_ipc.png
+listing:
+- id: similar-project-codifauto
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["automatic coding"]
+  sort:
+  - date desc
+  page-size: 6
+- id: similar-project-ipc
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping", "IPC"]
+  sort:
+  - date desc
+  page-size: 6
+- id: similar-project-newdata
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - scanner data
+    - mobile phone data
+    - credit card data
+    - bank account data
+    - private data
+  sort:
+  - date desc
+  page-size: 6
+categories:
+- in production ??
+- Insee
+- CPI
+- webscraping
+- random forest
+---
+
+# Project summary
+
+|  | Webscraping of laptop prices and characteristics, estimation of hedonic models to improve the statistical quality of the consumer price index    |
+| --- | ----------------------------------------------------------------- |
+| **Project details** | The CPI measures "pure" price movements, assuming constant quality. It tracks a certain number of identical products over time. When these disappear, they are replaced by products that may not be equivalent. In this case, it is important to distinguish between a quality effect (price difference for a given month) and an inflation effect in the change in prices of the replacements compared with the products replaced. <br> Hedonic" methods estimate this quality effect on the basis of coefficients corresponding to the underlying prices of the various technical characteristics of the product (for example, the brand of computer, the RAM of a computer, the model and frequency of the processor, etc.). The aim of the project is to strengthen these methods of estimating the quality effect by extending the database and using statistical learning methods.   |
+| **Players** | Insee   |
+| **Project results** | The study made it possible to increase the samples used (in terms of price surveys and characteristics) by collecting data online (*webscraping*) and to set up a procedure for automatically selecting the characteristics that explain prices using automatic learning (random forest, Lasso-type regression). <br> Ultimately, 15 characteristics were selected to estimate the quality effect, such as brand, RAM, storage capacity, brand of processor, processor frequency, screen resolution, etc. The forms used by the surveyors have been amended to include the relevant characteristics that determine the price of computers.  |
+
+
+# Similar projects
+
+## Related to webscraping and IPC
+Online data collection (web scraping) is not only used in the production of inflation figures.
+It is also used in other areas and by other entities within the public statistics service besides INSEE.
+Since 2020, INSEE has also been using checkout data in the definition of the CPI, as noted in the article [Using Scanner Data to Calculate the Consumer Price Index](https://www.insee.fr/en/information/5014725?sommaire=5014796) in the 2019 statistics newsletter.
+
+::: {#similar-project-ipc}
+:::
+
+## Related to new data sources
+
+::: {#similar-project-newdata}
+:::
+
+## Related to automatic coding
+
+::: {#similar-project-codifauto}
+:::
+
