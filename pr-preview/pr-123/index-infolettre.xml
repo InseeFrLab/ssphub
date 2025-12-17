@@ -5,11 +5,11 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>SSPHub</title>
+<title>Bienvenue chez Christian, Nathan et Ammar</title>
 <link>https://ssphub.netlify.app/#category=infolettre</link>
 <atom:link href="https://ssphub.netlify.app/index-infolettre.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Wed, 17 Dec 2025 09:27:11 GMT</lastBuildDate>
+<lastBuildDate>Wed, 17 Dec 2025 09:46:15 GMT</lastBuildDate>
 </channel>
 </rss>
