@@ -20,9 +20,9 @@ listing:
     - données de téléphonie mobile
     - données comptes bancaires
     - données privées
-    sort:
-    - date desc
-    page-size: 6
+  sort:
+  - date desc
+  page-size: 6
 ---
 
 
