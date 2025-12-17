@@ -31,7 +31,8 @@ listing:
       - credit card data
       - bank account data
       - private data
-    sort: "date desc"
+    sort:
+    - date desc
     page-size: 6
 ---
 

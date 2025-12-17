@@ -21,7 +21,8 @@ listing:
   type: grid
   include:
     categories: ["codification automatique"]
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
 ---
 

@@ -17,7 +17,8 @@ listing:
   type: grid
   include:
     categories: ["webscraping"]
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
 ---
 

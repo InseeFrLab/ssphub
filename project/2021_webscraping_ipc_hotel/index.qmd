@@ -14,7 +14,8 @@ listing:
     - "IPC"
     - "données de téléphonie mobile"
     - "données de caisse"
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
   categories: true
 categories:

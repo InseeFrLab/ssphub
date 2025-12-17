@@ -30,7 +30,8 @@ listing:
   type: grid
   include:
     categories: ["package", "images satellites"]
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
 
 ---

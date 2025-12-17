@@ -11,14 +11,16 @@ listing:
   type: grid
   include:
     categories: ["automatic coding"]
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
 - id: similar-project-ipc
   contents: ../*/index.qmd
   type: grid
   include:
     categories: ["webscraping", "IPC"]
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
 - id: similar-project-newdata
   contents: ../*/index.qmd
@@ -30,7 +32,8 @@ listing:
     - credit card data
     - bank account data
     - private data
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
 categories:
 - in production ??

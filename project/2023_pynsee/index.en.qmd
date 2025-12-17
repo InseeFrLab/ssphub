@@ -16,7 +16,8 @@ listing:
   type: grid
   include:
     categories: ["package"]
-  sort: "date desc"
+  sort:
+  - date desc
   page-size: 6
 ---
 
