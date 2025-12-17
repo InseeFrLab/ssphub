@@ -12,66 +12,12 @@ listing:
       - "number desc"
     feed:
         categories: [post, infolettre]
-  - id: blog
-    contents: post
-    type: grid
-    feed: true
-  - id: partenaires
-    contents: partenaires
-    template: scripts/courses.ejs
-    type: grid
-    feed: false
 echo: false
 ---
 
-```{ojs}
-// echo: false
-// output: false
-inscrits = 730
-```
-
-```{ojs}
-// echo: false
-badge = html`<a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103"><img alt="Static Badge" src="https://img.shields.io/badge/${inscrits}_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103">
-</a>
-`
-```
-
-
-::::: {#hero-banner .column-screen}
-::: {.grid .column-page}
-::: {.headline .g-col-lg-12 .g-col-12 .g-col-md-12}
-
-:::: h1
-Le réseau des data scientists de la statistique publique
-::::
-
-```{ojs}
-// echo: false
-html`${badge}`
-```
-
-
-Le `SSPHub` centralise et vise à faire connaître le contenu créé par
-le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
-
-Une présentation du réseau est 
-disponible sur la page [à propos](#about). 
-Pour en savoir plus sur les objectifs du réseau, sa philosophie,
-et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/manifeste.html)
-écrit collectivement. 
-
-:::
 
 
 
-:::
-
-:::::
-
-```{=html}
-<br>
-```
 
 
 
@@ -84,27 +30,4 @@ Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page 
 :::: {#newsletters}
 ::::
 
-
-
-## Les derniers billets de blog
-
-L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.qmd).
-
-
-:::: {#blog}
-::::
-
-## Les réseaux partenaires
-
-Quelques communautés de la data-science avec lesquels nous collaborons
-
-
-:::: {#partenaires}
-::::
-
-
-
 :::
-
-
-

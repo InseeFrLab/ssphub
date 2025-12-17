@@ -1,9 +1,0 @@
-```{{ojs}}
-Inputs.table(
-    db.query(
-        "SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM > 2020"
-    )
-)
-```
-
-

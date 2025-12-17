@@ -1,4 +1,0 @@
-```python
-query = "SELECT * FROM table_logement WHERE COMMUNE = '06088' and AEMM > 2020"
-duckdb.sql(query)
-```

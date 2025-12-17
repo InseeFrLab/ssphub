@@ -1,3 +1,0 @@
-```python
-duckdb.sql("SELECT IPONDI AS poids, COLUMNS('.*AGE.*') FROM table_individu LIMIT 10")
-```

@@ -1,4 +1,0 @@
-```r
-query <- "SELECT * FROM documentation_indiv WHERE CONTAINS(code_modalite, 'Z')"
-dbGetQuery(con, query)
-```
