@@ -1,0 +1,1777 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-12-21">
+<meta name="description" content="Infolettre du mois de Décembre 2023">
+
+<title>Rétrospective du réseau en 2023 (cocorico, beaucoup de nouveaux inscrits !) ; des nouvelles règles européennes pour l’IA ; le recensement de la population au format parquet ; un explorateur de fichier sur le SSPCloud – SSPHub</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/magic-snowflakes-6.0.1/snowflakes.min.js"></script>
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #6886bb;
+      }
+</style>
+<script type="module" src="../../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SSPHub</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../infolettre/index.html"> 
+<span class="menu-text">Newsletters</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
+<span class="menu-text">Le SSPCloud</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Rétrospective du réseau en 2023 (cocorico, beaucoup de nouveaux inscrits !) ; des nouvelles règles européennes pour l’IA ; le recensement de la population au format parquet ; un explorateur de fichier sur le SSPCloud</h1>
+                  <div>
+        <div class="description">
+          <p>Infolettre du mois de <strong>Décembre 2023</strong></p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Infolettre</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Lino Galiana </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 21, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rétrospective-du-réseau-en-2023" id="toc-rétrospective-du-réseau-en-2023" class="nav-link active" data-scroll-target="#rétrospective-du-réseau-en-2023">Rétrospective du réseau en 2023</a>
+  <ul class="collapse">
+  <li><a href="#une-audience-en-progression" id="toc-une-audience-en-progression" class="nav-link" data-scroll-target="#une-audience-en-progression">Une audience en progression</a></li>
+  <li><a href="#du-contenu-qui-intéresse-au-delà-des-statisticiens-publics" id="toc-du-contenu-qui-intéresse-au-delà-des-statisticiens-publics" class="nav-link" data-scroll-target="#du-contenu-qui-intéresse-au-delà-des-statisticiens-publics">Du contenu qui intéresse au-delà des statisticiens publics</a></li>
+  </ul></li>
+  <li><a href="#actualités-de-la-data-science" id="toc-actualités-de-la-data-science" class="nav-link" data-scroll-target="#actualités-de-la-data-science">Actualités de la <em>data science</em></a>
+  <ul class="collapse">
+  <li><a href="#la-startup-mistral-ai-publie-un-modèle-à-létat-de-lart" id="toc-la-startup-mistral-ai-publie-un-modèle-à-létat-de-lart" class="nav-link" data-scroll-target="#la-startup-mistral-ai-publie-un-modèle-à-létat-de-lart">La startup Mistral AI publie un modèle à l’état de l’art</a></li>
+  <li><a href="#leurope-parvient-à-un-accord-sur-les-premières-règles-au-monde-en-matière-dia" id="toc-leurope-parvient-à-un-accord-sur-les-premières-règles-au-monde-en-matière-dia" class="nav-link" data-scroll-target="#leurope-parvient-à-un-accord-sur-les-premières-règles-au-monde-en-matière-dia">L’Europe parvient à un accord sur les premières règles au monde en matière d’IA</a></li>
+  <li><a href="#nouveau-post-de-blog-diffusion-du-recensement-de-la-population-au-format-parquet" id="toc-nouveau-post-de-blog-diffusion-du-recensement-de-la-population-au-format-parquet" class="nav-link" data-scroll-target="#nouveau-post-de-blog-diffusion-du-recensement-de-la-population-au-format-parquet">Nouveau <em>post</em> de blog: diffusion du recensement de la population au format <code>Parquet</code></a></li>
+  <li><a href="#le-sspcloud-se-dote-dun-explorateur-de-fichiers-basé-sur-duckdb" id="toc-le-sspcloud-se-dote-dun-explorateur-de-fichiers-basé-sur-duckdb" class="nav-link" data-scroll-target="#le-sspcloud-se-dote-dun-explorateur-de-fichiers-basé-sur-duckdb">Le SSPCloud se dote d’un explorateur de fichiers basé sur <code>DuckDB</code></a></li>
+  <li><a href="#laccessibilité-de-jupyter-améliorée-avec-le-concours-de-linsee" id="toc-laccessibilité-de-jupyter-améliorée-avec-le-concours-de-linsee" class="nav-link" data-scroll-target="#laccessibilité-de-jupyter-améliorée-avec-le-concours-de-linsee">L’accessibilité de <code>Jupyter</code> améliorée avec le concours de l’Insee</a></li>
+  </ul></li>
+  <li><a href="#annexe-pour-les-curieux-le-code-observable-utilisé-pour-cette-page" id="toc-annexe-pour-les-curieux-le-code-observable-utilisé-pour-cette-page" class="nav-link" data-scroll-target="#annexe-pour-les-curieux-le-code-observable-utilisé-pour-cette-page">Annexe pour les curieux: le code <code>Observable</code> utilisé pour cette page</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="santa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong><em>Vous désirez intégrer la liste de diffusion ? L’inscription se fait <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103">ici</a>.</em></strong></p>
+</div>
+</div>
+<p>Noël approchant, avant d’ouvrir vos cadeaux, de dévorer une bûche ou tout autre met délicieux, nous vous proposons de nous retourner sur la progression de l’audience du réseau durant l’année 2023. Cette newsletter commencera ainsi par une rétrospective du réseau, en écho à celle de l’<a href="../../infolettre/infolettre_09/index.html">année 2022</a>. Une partie consacrée aux actualités de la <em>data science</em> suivra.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Making of
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><code>Observable</code> est à la fois un langage visant à simplifier l’usage de <code>JavaScript</code> <i class="fa-brands fa-js-square" aria-label="js-square"></i> pour mettre en oeuvre des visualisations interactives et une <a href="https://observablehq.com/">plateforme</a> permettant de simplifier la mise à disposition de ces visualisations sous une forme de <em>notebook</em>.</p>
+<p>Les statistiques de comptage sont enregistrées sous format <code>Parquet</code> sur le système de stockage <code>S3</code> du <code>SSPCloud</code>. L’intégration native de <code>DuckDB</code> à <code>Observable</code> permet au navigateur <em>web</em> de lire et d’effectuer des manipulations de données à travers des requêtes SQL de manière très efficace. Sur ce sujet, outre la <a href="https://observablehq.com/documentation/data/databases/database-clients#duckdb">documentation officielle d’<code>Observable</code></a>, il est recommandé de lire le <a href="https://observablehq.com/@ericmauviere/duckdb-redonne-nouvelle-vie-sql">tutoriel d’Eric Mauvière</a>.</p>
+<p>La librairie <a href="https://observablehq.com/@observablehq/plot"><code>Plot</code></a> propose de nombreuses fonctionalités utiles pour construire des visualisations interactives. Sa logique est assez proche de celle des <em>frameworks</em> <a href="https://observablehq.com/@observablehq/plot-from-ggplot2"><code>ggplot2</code> en <code>R</code></a> ou <a href="https://observablehq.com/@observablehq/plot-overview-for-matplotlib-users"><code>matplotlib</code> en <code>Python</code></a>.</p>
+<p>Ce <em>post</em> s’appuie sur <a href="https://quarto.org/docs/interactive/ojs/"><code>Quarto</code></a> qui permet de créer une page <em>web</em> statique autosuffisante à partir d’une suite d’instructions dans des blocs <code>{ojs}</code>. Cette méthode est très intéressante pour l’intégration de figures <code>JavaScript</code> dans des sites <em>web</em> complets générés de manière automatique. Le code utilisé est mis à disposition des curieux par le biais de menus déroulants.</p>
+<p>L’ensemble des codes sources nécessaires à la reproduction de cette page sont disponibles sur le <a href="https://github.com/InseeFrLab/ssphub/blob/main/infolettre/infolettre_16/"><code>Github  inseefrlab/ssphub</code></a>. Pour limiter les duplications de code, les scripts ont été modularisés dans des fichiers séparés.<br>
+Les éléments ne sont pas nécessairement présentés dans l’ordre car <code>JavaScript</code> est un langage <em>asynchrone</em>, les éléments ne sont pas executés dans l’ordre de définition mais dans l’ordre par lequel ils sont nécessaires pour obtenir un objet donné.</p>
+</div>
+</div>
+</div>
+<section id="rétrospective-du-réseau-en-2023" class="level2">
+<h2 class="anchored" data-anchor-id="rétrospective-du-réseau-en-2023">Rétrospective du réseau en 2023</h2>
+<section id="une-audience-en-progression" class="level3">
+<h3 class="anchored" data-anchor-id="une-audience-en-progression">Une audience en progression</h3>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="108" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 107;"><span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;&lt;span class = "underline-big"&gt;</span><span class="sc">${</span>start_count<span class="sc">}</span><span class="vs">&lt;/span&gt; personnes faisaient partie de la liste de diffusion en début d'année 2023.&lt;/div&gt;&lt;br&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="109" data-source-offset="-148"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 108;"><span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>plot_bar_participants<span class="sc">}</span><span class="vs">&lt;/div&gt;&lt;br&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="110" data-source-offset="-194"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb3-110"><a href="#cb3-110" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>message<span class="sc">}</span><span class="vs">&lt;/div&gt;&lt;br&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<details>
+<summary>
+Découvrir le code
+</summary>
+<p>Voir plus bas la définition des objets Javascript 👇️</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode javascript code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;&lt;span class = "underline-big"&gt;</span><span class="sc">${</span>start_count<span class="sc">}</span><span class="vs">&lt;/span&gt; personnes faisaient parti de la liste de diffusion en début d'année.&lt;/div&gt;&lt;br&gt;`</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>plot_bar_participants<span class="sc">}</span><span class="vs">&lt;/div&gt;&lt;br&gt;`</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>message<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<p>A l’exception du mois d’août (pause estivale oblige), la progression de l’audience a été assez régulière grâce aux événements et contenus publiés sur le site du <code>SSP Hub</code>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="113" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 112;"><span id="cb5-113"><a href="#cb5-113" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;Pendant l'année 2023, le réseau a ainsi connu &lt;span class="underline-big"&gt;</span><span class="sc">${</span>events<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">&lt;/span&gt; événements et publications de contenu (</span><span class="sc">${</span><span class="fu">countEvents</span>(<span class="st">"Infolettre"</span>)<span class="sc">}</span><span class="vs">, </span><span class="sc">${</span><span class="fu">countEvents</span>(<span class="st">"Post de blog"</span>)<span class="sc">}</span><span class="vs">, </span><span class="sc">${</span><span class="fu">countEvents</span>(<span class="st">"Evénement virtuel ou présentiel"</span>)<span class="sc">}</span><span class="vs">, </span><span class="sc">${</span><span class="fu">countEvents</span>(<span class="st">"Masterclass"</span>)<span class="sc">}</span><span class="vs">).&lt;/div&gt;&lt;br&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="136" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 135;"><span id="cb6-136"><a href="#cb6-136" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>lineplot<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="137" data-source-offset="-29"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 136;"><span id="cb7-137"><a href="#cb7-137" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>warm_strip<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="138" data-source-offset="-60"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 137;"><span id="cb8-138"><a href="#cb8-138" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`__Choisir les événements du réseau à afficher 👇️__`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb9" data-startfrom="139" data-source-offset="-116"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 138;"><span id="cb9-139"><a href="#cb9-139" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>viewof events_chosen_figure1<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="140" data-source-offset="-165"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 139;"><span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>table_events<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<details>
+<summary>
+Code pour générer les différents blocs de cette figure
+</summary>
+<details>
+<summary>
+Code pour générer la figure principale
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-11" data-startfrom="145" data-source-offset="0"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line 144;"><span id="annotated-cell-11-145"><a href="#annotated-cell-11-145" aria-hidden="true" tabindex="-1"></a><span class="co">// Voir plus bas 👇️ les arrays utilisés</span></span>
+<span id="annotated-cell-11-146"><a href="#annotated-cell-11-146" aria-hidden="true" tabindex="-1"></a><span class="co">// Animation faite avec le Scrubber ci-dessous</span></span>
+<span id="annotated-cell-11-147"><a href="#annotated-cell-11-147" aria-hidden="true" tabindex="-1"></a>lineplot <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="annotated-cell-11-148"><a href="#annotated-cell-11-148" aria-hidden="true" tabindex="-1"></a>    <span class="dt">y</span><span class="op">:</span> {</span>
+<span id="annotated-cell-11-149"><a href="#annotated-cell-11-149" aria-hidden="true" tabindex="-1"></a>        <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span></span>
+<span id="annotated-cell-11-150"><a href="#annotated-cell-11-150" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"Nombre d'inscrits"</span></span>
+<span id="annotated-cell-11-151"><a href="#annotated-cell-11-151" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="annotated-cell-11-152"><a href="#annotated-cell-11-152" aria-hidden="true" tabindex="-1"></a>    <span class="dt">x</span><span class="op">:</span> {</span>
+<span id="annotated-cell-11-153"><a href="#annotated-cell-11-153" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"Date"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-154"><a href="#annotated-cell-11-154" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> [<span class="kw">new</span> <span class="bu">Date</span>(<span class="st">"2023-01-10"</span>)<span class="op">,</span> <span class="kw">new</span> <span class="bu">Date</span>(<span class="st">"2023-12-09"</span>)]</span>
+<span id="annotated-cell-11-155"><a href="#annotated-cell-11-155" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="annotated-cell-11-156"><a href="#annotated-cell-11-156" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="annotated-cell-11-157"><a href="#annotated-cell-11-157" aria-hidden="true" tabindex="-1"></a>        <span class="dt">range</span><span class="op">:</span> <span class="bu">Object</span><span class="op">.</span><span class="fu">values</span>(color_mapping_events)<span class="op">,</span></span>
+<span id="annotated-cell-11-158"><a href="#annotated-cell-11-158" aria-hidden="true" tabindex="-1"></a>        <span class="dt">domain</span><span class="op">:</span> <span class="bu">Object</span><span class="op">.</span><span class="fu">keys</span>(color_mapping_events)<span class="op">,</span></span>
+<span id="annotated-cell-11-159"><a href="#annotated-cell-11-159" aria-hidden="true" tabindex="-1"></a>        <span class="dt">label</span><span class="op">:</span> <span class="st">"Type d'événement"</span></span>
+<span id="annotated-cell-11-160"><a href="#annotated-cell-11-160" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span> </span>
+<span id="annotated-cell-11-161"><a href="#annotated-cell-11-161" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="annotated-cell-11-162"><a href="#annotated-cell-11-162" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="annotated-cell-11-163"><a href="#annotated-cell-11-163" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">line</span>(</span>
+<span id="annotated-cell-11-164"><a href="#annotated-cell-11-164" aria-hidden="true" tabindex="-1"></a>          serie_contacts<span class="op">,</span> {</span>
+<span id="annotated-cell-11-165"><a href="#annotated-cell-11-165" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-166"><a href="#annotated-cell-11-166" aria-hidden="true" tabindex="-1"></a>            <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#6886bb"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-167"><a href="#annotated-cell-11-167" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> <span class="st">"xy"</span></span>
+<span id="annotated-cell-11-168"><a href="#annotated-cell-11-168" aria-hidden="true" tabindex="-1"></a>            })<span class="op">,</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="1">1</button><span id="annotated-cell-11-169" class="code-annotation-target"><a href="#annotated-cell-11-169" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">crosshairX</span>(serie_contacts_complete<span class="op">,</span> {</span>
+<span id="annotated-cell-11-170"><a href="#annotated-cell-11-170" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span></span>
+<span id="annotated-cell-11-171"><a href="#annotated-cell-11-171" aria-hidden="true" tabindex="-1"></a>            })<span class="op">,</span></span>
+<span id="annotated-cell-11-172"><a href="#annotated-cell-11-172" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">dot</span>(</span>
+<span id="annotated-cell-11-173"><a href="#annotated-cell-11-173" aria-hidden="true" tabindex="-1"></a>          serie_contacts_complete<span class="op">,</span></span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-11" data-target-annotation="2">2</button><span id="annotated-cell-11-174" class="code-annotation-target"><a href="#annotated-cell-11-174" aria-hidden="true" tabindex="-1"></a>          Plot<span class="op">.</span><span class="fu">pointerX</span>({<span class="dt">x</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">"red"</span>}))<span class="op">,</span></span>
+<span id="annotated-cell-11-175"><a href="#annotated-cell-11-175" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">dot</span>(serie_contacts<span class="op">,</span> {</span>
+<span id="annotated-cell-11-176"><a href="#annotated-cell-11-176" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x</span><span class="op">:</span> <span class="st">"date"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-177"><a href="#annotated-cell-11-177" aria-hidden="true" tabindex="-1"></a>            <span class="dt">stroke</span><span class="op">:</span> <span class="st">"#6886bb"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-178"><a href="#annotated-cell-11-178" aria-hidden="true" tabindex="-1"></a>            <span class="dt">fill</span><span class="op">:</span> <span class="st">"#6886bb"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-179"><a href="#annotated-cell-11-179" aria-hidden="true" tabindex="-1"></a>            <span class="dt">title</span><span class="op">:</span> <span class="st">"Effectif"</span></span>
+<span id="annotated-cell-11-180"><a href="#annotated-cell-11-180" aria-hidden="true" tabindex="-1"></a>            })<span class="op">,</span></span>
+<span id="annotated-cell-11-181"><a href="#annotated-cell-11-181" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">tickX</span>(events_data_figure1_b<span class="op">,</span> {</span>
+<span id="annotated-cell-11-182"><a href="#annotated-cell-11-182" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span> <span class="dt">text</span><span class="op">:</span> <span class="fu">html</span><span class="vs">``</span><span class="op">,</span></span>
+<span id="annotated-cell-11-183"><a href="#annotated-cell-11-183" aria-hidden="true" tabindex="-1"></a>            <span class="dt">stroke</span><span class="op">:</span> <span class="st">"type"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-184"><a href="#annotated-cell-11-184" aria-hidden="true" tabindex="-1"></a>            <span class="dt">opacity</span><span class="op">:</span> <span class="fl">0.1</span><span class="op">,</span></span>
+<span id="annotated-cell-11-185"><a href="#annotated-cell-11-185" aria-hidden="true" tabindex="-1"></a>            <span class="dt">color</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span></span>
+<span id="annotated-cell-11-186"><a href="#annotated-cell-11-186" aria-hidden="true" tabindex="-1"></a>            <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span></span>
+<span id="annotated-cell-11-187"><a href="#annotated-cell-11-187" aria-hidden="true" tabindex="-1"></a>            })<span class="op">,</span>            </span>
+<span id="annotated-cell-11-188"><a href="#annotated-cell-11-188" aria-hidden="true" tabindex="-1"></a>        Plot<span class="op">.</span><span class="fu">axisX</span>(events_data_figure1_b<span class="op">,</span> {</span>
+<span id="annotated-cell-11-189"><a href="#annotated-cell-11-189" aria-hidden="true" tabindex="-1"></a>            <span class="dt">x</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span></span>
+<span id="annotated-cell-11-190"><a href="#annotated-cell-11-190" aria-hidden="true" tabindex="-1"></a>            <span class="dt">text</span><span class="op">:</span> <span class="st">""</span><span class="op">,</span></span>
+<span id="annotated-cell-11-191"><a href="#annotated-cell-11-191" aria-hidden="true" tabindex="-1"></a>            <span class="dt">color</span><span class="op">:</span> <span class="st">"type"</span></span>
+<span id="annotated-cell-11-192"><a href="#annotated-cell-11-192" aria-hidden="true" tabindex="-1"></a>            })<span class="op">,</span></span>
+<span id="annotated-cell-11-193"><a href="#annotated-cell-11-193" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="annotated-cell-11-194"><a href="#annotated-cell-11-194" aria-hidden="true" tabindex="-1"></a>})</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-11" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-11" data-code-lines="169" data-code-annotation="1">Elément de réactivité lorsque la souris passe sur la figure.</span>
+</dd>
+<dt data-target-cell="annotated-cell-11" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-11" data-code-lines="174" data-code-annotation="2">Elément de réactivité lorsque la souris passe sur la figure.</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>
+Code pour générer la bande sous la figure principale
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-12" data-startfrom="390" data-source-offset="0"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1">1</button><span id="annotated-cell-12-390" class="code-annotation-target"><a href="#annotated-cell-12-390" aria-hidden="true" tabindex="-1"></a>warm_strip <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="annotated-cell-12-391"><a href="#annotated-cell-12-391" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
+<span id="annotated-cell-12-392"><a href="#annotated-cell-12-392" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">50</span><span class="op">,</span></span>
+<span id="annotated-cell-12-393"><a href="#annotated-cell-12-393" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="annotated-cell-12-394"><a href="#annotated-cell-12-394" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"ylorrd"</span><span class="op">,</span></span>
+<span id="annotated-cell-12-395"><a href="#annotated-cell-12-395" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="annotated-cell-12-396"><a href="#annotated-cell-12-396" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="annotated-cell-12-397"><a href="#annotated-cell-12-397" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">crosshair</span>(serie_contacts_complete<span class="op">,</span> {</span>
+<span id="annotated-cell-12-398"><a href="#annotated-cell-12-398" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span></span>
+<span id="annotated-cell-12-399"><a href="#annotated-cell-12-399" aria-hidden="true" tabindex="-1"></a>      <span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span><span class="op">,</span></span>
+<span id="annotated-cell-12-400"><a href="#annotated-cell-12-400" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span></span>
+<span id="annotated-cell-12-401"><a href="#annotated-cell-12-401" aria-hidden="true" tabindex="-1"></a>      <span class="dt">interval</span><span class="op">:</span> d3<span class="op">.</span><span class="at">utcDay</span><span class="op">.</span><span class="fu">every</span>(<span class="dv">3</span>)<span class="op">,</span></span>
+<span id="annotated-cell-12-402"><a href="#annotated-cell-12-402" aria-hidden="true" tabindex="-1"></a>      <span class="dt">inset</span><span class="op">:</span> <span class="dv">0</span> <span class="co">// no gaps</span></span>
+<span id="annotated-cell-12-403"><a href="#annotated-cell-12-403" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="annotated-cell-12-404"><a href="#annotated-cell-12-404" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(serie_contacts_complete<span class="op">,</span> {</span>
+<span id="annotated-cell-12-405"><a href="#annotated-cell-12-405" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">,</span></span>
+<span id="annotated-cell-12-406"><a href="#annotated-cell-12-406" aria-hidden="true" tabindex="-1"></a>      <span class="dt">strokeOpacity</span><span class="op">:</span> <span class="fl">0.2</span><span class="op">,</span></span>
+<span id="annotated-cell-12-407"><a href="#annotated-cell-12-407" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span></span>
+<span id="annotated-cell-12-408"><a href="#annotated-cell-12-408" aria-hidden="true" tabindex="-1"></a>      <span class="dt">interval</span><span class="op">:</span> d3<span class="op">.</span><span class="at">utcDay</span><span class="op">.</span><span class="fu">every</span>(<span class="dv">3</span>)<span class="op">,</span></span>
+<span id="annotated-cell-12-409"><a href="#annotated-cell-12-409" aria-hidden="true" tabindex="-1"></a>      <span class="dt">inset</span><span class="op">:</span> <span class="dv">0</span> <span class="co">// no gaps</span></span>
+<span id="annotated-cell-12-410"><a href="#annotated-cell-12-410" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="annotated-cell-12-411"><a href="#annotated-cell-12-411" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="annotated-cell-12-412"><a href="#annotated-cell-12-412" aria-hidden="true" tabindex="-1"></a>})</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-12" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-12" data-code-lines="390" data-code-annotation="1">Inspiration : https://observablehq.com/<span class="citation" data-cites="observablehq/plot-warming-stripes">@observablehq/plot-warming-stripes</span></span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>
+Code pour générer le sélecteur d’événements
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" data-startfrom="0" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb11-0"><a href="#cb11-0" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">underline_event</span>(x){</span>
+<span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> x_underlined <span class="op">=</span> <span class="vs">`&lt;span style="text-transform: capitalize; border-bottom: solid 4px </span><span class="sc">${</span>color_mapping_events[x]<span class="sc">}</span><span class="vs">; margin-bottom: -2px;"&gt;</span><span class="sc">${</span>x<span class="sc">}</span><span class="vs">&lt;/span&gt;`</span> <span class="op">;</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> x_underlined</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>viewof events_chosen_figure1 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">unique</span>(events<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span>))<span class="op">,</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">value</span><span class="op">:</span> <span class="fu">unique</span>(events<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span>))<span class="op">,</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>        <span class="dt">format</span><span class="op">:</span> x <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`</span><span class="sc">${</span><span class="fu">underline_event</span>(x)<span class="sc">}</span><span class="vs">`</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-6-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-6-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>
+Code pour générer la table interactive
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb12--1"><a href="#cb12--1" aria-hidden="true" tabindex="-1"></a>table_events <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">table</span>(</span>
+<span id="cb12-0"><a href="#cb12-0" aria-hidden="true" tabindex="-1"></a>    events_data_figure1_b<span class="op">,</span></span>
+<span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>        <span class="dt">columns</span><span class="op">:</span> [<span class="st">"date"</span><span class="op">,</span> <span class="st">"event"</span><span class="op">,</span> <span class="st">"type"</span>]<span class="op">,</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>        <span class="dt">header</span><span class="op">:</span> {</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>            <span class="dt">date</span><span class="op">:</span> <span class="st">"Date"</span><span class="op">,</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>            <span class="dt">event</span><span class="op">:</span> <span class="st">"Evénement du réseau"</span><span class="op">,</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>            <span class="dt">type</span><span class="op">:</span> <span class="st">"Type d'événement"</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>        }<span class="op">,</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">format</span><span class="op">:</span> {</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>            <span class="dt">type</span><span class="op">:</span> (x) <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="vs">            &lt;span style="text-transform: capitalize; display: inline-flex; align-items: center;"&gt;</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;span style="border-bottom: solid 1px </span><span class="sc">${</span>color_mapping_events[x]<span class="sc">}</span><span class="vs">; margin-bottom: -2px;"&gt;</span><span class="sc">${</span>x<span class="sc">}</span><span class="vs">&lt;/span&gt;</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;span style="width: 10px; height: 10px; margin-left: 5px; background-color: </span><span class="sc">${</span>color_mapping_events[x]<span class="sc">}</span><span class="vs">;"&gt;&lt;/span&gt;</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/span&gt;</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="vs">            `</span><span class="op">,</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>        <span class="dt">event</span><span class="op">:</span> (x) <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`&lt;a </span><span class="sc">${</span>links_website_ssphub[x] <span class="op">!==</span> <span class="kw">undefined</span> <span class="op">?</span> <span class="vs">`href="</span><span class="sc">${</span>links_website_ssphub[x]<span class="sc">}</span><span class="vs">" target="_blank"`</span> <span class="op">:</span> <span class="st">''</span><span class="sc">}</span><span class="vs">&gt;</span><span class="sc">${</span>x<span class="sc">}</span><span class="vs">&lt;/a&gt;`</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a>    })</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+</details>
+</section>
+<section id="du-contenu-qui-intéresse-au-delà-des-statisticiens-publics" class="level3">
+<h3 class="anchored" data-anchor-id="du-contenu-qui-intéresse-au-delà-des-statisticiens-publics">Du contenu qui intéresse au-delà des statisticiens publics</h3>
+<p>Si les statistiques concernant la composition du réseau parmi les organismes de la statistique publique sont relativement stables par rapport à l’an dernier, le changement principal ayant eu lieu en 2023 est l’ouverture progressive à des publics hors de la statistique publique (administrations hors du SSP, chercheurs et étudiants…)</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb13" data-startfrom="0" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb13-0"><a href="#cb13-0" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`&lt;div&gt;</span><span class="sc">${</span>barplot_ssp<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-8" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<details>
+<summary>
+Code pour générer la figure
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb14--1"><a href="#cb14--1" aria-hidden="true" tabindex="-1"></a>barplot_ssp <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb14-0"><a href="#cb14-0" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">100</span><span class="op">,</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Frequency"</span>}<span class="op">,</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="st">"Hors du SSP"</span><span class="op">,</span> <span class="st">"Service Statistique Public (SSP)"</span>]<span class="op">,</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">range</span><span class="op">:</span> [<span class="st">"forestgreen"</span><span class="op">,</span> <span class="st">"#6886bb"</span>]</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(hors_ssp_data<span class="op">,</span></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>    {</span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a>      <span class="dt">y</span><span class="op">:</span> <span class="st">"SSP"</span><span class="op">,</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fy</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(d<span class="op">.</span><span class="at">date</span>)<span class="op">.</span><span class="fu">toLocaleString</span>(<span class="st">"fr"</span><span class="op">,</span> {</span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a>        <span class="st">"month"</span><span class="op">:</span> <span class="st">"long"</span><span class="op">,</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>        <span class="st">"year"</span><span class="op">:</span> <span class="st">"numeric"</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>      })<span class="op">,</span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span> <span class="dt">inset</span><span class="op">:</span> <span class="fl">0.5</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"SSP"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> <span class="st">"mail"</span><span class="op">,</span></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">channels</span><span class="op">:</span> {<span class="dt">share</span><span class="op">:</span> (d)  <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span><span class="dv">100</span><span class="op">*</span>d<span class="op">.</span><span class="at">share</span><span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">2</span>)<span class="sc">}</span><span class="vs">%`</span>}</span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">axisY</span>({<span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"black"</span><span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">14</span>})<span class="op">,</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([<span class="dv">0</span>])</span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-9" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<p>Les deux dernières publications sur le site du réseau, à savoir l’<a href="../../infolettre/infolettre_15/index.html">infolettre #15</a> sur le réentrainement des modèles de langage et, surtout, le <a href="../../post/parquetRP/index.qmd"><em>post</em> de blog</a> sur la publication du recensement de la population au format <code>Parquet</code> ont connu un écho important hors des cercles de <em>data scientist</em> du service statistique public et ont amené de nouveaux publics à suivre les contenus proposés par le réseau.</p>
+</section>
+</section>
+<section id="actualités-de-la-data-science" class="level1">
+<h1>Actualités de la <em>data science</em></h1>
+<section id="la-startup-mistral-ai-publie-un-modèle-à-létat-de-lart" class="level2">
+<h2 class="anchored" data-anchor-id="la-startup-mistral-ai-publie-un-modèle-à-létat-de-lart">La startup Mistral AI publie un modèle à l’état de l’art</h2>
+<p>Mistral AI, une <em>startup</em> française spécialisée dans l’intelligence artificielle, vient de publier un modèle nommé <a href="https://mistral.ai/news/mixtral-of-experts/"><code>Mixtral</code></a> qui repose sur le principe du <a href="https://huggingface.co/blog/moe"><em>mixture of experts</em></a>. Cette technique consiste à privilégier une architecture construite à partir de sous-modèles spécialisés plutôt qu’un modèle généraliste qui s’adapte en fin de procédure à une question spécialisée. Dans ce type de modèles, l’enjeu est ainsi d’interpréter la question pour diriger la réponse vers l’expert adéquat : si une question porte sur un sujet de cuisine, un.e expert.e spécialisé.e en code sera de peu de secours.</p>
+<p>D’après les premières évaluations publiées, ce modèle surpasserait les capacités des autres modèles ouverts (notamment <code>Llama 2</code>) et s’approcherait des performances de GPT 3.5, le modèle derrière la version gratuite de ChatGPT. Cette annonce a eu lieu en pleine période de levée de fonds pour Mistral AI qui aurait obtenu un financement de 385 millions d’euros.</p>
+<details>
+<summary>
+Tableau des performances (source: <a href="https://mistral.ai/news/mixtral-of-experts/">Mistral AI</a>)
+</summary>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://mistral.ai/images/news/mixtral-of-experts/overview.png" class="img-fluid figure-img"></p>
+<figcaption>Tableau des performances publié par Mistral AI</figcaption>
+</figure>
+</div>
+</details>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pour en savoir plus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Un <a href="https://www.lemonde.fr/economie/article/2023/12/11/la-start-up-francaise-mistral-ai-a-leve-385-millions-d-euros_6205065_3234.html">article du <em>Monde</em></a> sur l’entreprise Mistral AI ;</li>
+<li>Le modèle <code>Mixtral</code> sur <a href="https://huggingface.co/docs/transformers/model_doc/mixtral">Huggingface</a> ;</li>
+<li>Le principe des architectures <em>mixture of experts</em> (<a href="https://en.wikipedia.org/wiki/Mixture_of_experts">article Wikipedia</a>).</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="leurope-parvient-à-un-accord-sur-les-premières-règles-au-monde-en-matière-dia" class="level2">
+<h2 class="anchored" data-anchor-id="leurope-parvient-à-un-accord-sur-les-premières-règles-au-monde-en-matière-dia">L’Europe parvient à un accord sur les premières règles au monde en matière d’IA</h2>
+<p>Dans un accord provisoire signé le 9 décembre 2023 et nommé <em>“Artificial Intelligence Act”</em>, les États Membres et le Parlement européen ont établi une proposition relative à des règles harmonisées concernant l’intelligence artificielle (IA).</p>
+<p>Débutées en 2018, avant que les IA génératives ne deviennent si populaires, ces discussions dépassent le cadre exclusif de ces dernières. Néanmoins, concernant celles-ci, le compromis prévoit une approche différenciée suivant le contexte de développement et l’usage de ces modèles. Outre le respect des règles européennes de propriété intellectuelle, les développeurs de modèles génératifs devront s’assurer que les produits diffusés sont bien identifiés comme artificiels, afin de limiter la diffusion de <a href="https://fr.wikipedia.org/wiki/Deepfake"><em>deepfakes</em></a>. Les développeurs de ces modèles devront également communiquer sur la qualité des données utilisées pour entraîner les modèles et sur le coût énergétique de ceux-ci. Les modèles <em>open source</em> et ceux construits à des fins de recherche bénéficient d’exemptions de ces règles.</p>
+<p>Des contraintes renforcées s’appliqueront aux systèmes jugés à <em>“haut risque”</em> dans des domaines comme la défense, l’éducation, les ressources humaines ou encore la santé. Pour ces systèmes, il sera nécessaire de réaliser une analyse d’impact avant la mise sur le marché. Par ailleurs, une obligation de transparence et d’explicabilité des modèles est mise en place afin d’être en mesure de comprendre les règles de décision de ces IA.</p>
+<p>L’accord provisoire interdit également l’utilisation de l’IA dans quelques domaines, jugés trop sensibles. Par exemple, la reconnaissance faciale de masse est interdite, hormis lorsque celle-ci est justifiée par des motifs de sécurité nationale. D’autres utilisations, qui peuvent amener à des dérives, comme la notation sociale basée sur le comportement ou des caractéristiques personnelles, sont interdits. Les travaux se poursuivront maintenant au niveau technique dans les semaines à venir afin de mettre au point les détails du nouveau règlement. Une fois ces travaux terminés, la présidence présentera le texte de compromis aux représentants des États membres pour approbation.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pour en savoir plus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>La <a href="https://www.consilium.europa.eu/fr/press/press-releases/2023/12/09/artificial-intelligence-act-council-and-parliament-strike-a-deal-on-the-first-worldwide-rules-for-ai/">présentation de l’accord</a> sur le site web du Conseil de l’Europe.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="nouveau-post-de-blog-diffusion-du-recensement-de-la-population-au-format-parquet" class="level2">
+<h2 class="anchored" data-anchor-id="nouveau-post-de-blog-diffusion-du-recensement-de-la-population-au-format-parquet">Nouveau <em>post</em> de blog: diffusion du recensement de la population au format <code>Parquet</code></h2>
+<p>Chaque année, l’Insee diffuse des statistiques construites à partir du recensement de la population, l’une des enquêtes phares de l’institut. Pour accompagner ces résultats et permettre à de nombreux acteurs de creuser ces données très riches dans des dimensions qui les intéressent, l’Insee diffuse également des bases de données détaillées construites après anonymisation de près de 20 millions de données individuelles.</p>
+<p>Ces données, d’une extrême richesse, étaient historiquement complexes à manipuler du fait de leur volumétrie. La diffusion de celles-ci sous le format <code>Parquet</code>, une première mondiale parmi les instituts de statistique publique, vise à simplifier leur exploitation. Pour accompagner cette innovation, en partenariat avec les services de diffusion de l’Insee, le <a href="https://ssphub.netlify.app/post/parquetrp/">dernier <em>post</em> de blog</a> du réseau présente un guide pratique d’utilisation de ces données dans plusieurs langages de traitement (<i class="fa-brands fa-r-project" aria-label="r-project"></i> , <code>Python</code> <i class="fa-brands fa-python" aria-label="python"></i> et <code>Observable</code> <i class="fa-brands fa-js-square" aria-label="js-square"></i>) par le biais de <code>DuckDB</code>.</p>
+<p>Combien d’habitants de Toulouse ont changé de logement sur l’année ? Quels sont les départements avec le plus de centenaires ? Le <a href="https://ssphub.netlify.app/post/parquetrp/"><em>post</em> de blog</a> vous montrera comment calculer ces statistiques. Et si vous désirez découvrir ce format avec des exemples additionnels, ce <em>post</em> d’<a href="https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/">Eric Mauvière</a> vous intéressera également.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pour en savoir plus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Le <a href="https://ssphub.netlify.app/post/parquetrp/"><em>post</em> de blog</a> ;</li>
+<li>Un <a href="https://www.insee.fr/fr/information/7635827?sommaire=7635842">article</a> sur le format <code>Parquet</code> dans le <em>Courrier des stats n°9</em> écrit par Alexis Dondon et Pierre Lamarche ;</li>
+<li>Le blog d’<a href="https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/">Eric Mauvière</a> qui présente une série d’articles sur le format <code>Parquet</code>;</li>
+<li>La <a href="https://www.linkedin.com/feed/update/urn:li:activity:7133760348129505281?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7133760348129505281%29">présentation</a> de Romain Lesur sur le sujet pour l’atelier <em>Modernisation of Official Statistics</em> de l’UNECE.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="le-sspcloud-se-dote-dun-explorateur-de-fichiers-basé-sur-duckdb" class="level2">
+<h2 class="anchored" data-anchor-id="le-sspcloud-se-dote-dun-explorateur-de-fichiers-basé-sur-duckdb">Le <a href="https://datalab.sspcloud.fr">SSPCloud</a> se dote d’un explorateur de fichiers basé sur <code>DuckDB</code></h2>
+<p><code>DuckDB</code> est un outil extrêmement efficace pour lire des fichiers <code>Parquet</code> et <code>CSV</code>. Outre son efficacité, <code>DuckDB</code> présente l’avantage d’être disponible par le biais de plusieurs clients: <i class="fa-brands fa-r-project" aria-label="r-project"></i>, <code>Python</code> <i class="fa-brands fa-python" aria-label="python"></i> mais aussi un navigateur web grâce à <code>Javascript</code> <i class="fa-brands fa-js-square" aria-label="js-square"></i> . Des acteurs majeurs de l’écosystème de la <em>data science</em>, notamment <a href="https://observablehq.com/documentation/data/databases/database-clients#duckdb">Observable</a>, ont fait de <code>DuckDB</code> une pierre angulaire de leurs explorateurs de données. L’avantage de cette approche, typique du <a href="https://developer.mozilla.org/fr/docs/WebAssembly"><em>web assembly</em></a> (approche visant à mettre à disposition des logiciels de calculs scientifiques par le biais d’un simple navigateur), est que seul <code>Javascript</code> <i class="fa-brands fa-js-square" aria-label="js-square"></i>, qui est disponible sur tout navigateur, est nécessaire pour visualiser et effectuer des traitements analytiques sur des données.</p>
+<p>Le <a href="https://datalab.sspcloud.fr"><code>SSPCloud</code></a>, la plateforme moderne de traitement de données développée par l’Insee et mise à disposition de près de 3000 agents de l’administration ou étudiants, vient de mettre en oeuvre <a href="https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&amp;page=1&amp;columnWidths=%7B%7D&amp;columnVisibility=%7B%7D">un explorateur</a> aux fonctionnalités similaires 🚀.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="viewer-sspcloud.png" class="img-fluid figure-img"></p>
+<figcaption>Un exemple d’utilisation de cet explorateur sur les données détaillées du recensement 👆️</figcaption>
+</figure>
+</div>
+<p>Celui-ci s’appuie sur <code>DuckDB</code> et permet de visualiser de manière très fluide les fichiers aux formats <code>Parquet</code> et <code>CSV</code>. Il ne se restreint pas aux données disponibles sur les espaces de stockage personnels du <code>SSPCloud</code>: n’importe quel fichier, au format adéquat et disponible sur internet, peut être lu avec ce visualiseur. Il n’est d’ailleurs pas nécessaire d’avoir un compte sur le <a href="https://datalab.sspcloud.fr"><code>SSPCloud</code></a> pour l’utiliser, il suffit que le fichier que l’on souhaite lire soit un fichier <em>open data </em> 😍 !</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pour en savoir plus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://developer.mozilla.org/fr/docs/WebAssembly">Des éléments</a> sur le <em>web assembly</em> ;</li>
+<li><a href="https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&amp;page=1&amp;columnWidths=%7B%7D&amp;columnVisibility=%7B%7D">L’explorateur de fichier du <code>SSPCloud</code></a> ;</li>
+<li><a href="https://explore.data.gouv.fr/tableau">L’explorateur de fichiers de <code>data.gouv</code></a> basé sur la même approche technologique.</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="laccessibilité-de-jupyter-améliorée-avec-le-concours-de-linsee" class="level2">
+<h2 class="anchored" data-anchor-id="laccessibilité-de-jupyter-améliorée-avec-le-concours-de-linsee">L’accessibilité de <code>Jupyter</code> améliorée avec le concours de l’Insee</h2>
+<p>Afin de ne pas pénaliser certains publics, les logiciels doivent respecter des critères d’accessibilité. Ils doivent notamment avoir de nombreuses fonctionnalités accessibles sans souris, exclusivement par le biais du clavier. Cependant, <code>Jupyter</code>, logiciel bien connu des <em>data scientists</em>, par la structure complexe de son interface, présentait plusieurs défauts, comme la difficulté à naviguer dans la page pour trouver le menu nécessaire pour éditer du code.</p>
+<p>Grâce à une subvention de l’Insee, des travaux d’amélioration de l’accessibilité de <code>Jupyter</code> ont pu être menés. Les prochaines versions du logiciel devraient être plus accessibles, et, entre autres, plus pratiques d’usage pour les <em>data scientists</em> qui privilégient le clavier à la souris pour se déplacer dans un document.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pour en savoir plus
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>L’<a href="https://blog.jupyter.org/recent-keyboard-navigation-improvements-in-jupyter-4df32f97628d">annonce</a> sur le blog de <code>Jupyter</code> ;</li>
+<li>Le principe d’<a href="https://www.w3.org/WAI/WCAG21/Understanding/keyboard-accessible">accessibilité clavier</a> du W3C.</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="annexe-pour-les-curieux-le-code-observable-utilisé-pour-cette-page" class="level1">
+<h1>Annexe pour les curieux: le code <code>Observable</code> utilisé pour cette page</h1>
+<details>
+<summary>
+Les librairies ou imports externes utilisés
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-17" data-startfrom="0" data-source-offset="-0"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><button class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="1">1</button><span id="annotated-cell-17-0" class="code-annotation-target"><a href="#annotated-cell-17-0" aria-hidden="true" tabindex="-1"></a>Plot <span class="op">=</span> <span class="pp">require</span>(<span class="st">'@observablehq/plot@0.6.12/dist/plot.umd.min.js'</span>)</span>
+<span id="annotated-cell-17-1"><a href="#annotated-cell-17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {disposal} <span class="im">from</span> <span class="st">"@mbostock/disposal"</span></span>
+<span id="annotated-cell-17-2"><a href="#annotated-cell-17-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> {Scrubber} <span class="im">from</span> <span class="st">"@mbostock/scrubber"</span></span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-17" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-17" data-code-lines="0" data-code-annotation="1">La librairie <code>Plot</code> embarquée par défaut dans <code>Quarto</code> est un peu vieille mais la mettre à jour est assez simple.</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-10-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-10-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-10-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</details>
+<!-----------------
+Objets temporaires
+------------------>
+<details>
+<summary>
+Objets réactifs nécessaires pour modifier en continu l’input de la figure 1
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb15--1"><a href="#cb15--1" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> {</span>
+<span id="cb15-0"><a href="#cb15-0" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> class_to_use <span class="op">=</span> (scrubber_participants <span class="op">&lt;</span> end_count <span class="op">-</span> <span class="dv">100</span>) <span class="op">?</span> <span class="st">"blurred-element"</span> <span class="op">:</span> <span class="st">"underline-big"</span><span class="op">;</span></span>
+<span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> message_to_print <span class="op">=</span> <span class="vs">`</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="vs">  En fin d'année, &lt;span class = "</span><span class="sc">${</span>class_to_use<span class="sc">}</span><span class="vs">" &gt;</span><span class="sc">${</span>end_count<span class="sc">}</span><span class="vs">&lt;/span&gt; personnes étaient membres de la liste de diffusion 🚀🚀.</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> message_to_print</span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-11" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb16--1"><a href="#cb16--1" aria-hidden="true" tabindex="-1"></a>numbers2 <span class="op">=</span> {</span>
+<span id="cb16-0"><a href="#cb16-0" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> startValue <span class="op">=</span> start_count<span class="op">;</span></span>
+<span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> endValue <span class="op">=</span> end_count<span class="op">;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> numbers <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>({ <span class="dt">length</span><span class="op">:</span> endValue <span class="op">-</span> startValue <span class="op">+</span> <span class="dv">1</span> }<span class="op">,</span> (_<span class="op">,</span> i) <span class="kw">=&gt;</span> i <span class="op">+</span> startValue)<span class="op">;</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> numbers</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-12" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb17--1"><a href="#cb17--1" aria-hidden="true" tabindex="-1"></a>current_bar <span class="op">=</span> {</span>
+<span id="cb17-0"><a href="#cb17-0" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> startValue <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> endValue <span class="op">=</span> scrubber_participants<span class="op">;</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> numbers <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>({ <span class="dt">length</span><span class="op">:</span> endValue <span class="op">-</span> startValue <span class="op">+</span> <span class="dv">1</span> }<span class="op">,</span> (_<span class="op">,</span> i) <span class="kw">=&gt;</span> i <span class="op">+</span> startValue) <span class="op">;</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> numbers</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-13" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<!---------
+scrubber
+---------->
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="0" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb18-0"><a href="#cb18-0" aria-hidden="true" tabindex="-1"></a>viewof scrubber_participants <span class="op">=</span> <span class="fu">Scrubber</span>(numbers2<span class="op">,</span> {<span class="dt">loopDelay</span><span class="op">:</span> <span class="dv">4000</span><span class="op">,</span> <span class="dt">initial</span><span class="op">:</span> start_count})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-14" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<!------------ 
+figure
+------------->
+<details>
+<summary>
+La première figure, animée par la réactivité de ses inputs
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-22" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="annotated-cell-22--1"><a href="#annotated-cell-22--1" aria-hidden="true" tabindex="-1"></a>plot_bar_participants <span class="op">=</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="annotated-cell-22-0"><a href="#annotated-cell-22-0" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="dv">40</span><span class="op">,</span></span>
+<span id="annotated-cell-22-1"><a href="#annotated-cell-22-1" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">60</span><span class="op">,</span></span>
+<span id="annotated-cell-22-2"><a href="#annotated-cell-22-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Frequency →"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">336</span><span class="op">,</span> <span class="dv">552</span>]}<span class="op">,</span></span>
+<span id="annotated-cell-22-3"><a href="#annotated-cell-22-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span>}<span class="op">,</span></span>
+<span id="annotated-cell-22-4"><a href="#annotated-cell-22-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">color</span><span class="op">:</span> {</span>
+<span id="annotated-cell-22-5"><a href="#annotated-cell-22-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">scheme</span><span class="op">:</span> <span class="st">"ylorrd"</span><span class="op">,</span></span>
+<span id="annotated-cell-22-6"><a href="#annotated-cell-22-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> [<span class="dv">236</span><span class="op">,</span> scrubber_participants] </span>
+<span id="annotated-cell-22-7"><a href="#annotated-cell-22-7" aria-hidden="true" tabindex="-1"></a>    }<span class="op">,</span></span>
+<span id="annotated-cell-22-8"><a href="#annotated-cell-22-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<button class="code-annotation-anchor" data-target-cell="annotated-cell-22" data-target-annotation="1">1</button><span id="annotated-cell-22-9" class="code-annotation-target"><a href="#annotated-cell-22-9" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(current_bar<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">inset</span><span class="op">:</span> <span class="fl">0.5</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> (d) <span class="kw">=&gt;</span> d})<span class="op">,</span></span>
+<span id="annotated-cell-22-10"><a href="#annotated-cell-22-10" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="annotated-cell-22-11"><a href="#annotated-cell-22-11" aria-hidden="true" tabindex="-1"></a>})</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-annotation">
+<dl class="code-annotation-container-hidden code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-22" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-22" data-code-lines="9" data-code-annotation="1">Elément réactif</span>
+</dd>
+</dl>
+</div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-15" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>
+Fonctions utilisées
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb19--1"><a href="#cb19--1" aria-hidden="true" tabindex="-1"></a>dateFormat <span class="op">=</span> d3<span class="op">.</span><span class="fu">utcFormat</span>(<span class="st">"%Y-%m-%d"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-16" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<!----
+Compter les événements du réseau
+------>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb20--1"><a href="#cb20--1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">pluralizeEvent</span>(input) {</span>
+<span id="cb20-0"><a href="#cb20-0" aria-hidden="true" tabindex="-1"></a>  <span class="cf">switch</span> (input) {</span>
+<span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">"Evénement virtuel ou présentiel"</span><span class="op">:</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="st">"événements virtuels ou présentiels"</span><span class="op">;</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">"Infolettre"</span><span class="op">:</span></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="st">"infolettres"</span><span class="op">;</span></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">"Post de blog"</span><span class="op">:</span></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="st">"posts de blog"</span><span class="op">;</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">case</span> <span class="st">"Masterclass"</span><span class="op">:</span></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="st">"masterclasses"</span><span class="op">;</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">default</span><span class="op">:</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="st">"unknown event type"</span><span class="op">;</span></span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-17" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb21--1"><a href="#cb21--1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">countEvents</span>(x){</span>
+<span id="cb21-0"><a href="#cb21-0" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> pluriel <span class="op">=</span> <span class="fu">pluralizeEvent</span>(x)<span class="op">;</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> message <span class="op">=</span> <span class="vs">`</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;span style="border-bottom: solid 4px </span><span class="sc">${</span>color_mapping_events[x]<span class="sc">}</span><span class="vs">; margin-bottom: -2px;"&gt;</span><span class="sc">${</span>nombre_events<span class="op">.</span><span class="fu">get</span>(x)<span class="sc">}</span><span class="vs"> </span><span class="sc">${</span>pluriel<span class="sc">}</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/span&gt;</span></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span> <span class="op">;</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> message</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-18" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb22--1"><a href="#cb22--1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">leftJoinArrays</span>(array1<span class="op">,</span> array2<span class="op">,</span> key<span class="op">,</span> mean<span class="op">,</span> deviation) {</span>
+<span id="cb22-0"><a href="#cb22-0" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> randomNoise <span class="op">=</span> d3<span class="op">.</span><span class="fu">randomNormal</span>(mean<span class="op">,</span> deviation)<span class="op">;</span></span>
+<span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Sort arrays by date</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  array1<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(a<span class="op">.</span><span class="at">date</span>) <span class="op">-</span> <span class="kw">new</span> <span class="bu">Date</span>(b<span class="op">.</span><span class="at">date</span>))<span class="op">;</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>  array2<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(a<span class="op">.</span><span class="at">date</span>) <span class="op">-</span> <span class="kw">new</span> <span class="bu">Date</span>(b<span class="op">.</span><span class="at">date</span>))<span class="op">;</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Perform left join</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> result <span class="op">=</span> array1<span class="op">.</span><span class="fu">map</span>((item1<span class="op">,</span> index) <span class="kw">=&gt;</span> {</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> matchingItem <span class="op">=</span> array2<span class="op">.</span><span class="fu">find</span>((item2) <span class="kw">=&gt;</span> item2[key] <span class="op">===</span> item1[key])<span class="op">;</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> noise <span class="op">=</span> matchingItem <span class="op">?</span> <span class="fu">randomNoise</span>() <span class="op">:</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> noisedMail <span class="op">=</span> matchingItem <span class="op">?</span> matchingItem<span class="op">.</span><span class="at">mail</span> <span class="op">+</span> noise <span class="op">:</span> <span class="kw">undefined</span><span class="op">;</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> { <span class="dt">rowNumber</span><span class="op">:</span> index <span class="op">+</span> <span class="dv">1</span><span class="op">,</span> <span class="op">...</span>item1<span class="op">,</span> <span class="op">...</span>matchingItem<span class="op">,</span> noisedMail }<span class="op">;</span></span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> result<span class="op">;</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-19" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<!----
+Manipulation de listes ou arrays
+------>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb23--1"><a href="#cb23--1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">unique</span>(data<span class="op">,</span> accessor) {</span>
+<span id="cb23-0"><a href="#cb23-0" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>(<span class="kw">new</span> <span class="bu">Set</span>(accessor <span class="op">?</span> data<span class="op">.</span><span class="fu">map</span>(accessor) <span class="op">:</span> data))<span class="op">;</span></span>
+<span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-20" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb24--1"><a href="#cb24--1" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">interpolateDates</span>(data) {</span>
+<span id="cb24-0"><a href="#cb24-0" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Sort the data by date</span></span>
+<span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>  data<span class="op">.</span><span class="fu">sort</span>((a<span class="op">,</span> b) <span class="kw">=&gt;</span> <span class="kw">new</span> <span class="bu">Date</span>(a<span class="op">.</span><span class="at">date</span>) <span class="op">-</span> <span class="kw">new</span> <span class="bu">Date</span>(b<span class="op">.</span><span class="at">date</span>))<span class="op">;</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Create an array to store the interpolated data</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> interpolatedData <span class="op">=</span> []<span class="op">;</span></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Loop through the data to interpolate values between dates</span></span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> data<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> currentDate <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(data[i]<span class="op">.</span><span class="at">date</span>)<span class="op">;</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> nextDate <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(data[i <span class="op">+</span> <span class="dv">1</span>]<span class="op">.</span><span class="at">date</span>)<span class="op">;</span></span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Calculate the difference in days between current and next date</span></span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> daysDiff <span class="op">=</span> (nextDate <span class="op">-</span> currentDate) <span class="op">/</span> (<span class="dv">1000</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> <span class="dv">60</span> <span class="op">*</span> <span class="dv">24</span>)<span class="op">;</span></span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Calculate the daily increment</span></span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> dailyIncrement <span class="op">=</span> (data[i <span class="op">+</span> <span class="dv">1</span>]<span class="op">.</span><span class="at">mail</span> <span class="op">-</span> data[i]<span class="op">.</span><span class="at">mail</span>) <span class="op">/</span> daysDiff<span class="op">;</span></span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Interpolate values for each day between the current and next date</span></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> (<span class="kw">let</span> j <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> j <span class="op">&lt;</span> daysDiff<span class="op">;</span> j<span class="op">++</span>) {</span>
+<span id="cb24-19"><a href="#cb24-19" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> interpolatedDate <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(currentDate)<span class="op">;</span></span>
+<span id="cb24-20"><a href="#cb24-20" aria-hidden="true" tabindex="-1"></a>      interpolatedDate<span class="op">.</span><span class="fu">setDate</span>(currentDate<span class="op">.</span><span class="fu">getDate</span>() <span class="op">+</span> j)<span class="op">;</span></span>
+<span id="cb24-21"><a href="#cb24-21" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb24-22"><a href="#cb24-22" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> interpolatedValue <span class="op">=</span> data[i]<span class="op">.</span><span class="at">mail</span> <span class="op">+</span> j <span class="op">*</span> dailyIncrement<span class="op">;</span></span>
+<span id="cb24-23"><a href="#cb24-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-24"><a href="#cb24-24" aria-hidden="true" tabindex="-1"></a>      interpolatedData<span class="op">.</span><span class="fu">push</span>({</span>
+<span id="cb24-25"><a href="#cb24-25" aria-hidden="true" tabindex="-1"></a>        <span class="dt">date</span><span class="op">:</span> interpolatedDate<span class="op">.</span><span class="fu">toISOString</span>()<span class="op">.</span><span class="fu">split</span>(<span class="st">'T'</span>)[<span class="dv">0</span>]<span class="op">,</span></span>
+<span id="cb24-26"><a href="#cb24-26" aria-hidden="true" tabindex="-1"></a>        <span class="dt">mail</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(interpolatedValue)<span class="op">,</span> <span class="co">// Round to the nearest integer</span></span>
+<span id="cb24-27"><a href="#cb24-27" aria-hidden="true" tabindex="-1"></a>      })<span class="op">;</span></span>
+<span id="cb24-28"><a href="#cb24-28" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb24-29"><a href="#cb24-29" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb24-30"><a href="#cb24-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-31"><a href="#cb24-31" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Add the last data point</span></span>
+<span id="cb24-32"><a href="#cb24-32" aria-hidden="true" tabindex="-1"></a>  interpolatedData<span class="op">.</span><span class="fu">push</span>({</span>
+<span id="cb24-33"><a href="#cb24-33" aria-hidden="true" tabindex="-1"></a>    <span class="dt">date</span><span class="op">:</span> data[data<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>]<span class="op">.</span><span class="at">date</span><span class="op">,</span></span>
+<span id="cb24-34"><a href="#cb24-34" aria-hidden="true" tabindex="-1"></a>    <span class="dt">mail</span><span class="op">:</span> data[data<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span>]<span class="op">.</span><span class="at">mail</span><span class="op">,</span></span>
+<span id="cb24-35"><a href="#cb24-35" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb24-36"><a href="#cb24-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-37"><a href="#cb24-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> interpolatedData<span class="op">;</span></span>
+<span id="cb24-38"><a href="#cb24-38" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-21" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>
+<p><em>Inputs</em> pour <code>DuckDB</code> 🦆</p>
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25" data-startfrom="0" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb25-0"><a href="#cb25-0" aria-hidden="true" tabindex="-1"></a>url_events <span class="op">=</span> <span class="vs">`https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-12-retrospective/events_orginazed_2023.json`</span></span>
+<span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>url_latest <span class="op">=</span> <span class="st">'s3://ssphub/diffusion/website/2023-12-retrospective/list_contacts_latest.parquet'</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>url_hors_ssp <span class="op">=</span> <span class="st">'s3://ssphub/diffusion/website/2023-12-retrospective/series_part_ssp.parquet'</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>url_latest2 <span class="op">=</span> <span class="st">'s3://ssphub/diffusion/website/2023-12-retrospective/series_nombre_contact.parquet'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-22-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-22-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-22-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-22-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26" data-startfrom="0" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb26-0"><a href="#cb26-0" aria-hidden="true" tabindex="-1"></a>configuredClient <span class="op">=</span> {</span>
+<span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> client <span class="op">=</span> <span class="cf">await</span> DuckDBClient<span class="op">.</span><span class="fu">of</span>()<span class="op">;</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> client<span class="op">.</span><span class="fu">sql</span><span class="vs">`</span></span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="vs">    SET s3_endpoint='minio.lab.sspcloud.fr'</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span><span class="op">;</span></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> client<span class="op">;</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>db <span class="op">=</span> {</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE VIEW share_ssp AS </span></span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="vs">    SELECT * FROM read_parquet('</span><span class="sc">${</span>url_hors_ssp<span class="sc">}</span><span class="vs">') ;</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="op">;</span></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE VIEW latest AS </span></span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="vs">    SELECT * FROM read_parquet('</span><span class="sc">${</span>url_latest<span class="sc">}</span><span class="vs">') WHERE date &gt; '2023-01-01' ;</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="op">;</span></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">await</span> configuredClient<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a><span class="vs">    CREATE VIEW serie AS </span></span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a><span class="vs">    SELECT * FROM read_parquet('</span><span class="sc">${</span>url_latest2<span class="sc">}</span><span class="vs">') WHERE date &gt; '2023-01-01' ;</span></span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a><span class="vs">  `</span>)<span class="op">;</span></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> configuredClient</span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-23-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-23-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell" data-eval="true">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27" data-startfrom="1" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>serie_contacts <span class="op">=</span> db<span class="op">.</span><span class="fu">sql</span><span class="vs">`</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="vs">SELECT date, CAST(SUM(mail) AS int) AS mail</span></span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="vs">FROM serie</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="vs">GROUP BY date</span></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a>serie_contacts_domain <span class="op">=</span> db<span class="op">.</span><span class="fu">sql</span><span class="vs">`</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="vs">SELECT date, domain, CAST(mail AS int) AS mail</span></span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a><span class="vs">FROM serie</span></span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-24-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-24-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb28--1"><a href="#cb28--1" aria-hidden="true" tabindex="-1"></a>hors_ssp_data <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(<span class="vs">`</span></span>
+<span id="cb28-0"><a href="#cb28-0" aria-hidden="true" tabindex="-1"></a><span class="vs">SELECT * FROM share_ssp WHERE date in ('2023-12-09', '2023-01-10')</span></span>
+<span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-25" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb29--1"><a href="#cb29--1" aria-hidden="true" tabindex="-1"></a>events <span class="op">=</span> d3<span class="op">.</span><span class="fu">json</span>(url_events)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-26" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>
+<p><em>Arrays</em> intermédiaire</p>
+</summary>
+<!----
+computed objects
+------>
+<details>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb30--1"><a href="#cb30--1" aria-hidden="true" tabindex="-1"></a>serie_contacts_complete <span class="op">=</span> <span class="fu">interpolateDates</span>(serie_contacts)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-27" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb31" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb31--1"><a href="#cb31--1" aria-hidden="true" tabindex="-1"></a>start_count <span class="op">=</span> serie_contacts<span class="op">.</span><span class="fu">filter</span>((d) <span class="kw">=&gt;</span> <span class="fu">dateFormat</span>(d<span class="op">.</span><span class="at">date</span>) <span class="op">==</span> <span class="st">"2023-01-10"</span>)<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">mail</span>)[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-28" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb32--1"><a href="#cb32--1" aria-hidden="true" tabindex="-1"></a>end_count <span class="op">=</span> serie_contacts<span class="op">.</span><span class="fu">filter</span>((d) <span class="kw">=&gt;</span> <span class="fu">dateFormat</span>(d<span class="op">.</span><span class="at">date</span>) <span class="op">==</span> <span class="st">"2023-12-09"</span>)<span class="op">.</span><span class="fu">map</span>((d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">mail</span>)[<span class="dv">0</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-29" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb33" data-startfrom="0" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb33-0"><a href="#cb33-0" aria-hidden="true" tabindex="-1"></a>events_data_figure1 <span class="op">=</span> events<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> events_chosen_figure1<span class="op">.</span><span class="fu">includes</span>(d<span class="op">.</span><span class="at">type</span>))</span>
+<span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>events_data_figure1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-30-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-30-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb34--1"><a href="#cb34--1" aria-hidden="true" tabindex="-1"></a>nombre_events <span class="op">=</span> d3<span class="op">.</span><span class="fu">rollup</span>(events<span class="op">,</span> (D) <span class="kw">=&gt;</span> D<span class="op">.</span><span class="at">length</span><span class="op">,</span> (d) <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">type</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-31" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35" data-startfrom="0" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb35-0"><a href="#cb35-0" aria-hidden="true" tabindex="-1"></a>measured_dates <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT DISTINCT strftime(date, '%Y-%m-%d') AS date FROM serie`</span>)</span>
+<span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>date_selected <span class="op">=</span> measured_dates<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">date</span>)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>list_dates2 <span class="op">=</span> db<span class="op">.</span><span class="fu">query</span>(<span class="vs">`SELECT DISTINCT strftime(date, '%Y-%m-%d') AS date FROM serie`</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-32-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-32-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-32-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36" data-startfrom="0" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><span id="cb36-0"><a href="#cb36-0" aria-hidden="true" tabindex="-1"></a>links_website_ssphub <span class="op">=</span> {</span>
+<span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> toto <span class="op">=</span> {}<span class="op">;</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>    events_data_figure1_b<span class="op">.</span><span class="fu">forEach</span>(item <span class="kw">=&gt;</span> {</span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>    toto[item<span class="op">.</span><span class="at">event</span>] <span class="op">=</span> item<span class="op">.</span><span class="at">href</span><span class="op">;</span></span>
+<span id="cb36-5"><a href="#cb36-5" aria-hidden="true" tabindex="-1"></a>    })<span class="op">;</span></span>
+<span id="cb36-6"><a href="#cb36-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb36-7"><a href="#cb36-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> toto</span>
+<span id="cb36-8"><a href="#cb36-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb36-9"><a href="#cb36-9" aria-hidden="true" tabindex="-1"></a>links_website_ssphub</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-33-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-33-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb37--1"><a href="#cb37--1" aria-hidden="true" tabindex="-1"></a>events_data_figure1_b <span class="op">=</span> <span class="fu">leftJoinArrays</span>(events_data_figure1<span class="op">,</span> serie_contacts_complete<span class="op">,</span> <span class="st">"date"</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">40</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-34" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+<details>
+<summary>
+Quelques <em>array</em> utiles
+</summary>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb38--1"><a href="#cb38--1" aria-hidden="true" tabindex="-1"></a>color_mapping_events <span class="op">=</span> {</span>
+<span id="cb38-0"><a href="#cb38-0" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> color_mapping_events <span class="op">=</span> {</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Evénement virtuel ou présentiel"</span><span class="op">:</span> <span class="st">"#4d78a6"</span><span class="op">,</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Infolettre"</span><span class="op">:</span> <span class="st">"#f28e2c"</span><span class="op">,</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Post de blog"</span><span class="op">:</span> <span class="st">"#e05658"</span><span class="op">,</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Masterclass"</span><span class="op">:</span> <span class="st">"#76b7b1"</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> color_mapping_events</span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-35" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb39" data-startfrom="-1" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="cb39--1"><a href="#cb39--1" aria-hidden="true" tabindex="-1"></a>dates_2023 <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>({<span class="dt">length</span><span class="op">:</span> <span class="dv">365</span>}<span class="op">,</span> (_<span class="op">,</span> i) <span class="kw">=&gt;</span> {</span>
+<span id="cb39-0"><a href="#cb39-0" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> date <span class="op">=</span> <span class="kw">new</span> <span class="bu">Date</span>(<span class="dv">2023</span><span class="op">,</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>  date<span class="op">.</span><span class="fu">setDate</span>(i <span class="op">+</span> <span class="dv">1</span>)<span class="op">;</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> date<span class="op">;</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-36" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</details>
+
+
+</details></section>
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Imh0bWxgPGRpdj48c3BhbiBjbGFzcyA9IFwidW5kZXJsaW5lLWJpZ1wiPiR7c3RhcnRfY291bnR9PC9zcGFuPiBwZXJzb25uZXMgZmFpc2FpZW50IHBhcnRpZSBkZSBsYSBsaXN0ZSBkZSBkaWZmdXNpb24gZW4gZMOpYnV0IGQnYW5uw6llIDIwMjMuPC9kaXY+PGJyPmBcbmh0bWxgPGRpdj4ke3Bsb3RfYmFyX3BhcnRpY2lwYW50c308L2Rpdj48YnI+YFxuaHRtbGA8ZGl2PiR7bWVzc2FnZX08L2Rpdj48YnI+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaHRtbGA8ZGl2PlBlbmRhbnQgbCdhbm7DqWUgMjAyMywgbGUgcsOpc2VhdSBhIGFpbnNpIGNvbm51IDxzcGFuIGNsYXNzPVwidW5kZXJsaW5lLWJpZ1wiPiR7ZXZlbnRzLmxlbmd0aH08L3NwYW4+IMOpdsOpbmVtZW50cyBldCBwdWJsaWNhdGlvbnMgZGUgY29udGVudSAoJHtjb3VudEV2ZW50cyhcIkluZm9sZXR0cmVcIil9LCAke2NvdW50RXZlbnRzKFwiUG9zdCBkZSBibG9nXCIpfSwgJHtjb3VudEV2ZW50cyhcIkV2w6luZW1lbnQgdmlydHVlbCBvdSBwcsOpc2VudGllbFwiKX0sICR7Y291bnRFdmVudHMoXCJNYXN0ZXJjbGFzc1wiKX0pLjwvZGl2Pjxicj5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJodG1sYDxkaXY+JHtsaW5lcGxvdH08L2Rpdj5gXG5odG1sYDxkaXY+JHt3YXJtX3N0cmlwfTwvZGl2PmBcbm1kYF9fQ2hvaXNpciBsZXMgw6l2w6luZW1lbnRzIGR1IHLDqXNlYXUgw6AgYWZmaWNoZXIg8J+Rh++4j19fYFxuaHRtbGA8ZGl2PiR7dmlld29mIGV2ZW50c19jaG9zZW5fZmlndXJlMX08L2Rpdj5gXG5odG1sYDxkaXY+JHt0YWJsZV9ldmVudHN9PC9kaXY+YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gVm9pciBwbHVzIGJhcyDwn5GH77iPIGxlcyBhcnJheXMgdXRpbGlzw6lzXG4vLyBBbmltYXRpb24gZmFpdGUgYXZlYyBsZSBTY3J1YmJlciBjaS1kZXNzb3VzXG5saW5lcGxvdCA9IFBsb3QucGxvdCh7XG4gICAgeToge1xuICAgICAgICBncmlkOiB0cnVlLFxuICAgICAgICBsYWJlbDogXCJOb21icmUgZCdpbnNjcml0c1wiXG4gICAgfSxcbiAgICB4OiB7XG4gICAgICAgIGxhYmVsOiBcIkRhdGVcIixcbiAgICAgICAgZG9tYWluOiBbbmV3IERhdGUoXCIyMDIzLTAxLTEwXCIpLCBuZXcgRGF0ZShcIjIwMjMtMTItMDlcIildXG4gICAgfSxcbiAgICBjb2xvcjoge1xuICAgICAgICByYW5nZTogT2JqZWN0LnZhbHVlcyhjb2xvcl9tYXBwaW5nX2V2ZW50cyksXG4gICAgICAgIGRvbWFpbjogT2JqZWN0LmtleXMoY29sb3JfbWFwcGluZ19ldmVudHMpLFxuICAgICAgICBsYWJlbDogXCJUeXBlIGQnw6l2w6luZW1lbnRcIlxuICAgIH0sIFxuICAgIG1hcmdpbkxlZnQ6IDUwLFxuICAgIG1hcmtzOiBbXG4gICAgICAgIFBsb3QubGluZShcbiAgICAgICAgICBzZXJpZV9jb250YWN0cywge1xuICAgICAgICAgICAgeDogXCJkYXRlXCIsIHk6IFwibWFpbFwiLFxuICAgICAgICAgICAgc3Ryb2tlOiBcIiM2ODg2YmJcIixcbiAgICAgICAgICAgIHRpcDogXCJ4eVwiXG4gICAgICAgICAgICB9KSxcbiAgICAgICAgUGxvdC5jcm9zc2hhaXJYKHNlcmllX2NvbnRhY3RzX2NvbXBsZXRlLCB7IC8vPDE+XG4gICAgICAgICAgICB4OiAoZCkgPT4gbmV3IERhdGUoZC5kYXRlKSwgeTogXCJtYWlsXCIsIHN0cm9rZTogXCJyZWRcIlxuICAgICAgICAgICAgfSksXG4gICAgICAgIFBsb3QuZG90KFxuICAgICAgICAgIHNlcmllX2NvbnRhY3RzX2NvbXBsZXRlLFxuICAgICAgICAgIFBsb3QucG9pbnRlclgoe3g6IChkKSA9PiBuZXcgRGF0ZShkLmRhdGUpLCB5OiBcIm1haWxcIiwgc3Ryb2tlOiBcInJlZFwifSkpLCAvLzwyPlxuICAgICAgICBQbG90LmRvdChzZXJpZV9jb250YWN0cywge1xuICAgICAgICAgICAgeDogXCJkYXRlXCIsIHk6IFwibWFpbFwiLFxuICAgICAgICAgICAgc3Ryb2tlOiBcIiM2ODg2YmJcIixcbiAgICAgICAgICAgIGZpbGw6IFwiIzY4ODZiYlwiLFxuICAgICAgICAgICAgdGl0bGU6IFwiRWZmZWN0aWZcIlxuICAgICAgICAgICAgfSksXG4gICAgICAgIFBsb3QudGlja1goZXZlbnRzX2RhdGFfZmlndXJlMV9iLCB7XG4gICAgICAgICAgICB4OiAoZCkgPT4gbmV3IERhdGUoZC5kYXRlKSwgdGV4dDogaHRtbGBgLFxuICAgICAgICAgICAgc3Ryb2tlOiBcInR5cGVcIixcbiAgICAgICAgICAgIG9wYWNpdHk6IDAuMSxcbiAgICAgICAgICAgIGNvbG9yOiBcInhcIixcbiAgICAgICAgICAgIHRpcDogdHJ1ZVxuICAgICAgICAgICAgfSksICAgICAgICAgICAgXG4gICAgICAgIFBsb3QuYXhpc1goZXZlbnRzX2RhdGFfZmlndXJlMV9iLCB7XG4gICAgICAgICAgICB4OiAoZCkgPT4gbmV3IERhdGUoZC5kYXRlKSxcbiAgICAgICAgICAgIHRleHQ6IFwiXCIsXG4gICAgICAgICAgICBjb2xvcjogXCJ0eXBlXCJcbiAgICAgICAgICAgIH0pLFxuICAgIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ3YXJtX3N0cmlwID0gUGxvdC5wbG90KHsgLy88MT5cbiAgaGVpZ2h0OiA0MCxcbiAgbWFyZ2luTGVmdDogNTAsXG4gIGNvbG9yOiB7XG4gICAgc2NoZW1lOiBcInlsb3JyZFwiLFxuICAgIH0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5jcm9zc2hhaXIoc2VyaWVfY29udGFjdHNfY29tcGxldGUsIHtcbiAgICAgIHg6IChkKSA9PiBuZXcgRGF0ZShkLmRhdGUpLFxuICAgICAgc3Ryb2tlT3BhY2l0eTogMC4yLFxuICAgICAgZmlsbDogXCJtYWlsXCIsXG4gICAgICBpbnRlcnZhbDogZDMudXRjRGF5LmV2ZXJ5KDMpLFxuICAgICAgaW5zZXQ6IDAgLy8gbm8gZ2Fwc1xuICAgIH0pLFxuICAgIFBsb3QuYmFyWChzZXJpZV9jb250YWN0c19jb21wbGV0ZSwge1xuICAgICAgeDogKGQpID0+IG5ldyBEYXRlKGQuZGF0ZSksXG4gICAgICBzdHJva2VPcGFjaXR5OiAwLjIsXG4gICAgICBmaWxsOiBcIm1haWxcIixcbiAgICAgIGludGVydmFsOiBkMy51dGNEYXkuZXZlcnkoMyksXG4gICAgICBpbnNldDogMCAvLyBubyBnYXBzXG4gICAgfSlcbiAgXVxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImZ1bmN0aW9uIHVuZGVybGluZV9ldmVudCh4KXtcbiAgICBjb25zdCB4X3VuZGVybGluZWQgPSBgPHNwYW4gc3R5bGU9XCJ0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTsgYm9yZGVyLWJvdHRvbTogc29saWQgNHB4ICR7Y29sb3JfbWFwcGluZ19ldmVudHNbeF19OyBtYXJnaW4tYm90dG9tOiAtMnB4O1wiPiR7eH08L3NwYW4+YCA7XG4gICAgcmV0dXJuIHhfdW5kZXJsaW5lZFxufVxuXG52aWV3b2YgZXZlbnRzX2Nob3Nlbl9maWd1cmUxID0gSW5wdXRzLmNoZWNrYm94KFxuICAgIHVuaXF1ZShldmVudHMubWFwKGQgPT4gZC50eXBlKSksXG4gICAge1xuICAgICAgICB2YWx1ZTogdW5pcXVlKGV2ZW50cy5tYXAoZCA9PiBkLnR5cGUpKSxcbiAgICAgICAgZm9ybWF0OiB4ID0+IGh0bWxgJHt1bmRlcmxpbmVfZXZlbnQoeCl9YFxuICAgIH1cbilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InRhYmxlX2V2ZW50cyA9IElucHV0cy50YWJsZShcbiAgICBldmVudHNfZGF0YV9maWd1cmUxX2IsXG4gICAge1xuICAgICAgICBjb2x1bW5zOiBbXCJkYXRlXCIsIFwiZXZlbnRcIiwgXCJ0eXBlXCJdLFxuICAgICAgICBoZWFkZXI6IHtcbiAgICAgICAgICAgIGRhdGU6IFwiRGF0ZVwiLFxuICAgICAgICAgICAgZXZlbnQ6IFwiRXbDqW5lbWVudCBkdSByw6lzZWF1XCIsXG4gICAgICAgICAgICB0eXBlOiBcIlR5cGUgZCfDqXbDqW5lbWVudFwiXG4gICAgICAgIH0sXG4gICAgICAgIGZvcm1hdDoge1xuICAgICAgICAgICAgdHlwZTogKHgpID0+IGh0bWxgXG4gICAgICAgICAgICA8c3BhbiBzdHlsZT1cInRleHQtdHJhbnNmb3JtOiBjYXBpdGFsaXplOyBkaXNwbGF5OiBpbmxpbmUtZmxleDsgYWxpZ24taXRlbXM6IGNlbnRlcjtcIj5cbiAgICA8c3BhbiBzdHlsZT1cImJvcmRlci1ib3R0b206IHNvbGlkIDFweCAke2NvbG9yX21hcHBpbmdfZXZlbnRzW3hdfTsgbWFyZ2luLWJvdHRvbTogLTJweDtcIj4ke3h9PC9zcGFuPlxuICAgIDxzcGFuIHN0eWxlPVwid2lkdGg6IDEwcHg7IGhlaWdodDogMTBweDsgbWFyZ2luLWxlZnQ6IDVweDsgYmFja2dyb3VuZC1jb2xvcjogJHtjb2xvcl9tYXBwaW5nX2V2ZW50c1t4XX07XCI+PC9zcGFuPlxuICAgIDwvc3Bhbj5cbiAgICAgICAgICAgIGAsXG4gICAgICAgIGV2ZW50OiAoeCkgPT4gaHRtbGA8YSAke2xpbmtzX3dlYnNpdGVfc3NwaHViW3hdICE9PSB1bmRlZmluZWQgPyBgaHJlZj1cIiR7bGlua3Nfd2Vic2l0ZV9zc3BodWJbeF19XCIgdGFyZ2V0PVwiX2JsYW5rXCJgIDogJyd9PiR7eH08L2E+YFxuICAgICAgICB9XG4gICAgfSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtOCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Imh0bWxgPGRpdj4ke2JhcnBsb3Rfc3NwfTwvZGl2PmBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtOSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImJhcnBsb3Rfc3NwID0gUGxvdC5wbG90KHtcbiAgbWFyZ2luTGVmdDogNjAsXG4gIG1hcmdpblJpZ2h0OiAxMDAsXG4gIHg6IHtsYWJlbDogXCJGcmVxdWVuY3lcIn0sXG4gIHk6IHtsYWJlbDogbnVsbH0sXG4gIGNvbG9yOiB7XG4gICAgZG9tYWluOiBbXCJIb3JzIGR1IFNTUFwiLCBcIlNlcnZpY2UgU3RhdGlzdGlxdWUgUHVibGljIChTU1ApXCJdLFxuICAgIHJhbmdlOiBbXCJmb3Jlc3RncmVlblwiLCBcIiM2ODg2YmJcIl1cbiAgICB9LFxuICBtYXJrczogW1xuICAgIFBsb3QuYmFyWChob3JzX3NzcF9kYXRhLFxuICAgIHtcbiAgICAgIHk6IFwiU1NQXCIsXG4gICAgICBmeTogKGQpID0+IG5ldyBEYXRlKGQuZGF0ZSkudG9Mb2NhbGVTdHJpbmcoXCJmclwiLCB7XG4gICAgICAgIFwibW9udGhcIjogXCJsb25nXCIsXG4gICAgICAgIFwieWVhclwiOiBcIm51bWVyaWNcIlxuICAgICAgfSksXG4gICAgICB4OiBcIm1haWxcIiwgaW5zZXQ6IDAuNSwgZmlsbDogXCJTU1BcIiwgc29ydDogXCJtYWlsXCIsXG4gICAgICB0aXA6IHRydWUsIGNoYW5uZWxzOiB7c2hhcmU6IChkKSAgPT4gYCR7MTAwKmQuc2hhcmUudG9GaXhlZCgyKX0lYH1cbiAgICB9KSxcbiAgICBQbG90LmF4aXNZKHt0ZXh0QW5jaG9yOiBcInN0YXJ0XCIsIGZpbGw6IFwiYmxhY2tcIiwgZHg6IDE0fSksXG4gICAgUGxvdC5ydWxlWChbMF0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEwIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiUGxvdCA9IHJlcXVpcmUoJ0BvYnNlcnZhYmxlaHEvcGxvdEAwLjYuMTIvZGlzdC9wbG90LnVtZC5taW4uanMnKSAvLzwxPlxuaW1wb3J0IHtkaXNwb3NhbH0gZnJvbSBcIkBtYm9zdG9jay9kaXNwb3NhbFwiXG5pbXBvcnQge1NjcnViYmVyfSBmcm9tIFwiQG1ib3N0b2NrL3NjcnViYmVyXCJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMTEiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJtZXNzYWdlID0ge1xuICBjb25zdCBjbGFzc190b191c2UgPSAoc2NydWJiZXJfcGFydGljaXBhbnRzIDwgZW5kX2NvdW50IC0gMTAwKSA/IFwiYmx1cnJlZC1lbGVtZW50XCIgOiBcInVuZGVybGluZS1iaWdcIjtcblxuICBjb25zdCBtZXNzYWdlX3RvX3ByaW50ID0gYFxuICBFbiBmaW4gZCdhbm7DqWUsIDxzcGFuIGNsYXNzID0gXCIke2NsYXNzX3RvX3VzZX1cIiA+JHtlbmRfY291bnR9PC9zcGFuPiBwZXJzb25uZXMgw6l0YWllbnQgbWVtYnJlcyBkZSBsYSBsaXN0ZSBkZSBkaWZmdXNpb24g8J+agPCfmoAuXG4gIGBcblxuICByZXR1cm4gbWVzc2FnZV90b19wcmludFxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Im51bWJlcnMyID0ge1xuICBjb25zdCBzdGFydFZhbHVlID0gc3RhcnRfY291bnQ7XG4gIGNvbnN0IGVuZFZhbHVlID0gZW5kX2NvdW50O1xuXG4gIGNvbnN0IG51bWJlcnMgPSBBcnJheS5mcm9tKHsgbGVuZ3RoOiBlbmRWYWx1ZSAtIHN0YXJ0VmFsdWUgKyAxIH0sIChfLCBpKSA9PiBpICsgc3RhcnRWYWx1ZSk7XG4gIHJldHVybiBudW1iZXJzXG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEzIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiY3VycmVudF9iYXIgPSB7XG4gIGNvbnN0IHN0YXJ0VmFsdWUgPSAwO1xuICBjb25zdCBlbmRWYWx1ZSA9IHNjcnViYmVyX3BhcnRpY2lwYW50cztcblxuICBjb25zdCBudW1iZXJzID0gQXJyYXkuZnJvbSh7IGxlbmd0aDogZW5kVmFsdWUgLSBzdGFydFZhbHVlICsgMSB9LCAoXywgaSkgPT4gaSArIHN0YXJ0VmFsdWUpIDtcbiAgcmV0dXJuIG51bWJlcnNcblxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBzY3J1YmJlcl9wYXJ0aWNpcGFudHMgPSBTY3J1YmJlcihudW1iZXJzMiwge2xvb3BEZWxheTogNDAwMCwgaW5pdGlhbDogc3RhcnRfY291bnR9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InBsb3RfYmFyX3BhcnRpY2lwYW50cyA9IFBsb3QucGxvdCh7XG4gIGhlaWdodDogNDAsXG4gIG1hcmdpbkxlZnQ6IDYwLFxuICB4OiB7bGFiZWw6IFwiRnJlcXVlbmN5IOKGklwiLCBkb21haW46IFszMzYsIDU1Ml19LFxuICB5OiB7bGFiZWw6IG51bGx9LFxuICBjb2xvcjoge1xuICAgIHNjaGVtZTogXCJ5bG9ycmRcIixcbiAgICBkb21haW46IFsyMzYsIHNjcnViYmVyX3BhcnRpY2lwYW50c10gXG4gICAgfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmJhclgoY3VycmVudF9iYXIsIHt4OiAxLCBpbnNldDogMC41LCBmaWxsOiAoZCkgPT4gZH0pLCAgICAvLzwxPlxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRhdGVGb3JtYXQgPSBkMy51dGNGb3JtYXQoXCIlWS0lbS0lZFwiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xNyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImZ1bmN0aW9uIHBsdXJhbGl6ZUV2ZW50KGlucHV0KSB7XG4gIHN3aXRjaCAoaW5wdXQpIHtcbiAgICBjYXNlIFwiRXbDqW5lbWVudCB2aXJ0dWVsIG91IHByw6lzZW50aWVsXCI6XG4gICAgICByZXR1cm4gXCLDqXbDqW5lbWVudHMgdmlydHVlbHMgb3UgcHLDqXNlbnRpZWxzXCI7XG4gICAgY2FzZSBcIkluZm9sZXR0cmVcIjpcbiAgICAgIHJldHVybiBcImluZm9sZXR0cmVzXCI7XG4gICAgY2FzZSBcIlBvc3QgZGUgYmxvZ1wiOlxuICAgICAgcmV0dXJuIFwicG9zdHMgZGUgYmxvZ1wiO1xuICAgIGNhc2UgXCJNYXN0ZXJjbGFzc1wiOlxuICAgICAgcmV0dXJuIFwibWFzdGVyY2xhc3Nlc1wiO1xuICAgIGRlZmF1bHQ6XG4gICAgICByZXR1cm4gXCJ1bmtub3duIGV2ZW50IHR5cGVcIjtcbiAgfVxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xOCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImZ1bmN0aW9uIGNvdW50RXZlbnRzKHgpe1xuXG4gIGNvbnN0IHBsdXJpZWwgPSBwbHVyYWxpemVFdmVudCh4KTtcblxuICBjb25zdCBtZXNzYWdlID0gYFxuICA8c3BhbiBzdHlsZT1cImJvcmRlci1ib3R0b206IHNvbGlkIDRweCAke2NvbG9yX21hcHBpbmdfZXZlbnRzW3hdfTsgbWFyZ2luLWJvdHRvbTogLTJweDtcIj4ke25vbWJyZV9ldmVudHMuZ2V0KHgpfSAke3BsdXJpZWx9XG4gIDwvc3Bhbj5cbiAgYCA7XG5cbiAgcmV0dXJuIG1lc3NhZ2Vcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMTkiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJmdW5jdGlvbiBsZWZ0Sm9pbkFycmF5cyhhcnJheTEsIGFycmF5Miwga2V5LCBtZWFuLCBkZXZpYXRpb24pIHtcbiAgY29uc3QgcmFuZG9tTm9pc2UgPSBkMy5yYW5kb21Ob3JtYWwobWVhbiwgZGV2aWF0aW9uKTtcblxuICAvLyBTb3J0IGFycmF5cyBieSBkYXRlXG4gIGFycmF5MS5zb3J0KChhLCBiKSA9PiBuZXcgRGF0ZShhLmRhdGUpIC0gbmV3IERhdGUoYi5kYXRlKSk7XG4gIGFycmF5Mi5zb3J0KChhLCBiKSA9PiBuZXcgRGF0ZShhLmRhdGUpIC0gbmV3IERhdGUoYi5kYXRlKSk7XG5cbiAgLy8gUGVyZm9ybSBsZWZ0IGpvaW5cbiAgY29uc3QgcmVzdWx0ID0gYXJyYXkxLm1hcCgoaXRlbTEsIGluZGV4KSA9PiB7XG4gICAgY29uc3QgbWF0Y2hpbmdJdGVtID0gYXJyYXkyLmZpbmQoKGl0ZW0yKSA9PiBpdGVtMltrZXldID09PSBpdGVtMVtrZXldKTtcbiAgICBjb25zdCBub2lzZSA9IG1hdGNoaW5nSXRlbSA/IHJhbmRvbU5vaXNlKCkgOiAwO1xuICAgIGNvbnN0IG5vaXNlZE1haWwgPSBtYXRjaGluZ0l0ZW0gPyBtYXRjaGluZ0l0ZW0ubWFpbCArIG5vaXNlIDogdW5kZWZpbmVkO1xuICAgIHJldHVybiB7IHJvd051bWJlcjogaW5kZXggKyAxLCAuLi5pdGVtMSwgLi4ubWF0Y2hpbmdJdGVtLCBub2lzZWRNYWlsIH07XG4gIH0pO1xuXG4gIHJldHVybiByZXN1bHQ7XG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIwIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZnVuY3Rpb24gdW5pcXVlKGRhdGEsIGFjY2Vzc29yKSB7XG4gIHJldHVybiBBcnJheS5mcm9tKG5ldyBTZXQoYWNjZXNzb3IgPyBkYXRhLm1hcChhY2Nlc3NvcikgOiBkYXRhKSk7XG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIxIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZnVuY3Rpb24gaW50ZXJwb2xhdGVEYXRlcyhkYXRhKSB7XG4gIC8vIFNvcnQgdGhlIGRhdGEgYnkgZGF0ZVxuICBkYXRhLnNvcnQoKGEsIGIpID0+IG5ldyBEYXRlKGEuZGF0ZSkgLSBuZXcgRGF0ZShiLmRhdGUpKTtcblxuICAvLyBDcmVhdGUgYW4gYXJyYXkgdG8gc3RvcmUgdGhlIGludGVycG9sYXRlZCBkYXRhXG4gIGNvbnN0IGludGVycG9sYXRlZERhdGEgPSBbXTtcblxuICAvLyBMb29wIHRocm91Z2ggdGhlIGRhdGEgdG8gaW50ZXJwb2xhdGUgdmFsdWVzIGJldHdlZW4gZGF0ZXNcbiAgZm9yIChsZXQgaSA9IDA7IGkgPCBkYXRhLmxlbmd0aCAtIDE7IGkrKykge1xuICAgIGNvbnN0IGN1cnJlbnREYXRlID0gbmV3IERhdGUoZGF0YVtpXS5kYXRlKTtcbiAgICBjb25zdCBuZXh0RGF0ZSA9IG5ldyBEYXRlKGRhdGFbaSArIDFdLmRhdGUpO1xuICAgIFxuICAgIC8vIENhbGN1bGF0ZSB0aGUgZGlmZmVyZW5jZSBpbiBkYXlzIGJldHdlZW4gY3VycmVudCBhbmQgbmV4dCBkYXRlXG4gICAgY29uc3QgZGF5c0RpZmYgPSAobmV4dERhdGUgLSBjdXJyZW50RGF0ZSkgLyAoMTAwMCAqIDYwICogNjAgKiAyNCk7XG5cbiAgICAvLyBDYWxjdWxhdGUgdGhlIGRhaWx5IGluY3JlbWVudFxuICAgIGNvbnN0IGRhaWx5SW5jcmVtZW50ID0gKGRhdGFbaSArIDFdLm1haWwgLSBkYXRhW2ldLm1haWwpIC8gZGF5c0RpZmY7XG5cbiAgICAvLyBJbnRlcnBvbGF0ZSB2YWx1ZXMgZm9yIGVhY2ggZGF5IGJldHdlZW4gdGhlIGN1cnJlbnQgYW5kIG5leHQgZGF0ZVxuICAgIGZvciAobGV0IGogPSAwOyBqIDwgZGF5c0RpZmY7IGorKykge1xuICAgICAgY29uc3QgaW50ZXJwb2xhdGVkRGF0ZSA9IG5ldyBEYXRlKGN1cnJlbnREYXRlKTtcbiAgICAgIGludGVycG9sYXRlZERhdGUuc2V0RGF0ZShjdXJyZW50RGF0ZS5nZXREYXRlKCkgKyBqKTtcbiAgICAgIFxuICAgICAgY29uc3QgaW50ZXJwb2xhdGVkVmFsdWUgPSBkYXRhW2ldLm1haWwgKyBqICogZGFpbHlJbmNyZW1lbnQ7XG5cbiAgICAgIGludGVycG9sYXRlZERhdGEucHVzaCh7XG4gICAgICAgIGRhdGU6IGludGVycG9sYXRlZERhdGUudG9JU09TdHJpbmcoKS5zcGxpdCgnVCcpWzBdLFxuICAgICAgICBtYWlsOiBNYXRoLnJvdW5kKGludGVycG9sYXRlZFZhbHVlKSwgLy8gUm91bmQgdG8gdGhlIG5lYXJlc3QgaW50ZWdlclxuICAgICAgfSk7XG4gICAgfVxuICB9XG5cbiAgLy8gQWRkIHRoZSBsYXN0IGRhdGEgcG9pbnRcbiAgaW50ZXJwb2xhdGVkRGF0YS5wdXNoKHtcbiAgICBkYXRlOiBkYXRhW2RhdGEubGVuZ3RoIC0gMV0uZGF0ZSxcbiAgICBtYWlsOiBkYXRhW2RhdGEubGVuZ3RoIC0gMV0ubWFpbCxcbiAgfSk7XG5cbiAgcmV0dXJuIGludGVycG9sYXRlZERhdGE7XG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIyIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidXJsX2V2ZW50cyA9IGBodHRwczovL21pbmlvLmxhYi5zc3BjbG91ZC5mci9zc3BodWIvZGlmZnVzaW9uL3dlYnNpdGUvMjAyMy0xMi1yZXRyb3NwZWN0aXZlL2V2ZW50c19vcmdpbmF6ZWRfMjAyMy5qc29uYFxudXJsX2xhdGVzdCA9ICdzMzovL3NzcGh1Yi9kaWZmdXNpb24vd2Vic2l0ZS8yMDIzLTEyLXJldHJvc3BlY3RpdmUvbGlzdF9jb250YWN0c19sYXRlc3QucGFycXVldCdcbnVybF9ob3JzX3NzcCA9ICdzMzovL3NzcGh1Yi9kaWZmdXNpb24vd2Vic2l0ZS8yMDIzLTEyLXJldHJvc3BlY3RpdmUvc2VyaWVzX3BhcnRfc3NwLnBhcnF1ZXQnXG51cmxfbGF0ZXN0MiA9ICdzMzovL3NzcGh1Yi9kaWZmdXNpb24vd2Vic2l0ZS8yMDIzLTEyLXJldHJvc3BlY3RpdmUvc2VyaWVzX25vbWJyZV9jb250YWN0LnBhcnF1ZXQnXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIzIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiY29uZmlndXJlZENsaWVudCA9IHtcbiAgY29uc3QgY2xpZW50ID0gYXdhaXQgRHVja0RCQ2xpZW50Lm9mKCk7XG4gIGF3YWl0IGNsaWVudC5zcWxgXG4gICAgU0VUIHMzX2VuZHBvaW50PSdtaW5pby5sYWIuc3NwY2xvdWQuZnInXG4gIGA7XG4gIHJldHVybiBjbGllbnQ7XG59XG5cbmRiID0ge1xuICBhd2FpdCBjb25maWd1cmVkQ2xpZW50LnF1ZXJ5KGBcbiAgICBDUkVBVEUgVklFVyBzaGFyZV9zc3AgQVMgXG4gICAgU0VMRUNUICogRlJPTSByZWFkX3BhcnF1ZXQoJyR7dXJsX2hvcnNfc3NwfScpIDtcbiAgYCk7XG4gIGF3YWl0IGNvbmZpZ3VyZWRDbGllbnQucXVlcnkoYFxuICAgIENSRUFURSBWSUVXIGxhdGVzdCBBUyBcbiAgICBTRUxFQ1QgKiBGUk9NIHJlYWRfcGFycXVldCgnJHt1cmxfbGF0ZXN0fScpIFdIRVJFIGRhdGUgPiAnMjAyMy0wMS0wMScgO1xuICBgKTtcbiAgYXdhaXQgY29uZmlndXJlZENsaWVudC5xdWVyeShgXG4gICAgQ1JFQVRFIFZJRVcgc2VyaWUgQVMgXG4gICAgU0VMRUNUICogRlJPTSByZWFkX3BhcnF1ZXQoJyR7dXJsX2xhdGVzdDJ9JykgV0hFUkUgZGF0ZSA+ICcyMDIzLTAxLTAxJyA7XG4gIGApO1xuICByZXR1cm4gY29uZmlndXJlZENsaWVudFxufVxuXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTI0IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic2VyaWVfY29udGFjdHMgPSBkYi5zcWxgXG5TRUxFQ1QgZGF0ZSwgQ0FTVChTVU0obWFpbCkgQVMgaW50KSBBUyBtYWlsXG5GUk9NIHNlcmllXG5HUk9VUCBCWSBkYXRlXG5gXG5zZXJpZV9jb250YWN0c19kb21haW4gPSBkYi5zcWxgXG5TRUxFQ1QgZGF0ZSwgZG9tYWluLCBDQVNUKG1haWwgQVMgaW50KSBBUyBtYWlsXG5GUk9NIHNlcmllXG5gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTI1IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaG9yc19zc3BfZGF0YSA9IGRiLnF1ZXJ5KGBcblNFTEVDVCAqIEZST00gc2hhcmVfc3NwIFdIRVJFIGRhdGUgaW4gKCcyMDIzLTEyLTA5JywgJzIwMjMtMDEtMTAnKVxuYClcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMjYiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJldmVudHMgPSBkMy5qc29uKHVybF9ldmVudHMpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTI3IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic2VyaWVfY29udGFjdHNfY29tcGxldGUgPSBpbnRlcnBvbGF0ZURhdGVzKHNlcmllX2NvbnRhY3RzKTtcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMjgiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJzdGFydF9jb3VudCA9IHNlcmllX2NvbnRhY3RzLmZpbHRlcigoZCkgPT4gZGF0ZUZvcm1hdChkLmRhdGUpID09IFwiMjAyMy0wMS0xMFwiKS5tYXAoKGQpID0+IGQubWFpbClbMF1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMjkiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJlbmRfY291bnQgPSBzZXJpZV9jb250YWN0cy5maWx0ZXIoKGQpID0+IGRhdGVGb3JtYXQoZC5kYXRlKSA9PSBcIjIwMjMtMTItMDlcIikubWFwKChkKSA9PiBkLm1haWwpWzBdXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMwIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZXZlbnRzX2RhdGFfZmlndXJlMSA9IGV2ZW50cy5maWx0ZXIoZCA9PiBldmVudHNfY2hvc2VuX2ZpZ3VyZTEuaW5jbHVkZXMoZC50eXBlKSlcbmV2ZW50c19kYXRhX2ZpZ3VyZTFcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMzEiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJub21icmVfZXZlbnRzID0gZDMucm9sbHVwKGV2ZW50cywgKEQpID0+IEQubGVuZ3RoLCAoZCkgPT4gZC50eXBlKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Im1lYXN1cmVkX2RhdGVzID0gZGIucXVlcnkoYFNFTEVDVCBESVNUSU5DVCBzdHJmdGltZShkYXRlLCAnJVktJW0tJWQnKSBBUyBkYXRlIEZST00gc2VyaWVgKVxuZGF0ZV9zZWxlY3RlZCA9IG1lYXN1cmVkX2RhdGVzLm1hcChkID0+IGQuZGF0ZSlcbmxpc3RfZGF0ZXMyID0gZGIucXVlcnkoYFNFTEVDVCBESVNUSU5DVCBzdHJmdGltZShkYXRlLCAnJVktJW0tJWQnKSBBUyBkYXRlIEZST00gc2VyaWVgKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImxpbmtzX3dlYnNpdGVfc3NwaHViID0ge1xuICAgIGNvbnN0IHRvdG8gPSB7fTtcblxuICAgIGV2ZW50c19kYXRhX2ZpZ3VyZTFfYi5mb3JFYWNoKGl0ZW0gPT4ge1xuICAgIHRvdG9baXRlbS5ldmVudF0gPSBpdGVtLmhyZWY7XG4gICAgfSk7XG5cbiAgICByZXR1cm4gdG90b1xufVxubGlua3Nfd2Vic2l0ZV9zc3BodWJcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMzQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJldmVudHNfZGF0YV9maWd1cmUxX2IgPSBsZWZ0Sm9pbkFycmF5cyhldmVudHNfZGF0YV9maWd1cmUxLCBzZXJpZV9jb250YWN0c19jb21wbGV0ZSwgXCJkYXRlXCIsIDAsIDQwKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImNvbG9yX21hcHBpbmdfZXZlbnRzID0ge1xuXG4gICAgY29uc3QgY29sb3JfbWFwcGluZ19ldmVudHMgPSB7XG4gICAgXCJFdsOpbmVtZW50IHZpcnR1ZWwgb3UgcHLDqXNlbnRpZWxcIjogXCIjNGQ3OGE2XCIsXG4gICAgXCJJbmZvbGV0dHJlXCI6IFwiI2YyOGUyY1wiLFxuICAgIFwiUG9zdCBkZSBibG9nXCI6IFwiI2UwNTY1OFwiLFxuICAgIFwiTWFzdGVyY2xhc3NcIjogXCIjNzZiN2IxXCJcbiAgICB9O1xuXG4gIHJldHVybiBjb2xvcl9tYXBwaW5nX2V2ZW50c1xufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRhdGVzXzIwMjMgPSBBcnJheS5mcm9tKHtsZW5ndGg6IDM2NX0sIChfLCBpKSA9PiB7XG4gIGNvbnN0IGRhdGUgPSBuZXcgRGF0ZSgyMDIzLCAwLCAxKTtcbiAgZGF0ZS5zZXREYXRlKGkgKyAxKTtcbiAgcmV0dXJuIGRhdGU7XG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdldmVudHNfY2hvc2VuX2ZpZ3VyZTEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2NydWJiZXJfcGFydGljaXBhbnRzJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../infolettre/infolettre_16";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "../..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/ssphub\.netlify\.app\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
+            }
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<script>
+    const snow = new Snowflakes();
+
+    // Stop the snowfall after 10 seconds
+setTimeout(function() {
+    snow.stop();
+    snow.destroy();
+}, 10000); // 10000 milliseconds = 10 seconds
+
+
+</script>
+
+
+
+
+</body></html>
