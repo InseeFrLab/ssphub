@@ -1,6 +1,0 @@
-```r
-liste_regions <- c("11", "31", "34")
-table_individu %>%
-  filter(DEPT %in% liste_regions)
-```
-

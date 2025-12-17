@@ -1,4 +1,0 @@
-```r
-query <- "SELECT * FROM documentation_logement WHERE CONTAINS(description_variable, 'Catégorie')"
-dbGetQuery(con, query)
-```

@@ -1,5 +1,0 @@
-```r
-documentation_indiv %>%
-  filter(str_detect(code_modalite, "Z"))
-```
-

@@ -1,3 +1,0 @@
-```python
-duckdb.sql("SELECT * FROM table_individu WHERE DEPT IN ('11', '31', '34')")
-```

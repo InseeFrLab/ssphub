@@ -2,26 +2,14 @@ project:
   type: website
   render:
     - index.qmd
-    - about.qmd
-    - course.qmd
-    - blog.qmd
-    - event.qmd
-    - talk/**/*.qmd
-    - additional/manifeste.qmd
-    - "!additional/notebooks/*.qmd"
     - infolettre/*.qmd
     - infolettre/**/*.qmd
-    - post/**/*.qmd
-    - partenaires/**/*.qmd
-    - course/**/*.qmd
-    - "!*/parquetRP/snippets/*"
-    - "!*/polars/polars-tuto.qmd"
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
 
 website:
-  title: "SSPHub"
+  title: "Bienvenue chez Christian, Nathan et Ammar"
   navbar:
     search: true
     right:
@@ -30,31 +18,14 @@ website:
     left:
       - href: index.qmd
         text: "Home"
-      - href: event.qmd
-        text: "Événements"
       - href: infolettre/index.qmd
         text: "Newsletters"
-      - href: blog.qmd
-        text: "Blog"
-      - href: course.qmd
-        text: "Ressources utiles"
-      - text: "À propos"
-        menu:
-          - href: about.qmd
-            text: "Présentation du réseau"
-          - href: additional/manifeste.qmd
-            text: "Manifeste du réseau"
       - href: https://datalab.sspcloud.fr/
         text: "Le SSPCloud"
       - icon: github
         href: https://github.com/InseeFrLab/ssphub
   site-url: https://ssphub.netlify.app/
   description: "Blog du réseau des data scientists de la statistique publique"
-  announcement:
-    icon: bi-megaphone
-    dismissable: true
-    content: "📺️ Les présentations et le replay de la journée du réseau, le 1^er^ décembre 2025, [sont disponibles](/talk/2025-12-01-network-day/index.qmd)"
-    position: below-navbar
 
 format:
   html:
