@@ -1,7 +1,3 @@
----
-code-annotations: hover
----
-
 # Guide pour contribuer au site web du réseau
 
 ## :one: Introduction
