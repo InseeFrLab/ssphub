@@ -9,7 +9,6 @@ categories:
 - Projects
 - Python
 - automatic coding
-- fasttext
 listing:
 - id: similar-project
   contents: ../*/index.qmd

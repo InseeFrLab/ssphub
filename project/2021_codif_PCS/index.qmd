@@ -14,7 +14,6 @@ image: 2021_codif_PCS.png
 categories:
 - Python
 - codification automatique
-- fasttext
 listing:
 - id: similar-project
   contents: ../*/index.qmd
