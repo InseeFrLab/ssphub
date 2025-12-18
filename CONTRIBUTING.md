@@ -304,7 +304,7 @@ ajouter vos propres catégories etc.
 ## Description des champs du modèle de projet
 
 
-``` md
+``` r
 ---                                                                    # <1>
 title: A COMPLETER                                                     # <1>
 description: A COMPLETER                                               # <1>
@@ -346,11 +346,22 @@ categories:                                                            # <3>
 
 ```
 
+``` r
+library(tidyverse)
+library(palmerpenguins)
+penguins |>
+  mutate(
+    bill_ratio = bill_depth_mm / bill_length_mm,
+    bill_area  = bill_depth_mm * bill_length_mm
+  )
+```
+
 Line 3
 Take `penguins`, and then,
 
 Lines 4-7
 add new columns for the bill ratio and bill area.
+
 
 1. Champs Titre, description, date, image, à compléter.
 L'image doit être dans le dossier
