@@ -296,88 +296,67 @@ Vous pouvez ensuite compléter le modèle en supprimant les catégories inutiles
 ajouter vos propres catégories etc.
 
 <details open>
-> [!IMPORTANT]
-
 <summary> Description des champs du modèle de projet </summary>
 
-
-```markdown
----                                                                    # <1>
-title: A COMPLETER                                                     # <1>
-description: A COMPLETER                                               # <1>
-format: html
-date: '2023-01-01'                                                     # <1>
-image: monimage.png                                                    # <1>
-listing:
-- id: similar-project                                                  # <2>
-  contents: ../*/index.qmd                                             # <2>
-  type: grid                                                           # <2>
-  include:                                                             # <2>
-    categories:                                                        # <2>
-    - machine learning                                                 # <2>
-  sort:                                                                # <2>
-  - date desc                                                          # <2>
-  page-size: 6                                                         # <2>
-  categories: true                                                     # <2>
-categories:                                                            # <3>
-- SSMSI                                                                # <3>
-- données administratives                                              # <3>
-
----
-
-
-# Synthèse du projet                                             # <4>
-
-|           |         Description             |                  # <4>
-|-----------|------------------------------------------------------------------| # <4>
-| **Détail du projet**         |       |                         # <4>
-| **Acteurs**                  |       |                         # <4>
-| **Résultats du projet**      |       |                         # <4>
-| **Produits et documentation du projet**      |  |              # <4>
-| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       | # <4>
-
-# Projets similaires                           # <5>
-
-::: {#similar-project}                         # <5>
-:::                                            # <5>
-
-```
-
-1. Champs Titre, description, date, image, à compléter.
-L'image doit être dans le dossier
-2. Spécification pour les projets similaires indiqués en bas de page _ cf note 5_.
-Mettez à jour `categories` pour indiquer tous les projets qui comprennent
-ces catégories là.
-3. Catégories du projet. Le modèle comprend la liste complète des catégories
-pré-existantes pour éviter les redites.
-Vous pouvez bien sûr créer des catégories.
-4. Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
-vous pouvez en enlever mais pas en ajouter.
-Pour ajouter des choses vous pouvez insérer du texte sous le tableau.
-5. Liste des projets similaires comprenant les catégories listés dans les notes _2_.
+> [!IMPORTANT]
+> 
+> ```markdown
+> ---                                                                    # <1>
+> title: A COMPLETER                                                     # <1>
+> description: A COMPLETER                                               # <1>
+> format: html
+> date: '2023-01-01'                                                     # <1>
+> image: monimage.png                                                    # <1>
+> listing:
+> - id: similar-project                                                  # <2>
+>   contents: ../*/index.qmd                                             # <2>
+>   type: grid                                                           # <2>
+>   include:                                                             # <2>
+>     categories:                                                        # <2>
+>     - machine learning                                                 # <2>
+>   sort:                                                                # <2>
+>   - date desc                                                          # <2>
+>   page-size: 6                                                         # <2>
+>   categories: true                                                     # <2>
+> categories:                                                            # <3>
+> - SSMSI                                                                # <3>
+> - données administratives                                              # <3>
+> 
+> ---
+> 
+> 
+> # Synthèse du projet                                             # <4>
+> 
+> |           |         Description             |                  # <4>
+> |-----------|------------------------------------------------------------------| # <4>
+> | **Détail du projet**         |       |                         # <4>
+> | **Acteurs**                  |       |                         # <4>
+> | **Résultats du projet**      |       |                         # <4>
+> | **Produits et documentation du projet**      |  |              # <4>
+> | **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       | # <4>
+> 
+> # Projets similaires                           # <5>
+> 
+> ::: {#similar-project}                         # <5>
+> :::                                            # <5>
+> 
+> ```
+> 
+> 1. Champs Titre, description, date, image, à compléter.
+> L'image doit être dans le dossier
+> 2. Spécification pour les projets similaires indiqués en bas de page _ cf note 5_.
+> Mettez à jour `categories` pour indiquer tous les projets qui comprennent
+> ces catégories là.
+> 3. Catégories du projet. Le modèle comprend la liste complète des catégories
+> pré-existantes pour éviter les redites.
+> Vous pouvez bien sûr créer des catégories.
+> 4. Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
+> vous pouvez en enlever mais pas en ajouter.
+> Pour ajouter des choses vous pouvez insérer du texte sous le tableau.
+> 5. Liste des projets similaires comprenant les catégories listés dans les notes _2_.
 
 </details>
 
-``` r
-library(tidyverse)
-library(palmerpenguins)
-penguins |>
-  mutate(
-    bill_ratio = bill_depth_mm / bill_length_mm,
-    bill_area  = bill_depth_mm * bill_length_mm
-  )
-```
-
-Line 3
-Take `penguins`, and then,
-
-Lines 4-7
-add new columns for the bill ratio and bill area.
-
-
-
-
-:::
 
 Il faut ensuite traduire la présentation du projet en anglais, comme indiqué ci-dessous.
 
