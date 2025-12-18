@@ -14,14 +14,14 @@ d'une proposition d'ajout à l'une des rubriques du site ou l'écriture d'un pos
 
 <br>
 
-::: {.callout-note}
-Il n'est pas nécessaire d'être un data scientist expert pour contribuer au site web. En
-revanche, il est nécessaire de s'inscrire dans le fonctionnement
-classique des projets _open source_,
-fonctionnement qui est orchestré autour de `Github` et de ses différents outils.
-Il est possible d'en acquérir très rapidement les bases à partir de ce document présentant le [Travail collaboratif avec `R`](https://inseefrlab.github.io/formation-bonnes-pratiques-git/), ou à partir d'échanges avec les contributeurs actuels
-depuis le salon [`Tchap`]({{< var contact.tchap >}}) du réseau.
-:::
+> [!NOTE]
+> Il n'est pas nécessaire d'être un data scientist expert pour contribuer au site web. En
+> revanche, il est nécessaire de s'inscrire dans le fonctionnement
+> classique des projets _open source_,
+> fonctionnement qui est orchestré autour de `Github` et de ses différents outils.
+> Il est possible d'en acquérir très rapidement les bases à partir de ce document présentant le [Travail collaboratif avec `R`](https://inseefrlab.github.io/> formation-bonnes-pratiques-git/), ou à partir d'échanges avec les contributeurs actuels
+> depuis le salon [`Tchap`]({{< var contact.tchap >}}) du réseau.
+
 
 
 
@@ -89,10 +89,10 @@ Les messages cryptiques du type `modification` sont proscrits.
 Github Copilot proposera un message en fonction des modifications faites, qui est souvent de bonne qualité.
 * sélectionnant la branche dans laquelle la modification s'applique.
 
-::: {.callout-note}
-Les modifications directement dans la branche `main` ne sont pas possibles.
-Si la modification est à appliquer aux supports déployés, elles ne seront intégrées qu'après validation des mainteneurs du projets, seuls utilisateurs à avoir les droits en écriture sur la version maître.
-:::
+> [!NOTE]
+> Les modifications directement dans la branche `main` ne sont pas possibles.
+> Si la modification est à appliquer aux supports déployés, elles ne seront intégrées qu'après validation des mainteneurs du projets, seuls utilisateurs à avoir les droits en écriture sur la version maître.
+
 
 <br>
 
@@ -100,13 +100,13 @@ Si la modification est à appliquer aux supports déployés, elles ne seront int
 
 <br>
 
-::: {.callout-warning}
-**Pour faciliter le suivi et l'intégration des modifications,
-choisir l'option ` Create a new branch for this commit and start a pull request`.
-Si la modification ne concerne que des corrections de coquilles,
-le nom de la branche doit commencer par `typo-`**. Si les propositions sont plus
-substantielles que des coquilles, le nom de la branche est libre.
-:::
+> [!WARNING]
+> **Pour faciliter le suivi et l'intégration des modifications,
+> choisir l'option ` Create a new branch for this commit and start a pull request`.
+> Si la modification ne concerne que des corrections de coquilles,
+> le nom de la branche doit commencer par `typo-`**. Si les propositions sont plus
+> substantielles que des coquilles, le nom de la branche est libre.
+
 
 
 Cliquer sur `Propose changes`. Automatiquement, une page pour soumettre cette
@@ -165,11 +165,11 @@ l'ajout de contenu à travers une _pull request_ à valider ensemble.
 
 [:arrow_up: Retour à l'introduction](#one-introduction)
 
-::: {.callout-warning}
-Ajouter une nouvelle fiche thématique à la documentation représente un
-travail conséquent. Avant de se lancer dans la rédaction, il est recommandé
-d'en discuter avec l'animateur du réseau en amont via une _issue_.
-:::
+> [!WARNING]
+> Ajouter une nouvelle fiche thématique à la documentation représente un
+> travail conséquent. Avant de se lancer dans la rédaction, il est recommandé
+> d'en discuter avec l'animateur du réseau en amont via une _issue_.
+
 
 La compréhension de la tuyauterie permettant de transformer les fichiers
 sources (format `Markdown`) n'est pas obligatoire pour pouvoir proposer
@@ -195,13 +195,11 @@ décrite ci-dessous et les
 [contraintes formelles indiquées dans la partie suivante](#six-contraintes-formelles)
 
 
-::: {.callout-warning}
+> [!WARNING]
+> Ne pas travailler sur la branche `main` de son fork. Celle-ci
+> servira à mettre à jour le fork pour intégrer les dernières mises à jour
+> du site web.
 
-Ne pas travailler sur la branche `main` de son fork. Celle-ci
-servira à mettre à jour le fork pour intégrer les dernières mises à jour
-du site web.
-
-:::
 
 ### Utiliser un environnement de travail entièrement configuré pour disposer de l'ensemble des librairies nécessaires à la génération de la documentation
 
@@ -224,13 +222,11 @@ git config --global user.name "Prénom Nom"
 git config --global user.email "mon.adresse@mail.com"
 ```
 
-::: {.callout-warning}
+> [!WARNING]
+> Le nom d'utilisateur et l'adresse e-mail doivent être les mêmes que sous Github
+> sinon cela ne marchera pas au moment d'effectuer un `git push`.
+> Notamment,l'adresse e-mail doit être anonymisée si l'on a choisi cette option.
 
-Le nom d'utilisateur et l'adresse e-mail doivent être les mêmes que sous Github
-sinon cela ne marchera pas au moment d'effectuer un `git push`.
-Notamment,l'adresse e-mail doit être anonymisée si l'on a choisi cette option.
-
-:::
 
 Il est également possible, pour les utilisateurs avancés, d'incorporer cette commande dans un script d'initialisation qui se lance au démarrage du service, en utilisant également la commande `runuser` de manière à lancer la commande `Git` pour le _user_ `rstudio` et non en _root_ comme cela se fait par défaut.
 
@@ -257,10 +253,9 @@ d'adopter l'arborescence suivante :
 |    |   └── featured.png
 ```
 
-::: {.callout-warning}
-Tous les fichiers Qmd autres que `index.qmd` ne seront pas inclus dans la liste des _posts_
-de blog lors de la compilation du site.
-:::
+> [!WARNING]
+> Tous les fichiers Qmd autres que `index.qmd` ne seront pas inclus dans la liste des _posts_
+> de blog lors de la compilation du site.
 
 `image1.png` et `image2.png` sont des fichiers optionnels, pour illustrer qu'il est possible
 d'ajouter des fichiers au dossier source.
@@ -300,11 +295,13 @@ YAML du fichier.
 Vous pouvez ensuite compléter le modèle en supprimant les catégories inutiles,
 ajouter vos propres catégories etc.
 
-::: {.callout-important collapse="false"}
-## Description des champs du modèle de projet
+<details open>
+> [!IMPORTANT]
+
+<summary> Description des champs du modèle de projet </summary>
 
 
-``` r
+```markdown
 ---                                                                    # <1>
 title: A COMPLETER                                                     # <1>
 description: A COMPLETER                                               # <1>
@@ -346,6 +343,21 @@ categories:                                                            # <3>
 
 ```
 
+1. Champs Titre, description, date, image, à compléter.
+L'image doit être dans le dossier
+2. Spécification pour les projets similaires indiqués en bas de page _ cf note 5_.
+Mettez à jour `categories` pour indiquer tous les projets qui comprennent
+ces catégories là.
+3. Catégories du projet. Le modèle comprend la liste complète des catégories
+pré-existantes pour éviter les redites.
+Vous pouvez bien sûr créer des catégories.
+4. Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
+vous pouvez en enlever mais pas en ajouter.
+Pour ajouter des choses vous pouvez insérer du texte sous le tableau.
+5. Liste des projets similaires comprenant les catégories listés dans les notes _2_.
+
+</details>
+
 ``` r
 library(tidyverse)
 library(palmerpenguins)
@@ -363,18 +375,6 @@ Lines 4-7
 add new columns for the bill ratio and bill area.
 
 
-1. Champs Titre, description, date, image, à compléter.
-L'image doit être dans le dossier
-2. Spécification pour les projets similaires indiqués en bas de page _ cf note 5_.
-Mettez à jour `categories` pour indiquer tous les projets qui comprennent
-ces catégories là.
-3. Catégories du projet. Le modèle comprend la liste complète des catégories
-pré-existantes pour éviter les redites.
-Vous pouvez bien sûr créer des catégories.
-4. Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
-vous pouvez en enlever mais pas en ajouter.
-Pour ajouter des choses vous pouvez insérer du texte sous le tableau.
-5. Liste des projets similaires comprenant les catégories listés dans les notes _2_.
 
 
 :::
@@ -392,10 +392,10 @@ Une fois le projet traduit, vous devriez avoir l'architecture finale suivante :
 |    |   └── image2.png
 ```
 
-::: {.callout-warning}
-Tous les fichiers Qmd autres que `index.qmd` ne seront pas inclus dans la liste des _projets_
-lors de la compilation du site.
-:::
+> [!WARNING]
+> Tous les fichiers Qmd autres que `index.qmd` ne seront pas inclus dans la liste des _projets_
+> lors de la compilation du site.
+
 
 
 ### Traduire une page en anglais
