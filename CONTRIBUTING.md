@@ -219,7 +219,7 @@ il faut que l'identifiant du compte corresponde à celui configuré dans l'image
 
 Il est possible de le configurer avant le lancement du service VS Code dans le [SSPCloud]() ou de le reconfigurer une fois le service lancé en soumettant dans un terminal la commande suivante :
 
-```{shell}
+```shell
 git config --global user.name "Prénom Nom"
 git config --global user.email "mon.adresse@mail.com"
 ```
@@ -278,7 +278,7 @@ Attention, les projets sont écrits en **français et en anglais**.
 La création d'un projet est simplifié par l'usage de scripts.
 Si vous êtes placés dans le dossier "ssphub" de votre fork, faites ensuite :
 
-```{shell}
+```shell
 cd scripts
 uv sync
 uv run template.py name_of_the_folder (optional: name_of_the_template.qmd)
@@ -286,7 +286,7 @@ uv run template.py name_of_the_folder (optional: name_of_the_template.qmd)
 
 Par example, si je veux créer un projet dans le dossier "2025_nom_nouveau_projet"
 il faut indiquer :
-```{shell}
+```shell
 cd scripts
 uv sync
 uv run template.py 2025_nom_nouveau_projet
@@ -304,7 +304,7 @@ ajouter vos propres catégories etc.
 ## Description des champs du modèle de projet
 
 
-```{qmd}
+``` md
 ---                                                                    # <1>
 title: A COMPLETER                                                     # <1>
 description: A COMPLETER                                               # <1>
@@ -345,6 +345,12 @@ categories:                                                            # <3>
 :::                                            # <5>
 
 ```
+
+Line 3
+Take `penguins`, and then,
+
+Lines 4-7
+add new columns for the bill ratio and bill area.
 
 1. Champs Titre, description, date, image, à compléter.
 L'image doit être dans le dossier
@@ -387,13 +393,13 @@ Config :
 - have a deepl API KEY stored as `DEEPL_API_KEY, cf <https://www.deepl.com/fr/pro>
 - working directory must be ssphub/scripts
 
-```{shell}
+```shell
 # it will take the "index.qmd" file of the project/project_subdir dir and translate it into "index.en.qmd
 Rscript translate.R project_subdir
 ```
 
 Example
-```{shell}
+```shell
 Rscript scripts/translate.R 2023_doremifasol
 ```
 
@@ -402,7 +408,7 @@ Rscript scripts/translate.R 2023_doremifasol
 Le site étant bilingue, la fonction usuelle de `quarto` (`quarto preview`) permet de prévisualiser
 **uniquement les pages en français**.
 
-```{shell}
+```shell
 quarto preview --port 5000 --host 0.0.0.0
 ```
 
