@@ -51,8 +51,7 @@ Ce bouton se trouve à la fin de la table des matières ou à droite de chaque p
 <br>
 
 Après avoir cliqué sur le bouton "Modifier cette page", le fichier source à l'origine de la page
-web est ouvert sur `Github`. Celui-ci est au format `Markdown` (voir les explications
-techniques [plus bas](#structure-d-une-page), si besoin)
+web est ouvert sur `Github`. Celui-ci est au format `Markdown`. 
 
 Cette fonctionnalité est utilisable même
 lorsque vous n'avez pas les droits en écriture sur le dépôt (droits attachés
@@ -298,65 +297,52 @@ ajouter vos propres catégories etc.
 <details open>
 <summary> Description des champs du modèle de projet </summary>
 
-> [!IMPORTANT]
-> 
-> ```markdown
-> ---                                                                    # <1>
-> title: A COMPLETER                                                     # <1>
-> description: A COMPLETER                                               # <1>
-> format: html
-> date: '2023-01-01'                                                     # <1>
-> image: monimage.png                                                    # <1>
-> listing:
-> - id: similar-project                                                  # <2>
->   contents: ../*/index.qmd                                             # <2>
->   type: grid                                                           # <2>
->   include:                                                             # <2>
->     categories:                                                        # <2>
->     - machine learning                                                 # <2>
->   sort:                                                                # <2>
->   - date desc                                                          # <2>
->   page-size: 6                                                         # <2>
->   categories: true                                                     # <2>
-> categories:                                                            # <3>
-> - SSMSI                                                                # <3>
-> - données administratives                                              # <3>
-> 
-> ---
-> 
-> 
-> # Synthèse du projet                                             # <4>
-> 
-> |           |         Description             |                  # <4>
-> |-----------|------------------------------------------------------------------| # <4>
-> | **Détail du projet**         |       |                         # <4>
-> | **Acteurs**                  |       |                         # <4>
-> | **Résultats du projet**      |       |                         # <4>
-> | **Produits et documentation du projet**      |  |              # <4>
-> | **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       | # <4>
-> 
-> # Projets similaires                           # <5>
-> 
-> ::: {#similar-project}                         # <5>
-> :::                                            # <5>
-> 
-> ```
-> 
-> 1. Champs Titre, description, date, image, à compléter.
-> L'image doit être dans le dossier
-> 2. Spécification pour les projets similaires indiqués en bas de page _ cf note 5_.
-> Mettez à jour `categories` pour indiquer tous les projets qui comprennent
-> ces catégories là.
-> 3. Catégories du projet. Le modèle comprend la liste complète des catégories
-> pré-existantes pour éviter les redites.
-> Vous pouvez bien sûr créer des catégories.
-> 4. Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
-> vous pouvez en enlever mais pas en ajouter.
-> Pour ajouter des choses vous pouvez insérer du texte sous le tableau.
-> 5. Liste des projets similaires comprenant les catégories listés dans les notes _2_.
+
+```markdown
+---
+title: A COMPLETER          # Champ à compléter
+description: A COMPLETER    # Champ à compléter
+format: html
+date: '2023-01-01'          # Champ à compléter au format YYYY-MM-DD
+image: monimage.png         # Champ à mettre à jour. Le lien est en référence au dossier actuel.
+listing:                    # Spécification pour lister les autres projets similaires
+- id: similar-project
+  contents: ../*/index.qmd  # dans tous les fichiers de projets qui s'appellent index.qmd
+  type: grid
+  include:
+    categories:
+    - machine learning      # categories à mettre à jour pour chercher les thèmes que l'on veut afficher
+    - SSMSI                 # liste sous le format 'machine learning' OU 'SSMSI'
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:                # Catégories du projet à définir par vous-même.
+- SSMSI                    # La création d'un modèle vous indique toutes les catégories présentes
+- données administratives  # à vous de choisir ou d'en créer une sans faire de doublon
+---
+<!-- Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
+vous pouvez en enlever mais pas en ajouter. -->
+# Synthèse du projet
+|           |         Description             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |       |
+| **Acteurs**                  |       |
+| **Résultats du projet**      |       |
+| **Produits et documentation du projet**      |  |
+| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       |
+
+<!-- Pour ajouter des choses vous pouvez insérer du texte sous le tableau. -->
+
+<!-- Liste des projets similaires comprenant les catégories listés dans l'en-tête YAML. Pas
+besoin de modifier ce champ.  -->
+# Projets similaires
+::: {#similar-project}
+:::
+
+```
 
 </details>
-
 
 Il faut ensuite traduire la présentation du projet en anglais, comme indiqué ci-dessous.
 
@@ -379,19 +365,77 @@ Une fois le projet traduit, vous devriez avoir l'architecture finale suivante :
 
 ### Traduire une page en anglais
 
-Config :
-- have a deepl API KEY stored as `DEEPL_API_KEY, cf <https://www.deepl.com/fr/pro>
-- working directory must be ssphub/scripts
+Les projets doivent être traduits en anglais.
+Un script automatique va aider à traduire.
+
+**Configuration nécessaire pour le script** :
+1. Créez vous un compte gratuit sur <https://www.deepl.com/fr/pro>
+2. Enregistrez la clé API comme variable d'environnement ou comme secret
+avec le nom `DEEPL_API_KEY`
 
 ```shell
-# it will take the "index.qmd" file of the project/project_subdir dir and translate it into "index.en.qmd
-Rscript translate.R project_subdir
+cd ssphub/scripts
+
+# it will take the "index.qmd" file of the project/2025_nom_nouveau_projet dir and translate it into "index.en.qmd
+Rscript translate.R 2025_nom_nouveau_projet
 ```
 
-Example
+**Example**
 ```shell
 Rscript scripts/translate.R 2023_doremifasol
 ```
+
+Ayez un regard attentif sur la traduction automatique, qui reconnaît la syntaxe
+Qmd mais pas tout le temps.
+Le script corrige certaines erreurs mais il peut en rester.
+
+#### Vérifiez les retours à la ligne intempestifs
+Le script ajoute notamment des retours à la ligne dans les tableaux markdown
+alors que dans un tableau markdown **chaque ligne du tableau doit correspondre
+à une ligne de code**.
+Par exemple,
+
+```markdown
+| Colonne 1  | Colonne 2|
+| --         |    --    |
+| Description| Ceci est la description de mon projet |
+```
+fonctionne mais
+
+```markdown
+| Colonne 1  | Colonne 2|
+| --         |    --    |
+| Description| Ceci est une ligne très longue de mon tableau que j'ai envie
+de couper sinon cela devient illisible.  |
+```
+
+ne fonctionne pas.
+Pour ajouter un retour à la ligne dans une cellule d'un tableau, il faut ajouter une balise html
+`<br>` et tout écrire sur une ligne de code.
+
+```markdown
+| Colonne 1  | Colonne 2|
+| --         |    --    |
+| Description| Ceci est une ligne très longue de mon tableau que j'ai envie <br> de couper sinon cela devient illisible.  |
+```
+
+<details>
+<summary> Ce que le script translate corrige </summary>
+
+> [!INFORMATION]
+> Le script corrige automatiquement les erreurs suivantes :
+> - supprime les espaces multiples (par exemple : "       ")
+> - corrige la structure du tableau markdown renvoyée
+> - supprime les "\" ajoutés (par exemple `{{< fa brands github >}}` devient `{{\< fa brands github >}}` sinon)
+> - supprime le "-" ajouté dans `description: |`
+
+</details>
+
+#### Traduisez les catégories
+Le script ne traduit pas les catégories des listings similaires dans l'entête YAML.
+Vous devez reprendre vous même les catégories du projet de l'en-tête qui elles
+sont traduites.
+
 
 ### Prévisualiser en local vos modifications
 
@@ -419,33 +463,3 @@ Quand une telle demande est ouverte, un site de prévisualisation est généré
 automatiquement.
 Le lien vers le site est indiqué par Github dans les messages de la demande.
 Chaque `push` sur la branche enclenchera une mise à jour du site de prévisualisation.
-
-## Annexe technique
-
-Cette partie, plus technique, est présente pour expliciter le processus
-de génération du site web. Elle peut servir à comprendre la logique
-automatisée de construction du site web.
-
-### Quarto Markdown et Netlify
-
-Le format `Quarto Markdown` est un langage de balisage léger conçu pour être lu facilement
-par les humains et converti en HTML pour être lu par les ordinateurs.
-Les fichiers Quarto Markdown sont simples à écrire et à lire, et peuvent être édités avec n'importe quel éditeur de texte.
-
-La construction et la mise à disposition du site web https://ssphub.netlify.app
-est automatisée à chaque interaction avec `Github`. Le dépôt source est
-envoyé à des machines du fournisseur de
-service [`Netlify`](https://www.netlify.com/) qui construisent le site web et
-le déploie pour son accès depuis n'importe quel navigateur web à l'adresse https://ssphub.netlify.app
-
-
-### Structure d'une page
-
-Les fichiers sources `Quarto Markdown` sont décomposés en deux
-parties: le _header_ qui stocke les métadonnées du fichier (titre, auteur, etc.) et
-le _body_ où figure le contenu de celui-ci. Des éléments spéciaux, les _shortcodes_
-permettent de formatter certains éléments selon une structure pré-définie.
-
-Pour en apprendre plus
-sur les options autorisées, et les _shortcodes_, voir la
-[documentation de Quarto](https://quarto.org/docs/websites/)
