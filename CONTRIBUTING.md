@@ -51,7 +51,7 @@ Ce bouton se trouve à la fin de la table des matières ou à droite de chaque p
 <br>
 
 Après avoir cliqué sur le bouton "Modifier cette page", le fichier source à l'origine de la page
-web est ouvert sur `Github`. Celui-ci est au format `Markdown`. 
+web est ouvert sur `Github`. Celui-ci est au format `Markdown`.
 
 Cette fonctionnalité est utilisable même
 lorsque vous n'avez pas les droits en écriture sur le dépôt (droits attachés
@@ -190,8 +190,7 @@ dépôt `Github`. L'_issue_ doit avoir:
 
 Une fois que les membres du réseau participants à l'_issue_ sont d'accords
 sur l'objet du _post_ et les grandes lignes de son contenu, le _post_ peut être rédigé en suivant la procédure
-décrite ci-dessous et les
-[contraintes formelles indiquées dans la partie suivante](#six-contraintes-formelles)
+décrite ci-dessous et les contraintes formelles indiquées dans la partie suivante.
 
 
 > [!WARNING]
@@ -278,7 +277,7 @@ uv sync
 uv run template.py name_of_the_folder (optional: name_of_the_template.qmd)
 ```
 
-Par example, si je veux créer un projet dans le dossier "2025_nom_nouveau_projet"
+Par exemple, si je veux créer un projet dans le dossier "2025_nom_nouveau_projet"
 il faut indiquer :
 ```shell
 cd scripts
@@ -295,7 +294,7 @@ Vous pouvez ensuite compléter le modèle en supprimant les catégories inutiles
 ajouter vos propres catégories etc.
 
 <details open>
-<summary> Description des champs du modèle de projet </summary>
+<summary> <em> Description des champs du modèle de projet </em> </summary>
 
 
 ```markdown
@@ -319,20 +318,20 @@ listing:                    # Spécification pour lister les autres projets simi
   categories: true
 categories:                # Catégories du projet à définir par vous-même.
 - SSMSI                    # La création d'un modèle vous indique toutes les catégories présentes
-- données administratives  # à vous de choisir ou d'en créer une sans faire de doublon
+- données administratives  # à vous de choisir ou d'en créer une sans faire de doublon (projet vs projets par exemple)
 ---
 <!-- Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
 vous pouvez en enlever mais pas en ajouter. -->
 # Synthèse du projet
-|           |         Description             |
+|           |        Description à mettre à jour        |
 |-----------|------------------------------------------------------------------|
 | **Détail du projet**         |       |
 | **Acteurs**                  |       |
 | **Résultats du projet**      |       |
 | **Produits et documentation du projet**      |  |
-| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       |
+| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} [user/repo](git.com/user/repo)       |
 
-<!-- Pour ajouter des choses vous pouvez insérer du texte sous le tableau. -->
+<!-- Pour ajouter des choses vous pouvez insérer ce que vous souhaitez sous le tableau. -->
 
 <!-- Liste des projets similaires comprenant les catégories listés dans l'en-tête YAML. Pas
 besoin de modifier ce champ.  -->
@@ -361,17 +360,19 @@ Une fois le projet traduit, vous devriez avoir l'architecture finale suivante :
 > Tous les fichiers Qmd autres que `index.qmd` ne seront pas inclus dans la liste des _projets_
 > lors de la compilation du site.
 
-
+Vous pouvez alors commiter et pusher vos modifications.
+Si vous n'avez pas ouvert de pull request, vous pouvez en ouvrir une.
 
 ### Traduire une page en anglais
 
 Les projets doivent être traduits en anglais.
-Un script automatique va aider à traduire.
+Un script automatique va effectuer la première traduction.
 
 **Configuration nécessaire pour le script** :
 1. Créez vous un compte gratuit sur <https://www.deepl.com/fr/pro>
 2. Enregistrez la clé API comme variable d'environnement ou comme secret
-avec le nom `DEEPL_API_KEY`
+avec le nom `DEEPL_API_KEY`.
+Si la clé est mal enregistrée, vous verrez le message suivant : `DEEPL API KEY not set`.
 
 ```shell
 cd ssphub/scripts
@@ -380,7 +381,7 @@ cd ssphub/scripts
 Rscript translate.R 2025_nom_nouveau_projet
 ```
 
-**Example**
+**Exemple**
 ```shell
 Rscript scripts/translate.R 2023_doremifasol
 ```
@@ -400,7 +401,13 @@ Par exemple,
 | --         |    --    |
 | Description| Ceci est la description de mon projet |
 ```
-fonctionne mais
+rend cela
+
+| Colonne 1  | Colonne 2|
+| --         |    --    |
+| Description| Ceci est la description de mon projet |
+
+alors que
 
 ```markdown
 | Colonne 1  | Colonne 2|
@@ -409,7 +416,13 @@ fonctionne mais
 de couper sinon cela devient illisible.  |
 ```
 
-ne fonctionne pas.
+ne fonctionne pas et rend le tableau suivant :
+
+| Colonne 1  | Colonne 2|
+| --         |    --    |
+| Description| Ceci est une ligne très longue de mon tableau que j'ai envie
+de couper sinon cela devient illisible.  |
+
 Pour ajouter un retour à la ligne dans une cellule d'un tableau, il faut ajouter une balise html
 `<br>` et tout écrire sur une ligne de code.
 
@@ -420,20 +433,20 @@ Pour ajouter un retour à la ligne dans une cellule d'un tableau, il faut ajoute
 ```
 
 <details>
-<summary> Ce que le script translate corrige </summary>
+<summary> <em> Ce que le script translate corrige </em> </summary>
 
-> [!INFORMATION]
-> Le script corrige automatiquement les erreurs suivantes :
-> - supprime les espaces multiples (par exemple : "       ")
-> - corrige la structure du tableau markdown renvoyée
-> - supprime les "\" ajoutés (par exemple `{{< fa brands github >}}` devient `{{\< fa brands github >}}` sinon)
-> - supprime le "-" ajouté dans `description: |`
+Le script corrige automatiquement les erreurs suivantes :
+- supprime les espaces multiples (par exemple : "       ")
+- corrige la structure du tableau markdown renvoyée
+- supprime les "\" ajoutés (par exemple `{{< fa brands github >}}` devient `{{\< fa brands github >}}` sinon)
+- supprime le "-" ajouté dans `description: |`
 
 </details>
 
 #### Traduisez les catégories
-Le script ne traduit pas les catégories des listings similaires dans l'entête YAML.
-Vous devez reprendre vous même les catégories du projet de l'en-tête qui elles
+Le script ne traduit pas les catégories des listings similaires dans l'entête YAML
+(`machine learning` et `SSMSI` dans l'exemple ci-dessus).
+Vous devez reprendre vous-même les catégories du projet de l'en-tête qui elles
 sont traduites.
 
 
@@ -463,3 +476,14 @@ Quand une telle demande est ouverte, un site de prévisualisation est généré
 automatiquement.
 Le lien vers le site est indiqué par Github dans les messages de la demande.
 Chaque `push` sur la branche enclenchera une mise à jour du site de prévisualisation.
+
+## :six: Ouvrir une pull request
+
+Il est fortement recommandé d'ouvrir une pull request au début du travail.
+Cela permet de visualiser automatiquement une version préliminaire du site.
+Pour ouvrir une pull request, assurez-vous :
+- d'avoir lu ce fichier
+- d'avoir effectué la traduction
+- la pull request doit être cohérente avec le main en production du site.
+Si le site a eu des mises à jour, vous devez ainsi les réintégrer dans votre branch
+(par un merge ou un rebase). 
