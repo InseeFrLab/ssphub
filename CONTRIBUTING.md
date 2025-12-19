@@ -377,7 +377,8 @@ Si la clé est mal enregistrée, vous verrez le message suivant : `DEEPL API KEY
 ```shell
 cd ssphub/scripts
 
-# it will take the "index.qmd" file of the project/2025_nom_nouveau_projet dir and translate it into "index.en.qmd
+# it will take the "index.qmd" file of the project/2025_nom_nouveau_projet dir
+# and translate it into "index.en.qmd
 Rscript translate.R 2025_nom_nouveau_projet
 ```
 
@@ -431,6 +432,10 @@ Pour ajouter un retour à la ligne dans une cellule d'un tableau, il faut ajoute
 | --         |    --    |
 | Description| Ceci est une ligne très longue de mon tableau que j'ai envie <br> de couper sinon cela devient illisible.  |
 ```
+
+| Colonne 1  | Colonne 2|
+| --         |    --    |
+| Description| Ceci est une ligne très longue de mon tableau que j'ai envie <br> de couper sinon cela devient illisible.  |
 
 <details>
 <summary> <em> Ce que le script translate corrige </em> </summary>
@@ -486,4 +491,4 @@ Pour ouvrir une pull request, assurez-vous :
 - d'avoir effectué la traduction
 - la pull request doit être cohérente avec le main en production du site.
 Si le site a eu des mises à jour, vous devez ainsi les réintégrer dans votre branch
-(par un merge ou un rebase). 
+(par un merge ou un rebase).
