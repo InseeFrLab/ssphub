@@ -14,9 +14,9 @@ Specified in [contributing.md](CONTRIBUTING.md)
 ## How to
 
 ### Render / preview when coding
-- render: `Rscript scripts/render.R`
-- preview: `Rscript scripts/preview.R`
-- render and preview : `Rscript scripts/render.R && Rscript scripts/preview.R`
+- render: `Rscript scripts/0a_render.R`
+- preview: `Rscript scripts/0c_preview.R`
+- render and preview : `Rscript scripts/0a_render.R && Rscript scripts/0c_preview.R`
 
 If a PR is opened, a website preview is automatically generated. The link to the preview is in the Github PR details. Every push to the remote repo will trigger an update of the website preview.
 
@@ -26,14 +26,14 @@ used with Python. `create_folder_and_file("2022_JOCAS")`
 ```{shell}
 cd scripts
 uv sync
-uv run template.py name_of_the_folder (optional: name_of_the_template.qmd)
+uv run 1_template.py name_of_the_folder (optional: name_of_the_template.qmd)
 ```
 
 Example :
 ```{shell}
 cd scripts
 uv sync
-uv run template.py test
+uv run 1_template.py test
 ```
 
 
@@ -61,12 +61,12 @@ Config :
 
 ```{shell}
 # it will take the "index.qmd" file of the project/project_subdir dir and translate it into "index.en.qmd
-Rscript translate.R project_subdir
+Rscript 0b_translate.R project_subdir
 ```
 
 Example
 ```{shell}
-Rscript scripts/translate.R 2023_doremifasol
+Rscript scripts/0b_translate.R 2023_doremifasol
 ```
 
 
