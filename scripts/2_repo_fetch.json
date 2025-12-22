@@ -1,35 +1,55 @@
 [
   {
     "path_to_folder_to_synchronize_from": "https://github.com/InseeFrLab/satellite-images-docs/tree/main/cards",
-    "last_commit_sha": "nok",
+    "last_commit_sha": "862f2dc2f0c12d62a38b62de48d096452a1685ca",
     "path_to_folder_to_synchronize_to": "project/2022_satellites/cards",
     "replacements": [
       {
-        "pattern_to_replace": "url: src",
-        "replacement": "url: https://InseeFrLab.github.io/satellite-images-docs/src"
+        "pattern_to_replace": ".*slides:.*",
+        "replacement": ""
       },
       {
-        "pattern_to_replace": "website: src",
-        "replacement": "website: https://InseeFrLab.github.io/satellite-images-docs/src"
+        "pattern_to_replace": ".*text:.*",
+        "replacement": ""
+      },
+      {
+        "pattern_to_replace": ".*website: ",
+        "replacement": "website: https://InseeFrLab.github.io/satellite-images-docs/"
+      },
+      {
+        "pattern_to_replace": ".*url: ",
+        "replacement": "website: https://InseeFrLab.github.io/satellite-images-docs/"
+      },
+      {
+        "pattern_to_replace": "//",
+        "replacement": "/"
       }
     ]
   },
   {
     "path_to_folder_to_synchronize_from": "https://github.com/InseeFrLab/codif-ape-prez/tree/main/cards",
-    "last_commit_sha": "nok",
+    "last_commit_sha": "862f2dc2f0c12d62a38b62de48d096452a1685ca",
     "path_to_folder_to_synchronize_to": "project/2022_codif_ape/cards",
     "replacements": [
       {
-        "pattern_to_replace": "url: src",
-        "replacement": "url: https://InseeFrLab.github.io/codif-ape-prez/src"
+        "pattern_to_replace": ".*slides:.*",
+        "replacement": ""
       },
       {
-        "pattern_to_replace": "url: /slides",
-        "replacement": "url: https://InseeFrLab.github.io/codif-ape-prez/slides"
+        "pattern_to_replace": ".*text:.*",
+        "replacement": ""
       },
       {
-        "pattern_to_replace": "website: src",
-        "replacement": "website: https://InseeFrLab.github.io/codif-ape-prez/src"
+        "pattern_to_replace": ".*url: /",
+        "replacement": "website: https://InseeFrLab.github.io/codif-ape-prez/"
+      },
+      {
+        "pattern_to_replace": ".*website: /",
+        "replacement": "website: https://InseeFrLab.github.io/codif-ape-prez/"
+      },
+      {
+        "pattern_to_replace": "//",
+        "replacement": "/"
       }
     ]
   }

@@ -1,11 +1,13 @@
 
 ---
 title: Journée SSP Hub
-image: img/avatar.png
+image: https:/ssphub.netlify.app/avatar.png
 date: "2023-04-17"
 description: |
   <b>Description :</b> Présentation lors de l'évènement de lancement du SSP Hub
 author: Thomas Faria et Tom Seimandi
-website: https://inseefrlab.github.io/codif-ape-prez/slides/journee-ssphub/index.html
+
+
+website: https:/InseeFrLab.github.io/codif-ape-prez/slides/journee-ssphub/index.html
 order: 2
 ---

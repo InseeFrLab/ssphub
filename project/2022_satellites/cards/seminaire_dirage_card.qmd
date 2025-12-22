@@ -5,10 +5,12 @@ date: "2024-05-28"
 description: |
   <b>Description :</b> Ce séminaire marque la fin des travaux d’expérimentation. À cette occasion, nous présenterons l’intégralité de la chaîne de traitement, de la récupération des images jusqu’à l’application d’aide à la décision, en mettant l’accent sur les difficultés rencontrées. La poursuite de ces travaux dépendra des besoins réels de l’Insee et nécessitera des compétences variées et une technicité élevée pour maintenir et/ou améliorer la chaîne de traitement.
 author: Raya Berova, Gaëtan Carrere, Thomas Faria, Clément Guillo et Tom Seimandi
-website: https://inseefrlab.github.io/satellite-images-docs/src/seminaire-dirag/index.html
+
+
+website: https:/InseeFrLab.github.io/satellite-images-docs/src/seminaire-dirag/index.html
 video:
-  text: Vidéo
-  url: src/seminaire-dirag-video/index.html
+
+website: https:/InseeFrLab.github.io/satellite-images-docs/src/seminaire-dirag-video/index.html
 order: 4
 lang: fr-FR
 ---
