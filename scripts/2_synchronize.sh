@@ -91,6 +91,7 @@ update_commit_sha() {
 # Main script
 main() {
     local json_file="scripts/2_repo_fetch.json"
+    local branch_created=false
 
     # Check if the JSON file exists
     if [ ! -f "$json_file" ]; then
@@ -118,10 +119,13 @@ main() {
         if [ "$last_commit_sha" != "$new_commit_sha" ]; then
             echo "New commit found for $path_to_folder_to_synchronize_from"
 
-            # Create a branch
-            git pull origin main
-            git branch auto_fetch
-            git push -u origin auto_fetch
+            # Create a branch only if it hasn't been created yet
+            if [ "$branch_created" = false ]; then
+                git pull origin fusion_site_ssplab
+                git branch auto_fetch
+                git push -u origin auto_fetch
+                branch_created=true
+            fi
 
             # Clone the repository and move the subfolder
             clone_repo "$owner" "$repo" "$path" "$path_to_folder_to_synchronize_to"
