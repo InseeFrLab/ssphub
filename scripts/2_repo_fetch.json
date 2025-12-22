@@ -14,11 +14,11 @@
       },
       {
         "pattern_to_replace": ".*website: ",
-        "replacement": "website: https://InseeFrLab.github.io/satellite-images-docs/"
+        "replacement": "website: https:///InseeFrLab.github.io/satellite-images-docs/"
       },
       {
         "pattern_to_replace": ".*url: ",
-        "replacement": "website: https://InseeFrLab.github.io/satellite-images-docs/"
+        "replacement": "website: https:///InseeFrLab.github.io/satellite-images-docs/"
       },
       {
         "pattern_to_replace": "//",
@@ -41,11 +41,11 @@
       },
       {
         "pattern_to_replace": ".*url: /",
-        "replacement": "website: https://InseeFrLab.github.io/codif-ape-prez/"
+        "replacement": "website: https:///InseeFrLab.github.io/codif-ape-prez/"
       },
       {
         "pattern_to_replace": ".*website: /",
-        "replacement": "website: https://InseeFrLab.github.io/codif-ape-prez/"
+        "replacement": "website: https:///InseeFrLab.github.io/codif-ape-prez/"
       },
       {
         "pattern_to_replace": "//",

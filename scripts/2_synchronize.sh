@@ -129,7 +129,7 @@ main() {
 
             # Commit the changes
             git add "$path_to_folder_to_synchronize_to" "$json_file"
-            git commit -m "Updating $path_to_folder_to_synchronize_to based on last commit $new_commit_sha made to $path_to_folder_to_synchronize_from" --dry-run
+            git commit -m "Update $path_to_folder_to_synchronize_to based on commit $new_commit_sha made to $path_to_folder_to_synchronize_from"
         else
             echo "No new commit found for $path_to_folder_to_synchronize_from"
         fi
