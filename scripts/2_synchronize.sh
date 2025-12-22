@@ -122,9 +122,10 @@ main() {
             # Create a branch only if it hasn't been created yet
             if [ "$branch_created" = false ]; then
                 git pull origin fusion_site_ssplab
-                git branch auto_fetch
+                git checkout -b auto_fetch
                 git push -u origin auto_fetch
                 branch_created=true
+                git checkout auto_fetch
             fi
 
             # Clone the repository and move the subfolder
