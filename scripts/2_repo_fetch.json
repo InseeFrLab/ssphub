@@ -40,11 +40,11 @@
         "replacement": ""
       },
       {
-        "pattern_to_replace": ".*url: /",
-        "replacement": "website: https:///InseeFrLab.github.io/codif-ape-prez/"
+        "pattern_to_replace": ".*video:.*",
+        "replacement": ""
       },
       {
-        "pattern_to_replace": ".*website: /",
+        "pattern_to_replace": ".*url: /",
         "replacement": "website: https:///InseeFrLab.github.io/codif-ape-prez/"
       },
       {
