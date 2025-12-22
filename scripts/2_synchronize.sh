@@ -40,3 +40,25 @@ clone_repo() {
     cd ../
     rm -rf temp/
 }
+
+
+# Function to replace patterns in .qmd files
+replace_in_qmd_files() {
+    local folder_path="$1"
+    local replacements_json="$2"
+
+    # Check if the folder exists
+    if [ ! -d "$folder_path" ]; then
+        echo "Error: Folder '$folder_path' does not exist."
+        return 1
+    fi
+
+    # Parse the replacements JSON and perform each replacement
+    echo "$replacements_json" | jq -c '.[]' | while read -r replacement; do
+        local old_pattern=$(echo "$replacement" | jq -r '.pattern_to_replace')
+        local new_pattern=$(echo "$replacement" | jq -r '.replacement')
+
+        # Find all .qmd files in the folder and replace the pattern
+        find "$folder_path" -type f -name "*.qmd" -exec sed -i "s|$old_pattern|$new_pattern|g" {} +
+    done
+}
