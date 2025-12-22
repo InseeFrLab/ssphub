@@ -24,3 +24,19 @@ get_last_commit() {
 
     echo "$output" | jq --raw-output '.[0].sha'
 }
+
+# Function to clone the repository and move the subfolder
+clone_repo() {
+    local owner_git="$1"
+    local repo_git="$2"
+    local subfolder_git="$3"
+    local path_ssphub="$4"
+
+    mkdir temp
+    cd temp
+    git clone "https://github.com/$owner_git/$repo_git"
+    rm -rf "../$path_ssphub"
+    cp "$repo_git/$subfolder_git/" "../$path_ssphub" -rf
+    cd ../
+    rm -rf temp/
+}
