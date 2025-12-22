@@ -62,3 +62,24 @@ replace_in_qmd_files() {
         find "$folder_path" -type f -name "*.qmd" -exec sed -i "s|$old_pattern|$new_pattern|g" {} +
     done
 }
+
+
+# Function to update the last_commit_sha in repo_fetch.json
+update_commit_sha() {
+    local old_commit_sha="$1"
+    local new_commit_sha="$2"
+    local json_file="scripts/2_repo_fetch.json"
+
+    # Check if the JSON file exists
+    if [ ! -f "$json_file" ]; then
+        echo "Error: File '$json_file' does not exist."
+        return 1
+    fi
+
+    # Update the last_commit_sha in the JSON file
+    jq --arg old_sha "$old_commit_sha" --arg new_sha "$new_commit_sha" \
+    '.[] |= if .last_commit_sha == $old_sha then .last_commit_sha = $new_sha else . end' \
+    "$json_file" > tmp.json && mv tmp.json "$json_file"
+
+    echo "Updated last_commit_sha from $old_commit_sha to $new_commit_sha in $json_file"
+}
