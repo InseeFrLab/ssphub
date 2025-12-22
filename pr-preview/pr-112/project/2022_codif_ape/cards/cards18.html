@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
-<head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2023_pynsee/index.en.html" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/cards/cards18.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_codif_ape/cards/cards18.en.html" />
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.26">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="Le package  pynsee facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur Github.">
-<title>pynsee, un package Python  pour récupérer les données de l’Insee – SSPHub</title>
+
+<meta name="author" content="Meilame Tayebjee">
+<meta name="description" content="Description : Présentation de la nouvelle mouture de TTC (torchTextClassifiers)">
+
+<title>Présentation JMS – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,13 +25,26 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script><script src="../../site_libs/quarto-listing/quarto-listing.js"></script><script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -55,35 +71,8 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Envoyer",
     "search-label": "Recherche"
   }
-}</script><script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-similar-project .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script><style>
+}</script>
+<style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -100,39 +89,18 @@ ul.task-list li input[type="checkbox"] {
 background: #6886bb;
       }
 </style>
-<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+
+
 </head>
+
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
@@ -142,56 +110,53 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2023_pynsee/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
-</div></li>
-<li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+  <li class="nav-item">
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../event.html"> 
+    <a class="nav-link" href="../../../event.html"> 
 <span class="menu-text">Événements</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../blog.html"> 
+    <a class="nav-link" href="../../../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../project.html"> 
+    <a class="nav-link" href="../../../project.html"> 
 <span class="menu-text">Projets</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../course.html"> 
+    <a class="nav-link" href="../../../course.html"> 
 <span class="menu-text">Ressources utiles</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">À propos</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">
-<li>
-    <a class="dropdown-item" href="../../infolettre/infolettre.html">
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">    
+        <li>
+    <a class="dropdown-item" href="../../../infolettre/infolettre.html">
  <span class="dropdown-text">Newsletters</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../about.html">
+    <a class="dropdown-item" href="../../../about.html">
  <span class="dropdown-text">Présentation du réseau</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../manifeste.html">
+    <a class="dropdown-item" href="../../../manifeste.html">
  <span class="dropdown-text">Manifeste du réseau</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
 <span class="menu-text">Le SSPCloud</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -201,41 +166,42 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav><div id="quarto-announcement" data-announcement-id="8c899c87ea21742c798fea6eae88c782" class="alert alert-primary hidden">
-<i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>📺️ Les présentations et le replay de la journée du réseau, le 1<sup>er</sup> décembre 2025, <a href="../../event/2025-12-01-network-day/index.html">sont disponibles</a></p>
-</div>
-<i class="bi bi-x-lg quarto-announcement-action"></i>
-</div>
-</header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="8c899c87ea21742c798fea6eae88c782" class="alert alert-primary hidden"><i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>📺️ Les présentations et le replay de la journée du réseau, le 1<sup>er</sup> décembre 2025, <a href="../../../event/2025-12-01-network-day/index.html">sont disponibles</a></p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i> pour récupérer les données de l’Insee</h1>
+      <h1 class="title">Présentation JMS</h1>
                   <div>
         <div class="description">
-          <p>Le package <i class="fa-brands fa-python" aria-label="python"></i> <code>pynsee</code> facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur Github.</p>
+          <p><b>Description :</b> Présentation de la nouvelle mouture de TTC (torchTextClassifiers)</p>
         </div>
       </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">en production</div>
-                <div class="quarto-category">Insee</div>
-                <div class="quarto-category">package</div>
-                <div class="quarto-category">Python</div>
-              </div>
-                  </div>
+                </div>
   </div>
     
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Auteur·rice</div>
+      <div class="quarto-title-meta-contents">
+               <p>Meilame Tayebjee </p>
+            </div>
+    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 janvier 2023</p>
+        <p class="date">12 novembre 2025</p>
       </div>
     </div>
     
@@ -246,125 +212,21 @@ window.Quarto = {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sur cette page</h2>
-   
-  <ul>
-<li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
-  <li><a href="#projets-similaires-ayant-abouti-%C3%A0-la-cr%C3%A9ation-de-package" id="toc-projets-similaires-ayant-abouti-à-la-création-de-package" class="nav-link" data-scroll-target="#projets-similaires-ayant-abouti-à-la-création-de-package">Projets similaires ayant abouti à la création de package</a></li>
-  </ul>
-<div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2023_pynsee/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2023_pynsee/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></nav>
-</div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
-<table class="caption-top table">
-<thead><tr class="header">
-<th></th>
-<th>
-<code>pynsee</code>, un package Python pour récupérer les données de l’Insee</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>pynsee donne un accès rapide à plus de 150 000 séries macroéconomiques, une dizaine d’ensembles de données locales, de nombreuses sources disponibles sur insee.fr ainsi que des métadonnées clés et une base de données SIRENE contenant des données sur toutes les entreprises françaises. Consultez la page détaillée de l’API <a href="portail-api.insee.fr">portail-api.insee.fr</a>. <br> Ce paquet est une contribution à la recherche reproductible et à la transparence des données publiques. Il bénéficie des développements réalisés par les équipes travaillant sur les API à l’Insee et à l’IGN.</td>
-</tr>
-<tr class="even">
-<td><strong>Acteurs</strong></td>
-<td>Insee</td>
-</tr>
-<tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Le package pynsee est en production et téléchargeable depuis GitHub. La documentation est aussi publiée <a href="https://pynsee.readthedocs.io/en/latest/">ici</a>.</td>
-</tr>
-<tr class="even">
-<td><strong>Code du projet</strong></td>
-<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/InseeFrLab/pynsee">https://github.com/InseeFrLab/pynsee</a>
-</td>
-</tr>
-</tbody>
-</table></section><section id="projets-similaires-ayant-abouti-à-la-création-de-package" class="level1"><h1>Projets similaires ayant abouti à la création de package</h1>
-<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1766422159974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
-<a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires-ayant-abouti-à-la-création-de-package">
-Doremifasol
-</h5>
-<div class="card-text listing-description delink">
-<p>Le package <i class="fa-brands fa-r-project" aria-label="r-project"></i> R Doremifasol facilite la récupération des données Insee pour les data scientists. La librairie est open source, disponible sur…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2023
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1766422159974" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
-<a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Utilisation des images satellites pour la statistique publique
-</h5>
-<div class="card-text listing-description delink">
-<p>Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 oct. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1766422159971" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
-<a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Codification automatique de l’activité principale des entreprises
-</h5>
-<div class="card-text listing-description delink">
-<p>Développer un algorithme de machine learning pour automatiser la classification de l’activité principale des entreprises et mise en production</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">Aucun article correspondant</div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -437,7 +299,7 @@ Codification automatique de l’activité principale des entreprises
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/ssphub\/pr-preview\/pr-112\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -769,10 +631,4 @@ Codification automatique de l’activité principale des entreprises
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2023_pynsee/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2023_pynsee/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></div></div></footer>
-</body>
-</html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_codif_ape/cards/cards18.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_codif_ape/cards/cards18.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></div></div></footer></body></html>

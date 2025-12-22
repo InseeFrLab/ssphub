@@ -623,6 +623,25 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 <h2 class="anchored" data-anchor-id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice">Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice)</h2>
 <div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
 <p>Le papier a été publié lors des <a href="https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/">journées de méthodologie statistique 2025</a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="97" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb4-97"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb4-98">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb4-99">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb4-100">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
 </section>
 <section id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab" class="level2">
 <h2 class="anchored" data-anchor-id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab">Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)</h2>
@@ -633,20 +652,20 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </iframe>
 </div></div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="104" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 103;"><span id="cb4-104"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="110" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb5-110"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">createButton</span>(</span>
-<span id="cb4-105">  <span class="st" style="color: #20794D;
+<span id="cb5-111">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.pdf"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb4-106">  <span class="st" style="color: #20794D;
+<span id="cb5-112">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Télécharger les slides"</span></span>
-<span id="cb4-107">)</span></code></pre></div></div>
+<span id="cb5-113">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-4" data-nodetype="expression">
+<div id="ojs-cell-5" data-nodetype="expression">
 
 </div>
 </div>
@@ -656,7 +675,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 <h2 class="anchored" data-anchor-id="le-portail-httpsdata.ina.fr-produire-des-indicateurs-de-suivi-des-médias-grâce-à-lia">Le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, produire des indicateurs de suivi des médias grâce à l’IA</h2>
 <p><em>Cf.</em> le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="118" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 117;"><span id="cb5-118"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="124" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 123;"><span id="cb6-124"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
@@ -668,7 +687,7 @@ background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Télécharger les slides"</span>){</span>
-<span id="cb5-119">  <span class="kw" style="color: #003B4F;
+<span id="cb6-125">  <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
@@ -678,10 +697,10 @@ background-color: null;
 font-style: inherit;">html</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb5-120"><span class="vs" style="color: #20794D;
+<span id="cb6-126"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
-<span id="cb5-121"><span class="vs" style="color: #20794D;
+<span id="cb6-127"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -690,26 +709,26 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">" target="_blank"&gt;</span></span>
-<span id="cb5-122"><span class="vs" style="color: #20794D;
+<span id="cb6-128"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">}</span></span>
-<span id="cb5-123"><span class="vs" style="color: #20794D;
+<span id="cb6-129"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    &lt;/a&gt;</span></span>
-<span id="cb5-124"><span class="vs" style="color: #20794D;
+<span id="cb6-130"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  &lt;/p&gt;`</span></span>
-<span id="cb5-125">  <span class="cf" style="color: #003B4F;
+<span id="cb6-131">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> button</span>
-<span id="cb5-126">}</span></code></pre></div></div>
+<span id="cb6-132">}</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-5" data-nodetype="declaration">
+<div id="ojs-cell-6" data-nodetype="declaration">
 
 </div>
 </div>
@@ -2104,7 +2123,7 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765984919421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1766422159969" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2137,7 +2156,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765984919421" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1766422159970" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2161,8 +2180,6 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
-
 <div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
 
 </div>
@@ -2180,7 +2197,7 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1765984919420" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1766422159968" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
 <a href="../../project/2021_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2215,7 +2232,7 @@ En 2020, la chute de la consommation a alimenté l’épargne, faisant progresse
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765984919418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
+<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1766422159966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2252,7 +2269,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765984919419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1766422159967" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2287,7 +2304,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1765984919419" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1766422159967" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2326,7 +2343,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1765984919418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1766422159967" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2365,7 +2382,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765984919418" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1766422159966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
