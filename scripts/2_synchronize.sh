@@ -1,3 +1,6 @@
+# Install jq if not present
+sudo apt-get install jq
+
 # Function to extract owner, repository name, and path after main/ from a GitHub URL
 extract_github_info() {
     local url="$1"
@@ -83,3 +86,55 @@ update_commit_sha() {
 
     echo "Updated last_commit_sha from $old_commit_sha to $new_commit_sha in $json_file"
 }
+
+
+# Main script
+main() {
+    local json_file="scripts/2_repo_fetch.json"
+
+    # Check if the JSON file exists
+    if [ ! -f "$json_file" ]; then
+        echo "Error: File '$json_file' does not exist."
+        return 1
+    fi
+
+    # Read the JSON file and process each entry
+    jq -c '.[]' "$json_file" | while read -r entry; do
+        local path_to_folder_to_synchronize_from=$(echo "$entry" | jq -r '.path_to_folder_to_synchronize_from')
+        local last_commit_sha=$(echo "$entry" | jq -r '.last_commit_sha')
+        local path_to_folder_to_synchronize_to=$(echo "$entry" | jq -r '.path_to_folder_to_synchronize_to')
+        local replacements=$(echo "$entry" | jq -c '.replacements')
+
+        # Extract owner, repo, and path after main/
+        local info=$(extract_github_info "$path_to_folder_to_synchronize_from")
+        local owner=$(echo "$info" | awk '{print $1}')
+        local repo=$(echo "$info" | awk '{print $2}')
+        local path=$(echo "$info" | awk '{print $3}')
+
+        # Get the last commit SHA
+        local new_commit_sha=$(get_last_commit "$owner" "$repo" "$path")
+
+        # Check if the last commit SHA is different
+        if [ "$last_commit_sha" != "$new_commit_sha" ]; then
+            echo "New commit found for $path_to_folder_to_synchronize_from"
+
+            # Clone the repository and move the subfolder
+            clone_repo "$owner" "$repo" "$path" "$path_to_folder_to_synchronize_to"
+
+            # Replace patterns in .qmd files
+            replace_in_qmd_files "$path_to_folder_to_synchronize_to" "$replacements"
+
+            # Update the last commit SHA in the JSON file
+            update_commit_sha "$last_commit_sha" "$new_commit_sha"
+
+            # Commit the changes
+            git add "$path_to_folder_to_synchronize_to" "$json_file"
+            git commit -m "Updating $path_to_folder_to_synchronize_to based on last commit $new_commit_sha made to $path_to_folder_to_synchronize_from" --dry-run
+        else
+            echo "No new commit found for $path_to_folder_to_synchronize_from"
+        fi
+    done
+}
+
+# To run the script
+main
