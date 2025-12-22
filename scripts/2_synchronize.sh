@@ -118,6 +118,11 @@ main() {
         if [ "$last_commit_sha" != "$new_commit_sha" ]; then
             echo "New commit found for $path_to_folder_to_synchronize_from"
 
+            # Create a branch
+            git pull origin main
+            git branch auto_fetch
+            git push -u origin auto_fetch
+
             # Clone the repository and move the subfolder
             clone_repo "$owner" "$repo" "$path" "$path_to_folder_to_synchronize_to"
 
@@ -130,6 +135,7 @@ main() {
             # Commit the changes
             git add "$path_to_folder_to_synchronize_to" "$json_file"
             git commit -m "Update $path_to_folder_to_synchronize_to based on commit $new_commit_sha made to $path_to_folder_to_synchronize_from"
+            git push
         else
             echo "No new commit found for $path_to_folder_to_synchronize_from"
         fi
