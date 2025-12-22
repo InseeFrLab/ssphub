@@ -3,7 +3,8 @@ name: "Update external data"
 on:
   workflow_dispatch:
   push:
-    - fusion_site_ssplab
+    branches:
+      - fusion_site_ssplab
   schedule:
     - cron: '42 10 7 * *'  # Runs once a month (the 7th) at 10h42 UTC to avoid GHA overload
 
