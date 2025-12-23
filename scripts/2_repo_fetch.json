@@ -1,7 +1,7 @@
 [
   {
     "path_to_folder_to_synchronize_from": "https://github.com/InseeFrLab/satellite-images-docs/tree/main/cards",
-    "last_commit_sha": "",
+    "last_commit_sha": "862f2dc2f0c12d62a38b62de48d096452a1685ca",
     "path_to_folder_to_synchronize_to": "project/2022_satellites/cards",
     "replacements": [
       {
@@ -28,7 +28,7 @@
   },
   {
     "path_to_folder_to_synchronize_from": "https://github.com/InseeFrLab/codif-ape-prez/tree/main/cards",
-    "last_commit_sha": "",
+    "last_commit_sha": "0d474addc0735a610ecb7cc54bd5362114446925",
     "path_to_folder_to_synchronize_to": "project/2022_codif_ape/cards",
     "replacements": [
       {
