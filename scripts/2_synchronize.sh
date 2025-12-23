@@ -146,7 +146,7 @@ main() {
             # replacement:  "${replacements:0:20}...""
 
             # # Delete branch
-            git branch -D origin/auto_fetch
+            git push origin --delete auto_fetch
             git branch -D auto_fetch
 
             # Create a branch only if it hasn't been created yet
