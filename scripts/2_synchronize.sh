@@ -72,7 +72,6 @@ replace_in_qmd_files() {
             if [ "$count" -gt 1 ]; then
                 # Use awk to comment out all but the first website: line
                 awk "\$0 ~ /^website:/{if (++n > 1) sub(/^/, \"# \")}1" "$file" > "$file.tmp" && mv "$file.tmp" "$file"
-                echo "File $file: $count 'website:' lines, all but the first commented."
             fi
         done
     ' bash {} +
@@ -154,7 +153,7 @@ main() {
             if [ "$branch_created" = false ]; then
                 git pull origin fusion_site_ssplab
                 git checkout -b auto_fetch
-                # git push -u origin auto_fetch
+                git push -u origin auto_fetch
                 branch_created=true
             fi
 
@@ -172,7 +171,7 @@ main() {
             # Commit the changes
             git add "$path_to_folder_to_synchronize_to" "$json_file"
             git commit -m "Update $path_to_folder_to_synchronize_to based on commit $new_commit_sha made to $path_to_folder_to_synchronize_from"
-            # git push
+            git push
         else
             echo "No new commit since ${last_commit_sha:0:6} found for $path_to_folder_to_synchronize_from"
         fi
