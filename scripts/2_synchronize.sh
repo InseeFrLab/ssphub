@@ -45,7 +45,6 @@ clone_repo() {
     rm -rf temp/
 }
 
-
 # Function to replace patterns in .qmd files
 replace_in_qmd_files() {
     local folder_path="$1"
@@ -65,7 +64,20 @@ replace_in_qmd_files() {
         # Find all .qmd files in the folder and replace the pattern
         find "$folder_path" -type f -name "*.qmd" -exec sed -i "s|$old_pattern|$new_pattern|g" {} +
     done
+
+    # After replacements, delete multiple website: fields
+    find "$folder_path" -type f -name "*.qmd" -exec bash -c '
+        for file; do
+            count=$(grep -c "^website:" "$file")
+            if [ "$count" -gt 1 ]; then
+                # Use awk to comment out all but the first website: line
+                awk "\$0 ~ /^website:/{if (++n > 1) sub(/^/, \"# \")}1" "$file" > "$file.tmp" && mv "$file.tmp" "$file"
+                echo "File $file: $count 'website:' lines, all but the first commented."
+            fi
+        done
+    ' bash {} +
 }
+
 
 
 # Function to update the last_commit_sha in repo_fetch.json
@@ -87,7 +99,6 @@ update_commit_sha() {
 
     echo "Updated last_commit_sha from ${old_commit_sha:0:6}... to ${new_commit_sha:0:6}... in $json_file"
 }
-
 
 # Main script
 main() {
@@ -126,18 +137,18 @@ main() {
             echo "Commit "${new_commit_sha:0:6}" found for $path_to_folder_to_synchronize_from"
 
             # Debug
-            echo "will perform the cloning with params
-            last commit : "$last_commit_sha"
-            new_commit_sha : "$new_commit_sha"
-            owner: "$owner"
-            repo: "$repo"
-            path: "$path"
-            path_to_folder_to_synchronize_to: "$path_to_folder_to_synchronize_to"
-            replacement:  "${replacements:0:20}""
+            # echo "will perform the cloning with params
+            # last commit : "$last_commit_sha"
+            # new_commit_sha : "$new_commit_sha"
+            # owner: "$owner"
+            # repo: "$repo"
+            # path: "$path"
+            # path_to_folder_to_synchronize_to: "$path_to_folder_to_synchronize_to"
+            # replacement:  "${replacements:0:20}...""
 
             # # Delete branch
             git branch -D origin/auto_fetch
-            git branch -d auto_fetch
+            git branch -D auto_fetch
 
             # Create a branch only if it hasn't been created yet
             if [ "$branch_created" = false ]; then
@@ -161,7 +172,7 @@ main() {
             # Commit the changes
             git add "$path_to_folder_to_synchronize_to" "$json_file"
             git commit -m "Update $path_to_folder_to_synchronize_to based on commit $new_commit_sha made to $path_to_folder_to_synchronize_from"
-            # # git push
+            # git push
         else
             echo "No new commit since ${last_commit_sha:0:6} found for $path_to_folder_to_synchronize_from"
         fi
