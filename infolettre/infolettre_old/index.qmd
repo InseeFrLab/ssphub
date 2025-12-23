@@ -21,11 +21,10 @@ categories:
   - Quarto
   - Deep learning
   - Insee
-  - Retrospective
   - Infolettre
 ---
 
-_Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit_ 
+_Vous désirez intégrer la liste de diffusion ? Un mail à {{< var contact.email >}} suffit_ 
 
 ## Les anciennes infolettres
 
@@ -36,8 +35,8 @@ Les infolettres avant 2022, dont le format était différent, sont archivées ic
 * [Infolettre n°5, juin 2022](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Infolettre_n5.pdf)
 * [Infolettre n°4, mai 2022](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Infolettre_n4.pdf)
 * [Infolettre n°3, avril 2022](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Infolettre_n3.pdf)
-* [Infolettre n°2, mars 2022](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Infolettre_n2.pdf)
-* [Infolettre n°1, février 2022](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Infolettre_n1.pdf)
+* [Infolettre n°2, avril 2022](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Infolettre_n2.pdf)
+* [Infolettre n°1, avril 2022](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/infolettre_old/Infolettre_n1.pdf)
 
 ## Lettres big data
 
