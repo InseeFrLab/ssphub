@@ -133,7 +133,8 @@ main() {
 
         # Check if the last commit SHA is different
         if [ "$last_commit_sha" != "$new_commit_sha" ]; then
-            echo "Commit "${new_commit_sha:0:6}" found for $path_to_folder_to_synchronize_from"
+            echo "======================================================================
+            Commit "${new_commit_sha:0:6}" found for $path_to_folder_to_synchronize_from"
 
             # Debug
             # echo "will perform the cloning with params
@@ -145,12 +146,13 @@ main() {
             # path_to_folder_to_synchronize_to: "$path_to_folder_to_synchronize_to"
             # replacement:  "${replacements:0:20}...""
 
-            # # Delete branch
-            git push origin --delete auto_fetch
-            git branch -D auto_fetch
 
             # Create a branch only if it hasn't been created yet
             if [ "$branch_created" = false ]; then
+                # # Delete branch
+                git push origin --delete auto_fetch
+                git branch -D auto_fetch
+
                 git pull origin fusion_site_ssplab
                 git checkout -b auto_fetch
                 git push -u origin auto_fetch
@@ -173,7 +175,8 @@ main() {
             git commit -m "Update $path_to_folder_to_synchronize_to based on commit $new_commit_sha made to $path_to_folder_to_synchronize_from"
             git push
         else
-            echo "No new commit since ${last_commit_sha:0:6} found for $path_to_folder_to_synchronize_from"
+            echo "======================================================================
+            No new commit since ${last_commit_sha:0:6} found for $path_to_folder_to_synchronize_from"
         fi
     done
 }
