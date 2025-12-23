@@ -133,8 +133,8 @@ main() {
 
         # Check if the last commit SHA is different
         if [ "$last_commit_sha" != "$new_commit_sha" ]; then
-            echo "======================================================================
-            Commit "${new_commit_sha:0:6}" found for $path_to_folder_to_synchronize_from"
+            echo "======================================================================"
+            echo "Commit "${new_commit_sha:0:6}" found for $path_to_folder_to_synchronize_from"
 
             # Debug
             # echo "will perform the cloning with params
@@ -146,37 +146,42 @@ main() {
             # path_to_folder_to_synchronize_to: "$path_to_folder_to_synchronize_to"
             # replacement:  "${replacements:0:20}...""
 
+            echo "======= Branch ========"
 
             # Create a branch only if it hasn't been created yet
             if [ "$branch_created" = false ]; then
                 # # Delete branch
-                git push origin --delete auto_fetch
-                git branch -D auto_fetch
+                git push origin --delete auto_fetch --quiet
+                git branch -D auto_fetch --quiet
 
-                git pull origin fusion_site_ssplab
-                git checkout -b auto_fetch
-                git push -u origin auto_fetch
+                git pull origin fusion_site_ssplab --quiet
+                git checkout -b auto_fetch --quiet
+                git push -u origin auto_fetch --quiet
                 branch_created=true
             fi
 
-            git checkout auto_fetch
+            git checkout auto_fetch --quiet
 
             # Clone the repository and move the subfolder
+            echo "======= Cloning repo ========"
             clone_repo "$owner" "$repo" "$path" "$path_to_folder_to_synchronize_to"
 
             # Replace patterns in .qmd files
+            echo "======= Cleaning cloned files ========"
             replace_in_qmd_files "$path_to_folder_to_synchronize_to" "$replacements"
 
             # Update the last commit SHA in the JSON file
+            echo "======= Update "$json_file" ========"
             update_commit_sha "$last_commit_sha" "$new_commit_sha" "$json_file"
 
+            echo "======= Commit & push ========"
             # Commit the changes
             git add "$path_to_folder_to_synchronize_to" "$json_file"
             git commit -m "Update $path_to_folder_to_synchronize_to based on commit $new_commit_sha made to $path_to_folder_to_synchronize_from"
-            git push
+            git push --quiet
         else
-            echo "======================================================================
-            No new commit since ${last_commit_sha:0:6} found for $path_to_folder_to_synchronize_from"
+            echo "======================================================================"
+            echo "No new commit since ${last_commit_sha:0:6} found for $path_to_folder_to_synchronize_from"
         fi
     done
 }
@@ -184,4 +189,4 @@ main() {
 # To run the script
 main
 
-git checkout fusion_site_ssplab
+git checkout fusion_site_ssplab --quiet
