@@ -13,6 +13,14 @@
         "replacement": ""
       },
       {
+        "pattern_to_replace": ".*video:.*",
+        "replacement": ""
+      },
+      {
+        "pattern_to_replace": ".*paper:.*",
+        "replacement": ""
+      },
+      {
         "pattern_to_replace": ".*website: ",
         "replacement": "website: https:///InseeFrLab.github.io/satellite-images-docs/"
       },
