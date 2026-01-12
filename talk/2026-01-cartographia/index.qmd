@@ -1,0 +1,39 @@
+---
+title: "Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia"
+subtitle: Présentation par les deux auteurs du livre Cartographia,
+
+categories:
+- cartographie
+- event
+
+description: |
+  Le __13 janvier (14h30 - 15h30)__, Françoise Bahoken et Nicolas Lambert nous feront une présentation de leur dernier livre, Cartographia.
+date: '2026-01-13'
+image: mauviere.png
+---
+
+## Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
+
+__13 janvier (14h30 - 15h30)
+
+```{ojs}
+html`${slides_button}`
+```
+
+
+{{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4" controls="yes" >}}
+
+
+```{ojs}
+slides = "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/conf_ssphub_item7-1.pdf"
+```
+
+```{ojs}
+slides_button = html`<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
+  </a>
+</p>`
+```
+
+
