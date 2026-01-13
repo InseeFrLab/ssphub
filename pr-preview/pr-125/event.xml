@@ -24,18 +24,18 @@
 <h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert">Cartographia - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
 <p><strong>Replay de la présentation :</strong> </p><div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div><p></p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1" data-startfrom="22" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 21;"><span id="cb1-22"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="23" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 22;"><span id="cb1-23"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">createButton</span>(</span>
-<span id="cb1-23">  <span class="st" style="color: #20794D;
+<span id="cb1-24">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">,</span></span>
-<span id="cb1-24">  <span class="st" style="color: #20794D;
+<span id="cb1-25">  <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Télécharger les slides"</span></span>
-<span id="cb1-25">)</span></code></pre></div></div>
+<span id="cb1-26">)</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="expression">
 
@@ -43,7 +43,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="31" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 30;"><span id="cb2-31"><span class="kw" style="color: #003B4F;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="32" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb2-32"><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
@@ -55,7 +55,7 @@ background-color: null;
 font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"Télécharger les slides"</span>){</span>
-<span id="cb2-32">  <span class="kw" style="color: #003B4F;
+<span id="cb2-33">  <span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
@@ -65,10 +65,10 @@ background-color: null;
 font-style: inherit;">html</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">`</span></span>
-<span id="cb2-33"><span class="vs" style="color: #20794D;
+<span id="cb2-34"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
-<span id="cb2-34"><span class="vs" style="color: #20794D;
+<span id="cb2-35"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -77,24 +77,24 @@ background-color: null;
 font-style: inherit;">}</span><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">" target="_blank"&gt;</span></span>
-<span id="cb2-35"><span class="vs" style="color: #20794D;
+<span id="cb2-36"><span class="vs" style="color: #20794D;
 background-color: null;
 font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">}</span></span>
-<span id="cb2-36"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">    &lt;/a&gt;</span></span>
 <span id="cb2-37"><span class="vs" style="color: #20794D;
 background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb2-38"><span class="vs" style="color: #20794D;
+background-color: null;
 font-style: inherit;">  &lt;/p&gt;`</span></span>
-<span id="cb2-38">  <span class="cf" style="color: #003B4F;
+<span id="cb2-39">  <span class="cf" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">return</span> button</span>
-<span id="cb2-39">}</span></code></pre></div></div>
+<span id="cb2-40">}</span></code></pre></div></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="declaration">
 
