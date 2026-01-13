@@ -1,39 +1,43 @@
 ---
 title: "Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia"
-subtitle: Présentation par les deux auteurs du livre Cartographia,
 
 categories:
 - cartographie
 - event
 
 description: |
-  Le __13 janvier (14h30 - 15h30)__, Françoise Bahoken et Nicolas Lambert nous feront une présentation de leur dernier livre, Cartographia.
+  Le __13 janvier (14h30 - 15h30)__, Françoise Bahoken et Nicolas Lambert nous feront une présentation de leur dernier livre, Cartographia. Destiné à un public large, ce livre vulgarise les principes de cartographie et de sémiologie et apprend à dessiner le monde.
+
 date: '2026-01-13'
-image: mauviere.png
+
+image: cartographia.jpeg
 ---
 
-## Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
+## Cartographia - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert
 
-__13 janvier (14h30 - 15h30)
+
+**Replay de la présentation :**
+{{< video "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4" >}}
 
 ```{ojs}
-html`${slides_button}`
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf",
+  "Télécharger les slides"
+)
 ```
 
 
-{{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4" controls="yes" >}}
-
-
 ```{ojs}
-slides = "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/conf_ssphub_item7-1.pdf"
-```
-
-```{ojs}
-slides_button = html`<p class="text-center">
-  <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
-    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Télécharger les slides
-  </a>
-</p>`
+//| echo: false
+function createButton(slides, message="Télécharger les slides"){
+  const button = html`
+  <p class="text-center">
+    <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+      <i class="fa-solid fa-file-arrow-down"></i>&ensp;${message}
+    </a>
+  </p>`
+  return button
+}
 ```
 
 
