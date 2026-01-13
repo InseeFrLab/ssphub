@@ -20,6 +20,7 @@ image: cartographia.jpeg
 {{< video "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4" >}}
 
 ```{ojs}
+//| echo: false
 createButton(
   "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf",
   "Télécharger les slides"
