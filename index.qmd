@@ -12,10 +12,12 @@ listing:
       - "number desc"
     feed:
         categories: [post, infolettre]
+    max-items: 6
   - id: blog
     contents: post
     type: grid
     feed: true
+    max-items: 6
   - id: partenaires
     contents: partenaires
     template: scripts/courses.ejs
@@ -87,7 +89,7 @@ et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/m
 
 ::: {.column-page}
 
-## Les dernières _actualités_ du réseau
+## Les dernières actualités du réseau
 
 :::: {#latest-actions}
 ::::
