@@ -17,12 +17,19 @@ image: cartographia.jpeg
 
 
 **Replay de la présentation :**
+
 {{< video "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4" >}}
+
+
+<iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
+    <p>Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf">Download the PDF instead.</a></p>
+</iframe>
+
 
 ```{ojs}
 //| echo: false
 createButton(
-  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf",
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf",
   "Télécharger les slides"
 )
 ```
