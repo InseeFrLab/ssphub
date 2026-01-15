@@ -1,0 +1,39 @@
+---
+title: "A COMPLETER"
+
+# Summary for listings and search engines
+description: "A COMPLETER"
+
+format: html
+
+# Date published
+date: '2023-01-01'
+
+image: monimage.png
+
+listing:
+  - id: similar-project
+    contents: ../*/index.qmd
+    type: grid
+    include:
+      categories: ["machine learning"]
+    sort:
+      - "date desc"
+    page-size: 6
+    categories: true
+---
+
+# Synthèse du projet
+
+|           |         Description             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |       |
+| **Acteurs**                  |       |
+| **Résultats du projet**      |       |
+| **Produits et documentation du projet**      |  |
+| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       |
+
+# Projets similaires
+
+::: {#similar-project}
+:::

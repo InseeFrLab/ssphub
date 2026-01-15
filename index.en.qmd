@@ -1,0 +1,70 @@
+---
+toc: false
+sidebar: false
+title-block-style: none
+css: assets/css/homepage.css
+page-layout: full
+listing:
+  feed: true
+  id: project-listing
+  contents: project/**/index.qmd
+  type: grid
+  sort:
+    - "date desc"
+  categories: true
+---
+
+:::::: {#hero-banner .column-screen}
+::::: {.grid .column-page}
+:::: {.headline .g-col-lg-12 .g-col-12 .g-col-md-12}
+::: h1
+Welcome to the `SSPHub`, the website for _data scientists_ working for the French Official Statistical Office
+:::
+::::
+:::::
+::::::
+
+# Network of data scientists working for the French Official Statistical Office
+
+This website is made for the `SSPHub`, a network to foster collaboration and exchange among *data scientists* from the [French Official Statistical Office](https://www.insee.fr/en/information/2386424).
+Indeed, in France, the French Official Statistical Office is decentralized :
+
+-   INSEE has its headquarters in Paris region but also has a network of regional offices.
+-   The other part of the French Officiel Statistical Office is composed of INSEE and 16 Ministerial Statistical Offices (MSOs). MSOs carry out statistical operations in their field of competence.
+-   INSEE coordinates the public statistics production work of the various MSOs.
+
+The English version of the website aims at sharing code and innovative projects produced by the *data scientists* from the [French Official Statistical Office](https://www.insee.fr/en/information/2386424).
+
+The French version of the website offers broader resources to *data scientists* (newsletter, courses ... ).
+As it has limited value added for people outside of the French administration, it has not been translated.
+But, if you're interested🙂, you are more than welcome to have a look (by using automated translation tools).
+
+Find out more information about the `SSPHub` network on the [dedicated page](about.qmd).
+
+# Innovative projects
+
+## What is considered as an innovative project?
+It is always difficult to define ex ante what constitutes an innovative project.
+Technological innovation is by definition fluid and evolves very quickly.
+However, as stated in the [manifesto (in French)](../manifeste.html), recent technological innovations aim to **simplify and accelerate** certain production processes, **facilitate the exploitation of non-traditional or large data sources**, **automate certain tasks**, **communicate** with wider audiences using responsive visualisations, and, among other things, reduce the gap between statisticians and computer scientists.
+For example, modernising a processing chain through the use of new packages or new methods of information processing is an innovation.
+However, this may not be ambitious enough on its own to constitute a truly innovative project, and therefore will not necessarily be included in the projects presented here.
+The use of web scraping to build a database that is automatically populated will be considered an innovative project.
+Conversely, simply updating code or using new administrative databases, if it does not involve any particular technological obstacles, is not considered technological innovation in itself.
+Such projects can however be necessary or welcome 😉.
+
+Furthermore, a project that is innovative at a given point in time may no longer be so a few months or years later, when the innovation has become widespread enough to be considered conventional knowledge.
+
+Innovation also occurs everywhere and is not limited to various data science innovation laboratories.
+
+## What is the scope of the projects presented here?
+
+The list of projects presented here is not intended to be exhaustive.
+It is based on **voluntary participation**.
+The aim is to provide a central hub for sharing between SSP data scientists, as outlined in the [manifesto (in French)](../manifeste.html).
+**Any proposals for additions or mergers on our platform are welcome!**
+
+## Innovative projects
+::: {#project-listing}
+:::
+

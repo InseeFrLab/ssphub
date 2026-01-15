@@ -43,17 +43,17 @@ jobs:
         with:
           node-version: '18'
 
-      - uses: actions/setup-python@v4  # for post on onyxia
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install babelquarto
+        uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          python-version: '3.10' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          packages: |
+            github::ropensci-review-tools/babelquarto@a485fea
 
-      - run: pip install jupyter nbformat  # for post on onyxia
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Render Quarto Project
-        uses: quarto-dev/quarto-actions/render@v2
+      - name: Render bilingual project
+        run: Rscript scripts/0a_render.R
 
       - name: Deploy preview
         id: deploy-preview
@@ -63,7 +63,6 @@ jobs:
           preview-branch: ${{ env.PREVIEW_BRANCH }}
           action: deploy
           comment: false
-          pr_number: ${{ github.event.pull_request.number }}
 
       - name: Comment PR (custom)
         uses: marocchino/sticky-pull-request-comment@v2
@@ -97,5 +96,4 @@ jobs:
           message: |
             Preview removed because the pull request was closed.
             ${{ steps.remove-preview.outputs.action-start-time }}
-
 

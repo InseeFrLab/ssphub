@@ -30,7 +30,7 @@ categories:
 
 :::{.callout-note}
 
-__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103).*__
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici]({{< var signup.form >}}).*__
 
 :::
 
@@ -44,7 +44,7 @@ nouvelles du réseau.
 
 ## ChatGPT continue de faire parler
 
-![](https://ssphub.netlify.app/post/retrospective2022/featured.png){width="40%" fig-align="center"}
+![](../../blog/recap2022/featured.png){width="40%" fig-align="center"}
 
 L'actualité est encore largement dominée par les
 discussions autour de `ChatGPT`.
@@ -113,7 +113,7 @@ Par ailleurs, l'article de Jordan Tigani ["Big data is dead"](https://motherduck
 
 
 `Huggingface` et `Observable` sont chacun devenus des incontournables dans leur domaine
-(voir notre [_newsletter_ de décembre](https://ssphub.netlify.app/post/retrospective2022/)).
+(voir notre [_newsletter_ de décembre](../../blog/recap2022/index.qmd)).
 Alors un rapprochement entre ces deux univers, permettant d'utiliser
 de nombreux modèles d'apprentissage via l'API d'`HuggingFace` directement dans le navigateur,
 ça donne envie de s'amuser.
@@ -180,7 +180,7 @@ Si vous êtes intéressés
 par la manière dont les nombreux contenus créés par
 les membres du réseau pourraient prendre place
 dans ce cadre, n'hésitez pas à venir pour en savoir plus !
-Informations pratiques [ici](https://ssphub.netlify.app/talk/presentation-du-projet-meta-academy-carpentries/) !
+Informations pratiques [ici](../../event/presentation-du-projet-meta-academy-carpentries/index.qmd) !
 
 
 ## Masterclass datascientest
@@ -216,9 +216,9 @@ __Pour vous inscrire, il suffit de remplir [ce formulaire](https://framaforms.or
 
 ## Onyxia
 
-![](https://ssphub.netlify.app/post/onyxia/featured.png){fig-align="center" width="45%"} 
+![](../../blog/onyxia/featured.png){fig-align="center" width="45%"} 
 
-Le [dernier post](https://ssphub.netlify.app/post/onyxia/) sur le site
+Le [dernier post](../../blog/onyxia/index.qmd) sur le site
 web du réseau revient sur le projet `Onyxia`, 
 le logiciel initié par l'équipe innovation de l'Insee et mis à disposition
 sur [`Github`](https://github.com/InseeFrLab/onyxia-web) pour 
@@ -228,7 +228,7 @@ de _data science_ à l'état de l'art.
 Pour en savoir plus
 sur le contexte de naissance d'Onyxia,
 les choix techniques mis en oeuvre ou la communauté des 
-réutilisateurs, c'est [par ici](https://ssphub.netlify.app/post/onyxia/).
+réutilisateurs, c'est [par ici](../../blog/onyxia/index.qmd).
 
 
 ## Replay de l'événement autour des packages facilitant l'accès à l'open data de l'Insee
@@ -242,7 +242,7 @@ et [`Pynsee`](https://github.com/InseeFrLab/pynsee) (`Python`) lors de notre
 à l'open data de l'Insee est en ligne ! 
 
 La vidéo et les supports présentés sont mis à disposition
-sur le [site web du réseau](https://ssphub.netlify.app/talk/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/)
+sur le [site web du réseau](../../event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.qmd)
 
 ## Programme 10%
 

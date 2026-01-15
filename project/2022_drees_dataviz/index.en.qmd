@@ -1,0 +1,24 @@
+---
+title: Visualisations of SARS-Cov2 test data
+description: Weekly publication of data relating to SARS-Cov2 detection tests by Shiny
+  from the SI-DEP information system
+format: html
+date: '2023-06-01'
+image: dataviz.png
+categories:
+- R
+- datavisualisation
+- experiment stopped
+- DREES
+- open-data
+---
+
+# Project summary
+
+|  | Automatic publication and data-visualisation of Covid-19 test data      |
+| --- | ----------------------------------------------- |
+| **Project details** | In recent years, the `DREES` (the statistical department of the Ministry of Health), has been making available, as part of its strategy *open-data* as part of its open-data strategy, is making available interactive visualisations of data on a variety of topics (Covid, of course, but also the number of healthcare professionals, pensions and retirement ages, etc.).  These visualisations are based on {{< fa brands r-project >}} `Shiny` and give users the freedom to play with the data and update exploratory graphs. <br> Between October 2020 and June 2023,3 DREES provided data on the volume and validation times for RT-PCR and antigen tests on a weekly basis. These results are based on data from the SI-DEP information system.           |
+| **Players** | DREES              |
+| **Project results** | The project published automatically updated information on Covid-19 tests and deadlines between 2020 and mid-2023. The data is still available on the <https://drees.shinyapps.io/delais_test_app/> but has not been updated since June 2023.     |
+
+
