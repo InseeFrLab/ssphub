@@ -12,15 +12,27 @@ listing:
       - "number desc"
     feed:
         categories: [post, infolettre]
+    max-items: 6
   - id: blog
     contents: post
     type: grid
     feed: true
+    max-items: 6
   - id: partenaires
     contents: partenaires
     template: scripts/courses.ejs
     type: grid
     feed: false
+  - id: latest-actions
+    contents: 
+    - infolettre/infolettre_*/**/index.qmd
+    - post/**/index.qmd
+    - talk/**/index.qmd
+    type: grid
+    feed: false
+    sort: "date desc"
+    max-items: 3
+
 echo: false
 ---
 
@@ -76,6 +88,11 @@ et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/m
 
 
 ::: {.column-page}
+
+## Les dernières actualités du réseau
+
+:::: {#latest-actions}
+::::
 
 ## Les dernières _newsletters_
 

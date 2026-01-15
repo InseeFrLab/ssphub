@@ -7,6 +7,7 @@ listing:
   template: scripts/courses.ejs
   sort: "date desc"
   #categories: true
+page-layout: full
 ---
 
 Une sélection de ressources utiles pour se former ou se perfectionner à la _data science_. 

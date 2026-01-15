@@ -7,5 +7,7 @@ listing:
   feed: true
   sort:
     - "number desc"
+  type: grid
+page-layout: full
 ---
 
