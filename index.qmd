@@ -21,6 +21,16 @@ listing:
     template: scripts/courses.ejs
     type: grid
     feed: false
+  - id: latest-actions
+    contents: 
+    - infolettre/**/index.qmd
+    - post/**/index.qmd
+    - talk/**/index.qmd
+    type: grid
+    feed: false
+    sort: "date desc"
+    max-items: 3
+
 echo: false
 ---
 
@@ -76,6 +86,11 @@ et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/m
 
 
 ::: {.column-page}
+
+## Les dernières _actualités_ du réseau
+
+:::: {#latest-actions}
+::::
 
 ## Les dernières _newsletters_
 
