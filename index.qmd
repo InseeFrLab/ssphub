@@ -39,7 +39,7 @@ listing:
     contents: 
     - infolettre/infolettre_*/**/index.qmd
     - blog/**/index.qmd
-    - talk/**/index.qmd
+    - event/**/index.qmd
     - project/**/index.qmd
     - course/**/index.qmd
     type: grid
