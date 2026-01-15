@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+description: "Articles, billets de blog écrits sur tout sujet en lien avec la data science. Cela peut couvrir des conférences, des nouveautés, des projets ..."
 listing:
   feed: true
   id: blog-listing
@@ -12,7 +13,10 @@ listing:
 page-layout: full
 ---
 
-Vous pouvez trouver ici les articles de blog et des projets innovants portés par des membres du SSP.
+
+Vous avez une idée de sujet ? Toute personne souhaitant coontribuer est la bienvenue, quel que soit son statut, où elle travaille. Pour contribuer, proposez votre idée sur Github ou par mail. Le mode opératoire détaillé est rappelé sur [Github](https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md). 
+
+Pour rappel, les informations qui sont diffusées sur ce blog n'engagent que les contributeurs et en aucun cas les institutions dont ils dépendent.
 
 
 <br>
@@ -20,6 +24,3 @@ Vous pouvez trouver ici les articles de blog et des projets innovants portés pa
 ::: {#blog-listing}
 :::
 
-# A propos de ce blog
-
-Les informations qui y sont diffusées n'engagent que les contributeurs et en aucun cas les institutions dont ils dépendent.
