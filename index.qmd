@@ -23,7 +23,7 @@ listing:
     feed: false
   - id: latest-actions
     contents: 
-    - infolettre/**/index.qmd
+    - infolettre/infolettre_*/**/index.qmd
     - post/**/index.qmd
     - talk/**/index.qmd
     type: grid
