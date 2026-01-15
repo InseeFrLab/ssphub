@@ -515,14 +515,14 @@
     "href": "talk/2026-01-cartographia/index.html",
     "title": "Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia",
     "section": "",
-    "text": "Replay de la présentation : \n\ncreateButton(\n  \"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf\",\n  \"Télécharger les slides\"\n)\n\n\n\n\n\n\n\nfunction createButton(slides, message=\"Télécharger les slides\"){\n  const button = html`\n  &lt;p class=\"text-center\"&gt;\n    &lt;a class=\"btn btn-primary btn-lg cv-download\" href=\"${slides}\" target=\"_blank\"&gt;\n      &lt;i class=\"fa-solid fa-file-arrow-down\"&gt;&lt;/i&gt;&ensp;${message}\n    &lt;/a&gt;\n  &lt;/p&gt;`\n  return button\n}"
+    "text": "Replay de la présentation :\n\n\n&lt;p&gt;\nYour browser does not support PDFs. &lt;a href=\"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf\"&gt;Download the PDF instead.&lt;/a&gt;\n&lt;/p&gt;\n\n\ncreateButton(\n  \"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf\",\n  \"Télécharger les slides\"\n)\n\n\n\n\n\n\n\nfunction createButton(slides, message=\"Télécharger les slides\"){\n  const button = html`\n  &lt;p class=\"text-center\"&gt;\n    &lt;a class=\"btn btn-primary btn-lg cv-download\" href=\"${slides}\" target=\"_blank\"&gt;\n      &lt;i class=\"fa-solid fa-file-arrow-down\"&gt;&lt;/i&gt;&ensp;${message}\n    &lt;/a&gt;\n  &lt;/p&gt;`\n  return button\n}"
   },
   {
     "objectID": "talk/2026-01-cartographia/index.html#cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert",
     "href": "talk/2026-01-cartographia/index.html#cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert",
     "title": "Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia",
     "section": "",
-    "text": "Replay de la présentation : \n\ncreateButton(\n  \"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf\",\n  \"Télécharger les slides\"\n)\n\n\n\n\n\n\n\nfunction createButton(slides, message=\"Télécharger les slides\"){\n  const button = html`\n  &lt;p class=\"text-center\"&gt;\n    &lt;a class=\"btn btn-primary btn-lg cv-download\" href=\"${slides}\" target=\"_blank\"&gt;\n      &lt;i class=\"fa-solid fa-file-arrow-down\"&gt;&lt;/i&gt;&ensp;${message}\n    &lt;/a&gt;\n  &lt;/p&gt;`\n  return button\n}"
+    "text": "Replay de la présentation :\n\n\n&lt;p&gt;\nYour browser does not support PDFs. &lt;a href=\"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf\"&gt;Download the PDF instead.&lt;/a&gt;\n&lt;/p&gt;\n\n\ncreateButton(\n  \"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf\",\n  \"Télécharger les slides\"\n)\n\n\n\n\n\n\n\nfunction createButton(slides, message=\"Télécharger les slides\"){\n  const button = html`\n  &lt;p class=\"text-center\"&gt;\n    &lt;a class=\"btn btn-primary btn-lg cv-download\" href=\"${slides}\" target=\"_blank\"&gt;\n      &lt;i class=\"fa-solid fa-file-arrow-down\"&gt;&lt;/i&gt;&ensp;${message}\n    &lt;/a&gt;\n  &lt;/p&gt;`\n  return button\n}"
   },
   {
     "objectID": "talk/2025-04-16-Parquet/index.html",
