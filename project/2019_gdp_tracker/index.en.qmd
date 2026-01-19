@@ -7,19 +7,37 @@ date: '2022-01-01'
 image: evol_growth_en.png
 categories:
 - machine learning
-- experiment
+- nowcasting
+- experiment stopped
 - forecasts
 - Insee
 
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - nowcasting
+    - forecasts
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
 ---
 
 # Project summary
 
 |  | Nowcasting GDP with GDP Tracker       |
 | -- | ---------------------- |
-| **Details of the project** | The project `GDP Tracker` consists of building a continuous economic forecasting tool, fed by all the recent economic indicators available at any given time. *t*. The aim of this project is to make the best possible use of the most recent sources to estimate the dynamics of the major macroeconomic aggregates over the last few weeks.  These sources are diverse in nature: business and consumer surveys, quarterly national accounts, hard-copy statistical data, as well as data from less traditional sources (internet searches, etc.). <br> <br> Using this heterogeneous set of data, the tool produces a growth forecast for the macroeconomic aggregates that are most closely scrutinised for French economic conditions (GDP, household consumption, investment, etc.). This forecast is made for the current quarter or the following quarters, based on models of *machine learning* (LASSO, random forests, etc.). <br> <br> The tool was initially developed for a [Business conditions in 2019](https://www.insee.fr/en/statistiques/fichier/4269288/122019_dossier1E.pdf). Following the health crisis, it was taken up again for more systematic use. Initially focused on France and only on GDP for the current quarter, it has been extended to other countries (Germany, Italy, Spain) and is currently being extended to aggregates other than GDP and to more distant forecasting horizons.          |
+| **Details of the project** | The project GDP Tracker consists of building a continuous economic forecasting tool, fed by all the recent economic indicators available at any given time. *t*. The aim of this project is to make the best possible use of the most recent sources to estimate the dynamics of the major macroeconomic aggregates over the last few weeks.  These sources are diverse in nature: business and consumer surveys, quarterly national accounts, hard-copy statistical data, as well as data from less traditional sources (internet searches, etc.). <br> <br> Using this heterogeneous set of data, the tool produces a growth forecast for the macroeconomic aggregates that are most closely scrutinised for French economic conditions (GDP, household consumption, investment, etc.). This forecast is made for the current quarter or the following quarters, based on models of *machine learning* (LASSO, random forests, etc.). <br> <br> The tool was initially developed for a [Business conditions in 2019](https://www.insee.fr/en/statistiques/fichier/4269288/122019_dossier1E.pdf). Following the health crisis, it was taken up again for more systematic use. Initially focused on France and only on GDP for the current quarter, it has been extended to other countries (Germany, Italy, Spain) and is currently being extended to aggregates other than GDP and to more distant forecasting horizons.          |
 | **Stakeholders** | Insee     |
 | **Project products and documentation**      | - [Continuous forecasting of French growth](https://www.insee.fr/en/statistiques/4269288?sommaire=4269398)[^1], Conjoncture in France - December 2019 |
 | **Project code** | - Repo [GitHub {{< fa brands github >}}]()  |
 
 [^1]: Regarding nowcasting, an experiment was also conducted in 2022 to impute unpublished variables and forecast growth, see presentation [GDP nowcasting: imputation of variables not yet published](https://journees-methodologie-statistique.insee.net/nowcasting-pib-imputation-de-variables-non-encore-publiees/) at the 2022 Statistical Methodology Days (journées de méthodologie statistique).
+
+# Similar projects
+
+::: {#similar-project}
+:::
