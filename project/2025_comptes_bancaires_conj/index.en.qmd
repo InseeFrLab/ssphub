@@ -1,0 +1,58 @@
+---
+title: 'Use of banking data for INSEE economic forecasts'
+format: html
+date: '2025-06-01'
+image: money.jpg
+listing:
+- id: similar-project
+  contents:
+  - ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - scanner data
+    - mobile phone data
+    - credit card data
+    - bank account data
+    - private data
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+- id: autres-comptes-bancaires
+  contents:
+  - 'other_bank_account_ven.yml'
+  type: grid
+  sort:
+  - date desc
+  page-size: 6
+  categories: false
+categories:
+- Insee
+- forecasts
+- bank account data
+- experiment
+---
+
+# Project summary
+
+|  | Use of banking data for INSEE economic forecasts  |
+|---|------------------------------------------------------------------------- |
+| **Project details** | Bank account data is an advanced source of information on household consumption and savings in 2020, at both microeconomic and infra-annual levels. Using anonymised data made available by Crédit Mutuel Alliance Fédérale, it is possible to study how the health crisis may have affected the financial situation of the bank's household customers, depending on their income level, age or socio-professional category. <br> The banking data used does not allow us to identify household incomes directly, but we can nevertheless use it to deduce an approximation, thanks to all the transfers and cheques entering the accounts. These inflows fell during the first containment period before rebounding in June. On average, the second containment would not have caused a drop in these incoming flows. |
+| **Players** | Insee |
+| **Project results** | These studies are an extension of the work carried out on households using bank account data. <br> <br> During the two confinements of 2020, all the household groups studied, whatever their income level, are thought to have reduced their consumption, which has refocused, particularly in April, on essential goods. Households that consumed the most before the crisis, essentially executives and high-income earners, would therefore have reduced their consumption more. <br> The fall in consumption triggered a surge in savings, which fed into household current accounts and passbook accounts. Household gross financial assets (liquid savings, securities accounts and life insurance, excluding loans) are estimated to have risen sharply in 2020. This increase can be seen across all household groups, whatever their level of financial wealth. It is higher in euros for households with high financial wealth, who have been able to save more by reducing their consumption. Households with low wealth also put money aside, particularly during the first period of confinement. However, the amounts involved for these households, generally a few tens or hundreds of euros, remain small even though they represent a significant proportion of their initial wealth. Among working households, some would have been more affected than others by a fall in their income and would therefore have increased their savings less: this is the case for craftsmen and shopkeepers, or employees in the private sector, in contrast to those in the public sector. <br> <br> The analysis conducted for the June 2025 economic outlook shows that changes in income, consumption, and savings rate aggregates derived from these bank account data are consistent with those in the national accounts. While the average savings rate increased in almost all groups between 2023 and 2024, it was among the oldest that the increase in the savings rate in 2023 and 2024 was the strongest: people aged 65 and over accounted for around two-thirds of the increase in the savings rate between 2023 and 2024. |
+| **Project products and documentation** | - [In 2020, the drop in consumption fuelled savings, with a particular increase in the financial wealth of the most well-off: some results obtained by analysing banking data](https://www.insee.fr/fr/statistiques/5232043) Insee Economic Outlook - March 2021 ; <br> - [In 2024, in 2024, the income of retired customers of La Banque Postale rose sharply but their consumption did not keep pace, which contributed to two-thirds of the increase in the savings ratio](https://www.insee.fr/en/statistiques/8595742?sommaire=8595764) Insee Economic Outlook - June 2025 |
+
+# Similar projects
+
+::: {#similar-project}
+:::
+
+# Other studies using bank data
+
+Insee has also carried out other studies using bank account data. They are available on INSEE website:
+
+::: {#autres-comptes-bancaires}
+:::
+
+
