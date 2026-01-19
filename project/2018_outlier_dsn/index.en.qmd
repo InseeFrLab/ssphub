@@ -22,5 +22,5 @@ categories:
 | **Players** | Insee |
 | **Project results** | The work carried out has made it possible to compare the characteristics of the anomalies identified by three machine learning methods. The three algorithms largely detect different anomalies, depending on how they define and identify the presumed errors. The combined use of several error detection algorithms would therefore make it possible to cover a wider spectrum of potential errors. |
 | **Project products and documentation**      |  - [5,324 per hour: outlier or footballer? Unsupervised learning methods for anomaly detection: application to the case of the Nominative Social Declaration (mixed French and English)](https://journees-methodologie-statistique.insee.net/5324-euros-de-lheure-outlier-ou-footballeur-methodes-dapprentissage-non-supervise-pour-la-detection-danomalies-application-au-cas-de-la-declaration-sociale-nominative/), Statistical Methodology Days 2018 (Journées de la méthodologie statistique 2018) <br> - A more detailed abstract is available [here (French and English)](https://journees-methodologie-statistique.insee.net/wp-content/uploads/2018/S25_4_ACTE_CORDIER_VILLOING_JMS2018.pdf) |
-
+| **Project code** | - Repo [GitHub {{< fa brands github >}}]()  |
 

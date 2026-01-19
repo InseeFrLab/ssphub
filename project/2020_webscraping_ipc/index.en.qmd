@@ -50,7 +50,7 @@ categories:
 | **Project details** | The CPI measures "pure" price movements, assuming constant quality. It tracks a certain number of identical products over time. When these disappear, they are replaced by products that may not be equivalent. In this case, it is important to distinguish between a quality effect (price difference for a given month) and an inflation effect in the change in prices of the replacements compared with the products replaced. <br> Hedonic" methods estimate this quality effect on the basis of coefficients corresponding to the underlying prices of the various technical characteristics of the product (for example, the brand of computer, the RAM of a computer, the model and frequency of the processor, etc.). The aim of the project is to strengthen these methods of estimating the quality effect by extending the database and using statistical learning methods.   |
 | **Players** | Insee   |
 | **Project results** | The study made it possible to increase the samples used (in terms of price surveys and characteristics) by collecting data online (*webscraping*) and to set up a procedure for automatically selecting the characteristics that explain prices using automatic learning (random forest, Lasso-type regression). <br> Ultimately, 15 characteristics were selected to estimate the quality effect, such as brand, RAM, storage capacity, brand of processor, processor frequency, screen resolution, etc. The forms used by the surveyors have been amended to include the relevant characteristics that determine the price of computers.  |
-
+| **Project code** | - Repo [GitHub {{< fa brands github >}}]()  |
 
 # Similar projects
 

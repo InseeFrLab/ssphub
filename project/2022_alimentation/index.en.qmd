@@ -40,6 +40,7 @@ listing:
 | **Players** | Insee        |
 | **Project results** | To compensate for the partial matching via the barcode, a method for efficiently matching short labels was implemented. After a pre-processing stage to normalise short labels, fuzzy matching techniques are implemented. These are based on several tokenizers (including n-grams) by querying an ElasticSearch custom index and validating candidate echoes with a Levenstein distance. The pipeline consists of several stages successively relaxing constraints to find relevant candidates. Finally, the final match is evaluated using a similarity measure based on word embedding obtained by training a Siamese network on the exact match via barcodes. The data used, covering the period 2015-2018, is that of several chains belonging to the same mass retail group (relevanC). |
 | **Project products and documentation** | - [Enriching checkout data with nutritional information: a fuzzy matching approach on high-dimensional data](https://journees-methodologie-statistique.insee.net/enrichissement-de-donnees-de-caisses-a-partir-dinformations-nutritionnelles-une-approche-par-appariement-flou-sur-donnees-de-grande-dimension/), 2022 Statistical Methodology Days (Journées de méthodologie statistique 2022)           |
+| **Project code** | - Repo [GitHub {{< fa brands github >}}]()  |
 
 # Similar projects
 
