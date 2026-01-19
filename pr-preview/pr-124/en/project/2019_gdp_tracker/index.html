@@ -24,7 +24,7 @@ ul.task-list li input[type="checkbox"] {
 }
 </style>
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<script src="../../site_libs/quarto-listing/list.min.js"></script><script src="../../site_libs/quarto-listing/quarto-listing.js"></script><script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -56,7 +56,35 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
-}</script><style>
+}</script><script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-similar-project .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script><style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -73,6 +101,32 @@ ul.task-list li input[type="checkbox"] {
 background: #6886bb;
       }
 </style>
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 </head>
 <body class="nav-fixed quarto-light">
 
@@ -126,7 +180,8 @@ background: #6886bb;
       </div>
                           <div class="quarto-categories">
                 <div class="quarto-category">machine learning</div>
-                <div class="quarto-category">experiment</div>
+                <div class="quarto-category">nowcasting</div>
+                <div class="quarto-category">experiment stopped</div>
                 <div class="quarto-category">forecasts</div>
                 <div class="quarto-category">Insee</div>
               </div>
@@ -156,12 +211,39 @@ background: #6886bb;
    
   <ul>
 <li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
+  <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
   </ul>
 <div class="toc-actions"><ul>
 <li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2019_gdp_tracker/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2019_gdp_tracker/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
-</ul></div></nav>
+</ul></div></nav><h5 class="quarto-listing-category-title">Categories</h5>
+<div class="quarto-listing-category category-default">
+<div class="category" data-category="">All <span class="quarto-category-count">(5)</span>
+</div>
+<div class="category" data-category="YmFuayUyMGFjY291bnQlMjBkYXRh">bank account data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="Y3JlZGl0JTIwY2FyZCUyMGRhdGE=">credit card data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(4)</span>
+</div>
+<div class="category" data-category="Zm9yZWNhc3Rz">forecasts <span class="quarto-category-count">(5)</span>
+</div>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(5)</span>
+</div>
+<div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bW9iaWxlJTIwcGhvbmUlMjBkYXRh">mobile phone data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="bm93Y2FzdGluZw==">nowcasting <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="cHJpdmF0ZSUyMGRhdGE=">private data <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="c3R1ZHk=">study <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="d2Vic2NyYXBpbmc=">webscraping <span class="quarto-category-count">(1)</span>
+</div>
+</div>
 </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
@@ -173,7 +255,7 @@ background: #6886bb;
 <tbody>
 <tr class="odd">
 <td><strong>Details of the project</strong></td>
-<td>The project <code>GDP Tracker</code> consists of building a continuous economic forecasting tool, fed by all the recent economic indicators available at any given time. <em>t</em>. The aim of this project is to make the best possible use of the most recent sources to estimate the dynamics of the major macroeconomic aggregates over the last few weeks. These sources are diverse in nature: business and consumer surveys, quarterly national accounts, hard-copy statistical data, as well as data from less traditional sources (internet searches, etc.). <br><br> Using this heterogeneous set of data, the tool produces a growth forecast for the macroeconomic aggregates that are most closely scrutinised for French economic conditions (GDP, household consumption, investment, etc.). This forecast is made for the current quarter or the following quarters, based on models of <em>machine learning</em> (LASSO, random forests, etc.). <br><br> The tool was initially developed for a <a href="https://www.insee.fr/en/statistiques/fichier/4269288/122019_dossier1E.pdf">Business conditions in 2019</a>. Following the health crisis, it was taken up again for more systematic use. Initially focused on France and only on GDP for the current quarter, it has been extended to other countries (Germany, Italy, Spain) and is currently being extended to aggregates other than GDP and to more distant forecasting horizons.</td>
+<td>The project GDP Tracker consists of building a continuous economic forecasting tool, fed by all the recent economic indicators available at any given time. <em>t</em>. The aim of this project is to make the best possible use of the most recent sources to estimate the dynamics of the major macroeconomic aggregates over the last few weeks. These sources are diverse in nature: business and consumer surveys, quarterly national accounts, hard-copy statistical data, as well as data from less traditional sources (internet searches, etc.). <br><br> Using this heterogeneous set of data, the tool produces a growth forecast for the macroeconomic aggregates that are most closely scrutinised for French economic conditions (GDP, household consumption, investment, etc.). This forecast is made for the current quarter or the following quarters, based on models of <em>machine learning</em> (LASSO, random forests, etc.). <br><br> The tool was initially developed for a <a href="https://www.insee.fr/en/statistiques/fichier/4269288/122019_dossier1E.pdf">Business conditions in 2019</a>. Following the health crisis, it was taken up again for more systematic use. Initially focused on France and only on GDP for the current quarter, it has been extended to other countries (Germany, Italy, Spain) and is currently being extended to aggregates other than GDP and to more distant forecasting horizons.</td>
 </tr>
 <tr class="even">
 <td><strong>Stakeholders</strong></td>
@@ -189,7 +271,192 @@ background: #6886bb;
 </td>
 </tr>
 </tbody>
-</table></section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+</table></section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="c3R1ZHklMkNub3djYXN0aW5nJTJDZm9yZWNhc3RzJTJDSW5zZWU=" data-listing-date-sort="1756684800000" data-listing-file-modified-sort="1768839503886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="297">
+<a href="../../project/2025_nowcasting/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2025_nowcasting/comp_en.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
+Comparison of forecasts between <em>nowcasting</em> and bottom-up approach
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('c3R1ZHk='); return false;">study</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bm93Y2FzdGluZw=='); return false;">nowcasting</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Use of real-time forecasting models (<em>nowcasting</em>) inspired by the Atlanta Federal Reserve’s “GDPnow” to forecast GDP growth and comparison with the bottom-up approach</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Sept 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNmb3JlY2FzdHMlMkNiYW5rJTIwYWNjb3VudCUyMGRhdGElMkNleHBlcmltZW50" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1768839503886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="579">
+<a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2025_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Use of banking data for INSEE economic forecasts
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YmFuayUyMGFjY291bnQlMjBkYXRh'); return false;">bank account data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+</div>
+<div class="card-text listing-description delink">
+
+
+
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Jun 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1768839503880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Predicting growth by reading the newspaper
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Use continuous press articles to build an indicator to help forecast growth</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Mar 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Zm9yZWNhc3RzJTJDZXhwZXJpbWVudCUyQ0luc2VlJTJDY3JlZGl0JTIwY2FyZCUyMGRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839503878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="561">
+<a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Using credit card data and mobile phone data to forecast economic activity
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y3JlZGl0JTIwY2FyZCUyMGRhdGE='); return false;">credit card data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>The 2020 health crisis required a review of forecasting processes to be more responsive to events. INSEE used credit card transaction data to forecast economic activity.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Dec 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNmb3JlY2FzdHMlMkNwcml2YXRlJTIwZGF0YSUyQ2V4cGVyaW1lbnQ=" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839503879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
+<a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+What do the electricity production and consumption data say about economic activity during the containment period?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHJpdmF0ZSUyMGRhdGE='); return false;">private data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Using electricity production and consumption data to forecast economic activity</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 Dec 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+</section><div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
 <li id="fn1"><p>Regarding nowcasting, an experiment was also conducted in 2022 to impute unpublished variables and forecast growth, see presentation <a href="https://journees-methodologie-statistique.insee.net/nowcasting-pib-imputation-de-variables-non-encore-publiees/">GDP nowcasting: imputation of variables not yet published</a> at the 2022 Statistical Methodology Days (journées de méthodologie statistique).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>

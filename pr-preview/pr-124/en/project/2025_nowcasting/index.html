@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2024_cb_mno_tabac/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_nowcasting/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2025_nowcasting/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.27">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="dcterms.date" content="2024-01-01">
-<meta name="description" content="Using the closing of borders in 2020 as a natural experiment to measure cross-border tobacco purchases">
-<title>An assessment of cross-border tobacco purchases and associated tax losses in France – SSPHub</title>
+<meta name="dcterms.date" content="2025-09-01">
+<meta name="description" content="Use of real-time forecasting models (nowcasting) inspired by the Atlanta Federal Reserve’s “GDPnow” to forecast GDP growth and comparison with the bottom-up approach">
+<title>Comparison of forecasts between nowcasting and bottom-up approach – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -28,8 +28,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +65,7 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 6,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
@@ -145,7 +142,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_nowcasting/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
@@ -173,16 +170,16 @@ window.Quarto = {
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">An assessment of cross-border tobacco purchases and associated tax losses in France</h1>
+      <h1 class="title">Comparison of forecasts between <em>nowcasting</em> and bottom-up approach</h1>
                   <div>
         <div class="description">
-          Using the closing of borders in 2020 as a natural experiment to measure cross-border tobacco purchases
+          Use of real-time forecasting models (<em>nowcasting</em>) inspired by the Atlanta Federal Reserve’s “GDPnow” to forecast GDP growth and comparison with the bottom-up approach
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">experiment</div>
-                <div class="quarto-category">mobile phone data</div>
-                <div class="quarto-category">credit card data</div>
+                <div class="quarto-category">study</div>
+                <div class="quarto-category">nowcasting</div>
+                <div class="quarto-category">forecasts</div>
                 <div class="quarto-category">Insee</div>
               </div>
                   </div>
@@ -195,7 +192,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 January 2024</p>
+        <p class="date">1 September 2025</p>
       </div>
     </div>
     
@@ -214,52 +211,34 @@ window.Quarto = {
   <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2025_nowcasting/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2025_nowcasting/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
 </ul></div></nav><h5 class="quarto-listing-category-title">Categories</h5>
 <div class="quarto-listing-category category-default">
-<div class="category" data-category="">All <span class="quarto-category-count">(8)</span>
-</div>
-<div class="category" data-category="YWRtaW5pc3RyYXRpdmUlMjBkYXRh">administrative data <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="YXV0b21hdGljJTIwY29kaW5n">automatic coding <span class="quarto-category-count">(3)</span>
+<div class="category" data-category="">All <span class="quarto-category-count">(5)</span>
 </div>
 <div class="category" data-category="YmFuayUyMGFjY291bnQlMjBkYXRh">bank account data <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="Q1BJ">CPI <span class="quarto-category-count">(1)</span>
-</div>
 <div class="category" data-category="Y3JlZGl0JTIwY2FyZCUyMGRhdGE=">credit card data <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="ZGF0YSUyMGV4dHJhY3Rpb24=">data extraction <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(5)</span>
+<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(4)</span>
 </div>
 <div class="category" data-category="ZXhwZXJpbWVudCUyMHN0b3BwZWQ=">experiment stopped <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="Zm9yZWNhc3Rz">forecasts <span class="quarto-category-count">(3)</span>
+<div class="category" data-category="Zm9yZWNhc3Rz">forecasts <span class="quarto-category-count">(5)</span>
 </div>
-<div class="category" data-category="aW4lMjBwcm9kdWN0aW9u">in production <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(6)</span>
+<div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(5)</span>
 </div>
 <div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
 </div>
-<div class="category" data-category="bWF0Y2hpbmc=">matching <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="bW9iaWxlJTIwcGhvbmUlMjBkYXRh">mobile phone data <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="bW9iaWxlJTIwcGhvbmUlMjBkYXRh">mobile phone data <span class="quarto-category-count">(3)</span>
-</div>
-<div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="bm93Y2FzdGluZw==">nowcasting <span class="quarto-category-count">(1)</span>
 </div>
 <div class="category" data-category="cHJpdmF0ZSUyMGRhdGE=">private data <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="c2Nhbm5lciUyMGRhdGE=">scanner data <span class="quarto-category-count">(3)</span>
+<div class="category" data-category="d2Vic2NyYXBpbmc=">webscraping <span class="quarto-category-count">(1)</span>
 </div>
 </div>
 </div>
@@ -268,12 +247,12 @@ window.Quarto = {
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>An assessment of cross-border tobacco purchases and associated tax losses in France</th>
+<th>Comparison of continuous GDP forecasting methods with a bottom-up method</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
 <td><strong>Project details</strong></td>
-<td>Smoking is a major public health problem, causing many preventable diseases worldwide. In recent decades, increasing the price of tobacco has become the main strategy used by governments to reduce smoking. However, price differences between certain neighbouring countries are likely to limit the effectiveness of this measure by allowing some consumers to buy tobacco at a lower price in a neighbouring country. Although the problem of cross-border shopping is not new, the extent of the phenomenon remains poorly understood and is still the subject of regular debate. This study contributes to its assessment in France by exploiting an unprecedented natural experiment : the closure of land borders between March 2020 and June 2020 as part of the fight against the Covid-19 pandemic.</td>
+<td>INSEE bases its GDP growth forecasts on a so-called bottom-up model, which involves reproducing the mechanism for constructing quarterly accounts. The question arises, however, as to the performance of such an approach to forecasting GDP compared with that of a direct method such as <em>nowcasting</em>. A direct approach makes it possible to forecast GDP growth directly from business cycle series, without using quarterly accounts. In order to study the relative performance of the two approaches, we developed a new bottom-up forecasting model for GDP growth in France, inspired by the Federal Reserve Bank of Atlanta’s “GDPNow” model.</td>
 </tr>
 <tr class="even">
 <td><strong>Players</strong></td>
@@ -281,16 +260,11 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td><strong>Project results</strong></td>
-<td>Results show that the closure of the borders led to a 9.5 % surplus in tobacco purchases in mainland France compared to the counterfactual situation in which the borders had remained open. This result probably underestimates cross-border purchases. In fact, some tobacco consumption abroad may have continued during the first lockdown, as the borders were not completely closed, in particular for cross-border workers. Extrapolating the consumption observed in the rest of the country to border regions with identical characteristics, the revenue generated in France would be about 13.5 % higher if there were no cheaper alternatives abroad.</td>
+<td>At the beginning of the quarter, the direct approach performs slightly better than the bottom-up approach: few quantitative indicators are available at that time, and the added value represented by the use of a complete accounting framework is limited compared with a direct model, which is naturally more parsimonious. From the end of the second month onwards, on the other hand, more quantitative indicators become available, and the bottom-up approach performs slightly better than the direct approach estimated in this study, particularly at the time of publication of the Business Review. Finally, the difference in performance between the two approaches is clear between the end of the quarter and the publication of the first estimates of the quarterly accounts thirty days later: during this period, it is much better to use the information available via a bottom-up approach rather than a direct approach.</td>
 </tr>
 <tr class="even">
 <td><strong>Project products and documentation</strong></td>
-<td>- <a href="https://www.insee.fr/en/statistiques/8172204">An assessment of cross-border tobacco purchases and associated tax losses in France</a> Insee Working Papers No. 2024-06, April 2024</td>
-</tr>
-<tr class="odd">
-<td><strong>Project code</strong></td>
-<td>- Repo <a href="">GitHub <i class="fa-brands fa-github" aria-label="github"></i></a>
-</td>
+<td>- <a href="https://www.insee.fr/en/statistiques/8642689?sommaire=8642697">How do the direct and bottom-up approaches compare in forecasting GDP for the current quarter?</a> INSEE Economic Outlook - September 2025</td>
 </tr>
 </tbody>
 </table></section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
@@ -332,26 +306,30 @@ Use of banking data for INSEE economic forecasts
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839503881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
-<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDbm93Y2FzdGluZyUyQ2V4cGVyaW1lbnQlMjBzdG9wcGVkJTJDZm9yZWNhc3RzJTJDSW5zZWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839503878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
+<a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2019_gdp_tracker/evol_growth_en.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Methodological work on the Family Budget survey
+GDP Tracker: a tool for continuous economic forecasting
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGV4dHJhY3Rpb24='); return false;">data extraction</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bm93Y2FzdGluZw=='); return false;">nowcasting</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudCUyMHN0b3BwZWQ='); return false;">experiment stopped</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Modernisation of the family budget survey using automatic classification tools</p>
+<p>Models of <em>machine learning</em> for real-time forecasting (<em>nowcasting</em>) to feed INSEE’s economic analyses</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -364,41 +342,37 @@ Methodological work on the Family Budget survey
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNzY2FubmVyJTIwZGF0YSUyQ21hdGNoaW5nJTJDZXhwZXJpbWVudCUyMHN0b3BwZWQlMkNhdXRvbWF0aWMlMjBjb2Rpbmc=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839503881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
-<a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHBlcmltZW50JTJDZm9yZWNhc3RzJTJDd2Vic2NyYXBpbmc=" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1768839503880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="267">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../assets/media/logo_ssm_insee.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2021_gdp_media/gdp_media_en.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-How food consumption quality impacts health ?
+Predicting growth by reading the newspaper
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
-
 <div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0Y2hpbmc='); return false;">matching</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudCUyMHN0b3BwZWQ='); return false;">experiment stopped</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Enriching case data with nutritional information to analyse the impact of consumption on health</p>
+<p>Use continuous press articles to build an indicator to help forecast growth</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Jan 2022
+1 Mar 2021
 </div>
 </div>
 </div>
@@ -474,119 +448,8 @@ What do the electricity production and consumption data say about economic activ
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768839503879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
-<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Population movements around the March 2020 containment using mobile phone network operators data
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>INSEE has had access to mobile telephony data as part of the monitoring of the 2020 health crisis. These data were used to produce the following statistics on population…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Nov 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNDUEklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768839503879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
-<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" data-src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Classification of checkout data using machine learning
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q1BJ'); return false;">CPI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Jan 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768839503878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="221">
-<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" data-src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Urban segregation: insights from mobile phone data
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Merging administrative data and MNO data to estimate urban segregation at a local level</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 Jan 2018
-</div>
-</div>
-</div>
-</div></a>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-<nav id="similar-project-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
 </div>
 
 
@@ -997,9 +860,9 @@ Urban segregation: insights from mobile phone data
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2025_nowcasting/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
 <li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2025_nowcasting/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>

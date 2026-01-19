@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-GB" xml:lang="en-GB">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2024_cb_mno_tabac/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2025_comptes_bancaires_conj/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.27">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="dcterms.date" content="2024-01-01">
-<meta name="description" content="Using the closing of borders in 2020 as a natural experiment to measure cross-border tobacco purchases">
-<title>An assessment of cross-border tobacco purchases and associated tax losses in France – SSPHub</title>
+<meta name="description" content="Analyse du comportement des ménages à partir de données de comptes bancaires pour les prévisions de croissance économique, pendant la crise sanitaire et entre 2023 et 2024">
+<title>Exploitation de données bancaires pour les prévisions de croissance du PIB – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -28,8 +27,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -44,17 +41,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script><script>
 
@@ -74,6 +71,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-autres-comptes-bancaires .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-description','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-image","listing-title","listing-description","listing-date","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-autres-comptes-bancaires'] = new List('listing-autres-comptes-bancaires', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -138,30 +163,66 @@ window.Quarto = {
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/index.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2025_comptes_bancaires_conj/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">About the SSPHub</span></a>
+    <a class="nav-link" href="../../event.html"> 
+<span class="menu-text">Événements</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project.html"> 
+<span class="menu-text">Projets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../course.html"> 
+<span class="menu-text">Ressources utiles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">À propos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">
+<li>
+    <a class="dropdown-item" href="../../infolettre/infolettre.html">
+ <span class="dropdown-text">Newsletters</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about.html">
+ <span class="dropdown-text">Présentation du réseau</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../manifeste.html">
+ <span class="dropdown-text">Manifeste du réseau</span></a>
+  </li>  
+    </ul>
+</li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
-<span class="menu-text">SSPCloud</span></a>
+<span class="menu-text">Le SSPCloud</span></a>
   </li>  
 </ul>
 <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -171,19 +232,25 @@ window.Quarto = {
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav><div id="quarto-announcement" data-announcement-id="8c899c87ea21742c798fea6eae88c782" class="alert alert-primary hidden">
+<i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>📺️ Les présentations et le replay de la journée du réseau, le 1<sup>er</sup> décembre 2025, <a href="../../event/2025-12-01-network-day/index.html">sont disponibles</a></p>
+</div>
+<i class="bi bi-x-lg quarto-announcement-action"></i>
+</div>
+</header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">An assessment of cross-border tobacco purchases and associated tax losses in France</h1>
+      <h1 class="title">Exploitation de données bancaires pour les prévisions de croissance du PIB</h1>
                   <div>
         <div class="description">
-          Using the closing of borders in 2020 as a natural experiment to measure cross-border tobacco purchases
+          Analyse du comportement des ménages à partir de données de comptes bancaires pour les prévisions de croissance économique, pendant la crise sanitaire et entre 2023 et 2024
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">experiment</div>
-                <div class="quarto-category">mobile phone data</div>
-                <div class="quarto-category">credit card data</div>
                 <div class="quarto-category">Insee</div>
+                <div class="quarto-category">prévisions</div>
+                <div class="quarto-category">données comptes bancaires</div>
+                <div class="quarto-category">expérimentation</div>
               </div>
                   </div>
   </div>
@@ -193,9 +260,9 @@ window.Quarto = {
 
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 January 2024</p>
+        <p class="date">1 juin 2025</p>
       </div>
     </div>
     
@@ -207,171 +274,163 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-<li><a href="#project-summary" id="toc-project-summary" class="nav-link active" data-scroll-target="#project-summary">Project summary</a></li>
-  <li><a href="#similar-projects" id="toc-similar-projects" class="nav-link" data-scroll-target="#similar-projects">Similar projects</a></li>
+<li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
+  <li><a href="#projets-similaires" id="toc-projets-similaires" class="nav-link" data-scroll-target="#projets-similaires">Projets similaires</a></li>
+  <li><a href="#autres-%C3%A9tudes-men%C3%A9es-gr%C3%A2ces-aux-donn%C3%A9es-bancaires" id="toc-autres-études-menées-grâces-aux-données-bancaires" class="nav-link" data-scroll-target="#autres-études-menées-grâces-aux-données-bancaires">Autres études menées grâces aux données bancaires</a></li>
   </ul>
 <div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
-</ul></div></nav><h5 class="quarto-listing-category-title">Categories</h5>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2025_comptes_bancaires_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2025_comptes_bancaires_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
+</ul></div></nav><h5 class="quarto-listing-category-title">Catégories</h5>
 <div class="quarto-listing-category category-default">
-<div class="category" data-category="">All <span class="quarto-category-count">(8)</span>
+<div class="category" data-category="">Tous <span class="quarto-category-count">(14)</span>
 </div>
-<div class="category" data-category="YWRtaW5pc3RyYXRpdmUlMjBkYXRh">administrative data <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="YXBwYXJpZW1lbnQ=">appariement <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="YXV0b21hdGljJTIwY29kaW5n">automatic coding <span class="quarto-category-count">(3)</span>
-</div>
-<div class="category" data-category="YmFuayUyMGFjY291bnQlMjBkYXRh">bank account data <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=">codification automatique <span class="quarto-category-count">(3)</span>
 </div>
 <div class="category" data-category="Q09JQ09Q">COICOP <span class="quarto-category-count">(2)</span>
 </div>
-<div class="category" data-category="Q1BJ">CPI <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="Y3JlZGl0JTIwY2FyZCUyMGRhdGE=">credit card data <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="ZGF0YSUyMGV4dHJhY3Rpb24=">data extraction <span class="quarto-category-count">(1)</span>
-</div>
 <div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="ZXhwZXJpbWVudA==">experiment <span class="quarto-category-count">(5)</span>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz">données administratives <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="ZXhwZXJpbWVudCUyMHN0b3BwZWQ=">experiment stopped <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwQ0I=">données CB <span class="quarto-category-count">(2)</span>
 </div>
-<div class="category" data-category="Zm9yZWNhc3Rz">forecasts <span class="quarto-category-count">(3)</span>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U=">données de caisse <span class="quarto-category-count">(3)</span>
 </div>
-<div class="category" data-category="aW4lMjBwcm9kdWN0aW9u">in production <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==">données de téléphonie mobile <span class="quarto-category-count">(4)</span>
+</div>
+<div class="category" data-category="ZG9ubiVDMyVBOWVzJTIwcHJpdiVDMyVBOWVz">données privées <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZW4lMjBwcm9kdWN0aW9u">en production <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXhwJUMzJUE5cmltZW50YXRpb24=">expérimentation <span class="quarto-category-count">(5)</span>
+</div>
+<div class="category" data-category="ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ==">expérimentation arrêtée <span class="quarto-category-count">(1)</span>
+</div>
+<div class="category" data-category="ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz">extraction de données <span class="quarto-category-count">(1)</span>
 </div>
 <div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(6)</span>
 </div>
+<div class="category" data-category="SVBD">IPC <span class="quarto-category-count">(1)</span>
+</div>
 <div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="bWF0Y2hpbmc=">matching <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="bW9iaWxlJTIwcGhvbmUlMjBkYXRh">mobile phone data <span class="quarto-category-count">(3)</span>
 </div>
 <div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="cHJpdmF0ZSUyMGRhdGE=">private data <span class="quarto-category-count">(1)</span>
+<div class="category" data-category="cHIlQzMlQTl2aXNpb25z">prévisions <span class="quarto-category-count">(2)</span>
 </div>
 <div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="c2Nhbm5lciUyMGRhdGE=">scanner data <span class="quarto-category-count">(3)</span>
 </div>
 </div>
 </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="project-summary" class="level1"><h1>Project summary</h1>
+<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
 <table class="caption-top table">
 <thead><tr class="header">
 <th></th>
-<th>An assessment of cross-border tobacco purchases and associated tax losses in France</th>
+<th>Exploitation de données bancaires pour les prévisions économiques de l’Insee</th>
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><strong>Project details</strong></td>
-<td>Smoking is a major public health problem, causing many preventable diseases worldwide. In recent decades, increasing the price of tobacco has become the main strategy used by governments to reduce smoking. However, price differences between certain neighbouring countries are likely to limit the effectiveness of this measure by allowing some consumers to buy tobacco at a lower price in a neighbouring country. Although the problem of cross-border shopping is not new, the extent of the phenomenon remains poorly understood and is still the subject of regular debate. This study contributes to its assessment in France by exploiting an unprecedented natural experiment : the closure of land borders between March 2020 and June 2020 as part of the fight against the Covid-19 pandemic.</td>
+<td><strong>Détail du projet</strong></td>
+<td>Les données de comptes bancaires constituent une source d’information avancée sur la consommation et l’épargne des ménages, aussi bien à l’échelle microéconomique qu’infra-annuelle. L’Insee les a utilisées ainsi à plusieurs reprises dans le cadre de ses prévisions économiques. <br><br> En 2020, à travers l’exploitation de données anonymisées mises à disposition par le Crédit Mutuel Alliance Fédérale, il est possible d’étudier comment la crise sanitaire a pu modifier la situation financière des ménages clients de cette banque, selon leur niveau de revenu, leur âge ou encore leur catégorie socio-professionnelle. <br> Les données bancaires utilisées ne permettent pas d’identifier directement les revenus des ménages mais peuvent tout de même être mobilisées pour en déduire une approximation, grâce à l’ensemble des virements et chèques entrant sur les comptes. Ces flux entrants chutent lors du premier confinement avant de rebondir en juin. Le deuxième confinement n’aurait pas provoqué de baisse de ces flux entrants, en moyenne. <br><br> Enfin, en 2025, l’Insee a utilisé des données anonymisées de La Banque Postale pour apporter un éclairage sur l’évolution de l’épargne depuis 2020, et notamment d’identifier les ménages qui ont épargné plus en 2024 qu’en 2023.</td>
 </tr>
 <tr class="even">
-<td><strong>Players</strong></td>
+<td><strong>Acteurs</strong></td>
 <td>Insee</td>
 </tr>
 <tr class="odd">
-<td><strong>Project results</strong></td>
-<td>Results show that the closure of the borders led to a 9.5 % surplus in tobacco purchases in mainland France compared to the counterfactual situation in which the borders had remained open. This result probably underestimates cross-border purchases. In fact, some tobacco consumption abroad may have continued during the first lockdown, as the borders were not completely closed, in particular for cross-border workers. Extrapolating the consumption observed in the rest of the country to border regions with identical characteristics, the revenue generated in France would be about 13.5 % higher if there were no cheaper alternatives abroad.</td>
+<td><strong>Résultats du projet</strong></td>
+<td>Ces études se situent dans le prolongement des travaux menés sur les ménages à partir des données de compte bancaire. <br><br> Pendant les deux confinements de 2020, tous les groupes de ménages étudiés, quels que soient leurs niveaux de revenus, auraient diminué leur consommation, laquelle s’est recentrée, en particulier en avril, aux biens de première nécessité. Les ménages qui consommaient le plus avant la crise, essentiellement des cadres et des hauts revenus, auraient donc davantage diminué leur consommation. <br> La chute de la consommation a provoqué un surcroît d’épargne qui a alimenté les comptes courants des ménages et leurs comptes sur livrets. Le patrimoine financier brut des ménages (épargne liquide, comptes-titres et assurances- vie, crédits exclus) aurait fortement augmenté en 2020. Cette hausse s’observe chez tous les groupes de ménages, quel que soit leur niveau de patrimoine financier. Elle est plus élevée en euros chez les ménages à hauts patrimoines financiers, qui ont pu épargner davantage en diminuant leur consommation. Les ménages à faibles patrimoines, ont également mis de l’argent de côté notamment pendant le premier confinement. Cependant, les montants en jeu pour ces ménages, quelques dizaines ou centaines d’euros en général, demeurent faibles bien qu’ils représentent une part importante de leur patrimoine initial. Parmi les ménages actifs, certains auraient été davantage touchés que d’autres par une baisse de leurs revenus et auraient donc moins augmenté leur épargne : c’est le cas des artisans et commerçants, ou encore des salariés du secteur privé, par contraste avec ceux du secteur public. <br><br> L’analyse menée pour la note de conjoncture de juin 2025 permet de montrer que les évolutions des agrégats de revenu, de consommation et du taux d’épargne issues des données de ces comptes bancaires sont cohérentes avec celles de la comptabilité nationale. Depuis le quatrième trimestre 2023, le revenu disponible des ménages a connu une tendance haussière, les dépenses de consommation ont ralenti et le taux d’épargne des ménages augmente tendanciellement en glissement annuel. Si le taux d’épargne moyen a augmenté dans la quasi-totalité des regroupements entre 2023 et 2024, c’est parmi les plus âgés que la hausse du taux d’épargne en 2023 et 2024 est la plus forte : les personnes âgées de 65 ans ou plus ont contribué pour environ deux tiers de la hausse du taux d’épargne entre 2023 et 2024 selon ces données.</td>
 </tr>
 <tr class="even">
-<td><strong>Project products and documentation</strong></td>
-<td>- <a href="https://www.insee.fr/en/statistiques/8172204">An assessment of cross-border tobacco purchases and associated tax losses in France</a> Insee Working Papers No. 2024-06, April 2024</td>
-</tr>
-<tr class="odd">
-<td><strong>Project code</strong></td>
-<td>- Repo <a href="">GitHub <i class="fa-brands fa-github" aria-label="github"></i></a>
-</td>
+<td><strong>Produits et documentation du projet</strong></td>
+<td>- <a href="https://www.insee.fr/fr/statistiques/5232043">En 2020, la chute de la consommation a alimenté l’épargne, faisant progresser notamment les hauts patrimoines financiers : quelques résultats de l’exploitation de données bancaires</a>, Note de conjoncture de l’Insee - mars 2021 ; <br> - <a href="https://www.insee.fr/fr/statistiques/8594932?sommaire=8594943">En 2024, les revenus des retraités clients de La Banque Postale ont fortement augmenté mais leur consommation n’a pas suivi, ce qui contribuerait aux deux tiers de la hausse du taux d’épargne</a>, Note de conjoncture de l’Insee - juin 2025</td>
 </tr>
 </tbody>
-</table></section><section id="similar-projects" class="level1"><h1>Similar projects</h1>
+</table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNmb3JlY2FzdHMlMkNiYW5rJTIwYWNjb3VudCUyMGRhdGElMkNleHBlcmltZW50" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1768839503886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="579">
-<a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1768839427786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="421">
+<a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="../../project/2025_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" src="../../project/2024_cb_mno_tabac/tabac.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="similar-projects">
-Use of banking data for INSEE economic forecasts
+<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France
 </h5>
 <div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
+
 <div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YmFuayUyMGFjY291bnQlMjBkYXRh'); return false;">bank account data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
 
 </div>
 <div class="card-text listing-description delink">
-
-
-
+<p>Exploitation d’une expérience naturelle, la fermeture des frontières en 2020, pour mesurer la part d’achats transfrontaliers de tabac</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Jun 2025
+1 janv. 2024
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="YXV0b21hdGljJTIwY29kaW5nJTJDZGF0YSUyMGV4dHJhY3Rpb24lMkNzY2FubmVyJTIwZGF0YQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839503881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="328">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839427782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Methodological work on the Family Budget survey
+Travaux méthodologiques sur l’enquête Budget de Famille
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YSUyMGV4dHJhY3Rpb24='); return false;">data extraction</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz'); return false;">extraction de données</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Modernisation of the family budget survey using automatic classification tools</p>
+<p>Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Jan 2022
+1 janv. 2022
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNzY2FubmVyJTIwZGF0YSUyQ21hdGNoaW5nJTJDZXhwZXJpbWVudCUyMHN0b3BwZWQlMkNhdXRvbWF0aWMlMjBjb2Rpbmc=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839503881" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
+<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839427782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="424">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../assets/media/logo_ssm_insee.webp" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-How food consumption quality impacts health ?
+Quel effet de la qualité de la nourriture sur notre santé ?
 </h5>
 <div class="listing-categories">
 
@@ -381,107 +440,107 @@ How food consumption quality impacts health ?
 
 <div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0Y2hpbmc='); return false;">matching</div>
+<div class="listing-category" onclick="window.quartoListingCategory('YXBwYXJpZW1lbnQ='); return false;">appariement</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudCUyMHN0b3BwZWQ='); return false;">experiment stopped</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Enriching case data with nutritional information to analyse the impact of consumption on health</p>
+<p>Enrichissement de données de caisses à partir de données d’informations nutritionnelles pour analyser l’impact de la consommation sur la santé</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Jan 2022
+1 janv. 2022
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Zm9yZWNhc3RzJTJDZXhwZXJpbWVudCUyQ0luc2VlJTJDY3JlZGl0JTIwY2FyZCUyMGRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839503878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="561">
+<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Using credit card data and mobile phone data to forecast economic activity
+Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Y3JlZGl0JTIwY2FyZCUyMGRhdGE='); return false;">credit card data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>The 2020 health crisis required a review of forecasting processes to be more responsive to events. INSEE used credit card transaction data to forecast economic activity.</p>
+<p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyé sur les données…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Dec 2020
+1 déc. 2020
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNmb3JlY2FzdHMlMkNwcml2YXRlJTIwZGF0YSUyQ2V4cGVyaW1lbnQ=" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839503879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="302">
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-What do the electricity production and consumption data say about economic activity during the containment period?
+Que disent les données de production et de consommation d’électricité sur l’activité économique en période de confinement ?
 </h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Zm9yZWNhc3Rz'); return false;">forecasts</div>
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('cHJpdmF0ZSUyMGRhdGE='); return false;">private data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwcHJpdiVDMyVBOWVz'); return false;">données privées</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Using electricity production and consumption data to forecast economic activity</p>
+<p>Utilisation des données de production et de consommation d’électricité pour prévoir l’activité économique</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Dec 2020
+1 déc. 2020
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cGVyaW1lbnQlMkNvcGVuLWRhdGElMkNtb2JpbGUlMjBwaG9uZSUyMGRhdGE=" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768839503879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="386">
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="../../project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Population movements around the March 2020 containment using mobile phone network operators data
+Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile
 </h5>
 <div class="listing-categories">
 
@@ -491,102 +550,229 @@ Population movements around the March 2020 containment using mobile phone networ
 
 <div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>INSEE has had access to mobile telephony data as part of the monitoring of the 2020 health crisis. These data were used to produce the following statistics on population…</p>
+<p>L’Insee a eu accès à des données de téléphonie mobile dans le cadre du suivi de la crise sanitaire de 2020. Ces données ont permis de produire les statistiques sur les…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Nov 2020
+1 nov. 2020
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDYXV0b21hdGljJTIwY29kaW5nJTJDc2Nhbm5lciUyMGRhdGElMkNDT0lDT1AlMkNDUEklMkNpbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768839503879" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="378">
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" data-src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Classification of checkout data using machine learning
+Classification des données de caisse à partir de machine learning
 </h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b21hdGljJTIwY29kaW5n'); return false;">automatic coding</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('c2Nhbm5lciUyMGRhdGE='); return false;">scanner data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Q1BJ'); return false;">CPI</div>
+<div class="listing-category" onclick="window.quartoListingCategory('SVBD'); return false;">IPC</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('aW4lMjBwcm9kdWN0aW9u'); return false;">in production</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Using machine learning to classify scanner data in the COICOP nomenclature to calculate the CPI</p>
+<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Jan 2020
+1 janv. 2020
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHBlcmltZW50JTJDbW9iaWxlJTIwcGhvbmUlMjBkYXRhJTJDYWRtaW5pc3RyYXRpdmUlMjBkYXRh" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768839503878" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="221">
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768839427779" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" data-src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Urban segregation: insights from mobile phone data
+Ségrégation urbaine : un éclairage par les données de téléphonie mobile
 </h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwZXJpbWVudA=='); return false;">experiment</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('bW9iaWxlJTIwcGhvbmUlMjBkYXRh'); return false;">mobile phone data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('YWRtaW5pc3RyYXRpdmUlMjBkYXRh'); return false;">administrative data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz'); return false;">données administratives</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Merging administrative data and MNO data to estimate urban segregation at a local level</p>
+<p>Croisement de données administratives et de données de téléphonie pour analyser la ségrégation au niveau local</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
 
 </div>
 <div class="listing-date">
-1 Jan 2018
+1 janv. 2018
 </div>
 </div>
 </div>
 </div></a>
 </div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
 <nav id="similar-project-pagination" class="listing-pagination" aria-label="Page Navigation"><ul class="pagination"></ul></nav>
+</div>
+</section><section id="autres-études-menées-grâces-aux-données-bancaires" class="level1"><h1>Autres études menées grâces aux données bancaires</h1>
+<p>Par ailleurs, d’autres études ont été menées par l’Insee en utilisant des données de compte bancaires. Elles sont disponibles sur le site de l’Insee :</p>
+<div id="listing-autres-comptes-bancaires" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1733011200000">
+<a href="https://www.insee.fr/fr/information/8264558?sommaire=8264562" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="2024_courrier_stats.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="autres-études-menées-grâces-aux-données-bancaires">
+L’économie racontée par les données bancaires - Ce que nos relevés de comptes disent de nous
+</h5>
+<div class="card-text listing-description delink">
+<p>Courrier des statistiques n°12, Insee, Décembre 2024</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 déc. 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1714521600000">
+<a href="https://www.insee.fr/fr/statistiques/8183836" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="2024_DT2024_08.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Achats transfrontaliers de carburant à la frontière franco-allemande
+</h5>
+<div class="card-text listing-description delink">
+<p>Documents de travail de l’Insee n°2024-08, mai 2024</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 mai 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1701388800000">
+<a href="https://www.insee.fr/fr/statistiques/7721885" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="2023_InseeA90.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+La situation financière des ménages au jour le jour
+</h5>
+<div class="card-text listing-description delink">
+<p>Insee Analyses n°90, décembre 2023</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 déc. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1664582400000">
+<a href="https://www.insee.fr/fr/statistiques/6542263" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="2022_InseeA76.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Avec l’inflation, une précarité financière en légère hausse, mais inférieure en août 2022 à son niveau d’avant-crise sanitaire
+</h5>
+<div class="card-text listing-description delink">
+<p>Insee Analyses n°76, octobre 2022</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 oct. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1664582400000">
+<a href="https://journees-methodologie-statistique.insee.net/une-mesure-de-la-reponse-en-consommation-a-des-chocs-de-revenus-a-partir-des-donnees-bancaires/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../assets/media/logo_Insee.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Une mesure de la réponse en consommation à des chocs de revenus à partir des données bancaires
+</h5>
+<div class="card-text listing-description delink">
+<p>Journées de méthodologie statistique 2022</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 oct. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-date-sort="1635724800000">
+<a href="https://www.insee.fr/fr/statistiques/5760458" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="2021_InseeA69.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Impact de la crise sanitaire sur un panel anonymisé de clients de La Banque Postale
+</h5>
+<div class="card-text listing-description delink">
+<p>Insee Analyses n°69, novembre 2021</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 nov. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
 </div>
 
 
@@ -616,12 +802,12 @@ Urban segregation: insights from mobile phone data
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -997,9 +1183,9 @@ Urban segregation: insights from mobile phone data
 
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_cb_mno_tabac/index.qmd" class="toc-action"><i class="bi empty"></i>Edit this page</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2025_comptes_bancaires_conj/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
+<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2025_comptes_bancaires_conj/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
 </ul></div></div></div></footer>
 </body>
 </html>

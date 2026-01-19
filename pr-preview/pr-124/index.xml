@@ -858,6 +858,735 @@ Astuce
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
 </item>
 <item>
+  <title>Comparaison des prévisions entre nowcasting et approche ascendante</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_nowcasting/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+<h1>Synthèse du projet</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Comparaison des méthodes de prévision du PIB en continu avec une méthode ascendante</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>L’Insee effectue ses prévisions de croissance du PIB à partir d’un modèle dit ascendant, permettant de répliquer la mécanique des comptes trimestriels en agrégeant les prévisions fines sur chaque poste. Se pose toutefois la question de la performance d’une telle approche pour prévoir le PIB par rapport à celle des approches directes, ou <em>nowcasting</em>. Une approche directe permet de prévoir directement la croissance du PIB à partir de séries conjoncturelles, sans utiliser de comptes trimestriels. Afin d’étudier les performances relatives des deux approches, un nouveau modèle de prévision ascendant de la croissance du PIB de la France, inspiré du <em>« GDPnow »</em> de la Réserve Fédérale d’Atlanta, a été mis au point dans le cadre de cette étude.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>En début de trimestre, l’approche directe est légèrement plus performante que l’approche ascendante : en effet, peu d’indicateurs quantitatifs sont alors disponibles et la plus-value que représente l’utilisation d’un cadre comptable complet est limitée par rapport à un modèle direct, naturellement plus parcimonieux. À partir de la fin du deuxième mois en revanche, les indicateurs quantitatifs disponibles deviennent plus nombreux et l’approche ascendante présente des performances légèrement meilleures que l’approche directe estimée dans cette étude, c’est en particulier le cas au moment de la publication de la Note de conjoncture. Enfin, la différence de performance entre les deux approches est nette entre la fin du trimestre et la publication des premières estimations des comptes trimestriels trente jours plus tard : au cours de cette période, il est largement préférable d’exploiter l’information disponible via une approche ascendante plutôt que par une approche directe.</td>
+</tr>
+<tr class="even">
+<td><strong>Produits et documentation du projet</strong></td>
+<td>- <a href="https://www.insee.fr/fr/statistiques/8638815?sommaire=8638823">Comment se comparent les approches directe et ascendante pour prévoir le PIB du trimestre courant ?</a>, Note de conjoncture de l’Insee - septembre 2025</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="projets-similaires" class="level1">
+<h1>Projets similaires</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1768839427787" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+Exploitation de données bancaires pour les prévisions de croissance du PIB
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwY29tcHRlcyUyMGJhbmNhaXJlcw=='); return false;">données comptes bancaires</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Analyse du comportement des ménages à partir de données de comptes bancaires pour les prévisions de croissance économique, pendant la crise sanitaire et entre 2023 et 2024</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1768839427781" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2021_gdp_media/gdp_media.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Prévoir la croissance en lisant le journal
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Utiliser les articles de presse en continu pour construire un indicateur aidant à prévoir la croissance</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 mars 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyé sur les données…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+<a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Que disent les données de production et de consommation d’électricité sur l’activité économique en période de confinement ?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwcHJpdiVDMyVBOWVz'); return false;">données privées</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Utilisation des données de production et de consommation d’électricité pour prévoir l’activité économique</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="413">
+<a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2019_gdp_tracker/evol_croissance_fr.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+« GDP Tracker » : un outil pour des prévisions économiques en continu
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bm93Y2FzdGluZw=='); return false;">nowcasting</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Modèles de <em>machine learning</em> pour effectuer des prévisions en temps réel (<em>nowcasting</em>) pour alimenter les analyses conjoncturelles de l’Insee</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2019
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>étude</category>
+  <category>nowcasting</category>
+  <category>prévisions</category>
+  <category>Insee</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_nowcasting/</guid>
+  <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_nowcasting/comp_fr.png" medium="image" type="image/png" height="53" width="144"/>
+</item>
+<item>
+  <title>Exploitation de données bancaires pour les prévisions de croissance du PIB</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+<h1>Synthèse du projet</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Exploitation de données bancaires pour les prévisions économiques de l’Insee</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>Les données de comptes bancaires constituent une source d’information avancée sur la consommation et l’épargne des ménages, aussi bien à l’échelle microéconomique qu’infra-annuelle. L’Insee les a utilisées ainsi à plusieurs reprises dans le cadre de ses prévisions économiques. <br> <br> En 2020, à travers l’exploitation de données anonymisées mises à disposition par le Crédit Mutuel Alliance Fédérale, il est possible d’étudier comment la crise sanitaire a pu modifier la situation financière des ménages clients de cette banque, selon leur niveau de revenu, leur âge ou encore leur catégorie socio-professionnelle. <br> Les données bancaires utilisées ne permettent pas d’identifier directement les revenus des ménages mais peuvent tout de même être mobilisées pour en déduire une approximation, grâce à l’ensemble des virements et chèques entrant sur les comptes. Ces flux entrants chutent lors du premier confinement avant de rebondir en juin. Le deuxième confinement n’aurait pas provoqué de baisse de ces flux entrants, en moyenne. <br> <br> Enfin, en 2025, l’Insee a utilisé des données anonymisées de La Banque Postale pour apporter un éclairage sur l’évolution de l’épargne depuis 2020, et notamment d’identifier les ménages qui ont épargné plus en 2024 qu’en 2023.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Insee</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Ces études se situent dans le prolongement des travaux menés sur les ménages à partir des données de compte bancaire. <br> <br> Pendant les deux confinements de 2020, tous les groupes de ménages étudiés, quels que soient leurs niveaux de revenus, auraient diminué leur consommation, laquelle s’est recentrée, en particulier en avril, aux biens de première nécessité. Les ménages qui consommaient le plus avant la crise, essentiellement des cadres et des hauts revenus, auraient donc davantage diminué leur consommation. <br> La chute de la consommation a provoqué un surcroît d’épargne qui a alimenté les comptes courants des ménages et leurs comptes sur livrets. Le patrimoine financier brut des ménages (épargne liquide, comptes-titres et assurances- vie, crédits exclus) aurait fortement augmenté en 2020. Cette hausse s’observe chez tous les groupes de ménages, quel que soit leur niveau de patrimoine financier. Elle est plus élevée en euros chez les ménages à hauts patrimoines financiers, qui ont pu épargner davantage en diminuant leur consommation. Les ménages à faibles patrimoines, ont également mis de l’argent de côté notamment pendant le premier confinement. Cependant, les montants en jeu pour ces ménages, quelques dizaines ou centaines d’euros en général, demeurent faibles bien qu’ils représentent une part importante de leur patrimoine initial. Parmi les ménages actifs, certains auraient été davantage touchés que d’autres par une baisse de leurs revenus et auraient donc moins augmenté leur épargne : c’est le cas des artisans et commerçants, ou encore des salariés du secteur privé, par contraste avec ceux du secteur public. <br> <br> L’analyse menée pour la note de conjoncture de juin 2025 permet de montrer que les évolutions des agrégats de revenu, de consommation et du taux d’épargne issues des données de ces comptes bancaires sont cohérentes avec celles de la comptabilité nationale. Depuis le quatrième trimestre 2023, le revenu disponible des ménages a connu une tendance haussière, les dépenses de consommation ont ralenti et le taux d’épargne des ménages augmente tendanciellement en glissement annuel. Si le taux d’épargne moyen a augmenté dans la quasi-totalité des regroupements entre 2023 et 2024, c’est parmi les plus âgés que la hausse du taux d’épargne en 2023 et 2024 est la plus forte : les personnes âgées de 65 ans ou plus ont contribué pour environ deux tiers de la hausse du taux d’épargne entre 2023 et 2024 selon ces données.</td>
+</tr>
+<tr class="even">
+<td><strong>Produits et documentation du projet</strong></td>
+<td>- <a href="https://www.insee.fr/fr/statistiques/5232043">En 2020, la chute de la consommation a alimenté l’épargne, faisant progresser notamment les hauts patrimoines financiers : quelques résultats de l’exploitation de données bancaires</a>, Note de conjoncture de l’Insee - mars 2021 ; <br> - <a href="https://www.insee.fr/fr/statistiques/8594932?sommaire=8594943">En 2024, les revenus des retraités clients de La Banque Postale ont fortement augmenté mais leur consommation n’a pas suivi, ce qui contribuerait aux deux tiers de la hausse du taux d’épargne</a>, Note de conjoncture de l’Insee - juin 2025</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="projets-similaires" class="level1">
+<h1>Projets similaires</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1768839427786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="421">
+<a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/tabac.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Exploitation d’une expérience naturelle, la fermeture des frontières en 2020, pour mesurer la part d’achats transfrontaliers de tabac</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839427782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Travaux méthodologiques sur l’enquête Budget de Famille
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz'); return false;">extraction de données</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839427782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="424">
+<a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/assets/media/logo_ssm_insee.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Quel effet de la qualité de la nourriture sur notre santé ?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('YXBwYXJpZW1lbnQ='); return false;">appariement</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Enrichissement de données de caisses à partir de données d’informations nutritionnelles pour analyser l’impact de la consommation sur la santé</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyé sur les données…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+<a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Que disent les données de production et de consommation d’électricité sur l’activité économique en période de confinement ?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwcHJpdiVDMyVBOWVz'); return false;">données privées</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Utilisation des données de production et de consommation d’électricité pour prévoir l’activité économique</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>L’Insee a eu accès à des données de téléphonie mobile dans le cadre du suivi de la crise sanitaire de 2020. Ces données ont permis de produire les statistiques sur les…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 nov. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Classification des données de caisse à partir de machine learning
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('SVBD'); return false;">IPC</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2020
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768839427779" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
+<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" data-src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Ségrégation urbaine : un éclairage par les données de téléphonie mobile
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz'); return false;">données administratives</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Croisement de données administratives et de données de téléphonie pour analyser la ségrégation au niveau local</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2018
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+
+</div>
+</section>
+<section id="autres-études-menées-grâces-aux-données-bancaires" class="level1">
+<h1>Autres études menées grâces aux données bancaires</h1>
+<p>Par ailleurs, d’autres études ont été menées par l’Insee en utilisant des données de compte bancaires. Elles sont disponibles sur le site de l’Insee :</p>
+<div id="listing-autres-comptes-bancaires" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1733011200000">
+<a href="https://www.insee.fr/fr/information/8264558?sommaire=8264562" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/2024_courrier_stats.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="autres-études-menées-grâces-aux-données-bancaires">
+L’économie racontée par les données bancaires - Ce que nos relevés de comptes disent de nous
+</h5>
+<div class="card-text listing-description delink">
+<p>Courrier des statistiques n°12, Insee, Décembre 2024</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 déc. 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1714521600000">
+<a href="https://www.insee.fr/fr/statistiques/8183836" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/2024_DT2024_08.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Achats transfrontaliers de carburant à la frontière franco-allemande
+</h5>
+<div class="card-text listing-description delink">
+<p>Documents de travail de l’Insee n°2024-08, mai 2024</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 mai 2024
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1701388800000">
+<a href="https://www.insee.fr/fr/statistiques/7721885" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/2023_InseeA90.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+La situation financière des ménages au jour le jour
+</h5>
+<div class="card-text listing-description delink">
+<p>Insee Analyses n°90, décembre 2023</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 déc. 2023
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-date-sort="1664582400000">
+<a href="https://www.insee.fr/fr/statistiques/6542263" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/2022_InseeA76.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Avec l’inflation, une précarité financière en légère hausse, mais inférieure en août 2022 à son niveau d’avant-crise sanitaire
+</h5>
+<div class="card-text listing-description delink">
+<p>Insee Analyses n°76, octobre 2022</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 oct. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-date-sort="1664582400000">
+<a href="https://journees-methodologie-statistique.insee.net/une-mesure-de-la-reponse-en-consommation-a-des-chocs-de-revenus-a-partir-des-donnees-bancaires/" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/assets/media/logo_Insee.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Une mesure de la réponse en consommation à des chocs de revenus à partir des données bancaires
+</h5>
+<div class="card-text listing-description delink">
+<p>Journées de méthodologie statistique 2022</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 oct. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-date-sort="1635724800000">
+<a href="https://www.insee.fr/fr/statistiques/5760458" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/2021_InseeA69.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Impact de la crise sanitaire sur un panel anonymisé de clients de La Banque Postale
+</h5>
+<div class="card-text listing-description delink">
+<p>Insee Analyses n°69, novembre 2021</p>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+1 nov. 2021
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>Insee</category>
+  <category>prévisions</category>
+  <category>données comptes bancaires</category>
+  <category>expérimentation</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/</guid>
+  <pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/money.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
   <title>Atelier - Comment récupérer des données sous format Parquet ?</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-16-Parquet/</link>
   <description><![CDATA[ 
@@ -2234,14 +2963,49 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768833113592" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1768839427787" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2025_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+Exploitation de données bancaires pour les prévisions de croissance du PIB
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwY29tcHRlcyUyMGJhbmNhaXJlcw=='); return false;">données comptes bancaires</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Analyse du comportement des ménages à partir de données de comptes bancaires pour les prévisions de croissance économique, pendant la crise sanitaire et entre 2023 et 2024</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 juin 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839427782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
 <img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+<h5 class="no-anchor card-title listing-title">
 Travaux méthodologiques sur l’enquête Budget de Famille
 </h5>
 <div class="listing-categories">
@@ -2267,7 +3031,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768833113592" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="424">
+<div class="g-col-1" data-index="2" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768839427782" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="424">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2308,42 +3072,7 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1768833113591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="613">
-<a href="../../project/2021_comptes_bancaires_conj/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2021_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-En 2020, la chute de la consommation a alimenté l’épargne, faisant progresser notamment les hauts patrimoines financiers : quelques résultats de l’exploitation de données bancaires
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwY29tcHRlcyUyMGJhbmNhaXJlcw=='); return false;">données comptes bancaires</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Analyse du comportement des ménages pendant la crise sanitaire de 2020 à partir de données de comptes bancaires</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 avr. 2021
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768833113589" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="651">
+<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2367,7 +3096,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 
 </div>
 <div class="card-text listing-description delink">
-<p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyée sur les données…</p>
+<p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyé sur les données…</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -2380,7 +3109,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768833113589" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="453">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2402,7 +3131,7 @@ Que disent les données de production et de consommation d’électricité sur l
 
 </div>
 <div class="card-text listing-description delink">
-<p>Utilisation des données de production et de consommation d’électricité pour prédire l’activité économique</p>
+<p>Utilisation des données de production et de consommation d’électricité pour prévoir l’activité économique</p>
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -2415,7 +3144,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768833113589" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2454,7 +3183,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768833113589" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768839427780" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2493,7 +3222,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768833113588" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768839427779" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="316">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -10961,118 +11690,6 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/course/ssplab-appariement/</guid>
   <pubDate>Mon, 03 Jul 2023 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
-</item>
-<item>
-  <title>Propositions de lecture estivale</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong><em>Vous désirez intégrer la liste de diffusion ? L’inscription se fait <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103">ici</a>.</em></strong></p>
-</div>
-</div>
-<p>Cette <em>newsletter</em> propose un petit cahier de vacances de la <em>data science</em> afin de profiter de la période estivale pour en apprendre plus sur les sujets en vogue et ainsi être fin prêt pour la rentrée 📖⛱️.</p>
-<section id="lectures-estivales" class="level2">
-<h2 class="anchored" data-anchor-id="lectures-estivales">Lectures estivales</h2>
-<p>Pour commencer, quelques conseils de lecture sur les grands modèles de langage :</p>
-<ul>
-<li><p><a href="https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1">Un article du <em>Washington Post</em></a> pour en savoir plus sur le corpus d’entrainement des grands modèles de langage (<em>large langage model</em>, LLM) ;</p></li>
-<li><p>Pour comprendre la manière dont <code>ChatGPT</code> et les grands modèles de langage traduisent vos phrases afin de vous répondre, consultez ce <a href="https://simonwillison.net/2023/Jun/8/gpt-tokenizers/"><em>post</em> de blog</a> sur les <a href="https://fr.wiktionary.org/wiki/tokenizer"><em>tokenizers</em></a> (décomposition d’une chaine de caractères en unité minimale comme un mot ou une syllabe);</p></li>
-<li><p>Entre deux épisodes de votre série préférée, vous pourrez alterner avec <a href="https://www.youtube.com/watch?v=Ku9PM26Cc2c">ce cours de 2 heures</a> sur les grands modèles de langage ;</p></li>
-<li><p>Vous serez ensuite prêts à approfondir le sujet avec <a href="https://huggingface.co/learn/nlp-course/chapter1/1">ce cours</a> complet d’<code>Huggingface</code> sur le traitement automatique du langage.</p></li>
-</ul>
-<p>N’hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des images avec <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">StableDiffusion</a> ou <a href="https://openai.com/dall-e-2">Dall-E 2</a>.</p>
-<p>La version <code>Python</code> de l’ouvrage de référence <a href="https://www.statlearning.com/"><em>Introduction to Statistical Learning</em></a> vient de sortir et est disponible, comme la version <code>R</code>, gratuitement. Si après la lecture de celui-ci vous désirez mieux comprendre la question de l’interprétabilité des modèles de <em>machine learning</em>, c’est-à-dire les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d’apprentissage aboutissent à une décision, ce <a href="https://interpretable-ml-class.github.io/">site web</a> vous sera très utile.</p>
-<p>Si vous désirez en apprendre plus sur la question de la reproductibilité, les ressources suivantes vous seront utiles :</p>
-<ul>
-<li><a href="https://raps-with-r.dev/"><em>Building reproducible analytical pipelines with R</em></a> ;</li>
-<li><a href="https://aeturrell.github.io/coding-for-economists/intro.html"><em>Coding for economists</em></a> ;</li>
-<li><a href="https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/">Formation aux bonnes pratiques <code>R</code> et <code>Git</code></a> par l’INSEE ;</li>
-<li>Un cours de l’ENSAE sur la <a href="https://ensae-reproductibilite.github.io/website/">mise en production de projets <em>data science</em></a> et, pour approfondir sur la mise en production de modèles de <em>machine learning</em>, une formation de l’Insee sur le <a href="https://inseefrlab.github.io/formation-mlops/slides/index.html#/title-slide">MLOps</a>, ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles.</li>
-</ul>
-<p>Si les semestres de l’année scolaire ne vous ont pas suffi, vous pouvez aussi profiter de l’été pour compléter votre formation en <em>data science</em> en suivant le <a href="https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education"><em>missing semester</em></a> de votre cursus.</p>
-<p>Vous pouvez également reprendre l’ensemble des ressources mises à disposition dans le cadre du <a href="https://inseefrlab.github.io/funathon2023/">Funathon 2023</a>, un événement pour lequel les équipes innovation de l’Insee et du SSM Agriculture et alimentation ont mis à disposition de nombreuses ressources <code>R</code> ou <code>Python</code> sur six thèmes concernant l’alimentation et la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté et de techniques pour permettre à la fois aux débutants en code et aux <em>data scientists</em> plus aguerris d’y trouver leur compte.</p>
-<p>Et pour un parcours complet de formation, rien de mieux que d’explorer de fond en comble le <a href="https://www.sspcloud.fr/formation">portail de formation du SSP Cloud</a>.</p>
-<p>Après avoir lu tout ceci, vous serez prêts pour les événements <em>data science</em> de la rentrée comme le <a href="https://mobidatalab.eu/living-labs/hackathon/">hackathon du <em>mobidatalab</em></a> sur le thème de l’amélioration des services de mobilité urbaine (15 et 16 septembre).</p>
-<p><strong>Bonnes vacances ! Et n’oubliez pas de profiter pleinement des vacances pour oublier <code>ChatGPT</code> quelques temps !</strong> 🌞🌊⛰️</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-
-
-</section>
-
- ]]></description>
-  <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/</guid>
-  <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="139" width="144"/>
-</item>
-<item>
-  <title>Visualisations des données liées aux tests du SARS-Cov2</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_drees_dataviz/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="synthèse-du-projet" class="level1">
-
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th></th>
-<th>Publication automatique et data-visualisation des données sur les tests du Covid-19</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>Depuis quelques années, la <code>DREES</code> (service statistique du Ministère de la Santé), met à disposition, dans le cadre de sa stratégie <em>open-data</em>, des visualisations interactives de données sur des thèmes variés (Covid bien-sûr mais aussi effectifs des professionnels de santé, pensions et âges de retraites…). Ces visualisations reposent sur <i class="fa-brands fa-r-project" aria-label="r-project"></i> <code>Shiny</code> et offrent ainsi la liberté à l’utilisateur de jouer avec les données et obtenir une mise à jour de graphiques exploratoires. <br> Entre octobre 2020 et juin 20233, la DREES a ainsi mis à disposition les données sur le volume et les délais de validation des tests RT-PCR et antigéniques de manière hebdomadaire. Ces résultats sont issus des données du système d’information SI-DEP.</td>
-</tr>
-<tr class="even">
-<td><strong>Acteurs</strong></td>
-<td>DREES</td>
-</tr>
-<tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Le projet a publié des informations mises à jour automatiquement sur les tests liés au Covid-19 et les délais entre 2020 et mi-2023. Les données sont toujours disponibles sur le site <a href="https://drees.shinyapps.io/delais_test_app/">https://drees.shinyapps.io/delais_test_app/</a> mais ne sont plus mises à jour depuis juin 2023.</td>
-</tr>
-<tr class="even">
-<td><strong>Code du projet</strong></td>
-<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> LIEN A INSERER SI EXISTE <a href=""></a></td>
-</tr>
-</tbody>
-</table>
-
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <category>datavisualisation</category>
-  <category>expérimentation arrêtée</category>
-  <category>DREES</category>
-  <category>open-data</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_drees_dataviz/</guid>
-  <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_drees_dataviz/dataviz.png" medium="image" type="image/png" height="39" width="144"/>
 </item>
 </channel>
 </rss>
