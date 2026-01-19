@@ -26,7 +26,8 @@ listing:
     type: grid
     sort:
       - "number desc"
-    feed: true
+    feed:
+        categories: [post, infolettre]
     page-size: 6
   - id: partenaires
     contents: partenaires
@@ -34,6 +35,18 @@ listing:
     type: grid
     feed: false
     page-size: 6
+  - id: latest
+    contents: 
+    - infolettre/infolettre_*/**/index.qmd
+    - blog/**/index.qmd
+    - event/**/index.qmd
+    - project/**/index.qmd
+    - course/**/index.qmd
+    type: grid
+    feed: false
+    sort: "date desc"
+    max-items: 3
+
 echo: false
 ---
 
@@ -90,7 +103,13 @@ et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](manifeste.qmd
 
 ::: {.column-page}
 
+## Les dernières actualités et contenus du réseau
+
+:::: {#latest}
+::::
+
 ## Les derniers billets de blog et événements
+
 
 L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.qmd), tout comme les [événements](event.qmd).
 

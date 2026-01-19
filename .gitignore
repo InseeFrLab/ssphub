@@ -13,6 +13,7 @@ go.sum
 _freeze/
 *.html
 *.json
+!scripts/2_repo_fetch.json
 *.feed*
 site_libs/
 

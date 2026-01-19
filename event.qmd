@@ -10,7 +10,7 @@ listing:
       - "date desc"
     feed:
         categories: [post, infolettre]
-
+page-layout: full
 ---
 
 

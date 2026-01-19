@@ -67,7 +67,7 @@ def conc_yaml_categories(root_folder='ssphub/project'):
 
 # conc_yaml_categories()
 
-def add_categories_to_yaml(qmd_output_file, template_path='project_template.qmd', root_folder='../project'):
+def add_categories_to_yaml(qmd_output_file, template_path='1_project_template.qmd', root_folder='../project'):
     with open(template_path, mode='r') as file:
         qmd_content = file.read()
     parts = qmd_content.split('---', 2)
@@ -137,7 +137,7 @@ def create_table_of_all_qmd(root_folder='ssphub/project'):
     return df
 
 
-def create_folder_and_file(folder_name, template_path='project_template.qmd'):
+def create_folder_and_file(folder_name, template_path='1_project_template.qmd'):
     # Create the folder in the 'project' directory
     os.makedirs(os.path.join("../project", folder_name), exist_ok=True)
 

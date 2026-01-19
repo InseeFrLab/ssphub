@@ -53,7 +53,7 @@ jobs:
             github::ropensci-review-tools/babelquarto@a485fea
 
       - name: Render bilingual project
-        run: Rscript scripts/render.R
+        run: Rscript scripts/0a_render.R
 
       - name: Deploy preview
         id: deploy-preview

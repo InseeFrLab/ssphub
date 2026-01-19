@@ -379,12 +379,12 @@ cd ssphub/scripts
 
 # it will take the "index.qmd" file of the project/2025_nom_nouveau_projet dir
 # and translate it into "index.en.qmd
-Rscript translate.R 2025_nom_nouveau_projet
+Rscript 0b_translate.R 2025_nom_nouveau_projet
 ```
 
 **Exemple**
 ```shell
-Rscript scripts/translate.R 2023_doremifasol
+Rscript scripts/0b_translate.R 2023_doremifasol
 ```
 
 Ayez un regard attentif sur la traduction automatique, qui reconnaît la syntaxe
@@ -472,9 +472,9 @@ Si les modifications touchent aussi à des **pages en anglais**, il faut utilise
 les scripts mis en place pour prévisualiser le site complet.
 Tapez les commandes suivantes dans le terminal :
 
-- pour compiler seulement le site : `Rscript scripts/render.R`
-- pour prévisualiser seulement le site : `Rscript scripts/preview.R`
-- pour compiler et prévisualiser le site  : `Rscript scripts/render.R && Rscript scripts/preview.R`
+- pour compiler seulement le site : `Rscript scripts/0a_render.R`
+- pour prévisualiser seulement le site : `Rscript scripts/0c_preview.R`
+- pour compiler et prévisualiser le site  : `Rscript scripts/0a_render.R && Rscript scripts/0c_preview.R`
 
 Notez enfin qu'un des moyens le plus simple est d'ouvrir une `pull request` (demande de tirage).
 Quand une telle demande est ouverte, un site de prévisualisation est généré

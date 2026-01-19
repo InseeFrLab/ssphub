@@ -1,11 +1,13 @@
 ---
 title: PyData Paris
-image: img/pydata-logo-final.png
+image: /cards/img/pydata-logo-final.png
 date: "2025-10-01"
 description: |
   <b>Description :</b> Presentation at PyData Paris 2025
 author: Cédric Couralet, Meilame Tayebjee
-website: https://inseefrlab.github.io/codif-ape-prez/slides/pydata/index.html
+
+
+website: https://InseeFrLab.github.io/codif-ape-prez/slides/pydata/index.html
 order: 14
 ---
 

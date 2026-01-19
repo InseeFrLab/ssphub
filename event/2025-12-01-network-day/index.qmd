@@ -8,7 +8,7 @@ categories:
 
 description: |
   Programme et modalités d'inscription à la 3e journée du réseau
-date: '2025-09-15'
+date: '2025-12-01'
 image: https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg
 echo: false
 
@@ -94,6 +94,12 @@ Présentation disponible sur [Figma](https://www.figma.com/deck/bGTGzYw9ZDrLGzbO
 
 Le papier a été publié lors des [journées de méthodologie statistique 2025](https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/).
 
+```{ojs}
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.pdf",
+  "Télécharger les slides"
+)
+```
 
 ## Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)
 {{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4 >}}
