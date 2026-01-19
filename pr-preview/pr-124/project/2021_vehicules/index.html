@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_vehicules/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2021_vehicules/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2021_vehicules/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2021_vehicules/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="description" content="Appariement de bases administratives et modélisation pour estimer le nombre de véhicules routiers en France">
 <title>Modélisation de l’appartenance au parc des véhicules routiers et de son utilisation – SSPHub</title>
@@ -24,9 +24,11 @@ ul.task-list li input[type="checkbox"] {
 </style>
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-listing/list.min.js"></script><script src="../../site_libs/quarto-listing/quarto-listing.js"></script><script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -141,7 +143,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2021_vehicules/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2021_vehicules/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
@@ -281,8 +283,6 @@ window.Quarto = {
 </div>
 <div class="category" data-category="ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ==">expérimentation arrêtée <span class="quarto-category-count">(1)</span>
 </div>
-<div class="category" data-category="ZmFzdHRleHQ=">fasttext <span class="quarto-category-count">(1)</span>
-</div>
 <div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(3)</span>
 </div>
 <div class="category" data-category="bWFjaGluZSUyMGxlYXJuaW5n">machine learning <span class="quarto-category-count">(2)</span>
@@ -314,11 +314,16 @@ window.Quarto = {
 <td><strong>Produits et documentation du projet</strong></td>
 <td>- <a href="https://www.statistiques.developpement-durable.gouv.fr/media/7230/download?inline">Méthodologie pour l’estimation des parcs de véhicules et des distances parcourues</a>, document de travail, mars 2024 <br> - <a href="https://journees-methodologie-statistique.insee.net/modelisation-de-lappartenance-au-parc-des-vehicules-routiers-et-de-son-utilisation/">Modélisation de l’appartenance au parc des véhicules routiers et de son utilisation</a>, Journées de méthodologie statistique 2022</td>
 </tr>
+<tr class="odd">
+<td><strong>Code du projet</strong></td>
+<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href=""></a>
+</td>
+</tr>
 </tbody>
 </table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="g-col-1" data-index="0" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="419">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -341,8 +346,6 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
-
 <div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
 
 </div>
@@ -360,7 +363,7 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="YXBwYXJpZW1lbnQlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1765989809152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="313">
+<div class="g-col-1" data-index="1" data-categories="YXBwYXJpZW1lbnQlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1768832665148" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="347">
 <a href="../../project/2021_Appariement/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -392,7 +395,7 @@ Comparaison des méthodes d’appariement et apport du machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMjAlM0YlM0YlMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765989809150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="285">
+<div class="g-col-1" data-index="2" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMjAlM0YlM0YlMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768832665146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
 <a href="../../project/2018_outlier_dsn/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -428,7 +431,7 @@ Détecter et traiter les valeurs aberrantes ou manquantes, application à la Dé
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765989809150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768832665146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -541,7 +544,7 @@ Ségrégation urbaine : un éclairage par les données de téléphonie mobile
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/ssphub\/pr-preview\/pr-112\/");
+        var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/ssphub\/pr-preview\/pr-124\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

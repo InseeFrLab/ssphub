@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR" xml:lang="fr-FR">
-<head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/cards/wp7_paris_card.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2022_satellites/cards/wp7_paris_card.en.html" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_codif_ape/cards/cards20.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/project/2022_codif_ape/cards/cards20.en.html" />
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="author" content="Raya Berova, Thomas Faria et Clément Guillo">
-<meta name="description" content="Description : Slideshow presentation of the project Detecting changes in buildings in French overseas departments for Work Package 7, Artificial Intelligence and Machine Learning for Official Statistics, organized by Eurostat.">
-<title>AIML4OS Workshop on Earth Observation – SSPHub</title>
+
+<meta name="author" content="Cédric Couralet, Meilame Tayebjee">
+<meta name="description" content="Description : Presentation at PyData Global 2025">
+
+<title>PyData Global – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,10 +25,25 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../../site_libs/clipboard/clipboard.min.js"></script><script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../../site_libs/quarto-search/fuse.min.js"></script><script src="../../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../../site_libs/quarto-html/popper.min.js"></script><script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../../site_libs/quarto-html/anchor.min.js"></script><link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../../site_libs/bootstrap/bootstrap-fe39306e42976778068152c2bf72bcac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -54,7 +71,8 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Envoyer",
     "search-label": "Recherche"
   }
-}</script><style>
+}</script>
+<style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -71,11 +89,16 @@ ul.task-list li input[type="checkbox"] {
 background: #6886bb;
       }
 </style>
+
+
 </head>
+
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">SSPHub</span>
@@ -87,39 +110,79 @@ background: #6886bb;
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/cards/wp7_paris_card.html" id="language-link-fr">🇫🇷 Français</a></li></ul>
-</div></li>
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../../index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Accueil</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
-<span class="menu-text">About the SSPHub</span></a>
+    <a class="nav-link" href="../../../event.html"> 
+<span class="menu-text">Événements</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../project.html"> 
+<span class="menu-text">Projets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../course.html"> 
+<span class="menu-text">Ressources utiles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">À propos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">    
+        <li>
+    <a class="dropdown-item" href="../../../infolettre/infolettre.html">
+ <span class="dropdown-text">Newsletters</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../about.html">
+ <span class="dropdown-text">Présentation du réseau</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../../manifeste.html">
+ <span class="dropdown-text">Manifeste du réseau</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
-<span class="menu-text">SSPCloud</span></a>
+<span class="menu-text">Le SSPCloud</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav></header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="8c899c87ea21742c798fea6eae88c782" class="alert alert-primary hidden"><i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>📺️ Les présentations et le replay de la journée du réseau, le 1<sup>er</sup> décembre 2025, <a href="../../../event/2025-12-01-network-day/index.html">sont disponibles</a></p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">AIML4OS Workshop on Earth Observation</h1>
+      <h1 class="title">PyData Global</h1>
                   <div>
         <div class="description">
-          <p><b>Description :</b> Slideshow presentation of the project Detecting changes in buildings in French overseas departments for Work Package 7, Artificial Intelligence and Machine Learning for Official Statistics, organized by Eurostat.</p>
+          <p><b>Description :</b> Presentation at PyData Global 2025</p>
         </div>
       </div>
                 </div>
@@ -131,14 +194,14 @@ background: #6886bb;
       <div>
       <div class="quarto-title-meta-heading">Auteur·rice</div>
       <div class="quarto-title-meta-contents">
-               <p>Raya Berova, Thomas Faria et Clément Guillo </p>
+               <p>Cédric Couralet, Meilame Tayebjee </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">13 novembre 2024</p>
+        <p class="date">9 décembre 2025</p>
       </div>
     </div>
     
@@ -153,7 +216,17 @@ background: #6886bb;
         
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -558,10 +631,4 @@ background: #6886bb;
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_satellites/cards/wp7_paris_card.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_satellites/cards/wp7_paris_card.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></div></div></footer>
-</body>
-</html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2022_codif_ape/cards/cards20.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2022_codif_ape/cards/cards20.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></div></div></footer></body></html>

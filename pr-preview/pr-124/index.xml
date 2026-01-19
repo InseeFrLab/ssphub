@@ -6,14 +6,121 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</link>
-<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
-<generator>quarto-1.8.26</generator>
-<lastBuildDate>Wed, 10 Dec 2025 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Tue, 13 Jan 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2026-01-cartographia/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert" class="level2">
+<h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert">Cartographia - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
+<p><strong>Replay de la présentation :</strong></p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div>
+<iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
+<p>
+Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf">Download the PDF instead.</a>
+</p>
+</iframe>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="30" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 29;"><span id="cb1-30"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-31">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-32">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb1-33">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="39" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 38;"><span id="cb2-39"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb2-40">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb2-41"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb2-42"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb2-43"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb2-44"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb2-45"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb2-46">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb2-47">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>cartographie</category>
+  <category>event</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2026-01-cartographia/</guid>
+  <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2026-01-cartographia/cartographia.jpeg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Qui pour financer l’open source?</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/</link>
   <description><![CDATA[ 
 
 
@@ -31,7 +138,7 @@
 <p>Spoiler : la pollution de la centrale électrique d’Ivry s’envole jusque très très loin …</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/climatetrace.png" class="img-fluid figure-img" width="800"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/climatetrace.png" class="img-fluid figure-img" width="800"></p>
 <figcaption><em>source: <a href="https://climatetrace.org/air-pollution">ClimateTRACE</a></em></figcaption>
 </figure>
 </div>
@@ -97,7 +204,7 @@
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
 <figcaption><em>En 2025, par <a href="https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d">Timothy A.</a></em></figcaption>
 </figure>
 </div>
@@ -190,13 +297,276 @@
 </ol>
 </section></div> ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/</guid>
   <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/newsletter_21.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/newsletter_21.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Troisième journée du SSPHub</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-12-01-network-day/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="photos-de-lévénement" class="level1 page-columns page-full">
+<h1>Photos de l’événement</h1>
+<div class="column-page">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122703_diff.jpg" class="img-fluid"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122643_diff.jpg" class="img-fluid"></p>
+</div>
+</div>
+</div>
+<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201115612_diff.jpg" class="img-fluid" style="width:100.0%"></p>
+</div>
+</section>
+<section id="inscription" class="level1">
+<h1>Inscription</h1>
+<p>👉️ Les inscriptions se font <a href="https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator">ici</a>. 👈️ Possibilité de participer en présentiel et en ligne.</p>
+</section>
+<section id="agenda" class="level1">
+<h1>Agenda</h1>
+<ul>
+<li><strong>9h30-10h</strong>: <strong>Accueil</strong>, moment de convivialité autour d’un café.</li>
+<li><strong>10h-11h30</strong>: <strong>Retours d’expérience</strong> ;
+<ul>
+<li>Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT) ;</li>
+<li>Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE) ;</li>
+</ul></li>
+<li><strong>11h30-12h15</strong>: <strong>Atelier de partage</strong> sur l’usage de l’IA pour les <em>data scientists</em> et statisticiens :
+<ul>
+<li>quels assistants de code pour un <em>data scientist</em> / statisticien ?</li>
+<li>assistants, agents &amp; vibe coding : partage d’expériences</li>
+</ul></li>
+<li><strong>12h15-14h</strong>: <strong>Pause déjeuner</strong>, moment de convivialité</li>
+<li><strong>14h-14h45</strong>: invité : Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</li>
+<li><strong>14h45-16h15</strong>: <strong>Retours d’expérience</strong> sur l’extraction de données et la classification :
+<ul>
+<li>Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice) ;</li>
+<li>Présentation du package torchTextClassifiers, qui propose un cadre unifié et agile pour la classification de texte, basé sur PyTorch et PyTorch Lightning (Insee - SSPLab) ;</li>
+</ul></li>
+<li><strong>16h15-16h45</strong>: <strong>Pause</strong>, moment de convivialité</li>
+<li><strong>16h45-17h30</strong>: <strong><em>Keynote</em></strong> présentation du portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, le service de l’exploration des médias utilisant l’IA pour établir les indicateurs sur les médias (personnalités les plus mentionnées, répartition du temps de parole entre femme et homme …)</li>
+<li><strong>17h30-19h30</strong>: <strong>Pot</strong>, moment de convivialité</li>
+</ul>
+</section>
+<section id="replay-et-présentations" class="level1">
+<h1>Replay et présentations</h1>
+<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
+<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
+<iframe class="sourceCode yaml code-with-copy" src="https://ssphub.github.io/2025_network_day/">
+</iframe>
+</div></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="58" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 57;"><span id="cb1-58"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-59">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-60">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb1-61">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<section id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit" class="level2">
+<h2 class="anchored" data-anchor-id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit">Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4"></video></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="69" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 68;"><span id="cb2-69"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb2-70">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb2-71">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb2-72">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee" class="level2">
+<h2 class="anchored" data-anchor-id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee">Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4"></video></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb3-80">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb3-81">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb3-82">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum" class="level2">
+<h2 class="anchored" data-anchor-id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum">Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4"></video></div>
+<p>Présentation disponible sur <a href="https://www.figma.com/deck/bGTGzYw9ZDrLGzbOzJbwJp/D%C3%89MO-INSEE-1-DECEMBRE?node-id=4-3555&amp;viewport=-145%2C-74%2C0.69&amp;t=wS4mpPXywS1FgL52-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" target="_blank">Figma</a></p>
+</section>
+<section id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice" class="level2">
+<h2 class="anchored" data-anchor-id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice">Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
+<p>Le papier a été publié lors des <a href="https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/">journées de méthodologie statistique 2025</a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="97" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb4-97"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb4-98">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb4-99">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb4-100">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab" class="level2">
+<h2 class="anchored" data-anchor-id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab">Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)</h2>
+<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4"></video></div>
+<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
+<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
+<iframe class="sourceCode yaml code-with-copy" src="https://inseefrlab.github.io/codif-ape-prez/slides/jms-ttc-prez/">
+</iframe>
+</div></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="110" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb5-110"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb5-111">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb5-112">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span></span>
+<span id="cb5-113">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-5" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</section>
+<section id="le-portail-httpsdata.ina.fr-produire-des-indicateurs-de-suivi-des-médias-grâce-à-lia" class="level2">
+<h2 class="anchored" data-anchor-id="le-portail-httpsdata.ina.fr-produire-des-indicateurs-de-suivi-des-médias-grâce-à-lia">Le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, produire des indicateurs de suivi des médias grâce à l’IA</h2>
+<p><em>Cf.</em> le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a></p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="124" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 123;"><span id="cb6-124"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb6-125">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb6-126"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb6-127"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb6-128"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb6-129"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb6-130"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb6-131">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb6-132">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="contact" class="level1">
+<h1>Contact</h1>
+<p>Pour toute information : <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></p>
+<p>📺️ La deuxième journée du réseau ayant eu lieu en 2024 est également <a href="../../event/2024-10-14-network-day/index.html">disponible en replay</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>network</category>
+  <category>event</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-12-01-network-day/</guid>
+  <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>De belles cartographies, des packages R et l’importance des données d’entraînement pour l’IA</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/</link>
   <description><![CDATA[ 
 
 
@@ -208,7 +578,7 @@
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
 <p>Beaucoup d’infographies ce mois-ci, le choix a été dur. Pour une fois, partons sur une vidéo réalisée par <a href="https://www.fabianlang.net/schweizer-bergwelten/">Fabian Lang</a> : le trajet d’un gypaète barbu suivi par GPS en 3D dans les Alpes suisses. La vraie infographie, en format vidéo, est disponible <a href="https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj">ici</a>. Attention, vertige.</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
 </section>
 <section id="actus-du-réseau" class="level1">
 <h1>Actus du réseau</h1>
@@ -303,13 +673,13 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/</guid>
   <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>La rentrée 2025: actualités, nouveautés, interview de rentrée</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/</link>
   <description><![CDATA[ 
 
 
@@ -335,7 +705,7 @@ Astuce
 </section>
 <section id="la-datavisualisation" class="level1">
 <h1>La datavisualisation</h1>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
 <p>Une version interactive est disponible sur le site du <a href="https://graphics.wsj.com/infectious-diseases-and-vaccines/">Wall Street Journal</a>.</p>
 </section>
 <section id="actus-du-réseau" class="level1">
@@ -483,257 +853,13 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/</guid>
   <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
-</item>
-<item>
-  <title>Troisième journée du SSPHub</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-12-01-network-day/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="photos-de-lévénement" class="level1 page-columns page-full">
-<h1>Photos de l’événement</h1>
-<div class="column-page">
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122703_diff.jpg" class="img-fluid"></p>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
-<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201122643_diff.jpg" class="img-fluid"></p>
-</div>
-</div>
-</div>
-<p><img src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201115612_diff.jpg" class="img-fluid" style="width:100.0%"></p>
-</div>
-</section>
-<section id="inscription" class="level1">
-<h1>Inscription</h1>
-<p>👉️ Les inscriptions se font <a href="https://www.eventbrite.com/e/billets-3e-journee-du-reseau-des-data-scientists-1664052518879?aff=oddtdtcreator">ici</a>. 👈️ Possibilité de participer en présentiel et en ligne.</p>
-</section>
-<section id="agenda" class="level1">
-<h1>Agenda</h1>
-<ul>
-<li><strong>9h30-10h</strong>: <strong>Accueil</strong>, moment de convivialité autour d’un café.</li>
-<li><strong>10h-11h30</strong>: <strong>Retours d’expérience</strong> ;
-<ul>
-<li>Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT) ;</li>
-<li>Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE) ;</li>
-</ul></li>
-<li><strong>11h30-12h15</strong>: <strong>Atelier de partage</strong> sur l’usage de l’IA pour les <em>data scientists</em> et statisticiens :
-<ul>
-<li>quels assistants de code pour un <em>data scientist</em> / statisticien ?</li>
-<li>assistants, agents &amp; vibe coding : partage d’expériences</li>
-</ul></li>
-<li><strong>12h15-14h</strong>: <strong>Pause déjeuner</strong>, moment de convivialité</li>
-<li><strong>14h-14h45</strong>: invité : Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</li>
-<li><strong>14h45-16h15</strong>: <strong>Retours d’expérience</strong> sur l’extraction de données et la classification :
-<ul>
-<li>Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice) ;</li>
-<li>Présentation du package torchTextClassifiers, qui propose un cadre unifié et agile pour la classification de texte, basé sur PyTorch et PyTorch Lightning (Insee - SSPLab) ;</li>
-</ul></li>
-<li><strong>16h15-16h45</strong>: <strong>Pause</strong>, moment de convivialité</li>
-<li><strong>16h45-17h30</strong>: <strong><em>Keynote</em></strong> présentation du portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, le service de l’exploration des médias utilisant l’IA pour établir les indicateurs sur les médias (personnalités les plus mentionnées, répartition du temps de parole entre femme et homme …)</li>
-<li><strong>17h30-19h30</strong>: <strong>Pot</strong>, moment de convivialité</li>
-</ul>
-</section>
-<section id="replay-et-présentations" class="level1">
-<h1>Replay et présentations</h1>
-<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
-<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
-<iframe class="sourceCode yaml code-with-copy" src="https://ssphub.github.io/2025_network_day/">
-</iframe>
-</div></div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="58" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 57;"><span id="cb1-58"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">createButton</span>(</span>
-<span id="cb1-59">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/0_general.pdf"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span></span>
-<span id="cb1-60">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Télécharger les slides"</span></span>
-<span id="cb1-61">)</span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<section id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit" class="level2">
-<h2 class="anchored" data-anchor-id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit">Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4"></video></div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="69" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 68;"><span id="cb2-69"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">createButton</span>(</span>
-<span id="cb2-70">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.pdf"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span></span>
-<span id="cb2-71">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Télécharger les slides"</span></span>
-<span id="cb2-72">)</span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-2" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</section>
-<section id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee" class="level2">
-<h2 class="anchored" data-anchor-id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee">Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4"></video></div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">createButton</span>(</span>
-<span id="cb3-80">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.pdf"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span></span>
-<span id="cb3-81">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Télécharger les slides"</span></span>
-<span id="cb3-82">)</span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-3" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</section>
-<section id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum" class="level2">
-<h2 class="anchored" data-anchor-id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum">Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4"></video></div>
-<p>Présentation disponible sur <a href="https://www.figma.com/deck/bGTGzYw9ZDrLGzbOzJbwJp/D%C3%89MO-INSEE-1-DECEMBRE?node-id=4-3555&amp;viewport=-145%2C-74%2C0.69&amp;t=wS4mpPXywS1FgL52-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" target="_blank">Figma</a></p>
-</section>
-<section id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice" class="level2">
-<h2 class="anchored" data-anchor-id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice">Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
-<p>Le papier a été publié lors des <a href="https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/">journées de méthodologie statistique 2025</a>.</p>
-</section>
-<section id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab" class="level2">
-<h2 class="anchored" data-anchor-id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab">Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4"></video></div>
-<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
-<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
-<iframe class="sourceCode yaml code-with-copy" src="https://inseefrlab.github.io/codif-ape-prez/slides/jms-ttc-prez/">
-</iframe>
-</div></div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="104" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 103;"><span id="cb4-104"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">createButton</span>(</span>
-<span id="cb4-105">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.pdf"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span></span>
-<span id="cb4-106">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Télécharger les slides"</span></span>
-<span id="cb4-107">)</span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-4" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</section>
-<section id="le-portail-httpsdata.ina.fr-produire-des-indicateurs-de-suivi-des-médias-grâce-à-lia" class="level2">
-<h2 class="anchored" data-anchor-id="le-portail-httpsdata.ina.fr-produire-des-indicateurs-de-suivi-des-médias-grâce-à-lia">Le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a>, produire des indicateurs de suivi des médias grâce à l’IA</h2>
-<p><em>Cf.</em> le portail <a href="https://data.ina.fr/" class="uri">https://data.ina.fr/</a></p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="118" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 117;"><span id="cb5-118"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Télécharger les slides"</span>){</span>
-<span id="cb5-119">  <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span></span>
-<span id="cb5-120"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
-<span id="cb5-121"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">" target="_blank"&gt;</span></span>
-<span id="cb5-122"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb5-123"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">    &lt;/a&gt;</span></span>
-<span id="cb5-124"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;/p&gt;`</span></span>
-<span id="cb5-125">  <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> button</span>
-<span id="cb5-126">}</span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-5" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</section>
-</section>
-<section id="contact" class="level1">
-<h1>Contact</h1>
-<p>Pour toute information : <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></p>
-<p>📺️ La deuxième journée du réseau ayant eu lieu en 2024 est également <a href="../../event/2024-10-14-network-day/index.html">disponible en replay</a>.</p>
-
-
-</section>
-
- ]]></description>
-  <category>network</category>
-  <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-12-01-network-day/</guid>
-  <pubDate>Mon, 15 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données sous format Parquet ?</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-16-Parquet/</link>
   <description><![CDATA[ 
 
 
@@ -793,7 +919,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -805,13 +931,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>Parquet</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-16-Parquet/</guid>
   <pubDate>Wed, 16 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données par API ?</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-09-API/</link>
   <description><![CDATA[ 
 
 
@@ -871,7 +997,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -883,13 +1009,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>API</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-09-API/</guid>
   <pubDate>Wed, 09 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>Deuxième journée du SSPHub</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-10-14-network-day/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-10-14-network-day/</link>
   <description><![CDATA[ 
 
 
@@ -1144,13 +1270,13 @@ Rappel du programme de la journée
  ]]></description>
   <category>dataviz</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-10-14-network-day/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-10-14-network-day/</guid>
   <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
   <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Quarto : Une évolution de R Markdown pour des travaux statistiques reproductibles</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-05-02-quarto/</link>
   <description><![CDATA[ 
 
 
@@ -1233,20 +1359,20 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>quarto</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-05-02-quarto/</guid>
   <pubDate>Thu, 02 May 2024 15:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
 </item>
 <item>
   <title>Sora, la nouvelle IA d’OpenIA pour générer des vidéos ; Le Chat, le nouveau modèle de Mistral ; Observable, pour s’abstraire des notebooks</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/infolettre18.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/infolettre18.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1320,7 +1446,7 @@ Classement des principaux modèles de langage lors de la sortie de <code>Mistral
 </details>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/MMLU_examples.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/MMLU_examples.png" class="img-fluid figure-img"></p>
 <figcaption>Exemple de questions de niveau licence posées pour évaluer la qualité d’un modèle selon la métrique MMLU proposée par <span class="citation" data-cites="hendrycks2021measuring">Hendrycks et al. (2021)</span> (<a href="https://arxiv.org/abs/2009.03300">accéder à l’article de recherche</a>)</figcaption>
 </figure>
 </div>
@@ -1361,7 +1487,7 @@ Les trois modèles <code>Claude-3</code> disponibles
 <summary>
 Comparaison des performances des LLM
 </summary>
-<img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/eval_llm_generales.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/eval_llm_math.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic">
+<img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/eval_llm_generales.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/eval_llm_math.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic">
 </details>
 <p>Les modèles <code>Claude</code> sont développés par l’entreprise Anthropic, créée par des anciens employés d’OpenAI considérant que la problématique de la <a href="https://fr.wikipedia.org/wiki/S%C3%BBret%C3%A9_des_intelligences_artificielles">sécurité des IA</a> n’était pas assez mise en avant par OpenAI. Valorisée autour de 18 milliards d’euros en ce début d’année 2024, elle a bénéficié de financements importants d’Amazon et de Google, ces deux entreprises ayant investi respectivement 4 et 2 milliards de dollars. Les modèles <code>Claude</code> sont disponibles pour les utilisateurs des <em>cloud</em> d’Amazon (AWS) ou de <em>Google</em> (GCP) à l’instar des modèles GPT disponibles aux utilisateurs du <em>cloud</em> de Microsoft (Azure). La concurrence entre OpenAI et Anthropic est ainsi l’occasion d’un affrontement entre les trois principaux acteurs du <em>cloud</em>. Au-delà de la concurrence entre leurs investisseurs, les modèles économiques d’Anthropic et d’OpenAI diffèrent. Anthropic vise plutôt à proposer des services à des entreprises accessibles par le biais d’API là où OpenAI propose plutôt des outils grands publics avec des fonctionnalités supplémentaires pour les acteurs spécialisés. Parmi les partenaires principaux d’Anthropic, on retrouve Gitlab, Quora ou Salesforce (l’éditeur de logiciel derrière Slack). A l’instar des modèles Mistral Large ou GPT-4, le modèle Claude 3 n’est pas <em>open source</em>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -1428,7 +1554,7 @@ Comparaison des performances des LLM
 </section>
 <section id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message" class="level2">
 <h2 class="anchored" data-anchor-id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message">Replay de la présentation d’Eric Mauvière “La dataviz pour donner du sens aux données et communiquer un message”</h2>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
 <p>La présentation d’Eric Mauvière sur les bonnes pratiques de <em>dataviz</em> a rencontré un réel succès avec près de 150 participants. Le <em>replay</em> et les <em>slides</em> de cette présentation essentielle sont disponibles ci-dessous :</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="381" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 380;"><span id="cb1-381"><span class="fu" style="color: #4758AB;
@@ -1505,13 +1631,13 @@ Hendrycks, Dan, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song
 </div>
 </div></section></div> ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/</guid>
   <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/hitchcock_robot-1.webp" medium="image" type="image/webp"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/hitchcock_robot-1.webp" medium="image" type="image/webp"/>
 </item>
 <item>
   <title>Eric Mauvière, “La dataviz pour donner du sens aux données et communiquer un message”</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-02-29-mauviere/</link>
   <description><![CDATA[ 
 
 
@@ -1585,7 +1711,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </div>
 </div>
 <p>Un exemple issu de la présentation d’Eric :</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
 
 
 </section>
@@ -1593,13 +1719,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>dataviz</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-02-29-mauviere/</guid>
   <pubDate>Thu, 29 Feb 2024 15:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>Le RAG pour limiter l’hallucination par l’IA ; l’avancée des bases de données vectorielles ; le format Parquet pour simplifier leur usage ; DuckDB débarque en version web</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/</link>
   <description><![CDATA[ 
 <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
 <script type="module" id="qwebr-monaco-editor-init">
@@ -1781,7 +1907,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/robotroma.jfif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/robotroma.jfif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1861,7 +1987,7 @@ Astuce
 <p>Par exemple, dans l’image ci-dessous, une base de données vectorielle pourra évaluer la similarité entre les termes en utilisant des techniques d’algèbre linéaire de manière plus efficace que ne le permettrait <code>Python</code>. Ce dernier est en effet un langage informatique généraliste, moins performant que des logiciels spécialisés pour faire de la recherche de similarité dans des corpus massifs. Dans une chaîne de production exploitant ce type de technique, <code>Python</code> servira de point d’entrée et déléguera ensuite les calculs complexes à la base de données vectorielle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/embeddings.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/embeddings.png" class="img-fluid figure-img"></p>
 <figcaption>Un exemple d’<em>embedding</em> et de rapprochement de textes. Chaque bande représente une dimension latente de notre langage. Il est possible de rapprocher les termes à partir de celles-ci. Source: <a href="https://ig.ft.com/generative-ai/"><em>Financial Times</em></a>.</figcaption>
 </figure>
 </div>
@@ -1961,7 +2087,7 @@ Astuce
 <p>Techniquement, <code>DuckDB</code> fonctionne de manière optimale avec des fichiers au format <code>Parquet</code>. Ce format de données, orienté colonne, permet en effet d’optimiser des traitements classiques des <em>data scientists</em> : sélectionner seulement certaines colonnes d’un jeu de données, regrouper des données pour faire des calculs d’agrégats, etc.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/parquet.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/parquet.png" class="img-fluid figure-img"></p>
 <figcaption>Une illustration du principe du stockage orienté colonne (Source: <a href="https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705">Michael Berk</a>)</figcaption>
 </figure>
 </div>
@@ -2058,13 +2184,13 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/</guid>
   <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/robotroma.jfif" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/robotroma.jfif" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/</link>
   <description><![CDATA[ 
 
 
@@ -2097,6 +2223,10 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 <td><strong>Produits et documentation du projet</strong></td>
 <td>- <a href="https://www.insee.fr/fr/statistiques/8172202">Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</a>, Documents de travail de l’Insee n°2024-06, avril 2024</td>
 </tr>
+<tr class="odd">
+<td><strong>Code du projet</strong></td>
+<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href=""></a></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -2104,11 +2234,11 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
@@ -2137,11 +2267,11 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="419">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/assets/media/logo_ssm_insee.webp" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/assets/media/logo_ssm_insee.webp" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2161,8 +2291,6 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 
 <div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZQ=='); return false;">expérimentation arrêtée</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('ZmFzdHRleHQ='); return false;">fasttext</div>
-
 <div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
 
 </div>
@@ -2180,11 +2308,11 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1765989809152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1768832665149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
 <a href="../../project/2021_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2021_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2215,11 +2343,11 @@ En 2020, la chute de la consommation a alimenté l’épargne, faisant progresse
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
+<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="646">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2252,11 +2380,11 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="448">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2287,11 +2415,11 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2326,7 +2454,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2365,7 +2493,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765989809150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768832665146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2414,13 +2542,32 @@ Ségrégation urbaine : un éclairage par les données de téléphonie mobile
   <category>données de téléphonie mobile</category>
   <category>données CB</category>
   <category>Insee</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/</guid>
   <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/tabac.png" medium="image" type="image/png" height="143" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2024_cb_mno_tabac/tabac.png" medium="image" type="image/png" height="143" width="144"/>
+</item>
+<item>
+  <title>Les formations R du MTES</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/course/r-mtes/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+
+ ]]></description>
+  <category>R</category>
+  <category>MadeByUs</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/course/r-mtes/</guid>
+  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/course/r-mtes/featured.png" medium="image" type="image/png" height="31" width="144"/>
 </item>
 <item>
   <title>Rétrospective du réseau en 2023 (cocorico, beaucoup de nouveaux inscrits !) ; des nouvelles règles européennes pour l’IA ; le recensement de la population au format parquet ; un explorateur de fichier sur le SSPCloud</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/</link>
   <description><![CDATA[ 
 
 
@@ -2429,7 +2576,7 @@ Ségrégation urbaine : un éclairage par les données de téléphonie mobile
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/santa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/santa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -4077,7 +4224,7 @@ Tableau des performances (source: <a href="https://mistral.ai/news/mixtral-of-ex
 <p>Le <a href="https://datalab.sspcloud.fr"><code>SSPCloud</code></a>, la plateforme moderne de traitement de données développée par l’Insee et mise à disposition de près de 3000 agents de l’administration ou étudiants, vient de mettre en oeuvre <a href="https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&amp;page=1&amp;columnWidths=%7B%7D&amp;columnVisibility=%7B%7D">un explorateur</a> aux fonctionnalités similaires 🚀.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/viewer-sspcloud.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/viewer-sspcloud.png" class="img-fluid figure-img"></p>
 <figcaption>Un exemple d’utilisation de cet explorateur sur les données détaillées du recensement 👆️</figcaption>
 </figure>
 </div>
@@ -6116,13 +6263,13 @@ font-style: inherit;">;</span></span>
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/</guid>
   <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/santa.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/santa.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Guide d’utilisation des données du recensement de la population au format Parquet</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/parquetRP/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/blog/parquetRP/</link>
   <description><![CDATA[ 
 
 
@@ -10575,13 +10722,13 @@ Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nb
   <category>Python</category>
   <category>R</category>
   <category>Parquet</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/parquetRP/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/blog/parquetRP/</guid>
   <pubDate>Mon, 23 Oct 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/parquetRP/ducks.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/blog/parquetRP/ducks.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Coûts d’entrée trop élevés pour l’entraînement des modèles de langage qui s’orientent vers l’opensource ; LlaMaA et Falcon les nouveaux LLM</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/</link>
   <description><![CDATA[ 
 
 
@@ -10590,7 +10737,7 @@ Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nb
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -10759,7 +10906,7 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
 <h2 class="anchored" data-anchor-id="mc-datascientest">Masterclass <em>datascientest</em> sur le <em>fine-tuning</em></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
 </figure>
 </div>
 <p>Notre cycle de <em>masterclass</em> organisées en lien avec <em>datascientest</em> continue !</p>
@@ -10792,13 +10939,32 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/</guid>
   <pubDate>Sun, 10 Sep 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/learning.png" medium="image" type="image/png" height="142" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/learning.png" medium="image" type="image/png" height="141" width="144"/>
+</item>
+<item>
+  <title>Appariements de données individuelles : concepts, méthodes, conseils</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/course/ssplab-appariement/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+
+ ]]></description>
+  <category>Document de travail</category>
+  <category>Insee</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/course/ssplab-appariement/</guid>
+  <pubDate>Mon, 03 Jul 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 <item>
   <title>Propositions de lecture estivale</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/</link>
   <description><![CDATA[ 
 
 
@@ -10844,7 +11010,7 @@ Note
 <p><strong>Bonnes vacances ! Et n’oubliez pas de profiter pleinement des vacances pour oublier <code>ChatGPT</code> quelques temps !</strong> 🌞🌊⛰️</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 
@@ -10853,13 +11019,13 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/</guid>
   <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="140" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="139" width="144"/>
 </item>
 <item>
   <title>Visualisations des données liées aux tests du SARS-Cov2</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_drees_dataviz/</link>
   <description><![CDATA[ 
 
 
@@ -10888,6 +11054,10 @@ Note
 <td><strong>Résultats du projet</strong></td>
 <td>Le projet a publié des informations mises à jour automatiquement sur les tests liés au Covid-19 et les délais entre 2020 et mi-2023. Les données sont toujours disponibles sur le site <a href="https://drees.shinyapps.io/delais_test_app/">https://drees.shinyapps.io/delais_test_app/</a> mais ne sont plus mises à jour depuis juin 2023.</td>
 </tr>
+<tr class="even">
+<td><strong>Code du projet</strong></td>
+<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href=""></a></td>
+</tr>
 </tbody>
 </table>
 
@@ -10900,324 +11070,9 @@ Note
   <category>expérimentation arrêtée</category>
   <category>DREES</category>
   <category>open-data</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_drees_dataviz/</guid>
   <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/dataviz.png" medium="image" type="image/png" height="39" width="144"/>
-</item>
-<item>
-  <title>Onyxia: l’infrastructure cloud mère des dragons</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><code>Onyxia</code> est un logiciel <em>open source</em> développé par l’Insee (<a href="https://github.com/InseeFrLab/onyxia-web">disponible sur <code>Github</code> <i class="fa-brands fa-github"></i></a>) permettant de fournir un environnement de traitement de données à l’état de l’art. Principalement conçu pour permettre le travail interactif des data scientists, l’expérience fournie avec <code>Onyxia</code> favorise également la reproductibilité des travaux et leur mise en production.</p>
-<p>Le logiciel <code>Onyxia</code> est installé par des organisations souhaitant créer un <em>datalab</em>, c’est-à-dire une plateforme interactive de traitement de données. Ces organisations ont toutes le point commun de vouloir construire une plateforme qui embrasse les technologies <em>cloud</em> que sont la conteneurisation et le stockage objet tout en mettant à disposition celles-ci dans un environnement <em>user-friendly</em> où l’interconnexion entre ces différentes briques est gérée de manière cohérente. Les technologies <em>cloud native</em> sont devenues indispensables dans l’écosystème de la donnée, du fait d’une meilleure gestion des ressources de traitement ou de la capacité à créer un environnement parfaitement reproductible pour une mise en production accélérée.</p>
-<p>Ce <em>post</em> de blog a pour objectif de présenter la raison d’être d’<code>Onyxia</code>, sa génèse et les solutions qu’apporte cette infrastructure à des irritants classiques des projets novateurs de data science.</p>
-<section id="contexte" class="level2">
-<h2 class="anchored" data-anchor-id="contexte">Contexte</h2>
-<p>L’écosystème de la data science est en mouvement accéléré depuis 10 ans et le rôle du <em>data scientist</em> dans les organisations valorisant de la donnée évolue continuellement <span class="citation" data-cites="davenport2022data">(Davenport et Patil 2022)</span>. Les data scientists modernes sont amenés à utiliser de plus en plus de langages et doivent être capables de maîtriser plusieurs architectures informatiques. La frontière est ainsi moins nette que par le passé entre statisticiens et informaticiens. De plus, les innovations récentes dans le monde du développement logiciel, notamment l’adoption massive de l’approche <code>DevOps</code> - approche qui consiste à automatiser la production de livrables dès la conception du prototype - a également fait évoluer les pratiques des data scientists.</p>
-<p>Ce besoin de ressources informatiques croissantes, de flexibilité dans le prototypage de solutions informatiques et l’évolution des pratiques consistant à mettre à disposition en continu des livrables ont eu des implications importantes sur les architectures informatiques dominantes dans l’écosystème de la donnée. Pour répondre au besoin croissant de puissance de traitement, les serveurs partagés, organisés sous forme de <em>clusters</em>, se sont développés dans de nombreuses organisations. Après avoir connue son heure de gloire au début des années 2010, l’infrastructure <a href="https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs"><code>HDFS</code> (<em>Hadoop Distributed File System</em>)</a>, qui reposait sur des <em>clusters</em> où les données et la puissance de traitement étaient distribuées et collocalisées, a laissé place à des infrastructures plus <em>scalables</em>, basées sur l’approche de la conteneurisation.</p>
-</section>
-<section id="de-hdfs-à-la-conteneurisation" class="level2">
-<h2 class="anchored" data-anchor-id="de-hdfs-à-la-conteneurisation">De HDFS à la conteneurisation</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Cette partie plus technique développe des éléments pour comprendre le succès récent des infrastructures conteneurisées.</p>
-<p>Elle pourra intéresser le lecteur curieux sur les fondements des infrastructures <em>cloud</em> modernes mais n’est pas nécessaire à la compréhension générale de l’article.</p>
-</div>
-</div>
-<p>La conteneurisation, qui repose sur l’idée que les serveurs de stockage de la donnée peuvent être dissociés de ceux effectuant les traitements, sert de fondement aux principales plateformes <em>cloud</em> actuelles fournissant des services à la demande.</p>
-<p>Ce nouveau paradigme part de deux constats. Le premier est que les échanges de données entre les noeuds d’un serveur sont aujourd’hui peu coûteux. Avec des flux réseaux suffisants et une technologie performante, il est donc possible d’échanger à un coût modéré de gros volumes de données au sein d’une infrastructure. Le deuxième constat est que la maintenance d’une infrastructure conteneurisée, faite pour être très malléable, est plus légère que celle d’une infrastructure basée sur des machines virtuelles ou sur les infrastructrures calibrées pour l’analytique <em>big data</em> comme <code>HDFS</code> reposant sur la collocalisation des données et des traitements<sup>1</sup>.</p>
-<p>Les données étant stockées sur des serveurs différents de ceux exécutant les traitements, l’accès à celles-ci se fait à travers des API qui permettent de traiter le système de stockage distant comme un système de fichiers classique. <code>Onyxia</code> a adopté une implémentation <em>open source</em> du système de stockage <a href="https://fr.wikipedia.org/wiki/Amazon_S3"><code>S3</code></a> appelée <a href="https://min.io/"><code>MinIO</code></a>.</p>
-<p>En ce qui concerne le traitement des données, le fait d’utiliser un système de conteneurs, c’est-à-dire une configuration logicielle portable minimaliste prête à l’emploi (par opposition aux machines virtuelles qui impliquent un système d’exploitation complet), offre une grande liberté sur le choix des logiciels de traitement. De nombreuses technologies <em>open source</em> devenues standards dans le monde de la <em>data science</em> (<code>Jupyter</code>, <code>RStudio</code>, <code>ElasticSearch</code>…) existent déjà sous cette forme et peuvent ainsi être adoptées dans une telle infrastructure pour fournir des services prêts-à-l’emploi pour les data scientists. La mise en musique de toutes ces petites boites auto-suffisantes, notamment l’optimisation des ressources concurrentes sur un serveur, est permise par la technologie d’orchestration <a href="https://kubernetes.io/fr/"><code>Kubernetes</code></a>.</p>
-<p><br></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<figcaption><em>Centralisation des ressources par <code>Onyxia</code></em></figcaption>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/onyxia_logic.svg" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p><br></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Plus de détails pour comprendre le changement de paradigme vers la conteuneurisation 👇
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Les infrastructures <em>big data</em> reposent sur le principe du <em>cluster</em> (grappe) informatique. Des serveurs sont connectés entre eux, ce qui forme de manière imagée une grappe. Cette interconnexion de plusieurs serveurs entre eux peut se faire au niveau :</p>
-<ul>
-<li>du <strong>stockage</strong> : les données volumineuses ne sont pas stockées sur un seul serveur mais au contraire réparties ;</li>
-<li>du <strong>traitement</strong> : les calculs sont effectués par blocs sur plusieurs serveurs et le résultat de ceux-ci est ensuite transmis à un serveur maître.</li>
-</ul>
-<p>Le système <em>Hadoop Distributed File System</em> a été pensé pour tirer parti de l’algorithme de traitement parallélisé <a href="https://fr.wikipedia.org/wiki/MapReduce"><code>MapReduce</code></a> proposé en 2004 par <code>Google</code>. Les fichiers volumineux sont fractionnés et répartis sur plusieurs serveurs.</p>
-<p><img src="https://i0.wp.com/datascientest.com/wp-content/uploads/2021/04/illu_schema_mapreduce-04.png?w=1024&amp;ssl=1" class="img-fluid"></p>
-<p><em>Fonctionnement d’une architecture <code>MapReduce</code> (source: <a href="https://datascientest.com/mapreduce">Datascientest</a>)</em></p>
-<p>La spécificité de l’architecture <code>HDFS</code> est que non seulement le stockage est distribué mais également aussi la puissance de traitement associée. On parle à ce propos de <strong>collocalisation</strong> : les traitements ont lieu sur les mêmes serveurs que ceux où sont stockés les données. Cela permet de réduire les mouvements de données (<em>shuffle</em> dans l’image ci-dessus) qui sont coûteux du point de vue de la performance. Cette collocalisation a permis au système <code>HDFS</code> de devenir, au début de la décennie 2010, le paradigme dominant. En tirant parti de la parallélisation permise par des langages très efficaces comme <code>Spark</code> tout en limitant les échanges réseaux pouvant faire perdre en performance, cette architecture a attiré au-delà de l’écosystème du <em>big data</em>.</p>
-<p>Le système HDFS présente néanmoins certaines limites qui expliquent sa perte de succès avec l’émergence d’un nouveau paradigme plus flexible.</p>
-<p>En premier lieu, ce système nécessite beaucoup de ressources du fait de son <em>design</em>. Comme les traitements sont lourds et partagés pour des usages concurrents, les noeuds constituant le <em>cluster</em> peuvent subir des arrêts à cause de surcharge des ressources. Pour tenir compte de la nature instable de cette infrastructure <em>big data</em>, les fichiers sont dupliqués. Ainsi, lors d’une erreur sur le serveur générant un arrêt du nœud (par exemple à cause de traitements trop gourmands), les traitements sur l’ensemble des données sont sécurisés évitant également la perte partielle ou totale de ces dernières.</p>
-<p>L’implication est que les données, déjà volumineuses, sont dupliquées plusieurs fois impliquant des architectures assez monumentales. Si la duplication de la donnée n’est pas en soi choquante afin d’éviter la perte de données, cela a un effet pervers dans un système de collocalisation. A chaque ajout de noeuds pour le stockage de données, il est également nécessaire d’ajouter des ressources pour les traiter. Il est donc compliqué de décorréler l’ajout de ressources de stockage et de traitement. Cette absence de flexibilité est pénalisante dans un monde où les données sont mises à jour fréquemment et où les technologies de traitement, donc les besoins associés, évoluent rapidement. Les infrastructures <code>HDFS</code> sont donc lourdes à changer, que ce soit pour ajouter des ressources ou faire évoluer les distributions logicielles présentes dessus.</p>
-<p>Le deuxième facteur qui a favorisé le changement de paradigme est l’amélioration des échanges réseaux. Il n’est plus aussi coûteux que par le passé de transférer des volumes importants de données au sein d’une infrastructure. Cela facilite la décorrélation entre environnement de stockage et de traitement.</p>
-<p>Cette séparation des environnements de stockage et de traitement permet alors d’adopter pour chacun les technologies les plus performantes. Dans le domaine du stockage, celle qui a rencontré le plus de succès est le système de stockage <a href="https://aws.amazon.com/fr/s3/"><code>S3</code></a> développé par Amazon. L’implémentation <em>open source</em> du système S3 est <a href="https://min.io/"><code>MinIO</code></a>, utilisée par <code>Onyxia</code>.</p>
-<p>Dans le domaine du traitement, la technologie la plus performante dépend de la nature de la tâche réalisée. Selon qu’on désire effectuer de la recherche textuelle, des visualisations de données ou de l’analyse d’image, on ne va pas vouloir utiliser la même technologie. Pour mettre à disposition des logiciels sur un serveur, il existe principalement deux approches concurrentes.</p>
-<p>La première repose sur le principe des machines virtuelles. Cette approche n’est pas nouvelle et de nombreuses organisations ont proposé ou proposent encore ce type d’infrastructures pour des serveurs collectifs de traitement. Cette approche est néanmoins lourde : elle nécessite un système d’exploitation complet dont il faudra ensuite adapter la configuration lors de l’installation de chaque logiciel. Plusieurs logiciels coexistent donc dans ce système d’exploitation même si un seul, par exemple, <code>Python</code>, est utilisé. Les machines virtuelles sont des infrastructures assez polluantes puisque pour faire fonctionner un système d’exploitation dans son ensemble, il est nécessaire de mobiliser des ressources plus importantes que celles seulement nécessaires aux traitements. De plus, la configuration d’un système d’exploitation, et notamment, la gestion de la dépendance de multiples logiciels à des configurations systèmes qui peuvent ne pas correspondre, n’est pas triviale. Il est donc lourd de faire évoluer une infrastructure reposant sur des machines virtuelles. L’absence de flexibilité d’une infrastructure reposant sur le principe des machines virtuelles est pénalisante dans un écosystème mouvant comme celui de la <em>data science</em>, où une partie importante du travail de prototypage consiste à tester plusieurs technologies pour déterminer celle s’intégrant le mieux dans un processus de traitement de données.</p>
-<p>Le système de la conteneurisation a justement été pensé pour cela : plutôt qu’installer de nombreuses librairies au niveau du système, pour une fraction d’utilisateurs limitée à chacune, il est plus intéressant de créer des environnements complets qui vont exister de manière conjointe. Chaque <em>framework</em> va être construit comme un conteneur autosuffisant avec un système d’exploitation minime et un nombre minimal de couches de configurations supplémentaires. Un <em>framework</em> est livré sous la forme d’une image <a href="https://fr.wikipedia.org/wiki/Docker_(logiciel)"><code>Docker</code></a>, une technologie qui permet d’empaqueter un logiciel et ses dépendances sous la forme de boites minimalistes et les mettre à disposition facilement pour une réutilisation. Il existe par exemple des images <code>Docker</code> pour pouvoir utiliser <code>RStudio</code>, <code>Jupyter</code>, <code>VSCode</code> avec des configurations minimales afin d’exécuter du <code>Python</code> ou du <code>R</code>. A partir de celles-ci, l’utilisateur qui désire des configurations supplémentaires peut ajouter les couches qui lui sont utiles.</p>
-<p>Mais les images <code>Docker</code> ne se réduisent pas à la mise à disposition d’environnements de développement. Une partie des technologies les plus appréciées de l’écosystème de la data science sont également livrées sous forme d’images <code>Docker</code>. Par exemple, le moteur de recherche <code>ElasticSearch</code>, très utilisé pour la recherche textuelle, peut être empaqueté dans une image <code>Docker</code>. Le logiciel <code>Onyxia</code> propose dès lors, dans un catalogue vivant, un certain nombre de logiciels très utiles pour les <em>data scientists</em> ayant fait l’objet d’un tel empaquetage. Les nombreuses images <code>Docker</code> servant à créer des services pour les <em>data scientists</em> sont disponibles en <em>open source</em> sur <a href="https://github.com/InseeFrLab/images-datascience"><code>Github</code></a>.</p>
-<p>Pour organiser sur un serveur la coexistence de multiples utilisateurs de services gourmands en ressource, la solution <a href="https://kubernetes.io/fr/"><code>Kubernetes</code></a> fait aujourd’hui office de référence. Entre sa création en 2014 et aujourd’hui, cette solution d’orchestration, c’est-à-dire de gestion d’une infrastructure, est devenue incontournable. Outre son allocation dynamique des ressources, elle permet de transformer facilement le livrable d’une chaine de traitement en application disponible en continu. Ceci est particulièrement adapté dans un contexte de diversification des livrables fournis par les <em>data scientists</em> (API, application web, modèle…) et d’adoption d’une démarche <code>DevOps</code> voire <code>MLOps</code>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="la-solution-onyxia" class="level2">
-<h2 class="anchored" data-anchor-id="la-solution-onyxia">La solution Onyxia</h2>
-<section id="dun-cloud-de-ladministration-à-un-logiciel-ouvert" class="level3">
-<h3 class="anchored" data-anchor-id="dun-cloud-de-ladministration-à-un-logiciel-ouvert">D’un <em>cloud</em> de l’administration à un logiciel ouvert</h3>
-<p>Pour permettre aux <em>data scientists</em> des administrations françaises de bénéficier de technologies <em>cloud</em> sans être dépendant d’un fournisseur de service privé, l’équipe innovation de l’Insee a eu l’idée de créer un <em>datalab</em> basé sur la philosophie de la conteneurisation en mobilisant exclusivement des composants open-source.</p>
-<p>Ce <em>datalab</em>, né à l’Insee en 2018, a été ouvert à l’administration publique sous la forme d’une instance https://www.sspcloud.fr/ à condition d’utiliser des données ouvertes. En plus des agents déjà en poste dans l’administration, cette infrastructure sert depuis deux ans à former les élèves de l’ENSAE et de l’ENSAI dans le cadre de leur formation en <em>data science</em>.</p>
-<p>Début 2023, ce sont plus de 3000 agents et étudiants qui sont inscrits sur cette infrastructure avec, en moyenne, 300 utilisateurs hebdomadaires. L’infrastructure de traitement propose 10 TB de RAM, 1100 CPU disponibles et 34 GPU. La capacité de stockage associée est de 150 TB.</p>
-<p>Pour les utilisations internes de données plus sensibles, l’équipe innovation de l’Insee a rendu disponible le code source derrière le <code>SSP Cloud</code> dans le cadre d’un logiciel nommé <code>Onyxia</code> (https://www.onyxia.sh/). Ce logiciel est pensé comme un kit qui peut être installé sur un <em>cluster</em> <code>Kubernetes</code>, technologie détaillée précédemment.</p>
-</section>
-</section>
-<section id="onyxia-en-bref" class="level2">
-<h2 class="anchored" data-anchor-id="onyxia-en-bref">Onyxia en bref</h2>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/onyxia_ecailles.svg" class="img-fluid"></p>
-<p><code>Onyxia</code> propose principalement deux composants de valeur :</p>
-<ul>
-<li>une <strong>interface web</strong> qui agit comme la porte d’entrée du <em>data scientist</em> sur son datalab, lui facilitant l’accès aux technologies cloud et lui permettant de démarrer ses environnements de traitement de la donnée. L’interface ergonomique permet aux utilisateurs de données néophytes de démarrer des services standardisés sans se préoccuper de la configuration mais aussi aux <em>data scientists</em> plus aguerris de bénéficier de vastes possibilités de personnalisation du service.</li>
-<li>des <strong>catalogues de logiciels</strong> : une petite vingtaine de services interactifs dont les plus utilisés sont <code>RStudio</code>, <code>Jupyter</code>, <code>VScode</code>, une quinzaine de services spécialisés dans les bases de données (<code>Postgres</code>, <code>ElasticSearch</code>…), 5 services d’automatisation (<code>MLflow</code>…) et 2 services de <em>dataviz</em> (<code>Redash</code> et <code>Superset</code>)</li>
-</ul>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/catalogue.svg" alt="Le catalogue Onyxia"></p>
-<p><em>Le catalogue des services disponibles dans <code>Onyxia</code>.</em></p>
-<p><br></p>
-<p>Ces deux composants peuvent être adaptés en fonction des besoins internes de chaque organisation. Tous les services interactifs sont automatiquement connectés à l’espace de stockage <code>S3</code>, et au coffre de secret <code>Vault</code>. La gestion des droits d’accès aux données stockées dans l’espace de stockage <code>S3</code> ou dans des services de bases de données (<code>ElasticSearch</code>, <code>PostGreSQL</code>…) est automatisée afin que chaque service puisse accéder aux données sur lesquelles l’utilisateur détient des droits.</p>
-<p><code>Onyxia</code> étant un ensemble malléable de logiciels conteneurisés, il est possible de ne pas adopter l’ensemble des services proposés par l’équipe de l’Insee qui maintient <code>Onyxia</code>. Il est également possible de changer certaines des briques de base pour l’adapter à des éléments d’infrastructure interne. Par exemple, il est possible d’adapter la destination du service de stockage ou les configurations des environnements data science pour l’adapter à des ressources.</p>
-</section>
-<section id="linterface-et-les-services-proposés-par-onyxia" class="level2">
-<h2 class="anchored" data-anchor-id="linterface-et-les-services-proposés-par-onyxia">L’interface et les services proposés par <code>Onyxia</code></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<figcaption><em>Onyxia offre des marges de manoeuvre sur l’interface</em></figcaption>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/multiple_instances.svg" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p>L’une des principales forces d’<code>Onyxia</code> est d’offrir une multiplicité de services différents avec une interconnexion entre eux gérée de manière cohérente.</p>
-<p>Les conteneurs sont démarrés comme des services à la demande et la configuration automatique de ceux-ci permet d’assurer aux <em>data scientists</em> l’accès aux données disponibles dans des espaces de stockage ou des bases de données créées par l’utilisateur.</p>
-<p>Le catalogue de services se présente par le biais d’un formulaire ergonomique où l’utilisateur choisit la brique qu’il désire utiliser:</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/onyxia_ui1.png" class="img-fluid"></p>
-<p>Les <em>data scientists</em> et statisticiens n’ont donc pas besoin de connaître les détails du fonctionnement des briques techniques d’<code>Onyxia</code> pour utiliser la plateforme. Les éléments techniques comme la connexion au système de stockage sont, par défaut, déjà configurés :</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/onyxia_ui2.png" class="img-fluid"></p>
-<p>L’interface ergonomique permet de paramétrer certaines configurations si besoin, notamment les ressources à disposition du conteneur. Néanmoins l’allocation dynamique des ressources offre déjà de la flexibilité :</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/onyxia_ui3.png" class="img-fluid"></p>
-<p>L’utilisateur a accès à l’ensemble des services qu’il a ouvert depuis une page dédiée :</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/onyxia_ui4.png" class="img-fluid"></p>
-<p>Les services interactifs comme <code>Jupyter</code>, <code>VSCode</code> ou <code>RStudio</code> permettent alors à l’utilisateur d’accéder à une interface pour exécuter des traitements <code>Python</code> ou <code>R</code>.</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/onyxia_ui5.png" class="img-fluid"></p>
-<p>L’accès aux données peut se faire depuis la ligne de commande (via un utilitaire <a href="https://min.io/docs/minio/linux/reference/minio-mc.html">Minio Client</a>) ou par un package <code>Python</code> ou <code>R</code> dédié qui permet de traiter le système de stockage distant comme un système local. Les traitements sont exécutés sur les serveurs de la plateforme qui héberge les notebooks, indépendamment de la machine par laquelle l’utilisateur accède au service. Par exemple, dans le cas du <code>SSPCloud</code>, les traitements sont exécutés depuis des serveurs hébergés à l’Insee.</p>
-</section>
-<section id="la-communauté-onyxia" class="level2">
-<h2 class="anchored" data-anchor-id="la-communauté-onyxia">La communauté <code>Onyxia</code></h2>
-<p>Tous les composants sont proposés en <em>open source</em> par l’Insee ce qui permet de fédérer une communauté d’utilisateurs et de développeurs de ce produit. Il s’agit d’un bel exemple de mutualisation au sein de l’État et au delà. Les dépôts peuvent être retrouvés sur le <code>Github</code> de l’équipe innovation (celui de <a href="https://github.com/InseeFrLab/onyxia-web">l’interface web</a>, celui des <a href="https://github.com/InseeFrLab/images-datascience">images pour la data-science</a>…). La communauté peut proposer de nouveaux services dans le catalogue.</p>
-<p>Cette approche <em>bottom up</em> a déjà permis d’adapter des services aux besoins des utilisateurs ou d’améliorer la solution grâce à des retours des ré-utilisateurs d’<code>Onyxia</code>.</p>
-<!-----
-<iframe width="100%" height="500px" marginheight="0" marginwidth="0" src="./template/index.html">
-Fallback text here for unsupporting browsers, of which there are scant few.
-</iframe>
------>
-</section>
-<section id="les-plateformes-basées-sur-onyxia" class="level2">
-<h2 class="anchored" data-anchor-id="les-plateformes-basées-sur-onyxia">Les plateformes basées sur Onyxia</h2>
-<p>La plateforme d’origine, le <code>SSPCloud</code>, est ouverte à tous les agents de l’État et à plusieurs écoles. Celle-ci est exclusivement limitée à l’exploitation de données <em>open data</em>. Cette stratégie d’offreur de services de traitement sur l’open data permet de montrer l’expertise de l’Insee sur les sujets <em>data science</em>.</p>
-<p>Les principaux usages de cette plateforme sont les suivants :</p>
-<ul>
-<li>la formation ;</li>
-<li>l’organisation de hackathons ;</li>
-<li>la mise à disposition de services innovants et visualisations utilisant de l’open data ;</li>
-</ul>
-<p>Grâce à la mise à disposition de la solution <code>Onyxia</code> sur <code>Github</code>, il est néanmoins possible d’adapter cette plateforme pour des <em>datalab</em> internes, sur données plus sensibles.</p>
-<p>L’Insee n’est donc désormais plus seul et fédère de nombreux acteurs autour de son projet. Fin 2021, <code>Eurostat</code> a été la première organisation en dehors de l’Insee à choisir <code>Onyxia</code> pour construire son <a href="https://github.com/eurostat/datalab"><em>Cloud Agnostic Data Lab</em></a>. Expertise France pour le projet <code>DATAFID</code> a fait le choix d’Onyxia tout comme le CASD, le GENES ou encore le <em>BercyHub</em> avec le projet <code>Nubonyxia</code>.</p>
-<p>D’autres organisations sont plus dans une phase de POC ou d’étude : l’INS norvégien, Pole Emploi, Data4Good, le ministère de l’Intérieur, le ministère de la Justice, l’Inria…</p>
-<p>Dans le cadre du <a href="https://tosit.fr/">TOSIT</a>, association qui réunit de gros acteurs publics et privés autour de solutions <em>open source</em>, un certain nombre d’entreprises s’intéressent à <code>Onyxia</code>.</p>
-</section>
-<section id="vidéo-de-présentation-donyxia" class="level2">
-<h2 class="anchored" data-anchor-id="vidéo-de-présentation-donyxia">Vidéo de présentation d’<code>Onyxia</code></h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/zwKiO6LcIWE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="références" class="level2">
-<h2 class="anchored" data-anchor-id="références">Références</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
-<div id="ref-davenport2022data" class="csl-entry">
-Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still the Sexiest Job of the 21st Century?&nbsp;»</span> <em>Harvard business review</em>. <a href="https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century">https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century</a>.
-</div>
-</div>
-
-
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
-
-<ol>
-<li id="fn1"><p>On peut ajouter que cette question n’est pas exclusivement technologique. Même s’il est volontairement polémique, l’article de <a href="https://motherduck.com/blog/big-data-is-dead/">Jordan Tigani “Big Data is Dead”</a> illustre bien le changement de paradigme du monde de la <em>tech</em>.↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>Insee</category>
-  <category>sspcloud</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/</guid>
-  <pubDate>Wed, 10 May 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/featured.png" medium="image" type="image/png" height="161" width="144"/>
-</item>
-<item>
-  <title>Des innovations rapides sur l’IA qui lancent un débat sur sa place dans la société ; algorithme de recommandation de Twitter</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong><em>Vous désirez intégrer la liste de diffusion ? L’inscription se fait <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103">ici</a>.</em></strong></p>
-</div>
-</div>
-<section id="actualités-de-la-data-science" class="level1">
-<h1>Actualités de la data science</h1>
-<section id="un-foisonnement-davancées" class="level2">
-<h2 class="anchored" data-anchor-id="un-foisonnement-davancées">Un foisonnement d’avancées…</h2>
-<p>L’actualité des modèles d’intelligence artificielle est très chargée (<a href="https://twitter.com/dustinvtran/status/1639159641635717120?t=tUqtzOHFvolL7MJef-M2Cw&amp;s=19">résumé des annonces du mois de mars</a>) et cette lettre se concentrera sur les actualités majeures.</p>
-<p><code>Github Copilot</code>, l’assistant de code de <code>Microsoft</code>, devrait prochainement <a href="https://github.blog/2023-03-22-github-copilot-x-the-ai-powered-developer-experience/">utiliser <code>ChatGPT</code></a>. Après <code>ChatGPT</code>, le navigateur <code>Bing</code> s’enrichit également d’un <a href="https://www.bing.com/create">créateur d’image</a> basé sur <code>Dall-E</code>. Pendant ce temps, <code>Midjourney</code> (une des principales alternatives de création d’images) sort sa <a href="https://www.lesnumeriques.com/intelligence-artificielle/midjourney-v5-est-disponible-comment-l-utiliser-n208168.html">V5</a>, améliorant encore le réalisme du rendu.</p>
-<p>Face à la recrudescence des montages utilisant <code>Midjourney</code>, qu’il s’agisse de <em>deep fakes</em> ou d’images à vocation humoristique, <em>Le Monde</em> a publié un guide pour <a href="https://www.lemonde.fr/les-decodeurs/article/2023/03/30/comment-reconnaitre-une-image-generee-par-midjourney_6167525_4355770.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D">reconnaître une image générée par une IA</a>.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://preview.redd.it/pope-francis-goes-to-space-v0-7e9161rhoypa1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=75d424b86993ca3b081e4182e774b51b4b6d3bce" class="img-fluid figure-img"></p>
-<figcaption>Exemple d’image générée par IA (<em>source: <a href="https://www.reddit.com/r/midjourney/comments/1221l3j/pope_francis_goes_to_space/">Reddit</a></em>)</figcaption>
-</figure>
-</div>
-</section>
-<section id="qui-alimentent-les-débats-autour-de-la-place-de-lia-dans-la-société-et-notre-économie-numérique" class="level2">
-<h2 class="anchored" data-anchor-id="qui-alimentent-les-débats-autour-de-la-place-de-lia-dans-la-société-et-notre-économie-numérique">… qui alimentent les débats autour de la place de l’IA dans la société et notre économie numérique…</h2>
-<p>Alors que <code>ChatGPT</code> est déjà utilisé par plus de 100 millions d’utilisateurs, seulement quatre mois après sa sortie, il est légitime de se poser la question, comme le fait <a href="https://www.linkedin.com/posts/gaspard-koenig-36b49647_je-persiste-et-signe-in-les-echos-du-jour-activity-7049265627668078592-Nzm5?utm_source=share&amp;utm_medium=member_desktop">Gaspard Koenig dans <em>Les Echos</em></a>, du rapport à la vérité des IA génératrices et des implications sociétales de la généralisation de ces assistants.</p>
-<p>Les prospectivistes, après s’être consacrés au <em>bitcoin</em> et à la <em>blockchain</em>, comme <a href="http://www.leseditionsdeminuit.fr/livre-La_Cl%C3%A9_USB-3304-1-1-0-1.html">Jean Detrez - le héros de Jean Philippe Toussaint -</a>, commencent à proposer des évaluations des conséquences économiques de cette (r)évolution. Dernier chiffre en date : d’après <a href="https://www.forbes.com/sites/jackkelly/2023/03/31/goldman-sachs-predicts-300-million-jobs-will-be-lost-or-degraded-by-artificial-intelligence/">Goldman Sachs</a>, 300 millions d’emplois au niveau mondial pourraient être supprimés ou amenés à évoluer.</p>
-<p>Par ailleurs, la question de l’ouverture des corpus ayant servi à entraîner ces modèles ou de la licence à réutiliser des modèles pré-entraînés est importante à plusieurs égards. D’abord, dans une perspective scientifique, il apparaît compliqué d’évaluer la qualité d’un modèle ou lui proposer des alternatives sans accès à des données scientifiques de base comme le nombre de paramètres (inconnu pour GPT-4 par exemple). Mais c’est aussi une question économique : si ces outils deviennent de plus en plus incontournables, quel sera le <em>business model</em> de ce secteur ? Ces services resteront-ils gratuits avec en contrepartie une réutilisation des données fournies, potentiellement opaque et difficilement contrôlable par l’utilisateur, ou seront-ils monétisés ?</p>
-<p>La publication en <em>open source</em> de modèles de langage est donc un enjeu d’indépendance pour les organisations intéressées par l’utilisation de <em>chatbots</em> ou l’extraction d’information. Cette publication continue à suivre un rythme presque quotidien. Cet <a href="https://arxiv.org/pdf/2301.04655.pdf">état de l’art des modèles publiés en open source</a> publié en janvier est déjà largement dépassé. Et <a href="https://arxiv.org/pdf/2303.18223.pdf">celui-ci</a> ne sera probablement plus à jour tout aussi rapidement.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/featured.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-<p>Dans la dernière quinzaine, l’une des principales annonces est la publication par <a href="https://laion.ai/blog/"><code>LAION</code></a> d’<a href="https://laion.ai/blog/open-flamingo/"><code>OpenFlamingo</code></a>, une version <em>open source</em> de <a href="https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model">Flamingo</a>, modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.</p>
-<p>Afin de pouvoir intégrer à la fois des fonctionnalités de reconnaissance d’image et textuelle, celui-ci s’appuie sur des composantes <em>open source</em> pour les modèles de langage et de reconnaissance d’image et sur un jeu de données ouvertes. Des exemples de réutilisation en <code>Python</code> sont disponibles sur le <a href="https://github.com/mlfoundations/open_flamingo">dépôt <code>Github</code></a>.</p>
-<p>Dans le registre IA ouverte, une équipe de chercheurs de plusieurs universités américaines a mis en oeuvre un <code>chatbot</code> ouvert, à partir des modèles <code>LLaMA</code> (Meta, voir <a href="../../infolettre/infolettre_11/index.html">Newsletter #11</a>) ou <code>Alpaca</code> (Stanford) : <a href="https://vicuna.lmsys.org/"><code>Vicuna</code></a>. Ce chatbot généraliste permet à un internaute de discuter sur une grande variété de sujets. En plus de s’appuyer sur des modèles ouverts, ce qui peut faciliter sa ré-utilisation dans un cadre interne, ce <em>chat</em> présente un avantage technique puisqu’il s’appuie sur des modèles de langage plus économes en ressources que les modèles type GPT-4.</p>
-<p>Dans le même temps, <code>Databricks</code> s’est également appuyé sur <code>LLaMA</code> et <code>Alpaca</code> pour proposer un autre modèle de langage ouvert avec lequel il est possible d’échanger. Ce modèle s’appelle <a href="https://www.databricks.com/blog/2023/03/24/hello-dolly-democratizing-magic-chatgpt-open-models.html"><code>Dolly</code></a> et est pensé comme premier clone du modèle <a href="https://github.com/tatsu-lab/stanford_alpaca"><code>Alpaca</code></a>. <code>Dolly</code> peut être entrainé en 30 minutes sur un corpus massif et ne présente <em>“que”</em> 6 milliards de paramètres (qu’il hérite d’<code>Alpaca</code>) ce qui en fait, dans l’écosystème actuel des modèles de langage (LLM), un nain : à titre de comparaison <code>GPT-3</code> comporte 175 milliards de paramètres et le nombre de paramètres de <code>GPT-4</code> est inconnu mais pourrait être de l’ordre de la centaine de trillions.</p>
-<p>Mozilla rejoint également le bal en investissant 30 millions de dollars pour lancer la <em>startup</em> <a href="https://blog.mozilla.org/en/mozilla/introducing-mozilla-ai-investing-in-trustworthy-ai/">Mozilla.ai</a>. Pour Mozilla, cette startup sert à adapter la philosophie à l’origine du navigateur Firefox au développement d’intelligences artificielles : proposer des outils ouverts indépendants des principaux acteurs marchands du numérique, sur le modèle des communs plutôt que du bien privé.</p>
-<p>La question de la sécurité et de la confidentialité des informations fournies à <code>OpenAI</code> a également été au centre de l’attention au cours de la dernière quinzaine. <code>OpenAI</code> a révélé une faille de sécurité à l’origine d’une <a href="https://twitter.com/OpenAI/status/1639297361729191936?t=j1gdTehqAT8OraZRC34iqg&amp;s=19">fuite de données</a>. Cette question de la confidentialité des informations fournies à <code>ChatGPT</code> a d’ailleurs amené la CNIL italienne à demander le blocage temporaire de l’outil d’OpenAI (<a href="https://www.lefigaro.fr/secteur/high-tech/rgpd-la-cnil-italienne-bloque-temporairement-l-acces-au-robot-conversationnel-chatgpt-20230331">voir ici</a>).</p>
-<p>Cette interdiction prend place dans un contexte de discussions intenses autour de la place à venir dans nos sociétés de ces robots conversationnels. Une <a href="https://futureoflife.org/open-letter/pause-giant-ai-experiments/">lettre ouverte</a> au <a href="https://www.lemonde.fr/economie/article/2023/03/29/elon-musk-et-des-centaines-d-experts-reclament-une-pause-dans-le-developpement-de-l-ia_6167461_3234.html#xtor=AL-32280270-%5Bdefault%5D-%5Bios%5D">fort écho médiatique</a> publiée par des figures de la <em>tech</em> (dont Elon Musk) et des universitaires réclame un moratoire dans le développement de nouveaux modèles d’intelligence artificielle, dont les signataires soulignent à quel point il est difficile de les <em>“comprendre, prédire ou contrôler de manière fiable”</em>.</p>
-<p>Cette lettre a été rapidement critiquée. En premier lieu par <a href="https://twitter.com/AndrewYNg/status/1641121451611947009?t=VyRYGWCjBeOxFOr0-bIJcQ&amp;s=19">Andrew Ng</a> qui souligne qu’en plus de l’impossibilité pratique de mettre en oeuvre un tel moratoire dans le cadre d’une recherche privée, ce type de sursis retarde la recherche sur des applications bénéfiques, notamment dans le domaine de la santé. Mais la critique est aussi venue de <a href="https://www.dair-institute.org/blog/letter-statement-March2023">Timnit Gebru (DAIR), Emily Bender (University of Washington), Angelina McMillan-Major (University of Washington) et Margaret Mitchell (Hugging Face)</a>, autrices citées dans la lettre en référence au concept de <em><a href="https://dl.acm.org/doi/abs/10.1145/3442188.3445922">“Stochastic Parrots”</a></em> (les modèles de langage répètent des séquences de formes linguistiques comme des ensemble de mots observés dans les corpus d’apprentissage, en fonction de critères probabilistes sur la façon dont ces informations se combinent, mais sans aucune référence au sens).</p>
-</section>
-<section id="mais-ne-nous-font-pas-oublier-certaines-autres-nouveautés-dignes-dintérêt" class="level2">
-<h2 class="anchored" data-anchor-id="mais-ne-nous-font-pas-oublier-certaines-autres-nouveautés-dignes-dintérêt">… mais ne nous font pas oublier certaines autres nouveautés dignes d’intérêt</h2>
-<p>L’intensité de l’actualité autour de <code>ChatGPT</code> occulte beaucoup de faits qui auraient, dans un autre contexte, amené à des discussions passionnées.</p>
-<p>Ainsi, la <a href="https://www.lesechos.fr/tech-medias/medias/elon-musk-ouvre-une-partie-de-twitter-en-open-source-les-annonceurs-mefiants-1921111">publication en open source de l’algorithme de recommandation de Twitter</a> permet de mieux comprendre la manière dont fonctionne l’<a href="https://www.theverge.com/2023/3/31/23664849/twitter-releases-algorithm-musk-open-source">algorithme de recommandation</a> de <code>Twitter</code>, notamment la manière dont des <a href="https://www.cnil.fr/fr/definition/bulle-de-filtre">bulles de filtre</a> peuvent advenir après avoir cliqué sur un <em>post</em> par curiosité.</p>
-<p>La publication de ce code prend place quelques jours après la découverte qu’une partie importante du code de <code>Twitter</code> était <a href="https://www.theverge.com/2023/3/27/23657928/twitter-source-code-leak-github">déjà sur <code>Github</code></a>, sans doute suite à une fuite après l’un des licenciements massifs des derniers mois.</p>
-<p>Peut-être n’avez-vous pas remarqué mais Twitter n’a plus le même logo depuis lundi. L’oiseau bleu a été remplacé par un chien (un Shiba Inu), logo d’une cryptomonnaie, le <em>dogecoin</em>, dont Elon Musk avait fait une <a href="https://gizmodo.com/elon-musk-crypto-dogecoin-tesla-1850293273">promotion controversée</a> et dont les cours ont <a href="https://techcrunch.com/2023/04/03/twitters-new-dog-icon-is-sending-dogecoin-sigh-to-the-moon/?guccounter=1&amp;guce_referrer=aHR0cHM6Ly90LmNvLw&amp;guce_referrer_sig=AQAAAJNxrMnEUPBmdQSt0itSK2mkXlYk2q2oU6Xlfk4DvUuTbtY0ycbsOICeiE4h9nfrCDw7vMehvG9RnBo3-AtvTmylVThzobsrraE27Rr-5pKjCdFf6fp97WB-dWGKoIxuYhipoFCua_PzoJG8x1PR5STbJqGbZqXhmos0IdWM26Rr">connu une envolée depuis</a>.</p>
-<p>Le logiciel de création d’applications <a href="https://fr.wikipedia.org/wiki/Docker_(logiciel)"><code>Docker</code></a> (principal logiciel de <a href="https://www.redhat.com/fr/topics/cloud-native-apps/what-is-containerization">conteneurisation</a>) noue un <a href="https://www.docker.com/blog/docker-and-hugging-face-partner-to-democratize-ai/">partenariat</a> avec <a href="https://huggingface.co/"><code>HuggingFace</code></a>, qui rassemble une immense bibliothèque de modèles, pour faciliter la réutilisation de modèles de <em>deep learning</em>. Avec cette approche, il est plus facile de proposer aux ré-utilisateurs de modèles des applications prêtes à l’emploi pour tester ou enrichir un modèle sur des infrastructures compatibles avec la technique de la conteneurisation, approche utilisée par les principales plateformes de <em>data science</em> modernes (notamment par celles s’appuyant sur le logiciel <a href="../../blog/onyxia/index.html"><code>Onyxia</code></a>).</p>
-<p>La plateforme <code>Observable</code> propose un <a href="https://observablehq.com/@observablehq/data-wrangling-translations">comparatif</a> des principales syntaxes de manipulation de données (<code>JavaScript</code>, <code>Python</code>, <code>R</code> et <code>SQL</code>).</p>
-<p>Enfin, si vous appréciez les cartes, un <em>hashtag</em> à suivre est le <a href="https://twitter.com/hashtag/MapPromptMonday">#MapPromptMonday</a>.</p>
-</section>
-</section>
-<section id="actualités-du-réseau-événements-à-venir" class="level1">
-<h1>Actualités du réseau: événements à venir</h1>
-<p>Place aux actualités de notre réseau avec les prochains événements que nous organisons.</p>
-<section id="première-journée-du-réseau-le-17-avril" class="level2">
-<h2 class="anchored" data-anchor-id="première-journée-du-réseau-le-17-avril">Première journée du réseau le 17 avril</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
-</figure>
-</div>
-<p>Nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅 (<a href="../../infolettre/infolettre_12/index.html"><em>Newsletter #12</em></a>). Les places en présentiel sont presque épuisées, ne tardez pas à vous inscrire ! Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom.</p>
-</section>
-<section id="les-masterclass-avec-datascientest-continuent" class="level2">
-<h2 class="anchored" data-anchor-id="les-masterclass-avec-datascientest-continuent">Les masterclass avec <code>DataScientest</code> continuent</h2>
-<p>Nos cycles de <em>masterclass</em> <code>datascientest</code> continuent ! Les cycles parallèles NLP et analyse d’image continuent.</p>
-<p>Au programme:</p>
-<ul>
-<li>Analyse d’image, niveau confirmé (📅 14 avril, 10h-12h )</li>
-<li>NLP, niveau avancé (📅 12 mai, 10h-12h )</li>
-<li>Analyse d’image, niveau avancé (📅 9 juin, 10h-12h )</li>
-</ul>
-<p>Inscription <a href="https://framaforms.org/participation-aux-masterclass-datascientest-2e-serie-1680103227">ici</a> !</p>
-</section>
-</section>
-<section id="actualités-du-réseau-dernières-nouveautés" class="level1">
-<h1>Actualités du réseau: dernières nouveautés</h1>
-<section id="replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars" class="level2">
-<h2 class="anchored" data-anchor-id="replay-bonnes-pratiques-pour-la-mise-en-production-de-projets-data-science-30-mars">Replay “Bonnes pratiques pour la mise en production de projets <em>data science</em>” (30 mars)</h2>
-<p>Le replay de la présentation succincte du contenu du cours de l’ENSAE <a href="https://ensae-reproductibilite.netlify.app/">“Bonnes pratiques pour la mise en production de projets <em>data science</em>”</a> ayant eu lieu dans le cadre du programme 10% (voir <a href="../../infolettre/infolettre_12/index.html"><em>Newsletter #12</em></a>) est disponible <a href="https://bbb-dinum-scalelite.visio.education.fr/playback/presentation/2.3/871ab1ad6290d683201d2996582dffe96174d9a6-1680176731865">sur le site du programme 10%</a>.</p>
-</section>
-<section id="replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars" class="level2">
-<h2 class="anchored" data-anchor-id="replay-de-lévénement-autour-de-locrisation-avec-christopher-kermorvant-29-mars">Replay de l’événement autour de l’OCRisation avec Christopher Kermorvant (29 mars)</h2>
-<p><a href="https://www.linkedin.com/in/christopher-kermorvant-87158b2/?originalSubdomain=fr">Christopher Kermorvant</a>, chercheur spécialisé en OCRisation et fondateur de <a href="https://teklia.com/">Teklia</a>, a proposé au réseau une présentation très pédagogique sur l’extraction de texte avec des méthodes de <em>deep learning</em>.</p>
-<p>A partir de l’exemple de recensements de la fin du XIXe siècle, nous avons ainsi bénéficié d’une excellente introduction à l’histoire des techniques d’OCRisation et la manière dont aujourd’hui ces modèles fonctionnent en associant reconnaissance d’image et analyse textuelle.</p>
-<p>Le replay est <a href="../../event/ocrisation-teklia/index.html">ici</a> !</p>
-</section>
-<section id="replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars" class="level2">
-<h2 class="anchored" data-anchor-id="replay-de-la-présentation-de-la-documentation-collaborative-carpentries-28-mars">Replay de la présentation de la documentation collaborative <em>Carpentries</em> (28 mars)</h2>
-<p>Kate Burnett-Isaacs, de Statistics Canada, nous a présenté l’initiative Meta Academy / Carpentries permettant de construire une documentation francophone de référence sur <code>R</code>, <code>Python</code> et <code>Git</code> à destination des utilisateurs de données.</p>
-<p>Le replay est <a href="../../event/presentation-du-projet-meta-academy-carpentries/index.html">ici</a> !</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/</guid>
-  <pubDate>Sat, 01 Apr 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/featured.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Première journée du SSPHub</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2023-ssphubday/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-04-17-reseau/20230417_journee_reseau.mp4"></video></div>
-
-
-
- ]]></description>
-  <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2023-ssphubday/</guid>
-  <pubDate>Wed, 29 Mar 2023 15:00:00 GMT</pubDate>
-  <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/project/2022_drees_dataviz/dataviz.png" medium="image" type="image/png" height="39" width="144"/>
 </item>
 </channel>
 </rss>

@@ -6,16 +6,16 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre.html</link>
-<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre.xml" rel="self" type="application/rss+xml"/>
+<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre.html</link>
+<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre.xml" rel="self" type="application/rss+xml"/>
 <description>Une liste des infolettres, le mail
 sur l&#39;actualité interne du réseau.
 </description>
-<generator>quarto-1.8.26</generator>
+<generator>quarto-1.8.27</generator>
 <lastBuildDate>Wed, 10 Dec 2025 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Qui pour financer l’open source?</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/</link>
   <description><![CDATA[ 
 
 
@@ -33,7 +33,7 @@ sur l&#39;actualité interne du réseau.
 <p>Spoiler : la pollution de la centrale électrique d’Ivry s’envole jusque très très loin …</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/climatetrace.png" class="img-fluid figure-img" width="800"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/climatetrace.png" class="img-fluid figure-img" width="800"></p>
 <figcaption><em>source: <a href="https://climatetrace.org/air-pollution">ClimateTRACE</a></em></figcaption>
 </figure>
 </div>
@@ -99,7 +99,7 @@ sur l&#39;actualité interne du réseau.
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
 <figcaption><em>En 2025, par <a href="https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d">Timothy A.</a></em></figcaption>
 </figure>
 </div>
@@ -192,13 +192,13 @@ sur l&#39;actualité interne du réseau.
 </ol>
 </section></div> ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/</guid>
   <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/newsletter_21.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_21/newsletter_21.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>De belles cartographies, des packages R et l’importance des données d’entraînement pour l’IA</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/</link>
   <description><![CDATA[ 
 
 
@@ -210,7 +210,7 @@ sur l&#39;actualité interne du réseau.
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
 <p>Beaucoup d’infographies ce mois-ci, le choix a été dur. Pour une fois, partons sur une vidéo réalisée par <a href="https://www.fabianlang.net/schweizer-bergwelten/">Fabian Lang</a> : le trajet d’un gypaète barbu suivi par GPS en 3D dans les Alpes suisses. La vraie infographie, en format vidéo, est disponible <a href="https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj">ici</a>. Attention, vertige.</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
 </section>
 <section id="actus-du-réseau" class="level1">
 <h1>Actus du réseau</h1>
@@ -305,13 +305,13 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/</guid>
   <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>La rentrée 2025: actualités, nouveautés, interview de rentrée</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/</link>
   <description><![CDATA[ 
 
 
@@ -337,7 +337,7 @@ Astuce
 </section>
 <section id="la-datavisualisation" class="level1">
 <h1>La datavisualisation</h1>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
 <p>Une version interactive est disponible sur le site du <a href="https://graphics.wsj.com/infectious-diseases-and-vaccines/">Wall Street Journal</a>.</p>
 </section>
 <section id="actus-du-réseau" class="level1">
@@ -485,20 +485,20 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/</guid>
   <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
 </item>
 <item>
   <title>Sora, la nouvelle IA d’OpenIA pour générer des vidéos ; Le Chat, le nouveau modèle de Mistral ; Observable, pour s’abstraire des notebooks</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/</link>
   <description><![CDATA[ 
 
 
 
 
 
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/infolettre18.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/infolettre18.png" class="img-fluid"></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -572,7 +572,7 @@ Classement des principaux modèles de langage lors de la sortie de <code>Mistral
 </details>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/MMLU_examples.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/MMLU_examples.png" class="img-fluid figure-img"></p>
 <figcaption>Exemple de questions de niveau licence posées pour évaluer la qualité d’un modèle selon la métrique MMLU proposée par <span class="citation" data-cites="hendrycks2021measuring">Hendrycks et al. (2021)</span> (<a href="https://arxiv.org/abs/2009.03300">accéder à l’article de recherche</a>)</figcaption>
 </figure>
 </div>
@@ -613,7 +613,7 @@ Les trois modèles <code>Claude-3</code> disponibles
 <summary>
 Comparaison des performances des LLM
 </summary>
-<img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/eval_llm_generales.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/eval_llm_math.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic">
+<img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/eval_llm_generales.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/eval_llm_math.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic">
 </details>
 <p>Les modèles <code>Claude</code> sont développés par l’entreprise Anthropic, créée par des anciens employés d’OpenAI considérant que la problématique de la <a href="https://fr.wikipedia.org/wiki/S%C3%BBret%C3%A9_des_intelligences_artificielles">sécurité des IA</a> n’était pas assez mise en avant par OpenAI. Valorisée autour de 18 milliards d’euros en ce début d’année 2024, elle a bénéficié de financements importants d’Amazon et de Google, ces deux entreprises ayant investi respectivement 4 et 2 milliards de dollars. Les modèles <code>Claude</code> sont disponibles pour les utilisateurs des <em>cloud</em> d’Amazon (AWS) ou de <em>Google</em> (GCP) à l’instar des modèles GPT disponibles aux utilisateurs du <em>cloud</em> de Microsoft (Azure). La concurrence entre OpenAI et Anthropic est ainsi l’occasion d’un affrontement entre les trois principaux acteurs du <em>cloud</em>. Au-delà de la concurrence entre leurs investisseurs, les modèles économiques d’Anthropic et d’OpenAI diffèrent. Anthropic vise plutôt à proposer des services à des entreprises accessibles par le biais d’API là où OpenAI propose plutôt des outils grands publics avec des fonctionnalités supplémentaires pour les acteurs spécialisés. Parmi les partenaires principaux d’Anthropic, on retrouve Gitlab, Quora ou Salesforce (l’éditeur de logiciel derrière Slack). A l’instar des modèles Mistral Large ou GPT-4, le modèle Claude 3 n’est pas <em>open source</em>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -680,7 +680,7 @@ Comparaison des performances des LLM
 </section>
 <section id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message" class="level2">
 <h2 class="anchored" data-anchor-id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message">Replay de la présentation d’Eric Mauvière “La dataviz pour donner du sens aux données et communiquer un message”</h2>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
 <p>La présentation d’Eric Mauvière sur les bonnes pratiques de <em>dataviz</em> a rencontré un réel succès avec près de 150 participants. Le <em>replay</em> et les <em>slides</em> de cette présentation essentielle sont disponibles ci-dessous :</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="381" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 380;"><span id="cb1-381"><span class="fu" style="color: #4758AB;
@@ -757,13 +757,13 @@ Hendrycks, Dan, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song
 </div>
 </div></section></div> ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/</guid>
   <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/hitchcock_robot-1.webp" medium="image" type="image/webp"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_18/hitchcock_robot-1.webp" medium="image" type="image/webp"/>
 </item>
 <item>
   <title>Le RAG pour limiter l’hallucination par l’IA ; l’avancée des bases de données vectorielles ; le format Parquet pour simplifier leur usage ; DuckDB débarque en version web</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/</link>
   <description><![CDATA[ 
 <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
 <script type="module" id="qwebr-monaco-editor-init">
@@ -945,7 +945,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/robotroma.jfif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/robotroma.jfif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -1025,7 +1025,7 @@ Astuce
 <p>Par exemple, dans l’image ci-dessous, une base de données vectorielle pourra évaluer la similarité entre les termes en utilisant des techniques d’algèbre linéaire de manière plus efficace que ne le permettrait <code>Python</code>. Ce dernier est en effet un langage informatique généraliste, moins performant que des logiciels spécialisés pour faire de la recherche de similarité dans des corpus massifs. Dans une chaîne de production exploitant ce type de technique, <code>Python</code> servira de point d’entrée et déléguera ensuite les calculs complexes à la base de données vectorielle.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/embeddings.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/embeddings.png" class="img-fluid figure-img"></p>
 <figcaption>Un exemple d’<em>embedding</em> et de rapprochement de textes. Chaque bande représente une dimension latente de notre langage. Il est possible de rapprocher les termes à partir de celles-ci. Source: <a href="https://ig.ft.com/generative-ai/"><em>Financial Times</em></a>.</figcaption>
 </figure>
 </div>
@@ -1125,7 +1125,7 @@ Astuce
 <p>Techniquement, <code>DuckDB</code> fonctionne de manière optimale avec des fichiers au format <code>Parquet</code>. Ce format de données, orienté colonne, permet en effet d’optimiser des traitements classiques des <em>data scientists</em> : sélectionner seulement certaines colonnes d’un jeu de données, regrouper des données pour faire des calculs d’agrégats, etc.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/parquet.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/parquet.png" class="img-fluid figure-img"></p>
 <figcaption>Une illustration du principe du stockage orienté colonne (Source: <a href="https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705">Michael Berk</a>)</figcaption>
 </figure>
 </div>
@@ -1222,13 +1222,13 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/</guid>
   <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/robotroma.jfif" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_17/robotroma.jfif" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Rétrospective du réseau en 2023 (cocorico, beaucoup de nouveaux inscrits !) ; des nouvelles règles européennes pour l’IA ; le recensement de la population au format parquet ; un explorateur de fichier sur le SSPCloud</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/</link>
   <description><![CDATA[ 
 
 
@@ -1237,7 +1237,7 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/santa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/santa.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -2885,7 +2885,7 @@ Tableau des performances (source: <a href="https://mistral.ai/news/mixtral-of-ex
 <p>Le <a href="https://datalab.sspcloud.fr"><code>SSPCloud</code></a>, la plateforme moderne de traitement de données développée par l’Insee et mise à disposition de près de 3000 agents de l’administration ou étudiants, vient de mettre en oeuvre <a href="https://datalab.sspcloud.fr/data-explorer?rowsPerPage=25&amp;page=1&amp;columnWidths=%7B%7D&amp;columnVisibility=%7B%7D">un explorateur</a> aux fonctionnalités similaires 🚀.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/viewer-sspcloud.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/viewer-sspcloud.png" class="img-fluid figure-img"></p>
 <figcaption>Un exemple d’utilisation de cet explorateur sur les données détaillées du recensement 👆️</figcaption>
 </figure>
 </div>
@@ -4924,13 +4924,13 @@ font-style: inherit;">;</span></span>
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/</guid>
   <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_16/santa.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_16/santa.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Coûts d’entrée trop élevés pour l’entraînement des modèles de langage qui s’orientent vers l’opensource ; LlaMaA et Falcon les nouveaux LLM</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/</link>
   <description><![CDATA[ 
 
 
@@ -4939,7 +4939,7 @@ font-style: inherit;">;</span></span>
 
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/learning.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -5108,7 +5108,7 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
 <h2 class="anchored" data-anchor-id="mc-datascientest">Masterclass <em>datascientest</em> sur le <em>fine-tuning</em></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
 </figure>
 </div>
 <p>Notre cycle de <em>masterclass</em> organisées en lien avec <em>datascientest</em> continue !</p>
@@ -5141,13 +5141,13 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/</guid>
   <pubDate>Sun, 10 Sep 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_15/learning.png" medium="image" type="image/png" height="142" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_15/learning.png" medium="image" type="image/png" height="141" width="144"/>
 </item>
 <item>
   <title>Propositions de lecture estivale</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/</link>
   <description><![CDATA[ 
 
 
@@ -5193,7 +5193,7 @@ Note
 <p><strong>Bonnes vacances ! Et n’oubliez pas de profiter pleinement des vacances pour oublier <code>ChatGPT</code> quelques temps !</strong> 🌞🌊⛰️</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
 </figure>
 </div>
 
@@ -5202,13 +5202,13 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/</guid>
   <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="140" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="139" width="144"/>
 </item>
 <item>
   <title>Des innovations rapides sur l’IA qui lancent un débat sur sa place dans la société ; algorithme de recommandation de Twitter</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_13/</link>
   <description><![CDATA[ 
 
 
@@ -5250,7 +5250,7 @@ Note
 <p>La publication en <em>open source</em> de modèles de langage est donc un enjeu d’indépendance pour les organisations intéressées par l’utilisation de <em>chatbots</em> ou l’extraction d’information. Cette publication continue à suivre un rythme presque quotidien. Cet <a href="https://arxiv.org/pdf/2301.04655.pdf">état de l’art des modèles publiés en open source</a> publié en janvier est déjà largement dépassé. Et <a href="https://arxiv.org/pdf/2303.18223.pdf">celui-ci</a> ne sera probablement plus à jour tout aussi rapidement.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/featured.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_13/featured.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
 <p>Dans la dernière quinzaine, l’une des principales annonces est la publication par <a href="https://laion.ai/blog/"><code>LAION</code></a> d’<a href="https://laion.ai/blog/open-flamingo/"><code>OpenFlamingo</code></a>, une version <em>open source</em> de <a href="https://www.deepmind.com/blog/tackling-multiple-tasks-with-a-single-visual-language-model">Flamingo</a>, modèle développé par DeepMind (filiale de Google) pour décrire de manière automatique une scène présente sur une image et offrir des informations contextuelles.</p>
@@ -5280,7 +5280,7 @@ Note
 <h2 class="anchored" data-anchor-id="première-journée-du-réseau-le-17-avril">Première journée du réseau le 17 avril</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_13/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 <p>Nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅 (<a href="../../infolettre/infolettre_12/index.html"><em>Newsletter #12</em></a>). Les places en présentiel sont presque épuisées, ne tardez pas à vous inscrire ! Si vous désirez tout de même suivre les échanges, inscrivez-vous à la retransmission par Zoom.</p>
@@ -5320,13 +5320,13 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_13/</guid>
   <pubDate>Sat, 01 Apr 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_13/featured.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_13/featured.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Tapis rouge et graph de l’Insee ; questionnement sur l’IA ; faillite dans la Silicon Valley</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_12/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_12/</link>
   <description><![CDATA[ 
 
 
@@ -5354,7 +5354,7 @@ Note
 <p>La semaine dernière avait lieu la cérémonie des Oscars. Grâce à un <a href="https://twitter.com/claradealberto/status/1635310454628298753">fil de Clara Dealberto</a>, on peut mesurer l’influence des graphistes de l’Insee sur les stylistes des stars :</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_12/oscars.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_12/oscars.png" class="img-fluid figure-img" style="width:50.0%"></p>
 <figcaption>Tweet de Clara Dealberto</figcaption>
 </figure>
 </div>
@@ -5364,7 +5364,7 @@ Note
 <h2 class="anchored" data-anchor-id="chatgpt-encore-et-toujours">ChatGPT encore et toujours</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/retrospective2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/blog/retrospective2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p><code>ChatGPT</code> continue de focaliser l’attention. Dans la veine de l’article désignant les modèles de langages sous le terme de <a href="https://dl.acm.org/doi/10.1145/3442188.3445922"><em>“stochastic parrots”</em></a> (“perroquets stochastiques”), Arthur Charpentier parle lui de <a href="https://freakonometrics.hypotheses.org/66144">“société du bullshit”</a> pour désigner la manière dont <code>ChatGPT</code> offre, sous un raisonnement en apparence logique, de manière indifférenciée des absurdités et des vérités.</p>
@@ -5376,7 +5376,7 @@ Note
 <h2 class="anchored" data-anchor-id="des-turbulences-dans-la-silicon-valley">Des turbulences dans la Silicon Valley</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_12/bank_failures.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_12/bank_failures.png" class="img-fluid figure-img" style="width:80.0%"></p>
 <figcaption>Une infographie des faillites bancaires par Mike Bostock. Source: <a href="https://observablehq.com/@mbostock/bank-failures">Notebook Observable</a></figcaption>
 </figure>
 </div>
@@ -5404,7 +5404,7 @@ Note
 <h2 class="anchored" data-anchor-id="première-journée-du-réseau-en-avril-17-avril">Première journée du réseau en avril (17 avril)</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_12/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_12/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 <p>Déjà annoncée dans la <a href="../../infolettre/infolettre_11/index.html"><em>Newsletter #11</em></a>, nous rappelons la <strong>journée du réseau le 17 avril, en présentiel</strong> 📅.</p>
@@ -5434,7 +5434,7 @@ Note
 <h2 class="anchored" data-anchor-id="post-de-blog-sur-polars">Post de blog sur <code>Polars</code></h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_12/polar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_12/polar.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>Pour faire suite à la <a href="../../infolettre/infolettre_11/index.html"><em>Newsletter #11</em></a> qui présentait l’écosystème autour du package <a href="https://www.pola.rs/"><code>Python</code> <code>Polars</code></a>, Romain Tailhurat (Insee) nous propose un <a href="../../blog/polars/index.html">post de blog</a> pour découvrir ce <em>package</em>.</p>
@@ -5447,13 +5447,13 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_12/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_12/</guid>
   <pubDate>Wed, 15 Mar 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_12/oscars.png" medium="image" type="image/png" height="121" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_12/oscars.png" medium="image" type="image/png" height="121" width="144"/>
 </item>
 <item>
   <title>ChatGPT continue de faire parler ; Arrow et Polars pour le traitement de données tabulaires ; l’API Huggingface accessible depuis un navigateur web</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/</link>
   <description><![CDATA[ 
 
 
@@ -5480,7 +5480,7 @@ Note
 <h2 class="anchored" data-anchor-id="chatgpt-continue-de-faire-parler">ChatGPT continue de faire parler</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/recap2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/blog/recap2022/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>L’actualité est encore largement dominée par les discussions autour de <code>ChatGPT</code>. Les débats continuent notamment sur la pertinence de ce type d’outil dans l’enseignement (<a href="https://www.telerama.fr/enfants/chatgpt-a-l-ecole-et-si-c-etait-bien-7014474.php">cf.&nbsp;Télérama</a>). L’article du <a href="https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_424"><em>New Yorker</em> “ChatGPT is a blurry JPEG of the web”</a> propose une analyse en profondeur de la manière dont les modèles de langage reconstruisent des réponses originales en mélangeant des corpus rencontrés lors de la phase d’entraînement.</p>
@@ -5493,7 +5493,7 @@ Note
 <h2 class="anchored" data-anchor-id="traitement-de-données-tabulaires-arrow-et-polars-au-centre-du-jeu">Traitement de données tabulaires: <code>Arrow</code> et <code>Polars</code> au centre du jeu</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/polars-arrow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/polars-arrow.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>Du côté des données tabulaires plus traditionnelles, Apache <code>Arrow</code> continue de s’affirmer comme un incontournable.</p>
@@ -5505,7 +5505,7 @@ Note
 <h2 class="anchored" data-anchor-id="huggingface.js-lapi-dhuggingface-directement-accessible-depuis-un-navigateur-web"><code>Huggingface.js</code>: l’API d’<code>HuggingFace</code> directement accessible depuis un navigateur web</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/hf-js.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/hf-js.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p><code>Huggingface</code> et <code>Observable</code> sont chacun devenus des incontournables dans leur domaine (voir notre <a href="../../blog/recap2022/index.html"><em>newsletter</em> de décembre</a>). Alors un rapprochement entre ces deux univers, permettant d’utiliser de nombreux modèles d’apprentissage via l’API d’<code>HuggingFace</code> directement dans le navigateur, ça donne envie de s’amuser.</p>
@@ -5519,7 +5519,7 @@ Note
 <h2 class="anchored" data-anchor-id="première-journée-du-réseau-en-avril">Première journée du réseau en avril</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/treso.webp" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 <p>Notre réseau organise des événements virtuels depuis un an. Pour renforcer l’esprit communautaire, nous proposons une <strong>journée du réseau le 17 avril, en présentiel</strong> 📅.</p>
@@ -5536,7 +5536,7 @@ Note
 <h2 class="anchored" data-anchor-id="masterclass-datascientest">Masterclass datascientest</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:25.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:25.0%"></p>
 </figure>
 </div>
 <p>Les inscriptions à nos cycles de <em>masterclass</em> <code>datascientest</code> sont toujours ouvertes ! Pendant le mois de mars, nous continuerons d’avancer dans les <strong>deux cursus parallèles</strong>.</p>
@@ -5563,7 +5563,7 @@ Note
 <h2 class="anchored" data-anchor-id="onyxia">Onyxia</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/onyxia/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/blog/onyxia/featured.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:45.0%"></p>
 </figure>
 </div>
 <p>Le <a href="../../blog/onyxia/index.html">dernier post</a> sur le site web du réseau revient sur le projet <code>Onyxia</code>, le logiciel initié par l’équipe innovation de l’Insee et mis à disposition sur <a href="https://github.com/InseeFrLab/onyxia-web"><code>Github</code></a> pour permettre à d’autres organisations de développer une infrastructure de <em>data science</em> à l’état de l’art.</p>
@@ -5573,7 +5573,7 @@ Note
 <h2 class="anchored" data-anchor-id="replay-de-lévénement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee">Replay de l’événement autour des packages facilitant l’accès à l’open data de l’Insee</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/dessin-opendata.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/dessin-opendata.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>Le <em>replay</em> des présentations des packages <a href="https://inseefrlab.github.io/DoReMIFaSol/"><code>Doremifasol</code></a> (<code>R</code>) et <a href="https://github.com/InseeFrLab/pynsee"><code>Pynsee</code></a> (<code>Python</code>) lors de notre événement du <strong>13 février</strong> autour des packages facilitant l’accès à l’open data de l’Insee est en ligne !</p>
@@ -5590,13 +5590,13 @@ Note
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/</guid>
   <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_11/polars-arrow.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_11/polars-arrow.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>DoReMiFaSol pour récupérer des données de l’Insee ; une masterclass datascientest sur les NLP et l’analyse d’images</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/</link>
   <description><![CDATA[ 
 
 
@@ -5608,7 +5608,7 @@ Note
 <h2 class="anchored" data-anchor-id="un-événement-autour-des-packages-facilitant-laccès-à-lopen-data-de-linsee">Un événement autour des packages facilitant l’accès à l’open data de l’Insee</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/dessin-opendata.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/dessin-opendata.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:40.0%"></p>
 </figure>
 </div>
 <p>Après les présentations <a href="../../event/presentation-dobservable-par-nicolas-lambert/">d’<code>observable</code></a> et de <a href="../../event/presentation-de-gridviz-par-julien-gaffuri/"><code>gridviz</code></a> nous vous proposons un nouvel événement. Celui-ci sera autour de l’<em>open data</em> à travers la présentation des <strong>packages facilitant la récupération de données de l’Insee</strong> disponibles depuis le site web ou les API.</p>
@@ -5620,7 +5620,7 @@ Note
 <h2 class="anchored" data-anchor-id="masterclass-datascientest">Masterclass datascientest</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:25.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/datascientest.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:25.0%"></p>
 </figure>
 </div>
 <p>Les masterclass organisées avec l’organisme de formation spécialisé <code>datascientest</code> reprennent ! Après une première masterclass au mois de décembre consacrée au MLOps, notre réseau va proposer de nouvelles séances.</p>
@@ -5645,7 +5645,7 @@ Note
 <h2 class="anchored" data-anchor-id="questionnaire-sur-vos-besoins-en-formation-data-science">Questionnaire sur vos besoins en formation data science</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/circle-question-solid.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:15.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/circle-question-solid.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:15.0%"></p>
 </figure>
 </div>
 <p>En cette période de recensement, le réseau propose également le sien ! Pour déterminer au mieux la répartition des besoins en formation sur les sujets data science et ainsi pouvoir proposer des événements pertinents, <strong>nous vous proposons un <a href="https://framaforms.org/besoin-de-formations-en-data-science-1674150129">questionnaire</a></strong> sur vos besoins en formation.</p>
@@ -5654,7 +5654,7 @@ Note
 <h2 class="anchored" data-anchor-id="utilitr-recherche-des-rédacteurs-dexercices"><code>utilitR</code> recherche des rédacteurs d’exercices !</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/utilitr.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/utilitr.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 <p>Dans le but de continuer à développer <a href="https://www.book.utilitr.org/"><code>utilitR</code></a>, documentation collaborative et ouverte, l’équipe du projet souhaite encourager des contributions volontaires pour <strong>ajouter des exercices à chaque fiche thématique</strong>. L’objectif est de produire pour chaque chapitre un ensemble d’exercices, de difficulté graduelle, permettant de mettre en application les concepts présentés dans la fiche.</p>
@@ -5671,7 +5671,7 @@ des utilisateurs plus expérimentés savent mettre en oeuvre quoditiennement.
 <h2 class="anchored" data-anchor-id="proposez-un-billet-de-blog">Proposez un billet de blog !</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/write-blogpost.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/write-blogpost.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
 <p>Le site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. <strong>Vos idées et contributions sont les bienvenues pour l’enrichir !</strong></p>
@@ -5681,7 +5681,7 @@ des utilisateurs plus expérimentés savent mettre en oeuvre quoditiennement.
 <h2 class="anchored" data-anchor-id="la-saison-2-du-programme-10-arrive">La saison 2 du programme 10% arrive</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/wantyou.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/wantyou.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:20.0%"></p>
 </figure>
 </div>
 <p>L’attente était insoutenable mais la nouvelle saison de 10% est enfin là ! <strong>Rejoignez ce programme</strong>, issu des recommandations du <a href="https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf">rapport de l’Inspection Générale de l’Insee et de la DINUM</a>, où des data scientists proposent de consacrer jusqu’à 10% de leur temps de travail à des projets transversaux !</p>
@@ -5728,13 +5728,13 @@ l'écosystème de la data science.
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/</guid>
   <pubDate>Mon, 30 Jan 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_10/dessin-opendata.png" medium="image" type="image/png" height="106" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_10/dessin-opendata.png" medium="image" type="image/png" height="106" width="144"/>
 </item>
 <item>
   <title>Retex sur 2022, première année du réseau des datascientists ; snapshot de l’état du réseau à date ; présentation de Gridviz</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/</link>
   <description><![CDATA[ 
 
 
@@ -5824,25 +5824,25 @@ Dérouler pour afficher une version non réactive
 </summary>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/cartiflette.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/cartiflette.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>cartiflette</code></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/socratext.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/socratext.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>Socratext</code></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/gouvdown.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/gouvdown.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>Gouvdown</code></figcaption>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/matchsiret.png" class="img-fluid figure-img"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/matchsiret.png" class="img-fluid figure-img"></p>
 <figcaption>Projet <code>matchSIRET</code></figcaption>
 </figure>
 </div>
@@ -5859,7 +5859,7 @@ Dérouler pour afficher une version non réactive
 <p><a href="gridviz.ics">Télécharger l’invitation à l’événement sous format <code>Outlook</code></a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/gridviz.png" class="img-fluid figure-img" style="width:70.0%"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/gridviz.png" class="img-fluid figure-img" style="width:70.0%"></p>
 <figcaption>Source: <a href="https://observablehq.com/@neocartocnrs/hello-gridviz">Notebook <code>Hello Gridviz</code> par <code>neocarto</code> sur <code>Observable</code></a></figcaption>
 </figure>
 </div>
@@ -5969,13 +5969,13 @@ new Runtime().module(define, name => {
   <category>Insee</category>
   <category>Retrospective</category>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/</guid>
   <pubDate>Tue, 10 Jan 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_09/featured.png" medium="image" type="image/png" height="80" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_09/featured.png" medium="image" type="image/png" height="80" width="144"/>
 </item>
 <item>
   <title>L’année 2022 dans le monde de la data science : IA, transformation de RStudio, Observable</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_08/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_08/</link>
   <description><![CDATA[ 
 
 
@@ -6015,7 +6015,7 @@ new Runtime().module(define, name => {
 </figure>
 <p>Ensuite, pour générer une image à partir d’une description inédite intervient le <a href="https://en.wikipedia.org/wiki/Diffusion_model">modèle de diffusion</a> qui reconstruit une image à partir du mélange de l’ensemble des pixels qui traduisent les concepts principaux d’une instruction. L’une des explications les plus pédagogiques pour comprendre le fonctionnement de ces modèles vient du <a href="https://www.washingtonpost.com/technology/interactive/2022/ai-image-generator/"><em>Washington Post</em></a>.</p>
 <p>Sinon, on peut demander directement à <code>ChatGPT</code> de nous expliquer:</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_08/diffusion.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_08/diffusion.png" class="img-fluid"></p>
 </section>
 <section id="lactualité-dans-le-monde-du-deep-learning" class="level1">
 <h1>L’actualité dans le monde du <em>deep learning</em></h1>
@@ -6036,7 +6036,7 @@ new Runtime().module(define, name => {
 <p>Afin de permettre une diffusion accrue de visualisations en <code>JavaScript</code>, <a href="https://en.wikipedia.org/wiki/Mike_Bostock">Mike Bostock</a>, déjà créateur de la librairie de dataviz de référence <a href="https://en.wikipedia.org/wiki/D3.js"><code>D3.js</code></a>, est à l’origine de la plateforme <a href="https://observablehq.com/"><code>observable</code></a>, sorte de <code>Github</code> de la <em>dataviz</em> permettant du partage et de la réutilisation de <em>notebooks</em> réactifs. En cette année 2022, la plateforme a connu un véritable <em>boom</em> et est devenu un incontournable dans le domaine. L’une des raisons est l’ajout de fonctionalités qui permettent d’étendre le public cible au delà des développeurs <em>web</em>, déjà accoutumés à <code>Javascript</code>. Parmi les fonctionalités les plus remarquables, la possibilité depuis Novembre d’utiliser des <a href="https://observablehq.com/@ericmauviere/duckdb-redonne-nouvelle-vie-sql">requêtes SQL</a> grâce à <a href="https://observablehq.com/@observablehq/duckdb"><code>DuckDB</code></a> permet aux habitués de <code>R</code> ou de <code>Python</code> de retrouver des manipulations auxquels ils sont habitués. La librairie <a href="https://observablehq.com/@observablehq/plot"><code>Plot</code></a> offre une <a href="https://observablehq.com/@observablehq/plot-from-ggplot2">grammaire proche de <code>ggplot2</code></a>.</p>
 <p>La communauté des cartographes a été particulièrement active sur <code>Observable</code>, notamment à l’occasion du <a href="https://observablehq.com/collection/@observablehq/30-day-map-challenge">#30daymapchallenge</a>. <a href="https://observablehq.com/@neocartocnrs">Nicolas Bertin (<code>neocarto</code>)</a>, dont on ne peut que recommander l’<a href="../../event/presentation-dobservable-par-nicolas-lambert/">introduction à <code>Observable</code></a> faite pour le réseau, ou <a href="https://observablehq.com/@ericmauviere">Eric Mauvière</a> font partie des comptes à suivre dans la communauté francophone.</p>
 <p><code>Observable</code>, en tant que langage construit sur <code>JavaScript</code>, est également disponible pour les utilisateurs de <a href="https://quarto.org/docs/interactive/ojs/"><code>Quarto</code></a>, ce qui permet de mettre à disposition des visualisation réactives sans passer nécessairement par la plateforme <a href="https://observablehq.com/">observablehq.com</a> pour mettre à disposition des visualisations réactives, ce qui constitue une alternative intéressante aux applications qui nécessitent un serveur en arrière plan, comme <code>Shiny</code> ou <code>Dash</code>.</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_08/observable1.png" class="img-fluid"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_08/observable2.png" class="img-fluid"></p>
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_08/observable1.png" class="img-fluid"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_08/observable2.png" class="img-fluid"></p>
 </section>
 <section id="les-autres-actualités-en-france" class="level1">
 <h1>Les autres actualités en France</h1>
@@ -6060,13 +6060,13 @@ new Runtime().module(define, name => {
   <category>Insee</category>
   <category>Retrospective</category>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_08/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_08/</guid>
   <pubDate>Sat, 31 Dec 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_08/featured.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_08/featured.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Archive des infolettres et lettres Big Data</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_old/</link>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_old/</link>
   <description><![CDATA[ 
 
 
@@ -6116,9 +6116,9 @@ new Runtime().module(define, name => {
   <category>Deep learning</category>
   <category>Insee</category>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_old/</guid>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_old/</guid>
   <pubDate>Wed, 31 Aug 2022 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_old/archive.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/infolettre/infolettre_old/archive.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

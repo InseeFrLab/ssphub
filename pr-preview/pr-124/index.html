@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/index.en.html" />
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/index.en.html" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.8.27">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>SSPHub</title>
 <style>
@@ -58,7 +58,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 <script src="site_libs/quarto-nav/quarto-nav.js"></script><script src="site_libs/quarto-nav/headroom.min.js"></script><script src="site_libs/clipboard/clipboard.min.js"></script><script src="site_libs/quarto-search/autocomplete.umd.js"></script><script src="site_libs/quarto-search/fuse.min.js"></script><script src="site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-listing/list.min.js"></script><script src="site_libs/quarto-listing/quarto-listing.js"></script><script src="site_libs/quarto-html/quarto.js" type="module"></script><script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="site_libs/quarto-html/popper.min.js"></script><script src="site_libs/quarto-html/tippy.umd.min.js"></script><script src="site_libs/quarto-html/anchor.min.js"></script><link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script><link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-438168c6864485e01d50a9688026e8cc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
@@ -205,6 +205,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-latest .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-latest'] = new List('listing-latest', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script><style>
 
       .quarto-title-block .quarto-title-banner h1,
@@ -267,7 +296,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
 <li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
+<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-124/en/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
 </div></li>
 <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
@@ -342,9 +371,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full column-body" id="quarto-document-content"><div class="cell">
 <div class="code-copy-outer-scaffold">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="40" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 39;"><span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="co">// output: false</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>inscrits <span class="op">=</span> <span class="dv">730</span></span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="53" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 52;"><span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="co">// output: false</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>inscrits <span class="op">=</span> <span class="dv">730</span></span></code></pre></div>
 <button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button>
 </div>
 <div class="cell-output cell-output-display">
@@ -355,10 +384,10 @@ window.Quarto = {
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
-<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="46" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 45;"><span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>badge <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103"&gt;&lt;img alt="Static Badge" src="https://img.shields.io/badge/</span><span class="sc">${</span>inscrits<span class="sc">}</span><span class="vs">_inscrits-blue?style=social&amp;label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&amp;color=8A2BE2&amp;link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103"&gt;</span></span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="59" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 58;"><span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>badge <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103"&gt;&lt;img alt="Static Badge" src="https://img.shields.io/badge/</span><span class="sc">${</span>inscrits<span class="sc">}</span><span class="vs">_inscrits-blue?style=social&amp;label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&amp;color=8A2BE2&amp;link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103"&gt;</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a><span class="vs">&lt;/a&gt;</span></span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span></span></code></pre></div>
 <button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button>
 </div>
 <div class="cell-output cell-output-display">
@@ -375,8 +404,8 @@ window.Quarto = {
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold">
-<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="62" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 61;"><span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
-<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>badge<span class="sc">}</span><span class="vs">`</span></span></code></pre></div>
+<div class="sourceCode cell-code hidden" id="cb3" data-startfrom="75" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 74;"><span id="cb3-75"><a href="#cb3-75" aria-hidden="true" tabindex="-1"></a><span class="co">// echo: false</span></span>
+<span id="cb3-76"><a href="#cb3-76" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>badge<span class="sc">}</span><span class="vs">`</span></span></code></pre></div>
 <button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button>
 </div>
 <div class="cell-output cell-output-display">
@@ -391,11 +420,56 @@ window.Quarto = {
 </div>
 </div>
 <br><div class="column-page">
-<section id="les-derniers-billets-de-blog-et-événements" class="level2"><h2 class="anchored" data-anchor-id="les-derniers-billets-de-blog-et-événements">Les derniers billets de blog et événements</h2>
-<p>L’ensemble des billets de blog peut être retrouvé sur la <a href="./blog.html">page dédiée</a>, tout comme les <a href="./event.html">événements</a>.</p>
-<div id="listing-blog_event" class="quarto-listing quarto-listing-container-grid">
+<section id="les-dernières-actualités-et-contenus-du-réseau" class="level2"><h2 class="anchored" data-anchor-id="les-dernières-actualités-et-contenus-du-réseau">Les dernières actualités et contenus du réseau</h2>
+<div id="listing-latest" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1757894400000" data-listing-file-modified-sort="1765989809111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="501">
+<div class="g-col-1" data-index="0" data-categories="Y2FydG9ncmFwaGllJTJDZXZlbnQ=" data-listing-date-sort="1768262400000" data-listing-file-modified-sort="1768832665118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<a href="./event/2026-01-cartographia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./event/2026-01-cartographia/cartographia.jpeg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
+</h5>
+<div class="card-text listing-description delink">
+<p>Le <strong>13 janvier (14h30 - 15h30)</strong>, Françoise Bahoken et Nicolas Lambert nous ont présenté leur dernier livre, Cartographia. Destiné à un public large, ce livre vulgarise les…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+13 janv. 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1765324800000" data-listing-file-modified-sort="1768832665142" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1558">
+<a href="./infolettre/infolettre_21/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./infolettre/infolettre_21/newsletter_21.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Qui pour financer l’open source?
+</h5>
+<div class="card-text listing-description delink">
+<p>Infolettre du mois de <strong>décembre 2025</strong></p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+10 déc. 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1768832665118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
 <a href="./event/2025-12-01-network-day/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -412,13 +486,66 @@ Troisième journée du SSPHub
 
 </div>
 <div class="listing-date">
-15 sept. 2025
+1 déc. 2025
 </div>
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UGFycXVldCUyQ2V2ZW50" data-listing-date-sort="1744812000000" data-listing-file-modified-sort="1765989809111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+</section><section id="les-derniers-billets-de-blog-et-événements" class="level2"><h2 class="anchored" data-anchor-id="les-derniers-billets-de-blog-et-événements">Les derniers billets de blog et événements</h2>
+<p>L’ensemble des billets de blog peut être retrouvé sur la <a href="./blog.html">page dédiée</a>, tout comme les <a href="./event.html">événements</a>.</p>
+<div id="listing-blog_event" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Y2FydG9ncmFwaGllJTJDZXZlbnQ=" data-listing-date-sort="1768262400000" data-listing-file-modified-sort="1768832665118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<a href="./event/2026-01-cartographia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./event/2026-01-cartographia/cartographia.jpeg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
+</h5>
+<div class="card-text listing-description delink">
+<p>Le <strong>13 janvier (14h30 - 15h30)</strong>, Françoise Bahoken et Nicolas Lambert nous ont présenté leur dernier livre, Cartographia. Destiné à un public large, ce livre vulgarise les…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+13 janv. 2026
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1768832665118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
+<a href="./event/2025-12-01-network-day/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" class="thumbnail-image card-img" style="height: 150px;"></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Troisième journée du SSPHub
+</h5>
+<div class="card-text listing-description delink">
+<p>Programme et modalités d’inscription à la 3e journée du réseau</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 déc. 2025
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="UGFycXVldCUyQ2V2ZW50" data-listing-date-sort="1744812000000" data-listing-file-modified-sort="1768832665118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
 <a href="./event/2025-04-16-Parquet/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -441,7 +568,7 @@ Atelier - Comment récupérer des données sous format Parquet ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="QVBJJTJDZXZlbnQ=" data-listing-date-sort="1744207200000" data-listing-file-modified-sort="1765989809109" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<div class="g-col-1" data-index="3" data-categories="QVBJJTJDZXZlbnQ=" data-listing-date-sort="1744207200000" data-listing-file-modified-sort="1768832665115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
 <a href="./event/2025-04-09-API/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -464,7 +591,7 @@ Atelier - Comment récupérer des données par API ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="ZGF0YXZpeiUyQ2V2ZW50" data-listing-date-sort="1728918000000" data-listing-file-modified-sort="1765989809108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532">
+<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpeiUyQ2V2ZW50" data-listing-date-sort="1728918000000" data-listing-file-modified-sort="1768832665115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="532">
 <a href="./event/2024-10-14-network-day/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -487,7 +614,7 @@ Deuxième journée du SSPHub
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="cXVhcnRvJTJDZXZlbnQ=" data-listing-date-sort="1714662000000" data-listing-file-modified-sort="1765989809108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
+<div class="g-col-1" data-index="5" data-categories="cXVhcnRvJTJDZXZlbnQ=" data-listing-date-sort="1714662000000" data-listing-file-modified-sort="1768832665114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="38">
 <a href="./event/2024-05-02-quarto/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -510,11 +637,11 @@ Quarto : Une évolution de R Markdown pour des travaux statistiques reproductibl
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpeiUyQ2V2ZW50" data-listing-date-sort="1709218800000" data-listing-file-modified-sort="1765989809108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
+<div class="g-col-1" data-index="6" data-categories="ZGF0YXZpeiUyQ2V2ZW50" data-listing-date-sort="1709218800000" data-listing-file-modified-sort="1768832665114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="39">
 <a href="./event/2024-02-29-mauviere/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./event/2024-02-29-mauviere/mauviere.png" class="thumbnail-image card-img" style="height: 150px;"></p>
+<img loading="lazy" data-src="./event/2024-02-29-mauviere/mauviere.png" class="thumbnail-image card-img" style="height: 150px;"></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Eric Mauvière, “La dataviz pour donner du sens aux données et communiquer un message”
@@ -533,7 +660,7 @@ Eric Mauvière, “La dataviz pour donner du sens aux données et communiquer un
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDUiUyQ1BhcnF1ZXQ=" data-listing-date-sort="1698019200000" data-listing-file-modified-sort="1765989809090" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2675">
+<div class="g-col-1" data-index="7" data-categories="UHl0aG9uJTJDUiUyQ1BhcnF1ZXQ=" data-listing-date-sort="1698019200000" data-listing-file-modified-sort="1768832665096" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2675">
 <a href="./blog/parquetRP/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -556,7 +683,7 @@ Guide d’utilisation des données du recensement de la population au format <co
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNzc3BjbG91ZA==" data-listing-date-sort="1683676800000" data-listing-file-modified-sort="1765989809087" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2761">
+<div class="g-col-1" data-index="8" data-categories="SW5zZWUlMkNzc3BjbG91ZA==" data-listing-date-sort="1683676800000" data-listing-file-modified-sort="1768832665092" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2761">
 <a href="./blog/onyxia/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -579,7 +706,7 @@ Onyxia: l’infrastructure cloud mère des dragons
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="ZXZlbnQ=" data-listing-date-sort="1680102000000" data-listing-file-modified-sort="1765989809108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="g-col-1" data-index="9" data-categories="ZXZlbnQ=" data-listing-date-sort="1680102000000" data-listing-file-modified-sort="1768832665114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <a href="./event/2023-ssphubday/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -602,7 +729,7 @@ Première journée du SSPHub
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="T0NSJTJDZGVlcCUyMGxlYXJuaW5nJTJDZXZlbnQ=" data-listing-date-sort="1680102000000" data-listing-file-modified-sort="1765989809111" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
+<div class="g-col-1" data-index="10" data-categories="T0NSJTJDZGVlcCUyMGxlYXJuaW5nJTJDZXZlbnQ=" data-listing-date-sort="1680102000000" data-listing-file-modified-sort="1768832665118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="22">
 <a href="./event/ocrisation-teklia/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -625,7 +752,7 @@ Première journée du SSPHub
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="ZG9jdW1lbnRhdGlvbg==" data-listing-date-sort="1680015600000" data-listing-file-modified-sort="1765989809114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
+<div class="g-col-1" data-index="11" data-categories="ZG9jdW1lbnRhdGlvbg==" data-listing-date-sort="1680015600000" data-listing-file-modified-sort="1768832665121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="8">
 <a href="./event/presentation-du-projet-meta-academy-carpentries/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -648,7 +775,7 @@ Présentation du projet Meta Academy - Carpentries
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="ZG9yZW1pZmFzb2wlMkNweW5zZWUlMkNvcGVuJTIwZGF0YSUyQ0luc2VlJTJDZXZlbnQ=" data-listing-date-sort="1676300400000" data-listing-file-modified-sort="1765989809113" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
+<div class="g-col-1" data-index="12" data-categories="ZG9yZW1pZmFzb2wlMkNweW5zZWUlMkNvcGVuJTIwZGF0YSUyQ0luc2VlJTJDZXZlbnQ=" data-listing-date-sort="1676300400000" data-listing-file-modified-sort="1768832665120" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="48">
 <a href="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left">
 <a href="./event/presentation-des-packages-r-et-python-pour-acceder-a-lopen-data-de-linsee/index.html" class="quarto-grid-link">
@@ -674,7 +801,7 @@ Présentation des packages R et Python pour accéder à l’open data de l’Ins
 </div>
 </div>
 </div>
-<div class="g-col-1" data-index="12" data-categories="UHl0aG9uJTJDUGFuZGFzJTJDUG9sYXJzJTJDRGF0YSUyMHdyYW5nbGluZw==" data-listing-date-sort="1675987200000" data-listing-file-modified-sort="1765989809094" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="762">
+<div class="g-col-1" data-index="13" data-categories="UHl0aG9uJTJDUGFuZGFzJTJDUG9sYXJzJTJDRGF0YSUyMHdyYW5nbGluZw==" data-listing-date-sort="1675987200000" data-listing-file-modified-sort="1768832665100" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="762">
 <a href="./blog/polars/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -697,7 +824,7 @@ Polars, une alternative fraîche à Pandas
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="Z3JpZHZpeiUyQ2RhdGF2aXo=" data-listing-date-sort="1674212400000" data-listing-file-modified-sort="1765989809112" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
+<div class="g-col-1" data-index="14" data-categories="Z3JpZHZpeiUyQ2RhdGF2aXo=" data-listing-date-sort="1674212400000" data-listing-file-modified-sort="1768832665120" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="57">
 <a href="./event/presentation-de-gridviz-par-julien-gaffuri/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left">
 <a href="./event/presentation-de-gridviz-par-julien-gaffuri/index.html" class="quarto-grid-link">
@@ -723,7 +850,7 @@ Présentation de gridviz par Julien Gaffuri
 </div>
 </div>
 </div>
-<div class="g-col-1" data-index="14" data-categories="SW5zZWUlMkNSZXRyb3NwZWN0aXZlJTJDSW5mb2xldHRyZQ==" data-listing-date-sort="1673308800000" data-listing-file-modified-sort="1765989809095" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1698">
+<div class="g-col-1" data-index="15" data-categories="SW5zZWUlMkNSZXRyb3NwZWN0aXZlJTJDSW5mb2xldHRyZQ==" data-listing-date-sort="1673308800000" data-listing-file-modified-sort="1768832665101" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1698">
 <a href="./blog/recap2022/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -746,7 +873,7 @@ Infolettre n°9
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="TkxQJTJDT2JzZXJ2YWJsZSUyQ1F1YXJ0byUyQ0RlZXAlMjBsZWFybmluZyUyQ0luc2VlJTJDUmV0cm9zcGVjdGl2ZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1765989809096" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1386">
+<div class="g-col-1" data-index="16" data-categories="TkxQJTJDT2JzZXJ2YWJsZSUyQ1F1YXJ0byUyQ0RlZXAlMjBsZWFybmluZyUyQ0luc2VlJTJDUmV0cm9zcGVjdGl2ZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1768832665102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1386">
 <a href="./blog/retrospective2022/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left">
 <a href="./blog/retrospective2022/index.html" class="quarto-grid-link">
@@ -772,7 +899,7 @@ Rétrospective de l’année 2022
 </div>
 </div>
 </div>
-<div class="g-col-1" data-index="16" data-categories="ZXZlbnQlMkMxMCUyNSUyQ1B5dGhvbg==" data-listing-date-sort="1670198400000" data-listing-file-modified-sort="1765989809108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556">
+<div class="g-col-1" data-index="17" data-categories="ZXZlbnQlMkMxMCUyNSUyQ1B5dGhvbg==" data-listing-date-sort="1670198400000" data-listing-file-modified-sort="1768832665114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="556">
 <a href="./event/2022-12-10prcent/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -795,7 +922,7 @@ Evénement de clôture de la saison 1 du programme 10%
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="17" data-categories="b2JzZXJ2YWJsZSUyQ2RhdGF2aXo=" data-listing-date-sort="1668592800000" data-listing-file-modified-sort="1765989809113" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
+<div class="g-col-1" data-index="18" data-categories="b2JzZXJ2YWJsZSUyQ2RhdGF2aXo=" data-listing-date-sort="1668592800000" data-listing-file-modified-sort="1768832665120" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="68">
 <a href="./event/presentation-dobservable-par-nicolas-lambert/index.html" class="quarto-grid-link">
 </a><div class="quarto-grid-item card h-100 card-left">
 <a href="./event/presentation-dobservable-par-nicolas-lambert/index.html" class="quarto-grid-link">
@@ -821,7 +948,7 @@ Présentation d’Observable par Nicolas Lambert
 </div>
 </div>
 </div>
-<div class="g-col-1" data-index="18" data-categories="SW5zZWUlMkNOTFA=" data-listing-date-sort="1664755200000" data-listing-file-modified-sort="1765989809084" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2249">
+<div class="g-col-1" data-index="19" data-categories="SW5zZWUlMkNOTFA=" data-listing-date-sort="1664755200000" data-listing-file-modified-sort="1768832665089" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="12" data-listing-word-count-sort="2249">
 <a href="./blog/embedding/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -844,7 +971,7 @@ Le plongement lexical ou comment apprendre à lire à un ordinateur
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="19" data-categories="ZXZlbnQlMkNmdW5hdGhvbiUyQ1IlMkNQeXRob24=" data-listing-date-sort="1655596800000" data-listing-file-modified-sort="1765989809108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
+<div class="g-col-1" data-index="20" data-categories="ZXZlbnQlMkNmdW5hdGhvbiUyQ1IlMkNQeXRob24=" data-listing-date-sort="1655596800000" data-listing-file-modified-sort="1768832665114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="188">
 <a href="./event/2022-06-20-funathon/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -867,7 +994,7 @@ Funathon de juin 2022
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="20" data-categories="SW5zZWUlMkNldmVuZW1lbnQ=" data-listing-date-sort="1649203200000" data-listing-file-modified-sort="1765989809083" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="701">
+<div class="g-col-1" data-index="21" data-categories="SW5zZWUlMkNldmVuZW1lbnQ=" data-listing-date-sort="1649203200000" data-listing-file-modified-sort="1768832665088" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="701">
 <a href="./blog/2022_jms/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -890,7 +1017,7 @@ Le <em>machine learning</em> aux Journées de la Méthodologie Statistique 2022 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="21" data-categories="ZXZlbnQlMkNmdW5hdGhvbiUyQ1IlMkNQeXRob24=" data-listing-date-sort="1624147200000" data-listing-file-modified-sort="1765989809108" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<div class="g-col-1" data-index="22" data-categories="ZXZlbnQlMkNmdW5hdGhvbiUyQ1IlMkNQeXRob24=" data-listing-date-sort="1624147200000" data-listing-file-modified-sort="1768832665114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
 <a href="./event/2021-06-22-funathon/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -913,7 +1040,7 @@ Funathon de juin 2021
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="22" data-categories="ZG9ubiVDMyVBOWVzJTIwdm9sdW1pbmV1c2Vz" data-listing-date-sort="1464739200000" data-listing-file-modified-sort="1765989809084" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="744">
+<div class="g-col-1" data-index="23" data-categories="ZG9ubiVDMyVBOWVzJTIwdm9sdW1pbmV1c2Vz" data-listing-date-sort="1464739200000" data-listing-file-modified-sort="1768832665089" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="744">
 <a href="./blog/hadoop_spark/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -944,7 +1071,7 @@ Parallélisation des traitements : Hadoop MapReduce vs Spark
 <p>L’ensemble des projets innovants peut être retrouvé sur la <a href="./project.html">page dédiée</a>.</p>
 <div id="listing-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1765989809158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1768832665154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="416">
 <a href="./project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -967,7 +1094,7 @@ Une évaluation des achats transfrontaliers de tabac et des pertes fiscales asso
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="UiUyQ2RhdGF2aXN1YWxpc2F0aW9uJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ0RSRUVTJTJDb3Blbi1kYXRh" data-listing-date-sort="1685577600000" data-listing-file-modified-sort="1765989809155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="270">
+<div class="g-col-1" data-index="1" data-categories="UiUyQ2RhdGF2aXN1YWxpc2F0aW9uJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ0RSRUVTJTJDb3Blbi1kYXRh" data-listing-date-sort="1685577600000" data-listing-file-modified-sort="1768832665152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="304">
 <a href="./project/2022_drees_dataviz/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -990,7 +1117,7 @@ Visualisations des données liées aux tests du SARS-Cov2
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1765989809158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="2" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1768832665154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="./project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1013,7 +1140,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1765989809158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="3" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1768832665154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="./project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1036,7 +1163,7 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1765989809158" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1768832665154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="398">
 <a href="./project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1059,7 +1186,7 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+<div class="g-col-1" data-index="5" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
 <a href="./project/2022_Curiexplore/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1082,7 +1209,7 @@ Curiexplore, la plateforme de comparaison des politiques nationales d’enseigne
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="6" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="./project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1105,7 +1232,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
+<div class="g-col-1" data-index="7" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
 <a href="./project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1128,7 +1255,7 @@ Jocas, webscraping des offres d’emploi en ligne
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2Zhc3R0ZXh0JTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="g-col-1" data-index="8" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="419">
 <a href="./project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1151,7 +1278,7 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809154" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
+<div class="g-col-1" data-index="9" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
 <a href="./project/2022_bso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1174,7 +1301,7 @@ Baromètre de la science ouverte
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dCUyQ3BhY2thZ2UlMkNlbiUyMHByb2R1Y3Rpb24lMkNNTEZsb3c=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1765989809155" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="10" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768832665151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="./project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1197,7 +1324,7 @@ Codification automatique de l’activité principale des entreprises
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDU1NNU0klMkNkZWVwJTIwbGVhcm5pbmc=" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1765989809153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="312">
+<div class="g-col-1" data-index="11" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDU1NNU0klMkNkZWVwJTIwbGVhcm5pbmc=" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1768832665149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
 <a href="./project/2021_detection_cyber/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1220,7 +1347,7 @@ Détecter la cybercriminalité dans les procédures
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDYXBwYXJpZW1lbnQlMkNTREVTJTJDZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1765989809153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="333">
+<div class="g-col-1" data-index="12" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDYXBwYXJpZW1lbnQlMkNTREVTJTJDZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1768832665149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
 <a href="./project/2021_vehicules/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1243,7 +1370,7 @@ Modélisation de l’appartenance au parc des véhicules routiers et de son util
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDd2Vic2NyYXBpbmclMkNJUEMlMkNJbnNlZQ==" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1765989809153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="292">
+<div class="g-col-1" data-index="13" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDd2Vic2NyYXBpbmclMkNJUEMlMkNJbnNlZQ==" data-listing-date-sort="1622505600000" data-listing-file-modified-sort="1768832665149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="326">
 <a href="./project/2021_webscraping_ipc_hotel/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1266,7 +1393,7 @@ Indices des prix à la consommation des nuitées hôtelières : l’expérience 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1765989809152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
+<div class="g-col-1" data-index="14" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1768832665149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="608">
 <a href="./project/2021_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1289,7 +1416,7 @@ En 2020, la chute de la consommation a alimenté l’épargne, faisant progresse
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="15" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1765989809153" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="305">
+<div class="g-col-1" data-index="15" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1768832665149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="339">
 <a href="./project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1312,7 +1439,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="16" data-categories="YXBwYXJpZW1lbnQlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1765989809152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="313">
+<div class="g-col-1" data-index="16" data-categories="YXBwYXJpZW1lbnQlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXMlMkNlbiUyMHByb2R1Y3Rpb24=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1768832665148" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="347">
 <a href="./project/2021_Appariement/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1335,7 +1462,7 @@ Comparaison des méthodes d’appariement et apport du machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="17" data-categories="UHl0aG9uJTJDZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVzJTJDQVBJJTJDbWFjaGluZSUyMGxlYXJuaW5nJTJDZW4lMjBwcm9kdWN0aW9u" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1765989809152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="431">
+<div class="g-col-1" data-index="17" data-categories="UHl0aG9uJTJDZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVzJTJDQVBJJTJDbWFjaGluZSUyMGxlYXJuaW5nJTJDZW4lMjBwcm9kdWN0aW9u" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1768832665148" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="431">
 <a href="./project/2021_Extraction_CS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1358,7 +1485,7 @@ Extraction automatique du tableau des filiales et participations des comptes soc
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="18" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNmYXN0dGV4dA==" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1765989809152" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
+<div class="g-col-1" data-index="18" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1768832665148" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="./project/2021_codif_PCS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1381,7 +1508,7 @@ Codification automatique des professions dans la nomenclature PCS 2020
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="19" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
+<div class="g-col-1" data-index="19" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="646">
 <a href="./project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1404,7 +1531,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="20" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="20" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="448">
 <a href="./project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1427,7 +1554,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="21" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="21" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="./project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1450,7 +1577,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="22" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ2ZvciVDMyVBQXQlMjBhbCVDMyVBOWF0b2lyZQ==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="465">
+<div class="g-col-1" data-index="22" data-categories="ZW4lMjBwcm9kdWN0aW9uJTIwJTNGJTNGJTJDSW5zZWUlMkNJUEMlMkN3ZWJzY3JhcGluZyUyQ2ZvciVDMyVBQXQlMjBhbCVDMyVBOWF0b2lyZQ==" data-listing-date-sort="1590969600000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="499">
 <a href="./project/2020_webscraping_ipc/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1473,7 +1600,7 @@ Webscrapper les caractéristiques des produits pour améliorer la mesure de l’
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="23" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1765989809151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="23" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="./project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1496,7 +1623,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="24" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNwciVDMyVBOXZpc2lvbnMlMkNJbnNlZQ==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1765989809150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="371">
+<div class="g-col-1" data-index="24" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNwciVDMyVBOXZpc2lvbnMlMkNJbnNlZQ==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1768832665147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="405">
 <a href="./project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1519,7 +1646,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="25" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1765989809150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
+<div class="g-col-1" data-index="25" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1768832665146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
 <a href="./project/2019_classification_asso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1542,7 +1669,7 @@ Codification automatique de l’activité des associations
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="26" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMjAlM0YlM0YlMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765989809150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="285">
+<div class="g-col-1" data-index="26" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMjAlM0YlM0YlMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768832665146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="319">
 <a href="./project/2018_outlier_dsn/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1565,7 +1692,7 @@ Détecter et traiter les valeurs aberrantes ou manquantes, application à la Dé
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="27" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1765989809150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="27" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768832665146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="311">
 <a href="./project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1597,7 +1724,7 @@ Ségrégation urbaine : un éclairage par les données de téléphonie mobile
 <p>Toutes les <em>newsletters</em> précédemment publiées sont disponibles sur la <a href="./infolettre/infolettre.html">page dédiée</a>.</p>
 <div id="listing-newsletters" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1765324800000" data-listing-file-modified-sort="1765989809146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1558">
+<div class="g-col-1" data-index="0" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1765324800000" data-listing-file-modified-sort="1768832665142" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1558">
 <a href="./infolettre/infolettre_21/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1620,7 +1747,7 @@ Qui pour financer l’open source?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1761350400000" data-listing-file-modified-sort="1765989809145" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1281">
+<div class="g-col-1" data-index="1" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1761350400000" data-listing-file-modified-sort="1768832665141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1281">
 <a href="./infolettre/infolettre_20/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1643,7 +1770,7 @@ De belles cartographies, des packages R et l’importance des données d’entra
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1765989809144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2655">
+<div class="g-col-1" data-index="2" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1759104000000" data-listing-file-modified-sort="1768832665140" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="14" data-listing-word-count-sort="2655">
 <a href="./infolettre/infolettre_19/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1666,7 +1793,7 @@ La rentrée 2025: actualités, nouveautés, interview de rentrée
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1709769600000" data-listing-file-modified-sort="1765989809141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2102">
+<div class="g-col-1" data-index="3" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1709769600000" data-listing-file-modified-sort="1768832665139" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2102">
 <a href="./infolettre/infolettre_18/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1689,7 +1816,7 @@ Sora, la nouvelle IA d’OpenIA pour générer des vidéos ; Le Chat, le nouveau
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1705708800000" data-listing-file-modified-sort="1765989809137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3355">
+<div class="g-col-1" data-index="4" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1705708800000" data-listing-file-modified-sort="1768832665135" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="17" data-listing-word-count-sort="3355">
 <a href="./infolettre/infolettre_17/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1712,7 +1839,7 @@ Le RAG pour limiter l’hallucination par l’IA ; l’avancée des bases de don
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1703116800000" data-listing-file-modified-sort="1765989809134" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1879">
+<div class="g-col-1" data-index="5" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1703116800000" data-listing-file-modified-sort="1768832665132" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1879">
 <a href="./infolettre/infolettre_16/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1735,7 +1862,7 @@ Rétrospective du réseau en 2023 (cocorico, beaucoup de nouveaux inscrits !) ; 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1694304000000" data-listing-file-modified-sort="1765989809132" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2026">
+<div class="g-col-1" data-index="6" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1694304000000" data-listing-file-modified-sort="1768832665132" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2026">
 <a href="./infolettre/infolettre_15/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1758,7 +1885,7 @@ Coûts d’entrée trop élevés pour l’entraînement des modèles de langage 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1688169600000" data-listing-file-modified-sort="1765989809130" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="517">
+<div class="g-col-1" data-index="7" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1688169600000" data-listing-file-modified-sort="1768832665132" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="517">
 <a href="./infolettre/infolettre_14/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1781,7 +1908,7 @@ Propositions de lecture estivale
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1680307200000" data-listing-file-modified-sort="1765989809124" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1549">
+<div class="g-col-1" data-index="8" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1680307200000" data-listing-file-modified-sort="1768832665131" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1549">
 <a href="./infolettre/infolettre_13/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1804,7 +1931,7 @@ Des innovations rapides sur l’IA qui lancent un débat sur sa place dans la so
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1678838400000" data-listing-file-modified-sort="1765989809122" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="967">
+<div class="g-col-1" data-index="9" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1678838400000" data-listing-file-modified-sort="1768832665130" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="967">
 <a href="./infolettre/infolettre_12/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1827,7 +1954,7 @@ Tapis rouge et graph de l’Insee ; questionnement sur l’IA ; faillite dans la
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1677628800000" data-listing-file-modified-sort="1765989809121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
+<div class="g-col-1" data-index="10" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1677628800000" data-listing-file-modified-sort="1768832665129" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
 <a href="./infolettre/infolettre_11/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1850,7 +1977,7 @@ ChatGPT continue de faire parler ; Arrow et Polars pour le traitement de donnée
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="11" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1675036800000" data-listing-file-modified-sort="1765989809118" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="982">
+<div class="g-col-1" data-index="11" data-categories="SW5mb2xldHRyZQ==" data-listing-date-sort="1675036800000" data-listing-file-modified-sort="1768832665126" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="982">
 <a href="./infolettre/infolettre_10/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1873,7 +2000,7 @@ DoReMiFaSol pour récupérer des données de l’Insee ; une masterclass datasci
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="12" data-categories="SW5zZWUlMkNSZXRyb3NwZWN0aXZlJTJDSW5mb2xldHRyZQ==" data-listing-date-sort="1673308800000" data-listing-file-modified-sort="1765989809117" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1695">
+<div class="g-col-1" data-index="12" data-categories="SW5zZWUlMkNSZXRyb3NwZWN0aXZlJTJDSW5mb2xldHRyZQ==" data-listing-date-sort="1673308800000" data-listing-file-modified-sort="1768832665125" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1695">
 <a href="./infolettre/infolettre_09/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1896,7 +2023,7 @@ Retex sur 2022, première année du réseau des datascientists ; snapshot de l�
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="13" data-categories="TkxQJTJDT2JzZXJ2YWJsZSUyQ1F1YXJ0byUyQ0RlZXAlMjBsZWFybmluZyUyQ0luc2VlJTJDUmV0cm9zcGVjdGl2ZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1765989809115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1386">
+<div class="g-col-1" data-index="13" data-categories="TkxQJTJDT2JzZXJ2YWJsZSUyQ1F1YXJ0byUyQ0RlZXAlMjBsZWFybmluZyUyQ0luc2VlJTJDUmV0cm9zcGVjdGl2ZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1672444800000" data-listing-file-modified-sort="1768832665123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1386">
 <a href="./infolettre/infolettre_08/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1919,7 +2046,7 @@ L’année 2022 dans le monde de la data science : IA, transformation de RStudio
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="14" data-categories="TkxQJTJDUmV0cm9zcGVjdGl2ZSUyQ09ic2VydmFibGUlMkNRdWFydG8lMkNEZWVwJTIwbGVhcm5pbmclMkNJbnNlZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1661904000000" data-listing-file-modified-sort="1765989809148" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="147">
+<div class="g-col-1" data-index="14" data-categories="TkxQJTJDUmV0cm9zcGVjdGl2ZSUyQ09ic2VydmFibGUlMkNRdWFydG8lMkNEZWVwJTIwbGVhcm5pbmclMkNJbnNlZSUyQ0luZm9sZXR0cmU=" data-listing-date-sort="1661904000000" data-listing-file-modified-sort="1768832665144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="147">
 <a href="./infolettre/infolettre_old/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1953,7 +2080,7 @@ Archive des infolettres et lettres Big Data
 <link href="./assets/css/all.css" rel="stylesheet">
 <div class="list grid quarto-listing-cols-3">
 
-  <div class="g-col-1" data-index="0" data-listing-file-modified-sort="1765989809149" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="0" data-listing-file-modified-sort="1768832665145" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://oecd-opsi.org/work-areas/mission-community-of-practice/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -2000,7 +2127,7 @@ Archive des infolettres et lettres Big Data
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2008,7 +2135,7 @@ Archive des infolettres et lettres Big Data
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="1" data-listing-file-modified-sort="1765989809148" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="1" data-listing-file-modified-sort="1768832665144" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://ec.europa.eu/newsroom/estat_tss/items" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -2055,7 +2182,7 @@ Archive des infolettres et lettres Big Data
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2063,7 +2190,7 @@ Archive des infolettres et lettres Big Data
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="2" data-listing-file-modified-sort="1765989809148" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="2" data-listing-file-modified-sort="1768832665144" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://groupe-genes.fr/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -2109,7 +2236,7 @@ Archive des infolettres et lettres Big Data
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2117,7 +2244,7 @@ Archive des infolettres et lettres Big Data
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="3" data-listing-file-modified-sort="1765989809148" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="3" data-listing-file-modified-sort="1768832665144" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://digital-finances.com/" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -2163,7 +2290,7 @@ Archive des infolettres et lettres Big Data
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2171,7 +2298,7 @@ Archive des infolettres et lettres Big Data
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="4" data-listing-file-modified-sort="1765989809148" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="4" data-listing-file-modified-sort="1768832665144" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://www.etalab.gouv.fr/communaute" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -2217,7 +2344,7 @@ Archive des infolettres et lettres Big Data
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2225,7 +2352,7 @@ Archive des infolettres et lettres Big Data
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="5" data-listing-file-modified-sort="1765989809149" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="5" data-listing-file-modified-sort="1768832665146" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://datalab.sspcloud.fr/home" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       </a><div class="quarto-grid-item card h-100 card-left">
 <a href="https://datalab.sspcloud.fr/home" target="_blank" rel="noopener" class="grid-item-link">
@@ -2277,7 +2404,7 @@ les outils modernes de la <em>data-science</em>.
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2285,7 +2412,7 @@ les outils modernes de la <em>data-science</em>.
      <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="6" data-listing-file-modified-sort="1765989809150" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="6" data-listing-file-modified-sort="1768832665146" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="%5Bobject%20Object%5D" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -2331,7 +2458,7 @@ les outils modernes de la <em>data-science</em>.
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2339,7 +2466,7 @@ les outils modernes de la <em>data-science</em>.
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="7" data-listing-file-modified-sort="1765989809150" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="7" data-listing-file-modified-sort="1768832665146" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://statswiki.unece.org/display/ML/Machine+Learning+Group+2021" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       <div class="quarto-grid-item card h-100 card-left">
         
@@ -2386,7 +2513,7 @@ les outils modernes de la <em>data-science</em>.
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2394,7 +2521,7 @@ les outils modernes de la <em>data-science</em>.
     </a> <!-- Added link wrapper -->
   </div>
 
-  <div class="g-col-1" data-index="8" data-listing-file-modified-sort="1765989809149" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+  <div class="g-col-1" data-index="8" data-listing-file-modified-sort="1768832665145" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
     <a href="https://app.slack.com/client/T9ML8RLMP" target="_blank" rel="noopener" class="grid-item-link"> <!-- Added link wrapper -->
       </a><div class="quarto-grid-item card h-100 card-left">
 <a href="https://app.slack.com/client/T9ML8RLMP" target="_blank" rel="noopener" class="grid-item-link">
@@ -2448,7 +2575,7 @@ Il est ouvert à tou.te.s et se veut accessible aux débutants. Vous pouvez mêm
               index.qmd
             </div>
             <div class="card-file-modified listing-file-modified">
-              17/12/2025 16:43:29
+              19/01/2026 14:24:25
             </div>
         </div> -->
 
@@ -2549,7 +2676,7 @@ window._ojs.runtime.interpretFromScriptTags();
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/ssphub\/pr-preview\/pr-112\/");
+        var filterRegex = new RegExp("https:\/\/InseeFrLab\.github\.io\/ssphub\/pr-preview\/pr-124\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
