@@ -1,6 +1,6 @@
 ---
 title: Que disent les données de production et de consommation d’électricité sur l’activité économique en période de confinement ?
-description: Utilisation des données de production et de consommation d'électricité pour prédire l'activité économique
+description: Utilisation des données de production et de consommation d'électricité pour prévoir l'activité économique
 format: html
 date: '2020-12-01'
 image: electricity.jpg
@@ -33,7 +33,7 @@ categories:
 |-----------|------------------------------------------------------------------|
 | **Détail du projet**         |  Les données de **production et de consommation d’électricité** quotidiennes françaises sont une source utile pour suivre en temps réel les évolutions de l’activité des entreprises et des ménages. L’électricité étant l’une des formes d’énergie les plus utilisées dans le processus de production, les variations de sa production et de sa consommation reflètent les grandes évolutions du produit intérieur brut. **La consommation d’électricité, en particulier, reflète la modification des comportements induite par la crise du coronavirus** - qu’il s’agisse de la baisse de production dans des secteurs intensifs en électricité, comme les transports, ou du mode de vie transformé des ménages confinés. <br> Le climat et la saisonnalité affectant fortement la production et la consommation d’électricité, les comparaisons temporelles sont effectuées après correction des effets des variations de température, des jours ouvrés et des mois de l’année. <br> Selon les données de RTE (réseau de transport d’électricité), la consommation totale pendant la période du 23 mars au 26 avril 2020 est inférieure de 14 % à celle d’une période normale. De manière relativement cohérente avec l’ordre de grandeur des baisses d’activité estimées par ailleurs, la consommation des entreprises directement raccordées à RTE (pour la plupart de gros industriels) est inférieure de 24 %. Pendant la période du 23 mars au 3 avril, selon les données issues d’Enedis, la consommation hors résidentiel (entreprises – hors celles directement raccordées à RTE – et secteur public) est inférieure d’environ 27 % ; tandis que celle des ménages est supérieure d’environ 4 % à la normale.   |
 | **Acteurs**                  |  Insee     |
-| **Résultats du projet**      |  Les données d'électricité ont été utilisées pour prédire l'activité économique en période de crise.      |
+| **Résultats du projet**      |  Les données d'électricité ont été utilisées pour prévoir l'activité économique en période de crise.      |
 | **Produits et documentation du projet**      |- [Que disent les données de production et de consommation d’électricité sur l’activité économique en période de confinement ?](https://www.insee.fr/fr/statistiques/4488584?sommaire=4473296), Note de conjoncture - décembre 2020  |
 | **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} LIEN A INSERER SI EXISTE []()       |
 

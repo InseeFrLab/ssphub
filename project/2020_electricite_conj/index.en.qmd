@@ -1,7 +1,7 @@
 ---
 title: What do the electricity production and consumption data say about economic
   activity during the containment period?
-description: Using electricity production and consumption data to predict economic
+description: Using electricity production and consumption data to forecast economic
   activity
 format: html
 date: '2020-12-01'
@@ -34,7 +34,7 @@ categories:
 |---|------------------------------------------------------------------------- |
 | **Project details** | Data from **electricity production and consumption** are a useful source for tracking changes in the activity of businesses and households in real time. Electricity is one of the most widely used forms of energy in the production process, so changes in its production and consumption reflect major trends in gross domestic product. **Electricity consumption, in particular, reflects the change in behaviour brought about by the coronavirus crisis.** - crisis, whether in terms of the drop in production in electricity-intensive sectors such as transport, or the transformed lifestyle of confined households. <br> Since climate and seasonality have a major impact on electricity production and consumption, the time comparisons are made after adjusting for the effects of variations in temperature, working days and months of the year. <br> According to RTE (Réseau de transport d'électricité) data, total consumption during the period from 23 March to 26 April 2020 was 14% lower than during a normal period. In a manner that is relatively consistent with the order of magnitude of the reductions in activity estimated elsewhere, consumption by companies directly connected to RTE (mostly large industrial companies) is 24% lower. During the period from 23 March to 3 April, according to data from Enedis, non-residential consumption (businesses - excluding those directly connected to RTE - and the public sector) was around 27% lower, while household consumption was around 4% higher than normal. |
 | **Players** | Insee |
-| **Project results** | Electricity data has been used to predict economic activity in times of crisis. |
+| **Project results** | Electricity data has been used to forecast economic activity in times of crisis. |
 | **Project products and documentation** | - [What do electricity production and consumption data tell us about economic activity during lockdown?](https://www.insee.fr/en/statistiques/4496154?sommaire=4473307) Economic Outlook - December 2020|
 
 # Similar projects
