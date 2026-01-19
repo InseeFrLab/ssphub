@@ -41,7 +41,7 @@ listing:
 | **Acteurs**                  | Insee      |
 | **Résultats du projet**      | Pour compenser l’appariement partiel via le code-barre, une méthode pour apparier efficacement des libellés courts est mise en place. Après une étape de prétraitement pour normaliser des libellés courts, des techniques d’appariement floue sont mises en place. Elles sont basées sur plusieurs tokenizers (y compris les n-grammes) en interrogeant un index personnalisé ElasticSearch et en validant les échos candidats avec une distance de Levenstein. Le pipeline est composé de plusieurs étapes relâchant successivement les contraintes pour trouver des candidats pertinents. Enfin, l'appariement final est évalué par une mesure de similarité basée sur un word embedding obtenu en entraînant un réseau siamois sur l’appariement exact via les code-barres. Les données mobilisées, portant sur la période 2015-2018, sont celles de plusieurs enseignes d’un même groupe de la grande distribution (relevanC). |
 | **Produits et documentation du projet**      | - [Enrichissement de données de caisses à partir d’informations nutritionnelles : une approche par appariement flou sur données de grande dimension](https://journees-methodologie-statistique.insee.net/enrichissement-de-donnees-de-caisses-a-partir-dinformations-nutritionnelles-une-approche-par-appariement-flou-sur-donnees-de-grande-dimension/), Journées de méthodologie statistique 2022      |
-| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} []()       |
+| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} LIEN A INSERER SI EXISTE []()       |
 
 # Projets similaires
 
