@@ -5,16 +5,13 @@ description: |
   Infolettre du mois de __janvier 2026__
 
 # Date published
-date: '2026-01-23'
+date: '2026-01-31'
 number: 22
 
 authors:
   - Nicolas
 
 image: newsletter_22.jpg
-
-tags:
-- ???
 
 categories:
   - Infolettre
@@ -55,29 +52,29 @@ L'enjeu est alors de ne pas chercher à manipuler l'information à travers une c
 
 Le replay et leur présentation sont [en ligne](../../talk/2026-01-cartographia/index.qmd).
 
-## Open Science Meet-up
+## Journée contribution open source 📅 16 & 17 juin 2026 - Paris
+A vos agendas, le SSPLab organise une journée autour de la contribution open-source les 16 et 17 juin 2026. Cela aura lieu au Lieu de la transformation publique à Paris. Le but de cette journée est de démystifier l’opensource, comment on peut y contribuer et de reverser aux projets qu’on utilise abondamment pour la datascience. 
 
-## Journée contribution open source
+Le programme est en cours d'élaboration donc si vous avez une idée de projets open-source d'intérêt auquel vous souhaitez contribuer, n'hésitez pas à nous contacter ! 
+
 
 # Actualités
-Beaucoup d'actualités mais plutôt plus calme en data science ce mois-ci 🤷‍♀️.
+Beaucoup d'actualités mais plutôt plus calme en data science ce mois-ci 🤷‍♀️. Si vous n'êtes pas intéressé par les aspects techniques et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.
 
 ##  LLM
-Dans la série agents, cet article de Posit compare différents modèles de LLM pour coder en R (sans les modèles de Mistral).
-Résultat : les recommendations actuelles, tout cela étant très vite daté, sont plutôt Claude Sonnet 4.5, Claude Opus 4.5, or OpenAI GPT-5
+Dans la série agents, cet [article de Posit](https://posit.co/blog/r-llm-evaluation-03/) compare différents modèles de LLM pour coder en R (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les recommendations actuelles, tout cela étant très vite daté, sont plutôt Claude Sonnet 4.5, Claude Opus 4.5, or OpenAI GPT-5.
 
-
-## Outil
-- [Marmot: Open-source catalog for all your data assets](https://marmotdata.io/)
-- [NeMo Data Designer: A general library for generating high-quality synthetic data from scratch or based on seed data.](https://nvidia-nemo.github.io/DataDesigner/latest/)
+## Outils
+Deux outils open-source pour synthétiser des données ou les valoriser.  
+- Si vous cherchez à générer des données synthétiques, il y a [NeMo](https://nvidia-nemo.github.io/DataDesigner/latest/). Open-source (mais porté par Nvidia), l'objectif est de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant à un LLM de votre choix. 
+- Côté valorisation des données, il y a eu [Marmot](https://marmotdata.io/), un outil open-source pour parcourir plus facilement vos différents jeux de données. 
+- Vous cherchez à rend des WebAssembly powered code blocks and exercises for Quarto HTML documents	https://r-wasm.github.io/quarto-live/
+- Package OFCE pour faire des publications en ligne reproductibles https://github.com/OFCE/ofce
 
 ## Formation
-- Python :
-  - [Python datascience Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) ;
-  - WebAssembly powered code blocks and exercises for Quarto HTML documents	https://r-wasm.github.io/quarto-live/
-- Parquet :
-  - Comprendre la manière dont fonctionne les filtres Bloom dans la technologie Parquet. https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/
+Quelques ressources intéressantes de formation ou de blog. 
+- Côté Python, le célèbre livre [Python datascience Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) est disponible aussi en version web ;
+- Pour comprendre la manière dont fonctionne les filtres Bloom dans la technologie **Parquet**, je vous recommande ce [très utile post de blog](https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/) de E. Mauvière.   
 
-## Ressources et fun
-- [Les statistiques en BD](https://e-pedago.institut-agro-dijon.fr/bd-statistiques/), écrit par [Laurence DUJOURDY](https://linkedin.com/in/laurence-dujourdy-b9a2a36) & Mathieu BARTOLETTI, dessinée par [Thibault ROY](https://linkedin.com/in/thibault-roy-129b98195)
-- Package OFCE pour faire des publications en ligne reproductibles 
+## Fun
+- Si vous voulez expliquer les statistiques facilement, voici une excellente BD sur le sujet (aussi pour les enfants). Dans [*Les statistiques en BD*](https://e-pedago.institut-agro-dijon.fr/bd-statistiques/), [Laurence Dujourdy](https://linkedin.com/in/laurence-dujourdy-b9a2a36) et Mathieu Bartoletti vulgarisent simplement les concepts que l'on a appris il y a un certain temps. Le tout est dessiné par [Thibault Roy](https://linkedin.com/in/thibault-roy-129b98195) et est porté par [l'institut Agro de Dijon](https://institut-agro-dijon.fr/).
