@@ -2,7 +2,7 @@
 title: "Utilisation des images satellites pour la statistique publique"
 
 # Summary for listings and search engines
-description: "Utiliser les images satellites pour améliorer le recensement de la population dans les territoire ultra-marins"
+description: "Utiliser les images satellites pour améliorer le recensement de la population dans les territoires ultra-marins"
 
 format: html
 
@@ -16,7 +16,6 @@ categories:
 - package
 - deep learning
 - images satellites
-- en production
 
 listing:
 - id: presentations
@@ -53,3 +52,7 @@ listing:
 :::
 
 
+# Projets similaires
+
+::: {#similar-project}
+:::

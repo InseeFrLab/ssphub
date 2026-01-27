@@ -12,11 +12,10 @@ categories:
 - package
 - deep learning
 - satellite imagery
-- in production
 listing:
 - id: presentations
   contents: cards/*.qmd
-  sort: order desc
+  sort: "order desc"
   categories: false
   type: grid
   template: ../../scripts/courses.ejs
@@ -39,7 +38,7 @@ listing:
 | **Project results** | The results of the project are presented in more detail [on the dedicated website](https://inseefrlab.github.io/satellite-images-docs/). The experimentation phase ended with: <br> - The transmission of **building evolution statistics** in Mayotte. These statistics were used to organise the 2024 complementary mapping survey in Mayotte; <br> - The development of a [**visualisation application**](https://inseefrlab.github.io/satellite-images-webapp/) integrating background maps built from Pleiades tiles and buildings detected on these tiles using our algorithms, as well as change detection layers; <br> - The creation of the**Python package for processing satellite images** [**Astrovision**](https://pypi.org/project/astrovision/)                                      |
 | **Project code** | -  <https://github.com/InseeFrLab/astrovision> : **Python package** package for working with satellite data: <br> -  <https://inseefrlab.github.io/satellite-images-webapp/> code of the**viewing application** <br> -  [https://github.com/InseeFrLab/satellite-images-preprocess ](https://github.com/InseeFrLab/satellite-images-preprocess) code of **data pre-processing** <br> -  <https://github.com/InseeFrLab/satellite-images-train> code for the**model training** <br> -  <https://github.com/InseeFrLab/satellite-images-inference> code for the**inference**                                                 |
 
-# Documents relating to the INSEE satellite data project
+# Documents relating to the Insee satellite data project
 
 ::: {#presentations}
 :::
