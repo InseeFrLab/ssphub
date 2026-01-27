@@ -68,8 +68,8 @@ Dans la série agents, cet [article de Posit](https://posit.co/blog/r-llm-evalua
 Deux outils open-source pour synthétiser des données ou les valoriser.  
 - Si vous cherchez à générer des données synthétiques, il y a [NeMo](https://nvidia-nemo.github.io/DataDesigner/latest/). Open-source (mais porté par Nvidia), l'objectif est de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant à un LLM de votre choix. 
 - Côté valorisation des données, il y a eu [Marmot](https://marmotdata.io/), un outil open-source pour parcourir plus facilement vos différents jeux de données. 
-- Vous cherchez à rend des WebAssembly powered code blocks and exercises for Quarto HTML documents	https://r-wasm.github.io/quarto-live/
-- Package OFCE pour faire des publications en ligne reproductibles https://github.com/OFCE/ofce
+- Un peu plus d'interactivité dans des cellules de code en Quarto ? Il y a maintenant des [Vous cherchez à rendre des cell WebAssembly powered code blocks and exercises for Quarto HTML documents](https://r-wasm.github.io/quarto-live/).
+- Du côté des publications en ligne reproductibles et interactives, l'OFCE a publié depuis plusieurs années son package maison <https://github.com/OFCE/ofce>. 
 
 ## Formation
 Quelques ressources intéressantes de formation ou de blog. 
