@@ -16,7 +16,6 @@ number: 8
 
 categories:
   - NLP
-  - Retrospective
   - Observable
   - Quarto
   - Deep learning
@@ -25,7 +24,7 @@ categories:
   - Infolettre
 ---
 
-_Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit_ 
+_Vous désirez intégrer la liste de diffusion ? Un mail à {{< var contact.email >}} suffit_ 
 
 
 
@@ -40,7 +39,7 @@ proposer, en deux temps, deux rétrospectives.
 
 Cette première _newsletter_ revient 
 sur les principaux événements de l'année 2022 dans le monde de
-la _data science_. La [seconde _newsletter_](https://ssphub.netlify.app/post/recap2022/) proposera
+la _data science_. La [seconde _newsletter_](../../blog/recap2022/index.qmd) proposera
 une rétrospective quantitative sur le
 réseau des _data scientists_ de la statistique publique, à la manière
 des rétrospectives personnalisées de nos applications préférées.
@@ -237,7 +236,7 @@ une [grammaire proche de `ggplot2`](https://observablehq.com/@observablehq/plot-
 La communauté des cartographes a été particulièrement active sur `Observable`, notamment 
 à l'occasion du [#30daymapchallenge](https://observablehq.com/collection/@observablehq/30-day-map-challenge).
 [Nicolas Bertin (`neocarto`)](https://observablehq.com/@neocartocnrs), dont on ne peut
-que recommander l'[introduction à `Observable`](/talk/presentation-dobservable-par-nicolas-lambert/) faite pour le réseau,
+que recommander l'[introduction à `Observable`](/event/presentation-dobservable-par-nicolas-lambert/) faite pour le réseau,
 ou [Eric Mauvière](https://observablehq.com/@ericmauviere) font partie des
 comptes à suivre dans la communauté
 francophone. 
