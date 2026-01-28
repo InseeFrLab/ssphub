@@ -11,7 +11,7 @@ number: 22
 authors:
   - Nicolas
 
-image: newsletter_22.jpg
+image: minard.jpeg
 
 categories:
   - Infolettre
@@ -29,12 +29,13 @@ Cette carte est considérée comme l'une des premières infographies modernes et
 
 - l'itinéraire de l'armée napoléonienne en Russie (en deux couleurs, pour la campagne à l'aller et la retraite en noir) ;
 - la taille de l'armée, prenant en compte les arrivées et les morts ;
-- la température lors de la retraite (jusque -30°R, soit -37,5°C ... brr ... ).
+- la température lors de la retraite (jusque -30°R, soit -37,5°C 🥶 ).
 
 ![[*Tableaux graphiques et cartes figuratives*, par Charles Minard](https://heritage.ecoledesponts.fr/ark:/12148/btv1b10484829h/f52.item.r=minard)](minard.jpeg)
 
 Cette carte est tellement connue qu'elle a été copiée, traduite, refaite avec les moyens modernes :
-- la voici [en anglais](https://www.datavis.ca/gallery/minard/minard-odt.jpg) ou [in italiano](https://www.datavis.ca/gallery/minard/minard-MarcoMeschini.png) ;
+
+- la voici [in English](https://www.datavis.ca/gallery/minard/minard-odt.jpg) ou [in italiano](https://www.datavis.ca/gallery/minard/minard-MarcoMeschini.png) ;
 - en [R (avec ggplot2)](https://www.datavis.ca/gallery/minard/ggplot2/march.jpg) ;
 - en [SAS (pff, so 2025)](https://www.datavis.ca/gallery/minard/Minard-IML.gif).
 
@@ -59,22 +60,25 @@ Le programme est en cours d'élaboration donc si vous avez une idée de projets 
 
 
 # Actualités
-Beaucoup d'actualités mais plutôt plus calme en data science ce mois-ci 🤷‍♀️. Si vous n'êtes pas intéressé par les aspects techniques et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.
+Beaucoup d'actualités mais plus calme en data science ce mois-ci 🤷‍♀️. Si vous n'êtes pas intéressé par les aspects techniques et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.
 
 ##  LLM
-Dans la série agents, cet [article de Posit](https://posit.co/blog/r-llm-evaluation-03/) compare différents modèles de LLM pour coder en R (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les recommendations actuelles, tout cela étant très vite daté, sont plutôt Claude Sonnet 4.5, Claude Opus 4.5, or OpenAI GPT-5.
+Dans la série agents, cet [article de Posit](https://posit.co/blog/r-llm-evaluation-03/) compare **différents modèles de LLM pour coder en R** (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les modèles les mieux évalués à date, tout cela étant très vite dépassé, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5.
 
 ## Outils
 Deux outils open-source pour synthétiser des données ou les valoriser.  
-- Si vous cherchez à générer des données synthétiques, il y a [NeMo](https://nvidia-nemo.github.io/DataDesigner/latest/). Open-source (mais porté par Nvidia), l'objectif est de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant à un LLM de votre choix. 
-- Côté valorisation des données, il y a eu [Marmot](https://marmotdata.io/), un outil open-source pour parcourir plus facilement vos différents jeux de données. 
-- Un peu plus d'interactivité dans des cellules de code en Quarto ? Il y a maintenant des [Vous cherchez à rendre des cell WebAssembly powered code blocks and exercises for Quarto HTML documents](https://r-wasm.github.io/quarto-live/).
-- Du côté des publications en ligne reproductibles et interactives, l'OFCE a publié depuis plusieurs années son package maison <https://github.com/OFCE/ofce>. 
+
+- Si vous cherchez à générer des **données synthétiques**, il y a [NeMo](https://nvidia-nemo.github.io/DataDesigner/latest/). Open-source, l'objectif de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant au LLM de votre choix. 
+- Côté **valorisation des données**, il y a eu [Marmot](https://marmotdata.io/), un outil open-source pour parcourir plus facilement vos différents jeux de données. 
+- Un peu plus d'**interactivité dans des cellules de code en Quarto** ? [Quarto-live](https://r-wasm.github.io/quarto-live/) permet de faire des cellules de code réactives dans une page HTML Quarto.
+- Du côté des **publications en ligne reproductibles et interactives**, l'OFCE a publié depuis plusieurs années son package maison [OFCE](https://github.com/OFCE/ofce). Il permet de publier sur Internet les études de l'OFCE, en insérant des graphiques interactifs et en gérant aussi la charte graphique de l'OFCE.
 
 ## Formation
 Quelques ressources intéressantes de formation ou de blog. 
-- Côté Python, le célèbre livre [Python datascience Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) est disponible aussi en version web ;
-- Pour comprendre la manière dont fonctionne les filtres Bloom dans la technologie **Parquet**, je vous recommande ce [très utile post de blog](https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/) de E. Mauvière.   
+
+- Côté Python, le célèbre livre [*Python datascience Handbook*](https://jakevdp.github.io/PythonDataScienceHandbook/) est disponible aussi en version web ;
+- Pour comprendre la manière dont fonctionne les **filtres Bloom** dans la technologie **Parquet**, je vous recommande ce [très utile post de blog](https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/) de E. Mauvière.   
 
 ## Fun
-- Si vous voulez expliquer les statistiques facilement, voici une excellente BD sur le sujet (aussi pour les enfants). Dans [*Les statistiques en BD*](https://e-pedago.institut-agro-dijon.fr/bd-statistiques/), [Laurence Dujourdy](https://linkedin.com/in/laurence-dujourdy-b9a2a36) et Mathieu Bartoletti vulgarisent simplement les concepts que l'on a appris il y a un certain temps. Le tout est dessiné par [Thibault Roy](https://linkedin.com/in/thibault-roy-129b98195) et est porté par [l'institut Agro de Dijon](https://institut-agro-dijon.fr/).
+
+- Une excellente BD permet d'**expliquer les statistiques facilement** (aussi pour les enfants). Dans [*Les statistiques en BD*](https://e-pedago.institut-agro-dijon.fr/bd-statistiques/), [Laurence Dujourdy](https://linkedin.com/in/laurence-dujourdy-b9a2a36) et Mathieu Bartoletti vulgarisent simplement les concepts que l'on a appris il y a un certain temps. Le tout est dessiné par [Thibault Roy](https://linkedin.com/in/thibault-roy-129b98195) et est porté par [l'institut Agro de Dijon](https://institut-agro-dijon.fr/).
