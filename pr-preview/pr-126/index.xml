@@ -12,7 +12,7 @@
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Sat, 31 Jan 2026 00:00:00 GMT</lastBuildDate>
 <item>
-  <title></title>
+  <title>La première infographie</title>
   <link>https://ssphub.netlify.app/infolettre/infolettre_22/</link>
   <description><![CDATA[ 
 
@@ -30,7 +30,7 @@
 <ul>
 <li>l’itinéraire de l’armée napoléonienne en Russie (en deux couleurs, pour la campagne à l’aller et la retraite en noir) ;</li>
 <li>la taille de l’armée, prenant en compte les arrivées et les morts ;</li>
-<li>la température lors de la retraite (jusque -30°R, soit -37,5°C 🥶 ).</li>
+<li>la température lors de la retraite (jusque -30<a href="https://fr.wikipedia.org/wiki/%C3%89chelle_R%C3%A9aumur">°R</a>, soit -37,5°C 🥶 ).</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -48,9 +48,9 @@
 </section>
 <section id="whats-up-le-réseau" class="level1">
 <h1>What’s up le réseau ?</h1>
-<section id="cartographia" class="level2">
-<h2 class="anchored" data-anchor-id="cartographia">Cartographia</h2>
-<p>Le 13 janvier, nous avons reçu Françoise Bahoken et Nicolas Lambert. Ils nous ont présenté leur passionnant livre Cartographia, qui explore ludiquement les grandes questions de la cartographie. Le livre rappelle aussi que toute cartographie est une simplification de la réalité et qu’elle comprend ainsi forcément un parti pris, dont il faut être conscient. L’enjeu est alors de ne pas chercher à manipuler l’information à travers une cartographie et de tenter d’adopter le point de vue le plus neutre possible.</p>
+<section id="présentation-de-cartographia" class="level2">
+<h2 class="anchored" data-anchor-id="présentation-de-cartographia">Présentation de Cartographia</h2>
+<p>Le 13 janvier, nous avons reçu Françoise Bahoken et Nicolas Lambert. Ils nous ont présenté leur passionnant livre <a href="https://www.dunod.com/histoire-geographie-et-sciences-politiques/cartographia-comment-geographes-redessinent-monde">Cartographia</a>, qui explore ludiquement les grandes questions de la cartographie. Le livre rappelle aussi que toute cartographie est une <strong>simplification de la réalité</strong> et qu’elle comprend ainsi forcément un parti pris, dont il faut être conscient. L’enjeu est alors de ne pas chercher à manipuler l’information à travers une cartographie et de tenter d’adopter <strong>le point de vue le plus neutre possible</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://ssphub.netlify.app/infolettre/infolettre_22/carto_manip.png" class="img-fluid figure-img"></p>
@@ -61,7 +61,7 @@
 </section>
 <section id="journée-contribution-open-source-16-17-juin-2026---paris" class="level2">
 <h2 class="anchored" data-anchor-id="journée-contribution-open-source-16-17-juin-2026---paris">Journée contribution open source 📅 16 &amp; 17 juin 2026 - Paris</h2>
-<p>A vos agendas, le SSPLab organise une journée autour de la contribution open-source les 16 et 17 juin 2026. Cela aura lieu au Lieu de la transformation publique à Paris. Le but de cette journée est de démystifier l’opensource, comment on peut y contribuer et de reverser aux projets qu’on utilise abondamment pour la datascience.</p>
+<p>A vos agendas ! Le SSPLab organise une journée autour de la contribution open-source les 16 et 17 juin 2026. Cela aura lieu au Lieu de la transformation publique à Paris. Le but de cette journée est de démystifier l’opensource, comment on peut y contribuer et de reverser aux projets qu’on utilise abondamment pour la datascience.</p>
 <p>Le programme est en cours d’élaboration donc si vous avez une idée de projets open-source d’intérêt auquel vous souhaitez contribuer, n’hésitez pas à nous contacter !</p>
 </section>
 </section>
@@ -117,7 +117,7 @@
 
 
 <section id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert" class="level2">
-<h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert">Cartographia - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
+<h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert"><a href="https://www.dunod.com/histoire-geographie-et-sciences-politiques/cartographia-comment-geographes-redessinent-monde">Cartographia</a> - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
 <p><strong>Replay de la présentation :</strong></p>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div>
 <iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
