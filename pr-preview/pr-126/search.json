@@ -1145,28 +1145,28 @@
     "href": "infolettre/infolettre_22/index.html#llm",
     "title": "Bienvenue à la vingt deuxième infolettre !",
     "section": "LLM",
-    "text": "LLM\nDans la série agents, cet article de Posit compare différents modèles de LLM pour coder en R (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les recommendations actuelles, tout cela étant très vite daté, sont plutôt Claude Sonnet 4.5, Claude Opus 4.5, or OpenAI GPT-5."
+    "text": "LLM\nDans la série agents, cet article de Posit compare différents modèles de LLM pour coder en R (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les modèles les mieux évalués à date, tout cela étant très vite dépassé, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5."
   },
   {
     "objectID": "infolettre/infolettre_22/index.html#outils",
     "href": "infolettre/infolettre_22/index.html#outils",
     "title": "Bienvenue à la vingt deuxième infolettre !",
     "section": "Outils",
-    "text": "Outils\nDeux outils open-source pour synthétiser des données ou les valoriser.\n- Si vous cherchez à générer des données synthétiques, il y a NeMo. Open-source (mais porté par Nvidia), l’objectif est de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant à un LLM de votre choix. - Côté valorisation des données, il y a eu Marmot, un outil open-source pour parcourir plus facilement vos différents jeux de données. - Un peu plus d’interactivité dans des cellules de code en Quarto ? Il y a maintenant des Vous cherchez à rendre des cell WebAssembly powered code blocks and exercises for Quarto HTML documents. - Du côté des publications en ligne reproductibles et interactives, l’OFCE a publié depuis plusieurs années son package maison https://github.com/OFCE/ofce."
+    "text": "Outils\nDeux outils open-source pour synthétiser des données ou les valoriser.\n\nSi vous cherchez à générer des données synthétiques, il y a NeMo. Open-source, l’objectif de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant au LLM de votre choix.\nCôté valorisation des données, il y a eu Marmot, un outil open-source pour parcourir plus facilement vos différents jeux de données.\nUn peu plus d’interactivité dans des cellules de code en Quarto ? Quarto-live permet de faire des cellules de code réactives dans une page HTML Quarto.\nDu côté des publications en ligne reproductibles et interactives, l’OFCE a publié depuis plusieurs années son package maison OFCE. Il permet de publier sur Internet les études de l’OFCE, en insérant des graphiques interactifs et en gérant aussi la charte graphique de l’OFCE."
   },
   {
     "objectID": "infolettre/infolettre_22/index.html#formation",
     "href": "infolettre/infolettre_22/index.html#formation",
     "title": "Bienvenue à la vingt deuxième infolettre !",
     "section": "Formation",
-    "text": "Formation\nQuelques ressources intéressantes de formation ou de blog. - Côté Python, le célèbre livre Python datascience Handbook est disponible aussi en version web ; - Pour comprendre la manière dont fonctionne les filtres Bloom dans la technologie Parquet, je vous recommande ce très utile post de blog de E. Mauvière."
+    "text": "Formation\nQuelques ressources intéressantes de formation ou de blog.\n\nCôté Python, le célèbre livre Python datascience Handbook est disponible aussi en version web ;\nPour comprendre la manière dont fonctionne les filtres Bloom dans la technologie Parquet, je vous recommande ce très utile post de blog de E. Mauvière."
   },
   {
     "objectID": "infolettre/infolettre_22/index.html#fun",
     "href": "infolettre/infolettre_22/index.html#fun",
     "title": "Bienvenue à la vingt deuxième infolettre !",
     "section": "Fun",
-    "text": "Fun\n\nSi vous voulez expliquer les statistiques facilement, voici une excellente BD sur le sujet (aussi pour les enfants). Dans Les statistiques en BD, Laurence Dujourdy et Mathieu Bartoletti vulgarisent simplement les concepts que l’on a appris il y a un certain temps. Le tout est dessiné par Thibault Roy et est porté par l’institut Agro de Dijon."
+    "text": "Fun\n\nUne excellente BD permet d’expliquer les statistiques facilement (aussi pour les enfants). Dans Les statistiques en BD, Laurence Dujourdy et Mathieu Bartoletti vulgarisent simplement les concepts que l’on a appris il y a un certain temps. Le tout est dessiné par Thibault Roy et est porté par l’institut Agro de Dijon."
   },
   {
     "objectID": "post/embedding/index.html",

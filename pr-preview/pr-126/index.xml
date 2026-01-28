@@ -26,11 +26,11 @@
 </section>
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
-<p>Ce mois-ci, je vous propose de découvrir l’une des premières infographies, faite au XIX^ième siècle (et à 88 ans !) par Charles Minard. Il s’agit de la <em>carte figurative des pertes successives en hommes de l’armée française dans la campagne de Russie 1812-1813</em>. Cette carte est considérée comme l’une des premières infographies modernes et fait figurer :</p>
+<p>Ce mois-ci, je vous propose de découvrir une infographie faite au XIX<sup>ième</sup> siècle (et à 88 ans !) par Charles Minard. Il s’agit de la <em>carte figurative des pertes successives en hommes de l’armée française dans la campagne de Russie 1812-1813</em>. Cette carte est considérée comme l’une des <strong>premières infographies modernes</strong> 🐓 et fait figurer :</p>
 <ul>
 <li>l’itinéraire de l’armée napoléonienne en Russie (en deux couleurs, pour la campagne à l’aller et la retraite en noir) ;</li>
 <li>la taille de l’armée, prenant en compte les arrivées et les morts ;</li>
-<li>la température lors de la retraite (jusque -30°R, soit -37,5°C … brr … ).</li>
+<li>la température lors de la retraite (jusque -30°R, soit -37,5°C 🥶 ).</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -38,7 +38,12 @@
 <figcaption><a href="https://heritage.ecoledesponts.fr/ark:/12148/btv1b10484829h/f52.item.r=minard"><em>Tableaux graphiques et cartes figuratives</em>, par Charles Minard</a></figcaption>
 </figure>
 </div>
-<p>Cette carte est tellement connue qu’elle a été copiée, traduite, refaite avec les moyens modernes : - la voici <a href="https://www.datavis.ca/gallery/minard/minard-odt.jpg">en anglais</a> ou <a href="https://www.datavis.ca/gallery/minard/minard-MarcoMeschini.png">in italiano</a> ; - en <a href="https://www.datavis.ca/gallery/minard/ggplot2/march.jpg">R (avec ggplot2)</a> ; - en <a href="https://www.datavis.ca/gallery/minard/Minard-IML.gif">SAS (pff, so 2025)</a>.</p>
+<p>Cette carte est tellement connue qu’elle a été copiée, traduite, refaite avec les moyens modernes :</p>
+<ul>
+<li>la voici <a href="https://www.datavis.ca/gallery/minard/minard-odt.jpg">in English</a> ou <a href="https://www.datavis.ca/gallery/minard/minard-MarcoMeschini.png">in italiano</a> ;</li>
+<li>en <a href="https://www.datavis.ca/gallery/minard/ggplot2/march.jpg">R (avec ggplot2)</a> ;</li>
+<li>en <a href="https://www.datavis.ca/gallery/minard/Minard-IML.gif">SAS (pff, so 2025)</a>.</li>
+</ul>
 <p>Pour les curieux, le livre complet, comprenant d’autres très belles cartographies de Minard, sont disponibles dans les <a href="https://heritage.ecoledesponts.fr/ark:/12148/btv1b10484829h.r=minard?rk=257512%3B0">bien-heureuses archives numérisées de l’École des Ponts</a>.</p>
 </section>
 <section id="whats-up-le-réseau" class="level1">
@@ -62,24 +67,33 @@
 </section>
 <section id="actualités" class="level1">
 <h1>Actualités</h1>
-<p>Beaucoup d’actualités mais plutôt plus calme en data science ce mois-ci 🤷‍♀️. Si vous n’êtes pas intéressé par les aspects techniques et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.</p>
+<p>Beaucoup d’actualités mais plus calme en data science ce mois-ci 🤷‍♀️. Si vous n’êtes pas intéressé par les aspects techniques et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.</p>
 <section id="llm" class="level2">
 <h2 class="anchored" data-anchor-id="llm">LLM</h2>
-<p>Dans la série agents, cet <a href="https://posit.co/blog/r-llm-evaluation-03/">article de Posit</a> compare différents modèles de LLM pour coder en R (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les recommendations actuelles, tout cela étant très vite daté, sont plutôt Claude Sonnet 4.5, Claude Opus 4.5, or OpenAI GPT-5.</p>
+<p>Dans la série agents, cet <a href="https://posit.co/blog/r-llm-evaluation-03/">article de Posit</a> compare <strong>différents modèles de LLM pour coder en R</strong> (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les modèles les mieux évalués à date, tout cela étant très vite dépassé, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5.</p>
 </section>
 <section id="outils" class="level2">
 <h2 class="anchored" data-anchor-id="outils">Outils</h2>
-<p>Deux outils open-source pour synthétiser des données ou les valoriser.<br>
-- Si vous cherchez à générer des données synthétiques, il y a <a href="https://nvidia-nemo.github.io/DataDesigner/latest/">NeMo</a>. Open-source (mais porté par Nvidia), l’objectif est de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant à un LLM de votre choix. - Côté valorisation des données, il y a eu <a href="https://marmotdata.io/">Marmot</a>, un outil open-source pour parcourir plus facilement vos différents jeux de données. - Un peu plus d’interactivité dans des cellules de code en Quarto ? Il y a maintenant des <a href="https://r-wasm.github.io/quarto-live/">Vous cherchez à rendre des cell WebAssembly powered code blocks and exercises for Quarto HTML documents</a>. - Du côté des publications en ligne reproductibles et interactives, l’OFCE a publié depuis plusieurs années son package maison <a href="https://github.com/OFCE/ofce" class="uri">https://github.com/OFCE/ofce</a>.</p>
+<p>Deux outils open-source pour synthétiser des données ou les valoriser.</p>
+<ul>
+<li>Si vous cherchez à générer des <strong>données synthétiques</strong>, il y a <a href="https://nvidia-nemo.github.io/DataDesigner/latest/">NeMo</a>. Open-source, l’objectif de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant au LLM de votre choix.</li>
+<li>Côté <strong>valorisation des données</strong>, il y a eu <a href="https://marmotdata.io/">Marmot</a>, un outil open-source pour parcourir plus facilement vos différents jeux de données.</li>
+<li>Un peu plus d’<strong>interactivité dans des cellules de code en Quarto</strong> ? <a href="https://r-wasm.github.io/quarto-live/">Quarto-live</a> permet de faire des cellules de code réactives dans une page HTML Quarto.</li>
+<li>Du côté des <strong>publications en ligne reproductibles et interactives</strong>, l’OFCE a publié depuis plusieurs années son package maison <a href="https://github.com/OFCE/ofce">OFCE</a>. Il permet de publier sur Internet les études de l’OFCE, en insérant des graphiques interactifs et en gérant aussi la charte graphique de l’OFCE.</li>
+</ul>
 </section>
 <section id="formation" class="level2">
 <h2 class="anchored" data-anchor-id="formation">Formation</h2>
-<p>Quelques ressources intéressantes de formation ou de blog. - Côté Python, le célèbre livre <a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python datascience Handbook</a> est disponible aussi en version web ; - Pour comprendre la manière dont fonctionne les filtres Bloom dans la technologie <strong>Parquet</strong>, je vous recommande ce <a href="https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/">très utile post de blog</a> de E. Mauvière.</p>
+<p>Quelques ressources intéressantes de formation ou de blog.</p>
+<ul>
+<li>Côté Python, le célèbre livre <a href="https://jakevdp.github.io/PythonDataScienceHandbook/"><em>Python datascience Handbook</em></a> est disponible aussi en version web ;</li>
+<li>Pour comprendre la manière dont fonctionne les <strong>filtres Bloom</strong> dans la technologie <strong>Parquet</strong>, je vous recommande ce <a href="https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/">très utile post de blog</a> de E. Mauvière.</li>
+</ul>
 </section>
 <section id="fun" class="level2">
 <h2 class="anchored" data-anchor-id="fun">Fun</h2>
 <ul>
-<li>Si vous voulez expliquer les statistiques facilement, voici une excellente BD sur le sujet (aussi pour les enfants). Dans <a href="https://e-pedago.institut-agro-dijon.fr/bd-statistiques/"><em>Les statistiques en BD</em></a>, <a href="https://linkedin.com/in/laurence-dujourdy-b9a2a36">Laurence Dujourdy</a> et Mathieu Bartoletti vulgarisent simplement les concepts que l’on a appris il y a un certain temps. Le tout est dessiné par <a href="https://linkedin.com/in/thibault-roy-129b98195">Thibault Roy</a> et est porté par <a href="https://institut-agro-dijon.fr/">l’institut Agro de Dijon</a>.</li>
+<li>Une excellente BD permet d’<strong>expliquer les statistiques facilement</strong> (aussi pour les enfants). Dans <a href="https://e-pedago.institut-agro-dijon.fr/bd-statistiques/"><em>Les statistiques en BD</em></a>, <a href="https://linkedin.com/in/laurence-dujourdy-b9a2a36">Laurence Dujourdy</a> et Mathieu Bartoletti vulgarisent simplement les concepts que l’on a appris il y a un certain temps. Le tout est dessiné par <a href="https://linkedin.com/in/thibault-roy-129b98195">Thibault Roy</a> et est porté par <a href="https://institut-agro-dijon.fr/">l’institut Agro de Dijon</a>.</li>
 </ul>
 
 
@@ -90,7 +104,7 @@
   <category>Infolettre</category>
   <guid>https://ssphub.netlify.app/infolettre/infolettre_22/</guid>
   <pubDate>Sat, 31 Jan 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://ssphub.netlify.app/infolettre/infolettre_22/newsletter_22.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://ssphub.netlify.app/infolettre/infolettre_22/minard.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia</title>
