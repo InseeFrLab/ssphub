@@ -1138,14 +1138,14 @@
     "href": "infolettre/infolettre_22/index.html#journée-contribution-open-source-16-17-juin-2026---paris",
     "title": "La première infographie",
     "section": "Journée contribution open source 📅 16 & 17 juin 2026 - Paris",
-    "text": "Journée contribution open source 📅 16 & 17 juin 2026 - Paris\nA vos agendas ! Le SSPLab organise une journée autour de la contribution open-source les 16 et 17 juin 2026. Cela aura lieu au Lieu de la transformation publique à Paris. Le but de cette journée est de démystifier l’opensource, comment on peut y contribuer et de reverser aux projets qu’on utilise abondamment pour la datascience.\nLe programme est en cours d’élaboration donc si vous avez une idée de projets open-source d’intérêt auquel vous souhaitez contribuer, n’hésitez pas à nous contacter !"
+    "text": "Journée contribution open source 📅 16 & 17 juin 2026 - Paris\nA vos agendas ! Le SSPLab organise une journée autour de la contribution open-source les 16 et 17 juin 2026. Cela aura lieu au Lieu de la transformation publique à Paris. Le but de cette journée est de démystifier l’open source, d’expliquer comment y contribuer, et d’encourager chacun à soutenir les projets que nous utilisons largement en datascience.\nLe programme est en cours d’élaboration donc si vous avez une idée de projets open-source d’intérêt auquel vous souhaitez contribuer, n’hésitez pas à nous contacter !"
   },
   {
     "objectID": "infolettre/infolettre_22/index.html#llm",
     "href": "infolettre/infolettre_22/index.html#llm",
     "title": "La première infographie",
     "section": "LLM",
-    "text": "LLM\nDans la série agents, cet article de Posit compare différents modèles de LLM pour coder en R (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les modèles les mieux évalués à date, tout cela étant très vite dépassé, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5."
+    "text": "LLM\nDans la série agents, cet article de Posit compare différents modèles de LLM pour coder en R (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les modèles les mieux évalués à date, mais attention les classements évoluent très vite, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5."
   },
   {
     "objectID": "infolettre/infolettre_22/index.html#outils",
@@ -1159,7 +1159,7 @@
     "href": "infolettre/infolettre_22/index.html#formation",
     "title": "La première infographie",
     "section": "Formation",
-    "text": "Formation\nQuelques ressources intéressantes de formation ou de blog.\n\nCôté Python, le célèbre livre Python datascience Handbook est disponible aussi en version web ;\nPour comprendre la manière dont fonctionne les filtres Bloom dans la technologie Parquet, je vous recommande ce très utile post de blog de E. Mauvière."
+    "text": "Formation\nQuelques ressources intéressantes de formation ou articles de blog.\n\nCôté Python, le célèbre livre Python datascience Handbook est disponible aussi en version web ;\nPour comprendre la manière dont fonctionnent les filtres Bloom dans la technologie Parquet, je vous recommande ce très utile post de blog d’Éric Mauvière."
   },
   {
     "objectID": "infolettre/infolettre_22/index.html#fun",
