@@ -19,7 +19,7 @@ categories:
 
 # Bienvenue à la **vingt deuxième infolettre** !
 
-Bienvenue en 2026, l'année où les gens nés en 2000 vont avoir 26 ans.
+Bienvenue en 2026, l'année pendant laquelle les gens né(e)s en 2000 vont avoir 26 ans.
 
 # L'infographie
 
@@ -27,9 +27,11 @@ Ce mois-ci, je vous propose de découvrir une infographie faite au XIX^ième^ si
 Il s'agit de la *carte figurative des pertes successives en hommes de l'armée française dans la campagne de Russie 1812-1813*.
 Cette carte est considérée comme l'une des **premières infographies modernes** 🐓 et fait figurer :
 
-- l'itinéraire de l'armée napoléonienne en Russie (en deux couleurs, pour la campagne à l'aller et la retraite en noir) ;
+- l'itinéraire de l'armée napoléonienne en Russie (en deux couleurs, pour la campagne à l'aller en rose et la retraite en noir) ;
 - la taille de l'armée, prenant en compte les arrivées et les morts ;
 - la température lors de la retraite (jusque -30[°R](https://fr.wikipedia.org/wiki/%C3%89chelle_R%C3%A9aumur), soit -37,5°C 🥶 ).
+
+A noter que des récentes analyses ADN ont montré que les causes de mortalité étaient sûrement multiples parmi les troupes napoléoniennes. En effet, le matériel génétique de maladies (typhus, diarrhée, fièvre paratyphoïde) a aussi [été retrouvé](https://www.lemonde.fr/sciences/article/2025/10/24/ces-infections-qui-ont-fauche-la-grande-armee-de-napoleon-en-1812_6649197_1650684.html) dans des dépouilles le soldats napoléoniens.
 
 ![[*Tableaux graphiques et cartes figuratives*, par Charles Minard](https://heritage.ecoledesponts.fr/ark:/12148/btv1b10484829h/f52.item.r=minard)](minard.jpeg)
 
@@ -70,7 +72,7 @@ Résultat : les modèles les mieux évalués à date, mais attention les classem
 Deux outils open-source pour synthétiser des données ou les valoriser.
 
 - Si vous cherchez à générer des **données synthétiques**, il y a [NeMo](https://nvidia-nemo.github.io/DataDesigner/latest/). Open-source, l'objectif de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant au LLM de votre choix.
-- Côté **valorisation des données**, il y a eu [Marmot](https://marmotdata.io/), un outil open-source pour parcourir plus facilement vos différents jeux de données.
+- Côté **valorisation des données**, il y a [Marmot](https://marmotdata.io/), un outil open-source pour parcourir plus facilement vos différents jeux de données.
 - Un peu plus d'**interactivité dans des cellules de code en Quarto** ? [Quarto-live](https://r-wasm.github.io/quarto-live/) permet de faire des cellules de code réactives dans une page HTML Quarto.
 - Du côté des **publications en ligne reproductibles et interactives**, l'OFCE a publié depuis plusieurs années son package maison [OFCE](https://github.com/OFCE/ofce). Il permet de publier sur Internet les études de l'OFCE, en insérant des graphiques interactifs et en gérant aussi la charte graphique de l'OFCE.
 
