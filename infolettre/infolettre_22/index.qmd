@@ -60,10 +60,11 @@ Le programme est en cours d'élaboration donc si vous avez une idée de projets 
 
 
 # Actualités
-Beaucoup d'actualités mais plus calme en data science ce mois-ci 🤷‍♀️. Si vous n'êtes pas intéressé par les aspects techniques et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.
+Beaucoup d'actualités ce mois-ci, mais c'est plus calme côté data science 🤷‍♀️. Si vous n'êtes pas friands de techniques, et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.
 
 ##  LLM
-Dans la série agents, cet [article de Posit](https://posit.co/blog/r-llm-evaluation-03/) compare **différents modèles de LLM pour coder en R** (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les modèles les mieux évalués à date, tout cela étant très vite dépassé, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5.
+Dans la série agents, cet [article de Posit](https://posit.co/blog/r-llm-evaluation-03/) compare **différents modèles de LLM pour coder en R** (sans les modèles de Mistral 😮🇫🇷😮).
+Résultat : les modèles les mieux évalués à date, mais attention les classements évoluent très vite, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5.
 
 ## Outils
 Deux outils open-source pour synthétiser des données ou les valoriser.
@@ -74,7 +75,7 @@ Deux outils open-source pour synthétiser des données ou les valoriser.
 - Du côté des **publications en ligne reproductibles et interactives**, l'OFCE a publié depuis plusieurs années son package maison [OFCE](https://github.com/OFCE/ofce). Il permet de publier sur Internet les études de l'OFCE, en insérant des graphiques interactifs et en gérant aussi la charte graphique de l'OFCE.
 
 ## Formation
-Quelques ressources intéressantes de formation ou de blog.
+Quelques ressources intéressantes de formation ou articles de blog.
 
 - Côté Python, le célèbre livre [*Python datascience Handbook*](https://jakevdp.github.io/PythonDataScienceHandbook/) est disponible aussi en version web ;
 - Pour comprendre la manière dont fonctionne les **filtres Bloom** dans la technologie **Parquet**, je vous recommande ce [très utile post de blog](https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/) de E. Mauvière.
