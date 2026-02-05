@@ -2,47 +2,46 @@ name: "Update external data"
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - fusion_site_ssplab
-  schedule:
-    - cron: '42 10 7 * *'  # Runs once a month (the 7th) at 10h42 UTC to avoid GHA overload
-
+  # push:
+  #   branches:
+  #     - fusion_site_ssplab
+  # schedule:
+  #   - cron: '42 10 7 * *'  # Runs once a month (the 7th) at 10h42 UTC to avoid GHA overload
 
 jobs:
   fetching-data:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Git
-      run: |
-        git config --global user.name "GitHub Actions"
-        git config --global user.email "actions@github.com"
+      - name: Set up Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
 
-    - name: Install jq
-      run: sudo apt-get install jq
+      - name: Install jq
+        run: sudo apt-get install jq
 
-    - name: Run synchronization script
-      id: run_script
-      run: |
-        chmod +x scripts/2_synchronize.sh
-        ./scripts/2_synchronize.sh
-        if [ -n "$(git branch --list auto_fetch)" ]; then
-          echo "branch_created=true" >> $GITHUB_OUTPUT
-        else
-          echo "branch_created=false" >> $GITHUB_OUTPUT
-        fi
+      - name: Run synchronization script
+        id: run_script
+        run: |
+          chmod +x scripts/2_synchronize.sh
+          ./scripts/2_synchronize.sh
+          if [ -n "$(git branch --list auto_fetch)" ]; then
+            echo "branch_created=true" >> $GITHUB_OUTPUT
+          else
+            echo "branch_created=false" >> $GITHUB_OUTPUT
+          fi
 
-    - name: Create Pull Request
-      if: steps.run_script.outputs.branch_created == 'true'
-      uses: peter-evans/create-pull-request@v3
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: "Update based on latest commits"
-        title: "Update projects with latest external docs"
-        body: "This PR updates the projects external docs based on the latest commits from these repositories."
-        branch: "auto_fetch"
-        base: "main"
+      - name: Create Pull Request
+        if: steps.run_script.outputs.branch_created == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Update based on latest commits"
+          title: "Update projects with latest external docs"
+          body: "This PR updates the projects external docs based on the latest commits from these repositories."
+          branch: "auto_fetch"
+          base: "main"
