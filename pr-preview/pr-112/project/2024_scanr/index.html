@@ -216,7 +216,7 @@ window.Quarto = {
       <h1 class="title">scanR, une application pour observer le paysage de la recherche et de l’innovation en France</h1>
                   <div>
         <div class="description">
-          Agrégation et mise à disposition de données massives sur la recherche et l’innovation en France par des visualisations, des moteurs de recherche ElasticSearch et des API
+          <p>Agrégation et mise à disposition de données massives sur la recherche et l’innovation en France par des visualisations, des moteurs de recherche ElasticSearch et des API</p>
         </div>
       </div>
                           <div class="quarto-categories">
@@ -285,7 +285,7 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td><strong>Détail du projet</strong></td>
-<td>scanR est une application web pour aider à caractériser les structures publiques (unités de recherche de tous types, institutions publiques) et privées (entreprises) qui participent à la recherche et à l’innovation en France. scanR aide également à identifier les orientations des travaux des chercheuses et chercheurs actifs en France depuis le début des années 1990. <br> scanR combine les données structurées sous licence libre (Publications et thèses, participation à des projets de recherche collaboratifs, spin-off, brevets, etc.) et des informations ouvertes directement extraites des sites web des acteurs de la recherche et de l’innovation. Ces informations proviennent ainsi d’environ 13 sources différentes (theses.fr, le <a href="../../project/2022_bso/index.html">baromètre de la science ouverte</a>, HAL, Commission européenne, INPI, ANR, l’office européen des brevets …). <br> A partir de cette information, scanR produit des fiches présentant la contribution à la recherche et à l’innovation en France de plusieurs dizaines de milliers de chercheuses et chercheurs et de près de 60 000 entreprises, organismes, établissements d’enseignement supérieur et laboratoires publics. <br> Enfin, à travers son moteur de recherche basé sur ElasticSearch, scanR aide ses utilisateurs à identifier les acteurs et chercheurs actifs en France associés à un problème de recherche.</td>
+<td>scanR est une <strong>application web pour aider à caractériser les structures publiques</strong> (unités de recherche de tous types, institutions publiques) et privées (entreprises) qui participent à la recherche et à l’innovation en France. scanR aide également à identifier les <strong>orientations des travaux des chercheuses et chercheurs actifs en France</strong> depuis le début des années 1990. <br><br> scanR combine les données structurées sous licence libre (Publications et thèses, participation à des projets de recherche collaboratifs, spin-off, brevets, etc.) et des informations ouvertes directement extraites des sites web des acteurs de la recherche et de l’innovation. Ces informations proviennent ainsi d’environ 13 sources différentes (theses.fr, le <a href="../../project/2022_bso/index.html">baromètre de la science ouverte</a>, HAL, Commission européenne, INPI, ANR, l’office européen des brevets …) et sont notamment obtenues par webscraping, pdf-mining ou appel à des API. Les ressources sont ensuite identifiées et liées entre elles, notamment en utilisant des méthodes d’IA, et puis enrichies. <br> Un moteur de <strong>recherche basé sur ElasticSearch</strong> permet de rechercher des thèmes, structures ou auteurs. <br> Enfin, une <strong>boucle de retours</strong> pour augmenter la qualité des données produites est introduite avec la possibilité de demander à corriger des données depuis le site de scanR. <br> Enfin, il est possible d’afficher des interactions entre différentes structures ou thématiques de manière visuelle par une <strong>analyse en réseau</strong>.</td>
 </tr>
 <tr class="even">
 <td><strong>Acteurs</strong></td>
@@ -293,11 +293,12 @@ window.Quarto = {
 </tr>
 <tr class="odd">
 <td><strong>Résultats du projet</strong></td>
-<td>Le projet met à disposition des <strong>fiches par structure et auteurs</strong> présentant leur organisation, activité, domaines de recherche, source de financement. Il propose par ailleurs un <strong>moteur de recherche</strong> sur les structures, auteurs, financements, publications, brevets de la recherche en France. Il met aussi à disposition des <strong>outils d’analyse des résultats</strong>, notamment des visualisations de graphs. Le projet met aussi à disposition plusieurs API pour récupérer des données et les données. <br> Le projet scanR est en production depuis 2016. Une v2 a été mise en production en 2020 et une v3 en 2024.</td>
+<td>- Le projet met à disposition des <strong>fiches par structure et auteurs</strong> présentant leur organisation, activité, domaines de recherche, source de financement. <br> - Il propose par ailleurs un <strong>moteur de recherche</strong> sur les structures, auteurs, financements, publications, brevets de la recherche en France. <br> - Il met aussi à disposition des <strong>outils d’analyse des résultats</strong>, notamment des visualisations de graphs. <br> Le projet met aussi à disposition <strong>plusieurs API</strong> pour récupérer des données et les données. <br> Le projet scanR est en production depuis 2016. Une v2 a été mise en production en 2020 et une v3 en 2024. Le site enregistre environ 50 000 visites mensuelles.</td>
 </tr>
 <tr class="even">
 <td><strong>Produits et documentation du projet</strong></td>
-<td>scanR est un site <a href="https://scanr.enseignementsup-recherche.gouv.fr">scanr.enseignementsup-recherche.gouv.fr</a>. Ce site comprend : <br> - un moteur de recherche parmi les différents produits de la recherche et de l’innovation en France <br> - la <a href="https://scanr.enseignementsup-recherche.gouv.fr/docs/overview">documentation</a> pour accéder aux quatre API disponibles ; <br> - les différentes <a href="https://scanr.enseignementsup-recherche.gouv.fr/about/resources">sources de données</a> utilisées pour le projet.</td>
+<td>scanR est un site <a href="https://scanr.enseignementsup-recherche.gouv.fr">scanr.enseignementsup-recherche.gouv.fr</a>. Ce site comprend : <br> - un moteur de recherche parmi les différents produits de la recherche et de l’innovation en France ; <br> - la <a href="https://scanr.enseignementsup-recherche.gouv.fr/docs/overview">documentation</a> pour accéder aux quatre API disponibles ; <br> - les différentes <a href="https://scanr.enseignementsup-recherche.gouv.fr/about/resources">sources de données</a> utilisées pour le projet. <br><br> - Présentation technique détaillée de scanR <a href="https://hal.science/hal-04813230v1"><em>scanR - Explore public data on French research and innovation</em></a>, conférence euroCRIS, novembre 2024 ; <br> - <a href="https://hal.science/hal-04892262v1">Mapping scientific communities at scale</a>
+</td>
 </tr>
 <tr class="odd">
 <td><strong>Code du projet</strong></td>
@@ -308,7 +309,7 @@ window.Quarto = {
 </table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770308278887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770310976656" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
 <a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -342,7 +343,7 @@ Curiexplore, la plateforme de comparaison des politiques nationales d’enseigne
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770308278888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770310976657" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
 <a href="../../project/2022_bso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
