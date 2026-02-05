@@ -9,8 +9,105 @@
 <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</link>
 <atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
-<generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 13 Jan 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Fri, 30 Jan 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>La première infographie</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="bienvenue-à-la-vingt-deuxième-infolettre" class="level1">
+<h1>Bienvenue à la <strong>vingt deuxième infolettre</strong> !</h1>
+<p>Bienvenue en 2026, l’année pendant laquelle les gens né(e)s en 2000 vont avoir 26 ans.</p>
+</section>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>Ce mois-ci, je vous propose de découvrir une infographie faite au XIX<sup>ième</sup> siècle (et à 88 ans !) par Charles Minard. Il s’agit de la <em>carte figurative des pertes successives en hommes de l’armée française dans la campagne de Russie 1812-1813</em>. Cette carte est considérée comme l’une des <strong>premières infographies modernes</strong> 🐓 et fait figurer :</p>
+<ul>
+<li>l’itinéraire de l’armée napoléonienne en Russie (en deux couleurs, pour la campagne à l’aller en rose et la retraite en noir) ;</li>
+<li>la taille de l’armée, prenant en compte les arrivées et les morts ;</li>
+<li>la température lors de la retraite (jusque -30<a href="https://fr.wikipedia.org/wiki/%C3%89chelle_R%C3%A9aumur">°R</a>, soit -37,5°C 🥶 ).</li>
+</ul>
+<p>A noter que des récentes analyses ADN ont montré que les causes de mortalité étaient sûrement multiples parmi les troupes napoléoniennes. En effet, le matériel génétique de maladies (typhus, diarrhée, fièvre paratyphoïde) a aussi <a href="https://www.lemonde.fr/sciences/article/2025/10/24/ces-infections-qui-ont-fauche-la-grande-armee-de-napoleon-en-1812_6649197_1650684.html">été retrouvé</a> dans des dépouilles le soldats napoléoniens.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/minard.jpeg" class="img-fluid figure-img"></p>
+<figcaption><a href="https://heritage.ecoledesponts.fr/ark:/12148/btv1b10484829h/f52.item.r=minard"><em>Tableaux graphiques et cartes figuratives</em>, par Charles Minard</a></figcaption>
+</figure>
+</div>
+<p>Cette carte est tellement connue qu’elle a été copiée, traduite, refaite avec les moyens modernes :</p>
+<ul>
+<li>la voici <a href="https://www.datavis.ca/gallery/re-minard.php">in English</a> ou <a href="https://www.datavis.ca/gallery/minard/minard-MarcoMeschini.png">in italiano</a> ;</li>
+<li>en <a href="https://www.datavis.ca/gallery/minard/ggplot2/march.jpg">R (avec ggplot2)</a> ;</li>
+<li>en <a href="https://www.datavis.ca/gallery/minard/Minard-IML.gif">SAS (pff, so 2025)</a>.</li>
+</ul>
+<p>Pour les curieux, le livre complet, comprenant d’autres très belles cartographies de Minard, sont disponibles dans les <a href="https://heritage.ecoledesponts.fr/ark:/12148/btv1b10484829h.r=minard?rk=257512%3B0">bien-heureuses archives numérisées de l’École des Ponts</a>.</p>
+</section>
+<section id="whats-up-le-réseau" class="level1">
+<h1>What’s up le réseau ?</h1>
+<section id="présentation-de-cartographia" class="level2">
+<h2 class="anchored" data-anchor-id="présentation-de-cartographia">Présentation de Cartographia</h2>
+<p>Le 13 janvier, nous avons reçu Françoise Bahoken et Nicolas Lambert. Ils nous ont présenté leur passionnant livre <a href="https://www.dunod.com/histoire-geographie-et-sciences-politiques/cartographia-comment-geographes-redessinent-monde">Cartographia</a>, qui explore ludiquement les grandes questions de la cartographie. Le livre rappelle aussi que toute cartographie est une <strong>simplification de la réalité</strong> et qu’elle comprend ainsi forcément un parti pris, dont il faut être conscient. L’enjeu est alors de ne pas chercher à manipuler l’information à travers une cartographie et de tenter d’adopter <strong>le point de vue le plus neutre possible</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/carto_manip.png" class="img-fluid figure-img"></p>
+<figcaption>Comment des données identiques peuvent véhiculer un message totalement différent par les choix de visualisation effectués</figcaption>
+</figure>
+</div>
+<p>Le replay et leur présentation sont <a href="../../talk/2026-01-cartographia/index.qmd">en ligne</a>.</p>
+</section>
+<section id="journée-contribution-open-source-16-17-juin-2026---paris" class="level2">
+<h2 class="anchored" data-anchor-id="journée-contribution-open-source-16-17-juin-2026---paris">Journée contribution open source 📅 16 &amp; 17 juin 2026 - Paris</h2>
+<p>A vos agendas ! Le SSPLab organise une journée autour de la contribution open-source les 16 et 17 juin 2026. Cela aura lieu au Lieu de la transformation publique à Paris. Le but de cette journée est de démystifier l’open source, d’expliquer comment y contribuer, et d’encourager chacun à soutenir les projets que nous utilisons largement en datascience.</p>
+<p>Le programme est en cours d’élaboration donc si vous avez une idée de projets open-source d’intérêt auquel vous souhaitez contribuer, n’hésitez pas à nous contacter !</p>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<p>Beaucoup d’actualités ce mois-ci, mais c’est plus calme côté data science 🤷‍♀️. Si vous n’êtes pas friands de techniques, et que vous avez déjà reçu 2 mails depuis que vous avez commencé à lire cette infolettre, vous pouvez passer la veille ce mois-ci 😉.</p>
+<section id="llm" class="level2">
+<h2 class="anchored" data-anchor-id="llm">LLM</h2>
+<p>Dans la série agents, cet <a href="https://posit.co/blog/r-llm-evaluation-03/">article de Posit</a> compare <strong>différents modèles de LLM pour coder en R</strong> (sans les modèles de Mistral 😮🇫🇷😮). Résultat : les modèles les mieux évalués à date, mais attention les classements évoluent très vite, sont Claude Sonnet 4.5, Claude Opus 4.5 et OpenAI GPT-5.</p>
+</section>
+<section id="outils" class="level2">
+<h2 class="anchored" data-anchor-id="outils">Outils</h2>
+<p>Deux outils open-source pour synthétiser des données ou les valoriser.</p>
+<ul>
+<li>Si vous cherchez à générer des <strong>données synthétiques</strong>, il y a <a href="https://nvidia-nemo.github.io/DataDesigner/latest/">NeMo</a>. Open-source, l’objectif de ce package Python est de permettre de générer des données synthétiques facilement, en se branchant au LLM de votre choix.</li>
+<li>Côté <strong>valorisation des données</strong>, il y a <a href="https://marmotdata.io/">Marmot</a>, un outil open-source pour parcourir plus facilement vos différents jeux de données.</li>
+<li>Un peu plus d’<strong>interactivité dans des cellules de code en Quarto</strong> ? <a href="https://r-wasm.github.io/quarto-live/">Quarto-live</a> permet de faire des cellules de code réactives dans une page HTML Quarto.</li>
+<li>Du côté des <strong>publications en ligne reproductibles et interactives</strong>, l’OFCE a publié depuis plusieurs années son package maison <a href="https://github.com/OFCE/ofce">OFCE</a>. Il permet de publier sur Internet les études de l’OFCE, en insérant des graphiques interactifs et en gérant aussi la charte graphique de l’OFCE.</li>
+</ul>
+</section>
+<section id="formation" class="level2">
+<h2 class="anchored" data-anchor-id="formation">Formation</h2>
+<p>Quelques ressources intéressantes de formation ou articles de blog.</p>
+<ul>
+<li>Côté Python, le célèbre livre <a href="https://jakevdp.github.io/PythonDataScienceHandbook/"><em>Python datascience Handbook</em></a> est disponible aussi en version web ;</li>
+<li>Pour comprendre la manière dont fonctionnent les <strong>filtres Bloom</strong> dans la technologie <strong>Parquet</strong>, je vous recommande ce <a href="https://www.icem7.fr/outils/les-filtres-de-bloom-dans-parquet/">très utile post de blog</a> d’Éric Mauvière.</li>
+</ul>
+</section>
+<section id="fun" class="level2">
+<h2 class="anchored" data-anchor-id="fun">Fun</h2>
+<ul>
+<li>Une excellente BD permet d’<strong>expliquer les statistiques facilement</strong> (aussi pour les enfants). Dans <a href="https://e-pedago.institut-agro-dijon.fr/bd-statistiques/"><em>Les statistiques en BD</em></a>, <a href="https://linkedin.com/in/laurence-dujourdy-b9a2a36">Laurence Dujourdy</a> et Mathieu Bartoletti vulgarisent simplement les concepts que l’on a appris il y a un certain temps. Le tout est dessiné par <a href="https://linkedin.com/in/thibault-roy-129b98195">Thibault Roy</a> et est porté par <a href="https://institut-agro-dijon.fr/">l’institut Agro de Dijon</a>.</li>
+<li>Pour avoir une lecture sociale des évolutions de Paris, n’oubliez pas d’aller voir l’analyse <a href="https://www.lesechos.fr/politique-societe/societe/ce-que-la-carte-des-kebabs-revele-de-paris-2191635"><strong>Ce que la carte des kebabs révèle de Paris</strong></a> publiée dans <em>Les Echos</em>. A travers les kebabs, Jules Grandin analyse la géographie de Paris et son évolution. Il retrouve ainsi les grandes avenues, les gares, les quartiers densément peuplés et enfin les inégalités d’âge et de revenus.</li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Infolettre</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/</guid>
+  <pubDate>Fri, 30 Jan 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/minard.jpeg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-01-cartographia/</link>
@@ -21,7 +118,7 @@
 
 
 <section id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert" class="level2">
-<h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert">Cartographia - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
+<h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert"><a href="https://www.dunod.com/histoire-geographie-et-sciences-politiques/cartographia-comment-geographes-redessinent-monde">Cartographia</a> - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
 <p><strong>Replay de la présentation :</strong></p>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div>
 <iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
@@ -2230,7 +2327,7 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768473221687" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770308278887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2263,7 +2360,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1768473221688" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
+<div class="g-col-1" data-index="1" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDSW5zZWUlMkNDT0lDT1AlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ2FwcGFyaWVtZW50JTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ2NvZGlmaWNhdGlvbiUyMGF1dG9tYXRpcXVl" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770308278887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="385">
 <a href="../../project/2022_alimentation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2304,7 +2401,7 @@ Quel effet de la qualité de la nourriture sur notre santé ?
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1768473221686" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
+<div class="g-col-1" data-index="2" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1617235200000" data-listing-file-modified-sort="1770308278886" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="574">
 <a href="../../project/2021_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2339,7 +2436,7 @@ En 2020, la chute de la consommation a alimenté l’épargne, faisant progresse
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768473221685" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
+<div class="g-col-1" data-index="3" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1770308278884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2376,7 +2473,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1768473221685" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="4" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1770308278885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2411,7 +2508,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1768473221685" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="5" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1770308278885" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2450,7 +2547,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1768473221685" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="6" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1770308278884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2489,7 +2586,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1768473221684" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="7" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1770308278884" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2541,6 +2638,143 @@ Ségrégation urbaine : un éclairage par les données de téléphonie mobile
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/</guid>
   <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/tabac.png" medium="image" type="image/png" height="143" width="144"/>
+</item>
+<item>
+  <title>scanR, une application pour observer le paysage de la recherche et de l’innovation en France</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_scanr/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="synthèse-du-projet" class="level1">
+<h1>Synthèse du projet</h1>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>scanR, explorer le monde de la recherche et de l’innovation française</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Détail du projet</strong></td>
+<td>scanR est une application web pour aider à caractériser les structures publiques (unités de recherche de tous types, institutions publiques) et privées (entreprises) qui participent à la recherche et à l’innovation en France. scanR aide également à identifier les orientations des travaux des chercheuses et chercheurs actifs en France depuis le début des années 1990. <br> scanR combine les données structurées sous licence libre (Publications et thèses, participation à des projets de recherche collaboratifs, spin-off, brevets, etc.) et des informations ouvertes directement extraites des sites web des acteurs de la recherche et de l’innovation. Ces informations proviennent ainsi d’environ 13 sources différentes (theses.fr, le <a href="../../project/2022_bso/index.html">baromètre de la science ouverte</a>, HAL, Commission européenne, INPI, ANR, l’office européen des brevets …). <br> A partir de cette information, scanR produit des fiches présentant la contribution à la recherche et à l’innovation en France de plusieurs dizaines de milliers de chercheuses et chercheurs et de près de 60 000 entreprises, organismes, établissements d’enseignement supérieur et laboratoires publics. <br> Enfin, à travers son moteur de recherche basé sur ElasticSearch, scanR aide ses utilisateurs à identifier les acteurs et chercheurs actifs en France associés à un problème de recherche.</td>
+</tr>
+<tr class="even">
+<td><strong>Acteurs</strong></td>
+<td>Service statistique du Ministère de l’Enseignement Supérieur et de la Recherche (<a href="https://www.enseignementsup-recherche.gouv.fr/fr/sies">SIES</a>)</td>
+</tr>
+<tr class="odd">
+<td><strong>Résultats du projet</strong></td>
+<td>Le projet met à disposition des <strong>fiches par structure et auteurs</strong> présentant leur organisation, activité, domaines de recherche, source de financement. Il propose par ailleurs un <strong>moteur de recherche</strong> sur les structures, auteurs, financements, publications, brevets de la recherche en France. Il met aussi à disposition des <strong>outils d’analyse des résultats</strong>, notamment des visualisations de graphs. Le projet met aussi à disposition plusieurs API pour récupérer des données et les données. <br> Le projet scanR est en production depuis 2016. Une v2 a été mise en production en 2020 et une v3 en 2024.</td>
+</tr>
+<tr class="even">
+<td><strong>Produits et documentation du projet</strong></td>
+<td>scanR est un site <a href="https://scanr.enseignementsup-recherche.gouv.fr">scanr.enseignementsup-recherche.gouv.fr</a>. Ce site comprend : <br> - un moteur de recherche parmi les différents produits de la recherche et de l’innovation en France <br> - la <a href="https://scanr.enseignementsup-recherche.gouv.fr/docs/overview">documentation</a> pour accéder aux quatre API disponibles ; <br> - les différentes <a href="https://scanr.enseignementsup-recherche.gouv.fr/about/resources">sources de données</a> utilisées pour le projet.</td>
+</tr>
+<tr class="odd">
+<td><strong>Code du projet</strong></td>
+<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/dataesr/scanr-ui">https://github.com/dataesr/scanr-ui</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="projets-similaires" class="level1">
+<h1>Projets similaires</h1>
+<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770308278887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
+<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
+Curiexplore, la plateforme de comparaison des politiques nationales d’enseignement et de recherche
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Visualisation interactive de l’environnement de l’enseignement et de la recherche dans les différents pays.</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1770308278888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
+<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Baromètre de la science ouverte
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Pour être en mesure de suivre l’ouverture des publications scientifiques (objectif de la stratégie nationale de science ouverte), le service statistique du Ministère de…</p>
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+
+</div>
+<div class="listing-date">
+1 janv. 2022
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">Aucun article correspondant</div>
+</div>
+
+
+
+</section>
+
+ ]]></description>
+  <category>API</category>
+  <category>en production</category>
+  <category>open-data</category>
+  <category>SIES</category>
+  <category>datavisualisation</category>
+  <category>ElasticSearch</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_scanr/</guid>
+  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_scanr/scanr.png" medium="image" type="image/png" height="37" width="144"/>
 </item>
 <item>
   <title>Les formations R du MTES</title>
@@ -10957,114 +11191,6 @@ améliorant encore la qualité des productions (interface <a href="https://clipd
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/course/ssplab-appariement/</guid>
   <pubDate>Mon, 03 Jul 2023 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
-</item>
-<item>
-  <title>Propositions de lecture estivale</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong><em>Vous désirez intégrer la liste de diffusion ? L’inscription se fait <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103">ici</a>.</em></strong></p>
-</div>
-</div>
-<p>Cette <em>newsletter</em> propose un petit cahier de vacances de la <em>data science</em> afin de profiter de la période estivale pour en apprendre plus sur les sujets en vogue et ainsi être fin prêt pour la rentrée 📖⛱️.</p>
-<section id="lectures-estivales" class="level2">
-<h2 class="anchored" data-anchor-id="lectures-estivales">Lectures estivales</h2>
-<p>Pour commencer, quelques conseils de lecture sur les grands modèles de langage :</p>
-<ul>
-<li><p><a href="https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1">Un article du <em>Washington Post</em></a> pour en savoir plus sur le corpus d’entrainement des grands modèles de langage (<em>large langage model</em>, LLM) ;</p></li>
-<li><p>Pour comprendre la manière dont <code>ChatGPT</code> et les grands modèles de langage traduisent vos phrases afin de vous répondre, consultez ce <a href="https://simonwillison.net/2023/Jun/8/gpt-tokenizers/"><em>post</em> de blog</a> sur les <a href="https://fr.wiktionary.org/wiki/tokenizer"><em>tokenizers</em></a> (décomposition d’une chaine de caractères en unité minimale comme un mot ou une syllabe);</p></li>
-<li><p>Entre deux épisodes de votre série préférée, vous pourrez alterner avec <a href="https://www.youtube.com/watch?v=Ku9PM26Cc2c">ce cours de 2 heures</a> sur les grands modèles de langage ;</p></li>
-<li><p>Vous serez ensuite prêts à approfondir le sujet avec <a href="https://huggingface.co/learn/nlp-course/chapter1/1">ce cours</a> complet d’<code>Huggingface</code> sur le traitement automatique du langage.</p></li>
-</ul>
-<p>N’hésitez pas à faire des pauses dessin virtuel pour stimuler votre créativité en créant des images avec <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">StableDiffusion</a> ou <a href="https://openai.com/dall-e-2">Dall-E 2</a>.</p>
-<p>La version <code>Python</code> de l’ouvrage de référence <a href="https://www.statlearning.com/"><em>Introduction to Statistical Learning</em></a> vient de sortir et est disponible, comme la version <code>R</code>, gratuitement. Si après la lecture de celui-ci vous désirez mieux comprendre la question de l’interprétabilité des modèles de <em>machine learning</em>, c’est-à-dire les méthodes statistiques permettant de mieux comprendre la manière dont les algorithmes d’apprentissage aboutissent à une décision, ce <a href="https://interpretable-ml-class.github.io/">site web</a> vous sera très utile.</p>
-<p>Si vous désirez en apprendre plus sur la question de la reproductibilité, les ressources suivantes vous seront utiles :</p>
-<ul>
-<li><a href="https://raps-with-r.dev/"><em>Building reproducible analytical pipelines with R</em></a> ;</li>
-<li><a href="https://aeturrell.github.io/coding-for-economists/intro.html"><em>Coding for economists</em></a> ;</li>
-<li><a href="https://inseefrlab.github.io/formation-bonnes-pratiques-git-R/">Formation aux bonnes pratiques <code>R</code> et <code>Git</code></a> par l’INSEE ;</li>
-<li>Un cours de l’ENSAE sur la <a href="https://ensae-reproductibilite.github.io/website/">mise en production de projets <em>data science</em></a> et, pour approfondir sur la mise en production de modèles de <em>machine learning</em>, une formation de l’Insee sur le <a href="https://inseefrlab.github.io/formation-mlops/slides/index.html#/title-slide">MLOps</a>, ensemble de techniques qui visent à faciliter la mise en production et la maintenance de modèles.</li>
-</ul>
-<p>Si les semestres de l’année scolaire ne vous ont pas suffi, vous pouvez aussi profiter de l’été pour compléter votre formation en <em>data science</em> en suivant le <a href="https://matthewrkaye.com/series.html#the-missing-semester-of-your-ds-education"><em>missing semester</em></a> de votre cursus.</p>
-<p>Vous pouvez également reprendre l’ensemble des ressources mises à disposition dans le cadre du <a href="https://inseefrlab.github.io/funathon2023/">Funathon 2023</a>, un événement pour lequel les équipes innovation de l’Insee et du SSM Agriculture et alimentation ont mis à disposition de nombreuses ressources <code>R</code> ou <code>Python</code> sur six thèmes concernant l’alimentation et la production agricole. Ces ressources couvrent un large éventail de niveaux de difficulté et de techniques pour permettre à la fois aux débutants en code et aux <em>data scientists</em> plus aguerris d’y trouver leur compte.</p>
-<p>Et pour un parcours complet de formation, rien de mieux que d’explorer de fond en comble le <a href="https://www.sspcloud.fr/formation">portail de formation du SSP Cloud</a>.</p>
-<p>Après avoir lu tout ceci, vous serez prêts pour les événements <em>data science</em> de la rentrée comme le <a href="https://mobidatalab.eu/living-labs/hackathon/">hackathon du <em>mobidatalab</em></a> sur le thème de l’amélioration des services de mobilité urbaine (15 et 16 septembre).</p>
-<p><strong>Bonnes vacances ! Et n’oubliez pas de profiter pleinement des vacances pour oublier <code>ChatGPT</code> quelques temps !</strong> 🌞🌊⛰️</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/bye.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-
-
-</section>
-
- ]]></description>
-  <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/</guid>
-  <pubDate>Sat, 01 Jul 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_14/featured_copy.png" medium="image" type="image/png" height="139" width="144"/>
-</item>
-<item>
-  <title>Visualisations des données liées aux tests du SARS-Cov2</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="synthèse-du-projet" class="level1">
-
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th></th>
-<th>Publication automatique et data-visualisation des données sur les tests du Covid-19</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>Depuis quelques années, la <code>DREES</code> (service statistique du Ministère de la Santé), met à disposition, dans le cadre de sa stratégie <em>open-data</em>, des visualisations interactives de données sur des thèmes variés (Covid bien-sûr mais aussi effectifs des professionnels de santé, pensions et âges de retraites…). Ces visualisations reposent sur <i class="fa-brands fa-r-project" aria-label="r-project"></i> <code>Shiny</code> et offrent ainsi la liberté à l’utilisateur de jouer avec les données et obtenir une mise à jour de graphiques exploratoires. <br> Entre octobre 2020 et juin 20233, la DREES a ainsi mis à disposition les données sur le volume et les délais de validation des tests RT-PCR et antigéniques de manière hebdomadaire. Ces résultats sont issus des données du système d’information SI-DEP.</td>
-</tr>
-<tr class="even">
-<td><strong>Acteurs</strong></td>
-<td>DREES</td>
-</tr>
-<tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Le projet a publié des informations mises à jour automatiquement sur les tests liés au Covid-19 et les délais entre 2020 et mi-2023. Les données sont toujours disponibles sur le site <a href="https://drees.shinyapps.io/delais_test_app/">https://drees.shinyapps.io/delais_test_app/</a> mais ne sont plus mises à jour depuis juin 2023.</td>
-</tr>
-</tbody>
-</table>
-
-
-</section>
-
- ]]></description>
-  <category>R</category>
-  <category>datavisualisation</category>
-  <category>expérimentation arrêtée</category>
-  <category>DREES</category>
-  <category>open-data</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/</guid>
-  <pubDate>Thu, 01 Jun 2023 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_drees_dataviz/dataviz.png" medium="image" type="image/png" height="39" width="144"/>
 </item>
 </channel>
 </rss>
