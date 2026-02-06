@@ -25,17 +25,17 @@ categories:
 
 Le concept de **[_dataframe_](https://www.databricks.com/glossary/what-are-dataframes)** est central pour le _data scientist_ qui manipule des données tabulaires.
 En `Python`, [`Pandas`](https://pandas.pydata.org/) est la solution de loin la plus populaire. En moyenne, le _package_ est téléchargé
-4 millions de fois par semaine, depuis des années. 
+4 millions de fois par semaine, depuis des années.
 
 Un petit nouveau apporte un vent de fraîcheur dans le domaine : [`Polars`](https://www.pola.rs/).
 
 Ses atouts ? D'excellentes performances et une expressibilité qui le rapproche d'un [`dplyr`](https://dplyr.tidyverse.org/).
 
 Ce post de blog revient sur les principaux atouts de `Polars`, sans vouloir être exhaustif. Un _notebook_ illustrant les principales
-fonctionnalités du package vise à le compléter : 
+fonctionnalités du package vise à le compléter :
 
-<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?version=1.13.22&autoLaunch=true&init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Fmain%2Fblog%2Fpolars%2Finit.sh»&init.personalInitArgs=«polars-tuto»&onyxia.friendlyName=«Tutoriel Polars»" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
-<a href="https://colab.research.google.com/github/inseefrlab/ssphub/blob/main/blog/polars/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
+<a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=Tutoriel%20Polars&version=2.4.0&s3=region-79669f20&init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FSSPHub%2FFormation-polars%2Frefs%2Fheads%2Fmain%2Finit.sh»&init.personalInitArgs=«polars-tuto»&autoLaunch=true&onyxia.friendlyName=«Tutoriel Polars»" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a>
+<a href="https://colab.research.google.com/github/SSPHub/Formation-polars/blob/main/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 
 
@@ -51,7 +51,7 @@ pour effectuer une agrégation par groupe avec un jeu de données de 50GB:
 
 ![Benchmark H2O](polars-benchmark-short.png)
 
-`Polars` devance des solutions connues pour leur efficacité sur ce type d'opérations, 
+`Polars` devance des solutions connues pour leur efficacité sur ce type d'opérations,
 comme le package `R` `data.table`. L'utilisateur habituel de `Pandas`
 ne pourrait même pas traiter ces données, qui excèdent les capacités computationnelles
 de sa machine.
@@ -69,16 +69,16 @@ des traitements et est utilisée, entre autres, par `Spark`.
 
 Du fait de
 la _lazy evaluation_ il est ainsi possible, par exemple,
-si un filtre sur les lignes arrive 
+si un filtre sur les lignes arrive
 tardivement, de le remonter dans l'ordre des opérations effectuées par `Python`
 afin que
 les opérations ultérieures ne soient effectuées que sur
 l'ensemble optimal de données.
-Ces optimisations sont détaillées dans la [documentation officielle](https://pola-rs.github.io/polars-book/user-guide/optimizations/intro.html). 
+Ces optimisations sont détaillées dans la [documentation officielle](https://pola-rs.github.io/polars-book/user-guide/optimizations/intro.html).
 
 ## Lecture optimisée des fichiers
 
-L'utilisateur `Pandas` est habitué à lire du CSV avec `pd.read_csv`. 
+L'utilisateur `Pandas` est habitué à lire du CSV avec `pd.read_csv`.
 Avec `Polars`, il existe deux manières, très ressemblantes
 de le faire.
 
@@ -97,7 +97,7 @@ q = (
 df = q.collect()
 ```
 
-Avec cette syntaxe, les connaisseurs de `Pyspark` retrouveront facilement leurs petits (ours 🐻). 
+Avec cette syntaxe, les connaisseurs de `Pyspark` retrouveront facilement leurs petits (ours 🐻).
 
 On peut toujours lire de manière plus directe
 (en mode _eager_, _"impatient"_) en utilisant la fonction `read_csv`,
@@ -153,7 +153,7 @@ C'est un reproche régulièrement fait à `Pandas` :
 la syntaxe de manipulations des données est parfois complexe ou peu lisible, et les choix d'écriture ne sont pas transparents du point de vue des performances.
 
 L'API proposée par Polars est à la fois expressive et transparente.
-Voici un exemple d'exploitation de la BPE, issu du _notebook_ accompagnant 
+Voici un exemple d'exploitation de la BPE, issu du _notebook_ accompagnant
 ce _post_ :
 
 ```python
@@ -173,7 +173,7 @@ On retrouve une sémantique d'opérations de haut niveau qui s'enchaînent à la
 # Les autres concurrents
 
 `Pandas` et `Polars` ne sont pas seuls dans le grand zoo de la manipulation de données en Python : des solutions comme [Vaex](https://github.com/vaexio/vaex) ou [Dask](https://github.com/dask/dask) ont des arguments à
-faire valoir. 
+faire valoir.
 `DuckDB`, un autre _framework_ de manipulation de données, s'intègre quand à lui très bien
 avec  `Polars` dans la ménagerie.
 
