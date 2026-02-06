@@ -1,0 +1,37 @@
+---
+title: Prévoir la croissance en lisant le journal
+description: Utiliser les articles de presse en continu pour construire un indicateur aidant à prévoir la croissance
+format: html
+date: '2021-03-01'
+image: gdp_media.png
+categories:
+- Insee
+- machine learning
+- expérimentation
+- prévisions
+- webscraping
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort:
+  - date desc
+  page-size: 6
+---
+
+
+# Synthèse du projet
+
+|           |         Construction d'un indicateur de sentiment économique à partir d'articles de presse pour prévoir la croissance économique             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |  L’information produite par les media est réactive, fournie et aborde de nombreux domaines économiques. En outre les techniques d’analyse textuelle (text mining) et de collecte automatisée des données en ligne (webscraping) permettent d’élaborer des indicateurs synthétisant cette richesse. Le but de l'expérimentation est d'estimer la plus-value d’un indicateur médiatique associé à l’activité économique par sa complémentarité avec les enquêtes de conjoncture existantes. Cette expérimentation complète les travaux pré-existants, qui cherchent à construire un indicateur aidant à prédire le PIB sur la base des archives du journal Le Monde, en mobilisant des sources journalistiques complémentaires et revoyant les modèles utilisés.      |
+| **Acteurs**                  |   Insee    |
+| **Résultats du projet**      |  Un indicateurs indicateur de sentiment médiatique conjoncturel a été construit à partir des tonalités des articles de presse.  |
+| **Produits et documentation du projet**      | - [Les messages issus des articles de presse peuvent contribuer à prédire l’activité économique en temps réel](https://www.insee.fr/fr/statistiques/4513040?sommaire=4473296), Notes et points de conjoncture de l'Insee de l'année 2020 ; <br> - [Éclairage - L’activité économique française au travers d’articles de presse](https://www.insee.fr/fr/statistiques/5232051), Note de conjoncture de l'Insee de mars 2021 ; <br> - [Prédire l’activité économique à partir d’articles de presse](https://journees-methodologie-statistique.insee.net/predire-lactivite-economique-a-partir-darticles-de-presse/), Journées de méthodologie statistique 2022    |
+
+# Projets similaires
+
+::: {#similar-project}
+:::

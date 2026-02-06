@@ -1,0 +1,19 @@
+---
+title: "Première journée du SSPHub"
+subtitle: Replay des présentations vidéos
+
+categories:
+- event
+
+description: |
+  Replay de la première journée de présentation du SSPHub
+date: '2023-03-29T15:00:00Z'
+
+image: https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png
+
+echo: false
+---
+
+{{< video src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-04-17-reseau/20230417_journee_reseau.mp4" controls="yes" >}}
+
+

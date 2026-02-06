@@ -1,0 +1,39 @@
+website:
+  description: "Blog du réseau des data scientists de la statistique publique"
+  navbar:
+    search: true
+    right:
+      - icon: rss
+        href: index.xml
+      - icon: github
+        href: https://github.com/InseeFrLab/ssphub
+    left:
+      - href: index.qmd
+        text: "Accueil"
+      - href: event.qmd
+        text: "Événements"
+      - href: blog.qmd
+        text: "Blog"
+      - href: project.qmd
+        text: "Projets"
+      - href: course.qmd
+        text: "Ressources utiles"
+      - text: "À propos"
+        menu:
+          - href: infolettre/infolettre.qmd
+            text: "Newsletters"
+          - href: about.qmd
+            text: "Présentation du réseau"
+          - href: manifeste.qmd
+            text: "Manifeste du réseau"
+      - href: https://datalab.sspcloud.fr/
+        text: "Le SSPCloud"
+
+  announcement:
+    icon: bi-megaphone
+    dismissable: true
+    content: "📺️ Les présentations et le replay de la journée du réseau, le 1^er^ décembre 2025, [sont disponibles](/event/2025-12-01-network-day/index.qmd)"
+    type: primary
+    position: below-navbar
+
+lang: fr

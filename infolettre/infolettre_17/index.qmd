@@ -30,7 +30,7 @@ webr:
 
 :::{.callout-tip}
 
-__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103).*__
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici]({{< var signup.form >}}).*__
 
 ::: 
 
@@ -223,7 +223,7 @@ le format `Parquet`
 à deux reprises pendant l'année 2023. En premier lieu, pour la diffusion des
 données du [Répertoire Electoral Unique](https://www.insee.fr/fr/metadonnees/source/serie/s1046). 
 Plus récemment, ce sont les données détaillées du recensement de la population
-qui ont été diffusées dans ce format, accompagnées d'un [guide d'utilisation](/post/parquetRP) mis en ligne sur le blog du SSP Hub (plus de détails dans l'[infolettre #16](/infolettre/infolettre_16)). 
+qui ont été diffusées dans ce format, accompagnées d'un [guide d'utilisation](/blog/parquetRP) mis en ligne sur le blog du SSP Hub (plus de détails dans l'[infolettre #16](/infolettre/infolettre_16)). 
 
 <details>
 
@@ -294,13 +294,13 @@ Ressources techniques:
 
 - Un [_notebook_ {{< fa brands r-project >}}](https://datalab.sspcloud.fr/launcher/ide/rstudio-sparkr?autoLaunch=true&init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fformation-bceao%2Fmain%2Ftp%2Finit-tp.sh%C2%BB&resources.limits.memory=%C2%AB100Gi%C2%BB&persistence.size=%C2%AB40Gi%C2%BB) sur `DuckDB` issu d'une [formation de l'Insee](https://inseefrlab.github.io/formation-bceao/) donnée à la BCEAO ;
 - Une [fiche sur `Arrow`](https://www.book.utilitr.org/03_fiches_thematiques/fiche_arrow), l'écosystème sous-jacent à `DuckDB`, dans la documentation collaborative `utilitR` ;
-- Le [post de blog](/post/polars/) sur la librairie {{< fa brands python >}} `Polars`, une approche alternative à `DuckDB` ;
+- Le [post de blog](/blog/polars/) sur la librairie {{< fa brands python >}} `Polars`, une approche alternative à `DuckDB` ;
 - L'[explorateur de données du SSPCloud](https://datalab.sspcloud.fr/data-explorer?source=https%3A%2F%2Fstatic.data.gouv.fr%2Fresources%2Frecensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1%2F20231023-122841%2Ffd-indcvi-2020.parquet) qui repose sur `DuckDB`.
 
 Données diffusées par la statistique publique au format `Parquet` :
 
 - Les données du [Répertoire Electoral Unique](https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/#/resources) ;
-- Le guide d’utilisation des données du recensement de la population au format Parquet sous forme de [billet de blog](/post/parquetRP/). 
+- Le guide d’utilisation des données du recensement de la population au format Parquet sous forme de [billet de blog](/blog/parquetRP/). 
 Voir aussi l'[_infolettre #16_](/infolettre/infolettre_16) ;
 - Les [données de la délinquance enregistrée par la police et gendarmerie nationales](https://www.linkedin.com/feed/update/urn:li:activity:7163102904906678272/) publiées par le service statistique ministériel de la sécurité intérieur publiées au format Parquet.
 

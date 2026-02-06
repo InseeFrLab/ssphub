@@ -1,13 +1,13 @@
 ---
 title: L'économétrie en grande dimension
 description: |
-    Document de travail sur l'économétrie en grande dimension
+    Ce document de travail est une courte introduction aux principaux problèmes que l'on rencontre lorsque l'on souhaite faire de l'économétrie en grande dimension, c'est-à-dire lorsque p > n - pour chaque observation, on dispose d'un nombre de caractéristiques potentiellement proportionnel ou plus grand que la taille de l'échantillon.
 categories:
 - Econométrie
 - Insee
 date: "2022-02-17T00:00:00Z"
 
-image: featured.png
+image: ../../assets/media/logo_Insee.png
 
 # Optional external URL for project (replaces project detail page).
 website: "https://www.insee.fr/fr/statistiques/4923129"

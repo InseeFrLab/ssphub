@@ -1,0 +1,36 @@
+---
+title: Doremifasol
+description: The package {{< fa brands r-project >}} `Doremifasol` makes it easier for
+  data scientists to retrieve Insee data. The library is open source.
+format: html
+date: '2023-01-01'
+image: doremifasol.png
+categories:
+- package
+- R
+- in production
+- Insee
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["package"]
+  sort:
+  - date desc
+  page-size: 6
+---
+
+# Project summary
+
+|  | Package {{< fa brands r-project >}} to retrieve data from the Insee website |
+| -- | ----------------------- |
+| **Project details** | doremifasol (data with R made available by Insee and easily retrievable in French) is a R package mainly aiming at showing off data available on Insee’s website, helping the user to put them on stage and extract the information they carry. So it is about analysing data, creating maps, quantifying phenomenons and in general using the data without the painful effort to retrieve them on the website, as well as import them into R’s memory. The name of the package stands for the five first notes of music, and pushing the metaphore, underlines its aim at helping the users to easily pratice their solfège in {{< fa brands r-project >}}. |
+| **Players** | Insee           |
+| **Project results** | The DoReMiFaSol package is open source and can be downloaded from GitHub. The documentation is also published [here](https://inseefrlab.github.io/DoReMIFaSol/).         |
+| **Project code** | - Code is available on GitHub {{< fa brands github >}} repo [https://github.com/InseeFrLab/DoReMIFaSol](https://github.com/InseeFrLab/DoReMIFaSol)  |
+
+# Similar projects
+
+::: {#similar-project}
+:::

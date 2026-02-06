@@ -1,0 +1,49 @@
+---
+title: Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l'activité économique
+description: |
+  La crise sanitaire de 2020 a nécessité de revoir les processus de prévision
+  pour être plus réactif face aux événements. Dans ce cadre, l'Insee s'est
+  appuyée sur les données de paiement par carte bancaire CB pour prédire l'activité
+  économique.
+
+format: html
+date: '2020-12-01'
+image: cb_conj.png
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - données de caisse
+    - données de téléphonie mobile
+    - données CB
+    - données comptes bancaires
+    - données privées
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:
+- prévisions
+- expérimentation
+- Insee
+- données CB
+- données de téléphonie mobile
+---
+
+
+# Synthèse du projet
+
+|           |         Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l'activité économique             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |   La Note de conjoncture du 24 mars 2020, préparée par l’Insee pendant le premier trimestre 2020, n’aura jamais été publiée en l’état. La crise sanitaire et les mesures de limitation de propagation de la pandémie, en premier lieu le confinement, ont bouleversé les prédictions conjoncturelles standards et nécessité l’utilisation de sources alternatives plus réactives. Les données traditionnelles, disponibles pour la plupart mensuellement, n’étaient pas à même de fournir, dans les délais impartis, des informations fiables et pertinentes sur la situation économique : par exemple, les enquêtes de conjoncture les plus récentes auprès des entreprises, qui constituent une source privilégiée pour la prévision, avaient été collectées entre fin février et début mars principalement, donc avant l’annonce du premier confinement. Les premiers indicateurs quantitatifs sur mars, basés sur des enquêtes ou des sources administratives, n’ont été quant à eux disponibles qu’en avril ou mai. L’Insee a donc mobilisé d’autres sources de données, de nature diverse bien qu’essentiellement à haute fréquence, comme les données de caisse des grandes surfaces, le fret ferroviaire, les activations de réseaux de téléphonie mobile, la consommation électrique, l’utilisation d’internet, ou les données de transactions par carte bancaire CB.  |
+| **Acteurs**                  |  Insee    |
+| **Résultats du projet**      |  L’utilisation des données de transactions de paiement par carte bancaire CB agrégées et anonymisées pour la mesure du suivi de l’activité économique et de la consommation des ménages s’est révélée particulièrement appropriée et pertinente en 2020, lors de la mise en place des mesures de freinage de la propagation du Covid-19. Elles permettent de documenter en temps réel un choc exceptionnel pour lequel les outils de mesure standards apparaissaient tardifs ou parfois inadaptés. La richesse des informations conduit à des analyses particulièrement diverses. Toutefois, ces sources présentent des différences conceptuelles importantes avec les statistiques usuelles de suivi de l’activité économique. Ne pas les prendre en compte conduirait à des analyses faussées, en niveau et en évolution. Les données de téléphonie mobile ont aussi été utilisées pour suivre le retour de l'activité lors du déconfinement de juin 2020. La pertinence de ces sources privées pour les études publiques dépend donc grandement du degré de granularité de l’information disponible et de la capacité du producteur et de l’utilisateur à converger vers un cadre commun.     |
+| **Produits et documentation du projet**      | - [Que disent les données de transactions par carte bancaire sur les comportements de consommateurs « confinés » ?](https://www.insee.fr/fr/statistiques/4478165?sommaire=4473296), Note et point de conjoncture de l'Insee - avril 2020 <br> - [Que disent les données de transactions par carte bancaire sur l’évolution récente de la consommation des ménages ?](https://www.insee.fr/fr/statistiques/4488580?sommaire=4473296), Note et point de conjoncture de l'Insee - mai 2020 <br> - [Disparités territoriales de consommation : que disent les données de transaction par carte bancaire ?](https://www.insee.fr/fr/statistiques/4488582?sommaire=4473296), Note et point de conjoncture de l'Insee - mai 2020 <br> - [Fin mai, les trajets matinaux n’atteignaient que 60 % de leur volume habituel](https://www.insee.fr/fr/statistiques/4513042?sommaire=4473296), Note et point de conjoncture, juin 2020 <br> - [Apports, limites et perspectives des données de transactions carte bancaire (CB) dans le suivi de l’activité économique](https://journees-methodologie-statistique.insee.net/apports-limites-et-perspectives-des-donnees-de-transactions-carte-bancaire-cb-dans-le-suivi-de-lactivite-economique/), Journées de méthodologie statistique 2022 ||
+
+# Projets similaires
+
+::: {#similar-project}
+:::
+

@@ -1,0 +1,41 @@
+---
+title: "Indices des prix à la consommation des nuitées hôtelières : l’expérience du webscraping d’une plateforme de réservation en ligne"
+description: Exploration des apports du _webscraping_ pour mesurer le prix des nuitées hôtelières dans l'IPC
+format: html
+date: '2021-06-01'
+image: webscraping_ipc.png
+listing:
+  id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - "webscraping"
+    - "IPC"
+    - "données de téléphonie mobile"
+    - "données de caisse"
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:
+- en production
+- webscraping
+- IPC
+- Insee
+---
+
+
+# Synthèse du projet
+
+|           |         _Webscraping_ des prix de nuitées hôtelières pour construire l'indice des prix à la consommation  |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         | L’indice des prix à la consommation pour les nuitées hôtelières est calculé à partir de relevés effectués sur le terrain par des enquêtrices et enquêteurs de l’Insee qui relèvent le prix d’une chambre pour une nuitée le jour même pour 2 personnes avec petit-déjeuner. Afin d’améliorer l’indice et de s’émanciper de certaines limites de la méthode actuelle, ce projet explore une méthode de collecte innovante, le _webscraping_ depuis un site de réservation. <br> Après récolte des données en ligne, celles-ci sont brutes et nécessitent un nettoyage : par exemple la valeur pour une caractéristique n’est pas forcément décrite de la même manière entre deux observations. Pour palier les problèmes liés à un indice à panier fixe, l'indice final est construit à partir de classes homogènes. Enfin, les résultats de l’indice calculé avec les données de la plateforme de réservation en ligne avec l’indice publié.       |
+| **Acteurs**                  | Insee      |
+| **Résultats du projet**      | La nouvelle méthodologie de récolte des prix est maintenant en production.      |
+| **Produits et documentation du projet**      | - [Indices des prix à la consommation des nuitées hôtelières : l’expérience du webscraping d’une plateforme de réservation en ligne](https://journees-methodologie-statistique.insee.net/indices-des-prix-a-la-consommation-des-nuitees-hotelieres-lexperience-du-webscraping-dune-plateforme-de-reservation-en-ligne/), Journées de méthodologie statistique 2022  |
+
+# Projets similaires
+
+::: {#similar-project}
+:::

@@ -1,8 +1,103 @@
-# Site web du réseau des data scientists du service statistique public
+# Website of the data scientists of the French Official Statistical System
 
-Code source du `SSPHub`, le site du réseau des 
-_data scientists_ du service statistique public (SSP).
+Code of the [`SSPHub`](https://ssphub.netlify.app.), a website for data scientists of the French Official Statistical System.
 
-Contenu disponible sur https://ssphub.netlify.app.
+# How to use this repo ?
+## Set up
+Assumes you have an account on [https://datalab.sspcloud.fr/](https://datalab.sspcloud.fr/)
+- Open a service (VSCode or other IDE) with **R installed**
+- Github account, (with credentials to InseeFrLab/ssphub if you want to deploy the website)
 
-Site web construit avec `Quarto`
+## How to contribute
+Specified in [contributing.md](CONTRIBUTING.md)
+
+## How to
+
+### Render / preview when coding
+- render: `Rscript scripts/0a_render.R`
+- preview: `Rscript scripts/0c_preview.R`
+- render and preview : `Rscript scripts/0a_render.R && Rscript scripts/0c_preview.R`
+
+If a PR is opened, a website preview is automatically generated. The link to the preview is in the Github PR details. Every push to the remote repo will trigger an update of the website preview.
+
+###  Create a project
+used with Python. `create_folder_and_file("2022_JOCAS")`
+
+```{shell}
+cd scripts
+uv sync
+uv run 1_template.py name_of_the_folder (optional: name_of_the_template.qmd)
+```
+
+Example :
+```{shell}
+cd scripts
+uv sync
+uv run 1_template.py test
+```
+
+
+### Harmonization of categories
+private data sources : introduce code snippets for YAML part.
+```{json}
+	"add private data tags (FR)": {
+		"prefix": "prdata",
+		"body": "    - données de caisse\n    - données de téléphonie mobile\n    - données CB\n    - données comptes bancaires",
+		"description": "adds categories for listing of similar projects related to private data sources"
+	},
+
+	"add private data tags (EN)": {
+		"prefix": "en_prdata",
+		"body": "    - scanner data\n    - mobile phone data\n    - credit card data\n    - bank account data",
+		"description": "adds categories for listing of similar projects related to private data sources"
+	},
+```
+When a new category is created, do a find and replace all to add this category to all the listing to ensure consistency.
+
+### Translate a page to english
+Config :
+- have a deepl API KEY stored as `DEEPL_API_KEY`
+- working directory must be ssphub/scripts
+
+```{shell}
+# it will take the "index.qmd" file of the project/project_subdir dir and translate it into "index.en.qmd
+Rscript 0b_translate.R project_subdir
+```
+
+Example
+```{shell}
+Rscript scripts/0b_translate.R 2023_doremifasol
+```
+
+
+Have a careful check with the proposed translated webpage. The automated translation often
+adds a backslash or "-" at some spots that creates bugs when rendering the website. For example :
+    - `description: | -` for `description: |`
+    - `{{\< fa brands github >}}` for `{{< fa brands github >}}`
+    - Markdown table structure contains many whitespace and ---
+The translate programm removes some issues but not all. It deletes all "\", multiple spaces and multiple "----".
+But some ENTER remain, and it doesn't translate categories of listing.
+A careful look is needed :
+- listing categories in the YAML part must be translated
+- inside Qmd table to ensure that a row is always coded in 1 line of code.
+
+### Publish
+Publishing is automated with CI in the [prod.yaml](.github/workflows/prod.yaml) file.
+
+# Credits
+Thanks to :
+
+- [babelquarto](https://docs.ropensci.org/babelquarto/)
+- Quarto
+
+# Personnal
+
+## To do
+- speed up R set up in Github actions (with renv? / dependencies set to '"hard"'?)
+- move image to S3 to have smaller repo (impact on newsletter download image function)
+- have a developpement Quarto profile ?
+- doublon blog/polars/polars-tuto.qmd et additional/notebooks
+
+## Useful
+- init.sh ??
+

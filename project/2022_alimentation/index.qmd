@@ -1,0 +1,50 @@
+---
+title: Quel effet de la qualité de la nourriture sur notre santé ?
+description: Enrichissement de données de caisses à partir de données d'informations nutritionnelles pour analyser l'impact de la consommation sur la santé
+format: html
+date: '2022-01-01'
+image: ../../assets/media/logo_ssm_insee.webp
+categories:
+- machine learning
+- Insee
+- COICOP
+- données de caisse
+- appariement
+- expérimentation arrêtée
+- codification automatique
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - "appariement"
+    - "codification automatique"
+    - "fasttext"
+    - données de caisse
+    - données de téléphonie mobile
+    - données CB
+    - données comptes bancaires
+    - données privées
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+---
+
+
+# Synthèse du projet
+
+|           |         Enrichissement de données de caisses à partir de données d'informations nutritionnelles pour analyser l'impact de la consommation sur la santé             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |    Au-delà des multiples dimensions largement documentées d’inégalités (revenu, patrimoine, éducation, logement, accès aux soins et aux services publics en général), des disparités dans la consommation de biens alimentaires sont également susceptibles d’être la source d’inégalités de santé, ainsi que des marqueurs sociaux et territoriaux. Les données de caisse pourraient offrir une description très riche de la consommation locale, à condition que les identifiants des produits permettent des enrichissement avec des sources externes, comme des informations nutritionnelles. Ce projet a pour but d'enrichir des données de la grande distribution avec des informations nutritionnelles extraites d’Open Food Facts, complétées par les données Ciqual de l’Anses.    |
+| **Acteurs**                  | Insee      |
+| **Résultats du projet**      | Pour compenser l’appariement partiel via le code-barre, une méthode pour apparier efficacement des libellés courts est mise en place. Après une étape de prétraitement pour normaliser des libellés courts, des techniques d’appariement floue sont mises en place. Elles sont basées sur plusieurs tokenizers (y compris les n-grammes) en interrogeant un index personnalisé ElasticSearch et en validant les échos candidats avec une distance de Levenstein. Le pipeline est composé de plusieurs étapes relâchant successivement les contraintes pour trouver des candidats pertinents. Enfin, l'appariement final est évalué par une mesure de similarité basée sur un word embedding obtenu en entraînant un réseau siamois sur l’appariement exact via les code-barres. Les données mobilisées, portant sur la période 2015-2018, sont celles de plusieurs enseignes d’un même groupe de la grande distribution (relevanC). |
+| **Produits et documentation du projet**      | - [Enrichissement de données de caisses à partir d’informations nutritionnelles : une approche par appariement flou sur données de grande dimension](https://journees-methodologie-statistique.insee.net/enrichissement-de-donnees-de-caisses-a-partir-dinformations-nutritionnelles-une-approche-par-appariement-flou-sur-donnees-de-grande-dimension/), Journées de méthodologie statistique 2022      |
+
+# Projets similaires
+
+::: {#similar-project}
+:::
+
+

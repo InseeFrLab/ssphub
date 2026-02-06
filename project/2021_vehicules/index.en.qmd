@@ -1,0 +1,42 @@
+---
+title: Modelling road vehicle fleet ownership and use
+description: |
+  Matching administrative databases and modelling to estimate the number
+  of road vehicles in France
+format: html
+date: '2021-06-01'
+image: ../../../assets/media/logo_ssm_insee.webp
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - matching
+    - administrative data
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:
+- in production
+- matching
+- SDES
+- administrative data
+---
+
+# Project summary
+
+|  | Modelling road vehicle fleet ownership and use      |
+|---| ------------------------------------------------------------------------ |
+| **Project details** | In 2019, the Ministerial Statistical Office of the French Ministry of Ecological Transition (SDES) will be overhauling the statistical register of road vehicles (RSVero). The main innovation of this project is the use of technical inspection data to ensure that registered vehicles are still in circulation and to determine their annual use, thanks to the odometer reading taken at each visit. However, the integration of this data raises methodological issues: inspections take place on variable dates, sometimes with a delay, and we cannot be sure of the status of vehicles whose last inspection preceded the date on which we wish to determine the fleet. The project will enable us to estimate, for all the cars in the inventory, the probability that they are still in circulation on a given date and, where appropriate, the annual distance travelled. More broadly, this project is part of the drive to develop methodologies for processing administrative sources. |
+| **Players** | Insee, [MSO of the French Ministry of Ecological Transition (SDES)](https://www.statistiques.developpement-durable.gouv.fr/english-contents)    |
+| **Project results** | The methodology is now in production and is used to determine the vehicles on the road each year, their characteristics and their use.      |
+| **Project products and documentation** | - [Methodology for estimating vehicle fleets and distances travelled (abstract in English)](https://www.statistiques.developpement-durable.gouv.fr/media/7230/download?inline) Working document, March 2024 <br> - [Modelling road vehicle fleet ownership and use](https://journees-methodologie-statistique.insee.net/modelisation-de-lappartenance-au-parc-des-vehicules-routiers-et-de-son-utilisation/) Journées de méthodologie statistique 2022  |
+
+# Similar projects
+
+::: {#similar-project}
+:::
+
+

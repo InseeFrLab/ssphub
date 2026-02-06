@@ -26,7 +26,7 @@ bibliography: references.bib
 
 :::{.callout-tip}
 
-__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici](https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103).*__
+__*Vous désirez intégrer la liste de diffusion ? L'inscription se fait [ici]({{< var signup.form >}}).*__
 
 ::: 
 
@@ -369,7 +369,7 @@ si vous avez participé à celles-ci.
 
 ## Replay de la présentation d'Eric Mauvière "La dataviz pour donner du sens aux données et communiquer un message" 
 
-![](/talk/2024-02-29-mauviere/mauviere.png)
+![](/event/2024-02-29-mauviere/mauviere.png)
 
 La présentation d'Eric Mauvière sur les bonnes pratiques
 de _dataviz_ a rencontré un réel succès avec près de 150 

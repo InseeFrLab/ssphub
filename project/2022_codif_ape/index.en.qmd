@@ -1,0 +1,51 @@
+---
+title: Automatic coding of companies' main activity
+description: Develop a machine learning algorithm to automate the classification of
+  companies' main activities and put it into production
+format: html
+authors:
+- Nicolas
+date: '2022-01-01'
+image: codif_ape_overall.png
+categories:
+- Python
+- automatic coding
+- package
+- in production
+- MLFlow
+listing:
+- id: presentations
+  contents: cards/*.qmd
+  sort: order desc
+  categories: false
+  type: grid
+  template: ../../scripts/courses.ejs
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["automatic coding", "package"]
+  sort:
+  - date desc
+  page-size: 6
+---
+
+# Project summary
+
+|  | Automatic coding of companies' main activity                                      |
+| --- | --------------------------------------------------------------------------------- |
+| **Project details** | The coding of companies' main activity (APE) on the basis of activity descriptions (in the form of free text) in the Sirene register was previously carried out using 6 deterministic coding environments mobilising a huge number of decision rules. The aim of the experiment is to **test the performance of statistical learning models in predicting the category of APE** category as part of the overhaul of the Sirene register and the introduction of a one-stop shop. <br> |
+| **Stakeholders** | Insee                         |
+| **Project results** | The model developed presents **similar performance to previous models** by automating them, and also offers decision support. The model has also been put into production, applying MLOps principles where possible. <br> Presentations and written materials relating to the project can be accessed at [this site](https://inseefrlab.github.io/codif-ape-prez/). |
+| **Project code** | Accessible code repositories on [Github {{< fa brands github >}}](https://github.com/search?q=org%3AInseeFrLab%20codif-ape&type=repositories&p=1). They include: <br> - Code for annotating data using Label Studio ; <br> - Code for a coding web API deployed on the SSP Cloud ; <br> - Code implementing a visualisation dashboard for monitoring the activity of a coding model in production and accessible via a web API; <br> - Code for training APE classification models. <br> |
+
+# Project documents
+
+::: {#presentations}
+:::
+
+# Similar projects
+
+::: {#similar-project}
+:::
+

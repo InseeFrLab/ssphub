@@ -1,0 +1,46 @@
+---
+title: Using credit card data and mobile phone data to forecast economic activity
+description: |
+  The 2020 health crisis required a review of forecasting processes
+  to be more responsive to events. INSEE used credit card transaction data to
+  forecast economic activity.
+format: html
+date: '2020-12-01'
+image: cb_conj.png
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - scanner data
+    - mobile phone data
+    - credit card data
+    - bank account data
+    - private data
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:
+- forecasts
+- experiment
+- Insee
+- credit card data
+- mobile phone data
+---
+
+# Project summary
+
+|  | Using credit card and mobile phone data to forecast economic activity |
+|---|------------------------------------------------------------------------- |
+| **Project details** | The March 24, 2020 Economic Outlook, prepared by INSEE during the first quarter of 2020, was never published in its original form. The health crisis and the measures taken to limit the spread of the pandemic, starting with containment, have turned standard economic forecasts on their head and necessitated the use of alternative, more responsive sources. Traditional data, available for the most part on a monthly basis, were unable to provide reliable and relevant information on the economic situation within the time available: for example, the most recent business surveys, which are a key source for forecasting, were collected mainly between the end of February and the beginning of March, i.e. before the first containment was announced. The first quantitative indicators for March, based on surveys or administrative sources, were not available until April or May. INSEE therefore mobilised other sources of data, of various kinds although essentially high frequency, such as supermarket scanner data, rail freight, mobile phone data, electricity consumption, internet use, and credit card transaction data. |
+| **Players** | Insee|
+| **Project results** | The use of aggregated and anonymised credit card transaction data to monitor economic activity and household consumption proved particularly appropriate and relevant in 2020, when measures were put in place to curb the spread of Covid-19. They will make it possible to document in real time an exceptional shock for which the standard measurement tools appeared late or sometimes unsuitable. The wealth of information available leads to particularly diverse analyses. However, these sources present significant conceptual differences with the usual statistics used to monitor economic activity. Failure to take them into account would lead to distorted analyses, both in terms of levels and trends. Mobile phone data was also used to track the return to normal activity during the lifting of lockdown restrictions in June 2020. The relevance of these private sources for public studies therefore depends largely on the degree of granularity of the information available and the ability of the producer and user to converge towards a common framework.|
+| **Project products and documentation** | - [What do bankcard transaction data have to say about the behaviour of 'confined' consumers? (French)](https://www.insee.fr/fr/statistiques/4478165?sommaire=4473296) INSEE Economic Outlook - April 2020 <br> - [What do bankcard transaction data say about recent trends in household consumption?](https://www.insee.fr/en/statistiques/4496160?sommaire=4473307) Insee Economic Outlook - May 2020 <br> - [Regional disparities in consumption: what do bank card transaction data tell us?](https://www.insee.fr/en/statistiques/4496166?sommaire=4473307) Insee Economic Outlook - May 2020 <br> - [By the end of May, morning commutes had only reached 60% of their usual level](https://www.insee.fr/fr/statistiques/4513042?sommaire=4473296), Insee Economic Outlook - June 2020 <br> - [Contributions, limitations and prospects of bankcard (CB) transaction data in monitoring economic activity (abstract in English)](https://journees-methodologie-statistique.insee.net/apports-limites-et-perspectives-des-donnees-de-transactions-carte-bancaire-cb-dans-le-suivi-de-lactivite-economique/), 2022 Statistical Methodology Days (Journées de méthodologie statistique 2022)|
+
+# Similar projects
+
+::: {#similar-project}
+:::
+

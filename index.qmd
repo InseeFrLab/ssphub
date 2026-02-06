@@ -2,9 +2,25 @@
 toc: false
 sidebar: false
 title-block-style: none
-css: homepage.css
+css: assets/css/homepage.css
 page-layout: full
 listing:
+  - id: project
+    contents: project/**/index.qmd
+    type: grid
+    feed: true
+    sort:
+      - "date desc"
+    page-size: 6
+  - id: blog_event
+    contents:
+    - blog
+    - event
+    type: grid
+    feed: true
+    sort:
+      - "date desc"
+    page-size: 6
   - id: newsletters
     contents: infolettre/infolettre_*/**/index.qmd
     type: grid
@@ -12,22 +28,20 @@ listing:
       - "number desc"
     feed:
         categories: [post, infolettre]
-    max-items: 6
-  - id: blog
-    contents: post
-    type: grid
-    feed: true
-    max-items: 6
+    page-size: 6
   - id: partenaires
     contents: partenaires
     template: scripts/courses.ejs
     type: grid
     feed: false
-  - id: latest-actions
+    page-size: 6
+  - id: latest
     contents: 
     - infolettre/infolettre_*/**/index.qmd
-    - post/**/index.qmd
-    - talk/**/index.qmd
+    - blog/**/index.qmd
+    - event/**/index.qmd
+    - project/**/index.qmd
+    - course/**/index.qmd
     type: grid
     feed: false
     sort: "date desc"
@@ -67,11 +81,11 @@ html`${badge}`
 Le `SSPHub` centralise et vise à faire connaître le contenu créé par
 le réseau des _data scientists_ du [Service Statistique Publique (SSP)](https://www.insee.fr/fr/information/1302192).
 
-Une présentation du réseau est 
-disponible sur la page [à propos](#about). 
+Une présentation du réseau est
+disponible sur la page [à propos](about.html).
 Pour en savoir plus sur les objectifs du réseau, sa philosophie,
-et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/manifeste.html)
-écrit collectivement. 
+et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](manifeste.qmd)
+écrit collectivement.
 
 :::
 
@@ -89,26 +103,35 @@ et ses modes d'actions, vous pouvez découvrir le [Manifeste 📜](/additional/m
 
 ::: {.column-page}
 
-## Les dernières actualités du réseau
+## Les dernières actualités et contenus du réseau
 
-:::: {#latest-actions}
+:::: {#latest}
 ::::
+
+## Les derniers billets de blog et événements
+
+
+L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.qmd), tout comme les [événements](event.qmd).
+
+
+:::: {#blog_event}
+::::
+
+
+## Les projets innovants du SSPHub
+
+L'ensemble des projets innovants peut être retrouvé sur la [page dédiée](project.qmd).
+
+
+:::: {#project}
+::::
+
 
 ## Les dernières _newsletters_
 
-Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/index.qmd).
+Toutes les _newsletters_ précédemment publiées sont disponibles sur la [page dédiée](infolettre/infolettre.qmd).
 
 :::: {#newsletters}
-::::
-
-
-
-## Les derniers billets de blog
-
-L'ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.qmd).
-
-
-:::: {#blog}
 ::::
 
 ## Les réseaux partenaires
@@ -122,6 +145,3 @@ Quelques communautés de la data-science avec lesquels nous collaborons
 
 
 :::
-
-
-

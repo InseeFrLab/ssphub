@@ -2,7 +2,9 @@
 title: "Evénements"
 listing:
   - id: archives
-    contents: talk/**/index.qmd
+    contents: 
+    - event/**/index.qmd
+    - event/other_events.yml
     type: grid
     sort:
       - "date desc"
@@ -12,5 +14,4 @@ page-layout: full
 ---
 
 
-## Evénements passés
 
