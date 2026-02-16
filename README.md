@@ -7,4 +7,4 @@ Contenu disponible sur https://ssphub.netlify.app.
 
 Site web construit avec `Quarto`
 
-*Des assistants d'IA générative ont été utilisés à différents stades du processus.
+*Des assistants d'IA générative ont été utilisés à différents stades du processus.*
