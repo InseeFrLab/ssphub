@@ -10,6 +10,7 @@ number: 23
 
 authors:
   - Nicolas
+  - Laura
 
 # image: minard.jpeg
 
@@ -19,14 +20,22 @@ categories:
 
 # Bienvenue à la **vingt troisième infolettre** !
 
-Bienvenue en 2026, l'année pendant laquelle les gens né(e)s en 2000 vont avoir 26 ans.
+Après **Niels, Oriana et Pedro**, trois tempêtes en 10 jours, nous revoici sous un ciel moins pluvieux.
+Qu'à cela ne tienne, je vous parie que la prochaine s'appellera [**Regina**](https://meteofrance.com/actualites-et-dossiers/comprendre-la-meteo/comment-choisit-le-nom-dune-tempete). Bienvenue à la nouvelle infolettre, coécrite avec **Laura** ❤️.
 
 # L'infographie
 
+Dans la saison hivernale, ce mois-ci c'est le travail de l'agence italienne [The Visual Agency](https://thevisualagency.com/about/) qui a été [sélectionné](https://www.youtube.com/watch?v=yxLu5CpPUFI).
+Ils ont transcrit les mots d'une conférence de Marco Bernardi sur les sages et les rebelles (*i saggi et i rebelli in italiano 🇮🇹 *) en une chaine de montagnes dont la hauteur des sommets représente l'occurence des termes et la proximité entre sommets la proximité sémantique.
+
+![*Source : The Visual Agency, Topography of a talk, [lien](https://thevisualagency.com/tva-blog-articles/topography-of-a-talk-between-vibe-coding-and-parametric-design/)*](tva_topography_talk.jpg)
 
 
-# What's up le réseau ?
+Et comme c'est le mois de février, je ne résiste pas à la volonté de mettre aussi en valeur [cette production animée](https://file.notion.so/f/f/adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc/7ab2c090-be3f-4a5a-82d6-4f9a4b1eaf5f/gkaramanis_tour_de_france.gif?table=block&id=2c5c08a9-8edb-801e-b96f-fd56afbc37d8&spaceId=adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc&expirationTimestamp=1771624800000&signature=_DQsxf79gkyZOVJzIFMqPKkAfxtWSx2qAvvogG2o9O0&downloadName=gkaramanis_tour_de_france.gif).
+C'est l'ensemble des étapes intermédiaires de la production d'une infographie avec ggplot.
+Depuis le premier graphique jusqu'au graphique final, c'est le rappel de tout le travail d'analyse et de mise en forme concentré à la fin en une seule image.
 
+# Les prochaines sorties du réseau
 
 
 
