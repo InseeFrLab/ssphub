@@ -48,6 +48,27 @@ L'atelier sera à la fois en présentiel à l'Insee (salle 4C-358) et en visio.
 Les détails sont [cet élément de calendrier](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/20260318_SSPHub_DARES_accords_entreprise.ics) et sur la [page dédiée sur le site du SSPHub](../../talk/2026-03-dares-conventions-collectives/index.qmd).
 
 
+## 📣 Appel à projets - journées de contribution open-source - 📅 16 & 17 juin 2026 - Paris
+
+Le SSPLab organise deux journées autour de la contribution open-source les 16 et 17 juin 2026.
+Les deux jours auront lieu au Lieu de la transformation publique à Paris.
+Le but de ces journées sera de démystifier l’open source, d'expliquer comment y contribuer, et d'encourager chacun à soutenir les projets que nous utilisons largement en datascience.
+
+Pour préparer ces journées, nous **recherchons 6 sponsors 👑**.
+Le rôle des sponsors est de présenter des projets (open-source bien sûr) et d'intérêt pour les data-scientists
+auxquels on pourrait apporter une contribution lors de ces deux journées.
+Cela peut être un package R, Python, un site ...
+En tant que sponsor, vous devriez connaître le sujet (sans en être expert ou mainteneur) et
+la problématique associée que l'on chercherait à résoudre collectivement.
+
+Votre **rôle** en amont du jour J sera de préparer ou identifier la ou les *issues* à traiter
+et de préparer les pré-requis techniques (repo Git, droits d'accès) pour que les contributeurs puissent
+se mettre en selle rapidement avec vous le jour J.
+Le jour J, vous n'aurez plus qu'à présenter le projet, la problématique associée et vous insérer
+dans le collectif dont le but sera de lancer des demandes de tirage (*pull-requests*) pour répondre aux problématiques soulevées.
+
+Si vous avez des questions ou êtes intéressés, n'hésitez pas à nous contacter 👋 par [mail](mailto:ssphub-contact@insee.fr) ou par Tchap.
+
 # Actualités
 
 ##  LLM
