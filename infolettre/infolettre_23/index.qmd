@@ -21,46 +21,50 @@ categories:
 # Bienvenue à la **vingt troisième infolettre** !
 
 Après **Niels, Oriana et Pedro**, trois tempêtes en 10 jours, nous revoici sous un ciel moins pluvieux.
-Qu'à cela ne tienne, je vous parie que la prochaine s'appellera [**Regina**](https://meteofrance.com/actualites-et-dossiers/comprendre-la-meteo/comment-choisit-le-nom-dune-tempete). Bienvenue à la nouvelle infolettre, coécrite avec **Laura** ❤️.
+Qu'à cela ne tienne, je vous parie que la prochaine s'appellera [**Regina**](https://meteofrance.com/actualites-et-dossiers/comprendre-la-meteo/comment-choisit-le-nom-dune-tempete).
+Bienvenue à la nouvelle infolettre, coécrite avec **Laura** ❤️.
 
 # L'infographie
 
 Dans la saison hivernale, ce mois-ci c'est le travail de l'agence italienne [The Visual Agency](https://thevisualagency.com/about/) qui a été [sélectionné](https://www.youtube.com/watch?v=yxLu5CpPUFI).
-Ils ont transcrit les mots d'une conférence de Marco Bernardi sur les sages et les rebelles (*i saggi et i rebelli in italiano 🇮🇹 *) en une chaine de montagnes dont la hauteur des sommets représente l'occurence des termes et la proximité entre sommets la proximité sémantique.
+Ils ont transcrit les mots d'une conférence de Marco Bernardi sur les sages et les rebelles (*i saggi e i rebelli in italiano 🇮🇹 *) en **une chaine de montagnes** dont la hauteur des sommets représente l'occurence des termes et la proximité entre sommets la proximité sémantique.
 
 ![*Source : The Visual Agency, Topography of a talk, [lien](https://thevisualagency.com/tva-blog-articles/topography-of-a-talk-between-vibe-coding-and-parametric-design/)*](tva_topography_talk.jpg)
 
 
-Et comme c'est le mois de février, je ne résiste pas à la volonté de mettre aussi en valeur [cette production animée](https://file.notion.so/f/f/adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc/7ab2c090-be3f-4a5a-82d6-4f9a4b1eaf5f/gkaramanis_tour_de_france.gif?table=block&id=2c5c08a9-8edb-801e-b96f-fd56afbc37d8&spaceId=adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc&expirationTimestamp=1771624800000&signature=_DQsxf79gkyZOVJzIFMqPKkAfxtWSx2qAvvogG2o9O0&downloadName=gkaramanis_tour_de_france.gif).
-C'est l'ensemble des étapes intermédiaires de la production d'une infographie avec ggplot.
-Depuis le premier graphique jusqu'au graphique final, c'est le rappel de tout le travail d'analyse et de mise en forme concentré à la fin en une seule image.
+Et comme c'est le mois de février, je ne résiste pas à la volonté de mettre aussi en valeur cette
+**production animée des étapes intermédiaires** d'une infographie faite avec ggplot lors d'un [TidyTuesday](https://github.com/gkaramanis/tidytuesday).
+Depuis le premier graphique jusqu'au graphique final, c'est le rappel de tout le travail d'analyse et de mise en forme
+qui est concentré à la fin en une seule image.
+
+![*Source : [Toulouse data viz](https://toulouse-dataviz.notion.site/Newsletter-Toulouse-DataViz-46-2afc08a98edb80cd9c21ee622fe9712a) et [repo TidyTuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week15)](https://file.notion.so/f/f/adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc/7ab2c090-be3f-4a5a-82d6-4f9a4b1eaf5f/gkaramanis_tour_de_france.gif?table=block&id=2c5c08a9-8edb-801e-b96f-fd56afbc37d8&spaceId=adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc&expirationTimestamp=1771624800000&signature=_DQsxf79gkyZOVJzIFMqPKkAfxtWSx2qAvvogG2o9O0&downloadName=gkaramanis_tour_de_france.gif)
 
 # Les prochaines sorties du réseau
 
 ## Extraction d'information de documents longs, DARES - 📅 18 mars 2026 14h (Insee et visio)
 
-La Dares viendra présenter leur travail d'analyse des accords d'entreprise, des
+La Dares viendra présenter leur **travail d'analyse des accords d'entreprise**, ces
 documents caractérisés par leur longueur pouvant aller jusqu'à plusieurs dizaines de page.
-On y abordera les sujets et méthodes mises en place pour détecter les thèmes abordés dans les accords,
+On y abordera les sujets et méthodes mises en place pour détecter les thèmes abordés dans les accords
 et en extraire des informations pertinentes (comme le nombre de jours de télétravail hebdomadaires).
 
 L'atelier sera à la fois en présentiel à l'Insee (salle 4C-358) et en visio.
-Les détails sont [cet élément de calendrier](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/20260318_SSPHub_DARES_accords_entreprise.ics) et sur la [page dédiée sur le site du SSPHub](../../talk/2026-03-dares-conventions-collectives/index.qmd).
+Les détails sont [cet élément de calendrier](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/20260318_SSPHub_DARES_accords_entreprise.ics).
 
 
 ## 📣 Appel à projets - journées de contribution open-source - 📅 16 & 17 juin 2026 - Paris
 
-Le SSPLab organise deux journées autour de la contribution open-source les 16 et 17 juin 2026.
-Les deux jours auront lieu au Lieu de la transformation publique à Paris.
+Le SSPLab organise **deux journées autour de la contribution open-source les 16 et 17 juin 2026**.
+Les deux jours auront lieu au *Lieu de la transformation publique à Paris*.
 Le but de ces journées sera de démystifier l’open source, d'expliquer comment y contribuer, et d'encourager chacun à soutenir les projets que nous utilisons largement en datascience.
 
-Pour préparer ces journées, nous **recherchons 6 sponsors 👑**.
-Le rôle des sponsors est de présenter des projets (open-source bien sûr) et d'intérêt pour les data-scientists
+Pour préparer ces journées, nous **recherchons quelques sponsors 👑**.
+Le rôle des sponsors est de présenter des projets (open-source bien sûr) d'intérêt pour les data-scientists
 auxquels on pourrait apporter une contribution lors de ces deux journées.
 Cela peut être un package R, Python, un site ...
-En tant que sponsor, vous devriez connaître le sujet (sans en être expert ou mainteneur) et
-la problématique associée que l'on chercherait à résoudre collectivement.
 
+En tant que sponsor, vous devriez **connaître le sujet** (sans en être expert ou mainteneur) et
+la problématique associée que l'on chercherait à résoudre collectivement.
 Votre **rôle** en amont du jour J sera de préparer ou identifier la ou les *issues* à traiter
 et de préparer les pré-requis techniques (repo Git, droits d'accès) pour que les contributeurs puissent
 se mettre en selle rapidement avec vous le jour J.
