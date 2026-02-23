@@ -1,5 +1,5 @@
 ---
-title: "La première infographie"
+title: "La tempête de l'IA"
 
 description: |
   Infolettre du mois de __février 2026__
@@ -75,12 +75,48 @@ Si vous avez des questions ou êtes intéressés, n'hésitez pas à nous contact
 
 # Actualités
 
-##  LLM
+## Agents IA: petites catastrophes (et grandes conséquences ?)
 
-## Outils
+L'usage des **agents IA** basés sur des grands models de langage (LLM) a pris de l'ampleur courant 2025, notamment avec la mise à disposition de framework et d'outils facilitant leur utilisation. Pour les plus novices d'entre nous, un agent IA est un système qui exécute des tâches de manières autonomes, en utilisant un LLM pour comprendre et répondre aux entrées. Il peut donc **percevoir**, **raisonner**, **décider** et **agir** dans son environnement dans le but d'attendre son objectif.
+On comprend donc qu'il peut exister quelques couacs dans l'utilisation de ces agents IA, c'est ce que nous allons voir dans les témoignages suivants:
 
-## Formation
-Quelques ressources intéressantes de formation ou articles de blog.
+- *quand un agent se venge pour un refus de contribution à un projet opensource* : [**ce témoignage**](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) nous raconte comment un agent a pu publier des propos diffamants sur l'un des *maintainers* volontaires de la librarie Python mondialement connue **Matplotlib**.
+
+- *quand un agent vole les clés d'API de son utilisateur* : [**ce témoignage**](https://www.reddit.com/r/ClaudeAI/comments/1r186gl/my_agent_stole_my_api_keys/?share_id=a4xNFtHEI1uNDLfrPOvxm&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) concernne cette fois un agent ayant pris quelques libertés pour tester une hypothèse : il a réussi à accéder à un fichier auquel il n'avait pas accès quoi qu'il en coûte. *Petit rappel : vos clé d'API 🔑, c’est comme vos clés d’appartement — à ne pas laisser traîner, sinon quelqu’un risque de venir squatter… et de vous laisser la facture* 👮
+
+Enfin, [**ce billet de blog**](https://www.robinlinacre.com/respectful_use_of_ai/) revient sur une utilisation respectueuse de l'IA au sein des équipes de développement (qui peut être élargie à toute équipe bossant sur un projet commun, qu'il soit statistqiue ou informatique)
+
+##  Outils - l'océrisation ou les LLM multimodaux : de nouveaux outils open source pour l'extraction de texte non structuré 📄
+
+Ces derniers mois, différents outils d'extraction d'information issus de textes non  structurés ont émergé. On peut y retrouver:
+
+- le framework [**EdgeQuake**](https://github.com/raphaelmansuy/edgequake), implémenté en Rust pour des performances élevées, permet de prendre en compte plus d'information sur la composition des textes que les RAG. En effet, là où les RAG se limitent à l'analyse de la similarité sémantique, EdgeQuake va décomposer le document en un graphe de connaissances, permettant de garder les relations structurelles entre les concepts.
+
+- plusieurs outils d'océrisation - OCR pour reconnaissance optique de caractère ou l'exdtraction de texte issu d'image - ont été recemment mis à disposition en open source :
+
+  - [**chandra**](https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file) mis à disposition par *datalab* l'entreprise à l'origine du framwork [**marker-pdf**](https://github.com/datalab-to/marker?tab=readme-ov-file) ou du moteur OCR [**surya**](https://github.com/datalab-to/surya)
+  - [**DeepSeek-OCR-2**](https://github.com/deepseek-ai/DeepSeek-OCR-2) s'inspire de la lecture humaine dans l'analyse du texte pour reconstruire l'ordre logique de lecture en plus de la détection de caractères.
+  - le modèle OCR multimodal [**GLM-OCR**](https://github.com/zai-org/GLM-OCR) analyse la structure globale du document en plus de la reconnaissance de caractère.
+
+## Un (petit) détour côté R 
+
+Parce qu'il faut des actualités pour tout le monde, voici quelques news côté R / Posit :
+
+- Après le benchmark des meilleurs codeurs R parmi les LLM le mois dernier, [**l'infolettre Posit**](https://posit.co/blog/2026-01-16-ai-newsletter/) de janvier apporte quelques informations sur l'utilisation de LLM ou d'agents IA dans Rstudio
+
+- Une liste des packages R utiliant les LLM est disponible [ici](https://luisdva.github.io/llmsr-book/r-pkgs.html) *bien que nous vous conseillons l'utilisation de Python si vous souhaitez travailler avec des LLM* 😉
+
+- Un nouvel outil [arf](https://github.com/eitsupi/arf) - *en cours de développement, pas encore stable* - se pose en console R moderne multiplateforme, écrit en Rust. 
+
+- Enfin, [**ce billet de blog**](https://prodigious-trailblazer-3628.kit.com/posts/the-end-of-shiny) expose les limites d'une application **R Shiny**, en comparaison à une "vraie" application web. Avec les nouveaux outils de *vibe coding*, est-il toujours nécessaire d'avoir recours au framework Rshiny, réputé pour sa simplicité d'utilisation ? Le débat est ouvert 🤔
+
+## Formation 🏋️
+Ce mois-ci, voici des **ressources intéressantes pour se former sur des framework IA** :
+
+- [**DeepLearning.AI**](https://learn.deeplearning.ai/) propose des cours (gratuits après inscription) sur différents modèles et outils d'IA. Cette plateforme a été fondée par Andrew Ng, qui est aussi l'un des professeur de la plateforme 🤩
+
+- Pour se former sur l'utilisation du framework **Pytorch**, [**learnpytorch**](https://www.learnpytorch.io/) est un excellent site, avec videos, notebooks (avec correction), présentations disponibles. Les principaux modèles de deepleaning sont abordés (dont la classification et la computer vision) et il existe même un module abordant le déploiement de ces modèles. *Tout ce dont vous avez besoin pour maîtriser le package Insee [**torchTextClassifier**](https://github.com/InseeFrLab/torchTextClassifiers) comme personne* 👍 
 
 ## Fun
 
+Vu la longueur de cette infolettre, nous vous gardons des petites pépites pour le mois prochain 😉
