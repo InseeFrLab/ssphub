@@ -9,7 +9,7 @@
 <meta name="dcterms.date" content="2026-02-28">
 <meta name="description" content="Infolettre du mois de février 2026">
 
-<title>La première infographie – SSPHub</title>
+<title>La tempête de l’IA – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -170,7 +170,7 @@ background: #6886bb;
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">La première infographie</h1>
+      <h1 class="title">La tempête de l’IA</h1>
                   <div>
         <div class="description">
           <p>Infolettre du mois de <strong>février 2026</strong></p>
@@ -221,9 +221,10 @@ background: #6886bb;
   </ul></li>
   <li><a href="#actualités" id="toc-actualités" class="nav-link" data-scroll-target="#actualités">Actualités</a>
   <ul class="collapse">
-  <li><a href="#llm" id="toc-llm" class="nav-link" data-scroll-target="#llm">LLM</a></li>
-  <li><a href="#outils" id="toc-outils" class="nav-link" data-scroll-target="#outils">Outils</a></li>
-  <li><a href="#formation" id="toc-formation" class="nav-link" data-scroll-target="#formation">Formation</a></li>
+  <li><a href="#agents-ia-petites-catastrophes-et-grandes-conséquences" id="toc-agents-ia-petites-catastrophes-et-grandes-conséquences" class="nav-link" data-scroll-target="#agents-ia-petites-catastrophes-et-grandes-conséquences">Agents IA: petites catastrophes (et grandes conséquences ?)</a></li>
+  <li><a href="#outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré" id="toc-outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré" class="nav-link" data-scroll-target="#outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré">Outils - l’océrisation ou les LLM multimodaux : de nouveaux outils open source pour l’extraction de texte non structuré 📄</a></li>
+  <li><a href="#un-petit-détour-côté-r" id="toc-un-petit-détour-côté-r" class="nav-link" data-scroll-target="#un-petit-détour-côté-r">Un (petit) détour côté R</a></li>
+  <li><a href="#formation" id="toc-formation" class="nav-link" data-scroll-target="#formation">Formation 🏋️</a></li>
   <li><a href="#fun" id="toc-fun" class="nav-link" data-scroll-target="#fun">Fun</a></li>
   </ul></li>
   </ul>
@@ -274,18 +275,49 @@ background: #6886bb;
 </section>
 <section id="actualités" class="level1">
 <h1>Actualités</h1>
-<section id="llm" class="level2">
-<h2 class="anchored" data-anchor-id="llm">LLM</h2>
+<section id="agents-ia-petites-catastrophes-et-grandes-conséquences" class="level2">
+<h2 class="anchored" data-anchor-id="agents-ia-petites-catastrophes-et-grandes-conséquences">Agents IA: petites catastrophes (et grandes conséquences ?)</h2>
+<p>L’usage des <strong>agents IA</strong> basés sur des grands models de langage (LLM) a pris de l’ampleur courant 2025, notamment avec la mise à disposition de framework et d’outils facilitant leur utilisation. Pour les plus novices d’entre nous, un agent IA est un système qui exécute des tâches de manières autonomes, en utilisant un LLM pour comprendre et répondre aux entrées. Il peut donc <strong>percevoir</strong>, <strong>raisonner</strong>, <strong>décider</strong> et <strong>agir</strong> dans son environnement dans le but d’attendre son objectif. On comprend donc qu’il peut exister quelques couacs dans l’utilisation de ces agents IA, c’est ce que nous allons voir dans les témoignages suivants:</p>
+<ul>
+<li><p><em>quand un agent se venge pour un refus de contribution à un projet opensource</em> : <a href="https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"><strong>ce témoignage</strong></a> nous raconte comment un agent a pu publier des propos diffamants sur l’un des <em>maintainers</em> volontaires de la librarie Python mondialement connue <strong>Matplotlib</strong>.</p></li>
+<li><p><em>quand un agent vole les clés d’API de son utilisateur</em> : <a href="https://www.reddit.com/r/ClaudeAI/comments/1r186gl/my_agent_stole_my_api_keys/?share_id=a4xNFtHEI1uNDLfrPOvxm&amp;utm_medium=android_app&amp;utm_name=androidcss&amp;utm_source=share&amp;utm_term=1"><strong>ce témoignage</strong></a> concernne cette fois un agent ayant pris quelques libertés pour tester une hypothèse : il a réussi à accéder à un fichier auquel il n’avait pas accès quoi qu’il en coûte. <em>Petit rappel : vos clé d’API 🔑, c’est comme vos clés d’appartement — à ne pas laisser traîner, sinon quelqu’un risque de venir squatter… et de vous laisser la facture</em> 👮</p></li>
+</ul>
+<p>Enfin, <a href="https://www.robinlinacre.com/respectful_use_of_ai/"><strong>ce billet de blog</strong></a> revient sur une utilisation respectueuse de l’IA au sein des équipes de développement (qui peut être élargie à toute équipe bossant sur un projet commun, qu’il soit statistqiue ou informatique)</p>
 </section>
-<section id="outils" class="level2">
-<h2 class="anchored" data-anchor-id="outils">Outils</h2>
+<section id="outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré" class="level2">
+<h2 class="anchored" data-anchor-id="outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré">Outils - l’océrisation ou les LLM multimodaux : de nouveaux outils open source pour l’extraction de texte non structuré 📄</h2>
+<p>Ces derniers mois, différents outils d’extraction d’information issus de textes non structurés ont émergé. On peut y retrouver:</p>
+<ul>
+<li><p>le framework <a href="https://github.com/raphaelmansuy/edgequake"><strong>EdgeQuake</strong></a>, implémenté en Rust pour des performances élevées, permet de prendre en compte plus d’information sur la composition des textes que les RAG. En effet, là où les RAG se limitent à l’analyse de la similarité sémantique, EdgeQuake va décomposer le document en un graphe de connaissances, permettant de garder les relations structurelles entre les concepts.</p></li>
+<li><p>plusieurs outils d’océrisation - OCR pour reconnaissance optique de caractère ou l’exdtraction de texte issu d’image - ont été recemment mis à disposition en open source :</p>
+<ul>
+<li><a href="https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file"><strong>chandra</strong></a> mis à disposition par <em>datalab</em> l’entreprise à l’origine du framwork <a href="https://github.com/datalab-to/marker?tab=readme-ov-file"><strong>marker-pdf</strong></a> ou du moteur OCR <a href="https://github.com/datalab-to/surya"><strong>surya</strong></a></li>
+<li><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2"><strong>DeepSeek-OCR-2</strong></a> s’inspire de la lecture humaine dans l’analyse du texte pour reconstruire l’ordre logique de lecture en plus de la détection de caractères.</li>
+<li>le modèle OCR multimodal <a href="https://github.com/zai-org/GLM-OCR"><strong>GLM-OCR</strong></a> analyse la structure globale du document en plus de la reconnaissance de caractère.</li>
+</ul></li>
+</ul>
+</section>
+<section id="un-petit-détour-côté-r" class="level2">
+<h2 class="anchored" data-anchor-id="un-petit-détour-côté-r">Un (petit) détour côté R</h2>
+<p>Parce qu’il faut des actualités pour tout le monde, voici quelques news côté R / Posit :</p>
+<ul>
+<li><p>Après le benchmark des meilleurs codeurs R parmi les LLM le mois dernier, <a href="https://posit.co/blog/2026-01-16-ai-newsletter/"><strong>l’infolettre Posit</strong></a> de janvier apporte quelques informations sur l’utilisation de LLM ou d’agents IA dans Rstudio</p></li>
+<li><p>Une liste des packages R utiliant les LLM est disponible <a href="https://luisdva.github.io/llmsr-book/r-pkgs.html">ici</a> <em>bien que nous vous conseillons l’utilisation de Python si vous souhaitez travailler avec des LLM</em> 😉</p></li>
+<li><p>Un nouvel outil <a href="https://github.com/eitsupi/arf">arf</a> - <em>en cours de développement, pas encore stable</em> - se pose en console R moderne multiplateforme, écrit en Rust.</p></li>
+<li><p>Enfin, <a href="https://prodigious-trailblazer-3628.kit.com/posts/the-end-of-shiny"><strong>ce billet de blog</strong></a> expose les limites d’une application <strong>R Shiny</strong>, en comparaison à une “vraie” application web. Avec les nouveaux outils de <em>vibe coding</em>, est-il toujours nécessaire d’avoir recours au framework Rshiny, réputé pour sa simplicité d’utilisation ? Le débat est ouvert 🤔</p></li>
+</ul>
 </section>
 <section id="formation" class="level2">
-<h2 class="anchored" data-anchor-id="formation">Formation</h2>
-<p>Quelques ressources intéressantes de formation ou articles de blog.</p>
+<h2 class="anchored" data-anchor-id="formation">Formation 🏋️</h2>
+<p>Ce mois-ci, voici des <strong>ressources intéressantes pour se former sur des framework IA</strong> :</p>
+<ul>
+<li><p><a href="https://learn.deeplearning.ai/"><strong>DeepLearning.AI</strong></a> propose des cours (gratuits après inscription) sur différents modèles et outils d’IA. Cette plateforme a été fondée par Andrew Ng, qui est aussi l’un des professeur de la plateforme 🤩</p></li>
+<li><p>Pour se former sur l’utilisation du framework <strong>Pytorch</strong>, <a href="https://www.learnpytorch.io/"><strong>learnpytorch</strong></a> est un excellent site, avec videos, notebooks (avec correction), présentations disponibles. Les principaux modèles de deepleaning sont abordés (dont la classification et la computer vision) et il existe même un module abordant le déploiement de ces modèles. <em>Tout ce dont vous avez besoin pour maîtriser le package Insee <a href="https://github.com/InseeFrLab/torchTextClassifiers"><strong>torchTextClassifier</strong></a> comme personne</em> 👍</p></li>
+</ul>
 </section>
 <section id="fun" class="level2">
 <h2 class="anchored" data-anchor-id="fun">Fun</h2>
+<p>Vu la longueur de cette infolettre, nous vous gardons des petites pépites pour le mois prochain 😉</p>
 
 
 </section>
