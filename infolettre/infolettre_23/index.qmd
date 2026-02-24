@@ -37,7 +37,7 @@ Et comme c'est le mois de février, je ne résiste pas à la volonté de mettre 
 Depuis le premier graphique jusqu'au graphique final, c'est le rappel de tout le travail d'analyse et de mise en forme
 qui est concentré à la fin en une seule image.
 
-![*Source : [Toulouse data viz](https://toulouse-dataviz.notion.site/Newsletter-Toulouse-DataViz-46-2afc08a98edb80cd9c21ee622fe9712a) et [repo TidyTuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week15)](https://file.notion.so/f/f/adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc/7ab2c090-be3f-4a5a-82d6-4f9a4b1eaf5f/gkaramanis_tour_de_france.gif?table=block&id=2c5c08a9-8edb-801e-b96f-fd56afbc37d8&spaceId=adba2cb3-b809-41d0-b7a2-c0e7bfb7edbc&expirationTimestamp=1771624800000&signature=_DQsxf79gkyZOVJzIFMqPKkAfxtWSx2qAvvogG2o9O0&downloadName=gkaramanis_tour_de_france.gif)
+![*Source : [Toulouse data viz](https://toulouse-dataviz.notion.site/Newsletter-Toulouse-DataViz-46-2afc08a98edb80cd9c21ee622fe9712a) et [repo TidyTuesday](https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week15)*](gkaramanis_tour_de_france.gif)
 
 # Les prochaines sorties du réseau
 
@@ -63,7 +63,7 @@ Le rôle des sponsors est de présenter des projets (open-source bien sûr) d'in
 auxquels on pourrait apporter une contribution lors de ces deux journées.
 Cela peut être un package R, Python, un site ...
 
-En tant que sponsor, vous devriez **connaître le sujet** (sans en être expert ou mainteneur) et
+En tant que sponsor, vous devrez **connaître le sujet** (sans en être expert ou mainteneur) et
 la problématique associée que l'on chercherait à résoudre collectivement.
 Votre **rôle** en amont du jour J sera de préparer ou identifier la ou les *issues* à traiter
 et de préparer les pré-requis techniques (repo Git, droits d'accès) pour que les contributeurs puissent
