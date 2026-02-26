@@ -96,7 +96,7 @@ Ces derniers mois, différents outils d'extraction d'information issus de textes
 
   - [**chandra**](https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file), mis à disposition par *datalab*, l'entreprise à l'origine du framwork [**marker-pdf**](https://github.com/datalab-to/marker?tab=readme-ov-file) et du moteur OCR [**surya**](https://github.com/datalab-to/surya) ;
   - [**DeepSeek-OCR-2**](https://github.com/deepseek-ai/DeepSeek-OCR-2), qui s'inspire de la lecture humaine pour reconstruire l'ordre logique de lecture, en plus de la détection des caractères ;
-  - le modèle OCR multimodal [**GLM-OCR**](https://github.com/zai-org/GLM-OCR) analyse la structure globale du document en plus de la reconnaissance de caractère.
+  - le modèle OCR multimodal [**GLM-OCR**](https://github.com/zai-org/GLM-OCR), qui analyse la structure globale du document en complément de la reconnaissance de caractères.
 
 ## Un (petit) détour côté R
 
