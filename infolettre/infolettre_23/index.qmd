@@ -27,7 +27,7 @@ Bienvenue à la nouvelle infolettre, coécrite avec **Laura** ❤️.
 # L'infographie
 
 Dans la saison hivernale, ce mois-ci c'est le travail de l'agence italienne [The Visual Agency](https://thevisualagency.com/about/) qui a été [sélectionné](https://www.youtube.com/watch?v=yxLu5CpPUFI).
-Ils ont transcrit les mots d'une conférence de Marco Bernardi sur les sages et les rebelles (*i saggi e i rebelli in italiano 🇮🇹 *) en **une chaine de montagnes** dont la hauteur des sommets représente l'occurence des termes et la proximité entre sommets la proximité sémantique.
+Ils ont transcrit les mots d'une conférence sur les sages et les rebelles (*i saggi e i rebelli in italiano 🇮🇹 *) en **une chaine de montagnes** dont la hauteur des sommets représente l'occurence des termes et la proximité entre sommets la proximité sémantique.
 
 ![*Source : The Visual Agency, Topography of a talk, [lien](https://thevisualagency.com/tva-blog-articles/topography-of-a-talk-between-vibe-coding-and-parametric-design/)*](tva_topography_talk.jpg)
 
@@ -43,8 +43,8 @@ qui permet d'aboutir à l'illustration finale.
 
 ## Extraction d'information dans des documents longs par la DARES - 📅 18 mars 2026 14h (à la DG Insee et visio)
 
-La Dares présentera ses **travaux d'analyse des accords d'entreprise**, 
-des documents souvent très longs, pouvant compter plusieurs dizaines de pages. 
+La Dares présentera ses **travaux d'analyse des accords d'entreprise**,
+des documents souvent très longs, pouvant compter plusieurs dizaines de pages.
 On y abordera les méthodes mises en œuvre pour repérer automatiquement les sujets traités dans ces accords
 et en extraire des informations pertinentes (par exemple, le nombre de jours de télétravail par semaine).
 
@@ -80,9 +80,9 @@ Si vous avez des questions, que vous êtes intéressé pour proposer un sujet ou
 L'usage des **agents IA** basés sur des grands modèles de langage (LLM) a pris de l'ampleur courant 2025, notamment grâce à l'émergence de frameworks et d'outils facilitant leur utilisation. Pour les plus novices, un agent IA est un système capable d'exécuter des tâches de manière autonome, en s'appuyant sur un LLM qui interprète les entrées et peut mobiliser un ensemble d'outils pour y répondre. L'agent peut ainsi **"percevoir"**, **"raisonner"**, **"décider"** et **"agir"** dans son environnement afin d'atteindre un objectif donné.
 On comprend donc qu'il peut exister quelques couacs dans l'utilisation de ces agents IA, c'est ce que nous allons voir dans les témoignages suivants:
 
-- *quand un agent se venge pour un refus de contribution à un projet opensource* : [**ce témoignage**](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) nous raconte comment un agent a pu publier des propos diffamants sur l'un des *maintainers* volontaires de la librarie Python mondialement connue **Matplotlib** ;
+- *Quand un agent se venge pour un refus de contribution à un projet opensource* : [**ce témoignage**](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) nous raconte comment un agent a pu publier des propos diffamants sur l'un des *maintainers* volontaires de la librarie Python mondialement connue **Matplotlib** ;
 
-- *quand un agent vole les clés d'API de son utilisateur* : [**ce témoignage**](https://www.reddit.com/r/ClaudeAI/comments/1r186gl/my_agent_stole_my_api_keys/?share_id=a4xNFtHEI1uNDLfrPOvxm&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) raconte cette fois le cas d'un agent qui, pour tester ne hypothèse, a pris quelques libertés... en accédant à un fichier auquel il n'était pas censé avoir accès. *Petit rappel : vos clé d'API 🔑, c’est comme vos clés d’appartement — à ne pas laisser traîner, sinon quelqu’un risque de venir squatter… et de vous laisser la facture* 👮.
+- *Quand un agent vole les clés d'API de son utilisateur* : [**ce témoignage**](https://www.reddit.com/r/ClaudeAI/comments/1r186gl/my_agent_stole_my_api_keys/?share_id=a4xNFtHEI1uNDLfrPOvxm&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) raconte cette fois le cas d'un agent qui, pour tester ne hypothèse, a pris quelques libertés... en accédant à un fichier auquel il n'était pas censé avoir accès. *Petit rappel : vos clé d'API 🔑, c’est comme vos clés d’appartement — à ne pas laisser traîner, sinon quelqu’un risque de venir squatter… et de vous laisser la facture* 👮.
 
 Enfin, [**ce billet de blog**](https://www.robinlinacre.com/respectful_use_of_ai/) revient sur une utilisation respectueuse de l'IA au sein des équipes de développement (qui peut être élargie à toute équipe travaillant sur un projet commun, qu'il soit statistique ou informatique).
 
@@ -90,13 +90,13 @@ Enfin, [**ce billet de blog**](https://www.robinlinacre.com/respectful_use_of_ai
 
 Ces derniers mois, différents outils d'extraction d'information issus de textes non  structurés ont émergé. On peut y retrouver:
 
-- le framework [**EdgeQuake**](https://github.com/raphaelmansuy/edgequake), implémenté en Rust pour des performances élevées, permet de prendre en compte plus d'information sur la composition des textes que les RAG. En effet, là où les RAG se limitent à l'analyse de la similarité sémantique, EdgeQuake va décomposer le document en un graphe de connaissances, permettant de garder les relations structurelles entre les concepts ;
+- Le framework [**EdgeQuake**](https://github.com/raphaelmansuy/edgequake), implémenté en Rust pour des performances élevées, permet de prendre en compte plus d'information sur la composition des textes que les RAG. En effet, là où les RAG se limitent à l'analyse de la similarité sémantique (*cf.* explications sur les RAG [ici](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) par exemple), EdgeQuake va décomposer le document en un graphe de connaissances, permettant de garder les relations structurelles entre les concepts ;
 
-- plusieurs outils d'OCR (reconnaissance optique de caractère, permettant d’extraire du texte à partir d’images) ont été récemment mis à disposition en open source :
+- Plusieurs outils d'OCR (reconnaissance optique de caractère, permettant d’extraire du texte à partir d’images) ont été récemment mis à disposition en open source :
 
-  - [**chandra**](https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file), mis à disposition par *datalab*, l'entreprise à l'origine du framwork [**marker-pdf**](https://github.com/datalab-to/marker?tab=readme-ov-file) et du moteur OCR [**surya**](https://github.com/datalab-to/surya) ;
+  - [**Chandra**](https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file), mis à disposition par *datalab*, l'entreprise à l'origine du framwork [**marker-pdf**](https://github.com/datalab-to/marker?tab=readme-ov-file) et du moteur OCR [**surya**](https://github.com/datalab-to/surya) ;
   - [**DeepSeek-OCR-2**](https://github.com/deepseek-ai/DeepSeek-OCR-2), qui s'inspire de la lecture humaine pour reconstruire l'ordre logique de lecture, en plus de la détection des caractères ;
-  - le modèle OCR multimodal [**GLM-OCR**](https://github.com/zai-org/GLM-OCR), qui analyse la structure globale du document en complément de la reconnaissance de caractères.
+  - Le modèle OCR multimodal [**GLM-OCR**](https://github.com/zai-org/GLM-OCR), qui analyse la structure globale du document en complément de la reconnaissance de caractères.
 
 ## Un (petit) détour côté R
 
