@@ -77,7 +77,7 @@ Si vous avez des questions, que vous êtes intéressé pour proposer un sujet ou
 
 ## Agents IA: petites catastrophes (et grandes conséquences ?)
 
-L'usage des **agents IA** basés sur des grands models de langage (LLM) a pris de l'ampleur courant 2025, notamment avec la mise à disposition de framework et d'outils facilitant leur utilisation. Pour les plus novices d'entre nous, un agent IA est un système qui exécute des tâches de manières autonomes, en utilisant un LLM pour comprendre et répondre aux entrées. Il peut donc **percevoir**, **raisonner**, **décider** et **agir** dans son environnement dans le but d'attendre son objectif.
+L'usage des **agents IA** basés sur des grands modèles de langage (LLM) a pris de l'ampleur courant 2025, notamment grâce à l'émergence de frameworks et d'outils facilitant leur utilisation. Pour les plus novices, un agent IA est un système capable d'exécuter des tâches de manière autonome, en s'appuyant sur un LLM qui interprète les entrées et peut mobiliser un ensemble d'outils pour y répondre. L'agent peut ainsi **"percevoir"**, **"raisonner"**, **"décider"** et **"agir"** dans son environnement afin d'atteindre un objectif donné.
 On comprend donc qu'il peut exister quelques couacs dans l'utilisation de ces agents IA, c'est ce que nous allons voir dans les témoignages suivants:
 
 - *quand un agent se venge pour un refus de contribution à un projet opensource* : [**ce témoignage**](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) nous raconte comment un agent a pu publier des propos diffamants sur l'un des *maintainers* volontaires de la librarie Python mondialement connue **Matplotlib** ;
