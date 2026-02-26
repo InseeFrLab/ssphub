@@ -84,7 +84,7 @@ On comprend donc qu'il peut exister quelques couacs dans l'utilisation de ces ag
 
 - *quand un agent vole les clés d'API de son utilisateur* : [**ce témoignage**](https://www.reddit.com/r/ClaudeAI/comments/1r186gl/my_agent_stole_my_api_keys/?share_id=a4xNFtHEI1uNDLfrPOvxm&utm_medium=android_app&utm_name=androidcss&utm_source=share&utm_term=1) raconte cette fois le cas d'un agent qui, pour tester ne hypothèse, a pris quelques libertés... en accédant à un fichier auquel il n'était pas censé avoir accès. *Petit rappel : vos clé d'API 🔑, c’est comme vos clés d’appartement — à ne pas laisser traîner, sinon quelqu’un risque de venir squatter… et de vous laisser la facture* 👮.
 
-Enfin, [**ce billet de blog**](https://www.robinlinacre.com/respectful_use_of_ai/) revient sur une utilisation respectueuse de l'IA au sein des équipes de développement (qui peut être élargie à toute équipe bossant sur un projet commun, qu'il soit statistqiue ou informatique).
+Enfin, [**ce billet de blog**](https://www.robinlinacre.com/respectful_use_of_ai/) revient sur une utilisation respectueuse de l'IA au sein des équipes de développement (qui peut être élargie à toute équipe travaillant sur un projet commun, qu'il soit statistique ou informatique).
 
 ##  Outils - l'océrisation ou les LLM multimodaux : de nouveaux outils open source pour l'extraction de texte non structuré 📄
 
