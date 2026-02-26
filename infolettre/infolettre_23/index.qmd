@@ -106,7 +106,7 @@ Parce qu'il faut des actualités pour tout le monde, voici quelques news côté 
 
 - Une liste des packages R utiliant les LLM est disponible [ici](https://luisdva.github.io/llmsr-book/r-pkgs.html) *bien que nous vous conseillons l'utilisation de Python si vous souhaitez travailler avec des LLM* 😉 ;
 
-- Un nouvel outil [arf](https://github.com/eitsupi/arf) - *en cours de développement, pas encore stable* - se pose en console R moderne multiplateforme, écrit en Rust ;
+- Un nouvel outil [arf](https://github.com/eitsupi/arf) - *en cours de développement, pas encore stable* - se pose en console R moderne multiplateforme ;
 
 - Enfin, [**ce billet de blog**](https://prodigious-trailblazer-3628.kit.com/posts/the-end-of-shiny) expose les limites d'une application **R Shiny**, en comparaison à une "vraie" application web. Avec les nouveaux outils de *vibe coding*, est-il toujours nécessaire d'avoir recours au framework Rshiny, réputé pour sa simplicité d'utilisation ? Le débat est ouvert 🤔.
 
