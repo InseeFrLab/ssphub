@@ -94,7 +94,7 @@ Ces derniers mois, différents outils d'extraction d'information issus de textes
 
 - plusieurs outils d'OCR (reconnaissance optique de caractère, permettant d’extraire du texte à partir d’images) ont été récemment mis à disposition en open source :
 
-  - [**chandra**](https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file) mis à disposition par *datalab* l'entreprise à l'origine du framwork [**marker-pdf**](https://github.com/datalab-to/marker?tab=readme-ov-file) ou du moteur OCR [**surya**](https://github.com/datalab-to/surya) ;
+  - [**chandra**](https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file), mis à disposition par *datalab*, l'entreprise à l'origine du framwork [**marker-pdf**](https://github.com/datalab-to/marker?tab=readme-ov-file) et du moteur OCR [**surya**](https://github.com/datalab-to/surya) ;
   - [**DeepSeek-OCR-2**](https://github.com/deepseek-ai/DeepSeek-OCR-2) s'inspire de la lecture humaine dans l'analyse du texte pour reconstruire l'ordre logique de lecture en plus de la détection de caractères ;
   - le modèle OCR multimodal [**GLM-OCR**](https://github.com/zai-org/GLM-OCR) analyse la structure globale du document en plus de la reconnaissance de caractère.
 
