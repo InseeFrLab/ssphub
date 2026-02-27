@@ -59,7 +59,7 @@ Les deux jours auront lieu au *Lieu de la transformation publique* à Paris.
 Le but de ces journées est de démystifier l’open source, d'expliquer comment y contribuer, et d'encourager chacun à soutenir les projets que nous utilisons largement en datascience.
 
 Pour préparer ces journées, nous **recherchons quelques sponsors 👑**.
-Leur rôle: proposer des projets (open-source bien sûr) pertinents pour les data-scientists
+Leur rôle : proposer des projets (open-source bien sûr) pertinents pour les data-scientists
 et auxquels les participants pourraient contribuer pendant l'évènement.
 Cela peut être un package R, Python, un site ...
 
@@ -75,10 +75,10 @@ Si vous avez des questions, que vous êtes intéressé pour proposer un sujet ou
 
 # Actualités
 
-## Agents IA: petites catastrophes (et grandes conséquences ?)
+## Agents IA : petites catastrophes (et grandes conséquences ?)
 
 L'usage des **agents IA** basés sur des grands modèles de langage (LLM) a pris de l'ampleur courant 2025, notamment grâce à l'émergence de frameworks et d'outils facilitant leur utilisation. Pour les plus novices, un agent IA est un système capable d'exécuter des tâches de manière autonome, en s'appuyant sur un LLM qui interprète les entrées et peut mobiliser un ensemble d'outils pour y répondre. L'agent peut ainsi **"percevoir"**, **"raisonner"**, **"décider"** et **"agir"** dans son environnement afin d'atteindre un objectif donné.
-On comprend donc qu'il peut exister quelques couacs dans l'utilisation de ces agents IA, c'est ce que nous allons voir dans les témoignages suivants:
+On comprend donc qu'il peut exister quelques couacs dans l'utilisation de ces agents IA, c'est ce que nous allons voir dans les témoignages suivants :
 
 - *Quand un agent se venge pour un refus de contribution à un projet opensource* : [**ce témoignage**](https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/) nous raconte comment un agent a pu publier des propos diffamants sur l'un des *maintainers* volontaires de la librarie Python mondialement connue **Matplotlib** ;
 
@@ -88,7 +88,7 @@ Enfin, [**ce billet de blog**](https://www.robinlinacre.com/respectful_use_of_ai
 
 ##  Outils - l'océrisation ou les LLM multimodaux : de nouveaux outils open source pour l'extraction de texte non structuré 📄
 
-Ces derniers mois, différents outils d'extraction d'information issus de textes non  structurés ont émergé. On peut y retrouver:
+Ces derniers mois, différents outils d'extraction d'information issus de textes non  structurés ont émergé. On peut y retrouver :
 
 - Le framework [**EdgeQuake**](https://github.com/raphaelmansuy/edgequake), implémenté en Rust pour des performances élevées, permet de prendre en compte plus d'information sur la composition des textes que les RAG. En effet, là où les RAG se limitent à l'analyse de la similarité sémantique (*cf.* explications sur les RAG [ici](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) par exemple), EdgeQuake va décomposer le document en un graphe de connaissances, permettant de garder les relations structurelles entre les concepts ;
 
@@ -115,7 +115,7 @@ Ce mois-ci, voici des **ressources intéressantes pour se former aux framework I
 
 - [**DeepLearning.AI**](https://learn.deeplearning.ai/) propose des cours (gratuits après inscription) sur différents modèles et outils d'IA. Cette plateforme a été fondée par Andrew Ng, qui y enseigne également 🤩 ;
 
-- Pour apprendre à utiliser **Pytorch**, [**learnpytorch**](https://www.learnpytorch.io/) est une excellente ressource: vidéos, notebooks (avec corrigés) et présentations sont disponibles. Les principaux modèles de deep learning y sont abordés (dont la classification et la computer vision), et il existe même un module consacré au déploiement de ces modèles. *Tout ce dont vous avez besoin pour maîtriser le package Insee [**torchTextClassifier**](https://github.com/InseeFrLab/torchTextClassifiers) comme personne* 👍.
+- Pour apprendre à utiliser **Pytorch**, [**learnpytorch**](https://www.learnpytorch.io/) est une excellente ressource : vidéos, notebooks (avec corrigés) et présentations sont disponibles. Les principaux modèles de deep learning y sont abordés (dont la classification et la computer vision), et il existe même un module consacré au déploiement de ces modèles. *Tout ce dont vous avez besoin pour maîtriser le package Insee [**torchTextClassifier**](https://github.com/InseeFrLab/torchTextClassifiers) comme personne* 👍.
 
 ## Fun
 
