@@ -1,0 +1,57 @@
+---
+title: "Analyse textuelle de documents longs : cas des accords d’entreprise"
+
+categories:
+- extraction d'information
+- NLP
+- DARES
+
+description: |
+  Le __18 mars (14h00 - 15h30)__, la DARES viendra présenter leur travail sur les conventions collectives ou accords d'entreprise.
+
+date: '2026-03-18'
+
+image: logo_Dares.png
+---
+
+L'atelier sera à la fois en présentiel à l'Insee (salle 4C-358) et en visio.
+Les détails sont [cet élément de calendrier](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/20260318_SSPHub_DARES_accords_entreprise.ics).
+
+Pour plus d'information, la Dares a présenté son travail aux [Journées de méthodologie statistique de 2025](https://journees-methodologie-statistique.insee.net/analyse-textuelle-de-documents-longs-cas-des-accords-dentreprise/).
+
+<!--
+Les détails de l'atelier sont disponible
+
+**Replay de la présentation :**
+
+{{< video "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4" >}}
+
+
+<iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
+    <p>Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf">Download the PDF instead.</a></p>
+</iframe>
+
+
+```{ojs}
+//| echo: false
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf",
+  "Télécharger les slides"
+)
+```
+
+
+```{ojs}
+//| echo: false
+function createButton(slides, message="Télécharger les slides"){
+  const button = html`
+  <p class="text-center">
+    <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+      <i class="fa-solid fa-file-arrow-down"></i>&ensp;${message}
+    </a>
+  </p>`
+  return button
+}
+```
+
+-->
