@@ -16,8 +16,8 @@ if (! "DEEPL_API_KEY" %in% names(Sys.getenv())){
     stop("DEEPL API KEY not set", call.=FALSE)
 }
 
-input_path = paste0("../project/", args[1], "/index.qmd")  # sth like directory/sub
-out_path = paste0("../project/",args[1], "/index.en.qmd")
+input_path = paste0("project/", args[1], "/index.qmd")  # sth like directory/sub
+out_path = paste0("project/",args[1], "/index.en.qmd")
 
 babeldown::deepl_translate(
   path = input_path,
