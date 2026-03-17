@@ -30,7 +30,7 @@ listing:
 |-----------|------------------------------------------------------------------|
 | **Détail du projet**         | `sndsTools` est un package R conçu pour faciliter l'extraction de recours aux soins à partir des données de santé du Système National de Données de Santé (SNDS) hébergées sur le portail de l'Assurance Maladie. Il simplifie les étapes d’extraction de données du SNDS sur des données utilisées dans la majorité des études sur le SNDS.   |
 | **Acteurs**                  | Insee, Institut du Cerveau, Inria, AP-HM      |
-| **Résultats du projet**      | Le package R `sndsTools` est en production et téléchargeable depuis github. |
+| **Résultats du projet**      | Le package R `sndsTools` est en production et téléchargeable depuis GitHub {{< fa brands github >}}. |
 | **Produits et documentation du projet**      | [Site de documentation du package R](https://sndstoolers.github.io/sndsTools/index.html) |
 | **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}}  [https://github.com/SNDStoolers/sndsTools](https://github.com/SNDStoolers/sndsTools)       |
 
