@@ -12,7 +12,108 @@
 sur l&#39;actualité interne du réseau.
 </description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Fri, 30 Jan 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sat, 28 Feb 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>L’IA dans l’oeil du cyclone</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="bienvenue-à-la-vingt-troisième-infolettre" class="level1">
+<h1>Bienvenue à la <strong>vingt troisième infolettre</strong> !</h1>
+<p>Après <strong>Niels, Oriana et Pedro</strong>, trois tempêtes en 10 jours, nous revoici sous un ciel moins pluvieux. Qu’à cela ne tienne, je vous parie que la prochaine s’appellera <a href="https://meteofrance.com/actualites-et-dossiers/comprendre-la-meteo/comment-choisit-le-nom-dune-tempete"><strong>Regina</strong></a>. Bienvenue à la nouvelle infolettre, coécrite avec <strong>Laura</strong> ❤️.</p>
+</section>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>Dans la saison hivernale, ce mois-ci c’est le travail de l’agence italienne <a href="https://thevisualagency.com/about/">The Visual Agency</a> qui a été <a href="https://www.youtube.com/watch?v=yxLu5CpPUFI">sélectionné</a>. Ils ont transcrit les mots d’une conférence sur les sages et les rebelles (<em>i saggi e i rebelli in italiano 🇮🇹 </em>) en <strong>une chaine de montagnes</strong> dont la hauteur des sommets représente l’occurence des termes et la proximité entre sommets la proximité sémantique.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/tva_topography_talk.png" class="img-fluid figure-img"></p>
+<figcaption><em>Source : The Visual Agency, Topography of a talk, <a href="https://thevisualagency.com/tva-blog-articles/topography-of-a-talk-between-vibe-coding-and-parametric-design/">lien</a></em></figcaption>
+</figure>
+</div>
+<p>Et comme c’est le mois de février, je ne résiste pas à l’envie de mettre aussi en avant cette <strong>animation qui retrace les étapes</strong> de création d’une infographie réalisée avec ggplot lors d’un <a href="https://github.com/gkaramanis/tidytuesday">TidyTuesday</a>. Du tout premier graphique jusqu’à la version finale, elle condense en quelques secondes tout le travail d’analyse, d’itération et de mise en forme qui permet d’aboutir à l’illustration finale.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/gkaramanis_tour_de_france.gif" class="img-fluid figure-img"></p>
+<figcaption><em>Source : <a href="https://toulouse-dataviz.notion.site/Newsletter-Toulouse-DataViz-46-2afc08a98edb80cd9c21ee622fe9712a">Toulouse data viz</a> et <a href="https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week15">repo TidyTuesday</a></em></figcaption>
+</figure>
+</div>
+</section>
+<section id="les-prochains-évènements-du-réseau" class="level1">
+<h1>Les prochains évènements du réseau</h1>
+<section id="extraction-dinformation-dans-des-documents-longs-par-la-dares---18-mars-2026-14h-à-la-dg-insee-et-visio" class="level2">
+<h2 class="anchored" data-anchor-id="extraction-dinformation-dans-des-documents-longs-par-la-dares---18-mars-2026-14h-à-la-dg-insee-et-visio">Extraction d’information dans des documents longs par la DARES - 📅 18 mars 2026 14h (à la DG Insee et visio)</h2>
+<p>La Dares présentera ses <strong>travaux d’analyse des accords d’entreprise</strong>, des documents souvent très longs, pouvant compter plusieurs dizaines de pages. On y abordera les méthodes mises en œuvre pour repérer automatiquement les sujets traités dans ces accords et en extraire des informations pertinentes (par exemple, le nombre de jours de télétravail par semaine).</p>
+<p>L’atelier se tiendra à la fois en présentiel à la DG de l’Insee (salle 4C-358) et en visio. Les détails sont disponibles dans <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/20260318_SSPHub_DARES_accords_entreprise.ics">cette invitation calendrier</a>.</p>
+</section>
+<section id="appel-à-projets-journées-de-contribution-à-lopen-source---16-17-juin-2026---paris" class="level2">
+<h2 class="anchored" data-anchor-id="appel-à-projets-journées-de-contribution-à-lopen-source---16-17-juin-2026---paris">📣 Appel à projets : journées de contribution à l’open-source - 📅 16 &amp; 17 juin 2026 - Paris</h2>
+<p>L’Insee organise <strong>deux journées dédiées à la contribution open-source les 16 et 17 juin 2026</strong>. Les deux jours auront lieu au <em>Lieu de la transformation publique</em> à Paris. Le but de ces journées est de démystifier l’open source, d’expliquer comment y contribuer, et d’encourager chacun à soutenir les projets que nous utilisons largement en datascience.</p>
+<p>Pour préparer ces journées, nous <strong>recherchons quelques sponsors 👑</strong>. Leur rôle : proposer des projets (open-source bien sûr) pertinents pour les data-scientists et auxquels les participants pourraient contribuer pendant l’évènement. Cela peut être un package R, Python, un site …</p>
+<p>En tant que sponsor, vous devrez <strong>connaître le sujet</strong> (sans en être expert ou mainteneur) et le besoin associé. En amont, votre <strong>rôle</strong> sera d’identifier une ou plusieurs <em>issues</em> à traiter et de préparer les pré-requis techniques (repo Git, droits d’accès) pour que les contributeurs puissent se mettre en selle rapidement le jour J. Le jour J, vous pourrez présenter le projet et la problématique, puis participer au travail collectif dont le but sera de produire des contributions (<em>pull-requests</em>) pour répondre aux besoins identifiés.</p>
+<p>Si vous avez des questions, que vous êtes intéressé pour proposer un sujet ou simplement pour participer, n’hésitez pas à nous contacter 👋 par <a href="mailto:ssphub-contact@insee.fr">mail</a> ou par Tchap.</p>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<section id="agents-ia-petites-catastrophes-et-grandes-conséquences" class="level2">
+<h2 class="anchored" data-anchor-id="agents-ia-petites-catastrophes-et-grandes-conséquences">Agents IA : petites catastrophes (et grandes conséquences ?)</h2>
+<p>L’usage des <strong>agents IA</strong> basés sur des grands modèles de langage (LLM) a pris de l’ampleur courant 2025, notamment grâce à l’émergence de frameworks et d’outils facilitant leur utilisation. Pour les plus novices, un agent IA est un système capable d’exécuter des tâches de manière autonome, en s’appuyant sur un LLM qui interprète les entrées et peut mobiliser un ensemble d’outils pour y répondre. L’agent peut ainsi <strong>“percevoir”</strong>, <strong>“raisonner”</strong>, <strong>“décider”</strong> et <strong>“agir”</strong> dans son environnement afin d’atteindre un objectif donné. On comprend donc qu’il peut exister quelques couacs dans l’utilisation de ces agents IA, c’est ce que nous allons voir dans les témoignages suivants :</p>
+<ul>
+<li><p><em>Quand un agent se venge pour un refus de contribution à un projet opensource</em> : <a href="https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"><strong>ce témoignage</strong></a> nous raconte comment un agent a pu publier des propos diffamants sur l’un des <em>maintainers</em> volontaires de la librarie Python mondialement connue <strong>Matplotlib</strong> ;</p></li>
+<li><p><em>Quand un agent vole les clés d’API de son utilisateur</em> : <a href="https://www.reddit.com/r/ClaudeAI/comments/1r186gl/my_agent_stole_my_api_keys/?share_id=a4xNFtHEI1uNDLfrPOvxm&amp;utm_medium=android_app&amp;utm_name=androidcss&amp;utm_source=share&amp;utm_term=1"><strong>ce témoignage</strong></a> raconte cette fois le cas d’un agent qui, pour tester ne hypothèse, a pris quelques libertés… en accédant à un fichier auquel il n’était pas censé avoir accès. <em>Petit rappel : vos clé d’API 🔑, c’est comme vos clés d’appartement — à ne pas laisser traîner, sinon quelqu’un risque de venir squatter… et de vous laisser la facture</em> 👮.</p></li>
+</ul>
+<p>Enfin, <a href="https://www.robinlinacre.com/respectful_use_of_ai/"><strong>ce billet de blog</strong></a> revient sur une utilisation respectueuse de l’IA au sein des équipes de développement (qui peut être élargie à toute équipe travaillant sur un projet commun, qu’il soit statistique ou informatique).</p>
+</section>
+<section id="outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré" class="level2">
+<h2 class="anchored" data-anchor-id="outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré">Outils - l’océrisation ou les LLM multimodaux : de nouveaux outils open source pour l’extraction de texte non structuré 📄</h2>
+<p>Ces derniers mois, différents outils d’extraction d’information issus de textes non structurés ont émergé. On peut y retrouver :</p>
+<ul>
+<li><p>Le framework <a href="https://github.com/raphaelmansuy/edgequake"><strong>EdgeQuake</strong></a>, implémenté en Rust pour des performances élevées, permet de prendre en compte plus d’information sur la composition des textes que les RAG. En effet, là où les RAG se limitent à l’analyse de la similarité sémantique (<em>cf.</em> explications sur les RAG <a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">ici</a> par exemple), EdgeQuake va décomposer le document en un graphe de connaissances, permettant de garder les relations structurelles entre les concepts ;</p></li>
+<li><p>Plusieurs outils d’OCR (reconnaissance optique de caractère, permettant d’extraire du texte à partir d’images) ont été récemment mis à disposition en open source :</p>
+<ul>
+<li><a href="https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file"><strong>Chandra</strong></a>, mis à disposition par <em>datalab</em>, l’entreprise à l’origine du framwork <a href="https://github.com/datalab-to/marker?tab=readme-ov-file"><strong>marker-pdf</strong></a> et du moteur OCR <a href="https://github.com/datalab-to/surya"><strong>surya</strong></a> ;</li>
+<li><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2"><strong>DeepSeek-OCR-2</strong></a>, qui s’inspire de la lecture humaine pour reconstruire l’ordre logique de lecture, en plus de la détection des caractères ;</li>
+<li>Le modèle OCR multimodal <a href="https://github.com/zai-org/GLM-OCR"><strong>GLM-OCR</strong></a>, qui analyse la structure globale du document en complément de la reconnaissance de caractères.</li>
+</ul></li>
+</ul>
+</section>
+<section id="un-petit-détour-côté-r" class="level2">
+<h2 class="anchored" data-anchor-id="un-petit-détour-côté-r">Un (petit) détour côté R</h2>
+<p>Et voici quelques news côté R / Posit :</p>
+<ul>
+<li><p>Après le benchmark des meilleurs codeurs R parmi les LLM le mois dernier, <a href="https://posit.co/blog/2026-01-16-ai-newsletter/"><strong>l’infolettre Posit</strong></a> de janvier apporte quelques informations sur l’utilisation de LLM ou d’agents IA dans Rstudio (notamment le tant attendu déploiement de l’IA dans Rstudio !) ;</p></li>
+<li><p>Une liste de packages R utilisant des LLM est disponible <a href="https://luisdva.github.io/llmsr-book/r-pkgs.html">ici</a> (<em>bien que nous vous conseillons l’utilisation de Python si vous souhaitez travailler avec des LLM</em> 😉) ;</p></li>
+<li><p>Un nouvel outil <a href="https://github.com/eitsupi/arf">arf</a> - <em>en cours de développement, pas encore stable</em> - se pose en console R moderne multiplateforme ;</p></li>
+<li><p>Enfin, <a href="https://prodigious-trailblazer-3628.kit.com/posts/the-end-of-shiny"><strong>ce billet de blog</strong></a> revient sur les limites d’une application <strong>R Shiny</strong>, par rapport à une “vraie” application web. A l’ère des nouveaux outils de <em>vibe coding</em>, faut-il encore recourir à Rshiny, réputé pour sa simplicité d’utilisation ? Le débat est ouvert 🤔.</p></li>
+</ul>
+</section>
+<section id="formation" class="level2">
+<h2 class="anchored" data-anchor-id="formation">Formation 🏋️</h2>
+<p>Ce mois-ci, voici des <strong>ressources intéressantes pour se former aux framework IA</strong> :</p>
+<ul>
+<li><p><a href="https://learn.deeplearning.ai/"><strong>DeepLearning.AI</strong></a> propose des cours (gratuits après inscription) sur différents modèles et outils d’IA. Cette plateforme a été fondée par Andrew Ng, qui y enseigne également 🤩 ;</p></li>
+<li><p>Pour apprendre à utiliser <strong>Pytorch</strong>, <a href="https://www.learnpytorch.io/"><strong>learnpytorch</strong></a> est une excellente ressource : vidéos, notebooks (avec corrigés) et présentations sont disponibles. Les principaux modèles de deep learning y sont abordés (dont la classification et la computer vision), et il existe même un module consacré au déploiement de ces modèles. <em>Tout ce dont vous avez besoin pour maîtriser le package Insee <a href="https://github.com/InseeFrLab/torchTextClassifiers"><strong>torchTextClassifier</strong></a> comme personne</em> 👍.</p></li>
+</ul>
+</section>
+<section id="fun" class="level2">
+<h2 class="anchored" data-anchor-id="fun">Fun</h2>
+<p>Vu la longueur de cette infolettre, nous vous gardons des petites pépites pour le mois prochain 😉</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Infolettre</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/</guid>
+  <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/tva_topography_talk.png" medium="image" type="image/png" height="203" width="144"/>
+</item>
 <item>
   <title>La première infographie</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/</link>

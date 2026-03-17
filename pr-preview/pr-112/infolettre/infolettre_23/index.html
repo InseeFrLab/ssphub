@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
-<head>
-<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_scanr/index.html" />
-<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2024_scanr/index.en.html" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/index.html" />
+<link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/infolettre/infolettre_23/index.en.html" />
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.8.27">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="description" content="Agrégation et mise à disposition de données massives sur la recherche et l’innovation en France par des visualisations, des moteurs de recherche ElasticSearch et des API">
-<title>scanR, une application pour observer le paysage de la recherche et de l’innovation en France – SSPHub</title>
+
+<meta name="description" content="Infolettre du mois de février 2026">
+
+<title>L’IA dans l’oeil du cyclone – SSPHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,13 +24,26 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 </style>
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script><script src="../../site_libs/quarto-nav/headroom.min.js"></script><script src="../../site_libs/clipboard/clipboard.min.js"></script><script src="../../site_libs/quarto-search/autocomplete.umd.js"></script><script src="../../site_libs/quarto-search/fuse.min.js"></script><script src="../../site_libs/quarto-search/quarto-search.js"></script><meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script><script src="../../site_libs/quarto-listing/quarto-listing.js"></script><script src="../../site_libs/quarto-html/quarto.js" type="module"></script><script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script><script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script><script src="../../site_libs/quarto-html/popper.min.js"></script><script src="../../site_libs/quarto-html/tippy.umd.min.js"></script><script src="../../site_libs/quarto-html/anchor.min.js"></script><link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script><link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-5ea1227bf19878b87b7b96a706b3b221.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -55,35 +70,8 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Envoyer",
     "search-label": "Recherche"
   }
-}</script><script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-similar-project .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-similar-project'] = new List('listing-similar-project', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script><style>
+}</script>
+<style>
 
       .quarto-title-block .quarto-title-banner h1,
       .quarto-title-block .quarto-title-banner h2,
@@ -100,37 +88,16 @@ ul.task-list li input[type="checkbox"] {
 background: #6886bb;
       }
 </style>
-<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script><script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
+
+
 </head>
+
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">SSPHub</span>
@@ -142,10 +109,7 @@ window.Quarto = {
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
-<li class="nav-item"><div class="dropdown" id="languages-links-parent">
-<button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="languages-button"><i class="bi bi-globe2"></i></button><ul class="dropdown-menu" id="languages-links"><li><a class="dropdown-item" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/project/2024_scanr/index.html" id="language-link-en">🇬🇧 English</a></li></ul>
-</div></li>
-<li class="nav-item">
+  <li class="nav-item">
     <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Accueil</span></a>
   </li>  
@@ -169,8 +133,8 @@ window.Quarto = {
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">À propos</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">
-<li>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">    
+        <li>
     <a class="dropdown-item" href="../../infolettre/infolettre.html">
  <span class="dropdown-text">Newsletters</span></a>
   </li>  
@@ -183,14 +147,14 @@ window.Quarto = {
  <span class="dropdown-text">Manifeste du réseau</span></a>
   </li>  
     </ul>
-</li>
+  </li>
   <li class="nav-item">
     <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
 <span class="menu-text">Le SSPCloud</span></a>
   </li>  
 </ul>
-<ul class="navbar-nav navbar-nav-scroll ms-auto">
-<li class="nav-item compact">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
     <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
@@ -201,31 +165,27 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
 </ul>
-</div> <!-- /navcollapse -->
+          </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
 </div>
       </div> <!-- /container-fluid -->
-    </nav><div id="quarto-announcement" data-announcement-id="8c899c87ea21742c798fea6eae88c782" class="alert alert-primary hidden">
-<i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="8c899c87ea21742c798fea6eae88c782" class="alert alert-primary hidden"><i class="bi bi-bi-megaphone quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p>📺️ Les présentations et le replay de la journée du réseau, le 1<sup>er</sup> décembre 2025, <a href="../../event/2025-12-01-network-day/index.html">sont disponibles</a></p>
-</div>
-<i class="bi bi-x-lg quarto-announcement-action"></i>
-</div>
-</header><!-- content --><header id="title-block-header" class="quarto-title-block default page-columns page-full"><div class="quarto-title-banner page-columns page-full">
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">scanR, une application pour observer le paysage de la recherche et de l’innovation en France</h1>
+      <h1 class="title">L’IA dans l’oeil du cyclone</h1>
                   <div>
         <div class="description">
-          <p>Agrégation et mise à disposition de données massives sur la recherche et l’innovation en France par des visualisations, des moteurs de recherche ElasticSearch et des API</p>
+          <p>Infolettre du mois de <strong>février 2026</strong></p>
         </div>
       </div>
                           <div class="quarto-categories">
-                <div class="quarto-category">API</div>
-                <div class="quarto-category">en production</div>
-                <div class="quarto-category">open-data</div>
-                <div class="quarto-category">SIES</div>
-                <div class="quarto-category">datavisualisation</div>
-                <div class="quarto-category">ElasticSearch</div>
+                <div class="quarto-category">Infolettre</div>
               </div>
                   </div>
   </div>
@@ -233,11 +193,18 @@ window.Quarto = {
   
   <div class="quarto-title-meta">
 
+      <div>
+      <div class="quarto-title-meta-heading">Auteur·rice·s</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nicolas </p>
+               <p>Laura </p>
+            </div>
+    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">1 janvier 2024</p>
+        <p class="date">28 février 2026</p>
       </div>
     </div>
     
@@ -249,143 +216,123 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Sur cette page</h2>
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-<li><a href="#synth%C3%A8se-du-projet" id="toc-synthèse-du-projet" class="nav-link active" data-scroll-target="#synthèse-du-projet">Synthèse du projet</a></li>
-  <li><a href="#projets-similaires" id="toc-projets-similaires" class="nav-link" data-scroll-target="#projets-similaires">Projets similaires</a></li>
+  <li><a href="#bienvenue-à-la-vingt-troisième-infolettre" id="toc-bienvenue-à-la-vingt-troisième-infolettre" class="nav-link active" data-scroll-target="#bienvenue-à-la-vingt-troisième-infolettre">Bienvenue à la <strong>vingt troisième infolettre</strong> !</a></li>
+  <li><a href="#linfographie" id="toc-linfographie" class="nav-link" data-scroll-target="#linfographie">L’infographie</a></li>
+  <li><a href="#les-prochains-évènements-du-réseau" id="toc-les-prochains-évènements-du-réseau" class="nav-link" data-scroll-target="#les-prochains-évènements-du-réseau">Les prochains évènements du réseau</a>
+  <ul class="collapse">
+  <li><a href="#extraction-dinformation-dans-des-documents-longs-par-la-dares---18-mars-2026-14h-à-la-dg-insee-et-visio" id="toc-extraction-dinformation-dans-des-documents-longs-par-la-dares---18-mars-2026-14h-à-la-dg-insee-et-visio" class="nav-link" data-scroll-target="#extraction-dinformation-dans-des-documents-longs-par-la-dares---18-mars-2026-14h-à-la-dg-insee-et-visio">Extraction d’information dans des documents longs par la DARES - 📅 18 mars 2026 14h (à la DG Insee et visio)</a></li>
+  <li><a href="#appel-à-projets-journées-de-contribution-à-lopen-source---16-17-juin-2026---paris" id="toc-appel-à-projets-journées-de-contribution-à-lopen-source---16-17-juin-2026---paris" class="nav-link" data-scroll-target="#appel-à-projets-journées-de-contribution-à-lopen-source---16-17-juin-2026---paris">📣 Appel à projets : journées de contribution à l’open-source - 📅 16 &amp; 17 juin 2026 - Paris</a></li>
+  </ul></li>
+  <li><a href="#actualités" id="toc-actualités" class="nav-link" data-scroll-target="#actualités">Actualités</a>
+  <ul class="collapse">
+  <li><a href="#agents-ia-petites-catastrophes-et-grandes-conséquences" id="toc-agents-ia-petites-catastrophes-et-grandes-conséquences" class="nav-link" data-scroll-target="#agents-ia-petites-catastrophes-et-grandes-conséquences">Agents IA : petites catastrophes (et grandes conséquences ?)</a></li>
+  <li><a href="#outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré" id="toc-outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré" class="nav-link" data-scroll-target="#outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré">Outils - l’océrisation ou les LLM multimodaux : de nouveaux outils open source pour l’extraction de texte non structuré 📄</a></li>
+  <li><a href="#un-petit-détour-côté-r" id="toc-un-petit-détour-côté-r" class="nav-link" data-scroll-target="#un-petit-détour-côté-r">Un (petit) détour côté R</a></li>
+  <li><a href="#formation" id="toc-formation" class="nav-link" data-scroll-target="#formation">Formation 🏋️</a></li>
+  <li><a href="#fun" id="toc-fun" class="nav-link" data-scroll-target="#fun">Fun</a></li>
+  </ul></li>
   </ul>
-<div class="toc-actions"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_scanr/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_scanr/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></nav><h5 class="quarto-listing-category-title">Catégories</h5>
-<div class="quarto-listing-category category-default">
-<div class="category" data-category="">Tous <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="ZGF0YXZpc3VhbGlzYXRpb24=">datavisualisation <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="ZW4lMjBwcm9kdWN0aW9u">en production <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="b3Blbi1kYXRh">open-data <span class="quarto-category-count">(1)</span>
-</div>
-<div class="category" data-category="U0lFUw==">SIES <span class="quarto-category-count">(2)</span>
-</div>
-<div class="category" data-category="d2Vic2NyYXBpbmc=">webscraping <span class="quarto-category-count">(2)</span>
-</div>
-</div>
-</div>
+<div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/infolettre/infolettre_23/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/infolettre/infolettre_23/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content"><section id="synthèse-du-projet" class="level1"><h1>Synthèse du projet</h1>
-<table class="caption-top table">
-<thead><tr class="header">
-<th></th>
-<th>scanR, explorer le monde de la recherche et de l’innovation française</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>scanR est une <strong>application web pour aider à caractériser les structures publiques</strong> (unités de recherche de tous types, institutions publiques) et privées (entreprises) qui participent à la recherche et à l’innovation en France. scanR aide également à identifier les <strong>orientations des travaux des chercheuses et chercheurs actifs en France</strong> depuis le début des années 1990. <br><br> scanR combine les <strong>données structurées sous licence libre</strong> (Publications et thèses, participation à des projets de recherche collaboratifs, spin-off, brevets, etc.) et des <strong>informations ouvertes</strong> directement extraites des sites web des acteurs de la recherche et de l’innovation. Ces informations proviennent ainsi d’environ 13 sources différentes (theses.fr, le <a href="../../project/2022_bso/index.html">baromètre de la science ouverte</a>, HAL, Commission européenne, INPI, ANR, l’office européen des brevets …) et sont notamment obtenues par webscraping, pdf-mining ou appel à des API. Les ressources sont ensuite <strong>identifiées et liées entre elles</strong>, notamment en utilisant des méthodes d’IA, et puis enrichies. <br> Une <strong>boucle de retours</strong> pour augmenter la qualité des données produites est introduite avec la possibilité de demander à corriger des données depuis le site de scanR. <br> Un moteur de <strong>recherche basé sur ElasticSearch</strong> permet de rechercher sur le site des thèmes, structures ou auteurs. <br> Enfin, il est possible d’afficher des interactions entre différentes structures ou thématiques de manière visuelle par une <strong>analyse en réseau</strong>.</td>
-</tr>
-<tr class="even">
-<td><strong>Acteurs</strong></td>
-<td>Service statistique du Ministère de l’Enseignement Supérieur et de la Recherche (<a href="https://www.enseignementsup-recherche.gouv.fr/fr/sies">SIES</a>)</td>
-</tr>
-<tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Le projet scanR est en production depuis 2016 et enregistre environ 50 000 visites mensuelles. <br><br> - Le projet met à disposition des <strong>fiches par structure et auteurs</strong> présentant leur organisation, activité, domaines de recherche, source de financement. <br> - Il propose par ailleurs un <strong>moteur de recherche</strong> sur les structures, auteurs, financements, publications, brevets de la recherche en France. <br> - Il met aussi à disposition des <strong>outils d’analyse des résultats</strong>, notamment des visualisations de graphs. <br><br> Le projet met aussi à disposition <strong>plusieurs API</strong> pour récupérer des données et les données. <br>
-</td>
-</tr>
-<tr class="even">
-<td><strong>Produits et documentation du projet</strong></td>
-<td>scanR est accessible sur <a href="https://scanr.enseignementsup-recherche.gouv.fr">scanr.enseignementsup-recherche.gouv.fr</a>. Ce site comprend : <br> - la <a href="https://scanr.enseignementsup-recherche.gouv.fr/docs/overview">documentation</a> pour accéder aux quatre API disponibles ; <br> - les différentes <a href="https://scanr.enseignementsup-recherche.gouv.fr/about/resources">sources de données</a> utilisées pour le projet. <br><br> Concernant la <strong>technologie et la méthodologie</strong> utilisée : <br> - Présentation technique détaillée de scanR <a href="https://hal.science/hal-04813230v1"><em>scanR - Explore public data on French research and innovation</em></a>, conférence euroCRIS, novembre 2024 ; <br> - <a href="https://hal.science/hal-04892262v1">Mapping scientific communities at scale</a> pour expliquer l’analyse en réseaux</td>
-</tr>
-<tr class="odd">
-<td><strong>Code du projet</strong></td>
-<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/dataesr/scanr-ui">https://github.com/dataesr/scanr-ui</a>
-</td>
-</tr>
-</tbody>
-</table></section><section id="projets-similaires" class="level1"><h1>Projets similaires</h1>
-<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1773771542318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
-<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
-Curiexplore, la plateforme de comparaison des politiques nationales d’enseignement et de recherche
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Visualisation interactive de l’environnement de l’enseignement et de la recherche dans les différents pays.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1773771542319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
-<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../project/2022_bso/bso.png" class="thumbnail-image card-img" style="height: 150px;"></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Baromètre de la science ouverte
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Pour être en mesure de suivre l’ouverture des publications scientifiques (objectif de la stratégie nationale de science ouverte), le service statistique du Ministère de…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">Aucun article correspondant</div>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+
+
+<section id="bienvenue-à-la-vingt-troisième-infolettre" class="level1">
+<h1>Bienvenue à la <strong>vingt troisième infolettre</strong> !</h1>
+<p>Après <strong>Niels, Oriana et Pedro</strong>, trois tempêtes en 10 jours, nous revoici sous un ciel moins pluvieux. Qu’à cela ne tienne, je vous parie que la prochaine s’appellera <a href="https://meteofrance.com/actualites-et-dossiers/comprendre-la-meteo/comment-choisit-le-nom-dune-tempete"><strong>Regina</strong></a>. Bienvenue à la nouvelle infolettre, coécrite avec <strong>Laura</strong> ❤️.</p>
+</section>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>Dans la saison hivernale, ce mois-ci c’est le travail de l’agence italienne <a href="https://thevisualagency.com/about/">The Visual Agency</a> qui a été <a href="https://www.youtube.com/watch?v=yxLu5CpPUFI">sélectionné</a>. Ils ont transcrit les mots d’une conférence sur les sages et les rebelles (<em>i saggi e i rebelli in italiano 🇮🇹 </em>) en <strong>une chaine de montagnes</strong> dont la hauteur des sommets représente l’occurence des termes et la proximité entre sommets la proximité sémantique.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="tva_topography_talk.png" class="img-fluid figure-img"></p>
+<figcaption><em>Source : The Visual Agency, Topography of a talk, <a href="https://thevisualagency.com/tva-blog-articles/topography-of-a-talk-between-vibe-coding-and-parametric-design/">lien</a></em></figcaption>
+</figure>
+</div>
+<p>Et comme c’est le mois de février, je ne résiste pas à l’envie de mettre aussi en avant cette <strong>animation qui retrace les étapes</strong> de création d’une infographie réalisée avec ggplot lors d’un <a href="https://github.com/gkaramanis/tidytuesday">TidyTuesday</a>. Du tout premier graphique jusqu’à la version finale, elle condense en quelques secondes tout le travail d’analyse, d’itération et de mise en forme qui permet d’aboutir à l’illustration finale.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="gkaramanis_tour_de_france.gif" class="img-fluid figure-img"></p>
+<figcaption><em>Source : <a href="https://toulouse-dataviz.notion.site/Newsletter-Toulouse-DataViz-46-2afc08a98edb80cd9c21ee622fe9712a">Toulouse data viz</a> et <a href="https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week15">repo TidyTuesday</a></em></figcaption>
+</figure>
+</div>
+</section>
+<section id="les-prochains-évènements-du-réseau" class="level1">
+<h1>Les prochains évènements du réseau</h1>
+<section id="extraction-dinformation-dans-des-documents-longs-par-la-dares---18-mars-2026-14h-à-la-dg-insee-et-visio" class="level2">
+<h2 class="anchored" data-anchor-id="extraction-dinformation-dans-des-documents-longs-par-la-dares---18-mars-2026-14h-à-la-dg-insee-et-visio">Extraction d’information dans des documents longs par la DARES - 📅 18 mars 2026 14h (à la DG Insee et visio)</h2>
+<p>La Dares présentera ses <strong>travaux d’analyse des accords d’entreprise</strong>, des documents souvent très longs, pouvant compter plusieurs dizaines de pages. On y abordera les méthodes mises en œuvre pour repérer automatiquement les sujets traités dans ces accords et en extraire des informations pertinentes (par exemple, le nombre de jours de télétravail par semaine).</p>
+<p>L’atelier se tiendra à la fois en présentiel à la DG de l’Insee (salle 4C-358) et en visio. Les détails sont disponibles dans <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/20260318_SSPHub_DARES_accords_entreprise.ics">cette invitation calendrier</a>.</p>
+</section>
+<section id="appel-à-projets-journées-de-contribution-à-lopen-source---16-17-juin-2026---paris" class="level2">
+<h2 class="anchored" data-anchor-id="appel-à-projets-journées-de-contribution-à-lopen-source---16-17-juin-2026---paris">📣 Appel à projets : journées de contribution à l’open-source - 📅 16 &amp; 17 juin 2026 - Paris</h2>
+<p>L’Insee organise <strong>deux journées dédiées à la contribution open-source les 16 et 17 juin 2026</strong>. Les deux jours auront lieu au <em>Lieu de la transformation publique</em> à Paris. Le but de ces journées est de démystifier l’open source, d’expliquer comment y contribuer, et d’encourager chacun à soutenir les projets que nous utilisons largement en datascience.</p>
+<p>Pour préparer ces journées, nous <strong>recherchons quelques sponsors 👑</strong>. Leur rôle : proposer des projets (open-source bien sûr) pertinents pour les data-scientists et auxquels les participants pourraient contribuer pendant l’évènement. Cela peut être un package R, Python, un site …</p>
+<p>En tant que sponsor, vous devrez <strong>connaître le sujet</strong> (sans en être expert ou mainteneur) et le besoin associé. En amont, votre <strong>rôle</strong> sera d’identifier une ou plusieurs <em>issues</em> à traiter et de préparer les pré-requis techniques (repo Git, droits d’accès) pour que les contributeurs puissent se mettre en selle rapidement le jour J. Le jour J, vous pourrez présenter le projet et la problématique, puis participer au travail collectif dont le but sera de produire des contributions (<em>pull-requests</em>) pour répondre aux besoins identifiés.</p>
+<p>Si vous avez des questions, que vous êtes intéressé pour proposer un sujet ou simplement pour participer, n’hésitez pas à nous contacter 👋 par <a href="mailto:ssphub-contact@insee.fr">mail</a> ou par Tchap.</p>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<section id="agents-ia-petites-catastrophes-et-grandes-conséquences" class="level2">
+<h2 class="anchored" data-anchor-id="agents-ia-petites-catastrophes-et-grandes-conséquences">Agents IA : petites catastrophes (et grandes conséquences ?)</h2>
+<p>L’usage des <strong>agents IA</strong> basés sur des grands modèles de langage (LLM) a pris de l’ampleur courant 2025, notamment grâce à l’émergence de frameworks et d’outils facilitant leur utilisation. Pour les plus novices, un agent IA est un système capable d’exécuter des tâches de manière autonome, en s’appuyant sur un LLM qui interprète les entrées et peut mobiliser un ensemble d’outils pour y répondre. L’agent peut ainsi <strong>“percevoir”</strong>, <strong>“raisonner”</strong>, <strong>“décider”</strong> et <strong>“agir”</strong> dans son environnement afin d’atteindre un objectif donné. On comprend donc qu’il peut exister quelques couacs dans l’utilisation de ces agents IA, c’est ce que nous allons voir dans les témoignages suivants :</p>
+<ul>
+<li><p><em>Quand un agent se venge pour un refus de contribution à un projet opensource</em> : <a href="https://theshamblog.com/an-ai-agent-published-a-hit-piece-on-me/"><strong>ce témoignage</strong></a> nous raconte comment un agent a pu publier des propos diffamants sur l’un des <em>maintainers</em> volontaires de la librarie Python mondialement connue <strong>Matplotlib</strong> ;</p></li>
+<li><p><em>Quand un agent vole les clés d’API de son utilisateur</em> : <a href="https://www.reddit.com/r/ClaudeAI/comments/1r186gl/my_agent_stole_my_api_keys/?share_id=a4xNFtHEI1uNDLfrPOvxm&amp;utm_medium=android_app&amp;utm_name=androidcss&amp;utm_source=share&amp;utm_term=1"><strong>ce témoignage</strong></a> raconte cette fois le cas d’un agent qui, pour tester ne hypothèse, a pris quelques libertés… en accédant à un fichier auquel il n’était pas censé avoir accès. <em>Petit rappel : vos clé d’API 🔑, c’est comme vos clés d’appartement — à ne pas laisser traîner, sinon quelqu’un risque de venir squatter… et de vous laisser la facture</em> 👮.</p></li>
+</ul>
+<p>Enfin, <a href="https://www.robinlinacre.com/respectful_use_of_ai/"><strong>ce billet de blog</strong></a> revient sur une utilisation respectueuse de l’IA au sein des équipes de développement (qui peut être élargie à toute équipe travaillant sur un projet commun, qu’il soit statistique ou informatique).</p>
+</section>
+<section id="outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré" class="level2">
+<h2 class="anchored" data-anchor-id="outils---locérisation-ou-les-llm-multimodaux-de-nouveaux-outils-open-source-pour-lextraction-de-texte-non-structuré">Outils - l’océrisation ou les LLM multimodaux : de nouveaux outils open source pour l’extraction de texte non structuré 📄</h2>
+<p>Ces derniers mois, différents outils d’extraction d’information issus de textes non structurés ont émergé. On peut y retrouver :</p>
+<ul>
+<li><p>Le framework <a href="https://github.com/raphaelmansuy/edgequake"><strong>EdgeQuake</strong></a>, implémenté en Rust pour des performances élevées, permet de prendre en compte plus d’information sur la composition des textes que les RAG. En effet, là où les RAG se limitent à l’analyse de la similarité sémantique (<em>cf.</em> explications sur les RAG <a href="https://en.wikipedia.org/wiki/Retrieval-augmented_generation">ici</a> par exemple), EdgeQuake va décomposer le document en un graphe de connaissances, permettant de garder les relations structurelles entre les concepts ;</p></li>
+<li><p>Plusieurs outils d’OCR (reconnaissance optique de caractère, permettant d’extraire du texte à partir d’images) ont été récemment mis à disposition en open source :</p>
+<ul>
+<li><a href="https://github.com/datalab-to/chandra?tab=Apache-2.0-1-ov-file"><strong>Chandra</strong></a>, mis à disposition par <em>datalab</em>, l’entreprise à l’origine du framwork <a href="https://github.com/datalab-to/marker?tab=readme-ov-file"><strong>marker-pdf</strong></a> et du moteur OCR <a href="https://github.com/datalab-to/surya"><strong>surya</strong></a> ;</li>
+<li><a href="https://github.com/deepseek-ai/DeepSeek-OCR-2"><strong>DeepSeek-OCR-2</strong></a>, qui s’inspire de la lecture humaine pour reconstruire l’ordre logique de lecture, en plus de la détection des caractères ;</li>
+<li>Le modèle OCR multimodal <a href="https://github.com/zai-org/GLM-OCR"><strong>GLM-OCR</strong></a>, qui analyse la structure globale du document en complément de la reconnaissance de caractères.</li>
+</ul></li>
+</ul>
+</section>
+<section id="un-petit-détour-côté-r" class="level2">
+<h2 class="anchored" data-anchor-id="un-petit-détour-côté-r">Un (petit) détour côté R</h2>
+<p>Et voici quelques news côté R / Posit :</p>
+<ul>
+<li><p>Après le benchmark des meilleurs codeurs R parmi les LLM le mois dernier, <a href="https://posit.co/blog/2026-01-16-ai-newsletter/"><strong>l’infolettre Posit</strong></a> de janvier apporte quelques informations sur l’utilisation de LLM ou d’agents IA dans Rstudio (notamment le tant attendu déploiement de l’IA dans Rstudio !) ;</p></li>
+<li><p>Une liste de packages R utilisant des LLM est disponible <a href="https://luisdva.github.io/llmsr-book/r-pkgs.html">ici</a> (<em>bien que nous vous conseillons l’utilisation de Python si vous souhaitez travailler avec des LLM</em> 😉) ;</p></li>
+<li><p>Un nouvel outil <a href="https://github.com/eitsupi/arf">arf</a> - <em>en cours de développement, pas encore stable</em> - se pose en console R moderne multiplateforme ;</p></li>
+<li><p>Enfin, <a href="https://prodigious-trailblazer-3628.kit.com/posts/the-end-of-shiny"><strong>ce billet de blog</strong></a> revient sur les limites d’une application <strong>R Shiny</strong>, par rapport à une “vraie” application web. A l’ère des nouveaux outils de <em>vibe coding</em>, faut-il encore recourir à Rshiny, réputé pour sa simplicité d’utilisation ? Le débat est ouvert 🤔.</p></li>
+</ul>
+</section>
+<section id="formation" class="level2">
+<h2 class="anchored" data-anchor-id="formation">Formation 🏋️</h2>
+<p>Ce mois-ci, voici des <strong>ressources intéressantes pour se former aux framework IA</strong> :</p>
+<ul>
+<li><p><a href="https://learn.deeplearning.ai/"><strong>DeepLearning.AI</strong></a> propose des cours (gratuits après inscription) sur différents modèles et outils d’IA. Cette plateforme a été fondée par Andrew Ng, qui y enseigne également 🤩 ;</p></li>
+<li><p>Pour apprendre à utiliser <strong>Pytorch</strong>, <a href="https://www.learnpytorch.io/"><strong>learnpytorch</strong></a> est une excellente ressource : vidéos, notebooks (avec corrigés) et présentations sont disponibles. Les principaux modèles de deep learning y sont abordés (dont la classification et la computer vision), et il existe même un module consacré au déploiement de ces modèles. <em>Tout ce dont vous avez besoin pour maîtriser le package Insee <a href="https://github.com/InseeFrLab/torchTextClassifiers"><strong>torchTextClassifier</strong></a> comme personne</em> 👍.</p></li>
+</ul>
+</section>
+<section id="fun" class="level2">
+<h2 class="anchored" data-anchor-id="fun">Fun</h2>
+<p>Vu la longueur de cette infolettre, nous vous gardons des petites pépites pour le mois prochain 😉</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
     const anchorJS = new window.AnchorJS();
@@ -790,10 +737,4 @@ Baromètre de la science ouverte
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul>
-<li><a href="https://github.com/InseeFrLab/ssphub/blob/main/project/2024_scanr/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li>
-<li><a href="https://github.com/InseeFrLab/ssphub/edit/main/project/2024_scanr/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li>
-</ul></div></div></div></footer>
-</body>
-</html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/infolettre/infolettre_23/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/infolettre/infolettre_23/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></div></div></footer></body></html>
