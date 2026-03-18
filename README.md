@@ -17,11 +17,6 @@ Specified in [contributing.md](CONTRIBUTING.md)
 
 ## How to
 
-### Install rv
-
-- install rv : `curl -sSL https://raw.githubusercontent.com/A2-ai/rv/refs/heads/main/scripts/install.sh | bash`
-- install R packages : `rv sync`
-
 ### Render / preview when coding
 
 - render: `Rscript scripts/1_render.R`
