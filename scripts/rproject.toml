@@ -1,0 +1,18 @@
+[project]
+name = "SSPHub website"
+r_version = "4.5"
+
+# A list of repositories to fetch packages from. Order matters: we will try to get a package from each repository in order.
+# The alias is only used in this file if you want to specifically require a dependency to come from a certain repository.
+# Example: { alias = "PPM", url = "https://packagemanager.posit.co/cran/latest" },
+repositories = [
+    {alias = "CRAN", url = "https://packagemanager.posit.co/cran/latest"},
+    {alias = "PPM", url = "https://packagemanager.posit.co/cran/latest"},
+    {alias = "rproject", url = "https://cloud.r-project.org"}
+]
+
+dependencies = [
+    { name = "babelquarto", git = "https://github.com/ropensci-review-tools/babelquarto", branch = "main" },
+    { name = "babeldown", git = "https://github.com/ropensci-review-tools/babeldown", branch = "main" },
+]
+

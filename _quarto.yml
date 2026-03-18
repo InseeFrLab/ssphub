@@ -18,6 +18,7 @@ project:
     - partenaires/**/index.qmd
     - project.qmd
     - project/**/*.qmd
+    - "!scripts/rv/"
     # English version - dealt with babelquarto and not with Quarto profiles
     - "*.en.qmd"
 
