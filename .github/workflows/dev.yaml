@@ -52,6 +52,7 @@ jobs:
       - name: Install R Dependencies
         run: |
           rv sync -c scripts/rproject.toml
+          rv activate -c scripts/
 
       - name: Render bilingual project
         run: |
