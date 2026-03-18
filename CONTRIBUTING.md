@@ -22,14 +22,9 @@ d'une proposition d'ajout à l'une des rubriques du site ou l'écriture d'un pos
 > Il est possible d'en acquérir très rapidement les bases à partir de ce document présentant le [Travail collaboratif avec `R`](https://inseefrlab.github.io/> formation-bonnes-pratiques-git/), ou à partir d'échanges avec les contributeurs actuels
 > depuis le salon [`Tchap`]({{< var contact.tchap >}}) du réseau.
 
-
-
-
 Un environnement prêt à l'emploi pour l'exécution des scripts est disponible sur le `SSPCloud`, à
 travers l'interface du logiciel `VSCode` [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&security.allowlist.enabled=false&onyxia.friendlyName=%C2%ABSSPHub%C2%BB&networking.user.enabled=true).
 Son utilisation est détaillée dans la partie plus avancée sur la création de contenu pour le blog.
-
-
 
 ## :two: Comment proposer des modifications légères sur une page déjà existante ?
 
@@ -55,7 +50,7 @@ web est ouvert sur `Github`. Celui-ci est au format `Markdown`.
 
 Cette fonctionnalité est utilisable même
 lorsque vous n'avez pas les droits en écriture sur le dépôt (droits attachés
-au statut de *mainteneur* sur le projet), grâce à la notion de *fork*.
+au statut de _mainteneur_ sur le projet), grâce à la notion de _fork_.
 
 A l'ouverture du lien, s'il n'existe pas de fork du projet sur son compte, un pop-up s'ouvre pour indiquer qu'il faut en créer un pour pouvoir proposer des modifications : en acceptant, un fork est créé automatiquement.
 
@@ -83,15 +78,14 @@ Enfin, une fois la modification écrite, il convient de la valider.
 Cette opération, nommée `commit` dans la terminologie `Git`,
 peut être effectuée en:
 
-* écrivant un message signifiant dans la fenêtre `Commit message`.
-Les messages cryptiques du type `modification` sont proscrits.
-Github Copilot proposera un message en fonction des modifications faites, qui est souvent de bonne qualité.
-* sélectionnant la branche dans laquelle la modification s'applique.
+- écrivant un message signifiant dans la fenêtre `Commit message`.
+  Les messages cryptiques du type `modification` sont proscrits.
+  Github Copilot proposera un message en fonction des modifications faites, qui est souvent de bonne qualité.
+- sélectionnant la branche dans laquelle la modification s'applique.
 
 > [!NOTE]
 > Les modifications directement dans la branche `main` ne sont pas possibles.
 > Si la modification est à appliquer aux supports déployés, elles ne seront intégrées qu'après validation des mainteneurs du projets, seuls utilisateurs à avoir les droits en écriture sur la version maître.
-
 
 <br>
 
@@ -105,8 +99,6 @@ Github Copilot proposera un message en fonction des modifications faites, qui es
 > Si la modification ne concerne que des corrections de coquilles,
 > le nom de la branche doit commencer par `typo-`**. Si les propositions sont plus
 > substantielles que des coquilles, le nom de la branche est libre.
-
-
 
 Cliquer sur `Propose changes`. Automatiquement, une page pour soumettre cette
 modification au dépôt `ssphub` s'ouvre:
@@ -135,17 +127,17 @@ sur les problèmes techniques et les développements futurs du site.
 Cet espace de discussion est stocké sur le dépôt `Github` du projet et est
 structuré sous forme d'_issues_.
 
-Une *issue* est un fil de discussion permettant aux contributeurs du site
-web (mais aussi aux personnes extérieures) d'échanger sur un sujet précis (défini par le titre de l'*issue*). Vous
-pouvez consulter la liste des *issues* ouvertes
+Une _issue_ est un fil de discussion permettant aux contributeurs du site
+web (mais aussi aux personnes extérieures) d'échanger sur un sujet précis (défini par le titre de l'_issue_). Vous
+pouvez consulter la liste des _issues_ ouvertes
 en suivant [ce lien](https://github.com/InseeFrLab/ssphub/issues).
 
 Il est possible de contribuer aux discussions de deux façons:
 
-- en participant à la discussion dans une *issue* existante. Pour participer à la discussion dans un _issue_, il suffit de cliquer sur le titre de l'_issue_, de lire les discussions, et de réagit dans le champ en bas de la page.
-- en ouvrant une *issue* sur un nouveau sujet. Pour ouvrir une *issue*, il
-suffit de [cliquer ici](https://github.com/InseeFrLab/ssphub/issues/new)
-ou sur le lien en bas ou à droite de chaque page "faire part d'un problème".
+- en participant à la discussion dans une _issue_ existante. Pour participer à la discussion dans un _issue_, il suffit de cliquer sur le titre de l'_issue_, de lire les discussions, et de réagit dans le champ en bas de la page.
+- en ouvrant une _issue_ sur un nouveau sujet. Pour ouvrir une _issue_, il
+  suffit de [cliquer ici](https://github.com/InseeFrLab/ssphub/issues/new)
+  ou sur le lien en bas ou à droite de chaque page "faire part d'un problème".
 
 Pour des sujets plus transversaux, ou pour discuter avec les autres
 membres du réseau, il est possible de rejoindre le salon de discussion dédié
@@ -159,7 +151,6 @@ est d'ouvrir une _issue_ pour en discuter avec les mainteneurs du site web.
 Ces éléments étant assez légers, après une _issue_, les mainteneurs pourront proposer
 l'ajout de contenu à travers une _pull request_ à valider ensemble.
 
-
 ## :five: Comment ajouter un nouveau _post_ au blog ou un projet innovant ?
 
 [:arrow_up: Retour à l'introduction](#one-introduction)
@@ -168,7 +159,6 @@ l'ajout de contenu à travers une _pull request_ à valider ensemble.
 > Ajouter une nouvelle fiche thématique à la documentation représente un
 > travail conséquent. Avant de se lancer dans la rédaction, il est recommandé
 > d'en discuter avec l'animateur du réseau en amont via une _issue_.
-
 
 La compréhension de la tuyauterie permettant de transformer les fichiers
 sources (format `Markdown`) n'est pas obligatoire pour pouvoir proposer
@@ -182,7 +172,7 @@ la mise en forme d'une page sur le site.
 
 ### Comment proposer et élaborer un nouveau post de blog?
 
-La première étape consiste à __ouvrir une *issue*__ dans le
+La première étape consiste à **ouvrir une _issue_** dans le
 dépôt `Github`. L'_issue_ doit avoir:
 
 - un titre explicite indiquant sur quel sujet vous voulez proposer un _post_ (toutes suggestions bienvenues);
@@ -192,19 +182,16 @@ Une fois que les membres du réseau participants à l'_issue_ sont d'accords
 sur l'objet du _post_ et les grandes lignes de son contenu, le _post_ peut être rédigé en suivant la procédure
 décrite ci-dessous et les contraintes formelles indiquées dans la partie suivante.
 
-
 > [!WARNING]
 > Ne pas travailler sur la branche `main` de son fork. Celle-ci
 > servira à mettre à jour le fork pour intégrer les dernières mises à jour
 > du site web.
-
 
 ### Utiliser un environnement de travail entièrement configuré pour disposer de l'ensemble des librairies nécessaires à la génération de la documentation
 
 Plutôt que d'utiliser un environnement en local dont la configuration peut différer
 de manière parfois significative avec l'environnement canonique qui sert à générer le site web sous `Github`,
 il est recommandé d'utiliser le service préconfiguré `VSCode` du `SSP Cloud`.
-
 
 [![SSPcloud](https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational?logo=visualstudio)](https://datalab.sspcloud.fr/launcher/ide/vscode-python?autoLaunch=false&security.allowlist.enabled=false&onyxia.friendlyName=%C2%ABSSPHub%C2%BB&networking.user.enabled=true)
 
@@ -225,9 +212,7 @@ git config --global user.email "mon.adresse@mail.com"
 > sinon cela ne marchera pas au moment d'effectuer un `git push`.
 > Notamment,l'adresse e-mail doit être anonymisée si l'on a choisi cette option.
 
-
 Il est également possible, pour les utilisateurs avancés, d'incorporer cette commande dans un script d'initialisation qui se lance au démarrage du service, en utilisant également la commande `runuser` de manière à lancer la commande `Git` pour le _user_ `rstudio` et non en _root_ comme cela se fait par défaut.
-
 
 ### Créer un _post_ de blog
 
@@ -279,6 +264,7 @@ uv run template.py name_of_the_folder (optional: name_of_the_template.qmd)
 
 Par exemple, si je veux créer un projet dans le dossier "2025_nom_nouveau_projet"
 il faut indiquer :
+
 ```shell
 cd scripts
 uv sync
@@ -296,49 +282,52 @@ ajouter vos propres catégories etc.
 <details open>
 <summary> <em> Description des champs du modèle de projet </em> </summary>
 
-
 ```markdown
 ---
-title: A COMPLETER          # Champ à compléter
-description: A COMPLETER    # Champ à compléter
+title: A COMPLETER # Champ à compléter
+description: A COMPLETER # Champ à compléter
 format: html
-date: '2023-01-01'          # Champ à compléter au format YYYY-MM-DD
-image: monimage.png         # Champ à mettre à jour. Le lien est en référence au dossier actuel.
-listing:                    # Spécification pour lister les autres projets similaires
-- id: similar-project
-  contents: ../*/index.qmd  # dans tous les fichiers de projets qui s'appellent index.qmd
-  type: grid
-  include:
-    categories:
-    - machine learning      # categories à mettre à jour pour chercher les thèmes que l'on veut afficher
-    - SSMSI                 # liste sous le format 'machine learning' OU 'SSMSI'
-  sort:
-  - date desc
-  page-size: 6
-  categories: true
-categories:                # Catégories du projet à définir par vous-même.
-- SSMSI                    # La création d'un modèle vous indique toutes les catégories présentes
-- données administratives  # à vous de choisir ou d'en créer une sans faire de doublon (projet vs projets par exemple)
+date: "2023-01-01" # Champ à compléter au format YYYY-MM-DD
+image: monimage.png # Champ à mettre à jour. Le lien est en référence au dossier actuel.
+listing: # Spécification pour lister les autres projets similaires
+  - id: similar-project
+    contents: ../*/index.qmd # dans tous les fichiers de projets qui s'appellent index.qmd
+    type: grid
+    include:
+      categories:
+        - machine learning # categories à mettre à jour pour chercher les thèmes que l'on veut afficher
+        - SSMSI # liste sous le format 'machine learning' OU 'SSMSI'
+    sort:
+      - date desc
+    page-size: 6
+    categories: true
+categories: # Catégories du projet à définir par vous-même.
+  - SSMSI # La création d'un modèle vous indique toutes les catégories présentes
+  - données administratives # à vous de choisir ou d'en créer une sans faire de doublon (projet vs projets par exemple)
 ---
+
 <!-- Tableau de présentation du projet. Les lignes sont formatées entre tous les projets:
 vous pouvez en enlever mais pas en ajouter. -->
+
 # Synthèse du projet
-|           |        Description à mettre à jour        |
-|-----------|------------------------------------------------------------------|
-| **Détail du projet**         |       |
-| **Acteurs**                  |       |
-| **Résultats du projet**      |       |
-| **Produits et documentation du projet**      |  |
-| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} [user/repo](git.com/user/repo)       |
+
+|                                         | Description à mettre à jour                                                                 |
+| --------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Détail du projet**                    |                                                                                             |
+| **Acteurs**                             |                                                                                             |
+| **Résultats du projet**                 |                                                                                             |
+| **Produits et documentation du projet** |                                                                                             |
+| **Code du projet**                      | - Le code est disponible sur GitHub {{< fa brands github >}} [user/repo](git.com/user/repo) |
 
 <!-- Pour ajouter des choses vous pouvez insérer ce que vous souhaitez sous le tableau. -->
 
 <!-- Liste des projets similaires comprenant les catégories listés dans l'en-tête YAML. Pas
 besoin de modifier ce champ.  -->
+
 # Projets similaires
+
 ::: {#similar-project}
 :::
-
 ```
 
 </details>
@@ -346,6 +335,7 @@ besoin de modifier ce champ.  -->
 Il faut ensuite traduire la présentation du projet en anglais, comme indiqué ci-dessous.
 
 Une fois le projet traduit, vous devriez avoir l'architecture finale suivante :
+
 ```
 ├── project
 |    ├── 2025_nom_nouveau_projet
@@ -369,22 +359,24 @@ Les projets doivent être traduits en anglais.
 Un script automatique va effectuer la première traduction.
 
 **Configuration nécessaire pour le script** :
+
 1. Créez vous un compte gratuit sur <https://www.deepl.com/fr/pro>
 2. Enregistrez la clé API comme variable d'environnement ou comme secret
-avec le nom `DEEPL_API_KEY`.
-Si la clé est mal enregistrée, vous verrez le message suivant : `DEEPL API KEY not set`.
+   avec le nom `DEEPL_API_KEY`.
+   Si la clé est mal enregistrée, vous verrez le message suivant : `DEEPL API KEY not set`.
 
 ```shell
 cd ssphub/scripts
 
 # it will take the "index.qmd" file of the project/2025_nom_nouveau_projet dir
 # and translate it into "index.en.qmd
-Rscript 0b_translate.R 2025_nom_nouveau_projet
+Rscript 2_translate.R 2025_nom_nouveau_projet
 ```
 
 **Exemple**
+
 ```shell
-Rscript scripts/0b_translate.R 2023_doremifasol
+Rscript scripts/2_translate.R 2023_doremifasol
 ```
 
 Ayez un regard attentif sur la traduction automatique, qui reconnaît la syntaxe
@@ -392,56 +384,59 @@ Qmd mais pas tout le temps.
 Le script corrige certaines erreurs mais il peut en rester.
 
 #### Vérifiez les retours à la ligne intempestifs
+
 Le script ajoute notamment des retours à la ligne dans les tableaux markdown
 alors que dans un tableau markdown **chaque ligne du tableau doit correspondre
 à une ligne de code**.
 Par exemple,
 
 ```markdown
-| Colonne 1  | Colonne 2|
-| --         |    --    |
-| Description| Ceci est la description de mon projet |
+| Colonne 1   | Colonne 2                             |
+| ----------- | ------------------------------------- |
+| Description | Ceci est la description de mon projet |
 ```
+
 rend cela
 
-| Colonne 1  | Colonne 2|
-| --         |    --    |
-| Description| Ceci est la description de mon projet |
+| Colonne 1   | Colonne 2                             |
+| ----------- | ------------------------------------- |
+| Description | Ceci est la description de mon projet |
 
 alors que
 
 ```markdown
-| Colonne 1  | Colonne 2|
-| --         |    --    |
-| Description| Ceci est une ligne très longue de mon tableau que j'ai envie
-de couper sinon cela devient illisible.  |
+| Colonne 1                               | Colonne 2                                                    |
+| --------------------------------------- | ------------------------------------------------------------ |
+| Description                             | Ceci est une ligne très longue de mon tableau que j'ai envie |
+| de couper sinon cela devient illisible. |
 ```
 
 ne fonctionne pas et rend le tableau suivant :
 
-| Colonne 1  | Colonne 2|
-| --         |    --    |
-| Description| Ceci est une ligne très longue de mon tableau que j'ai envie
-de couper sinon cela devient illisible.  |
+| Colonne 1                               | Colonne 2                                                    |
+| --------------------------------------- | ------------------------------------------------------------ |
+| Description                             | Ceci est une ligne très longue de mon tableau que j'ai envie |
+| de couper sinon cela devient illisible. |
 
 Pour ajouter un retour à la ligne dans une cellule d'un tableau, il faut ajouter une balise html
 `<br>` et tout écrire sur une ligne de code.
 
 ```markdown
-| Colonne 1  | Colonne 2|
-| --         |    --    |
-| Description| Ceci est une ligne très longue de mon tableau que j'ai envie <br> de couper sinon cela devient illisible.  |
+| Colonne 1   | Colonne 2                                                                                                 |
+| ----------- | --------------------------------------------------------------------------------------------------------- |
+| Description | Ceci est une ligne très longue de mon tableau que j'ai envie <br> de couper sinon cela devient illisible. |
 ```
 
-| Colonne 1  | Colonne 2|
-| --         |    --    |
-| Description| Ceci est une ligne très longue de mon tableau que j'ai envie <br> de couper sinon cela devient illisible.  |
+| Colonne 1   | Colonne 2                                                                                                 |
+| ----------- | --------------------------------------------------------------------------------------------------------- |
+| Description | Ceci est une ligne très longue de mon tableau que j'ai envie <br> de couper sinon cela devient illisible. |
 
 <details>
 <summary> <em> Ce que le script translate corrige </em> </summary>
 
 Le script corrige automatiquement les erreurs suivantes :
-- supprime les espaces multiples (par exemple : "       ")
+
+- supprime les espaces multiples (par exemple : " ")
 - corrige la structure du tableau markdown renvoyée
 - supprime les "\" ajoutés (par exemple `{{< fa brands github >}}` devient `{{\< fa brands github >}}` sinon)
 - supprime le "-" ajouté dans `description: |`
@@ -449,11 +444,11 @@ Le script corrige automatiquement les erreurs suivantes :
 </details>
 
 #### Traduisez les catégories
+
 Le script ne traduit pas les catégories des listings similaires dans l'entête YAML
 (`machine learning` et `SSMSI` dans l'exemple ci-dessus).
 Vous devez reprendre vous-même les catégories du projet de l'en-tête qui elles
 sont traduites.
-
 
 ### Prévisualiser en local vos modifications
 
@@ -467,14 +462,13 @@ quarto preview --port 5000 --host 0.0.0.0
 Cliquez ensuite sur "Browse at" pour ouvrir le site de prévisualisation.
 ![](preview_french.png)
 
-
 Si les modifications touchent aussi à des **pages en anglais**, il faut utiliser
 les scripts mis en place pour prévisualiser le site complet.
 Tapez les commandes suivantes dans le terminal :
 
-- pour compiler seulement le site : `Rscript scripts/0a_render.R`
-- pour prévisualiser seulement le site : `Rscript scripts/0c_preview.R`
-- pour compiler et prévisualiser le site  : `Rscript scripts/0a_render.R && Rscript scripts/0c_preview.R`
+- pour compiler seulement le site : `Rscript scripts/1_render.R`
+- pour prévisualiser seulement le site : `Rscript scripts/3_preview.R`
+- pour compiler et prévisualiser le site : `Rscript scripts/3_render_preview.R`
 
 Notez enfin qu'un des moyens le plus simple est d'ouvrir une `pull request` (demande de tirage).
 Quand une telle demande est ouverte, un site de prévisualisation est généré
@@ -487,8 +481,9 @@ Chaque `push` sur la branche enclenchera une mise à jour du site de prévisuali
 Il est fortement recommandé d'ouvrir une pull request au début du travail.
 Cela permet de visualiser automatiquement une version préliminaire du site.
 Pour ouvrir une pull request, assurez-vous :
+
 - d'avoir lu ce fichier
 - d'avoir effectué la traduction
 - la pull request doit être cohérente avec le main en production du site.
-Si le site a eu des mises à jour, vous devez ainsi les réintégrer dans votre branch
-(par un merge ou un rebase).
+  Si le site a eu des mises à jour, vous devez ainsi les réintégrer dans votre branch
+  (par un merge ou un rebase).
