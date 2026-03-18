@@ -37,6 +37,7 @@ Pour plus d'information, la Dares a présenté son travail aux [Journées de mé
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode yaml code-with-copy" src="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide"></iframe></div>
 
 ```{ojs}
+//| echo: false
 createButton(
   "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/Analyse_textuelle_documents_longs.pdf",
   "Télécharger les slides en pdf"
