@@ -8,6 +8,8 @@ listing:
   sort:
     - "date desc"
   categories: true
+  filter-ui: true
+  fields: [image, title, author, categories, description]
 page-layout: full
 ---
 
