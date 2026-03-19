@@ -20,6 +20,7 @@ Ils présentent cependant plusieurs enjeux méthodologiques puisqu'ils peuvent �
 Quelles techniques mettre en oeuvre alors pour détecter les thémes abordés par ces accords et en extraire des informations ?
 
 Les méthodes mises en place pour répondre à ces questions incluent :
+
 - l'**analyse fréquentielle**, après nettoyage des données ;
 - la modélisation thématique en mobilisant les techniques **LDA** ou **BERTopic** ;
 - enfin la capacité à **extraire de l'information** (comme le nombre d'heures supplémentaires) en utilisant les récentes évolutions qu'ont apporté les **RAG et des LLM**.
