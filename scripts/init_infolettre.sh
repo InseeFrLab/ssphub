@@ -9,3 +9,5 @@ git push --set-upstream origin $INFOLETTRE_BRANCH
 
 cp -r infolettre/infolettre_XX infolettre/$INFOLETTRE_BRANCH
 mv infolettre/$INFOLETTRE_BRANCH/template.qmd infolettre/$INFOLETTRE_BRANCH/index.qmd 
+
+git add infolettre/$INFOLETTRE_BRANCH/index.qmd && git commit -m "initializing infolettre $INFOLETTRE_NB"
