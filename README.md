@@ -15,8 +15,7 @@ Site web construit avec `Quarto`
 
 Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvré du mois 
 
-- [ ] initialiser une branche dans ce repo "newsletter_XX"
-- [ ] dupliquer un dossier infolettre_XX dans infolettre/infolettre_23 
+- [ ] depuis le dossier ssphub, lancer `{bash} bash scripts/init_infolettre.sh 27` : va créer une branche nommée infolettre_27, copier le template etc. 
 - [ ] mettre à jour les articles issus du groupe de veille à partir du repo [ssphub_veille](https://github.com/SSPHub/ssphub_veille)
 - [ ] regarder les sujets possibles parmi la liste des articles issus du groupe de veille sur grist (sujets possible : OCR ? + comment on se répartit les articles)
 - [ ] rédiger le qmd avec toutes les informations
