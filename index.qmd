@@ -6,7 +6,8 @@ css: homepage.css
 page-layout: full
 listing:
   - id: newsletters
-    contents: infolettre/infolettre_*/**/index.qmd
+    contents: 
+     - infolettre/infolettre_*/**/index.qmd
     type: grid
     sort:
       - "number desc"
