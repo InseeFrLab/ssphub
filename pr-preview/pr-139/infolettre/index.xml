@@ -29,6 +29,15 @@ sur l&#39;actualité interne du réseau.
 </section>
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
+<p>Qu’il est difficile de choisir une seule infographie. Pour ce mois-ci, c’est finalement une vidéo de tous les lancements de fusée dans l’espace depuis 1957 (ne pas avoir peur de tout ce qu’il y a là haut). Attention, grand final pour l’année 2025 !</p>
+<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tUNZQCGKvbg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <em>Source : données recueillies par Jonathan McDowell et disponibles sur https://planet4589.org/, infographie faite par <a href="https://peteratwoodprojects.wordpress.com/">Peter Atwood</a> et explications aussi <a href="https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/">ici</a></em><p></p>
+<p>Le site <a href="https://satellitetracker3d.com/">satellitetracker</a> permet par ailleurs de suivre l’ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. Et cela en fait un petit nombre autour de la planète bleue/grise …</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://ssphub.netlify.app/infolettre/infolettre_24/satellites_trackers.png" class="img-fluid figure-img"></p>
+<figcaption>Premier contact à l’approche de la Terre</figcaption>
+</figure>
+</div>
 </section>
 <section id="les-prochains-évènements-du-réseau" class="level1">
 <h1>Les prochains évènements du réseau</h1>
@@ -79,6 +88,7 @@ sur l&#39;actualité interne du réseau.
   <category>Infolettre</category>
   <guid>https://ssphub.netlify.app/infolettre/infolettre_24/</guid>
   <pubDate>Tue, 31 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://ssphub.netlify.app/infolettre/infolettre_24/orbital_launch.png" medium="image" type="image/png" height="79" width="144"/>
 </item>
 <item>
   <title>L’IA dans l’oeil du cyclone</title>
