@@ -12,7 +12,7 @@ authors:
   - Nicolas
   - Mélina
 
-# image: tva_topography_talk.png
+image: orbital_launch.png
 
 categories:
   - Infolettre
@@ -26,6 +26,17 @@ Bienvenue à cette infolettre, coécrite avec **Mélina** ❤️.
 
 # L'infographie
 
+Qu'il est difficile de choisir une seule infographie. 
+Pour ce mois-ci, c'est finalement une vidéo de tous les lancements de fusée dans l'espace depuis 1957 (ne pas avoir peur de tout ce qu'il y a là haut).
+Attention, grand final pour l'année 2025 !
+
+{{< video https://www.youtube.com/watch?v=tUNZQCGKvbg controls="yes" >}}
+*Source : données recueillies par Jonathan McDowell et disponibles sur https://planet4589.org/, infographie faite par [Peter Atwood](https://peteratwoodprojects.wordpress.com/) et explications aussi [ici](https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/)*
+
+Le site [satellitetracker](https://satellitetracker3d.com/) permet par ailleurs de suivre l'ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. 
+Et cela en fait un petit nombre autour de la planète bleue/grise ...
+
+![Premier contact à l'approche de la Terre](satellites_trackers.png)
 
 # Les prochains évènements du réseau
 
