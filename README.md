@@ -49,10 +49,10 @@ Then use Minio client to intervene with CLI.
 If you're using the 2nd option, you should replace s3 with s3 ssphub.
 
 - List files :
-  mc ls --recursive s3/$S3_SSPHUB_BUCKET/
+  `mc ls --recursive s3/$S3_SSPHUB_BUCKET/`
 
 - Copy files to S3 :
-  mc cp ./file.txt s3/$S3_SSPHUB_BUCKET/dossier/mon_fichier.txt
+  `mc cp ./file.txt s3/$S3_SSPHUB_BUCKET/dossier/mon_fichier.txt`
 
 - Delete files from S3 :
-  mc rm s3/$S3_SSPHUB_BUCKET/images/photo.jpg
+  `mc rm s3/$S3_SSPHUB_BUCKET/images/photo.jpg`
