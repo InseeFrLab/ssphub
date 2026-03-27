@@ -7,7 +7,7 @@ Contenu disponible sur https://ssphub.netlify.app.
 
 Site web construit avec `Quarto`
 
-*Des assistants d'IA générative ont été utilisés à différents stades du processus.*
+_Des assistants d'IA générative ont été utilisés à différents stades du processus._
 
 # How to
 
@@ -25,22 +25,34 @@ Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvr�
 - [ ] envoi infolettre par Tchap avec les outils du repo [newsletter_tools](https://github.com/SSPHub/newsletter_tools)
 
 Cf. les readme des repo :
+
 - https://github.com/SSPHub/newsletter_tools
 - https://github.com/SSPHub/ssphub_veille
 
 ## Add files to S3 storage
 
-Switch to S3 config before launching SSPCloud service. No need to initialize the connection then. 
-Then use Minio client to intervene with CLI : 
+### Config
 
-- List files : 
-mc ls --recursive s3/$S3_SSPHUB_BUCKET/
+- Easiest is to switch to S3 config before launching SSPCloud service. No need to initialize the connection then.
+
+- Otherwise, you have to have the following secrets :
+  - S3_SSPHUB_ACCESS_KEY
+  - S3_SSPHUB_SECRET_ACCESS_KEY
+  - S3_SSPHUB_BUCKET
+  - AWS_ENDPOINT_URL (is already configured in SSPCloud)
+  - Initialize the connection :
+    `mc alias set s3ssphub $AWS_ENDPOINT_URL $S3_SSPHUB_ACCESS_KEY $S3_SSPHUB_SECRET_ACCESS_KEY`
+
+### Use
+
+Then use Minio client to intervene with CLI.
+If you're using the 2nd option, you should replace s3 with s3 ssphub.
+
+- List files :
+  mc ls --recursive s3/$S3_SSPHUB_BUCKET/
 
 - Copy files to S3 :
-mc cp ./file.txt s3/$S3_SSPHUB_BUCKET/dossier/mon_fichier.txt
+  mc cp ./file.txt s3/$S3_SSPHUB_BUCKET/dossier/mon_fichier.txt
 
 - Delete files from S3 :
-mc rm s3/$S3_SSPHUB_BUCKET/images/photo.jpg
-
-
-
+  mc rm s3/$S3_SSPHUB_BUCKET/images/photo.jpg
