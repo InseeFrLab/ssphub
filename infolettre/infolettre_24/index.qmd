@@ -20,21 +20,21 @@ categories:
 
 # Bienvenue à la **vingt quatrième infolettre** !
 
-C'est le printemps ! Le temps est bon, il fait [41,6°C en Californie avant la fin de l'hiver](https://www.rtl.be/actu/monde/international/jusqua-416degc-avant-meme-la-fin-de-lhiver-une-vague-de-chaleur-extreme-frappe/2026-03-19/article/783199). 
+C'est le printemps ! Le temps est bon, il fait [41,6°C en Californie avant même la fin de l'hiver](https://www.rtl.be/actu/monde/international/jusqua-416degc-avant-meme-la-fin-de-lhiver-une-vague-de-chaleur-extreme-frappe/2026-03-19/article/783199).
 
 Bienvenue à cette infolettre, coécrite avec **Mélina** ❤️.
 
 # L'infographie
 
-Qu'il est difficile de choisir une seule infographie. 
+Qu'il est difficile de choisir une seule infographie.
 Pour ce mois-ci, c'est finalement une vidéo de tous les lancements de fusée dans l'espace depuis 1957 (ne pas avoir peur de tout ce qu'il y a là haut).
 Attention, grand final pour l'année 2025 !
 
 {{< video https://www.youtube.com/watch?v=tUNZQCGKvbg controls="yes" >}}
-*Source : données recueillies par Jonathan McDowell et disponibles sur https://planet4589.org/, infographie faite par [Peter Atwood](https://peteratwoodprojects.wordpress.com/) et explications aussi [ici](https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/)*
+*Source : données recueillies par Jonathan McDowell et disponibles sur [https://planet4589.org](https://planet4589.org), infographie faite par [Peter Atwood](https://peteratwoodprojects.wordpress.com/) et explications aussi [ici](https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/).*
 
-Le site [satellitetracker](https://satellitetracker3d.com/) permet par ailleurs de suivre l'ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. 
-Et cela en fait un petit nombre autour de la planète bleue/grise ...
+Le site [satellitetracker](https://satellitetracker3d.com/) permet par ailleurs de suivre l'ensemble des quelques 12 000 satellites qui gravitent autour de la Terre.
+Et cela en fait un petit nombre autour de la planète bleue grise ...
 
 ![Premier contact à l'approche de la Terre](satellites_trackers.png)
 
@@ -42,36 +42,36 @@ Et cela en fait un petit nombre autour de la planète bleue/grise ...
 
 Une foison d'événements et d'informations ce mois-ci. Pour résumer :
 
-- Un nouvel Open Science Meet-up à propos des *replication packages* en économie le **2 avril 2026** - [lien](https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1) ;
-- un atelier du réseau sur la génération de commentaires de graphique par LLM le **mardi 14 avril 2026 à 10h** - [lien](https://visio.numerique.gouv.fr/wvv-cwou-ugn) ;
+- Un nouvel **Open Science Meet-up** à propos des *replication packages* en économie le **2 avril 2026** - [lien](https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1) ;
+- un atelier du réseau sur la **génération de commentaires de graphique par LLM** le **mardi 14 avril 2026 à 10h** - [lien](https://visio.numerique.gouv.fr/wvv-cwou-ugn) ;
 - un appel à contribution pour la conférence uRos du **18 au 20 novembre 2026** à Paris.
 
 
-## Génération de commentaire de graphiques : retour d'expérience et pistes d'amélioration à partir d'un exemple sur les statistiques agricoles - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio
+## Génération de commentaire de graphiques : retour d'expérience sur les statistiques agricoles et pistes d'amélioration - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio
 
-Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l'évolution d'indicateurs agricoles à partir de graphiques. Si l'approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d'étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires ...). 
+Le SSM Agriculture essaye de générer par LLM des commentaires sur l'évolution d'indicateurs agricoles à partir de graphiques. Si l'approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un point d'étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires ...).
 
-Dans le cadre d'un travail de recherche, un étudiant de l'Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d'une chercheuse de l'INRIA. Il a ainsi mis en place un cadre d'analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés. 
+Dans le cadre d'un travail de recherche, un étudiant de l'Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d'une chercheuse de l'INRIA. Il a ainsi mis en place un **cadre d'analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés**.
 
 **Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h**, en [visio](https://visio.numerique.gouv.fr/wvv-cwou-ugn) et en présentiel à l'Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !
 
-Si vous voulez l'ajouter dans votre agenda, voici une [invitation agenda](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics). 
+Si vous voulez l'ajouter dans votre agenda, voici une [invitation agenda](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics).
 
-Les mises à jour seront faites sur la [page de l'événement](../../talk/2026-04-ssm-agri/index.qmd). 
+Les mises à jour seront faites sur la [page de l'événement](../../talk/2026-04-ssm-agri/index.qmd).
 
-## Replication packages en économie - Open science Meet-up - 📅 jeudi 2 avril 2026 13h30, visio
+## *Replication packages* en économie - Open science Meet-up - 📅 jeudi 2 avril 2026 13h30, visio
 
 Le prochain Open Science Meet-up de l'Insee portera sur le thème : **Replication packages en économie : préparation, bonnes pratiques et attentes des revues, surtout lorsque les données sont confidentielles.**
 
-La reproductibilité des résultats occupe aujourd'hui une place croissante dans la recherche empirique en économie et dans les politiques éditoriales des revues scientifiques. De nombreuses revues demandent désormais aux auteurs de fournir un replication package, c'est-à-dire l'ensemble des données, du code et de la documentation permettant de reproduire les analyses publiées.
+Pour s'assurer de la reproducibilité d'une analyse publiée, de nombreuses revues demandent désormais aux auteurs de fournir un *replication package*, c'est-à-dire l'ensemble des données, du code et de la documentation.
 
-Lors de ce Meet-Up, [Lars Vilhuber](https://www.ilr.cornell.edu/people/lars-vilhuber) (Cornell University), Data Editor à l'American Economic Association, présentera les principes et les bonnes pratiques associés à la préparation et à la diffusion des replication packages. Il reviendra notamment sur les exigences croissantes des revues scientifiques, les standards qui se développent dans la communauté économique et les enjeux de la reproductibilité des travaux empiriques.
+Lors de ce Meet-Up, [Lars Vilhuber](https://www.ilr.cornell.edu/people/lars-vilhuber) (Cornell University), *data editor* à l'*American Economic Association*, présentera les principes et les bonnes pratiques associés à la préparation et à la diffusion des *replication packages*. Il reviendra notamment sur les exigences croissantes des revues scientifiques, les standards qui se développent dans la communauté économique et les enjeux de la reproductibilité des travaux empiriques.
 
-Cette rencontre sera l'occasion d'échanger sur la manière dont ces pratiques contribuent au développement d'une recherche plus transparente et plus ouverte, en particulier dans les domaines de l'analyse économique et statistique.
+Cette rencontre sera l'occasion d'échanger sur la manière dont ces pratiques contribuent au **développement d'une recherche plus transparente et plus ouverte**, en particulier dans les domaines de l'analyse économique et statistique.
 
 Elle s'adresse à toutes celles et ceux qui souhaitent mieux comprendre les enjeux de la reproductibilité des analyses économiques et de la diffusion ouverte des travaux de recherche.
 
-**Rendez-vous le jeudi 2 avril de 13h30 à 14h15 en distanciel à ce [lien](https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1)**. 
+**Rendez-vous le jeudi 2 avril de 13h30 à 14h15 en distanciel à ce [lien](https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1)**.
 
 
 ## Contribuez à la conférence sur l'utilisation de R dans la statistique publique (uROS) - 📅 18-20 novembre 2026, Paris
@@ -80,7 +80,7 @@ L'Insee accueille l'édition 2026 de la **conférence uRos (use of R in official
 
 Cette rencontre annuelle des **utilisateurs de R en Europe et dans le monde** sera l'occasion de valoriser les nombreux investissements en R faits à l'Insee et au sein du SSP. La liste des thèmes ainsi que toutes les informations pratiques sont en ligne  sur le [site de la conférence](https://r-project.ro/conference2026_FR.html).
 
-Si vous souhaitez y **assister**, vous pouvez d'ores et déjà vous inscrire [en ligne](https://uros2026.sciencesconf.org/registration?lang=fr). 
+Si vous souhaitez y **assister**, vous pouvez d'ores et déjà vous inscrire [en ligne](https://uros2026.sciencesconf.org/registration?lang=fr).
 
 Si vous souhaitez **contribuer**, l'appel à contribution est ouvert jusqu'au **15 juin** sur le site de la conférence. Vous pouvez soumettre :
 
@@ -121,7 +121,7 @@ Utiliser l'IA pour apprendre, et pas seulement pour accélérer la production de
 
 Pour mieux comprendre ce qui se passe réellement derrière les mots "_attention_", "_transformer_", "résidus" ou "_KV cache_", [MicroGPT Visualized](https://microgpt.jtauber.com) est une excellente découverte. Le site reprend le micro-GPT en Python d'Andrej Karpathy et le décompose en six étapes, du simple modèle bigramme jusqu'au _transformer_ complet optimisé avec _Adam_, le tout avec schémas, animations et explications progressives.
 
-## Master Machine Learning with scikit-learn 
+## Master Machine Learning with scikit-learn
 
 Le livre en ligne [Master Machine Learning with scikit-learn](https://mlbook.dataschool.io/ "Master Machine Learning with scikit-learn") de Kevin Markham est une ressource très intéressante pour développer ou consolider ses bonnes pratiques en machine learning.
 
@@ -129,4 +129,4 @@ Le livre en ligne [Master Machine Learning with scikit-learn](https://mlbook.dat
 
 ## Mapinou : un jeu mobile pour alimenter la recherche et mieux comprendre la navigation cartographique
 
-Petite respiration carto ce mois-ci avec [Mapinou](https://cartonumerique.blogspot.com/2026/03/mapinou.html), un jeu mobile gratuit développé par une équipe de recherche du LASTIG (IGN) dans le cadre du projet européen LostInZoom. En guidant un lapin à travers une carte de France multi-échelles, les joueurs produisent des données anonymes par leurs interactions avec la carte - zooms, déplacements, clics - que les chercheurs utilisent pour mieux comprendre les phénomènes de désorientation après zoom et concevoir des interfaces cartographiques plus fluides. 
+Petite respiration carto ce mois-ci avec [Mapinou](https://cartonumerique.blogspot.com/2026/03/mapinou.html), un jeu mobile gratuit développé par une équipe de recherche du LASTIG (IGN) dans le cadre du projet européen LostInZoom. En guidant un lapin à travers une carte de France multi-échelles, les joueurs produisent des données anonymes par leurs interactions avec la carte - zooms, déplacements, clics - que les chercheurs utilisent pour mieux comprendre les phénomènes de désorientation après zoom et concevoir des interfaces cartographiques plus fluides.
