@@ -1,7 +1,6 @@
 # Site web du réseau des data scientists du service statistique public
 
-Code source du `SSPHub`, le site du réseau des
-_data scientists_ du service statistique public (SSP).
+Code source du `SSPHub`, le site du réseau des _data scientists_ du service statistique public (SSP).
 
 Contenu disponible sur https://ssphub.netlify.app.
 
@@ -15,15 +14,20 @@ _Des assistants d'IA générative ont été utilisés à différents stades du p
 
 Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvré du mois
 
-- [ ] depuis le dossier ssphub, lancer `{bash} bash scripts/init_infolettre.sh` : va déterminer le nouveau numéro de l'infolettre, créer une branche nommée infolettre_27, créer un dossier infolettre/infolettre_27 et y copier le template + commiter le tout. On peut spécifier le numéro de l'infolettre en indiquant `{bash} bash scripts/init_infolettre.sh 27`
+**1 - préparer la veille:**
+
 - [ ] mettre à jour les articles issus du groupe de veille à partir du repo [ssphub_veille](https://github.com/SSPHub/ssphub_veille)
 - [ ] regarder les sujets possibles parmi la liste des articles issus du groupe de veille sur grist (sujets possible : OCR ? + comment on se répartit les articles)
-- [ ] dans l'infolettre initialisée (infolettre/infolettre_27/index.qmd) rédiger le qmd avec
+
+**2 - inclure la veille dans la newsletter:**
+
+- [ ] depuis le dossier ssphub, lancer `{bash} bash scripts/init_infolettre.sh` : va déterminer le nouveau numéro de l'infolettre, créer une branche nommée infolettre_27, créer un dossier infolettre/infolettre_27 et y copier le template + commiter le tout. On peut spécifier le numéro de l'infolettre en indiquant `{bash} bash scripts/init_infolettre.sh 27`
+- [ ] dans l'infolettre initialisée (infolettre/infolettre_27/index.qmd) rédiger le qmd avec:
   - la veille
   - les actualités
   - la dataviz
   - tout autre sujet
-- [ ] Une fois l'infolettre ok, faire une PR pour relecture
+- [ ] Une fois l'infolettre ok, faire une PR sur main pour relecture. Un site de preview sera déployé (lien indiqué automatiquement en commentaire dans la PR)
 - [ ] mise à disposition de l'infolettre sur le site du ssphub en mergeant la branche sur le main
 - [ ] envoi infolettre par email avec les outils du repo [newsletter_tools](https://github.com/SSPHub/newsletter_tools)
 - [ ] envoi infolettre par Tchap avec les outils du repo [newsletter_tools](https://github.com/SSPHub/newsletter_tools)
