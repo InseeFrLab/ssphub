@@ -46,19 +46,6 @@ Une foison d'événements et d'informations ce mois-ci. Pour résumer :
 - un atelier du réseau sur la **génération de commentaires de graphique par LLM** le **mardi 14 avril 2026 à 10h** - [lien](https://visio.numerique.gouv.fr/wvv-cwou-ugn) ;
 - un appel à contribution pour la conférence uRos du **18 au 20 novembre 2026** à Paris.
 
-
-## Génération de commentaire de graphiques : retour d'expérience sur les statistiques agricoles et pistes d'amélioration - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio
-
-Le SSM Agriculture essaye de générer par LLM des commentaires sur l'évolution d'indicateurs agricoles à partir de graphiques. Si l'approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un point d'étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires ...).
-
-Dans le cadre d'un travail de recherche, un étudiant de l'Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d'une chercheuse de l'INRIA. Il a ainsi mis en place un **cadre d'analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés**.
-
-**Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h**, en [visio](https://visio.numerique.gouv.fr/wvv-cwou-ugn) et en présentiel à l'Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !
-
-Si vous voulez l'ajouter dans votre agenda, voici une [invitation agenda](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics).
-
-Les mises à jour seront faites sur la [page de l'événement](../../talk/2026-04-ssm-agri/index.qmd).
-
 ## *Replication packages* en économie - Open science Meet-up - 📅 jeudi 2 avril 2026 13h30, visio
 
 Le prochain Open Science Meet-up de l'Insee portera sur le thème : **Replication packages en économie : préparation, bonnes pratiques et attentes des revues, surtout lorsque les données sont confidentielles.**
@@ -72,6 +59,19 @@ Cette rencontre sera l'occasion d'échanger sur la manière dont ces pratiques c
 Elle s'adresse à toutes celles et ceux qui souhaitent mieux comprendre les enjeux de la reproductibilité des analyses économiques et de la diffusion ouverte des travaux de recherche.
 
 **Rendez-vous le jeudi 2 avril de 13h30 à 14h15 en distanciel à ce [lien](https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1)**.
+
+
+## Génération de commentaire de graphiques : retour d'expérience sur les statistiques agricoles et pistes d'amélioration - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio
+
+Le SSM Agriculture essaye de générer par LLM des commentaires sur l'évolution d'indicateurs agricoles à partir de graphiques. Si l'approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un point d'étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires ...).
+
+Dans le cadre d'un travail de recherche, un étudiant de l'Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d'une chercheuse de l'INRIA. Il a ainsi mis en place un **cadre d'analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés**.
+
+**Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h**, en [visio](https://visio.numerique.gouv.fr/wvv-cwou-ugn) et en présentiel à l'Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !
+
+Si vous voulez l'ajouter dans votre agenda, voici une [invitation agenda](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics).
+
+Les mises à jour seront faites sur la [page de l'événement](../../talk/2026-04-ssm-agri/index.qmd).
 
 
 ## Contribuez à la conférence sur l'utilisation de R dans la statistique publique (uROS) - 📅 18-20 novembre 2026, Paris
