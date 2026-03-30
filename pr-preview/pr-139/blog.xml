@@ -22,7 +22,7 @@
 
 <p>Ce guide présente quelques exemples d’utilisation des données du recensement de la population diffusées au format <code>Parquet</code>. Il s’agit d’une version HTML enrichissant le guide publié sur le site <a href="https://www.insee.fr/fr/statistiques/7637890">insee.fr</a> pour les langages <code>Python</code> <i class="fa-brands fa-python" aria-label="python"></i> et <i class="fa-brands fa-r-project" aria-label="r-project"></i> avec des exemples interactifs pouvant être construits par le biais de <code>Quarto Markdown</code> et <code>Observable</code>.</p>
 <p>L’ensemble des codes utilisés pour produire cette note est disponible sur le dépôt <a href="https://github.com/InseeFrLab/exemples-recensement-parquet"><code>Github</code> <i class="fa-brands fa-github" aria-label="github"></i> InseeFrLab/exemples-recensement-parquet</a> au format <a href="https://quarto.org/"><code>Quarto Markdown</code></a>.</p>
-<p>Pour plus d’informations sur le format <code>Parquet</code>, dans un contexte de statistique publique, se référer à <span class="citation" data-cites="dondon-lamarche-2023">Dondon and Lamarche (2023)</span>. Pour un exemple sur la différence entre format <code>CSV</code> et <code>Parquet</code> illustré sur les données du recensement de la population, voir <span class="citation" data-cites="mauviere-2022">Mauvière (2022)</span>.</p>
+<p>Pour plus d’informations sur le format <code>Parquet</code>, dans un contexte de statistique publique, se référer à <span class="citation" data-cites="dondon-lamarche-2023">Dondon et Lamarche (2023)</span>. Pour un exemple sur la différence entre format <code>CSV</code> et <code>Parquet</code> illustré sur les données du recensement de la population, voir <span class="citation" data-cites="mauviere-2022">Mauvière (2022)</span>.</p>
 <p>Ce guide propose d’utiliser <a href="https://duckdb.org/"><code>DuckDB</code></a> à travers plusieurs langages pour effectuer des traitements sur les fichiers détails du recensement. Par rapport à d’autres approches, <a href="https://duckdb.org/"><code>DuckDB</code></a> a été choisi pour son efficacité ainsi que pour son universalité<sup>1</sup>.</p>
 <details>
 <summary>
@@ -139,7 +139,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Emplacement des données pour les exemples <code>Observable</code>
+<span class="screen-reader-only">Mise en garde</span>Emplacement des données pour les exemples <code>Observable</code>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -2761,7 +2761,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Caution</span>Version de <code>Plot</code> embarquée dans <code>Quarto</code>
+<span class="screen-reader-only">Mise en garde</span>Version de <code>Plot</code> embarquée dans <code>Quarto</code>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -4452,12 +4452,12 @@ font-style: inherit;">    `</span></span>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Références</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-dondon-lamarche-2023" class="csl-entry">
-Dondon, Alexis, and Pierre Lamarche. 2023. <span>“Quels Formats Pour Quelles Données?”</span> <em>Courrier Des Statistiques</em>, no. 9.
+Dondon, Alexis, et Pierre Lamarche. 2023. <span>«&nbsp;Quels formats pour quelles données?&nbsp;»</span> <em>Courrier des statistiques</em>, nᵒ 9.
 </div>
 <div id="ref-mauviere-2022" class="csl-entry">
-Mauvière, Éric. 2022. <span>“Parquet Devrait Remplacer Le Format CSV.”</span> Post de blog [Consulté le 12 octobre 2023]. <a href="https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/">https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/</a>.
+Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nbsp;»</span>. Post de blog [Consulté le 12 octobre 2023]. <a href="https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/">https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/</a>.
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
 <ol>
 <li id="fn1"><p>Des propositions d’enrichissements de cette documentation à partir d’implémentations alternatives, par exemple s’appuyant sur <code>Arrow</code> et <code>dbplyr</code> ou sur <code>Polars</code> sont bienvenues sur le <a href="https://github.com/InseeFrLab/exemples-recensement-parquet">Github InseeFrLab/exemples-recensement-parquet</a>.↩︎</p></li>
@@ -4484,7 +4484,7 @@ Mauvière, Éric. 2022. <span>“Parquet Devrait Remplacer Le Format CSV.”</sp
 <p>Ce <em>post</em> de blog a pour objectif de présenter la raison d’être d’<code>Onyxia</code>, sa génèse et les solutions qu’apporte cette infrastructure à des irritants classiques des projets novateurs de data science.</p>
 <section id="contexte" class="level2">
 <h2 class="anchored" data-anchor-id="contexte">Contexte</h2>
-<p>L’écosystème de la data science est en mouvement accéléré depuis 10 ans et le rôle du <em>data scientist</em> dans les organisations valorisant de la donnée évolue continuellement <span class="citation" data-cites="davenport2022data">(Davenport and Patil 2022)</span>. Les data scientists modernes sont amenés à utiliser de plus en plus de langages et doivent être capables de maîtriser plusieurs architectures informatiques. La frontière est ainsi moins nette que par le passé entre statisticiens et informaticiens. De plus, les innovations récentes dans le monde du développement logiciel, notamment l’adoption massive de l’approche <code>DevOps</code> - approche qui consiste à automatiser la production de livrables dès la conception du prototype - a également fait évoluer les pratiques des data scientists.</p>
+<p>L’écosystème de la data science est en mouvement accéléré depuis 10 ans et le rôle du <em>data scientist</em> dans les organisations valorisant de la donnée évolue continuellement <span class="citation" data-cites="davenport2022data">(Davenport et Patil 2022)</span>. Les data scientists modernes sont amenés à utiliser de plus en plus de langages et doivent être capables de maîtriser plusieurs architectures informatiques. La frontière est ainsi moins nette que par le passé entre statisticiens et informaticiens. De plus, les innovations récentes dans le monde du développement logiciel, notamment l’adoption massive de l’approche <code>DevOps</code> - approche qui consiste à automatiser la production de livrables dès la conception du prototype - a également fait évoluer les pratiques des data scientists.</p>
 <p>Ce besoin de ressources informatiques croissantes, de flexibilité dans le prototypage de solutions informatiques et l’évolution des pratiques consistant à mettre à disposition en continu des livrables ont eu des implications importantes sur les architectures informatiques dominantes dans l’écosystème de la donnée. Pour répondre au besoin croissant de puissance de traitement, les serveurs partagés, organisés sous forme de <em>clusters</em>, se sont développés dans de nombreuses organisations. Après avoir connue son heure de gloire au début des années 2010, l’infrastructure <a href="https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs"><code>HDFS</code> (<em>Hadoop Distributed File System</em>)</a>, qui reposait sur des <em>clusters</em> où les données et la puissance de traitement étaient distribuées et collocalisées, a laissé place à des infrastructures plus <em>scalables</em>, basées sur l’approche de la conteneurisation.</p>
 </section>
 <section id="de-hdfs-à-la-conteneurisation" class="level2">
@@ -4629,7 +4629,7 @@ Fallback text here for unsupporting browsers, of which there are scant few.
 <h2 class="anchored" data-anchor-id="références">Références</h2>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-davenport2022data" class="csl-entry">
-Davenport, Thomas H, and DJ Patil. 2022. <span>“Is Data Scientist Still the Sexiest Job of the 21st Century?”</span> <em>Harvard Business Review</em>. <a href="https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century">https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century</a>.
+Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still the Sexiest Job of the 21st Century?&nbsp;»</span> <em>Harvard business review</em>. <a href="https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century">https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century</a>.
 </div>
 </div>
 
@@ -4637,7 +4637,7 @@ Davenport, Thomas H, and DJ Patil. 2022. <span>“Is Data Scientist Still the Se
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
 <ol>
 <li id="fn1"><p>On peut ajouter que cette question n’est pas exclusivement technologique. Même s’il est volontairement polémique, l’article de <a href="https://motherduck.com/blog/big-data-is-dead/">Jordan Tigani “Big Data is Dead”</a> illustre bien le changement de paradigme du monde de la <em>tech</em>.↩︎</p></li>
@@ -5079,7 +5079,7 @@ new Runtime().module(define, name => {
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
 <ol>
 <li id="fn1"><p>Les actions de communication du mois de janvier ont permis d’augmenter sensiblement le nombre de personnes dans cette liste (340 début janvier). Un retour spécial sur le mois de janvier sera l’occasion idéale pour une autre rétrospective quantitative.↩︎</p></li>
@@ -5387,7 +5387,7 @@ Illustration de la similarité cosinus en deux dimensions
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
 <ol>
 <li id="fn1"><p>La nomenclature <code>PCS</code> (professions et catégories socioprofessionnelles) sert à la codification des professions dans le recensement et les enquêtes auprès des ménages. Elle permet ainsi de classer un ensemble de professions dans une même catégorie. Par exemple, dans sa dernière version (<a href="https://www.insee.fr/fr/information/6205305">PCS 2020</a>), la catégorie des <em>“Professions libérales de santé”</em> (31A) regroupe diverses professions médicales: médecins libéraux, dentistes, psychologues, véterinaires, pharmaciens libéraux… Une description plus complète de cette nomenclature et de son historique est disponible sur <a href="https://www.insee.fr/fr/information/6208292">le site de l’Insee</a>↩︎</p></li>

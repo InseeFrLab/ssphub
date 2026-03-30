@@ -24,14 +24,14 @@ sur l&#39;actualité interne du réseau.
 
 <section id="bienvenue-à-la-vingt-quatrième-infolettre" class="level1">
 <h1>Bienvenue à la <strong>vingt quatrième infolettre</strong> !</h1>
-<p>C’est le printemps ! Le temps est bon, il fait <a href="https://www.rtl.be/actu/monde/international/jusqua-416degc-avant-meme-la-fin-de-lhiver-une-vague-de-chaleur-extreme-frappe/2026-03-19/article/783199">41,6°C en Californie avant la fin de l’hiver</a>.</p>
+<p>C’est le printemps ! Le temps est bon, il fait <a href="https://www.rtl.be/actu/monde/international/jusqua-416degc-avant-meme-la-fin-de-lhiver-une-vague-de-chaleur-extreme-frappe/2026-03-19/article/783199">41,6°C en Californie avant même la fin de l’hiver</a>.</p>
 <p>Bienvenue à cette infolettre, coécrite avec <strong>Mélina</strong> ❤️.</p>
 </section>
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
 <p>Qu’il est difficile de choisir une seule infographie. Pour ce mois-ci, c’est finalement une vidéo de tous les lancements de fusée dans l’espace depuis 1957 (ne pas avoir peur de tout ce qu’il y a là haut). Attention, grand final pour l’année 2025 !</p>
-<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tUNZQCGKvbg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <em>Source : données recueillies par Jonathan McDowell et disponibles sur https://planet4589.org/, infographie faite par <a href="https://peteratwoodprojects.wordpress.com/">Peter Atwood</a> et explications aussi <a href="https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/">ici</a></em><p></p>
-<p>Le site <a href="https://satellitetracker3d.com/">satellitetracker</a> permet par ailleurs de suivre l’ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. Et cela en fait un petit nombre autour de la planète bleue/grise …</p>
+<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tUNZQCGKvbg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <em>Source : données recueillies par Jonathan McDowell et disponibles sur <a href="https://planet4589.org">https://planet4589.org</a>, infographie faite par <a href="https://peteratwoodprojects.wordpress.com/">Peter Atwood</a> et explications aussi <a href="https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/">ici</a>.</em><p></p>
+<p>Le site <a href="https://satellitetracker3d.com/">satellitetracker</a> permet par ailleurs de suivre l’ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. Et cela en fait un petit nombre autour de la planète bleue grise …</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://ssphub.netlify.app/infolettre/infolettre_24/satellites_trackers.png" class="img-fluid figure-img"></p>
@@ -43,24 +43,24 @@ sur l&#39;actualité interne du réseau.
 <h1>Les prochains évènements du réseau</h1>
 <p>Une foison d’événements et d’informations ce mois-ci. Pour résumer :</p>
 <ul>
-<li>Un nouvel Open Science Meet-up à propos des <em>replication packages</em> en économie le <strong>2 avril 2026</strong> - <a href="https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1">lien</a> ;</li>
-<li>un atelier du réseau sur la génération de commentaires de graphique par LLM le <strong>mardi 14 avril 2026 à 10h</strong> - <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">lien</a> ;</li>
+<li>Un nouvel <strong>Open Science Meet-up</strong> à propos des <em>replication packages</em> en économie le <strong>2 avril 2026</strong> - <a href="https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1">lien</a> ;</li>
+<li>un atelier du réseau sur la <strong>génération de commentaires de graphique par LLM</strong> le <strong>mardi 14 avril 2026 à 10h</strong> - <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">lien</a> ;</li>
 <li>un appel à contribution pour la conférence uRos du <strong>18 au 20 novembre 2026</strong> à Paris.</li>
 </ul>
-<section id="génération-de-commentaire-de-graphiques-retour-dexpérience-et-pistes-damélioration-à-partir-dun-exemple-sur-les-statistiques-agricoles---mardi-14-avril-14h-paris-dg-insee-et-visio" class="level2">
-<h2 class="anchored" data-anchor-id="génération-de-commentaire-de-graphiques-retour-dexpérience-et-pistes-damélioration-à-partir-dun-exemple-sur-les-statistiques-agricoles---mardi-14-avril-14h-paris-dg-insee-et-visio">Génération de commentaire de graphiques : retour d’expérience et pistes d’amélioration à partir d’un exemple sur les statistiques agricoles - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio</h2>
-<p>Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
-<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés.</p>
+<section id="génération-de-commentaire-de-graphiques-retour-dexpérience-sur-les-statistiques-agricoles-et-pistes-damélioration---mardi-14-avril-14h-paris-dg-insee-et-visio" class="level2">
+<h2 class="anchored" data-anchor-id="génération-de-commentaire-de-graphiques-retour-dexpérience-sur-les-statistiques-agricoles-et-pistes-damélioration---mardi-14-avril-14h-paris-dg-insee-et-visio">Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio</h2>
+<p>Le SSM Agriculture essaye de générer par LLM des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
+<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un <strong>cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés</strong>.</p>
 <p><strong>Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !</p>
 <p>Si vous voulez l’ajouter dans votre agenda, voici une <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics">invitation agenda</a>.</p>
 <p>Les mises à jour seront faites sur la <a href="../../talk/2026-04-ssm-agri/index.html">page de l’événement</a>.</p>
 </section>
 <section id="replication-packages-en-économie---open-science-meet-up---jeudi-2-avril-2026-13h30-visio" class="level2">
-<h2 class="anchored" data-anchor-id="replication-packages-en-économie---open-science-meet-up---jeudi-2-avril-2026-13h30-visio">Replication packages en économie - Open science Meet-up - 📅 jeudi 2 avril 2026 13h30, visio</h2>
+<h2 class="anchored" data-anchor-id="replication-packages-en-économie---open-science-meet-up---jeudi-2-avril-2026-13h30-visio"><em>Replication packages</em> en économie - Open science Meet-up - 📅 jeudi 2 avril 2026 13h30, visio</h2>
 <p>Le prochain Open Science Meet-up de l’Insee portera sur le thème : <strong>Replication packages en économie : préparation, bonnes pratiques et attentes des revues, surtout lorsque les données sont confidentielles.</strong></p>
-<p>La reproductibilité des résultats occupe aujourd’hui une place croissante dans la recherche empirique en économie et dans les politiques éditoriales des revues scientifiques. De nombreuses revues demandent désormais aux auteurs de fournir un replication package, c’est-à-dire l’ensemble des données, du code et de la documentation permettant de reproduire les analyses publiées.</p>
-<p>Lors de ce Meet-Up, <a href="https://www.ilr.cornell.edu/people/lars-vilhuber">Lars Vilhuber</a> (Cornell University), Data Editor à l’American Economic Association, présentera les principes et les bonnes pratiques associés à la préparation et à la diffusion des replication packages. Il reviendra notamment sur les exigences croissantes des revues scientifiques, les standards qui se développent dans la communauté économique et les enjeux de la reproductibilité des travaux empiriques.</p>
-<p>Cette rencontre sera l’occasion d’échanger sur la manière dont ces pratiques contribuent au développement d’une recherche plus transparente et plus ouverte, en particulier dans les domaines de l’analyse économique et statistique.</p>
+<p>Pour s’assurer de la reproducibilité d’une analyse publiée, de nombreuses revues demandent désormais aux auteurs de fournir un <em>replication package</em>, c’est-à-dire l’ensemble des données, du code et de la documentation.</p>
+<p>Lors de ce Meet-Up, <a href="https://www.ilr.cornell.edu/people/lars-vilhuber">Lars Vilhuber</a> (Cornell University), <em>data editor</em> à l’<em>American Economic Association</em>, présentera les principes et les bonnes pratiques associés à la préparation et à la diffusion des <em>replication packages</em>. Il reviendra notamment sur les exigences croissantes des revues scientifiques, les standards qui se développent dans la communauté économique et les enjeux de la reproductibilité des travaux empiriques.</p>
+<p>Cette rencontre sera l’occasion d’échanger sur la manière dont ces pratiques contribuent au <strong>développement d’une recherche plus transparente et plus ouverte</strong>, en particulier dans les domaines de l’analyse économique et statistique.</p>
 <p>Elle s’adresse à toutes celles et ceux qui souhaitent mieux comprendre les enjeux de la reproductibilité des analyses économiques et de la diffusion ouverte des travaux de recherche.</p>
 <p><strong>Rendez-vous le jeudi 2 avril de 13h30 à 14h15 en distanciel à ce <a href="https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1">lien</a></strong>.</p>
 </section>
@@ -69,19 +69,55 @@ sur l&#39;actualité interne du réseau.
 <p>L’Insee accueille l’édition 2026 de la <strong>conférence uRos (use of R in official statistics)</strong> les <strong>18, 19 et 20 novembre 2026</strong> au centre Pierre-Mendès France, à Bercy.</p>
 <p>Cette rencontre annuelle des <strong>utilisateurs de R en Europe et dans le monde</strong> sera l’occasion de valoriser les nombreux investissements en R faits à l’Insee et au sein du SSP. La liste des thèmes ainsi que toutes les informations pratiques sont en ligne sur le <a href="https://r-project.ro/conference2026_FR.html">site de la conférence</a>.</p>
 <p>Si vous souhaitez y <strong>assister</strong>, vous pouvez d’ores et déjà vous inscrire <a href="https://uros2026.sciencesconf.org/registration?lang=fr">en ligne</a>.</p>
-<p>Si vous souhaitez <strong>contribuer</strong>, l’appel à contribution est ouvert jusqu’au <strong>15 juin</strong> sur le site de la conférence. Vous pouvez soumettre :</p>
+<p>Si vous souhaitez <strong>contribuer</strong>, l’appel à contribution va bientôt ouvrir jusqu’au <strong>15 juin</strong> sur le site de la conférence. Vous pourrez soumettre :</p>
 <ol type="i">
 <li>une présentation classique de 15 minutes ;</li>
 <li>une présentation flash de 5 minutes ;</li>
 <li>un tutoriel d’environ 2 heures.</li>
 </ol>
-<p>N’hésitez pas à nous contacter sur <a href="mailto:uros2026@insee.fr">uros2026@insee.fr</a>.</p>
+<p>N’hésitez pas à contacter directement l’organisation de l’événement sur <a href="mailto:uros2026@insee.fr">uros2026@insee.fr</a>.</p>
 </section>
 </section>
 <section id="actualités" class="level1">
 <h1>Actualités</h1>
+<section id="données-tabulaires-le-deep-learning-est-il-devenu-une-alternative-crédible-aux-méthodes-de-boosting" class="level2">
+<h2 class="anchored" data-anchor-id="données-tabulaires-le-deep-learning-est-il-devenu-une-alternative-crédible-aux-méthodes-de-boosting">Données tabulaires: le deep learning est-il devenu une alternative crédible aux méthodes de boosting ?</h2>
+<p><a href="https://m-clark.github.io/posts/2026-03-01-dl-for-tabular-foundational/">Ce billet</a> de blog explique que, si le boosting reste une valeur sûre, plusieurs modèles récents - qu’il s’agisse de deep learning “classique” ou de modèles de <a href="https://arxiv.org/abs/2108.07258">fondation</a> - deviennent désormais réellement compétitifs. L’émergence de benchmarks plus rigoureux et de nouveaux outils facilite par ailleurs la comparaison et la prise en main de ces nouveaux modèles. Le principal frein reste toutefois le passage à l’échelle, qui limite encore leur adoption sur les très grands jeux de données.</p>
+<p>Et pour les séries temporelles ? Le constat est <a href="https://berts-workshop.github.io/">proche</a>: les modèles de fondation progressent, mais les approches plus classiques restent très compétitives, et le principal enjeu est encore celui de l’évaluation, les résultats étant contrastés selon les benchmarks.</p>
+</section>
+<section id="des-pistes-intéressantes-pour-la-recherche-documentaire" class="level2">
+<h2 class="anchored" data-anchor-id="des-pistes-intéressantes-pour-la-recherche-documentaire">Des pistes intéressantes pour la recherche documentaire</h2>
+<p>Le projet <a href="https://github.com/VectifyAI/PageIndex">PageIndex</a> explore une approche de recherche documentaire sans base vectorielle, fondée sur une indexation hiérarchique des documents et une navigation par grand modèle de langage (LLM). Au lieu de découper le texte en <em>chunks</em> (des segments de texte issus du découpage d’un document) puis de faire une recherche par similarité dans une base vectorielle (c’est la méthode du <a href="https://arxiv.org/abs/2005.11401">RAG</a> classique), l’outil transforme un document long en un arbre hiérarchique - une sorte de table des matières enrichie pour les LLM - puis s’appuie sur cette structure pour guider la recherche des passages pertinents. L’objectif est de mieux traiter les documents longs et structurés, pour lesquels une simple recherche par similarité sur des <em>chunks</em> peut manquer de précision ou de contexte. L’approche est prometteuse et a l’intérêt de rendre le parcours de recherche plus lisible et plus traçable.</p>
+<p>Ce <a href="https://www.anthropic.com/engineering/contextual-retrieval">billet</a> d’Anthropic sur le Contextual Retrieval propose une approche pour améliorer la recherche documentaire par RAG classique. L’idée est de conserver le schéma habituel (<em>chunks</em>, <em>embeddings</em>, <a href="https://en.wikipedia.org/wiki/Okapi_BM25">BM25</a>) mais d’ajouter à chaque <em>chunk</em> un court contexte explicatif généré à partir du document complet, afin d’éviter qu’un passage isolé perde les informations qui lui donnent son sens. Le billet indique que cette contextualisation réduit de 49 % les échecs de <em>retrieval</em>, et jusqu’à 67 % lorsqu’on y ajoute une étape de <em>reranking</em>. Le billet rappelle aussi un point utile : pour des bases documentaires “modestes” (moins de 200 000 <em>tokens</em>, soit environ 500 pages), il peut être plus simple de mettre directement tout le corpus dans le prompt, sans passer par l’étape RAG.</p>
+</section>
+<section id="dbt-duckdb-structurer-ses-pipelines-sql-avec-une-infrastructure-légère" class="level2">
+<h2 class="anchored" data-anchor-id="dbt-duckdb-structurer-ses-pipelines-sql-avec-une-infrastructure-légère">dbt + DuckDB: structurer ses pipelines SQL avec une infrastructure légère</h2>
+<p>Les outils <a href="https://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition">dbt + DuckDB</a> permettent de professionnaliser des traitements analytiques locaux. <a href="https://duckdb.org/">DuckDB</a> fournit un moteur SQL très rapide pour interroger et transformer des données, y compris directement depuis des fichiers Parquet. <a href="https://www.getdbt.com/">dbt</a> permet d’ajouter une couche d’organisation : il aide à découper les traitements en étapes claires (sources, <em>staging</em>, tables finales), à gérer les dépendances entre modèles, à documenter les transformations, à tester la qualité des données etc. En d’autres termes, dbt fournit une méthode pour transformer une collection de scripts SQL en pipeline plus lisible, plus reproductible et plus maintenable.</p>
+</section>
+</section>
+<section id="pour-aller-plus-loin-se-former" class="level1">
+<h1>Pour aller plus loin / se former</h1>
+<section id="apprendre-avec-lia" class="level2">
+<h2 class="anchored" data-anchor-id="apprendre-avec-lia">Apprendre avec l’IA</h2>
+<p>Utiliser l’IA pour apprendre, et pas seulement pour accélérer la production de code ? Le dépôt <a href="https://github.com/DrCatHicks/learning-opportunities">Learning Opportunities</a> propose un plugin pour Claude Code qui déclenche de courts exercices de 10 à 15 minutes afin d’éviter l’illusion de compréhension que peuvent créer les assistants de code. Une approche intéressantes pour ceux qui souhaite (continuer à) se former à l’heure du coding assisté par IA.</p>
+</section>
+<section id="microgpt-visualized-une-ressource-pour-comprendre-ce-quil-y-a-dans-un-gpt" class="level2">
+<h2 class="anchored" data-anchor-id="microgpt-visualized-une-ressource-pour-comprendre-ce-quil-y-a-dans-un-gpt">MicroGPT Visualized: une ressource pour comprendre ce qu’il y a dans un GPT</h2>
+<p>Pour mieux comprendre ce qui se passe réellement derrière les mots “<em>attention</em>”, “<em>transformer</em>”, “résidus” ou “<em>KV cache</em>”, <a href="https://microgpt.jtauber.com">MicroGPT Visualized</a> est une excellente découverte. Le site reprend le micro-GPT en Python d’Andrej Karpathy et le décompose en six étapes, du simple modèle bigramme jusqu’au <em>transformer</em> complet optimisé avec <em>Adam</em>, le tout avec schémas, animations et explications progressives.</p>
+</section>
+<section id="master-machine-learning-with-scikit-learn" class="level2">
+<h2 class="anchored" data-anchor-id="master-machine-learning-with-scikit-learn">Master Machine Learning with scikit-learn</h2>
+<p>Le livre en ligne <a href="https://mlbook.dataschool.io/" title="Master Machine Learning with scikit-learn">Master Machine Learning with scikit-learn</a> de Kevin Markham est une ressource très intéressante pour développer ou consolider ses bonnes pratiques en machine learning.</p>
+</section>
+</section>
+<section id="fun" class="level1">
+<h1>Fun</h1>
+<section id="mapinou-un-jeu-mobile-pour-alimenter-la-recherche-et-mieux-comprendre-la-navigation-cartographique" class="level2">
+<h2 class="anchored" data-anchor-id="mapinou-un-jeu-mobile-pour-alimenter-la-recherche-et-mieux-comprendre-la-navigation-cartographique">Mapinou: un jeu mobile pour alimenter la recherche et mieux comprendre la navigation cartographique</h2>
+<p>Petite respiration carto ce mois-ci avec <a href="https://cartonumerique.blogspot.com/2026/03/mapinou.html">Mapinou</a>, un jeu mobile gratuit développé par une équipe de recherche du LASTIG (IGN) dans le cadre du projet européen LostInZoom. En guidant un lapin à travers une carte de France multi-échelles, les joueurs produisent des données anonymes par leurs interactions avec la carte - zooms, déplacements, clics - que les chercheurs utilisent pour mieux comprendre les phénomènes de désorientation après zoom et concevoir des interfaces cartographiques plus fluides.</p>
 
 
+</section>
 </section>
 
  ]]></description>
@@ -457,7 +493,7 @@ sur l&#39;actualité interne du réseau.
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
 <ol>
 <li id="fn1"><p>Ils ont même eu la bonne idée d’avoir une deuxième panne, plus rapidement réglée, le jour de la rédaction de cette infolettre 🙃.↩︎</p></li>
@@ -507,7 +543,7 @@ sur l&#39;actualité interne du réseau.
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -695,7 +731,7 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -780,7 +816,7 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1026,7 +1062,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-hendrycks2021measuring" class="csl-entry">
 Hendrycks, Dan, Collin Burns, Steven Basart, et al. 2021. <em>Measuring Massive Multitask Language Understanding</em>. <a href="https://arxiv.org/abs/2009.03300">https://arxiv.org/abs/2009.03300</a>.
 </div>
@@ -1229,7 +1265,7 @@ globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1383,7 +1419,7 @@ Tip
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Des éléments plus techniques sur la gestion de la volumétrie des données
+<span class="screen-reader-only">Astuce</span>Des éléments plus techniques sur la gestion de la volumétrie des données
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -1521,7 +1557,7 @@ Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gou
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -5223,7 +5259,7 @@ font-style: inherit;">;</span></span>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Tip
+Astuce
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -6235,7 +6271,7 @@ new Runtime().module(define, name => {
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
 <ol>
 <li id="fn1"><p>Les actions de communication du mois de janvier ont permis d’augmenter sensiblement le nombre de personnes dans cette liste (340 début janvier). Un retour spécial sur le mois de janvier sera l’occasion idéale pour une autre rétrospective quantitative.↩︎</p></li>

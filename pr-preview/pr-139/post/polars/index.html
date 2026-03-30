@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-02-10">
 <meta name="description" content="Polars, une alternative moderne et fluide à Pandas">
 
 <title>Polars, une alternative fraîche à Pandas – SSPHub</title>
@@ -94,17 +93,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <style>
@@ -139,8 +138,8 @@ background: #6886bb;
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -227,7 +226,7 @@ background: #6886bb;
   <div class="quarto-title-meta">
 
       <div>
-      <div class="quarto-title-meta-heading">Authors</div>
+      <div class="quarto-title-meta-heading">Auteur·rice·s</div>
       <div class="quarto-title-meta-contents">
                <p>Romain Tailhurat </p>
                <p>Lino Galiana </p>
@@ -235,9 +234,9 @@ background: #6886bb;
     </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">February 10, 2023</p>
+        <p class="date">10 février 2023</p>
       </div>
     </div>
     
@@ -250,7 +249,7 @@ background: #6886bb;
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
   <li><a href="#les-secrets-de-la-performance" id="toc-les-secrets-de-la-performance" class="nav-link active" data-scroll-target="#les-secrets-de-la-performance">Les secrets de la performance</a>
@@ -310,7 +309,7 @@ background: #6886bb;
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Exécution de la requête</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> q.collect()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> q.collect()</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Avec cette syntaxe, les connaisseurs de <code>Pyspark</code> retrouveront facilement leurs petits (ours 🐻).</p>
 <p>On peut toujours lire de manière plus directe (en mode <em>eager</em>, <em>“impatient”</em>) en utilisant la fonction <code>read_csv</code>, et ensuite appliquer des transformations optimisables en glissant habilement <code>lazy</code> :</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pl.read_csv(<span class="st">"iris.csv"</span>)</span>
@@ -319,7 +318,7 @@ background: #6886bb;
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  .<span class="bu">filter</span>(pl.col(<span class="st">"sepal_length"</span>) <span class="op">&gt;</span> <span class="dv">5</span>)</span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  .groupby(<span class="st">"species"</span>)</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  .agg(pl.<span class="bu">all</span>().<span class="bu">sum</span>())</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  .collect()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  .collect()</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <p><code>Polars</code> fonctionne également très bien avec le format <code>Parquet</code>, comme illustré dans le <em>notebook</em> qui accompagne ce <em>post</em>.</p>
 </section>
 <section id="parallélisation" class="level2">
@@ -342,7 +341,7 @@ background: #6886bb;
 <h2 class="anchored" data-anchor-id="calculs-out-of-memory">Calculs <em>out of memory</em></h2>
 <p><code>Polars</code> travaille vite mais présente aussi l’avantage de lire naturellement des jeux de données hors des limites de la mémoire de l’ordinateur grâce à <a href="https://www.youtube.com/watch?v=3-C0Afs5TXQ">sa capacité de lire en flux</a> (méthode qu’on appelle le <em>streaming</em>).</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># La même requête que tout à l'heure va lire le fichier "en flux"</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> q.collect(streaming<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> q.collect(streaming<span class="op">=</span><span class="va">True</span>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <p>De plus, <code>Polars</code> lit nativement les fichiers <code>Parquet</code> qui par ses propriétés permet d’aller beaucoup plus vite que le CSV !</p>
 </section>
 </section>
@@ -358,7 +357,7 @@ background: #6886bb;
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  .agg(</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    pl.count().alias(<span class="st">"NB_STATION_SERVICE"</span>)</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  .collect()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  .collect()</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <p>On retrouve une sémantique d’opérations de haut niveau qui s’enchaînent à la manière de <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_tidyverse#comment-utiliser-lop%C3%A9rateur-pipe-avec-le-tidyverse">ce que l’on peut faire en <code>dplyr</code></a>.</p>
 </section>
 <section id="les-autres-concurrents" class="level1">
@@ -411,12 +410,12 @@ background: #6886bb;
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

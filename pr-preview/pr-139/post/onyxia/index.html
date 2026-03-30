@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-05-10">
 <meta name="description" content="Les technologies cloud sont incontournables dans l’écosystème de la donnée. Pour ne pas se rendre dépendante de fournisseurs de services externes, l’Insee a développé un datalab avec des technologies à la pointe pour ses data scientists. Le code source de celle-ci a été ouvert dans le cadre du projet Onyxia. Ce projet permet de fédérer une large communauté d’utilisateurs mais aussi d’organisations intéressées par le développement d’une plateforme souveraine de data science.">
 
 <title>Onyxia: l’infrastructure cloud mère des dragons – SSPHub</title>
@@ -78,17 +77,17 @@ div.csl-indent {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <style>
@@ -123,8 +122,8 @@ background: #6886bb;
     <span class="navbar-title">SSPHub</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -210,16 +209,16 @@ background: #6886bb;
   <div class="quarto-title-meta">
 
       <div>
-      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-heading">Auteur·rice</div>
       <div class="quarto-title-meta-contents">
                <p>Lino Galiana </p>
             </div>
     </div>
       
       <div>
-      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 10, 2023</p>
+        <p class="date">10 mai 2023</p>
       </div>
     </div>
     
@@ -232,7 +231,7 @@ background: #6886bb;
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
+    <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
   <li><a href="#contexte" id="toc-contexte" class="nav-link active" data-scroll-target="#contexte">Contexte</a></li>
@@ -262,7 +261,7 @@ background: #6886bb;
 <p>Ce <em>post</em> de blog a pour objectif de présenter la raison d’être d’<code>Onyxia</code>, sa génèse et les solutions qu’apporte cette infrastructure à des irritants classiques des projets novateurs de data science.</p>
 <section id="contexte" class="level2">
 <h2 class="anchored" data-anchor-id="contexte">Contexte</h2>
-<p>L’écosystème de la data science est en mouvement accéléré depuis 10 ans et le rôle du <em>data scientist</em> dans les organisations valorisant de la donnée évolue continuellement <span class="citation" data-cites="davenport2022data">(<a href="#ref-davenport2022data" role="doc-biblioref">Davenport and Patil 2022</a>)</span>. Les data scientists modernes sont amenés à utiliser de plus en plus de langages et doivent être capables de maîtriser plusieurs architectures informatiques. La frontière est ainsi moins nette que par le passé entre statisticiens et informaticiens. De plus, les innovations récentes dans le monde du développement logiciel, notamment l’adoption massive de l’approche <code>DevOps</code> - approche qui consiste à automatiser la production de livrables dès la conception du prototype - a également fait évoluer les pratiques des data scientists.</p>
+<p>L’écosystème de la data science est en mouvement accéléré depuis 10 ans et le rôle du <em>data scientist</em> dans les organisations valorisant de la donnée évolue continuellement <span class="citation" data-cites="davenport2022data">(<a href="#ref-davenport2022data" role="doc-biblioref">Davenport et Patil 2022</a>)</span>. Les data scientists modernes sont amenés à utiliser de plus en plus de langages et doivent être capables de maîtriser plusieurs architectures informatiques. La frontière est ainsi moins nette que par le passé entre statisticiens et informaticiens. De plus, les innovations récentes dans le monde du développement logiciel, notamment l’adoption massive de l’approche <code>DevOps</code> - approche qui consiste à automatiser la production de livrables dès la conception du prototype - a également fait évoluer les pratiques des data scientists.</p>
 <p>Ce besoin de ressources informatiques croissantes, de flexibilité dans le prototypage de solutions informatiques et l’évolution des pratiques consistant à mettre à disposition en continu des livrables ont eu des implications importantes sur les architectures informatiques dominantes dans l’écosystème de la donnée. Pour répondre au besoin croissant de puissance de traitement, les serveurs partagés, organisés sous forme de <em>clusters</em>, se sont développés dans de nombreuses organisations. Après avoir connue son heure de gloire au début des années 2010, l’infrastructure <a href="https://openclassrooms.com/fr/courses/4467481-creez-votre-data-lake/4509426-decouvrez-le-systeme-de-fichiers-distribue-hdfs"><code>HDFS</code> (<em>Hadoop Distributed File System</em>)</a>, qui reposait sur des <em>clusters</em> où les données et la puissance de traitement étaient distribuées et collocalisées, a laissé place à des infrastructures plus <em>scalables</em>, basées sur l’approche de la conteneurisation.</p>
 </section>
 <section id="de-hdfs-à-la-conteneurisation" class="level2">
@@ -407,7 +406,7 @@ Fallback text here for unsupporting browsers, of which there are scant few.
 <h2 class="anchored" data-anchor-id="références">Références</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-davenport2022data" class="csl-entry" role="listitem">
-Davenport, Thomas H, and DJ Patil. 2022. <span>“Is Data Scientist Still the Sexiest Job of the 21st Century?”</span> <em>Harvard Business Review</em>. <a href="https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century">https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century</a>.
+Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still the Sexiest Job of the 21st Century?&nbsp;»</span> <em>Harvard business review</em>. <a href="https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century">https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century</a>.
 </div>
 </div>
 
@@ -415,7 +414,7 @@ Davenport, Thomas H, and DJ Patil. 2022. <span>“Is Data Scientist Still the Se
 </section>
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
 <ol>
 <li id="fn1"><p>On peut ajouter que cette question n’est pas exclusivement technologique. Même s’il est volontairement polémique, l’article de <a href="https://motherduck.com/blog/big-data-is-dead/">Jordan Tigani “Big Data is Dead”</a> illustre bien le changement de paradigme du monde de la <em>tech</em>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -446,12 +445,12 @@ Davenport, Thomas H, and DJ Patil. 2022. <span>“Is Data Scientist Still the Se
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
