@@ -7,38 +7,47 @@ categories:
 - DARES
 
 description: |
-  Le __18 mars (14h00 - 15h30)__, la DARES viendra présenter leur travail sur les conventions collectives ou accords d'entreprise.
+  Le __18 mars (14h00 - 15h30)__, la DARES a présenté leur travail sur les conventions collectives ou accords d'entreprise.
 
 date: '2026-03-18'
 
 image: logo_Dares.png
 ---
 
-L'atelier sera à la fois en présentiel à l'Insee (salle 4C-358) et en visio.
-Les détails sont [cet élément de calendrier](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/20260318_SSPHub_DARES_accords_entreprise.ics).
+Les accords d'entreprise représente une **importe quantité d'information librement accessible**.
+Ces accords permettent d'analyser les décisions prises au niveau le plus fin de l'économie.
+Ils présentent cependant plusieurs enjeux méthodologiques puisqu'ils peuvent être assez longs (jusqu'à des dizaines de page) et représentent une importante masse de données à analyser.
+Quelles techniques mettre en oeuvre alors pour détecter les thémes abordés par ces accords et en extraire des informations ?
+
+Les méthodes mises en place pour répondre à ces questions incluent :
+
+- l'**analyse fréquentielle**, après nettoyage des données ;
+- la modélisation thématique en mobilisant les techniques **LDA** ou **BERTopic** ;
+- enfin la capacité à **extraire de l'information** (comme le nombre d'heures supplémentaires) en utilisant les récentes évolutions qu'ont apporté les **RAG et des LLM**.
+
+L'atelier était en présentiel à l'Insee (salle 4C-358) et en visio.
 
 Pour plus d'information, la Dares a présenté son travail aux [Journées de méthodologie statistique de 2025](https://journees-methodologie-statistique.insee.net/analyse-textuelle-de-documents-longs-cas-des-accords-dentreprise/).
 
-<!--
-Les détails de l'atelier sont disponible
-
 **Replay de la présentation :**
 
-{{< video "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4" >}}
+{{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/2026-03_dares_extraction.mp4 >}}
 
+**Présentation :**
 
-<iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
-    <p>Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf">Download the PDF instead.</a></p>
-</iframe>
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode yaml code-with-copy" src="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide"></iframe></div>
 
 ```{ojs}
 //| echo: false
 createButton(
-  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf",
-  "Télécharger les slides"
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/Analyse_textuelle_documents_longs.pdf",
+  "Télécharger les slides en pdf"
 )
 ```
+
+
+
+La présentation est aussi disponible [en ligne](https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide).
 
 
 ```{ojs}
@@ -53,5 +62,3 @@ function createButton(slides, message="Télécharger les slides"){
   return button
 }
 ```
-
--->

@@ -22,7 +22,8 @@ listing:
       - "date desc"
     page-size: 6
   - id: newsletters
-    contents: infolettre/infolettre_*/**/index.qmd
+    contents: 
+     - infolettre/infolettre_*/**/index.qmd
     type: grid
     sort:
       - "number desc"
