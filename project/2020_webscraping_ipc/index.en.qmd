@@ -51,6 +51,8 @@ categories:
 | **Project results** | The study made it possible to increase the samples used (in terms of price surveys and characteristics) by collecting data online (*webscraping*) and to set up a procedure for automatically selecting the characteristics that explain prices using automatic learning (random forest, Lasso-type regression). <br> Ultimately, 15 characteristics were selected to estimate the quality effect, such as brand, RAM, storage capacity, brand of processor, processor frequency, screen resolution, etc. The forms used by the surveyors have been amended to include the relevant characteristics that determine the price of computers.  |
 | **Project products and documentation** | - [Webscraping prices to estimate hedonic models and extensions to other predictive methods](https://stats.unece.org/ottawagroup/download/f614.pdf), Ottawa Group on Price Indices 2019     |
 
+# Similar projects
+
 ## Related to webscraping and IPC
 Online data collection (web scraping) is not only used in the production of inflation figures.
 It is also used in other areas and by other entities within the public statistics service besides INSEE.
