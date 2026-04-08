@@ -1,3 +1,11 @@
+# Code du site du réseau du SSPHub, le réseau des data scientists du SSP (english below)
+
+Ce repo est le repo du [`SSPHub`](https://ssphub.netlify.app.), le site qui permet de partager du contenu entre data scientists du SSP.
+Il permet aussi de présenter des projets innovants portés au sein du SSP.
+
+Le site est ouvert à toutes les contributions.
+Pour savoir comment contribuer, veuillez vous référer aux indications données ci-dessous.
+
 # Website of the data scientists of the French Official Statistical System
 
 Code of the [`SSPHub`](https://ssphub.netlify.app.), a website for data scientists of the French Official Statistical System.
