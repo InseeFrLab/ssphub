@@ -28,6 +28,7 @@ website:
   # site-url: https://user-nicolastlm-497263-0.user.lab.sspcloud.fr/proxy/4321/  # For dev
   repo-url: https://github.com/InseeFrLab/ssphub
   repo-actions: [source, issue, edit]
+  llms-txt: true
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
