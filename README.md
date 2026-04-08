@@ -6,6 +6,8 @@ Il permet aussi de présenter des projets innovants portés au sein du SSP.
 Le site est ouvert à toutes les contributions.
 Pour savoir comment contribuer, veuillez vous référer aux indications données ci-dessous.
 
+_Des assistants d'IA générative ont été utilisés à différents stades du processus._
+
 # Website of the data scientists of the French Official Statistical System
 
 Code of the [`SSPHub`](https://ssphub.netlify.app.), a website for data scientists of the French Official Statistical System.
@@ -87,13 +89,19 @@ Example
 Rscript scripts/2_translate.R 2023_doremifasol
 ```
 
-Have a careful check with the proposed translated webpage. The automated translation often
-adds a backslash or "-" at some spots that creates bugs when rendering the website. For example : - `description: | -` for `description: |` - `{{\< fa brands github >}}` for `{{< fa brands github >}}` - Markdown table structure contains many whitespace and ---
+Have a careful check with the proposed translated webpage.
+The automated translation often
+adds a backslash or "-" at some spots that creates bugs when rendering the website.
+For example :
+
+- `description: | -` for `description: |` - `{{\< fa brands github >}}` for `{{< fa brands github >}}`
+- Markdown table structure contains many whitespace and ---
+
 The translate programm removes some issues but not all. It deletes all "\", multiple spaces and multiple "----".
 But some ENTER remain, and it doesn't translate categories of listing.
 A careful look is needed :
 
-- listing categories in the YAML part must be translated
+- listing categories in the YAML part must be translated.
 - inside Qmd table to ensure that a row is always coded in 1 line of code.
 
 ### Publish
@@ -107,26 +115,9 @@ Thanks to :
 - [babelquarto](https://docs.ropensci.org/babelquarto/)
 - Quarto
 
-# Personnal
-
-## To do
-
-- speed up R set up in Github actions (with renv? / dependencies set to '"hard"'?)
-- move image to S3 to have smaller repo (impact on newsletter download image function)
-- have a developpement Quarto profile ?
-- doublon blog/polars/polars-tuto.qmd et additional/notebooks
-
-## Useful
-
-- init.sh ??
-
-# Usage de l'IA
-
-_Des assistants d'IA générative ont été utilisés à différents stades du processus._
-
 # How to
 
-## faire une infolettre
+## write a newsletter
 
 Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvré du mois
 
