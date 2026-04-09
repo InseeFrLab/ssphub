@@ -52,6 +52,14 @@ If a pull request (PR) is opened, a preview of the website is automatically gene
 
 ## How to add an innovative project
 
+When adding a new project, you must:
+
+- initialize a new project;
+- translate the project (French and English);
+- check with the preview and render.
+
+### Initialize a new project
+
 Projects can be added to the website using Python. Use the following commands to generate a new project folder and file:
 
 ```bash
@@ -122,14 +130,15 @@ Rscript scripts/2_translate.R 2022_JOCAS
 
 ## How to write a newsletter
 
-Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvré du mois
+Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvré du mois.
+L'infolettre est rédigée uniquement en français.
 
 **1 - Préparer la veille:**
 
 - Mettre à jour les articles issus du groupe de veille à partir du dépôt [ssphub_veille](https://github.com/SSPHub/ssphub_veille).
-- Regarder les sujets possibles parmi la liste des articles issus du groupe de veille sur Grist (exemples : OCR, répartition des articles).
+- Regarder les sujets possibles parmi la liste des articles issus du groupe de veille sur Grist.
 
-**2 - Inclure la veille dans la newsletter:**
+**2 - Initialiser la newsletter:**
 
 - Depuis le dossier `ssphub`, lancer :
 
@@ -137,11 +146,15 @@ Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvr�
   bash scripts/init_infolettre.sh
   ```
 
-  Cela déterminera le nouveau numéro de l'infolettre, créera une branche nommée `infolettre_27`, créera un dossier `infolettre/infolettre_27` et y copiera le template, puis committera le tout. Vous pouvez spécifier le numéro de l'infolettre en indiquant :
+  Cela déterminera le nouveau numéro de l'infolettre, créera une branche nommée `infolettre_27`,
+  créera un dossier `infolettre/infolettre_27` et y copiera le template, puis committera le tout.
+  Vous pouvez spécifier le numéro de l'infolettre en indiquant :
 
   ```bash
   bash scripts/init_infolettre.sh 27
   ```
+
+**3 - Inclure la veille et rédiger la newsletter:**
 
 - Dans l'infolettre initialisée (`infolettre/infolettre_27/index.qmd`), rédiger le fichier `.qmd` avec :
   - La veille
@@ -149,24 +162,35 @@ Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvr�
   - La dataviz
   - Tout autre sujet
 
-- Une fois l'infolettre prête, faire une PR sur `main` pour relecture. Un site de preview sera déployé (lien indiqué automatiquement en commentaire dans la PR).
+- Une fois l'infolettre prête, faire une PR sur `main` pour relecture.
+  Un site de preview sera déployé (lien indiqué automatiquement en commentaire dans la PR).
 - Mettre à disposition l'infolettre sur le site du SSPHub en mergeant la branche sur `main`.
 - Envoyer l'infolettre par email et Tchap avec les outils du dépôt [newsletter_tools](https://github.com/SSPHub/newsletter_tools).
 
-## How to add files to S3 storage
+_Cf._ les readme des repo :
+
+- https://github.com/SSPHub/newsletter_tools
+- https://github.com/SSPHub/ssphub_veille
+
+## How to add files to SSPHub's S3 storage
+
+To avoid files being lost when one's SSPHub account is updated on the SSPCloud,
+website material must be stored in the SSPHub's S3 storage.
 
 ### Config
 
-The easiest way to configure S3 access is to switch to the S3 configuration before launching the SSPCloud service. This avoids the need to manually initialize the connection.
+**Recommended configuration**
+The easiest way to configure SSPHub's S3 access is to switch to the S3 configuration before launching the SSPCloud service.
+This avoids the need to manually initialize the connection.
 
-If you prefer to configure S3 manually, you will need the following secrets:
+**Manual configuration**
+If you prefer to configure S3 manually, you will need the following secrets from one of the admin of SSPHub:
 
 - `S3_SSPHUB_ACCESS_KEY`
 - `S3_SSPHUB_SECRET_ACCESS_KEY`
-- `S3_SSPHUB_BUCKET`
 - `AWS_ENDPOINT_URL` (already configured in SSPCloud)
 
-Initialize the connection using the Minio client:
+You will then need to initialize the connection using the Minio client:
 
 ```bash
 mc alias set s3ssphub $AWS_ENDPOINT_URL $S3_SSPHUB_ACCESS_KEY $S3_SSPHUB_SECRET_ACCESS_KEY
@@ -174,23 +198,26 @@ mc alias set s3ssphub $AWS_ENDPOINT_URL $S3_SSPHUB_ACCESS_KEY $S3_SSPHUB_SECRET_
 
 ### Use
 
-Once configured, you can use the Minio client to interact with S3 via the command line. Replace `s3` with `s3ssphub` if you are using the second configuration option.
+Once configured, you can use the Minio client to interact with S3 via the command line.
+You can check your Minio config with `mc alias list` and the list of minio aliases will be echoed.
+
+Replace `s3` with `s3ssphub` in the above examples if you are using the manual configuration.
 
 - **List files:**
 
   ```bash
-  mc ls --recursive s3/$S3_SSPHUB_BUCKET/
+  mc ls --recursive s3/ssphub/
   ```
 
 - **Copy files to S3:**
 
   ```bash
-  mc cp ./file.txt s3/$S3_SSPHUB_BUCKET/dossier/mon_fichier.txt
+  mc cp ./file.txt s3/ssphub/dossier/mon_fichier.txt
   ```
 
 - **Delete files from S3:**
   ```bash
-  mc rm s3/$S3_SSPHUB_BUCKET/images/photo.jpg
+  mc rm s3/ssphub/images/photo.jpg
   ```
 
 ## How to publish
