@@ -27,9 +27,7 @@ To get started with this repository, the more convenient is to have :
 
 Contribution guidelines are detailed in the [`contributing.md`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/CONTRIBUTING.md) file. Please refer to this document for instructions on how to submit changes, report issues, or suggest new features.
 
-## How to
-
-### Render / preview when coding
+## How to render / preview when coding
 
 To render or preview the website during development, you can use the following commands:
 
@@ -52,7 +50,7 @@ To render or preview the website during development, you can use the following c
 
 If a pull request (PR) is opened, a preview of the website is automatically generated. The link to this preview is available in the PR details on GitHub. Every push to the remote repository will automatically update the website preview.
 
-### Add an innovative project
+## How to add an innovative project
 
 Projects can be added to the website using Python. Use the following commands to generate a new project folder and file:
 
@@ -68,7 +66,7 @@ cd scripts
 uv run 1_template.py "2022_JOCAS"
 ```
 
-#### Harmonization of categories
+### Harmonization of categories
 
 When creating a project, have a careful look at categories.
 If you create a new category, perform a global "search and replace" to add this category to all relevant past listings, ensuring consistency across the previous projects.
@@ -89,7 +87,7 @@ For convenience, you can introduce code snippets for the YAML section to ensure 
 	},
 ```
 
-#### Translate a page to English
+### Translate a page to English
 
 A project webpage has to be written in French (a `index.qmd` file) and in English (a `index.en.qmd` file).
 You can translate manually a page to English or use automated translation tool.
@@ -122,22 +120,7 @@ Rscript scripts/2_translate.R 2022_JOCAS
   - Listing categories in the YAML section **must be translated**.
   - Ensure that each row in the Qmd table is coded in a single line.
 
-### Publish
-
-Publishing is fully automated using Continuous Integration (CI) via the [`prod.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/prod.yaml) workflow file. Any changes merged into the `main` branch will automatically trigger a deployment of the updated website.
-
-The [`dev.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/dev.yaml) workflow file deploys an automated preview on Github pages when a pull request targetting the main branch is opened.
-
-# Credits
-
-Special thanks to:
-
-- [babelquarto](https://docs.ropensci.org/babelquarto/)
-- Quarto
-
-# How to
-
-## Write a newsletter
+## How to write a newsletter
 
 Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvré du mois
 
@@ -170,7 +153,7 @@ Deadline pour envoi en validation (n1) : une semaine avant le dernier jour ouvr�
 - Mettre à disposition l'infolettre sur le site du SSPHub en mergeant la branche sur `main`.
 - Envoyer l'infolettre par email et Tchap avec les outils du dépôt [newsletter_tools](https://github.com/SSPHub/newsletter_tools).
 
-## Add files to S3 storage
+## How to add files to S3 storage
 
 ### Config
 
@@ -209,3 +192,16 @@ Once configured, you can use the Minio client to interact with S3 via the comman
   ```bash
   mc rm s3/$S3_SSPHUB_BUCKET/images/photo.jpg
   ```
+
+## How to publish
+
+Publishing is fully automated using Continuous Integration (CI) via the [`prod.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/prod.yaml) workflow file. Any changes merged into the `main` branch will automatically trigger a deployment of the updated website.
+
+The [`dev.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/dev.yaml) workflow file deploys an automated preview on Github pages when a pull request targetting the main branch is opened.
+
+# Credits
+
+Special thanks to:
+
+- [babelquarto](https://docs.ropensci.org/babelquarto/)
+- Quarto
