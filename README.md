@@ -108,7 +108,7 @@ Rscript 2_translate.R project_subdir
 **Example:**
 
 ```bash
-Rscript scripts/2_translate.R 2023_doremifasol
+Rscript scripts/2_translate.R 2022_JOCAS
 ```
 
 **Important Notes:**
@@ -119,14 +119,14 @@ Rscript scripts/2_translate.R 2023_doremifasol
   - `{{\< fa brands github >}}` instead of `{{< fa brands github >}}`
   - Markdown tables may contain excessive whitespace or incorrect separators.
 - The translation script removes some issues (e.g., extra quotes, multiple spaces, or excessive `-`), but manual review is still necessary:
-  - Listing categories in the YAML section must be translated.
-  - Ensure that each row in a Qmd table is coded in a single line.
+  - Listing categories in the YAML section **must be translated**.
+  - Ensure that each row in the Qmd table is coded in a single line.
 
 ### Publish
 
-Publishing is fully automated using Continuous Integration (CI) via the [`prod.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/prod.yaml) workflow file. Any changes merged into the main branch will automatically trigger a deployment of the updated website.
+Publishing is fully automated using Continuous Integration (CI) via the [`prod.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/prod.yaml) workflow file. Any changes merged into the `main` branch will automatically trigger a deployment of the updated website.
 
-The [`dev.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/dev.yaml) workflow file deploys an automated preview on Github pages when a pull request is opened.
+The [`dev.yaml`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/.github/workflows/dev.yaml) workflow file deploys an automated preview on Github pages when a pull request targetting the main branch is opened.
 
 # Credits
 
