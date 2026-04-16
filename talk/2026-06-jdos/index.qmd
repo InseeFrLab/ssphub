@@ -10,7 +10,7 @@ description: |
   Programme et modalités d'inscription aux journées de contribution à l'open source en lien avec la data science
 
 date: '2026-06-16'
-image: ?
+image: jdos.png
 echo: false
 
 ---
@@ -37,7 +37,7 @@ L'agenda plus détaillé est en construction mais voici les détails des journé
 Les différents projets à date sont :
 
 - [Active Tigger](https://www.css.cnrs.fr/active-tigger/) : une application de labellisation de données textuelles, proposant aussi des techniques d'active learning, et permettant d'entraîner des modèles de classification textuelle (CREST). Le repo lié est [ici](https://github.com/emilienschultz/activetigger/) ;
-- [SNDSTools]() : projet pour faciliter l’utilisation des données du système national de données de santé (SNDS) (Inria - Insee). Le repo lié est [ici](https://sndstoolers.github.io/sndsTools/) ;
+- [SNDSTools](https://sndstoolers.github.io/sndsTools/) : projet pour faciliter l’utilisation des données du système national de données de santé (SNDS) (Inria - Insee). Le repo lié est [ici](https://github.com/SNDStoolers/sndsTools) ;
 - [CanaR](https://github.com/Romanovytch/canar) : projet visant à déployer en autonomie des chatbots personnalisés avec du RAG via un outil de commande.
 - une liste de sujets à traiter en autonomie, qui sera présentée le jour J.
 
