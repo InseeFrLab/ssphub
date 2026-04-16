@@ -50,6 +50,7 @@ website:
         href: https://github.com/InseeFrLab/ssphub
   site-url: https://ssphub.netlify.app/
   description: "Blog du réseau des data scientists de la statistique publique"
+  llms-txt: true
 
 format:
   html:
