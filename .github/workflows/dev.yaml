@@ -1,53 +1,53 @@
 name: Build and deploy preview
 
 on:
-  workflow_dispatch:  # To allow for manuel trigger of this workflow. Cf
+  workflow_dispatch: # To allow for manuel trigger of this workflow. Cf
   # https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   pull_request:
     types:
       - opened
       - reopened
-      - synchronize  # When the ref of the branch is updated (= commit to the branch to merge)
-      - closed   # Including closed to remove preview when PR is closed.
+      - synchronize # When the ref of the branch is updated (= commit to the branch to merge)
+      - closed # Including closed to remove preview when PR is closed.
     branches:
-      - main  # PR to main only
+      - main # PR to main only
 
 env:
   PREVIEW_BRANCH: gh-pages
 
 concurrency:
-  group: preview-${{ github.ref }}  # preview followed by the reference of the branch or tag that triggered the workflow
+  group: preview-${{ github.ref }} # preview followed by the reference of the branch or tag that triggered the workflow
   cancel-in-progress: true
 
 jobs:
   build-render:
-    if: github.event.action != 'closed'  # If closing the PR, no publishing
+    if: github.event.action != 'closed' # If closing the PR, no publishing
     runs-on: ubuntu-latest
     # To cancel previous actions that could run on this PR
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v5
+      - name: Check out repository # https://github.com/actions/checkout
+        uses: actions/checkout@v6
         with:
-          fetch-depth: 0  # To enable full access to Git repo
-          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
-          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
+          fetch-depth: 0 # To enable full access to Git repo
+          ref: ${{ github.event.pull_request.head.ref }} # Reference of the commit to checkout to. To ensure it's the one of the PR
+          repository: ${{github.event.pull_request.head.repo.full_name}} # Reference to the branch to checkout to. Useful with PR from forks
 
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
-      - name: Configure safe.directory  # Workaround for actions/checkout#760
+      - name: Configure safe.directory # Workaround for actions/checkout#760
         run: git config --global --add safe.directory /__w/ssphub/ssphub
 
       - name: Install npm
         if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
         uses: actions/setup-node@v2
         with:
-          node-version: '18'
+          node-version: "18"
 
-      - uses: actions/setup-python@v4  # for post on onyxia
+      - uses: actions/setup-python@v6 # for post on onyxia  https://github.com/actions/setup-python?tab=readme-ov-file
         with:
-          python-version: '3.10' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          python-version: "3.10" # Version range or exact version of a Python version to use, using SemVer's version range syntax
 
-      - run: pip install jupyter nbformat  # for post on onyxia
+      - run: pip install jupyter nbformat # for post on onyxia
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -74,15 +74,15 @@ jobs:
             <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br> </h6>
 
   delete-preview:
-    if: github.event.action == 'closed'  # Only run when PR is closed
+    if: github.event.action == 'closed' # Only run when PR is closed
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v5
         with:
-          fetch-depth: 0  # To enable full access to Git repo
-          ref: ${{ github.event.pull_request.head.ref }}  # Reference of the commit to checkout to. To ensure it's the one of the PR
-          repository: ${{github.event.pull_request.head.repo.full_name}}  # Reference to the branch to checkout to. Useful with PR from forks
+          fetch-depth: 0 # To enable full access to Git repo
+          ref: ${{ github.event.pull_request.head.ref }} # Reference of the commit to checkout to. To ensure it's the one of the PR
+          repository: ${{github.event.pull_request.head.repo.full_name}} # Reference to the branch to checkout to. Useful with PR from forks
 
       - name: Remove preview
         id: remove-preview
@@ -97,5 +97,3 @@ jobs:
           message: |
             Preview removed because the pull request was closed.
             ${{ steps.remove-preview.outputs.action-start-time }}
-
-

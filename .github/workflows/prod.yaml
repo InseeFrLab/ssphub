@@ -9,23 +9,23 @@ name: CI - Quarto Publish
 
 # Cancel previous workflow of ci that could be running
 concurrency:
-  group: ci-${{ github.ref }}  # preview followed by the reference of the branch or tag that triggered the workflow
+  group: ci-${{ github.ref }} # preview followed by the reference of the branch or tag that triggered the workflow
   cancel-in-progress: true
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v3
+      - name: Check out repository # https://github.com/actions/checkout
+        uses: actions/checkout@v6
 
-      - uses: actions/setup-python@v4
+      - uses: actions/setup-python@v6 # for post on onyxia  https://github.com/actions/setup-python?tab=readme-ov-file
         with:
-          python-version: '3.10' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          python-version: "3.10" # Version range or exact version of a Python version to use, using SemVer's version range syntax
+
       - run: pip install jupyter nbformat
-      - uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: 1.7.31
+
+      - uses: quarto-dev/quarto-actions/setup@v2 # https://github.com/quarto-dev/quarto-actions/tree/main/setup
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
