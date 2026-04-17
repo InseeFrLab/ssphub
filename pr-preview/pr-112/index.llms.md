@@ -26,6 +26,14 @@ Une présentation du réseau est disponible sur la page [à propos](about.llms.m
 
 ## Les dernières actualités et contenus du réseau
 
+![](./event/2026-06-jdos/jdos.jpg)
+
+##### Journées data science & *open-source*
+
+Programme et modalités d’inscription aux journées de contribution à l’open source en lien avec la data science
+
+16 juin 2026
+
 ![](./event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
 
 ##### Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
@@ -42,17 +50,17 @@ Le **14 avril (14h00 - 14h30)**, le SSM Agriculture vient présenter leur travai
 
 14 avr. 2026
 
-![](./infolettre/infolettre_24/orbital_launch.png)
-
-##### LLM, fusées et lapins cartographes : bienvenue dans le tur-fu
-
-Infolettre du mois de **mars 2026**
-
-31 mars 2026
-
 ## Les derniers billets de blog et événements
 
 L’ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.llms.md), tout comme les [événements](event.llms.md).
+
+![](./event/2026-06-jdos/jdos.jpg)
+
+##### Journées data science & *open-source*
+
+Programme et modalités d’inscription aux journées de contribution à l’open source en lien avec la data science
+
+16 juin 2026
 
 ![](./event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
 
@@ -93,8 +101,6 @@ Le **13 janvier (14h30 - 15h30)**, Françoise Bahoken et Nicolas Lambert nous on
 Programme et modalités d’inscription à la 3e journée du réseau
 
 1 déc. 2025
-
-![](./event/2025-04-16-Parquet/Atelier-Parquet.png)
 
 ##### Atelier - Comment récupérer des données sous format Parquet ?
 

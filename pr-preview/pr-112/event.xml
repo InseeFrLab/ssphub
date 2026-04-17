@@ -10,7 +10,68 @@
 <atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Tue, 14 Apr 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Journées data science &amp; open-source</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>L’Insee organise deux journées dédiées à la contribution open-source les <strong>16 et 17 juin 2026</strong>. Les deux jours auront lieu au <a href="https://cartes.gouv.fr/explorer-les-cartes?c=2.305609,48.847446&amp;z=18&amp;l=PLAN.IGN$GEOPORTAIL:GPP:TMS(1;1;1;0;standard)&amp;w=&amp;permalink=yes"><strong>Lieu de la transformation publique, 77 avenue de Ségur, 75015 Paris</strong></a>. Le but de ces journées est de démystifier l’open source, d’expliquer comment y contribuer, et d’encourager chacun à soutenir les projets utiles à la datascience.</p>
+<section id="inscription" class="level1">
+<h1>Inscription</h1>
+<p>👉️ Les inscriptions se font <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/44ZC8RcBg3bjtvs5wy6wq5/55">ici</a>. 👈️ La journée se déroulera <strong>uniquement en présentiel</strong>.</p>
+</section>
+<section id="agenda" class="level1">
+<h1>Agenda</h1>
+<p>L’agenda plus détaillé est en construction mais voici les détails des journées.</p>
+<ul>
+<li>16 juin 2026 (9h30-17h30):
+<ul>
+<li>Matinée : accueil et présentation des principes de contribution à l’open source</li>
+<li>Après-midi : séparation en groupes autour des différents projets et contributions</li>
+</ul></li>
+<li>17 juin 2026 (9h-17h):
+<ul>
+<li>Matinée : contributions</li>
+<li>Après-midi : contributions et clôture</li>
+</ul></li>
+</ul>
+</section>
+<section id="projets-open-source" class="level1">
+<h1>Projets open-source</h1>
+<p>Les différents projets à date sont :</p>
+<ul>
+<li><a href="https://www.css.cnrs.fr/active-tigger/">Active Tigger</a> : une application de labellisation de données textuelles, proposant aussi des techniques d’active learning, et permettant d’entraîner des modèles de classification textuelle (CREST). Le repo lié est <a href="https://github.com/emilienschultz/activetigger/">ici</a> ;</li>
+<li><a href="https://sndstoolers.github.io/sndsTools/">SNDSTools</a> : projet pour faciliter l’utilisation des données du système national de données de santé (SNDS) (Inria - Insee). Le repo lié est <a href="https://github.com/SNDStoolers/sndsTools">ici</a> ;</li>
+<li><a href="https://github.com/Romanovytch/canar">CanaR</a> : projet visant à déployer en autonomie des chatbots personnalisés avec du RAG via un outil de commande.</li>
+<li>une liste de sujets à traiter en autonomie (en groupe ou seul). La liste définitive sera présentée le jour J mais comprend par exemple :
+<ul>
+<li>Sur Onyxia ou le SSPCloud : compléter la documentation et les formations (notamment en R) ;</li>
+<li>Créer une charte graphique SSP revealjs pour une extension Quarto.</li>
+</ul></li>
+</ul>
+<p>Si vous êtes intéressés pour être sponsor et porter un projet open-source, nous sommes toujours intéressés par quelques sponsors 👑. Votre rôle : proposer des projets (open-source bien sûr) pertinents pour les data-scientists et auxquels les participants pourraient contribuer pendant l’évènement. Cela peut être un package R, Python, un site …</p>
+<p>En tant que sponsor, vous devrez connaître le sujet (sans en être expert ou mainteneur) et le besoin associé. En amont, votre rôle sera d’identifier une ou plusieurs issues à traiter et de préparer les pré-requis techniques (repo Git, droits d’accès) pour que les contributeurs puissent se mettre en selle rapidement le jour J. Le jour J, vous pourrez présenter le projet et la problématique, puis participer au travail collectif dont le but sera de produire des contributions (pull-requests) pour répondre aux besoins identifiés.</p>
+<p>Si vous avez des questions, que vous êtes intéressé pour proposer un sujet ou simplement pour participer, n’hésitez pas à nous contacter 👋 par <a href="mailto:ssphub-contact@insee.fr">mail</a> ou par Tchap.</p>
+</section>
+<section id="contact" class="level1">
+<h1>Contact</h1>
+<p>Pour toute information : <a href="mailto:ssphub-contact@insee.fr" class="email">ssphub-contact@insee.fr</a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>network</category>
+  <category>event</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/</guid>
+  <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/jdos.jpg" medium="image" type="image/jpeg"/>
+</item>
 <item>
   <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/</link>
@@ -1606,15 +1667,6 @@ Note
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2021-06-22-funathon/</guid>
   <pubDate>Sun, 20 Jun 2021 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2021-06-22-funathon/funathon.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Séminaire - la méthodologie des appariements</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</link>
-  <description>Séminaire de Méthodologie statistique et de sciences des données du 12 avril 2021 : revue des méthodes d&#39;appariement et des principaux concepts et quelques exemples de traitement mis en oeuvre récemment en termes d&#39;appariement</description>
-  <category>Seminaire</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</guid>
-  <pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 </channel>
 </rss>

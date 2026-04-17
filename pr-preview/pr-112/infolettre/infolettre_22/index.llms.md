@@ -34,7 +34,7 @@ Le 13 janvier, nous avons reçu Françoise Bahoken et Nicolas Lambert. Ils nous 
 
 Comment des données identiques peuvent véhiculer un message totalement différent par les choix de visualisation effectués
 
-Le replay et leur présentation sont [en ligne](../../talk/2026-01-cartographia/index.qmd).
+Le replay et leur présentation sont [en ligne](../../event/2026-01-cartographia/index.llms.md).
 
 ## Journée contribution open source 📅 16 & 17 juin 2026 - Paris
 
