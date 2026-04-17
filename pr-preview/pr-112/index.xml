@@ -9,8 +9,438 @@
 <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</link>
 <atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Tue, 17 Mar 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Tue, 14 Apr 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="présentation-de-latelier" class="level1">
+<h1>Présentation de l’atelier</h1>
+<p>Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
+<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés.</p>
+<p><strong>Ils nous ont présenté leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). Tout le monde est le bienvenu !</p>
+</section>
+<section id="replay-de-latelier" class="level1">
+<h1>Replay de l’atelier</h1>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/2026-04-ssm_agri.mp4"></video></div>
+</section>
+<section id="support-de-présentation" class="level1">
+<h1>Support de présentation</h1>
+<iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf" width="100%" height="600px">
+<p>
+Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf">Download the PDF instead.</a>
+</p>
+</iframe>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="38" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 37;"><span id="cb1-38"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-39">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-40">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides en pdf"</span></span>
+<span id="cb1-41">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="48" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 47;"><span id="cb2-48"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb2-49">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb2-50"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb2-51"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb2-52"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb2-53"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb2-54"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb2-55">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb2-56">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>LLM</category>
+  <category>SSM Agriculture</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/</guid>
+  <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
+</item>
+<item>
+  <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
+<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés.</p>
+<p><strong>Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !</p>
+<p>Si vous voulez l’ajouter dans votre agenda, voici une <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics">invitation agenda</a>.</p>
+<!--
+Pour plus d'information, la Dares a présenté son travail aux [Journées de méthodologie statistique de 2025](https://journees-methodologie-statistique.insee.net/analyse-textuelle-de-documents-longs-cas-des-accords-dentreprise/).
+
+**Replay de la présentation :**
+
+
+
+**Présentation :**
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode yaml code-with-copy" src="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide"></iframe></div>
+
+
+:::::{.cell}
+
+```{.js .cell-code .hidden startFrom="37" source-offset="0"}
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/Analyse_textuelle_documents_longs.pdf",
+  "Télécharger les slides en pdf"
+)
+```
+
+::::{.cell-output .cell-output-display}
+
+:::{#ojs-cell-1 nodetype="expression"}
+:::
+::::
+:::::
+
+
+
+La présentation est aussi disponible [en ligne](https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide).
+
+
+
+:::::{.cell}
+
+```{.js .cell-code .hidden startFrom="50" source-offset="0"}
+function createButton(slides, message="Télécharger les slides"){
+  const button = html`
+  <p class="text-center">
+    <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+      <i class="fa-solid fa-file-arrow-down"></i>&ensp;${message}
+    </a>
+  </p>`
+  return button
+}
+```
+
+::::{.cell-output .cell-output-display}
+
+:::{#ojs-cell-2 nodetype="declaration"}
+:::
+::::
+:::::
+
+-->
+
+
+
+ ]]></description>
+  <category>LLM</category>
+  <category>SSM Agriculture</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/</guid>
+  <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
+</item>
+<item>
+  <title>LLM, fusées et lapins cartographes : bienvenue dans le tur-fu</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="bienvenue-à-la-vingt-quatrième-infolettre" class="level1">
+<h1>Bienvenue à la <strong>vingt quatrième infolettre</strong> !</h1>
+<p>C’est le printemps ! Le temps est bon, il fait <a href="https://www.rtl.be/actu/monde/international/jusqua-416degc-avant-meme-la-fin-de-lhiver-une-vague-de-chaleur-extreme-frappe/2026-03-19/article/783199">41,6°C en Californie avant même la fin de l’hiver</a>.</p>
+<p>Bienvenue à cette infolettre, coécrite avec <strong>Mélina</strong> ❤️.</p>
+</section>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>Qu’il est difficile de choisir une seule infographie. Pour ce mois-ci, c’est finalement une vidéo de tous les lancements de fusée dans l’espace depuis 1957 (ne pas avoir peur de tout ce qu’il y a là-haut). Attention, grand final de lancements pour l’année 2025 !</p>
+<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tUNZQCGKvbg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <em>Source : données recueillies par Jonathan McDowell et disponibles sur <a href="https://planet4589.org">https://planet4589.org</a>, infographie faite par <a href="https://peteratwoodprojects.wordpress.com/">Peter Atwood</a> et explications aussi <a href="https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/">ici</a>.</em><p></p>
+<p>Le site <a href="https://satellitetracker3d.com/">satellitetracker</a> permet par ailleurs de suivre l’ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. Et cela en fait un petit nombre autour de la planète bleue grise …</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/satellites_trackers.png" class="img-fluid figure-img"></p>
+<figcaption>Premier contact à l’approche de la Terre</figcaption>
+</figure>
+</div>
+</section>
+<section id="les-prochains-évènements-du-réseau" class="level1">
+<h1>Les prochains évènements du réseau</h1>
+<p>Une foison d’événements et d’informations ce mois-ci. Pour résumer :</p>
+<ul>
+<li>Un nouvel <strong>Open Science Meet-up</strong> à propos des <em>replication packages</em> en économie le <strong>2 avril 2026</strong> - <a href="https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1">lien</a> ;</li>
+<li>un atelier du réseau sur la <strong>génération de commentaires de graphique par LLM</strong> le <strong>mardi 14 avril 2026 à 10h</strong> - <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">lien</a> ;</li>
+<li>un appel à contribution pour la conférence uRos du <strong>18 au 20 novembre 2026</strong> à Paris.</li>
+</ul>
+<section id="replication-packages-en-économie---open-science-meet-up---jeudi-2-avril-2026-13h30-visio" class="level2">
+<h2 class="anchored" data-anchor-id="replication-packages-en-économie---open-science-meet-up---jeudi-2-avril-2026-13h30-visio"><em>Replication packages</em> en économie - Open science Meet-up - 📅 jeudi 2 avril 2026 13h30, visio</h2>
+<p>Le prochain Open Science Meet-up de l’Insee portera sur le thème : <strong>Replication packages en économie : préparation, bonnes pratiques et attentes des revues, surtout lorsque les données sont confidentielles.</strong></p>
+<p>Pour s’assurer de la reproducibilité d’une analyse publiée, de nombreuses revues demandent désormais aux auteurs de fournir un <em>replication package</em>, c’est-à-dire l’ensemble des données, du code et de la documentation.</p>
+<p>Lors de ce Meet-Up, <a href="https://www.ilr.cornell.edu/people/lars-vilhuber">Lars Vilhuber</a> (Cornell University), <em>data editor</em> à l’<em>American Economic Association</em>, présentera les principes et les bonnes pratiques associés à la préparation et à la diffusion des <em>replication packages</em>. Il reviendra notamment sur les exigences croissantes des revues scientifiques, les standards qui se développent dans la communauté économique et les enjeux de la reproductibilité des travaux empiriques.</p>
+<p>Cette rencontre sera l’occasion d’échanger sur la manière dont ces pratiques contribuent au <strong>développement d’une recherche plus transparente et plus ouverte</strong>, en particulier dans les domaines de l’analyse économique et statistique.</p>
+<p>Elle s’adresse à toutes celles et ceux qui souhaitent mieux comprendre les enjeux de la reproductibilité des analyses économiques et de la diffusion ouverte des travaux de recherche.</p>
+<p><strong>Rendez-vous le jeudi 2 avril de 13h30 à 14h15 en distanciel à ce <a href="https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1">lien</a></strong>.</p>
+</section>
+<section id="génération-de-commentaire-de-graphiques-retour-dexpérience-sur-les-statistiques-agricoles-et-pistes-damélioration---mardi-14-avril-14h-paris-dg-insee-et-visio" class="level2">
+<h2 class="anchored" data-anchor-id="génération-de-commentaire-de-graphiques-retour-dexpérience-sur-les-statistiques-agricoles-et-pistes-damélioration---mardi-14-avril-14h-paris-dg-insee-et-visio">Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio</h2>
+<p>Le SSM Agriculture essaye de générer par LLM des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
+<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un <strong>cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés</strong>.</p>
+<p><strong>Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !</p>
+<p>Si vous voulez l’ajouter dans votre agenda, voici une <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics">invitation agenda</a>.</p>
+<p>Les mises à jour seront faites sur la <a href="../../talk/2026-04-ssm-agri/index.qmd">page de l’événement</a>.</p>
+</section>
+<section id="contribuez-à-la-conférence-sur-lutilisation-de-r-dans-la-statistique-publique-uros---18-20-novembre-2026-paris" class="level2">
+<h2 class="anchored" data-anchor-id="contribuez-à-la-conférence-sur-lutilisation-de-r-dans-la-statistique-publique-uros---18-20-novembre-2026-paris">Contribuez à la conférence sur l’utilisation de R dans la statistique publique (uROS) - 📅 18-20 novembre 2026, Paris</h2>
+<p>L’Insee accueille l’édition 2026 de la <strong>conférence uRos (use of R in official statistics)</strong> les <strong>18, 19 et 20 novembre 2026</strong> au centre Pierre-Mendès France, à Bercy.</p>
+<p>Cette rencontre annuelle des <strong>utilisateurs de R en Europe et dans le monde</strong> sera l’occasion de valoriser les nombreux investissements en R faits à l’Insee et au sein du SSP. La liste des thèmes ainsi que toutes les informations pratiques sont en ligne sur le <a href="https://r-project.ro/conference2026_FR.html">site de la conférence</a>.</p>
+<p>Si vous souhaitez y <strong>assister</strong>, vous pouvez d’ores et déjà vous inscrire <a href="https://uros2026.sciencesconf.org/registration?lang=fr">en ligne</a>.</p>
+<p>Si vous souhaitez <strong>contribuer</strong>, l’appel à contribution va bientôt ouvrir jusqu’au <strong>15 juin</strong> sur le site de la conférence. Vous pourrez soumettre :</p>
+<ol type="i">
+<li>une présentation classique de 15 minutes ;</li>
+<li>une présentation flash de 5 minutes ;</li>
+<li>un tutoriel d’environ 2 heures.</li>
+</ol>
+<p>N’hésitez pas à contacter directement l’organisation de l’événement sur <a href="mailto:uros2026@insee.fr">uros2026@insee.fr</a>.</p>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<section id="données-tabulaires-le-deep-learning-est-il-devenu-une-alternative-crédible-aux-méthodes-de-boosting" class="level2">
+<h2 class="anchored" data-anchor-id="données-tabulaires-le-deep-learning-est-il-devenu-une-alternative-crédible-aux-méthodes-de-boosting">Données tabulaires : le deep learning est-il devenu une alternative crédible aux méthodes de boosting ?</h2>
+<p><a href="https://m-clark.github.io/posts/2026-03-01-dl-for-tabular-foundational/">Ce billet</a> de blog explique que, si le boosting reste une valeur sûre, plusieurs modèles récents - qu’il s’agisse de deep learning “classique” ou de modèles de <a href="https://arxiv.org/abs/2108.07258">fondation</a> - deviennent désormais <strong>réellement compétitifs</strong>. L’émergence de benchmarks plus rigoureux et de nouveaux outils facilite par ailleurs la comparaison et la prise en main de ces nouveaux modèles. <strong>Le principal frein reste toutefois le passage à l’échelle sur les très grands jeux de données</strong>, qui limite encore leur adoption.</p>
+<p>Et pour les séries temporelles ? Le constat est <a href="https://berts-workshop.github.io/">proche</a>: les modèles de fondation progressent, mais les approches plus classiques restent très compétitives, et le principal enjeu est encore celui de l’évaluation, les résultats étant contrastés selon les benchmarks.</p>
+</section>
+<section id="des-pistes-intéressantes-pour-la-recherche-documentaire" class="level2">
+<h2 class="anchored" data-anchor-id="des-pistes-intéressantes-pour-la-recherche-documentaire">Des pistes intéressantes pour la recherche documentaire</h2>
+<p>Le projet <a href="https://github.com/VectifyAI/PageIndex">PageIndex</a> explore une approche de recherche documentaire sans base vectorielle, fondée sur une indexation hiérarchique des documents et une navigation par grand modèle de langage (LLM). Au lieu de découper le texte en <em>chunks</em> (des segments de texte issus du découpage d’un document) puis de faire une recherche par similarité dans une base vectorielle (c’est la méthode du <a href="https://arxiv.org/abs/2005.11401">RAG</a> classique), l’outil transforme un <strong>document long en un arbre hiérarchique</strong> - une sorte de table des matières enrichie pour les LLM - puis s’appuie sur cette structure pour guider la recherche des passages pertinents. L’objectif est de mieux traiter les <strong>documents longs et structurés</strong>, pour lesquels une simple recherche par similarité sur des <em>chunks</em> peut manquer de précision ou de contexte. L’approche est prometteuse et a l’intérêt de rendre le parcours de recherche plus lisible et plus traçable.</p>
+<p>Ce <a href="https://www.anthropic.com/engineering/contextual-retrieval">billet</a> d’Anthropic sur le Contextual Retrieval propose une approche pour <strong>améliorer la recherche documentaire par RAG classique</strong>. L’idée est de conserver le schéma habituel (<em>chunks</em>, <em>embeddings</em>, <a href="https://en.wikipedia.org/wiki/Okapi_BM25">BM25</a>) mais d’ajouter à chaque <em>chunk</em> un court contexte explicatif généré à partir du document complet, afin d’éviter qu’un passage isolé perde les informations qui lui donnent son sens. Le billet indique que cette contextualisation réduit de 49 % les échecs de <em>retrieval</em>, et jusqu’à 67 % lorsqu’on y ajoute une étape de <em>reranking</em>. Le billet rappelle aussi un point utile : pour des bases documentaires “modestes” (moins de 200 000 <em>tokens</em>, soit environ 500 pages), il peut être plus simple de mettre directement tout le corpus dans le prompt, sans passer par l’étape RAG.</p>
+</section>
+<section id="dbt-duckdb-structurer-ses-pipelines-sql-avec-une-infrastructure-légère" class="level2">
+<h2 class="anchored" data-anchor-id="dbt-duckdb-structurer-ses-pipelines-sql-avec-une-infrastructure-légère">dbt + DuckDB : structurer ses pipelines SQL avec une infrastructure légère</h2>
+<p>Les outils <a href="https://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition">dbt + DuckDB</a> permettent de <strong>professionnaliser des traitements analytiques locaux</strong>. <a href="https://duckdb.org/">DuckDB</a> fournit un moteur SQL très rapide pour interroger et transformer des données, y compris directement depuis des fichiers Parquet. <a href="https://www.getdbt.com/">dbt</a> permet quant à lui d’ajouter une couche d’organisation : il aide à découper les traitements en étapes claires (sources, <em>staging</em>, tables finales), à gérer les dépendances entre modèles, à documenter les transformations, à tester la qualité des données etc. En d’autres termes, <strong>dbt fournit une méthode pour transformer une collection de scripts SQL en pipeline</strong> plus lisible, plus reproductible et plus maintenable.</p>
+</section>
+</section>
+<section id="pour-aller-plus-loin-se-former" class="level1">
+<h1>Pour aller plus loin / se former</h1>
+<section id="apprendre-avec-lia" class="level2">
+<h2 class="anchored" data-anchor-id="apprendre-avec-lia">Apprendre avec l’IA</h2>
+<p>Utiliser l’IA pour apprendre, et pas seulement pour accélérer la production de code ? Le <strong>dépôt <a href="https://github.com/DrCatHicks/learning-opportunities">Learning Opportunities</a></strong> propose un plugin pour Claude Code qui déclenche de courts exercices de 10 à 15 minutes afin d’éviter l’illusion de compréhension que peuvent créer les assistants de code. Une approche intéressantes pour ceux qui souhaitent (continuer à) <strong>se former à l’heure du coding assisté par IA</strong>.</p>
+</section>
+<section id="microgpt-visualized-une-ressource-pour-comprendre-ce-quil-y-a-dans-un-gpt" class="level2">
+<h2 class="anchored" data-anchor-id="microgpt-visualized-une-ressource-pour-comprendre-ce-quil-y-a-dans-un-gpt">MicroGPT Visualized : une ressource pour comprendre ce qu’il y a dans un GPT</h2>
+<p>Pour mieux comprendre ce qui se passe réellement derrière les mots “<em>attention</em>”, “<em>transformer</em>”, “résidus” ou “<em>KV cache</em>”, <a href="https://microgpt.jtauber.com">MicroGPT Visualized</a> est une excellente découverte. Le site reprend le micro-GPT en Python d’Andrej Karpathy et le décompose en six étapes, du simple modèle bigramme jusqu’au <em>transformer</em> complet optimisé avec <em>Adam</em>, le tout avec <strong>schémas, animations et explications progressives</strong>.</p>
+</section>
+<section id="master-machine-learning-with-scikit-learn" class="level2">
+<h2 class="anchored" data-anchor-id="master-machine-learning-with-scikit-learn">Master Machine Learning with scikit-learn</h2>
+<p>Le livre en ligne <a href="https://mlbook.dataschool.io/">Master Machine Learning with scikit-learn</a> de Kevin Markham est une ressource très intéressante pour <strong>développer ou consolider ses bonnes pratiques en machine learning</strong>.</p>
+</section>
+</section>
+<section id="fun" class="level1">
+<h1>Fun</h1>
+<section id="mapinou-un-jeu-mobile-pour-alimenter-la-recherche-et-mieux-comprendre-la-navigation-cartographique" class="level2">
+<h2 class="anchored" data-anchor-id="mapinou-un-jeu-mobile-pour-alimenter-la-recherche-et-mieux-comprendre-la-navigation-cartographique">Mapinou : un jeu mobile pour alimenter la recherche et mieux comprendre la navigation cartographique</h2>
+<p>Petite respiration carto ce mois-ci avec <a href="https://cartonumerique.blogspot.com/2026/03/mapinou.html"><strong>Mapinou</strong></a>, un jeu mobile gratuit développé par une équipe de recherche du LASTIG (IGN) dans le cadre du projet européen LostInZoom. En guidant un lapin à travers une carte de France multi-échelles, les joueurs produisent des données anonymes par leurs interactions avec la carte - zooms, déplacements, clics - que les chercheurs utilisent pour <strong>mieux comprendre les phénomènes de désorientation après zoom et concevoir des interfaces cartographiques plus fluides.</strong></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Infolettre</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/</guid>
+  <pubDate>Tue, 31 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/orbital_launch.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
+<item>
+  <title>Analyse textuelle de documents longs : cas des accords d’entreprise</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="présentation-de-latelier" class="level1">
+<h1>Présentation de l’atelier</h1>
+<p>Les accords d’entreprise représente une <strong>importe quantité d’information librement accessible</strong>. Ces accords permettent d’analyser les décisions prises au niveau le plus fin de l’économie. Ils présentent cependant plusieurs enjeux méthodologiques puisqu’ils peuvent être assez longs (jusqu’à des dizaines de page) et représentent une importante masse de données à analyser. Quelles techniques mettre en oeuvre alors pour détecter les thémes abordés par ces accords et en extraire des informations ?</p>
+<p>Les méthodes mises en place pour répondre à ces questions incluent :</p>
+<ul>
+<li>l’<strong>analyse fréquentielle</strong>, après nettoyage des données ;</li>
+<li>la modélisation thématique en mobilisant les techniques <strong>LDA</strong> ou <strong>BERTopic</strong> ;</li>
+<li>enfin la capacité à <strong>extraire de l’information</strong> (comme le nombre d’heures supplémentaires) en utilisant les récentes évolutions qu’ont apporté les <strong>RAG et des LLM</strong>.</li>
+</ul>
+<p>L’atelier était en présentiel à l’Insee (salle 4C-358) et en visio.</p>
+<p>Pour plus d’information, la Dares a présenté son travail aux <a href="https://journees-methodologie-statistique.insee.net/analyse-textuelle-de-documents-longs-cas-des-accords-dentreprise/">Journées de méthodologie statistique de 2025</a>.</p>
+</section>
+<section id="replay-de-latelier" class="level1">
+<h1>Replay de l’atelier</h1>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/2026-03_dares_extraction.mp4"></video></div>
+</section>
+<section id="support-de-présentation" class="level1">
+<h1>Support de présentation</h1>
+<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
+<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
+<iframe class="sourceCode yaml code-with-copy" src="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide">
+</iframe>
+</div></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="43" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 42;"><span id="cb1-43"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-44">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/Analyse_textuelle_documents_longs.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-45">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides en pdf"</span></span>
+<span id="cb1-46">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<p>La présentation est aussi disponible <a href="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide">en ligne</a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="56" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 55;"><span id="cb2-56"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb2-57">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb2-58"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb2-59"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb2-60"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb2-61"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb2-62"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb2-63">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb2-64">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>extraction d&#39;information</category>
+  <category>NLP</category>
+  <category>DARES</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/</guid>
+  <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/logo_Dares.png" medium="image" type="image/png" height="43" width="144"/>
+</item>
 <item>
   <title>sndsTools, un package R pour l’extraction de recours aux soins dans les données de santé du SNDS</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2026_sndsTools/</link>
@@ -57,7 +487,7 @@
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1773771542323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1776426692535" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -81,7 +511,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1773771542323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1776426692536" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -105,7 +535,7 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1773771542322" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1776426692535" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -129,7 +559,7 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1773771542320" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1776426692534" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -381,7 +811,7 @@ Codification automatique de l’activité principale des entreprises
 <section id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert" class="level2">
 <h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert"><a href="https://www.dunod.com/histoire-geographie-et-sciences-politiques/cartographia-comment-geographes-redessinent-monde">Cartographia</a> - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
 <p><strong>Replay de la présentation :</strong></p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div>
 <iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
 <p>
 Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf">Download the PDF instead.</a>
@@ -742,7 +1172,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </div>
 <section id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit" class="level2">
 <h2 class="anchored" data-anchor-id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit">Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="69" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 68;"><span id="cb2-69"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -765,7 +1195,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </section>
 <section id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee" class="level2">
 <h2 class="anchored" data-anchor-id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee">Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -788,12 +1218,12 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </section>
 <section id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum" class="level2">
 <h2 class="anchored" data-anchor-id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum">Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4"></video></div>
 <p>Présentation disponible sur <a href="https://www.figma.com/deck/bGTGzYw9ZDrLGzbOzJbwJp/D%C3%89MO-INSEE-1-DECEMBRE?node-id=4-3555&amp;viewport=-145%2C-74%2C0.69&amp;t=wS4mpPXywS1FgL52-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" target="_blank">Figma</a></p>
 </section>
 <section id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice" class="level2">
 <h2 class="anchored" data-anchor-id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice">Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
 <p>Le papier a été publié lors des <a href="https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/">journées de méthodologie statistique 2025</a>.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="97" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb4-97"><span class="fu" style="color: #4758AB;
@@ -817,7 +1247,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </section>
 <section id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab" class="level2">
 <h2 class="anchored" data-anchor-id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab">Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4"></video></div>
 <div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
 <pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
 <iframe class="sourceCode yaml code-with-copy" src="https://inseefrlab.github.io/codif-ape-prez/slides/jms-ttc-prez/">
@@ -1257,7 +1687,7 @@ Astuce
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1773771542324" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1776426692536" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1292,7 +1722,7 @@ Exploitation de données bancaires pour les prévisions de croissance du PIB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1773771542318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1776426692531" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1329,7 +1759,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1366,7 +1796,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1401,7 +1831,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1497,7 +1927,7 @@ Que disent les données de production et de consommation d’électricité sur l
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1773771542323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1776426692536" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
 <a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1532,7 +1962,7 @@ Une évaluation des achats transfrontaliers de tabac et des pertes fiscales asso
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1773771542318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1776426692532" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1565,7 +1995,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1602,7 +2032,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1637,7 +2067,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1773771542317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1676,7 +2106,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1715,7 +2145,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1776426692530" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2189,7 +2619,7 @@ font-style: inherit;">"Télécharger les slides de la keynote"</span></span>
 </div>
 </details>
 <p>Quelques photos de l’événement:</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/GMT20241014-080309_Recording_3840x2160.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/GMT20241014-080309_Recording_3840x2160.mp4"></video></div>
 <div id="fig-ssphub-images" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ssphub-images-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -2350,7 +2780,7 @@ font-style: inherit;">`</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-05-02-quarto/dervieux_quarto_20240502.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-05-02-quarto/dervieux_quarto_20240502.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="37" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 36;"><span id="cb2-37">slides <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -2436,7 +2866,7 @@ Astuce
 <section id="sora-la-nouvelle-ia-dopenai-pour-générer-des-vidéos" class="level2">
 <h2 class="anchored" data-anchor-id="sora-la-nouvelle-ia-dopenai-pour-générer-des-vidéos"><code>Sora</code>, la nouvelle IA d’OpenAI pour générer des vidéos</h2>
 <p><br></p>
-<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://vp.nyt.com/video/2024/02/14/115628_1_15OPENAI-VIDEO-1_wg_720p.mp4"></video></div> <em>Source : <a href="https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html">New York Times</a> d’après OpenAI.</em><p></p>
+<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://vp.nyt.com/video/2024/02/14/115628_1_15OPENAI-VIDEO-1_wg_720p.mp4"></video></div> <em>Source : <a href="https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html">New York Times</a> d’après OpenAI.</em><p></p>
 <details>
 <summary>
 Instruction utilisée par OpenAI pour générer cette vidéo
@@ -2451,7 +2881,7 @@ Instruction utilisée par OpenAI pour générer cette vidéo
 <br>
 <p><code>Sora</code> n’est pas directement mis à disposition du grand public, contrairement aux autres services d’OpenAI. Ce produit n’est partagé qu’à des utilisateurs identifiés par OpenAI comme pouvant représenter le public cible - des réalisateurs par exemple - ou ayant une expertise sur des sujets comme la désinformation, les biais, la connaissance des algorithmes de recommandation, etc. Cette diffusion restreinte vise à recevoir des retours de la part de potentiels clients ou d’experts sur les risques de ces technologies. La communication par le biais de quelques vidéos choisies par OpenAI permet, dans le même temps, de créer une attente du grand public avant la mise à disposition plus large.</p>
 <p>Comme <code>Dall-E</code>, <code>Midjourney</code> et consorts qui généraient des mains avec <a href="https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands">trop de doigts</a>, le réseau de neurones derrière <code>Sora</code> a encore des difficultés à respecter certaines règles élémentaires de vraisemblance. Par exemple, dans la vidéo ci-dessous, les événements liés à un bris de verre s’enchaînent dans un ordre incohérent.</p>
-<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://cdn.openai.com/tmp/s/discussion_0.mp4"></video></div> <em>Source : <a href="https://openai.com/research/video-generation-models-as-world-simulators">OpenAI</a></em><p></p>
+<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://cdn.openai.com/tmp/s/discussion_0.mp4"></video></div> <em>Source : <a href="https://openai.com/research/video-generation-models-as-world-simulators">OpenAI</a></em><p></p>
 <p>OpenAI a déjà prévu de <a href="https://openai.com/research/video-generation-models-as-world-simulators">nombreuses applications</a> à ce modèle. Outre la génération de vidéos à partir d’instructions verbales, <code>Sora</code> est capable d’animer une image, de compléter une vidéo déjà existante avec une vidéo fictionnelle, d’éditer une vidéo déjà existante pour changer des éléments… Les secteurs de la communication, de la création et de la diffusion de contenu sont concernés au premier chef mais la richesse des fonctionnalités possibles et la simplicité d’usage des produits d’OpenAI laissent penser que les applications iront bien au-delà de ces secteurs économiques ; la vidéo occupe maintenant une place prédominante sur internet et sur les réseaux sociaux pour de multiples usages.</p>
 <p>Ce modèle soulève, comme <code>Dall-E</code> ou <code>ChatGPT</code> avant lui, des enjeux de propriété intellectuelle puisqu’il a aussi été entraîné sur des corpus massifs collectés depuis internet. Le réalisme des vidéos générées peut également laisser craindre, sans marque d’identification claire du fait que la vidéo est générée numériquement (principe du <a href="https://fr.wikipedia.org/wiki/Tatouage_num%C3%A9rique"><em>watermark</em></a>), des dérives autour de la mésinformation, notamment des vidéos malveillantes et réalistes de personnes dans des situations inventées (des <em>deepfakes</em>) ou la prolifération de contenus choquants si les garde-fous dans la génération de contenus sont outrepassés.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -2620,7 +3050,7 @@ font-style: inherit;">`</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="390" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><span id="cb2-390">slides <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -2671,9 +3101,9 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-hendrycks2021measuring" class="csl-entry">
-Hendrycks, Dan, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, et Jacob Steinhardt. 2021. <span>«&nbsp;Measuring Massive Multitask Language Understanding&nbsp;»</span>. <a href="https://arxiv.org/abs/2009.03300">https://arxiv.org/abs/2009.03300</a>.
+Hendrycks, Dan, Collin Burns, Steven Basart, et al. 2021. <em>Measuring Massive Multitask Language Understanding</em>. <a href="https://arxiv.org/abs/2009.03300">https://arxiv.org/abs/2009.03300</a>.
 </div>
 </div></section></div> ]]></description>
   <category>Infolettre</category>
@@ -2711,7 +3141,7 @@ font-style: inherit;">`</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="28" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb2-28">slides <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -2768,940 +3198,6 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/</guid>
   <pubDate>Thu, 29 Feb 2024 15:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/mauviere.png" medium="image" type="image/png" height="80" width="144"/>
-</item>
-<item>
-  <title>Le RAG pour limiter l’hallucination par l’IA ; l’avancée des bases de données vectorielles ; le format Parquet pour simplifier leur usage ; DuckDB débarque en version web</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/</link>
-  <description><![CDATA[ 
-<script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs/loader.js"></script>
-<script type="module" id="qwebr-monaco-editor-init">
-
-  // Configure the Monaco Editor's loader
-  require.config({
-    paths: {
-      'vs': 'https://cdn.jsdelivr.net/npm/monaco-editor@0.45.0/min/vs'
-    }
-  });
-</script>
-<script type="module">
-// Global dictionary to store Monaco Editor instances
-globalThis.qwebrEditorInstances = {};
-
-// Function that builds and registers a Monaco Editor instance    
-globalThis.qwebrCreateMonacoEditorInstance = function (cellData) {
-
-  const initialCode = cellData.code;
-  const qwebrCounter = cellData.id;
-  const qwebrOptions = cellData.options;
-
-  // Retrieve the previously created document elements
-  let runButton = document.getElementById(`qwebr-button-run-${qwebrCounter}`);
-  let resetButton = document.getElementById(`qwebr-button-reset-${qwebrCounter}`);
-  let copyButton = document.getElementById(`qwebr-button-copy-${qwebrCounter}`);
-  let editorDiv = document.getElementById(`qwebr-editor-${qwebrCounter}`);
-  
-  // Load the Monaco Editor and create an instance
-  let editor;
-  require(['vs/editor/editor.main'], function () {
-    editor = monaco.editor.create(editorDiv, {
-      value: initialCode,
-      language: 'r',
-      theme: 'vs-light',
-      automaticLayout: true,           // Works wonderfully with RevealJS
-      scrollBeyondLastLine: false,
-      minimap: {
-        enabled: false
-      },
-      fontSize: '17.5pt',              // Bootstrap is 1 rem
-      renderLineHighlight: "none",     // Disable current line highlighting
-      hideCursorInOverviewRuler: true  // Remove cursor indictor in right hand side scroll bar
-    });
-
-    // Store the official counter ID to be used in keyboard shortcuts
-    editor.__qwebrCounter = qwebrCounter;
-
-    // Store the official div container ID
-    editor.__qwebrEditorId = `qwebr-editor-${qwebrCounter}`;
-
-    // Store the initial code value and options
-    editor.__qwebrinitialCode = initialCode;
-    editor.__qwebrOptions = qwebrOptions;
-
-    // Set at the model level the preferred end of line (EOL) character to LF.
-    // This prevent `\r\n` from being given to the webR engine if the user is on Windows.
-    // See details in: https://github.com/coatless/quarto-webr/issues/94
-    // Associated error text: 
-    // Error: <text>:1:7 unexpected input
-
-    // Retrieve the underlying model
-    const model = editor.getModel();
-    // Set EOL for the model
-    model.setEOL(monaco.editor.EndOfLineSequence.LF);
-
-    // Dynamically modify the height of the editor window if new lines are added.
-    let ignoreEvent = false;
-    const updateHeight = () => {
-      const contentHeight = editor.getContentHeight();
-      // We're avoiding a width change
-      //editorDiv.style.width = `${width}px`;
-      editorDiv.style.height = `${contentHeight}px`;
-      try {
-        ignoreEvent = true;
-
-        // The key to resizing is this call
-        editor.layout();
-      } finally {
-        ignoreEvent = false;
-      }
-    };
-
-    // Helper function to check if selected text is empty
-    function isEmptyCodeText(selectedCodeText) {
-      return (selectedCodeText === null || selectedCodeText === undefined || selectedCodeText === "");
-    }
-
-    // Registry of keyboard shortcuts that should be re-added to each editor window
-    // when focus changes.
-    const addWebRKeyboardShortCutCommands = () => {
-      // Add a keydown event listener for Shift+Enter to run all code in cell
-      editor.addCommand(monaco.KeyMod.Shift | monaco.KeyCode.Enter, () => {
-
-        // Retrieve all text inside the editor
-        qwebrExecuteCode(editor.getValue(), editor.__qwebrCounter, editor.__qwebrOptions);
-      });
-
-      // Add a keydown event listener for CMD/Ctrl+Enter to run selected code
-      editor.addCommand(monaco.KeyMod.CtrlCmd | monaco.KeyCode.Enter, () => {
-
-        // Get the selected text from the editor
-        const selectedText = editor.getModel().getValueInRange(editor.getSelection());
-        // Check if no code is selected
-        if (isEmptyCodeText(selectedText)) {
-          // Obtain the current cursor position
-          let currentPosition = editor.getPosition();
-          // Retrieve the current line content
-          let currentLine = editor.getModel().getLineContent(currentPosition.lineNumber);
-
-          // Propose a new position to move the cursor to
-          let newPosition = new monaco.Position(currentPosition.lineNumber + 1, 1);
-
-          // Check if the new position is beyond the last line of the editor
-          if (newPosition.lineNumber > editor.getModel().getLineCount()) {
-            // Add a new line at the end of the editor
-            editor.executeEdits("addNewLine", [{
-            range: new monaco.Range(newPosition.lineNumber, 1, newPosition.lineNumber, 1),
-            text: "\n", 
-            forceMoveMarkers: true,
-            }]);
-          }
-          
-          // Run the entire line of code.
-          qwebrExecuteCode(currentLine, editor.__qwebrCounter, editor.__qwebrOptions);
-
-          // Move cursor to new position
-          editor.setPosition(newPosition);
-        } else {
-          // Code to run when Ctrl+Enter is pressed with selected code
-          qwebrExecuteCode(selectedText, editor.__qwebrCounter, editor.__qwebrOptions);
-        }
-      });
-    }
-
-    // Register an on focus event handler for when a code cell is selected to update
-    // what keyboard shortcut commands should work.
-    // This is a workaround to fix a regression that happened with multiple
-    // editor windows since Monaco 0.32.0 
-    // https://github.com/microsoft/monaco-editor/issues/2947
-    editor.onDidFocusEditorText(addWebRKeyboardShortCutCommands);
-
-    // Register an on change event for when new code is added to the editor window
-    editor.onDidContentSizeChange(updateHeight);
-
-    // Manually re-update height to account for the content we inserted into the call
-    updateHeight();
-
-    // Store the editor instance in the global dictionary
-    qwebrEditorInstances[editor.__qwebrCounter] = editor;
-
-  });
-
-  // Add a click event listener to the run button
-  runButton.onclick = function () {
-    qwebrExecuteCode(editor.getValue(), editor.__qwebrCounter, editor.__qwebrOptions);
-  };
-
-  // Add a click event listener to the reset button
-  copyButton.onclick = function () {
-    // Retrieve current code data
-    const data = editor.getValue();
-    
-    // Write code data onto the clipboard.
-    navigator.clipboard.writeText(data || "");
-  };
-  
-  // Add a click event listener to the copy button
-  resetButton.onclick = function () {
-    editor.setValue(editor.__qwebrinitialCode);
-  };
-  
-}
-</script>
-
-
-
-
-
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/robotroma.jfif" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
-</figure>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Astuce
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong><em>Vous désirez intégrer la liste de diffusion ? L’inscription se fait <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103">ici</a>.</em></strong></p>
-</div>
-</div>
-<p>En ce début d’année 2024, nous prenons un peu de recul sur l’année écoulée et vous présentons les avancées marquantes de l’année 2023 dans le domaine de la data science. Ces avancées concernent l’intelligence artificielle générative, au cœur des débats médiatisés, mais aussi plusieurs développements technologiques très utiles pour l’analyse et la diffusion de bases de données. Des éléments plus techniques, qui ne sont pas nécessaires à la compréhension globale, sont présents dans des encadrés déroulables ou sont référencés dans les sections <em>“Pour en savoir plus”</em>.</p>
-<p>La fin de la <em>newsletter</em> est consacrée à quelques annonces sur les prochains événements communautaires du réseau.</p>
-<section id="panorama-des-avancées-ayant-eu-lieu-en-2023-dans-le-domaine-de-la-data-science" class="level2">
-<h2 class="anchored" data-anchor-id="panorama-des-avancées-ayant-eu-lieu-en-2023-dans-le-domaine-de-la-data-science">Panorama des avancées ayant eu lieu en 2023 dans le domaine de la data science</h2>
-<section id="les-ia-génératives-toujours-au-coeur-des-débats" class="level3">
-<h3 class="anchored" data-anchor-id="les-ia-génératives-toujours-au-coeur-des-débats">Les IA génératives toujours au coeur des débats</h3>
-<p>Dans la continuité de la sortie de <code>ChatGPT</code> en décembre 2022, les IA génératives ont continué en 2023 à focaliser une part importante de l’attention portée à la <em>data science</em>. Outre la publication de GPT-4 en mars (modèle embarqué dans la version Pro de <code>ChatGPT</code>), de nombreux grands modèles de langage (LLM) généralistes ont été publiés cette année : <code>Llama-2</code> (Meta), <code>Mixtral 7B</code> (Mistral), <code>Falcon 180B</code> (Technology Innovation Institute), <code>PaLM 2</code> (Google)…</p>
-<p>Ces publications ont mis en avant le caractère stratégique de la mise à disposition de modèles <em>open source</em>. La récupération et la structuration de corpus massifs, l’entraînement de modèles intégrant des milliards de paramètres et l’évaluation <em>ex post</em> de ceux-ci est à la portée d’un nombre restreint d’acteurs. La publication en <em>open source</em> de modèles et de codes sources est dès lors indispensable pour, entre autres, être en mesure d’évaluer la pertinence scientifique des modèles ou permettre aux acteurs n’ayant pas ces moyens techniques et humains de pouvoir tout de même réutiliser ces modèles sur leurs propres données.</p>
-<p>Néanmoins, malgré l’ouverture progressive de modèles, notamment par le biais d’une mise à disposition sur la plateforme <code>Hugging Face</code>, des contraintes limitent encore la réutilisation de ces modèles dans des infrastructures internes. Ces réseaux de neurones étant très gourmands en calculs du fait de leur architecture complexe (des milliards de paramètres pour les grands modèles de langage), afin d’obtenir une réponse du modèle il est généralement nécessaire d’effectuer les calculs par le biais de cartes graphiques (GPU), celles-ci permettant plus de parallélisme dans les calculs que les processeurs (CPU). Cependant, comme les GPU sont plus consommatrices d’énergie et plus coûteuses à l’achat du fait notamment d’une demande excédant l’offre, l’accès à cette ressource est limité pour de nombreux acteurs. Le retour à des modèles plus légers, pouvant être exploités depuis des architectures informatiques plus accessibles, constitue l’un des défis de l’année 2024.</p>
-<p>Les débats concernant les droits d’exploitation commerciale d’informations collectées sur internet ont été nombreux en 2023. Après les plaintes médiatisées de <em>Getty Images</em> (envers Stability AI), d’un collectif d’auteurs célèbres (envers OpenAI), la grève des acteurs à Hollywood contre l’exploitation de leur image par des IA et des scénaristes contre l’utilisation des générateurs de texte, c’est maintenant le <em>New York Times</em> qui a déposé en décembre 2023 une plainte envers OpenAI auprès de la Cour Fédérale de Manhattan. A partir d’exemples, le journal américain met en avant le degré de confiance élevé que <code>ChatGPT</code> attribue aux informations issues des articles du quotidien, sans pour autant en citer la provenance, ni compenser financièrement le journal. Cela entraînerait un préjudice commercial dû à la réduction du trafic sur le site du <em>New York Times</em>. A contrario, le journal met en avant l’effet négatif sur son image que peuvent avoir des hallucinations attribuées au quotidien. Cette plainte fait suite à l’échec des négociations entre les deux acteurs au cours de l’année 2023. Ces actualités relatives aux droits d’auteurs interviennent dans un contexte où il s’agit de l’un des principaux axes d’intervention de l’<em>“Artificial Intelligence Act”</em> européen (voir <a href="../../infolettre/infolettre_16">Infolettre #16</a>).</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Un <a href="https://www.washingtonpost.com/technology/interactive/2023/ai-chatbot-learning/?itid=mc_magnet-ai_inline_collection_1">article</a> du <em>Washington Post</em> sur le corpus d’entraînement des LLM ;</li>
-<li>Un <a href="https://ig.ft.com/generative-ai/">article</a> du <em>Financial Times</em> qui présente de manière très pédagogique la manière dont fonctionnent les LLM ;</li>
-<li>Un <a href="https://huggingface.co/docs/transformers/llm_tutorial">tutoriel</a> sur les LLM par <code>Hugging Face</code> ;</li>
-<li>Un <a href="https://www.nytimes.com/2023/08/16/technology/ai-gpu-chips-shortage.html">article</a> du <em>New York Times</em> sur la pénurie de GPU ;</li>
-<li>Un article du site spécialisé <em><a href="https://www.theverge.com/2023/12/4/23988403/getty-lawsuit-stability-ai-copyright-infringement">The Verge</a></em> sur les dernières évolutions de la plainte de <em>Getty Images</em> ;</li>
-<li>Un article de <a href="https://www.courrierinternational.com/article/litterature-george-r-r-martin-jonathan-franzen-et-john-grisham-partent-en-guerre-contre-chatgpt"><em>Courrier International</em></a> sur la plainte d’un collectif d’auteurs envers OpenAI ;</li>
-<li><em>New York Times vs OpenAI</em> par <a href="https://www.lemonde.fr/pixels/article/2023/12/27/le-new-york-times-poursuit-en-justice-microsoft-et-openai-createur-de-chatgpt-pour-violation-de-droits-d-auteur_6207946_4408996.html">le <em>Monde</em></a> et le <a href="https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html"><em>New York Times</em></a> ;</li>
-<li>Les chartes relatives au contenu produit par des IA génératives du <a href="https://www.gov.uk/government/publications/generative-ai-framework-for-hmg/generative-ai-framework-for-hmg-html">gouvernement britannique</a> et d’une vingtaine de médias français recensés par l’<a href="https://larevuedesmedias.ina.fr/les-medias-face-lintelligence-artificielle-20-chartes-passees-au-crible">INA</a>.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="des-avancées-scientifiques-en-arrière-plan" class="level3">
-<h3 class="anchored" data-anchor-id="des-avancées-scientifiques-en-arrière-plan">Des avancées scientifiques en arrière plan</h3>
-<p>La tendance des LLM à l’hallucination, c’est-à-dire à la production de contenu plausible par sa forme mais factuellement faux, a été l’objet d’inquiétudes quant à la véracité des informations pouvant être mises en avant par les IA amenées à occuper une place croissante dans la diffusion de contenu. Pour faire face à ce défi, au cours de l’année 2023, les équipes de conception des LLM ont utilisé de manière croissante la technique du <strong>RAG (<em>Retrieval Augmentated Generation</em>)</strong>. Celle-ci consiste, pour les modélisateurs, à cadrer le comportement du LLM en faisant en sorte qu’il privilégie des informations issues d’un corpus adapté spécialement à une tâche. Pour faire l’analogie avec l’apprentissage humain, les modèles où le RAG intervient peuvent être comparés à des étudiants préparant une dissertation s’appuyant sur un dossier préparé par les évaluateurs. Ce contexte pourra être utilisé pour construire une réponse argumentée et des exemples plus pertinents.</p>
-<p>Le succès des IA de discussion comme <code>ChatGPT</code> est intrinsèquement lié au travail humain qui a été mis en œuvre pour évaluer la pertinence des réponses proposées par le modèle afin de régulièrement mettre à jour le comportement du modèle. Sur une question donnée, l’humain évalue la réponse la plus pertinente faite par l’IA. A partir d’un volume suffisant d’évaluations, l’algorithme pourra, dans les prochaines situations similaires, faire un choix plus pertinent s’il apprend de ses erreurs. La technique ayant gagné cette année en popularité pour cette tâche est la <strong>DPO (<em>Direct Preference Optimization</em>)</strong> qui vise à simplifier l’intégration des retours humains dans le cycle de réentraînement d’un modèle. Cette problématique de supervision et d’amélioration continue d’un modèle dépasse d’ailleurs le cadre des modèles de langage : afin de s’assurer que les algorithmes ne perdent pas en qualité, l’évaluation humaine par le biais, par exemple, de campagnes de labellisation ou de retours des utilisateurs, est un enjeu important dans le cycle de vie de tout modèle mis en production.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>La vidéo <a href="https://www.youtube.com/watch?v=bZQun8Y4L2A">“State of GPT”</a> par Andrew Karpathy ;</li>
-<li>Un <a href="https://huggingface.co/blog/ray-rag">tutoriel</a> sur le RAG par <em>Hugging Face</em> ;</li>
-<li>Le <a href="https://openai.com/research/learning-from-human-preferences">blog</a> présentant la technique du <em>Reinforcement learning with human feedbacks</em> par OpenAI ;</li>
-<li>L’<a href="https://arxiv.org/pdf/2305.18290.pdf">article académique</a> présentant la DPO et un <a href="https://huggingface.co/blog/pref-tuning">tutoriel</a> d’<em>Hugging Face</em> ;</li>
-<li>Un <a href="https://www.deeplearning.ai/the-batch/issue-231/">article de blog</a> d’Andrew Ng sur la DPO.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="les-bases-de-données-vectorielles-gagnent-en-popularité" class="level3">
-<h3 class="anchored" data-anchor-id="les-bases-de-données-vectorielles-gagnent-en-popularité">Les bases de données vectorielles gagnent en popularité</h3>
-<p>Le langage de programmation <code>Python</code> est le <a href="https://www.tiobe.com/tiobe-index/">point d’entrée de référence</a> dans le domaine de la <em>data science</em>, mais pour des besoins plus spécialisés, des logiciels dédiés viennent s’y intégrer.</p>
-<p>C’est le cas notamment des bases de données vectorielles comme <a href="https://www.trychroma.com/"><code>ChromaDB</code></a>. Ces bases facilitent la recherche de similarité entre documents textuels en exploitant des transformations de ceux-ci en vecteurs numériques (technique des <a href="https://ig.ft.com/generative-ai/"><em>embeddings</em></a>).</p>
-<p>Par exemple, dans l’image ci-dessous, une base de données vectorielle pourra évaluer la similarité entre les termes en utilisant des techniques d’algèbre linéaire de manière plus efficace que ne le permettrait <code>Python</code>. Ce dernier est en effet un langage informatique généraliste, moins performant que des logiciels spécialisés pour faire de la recherche de similarité dans des corpus massifs. Dans une chaîne de production exploitant ce type de technique, <code>Python</code> servira de point d’entrée et déléguera ensuite les calculs complexes à la base de données vectorielle.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/embeddings.png" class="img-fluid figure-img"></p>
-<figcaption>Un exemple d’<em>embedding</em> et de rapprochement de textes. Chaque bande représente une dimension latente de notre langage. Il est possible de rapprocher les termes à partir de celles-ci. Source: <a href="https://ig.ft.com/generative-ai/"><em>Financial Times</em></a>.</figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>Le <em>framework</em> <a href="https://www.langchain.com/"><code>LangChain</code></a> pour construire par le biais de <code>Python</code> des applications utilisant des LLM : création d’une interface pour poser des questions à un LLM, transformation de la question en vecteur numérique par le biais d’une base vectorielle comme <code>ChromaDB</code>, interrogation du LLM, renvoi à l’utilisateur d’une réponse… ;</li>
-<li>Un <a href="https://realpython.com/chromadb-vector-database/">tutoriel de realpython.com</a> sur <a href="https://www.trychroma.com/"><code>ChromaDB</code></a>.</li>
-</ul>
-</div>
-</div>
-</section>
-</section>
-<section id="diffuser-des-données-au-format-parquet-pour-simplifier-leur-usage" class="level2">
-<h2 class="anchored" data-anchor-id="diffuser-des-données-au-format-parquet-pour-simplifier-leur-usage">Diffuser des données au format <code>Parquet</code> pour simplifier leur usage</h2>
-<p>Dans le domaine de la diffusion des données <em>open data</em>, l’Insee a expérimenté le format <code>Parquet</code> à deux reprises pendant l’année 2023. En premier lieu, pour la diffusion des données du <a href="https://www.insee.fr/fr/metadonnees/source/serie/s1046">Répertoire Electoral Unique</a>. Plus récemment, ce sont les données détaillées du recensement de la population qui ont été diffusées dans ce format, accompagnées d’un <a href="../../blog/parquetRP">guide d’utilisation</a> mis en ligne sur le blog du SSP Hub (plus de détails dans l’<a href="../../infolettre/infolettre_16">infolettre #16</a>).</p>
-<details>
-<summary>
-<p><em>Quelques exemples de retours sur la publication des données détaillées du recensement au format <code>Parquet</code>.</em></p>
-</summary>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/retour_utilisateur_1.png" class="img-fluid" width="700"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/retour_utilisateur_2.png" class="img-fluid" width="700"></p>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img src="https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/img3.png" class="img-fluid" width="700"></p>
-</div><div class="column" style="width:50%;">
-<p><img src="https://git.lab.sspcloud.fr/ssplab/parquet_insee_contact/-/raw/master/img/img4.png" class="img-fluid" width="700"></p>
-</div>
-</div>
-</details>
-<p>Le format de données <code>Parquet</code> est très intéressant pour les <em>data scientists</em> intéressés par le traitement de données volumineuses. Il permet des gains de performance importants par rapport au CSV sans être dépendant d’un logiciel propriétaire (contrairement aux formats <code>.sas7bdat</code>, <code>dbase</code>, etc.). Par exemple, les données détaillées du recensement diffusées par l’Insee pèsent 450Mo au format <code>Parquet</code> contre 5Go au format CSV. Des outils de traitement optimisés existent pour faciliter l’utilisation de ce format. Parmi ceux-ci, cette année a été marquée par la montée en puissance de <code>DuckDB</code>. Il s’agit d’un logiciel qui est utilisable par le biais des principaux langages maîtrisés par les <em>data scientists</em> : <a href="https://duckdb.org/docs/api/python/overview.html"><code>Python</code></a>, <a href="https://duckdb.org/docs/api/r.html"><code>R</code></a>, <a href="https://duckdb.org/docs/api/wasm/overview.html"><code>JavaScript</code></a> ou directement en ligne de commande.</p>
-<p>Sa capacité à gérer de grandes quantités de données en faisant des requêtes SQL optimisées sur un fichier au format <code>Parquet</code> rend <code>DuckDB</code> particulièrement approprié pour le traitement de données volumineuses (voir les éléments plus techniques, ci-dessous). Avec ce logiciel, les données du recensement peuvent être lues en quelques secondes alors qu’il fallait plusieurs dizaines de minutes dans les précédents formats. Pour des utilisateurs de l’écosystème de l’<em>open data</em> ou pour des organisations dont le patrimoine de données prend plus la forme de fichiers que de bases de données <code>PostGreSQL</code>, <code>DuckDB</code> est une opportunité technologique permettant de valoriser des données dont le traitement et la diffusion nécessitait jusqu’à présent des ressources computationnelles importantes.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Ressources techniques:</p>
-<ul>
-<li>Un <a href="https://datalab.sspcloud.fr/launcher/ide/rstudio-sparkr?autoLaunch=true&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fformation-bceao%2Fmain%2Ftp%2Finit-tp.sh%C2%BB&amp;resources.limits.memory=%C2%AB100Gi%C2%BB&amp;persistence.size=%C2%AB40Gi%C2%BB"><em>notebook</em> <i class="fa-brands fa-r-project" aria-label="r-project"></i></a> sur <code>DuckDB</code> issu d’une <a href="https://inseefrlab.github.io/formation-bceao/">formation de l’Insee</a> donnée à la BCEAO ;</li>
-<li>Une <a href="https://www.book.utilitr.org/03_fiches_thematiques/fiche_arrow">fiche sur <code>Arrow</code></a>, l’écosystème sous-jacent à <code>DuckDB</code>, dans la documentation collaborative <code>utilitR</code> ;</li>
-<li>Le <a href="../../blog/polars/">post de blog</a> sur la librairie <i class="fa-brands fa-python" aria-label="python"></i> <code>Polars</code>, une approche alternative à <code>DuckDB</code> ;</li>
-<li>L’<a href="https://datalab.sspcloud.fr/data-explorer?source=https%3A%2F%2Fstatic.data.gouv.fr%2Fresources%2Frecensement-de-la-population-fichiers-detail-individus-localises-au-canton-ou-ville-2020-1%2F20231023-122841%2Ffd-indcvi-2020.parquet">explorateur de données du SSPCloud</a> qui repose sur <code>DuckDB</code>.</li>
-</ul>
-<p>Données diffusées par la statistique publique au format <code>Parquet</code> :</p>
-<ul>
-<li>Les données du <a href="https://www.data.gouv.fr/fr/datasets/bureaux-de-vote-et-adresses-de-leurs-electeurs/#/resources">Répertoire Electoral Unique</a> ;</li>
-<li>Le guide d’utilisation des données du recensement de la population au format Parquet sous forme de <a href="../../blog/parquetRP/">billet de blog</a>. Voir aussi l’<a href="../../infolettre/infolettre_16"><em>infolettre #16</em></a> ;</li>
-<li>Les <a href="https://www.linkedin.com/feed/update/urn:li:activity:7163102904906678272/">données de la délinquance enregistrée par la police et gendarmerie nationales</a> publiées par le service statistique ministériel de la sécurité intérieur publiées au format Parquet.</li>
-</ul>
-<p>Sur le format <code>Parquet</code> :</p>
-<ul>
-<li>Un <a href="https://www.insee.fr/fr/information/7635827?sommaire=7635842">article</a> sur le format <code>Parquet</code> dans le <em>Courrier des stats n°9</em> écrit par Alexis Dondon et Pierre Lamarche ;</li>
-<li>Le blog d’<a href="https://www.icem7.fr/outils/3-explorations-bluffantes-avec-duckdb-1-interroger-des-fichiers-distants/">Eric Mauvière</a> qui présente une série d’articles sur le format <code>Parquet</code> ;</li>
-<li>La <a href="https://www.linkedin.com/feed/update/urn:li:activity:7133760348129505281?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7133760348129505281%29">présentation</a> de Romain Lesur sur le sujet pour l’atelier <em>Modernisation of Official Statistics</em> de l’UNECE.</li>
-</ul>
-</div>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Astuce</span>Des éléments plus techniques sur la gestion de la volumétrie des données
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Il existe principalement deux approches pour stocker, organiser et mettre à disposition des jeux de données structurés sous forme tabulaire : les <strong>fichiers</strong> et les <strong>bases de données relationnelles</strong>.</p>
-<p>Les bases de données relèvent d’une approche systémique. Un système de gestion de base de données (SGBD) est un logiciel qui gère à la fois le stockage d’un ensemble de données reliées, permet de mettre à jour celles-ci (ajout ou suppression d’informations, modification des caractéristiques d’une table…) et qui gère également les modalités d’accès à la donnée (type de requête, utilisateurs ayant les droits en lecture ou en écriture…). L’un des logiciels les plus connus dans le domaine est <code>PostgreSQL</code>.</p>
-<p>D’un autre côté, le stockage de données tabulaires sous forme de fichiers offre une approche plus décentralisée et flexible. Par rapport à des bases de données, les fichiers sont plus faciles à créer, partager et stocker et ne nécessitent pas systématiquement des logiciels spécialisés pour leur manipulation. Le stockage sous la forme de fichier consiste à organiser l’information présente dans un jeu de données dans des fichiers, de manière brute. Ces données peuvent être analysées sans recourir à un logiciel spécialisé. Même dans le cadre de formats propriétaires, comme le <code>.xlsx</code> ou <code>.sas7bdat</code>, le fait d’avoir une certaine forme de standardisation rend possible, même si ce n’est jamais parfaitement fiable, de lire ces données avec un autre logiciel que celui prévu initialement.</p>
-<p>La logique de la base de données est donc très différente de celle du fichier. Par rapport à une base de données, l’approche des fichiers présente plusieurs avantages, à condition de privilégier des formats libres.</p>
-<p>En premier lieu, les fichiers sont moins adhérents à un logiciel gestionnaire. Une transition d’un logiciel de traitement vers un autre n’implique pas de changer la source brute. En outre, alors que le traitement des bases de données nécessite l’intermédiation du logiciel de gestion adapté, les utilisateurs de <code>Python</code> ou <code>R</code> peuvent utiliser des fichiers à partir d’une librairie, donc un système beaucoup plus léger, qui sait comment transformer la donnée pour la retravailler depuis <code>Python</code> ou <code>R</code>.</p>
-<p>Pour ces raisons, entre autres, il est plus pratique pour des utilisateurs finaux de données d’avoir accès à des fichiers plutôt qu’à des bases de données, à condition d’avoir les ressources computationnelles suffisantes pour pouvoir traiter ces fichiers.</p>
-<p>Néanmoins, cette condition d’accès à des ressources computationnelles suffisantes peut représenter une contrainte limitante dans un environnement où les données sont de volume croissant. Dans les environnements où la volumétrie des données était importante, les bases de données ont connu une certaine popularité puisqu’elles permettaient de gérer efficacement de grandes quantités de données. Comme, de plus, les bases de données offraient une gestion plus fine et fiable des droits d’accès et d’écriture sur les bases que ne le permettaient des fichiers, cette approche a pu connaître une certaine popularité.</p>
-<p>Le développement conjoint de formats de stockages orientés objets (comme le protocole <code>S3</code>, utilisé par les systèmes <em>cloud</em> modernes à l’image du <code>SSPCloud</code>) et d’outils de traitement efficaces comme <code>DuckDB</code> permet d’associer les avantages de ce dernier à ceux d’un système cohérent de fichiers partagés (lecture/écriture optimisées, dissociation des utilisateurs pouvant lire et écrire un fichier…).</p>
-<p>Techniquement, <code>DuckDB</code> fonctionne de manière optimale avec des fichiers au format <code>Parquet</code>. Ce format de données, orienté colonne, permet en effet d’optimiser des traitements classiques des <em>data scientists</em> : sélectionner seulement certaines colonnes d’un jeu de données, regrouper des données pour faire des calculs d’agrégats, etc.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/parquet.png" class="img-fluid figure-img"></p>
-<figcaption>Une illustration du principe du stockage orienté colonne (Source: <a href="https://towardsdatascience.com/demystifying-the-parquet-file-format-13adb0206705">Michael Berk</a>)</figcaption>
-</figure>
-</div>
-<p>Par exemple, dans le schéma ci-dessus, si on ne s’intéresse qu’aux dates enregistrées, il suffit de ne prendre que le bloc de données <em>ad hoc</em>. Il n’est pas nécessaire de lire tout le fichier pour ne garder que les dates, comme ce serait le cas avec un format CSV.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="de-la-data-science-depuis-un-navigateur" class="level2">
-<h2 class="anchored" data-anchor-id="de-la-data-science-depuis-un-navigateur">De la <em>data science</em> depuis un navigateur</h2>
-<p>Le gain de popularité de <code>DuckDB</code> au cours de l’année 2023 s’explique en partie grâce à sa version web qui permet d’exécuter des traitements de données par le biais de navigateurs web, sans avoir à installer de logiciel spécialisé comme <code>Python</code> <i class="fa-brands fa-python" aria-label="python"></i> ou <i class="fa-brands fa-r-project" aria-label="r-project"></i>. C’est une approche typique du <a href="https://developer.mozilla.org/fr/docs/WebAssembly"><em>web assembly</em></a> qui consiste à mettre à disposition des logiciels de calculs scientifiques par le biais d’un simple navigateur grâce à <code>Javascript</code> <i class="fa-brands fa-js-square" aria-label="js-square"></i>, qui est disponible sur tout navigateur. Cette approche est intéressante pour les institutions proposant des <em>data visualisations</em> car elle peut permettre de mettre en oeuvre des manipulations de données complexes directement depuis la source brute par le biais du navigateur, donc sans recourir à des serveurs externes hébergés dans des <em>cloud</em>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Faire du <i class="fa-brands fa-r-project" aria-label="r-project"></i> depuis le navigateur avec <code>webR</code>
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Il est maintenant possible de faire du <code>R</code> directement depuis un navigateur <em>web</em> grâce à <a href="https://docs.r-wasm.org/webr/latest/"><code>webR</code></a>, une librairie développée par <em>Posit</em> en 2023 et qui porte la grammaire <code>R</code> dans le navigateur sans recourir à <code>Shiny</code> (exemple à tester 👇️).</p>
-<p>L’idée est que le code d’analyse de données est en <code>R</code> mais qu’en arrière plan c’est du <code>Javascript</code> qui servira à l’exécution. La librairie est encore jeune mais celle-ci est prometteuse pour faciliter la transition entre du code d’analyse de données en <code>R</code> et une application interactive.</p>
-<div id="qwebr-insertion-location-1"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-<p>Un exemple plus complexe, utilisant le <em>package</em> <code>ggplot2</code>:</p>
-<div id="qwebr-insertion-location-2"></div>
-<noscript>Please enable JavaScript to experience the dynamic code cell content on this page.</noscript>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>La <a href="https://docs.r-wasm.org/webr/latest/">documentation officielle</a> de <code>WebR</code> ;</li>
-<li><a href="https://thinkr.fr/retour-vers-le-turfu-r-le-web-et-webr/">Un <em>post</em></a> sur le <em>web assembly</em> par <em>ThinkR</em> ;</li>
-<li>L’extension <a href="https://quarto-webr.thecoatlessprofessor.com/"><code>quarto-webR</code></a> qui permet d’encapsuler du code <code>webR</code> dans un site web statique construit avec <code>Quarto</code> ;</li>
-<li>Une <a href="https://observablehq.com/@hrbrmstr/webr-0-2-2-in-observable">démonstration</a> de <code>WebR</code> sur <code>Observable</code>.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="prochains-événements-du-réseau" class="level2">
-<h2 class="anchored" data-anchor-id="prochains-événements-du-réseau">Prochains événements du réseau</h2>
-<section id="la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message-par-eric-mauvière-29-février-15h-16h" class="level3">
-<h3 class="anchored" data-anchor-id="la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message-par-eric-mauvière-29-février-15h-16h">“La dataviz pour donner du sens aux données et communiquer un message” par Eric Mauvière (📅 29 février, 15h-16h)</h3>
-<p>Le <strong>29 février (15h - 16h)</strong>, Eric Mauvière nous fera une présentation, avec de nombreux exemples issus de la statistique publique, de la manière dont une visualisation de données peut être construite pour transmettre un message clair aux lecteurs. Cette présentation permettra d’évoquer les bonnes pratiques et les outils simples pour construire des visualisations de données faciles à lire et à comprendre afin de rendre le message intelligible, efficace et utile à un large spectre de publics.</p>
-<p>Cet événement aura lieu en visio sur <a href="https://insee-fr.zoom.us/j/92487784559?pwd=WVdsNUFNWXhUNnJYUW56WFdyNHlNdz09">Zoom</a>, il est ouvert à tous les membres du réseau. Pour les agents de la DG de l’Insee, une retransmission en salle 4-C-458 est organisée pour assister à la présentation puis échanger à l’issue de celle-ci.</p>
-<p>Éric Mauvière est statisticien, passé par la diffusion et les études régionales de l’Insee. Il a ensuite créé le logiciel cartographique web <code>Géoclip</code> utilisé, par exemple, par le site <a href="https://statistiques-locales.insee.fr/">https://statistiques-locales.insee.fr/</a>. Plus récemment, il a participé à la conception du site <a href="https://vizagreste.agriculture.gouv.fr/">https://vizagreste.agriculture.gouv.fr/</a>, portail de visualisation de données du service statistique ministériel du ministère de l’Agriculture et de la Souveraineté alimentaire. Depuis 3 ans, au sein d’<code>Icem7</code>, il participe à la diffusion de connaissances sur les problématiques de <em>dataviz</em> et forme sur mesure en sémiologie graphique et analyse de données.</p>
-<ul>
-<li><a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/_La%20dataviz%20pour%20donner%20du%20sens%20aux%20données%20et%20communiquer%20un%20message_%20par%20Eric%20Mauvière.ics">Invitation outlook</a></li>
-<li>Lien <a href="https://insee-fr.zoom.us/j/92487784559?pwd=WVdsNUFNWXhUNnJYUW56WFdyNHlNdz09">Zoom</a></li>
-</ul>
-</section>
-<section id="masterclass-datascientest" class="level3">
-<h3 class="anchored" data-anchor-id="masterclass-datascientest">Masterclass datascientest</h3>
-<p>De nouvelles <em>masterclass</em> en partenariat avec <code>datascientest</code> seront organisées prochainement. Un questionnaire pour recenser les besoins, similaire à celui proposé l’an dernier, sera transmis prochainement pour évaluer le contenu à prioriser.</p>
-</section>
-<section id="programme-10" class="level3">
-<h3 class="anchored" data-anchor-id="programme-10">Programme 10%</h3>
-<p>La saison 3 du programme 10% démarre prochainement. Ce programme, issu des recommandations du <a href="https://www.numerique.gouv.fr/uploads/RAPPORT-besoins-competences-donnee.pdf">rapport de l’Inspection Générale de l’Insee et de la DINUM</a>, permet à des experts de la donnée de l’administration de monter en compétence en consacrant jusqu’à 10 % de leur temps de travail à des projets transversaux, à des formations ou encore à des moments informels qui favorisent l’échange entre pairs.</p>
-<p>Le premier événement de la saison aura lieu le <strong>11 mars 2024 au Lieu de la Transformation Publique</strong> (Paris XV). L’objectif de cette journée est de définir collectivement les projets mutualisables pouvant entraîner des collaborations entre <em>data scientists</em> de différentes administrations pendant l’année 2024.<br>
-Plus d’informations à venir sur le <a href="https://www.10pourcent.etalab.gouv.fr/">site du programme</a>.</p>
-<ul>
-<li>Inscription sur <a href="https://www.eventbrite.fr/e/billets-programme-10-journee-dideation-829916611927">Eventbrite</a>.</li>
-</ul>
-</section>
-<section id="autoformation-de-découverte-à-python" class="level3">
-<h3 class="anchored" data-anchor-id="autoformation-de-découverte-à-python">Autoformation de découverte à <code>Python</code></h3>
-<p>Depuis quelques semaines, une nouvelle formation est apparue au catalogue de formation de l’Insee et sur le <a href="https://www.sspcloud.fr/formation">portail de formation du SSPCloud</a> : une <strong>auto-formation de découverte de <code>Python</code></strong>, construite et mentorée par les équipes innovation de l’Insee.</p>
-<p>Chaque chapitre de formation, disponible sous la forme de <em>notebooks <code>Jupyter</code></em>, peut être ouvert en un clic à partir du <a href="https://www.sspcloud.fr/formation?search=&amp;path=%5B%22Initiation%20%C3%A0%20Python%22%5D">catalogue de formation</a> du <code>SSPCloud</code>. Ces ressources sont disponibles en continu, au-delà des périodes délimitées pour la formation.</p>
-<p>Des cycles de 6 semaines pendant lesquels les participants peuvent bénéficier d’un mentorat ont vocation à être organisés régulièrement. Les premiers formés selon cette modalité ont commencé leur apprentissage en ce début d’année 2024.</p>
-<p>Ce système de mentorat prend deux formes :</p>
-<ul>
-<li>tout au long de la formation : vous pouvez poser toutes vos questions sur le canal Tchap dédié ; les mentors de la formation répondent rapidement, afin que vous ne restiez jamais bloqué ;</li>
-<li>ponctuellement : une visio est réalisée si vous le désirez avec 1-2 mentors afin de pouvoir discuter plus en détail des problèmes que vous pouvez rencontrer.</li>
-</ul>
-<p>Ce système de mentorat a l’avantage à la fois de favoriser une pédagogie par la pratique continue qui a fait ses preuves pour l’apprentissage des langages de programmation, tout en laissant à chacun la possibilité d’avancer à son rythme.</p>
-<p>Les dates des prochains cycles de mentorat seront prochainement communiquées. Il est néanmoins possible, en attendant, d’explorer les ressources disponibles sur le <code>SSPCloud</code> ainsi que rejoindre le <a href="https://matrix.to/#/#sspy:agent.finances.tchap.gouv.fr">canal <code>Tchap</code> <code>SSPy - Formation "Initiation à Python"</code></a> afin d’échanger sur celle-ci (poser des questions de compréhension, comprendre un <em>bug</em>, assister les collègues bloqués, etc.).</p>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/</guid>
-  <pubDate>Sat, 20 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_17/robotroma.jfif" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="synthèse-du-projet" class="level1">
-<h1>Synthèse du projet</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th></th>
-<th>Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>Le tabagisme est un problème majeur de santé publique, à l’origine de nombreuses maladies évitables à travers le monde. Au cours des dernières décennies, l’augmentation du prix du tabac s’est imposée comme la principale stratégie des États pour lutter contre le tabagisme. Toutefois, les différences de prix entre certains pays frontaliers sont susceptibles de limiter l’efficacité de cette mesure en permettant à certains consommateurs d’acheter du tabac à un prix inférieur dans un État voisin. Si le problème des achats transfrontaliers n’est pas nouveau, l’ampleur du phénomène reste mal connue et fait encore l’objet de débats réguliers. Cette étude contribue à son évaluation en France en exploitant une expérience naturelle sans précédent : la fermeture des frontières terrestres entre mars 2020 et juin 2020 dans le cadre de la lutte contre la pandémie de Covid-19.</td>
-</tr>
-<tr class="even">
-<td><strong>Acteurs</strong></td>
-<td>Insee</td>
-</tr>
-<tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Les résultats montrent que la fermeture des frontières a généré un surplus d’achats de tabac de 9,5 % en France métropolitaine, par rapport à la situation contrefactuelle où les frontières seraient restées ouvertes. Il s’agit probablement d’une estimation basse des achats transfrontaliers. En effet, une partie de la consommation de tabac en provenance de l’étranger a pu persister pendant le premier confinement, les frontières n’ayant pas été complètement fermées, notamment aux travailleurs frontaliers. En extrapolant la consommation observée dans le reste du pays aux régions frontalières, à caractéristiques identiques, les recettes générées en France seraient environ 13,5 % plus élevées s’il n’existait pas d’alternatives moins chères à l’étranger.</td>
-</tr>
-<tr class="even">
-<td><strong>Produits et documentation du projet</strong></td>
-<td>- <a href="https://www.insee.fr/fr/statistiques/8172202">Une évaluation des achats transfrontaliers de tabac et des pertes fiscales associées en France</a>, Documents de travail de l’Insee n°2024-06, avril 2024</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="projets-similaires" class="level1">
-<h1>Projets similaires</h1>
-<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1773771542324" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
-<a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
-Exploitation de données bancaires pour les prévisions de croissance du PIB
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwY29tcHRlcyUyMGJhbmNhaXJlcw=='); return false;">données comptes bancaires</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Analyse du comportement des ménages à partir de données de comptes bancaires pour les prévisions de croissance économique, pendant la crise sanitaire et entre 2023 et 2024</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 juin 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1773771542318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
-<a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Travaux méthodologiques sur l’enquête Budget de Famille
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVz'); return false;">extraction de données</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Modernisation de l’enquête budget des familles par utilisation d’outils de classification automatique</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
-<a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Utilisation de données de cartes bancaires et de téléphonie mobile pour prévoir l’activité économique
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwQ0I='); return false;">données CB</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>La crise sanitaire de 2020 a nécessité de revoir les processus de prévision pour être plus réactif face aux événements. Dans ce cadre, l’Insee s’est appuyé sur les données…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 déc. 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
-<a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Que disent les données de production et de consommation d’électricité sur l’activité économique en période de confinement ?
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cHIlQzMlQTl2aXNpb25z'); return false;">prévisions</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwcHJpdiVDMyVBOWVz'); return false;">données privées</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Utilisation des données de production et de consommation d’électricité pour prévoir l’activité économique</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 déc. 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1773771542317" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
-<a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mouvements de population autour du confinement de mars 2020 grâce aux données de téléphonie mobile
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('bWFjaGluZSUyMGxlYXJuaW5n'); return false;">machine learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>L’Insee a eu accès à des données de téléphonie mobile dans le cadre du suivi de la crise sanitaire de 2020. Ces données ont permis de produire les statistiques sur les…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 nov. 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
-<a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Classification des données de caisse à partir de machine learning
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU='); return false;">codification automatique</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjBjYWlzc2U='); return false;">données de caisse</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q09JQ09Q'); return false;">COICOP</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SVBD'); return false;">IPC</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Classifier des données de caisse dans la nomenclature COICOP par machine learning pour le calcul de l’IPC</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2020
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1773771542316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
-<a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" data-src="../../project/2018_segregation/indice_segregation.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Ségrégation urbaine : un éclairage par les données de téléphonie mobile
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('SW5zZWU='); return false;">Insee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZXhwJUMzJUE5cmltZW50YXRpb24='); return false;">expérimentation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ=='); return false;">données de téléphonie mobile</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVz'); return false;">données administratives</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Croisement de données administratives et de données de téléphonie pour analyser la ségrégation au niveau local</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2018
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">Aucun article correspondant</div>
-
-</div>
-
-
-
-</section>
-
- ]]></description>
-  <category>expérimentation</category>
-  <category>données de téléphonie mobile</category>
-  <category>données CB</category>
-  <category>Insee</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/</guid>
-  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/tabac.png" medium="image" type="image/png" height="143" width="144"/>
-</item>
-<item>
-  <title>scanR, une application pour observer le paysage de la recherche et de l’innovation en France</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_scanr/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="synthèse-du-projet" class="level1">
-<h1>Synthèse du projet</h1>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th></th>
-<th>scanR, explorer le monde de la recherche et de l’innovation française</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Détail du projet</strong></td>
-<td>scanR est une <strong>application web pour aider à caractériser les structures publiques</strong> (unités de recherche de tous types, institutions publiques) et privées (entreprises) qui participent à la recherche et à l’innovation en France. scanR aide également à identifier les <strong>orientations des travaux des chercheuses et chercheurs actifs en France</strong> depuis le début des années 1990. <br> <br> scanR combine les <strong>données structurées sous licence libre</strong> (Publications et thèses, participation à des projets de recherche collaboratifs, spin-off, brevets, etc.) et des <strong>informations ouvertes</strong> directement extraites des sites web des acteurs de la recherche et de l’innovation. Ces informations proviennent ainsi d’environ 13 sources différentes (theses.fr, le <a href="../../project/2022_bso/index.html">baromètre de la science ouverte</a>, HAL, Commission européenne, INPI, ANR, l’office européen des brevets …) et sont notamment obtenues par webscraping, pdf-mining ou appel à des API. Les ressources sont ensuite <strong>identifiées et liées entre elles</strong>, notamment en utilisant des méthodes d’IA, et puis enrichies. <br> Une <strong>boucle de retours</strong> pour augmenter la qualité des données produites est introduite avec la possibilité de demander à corriger des données depuis le site de scanR. <br> Un moteur de <strong>recherche basé sur ElasticSearch</strong> permet de rechercher sur le site des thèmes, structures ou auteurs. <br> Enfin, il est possible d’afficher des interactions entre différentes structures ou thématiques de manière visuelle par une <strong>analyse en réseau</strong>.</td>
-</tr>
-<tr class="even">
-<td><strong>Acteurs</strong></td>
-<td>Service statistique du Ministère de l’Enseignement Supérieur et de la Recherche (<a href="https://www.enseignementsup-recherche.gouv.fr/fr/sies">SIES</a>)</td>
-</tr>
-<tr class="odd">
-<td><strong>Résultats du projet</strong></td>
-<td>Le projet scanR est en production depuis 2016 et enregistre environ 50 000 visites mensuelles. <br> <br> - Le projet met à disposition des <strong>fiches par structure et auteurs</strong> présentant leur organisation, activité, domaines de recherche, source de financement. <br> - Il propose par ailleurs un <strong>moteur de recherche</strong> sur les structures, auteurs, financements, publications, brevets de la recherche en France. <br> - Il met aussi à disposition des <strong>outils d’analyse des résultats</strong>, notamment des visualisations de graphs. <br> <br> Le projet met aussi à disposition <strong>plusieurs API</strong> pour récupérer des données et les données. <br></td>
-</tr>
-<tr class="even">
-<td><strong>Produits et documentation du projet</strong></td>
-<td>scanR est accessible sur <a href="https://scanr.enseignementsup-recherche.gouv.fr">scanr.enseignementsup-recherche.gouv.fr</a>. Ce site comprend : <br> - la <a href="https://scanr.enseignementsup-recherche.gouv.fr/docs/overview">documentation</a> pour accéder aux quatre API disponibles ; <br> - les différentes <a href="https://scanr.enseignementsup-recherche.gouv.fr/about/resources">sources de données</a> utilisées pour le projet. <br> <br> Concernant la <strong>technologie et la méthodologie</strong> utilisée : <br> - Présentation technique détaillée de scanR <a href="https://hal.science/hal-04813230v1"><em>scanR - Explore public data on French research and innovation</em></a>, conférence euroCRIS, novembre 2024 ; <br> - <a href="https://hal.science/hal-04892262v1">Mapping scientific communities at scale</a> pour expliquer l’analyse en réseaux</td>
-</tr>
-<tr class="odd">
-<td><strong>Code du projet</strong></td>
-<td>- Le code est disponible sur GitHub <i class="fa-brands fa-github" aria-label="github"></i> <a href="https://github.com/dataesr/scanr-ui">https://github.com/dataesr/scanr-ui</a></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="projets-similaires" class="level1">
-<h1>Projets similaires</h1>
-<div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1773771542318" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="241">
-<a href="../../project/2022_Curiexplore/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Curiexplore/curiexplore.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
-Curiexplore, la plateforme de comparaison des politiques nationales d’enseignement et de recherche
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Visualisation interactive de l’environnement de l’enseignement et de la recherche dans les différents pays.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNkYXRhdmlzdWFsaXNhdGlvbiUyQ29wZW4tZGF0YSUyQ2VuJTIwcHJvZHVjdGlvbiUyQ1NJRVM=" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1773771542319" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="368">
-<a href="../../project/2022_bso/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_bso/bso.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Baromètre de la science ouverte
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('d2Vic2NyYXBpbmc='); return false;">webscraping</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGF0YXZpc3VhbGlzYXRpb24='); return false;">datavisualisation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('b3Blbi1kYXRh'); return false;">open-data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZW4lMjBwcm9kdWN0aW9u'); return false;">en production</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U0lFUw=='); return false;">SIES</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Pour être en mesure de suivre l’ouverture des publications scientifiques (objectif de la stratégie nationale de science ouverte), le service statistique du Ministère de…</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-1 janv. 2022
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">Aucun article correspondant</div>
-</div>
-
-
-
-</section>
-
- ]]></description>
-  <category>API</category>
-  <category>en production</category>
-  <category>open-data</category>
-  <category>SIES</category>
-  <category>datavisualisation</category>
-  <category>ElasticSearch</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_scanr/</guid>
-  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_scanr/scanr.png" medium="image" type="image/png" height="31" width="144"/>
-</item>
-<item>
-  <title>Les formations R du MTES</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/course/r-mtes/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-
-
-
- ]]></description>
-  <category>R</category>
-  <category>MadeByUs</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/course/r-mtes/</guid>
-  <pubDate>Mon, 01 Jan 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/course/r-mtes/featured.png" medium="image" type="image/png" height="31" width="144"/>
 </item>
 </channel>
 </rss>

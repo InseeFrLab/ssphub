@@ -165,28 +165,6 @@
     ]
   },
   {
-    "listing": "/infolettre/infolettre.html",
-    "items": [
-      "/infolettre/infolettre_23/index.html",
-      "/infolettre/infolettre_22/index.html",
-      "/infolettre/infolettre_21/index.html",
-      "/infolettre/infolettre_20/index.html",
-      "/infolettre/infolettre_19/index.html",
-      "/infolettre/infolettre_18/index.html",
-      "/infolettre/infolettre_17/index.html",
-      "/infolettre/infolettre_16/index.html",
-      "/infolettre/infolettre_15/index.html",
-      "/infolettre/infolettre_14/index.html",
-      "/infolettre/infolettre_13/index.html",
-      "/infolettre/infolettre_12/index.html",
-      "/infolettre/infolettre_11/index.html",
-      "/infolettre/infolettre_10/index.html",
-      "/infolettre/infolettre_09/index.html",
-      "/infolettre/infolettre_08/index.html",
-      "/infolettre/infolettre_old/index.html"
-    ]
-  },
-  {
     "listing": "/course.html",
     "items": [
       "/course/r-mtes/index.html",
@@ -252,6 +230,9 @@
       "/project/2019_classification_asso/index.html",
       "/project/2018_outlier_dsn/index.html",
       "/project/2018_segregation/index.html",
+      "/event/2026-04-ssm-agri/2026-04-ssm-agri/index.html",
+      "/event/2026-04-ssm-agri/index.html",
+      "/event/2026-03-dares-conventions-collectives/index.html",
       "/event/2026-01-cartographia/index.html",
       "/event/2025-12-01-network-day/index.html",
       "/event/2025-04-16-Parquet/index.html",
@@ -276,6 +257,7 @@
       "/blog/2022_jms/index.html",
       "/event/2021-06-22-funathon/index.html",
       "/blog/hadoop_spark/index.html",
+      "/infolettre/infolettre_24/index.html",
       "/infolettre/infolettre_23/index.html",
       "/infolettre/infolettre_22/index.html",
       "/infolettre/infolettre_21/index.html",
@@ -348,6 +330,9 @@
   {
     "listing": "/event.html",
     "items": [
+      "/event/2026-04-ssm-agri/2026-04-ssm-agri/index.html",
+      "/event/2026-04-ssm-agri/index.html",
+      "/event/2026-03-dares-conventions-collectives/index.html",
       "/event/2026-01-cartographia/index.html",
       "/event/2025-12-01-network-day/index.html",
       "/event/2025-04-16-Parquet/index.html",
@@ -364,6 +349,29 @@
       "/event/presentation-dobservable-par-nicolas-lambert/index.html",
       "/event/2022-06-20-funathon/index.html",
       "/event/2021-06-22-funathon/index.html"
+    ]
+  },
+  {
+    "listing": "/infolettre/infolettre.html",
+    "items": [
+      "/infolettre/infolettre_24/index.html",
+      "/infolettre/infolettre_23/index.html",
+      "/infolettre/infolettre_22/index.html",
+      "/infolettre/infolettre_21/index.html",
+      "/infolettre/infolettre_20/index.html",
+      "/infolettre/infolettre_19/index.html",
+      "/infolettre/infolettre_18/index.html",
+      "/infolettre/infolettre_17/index.html",
+      "/infolettre/infolettre_16/index.html",
+      "/infolettre/infolettre_15/index.html",
+      "/infolettre/infolettre_14/index.html",
+      "/infolettre/infolettre_13/index.html",
+      "/infolettre/infolettre_12/index.html",
+      "/infolettre/infolettre_11/index.html",
+      "/infolettre/infolettre_10/index.html",
+      "/infolettre/infolettre_09/index.html",
+      "/infolettre/infolettre_08/index.html",
+      "/infolettre/infolettre_old/index.html"
     ]
   },
   {

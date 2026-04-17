@@ -11,8 +11,121 @@
 <description>Une liste des infolettres, le mail
 sur l&#39;actualité interne du réseau.
 </description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Sat, 28 Feb 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Tue, 31 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>LLM, fusées et lapins cartographes : bienvenue dans le tur-fu</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="bienvenue-à-la-vingt-quatrième-infolettre" class="level1">
+<h1>Bienvenue à la <strong>vingt quatrième infolettre</strong> !</h1>
+<p>C’est le printemps ! Le temps est bon, il fait <a href="https://www.rtl.be/actu/monde/international/jusqua-416degc-avant-meme-la-fin-de-lhiver-une-vague-de-chaleur-extreme-frappe/2026-03-19/article/783199">41,6°C en Californie avant même la fin de l’hiver</a>.</p>
+<p>Bienvenue à cette infolettre, coécrite avec <strong>Mélina</strong> ❤️.</p>
+</section>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>Qu’il est difficile de choisir une seule infographie. Pour ce mois-ci, c’est finalement une vidéo de tous les lancements de fusée dans l’espace depuis 1957 (ne pas avoir peur de tout ce qu’il y a là-haut). Attention, grand final de lancements pour l’année 2025 !</p>
+<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tUNZQCGKvbg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <em>Source : données recueillies par Jonathan McDowell et disponibles sur <a href="https://planet4589.org">https://planet4589.org</a>, infographie faite par <a href="https://peteratwoodprojects.wordpress.com/">Peter Atwood</a> et explications aussi <a href="https://www.linkedin.com/posts/peter-atwood-60b9ba18a_cartography-gis-blender3d-ugcPost-7422329412764770305-jgGI/">ici</a>.</em><p></p>
+<p>Le site <a href="https://satellitetracker3d.com/">satellitetracker</a> permet par ailleurs de suivre l’ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. Et cela en fait un petit nombre autour de la planète bleue grise …</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/satellites_trackers.png" class="img-fluid figure-img"></p>
+<figcaption>Premier contact à l’approche de la Terre</figcaption>
+</figure>
+</div>
+</section>
+<section id="les-prochains-évènements-du-réseau" class="level1">
+<h1>Les prochains évènements du réseau</h1>
+<p>Une foison d’événements et d’informations ce mois-ci. Pour résumer :</p>
+<ul>
+<li>Un nouvel <strong>Open Science Meet-up</strong> à propos des <em>replication packages</em> en économie le <strong>2 avril 2026</strong> - <a href="https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1">lien</a> ;</li>
+<li>un atelier du réseau sur la <strong>génération de commentaires de graphique par LLM</strong> le <strong>mardi 14 avril 2026 à 10h</strong> - <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">lien</a> ;</li>
+<li>un appel à contribution pour la conférence uRos du <strong>18 au 20 novembre 2026</strong> à Paris.</li>
+</ul>
+<section id="replication-packages-en-économie---open-science-meet-up---jeudi-2-avril-2026-13h30-visio" class="level2">
+<h2 class="anchored" data-anchor-id="replication-packages-en-économie---open-science-meet-up---jeudi-2-avril-2026-13h30-visio"><em>Replication packages</em> en économie - Open science Meet-up - 📅 jeudi 2 avril 2026 13h30, visio</h2>
+<p>Le prochain Open Science Meet-up de l’Insee portera sur le thème : <strong>Replication packages en économie : préparation, bonnes pratiques et attentes des revues, surtout lorsque les données sont confidentielles.</strong></p>
+<p>Pour s’assurer de la reproducibilité d’une analyse publiée, de nombreuses revues demandent désormais aux auteurs de fournir un <em>replication package</em>, c’est-à-dire l’ensemble des données, du code et de la documentation.</p>
+<p>Lors de ce Meet-Up, <a href="https://www.ilr.cornell.edu/people/lars-vilhuber">Lars Vilhuber</a> (Cornell University), <em>data editor</em> à l’<em>American Economic Association</em>, présentera les principes et les bonnes pratiques associés à la préparation et à la diffusion des <em>replication packages</em>. Il reviendra notamment sur les exigences croissantes des revues scientifiques, les standards qui se développent dans la communauté économique et les enjeux de la reproductibilité des travaux empiriques.</p>
+<p>Cette rencontre sera l’occasion d’échanger sur la manière dont ces pratiques contribuent au <strong>développement d’une recherche plus transparente et plus ouverte</strong>, en particulier dans les domaines de l’analyse économique et statistique.</p>
+<p>Elle s’adresse à toutes celles et ceux qui souhaitent mieux comprendre les enjeux de la reproductibilité des analyses économiques et de la diffusion ouverte des travaux de recherche.</p>
+<p><strong>Rendez-vous le jeudi 2 avril de 13h30 à 14h15 en distanciel à ce <a href="https://insee-fr.zoom.us/j/96879320424?pwd=JwbRv0BRGHtpzijofpph6UHStnV5gO.1">lien</a></strong>.</p>
+</section>
+<section id="génération-de-commentaire-de-graphiques-retour-dexpérience-sur-les-statistiques-agricoles-et-pistes-damélioration---mardi-14-avril-14h-paris-dg-insee-et-visio" class="level2">
+<h2 class="anchored" data-anchor-id="génération-de-commentaire-de-graphiques-retour-dexpérience-sur-les-statistiques-agricoles-et-pistes-damélioration---mardi-14-avril-14h-paris-dg-insee-et-visio">Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration - 📅 mardi 14 avril 14h, Paris (DG Insee) et visio</h2>
+<p>Le SSM Agriculture essaye de générer par LLM des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
+<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un <strong>cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés</strong>.</p>
+<p><strong>Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !</p>
+<p>Si vous voulez l’ajouter dans votre agenda, voici une <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics">invitation agenda</a>.</p>
+<p>Les mises à jour seront faites sur la <a href="../../talk/2026-04-ssm-agri/index.qmd">page de l’événement</a>.</p>
+</section>
+<section id="contribuez-à-la-conférence-sur-lutilisation-de-r-dans-la-statistique-publique-uros---18-20-novembre-2026-paris" class="level2">
+<h2 class="anchored" data-anchor-id="contribuez-à-la-conférence-sur-lutilisation-de-r-dans-la-statistique-publique-uros---18-20-novembre-2026-paris">Contribuez à la conférence sur l’utilisation de R dans la statistique publique (uROS) - 📅 18-20 novembre 2026, Paris</h2>
+<p>L’Insee accueille l’édition 2026 de la <strong>conférence uRos (use of R in official statistics)</strong> les <strong>18, 19 et 20 novembre 2026</strong> au centre Pierre-Mendès France, à Bercy.</p>
+<p>Cette rencontre annuelle des <strong>utilisateurs de R en Europe et dans le monde</strong> sera l’occasion de valoriser les nombreux investissements en R faits à l’Insee et au sein du SSP. La liste des thèmes ainsi que toutes les informations pratiques sont en ligne sur le <a href="https://r-project.ro/conference2026_FR.html">site de la conférence</a>.</p>
+<p>Si vous souhaitez y <strong>assister</strong>, vous pouvez d’ores et déjà vous inscrire <a href="https://uros2026.sciencesconf.org/registration?lang=fr">en ligne</a>.</p>
+<p>Si vous souhaitez <strong>contribuer</strong>, l’appel à contribution va bientôt ouvrir jusqu’au <strong>15 juin</strong> sur le site de la conférence. Vous pourrez soumettre :</p>
+<ol type="i">
+<li>une présentation classique de 15 minutes ;</li>
+<li>une présentation flash de 5 minutes ;</li>
+<li>un tutoriel d’environ 2 heures.</li>
+</ol>
+<p>N’hésitez pas à contacter directement l’organisation de l’événement sur <a href="mailto:uros2026@insee.fr">uros2026@insee.fr</a>.</p>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<section id="données-tabulaires-le-deep-learning-est-il-devenu-une-alternative-crédible-aux-méthodes-de-boosting" class="level2">
+<h2 class="anchored" data-anchor-id="données-tabulaires-le-deep-learning-est-il-devenu-une-alternative-crédible-aux-méthodes-de-boosting">Données tabulaires : le deep learning est-il devenu une alternative crédible aux méthodes de boosting ?</h2>
+<p><a href="https://m-clark.github.io/posts/2026-03-01-dl-for-tabular-foundational/">Ce billet</a> de blog explique que, si le boosting reste une valeur sûre, plusieurs modèles récents - qu’il s’agisse de deep learning “classique” ou de modèles de <a href="https://arxiv.org/abs/2108.07258">fondation</a> - deviennent désormais <strong>réellement compétitifs</strong>. L’émergence de benchmarks plus rigoureux et de nouveaux outils facilite par ailleurs la comparaison et la prise en main de ces nouveaux modèles. <strong>Le principal frein reste toutefois le passage à l’échelle sur les très grands jeux de données</strong>, qui limite encore leur adoption.</p>
+<p>Et pour les séries temporelles ? Le constat est <a href="https://berts-workshop.github.io/">proche</a>: les modèles de fondation progressent, mais les approches plus classiques restent très compétitives, et le principal enjeu est encore celui de l’évaluation, les résultats étant contrastés selon les benchmarks.</p>
+</section>
+<section id="des-pistes-intéressantes-pour-la-recherche-documentaire" class="level2">
+<h2 class="anchored" data-anchor-id="des-pistes-intéressantes-pour-la-recherche-documentaire">Des pistes intéressantes pour la recherche documentaire</h2>
+<p>Le projet <a href="https://github.com/VectifyAI/PageIndex">PageIndex</a> explore une approche de recherche documentaire sans base vectorielle, fondée sur une indexation hiérarchique des documents et une navigation par grand modèle de langage (LLM). Au lieu de découper le texte en <em>chunks</em> (des segments de texte issus du découpage d’un document) puis de faire une recherche par similarité dans une base vectorielle (c’est la méthode du <a href="https://arxiv.org/abs/2005.11401">RAG</a> classique), l’outil transforme un <strong>document long en un arbre hiérarchique</strong> - une sorte de table des matières enrichie pour les LLM - puis s’appuie sur cette structure pour guider la recherche des passages pertinents. L’objectif est de mieux traiter les <strong>documents longs et structurés</strong>, pour lesquels une simple recherche par similarité sur des <em>chunks</em> peut manquer de précision ou de contexte. L’approche est prometteuse et a l’intérêt de rendre le parcours de recherche plus lisible et plus traçable.</p>
+<p>Ce <a href="https://www.anthropic.com/engineering/contextual-retrieval">billet</a> d’Anthropic sur le Contextual Retrieval propose une approche pour <strong>améliorer la recherche documentaire par RAG classique</strong>. L’idée est de conserver le schéma habituel (<em>chunks</em>, <em>embeddings</em>, <a href="https://en.wikipedia.org/wiki/Okapi_BM25">BM25</a>) mais d’ajouter à chaque <em>chunk</em> un court contexte explicatif généré à partir du document complet, afin d’éviter qu’un passage isolé perde les informations qui lui donnent son sens. Le billet indique que cette contextualisation réduit de 49 % les échecs de <em>retrieval</em>, et jusqu’à 67 % lorsqu’on y ajoute une étape de <em>reranking</em>. Le billet rappelle aussi un point utile : pour des bases documentaires “modestes” (moins de 200 000 <em>tokens</em>, soit environ 500 pages), il peut être plus simple de mettre directement tout le corpus dans le prompt, sans passer par l’étape RAG.</p>
+</section>
+<section id="dbt-duckdb-structurer-ses-pipelines-sql-avec-une-infrastructure-légère" class="level2">
+<h2 class="anchored" data-anchor-id="dbt-duckdb-structurer-ses-pipelines-sql-avec-une-infrastructure-légère">dbt + DuckDB : structurer ses pipelines SQL avec une infrastructure légère</h2>
+<p>Les outils <a href="https://rmoff.net/2026/02/19/ten-years-late-to-the-dbt-party-duckdb-edition">dbt + DuckDB</a> permettent de <strong>professionnaliser des traitements analytiques locaux</strong>. <a href="https://duckdb.org/">DuckDB</a> fournit un moteur SQL très rapide pour interroger et transformer des données, y compris directement depuis des fichiers Parquet. <a href="https://www.getdbt.com/">dbt</a> permet quant à lui d’ajouter une couche d’organisation : il aide à découper les traitements en étapes claires (sources, <em>staging</em>, tables finales), à gérer les dépendances entre modèles, à documenter les transformations, à tester la qualité des données etc. En d’autres termes, <strong>dbt fournit une méthode pour transformer une collection de scripts SQL en pipeline</strong> plus lisible, plus reproductible et plus maintenable.</p>
+</section>
+</section>
+<section id="pour-aller-plus-loin-se-former" class="level1">
+<h1>Pour aller plus loin / se former</h1>
+<section id="apprendre-avec-lia" class="level2">
+<h2 class="anchored" data-anchor-id="apprendre-avec-lia">Apprendre avec l’IA</h2>
+<p>Utiliser l’IA pour apprendre, et pas seulement pour accélérer la production de code ? Le <strong>dépôt <a href="https://github.com/DrCatHicks/learning-opportunities">Learning Opportunities</a></strong> propose un plugin pour Claude Code qui déclenche de courts exercices de 10 à 15 minutes afin d’éviter l’illusion de compréhension que peuvent créer les assistants de code. Une approche intéressantes pour ceux qui souhaitent (continuer à) <strong>se former à l’heure du coding assisté par IA</strong>.</p>
+</section>
+<section id="microgpt-visualized-une-ressource-pour-comprendre-ce-quil-y-a-dans-un-gpt" class="level2">
+<h2 class="anchored" data-anchor-id="microgpt-visualized-une-ressource-pour-comprendre-ce-quil-y-a-dans-un-gpt">MicroGPT Visualized : une ressource pour comprendre ce qu’il y a dans un GPT</h2>
+<p>Pour mieux comprendre ce qui se passe réellement derrière les mots “<em>attention</em>”, “<em>transformer</em>”, “résidus” ou “<em>KV cache</em>”, <a href="https://microgpt.jtauber.com">MicroGPT Visualized</a> est une excellente découverte. Le site reprend le micro-GPT en Python d’Andrej Karpathy et le décompose en six étapes, du simple modèle bigramme jusqu’au <em>transformer</em> complet optimisé avec <em>Adam</em>, le tout avec <strong>schémas, animations et explications progressives</strong>.</p>
+</section>
+<section id="master-machine-learning-with-scikit-learn" class="level2">
+<h2 class="anchored" data-anchor-id="master-machine-learning-with-scikit-learn">Master Machine Learning with scikit-learn</h2>
+<p>Le livre en ligne <a href="https://mlbook.dataschool.io/">Master Machine Learning with scikit-learn</a> de Kevin Markham est une ressource très intéressante pour <strong>développer ou consolider ses bonnes pratiques en machine learning</strong>.</p>
+</section>
+</section>
+<section id="fun" class="level1">
+<h1>Fun</h1>
+<section id="mapinou-un-jeu-mobile-pour-alimenter-la-recherche-et-mieux-comprendre-la-navigation-cartographique" class="level2">
+<h2 class="anchored" data-anchor-id="mapinou-un-jeu-mobile-pour-alimenter-la-recherche-et-mieux-comprendre-la-navigation-cartographique">Mapinou : un jeu mobile pour alimenter la recherche et mieux comprendre la navigation cartographique</h2>
+<p>Petite respiration carto ce mois-ci avec <a href="https://cartonumerique.blogspot.com/2026/03/mapinou.html"><strong>Mapinou</strong></a>, un jeu mobile gratuit développé par une équipe de recherche du LASTIG (IGN) dans le cadre du projet européen LostInZoom. En guidant un lapin à travers une carte de France multi-échelles, les joueurs produisent des données anonymes par leurs interactions avec la carte - zooms, déplacements, clics - que les chercheurs utilisent pour <strong>mieux comprendre les phénomènes de désorientation après zoom et concevoir des interfaces cartographiques plus fluides.</strong></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Infolettre</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/</guid>
+  <pubDate>Tue, 31 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/orbital_launch.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
 <item>
   <title>L’IA dans l’oeil du cyclone</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/</link>
@@ -714,7 +827,7 @@ Astuce
 <section id="sora-la-nouvelle-ia-dopenai-pour-générer-des-vidéos" class="level2">
 <h2 class="anchored" data-anchor-id="sora-la-nouvelle-ia-dopenai-pour-générer-des-vidéos"><code>Sora</code>, la nouvelle IA d’OpenAI pour générer des vidéos</h2>
 <p><br></p>
-<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://vp.nyt.com/video/2024/02/14/115628_1_15OPENAI-VIDEO-1_wg_720p.mp4"></video></div> <em>Source : <a href="https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html">New York Times</a> d’après OpenAI.</em><p></p>
+<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://vp.nyt.com/video/2024/02/14/115628_1_15OPENAI-VIDEO-1_wg_720p.mp4"></video></div> <em>Source : <a href="https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html">New York Times</a> d’après OpenAI.</em><p></p>
 <details>
 <summary>
 Instruction utilisée par OpenAI pour générer cette vidéo
@@ -729,7 +842,7 @@ Instruction utilisée par OpenAI pour générer cette vidéo
 <br>
 <p><code>Sora</code> n’est pas directement mis à disposition du grand public, contrairement aux autres services d’OpenAI. Ce produit n’est partagé qu’à des utilisateurs identifiés par OpenAI comme pouvant représenter le public cible - des réalisateurs par exemple - ou ayant une expertise sur des sujets comme la désinformation, les biais, la connaissance des algorithmes de recommandation, etc. Cette diffusion restreinte vise à recevoir des retours de la part de potentiels clients ou d’experts sur les risques de ces technologies. La communication par le biais de quelques vidéos choisies par OpenAI permet, dans le même temps, de créer une attente du grand public avant la mise à disposition plus large.</p>
 <p>Comme <code>Dall-E</code>, <code>Midjourney</code> et consorts qui généraient des mains avec <a href="https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands">trop de doigts</a>, le réseau de neurones derrière <code>Sora</code> a encore des difficultés à respecter certaines règles élémentaires de vraisemblance. Par exemple, dans la vidéo ci-dessous, les événements liés à un bris de verre s’enchaînent dans un ordre incohérent.</p>
-<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://cdn.openai.com/tmp/s/discussion_0.mp4"></video></div> <em>Source : <a href="https://openai.com/research/video-generation-models-as-world-simulators">OpenAI</a></em><p></p>
+<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://cdn.openai.com/tmp/s/discussion_0.mp4"></video></div> <em>Source : <a href="https://openai.com/research/video-generation-models-as-world-simulators">OpenAI</a></em><p></p>
 <p>OpenAI a déjà prévu de <a href="https://openai.com/research/video-generation-models-as-world-simulators">nombreuses applications</a> à ce modèle. Outre la génération de vidéos à partir d’instructions verbales, <code>Sora</code> est capable d’animer une image, de compléter une vidéo déjà existante avec une vidéo fictionnelle, d’éditer une vidéo déjà existante pour changer des éléments… Les secteurs de la communication, de la création et de la diffusion de contenu sont concernés au premier chef mais la richesse des fonctionnalités possibles et la simplicité d’usage des produits d’OpenAI laissent penser que les applications iront bien au-delà de ces secteurs économiques ; la vidéo occupe maintenant une place prédominante sur internet et sur les réseaux sociaux pour de multiples usages.</p>
 <p>Ce modèle soulève, comme <code>Dall-E</code> ou <code>ChatGPT</code> avant lui, des enjeux de propriété intellectuelle puisqu’il a aussi été entraîné sur des corpus massifs collectés depuis internet. Le réalisme des vidéos générées peut également laisser craindre, sans marque d’identification claire du fait que la vidéo est générée numériquement (principe du <a href="https://fr.wikipedia.org/wiki/Tatouage_num%C3%A9rique"><em>watermark</em></a>), des dérives autour de la mésinformation, notamment des vidéos malveillantes et réalistes de personnes dans des situations inventées (des <em>deepfakes</em>) ou la prolifération de contenus choquants si les garde-fous dans la génération de contenus sont outrepassés.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -898,7 +1011,7 @@ font-style: inherit;">`</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="390" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><span id="cb2-390">slides <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -949,9 +1062,9 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-hendrycks2021measuring" class="csl-entry">
-Hendrycks, Dan, Collin Burns, Steven Basart, Andy Zou, Mantas Mazeika, Dawn Song, et Jacob Steinhardt. 2021. <span>«&nbsp;Measuring Massive Multitask Language Understanding&nbsp;»</span>. <a href="https://arxiv.org/abs/2009.03300">https://arxiv.org/abs/2009.03300</a>.
+Hendrycks, Dan, Collin Burns, Steven Basart, et al. 2021. <em>Measuring Massive Multitask Language Understanding</em>. <a href="https://arxiv.org/abs/2009.03300">https://arxiv.org/abs/2009.03300</a>.
 </div>
 </div></section></div> ]]></description>
   <category>Infolettre</category>
@@ -1730,7 +1843,56 @@ Code pour générer les différents blocs de cette figure
 Code pour générer la figure principale
 </summary>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-11" data-startfrom="145" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line 144;"><span id="annotated-cell-11-145"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-11" data-startfrom="145" data-source-offset="0" data-llms-code-original="// Voir plus bas 👇️ les arrays utilisés
+// Animation faite avec le Scrubber ci-dessous
+lineplot = Plot.plot({
+    y: {
+        grid: true,
+        label: &quot;Nombre d'inscrits&quot;
+    },
+    x: {
+        label: &quot;Date&quot;,
+        domain: [new Date(&quot;2023-01-10&quot;), new Date(&quot;2023-12-09&quot;)]
+    },
+    color: {
+        range: Object.values(color_mapping_events),
+        domain: Object.keys(color_mapping_events),
+        label: &quot;Type d'événement&quot;
+    }, 
+    marginLeft: 50,
+    marks: [
+        Plot.line(
+          serie_contacts, {
+            x: &quot;date&quot;, y: &quot;mail&quot;,
+            stroke: &quot;#6886bb&quot;,
+            tip: &quot;xy&quot;
+            }),
+        Plot.crosshairX(serie_contacts_complete, { //<1>
+            x: (d) => new Date(d.date), y: &quot;mail&quot;, stroke: &quot;red&quot;
+            }),
+        Plot.dot(
+          serie_contacts_complete,
+          Plot.pointerX({x: (d) => new Date(d.date), y: &quot;mail&quot;, stroke: &quot;red&quot;})), //<2>
+        Plot.dot(serie_contacts, {
+            x: &quot;date&quot;, y: &quot;mail&quot;,
+            stroke: &quot;#6886bb&quot;,
+            fill: &quot;#6886bb&quot;,
+            title: &quot;Effectif&quot;
+            }),
+        Plot.tickX(events_data_figure1_b, {
+            x: (d) => new Date(d.date), text: html``,
+            stroke: &quot;type&quot;,
+            opacity: 0.1,
+            color: &quot;x&quot;,
+            tip: true
+            }),            
+        Plot.axisX(events_data_figure1_b, {
+            x: (d) => new Date(d.date),
+            text: &quot;&quot;,
+            color: &quot;type&quot;
+            }),
+    ]
+})" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line 144;"><span id="annotated-cell-11-145"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">// Voir plus bas 👇️ les arrays utilisés</span></span>
 <span id="annotated-cell-11-146"><span class="co" style="color: #5E5E5E;
@@ -2192,7 +2354,29 @@ font-style: inherit;">,</span></span>
 Code pour générer la bande sous la figure principale
 </summary>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-12" data-startfrom="390" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1">1</button><span id="annotated-cell-12-390" class="code-annotation-target">warm_strip <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-12" data-startfrom="390" data-source-offset="0" data-llms-code-original="warm_strip = Plot.plot({ //<1>
+  height: 40,
+  marginLeft: 50,
+  color: {
+    scheme: &quot;ylorrd&quot;,
+    },
+  marks: [
+    Plot.crosshair(serie_contacts_complete, {
+      x: (d) => new Date(d.date),
+      strokeOpacity: 0.2,
+      fill: &quot;mail&quot;,
+      interval: d3.utcDay.every(3),
+      inset: 0 // no gaps
+    }),
+    Plot.barX(serie_contacts_complete, {
+      x: (d) => new Date(d.date),
+      strokeOpacity: 0.2,
+      fill: &quot;mail&quot;,
+      interval: d3.utcDay.every(3),
+      inset: 0 // no gaps
+    })
+  ]
+})" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><button class="code-annotation-anchor" data-target-cell="annotated-cell-12" data-target-annotation="1">1</button><span id="annotated-cell-12-390" class="code-annotation-target">warm_strip <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> Plot<span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -3135,7 +3319,9 @@ Tableau des performances (source: <a href="https://mistral.ai/news/mixtral-of-ex
 Les librairies ou imports externes utilisés
 </summary>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-17" data-startfrom="0" data-source-offset="-0" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><button class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="1">1</button><span id="annotated-cell-17-0" class="code-annotation-target">Plot <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-17" data-startfrom="0" data-source-offset="-0" data-llms-code-original="Plot = require('@observablehq/plot@0.6.12/dist/plot.umd.min.js') //<1>
+import {disposal} from &quot;@mbostock/disposal&quot;
+import {Scrubber} from &quot;@mbostock/scrubber&quot;" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line -1;"><button class="code-annotation-anchor" data-target-cell="annotated-cell-17" data-target-annotation="1">1</button><span id="annotated-cell-17-0" class="code-annotation-target">Plot <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="pp" style="color: #AD0000;
 background-color: null;
@@ -3430,7 +3616,19 @@ figure
 La première figure, animée par la réactivité de ses inputs
 </summary>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-22" data-startfrom="-1" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="annotated-cell-22--1">plot_bar_participants <span class="op" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="annotated-cell-22" data-startfrom="-1" data-source-offset="0" data-llms-code-original="plot_bar_participants = Plot.plot({
+  height: 40,
+  marginLeft: 60,
+  x: {label: &quot;Frequency →&quot;, domain: [336, 552]},
+  y: {label: null},
+  color: {
+    scheme: &quot;ylorrd&quot;,
+    domain: [236, scrubber_participants] 
+    },
+  marks: [
+    Plot.barX(current_bar, {x: 1, inset: 0.5, fill: (d) => d}),    //<1>
+  ]
+})" style="background: #f1f3f5;"><pre class="sourceCode js code-annotation-code code-with-copy code-annotated"><code class="sourceCode javascript" style="counter-reset: source-line -2;"><span id="annotated-cell-22--1">plot_bar_participants <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> Plot<span class="op" style="color: #5E5E5E;
 background-color: null;

@@ -9,8 +9,325 @@
 <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event.html</link>
 <atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
-<generator>quarto-1.8.27</generator>
-<lastBuildDate>Tue, 13 Jan 2026 00:00:00 GMT</lastBuildDate>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Tue, 14 Apr 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="présentation-de-latelier" class="level1">
+<h1>Présentation de l’atelier</h1>
+<p>Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
+<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés.</p>
+<p><strong>Ils nous ont présenté leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). Tout le monde est le bienvenu !</p>
+</section>
+<section id="replay-de-latelier" class="level1">
+<h1>Replay de l’atelier</h1>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/2026-04-ssm_agri.mp4"></video></div>
+</section>
+<section id="support-de-présentation" class="level1">
+<h1>Support de présentation</h1>
+<iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf" width="100%" height="600px">
+<p>
+Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf">Download the PDF instead.</a>
+</p>
+</iframe>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="38" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 37;"><span id="cb1-38"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-39">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-40">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides en pdf"</span></span>
+<span id="cb1-41">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="48" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 47;"><span id="cb2-48"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb2-49">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb2-50"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb2-51"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb2-52"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb2-53"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb2-54"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb2-55">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb2-56">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>LLM</category>
+  <category>SSM Agriculture</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/</guid>
+  <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
+</item>
+<item>
+  <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
+<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés.</p>
+<p><strong>Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !</p>
+<p>Si vous voulez l’ajouter dans votre agenda, voici une <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics">invitation agenda</a>.</p>
+<!--
+Pour plus d'information, la Dares a présenté son travail aux [Journées de méthodologie statistique de 2025](https://journees-methodologie-statistique.insee.net/analyse-textuelle-de-documents-longs-cas-des-accords-dentreprise/).
+
+**Replay de la présentation :**
+
+
+
+**Présentation :**
+
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode yaml code-with-copy" src="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide"></iframe></div>
+
+
+:::::{.cell}
+
+```{.js .cell-code .hidden startFrom="37" source-offset="0"}
+createButton(
+  "https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/Analyse_textuelle_documents_longs.pdf",
+  "Télécharger les slides en pdf"
+)
+```
+
+::::{.cell-output .cell-output-display}
+
+:::{#ojs-cell-1 nodetype="expression"}
+:::
+::::
+:::::
+
+
+
+La présentation est aussi disponible [en ligne](https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide).
+
+
+
+:::::{.cell}
+
+```{.js .cell-code .hidden startFrom="50" source-offset="0"}
+function createButton(slides, message="Télécharger les slides"){
+  const button = html`
+  <p class="text-center">
+    <a class="btn btn-primary btn-lg cv-download" href="${slides}" target="_blank">
+      <i class="fa-solid fa-file-arrow-down"></i>&ensp;${message}
+    </a>
+  </p>`
+  return button
+}
+```
+
+::::{.cell-output .cell-output-display}
+
+:::{#ojs-cell-2 nodetype="declaration"}
+:::
+::::
+:::::
+
+-->
+
+
+
+ ]]></description>
+  <category>LLM</category>
+  <category>SSM Agriculture</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/</guid>
+  <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
+</item>
+<item>
+  <title>Analyse textuelle de documents longs : cas des accords d’entreprise</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="présentation-de-latelier" class="level1">
+<h1>Présentation de l’atelier</h1>
+<p>Les accords d’entreprise représente une <strong>importe quantité d’information librement accessible</strong>. Ces accords permettent d’analyser les décisions prises au niveau le plus fin de l’économie. Ils présentent cependant plusieurs enjeux méthodologiques puisqu’ils peuvent être assez longs (jusqu’à des dizaines de page) et représentent une importante masse de données à analyser. Quelles techniques mettre en oeuvre alors pour détecter les thémes abordés par ces accords et en extraire des informations ?</p>
+<p>Les méthodes mises en place pour répondre à ces questions incluent :</p>
+<ul>
+<li>l’<strong>analyse fréquentielle</strong>, après nettoyage des données ;</li>
+<li>la modélisation thématique en mobilisant les techniques <strong>LDA</strong> ou <strong>BERTopic</strong> ;</li>
+<li>enfin la capacité à <strong>extraire de l’information</strong> (comme le nombre d’heures supplémentaires) en utilisant les récentes évolutions qu’ont apporté les <strong>RAG et des LLM</strong>.</li>
+</ul>
+<p>L’atelier était en présentiel à l’Insee (salle 4C-358) et en visio.</p>
+<p>Pour plus d’information, la Dares a présenté son travail aux <a href="https://journees-methodologie-statistique.insee.net/analyse-textuelle-de-documents-longs-cas-des-accords-dentreprise/">Journées de méthodologie statistique de 2025</a>.</p>
+</section>
+<section id="replay-de-latelier" class="level1">
+<h1>Replay de l’atelier</h1>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/2026-03_dares_extraction.mp4"></video></div>
+</section>
+<section id="support-de-présentation" class="level1">
+<h1>Support de présentation</h1>
+<div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
+<pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
+<iframe class="sourceCode yaml code-with-copy" src="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide">
+</iframe>
+</div></div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="43" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 42;"><span id="cb1-43"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(</span>
+<span id="cb1-44">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/Analyse_textuelle_documents_longs.pdf"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span></span>
+<span id="cb1-45">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides en pdf"</span></span>
+<span id="cb1-46">)</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<p>La présentation est aussi disponible <a href="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide">en ligne</a>.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="56" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 55;"><span id="cb2-56"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Télécharger les slides"</span>){</span>
+<span id="cb2-57">  <span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">html</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">`</span></span>
+<span id="cb2-58"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
+<span id="cb2-59"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">" target="_blank"&gt;</span></span>
+<span id="cb2-60"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb2-61"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">    &lt;/a&gt;</span></span>
+<span id="cb2-62"><span class="vs" style="color: #20794D;
+background-color: null;
+font-style: inherit;">  &lt;/p&gt;`</span></span>
+<span id="cb2-63">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> button</span>
+<span id="cb2-64">}</span></code></pre></div></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <category>extraction d&#39;information</category>
+  <category>NLP</category>
+  <category>DARES</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/</guid>
+  <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/logo_Dares.png" medium="image" type="image/png" height="43" width="144"/>
+</item>
 <item>
   <title>Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-01-cartographia/</link>
@@ -23,7 +340,7 @@
 <section id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert" class="level2">
 <h2 class="anchored" data-anchor-id="cartographia---comment-les-géographes-redessinent-le-monde---françoise-bahoken-et-nicolas-lambert"><a href="https://www.dunod.com/histoire-geographie-et-sciences-politiques/cartographia-comment-geographes-redessinent-monde">Cartographia</a> - comment les géographes (re)dessinent le monde - Françoise Bahoken et Nicolas Lambert</h2>
 <p><strong>Replay de la présentation :</strong></p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.mp4"></video></div>
 <iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf" width="100%" height="600px">
 <p>
 Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-01-cartographia/2026-01-13-Cartographia.pdf">Download the PDF instead.</a>
@@ -201,7 +518,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </div>
 <section id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit" class="level2">
 <h2 class="anchored" data-anchor-id="présentation-de-loffre-llm-du-ssp-cloud-insee---division-innovation-instruction-technique-diit">Présentation de l’offre LLM du SSP Cloud, Insee - Division Innovation instruction technique (DIIT)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/1_SSPCloud_LLM.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="69" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 68;"><span id="cb2-69"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -224,7 +541,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </section>
 <section id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee" class="level2">
 <h2 class="anchored" data-anchor-id="extraire-et-analyser-les-compétences-numériques-dans-les-offres-demploi-grâce-au-nlp-dares---service-statistique-ministériel-du-ministère-du-travail-et-de-lemploi-insee---dee">Extraire et analyser les compétences numériques dans les offres d’emploi grâce au NLP (Dares - Service statistique ministériel du Ministère du Travail et de l’Emploi &amp; Insee - DEE)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/2_JOCAS_DARES.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="79" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 78;"><span id="cb3-79"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -247,12 +564,12 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </section>
 <section id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum" class="level2">
 <h2 class="anchored" data-anchor-id="quelles-évolutions-récentes-et-à-venir-sur-data.gouv-dinum">Quelles évolutions récentes et à venir sur <a href="https://www.data.gouv.fr/">data.gouv</a> (Dinum)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/3_Dinum_datagouv.mp4"></video></div>
 <p>Présentation disponible sur <a href="https://www.figma.com/deck/bGTGzYw9ZDrLGzbOzJbwJp/D%C3%89MO-INSEE-1-DECEMBRE?node-id=4-3555&amp;viewport=-145%2C-74%2C0.69&amp;t=wS4mpPXywS1FgL52-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1" target="_blank">Figma</a></p>
 </section>
 <section id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice" class="level2">
 <h2 class="anchored" data-anchor-id="automatisation-des-infos-rapides-justice-grâce-au-package-r-chartegraphique.sser-sser---ssm-justice">Automatisation des <a href="https://www.justice.gouv.fr/documentation/etudes-et-statistiques?categories%5B%5D=394&amp;items_per_page=10">Infos rapides Justice</a> grâce au package R <code>chartegraphique.sser</code> (SSER - SSM Justice)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video4" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/4_SSER_autoIRJ.mp4"></video></div>
 <p>Le papier a été publié lors des <a href="https://journees-methodologie-statistique.insee.net/automatisation-de-la-production-des-infos-rapides-justice-a-la-charte-graphique-du-sser-au-format-pdf-a-laide-dun-outil-combinant-rmarkdown-et-pagedown/">journées de méthodologie statistique 2025</a>.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="97" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb4-97"><span class="fu" style="color: #4758AB;
@@ -276,7 +593,7 @@ font-style: inherit;">"Télécharger les slides"</span></span>
 </section>
 <section id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab" class="level2">
 <h2 class="anchored" data-anchor-id="le-package-torchtextclassifiers-un-cadre-unifié-pour-la-classification-de-texte-basé-sur-pytorch-et-pytorch-lightning-insee---ssplab">Le package torchTextClassifiers, un cadre unifié pour la classification de texte basé sur PyTorch et PyTorch Lightning (Insee - SSPLab)</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video5" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/5_TorchTextClassifier_Insee.mp4"></video></div>
 <div class="code-copy-outer-scaffold"><div id="cb1" class="sourceCode" style="background: #f1f3f5;">
 <pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code></pre>
 <iframe class="sourceCode yaml code-with-copy" src="https://inseefrlab.github.io/codif-ape-prez/slides/jms-ttc-prez/">
@@ -667,7 +984,7 @@ font-style: inherit;">"Télécharger les slides de la keynote"</span></span>
 </div>
 </details>
 <p>Quelques photos de l’événement:</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/GMT20241014-080309_Recording_3840x2160.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/GMT20241014-080309_Recording_3840x2160.mp4"></video></div>
 <div id="fig-ssphub-images" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-ssphub-images-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -828,7 +1145,7 @@ font-style: inherit;">`</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-05-02-quarto/dervieux_quarto_20240502.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-05-02-quarto/dervieux_quarto_20240502.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="37" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 36;"><span id="cb2-37">slides <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -917,7 +1234,7 @@ font-style: inherit;">`</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="28" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb2-28">slides <span class="op" style="color: #5E5E5E;
 background-color: null;
@@ -984,7 +1301,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 
 
 
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-04-17-reseau/20230417_journee_reseau.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-04-17-reseau/20230417_journee_reseau.mp4"></video></div>
 
 
 
@@ -1004,7 +1321,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 
 
 <p>Le replay de l’événement est disponible ci-dessous.</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/2023-ocrisation-replay.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/2023-ocrisation-replay.mp4"></video></div>
 <p>Les slides présentées par Christopher Kermorvant sont aussi disponibles <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-29-ocrisation/slides.pptx">ici</a>.</p>
 <p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/ocrisation-teklia/ocr.png" class="img-fluid"></p>
 
@@ -1028,7 +1345,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 
 
 <p>Replay de l’événement:</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-carpentries/video1849039065.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-03-carpentries/video1849039065.mp4"></video></div>
 
 
 
@@ -1054,7 +1371,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </ul>
 <section id="replay" class="level2">
 <h2 class="anchored" data-anchor-id="replay">Replay</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-02-opendata_Insee/opendata-20230213.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-02-opendata_Insee/opendata-20230213.mp4"></video></div>
 
 
 </section>
@@ -1084,7 +1401,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 <section id="replay" class="level2">
 <h2 class="anchored" data-anchor-id="replay">Support et replay</h2>
 <p>Le support est disponible <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-01-gridviz/gridviz.pdf">ici</a>.</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-01-gridviz/gridviz-20230120.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2023-01-gridviz/gridviz-20230120.mp4"></video></div>
 
 
 </section>
@@ -1194,7 +1511,7 @@ Note
 </ul>
 <section id="replay" class="level2">
 <h2 class="anchored" data-anchor-id="replay">Replay</h2>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2022-11-observable/observable-20221116.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2022-11-observable/observable-20221116.mp4"></video></div>
 
 
 </section>
@@ -1297,24 +1614,6 @@ Note
   <category>Seminaire</category>
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</guid>
   <pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
-</item>
-<item>
-  <title>Séminaire - nouvelles approches pour coder dans une nomenclature : machine learning et autocomplétion</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</link>
-  <description>Séminaire de Méthodologie statistique et de sciences des données du 14 janvier 2020 : innovation et expériences pratiques récentes pour réaliser des tâches de classification avec des outils d&#39;analyse textuelle et d&#39;apprentissage statistique supervisé</description>
-  <category>Seminaire</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</guid>
-  <pubDate>Tue, 14 Jan 2020 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
-</item>
-<item>
-  <title>Séminaire - Big Data et statistiques publiques : questions de méthodes et lancement du SSPLab</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</link>
-  <description>Séminaire de Méthodologie statistique et de sciences des données du 30 novembre 2016 : enjeu technique et statistique de l&#39;utilisation de la science des données pour la statistique publique, aperçu des innovations en cours</description>
-  <category>Seminaire</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</guid>
-  <pubDate>Wed, 30 Nov 2016 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 </channel>

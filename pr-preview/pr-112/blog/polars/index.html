@@ -4,7 +4,7 @@
 <link rel="alternate" hreflang="fr" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog/polars/index.html" />
 <link rel="alternate" hreflang="en" href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/en/blog/polars/index.en.html" />
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.27">
+<meta name="generator" content="quarto-1.9.37">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,6 +12,9 @@
 
 <title>Polars, une alternative fraîche à Pandas – SSPHub</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -70,15 +73,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5ea1227bf19878b87b7b96a706b3b221.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-6ab8ba8a4428a51553ae73c372224404.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -284,7 +286,7 @@ background: #6886bb;
 <p>Un petit nouveau apporte un vent de fraîcheur dans le domaine : <a href="https://www.pola.rs/"><code>Polars</code></a>.</p>
 <p>Ses atouts ? D’excellentes performances et une expressibilité qui le rapproche d’un <a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>.</p>
 <p>Ce post de blog revient sur les principaux atouts de <code>Polars</code>, sans vouloir être exhaustif. Un <em>notebook</em> illustrant les principales fonctionnalités du package vise à le compléter :</p>
-<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=Tutoriel%20Polars&amp;version=2.4.0&amp;s3=region-79669f20&amp;init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FSSPHub%2FFormation-polars%2Frefs%2Fheads%2Fmain%2Finit.sh»&amp;init.personalInitArgs=«polars-tuto»&amp;autoLaunch=true&amp;onyxia.friendlyName=«Tutoriel Polars»" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="https://colab.research.google.com/github/SSPHub/Formation-polars/blob/main/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=Tutoriel%20polars&amp;version=2.4.6&amp;s3=region-79669f20&amp;init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FSSPHub%2FFormation-polars%2Frefs%2Fheads%2Fmain%2Finit.sh»&amp;autoLaunch=true" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="https://colab.research.google.com/github/SSPHub/Formation-polars/blob/main/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 <section id="les-secrets-de-la-performance" class="level1">
 <h1>Les secrets de la performance</h1>
 <p>Les <em>benchmarks</em> disponibles <a href="https://h2oai.github.io/db-benchmark/">sont clairs</a> : <code>Polars</code> est un ours qui court vite !</p>
@@ -385,8 +387,6 @@ background: #6886bb;
 <li><a href="https://www.rhosignal.com/tags/polars/">rhosignal.com/tags/polars/</a></li>
 <li><a href="https://kevinheavey.github.io/modern-polars/">kevinheavey.github.io/modern-polars/</a></li>
 </ul>
-<p>Le <em>notebook</em> accompagnant ce <em>post</em>:</p>
-<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Frefs%2Fheads%2Fmain%2Fblog%2Fpolars%2Finit.sh%C2%BB&amp;init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&amp;onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 
 
 </section>

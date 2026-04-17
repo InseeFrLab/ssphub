@@ -9,7 +9,7 @@
 <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog.html</link>
 <atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Articles, billets de blog écrits sur tout sujet en lien avec la data science. Cela peut couvrir des conférences, des nouveautés, des projets ...</description>
-<generator>quarto-1.8.27</generator>
+<generator>quarto-1.9.37</generator>
 <lastBuildDate>Mon, 23 Oct 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Guide d’utilisation des données du recensement de la population au format Parquet</title>
@@ -4450,12 +4450,12 @@ font-style: inherit;">    `</span></span>
 </section>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Références</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Références</h2><div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-dondon-lamarche-2023" class="csl-entry">
 Dondon, Alexis, et Pierre Lamarche. 2023. <span>«&nbsp;Quels formats pour quelles données?&nbsp;»</span> <em>Courrier des statistiques</em>, nᵒ 9.
 </div>
 <div id="ref-mauviere-2022" class="csl-entry">
-Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nbsp;»</span>. Post de blog [Consulté le 12 octobre 2023]. 2022. <a href="https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/">https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/</a>.
+Mauvière, Éric. 2022. <span>«&nbsp;Parquet devrait remplacer le format CSV&nbsp;»</span>. Post de blog [Consulté le 12 octobre 2023]. <a href="https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/">https://www.icem7.fr/cartographie/parquet-devrait-remplacer-le-format-csv/</a>.
 </div>
 </div></section><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Notes de bas de page</h2>
 
@@ -4626,7 +4626,7 @@ Fallback text here for unsupporting browsers, of which there are scant few.
 </section>
 <section id="références" class="level2">
 <h2 class="anchored" data-anchor-id="références">Références</h2>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0">
+<div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-davenport2022data" class="csl-entry">
 Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still the Sexiest Job of the 21st Century?&nbsp;»</span> <em>Harvard business review</em>. <a href="https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century">https://hbr.org/2022/07/is-data-scientist-still-the-sexiest-job-of-the-21st-century</a>.
 </div>
@@ -4661,7 +4661,7 @@ Davenport, Thomas H, et DJ Patil. 2022. <span>«&nbsp;Is Data Scientist Still th
 <p>Un petit nouveau apporte un vent de fraîcheur dans le domaine : <a href="https://www.pola.rs/"><code>Polars</code></a>.</p>
 <p>Ses atouts ? D’excellentes performances et une expressibilité qui le rapproche d’un <a href="https://dplyr.tidyverse.org/"><code>dplyr</code></a>.</p>
 <p>Ce post de blog revient sur les principaux atouts de <code>Polars</code>, sans vouloir être exhaustif. Un <em>notebook</em> illustrant les principales fonctionnalités du package vise à le compléter :</p>
-<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=Tutoriel%20Polars&amp;version=2.4.0&amp;s3=region-79669f20&amp;init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FSSPHub%2FFormation-polars%2Frefs%2Fheads%2Fmain%2Finit.sh»&amp;init.personalInitArgs=«polars-tuto»&amp;autoLaunch=true&amp;onyxia.friendlyName=«Tutoriel Polars»" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="https://colab.research.google.com/github/SSPHub/Formation-polars/blob/main/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
+<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?name=Tutoriel%20polars&amp;version=2.4.6&amp;s3=region-79669f20&amp;init.personalInit=«https%3A%2F%2Fraw.githubusercontent.com%2FSSPHub%2FFormation-polars%2Frefs%2Fheads%2Fmain%2Finit.sh»&amp;autoLaunch=true" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="https://colab.research.google.com/github/SSPHub/Formation-polars/blob/main/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 <section id="les-secrets-de-la-performance" class="level1">
 <h1>Les secrets de la performance</h1>
 <p>Les <em>benchmarks</em> disponibles <a href="https://h2oai.github.io/db-benchmark/">sont clairs</a> : <code>Polars</code> est un ours qui court vite !</p>
@@ -4834,8 +4834,6 @@ font-style: inherit;">"NB_STATION_SERVICE"</span>)</span>
 <li><a href="https://www.rhosignal.com/tags/polars/">rhosignal.com/tags/polars/</a></li>
 <li><a href="https://kevinheavey.github.io/modern-polars/">kevinheavey.github.io/modern-polars/</a></li>
 </ul>
-<p>Le <em>notebook</em> accompagnant ce <em>post</em>:</p>
-<p><a href="https://datalab.sspcloud.fr/launcher/ide/jupyter-python?autoLaunch=false&amp;init.personalInit=%C2%ABhttps%3A%2F%2Fraw.githubusercontent.com%2FInseeFrLab%2Fssphub%2Frefs%2Fheads%2Fmain%2Fblog%2Fpolars%2Finit.sh%C2%BB&amp;init.personalInitArgs=%C2%ABpolars-tuto%C2%BB&amp;onyxia.friendlyName=%C2%ABTutoriel%20Polars%C2%BB" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/SSPcloud-Tester%20via%20SSP--cloud-informational&amp;color=yellow?logo=Python" alt="Onyxia"></a> <a href="http://colab.research.google.com/github/inseefrlab/ssphub/blob/main/content/notebooks/polars-tuto.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></p>
 
 
 </section>
