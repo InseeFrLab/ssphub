@@ -1,0 +1,40 @@
+---
+title: sndsTools, a R package for extracting healthcare utilization in SNDS health data
+description: |
+  The R package `sndsTools` facilitates the extraction of healthcare utilization from the Système National de Données de Santé (SNDS) health data hosted on the National Health Insurance portal.
+  The library is open source and available on GitHub.
+format: html
+date: '2026-03-17'
+image: sndsTools_img.png
+categories:
+- Insee
+- package
+- data extraction
+- R
+- administrative data
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["package"]
+  sort:
+  - date desc
+  page-size: 6
+---
+
+
+## Project summary
+
+|           |         `sndsTools`, an R package for extracting healthcare utilization in SNDS health data             |
+|-----------|------------------------------------------------------------------|
+| **Project details**         | `sndsTools` is an R package designed to simplify the extraction of healthcare utilization from the Système National de Données de Santé (SNDS) health data hosted on the Health Insurance portal. It streamlines the data extraction steps from the SNDS for data used in the majority of SNDS studies.   |
+| **Players**                  | Insee, Institut du Cerveau, Inria, AP-HM      |
+| **Project results**      | The R package `sndsTools` is in production and available for download from GitHub {{< fa brands github >}}. |
+| **Products and project documentation**      | [R package documentation site](https://sndstoolers.github.io/sndsTools/index.html) |
+| **Project code**           | - The code is available on GitHub {{< fa brands github >}}  [https://github.com/SNDStoolers/sndsTools](https://github.com/SNDStoolers/sndsTools)       |
+
+## Similar projects
+
+::: {#similar-project}
+:::

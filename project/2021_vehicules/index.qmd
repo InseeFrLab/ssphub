@@ -1,0 +1,41 @@
+---
+title: Modélisation de l’appartenance au parc des véhicules routiers et de son utilisation
+description: |
+  Appariement de bases administratives et modélisation pour estimer le nombre
+  de véhicules routiers en France
+format: html
+date: '2021-06-01'
+image: ../../assets/media/logo_ssm_insee.webp
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - appariement
+    - données administratives
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:
+- en production
+- appariement
+- SDES
+- données administratives
+---
+
+
+# Synthèse du projet
+
+|           |         Modélisation de l’appartenance au parc des véhicules routiers et de son utilisation             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |  Le SSM du ministère de la Transition écologique (SDES) a entrepris en 2019 la refonte du répertoire statistique des véhicules routiers (RSVero). Principale innovation de ce projet, l’utilisation des données de contrôles techniques permet de s’assurer que les véhicules immatriculés sont toujours en circulation et de déterminer leur utilisation annuelle, grâce au relevé du compteur kilométrique effectué à chaque visite. Cependant, l’intégration de ces données n’est pas sans poser de questions méthodologiques : les visites interviennent à des dates variables, parfois avec du retard, et on ne peut connaître avec certitude le statut des véhicules dont la dernière visite précède la date à laquelle on souhaite déterminer le parc. Le projet permet d’estimer, pour toutes les voitures du répertoire, la probabilité qu’elles soient toujours en circulation à une date donnée et, le cas échéant, la distance annuelle parcourue. Plus largement, ce projet s’inscrit dans le mouvement de développement de méthodologies de traitement des sources administratives.   |
+| **Acteurs**                  |    Insee, [SSM Transition écologique (SDES)](https://www.statistiques.developpement-durable.gouv.fr/)   |
+| **Résultats du projet**      |  La méthodologie est aujourd'hui en production et utilisée pour déterminer chaque année les véhicules en circulation, leurs caractéristiques et leur utilisation.      |
+| **Produits et documentation du projet**      | - [Méthodologie pour l'estimation des parcs de véhicules et des distances parcourues](https://www.statistiques.developpement-durable.gouv.fr/media/7230/download?inline), document de travail, mars 2024 <br> - [Modélisation de l’appartenance au parc des véhicules routiers et de son utilisation](https://journees-methodologie-statistique.insee.net/modelisation-de-lappartenance-au-parc-des-vehicules-routiers-et-de-son-utilisation/), Journées de méthodologie statistique 2022|
+
+# Projets similaires
+
+::: {#similar-project}
+:::
