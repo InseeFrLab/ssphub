@@ -14,6 +14,8 @@ date: '2026-03-18'
 image: logo_Dares.png
 ---
 
+# Présentation de l'atelier
+
 Les accords d'entreprise représente une **importe quantité d'information librement accessible**.
 Ces accords permettent d'analyser les décisions prises au niveau le plus fin de l'économie.
 Ils présentent cependant plusieurs enjeux méthodologiques puisqu'ils peuvent être assez longs (jusqu'à des dizaines de page) et représentent une importante masse de données à analyser.
@@ -29,11 +31,11 @@ L'atelier était en présentiel à l'Insee (salle 4C-358) et en visio.
 
 Pour plus d'information, la Dares a présenté son travail aux [Journées de méthodologie statistique de 2025](https://journees-methodologie-statistique.insee.net/analyse-textuelle-de-documents-longs-cas-des-accords-dentreprise/).
 
-**Replay de la présentation :**
+# Replay de l'atelier
 
 {{< video https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-03-dares/2026-03_dares_extraction.mp4 >}}
 
-**Présentation :**
+# Support de présentation
 
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode yaml code-with-copy" src="https://cthiounn.github.io/presentation_analyse_textuelle_accords/#/title-slide"></iframe></div>
 
