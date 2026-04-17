@@ -52,6 +52,8 @@ jobs:
           packages: |
             github::ropensci-review-tools/babelquarto@a485fea
 
+      - run: pip install jupyter nbformat # For infolettre17
+
       - name: Render bilingual project
         run: |
           Rscript scripts/1_render.R
