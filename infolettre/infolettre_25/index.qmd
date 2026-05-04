@@ -83,12 +83,13 @@ Tools :
 - parser : 
   - https://github.com/opendataloader-project/opendataloader-pdf : opendataloader-pdf — parser PDF Python sans GPU
   - https://doi.org/10.48550/arXiv.2603.18652 : Benchmarking PDF Parsers on Table Extraction with LLM-based Semantic Evaluation
+- https://docs.open-metadata.org/v1.12.x : pour gérer ses métadata
+- https://openai.com/index/introducing-openai-privacy-filter/ et https://labs.dalibo.com/postgresql_anonymizer
 
+
+
+Fun : 
+- https://science.nasa.gov/specials/your-name-in-landsat/ : pour écrire son nom en image satellites
 Cinéma : 
 - https://youtube.com/playlist?list=PLQ9F4IqcaHKq-qVkrYhNPMQrU4TlyziAx&si=WLWCfIvokaOyEj3N : Playlist YouTube retraçant l'histoire du machine learning à travers des vidéos pédagogiques. Idéale pour comprendre l'évolution des algorithmes et des paradigmes depuis les débuts jusqu'aux LLM.
 - https://www.youtube.com/watch?v=GTZVN8nqSR4 : Entretien avec Solomon Hykes sur la création de Docker; son évolution et les tendances actuelles en infrastructure et conteneurisation. Inspirant pour comprendre la genèse d'un outil devenu standard.
-
-Tools : 
-- https://docs.open-metadata.org/v1.12.x : pour gérer ses métadata
-- https://science.nasa.gov/specials/your-name-in-landsat/ : pour écrire son nom en image satellites
-- https://openai.com/index/introducing-openai-privacy-filter/ et https://labs.dalibo.com/postgresql_anonymizer
