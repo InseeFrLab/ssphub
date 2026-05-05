@@ -90,6 +90,9 @@ Ce mois-ci, une foison de nouveaux jouets technologiques à aller regarder.
 - [**a Grammar of graphics in SQL**](https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/): Posit annonce la publication de `ggsql`, une extention SQL pour créer des graphiques à la manière de `ggplot`.  
 - **Anonymisation de données**: OpenAI et Dalibo (deux entreprises à la vision différentes) ont des outils d'anonymisation de bases de de données. Celui d'OpenAI, disponible [ici](https://openai.com/index/introducing-openai-privacy-filter/), permet de détecter et de masquer les informations personnelles identifiables dans un texte quand [celui de Dalibo](https://labs.dalibo.com/postgresql_anonymizer), plus âgé, permet d'anonymiser des bases de données SQL Postgre. 
 - Vous cherchez une **alternative à Google Street View** (\#souveraineté) ? Le français [Panoramax](https://panoramax.fr) est fait pour vous et est open source. 
+- **Parser de pdf**:
+  - Comment choisir quel outil utiliser pour parser un pdf ? Des chercheurs de l'université de Offenburg et de Mannheim se sont penchés sur la question dans leur article [Benchmarking PDF Parsers on Table Extraction with LLM-based Semantic Evaluation](https://doi.org/10.48550/arXiv.2603.18652). 
+  - [OpenDataLoader PDF](https://opendataloader.org/): un parser open-source de pdf sans GPU pour des RAG
 
 ### Quarto
 La version 1.9 de Quarto apporte quelques nouveautés intéressantes à noter: 
@@ -97,10 +100,6 @@ La version 1.9 de Quarto apporte quelques nouveautés intéressantes à noter:
 - La notion de marque (ou *brand*) permet **d'uniformiser le rendu d'un document à plusieurs formats** et de prendre en compte les thèmes clair/sombre des utilisateurs. Les dernières évolutions sont présentées dans ce [post de blog de Mickael Canouil](https://mickael.canouil.fr/posts/2026-04-15-quarto-brand-figures-tables/). 
 - Elle permet par ailleurs de générer des **pdf accessibles** ! Ce post de blog sur le [site de quarto](https://quarto.org/docs/blog/posts/2026-03-05-pdf-accessibility-and-standards/) détaille ce qu'il faut faire. 
   
-### parser
-  - https://github.com/opendataloader-project/opendataloader-pdf: opendataloader-pdf — parser PDF Python sans GPU
-  - https://doi.org/10.48550/arXiv.2603.18652: Benchmarking PDF Parsers on Table Extraction with LLM-based Semantic Evaluation
-
 
 ### Fun et formation
 
