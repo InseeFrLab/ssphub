@@ -74,17 +74,27 @@ De nombreux posts relatent des **problèmes de sécurité liés à l'usage d'age
 
 Des chercheurs se sont intéressés par ailleurs à **l'impact de l'IA sur l'environement et les mentalités**. L'IA réchaufferait ainsi l'égo et rendrait les gens moins sympathiques entre eux selon [cette étude de Nature](https://www.nature.com/articles/d41586-026-00979-x). Par ailleurs, les **data centers utilisés pour l'IA réchaufferaient localement la Terre de 2°C**. Selon [cette analyse](https://doi.org/10.48550/arXiv.2603.20897) menée notamment par des chercheurs de l'INRIA et de l'Institut d'ingénierie et de management de Grenoble. Ils estiment que 340 millions de personnes pourrait être concernés par ces îlots de chaleur.  
 
-OpenSource : 
-- https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/ : Bloomberg paye des gens pour soutenir des projets open source dont ils dépendent
+## OpenSource 
+L'open source a le vent en poupe en ce moment, souveraineté étant devenu un *buzz word* international. A ce titre, deux exemples différents de renouvellement de stratégies. 
+Bloomberg [a annoncé fin mars](https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/) renforcer son soutien stratégique aux projets ouverts. Le renforcement de leur stratégie repose sur le constat que savoir que l'on dépend seulement d'un projet open source n'est pas suffisant. L'open source vit en effet grâce aux communautés autour des projets: si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend : des employés de l'agence de presse sont maintenant payés pour soutenir des projets open source stratégiques. 
+
+A l'inverse, au Royaume-Uni, le NHS a annoncé un revirement de sa stratégie open-source, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l'heure d'agents IA. Ce revirement, après une stratégie d'ouverture, est venu énerver [la communauté](https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/) : l'open source fait plus partie de la solution que des problèmes. Le revirement ne serait pas ailleurs pas que dû au déploiement de l'IA.  
+
 - https://panoramax.fr/ : alternative à street view open source
 
 
-Tools : 
-- R : https://github.com/y-sunflower/ggalttext : pour générer des 
-- Quarto : 
+## Outils
+Ce mois-ci, une foison de nouveaux jouets technologiques à aller regarder. 
+
+### R
+- [ggalttext](https://github.com/y-sunflower/ggalttext) : un package R pour générer automatiquement des textes de remplacements pour graphique. Cela fonctionne comme `ggplot`
+https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/ : a grammar of graphics in SQL
+
+### Quarto
   - https://mickael.canouil.fr/posts/2026-04-15-quarto-brand-figures-tables/
   - https://quarto.org/docs/blog/posts/2026-03-05-pdf-accessibility-and-standards/ : 
-- parser : 
+  
+### parser
   - https://github.com/opendataloader-project/opendataloader-pdf : opendataloader-pdf — parser PDF Python sans GPU
   - https://doi.org/10.48550/arXiv.2603.18652 : Benchmarking PDF Parsers on Table Extraction with LLM-based Semantic Evaluation
 - https://docs.open-metadata.org/v1.12.x : pour gérer ses métadata
