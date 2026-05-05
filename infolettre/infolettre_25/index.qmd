@@ -78,7 +78,7 @@ Des chercheurs se sont intéressés par ailleurs à **l'impact de l'IA sur l'env
 L'open source a le vent en poupe en ce moment, souveraineté étant devenu un *buzz word* international. A ce titre, deux exemples différents de renouvellement de stratégies. 
 Bloomberg [a annoncé fin mars](https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/) renforcer son soutien stratégique aux projets ouverts. Le renforcement de leur stratégie repose sur le constat que savoir que l'on dépend seulement d'un projet open source n'est pas suffisant. L'open source vit en effet grâce aux communautés autour des projets: si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend : des employés de l'agence de presse sont maintenant payés pour soutenir des projets open source stratégiques. 
 
-A l'inverse, au Royaume-Uni, le NHS a annoncé un revirement de sa stratégie open-source, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l'heure d'agents IA. Ce revirement, après une stratégie d'ouverture, est venu énerver [la communauté](https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/) : l'open source fait plus partie de la solution que des problèmes. Le revirement ne serait pas ailleurs pas que dû au déploiement de l'IA.  
+A l'inverse, au Royaume-Uni, le NHS a annoncé un (triste) revirement de sa stratégie open-source, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l'heure d'agents IA. Ce revirement, après une stratégie d'ouverture, est venu énerver [Terense Eden, un développeur et bloggeur anglais](https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/) : l'open source fait plus partie de la solution que des problèmes. Le revirement ne serait pas ailleurs pas que dû au déploiement de l'IA.  
 
 - https://panoramax.fr/ : alternative à street view open source
 
@@ -86,19 +86,20 @@ A l'inverse, au Royaume-Uni, le NHS a annoncé un revirement de sa stratégie op
 ## Outils
 Ce mois-ci, une foison de nouveaux jouets technologiques à aller regarder. 
 
-### R
-- [ggalttext](https://github.com/y-sunflower/ggalttext) : un package R pour générer automatiquement des textes de remplacements pour graphique. Cela fonctionne comme `ggplot`
-https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/ : a grammar of graphics in SQL
+### R, SQL et données
+- [**ggalttext**](https://github.com/y-sunflower/ggalttext) : un package R pour générer automatiquement des textes de remplacements pour graphique `ggplot` grâce à la fonction `generate_alt_text`.
+- [**a Grammar of graphics in SQL**](https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/) : Posit annonce la publication de `ggsql`, une extention SQL pour créer des graphiques à la manière de `ggplot`.  
+- **Anonymisation de données** : OpenAI et Dalibo (deux entreprises à la vision différentes) ont des outils d'anonymisation de bases de de données. Celui d'OpenAI, disponible [ici](https://openai.com/index/introducing-openai-privacy-filter/), permet de détecter et de masquer les informations personnelles identifiables dans un texte quand [celui de Dalibo](https://labs.dalibo.com/postgresql_anonymizer), plus âgé, permet d'anonymiser des bases de données SQL Postgre. 
 
 ### Quarto
-  - https://mickael.canouil.fr/posts/2026-04-15-quarto-brand-figures-tables/
-  - https://quarto.org/docs/blog/posts/2026-03-05-pdf-accessibility-and-standards/ : 
+Quarto a publié quelques nouveautés dernièrement intéressantes à noter. 
+- La notion de marque (ou *brand*) permet d'uniformiser le rendu d'un document à plusieurs formats et de prendre en compte les thèmes clair/sombre des utilisateurs. Les dernières évolutions sont présentées dans ce [post de blog de Mickael Canouil](https://mickael.canouil.fr/posts/2026-04-15-quarto-brand-figures-tables/). 
+- La dernière version de Quarto (1.9) permet par ailleurs de générer des pdf accessibles ! Ce post de blog sur le [site de quarto](https://quarto.org/docs/blog/posts/2026-03-05-pdf-accessibility-and-standards/) détaille ce qu'il faut faire. 
   
 ### parser
   - https://github.com/opendataloader-project/opendataloader-pdf : opendataloader-pdf — parser PDF Python sans GPU
   - https://doi.org/10.48550/arXiv.2603.18652 : Benchmarking PDF Parsers on Table Extraction with LLM-based Semantic Evaluation
 - https://docs.open-metadata.org/v1.12.x : pour gérer ses métadata
-- https://openai.com/index/introducing-openai-privacy-filter/ et https://labs.dalibo.com/postgresql_anonymizer
 
 
 
