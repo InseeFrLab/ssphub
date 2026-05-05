@@ -45,11 +45,12 @@ Les sujets permettent d'apprendre :
 - Des projets d'IA et d'apprentissage automatique aboutis et réutilisables.
 
 Chaque personne de l'équipe doit s'inscrire en ligne **[ici](https://grist.numerique.gouv.fr/o/docs/forms/kVB8TszNTEbuuPoquY8ze8/55)**. 
+A cause d'une contrainte de capacité, le nombre de participants est par ailleurs capé. Votre inscription ne sera définitive qu'après validation par l'organisation. 
 
 De plus amples informations sont disponibles sur le [site du funathon](https://aiml4os.github.io/funathon-general-website/about.html).
 
 
-## 📢 Journées Data Science & Open Source - Les inscriptions sont ouvertes
+## 📢 Journées Data Science & Open Source - 📅 16 et 17 juin - Les inscriptions sont ouvertes
 
 L'Insee organise des journées **Data Science & Open Source** pour démystifier la contribution à l'open source et apprendre à contribuer à des projets en lien avec la data science. 
 Elles auront lieu les _16 et 17 juin 2026 à Paris, au [Lieu de la Transformation Publique](https://cartes.gouv.fr/explorer-les-cartes?c=2.305609,48.847446&z=18&l=PLAN.IGN$GEOPORTAIL:GPP:TMS(1;1;1;0;standard)&w=&permalink=yes)_.
@@ -64,11 +65,14 @@ Le détail des journées est par ailleurs disponible sur la [page de l’événe
 
 # Actualités
 
-IA : 
-- l'agent qui a un marché ne marche pas. https://www.nytimes.com/2026/04/21/us/san-francisco-store-managed-ai-agent.html?unlocked_article_code=1.eFA.7jVB.5i5HUjjcUKyj&amp;smid=url-share&amp;utm_source=tldrai
-- l'agent qui a effacé une base : https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318
-- l'IA réchauffe les coeurs (et la terre) ; https://doi.org/10.48550/arXiv.2603.20897
-- l'IA réchauffe l'ego : https://www.nature.com/articles/d41586-026-00979-x
+## IA
+L'adoption des agents IA continue au sein de diverses structures, avec des découvertes plus ou moins surprenantes. Aux États-Unis, Anton Labs, une structure qui vise à "développer un monde robotisé sans humain", a lancé une expérimentation que le [New York Times](https://www.nytimes.com/2026/04/21/us/san-francisco-store-managed-ai-agent.html?unlocked_article_code=1.eFA.7jVB.5i5HUjjcUKyj&amp;smid=url-share&amp;utm_source=tldrai) a analysée. Anton Labs a confié **la gestion d'une superette à un agent** (utilisant Claude Sonnet 4.6). L'agent a pour objectif de faire du profit et a toutes les libertés. Il a ainsi employé trois vendeurs, l'homme étant mieux payé que les deux femmes (24$ de l'heure pour le vendeur, 22$ pour les vendeuses), passe les commandes et fait l'inventaire (de manière approximative). Résultat, la supérette a un achalandage assez étrange, vend beaucoup de bougies et, pour le moment, est en déficit. **L'agent qui a un marché ne marche donc pas encore**. 
+
+Anton Labs a aussi simulé **une compétition entre trois agents IA pour gérer des distributeurs** et dont les résultats sont présentés sur [leur site](https://andonlabs.com/evals/vending-bench-arena). Rapidement, des comportements anti-concurrentiels et monopolistiques se sont déclarés mais les agents ont dégagé jusque 10 000$ de profits (simulés). 
+
+De nombreux posts relatent des **problèmes de sécurité liés à l'usage d'agent IA**. Selon les retours d'expérience, l'usage d'agents peut être utile mais nécessite la **mise en place de gardes-fous très stricts et de sauvegardes régulières non accessibles à des agents**, les agents pouvant contourner des prompts. Le fondateur de [Datatalks](https://datatalks.club/) raconte ainsi dans une série [d'article](https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318) comment un agent IA a supprimé l'intégralité des bases de production de son site de formation lors de la migration d'un site entre deux serveurs. 
+
+Des chercheurs se sont intéressés par ailleurs à **l'impact de l'IA sur l'environement et les mentalités**. L'IA réchaufferait ainsi l'égo et rendrait les gens moins sympathiques entre eux selon [cette étude de Nature](https://www.nature.com/articles/d41586-026-00979-x). Par ailleurs, les **data centers utilisés pour l'IA réchaufferaient localement la Terre de 2°C**. Selon [cette analyse](https://doi.org/10.48550/arXiv.2603.20897) menée notamment par des chercheurs de l'INRIA et de l'Institut d'ingénierie et de management de Grenoble. Ils estiment que 340 millions de personnes pourrait être concernés par ces îlots de chaleur.  
 
 OpenSource : 
 - https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/ : Bloomberg paye des gens pour soutenir des projets open source dont ils dépendent
