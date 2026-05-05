@@ -1,4 +1,4 @@
-# Bienvenue à la **vingt cinquième infolettre** !
+# Bienvenue à la vingt cinquième infolettre !
 
 C’est le début du dernier fractionné avant l’été. Bienvenue à cette nouvelle infolettre.
 
