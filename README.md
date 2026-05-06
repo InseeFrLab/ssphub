@@ -24,6 +24,17 @@ To get started with this repository, the more convenient is to have :
 - If you plan to deploy the website, you will also need credentials for the `InseeFrLab/ssphub` repository.
 
 ## How to contribute
+- [ ] depuis le dossier ssphub, lancer `{bash} bash scripts/init_infolettre.sh` : va déterminer le nouveau numéro de l'infolettre, créer une branche nommée infolettre_27, créer un dossier infolettre/infolettre_27 et y copier le template + commiter le tout. On peut spécifier le numéro de l'infolettre en indiquant `{bash} bash scripts/init_infolettre.sh 27`
+- [ ] dans l'infolettre initialisée (infolettre/infolettre_27/index.qmd) rédiger le qmd avec:
+  - la veille
+  - les actualités
+  - la dataviz
+  - tout autre sujet
+- [ ] faire une preview avec `quarto preview` (installer jupyter avec `pip install jupyeter` avant) 
+- [ ] Une fois l'infolettre ok, faire une PR sur main pour relecture. Un site de preview sera déployé (lien indiqué automatiquement en commentaire dans la PR)
+- [ ] mise à disposition de l'infolettre sur le site du ssphub en mergeant la branche sur le main
+- [ ] envoi infolettre par email avec les outils du repo [newsletter_tools](https://github.com/SSPHub/newsletter_tools)
+- [ ] envoi infolettre par Tchap avec les outils du repo [newsletter_tools](https://github.com/SSPHub/newsletter_tools)
 
 Contribution guidelines are detailed in the [`contributing.md`](https://github.com/InseeFrLab/ssphub/blob/fusion_site_ssplab/CONTRIBUTING.md) file. Please refer to this document for instructions on how to submit changes, report issues, or suggest new features.
 
