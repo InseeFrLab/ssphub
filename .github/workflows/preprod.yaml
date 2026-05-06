@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build-deploy:
+  build-deploy-test-pre-prod:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository # https://github.com/actions/checkout
