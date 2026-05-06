@@ -5,7 +5,7 @@ on:
   push:
     branches: main
 
-name: CI - Quarto Publish
+name: Prod - render and publish to netlify
 
 # Cancel previous workflow of ci that could be running
 concurrency:

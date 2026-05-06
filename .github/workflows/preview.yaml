@@ -1,4 +1,4 @@
-name: Build and deploy preview
+name: Preview - render and publish to gh-pages
 
 on:
   workflow_dispatch: # To allow for manuel trigger of this workflow. Cf

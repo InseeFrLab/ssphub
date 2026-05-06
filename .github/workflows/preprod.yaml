@@ -5,7 +5,7 @@ on:
   push:
     branches: fusion_site_ssplab
 
-name: Test pre prod - CI - Quarto Publish
+name: Test pre prod - render and publish to netlify
 
 # Cancel previous workflow of ci that could be running
 concurrency:
