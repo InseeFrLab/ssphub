@@ -74,121 +74,6 @@
 </item>
 <item>
   <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
-  <link>https://ssphub-test.netlify.app/event/2026-04-ssm-agri/2026-04-ssm-agri/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="présentation-de-latelier" class="level1">
-<h1>Présentation de l’atelier</h1>
-<p>Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).</p>
-<p>Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés.</p>
-<p><strong>Ils nous ont présenté leurs travaux le mardi 14 avril à 14h</strong>, en <a href="https://visio.numerique.gouv.fr/wvv-cwou-ugn">visio</a> et en présentiel à l’Insee (en salle 4C-458). Tout le monde est le bienvenu !</p>
-</section>
-<section id="replay-de-latelier" class="level1">
-<h1>Replay de l’atelier</h1>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/2026-04-ssm_agri.mp4"></video></div>
-</section>
-<section id="support-de-présentation" class="level1">
-<h1>Support de présentation</h1>
-<iframe src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf" width="100%" height="600px">
-<p>
-Your browser does not support PDFs. <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf">Download the PDF instead.</a>
-</p>
-</iframe>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="38" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 37;"><span id="cb1-38"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">createButton</span>(</span>
-<span id="cb1-39">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/20260414_SSPHub_ComLLM_ALS.pdf"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span></span>
-<span id="cb1-40">  <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Télécharger les slides en pdf"</span></span>
-<span id="cb1-41">)</span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="48" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 47;"><span id="cb2-48"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">function</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">createButton</span>(slides<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">,</span> message<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"Télécharger les slides"</span>){</span>
-<span id="cb2-49">  <span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">const</span> button <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span></span>
-<span id="cb2-50"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;p class="text-center"&gt;</span></span>
-<span id="cb2-51"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">    &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">" target="_blank"&gt;</span></span>
-<span id="cb2-52"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">      &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">${</span>message<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span></span>
-<span id="cb2-53"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">    &lt;/a&gt;</span></span>
-<span id="cb2-54"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;/p&gt;`</span></span>
-<span id="cb2-55">  <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> button</span>
-<span id="cb2-56">}</span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-
-
-</section>
-
- ]]></description>
-  <category>LLM</category>
-  <category>SSM Agriculture</category>
-  <guid>https://ssphub-test.netlify.app/event/2026-04-ssm-agri/2026-04-ssm-agri/</guid>
-  <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://ssphub-test.netlify.app/event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
-</item>
-<item>
-  <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
   <link>https://ssphub-test.netlify.app/event/2026-04-ssm-agri/</link>
   <description><![CDATA[ 
 
@@ -1667,6 +1552,15 @@ Note
   <guid>https://ssphub-test.netlify.app/event/2021-06-22-funathon/</guid>
   <pubDate>Sun, 20 Jun 2021 00:00:00 GMT</pubDate>
   <media:content url="https://ssphub-test.netlify.app/event/2021-06-22-funathon/funathon.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Séminaire - la méthodologie des appariements</title>
+  <link>https://ssphub-test.netlify.app/</link>
+  <description>Séminaire de Méthodologie statistique et de sciences des données du 12 avril 2021 : revue des méthodes d&#39;appariement et des principaux concepts et quelques exemples de traitement mis en oeuvre récemment en termes d&#39;appariement</description>
+  <category>Seminaire</category>
+  <guid>https://ssphub-test.netlify.app/</guid>
+  <pubDate>Wed, 21 Apr 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://ssphub-test.netlify.app/assets/media/logo_Insee.png" medium="image" type="image/png" height="68" width="144"/>
 </item>
 </channel>
 </rss>

@@ -6,14 +6,6 @@ Programme et modalités d’inscription aux journées de contribution à l’ope
 
 16 juin 2026
 
-![](./event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
-
-##### Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
-
-Le **14 avril (14h00 - 14h30)**, le SSM Agriculture a présenté son travail pour générer des commentaires de graphiques automatiquement.
-
-14 avr. 2026
-
 ![](./event/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
 
 ##### Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
@@ -141,6 +133,8 @@ Le **5 décembre**, a lieu l’**événement de clotûre de la saison 1 du progr
 [observable](https://observablehq.com/) est la nouvelle plateforme de dataviz réactive. Initiée par Mike Bostock (créateur de D3.js), ce réseau social de la dataviz a pour…
 
 16 nov. 2022
+
+![](./event/2021-06-22-funathon/funathon.jpg)
 
 ##### Funathon de juin 2022
 

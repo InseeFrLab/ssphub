@@ -42,11 +42,11 @@ Infolettre du mois de **mai 2026**
 
 15 mai 2026
 
-![](./event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
+![](./event/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
 
 ##### Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
 
-Le **14 avril (14h00 - 14h30)**, le SSM Agriculture a présenté son travail pour générer des commentaires de graphiques automatiquement.
+Le **14 avril (14h00 - 14h30)**, le SSM Agriculture vient présenter leur travail pour générer des commentaires de graphiques automatiquement.
 
 14 avr. 2026
 
@@ -61,14 +61,6 @@ L’ensemble des billets de blog peut être retrouvé sur la [page dédiée](blo
 Programme et modalités d’inscription aux journées de contribution à l’open source en lien avec la data science
 
 16 juin 2026
-
-![](./event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
-
-##### Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
-
-Le **14 avril (14h00 - 14h30)**, le SSM Agriculture a présenté son travail pour générer des commentaires de graphiques automatiquement.
-
-14 avr. 2026
 
 ![](./event/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
 
@@ -101,6 +93,8 @@ Le **13 janvier (14h30 - 15h30)**, Françoise Bahoken et Nicolas Lambert nous on
 Programme et modalités d’inscription à la 3e journée du réseau
 
 1 déc. 2025
+
+![](./event/2025-04-16-Parquet/Atelier-Parquet.png)
 
 ##### Atelier - Comment récupérer des données sous format Parquet ?
 
