@@ -41,7 +41,7 @@ L’Insee organise deux journées pour **démystifier la contribution à l’ope
 - **Lieu** : [Lieu de la Transformation Publique](https://cartes.gouv.fr/explorer-les-cartes?c=2.305609,48.847446&z=18&l=PLAN.IGN$GEOPORTAIL:GPP:TMS(1;1;1;0;standard)&w=&permalink=yes), Paris.
 - **Format** : Présentiel uniquement (inscription **obligatoire** [ici](https://grist.numerique.gouv.fr/o/ssphub/forms/44ZC8RcBg3bjtvs5wy6wq5/55)).
 - **Appel à projets** : Si vous avez un projet open source auquel vous souhaitez que les participants contribuent, [contactez-nous](mailto:ssphub-contact@insee.fr) !
-- **Détails** : [Page de l’événement](../../talk/2026-06-jdos/index.qmd).
+- **Détails** : [Page de l’événement](../../event/2026-06-jdos/index.llms.md).
 
 # Actualités
 
