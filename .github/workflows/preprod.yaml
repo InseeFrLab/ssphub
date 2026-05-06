@@ -1,0 +1,52 @@
+# Workflow run only on pushes to main and manual trigger
+on:
+  workflow_dispatch:
+  # cf https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
+  push:
+    branches: fusion_site_ssplab
+
+name: Test pre prod - CI - Quarto Publish
+
+# Cancel previous workflow of ci that could be running
+concurrency:
+  group: ci-${{ github.ref }} # preview followed by the reference of the branch or tag that triggered the workflow
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository # https://github.com/actions/checkout
+        uses: actions/checkout@v6
+
+      # add software dependencies here and any libraries
+      # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
+      - name: Configure safe.directory # Workaround for actions/checkout#760
+        run: git config --global --add safe.directory /__w/ssphub/ssphub
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install babelquarto
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            github::ropensci-review-tools/babelquarto@a485fea
+
+      - run: pip install jupyter nbformat # For infolettre17
+
+      - name: Render bilingual project
+        run: |
+          Rscript scripts/1_render.R
+
+      - name: Set up Quarto 
+        uses: quarto-dev/quarto-actions/setup@v2 # https://github.com/quarto-dev/quarto-actions/tree/main/setup
+
+      - name: Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: netlify
+          render: false
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_SSPHUB_AUTH_TOKEN }}
+
+
