@@ -17,9 +17,9 @@ Allez scroller par [ici](https://correctiv.org/en/europe/2026/04/21/half-of-euro
 
 # Les prochains évènements du réseau
 
-## Funathon sur le *machine learning* - 📅 27 et 28 mai (en ligne)
+## Funathon sur le *machine learning* et l’IA - 📅 27 et 28 mai (en ligne)
 
-L’Insee organise un **funathon** sur l’utilisation du *machine learning* dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os).
+L’Insee organise un **funathon** sur l’utilisation du *machine learning* et de l’IA dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os).
 
 - **Dates** : 27 et 28 mai 2026 (100 % en ligne).
 - **Public** : Ouvert aux agents du SSP (inscription par équipe de 5 personnes max).
@@ -59,7 +59,7 @@ Anton Labs a aussi simulé **une compétition entre trois agents IA pour gérer 
 
 De nombreux posts relatent des **problèmes de sécurité liés à l’usage d’agent IA**. Selon les retours d’expérience, l’usage d’agents peut être utile mais nécessite la **mise en place de gardes-fous très stricts et de sauvegardes régulières non accessibles à des agents**, les agents pouvant contourner des prompts.
 
-Le fondateur de [Datatalks](https://datatalks.club/) raconte ainsi dans une série [d’article](https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318) comment un agent IA a supprimé l’intégralité des bases de production de son site de formation lors de la migration entre deux serveurs.
+Le fondateur de [Datatalks](https://datatalks.club/) raconte ainsi dans [cet article](https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318) comment un agent IA a supprimé l’intégralité des bases de production de son site de formation lors de la migration entre deux serveurs.
 
 Des chercheurs se sont intéressés par ailleurs à **l’impact de l’IA sur l’environnement et les mentalités**.
 
