@@ -29,11 +29,4 @@ website:
       - href: https://datalab.sspcloud.fr/
         text: "Le SSPCloud"
 
-  announcement:
-    icon: bi-megaphone
-    dismissable: true
-    content: "📺️ Les présentations et le replay de la journée du réseau, le 1^er^ décembre 2025, [sont disponibles](/event/2025-12-01-network-day/index.qmd)"
-    type: primary
-    position: below-navbar
-
 lang: fr
