@@ -1,7 +1,7 @@
 ``` js
 // echo: false
 // output: false
-inscrits = 730
+inscrits = 1000
 ```
 
 ``` js

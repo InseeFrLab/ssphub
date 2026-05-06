@@ -879,7 +879,7 @@
     "href": "index.html",
     "title": "SSPHub",
     "section": "",
-    "text": "// echo: false\n// output: false\ninscrits = 730\n// echo: false\nbadge = html`&lt;a href=\"https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103\"&gt;&lt;img alt=\"Static Badge\" src=\"https://img.shields.io/badge/${inscrits}_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103\"&gt;\n&lt;/a&gt;\n`"
+    "text": "// echo: false\n// output: false\ninscrits = 1000\n// echo: false\nbadge = html`&lt;a href=\"https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103\"&gt;&lt;img alt=\"Static Badge\" src=\"https://img.shields.io/badge/${inscrits}_inscrits-blue?style=social&label=⭐️%20Rejoindre%20la%20liste%20de%20diffusion&color=8A2BE2&link=https%3A%2F%2Fgrist.numerique.gouv.fr%2Fo%2Fssphub%2Fforms%2FjSjAV3L2F8mmiRVuVEpfF7%2F103\"&gt;\n&lt;/a&gt;\n`"
   },
   {
     "objectID": "index.html#les-dernières-actualités-et-contenus-du-réseau",

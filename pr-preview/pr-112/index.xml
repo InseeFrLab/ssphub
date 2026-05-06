@@ -6,14 +6,14 @@
       version="2.0">
 <channel>
 <title>SSPHub</title>
-<link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/</link>
-<atom:link href="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://ssphub-test.netlify.app/</link>
+<atom:link href="https://ssphub-test.netlify.app/index.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
 <generator>quarto-1.9.37</generator>
 <lastBuildDate>Tue, 16 Jun 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Journées data science &amp; open-source</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/</link>
+  <link>https://ssphub-test.netlify.app/event/2026-06-jdos/</link>
   <description><![CDATA[ 
 
 
@@ -68,13 +68,13 @@
  ]]></description>
   <category>network</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2026-06-jdos/</guid>
   <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/jdos.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2026-06-jdos/jdos.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Des agents en folie</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/</link>
+  <link>https://ssphub-test.netlify.app/infolettre/infolettre_25/</link>
   <description><![CDATA[ 
 
 
@@ -93,7 +93,7 @@
 Allez scroller par <a href="https://correctiv.org/en/europe/2026/04/21/half-of-europes-towns-and-villages-have-fewer-residents-than-60-years-ago/">ici</a> pour le détail et voir les résultats ville par ville.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/correctiv_europe_pop.png" class="img-fluid figure-img"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_25/correctiv_europe_pop.png" class="img-fluid figure-img"></p>
 <figcaption>Évolution de la population en Europe entre 1961 et 2024, <a href="https://correctiv.org/en/europe/2026/04/21/half-of-europes-towns-and-villages-have-fewer-residents-than-60-years-ago/">Correctiv</a></figcaption>
 </figure>
 </div>
@@ -195,7 +195,7 @@ Allez scroller par <a href="https://correctiv.org/en/europe/2026/04/21/half-of-e
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/infolettre.png" class="img-fluid figure-img" alt="Infolettre écrit en images satellites"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_25/infolettre.png" class="img-fluid figure-img" alt="Infolettre écrit en images satellites"></p>
 <figcaption>Infolettre écrit en images satellites</figcaption>
 </figure>
 </div>
@@ -218,13 +218,13 @@ Allez scroller par <a href="https://correctiv.org/en/europe/2026/04/21/half-of-e
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/</guid>
+  <guid>https://ssphub-test.netlify.app/infolettre/infolettre_25/</guid>
   <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/infolettre_25.png" medium="image" type="image/png" height="71" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/infolettre/infolettre_25/infolettre_25.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 <item>
   <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/</link>
+  <link>https://ssphub-test.netlify.app/event/2026-04-ssm-agri/2026-04-ssm-agri/</link>
   <description><![CDATA[ 
 
 
@@ -333,13 +333,13 @@ font-style: inherit;">return</span> button</span>
  ]]></description>
   <category>LLM</category>
   <category>SSM Agriculture</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2026-04-ssm-agri/2026-04-ssm-agri/</guid>
   <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
   <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/</link>
+  <link>https://ssphub-test.netlify.app/event/2026-04-ssm-agri/</link>
   <description><![CDATA[ 
 
 
@@ -412,13 +412,13 @@ function createButton(slides, message="Télécharger les slides"){
  ]]></description>
   <category>LLM</category>
   <category>SSM Agriculture</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2026-04-ssm-agri/</guid>
   <pubDate>Tue, 14 Apr 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2026-04-ssm-agri/logo_SSM_AGRESTE.png" medium="image" type="image/png" height="78" width="144"/>
 </item>
 <item>
   <title>LLM, fusées et lapins cartographes : bienvenue dans le tur-fu</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/</link>
+  <link>https://ssphub-test.netlify.app/infolettre/infolettre_24/</link>
   <description><![CDATA[ 
 
 
@@ -437,7 +437,7 @@ function createButton(slides, message="Télécharger les slides"){
 <p>Le site <a href="https://satellitetracker3d.com/">satellitetracker</a> permet par ailleurs de suivre l’ensemble des quelques 12 000 satellites qui gravitent autour de la Terre. Et cela en fait un petit nombre autour de la planète bleue grise …</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/satellites_trackers.png" class="img-fluid figure-img"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_24/satellites_trackers.png" class="img-fluid figure-img"></p>
 <figcaption>Premier contact à l’approche de la Terre</figcaption>
 </figure>
 </div>
@@ -525,13 +525,13 @@ function createButton(slides, message="Télécharger les slides"){
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/</guid>
+  <guid>https://ssphub-test.netlify.app/infolettre/infolettre_24/</guid>
   <pubDate>Tue, 31 Mar 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/orbital_launch.png" medium="image" type="image/png" height="79" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/infolettre/infolettre_24/orbital_launch.png" medium="image" type="image/png" height="79" width="144"/>
 </item>
 <item>
   <title>Analyse textuelle de documents longs : cas des accords d’entreprise</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/</link>
+  <link>https://ssphub-test.netlify.app/event/2026-03-dares-conventions-collectives/</link>
   <description><![CDATA[ 
 
 
@@ -648,13 +648,13 @@ font-style: inherit;">return</span> button</span>
   <category>extraction d&#39;information</category>
   <category>NLP</category>
   <category>DARES</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2026-03-dares-conventions-collectives/</guid>
   <pubDate>Wed, 18 Mar 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-03-dares-conventions-collectives/logo_Dares.png" medium="image" type="image/png" height="43" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2026-03-dares-conventions-collectives/logo_Dares.png" medium="image" type="image/png" height="43" width="144"/>
 </item>
 <item>
   <title>sndsTools, un package R pour l’extraction de recours aux soins dans les données de santé du SNDS</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2026_sndsTools/</link>
+  <link>https://ssphub-test.netlify.app/project/2026_sndsTools/</link>
   <description><![CDATA[ 
 
 
@@ -698,11 +698,11 @@ font-style: inherit;">return</span> button</span>
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1778076618076" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1778077537360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2023_doremifasol/doremifasol.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
@@ -722,11 +722,11 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1778076618076" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1778077537360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2023_pynsee/example_pynsee.webp" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -746,11 +746,11 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1778076618076" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1778077537360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2022_satellites/Satellites_Mayotte.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -770,11 +770,11 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1778076618074" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1778077537358" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2022_codif_ape/codif_ape_overall.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -808,13 +808,13 @@ Codification automatique de l’activité principale des entreprises
   <category>extraction de données</category>
   <category>R</category>
   <category>données administratives</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2026_sndsTools/</guid>
+  <guid>https://ssphub-test.netlify.app/project/2026_sndsTools/</guid>
   <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2026_sndsTools/sndsTools_img.png" medium="image" type="image/png" height="132" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/project/2026_sndsTools/sndsTools_img.png" medium="image" type="image/png" height="132" width="144"/>
 </item>
 <item>
   <title>L’IA dans l’oeil du cyclone</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/</link>
+  <link>https://ssphub-test.netlify.app/infolettre/infolettre_23/</link>
   <description><![CDATA[ 
 
 
@@ -830,14 +830,14 @@ Codification automatique de l’activité principale des entreprises
 <p>Dans la saison hivernale, ce mois-ci c’est le travail de l’agence italienne <a href="https://thevisualagency.com/about/">The Visual Agency</a> qui a été <a href="https://www.youtube.com/watch?v=yxLu5CpPUFI">sélectionné</a>. Ils ont transcrit les mots d’une conférence sur les sages et les rebelles (<em>i saggi e i rebelli in italiano 🇮🇹 </em>) en <strong>une chaine de montagnes</strong> dont la hauteur des sommets représente l’occurence des termes et la proximité entre sommets la proximité sémantique.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/tva_topography_talk.png" class="img-fluid figure-img"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_23/tva_topography_talk.png" class="img-fluid figure-img"></p>
 <figcaption><em>Source : The Visual Agency, Topography of a talk, <a href="https://thevisualagency.com/tva-blog-articles/topography-of-a-talk-between-vibe-coding-and-parametric-design/">lien</a></em></figcaption>
 </figure>
 </div>
 <p>Et comme c’est le mois de février, je ne résiste pas à l’envie de mettre aussi en avant cette <strong>animation qui retrace les étapes</strong> de création d’une infographie réalisée avec ggplot lors d’un <a href="https://github.com/gkaramanis/tidytuesday">TidyTuesday</a>. Du tout premier graphique jusqu’à la version finale, elle condense en quelques secondes tout le travail d’analyse, d’itération et de mise en forme qui permet d’aboutir à l’illustration finale.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/gkaramanis_tour_de_france.gif" class="img-fluid figure-img"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_23/gkaramanis_tour_de_france.gif" class="img-fluid figure-img"></p>
 <figcaption><em>Source : <a href="https://toulouse-dataviz.notion.site/Newsletter-Toulouse-DataViz-46-2afc08a98edb80cd9c21ee622fe9712a">Toulouse data viz</a> et <a href="https://github.com/gkaramanis/tidytuesday/tree/master/2020/2020-week15">repo TidyTuesday</a></em></figcaption>
 </figure>
 </div>
@@ -909,13 +909,13 @@ Codification automatique de l’activité principale des entreprises
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/</guid>
+  <guid>https://ssphub-test.netlify.app/infolettre/infolettre_23/</guid>
   <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_23/tva_topography_talk.png" medium="image" type="image/png" height="203" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/infolettre/infolettre_23/tva_topography_talk.png" medium="image" type="image/png" height="203" width="144"/>
 </item>
 <item>
   <title>La première infographie</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/</link>
+  <link>https://ssphub-test.netlify.app/infolettre/infolettre_22/</link>
   <description><![CDATA[ 
 
 
@@ -937,7 +937,7 @@ Codification automatique de l’activité principale des entreprises
 <p>A noter que des récentes analyses ADN ont montré que les causes de mortalité étaient sûrement multiples parmi les troupes napoléoniennes. En effet, le matériel génétique de maladies (typhus, diarrhée, fièvre paratyphoïde) a aussi <a href="https://www.lemonde.fr/sciences/article/2025/10/24/ces-infections-qui-ont-fauche-la-grande-armee-de-napoleon-en-1812_6649197_1650684.html">été retrouvé</a> dans des dépouilles le soldats napoléoniens.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/minard.jpeg" class="img-fluid figure-img"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_22/minard.jpeg" class="img-fluid figure-img"></p>
 <figcaption><a href="https://heritage.ecoledesponts.fr/ark:/12148/btv1b10484829h/f52.item.r=minard"><em>Tableaux graphiques et cartes figuratives</em>, par Charles Minard</a></figcaption>
 </figure>
 </div>
@@ -956,7 +956,7 @@ Codification automatique de l’activité principale des entreprises
 <p>Le 13 janvier, nous avons reçu Françoise Bahoken et Nicolas Lambert. Ils nous ont présenté leur passionnant livre <a href="https://www.dunod.com/histoire-geographie-et-sciences-politiques/cartographia-comment-geographes-redessinent-monde">Cartographia</a>, qui explore ludiquement les grandes questions de la cartographie. Le livre rappelle aussi que toute cartographie est une <strong>simplification de la réalité</strong> et qu’elle comprend ainsi forcément un parti pris, dont il faut être conscient. L’enjeu est alors de ne pas chercher à manipuler l’information à travers une cartographie et de tenter d’adopter <strong>le point de vue le plus neutre possible</strong>.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/carto_manip.png" class="img-fluid figure-img"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_22/carto_manip.png" class="img-fluid figure-img"></p>
 <figcaption>Comment des données identiques peuvent véhiculer un message totalement différent par les choix de visualisation effectués</figcaption>
 </figure>
 </div>
@@ -1006,13 +1006,13 @@ Codification automatique de l’activité principale des entreprises
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/</guid>
+  <guid>https://ssphub-test.netlify.app/infolettre/infolettre_22/</guid>
   <pubDate>Fri, 30 Jan 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_22/minard.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://ssphub-test.netlify.app/infolettre/infolettre_22/minard.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-01-cartographia/</link>
+  <link>https://ssphub-test.netlify.app/event/2026-01-cartographia/</link>
   <description><![CDATA[ 
 
 
@@ -1113,13 +1113,13 @@ font-style: inherit;">return</span> button</span>
  ]]></description>
   <category>cartographie</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-01-cartographia/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2026-01-cartographia/</guid>
   <pubDate>Tue, 13 Jan 2026 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-01-cartographia/cartographia.jpeg" medium="image" type="image/jpeg"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2026-01-cartographia/cartographia.jpeg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Qui pour financer l’open source?</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/</link>
+  <link>https://ssphub-test.netlify.app/infolettre/infolettre_21/</link>
   <description><![CDATA[ 
 
 
@@ -1137,7 +1137,7 @@ font-style: inherit;">return</span> button</span>
 <p>Spoiler : la pollution de la centrale électrique d’Ivry s’envole jusque très très loin …</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/climatetrace.png" class="img-fluid figure-img" width="800"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_21/climatetrace.png" class="img-fluid figure-img" width="800"></p>
 <figcaption><em>source: <a href="https://climatetrace.org/air-pollution">ClimateTRACE</a></em></figcaption>
 </figure>
 </div>
@@ -1203,7 +1203,7 @@ font-style: inherit;">return</span> button</span>
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_21/xkcd_2025.jpg" class="img-fluid figure-img" width="350"></p>
 <figcaption><em>En 2025, par <a href="https://bsky.app/profile/flipperpa.bsky.social/post/3m63xgtlh4k2d">Timothy A.</a></em></figcaption>
 </figure>
 </div>
@@ -1296,13 +1296,13 @@ font-style: inherit;">return</span> button</span>
 </ol>
 </section></div> ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/</guid>
+  <guid>https://ssphub-test.netlify.app/infolettre/infolettre_21/</guid>
   <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_21/newsletter_21.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://ssphub-test.netlify.app/infolettre/infolettre_21/newsletter_21.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Troisième journée du SSPHub</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-12-01-network-day/</link>
+  <link>https://ssphub-test.netlify.app/event/2025-12-01-network-day/</link>
   <description><![CDATA[ 
 
 
@@ -1559,13 +1559,13 @@ font-style: inherit;">return</span> button</span>
  ]]></description>
   <category>network</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-12-01-network-day/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2025-12-01-network-day/</guid>
   <pubDate>Mon, 01 Dec 2025 00:00:00 GMT</pubDate>
   <media:content url="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>De belles cartographies, des packages R et l’importance des données d’entraînement pour l’IA</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/</link>
+  <link>https://ssphub-test.netlify.app/infolettre/infolettre_20/</link>
   <description><![CDATA[ 
 
 
@@ -1577,7 +1577,7 @@ font-style: inherit;">return</span> button</span>
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
 <p>Beaucoup d’infographies ce mois-ci, le choix a été dur. Pour une fois, partons sur une vidéo réalisée par <a href="https://www.fabianlang.net/schweizer-bergwelten/">Fabian Lang</a> : le trajet d’un gypaète barbu suivi par GPS en 3D dans les Alpes suisses. La vraie infographie, en format vidéo, est disponible <a href="https://www.linkedin.com/posts/fbnlng_vulture-beardedvulture-cartography-activity-7274787245021188097-L9vj">ici</a>. Attention, vertige.</p>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_20/2025_10_gypaete.png" class="img-fluid"></p>
 </section>
 <section id="actus-du-réseau" class="level1">
 <h1>Actus du réseau</h1>
@@ -1672,13 +1672,13 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/</guid>
+  <guid>https://ssphub-test.netlify.app/infolettre/infolettre_20/</guid>
   <pubDate>Sat, 25 Oct 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/infolettre/infolettre_20/newsletter_20.png" medium="image" type="image/png" height="96" width="144"/>
 </item>
 <item>
   <title>La rentrée 2025: actualités, nouveautés, interview de rentrée</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/</link>
+  <link>https://ssphub-test.netlify.app/infolettre/infolettre_19/</link>
   <description><![CDATA[ 
 
 
@@ -1704,7 +1704,7 @@ Astuce
 </section>
 <section id="la-datavisualisation" class="level1">
 <h1>La datavisualisation</h1>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
+<p><img src="https://ssphub-test.netlify.app/infolettre/infolettre_19/measles-cases-historical-us-states-heatmap.png" class="img-fluid"></p>
 <p>Une version interactive est disponible sur le site du <a href="https://graphics.wsj.com/infectious-diseases-and-vaccines/">Wall Street Journal</a>.</p>
 </section>
 <section id="actus-du-réseau" class="level1">
@@ -1852,13 +1852,13 @@ Astuce
 
  ]]></description>
   <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/</guid>
+  <guid>https://ssphub-test.netlify.app/infolettre/infolettre_19/</guid>
   <pubDate>Mon, 29 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/infolettre/infolettre_19/2025_09_back_school.png" medium="image" type="image/png" height="107" width="144"/>
 </item>
 <item>
   <title>Comparaison des prévisions entre nowcasting et approche ascendante</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_nowcasting/</link>
+  <link>https://ssphub-test.netlify.app/project/2025_nowcasting/</link>
   <description><![CDATA[ 
 
 
@@ -1898,11 +1898,11 @@ Astuce
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1778076618077" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1778077537361" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/money.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
@@ -1933,11 +1933,11 @@ Exploitation de données bancaires pour les prévisions de croissance du PIB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1778076618073" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1778077537357" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2021_gdp_media/gdp_media.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2021_gdp_media/gdp_media.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -1970,11 +1970,11 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778076618071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778077537355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2007,11 +2007,11 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778076618072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778077537356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2042,11 +2042,11 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1778076618071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1778077537355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2019_gdp_tracker/evol_croissance_fr.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2019_gdp_tracker/evol_croissance_fr.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2092,13 +2092,13 @@ Que disent les données de production et de consommation d’électricité sur l
   <category>nowcasting</category>
   <category>prévisions</category>
   <category>Insee</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_nowcasting/</guid>
+  <guid>https://ssphub-test.netlify.app/project/2025_nowcasting/</guid>
   <pubDate>Mon, 01 Sep 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_nowcasting/comp_fr.png" medium="image" type="image/png" height="53" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/project/2025_nowcasting/comp_fr.png" medium="image" type="image/png" height="53" width="144"/>
 </item>
 <item>
   <title>Exploitation de données bancaires pour les prévisions de croissance du PIB</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/</link>
+  <link>https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/</link>
   <description><![CDATA[ 
 
 
@@ -2138,11 +2138,11 @@ Que disent les données de production et de consommation d’électricité sur l
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1778076618076" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1778077537360" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
 <a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2024_cb_mno_tabac/tabac.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2024_cb_mno_tabac/tabac.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title" data-anchor-id="projets-similaires">
@@ -2173,11 +2173,11 @@ Une évaluation des achats transfrontaliers de tabac et des pertes fiscales asso
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1778076618073" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1778077537357" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2022_Enquete_Budget_Famille/visuel_Budget_des_familles_1.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2206,11 +2206,11 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778076618071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778077537355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2020_cb_conj/cb_conj.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2243,11 +2243,11 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778076618072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778077537356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2020_electricite_conj/electricity.jpg" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2278,11 +2278,11 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1778076618072" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1778077537356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2020_mvtpop/mvtpop.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2317,11 +2317,11 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1778076618071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1778077537356" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2020_donnees_caisse/2020_donnees_caisse.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2356,7 +2356,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1778076618071" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1778077537355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2405,7 +2405,7 @@ Ségrégation urbaine : un éclairage par les données de téléphonie mobile
 <a href="https://www.insee.fr/fr/information/8264558?sommaire=8264562" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/2024_courrier_stats.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/2024_courrier_stats.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title" data-anchor-id="autres-études-menées-grâces-aux-données-bancaires">
@@ -2426,7 +2426,7 @@ L’économie racontée par les données bancaires - Ce que nos relevés de comp
 <a href="https://www.insee.fr/fr/statistiques/8183836" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/2024_DT2024_08.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/2024_DT2024_08.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2447,7 +2447,7 @@ Achats transfrontaliers de carburant à la frontière franco-allemande
 <a href="https://www.insee.fr/fr/statistiques/7721885" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/2023_InseeA90.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/2023_InseeA90.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2468,7 +2468,7 @@ La situation financière des ménages au jour le jour
 <a href="https://www.insee.fr/fr/statistiques/6542263" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/2022_InseeA76.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/2022_InseeA76.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2489,7 +2489,7 @@ Avec l’inflation, une précarité financière en légère hausse, mais inféri
 <a href="https://journees-methodologie-statistique.insee.net/une-mesure-de-la-reponse-en-consommation-a-des-chocs-de-revenus-a-partir-des-donnees-bancaires/" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/assets/media/logo_Insee.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/assets/media/logo_Insee.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2510,7 +2510,7 @@ Une mesure de la réponse en consommation à des chocs de revenus à partir des 
 <a href="https://www.insee.fr/fr/statistiques/5760458" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/2021_InseeA69.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/2021_InseeA69.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -2540,13 +2540,13 @@ Impact de la crise sanitaire sur un panel anonymisé de clients de La Banque Pos
   <category>prévisions</category>
   <category>données comptes bancaires</category>
   <category>expérimentation</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/</guid>
+  <guid>https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/</guid>
   <pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/project/2025_comptes_bancaires_conj/money.jpg" medium="image" type="image/jpeg"/>
+  <media:content url="https://ssphub-test.netlify.app/project/2025_comptes_bancaires_conj/money.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données sous format Parquet ?</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/</link>
+  <link>https://ssphub-test.netlify.app/event/2025-04-16-Parquet/</link>
   <description><![CDATA[ 
 
 
@@ -2606,7 +2606,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://ssphub-test.netlify.app/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -2618,13 +2618,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>Parquet</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2025-04-16-Parquet/</guid>
   <pubDate>Wed, 16 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 <item>
   <title>Atelier - Comment récupérer des données par API ?</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/</link>
+  <link>https://ssphub-test.netlify.app/event/2025-04-09-API/</link>
   <description><![CDATA[ 
 
 
@@ -2684,7 +2684,7 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
 </section>
 <section id="documentation-de-latelier-replay" class="level1">
 <h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
+<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://inseefrlab.github.io/ssphub-ateliers/sessions/api.html" target="_blank">ici</a>. <img src="https://ssphub-test.netlify.app/event/2025-04-09-API/API-site-preview.png" class="img-fluid"></p>
 </section>
 <section id="questions-contact" class="level1">
 <h1>Questions / contact</h1>
@@ -2696,13 +2696,13 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>API</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2025-04-09-API/</guid>
   <pubDate>Wed, 09 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2025-04-09-API/Atelier-API.png" medium="image" type="image/png" height="108" width="144"/>
 </item>
 <item>
   <title>Deuxième journée du SSPHub</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-10-14-network-day/</link>
+  <link>https://ssphub-test.netlify.app/event/2024-10-14-network-day/</link>
   <description><![CDATA[ 
 
 
@@ -2957,13 +2957,13 @@ Rappel du programme de la journée
  ]]></description>
   <category>dataviz</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-10-14-network-day/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2024-10-14-network-day/</guid>
   <pubDate>Mon, 14 Oct 2024 15:00:00 GMT</pubDate>
   <media:content url="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/1934057/633539_443779.png" medium="image" type="image/png"/>
 </item>
 <item>
   <title>Quarto : Une évolution de R Markdown pour des travaux statistiques reproductibles</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/</link>
+  <link>https://ssphub-test.netlify.app/event/2024-05-02-quarto/</link>
   <description><![CDATA[ 
 
 
@@ -3046,9 +3046,9 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
  ]]></description>
   <category>quarto</category>
   <category>event</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/</guid>
+  <guid>https://ssphub-test.netlify.app/event/2024-05-02-quarto/</guid>
   <pubDate>Thu, 02 May 2024 15:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
+  <media:content url="https://ssphub-test.netlify.app/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
 </item>
 </channel>
 </rss>
