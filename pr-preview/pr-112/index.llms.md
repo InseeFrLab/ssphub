@@ -34,19 +34,19 @@ Programme et modalités d’inscription aux journées de contribution à l’ope
 
 16 juin 2026
 
+![](./infolettre/infolettre_25/infolettre_25.png)
+
+##### Des agents en folie
+
+Infolettre du mois de **mai 2026**
+
+15 mai 2026
+
 ![](./event/2026-04-ssm-agri/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
 
 ##### Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
 
 Le **14 avril (14h00 - 14h30)**, le SSM Agriculture a présenté son travail pour générer des commentaires de graphiques automatiquement.
-
-14 avr. 2026
-
-![](./event/2026-04-ssm-agri/logo_SSM_AGRESTE.png)
-
-##### Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
-
-Le **14 avril (14h00 - 14h30)**, le SSM Agriculture vient présenter leur travail pour générer des commentaires de graphiques automatiquement.
 
 14 avr. 2026
 
@@ -432,6 +432,14 @@ Croisement de données administratives et de données de téléphonie pour analy
 
 Toutes les *newsletters* précédemment publiées sont disponibles sur la [page dédiée](infolettre/infolettre.llms.md).
 
+![](./infolettre/infolettre_25/infolettre_25.png)
+
+##### Des agents en folie
+
+Infolettre du mois de **mai 2026**
+
+15 mai 2026
+
 ![](./infolettre/infolettre_24/orbital_launch.png)
 
 ##### LLM, fusées et lapins cartographes : bienvenue dans le tur-fu
@@ -471,8 +479,6 @@ Infolettre du mois de **décembre 2025**
 Infolettre du mois d’**octobre 2025**
 
 25 oct. 2025
-
-![](./infolettre/infolettre_19/2025_09_back_school.png)
 
 ##### La rentrée 2025: actualités, nouveautés, interview de rentrée
 

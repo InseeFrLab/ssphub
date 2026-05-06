@@ -1,3 +1,11 @@
+![](../infolettre/infolettre_25/infolettre_25.png)
+
+##### Des agents en folie
+
+Infolettre du mois de **mai 2026**
+
+15 mai 2026
+
 ![](../infolettre/infolettre_24/orbital_launch.png)
 
 ##### LLM, fusées et lapins cartographes : bienvenue dans le tur-fu
@@ -133,8 +141,6 @@ Infolettre du mois de **Janvier 2023**
 Infolettre du mois de **Décembre 2022**
 
 31 déc. 2022
-
-![](../infolettre/infolettre_old/archive.png)
 
 ##### Archive des infolettres et lettres Big Data
 

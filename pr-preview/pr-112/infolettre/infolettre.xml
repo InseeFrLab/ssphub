@@ -12,7 +12,157 @@
 sur l&#39;actualité interne du réseau.
 </description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Tue, 31 Mar 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 15 May 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Des agents en folie</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="bienvenue-à-la-vingt-cinquième-infolettre" class="level1">
+<h1>Bienvenue à la vingt cinquième infolettre !</h1>
+<p>C’est le début du dernier fractionné avant l’été. Bienvenue à cette nouvelle infolettre.</p>
+</section>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>L’infographie du mois est démographique et européenne.</p>
+<p>Correctiv a créé une <strong>belle histoire visuelle qui explore les villes d’Europe</strong> dont la population a décru ou augmenté depuis 1961.</p>
+<p>L’histoire est double : une baisse de la population rurale et une hausse dans les grandes villes et une baisse de la population dans les pays de l’est.<br>
+Allez scroller par <a href="https://correctiv.org/en/europe/2026/04/21/half-of-europes-towns-and-villages-have-fewer-residents-than-60-years-ago/">ici</a> pour le détail et voir les résultats ville par ville.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/correctiv_europe_pop.png" class="img-fluid figure-img"></p>
+<figcaption>Évolution de la population en Europe entre 1961 et 2024, <a href="https://correctiv.org/en/europe/2026/04/21/half-of-europes-towns-and-villages-have-fewer-residents-than-60-years-ago/">Correctiv</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="les-prochains-évènements-du-réseau" class="level1">
+<h1>Les prochains évènements du réseau</h1>
+<section id="funathon-sur-le-machine-learning-et-lia---27-et-28-mai-en-ligne" class="level2">
+<h2 class="anchored" data-anchor-id="funathon-sur-le-machine-learning-et-lia---27-et-28-mai-en-ligne">Funathon sur le <em>machine learning</em> et l’IA - 📅 27 et 28 mai (en ligne)</h2>
+<p>L’Insee organise un <strong>funathon européen</strong> sur l’utilisation du <em>machine learning</em> et de l’IA dans le cadre du projet européen <a href="https://cros.ec.europa.eu/dashboard/aiml4os">ESS-Net AIML4OS</a>.</p>
+<ul>
+<li><strong>Dates</strong> : 27 et 28 mai 2026 (100 % en ligne).</li>
+<li><strong>Public</strong> : Ouvert aux agents du SSP (inscription par équipe de 5 personnes max).</li>
+<li><strong>Sujets proposés</strong> (en anglais, connaissances minimales en Python et Git requises) :
+<ul>
+<li>Segmentation d’images satellites par <em>deep learning</em> ;</li>
+<li>Codification automatique pour la classification NACE ;</li>
+<li>Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes.</li>
+</ul></li>
+<li><strong>Objectifs pédagogiques</strong> :
+<ul>
+<li>Utiliser l’IA et le <em>deep learning</em> pour produire des statistiques officielles ;</li>
+<li>Une expérience pratique des outils de science des données (Git, Python) et des technologies cloud (GitHub, S3) ;</li>
+<li>Trois projets d’apprentissage automatique et d’IA réutilisables et aboutis.</li>
+</ul></li>
+<li><strong>Inscription</strong> : <a href="https://grist.numerique.gouv.fr/o/docs/forms/kVB8TszNTEbuuPoquY8ze8/55">Formulaire en ligne</a>. <em>⚠️ Places limitées : l’inscription est soumise à validation par l’organisateur.</em></li>
+<li><strong>Plus d’infos</strong> : <a href="https://aiml4os.github.io/funathon-general-website/about.html">Site officiel du funathon</a>.</li>
+</ul>
+</section>
+<section id="journées-data-science-open-source---16-et-17-juin-paris" class="level2">
+<h2 class="anchored" data-anchor-id="journées-data-science-open-source---16-et-17-juin-paris">📢 Journées Data Science &amp; Open Source - 📅 16 et 17 juin (Paris)</h2>
+<p>L’Insee organise deux journées pour <strong>démystifier la contribution à l’open source</strong> et explorer des projets liés à la data science les 16 et 17 juin.</p>
+<ul>
+<li><strong>Lieu</strong> : <a href="https://cartes.gouv.fr/explorer-les-cartes?c=2.305609,48.847446&amp;z=18&amp;l=PLAN.IGN$GEOPORTAIL:GPP:TMS(1;1;1;0;standard)&amp;w=&amp;permalink=yes">Lieu de la Transformation Publique</a>, Paris.</li>
+<li><strong>Format</strong> : Présentiel uniquement (inscription <strong>obligatoire</strong> <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/44ZC8RcBg3bjtvs5wy6wq5/55">ici</a>).</li>
+<li><strong>Appel à projets</strong> : Si vous avez un projet open source auquel vous souhaitez que les participants contribuent, <a href="mailto:ssphub-contact@insee.fr">contactez-nous</a> !</li>
+<li><strong>Détails</strong> : <a href="../../talk/2026-06-jdos/index.qmd">Page de l’événement</a>.</li>
+</ul>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<section id="ia" class="level2">
+<h2 class="anchored" data-anchor-id="ia">IA</h2>
+<section id="des-agents-ia-dans-la-vraie-vie" class="level3">
+<h3 class="anchored" data-anchor-id="des-agents-ia-dans-la-vraie-vie">Des agents IA 🤖 dans la vraie vie</h3>
+<p><strong>L’adoption des agents IA</strong> continue au sein de diverses structures, avec quelques déconvenues.</p>
+<p>Aux États-Unis, le <a href="https://www.nytimes.com/2026/04/21/us/san-francisco-store-managed-ai-agent.html?unlocked_article_code=1.eFA.7jVB.5i5HUjjcUKyj&amp;smid=url-share&amp;utm_source=tldrai">New York Times</a> s’est penché sur une expérimentation lancée par <a href="https://andonlabs.com/">Anton Labs</a>, une structure qui vise à “développer un monde robotisé sans humain”. Ils ont ainsi confié <strong>la gestion d’une supérette à un agent</strong> (utilisant Claude Sonnet 4.6) avec pour seul objectif de dégager un bénéfice. Il a ainsi recruté trois vendeurs, le vendeur étant payé 24$ de l’heure et 22$ de l’heure pour les deux vendeuses, il passe les commandes et fait l’inventaire (de manière approximative). Résultat, la supérette a un achalandage assez étrange, vend beaucoup de bougies et, pour le moment, est en déficit. <strong>L’agent qui a un marché ne marche donc pas encore</strong>.</p>
+<p>Anton Labs a aussi simulé <strong>une compétition entre trois agents IA pour gérer des distributeurs</strong> et dont les résultats sont présentés sur <a href="https://andonlabs.com/evals/vending-bench-arena">leur site</a>. Rapidement, des agents ont adopté des comportements anti-concurrentiels et monopolistiques mais ils ont dégagé jusque 10 000$ de profits (simulés).</p>
+</section>
+<section id="risques-et-bonnes-pratiques-liés-à-lusage-dagents-ou-dia" class="level3">
+<h3 class="anchored" data-anchor-id="risques-et-bonnes-pratiques-liés-à-lusage-dagents-ou-dia">Risques et bonnes pratiques liés à l’usage d’agents ou d’IA</h3>
+<p>De nombreux posts relatent des <strong>problèmes de sécurité liés à l’usage d’agent IA</strong>. Selon les retours d’expérience, l’usage d’agents peut être utile mais nécessite la <strong>mise en place de gardes-fous très stricts et de sauvegardes régulières non accessibles à des agents</strong>, les agents pouvant contourner des prompts.</p>
+<p>Le fondateur de <a href="https://datatalks.club/">Datatalks</a> raconte ainsi dans <a href="https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318">cet article</a> comment un agent IA a supprimé l’intégralité des bases de production de son site de formation lors de la migration entre deux serveurs.</p>
+<p>Des chercheurs se sont intéressés par ailleurs à <strong>l’impact de l’IA sur l’environnement et les mentalités</strong>.</p>
+<ul>
+<li>L’IA réchaufferait ainsi l’égo et rendrait les gens moins sympathiques entre eux selon <a href="https://www.nature.com/articles/d41586-026-00979-x">cette étude de Nature</a>.</li>
+<li>Par ailleurs, les <strong>data centers utilisés pour l’IA réchaufferaient localement la Terre de 2°C</strong> selon <a href="https://doi.org/10.48550/arXiv.2603.20897">cette analyse</a> menée notamment par des chercheurs de l’INRIA et de l’Institut d’ingénierie et de management de Grenoble. Ils estiment que 340 millions de personnes pourrait être concernés par ces îlots de chaleur.</li>
+</ul>
+</section>
+</section>
+<section id="open-source-plus-ou-moins" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-plus-ou-moins">Open Source : plus ou moins ?</h2>
+<p>L’open source <strong>a le vent en poupe en ce moment</strong>, la souveraineté étant devenu un <em>buzz word</em> international. A ce titre, deux exemples différents de renouvellement de stratégies.</p>
+<p>Bloomberg <a href="https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/">a annoncé fin mars</a> <strong>renforcer son soutien stratégique aux projets ouverts</strong>. Leur nouvelle stratégie repose sur le constat que connaître ses dépendances n’est pas suffisant. L’open source vit en effet grâce aux communautés autour des projets : si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend : des employés de l’agence de presse sont maintenant payés pour soutenir des projets open source stratégiques.</p>
+<p>A l’inverse, au Royaume-Uni, <strong>le NHS a annoncé un (triste) revirement de sa stratégie open-source</strong>, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l’heure d’agents IA. Ce revirement, après une stratégie d’ouverture, a énervé <a href="https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/">Terence Eden, un développeur anglais</a> : l’open source fait plus partie de la solution que du problème.</p>
+</section>
+<section id="outils-et-ressources" class="level2">
+<h2 class="anchored" data-anchor-id="outils-et-ressources">Outils et ressources</h2>
+<p>Ce mois-ci, une foison de nouveaux jouets technologiques à aller regarder.</p>
+<section id="r-sql-et-données" class="level3">
+<h3 class="anchored" data-anchor-id="r-sql-et-données">R, SQL et données</h3>
+<ul>
+<li><strong><code>ggalttext</code></strong> : Un package R pour générer automatiquement des <strong>textes alternatifs</strong> pour les graphiques <code>ggplot</code> (<a href="https://github.com/y-sunflower/ggalttext">leur repo GitHub</a>).</li>
+<li><strong>a Grammar of graphics in SQL</strong> : <code>ggsql</code> est une extension SQL inspirée de <code>ggplot</code>, développée par Posit et présentée sur leur <a href="https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/">blog</a>.</li>
+<li><strong>Anonymisation de données</strong> :
+<ul>
+<li><strong>OpenAI</strong> : Outil de détection et masquage des données personnelles dans un texte (<a href="https://openai.com/index/introducing-openai-privacy-filter/">lien</a>).</li>
+<li><strong>Dalibo</strong> : Solution pour anonymiser des bases PostgreSQL (<a href="https://labs.dalibo.com/postgresql_anonymizer">documentation</a>).</li>
+</ul></li>
+<li>Vous cherchez une <strong>alternative à Google Street View</strong> (#souveraineté) ? Le français 🐓 <a href="https://panoramax.fr">Panoramax</a> est fait pour vous et est open source.</li>
+<li><strong>Parsing de PDF</strong> :
+<ul>
+<li>Comment choisir quel outil utiliser pour parser un pdf ? Des chercheurs de l’université de Offenburg et de Mannheim se sont penchés sur la question dans leur article <a href="https://doi.org/10.48550/arXiv.2603.18652">Benchmarking PDF Parsers on Table Extraction with LLM-based Semantic Evaluation</a>.</li>
+<li><strong>OpenDataLoader PDF</strong> : Parser open source pour les RAG, sans GPU (<a href="https://opendataloader.org/">site</a>).</li>
+</ul></li>
+</ul>
+</section>
+<section id="quarto-1.9-nouveautés" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-1.9-nouveautés">Quarto 1.9 : Nouveautés</h3>
+<ul>
+<li>La notion de marque (ou <em>brand</em>) permet <strong>d’uniformiser le rendu d’un document à plusieurs formats</strong> et de prendre en compte les thèmes clair/sombre des utilisateurs. Les dernières évolutions sont présentées dans ce <a href="https://mickael.canouil.fr/posts/2026-04-15-quarto-brand-figures-tables/">post par Mickaël Canouil</a>.</li>
+<li>Elle permet par ailleurs de générer des <strong>pdf accessibles</strong> ! Ce <a href="https://quarto.org/docs/blog/posts/2026-03-05-pdf-accessibility-and-standards/">post</a> détaille ce qu’il faut faire.</li>
+</ul>
+</section>
+<section id="fun-et-formation" class="level3">
+<h3 class="anchored" data-anchor-id="fun-et-formation">Fun et formation</h3>
+<ul>
+<li>Pour écrire <strong>votre nom sur la Terre,</strong> rendez-vous sur le <a href="https://science.nasa.gov/specials/your-name-in-landsat">site de la NASA</a>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/infolettre.png" class="img-fluid figure-img" alt="Infolettre écrit en images satellites"></p>
+<figcaption>Infolettre écrit en images satellites</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Formation et cinéma</strong> : deux chaines youtube pour se former au machine learning et concilier cinéma et formation.
+<ul>
+<li>une <a href="https://youtube.com/playlist?list=PLQ9F4IqcaHKq-qVkrYhNPMQrU4TlyziAx&amp;si=WLWCfIvokaOyEj3N">première chaîne</a> retraçant l’histoire du machine learning à travers des vidéos pédagogiques. Idéale pour comprendre l’évolution des algorithmes et des paradigmes depuis les débuts jusqu’aux LLM.</li>
+<li>un <a href="https://www.youtube.com/watch?v=GTZVN8nqSR4">entretien</a> avec Solomon Hykes, l’un des créateurs de Docker dans les années 2010.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="appel-à-contributions" class="level1">
+<h1>Appel à contributions</h1>
+<p>Vous avez un projet open source, une actualité ou une ressource à partager ? <strong>Contactez-nous</strong> pour les inclure dans la prochaine infolettre !</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Infolettre</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/</guid>
+  <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/infolettre_25.png" medium="image" type="image/png" height="71" width="144"/>
+</item>
 <item>
   <title>LLM, fusées et lapins cartographes : bienvenue dans le tur-fu</title>
   <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_24/</link>

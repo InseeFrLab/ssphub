@@ -45,7 +45,7 @@
 <h1>Projets open-source</h1>
 <p>Les différents projets à date sont :</p>
 <ul>
-<li><a href="https://www.css.cnrs.fr/active-tigger/">Active Tigger</a> : une application de labellisation de données textuelles, proposant aussi des techniques d’active learning, et permettant d’entraîner des modèles de classification textuelle (CREST). Le repo lié est <a href="https://github.com/emilienschultz/activetigger/">ici</a> ;</li>
+<li><a href="https://www.css.cnrs.fr/active-tigger/">Active Tigger</a> : une application de labellisation de données textuelles, proposant aussi des techniques d’active learning, et permettant d’entraîner des modèles de classification textuelle (CREST). Le repo lié est <a href="https://github.com/activetigger/activetigger/">ici</a> ;</li>
 <li><a href="https://sndstoolers.github.io/sndsTools/">SNDSTools</a> : projet pour faciliter l’utilisation des données du système national de données de santé (SNDS) (Inria - Insee). Le repo lié est <a href="https://github.com/SNDStoolers/sndsTools">ici</a> ;</li>
 <li><a href="https://github.com/Romanovytch/canar">CanaR</a> : projet visant à déployer en autonomie des chatbots personnalisés avec du RAG via un outil de commande.</li>
 <li>une liste de sujets à traiter en autonomie (en groupe ou seul). La liste définitive sera présentée le jour J mais comprend par exemple :
@@ -71,6 +71,156 @@
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/</guid>
   <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2026-06-jdos/jdos.jpg" medium="image" type="image/jpeg"/>
+</item>
+<item>
+  <title>Des agents en folie</title>
+  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="bienvenue-à-la-vingt-cinquième-infolettre" class="level1">
+<h1>Bienvenue à la vingt cinquième infolettre !</h1>
+<p>C’est le début du dernier fractionné avant l’été. Bienvenue à cette nouvelle infolettre.</p>
+</section>
+<section id="linfographie" class="level1">
+<h1>L’infographie</h1>
+<p>L’infographie du mois est démographique et européenne.</p>
+<p>Correctiv a créé une <strong>belle histoire visuelle qui explore les villes d’Europe</strong> dont la population a décru ou augmenté depuis 1961.</p>
+<p>L’histoire est double : une baisse de la population rurale et une hausse dans les grandes villes et une baisse de la population dans les pays de l’est.<br>
+Allez scroller par <a href="https://correctiv.org/en/europe/2026/04/21/half-of-europes-towns-and-villages-have-fewer-residents-than-60-years-ago/">ici</a> pour le détail et voir les résultats ville par ville.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/correctiv_europe_pop.png" class="img-fluid figure-img"></p>
+<figcaption>Évolution de la population en Europe entre 1961 et 2024, <a href="https://correctiv.org/en/europe/2026/04/21/half-of-europes-towns-and-villages-have-fewer-residents-than-60-years-ago/">Correctiv</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="les-prochains-évènements-du-réseau" class="level1">
+<h1>Les prochains évènements du réseau</h1>
+<section id="funathon-sur-le-machine-learning-et-lia---27-et-28-mai-en-ligne" class="level2">
+<h2 class="anchored" data-anchor-id="funathon-sur-le-machine-learning-et-lia---27-et-28-mai-en-ligne">Funathon sur le <em>machine learning</em> et l’IA - 📅 27 et 28 mai (en ligne)</h2>
+<p>L’Insee organise un <strong>funathon européen</strong> sur l’utilisation du <em>machine learning</em> et de l’IA dans le cadre du projet européen <a href="https://cros.ec.europa.eu/dashboard/aiml4os">ESS-Net AIML4OS</a>.</p>
+<ul>
+<li><strong>Dates</strong> : 27 et 28 mai 2026 (100 % en ligne).</li>
+<li><strong>Public</strong> : Ouvert aux agents du SSP (inscription par équipe de 5 personnes max).</li>
+<li><strong>Sujets proposés</strong> (en anglais, connaissances minimales en Python et Git requises) :
+<ul>
+<li>Segmentation d’images satellites par <em>deep learning</em> ;</li>
+<li>Codification automatique pour la classification NACE ;</li>
+<li>Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes.</li>
+</ul></li>
+<li><strong>Objectifs pédagogiques</strong> :
+<ul>
+<li>Utiliser l’IA et le <em>deep learning</em> pour produire des statistiques officielles ;</li>
+<li>Une expérience pratique des outils de science des données (Git, Python) et des technologies cloud (GitHub, S3) ;</li>
+<li>Trois projets d’apprentissage automatique et d’IA réutilisables et aboutis.</li>
+</ul></li>
+<li><strong>Inscription</strong> : <a href="https://grist.numerique.gouv.fr/o/docs/forms/kVB8TszNTEbuuPoquY8ze8/55">Formulaire en ligne</a>. <em>⚠️ Places limitées : l’inscription est soumise à validation par l’organisateur.</em></li>
+<li><strong>Plus d’infos</strong> : <a href="https://aiml4os.github.io/funathon-general-website/about.html">Site officiel du funathon</a>.</li>
+</ul>
+</section>
+<section id="journées-data-science-open-source---16-et-17-juin-paris" class="level2">
+<h2 class="anchored" data-anchor-id="journées-data-science-open-source---16-et-17-juin-paris">📢 Journées Data Science &amp; Open Source - 📅 16 et 17 juin (Paris)</h2>
+<p>L’Insee organise deux journées pour <strong>démystifier la contribution à l’open source</strong> et explorer des projets liés à la data science les 16 et 17 juin.</p>
+<ul>
+<li><strong>Lieu</strong> : <a href="https://cartes.gouv.fr/explorer-les-cartes?c=2.305609,48.847446&amp;z=18&amp;l=PLAN.IGN$GEOPORTAIL:GPP:TMS(1;1;1;0;standard)&amp;w=&amp;permalink=yes">Lieu de la Transformation Publique</a>, Paris.</li>
+<li><strong>Format</strong> : Présentiel uniquement (inscription <strong>obligatoire</strong> <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/44ZC8RcBg3bjtvs5wy6wq5/55">ici</a>).</li>
+<li><strong>Appel à projets</strong> : Si vous avez un projet open source auquel vous souhaitez que les participants contribuent, <a href="mailto:ssphub-contact@insee.fr">contactez-nous</a> !</li>
+<li><strong>Détails</strong> : <a href="../../talk/2026-06-jdos/index.qmd">Page de l’événement</a>.</li>
+</ul>
+</section>
+</section>
+<section id="actualités" class="level1">
+<h1>Actualités</h1>
+<section id="ia" class="level2">
+<h2 class="anchored" data-anchor-id="ia">IA</h2>
+<section id="des-agents-ia-dans-la-vraie-vie" class="level3">
+<h3 class="anchored" data-anchor-id="des-agents-ia-dans-la-vraie-vie">Des agents IA 🤖 dans la vraie vie</h3>
+<p><strong>L’adoption des agents IA</strong> continue au sein de diverses structures, avec quelques déconvenues.</p>
+<p>Aux États-Unis, le <a href="https://www.nytimes.com/2026/04/21/us/san-francisco-store-managed-ai-agent.html?unlocked_article_code=1.eFA.7jVB.5i5HUjjcUKyj&amp;smid=url-share&amp;utm_source=tldrai">New York Times</a> s’est penché sur une expérimentation lancée par <a href="https://andonlabs.com/">Anton Labs</a>, une structure qui vise à “développer un monde robotisé sans humain”. Ils ont ainsi confié <strong>la gestion d’une supérette à un agent</strong> (utilisant Claude Sonnet 4.6) avec pour seul objectif de dégager un bénéfice. Il a ainsi recruté trois vendeurs, le vendeur étant payé 24$ de l’heure et 22$ de l’heure pour les deux vendeuses, il passe les commandes et fait l’inventaire (de manière approximative). Résultat, la supérette a un achalandage assez étrange, vend beaucoup de bougies et, pour le moment, est en déficit. <strong>L’agent qui a un marché ne marche donc pas encore</strong>.</p>
+<p>Anton Labs a aussi simulé <strong>une compétition entre trois agents IA pour gérer des distributeurs</strong> et dont les résultats sont présentés sur <a href="https://andonlabs.com/evals/vending-bench-arena">leur site</a>. Rapidement, des agents ont adopté des comportements anti-concurrentiels et monopolistiques mais ils ont dégagé jusque 10 000$ de profits (simulés).</p>
+</section>
+<section id="risques-et-bonnes-pratiques-liés-à-lusage-dagents-ou-dia" class="level3">
+<h3 class="anchored" data-anchor-id="risques-et-bonnes-pratiques-liés-à-lusage-dagents-ou-dia">Risques et bonnes pratiques liés à l’usage d’agents ou d’IA</h3>
+<p>De nombreux posts relatent des <strong>problèmes de sécurité liés à l’usage d’agent IA</strong>. Selon les retours d’expérience, l’usage d’agents peut être utile mais nécessite la <strong>mise en place de gardes-fous très stricts et de sauvegardes régulières non accessibles à des agents</strong>, les agents pouvant contourner des prompts.</p>
+<p>Le fondateur de <a href="https://datatalks.club/">Datatalks</a> raconte ainsi dans <a href="https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318">cet article</a> comment un agent IA a supprimé l’intégralité des bases de production de son site de formation lors de la migration entre deux serveurs.</p>
+<p>Des chercheurs se sont intéressés par ailleurs à <strong>l’impact de l’IA sur l’environnement et les mentalités</strong>.</p>
+<ul>
+<li>L’IA réchaufferait ainsi l’égo et rendrait les gens moins sympathiques entre eux selon <a href="https://www.nature.com/articles/d41586-026-00979-x">cette étude de Nature</a>.</li>
+<li>Par ailleurs, les <strong>data centers utilisés pour l’IA réchaufferaient localement la Terre de 2°C</strong> selon <a href="https://doi.org/10.48550/arXiv.2603.20897">cette analyse</a> menée notamment par des chercheurs de l’INRIA et de l’Institut d’ingénierie et de management de Grenoble. Ils estiment que 340 millions de personnes pourrait être concernés par ces îlots de chaleur.</li>
+</ul>
+</section>
+</section>
+<section id="open-source-plus-ou-moins" class="level2">
+<h2 class="anchored" data-anchor-id="open-source-plus-ou-moins">Open Source : plus ou moins ?</h2>
+<p>L’open source <strong>a le vent en poupe en ce moment</strong>, la souveraineté étant devenu un <em>buzz word</em> international. A ce titre, deux exemples différents de renouvellement de stratégies.</p>
+<p>Bloomberg <a href="https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/">a annoncé fin mars</a> <strong>renforcer son soutien stratégique aux projets ouverts</strong>. Leur nouvelle stratégie repose sur le constat que connaître ses dépendances n’est pas suffisant. L’open source vit en effet grâce aux communautés autour des projets : si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend : des employés de l’agence de presse sont maintenant payés pour soutenir des projets open source stratégiques.</p>
+<p>A l’inverse, au Royaume-Uni, <strong>le NHS a annoncé un (triste) revirement de sa stratégie open-source</strong>, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l’heure d’agents IA. Ce revirement, après une stratégie d’ouverture, a énervé <a href="https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/">Terence Eden, un développeur anglais</a> : l’open source fait plus partie de la solution que du problème.</p>
+</section>
+<section id="outils-et-ressources" class="level2">
+<h2 class="anchored" data-anchor-id="outils-et-ressources">Outils et ressources</h2>
+<p>Ce mois-ci, une foison de nouveaux jouets technologiques à aller regarder.</p>
+<section id="r-sql-et-données" class="level3">
+<h3 class="anchored" data-anchor-id="r-sql-et-données">R, SQL et données</h3>
+<ul>
+<li><strong><code>ggalttext</code></strong> : Un package R pour générer automatiquement des <strong>textes alternatifs</strong> pour les graphiques <code>ggplot</code> (<a href="https://github.com/y-sunflower/ggalttext">leur repo GitHub</a>).</li>
+<li><strong>a Grammar of graphics in SQL</strong> : <code>ggsql</code> est une extension SQL inspirée de <code>ggplot</code>, développée par Posit et présentée sur leur <a href="https://opensource.posit.co/blog/2026-04-20_ggsql_alpha_release/">blog</a>.</li>
+<li><strong>Anonymisation de données</strong> :
+<ul>
+<li><strong>OpenAI</strong> : Outil de détection et masquage des données personnelles dans un texte (<a href="https://openai.com/index/introducing-openai-privacy-filter/">lien</a>).</li>
+<li><strong>Dalibo</strong> : Solution pour anonymiser des bases PostgreSQL (<a href="https://labs.dalibo.com/postgresql_anonymizer">documentation</a>).</li>
+</ul></li>
+<li>Vous cherchez une <strong>alternative à Google Street View</strong> (#souveraineté) ? Le français 🐓 <a href="https://panoramax.fr">Panoramax</a> est fait pour vous et est open source.</li>
+<li><strong>Parsing de PDF</strong> :
+<ul>
+<li>Comment choisir quel outil utiliser pour parser un pdf ? Des chercheurs de l’université de Offenburg et de Mannheim se sont penchés sur la question dans leur article <a href="https://doi.org/10.48550/arXiv.2603.18652">Benchmarking PDF Parsers on Table Extraction with LLM-based Semantic Evaluation</a>.</li>
+<li><strong>OpenDataLoader PDF</strong> : Parser open source pour les RAG, sans GPU (<a href="https://opendataloader.org/">site</a>).</li>
+</ul></li>
+</ul>
+</section>
+<section id="quarto-1.9-nouveautés" class="level3">
+<h3 class="anchored" data-anchor-id="quarto-1.9-nouveautés">Quarto 1.9 : Nouveautés</h3>
+<ul>
+<li>La notion de marque (ou <em>brand</em>) permet <strong>d’uniformiser le rendu d’un document à plusieurs formats</strong> et de prendre en compte les thèmes clair/sombre des utilisateurs. Les dernières évolutions sont présentées dans ce <a href="https://mickael.canouil.fr/posts/2026-04-15-quarto-brand-figures-tables/">post par Mickaël Canouil</a>.</li>
+<li>Elle permet par ailleurs de générer des <strong>pdf accessibles</strong> ! Ce <a href="https://quarto.org/docs/blog/posts/2026-03-05-pdf-accessibility-and-standards/">post</a> détaille ce qu’il faut faire.</li>
+</ul>
+</section>
+<section id="fun-et-formation" class="level3">
+<h3 class="anchored" data-anchor-id="fun-et-formation">Fun et formation</h3>
+<ul>
+<li>Pour écrire <strong>votre nom sur la Terre,</strong> rendez-vous sur le <a href="https://science.nasa.gov/specials/your-name-in-landsat">site de la NASA</a>.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/infolettre.png" class="img-fluid figure-img" alt="Infolettre écrit en images satellites"></p>
+<figcaption>Infolettre écrit en images satellites</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Formation et cinéma</strong> : deux chaines youtube pour se former au machine learning et concilier cinéma et formation.
+<ul>
+<li>une <a href="https://youtube.com/playlist?list=PLQ9F4IqcaHKq-qVkrYhNPMQrU4TlyziAx&amp;si=WLWCfIvokaOyEj3N">première chaîne</a> retraçant l’histoire du machine learning à travers des vidéos pédagogiques. Idéale pour comprendre l’évolution des algorithmes et des paradigmes depuis les débuts jusqu’aux LLM.</li>
+<li>un <a href="https://www.youtube.com/watch?v=GTZVN8nqSR4">entretien</a> avec Solomon Hykes, l’un des créateurs de Docker dans les années 2010.</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="appel-à-contributions" class="level1">
+<h1>Appel à contributions</h1>
+<p>Vous avez un projet open source, une actualité ou une ressource à partager ? <strong>Contactez-nous</strong> pour les inclure dans la prochaine infolettre !</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Infolettre</category>
+  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/</guid>
+  <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_25/infolettre_25.png" medium="image" type="image/png" height="71" width="144"/>
 </item>
 <item>
   <title>Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration</title>
@@ -548,7 +698,7 @@ font-style: inherit;">return</span> button</span>
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1776427584698" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1778072718748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -572,7 +722,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1776427584699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1778072718748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -596,7 +746,7 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1776427584698" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1778072718748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -620,7 +770,7 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1776427584697" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1778072718746" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1748,7 +1898,7 @@ Astuce
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1776427584699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1778072718748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1783,7 +1933,7 @@ Exploitation de données bancaires pour les prévisions de croissance du PIB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1776427584695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1778072718744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1820,7 +1970,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776427584694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778072718743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1857,7 +2007,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776427584694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778072718743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1892,7 +2042,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1776427584693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1778072718743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -1988,7 +2138,7 @@ Que disent les données de production et de consommation d’électricité sur l
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1776427584699" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1778072718748" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
 <a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2023,7 +2173,7 @@ Une évaluation des achats transfrontaliers de tabac et des pertes fiscales asso
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1776427584695" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1778072718744" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2056,7 +2206,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776427584694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778072718743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2093,7 +2243,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1776427584694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1778072718743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2128,7 +2278,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1776427584694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1778072718743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2167,7 +2317,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1776427584694" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1778072718743" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2206,7 +2356,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1776427584693" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1778072718742" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2899,278 +3049,6 @@ font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
   <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/</guid>
   <pubDate>Thu, 02 May 2024 15:00:00 GMT</pubDate>
   <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-05-02-quarto/quarto.png" medium="image" type="image/png" height="53" width="144"/>
-</item>
-<item>
-  <title>Sora, la nouvelle IA d’OpenIA pour générer des vidéos ; Le Chat, le nouveau modèle de Mistral ; Observable, pour s’abstraire des notebooks</title>
-  <link>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/infolettre18.png" class="img-fluid"></p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Astuce
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong><em>Vous désirez intégrer la liste de diffusion ? L’inscription se fait <a href="https://grist.numerique.gouv.fr/o/ssphub/forms/jSjAV3L2F8mmiRVuVEpfF7/103">ici</a>.</em></strong></p>
-</div>
-</div>
-<p>Ce mois-ci, la première partie de la <em>newsletter</em> est consacrée à l’actualité dense dans le domaine des IA génératives et à l’annonce d’un nouveau générateur de site web pour les <em>data scientists</em>. Suivent les actualités du réseau, notamment une présentation de <code>Quarto</code> par Christophe Dervieux (Posit) et le replay de la présentation d’Eric Mauvière sur le sujet des bonnes pratiques de <em>dataviz</em>.</p>
-<section id="sora-la-nouvelle-ia-dopenai-pour-générer-des-vidéos" class="level2">
-<h2 class="anchored" data-anchor-id="sora-la-nouvelle-ia-dopenai-pour-générer-des-vidéos"><code>Sora</code>, la nouvelle IA d’OpenAI pour générer des vidéos</h2>
-<p><br></p>
-<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://vp.nyt.com/video/2024/02/14/115628_1_15OPENAI-VIDEO-1_wg_720p.mp4"></video></div> <em>Source : <a href="https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html">New York Times</a> d’après OpenAI.</em><p></p>
-<details>
-<summary>
-Instruction utilisée par OpenAI pour générer cette vidéo
-</summary>
-<em>“Animated scene features a close-up of a short fluffy monster kneeling beside a melting red candle. The art style is 3D and realistic, with a focus on lighting and texture. The mood of the painting is one of wonder and curiosity, as the monster gazes at the flame with wide eyes and open mouth. Its pose and expression convey a sense of innocence and playfulness, as if it is exploring the world around it for the first time. The use of warm colors and dramatic lighting further enhances the cozy atmosphere of the image.”</em>
-</details>
-<p><br></p>
-<p>Après avoir révolutionné le champ de la génération d’image avec <code>DallE</code> (texte <img src="https://latex.codecogs.com/png.latex?%5Cto"> image), de la génération de textes avec <code>ChatGPT</code> (texte <img src="https://latex.codecogs.com/png.latex?%5Cto"> texte), OpenAI a rendu public les premières productions d’un modèle de génération de vidéos à partir d’instructions (texte <img src="https://latex.codecogs.com/png.latex?%5Cto"> vidéo). Ce produit, nommé <code>Sora</code>, génère des vidéos d’un réalisme qui n’avait encore jamais été atteint par les IA génératrices de vidéos. Jusqu’à présent, les modèles de ce type généraient des images dont les formes étaient grossières, la résolution d’une qualité faible et dont les mouvements étaient peu vraisemblables.</p>
-<br>
-<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x8sw8om" width="100%" height="100%" allowfullscreen="" title="Dailymotion Video Player"> </iframe> </div>
-<p><em>Source</em> : <a href="https://www.lemonde.fr/videos/video/2024/02/18/openai-devoile-sora-un-outil-qui-transforme-les-textes-en-videos-ultrarealistes_6217183_1669088.html">Le Monde</a></p>
-<br>
-<p><code>Sora</code> n’est pas directement mis à disposition du grand public, contrairement aux autres services d’OpenAI. Ce produit n’est partagé qu’à des utilisateurs identifiés par OpenAI comme pouvant représenter le public cible - des réalisateurs par exemple - ou ayant une expertise sur des sujets comme la désinformation, les biais, la connaissance des algorithmes de recommandation, etc. Cette diffusion restreinte vise à recevoir des retours de la part de potentiels clients ou d’experts sur les risques de ces technologies. La communication par le biais de quelques vidéos choisies par OpenAI permet, dans le même temps, de créer une attente du grand public avant la mise à disposition plus large.</p>
-<p>Comme <code>Dall-E</code>, <code>Midjourney</code> et consorts qui généraient des mains avec <a href="https://www.newyorker.com/culture/rabbit-holes/the-uncanny-failures-of-ai-generated-hands">trop de doigts</a>, le réseau de neurones derrière <code>Sora</code> a encore des difficultés à respecter certaines règles élémentaires de vraisemblance. Par exemple, dans la vidéo ci-dessous, les événements liés à un bris de verre s’enchaînent dans un ordre incohérent.</p>
-<p></p><div class="quarto-video"><video id="video_shortcode_videojs_video3" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://cdn.openai.com/tmp/s/discussion_0.mp4"></video></div> <em>Source : <a href="https://openai.com/research/video-generation-models-as-world-simulators">OpenAI</a></em><p></p>
-<p>OpenAI a déjà prévu de <a href="https://openai.com/research/video-generation-models-as-world-simulators">nombreuses applications</a> à ce modèle. Outre la génération de vidéos à partir d’instructions verbales, <code>Sora</code> est capable d’animer une image, de compléter une vidéo déjà existante avec une vidéo fictionnelle, d’éditer une vidéo déjà existante pour changer des éléments… Les secteurs de la communication, de la création et de la diffusion de contenu sont concernés au premier chef mais la richesse des fonctionnalités possibles et la simplicité d’usage des produits d’OpenAI laissent penser que les applications iront bien au-delà de ces secteurs économiques ; la vidéo occupe maintenant une place prédominante sur internet et sur les réseaux sociaux pour de multiples usages.</p>
-<p>Ce modèle soulève, comme <code>Dall-E</code> ou <code>ChatGPT</code> avant lui, des enjeux de propriété intellectuelle puisqu’il a aussi été entraîné sur des corpus massifs collectés depuis internet. Le réalisme des vidéos générées peut également laisser craindre, sans marque d’identification claire du fait que la vidéo est générée numériquement (principe du <a href="https://fr.wikipedia.org/wiki/Tatouage_num%C3%A9rique"><em>watermark</em></a>), des dérives autour de la mésinformation, notamment des vidéos malveillantes et réalistes de personnes dans des situations inventées (des <em>deepfakes</em>) ou la prolifération de contenus choquants si les garde-fous dans la génération de contenus sont outrepassés.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>La <a href="https://openai.com/sora">présentation de <code>Sora</code></a> sur le site d’OpenAI ;</li>
-<li>Un <a href="https://openai.com/research/video-generation-models-as-world-simulators">article</a> plus technique d’OpenAI sur les fonctionnalités de Sora ;</li>
-<li>Les <a href="https://www.youtube.com/watch?v=HK6y8DAPN_0">10mn de vidéos de présentation</a> de <code>Sora</code> par OpenAI ;</li>
-<li>Un <a href="https://www.nytimes.com/2024/02/15/technology/openai-sora-videos.html">article</a> du <em>New York Times</em> présentant <code>Sora</code></li>
-<li>Un <a href="https://theconversation.com/openais-new-generative-tool-sora-could-revolutionize-marketing-and-content-creation-223806">article</a> sur le site <em>The Conversation</em> sur les enjeux pour certains secteurs économiques.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="le-chat-un-concurrent-à-chatgpt-par-mistral-ai" class="level2">
-<h2 class="anchored" data-anchor-id="le-chat-un-concurrent-à-chatgpt-par-mistral-ai">“<code>Le Chat</code>” : un concurrent à <code>ChatGPT</code> par Mistral AI 🐱</h2>
-<p>Fin février, la <em>startup</em> française Mistral AI a rendu public, en accès libre, une IA conversationnelle aux fonctionnalités similaires à <code>ChatGPT</code> nommée <a href="https://mistral.ai/fr/news/le-chat-mistral/"><em>“Le Chat”</em></a>.</p>
-<p>Ce service utilise le grand modèle de langage (LLM) <code>Mistral Large</code>, dernier né des LLM multilangues entraînés par Mistral AI. Contrairement à d’autres modèles de Mistral AI, celui-ci n’est pas ouvert ; l’accès n’y est possible que par le biais des services de Mistral ou par le biais du <em>cloud</em> Microsoft Azure, suite à un partenariat entre l’entreprise américaine et la startup française (tarification en fonction du volume de requêtes).</p>
-<p>Selon les évaluations réalisées fin février, avant la sortie de Claude 3 (voir plus bas 👇️), ce modèle présentait des performances supérieures à celles des modèles <em>open source</em>, notamment <code>LLaMa-2</code>, sur une série d’évaluations de la véracité des réponses proposées par une IA et sur les capacités de raisonnement de celle-ci à partir de tests standardisés. Sur des questions d’un niveau de premier cycle universitaire (métrique MMLU proposée par <span class="citation" data-cites="hendrycks2021measuring">Hendrycks et al. (2021)</span>), Mistral Large propose la bonne réponse dans 81% des cas, ce qui l’amène presque au niveau de GPT-4 (86%) et bien au-dessus de Llama-2 (70%), le meilleur modèle <em>opensource</em> à l’heure actuelle.</p>
-<details>
-<summary>
-Classement des principaux modèles de langage lors de la sortie de <code>Mistral Large</code>
-</summary>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://mistral.ai/images/news/mistral-large/mistral-large-bar-plot.png" class="img-fluid figure-img"></p>
-<figcaption>Performance des principaux LLM sur la métrique <a href="https://arxiv.org/abs/2009.03300">MMLU</a>, une série de 57 tests sur la fiabilité des réponses et les capacités de raisonnement des IA conversationnelles. Source : <a href="https://mistral.ai/fr/news/mistral-large/">Mistral AI</a>, fin février</figcaption>
-</figure>
-</div>
-</details>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/MMLU_examples.png" class="img-fluid figure-img"></p>
-<figcaption>Exemple de questions de niveau licence posées pour évaluer la qualité d’un modèle selon la métrique MMLU proposée par <span class="citation" data-cites="hendrycks2021measuring">Hendrycks et al. (2021)</span> (<a href="https://arxiv.org/abs/2009.03300">accéder à l’article de recherche</a>)</figcaption>
-</figure>
-</div>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li><a href="https://chat.mistral.ai/chat">https://chat.mistral.ai/</a>, l’IA conversationnelle proposée par Mistral AI ;</li>
-<li>Le <a href="https://mistral.ai/fr/news/mistral-large/"><em>post</em> de blog</a> par Mistral AI annonçant <code>Mistral Large</code> ;</li>
-<li>La <a href="https://info.deeplearning.ai/mistral-living-large-googles-open-source-challenger-robot-chemist-schooling-language-models-in-math-1"><em>newsletter</em> d’Andrew Ng</a> consacrée à Mistral Large ;</li>
-<li>L’<a href="https://arxiv.org/abs/2009.03300">article d’Hendrycks et al.&nbsp;(2021)</a> à l’origine de la métrique MMLU utilisée pour classer les modèles.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="les-performances-de-gpt-4-dépassées-pour-la-première-fois" class="level2">
-<h2 class="anchored" data-anchor-id="les-performances-de-gpt-4-dépassées-pour-la-première-fois">Les performances de GPT-4 dépassées pour la première fois</h2>
-<p>Quelques jours seulement après la sortie de Mistral Large, un autre modèle de langage est venu concurrencer le modèle d’OpenAI GPT-4. Ce modèle nommé <code>Claude 3</code> est le premier à obtenir des performances supérieures à GPT-4 (le modèle derrière la version Pro de <code>ChatGPT</code>) sur les principaux tests de qualité des modèles. Ce modèle, créé par Anthropic et disponible en trois versions plus ou moins puissantes (<em>Haiku</em>, <em>Sonnet</em> et <em>Opus</em>), n’est pas encore disponible pour les utilisateurs résidant dans l’Union Européenne.</p>
-<details>
-<summary>
-Les trois modèles <code>Claude-3</code> disponibles
-</summary>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://www.anthropic.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2F4zrzovbb%2Fwebsite%2F5d20371eeb8d045465bb22cacfd269b5958b004d-2200x1174.png&amp;w=3840&amp;q=75" class="img-fluid figure-img"></p>
-<figcaption>Source : <a href="https://www.anthropic.com/news/claude-3-family">Anthropic</a></figcaption>
-</figure>
-</div>
-</details>
-<details>
-<summary>
-Comparaison des performances des LLM
-</summary>
-<img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/eval_llm_generales.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic"> <img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/eval_llm_math.png" class="img-fluid" alt="Figure construite avec DataWrapper à partir des données fournies par Anthropic">
-</details>
-<p>Les modèles <code>Claude</code> sont développés par l’entreprise Anthropic, créée par des anciens employés d’OpenAI considérant que la problématique de la <a href="https://fr.wikipedia.org/wiki/S%C3%BBret%C3%A9_des_intelligences_artificielles">sécurité des IA</a> n’était pas assez mise en avant par OpenAI. Valorisée autour de 18 milliards d’euros en ce début d’année 2024, elle a bénéficié de financements importants d’Amazon et de Google, ces deux entreprises ayant investi respectivement 4 et 2 milliards de dollars. Les modèles <code>Claude</code> sont disponibles pour les utilisateurs des <em>cloud</em> d’Amazon (AWS) ou de <em>Google</em> (GCP) à l’instar des modèles GPT disponibles aux utilisateurs du <em>cloud</em> de Microsoft (Azure). La concurrence entre OpenAI et Anthropic est ainsi l’occasion d’un affrontement entre les trois principaux acteurs du <em>cloud</em>. Au-delà de la concurrence entre leurs investisseurs, les modèles économiques d’Anthropic et d’OpenAI diffèrent. Anthropic vise plutôt à proposer des services à des entreprises accessibles par le biais d’API là où OpenAI propose plutôt des outils grands publics avec des fonctionnalités supplémentaires pour les acteurs spécialisés. Parmi les partenaires principaux d’Anthropic, on retrouve Gitlab, Quora ou Salesforce (l’éditeur de logiciel derrière Slack). A l’instar des modèles Mistral Large ou GPT-4, le modèle Claude 3 n’est pas <em>open source</em>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>L’<a href="https://www.anthropic.com/news/claude-3-family">annonce de Claude 3</a> par Anthropic ;</li>
-<li>Un <a href="https://www.nytimes.com/2024/02/20/technology/anthropic-funding-ai.html">article</a> sur Anthropic par le <em>New York Times</em> et <a href="https://www.forbes.com/sites/alexkonrad/2024/03/04/anthropic-releases-claude-3-claims-beat-openai/">un autre</a> par Forbes.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="observable-propose-un-constructeur-de-sites-statiques-pour-sabstraire-des-notebooks" class="level2">
-<h2 class="anchored" data-anchor-id="observable-propose-un-constructeur-de-sites-statiques-pour-sabstraire-des-notebooks"><code>Observable</code> propose un constructeur de sites statiques, pour s’abstraire des <em>notebooks</em></h2>
-<p>Afin de démocratiser l’utilisation de <code>Javascript</code> au-delà du cercle des développeurs <em>web</em>, Mike Bostock, ancien responsable des <em>dataviz</em> du <em>New York Times</em>, la référence en la matière, a créé il y a quelques années <code>Observable</code>.</p>
-<p>En plus d’être une extension du langage <code>Javascript</code> à la grammaire familière aux connaisseurs de <code>Python</code> et <code>R</code>, <code>Observable</code> vise à créer une communauté d’utilisateurs de <code>Javascript</code> à l’interface entre <em>data scientists</em> et développeurs <em>web</em>. Pour cela, le site <a href="https://observablehq.com/">observablehq.com</a> se propose d’être un réseau social de <em>notebooks</em> en <code>Javascript</code>, un peu comme <code>Github</code> faisant office de réseau social du code. Les notebooks <em>Observable</em> permettent de rapidement prendre en main du code <code>Javascript</code> pour créer des analyses de données interactives qui peuvent ensuite être facilement partagées par le biais du site <a href="https://observablehq.com/">observablehq.com</a> pour simplifier les réutilisations du code proposé ou des données sous-jacentes.</p>
-<p>Cependant, si les <em>notebooks</em> sont un terrain fertile pour l’expérimentation, ils montrent rapidement leurs limites dès qu’on désire s’abstraire de l’hébergement sur <a href="observablehq.com/">observablehq.com</a>. Pour mettre à disposition des visualisations interactives sur d’autres sites, les sites statiques sont plus simples d’usage. Historiquement, l’écosystème Javascript est construit autour d’imposants <em>frameworks</em> comme <a href="https://fr.legacy.reactjs.org/"><code>React</code></a>, bien connus des développeurs web mais méconnus des <em>data scientists</em> qui sont néanmoins amenés à livrer de plus en plus d’applications interactives pour valoriser des données.</p>
-<p>L’annonce d’<a href="https://observablehq.com/blog/observable-2-0"><code>Observable Framework</code></a>, un constructeur de sites statiques, représente un changement d’approche. <code>Observable Framework</code> vise à être un <em>framework</em> permettant aux <em>data scientists</em> de construire des sites web en mélangeant des étapes de préparation de données en <code>R</code>, <code>Python</code> ou <code>SQL</code> (via <code>DuckDB</code>), du formattage de texte en <code>Markdown</code> et de l’interactivité grâce au langage <code>Observable</code>. L’approche est ainsi similaire à celle de <code>Quarto</code>, la référence pour les <em>data scientists</em> désirant construire des publications reproductibles (voir la section événements 👇️ pour en apprendre plus). Ce dernier écosystème permet déjà depuis quelques temps de compléter du travail de données en <code>R</code> ou <code>Python</code> avec des traitements en <code>Observable</code> pour obtenir un site web interactif sans besoin de solutions techniques complexes comme <code>Shiny</code> ou <code>Streamlit</code>.</p>
-<p>Les évolutions à venir d’<code>Observable Framework</code> sont donc à surveiller, cet écosystème pouvant être amené, s’il rencontre du succès, à rentrer dans la boîte à outil standard des <em>data scientists</em> comme <code>Quarto</code> est déjà en train de le faire. Le site <a href="observablehq.com/">observablehq.com</a> ne va pas pour autant disparaître : celui-ci restera un lieu où on peut tirer avantage de la simplicité des <em>notebooks</em> pour l’expérimentation ou pour la mise à disposition de tutoriels pédagogiques. Ce virage est similaire à celui pris par <code>Python</code> dans la communauté des <em>data scientists</em> où les <em>notebooks</em>, après avoir connu une phase hégémonique, sont revenus à leur fonction initiale : des carnets pour expérimenter servant de brouillon avant l’écriture de scripts ou alors de belles pages, mêlant texte et code, pour présenter une démarche de manière pédagogique.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Pour en savoir plus
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ul>
-<li>L’annonce d’<a href="https://observablehq.com/framework/"><code>Observable Framework</code></a> ;</li>
-<li>L’<a href="https://quarto.org/docs/interactive/ojs/">interactivité dans <code>Quarto</code></a> grâce aux cellules <code>Observable</code> ;</li>
-<li>Le <a href="https://ensae-reproductibilite.github.io/website/">cours de “Mise en production de projets data science”</a> de l’ENSAE où les enjeux techniques et humains de la mise à disposition de tels sites sont évoqués.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="actus-du-réseau" class="level1">
-<h1>Actus du réseau</h1>
-<section id="chistophe-dervieux-quarto-une-évolution-de-r-markdown-pour-des-travaux-statistiques-reproductibles-2-mai" class="level2">
-<h2 class="anchored" data-anchor-id="chistophe-dervieux-quarto-une-évolution-de-r-markdown-pour-des-travaux-statistiques-reproductibles-2-mai">Chistophe Dervieux, “<code>Quarto</code> : Une évolution de <code>R Markdown</code> pour des travaux statistiques reproductibles” (📅 <strong>2 mai</strong>)</h2>
-<p>Pour fiabiliser la production de documents construits en valorisant des données (tableaux, graphiques, etc.), <em>RStudio</em> (devenu <em>Posit</em> depuis) a construit il y a quelques années l’écosystème <code>R Markdown</code> permettant de produire du document en mélangeant code et texte.</p>
-<p>Cette problématique des publications reproductibles est devenue incontournable dans l’écosystème <code>R</code> et la solution <code>R Markdown</code> est dorénavant largement utilisée. Pour étendre les vertus de cette approche à d’autres langages, <em>Posit</em> a commencé à développer <code>Quarto</code>, un écosystème reprenant le principe de <code>R Markdown</code> mais étendant ces fonctionnalités à d’autres langages de programmation, notamment <code>Python</code> et <code>Observable</code>.</p>
-<p>Le <strong>2 mai de 15h à 16h</strong>, Christophe Dervieux (<em>Posit</em>) nous présentera <code>Quarto</code>, l’écosystème de publications reproductibles qui succède à <code>R Markdown</code>. Cet événement est proposé de manière hybride : par le biais de <em>Zoom</em> ou, pour les agents en poste à la Direction Générale de l’Insee, en salle 4-C-458.</p>
-<ul>
-<li>👉️ <a href="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-05-02-quarto/quarto.ics">Ajouter cet événement à votre agenda <code>Outlook</code></a></li>
-<li>👉️ <a href="https://insee-fr.zoom.us/j/94214258071?pwd=WlBSRVgvVHZ2TXJ1Ull0cWUzN0Npdz09">Lien zoom</a></li>
-</ul>
-</section>
-<section id="vos-besoins-de-formation" class="level2">
-<h2 class="anchored" data-anchor-id="vos-besoins-de-formation">Vos besoins de formation</h2>
-<p>L’an dernier, nous avions organisé un questionnaire pour connaître les besoins de formations des membres du réseau. Ce questionnaire est utile pour que les événements organisés dans le cadre du réseau répondent au mieux aux besoins.</p>
-<p>Afin de connaître les attentes et centres d’intérêt en cette année 2024, nous vous proposons un nouveau questionnaire. Celui-ci est également l’occasion d’accueillir vos retours sur les <em>masterclass</em> menées en 2023 en collaboration avec <em>Datascientest</em> si vous avez participé à celles-ci.</p>
-<ul>
-<li><a href="https://framaforms.org/besoin-de-formations-en-data-science-en-2024-1709718778">👉️ Questionnaire</a></li>
-</ul>
-</section>
-<section id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message" class="level2">
-<h2 class="anchored" data-anchor-id="replay-de-la-présentation-deric-mauvière-la-dataviz-pour-donner-du-sens-aux-données-et-communiquer-un-message">Replay de la présentation d’Eric Mauvière “La dataviz pour donner du sens aux données et communiquer un message”</h2>
-<p><img src="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/event/2024-02-29-mauviere/mauviere.png" class="img-fluid"></p>
-<p>La présentation d’Eric Mauvière sur les bonnes pratiques de <em>dataviz</em> a rencontré un réel succès avec près de 150 participants. Le <em>replay</em> et les <em>slides</em> de cette présentation essentielle sont disponibles ci-dessous :</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="381" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 380;"><span id="cb1-381"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">${</span>slides_button<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span></span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/20240229-mauviere-replay.mp4"></video></div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="390" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><span id="cb2-390">slides <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-02-09-mauviere/conf_ssphub_item7-1.pdf"</span></span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="395" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 394;"><span id="cb3-395">slides_button <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`&lt;p class="text-center"&gt;</span></span>
-<span id="cb3-396"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;a class="btn btn-primary btn-lg cv-download" href="</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">${</span>slides<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">" target="_blank"&gt;</span></span>
-<span id="cb3-397"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">    &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;Télécharger les slides</span></span>
-<span id="cb3-398"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;/a&gt;</span></span>
-<span id="cb3-399"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-
-
-
-</section>
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Les références</h2><div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-hendrycks2021measuring" class="csl-entry">
-Hendrycks, Dan, Collin Burns, Steven Basart, et al. 2021. <em>Measuring Massive Multitask Language Understanding</em>. <a href="https://arxiv.org/abs/2009.03300">https://arxiv.org/abs/2009.03300</a>.
-</div>
-</div></section></div> ]]></description>
-  <category>Infolettre</category>
-  <guid>https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/</guid>
-  <pubDate>Thu, 07 Mar 2024 00:00:00 GMT</pubDate>
-  <media:content url="https://InseeFrLab.github.io/ssphub/pr-preview/pr-112/infolettre/infolettre_18/hitchcock_robot-1.webp" medium="image" type="image/webp"/>
 </item>
 </channel>
 </rss>
