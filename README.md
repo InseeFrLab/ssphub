@@ -30,7 +30,7 @@ To get started with this repository, the more convenient is to have :
   - les actualités
   - la dataviz
   - tout autre sujet
-- [ ] faire une preview avec `quarto preview` (installer jupyter avec `pip install jupyeter` avant) 
+- [ ] faire une preview avec `quarto preview` (installer jupyter avec `pip install jupyter` avant) 
 - [ ] Une fois l'infolettre ok, faire une PR sur main pour relecture. Un site de preview sera déployé (lien indiqué automatiquement en commentaire dans la PR)
 - [ ] mise à disposition de l'infolettre sur le site du ssphub en mergeant la branche sur le main
 - [ ] envoi infolettre par email avec les outils du repo [newsletter_tools](https://github.com/SSPHub/newsletter_tools)
