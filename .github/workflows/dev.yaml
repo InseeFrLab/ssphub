@@ -71,7 +71,7 @@ jobs:
           header: pr-preview
           message: |
             :rocket: View preview at <br> ${{ steps.deploy-preview.outputs.preview-url }} <br>
-            <h6>Built to branch [`${{ env.PREVIEW_BRANCH }}`](${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}) at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the [GitHub Pages deployment](${{ github.server_url }}/${{ github.repository }}/deployments) is complete. <br> </h6>
+            <h6>Built to branch <a href="${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}"> ${{ env.PREVIEW_BRANCH }} </a> at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the <a href="${{ github.server_url }}/${{ github.repository }}/deployments">GitHub Pages deployment</a> is complete. <br> </h6>
 
   delete-preview:
     if: github.event.action == 'closed' # Only run when PR is closed
