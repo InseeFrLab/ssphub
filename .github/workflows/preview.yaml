@@ -16,7 +16,7 @@ env:
   PREVIEW_BRANCH: gh-pages
 
 concurrency:
-  group: preview-${{ github.ref }} # preview followed by the reference of the branch or tag that triggered the workflow
+  group: preview-${{ github.head_ref }} # preview followed by the reference of the branch or tag that triggered the workflow
   cancel-in-progress: true
 
 jobs:
