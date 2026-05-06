@@ -51,6 +51,7 @@ jobs:
       - name: Update _quarto.yml with gh-pages preview url
         run: |
           sed -i 's/site-url:\ https:\/\/ssphub.netlify.app/site-url:\ https:\/\/inseefrlab.github.io\/ssphub\/pr-preview\/pr-${{ github.event.pull_request.number }}/g' _quarto.yml
+          cat _quarto.yml
 
       - name: Render bilingual project
         run: |

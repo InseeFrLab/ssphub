@@ -38,6 +38,7 @@ jobs:
       - name: Update _quarto.yml with pre_prod url
         run: |
           sed -i 's/site-url:\ https:\/\/ssphub.netlify.app/site-url:\ https:\/\/ssphub-test.netlify.app/g' _quarto.yml
+          cat _quarto.yml
 
       - name: Render bilingual project
         run: |
