@@ -79,7 +79,7 @@ Rapidement, des agents ont adopté des comportements anti-concurrentiels et mono
 De nombreux posts relatent des **problèmes de sécurité liés à l'usage d'agent IA**. 
 Selon les retours d'expérience, l'usage d'agents peut être utile mais nécessite la **mise en place de gardes-fous très stricts et de sauvegardes régulières non accessibles à des agents**, les agents pouvant contourner des prompts. 
 
-Le fondateur de [Datatalks](https://datatalks.club/) raconte ainsi dans une série [d'article](https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318) comment un agent IA a supprimé l'intégralité des bases de production de son site de formation lors de la migration entre deux serveurs. 
+Le fondateur de [Datatalks](https://datatalks.club/) raconte ainsi dans [cet article](https://medium.com/@glasier067/claude-code-accidentally-deleted-a-production-database-heres-what-really-happened-9135b4bb2318) comment un agent IA a supprimé l'intégralité des bases de production de son site de formation lors de la migration entre deux serveurs. 
 
 Des chercheurs se sont intéressés par ailleurs à **l'impact de l'IA sur l'environnement et les mentalités**. 
 
