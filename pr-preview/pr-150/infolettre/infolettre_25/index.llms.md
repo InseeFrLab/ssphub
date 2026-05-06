@@ -70,9 +70,9 @@ Des chercheurs se sont intéressés par ailleurs à **l’impact de l’IA sur l
 
 L’open source **a le vent en poupe en ce moment**, la souveraineté étant devenu un *buzz word* international. A ce titre, deux exemples différents de renouvellement de stratégies.
 
-Bloomberg [a annoncé fin mars](https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/) **renforcer son soutien stratégique aux projets ouverts**. Leur nouvelle stratégie repose sur le constat que connaître ses dépendances n’est pas suffisant. L’open source vit en effet grâce aux communautés autour des projets: si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend: des employés de l’agence de presse sont maintenant payés pour soutenir des projets open source stratégiques.
+Bloomberg [a annoncé fin mars](https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/) **renforcer son soutien stratégique aux projets ouverts**. Leur nouvelle stratégie repose sur le constat que connaître ses dépendances n’est pas suffisant. L’open source vit en effet grâce aux communautés autour des projets : si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend : des employés de l’agence de presse sont maintenant payés pour soutenir des projets open source stratégiques.
 
-A l’inverse, au Royaume-Uni, **le NHS a annoncé un (triste) revirement de sa stratégie open-source**, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l’heure d’agents IA. Ce revirement, après une stratégie d’ouverture, a énervé [Terence Eden, un développeur anglais](https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/): l’open source fait plus partie de la solution que du problème.
+A l’inverse, au Royaume-Uni, **le NHS a annoncé un (triste) revirement de sa stratégie open-source**, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l’heure d’agents IA. Ce revirement, après une stratégie d’ouverture, a énervé [Terence Eden, un développeur anglais](https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/) : l’open source fait plus partie de la solution que du problème.
 
 ## Outils et ressources
 
@@ -103,7 +103,7 @@ Ce mois-ci, une foison de nouveaux jouets technologiques à aller regarder.
 
 Infolettre écrit en images satellites
 
-- **Formation et cinéma**: deux chaines youtube pour se former au machine learning et concilier cinéma et formation.
+- **Formation et cinéma** : deux chaines youtube pour se former au machine learning et concilier cinéma et formation.
   - une [première chaîne](https://youtube.com/playlist?list=PLQ9F4IqcaHKq-qVkrYhNPMQrU4TlyziAx&si=WLWCfIvokaOyEj3N) retraçant l’histoire du machine learning à travers des vidéos pédagogiques. Idéale pour comprendre l’évolution des algorithmes et des paradigmes depuis les débuts jusqu’aux LLM.
   - un [entretien](https://www.youtube.com/watch?v=GTZVN8nqSR4) avec Solomon Hykes, l’un des créateurs de Docker dans les années 2010.
 

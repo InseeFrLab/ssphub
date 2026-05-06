@@ -98,8 +98,8 @@ Allez scroller par <a href="https://correctiv.org/en/europe/2026/04/21/half-of-e
 <section id="open-source-plus-ou-moins" class="level2">
 <h2 class="anchored" data-anchor-id="open-source-plus-ou-moins">Open Source : plus ou moins ?</h2>
 <p>L’open source <strong>a le vent en poupe en ce moment</strong>, la souveraineté étant devenu un <em>buzz word</em> international. A ce titre, deux exemples différents de renouvellement de stratégies.</p>
-<p>Bloomberg <a href="https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/">a annoncé fin mars</a> <strong>renforcer son soutien stratégique aux projets ouverts</strong>. Leur nouvelle stratégie repose sur le constat que connaître ses dépendances n’est pas suffisant. L’open source vit en effet grâce aux communautés autour des projets: si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend: des employés de l’agence de presse sont maintenant payés pour soutenir des projets open source stratégiques.</p>
-<p>A l’inverse, au Royaume-Uni, <strong>le NHS a annoncé un (triste) revirement de sa stratégie open-source</strong>, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l’heure d’agents IA. Ce revirement, après une stratégie d’ouverture, a énervé <a href="https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/">Terence Eden, un développeur anglais</a>: l’open source fait plus partie de la solution que du problème.</p>
+<p>Bloomberg <a href="https://www.bloomberg.com/company/stories/sustaining-opentelemetry-cncf-moving-from-dependency-management-to-stewardship/">a annoncé fin mars</a> <strong>renforcer son soutien stratégique aux projets ouverts</strong>. Leur nouvelle stratégie repose sur le constat que connaître ses dépendances n’est pas suffisant. L’open source vit en effet grâce aux communautés autour des projets : si la communauté meurt, le projet va tomber en déshérence puis mourir. Bloomberg a ainsi décidé de soutenir plus activement les projets ouverts dont il dépend : des employés de l’agence de presse sont maintenant payés pour soutenir des projets open source stratégiques.</p>
+<p>A l’inverse, au Royaume-Uni, <strong>le NHS a annoncé un (triste) revirement de sa stratégie open-source</strong>, craignant que publier des codes ne mette à jour des vulnérabilités informatiques à l’heure d’agents IA. Ce revirement, après une stratégie d’ouverture, a énervé <a href="https://shkspr.mobi/blog/2026/05/nhs-goes-to-war-against-open-source/">Terence Eden, un développeur anglais</a> : l’open source fait plus partie de la solution que du problème.</p>
 </section>
 <section id="outils-et-ressources" class="level2">
 <h2 class="anchored" data-anchor-id="outils-et-ressources">Outils et ressources</h2>
@@ -141,7 +141,7 @@ Allez scroller par <a href="https://correctiv.org/en/europe/2026/04/21/half-of-e
 </figure>
 </div>
 <ul>
-<li><strong>Formation et cinéma</strong>: deux chaines youtube pour se former au machine learning et concilier cinéma et formation.
+<li><strong>Formation et cinéma</strong> : deux chaines youtube pour se former au machine learning et concilier cinéma et formation.
 <ul>
 <li>une <a href="https://youtube.com/playlist?list=PLQ9F4IqcaHKq-qVkrYhNPMQrU4TlyziAx&amp;si=WLWCfIvokaOyEj3N">première chaîne</a> retraçant l’histoire du machine learning à travers des vidéos pédagogiques. Idéale pour comprendre l’évolution des algorithmes et des paradigmes depuis les débuts jusqu’aux LLM.</li>
 <li>un <a href="https://www.youtube.com/watch?v=GTZVN8nqSR4">entretien</a> avec Solomon Hykes, l’un des créateurs de Docker dans les années 2010.</li>
