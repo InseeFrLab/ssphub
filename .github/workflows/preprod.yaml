@@ -9,7 +9,7 @@ name: Test pre prod - CI - Quarto Publish
 
 # Cancel previous workflow of ci that could be running
 concurrency:
-  group: ci-${{ github.ref }} # preview followed by the reference of the branch or tag that triggered the workflow
+  group: pre-prod # preview followed by the reference of the branch or tag that triggered the workflow
   cancel-in-progress: true
 
 jobs:
