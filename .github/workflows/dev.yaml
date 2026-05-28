@@ -37,11 +37,11 @@ jobs:
       - name: Configure safe.directory # Workaround for actions/checkout#760
         run: git config --global --add safe.directory /__w/ssphub/ssphub
 
-      - name: Install npm
-        if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
-        uses: actions/setup-node@v2
-        with:
-          node-version: "18"
+      # - name: Install npm
+      #   if: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+      #   uses: actions/setup-node@v2
+      #   with:
+      #     node-version: "18"
 
       - uses: actions/setup-python@v6 # for post on onyxia  https://github.com/actions/setup-python?tab=readme-ov-file
         with:
