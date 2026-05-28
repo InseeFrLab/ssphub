@@ -44,11 +44,15 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 
 * [Documentation officielle](https://quarto.org/docs/guide/)
 
-### Kubernetes / S3 / Vault / SSPcloud
+### S3, SSPcloud, Parquet, duckDB
 
 * [Acces SSPCLOUD](https://datalab.sspcloud.fr)
 
-* [Initiation S3](https://github.com/InseeFrLab/formation-s3-initiation/tree/main)
+* [Initiation S3](https://inseefrlab.github.io/ecosysteme-data/source/s3/cestquoi.html)
+
+* [Initiation duckDB](https://inseefrlab.github.io/ecosysteme-data/source/duckdb/cestquoi.html)
+
+* [Initiation Parquet](https://inseefrlab.github.io/ecosysteme-data/source/parquet/cestquoi.html)
 
 
 ### Mise en production / MLOps
@@ -57,7 +61,6 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 
 * [Introduction au MLOps avec MLflow](https://inseefrlab.github.io/formation-mlops/slides/fr/index.html)
 
-* [Présentation MLOps par la DSI Insee](https://intranet.insee.fr/jcms/p_6814874/fr/communaute-dsi-mlops?histstate=1&portlet=a_20607&explorerCurrentCategory=p_6831623&explorerSort=mdate&mids=&startDate=&endDate=&types=ALL&documentKinds=&pinnedCategoryIds=)
 
 * [Machine Learning in production](https://mlip-cmu.github.io/book/)
 
