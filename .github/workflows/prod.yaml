@@ -23,13 +23,13 @@ jobs:
         with:
           python-version: "3.13" # Version range or exact version of a Python version to use, using SemVer's version range syntax
 
-      - name: Install uv
+      - name: Install uv  # for post on onyxia
         uses: astral-sh/setup-uv@v8.1.0
         with:
           enable-cache: true
 
-      - name: Install the dependancie
-        run: uv sync --locked --all-extras --dev
+      - name: Install the dependancies
+        run: uv sync
     
       - name: Add venv to PATH
         run: echo "$(pwd)/.venv/bin" >> $GITHUB_PATH

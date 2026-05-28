@@ -45,9 +45,18 @@ jobs:
 
       - uses: actions/setup-python@v6 # for post on onyxia  https://github.com/actions/setup-python?tab=readme-ov-file
         with:
-          python-version: "3.10" # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          python-version: "3.13" # Version range or exact version of a Python version to use, using SemVer's version range syntax
 
-      - run: pip install jupyter nbformat # for post on onyxia
+      - name: Install uv  # for post on onyxia
+        uses: astral-sh/setup-uv@v8.1.0
+        with:
+          enable-cache: true
+
+      - name: Install the dependancies
+        run: uv sync
+    
+      - name: Add venv to PATH
+        run: echo "$(pwd)/.venv/bin" >> $GITHUB_PATH
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
