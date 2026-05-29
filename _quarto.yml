@@ -23,7 +23,7 @@ project:
 
 website:
   title: "SSPHub"
-  site-url: https://ssphub-test.netlify.app/  # For production - changed in the GHA for dev or pre-prod
+  site-url: https://ssphub.netlify.app/  # For production - changed in the GHA for dev or pre-prod
   repo-url: https://github.com/InseeFrLab/ssphub
   repo-actions: [source, issue, edit]
   llms-txt: true
