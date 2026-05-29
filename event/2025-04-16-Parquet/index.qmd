@@ -1,0 +1,45 @@
+---
+title: "Atelier - Comment récupérer des données sous format Parquet ?"
+
+categories:
+- Parquet
+- event
+
+description: |
+  Le format `Parquet` est un format de données connaissant une popularité importante du fait de ses caractéristiques techniques (orientation colonne, compression, interopérabilité…), de sa nature open source et du riche écosystème associé dont les frameworks les plus proéminents sont `Arrow` et `DuckDB`. A ces nombreux avantages s’ajoutent une intégration native aux infrastructures cloud basées sur `S3`, des extensions nombreuses pour traiter des données complexes comme les données géographiques ou, plus récemment, le portage en WASM de `DuckDB` permettant de construire des applications réactives impliquant des transformations de données directement depuis le navigateur.
+
+date: '2025-04-16T14:00:00Z'
+echo: false
+image: Atelier-Parquet.png
+---
+
+
+L'atelier a eu lieu le __16 avril 2025 (15h - 16h30)__, en présentiel à l'Insee et en distanciel pour les membres du réseau du SSP Hub. Environ 35 personnes ont participé de l'Insee (DG ou directions régionales), de différents services statistiques ministériels ou d'autres horizons. Merci à tous pour les échanges ! 
+
+# Slides de la présentation
+```{=html}
+<div>
+<iframe class="slide-deck" style="width: 100%; height: 500px" src="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/parquet#/title-slide"></iframe>
+</div>
+```
+
+```{ojs}
+html`${slides_button}`
+```
+
+
+
+```{ojs}
+slides_button = html`<p class="text-center">
+  <a class="btn btn-primary btn-lg cv-download" href="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/parquet#/title-slide" target="_blank">
+    <i class="fa-solid fa-file-arrow-down"></i>&ensp;Voir les slides
+  </a>
+</p>`
+```
+
+# Documentation de l'atelier & _replay_
+Le matériel lié à l'atelier, y compris le replay, est disponible [ici](https://ssphub.github.io/ssphub-ateliers-parquet/){target="_blank"}.
+![](Parquet-site-preview.png)
+
+# Questions / contact
+Si vous avez la moindre question 🤨, n'hésitez pas à contacter 📧 _{{< var contact.email >}}_.

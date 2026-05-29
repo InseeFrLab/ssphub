@@ -1,0 +1,32 @@
+---
+title: "Extraction automatique du tableau des filiales et participations des comptes sociaux des entreprises"
+
+# Summary for listings and search engines
+description: "Extraire les informations de tableaux de comptes sociaux, en particulier des tableaux des filiales et participations, contenus dans des images scannées mises à disposition par l’INPI via une API"
+
+format: html
+
+# Date published
+date: 2021-01-01
+
+image: Extraction_CS_API.png
+
+categories:
+- Python
+- extraction de données
+- API
+- machine learning
+- en production
+
+---
+
+# Synthèse du projet
+
+|              | Extraction automatique du tableau des filiales et participations des comptes sociaux des entreprises                           |
+|--------------|------------------------------------------------------------------------------------|
+| **Détail du projet**         | Une expérimentation autour de l'extraction automatisée du tableau des filiales et participations des comptes sociaux des entreprises a été démarrée en 2022 à la suite d'un stage dans la division PTGU. Ce tableau est exploité à la main au cours des opérations de profilage des entreprises, ce qui constitue un travail fastidieux. L'expérimentation a été menée avec la Banque de France qui est intéressé par le même cas d'usage que l'Insee, avec deux objectifs principaux : <br>  <br> - développer un prototype d'application permettant à des utilisateurs de récupérer un tableau des filiales et participations automatiquement pour un numéro Siren et une année donnés ; <br> - comparer les performances de différentes méthodes d'extraction automatique de tableaux, basées d’une part sur des outils open-source et d’autre part sur des solutions commerciales.         |
+| **Acteurs**                  | Insee, Inpi, Banque de France         |
+| **Résultats du projet**      | - Une [API expérimentale](https://extraction-cs.lab.sspcloud.fr/docs) et une [interface expérimentale](https://extract-table-ui.lab.sspcloud.fr/) ont été mises en place pour répondre au besoin métier. |
+| **Produits et documentation du projet**      | - Le projet a été présenté le 27 juin 2024 à un séminaire interne Insee [slides](https://ssplab.pages.lab.sspcloud.fr/table-extraction-evaluation/) <br> - [Extraction automatique de données issues d’images scannées : Une illustration par les comptes sociaux d’entreprises](https://journees-methodologie-statistique.insee.net/extraction-automatique-de-donnees-issues-dimages-scannees-une-illustration-par-les-comptes-sociaux-dentreprises/), Journées de méthodologie statistique 2022        |
+| **Code du projet**           | - [https://github.com/InseeFrLab/ca-document-querier/](https://github.com/InseeFrLab/ca-document-querier/) : wrapper Python autour de l'API entreprises de l'Inpi <br> - [https://github.com/InseeFrLab/extraction-comptes-sociaux](https://github.com/InseeFrLab/extraction-comptes-sociaux) : dépôt « core » où se trouvent les éléments pour la détection de page/extraction de tableaux <br> - [https://github.com/InseeFrLab/extract-table-ui](https://github.com/InseeFrLab/extract-table-ui) : dépôt de code de l'[interface expérimentale](https://extract-table-ui.lab.sspcloud.fr/) <br> - [https://github.com/InseeFrLab/extraction-comptes-sociaux-llm](https://github.com/InseeFrLab/extraction-comptes-sociaux-llm) : code source de l'architecture globale, comprenant des microservices conteneurisés et orchestrés par Kubernetes. Il combine des appels à des API externes (INPI), le traitement de PDF, et l'utilisation de modèles de langage (LLM) pour l'analyse et l'extraction de données.       |
+

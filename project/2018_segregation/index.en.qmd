@@ -1,0 +1,41 @@
+---
+title: 'Urban segregation: insights from mobile phone data'
+description: Merging administrative data and MNO data to estimate urban segregation at a local level
+format: html
+date: '2018-01-01'
+categories:
+- Insee
+- experiment
+- mobile phone data
+- administrative data
+image: indice_segregation.png
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - scanner data
+    - mobile phone data
+    - credit card data
+    - bank account data
+    - private data
+  sort:
+  - date desc
+  page-size: 6
+---
+
+# Project summary
+
+|  | Urban segregation: insights from mobile phone data |
+| --- | ------------------------------------------------------------------------- |
+| **Project details** | By combining mobile telephony data and administrative tax data, this study analyses segregation in France's main urban centres. Social and spatial segregation indices are constructed using the frequency of interactions between each operator's customers. These synthetic indicators provide a picture of social segregation, its level and its evolution over time - on a weekly and calendar year basis. The indices also make it possible to measure the propensity to communicate more strongly within the same social group, defined by an income criterion, or on the contrary a strong interaction between several social groups. In particular, this makes it possible to measure the contrast in the behaviour of extreme social groups. The segregation profile revealed by the mobile telephony data is compared with existing literature on the subject. Particular attention is paid to 'urban policy' neighbourhoods, where the issue of segregation has been particularly well documented. |
+| **Players** | Insee    |
+| **Project products and documentation**      | - [Urban segregation: insights from mobile phone data](https://journees-methodologie-statistique.insee.net/segregation-urbaine-un-eclairage-par-les-donnees-de-telephonie-mobile/) , 2018 Statistical Methodology Days (Journées de méthodologie statistique 2018) |
+
+# Similar projects related to new data sources
+
+::: {#similar-project}
+:::
+
+

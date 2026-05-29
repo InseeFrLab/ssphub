@@ -1,0 +1,15 @@
+---
+title: "Les réseaux de neurones appliqués à la statistique publique : méthodes et cas d’usages"
+description: "Ce document de travail propose une introduction rapide aux réseaux de neurones, de leurs fondements théoriques jusqu’à leur mise en oeuvre pratique en R et python sur des problématiques spécifiques de statistique publique. Il  illustre les possibilités et les limites à travers trois cas d’usage détaillés sur  l’imputation de valeurs manquantes dans une enquête, l’exploitation de fichiers d’images et la réduction de dimension."
+categories:
+- Document de travail
+- Insee
+- machine learning
+
+date: "2023-02-16"
+
+image: ../../assets/media/logo_Insee.png
+
+# Optional external URL for project (replaces project detail page).
+website: "https://www.insee.fr/fr/statistiques/6801092"
+---

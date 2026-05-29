@@ -1,0 +1,39 @@
+---
+title: Curiexplore, la plateforme de comparaison des politiques nationales d’enseignement et de recherche
+description: |
+  Visualisation interactive de l'environnement de l'enseignement
+  et de la recherche dans les différents pays.
+format: html
+date: '2022-01-01'
+image: curiexplore.png
+categories:
+- webscraping
+- en production
+- datavisualisation
+- SIES
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories: ["webscraping"]
+  sort:
+  - date desc
+  page-size: 6
+---
+
+
+# Synthèse du projet
+
+|           |         Curiexplore, la plateforme de comparaison des politiques nationales d’enseignement et de recherche             |
+|-----------|------------------------------------------------------------------|
+| **Détail du projet**         |   Le projet `CurieXplore`, développé par le `SIES` (service statistique du Ministère de l'Enseignement Supérieur et de la Recherche)  propose une visualisation interactive de l'environnement de l'enseignement et de la recherche dans les différents pays. <br>  La plateforme combine du contenu textuel collecté par le SIES auprès du réseau diplomatique français et des données issues de sources statistiques internationales (Unesco, banque mondiale, OCDE, Eurostat, ...) ou privées (classements d’Etablissements d’ES comme Shanghai, UMULTIRANK ou THE) moissonnées automatiquement régulièrement (_webscraping_). |
+| **Acteurs**                  |  Service statistique du Ministère de l'Enseignement Supérieur et de la Recherche ([SIES](https://www.enseignementsup-recherche.gouv.fr/fr/sies))     |
+| **Résultats du projet**      |   Le projet est en production, avec un site dédié disponible sur [curiexplore.enseignementsup-recherche.gouv.fr](https://curiexplore.enseignementsup-recherche.gouv.fr/).    |
+| **Code du projet**           | - Le code est disponible sur GitHub {{< fa brands github >}} [https://github.com/dataesr/curiexplore-ui](https://github.com/dataesr/curiexplore-ui).       |
+
+# Projets similaires
+
+::: {#similar-project}
+:::
+

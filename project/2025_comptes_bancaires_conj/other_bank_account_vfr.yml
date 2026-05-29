@@ -1,0 +1,31 @@
+- path: https://www.insee.fr/fr/statistiques/5760458
+  image: 2021_InseeA69.png
+  title: "Impact de la crise sanitaire sur un panel anonymisé de clients de La Banque Postale"
+  description: "Insee Analyses n°69, novembre 2021"
+  date: "2021-11-01"
+- path: https://www.insee.fr/fr/statistiques/6542263
+  image: 2022_InseeA76.png
+  title: "Avec l'inflation, une précarité financière en légère hausse, mais inférieure en août 2022 à son niveau d'avant-crise sanitaire"
+  description: "Insee Analyses n°76, octobre 2022"
+  date: "2022-10-01"
+- path: https://journees-methodologie-statistique.insee.net/une-mesure-de-la-reponse-en-consommation-a-des-chocs-de-revenus-a-partir-des-donnees-bancaires/
+  image: ../../assets/media/logo_Insee.png
+  title: "Une mesure de la réponse en consommation à des chocs de revenus à partir des données bancaires"
+  description: "Journées de méthodologie statistique 2022"
+  date: "2022-10-01"
+- path: https://www.insee.fr/fr/statistiques/7721885
+  image: 2023_InseeA90.png
+  title: "La situation financière des ménages au jour le jour"
+  description: "Insee Analyses n°90, décembre 2023"
+  date: "2023-12-01"
+- path: https://www.insee.fr/fr/statistiques/8183836
+  image: 2024_DT2024_08.png
+  title: "Achats transfrontaliers de carburant à la frontière franco-allemande"
+  description: "Documents de travail de l'Insee n°2024-08, mai 2024"
+  date: "2024-05-01"
+- path: https://www.insee.fr/fr/information/8264558?sommaire=8264562
+  image: 2024_courrier_stats.png
+  title: "L'économie racontée par les données bancaires - Ce que nos relevés de comptes disent de nous"
+  description: "Courrier des statistiques n°12, Insee, Décembre 2024"
+  date: "2024-12-01"
+

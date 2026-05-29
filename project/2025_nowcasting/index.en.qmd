@@ -1,0 +1,41 @@
+---
+title: Comparison of forecasts between *nowcasting* and bottom-up approach
+description: Use of real-time forecasting models (*nowcasting*) inspired by the Atlanta
+  Federal Reserve's "GDPnow" to forecast GDP growth and comparison with the bottom-up
+  approach
+format: html
+date: '2025-09-01'
+image: comp_en.png
+categories:
+- study
+- nowcasting
+- forecasts
+- Insee
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - nowcasting
+    - forecasts
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+---
+
+# Project summary
+
+|  | Comparison of continuous GDP forecasting methods with a bottom-up method|
+|---|------------------------------------------------------------------------- |
+| **Project details** | INSEE bases its GDP growth forecasts on a so-called bottom-up model, which involves reproducing the mechanism for constructing quarterly accounts. The question arises, however, as to the performance of such an approach to forecasting GDP compared with that of a direct method such as *nowcasting*. A direct approach makes it possible to forecast GDP growth directly from business cycle series, without using quarterly accounts. In order to study the relative performance of the two approaches, we developed a new bottom-up forecasting model for GDP growth in France, inspired by the Federal Reserve Bank of Atlanta’s “GDPNow” model. |
+| **Players** | Insee |
+| **Project results** | At the beginning of the quarter, the direct approach performs slightly better than the bottom-up approach: few quantitative indicators are available at that time, and the added value represented by the use of a complete accounting framework is limited compared with a direct model, which is naturally more parsimonious. From the end of the second month onwards, on the other hand, more quantitative indicators become available, and the bottom-up approach performs slightly better than the direct approach estimated in this study, particularly at the time of publication of the Business Review. Finally, the difference in performance between the two approaches is clear between the end of the quarter and the publication of the first estimates of the quarterly accounts thirty days later: during this period, it is much better to use the information available via a bottom-up approach rather than a direct approach. |
+| **Project products and documentation** | - [How do the direct and bottom-up approaches compare in forecasting GDP for the current quarter?](https://www.insee.fr/en/statistiques/8642689?sommaire=8642697) INSEE Economic Outlook - September 2025 |
+
+# Similar projects
+
+::: {#similar-project}
+:::
+

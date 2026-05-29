@@ -1,0 +1,31 @@
+- path: https://www.insee.fr/en/statistiques/6015053
+  image: 2021_InseeA69.png
+  title: "Impact of the health crisis on an anonymised panel of La Banque Postale customers "
+  description: "Insee Analyses n°69, November 2021"
+  date: "2021-11-01"
+- path: https://www.insee.fr/en/statistiques/6691801
+  image: 2022_InseeA76.png
+  title: "Financial insecurity slightly up due to rising inflation, though lower in August 2022 than before the pandemic"
+  description: "Insee Analyses n°76, October 2022"
+  date: "2022-10-01"
+- path: https://journees-methodologie-statistique.insee.net/une-mesure-de-la-reponse-en-consommation-a-des-chocs-de-revenus-a-partir-des-donnees-bancaires/
+  image: ../../assets/media/logo_Insee.png
+  title: "A measurement of marginal propensity to consume after external shocks using bank account data"
+  description: "Journées de méthodologie statistique 2022"
+  date: "2022-10-01"
+- path: https://www.insee.fr/en/statistiques/7734894
+  image: 2023_InseeA90.png
+  title: "Household finance on a day‑to-day basis"
+  description: "Insee Analyses n°90, December 2023"
+  date: "2023-12-01"
+- path: https://www.insee.fr/en/statistiques/8183838
+  image: 2024_DT2024_08.png
+  title: "Cross-border shopping for fuel at the France-Germany border"
+  description: "Insee working documents n°2024-08, mai 2024"
+  date: "2024-05-01"
+- path: https://www.insee.fr/fr/information/8264558?sommaire=8264562
+  image: 2024_courrier_stats.png
+  title: "The economy as told by banking data - What our account statements say about us (French only)"
+  description: "Courrier des statistiques n°12, Insee, Décembre 2024"
+  date: "2024-12-01"
+

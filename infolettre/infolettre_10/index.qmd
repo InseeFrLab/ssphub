@@ -25,14 +25,14 @@ categories:
 ---
 
 
-*Vous désirez intégrer la liste de diffusion ? Un mail à <ssphub-contact@insee.fr> suffit*
+*Vous désirez intégrer la liste de diffusion ? Un mail à {{< var contact.email >}} suffit*
 
 ## Un événement autour des packages facilitant l'accès à l'open data de l'Insee
 
 ![](dessin-opendata.png){fig-align="center" width="40%"} 
 
-Après les présentations [d'`observable`](/talk/presentation-dobservable-par-nicolas-lambert/)
-et de [`gridviz`](/talk/presentation-de-gridviz-par-julien-gaffuri/)
+Après les présentations [d'`observable`](/event/presentation-dobservable-par-nicolas-lambert/)
+et de [`gridviz`](/event/presentation-de-gridviz-par-julien-gaffuri/)
 nous vous proposons un
 nouvel événement. Celui-ci sera autour de l'_open data_ à travers la présentation des 
 __packages facilitant la récupération de données de l'Insee__ disponibles
@@ -136,14 +136,14 @@ possibilité de surligner ou de prendre des notes.
 
 ![](write-blogpost.jpg){fig-align="center" width="30%"} 
 
-Le site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. 
+Le site web du réseau ({{< var site.url >}}) propose depuis septembre une section blog. 
 __Vos idées et contributions sont les bienvenues pour l'enrichir !__
 
 Pour souligner l'aspect collectif de cette section,
 un [guide des contributeurs](https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md) 
 vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de 
 discussion pour définir le sujet du billet aux outils proposés pour faciliter la rédaction 
-et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i>](https://github.com/InseeFrLab/ssphub).
+et la soumission de celui-ci depuis [`Github` <i class="fa-brands fa-github"></i>]({{< var site.github >}}).
 
 
 ## La saison 2 du programme 10% arrive 

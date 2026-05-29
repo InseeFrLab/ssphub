@@ -1,19 +1,26 @@
 ---
 title: "Blog"
+description: "Articles, billets de blog écrits sur tout sujet en lien avec la data science. Cela peut couvrir des conférences, des nouveautés, des projets ..."
 listing:
   feed: true
   id: blog-listing
-  contents: post
+  contents: blog/**/index.qmd
   type: grid
+  sort:
+    - "date desc"
+  categories: true
   #template: scripts/courses.ejs
-  sort: date
-  #categories: true
 page-layout: full
 ---
 
-Les articles de blog les plus récents
+
+Vous avez une idée de sujet ? Toute personne souhaitant coontribuer est la bienvenue, quel que soit son statut, où elle travaille. Pour contribuer, proposez votre idée sur Github ou par mail. Le mode opératoire détaillé est rappelé sur [Github](https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md). 
+
+Pour rappel, les informations qui sont diffusées sur ce blog n'engagent que les contributeurs et en aucun cas les institutions dont ils dépendent.
+
 
 <br>
 
 ::: {#blog-listing}
 :::
+

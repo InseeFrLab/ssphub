@@ -1,0 +1,44 @@
+---
+title: scanR, an application for monitoring France's research and innovation landscape
+description: |
+  Aggregating and making available massive data on research and innovation
+  in France using visualisations, ElasticSearch search engines and APIs
+format: html
+date: '2024-01-01'
+image: scanr_en.png
+listing:
+- id: similar-project
+  contents: ../*/index.qmd
+  type: grid
+  include:
+    categories:
+    - SIES
+  sort:
+  - date desc
+  page-size: 6
+  categories: true
+categories:
+- API
+- in production
+- open-data
+- SIES
+- datavisualisation
+- ElasticSearch
+---
+
+# Project summary
+
+|  | Explore the world of French Research and Innovation with scanR|
+|---|------------------------------------------------------------------------- |
+| **Project details** | scanR is a **web application to help characterise public structures** (research units of all types, public institutions) and private structures (companies) involved in research and innovation in France. scanR also helps to identify the **the direction of the work of researchers active in France** since the early 1990s. <br> <br> scanR combines **structured data under an open licence** (publications and theses, participation in collaborative research projects, spin-offs, patents, etc.) and **open information** extracted directly from the websites of research and innovation players. This information comes from around 13 different sources (theses.fr, the [open science barometer](../2022_bso/index.qmd) HAL, European Commission, INPI, ANR, European Patent Office, etc.) and is obtained by webscraping, pdf-mining or using APIs. The resources are then **identified and linked together**, in particular using AI methods, and then enriched.  <br> A **feedback loop** has been set to improve the quality of the data produced. It allows for requesting data corrections from the scanR site. <br> An **engine based on ElasticSearch** allows you to search for themes, structures or authors. <br> Finally, it is now possible to visually display interactions between different structures or themes using a **network analysis**.|
+| **Players** | Statistical Service of the Ministry of Higher Education and Research ([SIES](https://www.enseignementsup-recherche.gouv.fr/fr/sies))|
+| **Project results** | The scanR project has been in production since 2016 and records around 50,000 monthly visits. <br> <br> - The project provides **files by structure and authors** presenting their organisation, activity, areas of research and source of funding. <br> - It also offers a **search engine** on research structures, authors, funding, publications and patents in France. <br> - It also provides **tools for analysing results** including graph visualisations. <br> <br> The project also provides **several APIs** to retrieve data and data. |
+| **Project products and documentation** | scanR is available at [scanr.enseignementsup-recherche.gouv.fr](https://scanr.enseignementsup-recherche.gouv.fr). This site includes : <br> - the [documentation](https://scanr.enseignementsup-recherche.gouv.fr/docs/overview) to access the four APIs available ; <br> - the various [data sources](https://scanr.enseignementsup-recherche.gouv.fr/about/resources) used for the project. <br> <br> **Methodology and technical details** : <br> - Detailed technical presentation of scanR [*scanR - Explore public data on French research and innovation*](https://hal.science/hal-04813230v1) euroCRIS conference, November 2024; <br> - [Mapping scientific communities at scale](https://hal.science/hal-04892262v1)|
+| **Project code** | - The code is available on GitHub {{< fa brands github >}} <https://github.com/dataesr/scanr-ui>|
+
+# Similar projects
+
+::: {#similar-project}
+:::
+
+
