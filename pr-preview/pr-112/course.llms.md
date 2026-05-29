@@ -1,8 +1,83 @@
-Une sélection de ressources utiles pour se former ou se perfectionner à la *data science*.
+Une sélection de formations et de ressources utiles pour se former ou se perfectionner à la *data science*.
 
 *N’hésitez pas à soumettre les ressources que vous jugez utiles sur [notre `GitHub` ](https://github.com/InseeFrLab/ssphub)*.
 
-  
+# Formations
+
+Voici une liste de formations en open-source utiles pour tout data-scientist.
+
+## L’environnement du Datascientist
+
+### Git
+
+- [Bonnes pratiques de développement avec Git et R](https://www.sspcloud.fr/catalog?path=Bonnes%E2%90%A3pratiques%E2%90%A3de%E2%90%A3d%C3%A9veloppement%E2%90%A3avec%E2%90%A3Git%E2%90%A3et%E2%90%A3R)
+
+- [Documentation Officielle](https://git-scm.com/docs)
+
+### Python
+
+- [Initiation à Python](https://www.sspcloud.fr/catalog?path=Introduction%E2%90%A3to%E2%90%A3Python)
+
+- [Python pour la datascience (cours ENSAE)](https://pythonds.linogaliana.fr/)
+
+### R
+
+- [Parcours R](https://www.sspcloud.fr/catalog?path=Parcours%E2%90%A3R)
+
+- [UtilitR](https://utilitr.org/)
+
+### Quarto
+
+- [Documentation officielle](https://quarto.org/docs/guide/)
+
+### S3, SSPcloud, Parquet, duckDB
+
+- [Acces SSPCLOUD](https://datalab.sspcloud.fr)
+
+- [Initiation S3](https://inseefrlab.github.io/ecosysteme-data/source/s3/cestquoi.html)
+
+- [Initiation duckDB](https://inseefrlab.github.io/ecosysteme-data/source/duckdb/cestquoi.html)
+
+- [Initiation Parquet](https://inseefrlab.github.io/ecosysteme-data/source/parquet/cestquoi.html)
+
+### Mise en production / MLOps
+
+- [Mise en production de projets Datascience (cours ENSAE)](https://ensae-reproductibilite.github.io/)
+
+- [Introduction au MLOps avec MLflow](https://inseefrlab.github.io/formation-mlops/slides/fr/index.html)
+
+- [Machine Learning in production](https://mlip-cmu.github.io/book/)
+
+## Méthodologie Statistique
+
+### Méthodes ensemblistes
+
+- [Document de travail Méthodes ensemblistes](https://inseefrlab.github.io/DT_methodes_ensemblistes)
+
+## Autres ressources
+
+- Les [formations du SSPCloud](https://www.sspcloud.fr/catalog)
+
+- [Les ateliers du SSPHUB](https://inseefrlab.github.io/ssphub-ateliers/)
+
+- Funathon 2026 - organisé par l’Insee pour le groupe européen AIML4OS
+
+  - [Sujet 1 - Méthodes ensemblistes et prédictions des prix de l’immobilier](https://aiml4os.github.io/funathon-project1/)
+  - [Sujet 2 - Classification textuelle](https://aiml4os.github.io/funathon-project2/)
+  - [Sujet 3 - Images satellites](https://aiml4os.github.io/funathon-project3/)
+
+- [Funathon 2024](https://inseefrlab.github.io/funathon2024/)
+
+  - [Sujet 1 - Visualisation des émissions de CO2 de liaisons aériennes](https://inseefrlab.github.io/funathon2024_sujet1/) : R, API, visualisation
+  - [Sujet 2 - Un tableau de bord du trafic aérien avec R ou Python](https://inseefrlab.github.io/funathon2024_sujet2/) : R, Python, visualisation, déploiement
+  - [Sujet 3 - Flightradar24](https://inseefrlab.github.io/funathon2024_sujet3/) : Python, Dash, Visualisation, Déploiement d’application
+  - [Sujet 4 - Analyse textuelle de commentaires clients](https://inseefrlab.github.io/funathon2024_sujet4/) : Python, Web Scraping, Analyse de sentiment, NLP, SpaCy
+
+- [Funathon 2023](https://inseefrlab.github.io/funathon2023)
+
+# Ressources utiles
+
+Une série de ressources utiles plus diversifiées sur des sujets en lien avec la science des données.
 
 ![](./course/r-mtes/featured.png)
 

@@ -9,7 +9,7 @@
 <link>https://ssphub-test.netlify.app/event.html</link>
 <atom:link href="https://ssphub-test.netlify.app/event.xml" rel="self" type="application/rss+xml"/>
 <description>Blog du réseau des data scientists de la statistique publique</description>
-<generator>quarto-1.9.37</generator>
+<generator>quarto-1.9.38</generator>
 <lastBuildDate>Tue, 16 Jun 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Journées data science &amp; open-source</title>
@@ -47,7 +47,8 @@
 <ul>
 <li><a href="https://www.css.cnrs.fr/active-tigger/">Active Tigger</a> : une application de labellisation de données textuelles, proposant aussi des techniques d’active learning, et permettant d’entraîner des modèles de classification textuelle (CREST). Le repo lié est <a href="https://github.com/activetigger/activetigger/">ici</a> ;</li>
 <li><a href="https://sndstoolers.github.io/sndsTools/">SNDSTools</a> : projet pour faciliter l’utilisation des données du système national de données de santé (SNDS) (Inria - Insee). Le repo lié est <a href="https://github.com/SNDStoolers/sndsTools">ici</a> ;</li>
-<li><a href="https://github.com/Romanovytch/canar">CanaR</a> : projet visant à déployer en autonomie des chatbots personnalisés avec du RAG via un outil de commande.</li>
+<li><a href="https://github.com/Romanovytch/canar">CanaR</a> : projet visant à déployer en autonomie des chatbots personnalisés avec du RAG via un outil de commande ;</li>
+<li><a href="https://utilitr.org">utilitR</a> : projet collaboratif sur l’utilisation de R pour l’analyse de données.</li>
 <li>une liste de sujets à traiter en autonomie (en groupe ou seul). La liste définitive sera présentée le jour J mais comprend par exemple :
 <ul>
 <li>Sur Onyxia ou le SSPCloud : compléter la documentation et les formations (notamment en R) ;</li>
