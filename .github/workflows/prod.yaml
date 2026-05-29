@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
   # cf https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   push:
-    branches: main
+    branches: 
+    - main
 
 name: Prod - render and publish to netlify
 
