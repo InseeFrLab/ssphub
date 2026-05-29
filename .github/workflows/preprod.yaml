@@ -51,6 +51,16 @@ jobs:
           sed -i 's/site-url:\ https:\/\/ssphub.netlify.app/site-url:\ https:\/\/ssphub-test.netlify.app/g' _quarto.yml
           cat _quarto.yml
 
+      - name: Update _publish.yml with pre_prod url
+        run: |
+          cat > _publish.yml << 'EOF'
+          - source: project
+            netlify:
+              # Pre prod
+              - id: "0bad57c6-1cc2-4468-aab9-0cb51d7c103f"
+                url: "https://ssphub-test.netlify.app/"
+          EOF
+
       - name: Render bilingual project
         run: |
           Rscript scripts/1_render.R
