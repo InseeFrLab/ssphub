@@ -78,7 +78,7 @@ jobs:
 
       # For this workflow only
       - name: Comment PR (custom)
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           header: pr-preview
           message: |
@@ -104,7 +104,7 @@ jobs:
           action: remove
 
       - name: Comment PR that preview was removed
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           header: pr-preview
           message: |
