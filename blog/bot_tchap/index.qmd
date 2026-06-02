@@ -388,9 +388,14 @@ uv run main.py
 
 Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**. 
 
-On crée une commande `llm` maintenant et on la branche sur `llm.lab`. 
+On crée une commande `llm` maintenant et on la branche sur `llm.lab` avec une 
+fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore). 
+
 Cela se fait avec un peu de douleur mais rien que l'on aime pas : on
-repère le préfixe, on récupère le message, on l'envoie au modèle, on renvoie la réponse.
+repère si on reçoit un message avec `@bot.listener.on_message_event` et 
+on le récupère avec `match = botlib.MessageMatch(room, message, bot)`. 
+Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. 
+Et puis on renvoie la réponse du LLM sur Tchap.
 
 La vraie prise de tête - relative, ça n'a duré que quelques heures - c'était de
 **reconstituer le fil de la conversation** pour que le bot ait de la mémoire. 
@@ -400,7 +405,7 @@ avec un LLM et éviter à chaque fois de recommencer à 0.
 
 ![Ce que je voulais éviter](endless_loop.png)
 
-Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond
+Dans Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond
 à celui-là » est caché dans des balises bien imbriquées
 (`content` → `m.relates_to` → `m.in_reply_to` → `event_id`).
 
@@ -409,7 +414,7 @@ la vraie tête des événements, je me suis moins perdu dans les étages de bali
 
 Voici l'échange ci-dessus au format JSON Matrix : 
 
-```{.python}
+```{python}
 #| code-fold: true
 {
     "content": {
@@ -485,25 +490,27 @@ Voici l'échange ci-dessus au format JSON Matrix :
 ```
 
 Ensuite, il "suffit" de remonter le fil réponse après réponse, de façon récursive.
-Il faut aussi, à partir de l'ID d'un événement, il faut : 
+Concrètement, **à partir de l'ID d'un événement**, il faut : 
+
 - récupérer l'événement (aka : le message);
 - avec l'événement, déterminer qui de l'humain ou de l'"assistant" a envoyé le message;
 - extraire le contenu;
 - stocker tout cela dans l'historique;
-- savoir si lui même est en réponse à un événement
-- et puis on boucle, et on boucle, et on boucle. 
+- savoir si lui même est en réponse à un événement;
+- et puis on boucle et on boucle et on boucle. 
 
-Par ailleurs, Tchap permet de formatter son message : soit vous êtes une/un boss et vous
+Par ailleurs, **Tchap permet de formatter son message** : soit vous êtes une/un boss et vous
 l'écrivez directement en html, soit vous l'écrivez en markdown et Tchap le transformera 
 en html pour vous. 
 
-Pour que la réponse de notre assistant préféré passe bien dans Tchap, il faut lui ajouter un prompt 
-système qui demande de répondre en markdown sans échapper les caractères spéciaux. 
+Pour que la réponse de notre assistant préféré passe bien dans Tchap, 
+**il faut lui ajouter un prompt système qui demande de répondre en markdown** 
+sans échapper les caractères spéciaux. 
 
-Après, il faut gérer les problèmes de fonction `async` dans Python. 
-Je n'ai pas tout compris mais ce que j'ai compris c'est que les demandes "compliquées", 
-c'est à dire dont la réponse peut prendre un peu de temps, on met un `await` devant. 
-Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf le blabla sur le chiffrement), 
+Après, il faut gérer **les problèmes de fonction `async` dans Python**. 
+Je n'ai pas tout compris mais de ce que j'ai compris, pour les requêtes "compliquées", 
+c'est à dire celles dont la réponse peut prendre un peu de temps, **on met un `await` devant**. 
+Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf. le blabla sur le chiffrement), 
 donc quand on récupère un message de l'API de `nio` on doit indiquer `await bot.async_client.room_get_event`.
 
 Et `await`, ce petit coquin, se propage. C'est à dire qu'une fonction qui comprend un `await` sera
@@ -515,8 +522,9 @@ Une fois tout cela compris, avec l'aide d'un assistant bien-tombé, on arrive à
 Il est autonome (les fonctions utilitaires sont incluses) et prend en
 entrée un `bot`, l'`id` du salon et l'`id` du message auquel on répond :
 
-```{.python filename="main.py"}
+```{python filename="main.py"}
 #| code-fold: true
+
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -738,6 +746,14 @@ if __name__ == "__main__":
 
 ```
 
+
+::: {.callout-tip}
+
+Fun fact - pour débugger le code, vous avez un mode "debug" dans la fonction `tchat_with_llm` qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. 
+Pour cela, décommenter les lignes après "debug" et commentez celles après "prod mode".
+
+:::
+
 Côté utilisateur, le résultat est tout bête : il suffit de **répondre** à un message du
 bot (toujours en commençant par `llm`) pour qu'il se souvienne de tout ce qui précède.
 
@@ -758,34 +774,36 @@ onyxia@vscode-python-118218-0:~/work$ uv run main.py
 Connected to https://matrix.agent.finances.tchap.gouv.fr as @bot-insee.fr:agent.finances.tchap.gouv.fr (XXXXXX)
 This bot's public fingerprint ("Session key") for one-sided verification is: MXte gC/K MXte gC/K MXte gC/K MXte gC/K MXte gC/K 1A1
 ```
+
 ![Tatam](endfull_loop.png)
 
 
 ## Cinquième étape : mise en production sur le SSP Cloud
 
-Dernière marche, et pas la plus petite : faire tourner le bot en continu, sans dépendre
-de ma machine. L'équipe du SSP Cloud m'a bien guidé (et mon assistant IA préféré aussi).
+Dernière marche, et pas la plus petite : **faire tourner le bot en continu, sans dépendre
+de ma machine**. L'équipe du SSP Cloud m'a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).
 
 Cela demande de découvrir **Docker** et ses ressources de débutant bien faites 
 ([ici](https://docs.docker.com/get-started/introduction/get-docker-desktop/) par exemple).
 
-Il faut aller se créer un compte sur [Docker](https://www.docker.com/). L'installation de Docker
+Il faut aller **se créer un compte sur** [**Docker**](https://www.docker.com/). L'installation de Docker
 est pas évidente sur des PC contraints (et hic : impossible de le tester directement
 sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l'avoir en local ou tester via des 
 GitHub Action ou bien le VS Code de GitHub (dans `<> Code` / `Codespaces` dans GitHub, cela vous ouvre un espace
 similaire à Onyxia) permet de faire des Docker dans Docker. 
 
-Bon après, le `Dockerfile` est assez basique et un assitant IA m'a bien aidé à le rédiger. 
+Après, le `Dockerfile` est assez basique et un assitant IA aide à le rédiger. 
 
-Le morceau le plus pénible, ça a été les bibliothèques de chiffrement
+Le morceau le plus pénible, ça a été **les bibliothèques de chiffrement**
 (`python-olm`, qui compile `libolm` depuis les sources) : il a fallu glisser les bons
 outils de compilation dans l'image. Mais là encore, cela a été tout à fait respectable
 et mon assistant préféré m'a aidé. 
 
 Voici le `Dockerfile` final, utilisable tel quel :
 
-```{dockerfile filename="dockerfile"}
+```{python filename="dockerfile"}
 #| code-fold: true
+
 FROM python:3.13-slim
 
 # Installation de uv
@@ -805,12 +823,13 @@ COPY . .
 CMD ["uv", "run", "main.py"]
 ```
 
-L'image se reconstruit toute seule à chaque `push` sur GitHub, grâce à une *GitHub
+L'image **Docker se construit toute seule à chaque `push` sur GitHub**, grâce à une *GitHub
 Action* qui la pousse ensuite sur Docker Hub. N'oubliez pas d'ajouter en secret GitHub 
 vos identifiants Docker :
 
-```{.yaml filename=".github/workflows/deploy.yaml"}
+```{yaml filename=".github/workflows/deploy.yaml"}
 #| code-fold: true
+
 name: Build and push Docker image
 
 on:
@@ -841,14 +860,14 @@ jobs:
 Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
 
 Une petite angoisse une fois l'image poussée sur Docker : *mais où sont tous mes secrets  (identifiants Tchap, clé d'API du
-LLM) ?*. Bon, après vérification, ils ne sont pas poussées dans l'image Docker. 
+LLM) ?*. Bon, après vérification, **ils ne sont pas poussées dans l'image Docker s'ils ne sont pas dans le code**. 
 
 Les secrets sont injectés en variables d'environnement via des `secretKeyRef`, et un petit volume persistant garde le
-fichier de session entre deux redémarrages. Le manifeste ci-dessous s'applique avec
+fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s'applique avec
 `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
 `${DOCKERHUB_USERNAME}` substituées :
 
-```{.python filename=".env"}
+```{python filename=".env"}
 # =============================================================================
 # .env - variables d'environnement du bot Tchap
 # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
@@ -876,8 +895,9 @@ SSP_USERNAME="votre_identifiant_sspcloud"
 
 ``` 
 
-```{.yaml filename="k8s/deployment.yaml"}
+```{yaml filename="k8s/deployment.yaml"}
 #| code-fold: true
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -977,7 +997,7 @@ Et à grosses mailles :
 - Bot et LLM Lab : 3h
 - déploiement du bot: 3h
 - Docker : 6h 
-- post de blog : 4h 
+- post de blog : 5h 
 
 Soit au total **environ une semaine de travail** pesé tout compris. 
 
