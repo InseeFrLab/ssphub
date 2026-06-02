@@ -1,17 +1,17 @@
 ---
-title: "Bref, j'ai créé un bot sur Tchap qui répond à vos questions"
+title: "Bref, j'ai créé un bot sur Tchap banché à un LLM"
 
 # Summary for listings and search engines
 description: |
   Retour d'expérience sur la création d'un bot Tchap branché à un grand
-  modèle de langage : de l'API Matrix au `curl` jusqu'à la mise en prod sur
+  modèle de langage : de l'API Matrix jusqu'à la mise en prod sur
   le SSP Cloud, avec du code prêt à copier-coller.
 
 # Date published
 date: 2026-06-15
 
 # Featured image
-# image: featured.png
+image: robot_bot_tchap.png
 
 authors:
   - Nicolas
