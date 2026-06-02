@@ -27,6 +27,7 @@ categories:
 format: 
   html:
     code-overflow: wrap
+    execute: false
 ---
 
 # Quel est le besoin ?
@@ -35,7 +36,7 @@ Dans l'équipe, on a un salon Tchap bienveillant. C'est là qu'on
 pose les questions qu'on n'ose pas poser ailleurs. Et un jour, l'idée est venue 
 d'y **brancher un bot capable de répondre à nos questions**, directement depuis
 Tchap, plutôt que d'attendre qu'un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. 
-De quoi se dépanner sans déranger personne — et, accessoirement, briller en
+De quoi se dépanner sans déranger personne - et, accessoirement, briller en
 réunion d'équipe - si tant est qu'on capte dans la salle de réunion.
 
 Et enfin, soyons honnêtes, c'était aussi en partie parce que c'était drôle d'essayer de mettre un bot sur Tchap.
@@ -53,7 +54,7 @@ Après *une petite semaine de travail* (cf. détail plus bas pour ceux que cela 
 
 # Comment faire ?
 
-Le truc sympa avec Tchap, c'est sa **philosophie ouverte** — aux agents de l'État, en tout
+Le truc sympa avec Tchap, c'est sa **philosophie ouverte** - aux agents de l'État, en tout
 cas. Du coup, il y a pas mal de ressources en ligne ou directement sur la
 plateforme. Trois m'ont aidé à me lancer :
 
@@ -128,30 +129,33 @@ La première étape a été facile. La deuxième, envoyer un message, un poil pl
 Je suis reparti des **très bons examples de la documentation** de [`simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
 et de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation). 
 
-Cela a été beaucoup plus simple quand j'ai compris que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : 
+Pour **comprendre la manière dont marche Matrix**, cela a été plus simple quand j'ai compris que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : 
 tout cela, ce sont des événements (*event*) avec un identifiant unique. Concrètement, ne cherchez donc pas la 
 fonction `send_message` : vous envoyez un evénement qui est de type message (`m.room.message`). De la même manière que quand vous entrez dans
 un salon, vous envoyez un événement de type `je rentre dans ce salon Tchap`.
 
-Cela n'a pas été beaucoup plus simple par contre quand je me suis rendu compte que 
-**le chiffrement, c'est très bien, mais c'est compliqué.** Indispensable pour la sécurité,
-mais ça vous complique la vie. De ce que j'ai compris sur la manière dont Matrix marche quand il est chiffré :
-en fait, dès que vous envoyez un message, la clé de chiffrement change. Vous avez l'ancienne
+Cela *n'a pas été beaucoup plus simple* par contre quand je me suis rendu compte que 
+**le chiffrement, c'est très bien, mais ca complique tout.** Indispensable pour la sécurité,
+mais ça vous complique la vie. De ce que j'ai compris sur la manière dont Matrix marche quand les messages sont chiffrés :
+dès que vous envoyez un message, la clé de chiffrement change. Vous avez l'ancienne
 clé et le message, avec cela vous trouvez la nouvelle clé. Par contre, à partir de la clé actuelle, 
-vous ne pouvez pas voir les anciens messages. Mais vous pourrez voir les prochains. 
+vous ne pouvez pas déduire l'ancienne clé et donc déchiffrer les anciens messages. 
+Mais vous pourrez voir les prochains. Et ceux d'après, etc etc. 
 
 Concrètement, cela veut dire que **le bot n'a pas accès au passé**. Il ne peut voir que les messages
-depuis qu'il a été crée. 
+depuis qu'il a été créé. 
 
 Une fois ces idées en tête, je suis reparti de la
 [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
-pour bâtir un cas tout simple : un bot qui répond à un mot. Vous lui dites `coucou`,
-il vous donne l'heure. Voici un bot complet, prêt à lancer — il suffit d'avoir installé
-les packages nécessaires avec `uv add` et défini vos identifiants dans un dotenv:
+pour bâtir **un cas tout simple** : un bot qui répond à un mot. Vous lui dites `coucou`,
+il vous donne l'heure. 
+
+Voici donc un bot complet, prêt à lancer - il suffit d'avoir installé
+les packages nécessaires avec `uv add` et d'avoir défini vos identifiants dans un fichier `.env`:
 
 ```{.python filename=".env"}
 # =============================================================================
-# .env — variables d'environnement du bot Tchap
+# .env - variables d'environnement du bot Tchap
 # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
 # (ajoutez `.env` à votre .gitignore).
 # =============================================================================
@@ -163,10 +167,9 @@ TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
 
 ```
 
-```{.python filename="main.py"}
+```{python filename="main.py"}
 #| code-fold: true
 
-# main.py — un bot Tchap minimal mais fonctionnel
 # uv add "matrix-nio[e2e]" simplematrixbotlib dotenv
 import os
 from datetime import datetime
@@ -206,26 +209,35 @@ if __name__ == "__main__":
     bot.run()
 ```
 
-**Vous avez maintenant un bot qui vous répond l'heure quand vous lui dites "coucou"** : et ça, c'est magique
+Lancez-le avec un `uv run main.py`. 
+
+**Bravo ! Vous avez maintenant un bot qui vous répond l'heure quand vous lui dites "coucou"** : et ça, c'est magique
 et parfaitement inutile. 
+
+
+::: {.callout-caution}
 
 Je n'ai pas réussi à régler proprement la **vérification du bot** (le
 fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
-« non vérifié ». 
+« non vérifié ». Cela ne pose pas de problème particulier. 
+
+:::
+
 
 ## Deuxième étape : brancher un LLM
 
-Bonne nouvelle : utiliser [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), c'est
-en fait super simple. 
+Bonne nouvelle : **utiliser** [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), **c'est en fait super simple**. 
+
 Comme le service expose une API compatible OpenAI, il suffit de réutiliser le *package* `openai`
-en pointant juste vers la bonne URL. On ajoute le package `openai`, on va chercher sa clé API de [llm.lab](https://llm.lab.sspcloud.fr) 
-en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key) qu'on 
-stocke sous dans le `dotenv` sous `LLM_LAB_API_KEY`. Après, le snippet ci-dessous
-est complet et s'exécute tel quel :
+en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspcloud.fr) 
+en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). 
+On stocke le tout dans le `.env` sous `LLM_LAB_API_KEY`. 
+
+Après, le snippet ci-dessous est complet et s'exécute tel quel avec `uv run main.py`:
 
 ```{.python filename=".env"}
 # =============================================================================
-# .env — variables d'environnement
+# .env - variables d'environnement
 # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
 # (ajoutez `.env` à votre .gitignore).
 # =============================================================================
@@ -235,7 +247,7 @@ LLM_LAB_API_KEY="votre_cle_api_llm_lab"
 
 ```
 
-```{.python filename="main.py"}
+```{python filename="main.py"}
 #| code-fold: true
 # uv add openai
 import os
@@ -279,11 +291,11 @@ if __name__ == "__main__":
         print(f"Bot : {ask(question)}")
 ```
 
-Le truc à retenir, c'est qu'**un échange n'est qu'une simple liste Python**, au format
-attendu par `openai` : chaque message est un dictionnaire avec un rôle stocké dans la clé `role` 
+Le truc à retenir avec le format `openai`, c'est qu'**un échange avec un LLM n'est qu'une simple liste Python** :
+chaque message est un dictionnaire avec un rôle stocké dans la clé `role` 
 et le contenu stocké, étonnament, dans la clé `content`.
 
-```python
+```{.python filename="Ceci est un chat"}
 [
     {"role": "user", "content": "Bonjour, tu peux m'aider ?"},
     {"role": "assistant", "content": "Bien sûr !"},
@@ -291,7 +303,7 @@ et le contenu stocké, étonnament, dans la clé `content`.
 ```
 
 *Fun fact (pour moi)* : chez OpenAI, l'IA n'est ni un « bot » ni un « modèle », mais un
-*assistant*. Sans doute pour pas faire peur. 🙂
+*assistant*. Sans doute pour ne pas faire peur. 🙂
 
 **Vous avez maintenant de quoi envoyer des requêtes à un LLM.**
 
@@ -316,14 +328,52 @@ You : quit
 
 ## Troisième étape : préparer la quatrième étape
 
-Là je triche, je n'ai pas suivi cet ordre là mais j'aurai dû le suivre pour faire un truc propre.
+Là je triche, je n'ai pas suivi cet ordre là mais j'aurai dû le suivre.
 Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l'ordre des 
 aiguilles d'une montre.
 
 Donc, maintenant, avant de combiner les deux, j'aurai dû construire le code petit à petit pour 
 que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules 
 (`config`, `core`, `listeners`).
-Un petit coup d'IA a permis de rédiger le code d'initialisation qui charge tous les 
+
+Voici la structure à cette étape :
+
+```
+tchap_bot_test/
+│
+├── main.py                  # Point d'entrée : appelle src.run("!")
+├── pyproject.toml           # Dépendances (matrix-nio[e2e], openai, simplematrixbotlib)
+├── uv.lock                  # Verrouillage des versions (uv)
+├── .python-version          # Version Python du projet (3.13)
+├── LICENSE
+│
+├── src/                     # Le code du bot, organisé en package
+│   ├── __init__.py          # run() : charge la config, crée le bot, branche les listeners
+│   │
+│   ├── config/              # ── Couche configuration ──
+│   │   ├── __init__.py
+│   │   └── settings.py      # Creds, BotConfig, Settings + lecture des variables d'env
+│   │
+│   ├── core/                # ── Couche cœur ──
+│   │   ├── __init__.py
+│   │   └── bot.py           # create_bot() : instancie le bot simplematrixbotlib
+│   │
+│   └── listeners/           # ── Couche fonctionnalités (une par fichier) ──
+│       ├── __init__.py      # load_all() : charge auto. tous les modules avec register()
+│       └── echo.py          # coucou → renvoie l'heure (la fonctionnalité de test)
+│
+└── bash/                    # Scripts d'exploration de l'API Matrix (phase de découverte)
+   └── get_token.sh         # Récupère un jeton d'accès
+
+```
+
+Les `listeners` stockent toutes les fonctionnalités de notre bot Tchap. L'architecture du dossier
+est volontairement modulaire : chaque fonctionnalité a son
+propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au
+démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste
+sa fonction `register` en `no_register`, et hop.
+
+Un petit coup d'IA permet de rédiger le code d'initialisation qui charge tous les 
 `listeners` à partir des scripts dans le dossier `listeners`.
 
 À ce stade, l'organisation en *package* avec [`uv`](https://docs.astral.sh/uv/) rend le
@@ -334,12 +384,6 @@ et lancer le bot tient en une ligne :
 uv run main.py
 ```
 
-L'archi des `listeners` est volontairement modulaire : chaque fonctionnalité a son
-propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au
-démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste
-sa fonction `register` en `no_register`, et hop.
-
-
 ## Quatrième étape : combiner les deux
 
 Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**. 
@@ -348,7 +392,7 @@ On crée une commande `llm` maintenant et on la branche sur `llm.lab`.
 Cela se fait avec un peu de douleur mais rien que l'on aime pas : on
 repère le préfixe, on récupère le message, on l'envoie au modèle, on renvoie la réponse.
 
-La vraie prise de tête — relative, ça n'a duré que quelques heures — c'était de
+La vraie prise de tête - relative, ça n'a duré que quelques heures - c'était de
 **reconstituer le fil de la conversation** pour que le bot ait de la mémoire. 
 C'est simple, je voulais que si je réponde au bot dans Tchap, le bot récupère les 
 messages liés à la conversation et les envoie en contexte au LLM. Pour mimer un chat 
@@ -806,7 +850,7 @@ fichier de session entre deux redémarrages. Le manifeste ci-dessous s'applique 
 
 ```{.python filename=".env"}
 # =============================================================================
-# .env — variables d'environnement du bot Tchap
+# .env - variables d'environnement du bot Tchap
 # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
 # (ajoutez `.env` à votre .gitignore).
 # =============================================================================
