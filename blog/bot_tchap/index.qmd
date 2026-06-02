@@ -1,5 +1,5 @@
 ---
-title: "Bref, j'ai créé un bot sur Tchap banché à un LLM"
+title: "J'ai créé un bot sur Tchap banché à un LLM"
 
 # Summary for listings and search engines
 description: |
@@ -31,64 +31,71 @@ format:
 
 # Quel est le besoin ?
 
-Soyons honnêtes : au départ, c'était en partie pour le fun.
-
 Dans l'équipe, on a un salon Tchap bienveillant. C'est là qu'on
 pose les questions qu'on n'ose pas poser ailleurs. Et un jour, l'idée est venue 
-de brancher un bot capable de répondre à nos questions, directement depuis
-Tchap, plutôt que d'attendre qu'un gentil collègue y réponde ou pose la question à un autre collègue qui connaît la réponse. 
+d'y **brancher un bot capable de répondre à nos questions**, directement depuis
+Tchap, plutôt que d'attendre qu'un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. 
 De quoi se dépanner sans déranger personne — et, accessoirement, briller en
-réunion d'équipe - tant qu'on capte dans la salle de réunion.
+réunion d'équipe - si tant est qu'on capte dans la salle de réunion.
 
-Au final, le bot est en place (cf. [sa maison sur Github](github.com/nicotlm/tchap_bot_test/)) et fait aujourd'hui trois choses :
+Et enfin, soyons honnêtes, c'était aussi en partie parce que c'était drôle d'essayer de mettre un bot sur Tchap.
 
-- il **répond à un test**, histoire de vérifier qu'il est bien réveillé ;
+Finalement, ce n'était pas si compliqué. On m'avait vendu que les bots Tchap étaient compliqués à mettre en place, et en fait je n'ai pas trouvé. 
+Par ailleurs, se connecter à [llm.lab](https://llm.lab.sspcloud.fr) est plutôt très simple. 
+Le plus délicat a été de découvrir Tchap, d'orchestrer les deux et enfin la mise en production. 
+
+Après *une petite semaine de travail* (cf. détail plus bas pour ceux que cela intéresse), le bot est en place (cf. [sa maison sur Github](github.com/nicotlm/tchap_bot_test/)) et fait aujourd'hui trois choses :
+
+- il **répond quand on dit coucou**, histoire de vérifier qu'il est bien réveillé ;
 - il **répond à vos questions** en interrogeant un grand modèle de langage ;
-- et, pour le plaisir, il a une **fonctionnalité mystère** : il réagit en douce à un
+- et, pour le plaisir, il a une **fonctionnalité mystère** : il réagit à un
   mot-clé glissé dans la conversation. 🤫
 
 # Comment faire ?
 
-Le truc sympa avec Tchap, c'est sa philosophie ouverte — aux agents de l'État, en tout
-cas. Du coup, il y a pas mal de ressources qui traînent en ligne ou directement sur la
-plateforme. Trois m'ont vraiment dépanné :
+Le truc sympa avec Tchap, c'est sa **philosophie ouverte** — aux agents de l'État, en tout
+cas. Du coup, il y a pas mal de ressources en ligne ou directement sur la
+plateforme. Trois m'ont aidé à me lancer :
 
 - le salon [Tchap - Bots et Intégrations](https://matrix.to/#/#BotsetIntgrationsTchapU2tHdMEN80D:agent.dinum.tchap.gouv.fr), où la communauté partage des questions et ses astuces ;
 - la [doc technique officielle sur les bots et intégrations](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
-- les webinaires en ligne, en particulier celui du MTES qui raconte comment ils ont
-  automatisé leur bascule de Mattermost vers Tchap. C'est-à-dire à peu près tout.
+- les **webinaires en ligne**, en particulier celui du MTES qui raconte comment ils ont
+  automatisé leur bascule de Mattermost vers Tchap. 
 
-C'est d'ailleurs en regardant ces présentations que j'ai eu une première découverte : dans Tchap,
-quasiment tout est automatisable. Grossièrement, le bot récupère exactement le nom et prénom du compte et
-peut envoyer des messages, réagir, suivre un fil de discussion...
+La première découverte fut que **dans Tchap, quasiment tout est automatisable**. 
+Le bot récupère exactement le nom et prénom du compte que vous lui donnez et
+puis il peut envoyer des messages, réagir, suivre un fil de discussion, inviter des gens ...
 
-Tout cela passe par des appels API, un peu comme Grist ou équivalent. A partir du moment où vous êtes un 
+Tout cela passe par des **appels API**, un peu comme sur Grist. A partir du moment où vous êtes un 
 peu familier avec une API, c'est pas beaucoup plus compliqué de programmer un bot sur Tchap. 
 
-Côté technique, Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications utiles,
+Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications aussi accessibles,
 sans compter les outils internes à l'État listés dans les ressources ci-dessus. Après avoir regardé, mes besoins étaient au fond assez
 simples, je m'en suis tenu à un petit *package* public :
 [`simplematrixbotlib`](https://pypi.org/project/simplematrixbotlib/), qui n'est lui-même
 qu'une surcouche bien pratique de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation).
 
-Je vais vous refaire le parcours pour créer facilement votre bot sur Tchap. 
+Je vais vous **refaire le parcours pour créer facilement votre bot sur Tchap**. 
 
 # Première étape : mettre en place le bot
 
 Petit avantage au démarrage : j'avais une **boîte aux lettres fonctionnelle (BALF)**
 sous la main, ce qui m'a permis de créer un compte Tchap tout neuf. Le bot n'emprunte
-donc pas mon identité. Si vous n'en avez pas, la bonne pratique, c'est de créer une
-BALF rien que pour lui.
+donc pas mon identité. Si vous n'en avez pas, la bonne pratique indiqué dans les ressources de Tchap,
+c'est de créer une BALF et un compte Tchap rien que pour lui.
+Parce que sinon, **rien ne différencie, vu de Tchap, un bot d'être utilisateur humain.**
 
 Le plus dur au début, ça a été de me repérer dans l'univers Matrix / Tchap. Pour l'apprivoiser,
 je suis retourné à la base des API avec quelques lignes de `bash` et `curl` pour taper 
- directement sur l'API de Matrix. 
+directement sur l'API. 
 
 ## Authentification 
-Première mission : récupérer un jeton
-d'accès. En gros, vous envoyer votre identifiant et mot de passe Tchap et l'API vous donne un token. 
+Première mission : **récupérer un jeton d'accès**. 
+Vous envoyez **votre identifiant et mot de passe Tchap** et l'API vous donne un token. 
 Ce bout de script tourne tel quel, à condition d'avoir renseigné vos deux
-variables d'environnement :
+variables d'environnement `TCHAP_BOT_MATRIX_ID`, qui est votre `id` utilisateur de Tchap (quelque chose comme 
+"@votre-bot:agent.finances.tchap.gouv.fr"), et `TCHAP_BOT_PWD`
+qui est le mot de passe que vous utilisez pour vous connecter au compte. 
 
 ```bash
 #!/usr/bin/env bash
@@ -105,9 +112,20 @@ curl -X POST "$HOMESERVER/_matrix/client/v3/login" \
   }'
 ```
 
+La requête vous renverra un joli token d'identification si cela marche.
+
+```bash
+{"access_token":"mct_montokenanepasleaker","device_id":"API","user_id":"@votre-bot:agent.finances.tchap.gouv.fr"}
+```
+
+Ce n'était qu'une 
+première étape pour vérifier que tout marche, **ouvrons Python maintenant**. 
+
+
 ## Envoyer un message
 La première étape a été facile. La deuxième, envoyer un message, un poil plus longue (mais cela reste tout à fait raisonnable). 
-Je suis reparti des très bons examples de la documentation de [`simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
+
+Je suis reparti des **très bons examples de la documentation** de [`simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
 et de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation). 
 
 Cela a été beaucoup plus simple quand j'ai compris que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : 
