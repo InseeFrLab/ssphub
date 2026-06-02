@@ -13,8 +13,8 @@ date: 2026-06-15
 # Featured image
 # image: featured.png
 
-# authors:
-#   - Prénom Nom
+authors:
+  - Nicolas
 
 categories:
   - Tchap
@@ -893,6 +893,33 @@ sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USE
 Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos
 questions dans le salon de l'équipe, et qui garde même le fil de la discussion en
 mémoire. 
+
+
+::: {.callout-caution}
+
+Et t'es mignon mais combien de temps cela t'a pris tout ça ?
+
+Expérience : 
+- connaissance inexistante du sujet bot/Tchap;
+- connaissance inexistante de la manière dont marche llm.lab;
+- 0 déploiement réussi;
+
+Outils : 
+- avec un assistant IA (essentiel).
+
+Et à grosses mailles : 
+
+- Découverte de Matrix, la manière dont marchent les bots, test à droite à gauche : 2 jours
+- Premier bot simple : 3h
+- Découverte de LLM lab : 2h
+- Bot et LLM Lab : 3h
+- déploiement du bot: 3h
+- Docker : 6h 
+- post de blog : 4h 
+
+Soit au total **environ une semaine de travail** pesé tout compris. 
+
+:::
 
 # Ressources
 
