@@ -1,95 +1,491 @@
 ---
-title: J'ai crée un bot sur Tchap qui répond à vos questions 
+title: "J'ai créé un bot sur Tchap qui répond à vos questions"
 
 # Summary for listings and search engines
 description: |
-  Revue des présentations en lien avec les travaux en _machine learning_ aux JMS de 2022
+  Retour d'expérience sur la création d'un bot Tchap branché à un grand
+  modèle de langage : de l'API Matrix bidouillée au `curl` jusqu'à la mise en prod sur
+  le SSP Cloud, avec du code prêt à copier-coller.
 
 # Date published
 date: 2026-06-15
 
 # Featured image
-# image: jms2022.png
+# image: featured.png
 
+# authors:
+#   - Prénom Nom
 
 categories:
   - Tchap
   - LLM
   - Bot
+  - Python
+  - Docker
+  - Kubernetes
 ---
 
-# Quel est le besoin ? 
-- fun 
-- au sein de l'équipe, un sous-groupe Tchap permet de poser des questions quand on a pas compris qq chose sous l'angle de la bienveillance. Idée : y brancher un bot pour qu'il puisse répondre à nos questions quand on lui demande depuis Tchap et ainsi briller en discussion d'équipe. 
+# Quel est le besoin ?
 
-Concrètement, le bot a 3 fonctionnalités : 
-- une fonctionnalité de test 
-- une fonctionnalité où il répond aux questions
-- pour le fun, une fonctionnalité mystère où il répondra à un mot clé. 
+Soyons honnêtes : au départ, c'était en partie pour le fun.
 
-# Comment faire ? 
+Dans l'équipe, on a un salon Tchap bienveillant. C'est là qu'on
+pose les questions qu'on n'ose pas poser ailleurs. Et un jour, l'idée est venue 
+de brancher un bot capable de répondre à nos questions, directement depuis
+Tchap, plutôt que d'attendre qu'un gentil collègue y réponde ou pose la question à un autre collègue qui connaît la réponse. 
+De quoi se dépanner sans déranger personne — et, accessoirement, briller en
+réunion d'équipe - tant qu'on capte dans la salle de réunion.
+
+Au final, le bot est en place (cf. [sa maison sur Github](github.com/nicotlm/tchap_bot_test/)) et fait aujourd'hui trois choses :
+
+- il **répond à un test**, histoire de vérifier qu'il est bien réveillé ;
+- il **répond à vos questions** en interrogeant un grand modèle de langage ;
+- et, pour le plaisir, il a une **fonctionnalité mystère** : il réagit en douce à un
+  mot-clé glissé dans la conversation. 🤫
+
+# Comment faire ?
+
+Le truc sympa avec Tchap, c'est sa philosophie ouverte — aux agents de l'État, en tout
+cas. Du coup, il y a pas mal de ressources qui traînent en ligne ou directement sur la
+plateforme. Trois m'ont vraiment dépanné :
+
+- le salon [Tchap - Bots et Intégrations](https://matrix.to/#/#BotsetIntgrationsTchapU2tHdMEN80D:agent.dinum.tchap.gouv.fr), où la communauté partage des questions et ses astuces ;
+- la [doc technique officielle sur les bots et intégrations](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
+- les webinaires en ligne, en particulier celui du MTES qui raconte comment ils ont
+  automatisé leur bascule de Mattermost vers Tchap. C'est-à-dire à peu près tout.
+
+C'est d'ailleurs en regardant ces présentations que j'ai eu une première découverte : dans Tchap,
+quasiment tout est automatisable. Grossièrement, le bot récupère exactement le nom et prénom du compte et
+peut envoyer des messages, réagir, suivre un fil de discussion...
+
+Tout cela passe par des appels API, un peu comme Grist ou équivalent. A partir du moment où vous êtes un 
+peu familier avec une API, c'est pas beaucoup plus compliqué de programmer un bot sur Tchap. 
+
+Côté technique, Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications utiles,
+sans compter les outils internes à l'État listés dans les ressources ci-dessus. Après avoir regardé, mes besoins étaient au fond assez
+simples, je m'en suis tenu à un petit *package* public :
+[`simplematrixbotlib`](https://pypi.org/project/simplematrixbotlib/), qui n'est lui-même
+qu'une surcouche bien pratique de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation).
+
+Je vais vous refaire le parcours pour créer facilement votre bot sur Tchap. 
+
+# Première étape : mettre en place le bot
+
+Petit avantage au démarrage : j'avais une **boîte aux lettres fonctionnelle (BALF)**
+sous la main, ce qui m'a permis de créer un compte Tchap tout neuf. Le bot n'emprunte
+donc pas mon identité. Si vous n'en avez pas, la bonne pratique, c'est de créer une
+BALF rien que pour lui.
+
+Le plus dur au début, ça a été de me repérer dans l'univers Matrix / Tchap. Pour l'apprivoiser,
+je suis retourné à la base des API avec quelques lignes de `bash` et `curl` pour taper 
+ directement sur l'API de Matrix. 
+
+## Authentification 
+Première mission : récupérer un jeton
+d'accès. En gros, vous envoyer votre identifiant et mot de passe Tchap et l'API vous donne un token. 
+Ce bout de script tourne tel quel, à condition d'avoir renseigné vos deux
+variables d'environnement :
+
+```bash
+#!/usr/bin/env bash
+# Pré-requis : export TCHAP_BOT_MATRIX_ID="..." et export TCHAP_BOT_PWD="..."
+HOMESERVER="https://matrix.agent.finances.tchap.gouv.fr"
+
+curl -X POST "$HOMESERVER/_matrix/client/v3/login" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "type": "m.login.password",
+    "password": "'"$TCHAP_BOT_PWD"'",
+    "identifier": { "type": "m.id.user", "user": "'"$TCHAP_BOT_MATRIX_ID"'" },
+    "device_id": "API"
+  }'
+```
+
+## Envoyer un message
+La première étape a été facile. La deuxième, envoyer un message, un poil plus longue (mais cela reste tout à fait raisonnable). 
+Je suis reparti des très bons examples de la documentation de [`simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
+et de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation). 
+
+Cela a été beaucoup plus simple quand j'ai compris que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : 
+tout cela, ce sont des événements (*event*) avec un identifiant unique. Concrètement, ne cherchez donc pas la 
+fonction `send_message` : vous envoyez un evénement qui est de type message. De la même manière que quand vous entrez dans
+un salon, vous envoyez un événement de type `je rentre dans ce salon Tchap`.
+
+Cela n'a pas été beaucoup plus simple par contre quand je me suis rendu compte que 
+**le chiffrement, c'est très bien, mais c'est compliqué.** Indispensable pour la sécurité,
+mais ça vous complique la vie. De ce que j'ai compris sur la manière dont Matrix marche quand il est chiffré :
+en fait, dès que vous envoyez un message, la clé de chiffrement change. Vous avez l'ancienne
+clé et le message, avec cela vous trouvez la nouvelle clé. Par contre, à partir de la clé actuelle, 
+vous ne pouvez pas voir les anciens messages. Mais vous pourrez voir les prochains. 
+
+Concrètement, cela veut dire que **le bot n'a pas accès au passé**. Il ne peut voir que les messages
+depuis qu'il a été crée. 
+
+Une fois ces idées en tête, je suis reparti de la
+[doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
+pour bâtir un cas tout simple : un bot qui répond à un mot. Vous lui dites `!coucou`,
+il vous donne l'heure. Voici un bot complet, prêt à lancer — il suffit d'avoir installé
+`simplematrixbotlib` et défini vos identifiants :
+
+```.env
+# =============================================================================
+# .env — variables d'environnement du bot Tchap
+# Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
+# (ajoutez `.env` à votre .gitignore).
+# =============================================================================
+
+# --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
+# Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
+TCHAP_BOT_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
+TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
+
+```
+
+```python
+# main.py — un bot Tchap minimal mais fonctionnel
+# uv add "matrix-nio[e2e]" simplematrixbotlib load_env
+import os
+from datetime import datetime
+from zoneinfo import ZoneInfo
+from 
+import simplematrixbotlib as botlib
+from load_env import load_env
+
+load_env() 
+
+# --- Identifiants (à passer en variables d'environnement) ---
+creds = botlib.Creds(
+    homeserver="https://matrix.agent.finances.tchap.gouv.fr",
+    username=os.environ["TCHAP_BOT_MATRIX_ID"],
+    password=os.environ["TCHAP_BOT_PWD"],
+)
+
+# --- Config : on laisse le chiffrement activé ---
+config = botlib.Config()
+config.encryption_enabled = True
+config.ignore_unverified_devices = True
+
+bot = botlib.Bot(creds, config)
+PREFIX = "!"
 
 
-L'avantage de Tchap, c'est qu'avec sa philosophie ouverte (aux agents de l'état), beaucoup de ressources sont disponibles en ligne ou sur Tchap. 
-Ce qui a beaucoup aidé : 
-- le groupe Tchap dédié au sujet
-- la page de documentation https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/
-
-J'ai regardé les webinaires mis en ligne, notamment ce que le MTES avait réussi à automatiser avec Tchap pour basculer de Mattermost à Tchap, c'est à dire quasiment tout. 
-Tchap très automatisable. Le bot prend réellement le nom et prénom de la personne. 
-
-Choix techniques :
-- plein de packages mis à disposition par Matrix ou en interne Etat. Finalement mes besoins techniques étaient assez simples donc un simple package [simplematrixbotlib](https://pypi.org/project/simplematrixbotlib/) suffisait. Ce n'est qu'un wrapper de nio. 
-
-Première étape : mettre en place le bot
-Avantage : j'ai une balf à disposition qui permet de créer un compte Tchap vierge (le bot n'aura pas mon identité). Sinon il est recommandé de créer une balf spécifique au bot. 
+@bot.listener.on_message_event
+async def echo(room, message):
+    match = botlib.MessageMatch(room, message, bot, PREFIX)
+    if match.is_not_from_this_bot() and match.command("coucou"):
+        await bot.api.send_text_message(
+            room.room_id,
+            "Coucou, il est "
+            + datetime.now(ZoneInfo("Europe/Paris")).strftime("%H:%M:%S")
+            + " à Paris.",
+        )
 
 
-Complexité : naviguer dans l'environnement Matrix / Tchap. Le déclic a été de comprendre que : 
-1 - tout était automatisable 
-2 - tout est un événement dans Matrix : c'est là qu'a eu lieu le déclic
-3 - le chiffrement c'est bien mais c'est relou. 
+if __name__ == "__main__":
+    bot.run()
+```
 
-Reparti de la doc de [simplematrixbot](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) et refait des cas d'usage simple pour mettre en place bot avec réaction à un mot (coucou).
+Je n'ai pas réussi à régler proprement la **vérification du bot** (le
+fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
+« non vérifié ». 
 
-Pas réussi à gérer : la vérification du bot.  
+## Deuxième étape : brancher un LLM
 
-Deuxième étape : brancher un LLM. 
-C'est en fait très simple d'utiliser https://llm.lab.sspcloud.fr/. 
+Bonne nouvelle : utiliser [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), c'est
+en fait super simple. Comme le service expose une API compatible OpenAI, on réutilise
+direct le *package* `openai` en pointant juste vers la bonne URL. Le snippet ci-dessous
+est complet et s'exécute tel quel :
 
-Il faut retenir qu'un échange, c'est une simple liste python dans le format du package openai 
+```python
+# pip install openai
+import os
+from openai import OpenAI
+
+client = OpenAI(
+    base_url="https://llm.lab.sspcloud.fr/api",
+    api_key=os.environ["LLM_LAB_API_KEY"],
+)
+
+
+def ask(messages: list) -> str:
+    response = client.chat.completions.create(
+        model="gemma4-26b-moe",
+        messages=messages,
+    )
+    return response.choices[0].message.content
+
+
+# --- Exemple d'utilisation ---
+if __name__ == "__main__":
+    historique = [
+        {"role": "user", "content": "Explique-moi les LLM en une phrase."},
+    ]
+    print(ask(historique))
+```
+
+Le truc à retenir, c'est qu'**un échange n'est qu'une simple liste Python**, au format
+attendu par `openai` : chaque message a un rôle et un contenu.
+
+```python
 [
-    {"role": "assistant"},
-    {"role": "user"}
+    {"role": "user", "content": "Bonjour, tu peux m'aider ?"},
+    {"role": "assistant", "content": "Bien sûr !"},
 ]
-Fun fact : une IA est un "assistant" dans la terminologie openai, pour pas faire peur :)
+```
 
-Construction petit à petit du code pour marcher depuis Python
+*Fun fact* : chez OpenAI, l'IA n'est ni un « bot » ni un « modèle », mais un
+*assistant*. Sans doute pour pas faire peur. 🙂
 
-Adopter structure de package et sous-package. 
+J'ai construit le code petit à petit pour que tout marche depuis Python, en rangeant au
+passage le tout en *package* avec des sous-modules (`config`, `core`, `listeners`).
+Histoire de pas finir avec un fichier de 800 lignes.
 
-3e étape : combiner les deux
-assez simple de créer la commande !llm et de le brancher à llm.lab.
+## Troisième étape : combiner les deux
 
-Par contre, reprendre l'historique de l'échange a pris quelques prises de tête (relatives, cela n'a duré que quelques heures) pour arriver à reconstituer proprement la conversation. 
-En effet, structure Matrix fait que, certes, les messages ont tous un ID unique, mais les balises sont très imbriquées. 
-Aide : exporter une conversation Tchap au format json a beaucoup aidé à ne pas se perdre dans les niveaux et balises.
+Créer la commande `!llm` et la brancher sur `llm.lab`, ça s'est fait sans douleur : on
+repère le préfixe, on récupère le message, on l'envoie au modèle, on renvoie la réponse.
 
-4e étape : tester en local
-adopter une structure package, utiliser uv et reproductible
+La vraie prise de tête — relative, ça n'a duré que quelques heures — c'était de
+**reconstituer le fil de la conversation** pour que le bot ait de la mémoire. Dans
+Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond
+à celui-là » est planqué dans des balises bien imbriquées
+(`content` → `m.relates_to` → `m.in_reply_to` → `event_id`).
 
-5e étape : mise en prod sur le SSPCloud
-Découverte de Docker. 
-écriture dockerfile (assez basique). Malheureusement pas possible de le tester sur le SSPCloud ou pas de docker dans le docker. 
-Mais aide de Claude code pour rédiger dockerfile. 
-Gérer les librairies spécifiques au chiffrement a été un peu pénible, mais l'IA a résolu cela rapidement.
+L'astuce qui m'a sauvé : **exporter une conversation Tchap au format JSON**. En voyant
+la vraie tête des événements, j'ai arrêté de me perdre dans les étages de balises.
+Ensuite, il suffit de remonter le fil réponse après réponse, de façon récursive. Le
+bloc ci-dessous est autonome (les fonctions utilitaires sont incluses) et prend en
+entrée un `bot`, l'`id` du salon et l'`id` du message auquel on répond :
 
-Dockerfile se génère bien à chaque push sur github par GHA. 
+```python
+import nio
+import simplematrixbotlib as botlib
 
-Ensuite contrat Kubernetes. 
-Une peur : où sont mes secrets ? 
-Assez simple avec l'IA et l'aide de l'équipe du SSPCloud. 
 
+def history_append(history=None, role="user", content="", at_first_pos=True):
+    history = history or []
+    msg = {"role": role, "content": content}
+    return [msg] + history if at_first_pos else history + [msg]
+
+
+def get_in_reply_to_event_id(event) -> str:
+    return (
+        event.source.get("content", {})
+        .get("m.relates_to", {})
+        .get("m.in_reply_to", {})
+        .get("event_id", "")
+    )
+
+
+async def get_event(bot: botlib.Bot, room_id: str, event_id: str):
+    response = await bot.async_client.room_get_event(room_id, event_id)
+    if isinstance(response, nio.RoomGetEventError):
+        print(f"  ✘ Impossible de récupérer {event_id} : {response.message}")
+        return None
+    return response.event
+
+
+async def retrieve_history(bot: botlib.Bot, room_id: str, reply_event_id: str) -> list:
+    """Remonte tout le fil, du plus ancien au plus récent."""
+    event = await get_event(bot, room_id, reply_event_id)
+    if event is None:
+        return []
+
+    body = event.source.get("content", {}).get("body", "")
+    role = "assistant" if event.sender == bot.async_client.user_id else "user"
+    parent_id = get_in_reply_to_event_id(event)
+
+    if parent_id:
+        history = await retrieve_history(bot, room_id, parent_id)
+        return history_append(history, role=role, content=body, at_first_pos=False)
+    return history_append([], role=role, content=body, at_first_pos=True)
+```
+
+Côté utilisateur, le résultat est tout bête : il suffit de **répondre** à un message du
+bot (toujours avec `!llm`) pour qu'il se souvienne de tout ce qui précède.
+
+## Quatrième étape : tester en local
+
+À ce stade, l'organisation en *package* avec [`uv`](https://docs.astral.sh/uv/) rend le
+tout reproductible et hyper agréable. Les dépendances vivent dans le `pyproject.toml`,
+et lancer le bot tient en une ligne :
+
+```bash
+uv run main.py
+```
+
+L'archi des `listeners` est volontairement modulaire : chaque fonctionnalité a son
+propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au
+démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste
+sa fonction `register` en `no_register`, et hop.
+
+## Cinquième étape : mise en prod sur le SSP Cloud
+
+Dernière marche, et pas la plus petite : faire tourner le bot en continu, sans dépendre
+de ma machine. C'est là que j'ai découvert **Docker**.
+
+Le `Dockerfile` est resté assez basique. Seul hic : impossible de le tester directement
+sur le SSP Cloud (pas de Docker dans Docker). Par contre, Claude Code m'a bien aidé à
+le rédiger. Le morceau pénible, ça a été les bibliothèques de chiffrement
+(`python-olm`, qui compile `libolm` depuis les sources) : il a fallu glisser les bons
+outils de compilation dans l'image. L'IA a réglé ça en deux temps trois mouvements.
+Voici le `Dockerfile`, utilisable tel quel :
+
+```dockerfile
+FROM python:3.13-slim
+
+# Installation de uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/uv
+WORKDIR /app
+
+# Dépendances de compilation pour python-olm (chiffrement)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential cmake \
+    && rm -rf /var/lib/apt/lists/*
+
+# Installation des dépendances du projet
+COPY pyproject.toml .
+RUN uv sync
+
+COPY . .
+CMD ["uv", "run", "main.py"]
+```
+
+L'image se reconstruit toute seule à chaque `push` sur GitHub, grâce à une *GitHub
+Action* qui la pousse ensuite sur Docker Hub :
+
+```yaml
+# .github/workflows/deploy.yaml
+name: Build and push Docker image
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v4
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Build and push
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest
+```
+
+Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. Mon
+angoisse du moment : *mais où sont mes secrets ?* (identifiants Tchap, clé d'API du
+LLM). Là encore, l'IA et l'équipe du SSP Cloud m'ont guidé. Les secrets sont injectés en
+variables d'environnement via des `secretKeyRef`, et un petit volume persistant garde le
+fichier de session entre deux redémarrages. Le manifeste ci-dessous s'applique avec
+`kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
+`${DOCKERHUB_USERNAME}` substituées :
+
+```yaml
+# k8s/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tchap-bot
+  namespace: user-${SSP_USERNAME}
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: tchap-bot
+  template:
+    metadata:
+      labels:
+        app: tchap-bot
+    spec:
+      containers:
+        - name: tchap-bot
+          image: ${DOCKERHUB_USERNAME}/tchap-bot:latest
+          imagePullPolicy: Always
+          env:
+            - name: TCHAP_BOT_SSPHUB_MATRIX_ID
+              valueFrom:
+                secretKeyRef:
+                  name: tchap-bot-secrets
+                  key: TCHAP_BOT_SSPHUB_MATRIX_ID
+            - name: TCHAP_BOT_SSPHUB_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: tchap-bot-secrets
+                  key: TCHAP_BOT_SSPHUB_PWD
+            - name: LLM_LAB_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: tchap-bot-secrets
+                  key: LLM_LAB_API_KEY
+          volumeMounts:
+            - name: bot-data
+              mountPath: /app/session
+      volumes:
+        - name: bot-data
+          persistentVolumeClaim:
+            claimName: tchap-bot-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: tchap-bot-pvc
+  namespace: user-${SSP_USERNAME}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
+
+Et voilà le travail : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos
+questions dans le salon de l'équipe, et qui garde même le fil de la discussion en
+mémoire. Pas mal, pour un projet parti d'un « tiens, et si on s'amusait un peu ? ».
 
 # Ressources
-le git du bot : https://github.com/nicotlm/tchap_bot_test/
+
+Pour aller plus loin ou refaire l'expérience chez vous :
+
+- le code source complet du bot : <https://github.com/nicotlm/tchap_bot_test/>
+- la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
+- la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
+- le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ;
+- et, bien sûr, le salon Tchap dédié aux bots, pour papoter avec la communauté.
+
+<!-- 
+```dotenv
+# =============================================================================
+# .env — variables d'environnement du bot Tchap
+# Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
+# (ajoutez `.env` à votre .gitignore).
+# =============================================================================
+
+# --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
+# Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
+TCHAP_BOT_SSPHUB_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
+TCHAP_BOT_SSPHUB_PWD="votre_mot_de_passe_tchap"
+
+# --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
+LLM_LAB_API_KEY="votre_cle_api_llm_lab"
+
+# --- Salon(s) Tchap surveillé(s) ------------------------------------------
+# Toute variable commençant par TCHAP_ROOM_ID est prise en compte.
+# Pour plusieurs salons : TCHAP_ROOM_ID_1, TCHAP_ROOM_ID_2, etc.
+TCHAP_ROOM_ID="!identifiantDuSalon:agent.finances.tchap.gouv.fr"
+
+# --- Déploiement (CI/CD + Kubernetes) -------------------------------------
+# Utilisés par la GitHub Action et la substitution du manifeste k8s.
+DOCKERHUB_USERNAME="votre_compte_dockerhub"
+DOCKERHUB_TOKEN="votre_token_dockerhub"
+SSP_USERNAME="votre_identifiant_sspcloud"
+
+``` -->
