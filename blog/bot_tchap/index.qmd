@@ -1,0 +1,93 @@
+---
+title: J'ai crée un bot sur Tchap qui répond à vos questions 
+
+# Summary for listings and search engines
+description: |
+  Revue des présentations en lien avec les travaux en _machine learning_ aux JMS de 2022
+
+# Date published
+date: 2026-06-15
+
+# Featured image
+# image: jms2022.png
+
+
+categories:
+  - Tchap
+  - LLM
+  - Bot
+---
+
+# Quel est le besoin ? 
+- fun 
+- au sein de l'équipe, un sous-groupe Tchap permet de poser des questions quand on a pas compris qq chose sous l'angle de la bienveillance. Idée : y brancher un bot pour qu'il puisse répondre à nos questions quand on lui demande depuis Tchap et ainsi briller en discussion d'équipe. 
+
+Concrètement, le bot a 3 fonctionnalités : 
+- une fonctionnalité de test 
+- une fonctionnalité où il répond aux questions
+- pour le fun, une fonctionnalité mystère où il répondra à un mot clé. 
+
+# Comment faire ? 
+
+
+L'avantage de Tchap, c'est qu'avec sa philosophie ouverte (aux agents de l'état), beaucoup de ressources sont disponibles en ligne ou sur Tchap. 
+Ce qui a beaucoup aidé : 
+- le groupe Tchap dédié au sujet
+- la page de documentation https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/
+
+J'ai regardé les webinaires mis en ligne, notamment ce que le MTES avait réussi à automatiser avec Tchap pour basculer de Mattermost à Tchap, c'est à dire quasiment tout. 
+Tchap très automatisable. Le bot prend réellement le nom et prénom de la personne. 
+
+Choix techniques :
+- plein de packages mis à disposition par Matrix ou en interne Etat. Finalement mes besoins techniques étaient assez simples donc un simple package [simplematrixbotlib](https://pypi.org/project/simplematrixbotlib/) suffisait. Ce n'est qu'un wrapper de nio. 
+
+Première étape : mettre en place le bot
+Avantage : j'ai une balf à disposition qui permet de créer un compte Tchap vierge (le bot n'aura pas mon identité). Sinon il est recommandé de créer une balf spécifique au bot. 
+
+
+Complexité : naviguer dans l'environnement Matrix / Tchap. Le déclic a été de comprendre que : 
+1 - tout était automatisable 
+2 - tout est un événement dans Matrix : c'est là qu'a eu lieu le déclic
+3 - le chiffrement c'est bien mais c'est relou. 
+
+Reparti de la doc de [simplematrixbot](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) et refait des cas d'usage simple pour mettre en place bot avec réaction à un mot (coucou).
+
+Pas réussi à gérer : la vérification du bot.  
+
+Deuxième étape : brancher un LLM. 
+C'est en fait très simple d'utiliser https://llm.lab.sspcloud.fr/. 
+
+Il faut retenir qu'un échange, c'est une simple liste python dans le format du package openai 
+[
+    {"role": "assistant"},
+    {"role": "user"}
+]
+Fun fact : une IA est un "assistant" dans la terminologie openai, pour pas faire peur :)
+
+Construction petit à petit du code pour marcher depuis Python
+
+Adopter structure de package et sous-package. 
+
+3e étape : combiner les deux
+assez simple de créer la commande !llm et de le brancher à llm.lab.
+
+Par contre, reprendre l'historique de l'échange a pris quelques prises de tête (relatives, cela n'a duré que quelques heures) pour arriver à reconstituer proprement la conversation. 
+En effet, structure Matrix fait que, certes, les messages ont tous un ID unique, mais les balises sont très imbriquées. 
+Aide : exporter une conversation Tchap au format json a beaucoup aidé à ne pas se perdre dans les niveaux et balises.
+
+4e étape : tester en local
+adopter une structure package, utiliser uv et reproductible
+
+5e étape : mise en prod sur le SSPCloud
+Découverte de Docker. 
+écriture dockerfile (assez basique). Malheureusement pas possible de le tester sur le SSPCloud ou pas de docker dans le docker. 
+Mais aide de Claude code pour rédiger dockerfile. 
+Gérer les librairies spécifiques au chiffrement a été un peu pénible, mais l'IA a résolu cela rapidement.
+
+Dockerfile se génère bien à chaque push sur github par GHA. 
+
+Ensuite contrat Kubernetes. 
+Une peur : où sont mes secrets ? 
+Assez simple avec l'IA et l'aide de l'équipe du SSPCloud. 
+
+
