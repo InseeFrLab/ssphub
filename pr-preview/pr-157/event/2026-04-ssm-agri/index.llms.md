@@ -1,0 +1,7 @@
+Le SSM Agriculture a mené un PoC pour que des LLM génèrent des commentaires sur l’évolution d’indicateurs agricoles à partir de graphiques. Si l’approche semblait prometteuse pour produire un premier jet que les analystes pourraient ensuite affiner, un premier point d’étape a mis en évidence des limites importantes (erreurs fréquentes sur les valeurs numériques, inversions de tendances, comparaisons incorrectes entre territoires …).
+
+Dans le cadre d’un travail de recherche, un étudiant de l’Ecole polytechnique a travaillé à rendre plus robuste cette expérimentation sous la supervision d’une chercheuse de l’INRIA. Il a ainsi mis en place un cadre d’analyse pour quantifier les erreurs et proposé des améliorations pour répondre aux défauts identifiés.
+
+**Ils nous présenteront ainsi leurs travaux le mardi 14 avril à 14h**, en [visio](https://visio.numerique.gouv.fr/wvv-cwou-ugn) et en présentiel à l’Insee (en salle 4C-458). La présentation devrait durer 30 minutes. Tout le monde est le bienvenu !
+
+Si vous voulez l’ajouter dans votre agenda, voici une [invitation agenda](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-04-ssmagri/202604_generationtxtgraphique.ics).
