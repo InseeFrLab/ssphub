@@ -194,38 +194,69 @@ fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
 Bonne nouvelle : utiliser [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), c'est
 en fait super simple. 
 Comme le service expose une API compatible OpenAI, il suffit de réutiliser le *package* `openai`
-en pointant juste vers la bonne URL. Le snippet ci-dessous
+en pointant juste vers la bonne URL. On ajoute le package `openai`, on va chercher sa clé API de [llm.lab](https://llm.lab.sspcloud.fr) 
+en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key) qu'on 
+stocke sous dans le `dotenv` sous `LLM_LAB_API_KEY`. Après, le snippet ci-dessous
 est complet et s'exécute tel quel :
+
+```dotenv
+# =============================================================================
+# .env — variables d'environnement
+# Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
+# (ajoutez `.env` à votre .gitignore).
+# =============================================================================
+
+# --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
+LLM_LAB_API_KEY="votre_cle_api_llm_lab"
+
+```
 
 ```python
 # uv add openai
 import os
 from openai import OpenAI
+from dotenv import load_dotenv
 
+load_dotenv()
+model_name = "gemma4-26b-moe"
 client = OpenAI(
     base_url="https://llm.lab.sspcloud.fr/api",
-    api_key=os.environ["LLM_LAB_API_KEY"],
+    api_key=os.environ.get("LLM_LAB_API_KEY", ""),
 )
 
 
-def ask(messages: list) -> str:
+def h_append(role, content):
+    history.append({"role": role, "content": content})
+    return history
+
+
+def ask(question: str):
+    h_append("user", question)
+
     response = client.chat.completions.create(
-        model="gemma4-26b-moe",
-        messages=messages,
+        model=model_name,
+        messages=history,
     )
-    return response.choices[0].message.content
+
+    answer = response.choices[0].message.content
+    h_append("assistant", answer)
+    return answer
 
 
 # --- Exemple d'utilisation ---
 if __name__ == "__main__":
-    historique = [
-        {"role": "user", "content": "Explique-moi les LLM en une phrase."},
-    ]
-    print(ask(historique))
+    while True:
+        history = []
+        question = input("You : ")
+        if question.lower() == "quit":
+            break
+
+        print(f"Bot : {ask(question)}")
 ```
 
 Le truc à retenir, c'est qu'**un échange n'est qu'une simple liste Python**, au format
-attendu par `openai` : chaque message a un rôle et un contenu.
+attendu par `openai` : chaque message est un dictionnaire avec un rôle stocké dans la clé `role` 
+et le contenu stocké, étonnament, dans la clé `content`.
 
 ```python
 [
@@ -239,12 +270,52 @@ attendu par `openai` : chaque message a un rôle et un contenu.
 
 **Vous avez maintenant de quoi envoyer des requêtes à un LLM.**
 
-J'ai construit le code petit à petit pour que tout marche depuis Python, en rangeant au
-passage le tout en *package* avec des sous-modules (`config`, `core`, `listeners`).
+```bash
+onyxia@vscode-python-308181-0:~/work$ uv run main.py 
+You : Bonjour
+Bot : Bonjour ! Comment puis-je vous aider aujourd'hui ?
+You : Je voudrais parler avec une IA
+Bot : Bonjour ! Vous y êtes. Je suis une intelligence artificielle, prête à discuter avec vous.
+
+De quoi aimeriez-vous parler ? Je peux vous aider dans de nombreux domaines, par exemple :
+
+1.  **Discuter tout simplement** (échanger des idées, philosopher, ou parler de votre journée).
+2.  **Apprendre quelque chose** (histoire, science, langue étrangère, etc.).
+3.  **Aide créative** (écrire un poème, une histoire, des paroles de chanson ou un email).
+4.  **Résoudre des problèmes** (mathématiques, code informatique, conseils pratiques).
+5.  **Organisation** (planifier un voyage, créer un menu de la semaine, rédiger un CV).
+
+Dites-moi ce qui vous passe par la tête ! Je vous écoute.
+You : quit
+```
+
+## Troisième étape : préparer la quatrième étape
+
+Là je triche, je n'ai pas suivi cet ordre là mais j'aurai dû le suivre pour faire un truc propre.
+Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l'ordre des 
+aiguilles d'une montre.
+
+Donc, maintenant, avant de combiner les deux, j'aurai dû construire le code petit à petit pour 
+que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules 
+(`config`, `core`, `listeners`).
 Un petit coup d'IA a permis de rédiger le code d'initialisation qui charge tous les 
 `listeners` à partir des scripts dans le dossier `listeners`.
 
-## Troisième étape : combiner les deux
+À ce stade, l'organisation en *package* avec [`uv`](https://docs.astral.sh/uv/) rend le
+tout reproductible. Les dépendances vivent dans le `pyproject.toml`,
+et lancer le bot tient en une ligne :
+
+```bash
+uv run main.py
+```
+
+L'archi des `listeners` est volontairement modulaire : chaque fonctionnalité a son
+propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au
+démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste
+sa fonction `register` en `no_register`, et hop.
+
+
+## Quatrième étape : combiner les deux
 
 Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**. 
 
@@ -289,9 +360,9 @@ Voici l'échange ci-dessus au format JSON Matrix :
 },
 {
     "content": {
-    "body": "Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.\n\n**L'Or de l'Été**\n\nLe ciel est un miroir où l'azur s'est figé,\nUn dôme de cristal, sans ombre et sans haleine,\nOù le soleil, puissant, dans sa course souveraine,\nVient dorer le limon d'un feu pur et sacré.\n\nL'air tremble de chaleur en un souffle chargé,\nLa terre boit le feu de la flamme sereine,\nEt l'horizon s'efface en une onde lointaine,\nSous l'éclat du midi par l'astre partagé.\n\nOn aime ce repos, ce silence pesant,\nOù le monde s'endort, de lumière enivré,\nDans l'étreinte d'un jour, de feu et d'or vêtu.\n\nLe temps semble suspendu, le souffle est lent, vivant,\nDans ce règne de feu, de beauté devenu,\nOù l'éclat du soleil a tout le monde éperdu.",
+    "body": "Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.\n\nJE VOUS PASSE LA FIN DE CE SONNET",
     "format": "org.matrix.custom.html",
-    "formatted_body": "<p>Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.</p>\n<p><strong>L'Or de l'Été</strong></p>\n<p>Le ciel est un miroir où l'azur s'est figé,<br />\nUn dôme de cristal, sans ombre et sans haleine,<br />\nOù le soleil, puissant, dans sa course souveraine,<br />\nVient dorer le limon d'un feu pur et sacré.</p>\n<p>L'air tremble de chaleur en un souffle chargé,<br />\nLa terre boit le feu de la flamme sereine,<br />\nEt l'horizon s'efface en une onde lointaine,<br />\nSous l'éclat du midi par l'astre partagé.</p>\n<p>On aime ce repos, ce silence pesant,<br />\nOù le monde s'endort, de lumière enivré,<br />\nDans l'étreinte d'un jour, de feu et d'or vêtu.</p>\n<p>Le temps semble suspendu, le souffle est lent, vivant,<br />\nDans ce règne de feu, de beauté devenu,<br />\nOù l'éclat du soleil a tout le monde éperdu.</p>",
+    "formatted_body": "<p>Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.</p>\n<p>JE VOUS PASSE LA FIN DE CE SONNET",
     "m.relates_to": {
         "m.in_reply_to": {
         "event_id": "$DGvRZB3GL8brmKFqBZEOASDLxL8d8"
@@ -325,7 +396,7 @@ Voici l'échange ci-dessus au format JSON Matrix :
 },
 {
     "content": {
-    "body": "Comme tu n'as pas précisé le texte initial, je vais imaginer que tu souhaites une description poétique ou une analyse de la **vie**, de la **douceur** ou d'un **nouveau départ**, en y intégrant des métaphores hivernales.\n\nVoici une proposition de texte enrichi de comparaisons avec l'hiver BLABLABLABLA",
+    "body": "Comme tu n'as pas précisé le texte initial, je vais imaginer que tu souhaites une description poétique ou une analyse de la **vie**, de la **douceur** ou d'un **nouveau départ**, en y intégrant des métaphores hivernales.\n\nVoici une proposition de texte enrichi de comparaisons avec l'hiver JE VOUS PASSE LA FIN DE CE MESSAGE",
     "m.relates_to": {
         "m.in_reply_to": {
         "event_id": "$Zkuyln4UY3x29vHRIKZ0"
@@ -343,7 +414,7 @@ Voici l'échange ci-dessus au format JSON Matrix :
 
 ```
 
-Ensuite, il suffit de remonter le fil réponse après réponse, de façon récursive. Le
+Ensuite, il "suffit" de remonter le fil réponse après réponse, de façon récursive. Le
 bloc ci-dessous est autonome (les fonctions utilitaires sont incluses) et prend en
 entrée un `bot`, l'`id` du salon et l'`id` du message auquel on répond :
 
@@ -396,20 +467,6 @@ bot (toujours avec `!llm`) pour qu'il se souvienne de tout ce qui précède.
 
 ![Tatam](endfull_loop.png)
 
-## Quatrième étape : tester en local
-
-À ce stade, l'organisation en *package* avec [`uv`](https://docs.astral.sh/uv/) rend le
-tout reproductible. Les dépendances vivent dans le `pyproject.toml`,
-et lancer le bot tient en une ligne :
-
-```bash
-uv run main.py
-```
-
-L'archi des `listeners` est volontairement modulaire : chaque fonctionnalité a son
-propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au
-démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste
-sa fonction `register` en `no_register`, et hop.
 
 ## Cinquième étape : mise en prod sur le SSP Cloud
 
