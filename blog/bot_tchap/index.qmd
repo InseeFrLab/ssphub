@@ -1,10 +1,10 @@
 ---
-title: "J'ai créé un bot sur Tchap qui répond à vos questions"
+title: "Bref, j'ai créé un bot sur Tchap qui répond à vos questions"
 
 # Summary for listings and search engines
 description: |
   Retour d'expérience sur la création d'un bot Tchap branché à un grand
-  modèle de langage : de l'API Matrix bidouillée au `curl` jusqu'à la mise en prod sur
+  modèle de langage : de l'API Matrix au `curl` jusqu'à la mise en prod sur
   le SSP Cloud, avec du code prêt à copier-coller.
 
 # Date published
@@ -23,6 +23,10 @@ categories:
   - Python
   - Docker
   - Kubernetes
+
+format: 
+  html:
+    code-overflow: wrap
 ---
 
 # Quel est le besoin ?
@@ -127,7 +131,7 @@ pour bâtir un cas tout simple : un bot qui répond à un mot. Vous lui dites `c
 il vous donne l'heure. Voici un bot complet, prêt à lancer — il suffit d'avoir installé
 les packages nécessaires avec `uv add` et défini vos identifiants dans un dotenv:
 
-```.env
+```{.python filename=".env"}
 # =============================================================================
 # .env — variables d'environnement du bot Tchap
 # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
@@ -141,7 +145,9 @@ TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
 
 ```
 
-```python
+```{.python filename="main.py"}
+#| code-fold: true
+
 # main.py — un bot Tchap minimal mais fonctionnel
 # uv add "matrix-nio[e2e]" simplematrixbotlib dotenv
 import os
@@ -199,7 +205,7 @@ en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-
 stocke sous dans le `dotenv` sous `LLM_LAB_API_KEY`. Après, le snippet ci-dessous
 est complet et s'exécute tel quel :
 
-```dotenv
+```{.python filename=".env"}
 # =============================================================================
 # .env — variables d'environnement
 # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
@@ -211,7 +217,8 @@ LLM_LAB_API_KEY="votre_cle_api_llm_lab"
 
 ```
 
-```python
+```{.python filename="main.py"}
+#| code-fold: true
 # uv add openai
 import os
 from openai import OpenAI
@@ -271,7 +278,7 @@ et le contenu stocké, étonnament, dans la clé `content`.
 **Vous avez maintenant de quoi envoyer des requêtes à un LLM.**
 
 ```bash
-onyxia@vscode-python-308181-0:~/work$ uv run main.py 
+onyxia@vscode-python-118218-0:~/work$ uv run main.py 
 You : Bonjour
 Bot : Bonjour ! Comment puis-je vous aider aujourd'hui ?
 You : Je voudrais parler avec une IA
@@ -319,7 +326,7 @@ sa fonction `register` en `no_register`, et hop.
 
 Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**. 
 
-On crée une commande `!llm` maintenant et on la branche sur `llm.lab`. 
+On crée une commande `llm` maintenant et on la branche sur `llm.lab`. 
 Cela se fait avec un peu de douleur mais rien que l'on aime pas : on
 repère le préfixe, on récupère le message, on l'envoie au modèle, on renvoie la réponse.
 
@@ -339,36 +346,37 @@ L'astuce pour ne pas rester perdu trop longtemps : **exporter une conversation T
 la vraie tête des événements, je me suis moins perdu dans les étages de balises.
 
 Voici l'échange ci-dessus au format JSON Matrix : 
-```json
 
+```{.python}
+#| code-fold: true
 {
     "content": {
-    "msgtype": "m.text",
-    "body": "!llm écris moi un sonnet sur la beauté des canicules",
-    "m.mentions": {}
+        "msgtype": "m.text",
+        "body": "llm écris moi un sonnet sur la beauté des canicules",
+        "m.mentions": {}
     },
     "origin_server_ts": 1780409269941,
     "sender": "@n-insee.fr:agent.finances.tchap.gouv.fr",
     "type": "m.room.message",
     "unsigned": {
-    "membership": "join",
-    "age": 854394,
-    "transaction_id": "m1780409269135.40"
+        "membership": "join",
+        "age": 854394,
+        "transaction_id": "m1780409269135.40"
     },
     "event_id": "$DGvRZB3GL8brmKFqBZEOASDLxL8d8",
     "room_id": "!UDagJdADqqUSKBW:agent.finances.tchap.gouv.fr"
 },
 {
     "content": {
-    "body": "Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.\n\nJE VOUS PASSE LA FIN DE CE SONNET",
-    "format": "org.matrix.custom.html",
-    "formatted_body": "<p>Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.</p>\n<p>JE VOUS PASSE LA FIN DE CE SONNET",
-    "m.relates_to": {
-        "m.in_reply_to": {
-        "event_id": "$DGvRZB3GL8brmKFqBZEOASDLxL8d8"
-        }
-    },
-    "msgtype": "m.text"
+        "body": "Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.\n\nJE VOUS PASSE LA FIN DE CE SONNET",
+        "format": "org.matrix.custom.html",
+        "formatted_body": "<p>Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.</p>\n<p>JE VOUS PASSE LA FIN DE CE SONNET",
+        "m.relates_to": {
+            "m.in_reply_to": {
+                "event_id": "$DGvRZB3GL8brmKFqBZEOASDLxL8d8"
+            }
+        },
+        "msgtype": "m.text"
     },
     "origin_server_ts": 1780409279931,
     "sender": "@bot-insee.fr:agent.finances.tchap.gouv.fr",
@@ -379,30 +387,30 @@ Voici l'échange ci-dessus au format JSON Matrix :
 },
 {
     "content": {
-    "msgtype": "m.text",
-    "body": "!llm merci, ajoute y des comparaisons avec l'hiver",
-    "m.mentions": {}
+        "msgtype": "m.text",
+        "body": "llm merci, ajoute y des comparaisons avec l'hiver",
+        "m.mentions": {}
     },
     "origin_server_ts": 1780409290426,
     "sender": "@n-insee.fr:agent.finances.tchap.gouv.fr",
     "type": "m.room.message",
     "unsigned": {
-    "membership": "join",
-    "age": 833909,
-    "transaction_id": "m1780409289583.41"
+        "membership": "join",
+        "age": 833909,
+        "transaction_id": "m1780409289583.41"
     },
     "event_id": "$Zkuyln4UY3x29vHRIKZ0",
     "room_id": "!UDagJdADqqUSKBW:agent.finances.tchap.gouv.fr"
 },
 {
     "content": {
-    "body": "Comme tu n'as pas précisé le texte initial, je vais imaginer que tu souhaites une description poétique ou une analyse de la **vie**, de la **douceur** ou d'un **nouveau départ**, en y intégrant des métaphores hivernales.\n\nVoici une proposition de texte enrichi de comparaisons avec l'hiver JE VOUS PASSE LA FIN DE CE MESSAGE",
-    "m.relates_to": {
-        "m.in_reply_to": {
-        "event_id": "$Zkuyln4UY3x29vHRIKZ0"
-        }
-    },
-    "msgtype": "m.text"
+        "body": "Comme tu n'as pas précisé le texte initial, je vais imaginer que tu souhaites une description poétique ou une analyse de la **vie**, de la **douceur** ou d'un **nouveau départ**, en y intégrant des métaphores hivernales.\n\nVoici une proposition de texte enrichi de comparaisons avec l'hiver JE VOUS PASSE LA FIN DE CE MESSAGE",
+        "m.relates_to": {
+            "m.in_reply_to": {
+                "event_id": "$Zkuyln4UY3x29vHRIKZ0"
+            }
+        },
+        "msgtype": "m.text"
     },
     "origin_server_ts": 1780409294370,
     "sender": "@bot-insee.fr:agent.finances.tchap.gouv.fr",
@@ -414,22 +422,95 @@ Voici l'échange ci-dessus au format JSON Matrix :
 
 ```
 
-Ensuite, il "suffit" de remonter le fil réponse après réponse, de façon récursive. Le
-bloc ci-dessous est autonome (les fonctions utilitaires sont incluses) et prend en
+Ensuite, il "suffit" de remonter le fil réponse après réponse, de façon récursive.
+Il faut aussi, à partir de l'ID d'un événement, il faut : 
+- récupérer l'événement (aka : le message);
+- avec l'événement, déterminer qui de l'humain ou de l'"assistant" a envoyé le message;
+- extraire le contenu;
+- stocker tout cela dans l'historique;
+- savoir si lui même est en réponse à un événement
+- et puis on boucle, et on boucle, et on boucle. 
+
+Par ailleurs, Tchap permet de formatter son message : soit vous êtes une/un boss et vous
+l'écrivez directement en html, soit vous l'écrivez en markdown et Tchap le transformera 
+en html pour vous. 
+
+Pour que la réponse de notre assistant préféré passe bien dans Tchap, il faut lui ajouter un prompt 
+système qui demande de répondre en markdown sans échapper les caractères spéciaux. 
+
+Après, il faut gérer les problèmes de fonction `async` dans Python. 
+Je n'ai pas tout compris mais ce que j'ai compris c'est que les demandes "compliquées", 
+c'est à dire dont la réponse peut prendre un peu de temps, on met un `await` devant. 
+Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf le blabla sur le chiffrement), 
+donc quand on récupère un message de l'API de `nio` on doit indiquer `await bot.async_client.room_get_event`.
+
+Et `await`, ce petit coquin, se propage. C'est à dire qu'une fonction qui comprend un `await` sera
+une fonction `async` qu'on définit en `async def get_event`.
+Et ainsi toute fonction qui appelerait `get_event` devrait le faire avec un `await get_event` 
+et serait elle-même `async`.
+
+Une fois tout cela compris, avec l'aide d'un assistant bien-tombé, on arrive à ce bloc ci-dessous.
+Il est autonome (les fonctions utilitaires sont incluses) et prend en
 entrée un `bot`, l'`id` du salon et l'`id` du message auquel on répond :
 
-```python
+```{.python filename="main.py"}
+#| code-fold: true
+import os
+from openai import OpenAI
+from dotenv import load_dotenv
 import nio
 import simplematrixbotlib as botlib
 
+load_dotenv()
 
-def history_append(history=None, role="user", content="", at_first_pos=True):
-    history = history or []
-    msg = {"role": role, "content": content}
-    return [msg] + history if at_first_pos else history + [msg]
+# Partie bot 
+# --- Identifiants (à passer en variables d'environnement) ---
+creds = botlib.Creds(
+    homeserver="https://matrix.agent.finances.tchap.gouv.fr",
+    username=os.environ["TCHAP_BOT_MATRIX_ID"],
+    password=os.environ["TCHAP_BOT_PWD"],
+)
+
+# --- Config : on laisse le chiffrement activé ---
+config = botlib.Config()
+config.encryption_enabled = True
+config.ignore_unverified_devices = True
+
+bot = botlib.Bot(creds, config)
+
+# Partie LLM
+end_point = "https://llm.lab.sspcloud.fr/api"
+
+openai_client = OpenAI(
+    base_url=end_point,
+    api_key=os.environ.get("LLM_LAB_API_KEY", ""),
+)
 
 
-def get_in_reply_to_event_id(event) -> str:
+def history_append(
+    history: list | None = None,
+    role: str = "user",
+    content: str = "",
+    at_first_pos: bool = True,
+):
+    """
+    Function to add a message to history with role and content
+    Args:
+        - history: list : the history to append the message to
+        - role: str : the role to give to the message
+        - content: str : the content of the message
+        - at_first_pos: boolean : append at first position (top) or at the end
+    """
+    if history is None:
+        history = []
+
+    if at_first_pos:
+        return [{"role": role, "content": content}] + history
+    else:
+        return history + [{"role": role, "content": content}]
+
+
+def get_in_reply_to_event_id(event):
     return (
         event.source.get("content", {})
         .get("m.relates_to", {})
@@ -438,49 +519,211 @@ def get_in_reply_to_event_id(event) -> str:
     )
 
 
-async def get_event(bot: botlib.Bot, room_id: str, event_id: str):
-    response = await bot.async_client.room_get_event(room_id, event_id)
-    if isinstance(response, nio.RoomGetEventError):
-        print(f"  ✘ Impossible de récupérer {event_id} : {response.message}")
-        return None
-    return response.event
+def get_role_event(event, bot):
+    if event.sender == bot.async_client.user_id:
+        return "assistant"
+    else:
+        return "user"
+
+
+def extract_info(event) -> tuple | None:
+    """
+    Extract info from event.  Returns sender, body, and replied-to event ID
+    """
+
+    content = event.source.get("content", {})
+
+    sender = event.sender
+    body = content.get("body")
+    replied_to_id = get_in_reply_to_event_id(event=event)
+
+    return (sender, body, replied_to_id)
+
+
+def get_model_name():
+    model_name = "gemma4-26b-moe"
+    return model_name
+
+
+def add_system_prompt(history: list):
+    history_with_system_prompt = history_append(
+        history=history,
+        role="system",
+        content="Respond with  markdown formatting. Do not use escape characters.",
+        at_first_pos=True,
+    )
+
+    return history_with_system_prompt
+
+
+def ask(prompt: list):
+    response = openai_client.chat.completions.create(
+        model=get_model_name(),
+        messages=prompt,
+    )
+
+    answer = response.choices[0].message.content
+    return answer
+
+
+@bot.listener.on_message_event
+async def tchat_with_llm(room, message):
+    match = botlib.MessageMatch(room, message, bot)
+    command = "llm"
+    if match.is_not_from_this_bot() and match.command(command):
+        prompt = await generate_prompt(bot, room.room_id, match=match)
+        first = command
+        prompt = clean_prompt(prompt, first)
+        # Prod mode
+        response_llm = ask(prompt=prompt)
+        await bot.api.send_markdown_message(
+            room_id=room.room_id,
+            message=response_llm,
+            reply_to=match.event.event_id,
+        )
+
+        # Debug mode
+        # response_llm = "\n\n".join(str(d) for d in prompt)
+        # await bot.api.send_text_message(
+        #     room_id=room.room_id,
+        #     message=response_llm,
+        #     reply_to=match.event.event_id,
+        # )
+
+
+async def generate_prompt(bot: botlib.Bot, room_id: str, match):
+    """
+    Function to generate the full prompt from an event id
+    Arg:
+        - bot: botlib.Bot
+        - room_id: str : the Matrix room id where the message is
+        - match: a simplebot match
+    Returns:
+        - a list with history, from oldest to newest
+    """
+    history = history_append(
+        history=[], role="user", content=match.event.body, at_first_pos=True
+    )
+
+    reply_id = get_in_reply_to_event_id(match.event)
+
+    if reply_id != "":
+        history = (
+            await retrieve_history(bot, room_id, reply_event_id=reply_id) + history
+        )
+
+    prompt = add_system_prompt(history)
+
+    return prompt
+
+
+def clean_prompt(prompt: list, pattern_start: str):
+    """
+    Removes characters at the beginning of a prompt that match the pattern
+    """
+    n_pattern = len(pattern_start)
+    return [
+        {**chat, "content": chat["content"][n_pattern + 1 :]}
+        if chat["content"].startswith(pattern_start)
+        else chat
+        for chat in prompt
+    ]
 
 
 async def retrieve_history(bot: botlib.Bot, room_id: str, reply_event_id: str) -> list:
-    """Remonte tout le fil, du plus ancien au plus récent."""
+    """
+    Retrieves full history of chat in this discussion between the LLM and the user.
+    History is defined by message being sent in reply to a message
+    Args :
+    - bot : the botlib bot. Used to fetch back other message
+    - room_id : the room to search for past message
+    - reply_event_id: the id of the message replied to
+    """
+
     event = await get_event(bot, room_id, reply_event_id)
     if event is None:
         return []
 
-    body = event.source.get("content", {}).get("body", "")
-    role = "assistant" if event.sender == bot.async_client.user_id else "user"
-    parent_id = get_in_reply_to_event_id(event)
+    sender, body, reply_id_level2 = extract_info(event)
+    role = get_role_event(event=event, bot=bot)
 
-    if parent_id:
-        history = await retrieve_history(bot, room_id, parent_id)
-        return history_append(history, role=role, content=body, at_first_pos=False)
-    return history_append([], role=role, content=body, at_first_pos=True)
+    if reply_id_level2 != "":
+        history = await retrieve_history(bot, room_id, reply_id_level2)
+        return history_append(
+            history=history, role=role, content=body, at_first_pos=False
+        )
+    else:
+        return history_append(history=[], role=role, content=body, at_first_pos=True)
+
+
+async def get_event(bot: botlib.Bot, room_id: str, event_id: str):
+    """
+    Fetches an event by ID and returns it.
+    Returns None if the event could not be fetched.
+    """
+    response = await bot.async_client.room_get_event(room_id, event_id)
+
+    if isinstance(response, nio.RoomGetEventError):
+        print(f"  ✘ Could not fetch event {event_id}: {response.message}")
+        return None
+
+    return response.event
+
+
+# --- Exemple d'utilisation ---
+if __name__ == "__main__":
+    bot.run()
+
 ```
 
 Côté utilisateur, le résultat est tout bête : il suffit de **répondre** à un message du
-bot (toujours avec `!llm`) pour qu'il se souvienne de tout ce qui précède.
+bot (toujours en commençant par `llm`) pour qu'il se souvienne de tout ce qui précède.
 
+
+::: {.callout-note}
+
+Pour la simplicité de ce post, j'ai simplifié le contenu du repo.
+Il n'y a pas d'organisation en package Python ici, tout est *peu proprement* placé dans un seul script `main.py`.
+Allez voir le repo pour une cible plus propre. 
+
+:::
+
+
+On lance à nouveau le bot avec un `uv run main.py`. 
+
+```bash 
+onyxia@vscode-python-118218-0:~/work$ uv run main.py 
+Connected to https://matrix.agent.finances.tchap.gouv.fr as @bot-insee.fr:agent.finances.tchap.gouv.fr (XXXXXX)
+This bot's public fingerprint ("Session key") for one-sided verification is: MXte gC/K MXte gC/K MXte gC/K MXte gC/K MXte gC/K 1A1
+```
 ![Tatam](endfull_loop.png)
 
 
-## Cinquième étape : mise en prod sur le SSP Cloud
+## Cinquième étape : mise en production sur le SSP Cloud
 
 Dernière marche, et pas la plus petite : faire tourner le bot en continu, sans dépendre
-de ma machine. C'est là que j'ai découvert **Docker**.
+de ma machine. L'équipe du SSP Cloud m'a bien guidé (et mon assistant IA préféré aussi).
 
-Le `Dockerfile` est resté assez basique. Seul hic : impossible de le tester directement
-sur le SSP Cloud (pas de Docker dans Docker). Par contre, Claude Code m'a bien aidé à
-le rédiger. Le morceau pénible, ça a été les bibliothèques de chiffrement
+Cela demande de découvrir **Docker** et ses ressources de débutant bien faites 
+([ici](https://docs.docker.com/get-started/introduction/get-docker-desktop/) par exemple).
+
+Il faut aller se créer un compte sur [Docker](https://www.docker.com/). L'installation de Docker
+est pas évidente sur des PC contraints (et hic : impossible de le tester directement
+sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l'avoir en local ou tester via des 
+GitHub Action ou bien le VS Code de GitHub (dans `<> Code` / `Codespaces` dans GitHub, cela vous ouvre un espace
+similaire à Onyxia) permet de faire des Docker dans Docker. 
+
+Bon après, le `Dockerfile` est assez basique et un assitant IA m'a bien aidé à le rédiger. 
+
+Le morceau le plus pénible, ça a été les bibliothèques de chiffrement
 (`python-olm`, qui compile `libolm` depuis les sources) : il a fallu glisser les bons
-outils de compilation dans l'image. L'IA a réglé ça en deux temps trois mouvements.
-Voici le `Dockerfile`, utilisable tel quel :
+outils de compilation dans l'image. Mais là encore, cela a été tout à fait respectable
+et mon assistant préféré m'a aidé. 
 
-```dockerfile
+Voici le `Dockerfile` final, utilisable tel quel :
+
+```{dockerfile filename="dockerfile"}
+#| code-fold: true
 FROM python:3.13-slim
 
 # Installation de uv
@@ -501,11 +744,13 @@ CMD ["uv", "run", "main.py"]
 ```
 
 L'image se reconstruit toute seule à chaque `push` sur GitHub, grâce à une *GitHub
-Action* qui la pousse ensuite sur Docker Hub :
+Action* qui la pousse ensuite sur Docker Hub. N'oubliez pas d'ajouter en secret GitHub 
+vos identifiants Docker :
 
-```yaml
-# .github/workflows/deploy.yaml
+```{.yaml filename=".github/workflows/deploy.yaml"}
+#| code-fold: true
 name: Build and push Docker image
+
 on:
   push:
     branches: [main]
@@ -514,12 +759,15 @@ jobs:
   build-and-push:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout code
+        uses: actions/checkout@v6
+
       - name: Log in to Docker Hub
         uses: docker/login-action@v4
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
       - name: Build and push
         uses: docker/build-push-action@v7
         with:
@@ -528,16 +776,46 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest
 ```
 
-Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. Mon
-angoisse du moment : *mais où sont mes secrets ?* (identifiants Tchap, clé d'API du
-LLM). Là encore, l'IA et l'équipe du SSP Cloud m'ont guidé. Les secrets sont injectés en
-variables d'environnement via des `secretKeyRef`, et un petit volume persistant garde le
+Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
+
+Une petite angoisse une fois l'image poussée sur Docker : *mais où sont tous mes secrets  (identifiants Tchap, clé d'API du
+LLM) ?*. Bon, après vérification, ils ne sont pas poussées dans l'image Docker. 
+
+Les secrets sont injectés en variables d'environnement via des `secretKeyRef`, et un petit volume persistant garde le
 fichier de session entre deux redémarrages. Le manifeste ci-dessous s'applique avec
 `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
 `${DOCKERHUB_USERNAME}` substituées :
 
-```yaml
-# k8s/deployment.yaml
+```{.python filename=".env"}
+# =============================================================================
+# .env — variables d'environnement du bot Tchap
+# Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
+# (ajoutez `.env` à votre .gitignore).
+# =============================================================================
+
+# --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
+# Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
+TCHAP_BOT_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
+TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
+
+# --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
+LLM_LAB_API_KEY="votre_cle_api_llm_lab"
+
+# --- Salon(s) Tchap surveillé(s) ------------------------------------------
+# Toute variable commençant par TCHAP_ROOM_ID est prise en compte.
+# Pour plusieurs salons : TCHAP_ROOM_ID_1, TCHAP_ROOM_ID_2, etc.
+TCHAP_ROOM_ID="!identifiantDuSalon:agent.finances.tchap.gouv.fr"
+
+# --- Déploiement (CI/CD + Kubernetes) -------------------------------------
+# Utilisés par la GitHub Action et la substitution du manifeste k8s.
+DOCKERHUB_USERNAME="votre_compte_dockerhub"
+DOCKERHUB_TOKEN="votre_token_dockerhub"
+SSP_USERNAME="votre_identifiant_sspcloud"
+
+``` 
+
+```{.yaml filename="k8s/deployment.yaml"}
+#| code-fold: true
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -575,6 +853,13 @@ spec:
                 secretKeyRef:
                   name: tchap-bot-secrets
                   key: LLM_LAB_API_KEY
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
           volumeMounts:
             - name: bot-data
               mountPath: /app/session
@@ -596,9 +881,18 @@ spec:
       storage: 1Gi
 ```
 
-Et voilà le travail : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos
+Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
+Et puis, n'aimant pas mettre mes identifiants j'ai enlevé mes username mais vous pouvez les committer si vous voulez. 
+En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
+enregistrés en variable d'environnement dans bash : 
+
+```{.bash}
+sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
+```
+
+Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos
 questions dans le salon de l'équipe, et qui garde même le fil de la discussion en
-mémoire. Pas mal, pour un projet parti d'un « tiens, et si on s'amusait un peu ? ».
+mémoire. 
 
 # Ressources
 
@@ -607,33 +901,7 @@ Pour aller plus loin ou refaire l'expérience chez vous :
 - le code source complet du bot : <https://github.com/nicotlm/tchap_bot_test/>
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
-- le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/>.
+- le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ; 
+- la [documentation de Docker](https://docs.docker.com/) ;
+- le [chapitre déploiement du cours de mise en production de l'ENSAE](https://ensae-reproductibilite.github.io/slides/#/d%C3%A9ploiement).
 
-<!-- 
-```dotenv
-# =============================================================================
-# .env — variables d'environnement du bot Tchap
-# Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
-# (ajoutez `.env` à votre .gitignore).
-# =============================================================================
-
-# --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
-# Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
-TCHAP_BOT_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
-TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
-
-# --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
-LLM_LAB_API_KEY="votre_cle_api_llm_lab"
-
-# --- Salon(s) Tchap surveillé(s) ------------------------------------------
-# Toute variable commençant par TCHAP_ROOM_ID est prise en compte.
-# Pour plusieurs salons : TCHAP_ROOM_ID_1, TCHAP_ROOM_ID_2, etc.
-TCHAP_ROOM_ID="!identifiantDuSalon:agent.finances.tchap.gouv.fr"
-
-# --- Déploiement (CI/CD + Kubernetes) -------------------------------------
-# Utilisés par la GitHub Action et la substitution du manifeste k8s.
-DOCKERHUB_USERNAME="votre_compte_dockerhub"
-DOCKERHUB_TOKEN="votre_token_dockerhub"
-SSP_USERNAME="votre_identifiant_sspcloud"
-
-``` -->
