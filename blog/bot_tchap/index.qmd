@@ -108,7 +108,7 @@ et de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentat
 
 Cela a été beaucoup plus simple quand j'ai compris que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : 
 tout cela, ce sont des événements (*event*) avec un identifiant unique. Concrètement, ne cherchez donc pas la 
-fonction `send_message` : vous envoyez un evénement qui est de type message. De la même manière que quand vous entrez dans
+fonction `send_message` : vous envoyez un evénement qui est de type message (`m.room.message`). De la même manière que quand vous entrez dans
 un salon, vous envoyez un événement de type `je rentre dans ce salon Tchap`.
 
 Cela n'a pas été beaucoup plus simple par contre quand je me suis rendu compte que 
@@ -123,9 +123,9 @@ depuis qu'il a été crée.
 
 Une fois ces idées en tête, je suis reparti de la
 [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
-pour bâtir un cas tout simple : un bot qui répond à un mot. Vous lui dites `!coucou`,
+pour bâtir un cas tout simple : un bot qui répond à un mot. Vous lui dites `coucou`,
 il vous donne l'heure. Voici un bot complet, prêt à lancer — il suffit d'avoir installé
-`simplematrixbotlib` et défini vos identifiants :
+les packages nécessaires avec `uv add` et défini vos identifiants dans un dotenv:
 
 ```.env
 # =============================================================================
@@ -143,15 +143,14 @@ TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
 
 ```python
 # main.py — un bot Tchap minimal mais fonctionnel
-# uv add "matrix-nio[e2e]" simplematrixbotlib load_env
+# uv add "matrix-nio[e2e]" simplematrixbotlib dotenv
 import os
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from 
 import simplematrixbotlib as botlib
-from load_env import load_env
+from dotenv import load_dotenv
 
-load_env() 
+load_dotenv() 
 
 # --- Identifiants (à passer en variables d'environnement) ---
 creds = botlib.Creds(
@@ -166,12 +165,10 @@ config.encryption_enabled = True
 config.ignore_unverified_devices = True
 
 bot = botlib.Bot(creds, config)
-PREFIX = "!"
-
 
 @bot.listener.on_message_event
 async def echo(room, message):
-    match = botlib.MessageMatch(room, message, bot, PREFIX)
+    match = botlib.MessageMatch(room, message, bot)
     if match.is_not_from_this_bot() and match.command("coucou"):
         await bot.api.send_text_message(
             room.room_id,
@@ -185,6 +182,9 @@ if __name__ == "__main__":
     bot.run()
 ```
 
+**Vous avez maintenant un bot qui vous répond l'heure quand vous lui dites "coucou"** : et ça, c'est magique
+et parfaitement inutile. 
+
 Je n'ai pas réussi à régler proprement la **vérification du bot** (le
 fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
 « non vérifié ». 
@@ -192,12 +192,13 @@ fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
 ## Deuxième étape : brancher un LLM
 
 Bonne nouvelle : utiliser [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), c'est
-en fait super simple. Comme le service expose une API compatible OpenAI, on réutilise
-direct le *package* `openai` en pointant juste vers la bonne URL. Le snippet ci-dessous
+en fait super simple. 
+Comme le service expose une API compatible OpenAI, il suffit de réutiliser le *package* `openai`
+en pointant juste vers la bonne URL. Le snippet ci-dessous
 est complet et s'exécute tel quel :
 
 ```python
-# pip install openai
+# uv add openai
 import os
 from openai import OpenAI
 
@@ -233,26 +234,115 @@ attendu par `openai` : chaque message a un rôle et un contenu.
 ]
 ```
 
-*Fun fact* : chez OpenAI, l'IA n'est ni un « bot » ni un « modèle », mais un
+*Fun fact (pour moi)* : chez OpenAI, l'IA n'est ni un « bot » ni un « modèle », mais un
 *assistant*. Sans doute pour pas faire peur. 🙂
+
+**Vous avez maintenant de quoi envoyer des requêtes à un LLM.**
 
 J'ai construit le code petit à petit pour que tout marche depuis Python, en rangeant au
 passage le tout en *package* avec des sous-modules (`config`, `core`, `listeners`).
-Histoire de pas finir avec un fichier de 800 lignes.
+Un petit coup d'IA a permis de rédiger le code d'initialisation qui charge tous les 
+`listeners` à partir des scripts dans le dossier `listeners`.
 
 ## Troisième étape : combiner les deux
 
-Créer la commande `!llm` et la brancher sur `llm.lab`, ça s'est fait sans douleur : on
+Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**. 
+
+On crée une commande `!llm` maintenant et on la branche sur `llm.lab`. 
+Cela se fait avec un peu de douleur mais rien que l'on aime pas : on
 repère le préfixe, on récupère le message, on l'envoie au modèle, on renvoie la réponse.
 
 La vraie prise de tête — relative, ça n'a duré que quelques heures — c'était de
-**reconstituer le fil de la conversation** pour que le bot ait de la mémoire. Dans
+**reconstituer le fil de la conversation** pour que le bot ait de la mémoire. 
+C'est simple, je voulais que si je réponde au bot dans Tchap, le bot récupère les 
+messages liés à la conversation et les envoie en contexte au LLM. Pour mimer un chat 
+avec un LLM et éviter à chaque fois de recommencer à 0. 
+
+![Ce que je voulais éviter](endless_loop.png)
+
 Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond
-à celui-là » est planqué dans des balises bien imbriquées
+à celui-là » est caché dans des balises bien imbriquées
 (`content` → `m.relates_to` → `m.in_reply_to` → `event_id`).
 
-L'astuce qui m'a sauvé : **exporter une conversation Tchap au format JSON**. En voyant
-la vraie tête des événements, j'ai arrêté de me perdre dans les étages de balises.
+L'astuce pour ne pas rester perdu trop longtemps : **exporter une conversation Tchap au format JSON**. En voyant
+la vraie tête des événements, je me suis moins perdu dans les étages de balises.
+
+Voici l'échange ci-dessus au format JSON Matrix : 
+```json
+
+{
+    "content": {
+    "msgtype": "m.text",
+    "body": "!llm écris moi un sonnet sur la beauté des canicules",
+    "m.mentions": {}
+    },
+    "origin_server_ts": 1780409269941,
+    "sender": "@n-insee.fr:agent.finances.tchap.gouv.fr",
+    "type": "m.room.message",
+    "unsigned": {
+    "membership": "join",
+    "age": 854394,
+    "transaction_id": "m1780409269135.40"
+    },
+    "event_id": "$DGvRZB3GL8brmKFqBZEOASDLxL8d8",
+    "room_id": "!UDagJdADqqUSKBW:agent.finances.tchap.gouv.fr"
+},
+{
+    "content": {
+    "body": "Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.\n\n**L'Or de l'Été**\n\nLe ciel est un miroir où l'azur s'est figé,\nUn dôme de cristal, sans ombre et sans haleine,\nOù le soleil, puissant, dans sa course souveraine,\nVient dorer le limon d'un feu pur et sacré.\n\nL'air tremble de chaleur en un souffle chargé,\nLa terre boit le feu de la flamme sereine,\nEt l'horizon s'efface en une onde lointaine,\nSous l'éclat du midi par l'astre partagé.\n\nOn aime ce repos, ce silence pesant,\nOù le monde s'endort, de lumière enivré,\nDans l'étreinte d'un jour, de feu et d'or vêtu.\n\nLe temps semble suspendu, le souffle est lent, vivant,\nDans ce règne de feu, de beauté devenu,\nOù l'éclat du soleil a tout le monde éperdu.",
+    "format": "org.matrix.custom.html",
+    "formatted_body": "<p>Voici un sonnet célébrant la splendeur de la canicule, conçu dans la tradition classique.</p>\n<p><strong>L'Or de l'Été</strong></p>\n<p>Le ciel est un miroir où l'azur s'est figé,<br />\nUn dôme de cristal, sans ombre et sans haleine,<br />\nOù le soleil, puissant, dans sa course souveraine,<br />\nVient dorer le limon d'un feu pur et sacré.</p>\n<p>L'air tremble de chaleur en un souffle chargé,<br />\nLa terre boit le feu de la flamme sereine,<br />\nEt l'horizon s'efface en une onde lointaine,<br />\nSous l'éclat du midi par l'astre partagé.</p>\n<p>On aime ce repos, ce silence pesant,<br />\nOù le monde s'endort, de lumière enivré,<br />\nDans l'étreinte d'un jour, de feu et d'or vêtu.</p>\n<p>Le temps semble suspendu, le souffle est lent, vivant,<br />\nDans ce règne de feu, de beauté devenu,<br />\nOù l'éclat du soleil a tout le monde éperdu.</p>",
+    "m.relates_to": {
+        "m.in_reply_to": {
+        "event_id": "$DGvRZB3GL8brmKFqBZEOASDLxL8d8"
+        }
+    },
+    "msgtype": "m.text"
+    },
+    "origin_server_ts": 1780409279931,
+    "sender": "@bot-insee.fr:agent.finances.tchap.gouv.fr",
+    "type": "m.room.message",
+    "unsigned": {},
+    "event_id": "$EGOl-wWZbY5GsjjoYzMpIdcn75xadQnClmSSYd1mZjw",
+    "room_id": "!UDagJdADqqUSKBW:agent.finances.tchap.gouv.fr"
+},
+{
+    "content": {
+    "msgtype": "m.text",
+    "body": "!llm merci, ajoute y des comparaisons avec l'hiver",
+    "m.mentions": {}
+    },
+    "origin_server_ts": 1780409290426,
+    "sender": "@n-insee.fr:agent.finances.tchap.gouv.fr",
+    "type": "m.room.message",
+    "unsigned": {
+    "membership": "join",
+    "age": 833909,
+    "transaction_id": "m1780409289583.41"
+    },
+    "event_id": "$Zkuyln4UY3x29vHRIKZ0",
+    "room_id": "!UDagJdADqqUSKBW:agent.finances.tchap.gouv.fr"
+},
+{
+    "content": {
+    "body": "Comme tu n'as pas précisé le texte initial, je vais imaginer que tu souhaites une description poétique ou une analyse de la **vie**, de la **douceur** ou d'un **nouveau départ**, en y intégrant des métaphores hivernales.\n\nVoici une proposition de texte enrichi de comparaisons avec l'hiver BLABLABLABLA",
+    "m.relates_to": {
+        "m.in_reply_to": {
+        "event_id": "$Zkuyln4UY3x29vHRIKZ0"
+        }
+    },
+    "msgtype": "m.text"
+    },
+    "origin_server_ts": 1780409294370,
+    "sender": "@bot-insee.fr:agent.finances.tchap.gouv.fr",
+    "type": "m.room.message",
+    "unsigned": {},
+    "event_id": "$iHbLWft9X2h_0MkMG7jr_GE4IE87Q3M",
+    "room_id": "!UDagJdADqqUSKBW:agent.finances.tchap.gouv.fr"
+}
+
+```
+
 Ensuite, il suffit de remonter le fil réponse après réponse, de façon récursive. Le
 bloc ci-dessous est autonome (les fonctions utilitaires sont incluses) et prend en
 entrée un `bot`, l'`id` du salon et l'`id` du message auquel on répond :
@@ -304,10 +394,12 @@ async def retrieve_history(bot: botlib.Bot, room_id: str, reply_event_id: str) -
 Côté utilisateur, le résultat est tout bête : il suffit de **répondre** à un message du
 bot (toujours avec `!llm`) pour qu'il se souvienne de tout ce qui précède.
 
+![Tatam](endfull_loop.png)
+
 ## Quatrième étape : tester en local
 
 À ce stade, l'organisation en *package* avec [`uv`](https://docs.astral.sh/uv/) rend le
-tout reproductible et hyper agréable. Les dépendances vivent dans le `pyproject.toml`,
+tout reproductible. Les dépendances vivent dans le `pyproject.toml`,
 et lancer le bot tient en une ligne :
 
 ```bash
@@ -411,16 +503,16 @@ spec:
           image: ${DOCKERHUB_USERNAME}/tchap-bot:latest
           imagePullPolicy: Always
           env:
-            - name: TCHAP_BOT_SSPHUB_MATRIX_ID
+            - name: TCHAP_BOT_MATRIX_ID
               valueFrom:
                 secretKeyRef:
                   name: tchap-bot-secrets
-                  key: TCHAP_BOT_SSPHUB_MATRIX_ID
-            - name: TCHAP_BOT_SSPHUB_PWD
+                  key: TCHAP_BOT_MATRIX_ID
+            - name: TCHAP_BOT_PWD
               valueFrom:
                 secretKeyRef:
                   name: tchap-bot-secrets
-                  key: TCHAP_BOT_SSPHUB_PWD
+                  key: TCHAP_BOT_PWD
             - name: LLM_LAB_API_KEY
               valueFrom:
                 secretKeyRef:
@@ -458,8 +550,7 @@ Pour aller plus loin ou refaire l'expérience chez vous :
 - le code source complet du bot : <https://github.com/nicotlm/tchap_bot_test/>
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
-- le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ;
-- et, bien sûr, le salon Tchap dédié aux bots, pour papoter avec la communauté.
+- le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/>.
 
 <!-- 
 ```dotenv
@@ -471,8 +562,8 @@ Pour aller plus loin ou refaire l'expérience chez vous :
 
 # --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
 # Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
-TCHAP_BOT_SSPHUB_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
-TCHAP_BOT_SSPHUB_PWD="votre_mot_de_passe_tchap"
+TCHAP_BOT_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
+TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
 
 # --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
 LLM_LAB_API_KEY="votre_cle_api_llm_lab"
