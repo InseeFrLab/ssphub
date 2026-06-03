@@ -421,8 +421,10 @@ la vraie tête des événements, je me suis moins perdu dans les étages de bali
 
 Voici l'échange ci-dessus au format JSON Matrix : 
 
-```{python}
-#| code-fold: true
+<details>
+<summary>Voir un échange Tchap au format JSON </summary>
+
+```{.json}
 {
     "content": {
         "msgtype": "m.text",
@@ -495,6 +497,9 @@ Voici l'échange ci-dessus au format JSON Matrix :
 }
 
 ```
+
+</details>
+
 
 ### Architecture de remonter la mémoire des échanges
 
