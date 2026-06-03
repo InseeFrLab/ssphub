@@ -224,7 +224,7 @@ fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
 :::
 
 
-## Deuxième étape : brancher un LLM
+# Deuxième étape : brancher un LLM
 
 Bonne nouvelle : **utiliser** [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), **c'est en fait super simple**. 
 
@@ -326,7 +326,7 @@ Dites-moi ce qui vous passe par la tête ! Je vous écoute.
 You : quit
 ```
 
-## Troisième étape : préparer la quatrième étape
+# Troisième étape : préparer la quatrième étape
 
 Là je triche, je n'ai pas suivi cet ordre là mais j'aurai dû le suivre.
 Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l'ordre des 
@@ -384,7 +384,7 @@ et lancer le bot tient en une ligne :
 uv run main.py
 ```
 
-## Quatrième étape : combiner les deux
+# Quatrième étape : combiner 1 et 2
 
 Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**. 
 
@@ -778,7 +778,7 @@ This bot's public fingerprint ("Session key") for one-sided verification is: MXt
 ![Tatam](endfull_loop.png)
 
 
-## Cinquième étape : mise en production sur le SSP Cloud
+# Cinquième étape : mise en production sur le SSP Cloud
 
 Dernière marche, et pas la plus petite : **faire tourner le bot en continu, sans dépendre
 de ma machine**. L'équipe du SSP Cloud m'a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).
