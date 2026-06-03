@@ -45,7 +45,7 @@ Finalement, ce n'était pas si compliqué. On m'avait vendu que les bots Tchap �
 Par ailleurs, se connecter à [llm.lab](https://llm.lab.sspcloud.fr) est plutôt très simple. 
 Le plus délicat a été de découvrir Tchap, d'orchestrer les deux et enfin la mise en production. 
 
-Après *une petite semaine de travail* (cf. détail plus bas pour ceux que cela intéresse), le bot est en place (cf. [sa maison sur Github](github.com/nicotlm/tchap_bot_test/)) et fait aujourd'hui trois choses :
+Après *une petite semaine de travail* (cf. détail plus bas pour ceux que cela intéresse), le bot est en place (cf. [sa maison sur Github](https://github.com/SSPHub/tchap_bot_llm)) et fait aujourd'hui trois choses :
 
 - il **répond quand on dit coucou**, histoire de vérifier qu'il est bien réveillé ;
 - il **répond à vos questions** en interrogeant un grand modèle de langage ;
@@ -964,9 +964,16 @@ spec:
 ```
 
 Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
-Et puis, n'aimant pas mettre mes identifiants j'ai enlevé mes username mais vous pouvez les committer si vous voulez. 
+Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
 En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
 enregistrés en variable d'environnement dans bash : 
+
+
+::: {.callout-tip title="Lancer un service avec un rôle admin Kubernetes" collapse="true"}
+
+![Comment créer un service avec un rôle administrateur Kubernetes](admin_role.png)
+
+:::
 
 ```{.bash}
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
@@ -1007,7 +1014,7 @@ Soit au total **environ une semaine de travail** pesé tout compris.
 
 Pour aller plus loin ou refaire l'expérience chez vous :
 
-- le code source complet du bot : <https://github.com/nicotlm/tchap_bot_test/>
+- le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm>
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
 - le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ; 
