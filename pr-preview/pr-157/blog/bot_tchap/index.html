@@ -126,35 +126,6 @@ background: #6886bb;
       }
 </style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -296,8 +267,21 @@ window.Quarto = {
   </ul></li>
   <li><a href="#deuxième-étape-brancher-un-llm" id="toc-deuxième-étape-brancher-un-llm" class="nav-link" data-scroll-target="#deuxième-étape-brancher-un-llm">Deuxième étape : brancher un LLM</a></li>
   <li><a href="#troisième-étape-préparer-la-quatrième-étape" id="toc-troisième-étape-préparer-la-quatrième-étape" class="nav-link" data-scroll-target="#troisième-étape-préparer-la-quatrième-étape">Troisième étape : préparer la quatrième étape</a></li>
-  <li><a href="#quatrième-étape-combiner-1-et-2" id="toc-quatrième-étape-combiner-1-et-2" class="nav-link" data-scroll-target="#quatrième-étape-combiner-1-et-2">Quatrième étape : combiner 1 et 2</a></li>
-  <li><a href="#cinquième-étape-mise-en-production-sur-le-ssp-cloud" id="toc-cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="nav-link" data-scroll-target="#cinquième-étape-mise-en-production-sur-le-ssp-cloud">Cinquième étape : mise en production sur le SSP Cloud</a></li>
+  <li><a href="#quatrième-étape-combiner-1-et-2" id="toc-quatrième-étape-combiner-1-et-2" class="nav-link" data-scroll-target="#quatrième-étape-combiner-1-et-2">Quatrième étape : combiner 1 et 2</a>
+  <ul class="collapse">
+  <li><a href="#un-bot-simple-sans-mémoire" id="toc-un-bot-simple-sans-mémoire" class="nav-link" data-scroll-target="#un-bot-simple-sans-mémoire">Un bot simple sans mémoire</a></li>
+  <li><a href="#ajouter-la-mémoire-des-échanges" id="toc-ajouter-la-mémoire-des-échanges" class="nav-link" data-scroll-target="#ajouter-la-mémoire-des-échanges">Ajouter la mémoire des échanges</a>
+  <ul class="collapse">
+  <li><a href="#la-plomberie-derrière-un-message" id="toc-la-plomberie-derrière-un-message" class="nav-link" data-scroll-target="#la-plomberie-derrière-un-message">La plomberie derrière un message</a></li>
+  <li><a href="#architecture-de-remonter-la-mémoire-des-échanges" id="toc-architecture-de-remonter-la-mémoire-des-échanges" class="nav-link" data-scroll-target="#architecture-de-remonter-la-mémoire-des-échanges">Architecture de remonter la mémoire des échanges</a></li>
+  <li><a href="#les-fonctions-asynchrones" id="toc-les-fonctions-asynchrones" class="nav-link" data-scroll-target="#les-fonctions-asynchrones">Les fonctions asynchrones</a></li>
+  <li><a href="#grand-final" id="toc-grand-final" class="nav-link" data-scroll-target="#grand-final">Grand final</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#cinquième-étape-mise-en-production-sur-le-ssp-cloud" id="toc-cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="nav-link" data-scroll-target="#cinquième-étape-mise-en-production-sur-le-ssp-cloud">Cinquième étape : mise en production sur le SSP Cloud</a>
+  <ul class="collapse">
+  <li><a href="#docker-mon-amour" id="toc-docker-mon-amour" class="nav-link" data-scroll-target="#docker-mon-amour">Docker mon amour</a></li>
+  </ul></li>
   <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/blog/bot_tchap/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/blog/bot_tchap/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></nav>
@@ -381,7 +365,7 @@ window.Quarto = {
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_MATRIX_ID<span class="op">=</span><span class="st">"@votre-bot:agent.finances.tchap.gouv.fr"</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_PWD<span class="op">=</span><span class="st">"votre_mot_de_passe_tchap"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="e99cbc1e" class="cell">
+<div id="8ab68946" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># uv add "matrix-nio[e2e]" simplematrixbotlib dotenv</span></span>
@@ -458,7 +442,7 @@ Mise en garde
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>LLM_LAB_API_KEY<span class="op">=</span><span class="st">"votre_cle_api_llm_lab"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="c3d0039d" class="cell">
+<div id="bb6265fe" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># uv add openai</span></span>
@@ -536,7 +520,7 @@ Mise en garde
 <h1>Troisième étape : préparer la quatrième étape</h1>
 <p>Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre des aiguilles d’une montre.</p>
 <p>Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en <em>package</em> avec des sous-modules (<code>config</code>, <code>core</code>, <code>listeners</code>).</p>
-<p>Voici la structure à cette étape :</p>
+<p>Voici la structure après cette étape :</p>
 <pre><code>tchap_bot_test/
 │
 ├── main.py                  # Point d'entrée : appelle src.run("!")
@@ -571,9 +555,14 @@ Mise en garde
 <section id="quatrième-étape-combiner-1-et-2" class="level1">
 <h1>Quatrième étape : combiner 1 et 2</h1>
 <p>Comme le dit l’adage, on a de la pâte à crêpe, on a du sucre, on va <strong>créer une crêpe au sucre</strong>.</p>
+<section id="un-bot-simple-sans-mémoire" class="level2">
+<h2 class="anchored" data-anchor-id="un-bot-simple-sans-mémoire">Un bot simple sans mémoire</h2>
 <p>On crée une commande <code>llm</code> maintenant et on la branche sur <code>llm.lab</code> avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).</p>
 <p>Cela se fait avec un peu de douleur mais rien que l’on aime pas : on repère si on reçoit un message avec <code>@bot.listener.on_message_event</code> et on le récupère avec <code>match = botlib.MessageMatch(room, message, bot)</code>. Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. Et puis on renvoie la réponse du LLM sur Tchap.</p>
-<p>La vraie prise de tête - relative, ça n’a duré que quelques heures - c’était de <strong>reconstituer le fil de la conversation</strong> pour que le bot ait de la mémoire. C’est simple, je voulais que si je réponde au bot dans Tchap, le bot récupère les messages liés à la conversation et les envoie en contexte au LLM. Pour mimer un chat avec un LLM et éviter à chaque fois de recommencer à 0.</p>
+</section>
+<section id="ajouter-la-mémoire-des-échanges" class="level2">
+<h2 class="anchored" data-anchor-id="ajouter-la-mémoire-des-échanges">Ajouter la mémoire des échanges</h2>
+<p>La vraie prise de tête - relative, ça n’a duré que quelques heures - c’était de <strong>reconstituer le fil de la conversation pour faire un vrai tchat</strong> et que le bot ait la mémoire des échanges passés. Concrètement, je voulais que si je réponde au message du bot dans Tchap, le bot récupère les messages liés à la conversation et les envoie en contexte au LLM. Pour mimer un chat avec un LLM et éviter à chaque fois de recommencer à 0.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="endless_loop.png" class="img-fluid figure-img"></p>
@@ -581,9 +570,11 @@ Mise en garde
 </figure>
 </div>
 <p>Dans Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond à celui-là » est caché dans des balises bien imbriquées (<code>content</code> → <code>m.relates_to</code> → <code>m.in_reply_to</code> → <code>event_id</code>).</p>
+<section id="la-plomberie-derrière-un-message" class="level3">
+<h3 class="anchored" data-anchor-id="la-plomberie-derrière-un-message">La plomberie derrière un message</h3>
 <p>L’astuce pour ne pas rester perdu trop longtemps : <strong>exporter une conversation Tchap au format JSON</strong>. En voyant la vraie tête des événements, je me suis moins perdu dans les étages de balises.</p>
 <p>Voici l’échange ci-dessus au format JSON Matrix :</p>
-<div id="b5d3f8c0" class="cell">
+<div id="d84db8fd" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>{</span>
@@ -658,21 +649,30 @@ Mise en garde
 <span id="cb11-70"><a href="#cb11-70" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
+</section>
+<section id="architecture-de-remonter-la-mémoire-des-échanges" class="level3">
+<h3 class="anchored" data-anchor-id="architecture-de-remonter-la-mémoire-des-échanges">Architecture de remonter la mémoire des échanges</h3>
 <p>Ensuite, il “suffit” de remonter le fil réponse après réponse, de façon récursive. Concrètement, <strong>à partir de l’ID d’un événement</strong>, il faut :</p>
 <ul>
-<li>récupérer l’événement (aka : le message);</li>
-<li>avec l’événement, déterminer qui de l’humain ou de l’“assistant” a envoyé le message;</li>
-<li>extraire le contenu;</li>
-<li>stocker tout cela dans l’historique;</li>
-<li>savoir si lui même est en réponse à un événement;</li>
+<li>récupérer l’événement (aka : le message) - une fonction <code>get_event</code> permet de le faire;</li>
+<li>avec l’événement, déterminer qui de l’humain ou de l’“assistant” a envoyé le message - c’est le rôle de <code>get_role_event</code>;</li>
+<li>extraire le contenu - <code>extract_info</code> extrait les informations sender, body et replied_to d’un <code>event</code> Tchap ;</li>
+<li>stocker tout cela dans l’historique - <code>history_append</code>;</li>
+<li>savoir si lui même est en réponse à un événement - la fonction <code>get_in_reply_to_event_id</code> fait cela;</li>
 <li>et puis on boucle et on boucle et on boucle.</li>
 </ul>
 <p>Par ailleurs, <strong>Tchap permet de formatter son message</strong> : soit vous êtes une/un boss et vous l’écrivez directement en html, soit vous l’écrivez en markdown et Tchap le transformera en html pour vous.</p>
-<p>Pour que la réponse de notre assistant préféré passe bien dans Tchap, <strong>il faut lui ajouter un prompt système qui demande de répondre en markdown</strong> sans échapper les caractères spéciaux.</p>
-<p>Après, il faut gérer <strong>les problèmes de fonction <code>async</code> dans Python</strong>. Je n’ai pas tout compris mais de ce que j’ai compris, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, <strong>on met un <code>await</code> devant</strong>. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf.&nbsp;le blabla sur le chiffrement), donc quand on récupère un message de l’API de <code>nio</code> on doit indiquer <code>await bot.async_client.room_get_event</code>.</p>
+<p>Pour que la réponse de notre assistant préféré passe bien dans Tchap, <strong>il faut lui ajouter un prompt système qui demande de répondre en markdown</strong> sans échapper les caractères spéciaux. <code>add_system_prompt</code> fait cela pour nous.</p>
+</section>
+<section id="les-fonctions-asynchrones" class="level3">
+<h3 class="anchored" data-anchor-id="les-fonctions-asynchrones">Les fonctions asynchrones</h3>
+<p>Après, il faut gérer <strong>les problèmes de fonction <code>async</code> dans Python</strong>. J’ai compris que je n’avais pas tout compris mais en gros, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, <strong>on met un <code>await</code> devant</strong>. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf.&nbsp;le blabla sur le chiffrement), donc quand on récupère un message de l’API de <code>nio</code> on doit indiquer <code>await bot.async_client.room_get_event</code>.</p>
 <p>Et <code>await</code>, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un <code>await</code> sera une fonction <code>async</code> qu’on définit en <code>async def get_event</code>. Et ainsi toute fonction qui appelerait <code>get_event</code> devrait le faire avec un <code>await get_event</code> et serait elle-même <code>async</code>.</p>
+</section>
+<section id="grand-final" class="level3">
+<h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="01cf84d7" class="cell">
+<div id="c5c1330b" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
@@ -895,13 +895,13 @@ Mise en garde
 <span id="cb12-218"><a href="#cb12-218" aria-hidden="true" tabindex="-1"></a>    bot.run()</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
-<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Pour passer en debug mode">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Astuce
+<span class="screen-reader-only">Astuce</span>Pour passer en debug mode
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -919,7 +919,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Pour la simplicité de ce post, j’ai simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est <em>peu proprement</em> placé dans un seul script <code>main.py</code>. Allez voir le repo pour une cible plus propre.</p>
+<p>Pour la simplicité de ce post, j’ai un petit peu simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est <em>peu proprement</em> placé dans un seul script <code>main.py</code>. Par ailleurs, il n’y a pas de préfixe à la commande : il faut commencer un message Tchap avec le bot par <code>llm</code> et non par <code>!llm</code>. Allez voir le repo pour une cible plus propre et utilisant le préfixe <code>!</code>.</p>
 </div>
 </div>
 <p>On lance à nouveau le bot avec un <code>uv run main.py</code>.</p>
@@ -933,15 +933,19 @@ Note
 </figure>
 </div>
 </section>
+</section>
+</section>
 <section id="cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="level1">
 <h1>Cinquième étape : mise en production sur le SSP Cloud</h1>
 <p>Dernière marche, et pas la plus petite : <strong>faire tourner le bot en continu, sans dépendre de ma machine</strong>. L’équipe du SSP Cloud m’a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).</p>
+<section id="docker-mon-amour" class="level2">
+<h2 class="anchored" data-anchor-id="docker-mon-amour">Docker mon amour</h2>
 <p>Cela demande de découvrir <strong>Docker</strong> et ses ressources de débutant bien faites (<a href="https://docs.docker.com/get-started/introduction/get-docker-desktop/">ici</a> par exemple).</p>
 <p>Il faut aller <strong>se créer un compte sur</strong> <a href="https://www.docker.com/"><strong>Docker</strong></a>. L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local ou tester via des GitHub Action ou bien le VS Code de GitHub (dans <code>&lt;&gt; Code</code> / <code>Codespaces</code> dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.</p>
 <p>Après, le <code>Dockerfile</code> est assez basique et un assitant IA aide à le rédiger.</p>
 <p>Le morceau le plus pénible, ça a été <strong>les bibliothèques de chiffrement</strong> (<code>python-olm</code>, qui compile <code>libolm</code> depuis les sources) : il a fallu glisser les bons outils de compilation dans l’image. Mais là encore, cela a été tout à fait respectable et mon assistant préféré m’a aidé.</p>
 <p>Voici le <code>Dockerfile</code> final, utilisable tel quel :</p>
-<div id="69bff158" class="cell">
+<div id="3c7b41d0" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>FROM python:<span class="fl">3.13</span><span class="op">-</span>slim</span>
@@ -964,114 +968,176 @@ Note
 </details>
 </div>
 <p>L’image <strong>Docker se construit toute seule à chaque <code>push</code> sur GitHub</strong>, grâce à une <em>GitHub Action</em> qui la pousse ensuite sur Docker Hub. N’oubliez pas d’ajouter en secret GitHub vos identifiants Docker :</p>
-<p>```{yaml filename=“.github/workflows/deploy.yaml”} #| code-fold: true</p>
-<p>name: Build and push Docker image</p>
-<p>on: push: branches: [main]</p>
-<p>jobs: build-and-push: runs-on: ubuntu-latest steps: - name: Checkout code uses: actions/checkout@v6</p>
-<pre><code>  - name: Log in to Docker Hub
-    uses: docker/login-action@v4
-    with:
-      username: ${{ secrets.DOCKERHUB_USERNAME }}
-      password: ${{ secrets.DOCKERHUB_TOKEN }}
-
-  - name: Build and push
-    uses: docker/build-push-action@v7
-    with:
-      context: .
-      push: true
-      tags: ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest</code></pre>
-<pre><code>
-Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
-
-Une petite angoisse une fois l'image poussée sur Docker : *mais où sont tous mes secrets  (identifiants Tchap, clé d'API du
-LLM) ?*. Bon, après vérification, **ils ne sont pas poussées dans l'image Docker s'ils ne sont pas dans le code**. 
-
-Les secrets sont injectés en variables d'environnement via des `secretKeyRef`, et un petit volume persistant garde le
-fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s'applique avec
-`kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
-`${DOCKERHUB_USERNAME}` substituées :
-
-::: {#354aaddc .cell}
-``` {.python .cell-code}
-# =============================================================================
-# .env - variables d'environnement du bot Tchap
-# Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
-# (ajoutez `.env` à votre .gitignore).
-# =============================================================================
-
-# --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
-# Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
-TCHAP_BOT_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
-TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
-
-# --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
-LLM_LAB_API_KEY="votre_cle_api_llm_lab"
-
-# --- Salon(s) Tchap surveillé(s) ------------------------------------------
-# Toute variable commençant par TCHAP_ROOM_ID est prise en compte.
-# Pour plusieurs salons : TCHAP_ROOM_ID_1, TCHAP_ROOM_ID_2, etc.
-TCHAP_ROOM_ID="!identifiantDuSalon:agent.finances.tchap.gouv.fr"
-
-# --- Déploiement (CI/CD + Kubernetes) -------------------------------------
-# Utilisés par la GitHub Action et la substitution du manifeste k8s.
-DOCKERHUB_USERNAME="votre_compte_dockerhub"
-DOCKERHUB_TOKEN="votre_token_dockerhub"
-SSP_USERNAME="votre_identifiant_sspcloud"</code></pre>
-<p>:::</p>
-<p>```{yaml filename=“k8s/deployment.yaml”} #| code-fold: true</p>
-<p>apiVersion: apps/v1 kind: Deployment metadata: name: tchap-bot namespace: user-${SSP_USERNAME} spec: replicas: 1 strategy: type: Recreate selector: matchLabels: app: tchap-bot template: metadata: labels: app: tchap-bot spec: containers: - name: tchap-bot image: <span class="math inline">\({DOCKERHUB_USERNAME}/tchap-bot:latest
-          imagePullPolicy: Always
-          env:
-            - name: TCHAP_BOT_MATRIX_ID
-              valueFrom:
-                secretKeyRef:
-                  name: tchap-bot-secrets
-                  key: TCHAP_BOT_MATRIX_ID
-            - name: TCHAP_BOT_PWD
-              valueFrom:
-                secretKeyRef:
-                  name: tchap-bot-secrets
-                  key: TCHAP_BOT_PWD
-            - name: LLM_LAB_API_KEY
-              valueFrom:
-                secretKeyRef:
-                  name: tchap-bot-secrets
-                  key: LLM_LAB_API_KEY
-          resources:
-            requests:
-              memory: "128Mi"
-              cpu: "100m"
-            limits:
-              memory: "256Mi"
-              cpu: "500m"
-          volumeMounts:
-            - name: bot-data
-              mountPath: /app/session
-      volumes:
-        - name: bot-data
-          persistentVolumeClaim:
-            claimName: tchap-bot-pvc
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: tchap-bot-pvc
-  namespace: user-\)</span>{SSP_USERNAME} spec: accessModes: - ReadWriteOnce resources: requests: storage: 1Gi</p>
-<pre><code>
-Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
-Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
-En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
-enregistrés en variable d'environnement dans bash : 
-
-
-::: {.callout-tip title="Lancer un service avec un rôle admin Kubernetes" collapse="true"}
-
-![Comment créer un service avec un rôle administrateur Kubernetes](admin_role.png)
-
-:::
-
-```{.bash}
-sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -</code></pre>
+<details>
+<summary>
+Show YAML
+</summary>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>.github/workflows/deploy.yaml</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15" data-filename=".github/workflows/deploy.yaml"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">name</span><span class="kw">:</span><span class="at"> Build and push Docker image</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="fu">on</span><span class="kw">:</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">push</span><span class="kw">:</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">branches</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">main</span><span class="kw">]</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a><span class="fu">jobs</span><span class="kw">:</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">build-and-push</span><span class="kw">:</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">runs-on</span><span class="kw">:</span><span class="at"> ubuntu-latest</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">steps</span><span class="kw">:</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Checkout code</span></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> actions/checkout@v6</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Log in to Docker Hub</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> docker/login-action@v4</span></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">username</span><span class="kw">:</span><span class="at"> ${{ secrets.DOCKERHUB_USERNAME }}</span></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">password</span><span class="kw">:</span><span class="at"> ${{ secrets.DOCKERHUB_TOKEN }}</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> Build and push</span></span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">uses</span><span class="kw">:</span><span class="at"> docker/build-push-action@v7</span></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">with</span><span class="kw">:</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">context</span><span class="kw">:</span><span class="at"> .</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">push</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">tags</span><span class="kw">:</span><span class="at"> ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</details>
+<p>Reste le <strong>manifeste Kubernetes</strong> pour déployer le conteneur sur le SSP Cloud.</p>
+<p>Une petite angoisse une fois l’image poussée sur Docker : <em>mais où sont tous mes secrets (identifiants Tchap, clé d’API du LLM) ?</em>. Bon, après vérification, <strong>ils ne sont pas poussées dans l’image Docker s’ils ne sont pas dans le code</strong>.</p>
+<p>Les secrets sont injectés en variables d’environnement via des <code>secretKeyRef</code>, et un petit volume persistant garde le fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s’applique avec <code>kubectl apply -f</code> une fois les deux variables <code>${SSP_USERNAME}</code> et <code>${DOCKERHUB_USERNAME}</code> substituées :</p>
+<details>
+<summary>
+Show .env file
+</summary>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>.env</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16" data-filename=".env"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># .env - variables d'environnement du bot Tchap</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co"># (ajoutez `.env` à votre .gitignore).</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># =============================================================================</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------</span></span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_MATRIX_ID<span class="op">=</span><span class="st">"@votre-bot:agent.finances.tchap.gouv.fr"</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_PWD<span class="op">=</span><span class="st">"votre_mot_de_passe_tchap"</span></span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>LLM_LAB_API_KEY<span class="op">=</span><span class="st">"votre_cle_api_llm_lab"</span></span>
+<span id="cb16-14"><a href="#cb16-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-15"><a href="#cb16-15" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Salon(s) Tchap surveillé(s) ------------------------------------------</span></span>
+<span id="cb16-16"><a href="#cb16-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Toute variable commençant par TCHAP_ROOM_ID est prise en compte.</span></span>
+<span id="cb16-17"><a href="#cb16-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Pour plusieurs salons : TCHAP_ROOM_ID_1, TCHAP_ROOM_ID_2, etc.</span></span>
+<span id="cb16-18"><a href="#cb16-18" aria-hidden="true" tabindex="-1"></a>TCHAP_ROOM_ID<span class="op">=</span><span class="st">"!identifiantDuSalon:agent.finances.tchap.gouv.fr"</span></span>
+<span id="cb16-19"><a href="#cb16-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-20"><a href="#cb16-20" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Déploiement (CI/CD + Kubernetes) -------------------------------------</span></span>
+<span id="cb16-21"><a href="#cb16-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Utilisés par la GitHub Action et la substitution du manifeste k8s.</span></span>
+<span id="cb16-22"><a href="#cb16-22" aria-hidden="true" tabindex="-1"></a>DOCKERHUB_USERNAME<span class="op">=</span><span class="st">"votre_compte_dockerhub"</span></span>
+<span id="cb16-23"><a href="#cb16-23" aria-hidden="true" tabindex="-1"></a>DOCKERHUB_TOKEN<span class="op">=</span><span class="st">"votre_token_dockerhub"</span></span>
+<span id="cb16-24"><a href="#cb16-24" aria-hidden="true" tabindex="-1"></a>SSP_USERNAME<span class="op">=</span><span class="st">"votre_identifiant_sspcloud"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</details>
+<details>
+<summary>
+Show YAML
+</summary>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>k8s/deployment.yaml</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17" data-filename="k8s/deployment.yaml"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">apiVersion</span><span class="kw">:</span><span class="at"> apps/v1</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kind</span><span class="kw">:</span><span class="at"> Deployment</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="fu">metadata</span><span class="kw">:</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> tchap-bot</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">namespace</span><span class="kw">:</span><span class="at"> user-${SSP_USERNAME}</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span><span class="kw">:</span></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">replicas</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">strategy</span><span class="kw">:</span></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">type</span><span class="kw">:</span><span class="at"> Recreate</span></span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">selector</span><span class="kw">:</span></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">matchLabels</span><span class="kw">:</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">app</span><span class="kw">:</span><span class="at"> tchap-bot</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">metadata</span><span class="kw">:</span></span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">labels</span><span class="kw">:</span></span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">app</span><span class="kw">:</span><span class="at"> tchap-bot</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">spec</span><span class="kw">:</span></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">containers</span><span class="kw">:</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> tchap-bot</span></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">image</span><span class="kw">:</span><span class="at"> ${DOCKERHUB_USERNAME}/tchap-bot:latest</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">imagePullPolicy</span><span class="kw">:</span><span class="at"> Always</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">env</span><span class="kw">:</span></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> TCHAP_BOT_MATRIX_ID</span></span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">valueFrom</span><span class="kw">:</span></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a><span class="at">                </span><span class="fu">secretKeyRef</span><span class="kw">:</span></span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a><span class="at">                  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> tchap-bot-secrets</span></span>
+<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a><span class="at">                  </span><span class="fu">key</span><span class="kw">:</span><span class="at"> TCHAP_BOT_MATRIX_ID</span></span>
+<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> TCHAP_BOT_PWD</span></span>
+<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">valueFrom</span><span class="kw">:</span></span>
+<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a><span class="at">                </span><span class="fu">secretKeyRef</span><span class="kw">:</span></span>
+<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a><span class="at">                  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> tchap-bot-secrets</span></span>
+<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a><span class="at">                  </span><span class="fu">key</span><span class="kw">:</span><span class="at"> TCHAP_BOT_PWD</span></span>
+<span id="cb17-34"><a href="#cb17-34" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> LLM_LAB_API_KEY</span></span>
+<span id="cb17-35"><a href="#cb17-35" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">valueFrom</span><span class="kw">:</span></span>
+<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a><span class="at">                </span><span class="fu">secretKeyRef</span><span class="kw">:</span></span>
+<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a><span class="at">                  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> tchap-bot-secrets</span></span>
+<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a><span class="at">                  </span><span class="fu">key</span><span class="kw">:</span><span class="at"> LLM_LAB_API_KEY</span></span>
+<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">resources</span><span class="kw">:</span></span>
+<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">requests</span><span class="kw">:</span></span>
+<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">memory</span><span class="kw">:</span><span class="at"> </span><span class="st">"128Mi"</span></span>
+<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">cpu</span><span class="kw">:</span><span class="at"> </span><span class="st">"100m"</span></span>
+<span id="cb17-43"><a href="#cb17-43" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">limits</span><span class="kw">:</span></span>
+<span id="cb17-44"><a href="#cb17-44" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">memory</span><span class="kw">:</span><span class="at"> </span><span class="st">"256Mi"</span></span>
+<span id="cb17-45"><a href="#cb17-45" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">cpu</span><span class="kw">:</span><span class="at"> </span><span class="st">"500m"</span></span>
+<span id="cb17-46"><a href="#cb17-46" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">volumeMounts</span><span class="kw">:</span></span>
+<span id="cb17-47"><a href="#cb17-47" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> bot-data</span></span>
+<span id="cb17-48"><a href="#cb17-48" aria-hidden="true" tabindex="-1"></a><span class="at">              </span><span class="fu">mountPath</span><span class="kw">:</span><span class="at"> /app/session</span></span>
+<span id="cb17-49"><a href="#cb17-49" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">volumes</span><span class="kw">:</span></span>
+<span id="cb17-50"><a href="#cb17-50" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="kw">-</span><span class="at"> </span><span class="fu">name</span><span class="kw">:</span><span class="at"> bot-data</span></span>
+<span id="cb17-51"><a href="#cb17-51" aria-hidden="true" tabindex="-1"></a><span class="at">          </span><span class="fu">persistentVolumeClaim</span><span class="kw">:</span></span>
+<span id="cb17-52"><a href="#cb17-52" aria-hidden="true" tabindex="-1"></a><span class="at">            </span><span class="fu">claimName</span><span class="kw">:</span><span class="at"> tchap-bot-pvc</span></span>
+<span id="cb17-53"><a href="#cb17-53" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb17-54"><a href="#cb17-54" aria-hidden="true" tabindex="-1"></a><span class="fu">apiVersion</span><span class="kw">:</span><span class="at"> v1</span></span>
+<span id="cb17-55"><a href="#cb17-55" aria-hidden="true" tabindex="-1"></a><span class="fu">kind</span><span class="kw">:</span><span class="at"> PersistentVolumeClaim</span></span>
+<span id="cb17-56"><a href="#cb17-56" aria-hidden="true" tabindex="-1"></a><span class="fu">metadata</span><span class="kw">:</span></span>
+<span id="cb17-57"><a href="#cb17-57" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">name</span><span class="kw">:</span><span class="at"> tchap-bot-pvc</span></span>
+<span id="cb17-58"><a href="#cb17-58" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">namespace</span><span class="kw">:</span><span class="at"> user-${SSP_USERNAME}</span></span>
+<span id="cb17-59"><a href="#cb17-59" aria-hidden="true" tabindex="-1"></a><span class="fu">spec</span><span class="kw">:</span></span>
+<span id="cb17-60"><a href="#cb17-60" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">accessModes</span><span class="kw">:</span></span>
+<span id="cb17-61"><a href="#cb17-61" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> ReadWriteOnce</span></span>
+<span id="cb17-62"><a href="#cb17-62" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">resources</span><span class="kw">:</span></span>
+<span id="cb17-63"><a href="#cb17-63" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">requests</span><span class="kw">:</span></span>
+<span id="cb17-64"><a href="#cb17-64" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">storage</span><span class="kw">:</span><span class="at"> 1Gi</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</details>
+<p>Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d’admin Kubernetes dans le SSPCloud. Et puis, j’ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec <code>DOCKERHUB_USERNAME</code> et <code>SSP_USERNAME</code> enregistrés en variable d’environnement dans bash :</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Lancer un service avec un rôle admin Kubernetes">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Astuce</span>Lancer un service avec un rôle admin Kubernetes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="admin_role.png" class="img-fluid figure-img"></p>
+<figcaption>Comment créer un service avec un rôle administrateur Kubernetes</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="st">"s/</span><span class="dt">\$</span><span class="st">{DOCKERHUB_USERNAME}/</span><span class="va">$DOCKERHUB_USERNAME</span><span class="st">/g; s/</span><span class="dt">\$</span><span class="st">{SSP_USERNAME}/</span><span class="va">$SSP_USERNAME</span><span class="st">/g"</span> k8s/deployment.yaml <span class="kw">|</span> <span class="ex">kubectl</span> apply <span class="at">-f</span> <span class="at">-</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos questions dans le salon de l’équipe, et qui garde même le fil de la discussion en mémoire.</p>
 <div class="callout callout-style-default callout-caution callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -1099,6 +1165,7 @@ Mise en garde
 <p>Soit au total <strong>environ une semaine de travail</strong> pesé tout compris.</p>
 </div>
 </div>
+</section>
 </section>
 <section id="ressources" class="level1">
 <h1>Ressources</h1>

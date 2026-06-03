@@ -242,7 +242,7 @@ Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. U
 
 Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules (`config`, `core`, `listeners`).
 
-Voici la structure à cette étape :
+Voici la structure après cette étape :
 
     tchap_bot_test/
     │
@@ -284,17 +284,23 @@ uv run main.py
 
 Comme le dit l’adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**.
 
+## Un bot simple sans mémoire
+
 On crée une commande `llm` maintenant et on la branche sur `llm.lab` avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).
 
 Cela se fait avec un peu de douleur mais rien que l’on aime pas : on repère si on reçoit un message avec `@bot.listener.on_message_event` et on le récupère avec `match = botlib.MessageMatch(room, message, bot)`. Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. Et puis on renvoie la réponse du LLM sur Tchap.
 
-La vraie prise de tête - relative, ça n’a duré que quelques heures - c’était de **reconstituer le fil de la conversation** pour que le bot ait de la mémoire. C’est simple, je voulais que si je réponde au bot dans Tchap, le bot récupère les messages liés à la conversation et les envoie en contexte au LLM. Pour mimer un chat avec un LLM et éviter à chaque fois de recommencer à 0.
+## Ajouter la mémoire des échanges
+
+La vraie prise de tête - relative, ça n’a duré que quelques heures - c’était de **reconstituer le fil de la conversation pour faire un vrai tchat** et que le bot ait la mémoire des échanges passés. Concrètement, je voulais que si je réponde au message du bot dans Tchap, le bot récupère les messages liés à la conversation et les envoie en contexte au LLM. Pour mimer un chat avec un LLM et éviter à chaque fois de recommencer à 0.
 
 ![](endless_loop.png)
 
 Ce que je voulais éviter
 
 Dans Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond à celui-là » est caché dans des balises bien imbriquées (`content` → `m.relates_to` → `m.in_reply_to` → `event_id`).
+
+### La plomberie derrière un message
 
 L’astuce pour ne pas rester perdu trop longtemps : **exporter une conversation Tchap au format JSON**. En voyant la vraie tête des événements, je me suis moins perdu dans les étages de balises.
 
@@ -375,22 +381,28 @@ Code
 }
 ```
 
+### Architecture de remonter la mémoire des échanges
+
 Ensuite, il “suffit” de remonter le fil réponse après réponse, de façon récursive. Concrètement, **à partir de l’ID d’un événement**, il faut :
 
-- récupérer l’événement (aka : le message);
-- avec l’événement, déterminer qui de l’humain ou de l’“assistant” a envoyé le message;
-- extraire le contenu;
-- stocker tout cela dans l’historique;
-- savoir si lui même est en réponse à un événement;
+- récupérer l’événement (aka : le message) - une fonction `get_event` permet de le faire;
+- avec l’événement, déterminer qui de l’humain ou de l’“assistant” a envoyé le message - c’est le rôle de `get_role_event`;
+- extraire le contenu - `extract_info` extrait les informations sender, body et replied_to d’un `event` Tchap ;
+- stocker tout cela dans l’historique - `history_append`;
+- savoir si lui même est en réponse à un événement - la fonction `get_in_reply_to_event_id` fait cela;
 - et puis on boucle et on boucle et on boucle.
 
 Par ailleurs, **Tchap permet de formatter son message** : soit vous êtes une/un boss et vous l’écrivez directement en html, soit vous l’écrivez en markdown et Tchap le transformera en html pour vous.
 
-Pour que la réponse de notre assistant préféré passe bien dans Tchap, **il faut lui ajouter un prompt système qui demande de répondre en markdown** sans échapper les caractères spéciaux.
+Pour que la réponse de notre assistant préféré passe bien dans Tchap, **il faut lui ajouter un prompt système qui demande de répondre en markdown** sans échapper les caractères spéciaux. `add_system_prompt` fait cela pour nous.
 
-Après, il faut gérer **les problèmes de fonction `async` dans Python**. Je n’ai pas tout compris mais de ce que j’ai compris, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, **on met un `await` devant**. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf. le blabla sur le chiffrement), donc quand on récupère un message de l’API de `nio` on doit indiquer `await bot.async_client.room_get_event`.
+### Les fonctions asynchrones
+
+Après, il faut gérer **les problèmes de fonction `async` dans Python**. J’ai compris que je n’avais pas tout compris mais en gros, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, **on met un `await` devant**. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf. le blabla sur le chiffrement), donc quand on récupère un message de l’API de `nio` on doit indiquer `await bot.async_client.room_get_event`.
 
 Et `await`, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un `await` sera une fonction `async` qu’on définit en `async def get_event`. Et ainsi toute fonction qui appelerait `get_event` devrait le faire avec un `await get_event` et serait elle-même `async`.
+
+### Grand final
 
 Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un `bot`, l’`id` du salon et l’`id` du message auquel on répond :
 
@@ -625,7 +637,7 @@ Côté utilisateur, le résultat est tout bête : il suffit de **répondre** à 
 
 > **NOTE:**
 >
-> Pour la simplicité de ce post, j’ai simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est *peu proprement* placé dans un seul script `main.py`. Allez voir le repo pour une cible plus propre.
+> Pour la simplicité de ce post, j’ai un petit peu simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est *peu proprement* placé dans un seul script `main.py`. Par ailleurs, il n’y a pas de préfixe à la commande : il faut commencer un message Tchap avec le bot par `llm` et non par `!llm`. Allez voir le repo pour une cible plus propre et utilisant le préfixe `!`.
 
 On lance à nouveau le bot avec un `uv run main.py`.
 
@@ -642,6 +654,8 @@ Tatam
 # Cinquième étape : mise en production sur le SSP Cloud
 
 Dernière marche, et pas la plus petite : **faire tourner le bot en continu, sans dépendre de ma machine**. L’équipe du SSP Cloud m’a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).
+
+## Docker mon amour
 
 Cela demande de découvrir **Docker** et ses ressources de débutant bien faites ([ici](https://docs.docker.com/get-started/introduction/get-docker-desktop/) par exemple).
 
@@ -677,13 +691,22 @@ CMD ["uv", "run", "main.py"]
 
 L’image **Docker se construit toute seule à chaque `push` sur GitHub**, grâce à une *GitHub Action* qui la pousse ensuite sur Docker Hub. N’oubliez pas d’ajouter en secret GitHub vos identifiants Docker :
 
-\`\`\`{yaml filename=“.github/workflows/deploy.yaml”} \#\| code-fold: true
+Show YAML
+
+``` yaml
 
 name: Build and push Docker image
 
-on: push: branches: \[main\]
+on:
+  push:
+    branches: [main]
 
-jobs: build-and-push: runs-on: ubuntu-latest steps: - name: Checkout code uses: actions/checkout@v6
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v4
@@ -697,66 +720,123 @@ jobs: build-and-push: runs-on: ubuntu-latest steps: - name: Checkout code uses: 
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest
+```
 
+Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud.
 
-    Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
+Une petite angoisse une fois l’image poussée sur Docker : *mais où sont tous mes secrets (identifiants Tchap, clé d’API du LLM) ?*. Bon, après vérification, **ils ne sont pas poussées dans l’image Docker s’ils ne sont pas dans le code**.
 
-    Une petite angoisse une fois l'image poussée sur Docker : *mais où sont tous mes secrets  (identifiants Tchap, clé d'API du
-    LLM) ?*. Bon, après vérification, **ils ne sont pas poussées dans l'image Docker s'ils ne sont pas dans le code**. 
+Les secrets sont injectés en variables d’environnement via des `secretKeyRef`, et un petit volume persistant garde le fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s’applique avec `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` substituées :
 
-    Les secrets sont injectés en variables d'environnement via des `secretKeyRef`, et un petit volume persistant garde le
-    fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s'applique avec
-    `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
-    `${DOCKERHUB_USERNAME}` substituées :
+Show .env file
 
-    ::: {#354aaddc .cell}
-    ``` {.python .cell-code}
-    # =============================================================================
-    # .env - variables d'environnement du bot Tchap
-    # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
-    # (ajoutez `.env` à votre .gitignore).
-    # =============================================================================
+``` python
+# =============================================================================
+# .env - variables d'environnement du bot Tchap
+# Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
+# (ajoutez `.env` à votre .gitignore).
+# =============================================================================
 
-    # --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
-    # Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
-    TCHAP_BOT_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
-    TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
+# --- Compte Tchap du bot (idéalement une BALF dédiée) ---------------------
+# Identifiant Matrix complet, ex. @votre-bot:agent.finances.tchap.gouv.fr
+TCHAP_BOT_MATRIX_ID="@votre-bot:agent.finances.tchap.gouv.fr"
+TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
 
-    # --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
-    LLM_LAB_API_KEY="votre_cle_api_llm_lab"
+# --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------
+LLM_LAB_API_KEY="votre_cle_api_llm_lab"
 
-    # --- Salon(s) Tchap surveillé(s) ------------------------------------------
-    # Toute variable commençant par TCHAP_ROOM_ID est prise en compte.
-    # Pour plusieurs salons : TCHAP_ROOM_ID_1, TCHAP_ROOM_ID_2, etc.
-    TCHAP_ROOM_ID="!identifiantDuSalon:agent.finances.tchap.gouv.fr"
+# --- Salon(s) Tchap surveillé(s) ------------------------------------------
+# Toute variable commençant par TCHAP_ROOM_ID est prise en compte.
+# Pour plusieurs salons : TCHAP_ROOM_ID_1, TCHAP_ROOM_ID_2, etc.
+TCHAP_ROOM_ID="!identifiantDuSalon:agent.finances.tchap.gouv.fr"
 
-    # --- Déploiement (CI/CD + Kubernetes) -------------------------------------
-    # Utilisés par la GitHub Action et la substitution du manifeste k8s.
-    DOCKERHUB_USERNAME="votre_compte_dockerhub"
-    DOCKERHUB_TOKEN="votre_token_dockerhub"
-    SSP_USERNAME="votre_identifiant_sspcloud"
+# --- Déploiement (CI/CD + Kubernetes) -------------------------------------
+# Utilisés par la GitHub Action et la substitution du manifeste k8s.
+DOCKERHUB_USERNAME="votre_compte_dockerhub"
+DOCKERHUB_TOKEN="votre_token_dockerhub"
+SSP_USERNAME="votre_identifiant_sspcloud"
+```
 
-:::
+Show YAML
 
-\`\`\`{yaml filename=“k8s/deployment.yaml”} \#\| code-fold: true
+``` yaml
 
-apiVersion: apps/v1 kind: Deployment metadata: name: tchap-bot namespace: user-\${SSP_USERNAME} spec: replicas: 1 strategy: type: Recreate selector: matchLabels: app: tchap-bot template: metadata: labels: app: tchap-bot spec: containers: - name: tchap-bot image: \\{DOCKERHUB_USERNAME}/tchap-bot:latest imagePullPolicy: Always env: - name: TCHAP_BOT_MATRIX_ID valueFrom: secretKeyRef: name: tchap-bot-secrets key: TCHAP_BOT_MATRIX_ID - name: TCHAP_BOT_PWD valueFrom: secretKeyRef: name: tchap-bot-secrets key: TCHAP_BOT_PWD - name: LLM_LAB_API_KEY valueFrom: secretKeyRef: name: tchap-bot-secrets key: LLM_LAB_API_KEY resources: requests: memory: "128Mi" cpu: "100m" limits: memory: "256Mi" cpu: "500m" volumeMounts: - name: bot-data mountPath: /app/session volumes: - name: bot-data persistentVolumeClaim: claimName: tchap-bot-pvc --- apiVersion: v1 kind: PersistentVolumeClaim metadata: name: tchap-bot-pvc namespace: user-\\{SSP_USERNAME} spec: accessModes: - ReadWriteOnce resources: requests: storage: 1Gi
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tchap-bot
+  namespace: user-${SSP_USERNAME}
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app: tchap-bot
+  template:
+    metadata:
+      labels:
+        app: tchap-bot
+    spec:
+      containers:
+        - name: tchap-bot
+          image: ${DOCKERHUB_USERNAME}/tchap-bot:latest
+          imagePullPolicy: Always
+          env:
+            - name: TCHAP_BOT_MATRIX_ID
+              valueFrom:
+                secretKeyRef:
+                  name: tchap-bot-secrets
+                  key: TCHAP_BOT_MATRIX_ID
+            - name: TCHAP_BOT_PWD
+              valueFrom:
+                secretKeyRef:
+                  name: tchap-bot-secrets
+                  key: TCHAP_BOT_PWD
+            - name: LLM_LAB_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: tchap-bot-secrets
+                  key: LLM_LAB_API_KEY
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+          volumeMounts:
+            - name: bot-data
+              mountPath: /app/session
+      volumes:
+        - name: bot-data
+          persistentVolumeClaim:
+            claimName: tchap-bot-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: tchap-bot-pvc
+  namespace: user-${SSP_USERNAME}
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+```
 
+Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d’admin Kubernetes dans le SSPCloud. Et puis, j’ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME` enregistrés en variable d’environnement dans bash :
 
-    Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
-    Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
-    En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
-    enregistrés en variable d'environnement dans bash : 
+> **TIP:**
+>
+> ![](admin_role.png)
+>
+> Comment créer un service avec un rôle administrateur Kubernetes
 
-
-    ::: {.callout-tip title="Lancer un service avec un rôle admin Kubernetes" collapse="true"}
-
-    ![Comment créer un service avec un rôle administrateur Kubernetes](admin_role.png)
-
-    :::
-
-    ```{.bash}
-    sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
+``` bash
+sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
+```
 
 Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos questions dans le salon de l’équipe, et qui garde même le fil de la discussion en mémoire.
 
