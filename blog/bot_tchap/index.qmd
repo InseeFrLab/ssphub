@@ -959,7 +959,7 @@ Le contrat spécifie :
 Et voilà, le serveur est censé pouvoir nous amener notre gateau tout sorti du four. 
 
 <details>
-<summary>Voir le YAML</summary>
+<summary>Voir le contrat Kubernetes</summary>
 
 
 ```{.yaml filename="k8s/deployment.yaml"}
@@ -1051,9 +1051,9 @@ enregistrés en variable d'environnement dans bash :
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
 ```
 
-Si vous n'êtes pas un freak, vous pouvez remplacer les deux variables `${SSP_USERNAME}` et
-`${DOCKERHUB_USERNAME}` dans le contrat yaml ci-dessus. 
-Vous pouvez alors lancer le déployement avec `kubectl apply -f`.
+Si vous n'êtes pas un freak comme moi, vous pouvez remplacer les deux variables `${SSP_USERNAME}` et
+`${DOCKERHUB_USERNAME}` dans le contrat yaml ci-dessus et ne pas les avoir en variable d'environnement. 
+Vous pouvez alors lancer le déployement avec un plus simple `kubectl apply -f`.
 
 
 ::: {.callout-tip title="Kubernetes en 2min"}
@@ -1061,7 +1061,7 @@ Vous pouvez alors lancer le déployement avec `kubectl apply -f`.
 
 Les commandes essentielles de Kubernetes sont : 
 
-- `kubectl get pods` : va lister tous les pods liés à votre compte SSPCloud
+- `kubectl get pods` : va lister tous les pods liés à votre compte SSPCloud. 
 
 ```.bash
 onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
@@ -1072,42 +1072,65 @@ vscode-python-118218-0          1/1     Running   0              101m
 vscode-r-python-julia-118218-0  1/1     Running   0              20h
 ```
 
+- `kubectl delete pod <pod-name> ` : pour arrêter un pod : mais un pod n'est pas un déploiement, donc vous
+pouvez tester sur votre déploiement cela ne va pas marcher. *Cf.* partie suivante. 
 
 :::
 
-::: {.callout-tip title="Tuer le pod"}
 
-Comme on a spécifié qu'on **voulait toujours un pod actif dans notre contrat**, un simple `kubectl delete pod <pod-name> -n <namespace>` va le tuer mais le 
+Et voilà **tatam** : **un bot qui tourne en continu sur le SSP Cloud, qui répond à nos**
+**questions dans le salon de l'équipe, et qui garde même le fil de la discussion en**
+**mémoire.** 
+
+## Exploser la fusée
+
+Tout marche, on est content. Mais au fait, **on fait comment pour arrêter ce déploiement** ? 
+
+Comme on a spécifié qu'on **voulait toujours un pod actif dans notre contrat**, un simple `kubectl delete pod <pod-name>` va le tuer mais le 
 processus de déploiement va en recréer un pour arriver au nombre spécifié de replicas (ici : 1 - fun fact, mettez deux pods et 
 vous aurez des messages en double à chaque fois). 
 
 Comment on fait pour tuer cette bougie qui se rallume à chaque fois qu'on lui souffle dessus alors ?
 
-- soit on arrête le déploiement avec `kubectl delete deployment <name> -n <namespace>`
-- soit on lui de deployer 0 pod avec `kubectl scale deployment <name> --replicas=0 -n <namespace>`
+- soit on arrête complètement le déploiement avec `kubectl delete deployment <name>` (en l'occurence avec le nom du contrat ci-avant : `kubectl delete deployment tchap-bot`)
+- soit on lui de deployer 0 pod avec `kubectl scale deployment <name> --replicas=0` (en l'occurence avec le nom du contrat ci-avant : `kubectl scale deployment tchap-bot --replicas=0`)
 
-:::
+```bash
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl scale deployment tchap-bot --replicas=0
+deployment.apps/tchap-bot scaled
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
+NAME                            READY   STATUS    RESTARTS   AGE
+vscode-python-118218-0          1/1     Running   0          19h
+vscode-python-118218-0          1/1     Running   0          113m
+vscode-r-python-julia-118218-0  1/1     Running   0          20h
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl scale deployment tchap-bot --replicas=1
+deployment.apps/tchap-bot scaled
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
+NAME                            READY   STATUS              RESTARTS   AGE
+tchap-bot-68d875998b-77lb6      0/1     ContainerCreating   0          2s
+vscode-python-118218-0          1/1     Running             0          19h
+vscode-python-118218-0          1/1     Running             0          114m
+vscode-r-python-julia-118218-0  1/1     Running             0          20h
+```
 
-Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos
-questions dans le salon de l'équipe, et qui garde même le fil de la discussion en
-mémoire. 
+::: {.callout-caution title="Et t'es mignon mais combien de temps cela t'a pris tout ça ?"}
 
+Je trouve intéressant de savoir combien de temps prend un exercice. 
+Tout dépend des compétences de bases, que je vous auto-spécifie ici : 
 
-::: {.callout-caution}
-
-Et t'es mignon mais combien de temps cela t'a pris tout ça ?
-
-Expérience : 
+**Expérience :**
 
 - connaissance inexistante du sujet bot/Tchap;
 - connaissance inexistante de la manière dont marche llm.lab;
-- 0 déploiement réussi;
+- 0 déploiement réussi sur Kubernetes;
+- compétence intermédiaire en Python. 
 
-Outils : 
+**Outils :**
 
-- avec un assistant IA (essentiel).
+- avec un assistant IA (essentiel);
+- avec accès au SSPCloud (essentiel).
 
-Et à grosses mailles : 
+E**t à grosses mailles :**
 
 - Découverte de Matrix, la manière dont marchent les bots, test à droite à gauche : 2 jours
 - Premier bot simple : 3h
@@ -1117,7 +1140,7 @@ Et à grosses mailles :
 - Docker : 6h 
 - post de blog : 5h 
 
-Soit au total **environ une semaine de travail** pesé tout compris. 
+Soit au total **environ une semaine de travail** emballé c'est pesé. 
 
 :::
 
@@ -1125,7 +1148,7 @@ Soit au total **environ une semaine de travail** pesé tout compris.
 
 Pour aller plus loin ou refaire l'expérience chez vous :
 
-- le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm>
+- le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm> ;
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
 - le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ; 
