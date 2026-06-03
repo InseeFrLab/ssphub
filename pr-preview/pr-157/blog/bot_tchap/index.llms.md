@@ -238,37 +238,39 @@ You : quit
 
 # Troisième étape : préparer la quatrième étape
 
-Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre des aiguilles d’une montre.
+Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre.
 
 Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules (`config`, `core`, `listeners`).
 
 Voici la structure après cette étape :
 
-    tchap_bot_test/
-    │
-    ├── main.py                  # Point d'entrée : appelle src.run("!")
-    ├── pyproject.toml           # Dépendances (matrix-nio[e2e], openai, simplematrixbotlib)
-    ├── uv.lock                  # Verrouillage des versions (uv)
-    ├── .python-version          # Version Python du projet (3.13)
-    ├── LICENSE
-    │
-    ├── src/                     # Le code du bot, organisé en package
-    │   ├── __init__.py          # run() : charge la config, crée le bot, branche les listeners
-    │   │
-    │   ├── config/              # ── Couche configuration ──
-    │   │   ├── __init__.py
-    │   │   └── settings.py      # Creds, BotConfig, Settings + lecture des variables d'env
-    │   │
-    │   ├── core/                # ── Couche cœur ──
-    │   │   ├── __init__.py
-    │   │   └── bot.py           # create_bot() : instancie le bot simplematrixbotlib
-    │   │
-    │   └── listeners/           # ── Couche fonctionnalités (une par fichier) ──
-    │       ├── __init__.py      # load_all() : charge auto. tous les modules avec register()
-    │       └── echo.py          # coucou → renvoie l'heure (la fonctionnalité de test)
-    │
-    └── bash/                    # Scripts d'exploration de l'API Matrix (phase de découverte)
-       └── get_token.sh         # Récupère un jeton d'accès
+``` bash
+tchap_bot_test/
+│
+├── main.py                  # Point d'entrée : appelle src.run("!")
+├── pyproject.toml           # Dépendances (matrix-nio[e2e], openai, simplematrixbotlib)
+├── uv.lock                  # Verrouillage des versions (uv)
+├── .python-version          # Version Python du projet (3.13)
+├── LICENSE
+│
+├── src/                     # Le code du bot, organisé en package
+│   ├── __init__.py          # run() : charge la config, crée le bot, branche les listeners
+│   │
+│   ├── config/              # ── Couche configuration ──
+│   │   ├── __init__.py
+│   │   └── settings.py      # Creds, BotConfig, Settings + lecture des variables d'env
+│   │
+│   ├── core/                # ── Couche cœur ──
+│   │   ├── __init__.py
+│   │   └── bot.py           # create_bot() : instancie le bot simplematrixbotlib
+│   │
+│   └── listeners/           # ── Couche fonctionnalités (une par fichier) ──
+│       ├── __init__.py      # load_all() : charge auto. tous les modules avec register()
+│       └── echo.py          # coucou → renvoie l'heure (la fonctionnalité de test)
+│
+└── bash/                    # Scripts d'exploration de l'API Matrix (phase de découverte)
+   └── get_token.sh         # Récupère un jeton d'accès
+```
 
 Les `listeners` stockent toutes les fonctionnalités de notre bot Tchap. L’architecture du dossier est volontairement modulaire : chaque fonctionnalité a son propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste sa fonction `register` en `no_register`, et hop.
 
@@ -279,6 +281,8 @@ Un petit coup d’IA permet de rédiger le code d’initialisation qui charge to
 ``` bash
 uv run main.py
 ```
+
+**Pour la simplicité de la suite, tout reste dans un seul fichier `main.py`. Si vous voulez adopter cette organisation,** **forkez le repo du bot !**
 
 # Quatrième étape : combiner 1 et 2
 
@@ -306,9 +310,9 @@ L’astuce pour ne pas rester perdu trop longtemps : **exporter une conversation
 
 Voici l’échange ci-dessus au format JSON Matrix :
 
-Code
+Voir un échange Tchap au format JSON
 
-``` python
+``` json
 {
     "content": {
         "msgtype": "m.text",
@@ -655,19 +659,24 @@ Tatam
 
 Dernière marche, et pas la plus petite : **faire tourner le bot en continu, sans dépendre de ma machine**. L’équipe du SSP Cloud m’a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).
 
+Les étapes sont :
+
+- de conteneuriser son application avec Docker;
+- de la déployer à proprement parler sur l’infrastructure Kubernetes du SSPCloud.
+
 ## Docker mon amour
 
 Cela demande de découvrir **Docker** et ses ressources de débutant bien faites ([ici](https://docs.docker.com/get-started/introduction/get-docker-desktop/) par exemple).
 
 Il faut aller **se créer un compte sur** [**Docker**](https://www.docker.com/). L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local ou tester via des GitHub Action ou bien le VS Code de GitHub (dans `<> Code` / `Codespaces` dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.
 
+### Le dockerfile : la recette pour construire l’image Docker
+
 Après, le `Dockerfile` est assez basique et un assitant IA aide à le rédiger.
 
 Le morceau le plus pénible, ça a été **les bibliothèques de chiffrement** (`python-olm`, qui compile `libolm` depuis les sources) : il a fallu glisser les bons outils de compilation dans l’image. Mais là encore, cela a été tout à fait respectable et mon assistant préféré m’a aidé.
 
 Voici le `Dockerfile` final, utilisable tel quel :
-
-Code
 
 ``` python
 FROM python:3.13-slim
@@ -689,12 +698,13 @@ COPY . .
 CMD ["uv", "run", "main.py"]
 ```
 
+### Le workflow github action pour exécuter la tambouille du dockerfile
+
 L’image **Docker se construit toute seule à chaque `push` sur GitHub**, grâce à une *GitHub Action* qui la pousse ensuite sur Docker Hub. N’oubliez pas d’ajouter en secret GitHub vos identifiants Docker :
 
-Show YAML
+Voir le YAML
 
 ``` yaml
-
 name: Build and push Docker image
 
 on:
@@ -722,13 +732,17 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest
 ```
 
+## SSPCloud mon amour
+
 Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud.
 
-Une petite angoisse une fois l’image poussée sur Docker : *mais où sont tous mes secrets (identifiants Tchap, clé d’API du LLM) ?*. Bon, après vérification, **ils ne sont pas poussées dans l’image Docker s’ils ne sont pas dans le code**.
+### Ciel, mes secrets
 
-Les secrets sont injectés en variables d’environnement via des `secretKeyRef`, et un petit volume persistant garde le fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s’applique avec `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` substituées :
+Une petite angoisse une fois l’image poussée sur Docker : *mais où sont tous mes secrets (identifiants Tchap, clé d’API du LLM) ?*. Bon, après vérification, **ils ne sont pas poussées dans l’image Docker s’ils ne sont pas dans le code**. Les secrets sont injectés en variables d’environnement via des `secretKeyRef`.
 
-Show .env file
+Donc **si vous respectez les bonnes pratiques jusque là, cela devrait bien aller**. Sinon, changez vos tokens :)
+
+Voir le fichier .env récapitulant tous les secrets à avoir
 
 ``` python
 # =============================================================================
@@ -757,10 +771,26 @@ DOCKERHUB_TOKEN="votre_token_dockerhub"
 SSP_USERNAME="votre_identifiant_sspcloud"
 ```
 
-Show YAML
+### La recette de déploiement Kubernetes
+
+En Kubernetes, il faut donc passer un manifeste ou un “contrat” (j’aime l’idée de passer un contrat avec une machine). Le “contrat” définit comment on déploit l’image qu’on a construite avant.
+
+C’est un peu comme si le gateau était sorti du four, maintenant le contrat c’est avec le serveur pour lui dire comment il doit nous amener le gateau à table et comment nous le servir.
+
+Tout cela se passe dans un fichier YAML à stocker dans un répertoire idoine nommé `k8s` (je ne sais pas pourquoi). Le contrat spécifie :
+
+- l’espace SSPCloud lié au déployement et le nom du pod;
+- ce qu’il se passe si le pod est tué (ici on le recrée, `recreate`, pour qu’il y en ait toujours un `replica`);
+- on injecte le lien vers l’image docker à tirer;
+  - on spécifie tous les secrets dont il a besoin pour travailler;
+  - on lui donne de la ressource pour qu’il travaille;
+  - on lui alloue aussi un petit espace de stockage (`PersistentVolumeClaim`) pour qu’il puisse stocker ses token Tchap;
+
+Et voilà, le serveur est censé pouvoir nous amener notre gateau tout sorti du four.
+
+Voir le contrat Kubernetes
 
 ``` yaml
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -826,29 +856,91 @@ spec:
       storage: 1Gi
 ```
 
-Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d’admin Kubernetes dans le SSPCloud. Et puis, j’ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME` enregistrés en variable d’environnement dans bash :
+## Décollage de la fusée
+
+Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d’admin Kubernetes dans le SSPCloud.
 
 > **TIP:**
+>
+> Dans les détails de création de votre service, vous avez l’onglet “Role”:
 >
 > ![](admin_role.png)
 >
 > Comment créer un service avec un rôle administrateur Kubernetes
 
+J’ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME` enregistrés en variable d’environnement dans bash :
+
 ``` bash
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
 ```
 
-Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos questions dans le salon de l’équipe, et qui garde même le fil de la discussion en mémoire.
+Si vous n’êtes pas un freak comme moi, vous pouvez remplacer les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` dans le contrat yaml ci-dessus et ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple `kubectl apply -f`.
+
+> **TIP:**
+>
+> Les commandes essentielles de Kubernetes sont :
+>
+> - `kubectl get pods` : va lister tous les pods liés à votre compte SSPCloud.
+>
+> ``` .bash
+> onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
+> NAME                            READY   STATUS    RESTARTS       AGE
+> tchap-bot-118218-6vmfk          1/1     Running   43 (12m ago)   36h
+> vscode-python-118218-0          1/1     Running   0              18h
+> vscode-python-118218-0          1/1     Running   0              101m
+> vscode-r-python-julia-118218-0  1/1     Running   0              20h
+> ```
+>
+> - `kubectl delete pod <pod-name>` : pour arrêter un pod : mais un pod n’est pas un déploiement, donc vous pouvez tester sur votre déploiement cela ne va pas marcher. *Cf.* partie suivante.
+
+Et voilà **tatam** : **un bot qui tourne en continu sur le SSP Cloud, qui répond à nos** **questions dans le salon de l’équipe, et qui garde même le fil de la discussion en** **mémoire.**
+
+## Exploser la fusée
+
+Tout marche, on est content. Mais au fait, **on fait comment pour arrêter ce déploiement** ?
+
+Comme on a spécifié qu’on **voulait toujours un pod actif dans notre contrat**, un simple `kubectl delete pod <pod-name>` va le tuer mais le processus de déploiement va en recréer un pour arriver au nombre spécifié de replicas (ici : 1 - fun fact, mettez deux pods et vous aurez des messages en double à chaque fois).
+
+Comment on fait pour tuer cette bougie qui se rallume à chaque fois qu’on lui souffle dessus alors ?
+
+- soit on arrête complètement le déploiement avec `kubectl delete deployment <name>` (en l’occurence avec le nom du contrat ci-avant : `kubectl delete deployment tchap-bot`)
+- soit on lui de deployer 0 pod avec `kubectl scale deployment <name> --replicas=0` (en l’occurence avec le nom du contrat ci-avant : `kubectl scale deployment tchap-bot --replicas=0`)
+
+``` bash
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl scale deployment tchap-bot --replicas=0
+deployment.apps/tchap-bot scaled
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
+NAME                            READY   STATUS    RESTARTS   AGE
+vscode-python-118218-0          1/1     Running   0          19h
+vscode-python-118218-0          1/1     Running   0          113m
+vscode-r-python-julia-118218-0  1/1     Running   0          20h
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl scale deployment tchap-bot --replicas=1
+deployment.apps/tchap-bot scaled
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
+NAME                            READY   STATUS              RESTARTS   AGE
+tchap-bot-68d875998b-77lb6      0/1     ContainerCreating   0          2s
+vscode-python-118218-0          1/1     Running             0          19h
+vscode-python-118218-0          1/1     Running             0          114m
+vscode-r-python-julia-118218-0  1/1     Running             0          20h
+```
 
 > **CAUTION:**
 >
-> Et t’es mignon mais combien de temps cela t’a pris tout ça ?
+> Je trouve intéressant de savoir combien de temps prend un exercice. Tout dépend des compétences de bases, que je vous auto-spécifie ici :
 >
-> Expérience : - connaissance inexistante du sujet bot/Tchap; - connaissance inexistante de la manière dont marche llm.lab; - 0 déploiement réussi;
+> **Expérience :**
 >
-> Outils : - avec un assistant IA (essentiel).
+> - connaissance inexistante du sujet bot/Tchap;
+> - connaissance inexistante de la manière dont marche llm.lab;
+> - 0 déploiement réussi sur Kubernetes;
+> - compétence intermédiaire en Python.
 >
-> Et à grosses mailles :
+> **Outils :**
+>
+> - avec un assistant IA (essentiel);
+> - avec accès au SSPCloud (essentiel).
+>
+> E**t à grosses mailles :**
 >
 > - Découverte de Matrix, la manière dont marchent les bots, test à droite à gauche : 2 jours
 > - Premier bot simple : 3h
@@ -858,13 +950,13 @@ Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à 
 > - Docker : 6h
 > - post de blog : 5h
 >
-> Soit au total **environ une semaine de travail** pesé tout compris.
+> Soit au total **environ une semaine de travail** emballé c’est pesé.
 
 # Ressources
 
 Pour aller plus loin ou refaire l’expérience chez vous :
 
-- le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm>
+- le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm> ;
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
 - le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ;
