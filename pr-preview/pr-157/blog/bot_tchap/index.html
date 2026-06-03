@@ -293,11 +293,11 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#authentification" id="toc-authentification" class="nav-link" data-scroll-target="#authentification">Authentification</a></li>
   <li><a href="#envoyer-un-message" id="toc-envoyer-un-message" class="nav-link" data-scroll-target="#envoyer-un-message">Envoyer un message</a></li>
+  </ul></li>
   <li><a href="#deuxième-étape-brancher-un-llm" id="toc-deuxième-étape-brancher-un-llm" class="nav-link" data-scroll-target="#deuxième-étape-brancher-un-llm">Deuxième étape : brancher un LLM</a></li>
   <li><a href="#troisième-étape-préparer-la-quatrième-étape" id="toc-troisième-étape-préparer-la-quatrième-étape" class="nav-link" data-scroll-target="#troisième-étape-préparer-la-quatrième-étape">Troisième étape : préparer la quatrième étape</a></li>
-  <li><a href="#quatrième-étape-combiner-les-deux" id="toc-quatrième-étape-combiner-les-deux" class="nav-link" data-scroll-target="#quatrième-étape-combiner-les-deux">Quatrième étape : combiner les deux</a></li>
+  <li><a href="#quatrième-étape-combiner-1-et-2" id="toc-quatrième-étape-combiner-1-et-2" class="nav-link" data-scroll-target="#quatrième-étape-combiner-1-et-2">Quatrième étape : combiner 1 et 2</a></li>
   <li><a href="#cinquième-étape-mise-en-production-sur-le-ssp-cloud" id="toc-cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="nav-link" data-scroll-target="#cinquième-étape-mise-en-production-sur-le-ssp-cloud">Cinquième étape : mise en production sur le SSP Cloud</a></li>
-  </ul></li>
   <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/blog/bot_tchap/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/blog/bot_tchap/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></nav>
@@ -314,7 +314,7 @@ window.Quarto = {
 <p>Dans l’équipe, on a un salon Tchap bienveillant. C’est là qu’on pose les questions qu’on n’ose pas poser ailleurs. Et un jour, l’idée est venue d’y <strong>brancher un bot capable de répondre à nos questions</strong>, directement depuis Tchap, plutôt que d’attendre qu’un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. De quoi se dépanner sans déranger personne - et, accessoirement, briller en réunion d’équipe - si tant est qu’on capte dans la salle de réunion.</p>
 <p>Et enfin, soyons honnêtes, c’était aussi en partie parce que c’était drôle d’essayer de mettre un bot sur Tchap.</p>
 <p>Finalement, ce n’était pas si compliqué. On m’avait vendu que les bots Tchap étaient compliqués à mettre en place, et en fait je n’ai pas trouvé. Par ailleurs, se connecter à <a href="https://llm.lab.sspcloud.fr">llm.lab</a> est plutôt très simple. Le plus délicat a été de découvrir Tchap, d’orchestrer les deux et enfin la mise en production.</p>
-<p>Après <em>une petite semaine de travail</em> (cf.&nbsp;détail plus bas pour ceux que cela intéresse), le bot est en place (cf.&nbsp;<a href="github.com/nicotlm/tchap_bot_test/">sa maison sur Github</a>) et fait aujourd’hui trois choses :</p>
+<p>Après <em>une petite semaine de travail</em> (cf.&nbsp;détail plus bas pour ceux que cela intéresse), le bot est en place (cf.&nbsp;<a href="https://github.com/SSPHub/tchap_bot_llm">sa maison sur Github</a>) et fait aujourd’hui trois choses :</p>
 <ul>
 <li>il <strong>répond quand on dit coucou</strong>, histoire de vérifier qu’il est bien réveillé ;</li>
 <li>il <strong>répond à vos questions</strong> en interrogeant un grand modèle de langage ;</li>
@@ -381,7 +381,7 @@ window.Quarto = {
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_MATRIX_ID<span class="op">=</span><span class="st">"@votre-bot:agent.finances.tchap.gouv.fr"</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_PWD<span class="op">=</span><span class="st">"votre_mot_de_passe_tchap"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="ddee4c67" class="cell">
+<div id="e99cbc1e" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># uv add "matrix-nio[e2e]" simplematrixbotlib dotenv</span></span>
@@ -439,8 +439,9 @@ Mise en garde
 </div>
 </div>
 </section>
-<section id="deuxième-étape-brancher-un-llm" class="level2">
-<h2 class="anchored" data-anchor-id="deuxième-étape-brancher-un-llm">Deuxième étape : brancher un LLM</h2>
+</section>
+<section id="deuxième-étape-brancher-un-llm" class="level1">
+<h1>Deuxième étape : brancher un LLM</h1>
 <p>Bonne nouvelle : <strong>utiliser</strong> <a href="https://llm.lab.sspcloud.fr/"><code>llm.lab.sspcloud.fr</code></a>, <strong>c’est en fait super simple</strong>.</p>
 <p>Comme le service expose une API compatible OpenAI, il suffit de réutiliser le <em>package</em> <code>openai</code> en pointant vers la bonne URL avec sa clé API de <a href="https://llm.lab.sspcloud.fr">llm.lab</a> en suivant <a href="https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key">cette procédure</a>. On stocke le tout dans le <code>.env</code> sous <code>LLM_LAB_API_KEY</code>.</p>
 <p>Après, le snippet ci-dessous est complet et s’exécute tel quel avec <code>uv run main.py</code>:</p>
@@ -457,7 +458,7 @@ Mise en garde
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>LLM_LAB_API_KEY<span class="op">=</span><span class="st">"votre_cle_api_llm_lab"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="1efce7ac" class="cell">
+<div id="c3d0039d" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># uv add openai</span></span>
@@ -531,8 +532,8 @@ Mise en garde
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="st">Dites-moi ce qui vous passe par la tête ! Je vous écoute.</span></span>
 <span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="st">You : quit</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="troisième-étape-préparer-la-quatrième-étape" class="level2">
-<h2 class="anchored" data-anchor-id="troisième-étape-préparer-la-quatrième-étape">Troisième étape : préparer la quatrième étape</h2>
+<section id="troisième-étape-préparer-la-quatrième-étape" class="level1">
+<h1>Troisième étape : préparer la quatrième étape</h1>
 <p>Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre des aiguilles d’une montre.</p>
 <p>Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en <em>package</em> avec des sous-modules (<code>config</code>, <code>core</code>, <code>listeners</code>).</p>
 <p>Voici la structure à cette étape :</p>
@@ -567,8 +568,8 @@ Mise en garde
 <p>À ce stade, l’organisation en <em>package</em> avec <a href="https://docs.astral.sh/uv/"><code>uv</code></a> rend le tout reproductible. Les dépendances vivent dans le <code>pyproject.toml</code>, et lancer le bot tient en une ligne :</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run main.py</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="quatrième-étape-combiner-les-deux" class="level2">
-<h2 class="anchored" data-anchor-id="quatrième-étape-combiner-les-deux">Quatrième étape : combiner les deux</h2>
+<section id="quatrième-étape-combiner-1-et-2" class="level1">
+<h1>Quatrième étape : combiner 1 et 2</h1>
 <p>Comme le dit l’adage, on a de la pâte à crêpe, on a du sucre, on va <strong>créer une crêpe au sucre</strong>.</p>
 <p>On crée une commande <code>llm</code> maintenant et on la branche sur <code>llm.lab</code> avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).</p>
 <p>Cela se fait avec un peu de douleur mais rien que l’on aime pas : on repère si on reçoit un message avec <code>@bot.listener.on_message_event</code> et on le récupère avec <code>match = botlib.MessageMatch(room, message, bot)</code>. Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. Et puis on renvoie la réponse du LLM sur Tchap.</p>
@@ -582,7 +583,7 @@ Mise en garde
 <p>Dans Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond à celui-là » est caché dans des balises bien imbriquées (<code>content</code> → <code>m.relates_to</code> → <code>m.in_reply_to</code> → <code>event_id</code>).</p>
 <p>L’astuce pour ne pas rester perdu trop longtemps : <strong>exporter une conversation Tchap au format JSON</strong>. En voyant la vraie tête des événements, je me suis moins perdu dans les étages de balises.</p>
 <p>Voici l’échange ci-dessus au format JSON Matrix :</p>
-<div id="5903fc09" class="cell">
+<div id="b5d3f8c0" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>{</span>
@@ -671,7 +672,7 @@ Mise en garde
 <p>Après, il faut gérer <strong>les problèmes de fonction <code>async</code> dans Python</strong>. Je n’ai pas tout compris mais de ce que j’ai compris, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, <strong>on met un <code>await</code> devant</strong>. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf.&nbsp;le blabla sur le chiffrement), donc quand on récupère un message de l’API de <code>nio</code> on doit indiquer <code>await bot.async_client.room_get_event</code>.</p>
 <p>Et <code>await</code>, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un <code>await</code> sera une fonction <code>async</code> qu’on définit en <code>async def get_event</code>. Et ainsi toute fonction qui appelerait <code>get_event</code> devrait le faire avec un <code>await get_event</code> et serait elle-même <code>async</code>.</p>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="208418bd" class="cell">
+<div id="01cf84d7" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
@@ -932,15 +933,15 @@ Note
 </figure>
 </div>
 </section>
-<section id="cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="level2">
-<h2 class="anchored" data-anchor-id="cinquième-étape-mise-en-production-sur-le-ssp-cloud">Cinquième étape : mise en production sur le SSP Cloud</h2>
+<section id="cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="level1">
+<h1>Cinquième étape : mise en production sur le SSP Cloud</h1>
 <p>Dernière marche, et pas la plus petite : <strong>faire tourner le bot en continu, sans dépendre de ma machine</strong>. L’équipe du SSP Cloud m’a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).</p>
 <p>Cela demande de découvrir <strong>Docker</strong> et ses ressources de débutant bien faites (<a href="https://docs.docker.com/get-started/introduction/get-docker-desktop/">ici</a> par exemple).</p>
 <p>Il faut aller <strong>se créer un compte sur</strong> <a href="https://www.docker.com/"><strong>Docker</strong></a>. L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local ou tester via des GitHub Action ou bien le VS Code de GitHub (dans <code>&lt;&gt; Code</code> / <code>Codespaces</code> dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.</p>
 <p>Après, le <code>Dockerfile</code> est assez basique et un assitant IA aide à le rédiger.</p>
 <p>Le morceau le plus pénible, ça a été <strong>les bibliothèques de chiffrement</strong> (<code>python-olm</code>, qui compile <code>libolm</code> depuis les sources) : il a fallu glisser les bons outils de compilation dans l’image. Mais là encore, cela a été tout à fait respectable et mon assistant préféré m’a aidé.</p>
 <p>Voici le <code>Dockerfile</code> final, utilisable tel quel :</p>
-<div id="730db938" class="cell">
+<div id="69bff158" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>FROM python:<span class="fl">3.13</span><span class="op">-</span>slim</span>
@@ -990,7 +991,7 @@ fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s'app
 `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
 `${DOCKERHUB_USERNAME}` substituées :
 
-::: {#338243c6 .cell}
+::: {#354aaddc .cell}
 ``` {.python .cell-code}
 # =============================================================================
 # .env - variables d'environnement du bot Tchap
@@ -1058,9 +1059,16 @@ metadata:
   namespace: user-\)</span>{SSP_USERNAME} spec: accessModes: - ReadWriteOnce resources: requests: storage: 1Gi</p>
 <pre><code>
 Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
-Et puis, n'aimant pas mettre mes identifiants j'ai enlevé mes username mais vous pouvez les committer si vous voulez. 
+Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
 En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
 enregistrés en variable d'environnement dans bash : 
+
+
+::: {.callout-tip title="Lancer un service avec un rôle admin Kubernetes" collapse="true"}
+
+![Comment créer un service avec un rôle administrateur Kubernetes](admin_role.png)
+
+:::
 
 ```{.bash}
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -</code></pre>
@@ -1092,12 +1100,11 @@ Mise en garde
 </div>
 </div>
 </section>
-</section>
 <section id="ressources" class="level1">
 <h1>Ressources</h1>
 <p>Pour aller plus loin ou refaire l’expérience chez vous :</p>
 <ul>
-<li>le code source complet du bot : <a href="https://github.com/nicotlm/tchap_bot_test/" class="uri">https://github.com/nicotlm/tchap_bot_test/</a></li>
+<li>le code source complet du bot : <a href="https://github.com/SSPHub/tchap_bot_llm" class="uri">https://github.com/SSPHub/tchap_bot_llm</a></li>
 <li>la <a href="https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/">doc technique des bots Tchap</a> ;</li>
 <li>la <a href="https://simple-matrix-bot-lib.readthedocs.io/en/latest/">doc de <code>simplematrixbotlib</code></a> ;</li>
 <li>le service de modèles de langage du SSP Cloud : <a href="https://llm.lab.sspcloud.fr/" class="uri">https://llm.lab.sspcloud.fr/</a> ;</li>

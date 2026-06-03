@@ -6,7 +6,7 @@ Et enfin, soyons honnêtes, c’était aussi en partie parce que c’était drô
 
 Finalement, ce n’était pas si compliqué. On m’avait vendu que les bots Tchap étaient compliqués à mettre en place, et en fait je n’ai pas trouvé. Par ailleurs, se connecter à [llm.lab](https://llm.lab.sspcloud.fr) est plutôt très simple. Le plus délicat a été de découvrir Tchap, d’orchestrer les deux et enfin la mise en production.
 
-Après *une petite semaine de travail* (cf. détail plus bas pour ceux que cela intéresse), le bot est en place (cf. [sa maison sur Github](github.com/nicotlm/tchap_bot_test/)) et fait aujourd’hui trois choses :
+Après *une petite semaine de travail* (cf. détail plus bas pour ceux que cela intéresse), le bot est en place (cf. [sa maison sur Github](https://github.com/SSPHub/tchap_bot_llm)) et fait aujourd’hui trois choses :
 
 - il **répond quand on dit coucou**, histoire de vérifier qu’il est bien réveillé ;
 - il **répond à vos questions** en interrogeant un grand modèle de langage ;
@@ -140,7 +140,7 @@ Lancez-le avec un `uv run main.py`.
 >
 > Je n’ai pas réussi à régler proprement la **vérification du bot** (le fameux échange d’emojis qui certifie l’appareil). Le bot tourne, mais il reste « non vérifié ». Cela ne pose pas de problème particulier.
 
-## Deuxième étape : brancher un LLM
+# Deuxième étape : brancher un LLM
 
 Bonne nouvelle : **utiliser** [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), **c’est en fait super simple**.
 
@@ -236,7 +236,7 @@ Dites-moi ce qui vous passe par la tête ! Je vous écoute.
 You : quit
 ```
 
-## Troisième étape : préparer la quatrième étape
+# Troisième étape : préparer la quatrième étape
 
 Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre des aiguilles d’une montre.
 
@@ -280,7 +280,7 @@ Un petit coup d’IA permet de rédiger le code d’initialisation qui charge to
 uv run main.py
 ```
 
-## Quatrième étape : combiner les deux
+# Quatrième étape : combiner 1 et 2
 
 Comme le dit l’adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**.
 
@@ -639,7 +639,7 @@ This bot's public fingerprint ("Session key") for one-sided verification is: MXt
 
 Tatam
 
-## Cinquième étape : mise en production sur le SSP Cloud
+# Cinquième étape : mise en production sur le SSP Cloud
 
 Dernière marche, et pas la plus petite : **faire tourner le bot en continu, sans dépendre de ma machine**. L’équipe du SSP Cloud m’a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).
 
@@ -709,7 +709,7 @@ jobs: build-and-push: runs-on: ubuntu-latest steps: - name: Checkout code uses: 
     `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
     `${DOCKERHUB_USERNAME}` substituées :
 
-    ::: {#338243c6 .cell}
+    ::: {#354aaddc .cell}
     ``` {.python .cell-code}
     # =============================================================================
     # .env - variables d'environnement du bot Tchap
@@ -744,9 +744,16 @@ apiVersion: apps/v1 kind: Deployment metadata: name: tchap-bot namespace: user-\
 
 
     Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
-    Et puis, n'aimant pas mettre mes identifiants j'ai enlevé mes username mais vous pouvez les committer si vous voulez. 
+    Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
     En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
     enregistrés en variable d'environnement dans bash : 
+
+
+    ::: {.callout-tip title="Lancer un service avec un rôle admin Kubernetes" collapse="true"}
+
+    ![Comment créer un service avec un rôle administrateur Kubernetes](admin_role.png)
+
+    :::
 
     ```{.bash}
     sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
@@ -777,7 +784,7 @@ Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à 
 
 Pour aller plus loin ou refaire l’expérience chez vous :
 
-- le code source complet du bot : <https://github.com/nicotlm/tchap_bot_test/>
+- le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm>
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
 - le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ;

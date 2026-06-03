@@ -87,7 +87,7 @@
 <p>Dans l’équipe, on a un salon Tchap bienveillant. C’est là qu’on pose les questions qu’on n’ose pas poser ailleurs. Et un jour, l’idée est venue d’y <strong>brancher un bot capable de répondre à nos questions</strong>, directement depuis Tchap, plutôt que d’attendre qu’un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. De quoi se dépanner sans déranger personne - et, accessoirement, briller en réunion d’équipe - si tant est qu’on capte dans la salle de réunion.</p>
 <p>Et enfin, soyons honnêtes, c’était aussi en partie parce que c’était drôle d’essayer de mettre un bot sur Tchap.</p>
 <p>Finalement, ce n’était pas si compliqué. On m’avait vendu que les bots Tchap étaient compliqués à mettre en place, et en fait je n’ai pas trouvé. Par ailleurs, se connecter à <a href="https://llm.lab.sspcloud.fr">llm.lab</a> est plutôt très simple. Le plus délicat a été de découvrir Tchap, d’orchestrer les deux et enfin la mise en production.</p>
-<p>Après <em>une petite semaine de travail</em> (cf.&nbsp;détail plus bas pour ceux que cela intéresse), le bot est en place (cf.&nbsp;<a href="github.com/nicotlm/tchap_bot_test/">sa maison sur Github</a>) et fait aujourd’hui trois choses :</p>
+<p>Après <em>une petite semaine de travail</em> (cf.&nbsp;détail plus bas pour ceux que cela intéresse), le bot est en place (cf.&nbsp;<a href="https://github.com/SSPHub/tchap_bot_llm">sa maison sur Github</a>) et fait aujourd’hui trois choses :</p>
 <ul>
 <li>il <strong>répond quand on dit coucou</strong>, histoire de vérifier qu’il est bien réveillé ;</li>
 <li>il <strong>répond à vos questions</strong> en interrogeant un grand modèle de langage ;</li>
@@ -252,7 +252,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="ddee4c67" class="cell">
+<div id="e99cbc1e" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><span class="co" style="color: #5E5E5E;
@@ -402,8 +402,9 @@ Mise en garde
 </div>
 </div>
 </section>
-<section id="deuxième-étape-brancher-un-llm" class="level2">
-<h2 class="anchored" data-anchor-id="deuxième-étape-brancher-un-llm">Deuxième étape : brancher un LLM</h2>
+</section>
+<section id="deuxième-étape-brancher-un-llm" class="level1">
+<h1>Deuxième étape : brancher un LLM</h1>
 <p>Bonne nouvelle : <strong>utiliser</strong> <a href="https://llm.lab.sspcloud.fr/"><code>llm.lab.sspcloud.fr</code></a>, <strong>c’est en fait super simple</strong>.</p>
 <p>Comme le service expose une API compatible OpenAI, il suffit de réutiliser le <em>package</em> <code>openai</code> en pointant vers la bonne URL avec sa clé API de <a href="https://llm.lab.sspcloud.fr">llm.lab</a> en suivant <a href="https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key">cette procédure</a>. On stocke le tout dans le <code>.env</code> sous <code>LLM_LAB_API_KEY</code>.</p>
 <p>Après, le snippet ci-dessous est complet et s’exécute tel quel avec <code>uv run main.py</code>:</p>
@@ -436,7 +437,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="1efce7ac" class="cell">
+<div id="c3d0039d" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><span class="co" style="color: #5E5E5E;
@@ -658,8 +659,8 @@ font-style: inherit;">Dites-moi ce qui vous passe par la tête ! Je vous écoute
 background-color: null;
 font-style: inherit;">You : quit</span></span></code></pre></div></div>
 </section>
-<section id="troisième-étape-préparer-la-quatrième-étape" class="level2">
-<h2 class="anchored" data-anchor-id="troisième-étape-préparer-la-quatrième-étape">Troisième étape : préparer la quatrième étape</h2>
+<section id="troisième-étape-préparer-la-quatrième-étape" class="level1">
+<h1>Troisième étape : préparer la quatrième étape</h1>
 <p>Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre des aiguilles d’une montre.</p>
 <p>Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en <em>package</em> avec des sous-modules (<code>config</code>, <code>core</code>, <code>listeners</code>).</p>
 <p>Voici la structure à cette étape :</p>
@@ -696,8 +697,8 @@ font-style: inherit;">You : quit</span></span></code></pre></div></div>
 background-color: null;
 font-style: inherit;">uv</span> run main.py</span></code></pre></div></div>
 </section>
-<section id="quatrième-étape-combiner-les-deux" class="level2">
-<h2 class="anchored" data-anchor-id="quatrième-étape-combiner-les-deux">Quatrième étape : combiner les deux</h2>
+<section id="quatrième-étape-combiner-1-et-2" class="level1">
+<h1>Quatrième étape : combiner 1 et 2</h1>
 <p>Comme le dit l’adage, on a de la pâte à crêpe, on a du sucre, on va <strong>créer une crêpe au sucre</strong>.</p>
 <p>On crée une commande <code>llm</code> maintenant et on la branche sur <code>llm.lab</code> avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).</p>
 <p>Cela se fait avec un peu de douleur mais rien que l’on aime pas : on repère si on reçoit un message avec <code>@bot.listener.on_message_event</code> et on le récupère avec <code>match = botlib.MessageMatch(room, message, bot)</code>. Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. Et puis on renvoie la réponse du LLM sur Tchap.</p>
@@ -711,7 +712,7 @@ font-style: inherit;">uv</span> run main.py</span></code></pre></div></div>
 <p>Dans Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond à celui-là » est caché dans des balises bien imbriquées (<code>content</code> → <code>m.relates_to</code> → <code>m.in_reply_to</code> → <code>event_id</code>).</p>
 <p>L’astuce pour ne pas rester perdu trop longtemps : <strong>exporter une conversation Tchap au format JSON</strong>. En voyant la vraie tête des événements, je me suis moins perdu dans les étages de balises.</p>
 <p>Voici l’échange ci-dessus au format JSON Matrix :</p>
-<div id="5903fc09" class="cell">
+<div id="b5d3f8c0" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1">{</span>
@@ -992,7 +993,7 @@ font-style: inherit;">"!UDagJdADqqUSKBW:agent.finances.tchap.gouv.fr"</span></sp
 <p>Après, il faut gérer <strong>les problèmes de fonction <code>async</code> dans Python</strong>. Je n’ai pas tout compris mais de ce que j’ai compris, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, <strong>on met un <code>await</code> devant</strong>. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf.&nbsp;le blabla sur le chiffrement), donc quand on récupère un message de l’API de <code>nio</code> on doit indiquer <code>await bot.async_client.room_get_event</code>.</p>
 <p>Et <code>await</code>, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un <code>await</code> sera une fonction <code>async</code> qu’on définit en <code>async def get_event</code>. Et ainsi toute fonction qui appelerait <code>get_event</code> devrait le faire avec un <code>await get_event</code> et serait elle-même <code>async</code>.</p>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="208418bd" class="cell">
+<div id="01cf84d7" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><span class="im" style="color: #00769E;
@@ -1863,15 +1864,15 @@ font-style: inherit;">'s public fingerprint ("Session key") for one-sided verifi
 </figure>
 </div>
 </section>
-<section id="cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="level2">
-<h2 class="anchored" data-anchor-id="cinquième-étape-mise-en-production-sur-le-ssp-cloud">Cinquième étape : mise en production sur le SSP Cloud</h2>
+<section id="cinquième-étape-mise-en-production-sur-le-ssp-cloud" class="level1">
+<h1>Cinquième étape : mise en production sur le SSP Cloud</h1>
 <p>Dernière marche, et pas la plus petite : <strong>faire tourner le bot en continu, sans dépendre de ma machine</strong>. L’équipe du SSP Cloud m’a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).</p>
 <p>Cela demande de découvrir <strong>Docker</strong> et ses ressources de débutant bien faites (<a href="https://docs.docker.com/get-started/introduction/get-docker-desktop/">ici</a> par exemple).</p>
 <p>Il faut aller <strong>se créer un compte sur</strong> <a href="https://www.docker.com/"><strong>Docker</strong></a>. L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local ou tester via des GitHub Action ou bien le VS Code de GitHub (dans <code>&lt;&gt; Code</code> / <code>Codespaces</code> dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.</p>
 <p>Après, le <code>Dockerfile</code> est assez basique et un assitant IA aide à le rédiger.</p>
 <p>Le morceau le plus pénible, ça a été <strong>les bibliothèques de chiffrement</strong> (<code>python-olm</code>, qui compile <code>libolm</code> depuis les sources) : il a fallu glisser les bons outils de compilation dans l’image. Mais là encore, cela a été tout à fait respectable et mon assistant préféré m’a aidé.</p>
 <p>Voici le <code>Dockerfile</code> final, utilisable tel quel :</p>
-<div id="730db938" class="cell">
+<div id="69bff158" class="cell">
 <details class="code-fold">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1">FROM python:<span class="fl" style="color: #AD0000;
@@ -1997,7 +1998,7 @@ fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s'app
 `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
 `${DOCKERHUB_USERNAME}` substituées :
 
-::: {#338243c6 .cell}
+::: {#354aaddc .cell}
 ``` {.python .cell-code}
 # =============================================================================
 # .env - variables d'environnement du bot Tchap
@@ -2028,9 +2029,16 @@ SSP_USERNAME="votre_identifiant_sspcloud"</code></pre>
 <p>apiVersion: apps/v1 kind: Deployment metadata: name: tchap-bot namespace: user-${SSP_USERNAME} spec: replicas: 1 strategy: type: Recreate selector: matchLabels: app: tchap-bot template: metadata: labels: app: tchap-bot spec: containers: - name: tchap-bot image: <img src="https://latex.codecogs.com/png.latex?%7BDOCKERHUB_USERNAME%7D/tchap-bot:latest%0A%20%20%20%20%20%20%20%20%20%20imagePullPolicy:%20Always%0A%20%20%20%20%20%20%20%20%20%20env:%0A%20%20%20%20%20%20%20%20%20%20%20%20-%20name:%20TCHAP_BOT_MATRIX_ID%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20valueFrom:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20secretKeyRef:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20name:%20tchap-bot-secrets%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20key:%20TCHAP_BOT_MATRIX_ID%0A%20%20%20%20%20%20%20%20%20%20%20%20-%20name:%20TCHAP_BOT_PWD%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20valueFrom:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20secretKeyRef:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20name:%20tchap-bot-secrets%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20key:%20TCHAP_BOT_PWD%0A%20%20%20%20%20%20%20%20%20%20%20%20-%20name:%20LLM_LAB_API_KEY%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20valueFrom:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20secretKeyRef:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20name:%20tchap-bot-secrets%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20key:%20LLM_LAB_API_KEY%0A%20%20%20%20%20%20%20%20%20%20resources:%0A%20%20%20%20%20%20%20%20%20%20%20%20requests:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20memory:%20%22128Mi%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20cpu:%20%22100m%22%0A%20%20%20%20%20%20%20%20%20%20%20%20limits:%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20memory:%20%22256Mi%22%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20cpu:%20%22500m%22%0A%20%20%20%20%20%20%20%20%20%20volumeMounts:%0A%20%20%20%20%20%20%20%20%20%20%20%20-%20name:%20bot-data%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20mountPath:%20/app/session%0A%20%20%20%20%20%20volumes:%0A%20%20%20%20%20%20%20%20-%20name:%20bot-data%0A%20%20%20%20%20%20%20%20%20%20persistentVolumeClaim:%0A%20%20%20%20%20%20%20%20%20%20%20%20claimName:%20tchap-bot-pvc%0A---%0AapiVersion:%20v1%0Akind:%20PersistentVolumeClaim%0Ametadata:%0A%20%20name:%20tchap-bot-pvc%0A%20%20namespace:%20user-">{SSP_USERNAME} spec: accessModes: - ReadWriteOnce resources: requests: storage: 1Gi</p>
 <pre><code>
 Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
-Et puis, n'aimant pas mettre mes identifiants j'ai enlevé mes username mais vous pouvez les committer si vous voulez. 
+Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
 En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
 enregistrés en variable d'environnement dans bash : 
+
+
+::: {.callout-tip title="Lancer un service avec un rôle admin Kubernetes" collapse="true"}
+
+![Comment créer un service avec un rôle administrateur Kubernetes](admin_role.png)
+
+:::
 
 ```{.bash}
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -</code></pre>
@@ -2062,12 +2070,11 @@ Mise en garde
 </div>
 </div>
 </section>
-</section>
 <section id="ressources" class="level1">
 <h1>Ressources</h1>
 <p>Pour aller plus loin ou refaire l’expérience chez vous :</p>
 <ul>
-<li>le code source complet du bot : <a href="https://github.com/nicotlm/tchap_bot_test/" class="uri">https://github.com/nicotlm/tchap_bot_test/</a></li>
+<li>le code source complet du bot : <a href="https://github.com/SSPHub/tchap_bot_llm" class="uri">https://github.com/SSPHub/tchap_bot_llm</a></li>
 <li>la <a href="https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/">doc technique des bots Tchap</a> ;</li>
 <li>la <a href="https://simple-matrix-bot-lib.readthedocs.io/en/latest/">doc de <code>simplematrixbotlib</code></a> ;</li>
 <li>le service de modèles de langage du SSP Cloud : <a href="https://llm.lab.sspcloud.fr/" class="uri">https://llm.lab.sspcloud.fr/</a> ;</li>
@@ -2600,7 +2607,7 @@ font-style: inherit;">return</span> button</span>
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780420442150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780476117580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2624,7 +2631,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780420442150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780476117580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2648,7 +2655,7 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1780420442150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1780476117580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -2672,7 +2679,7 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780420442149" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780476117578" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3800,7 +3807,7 @@ Astuce
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1780420442151" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1780476117580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3835,7 +3842,7 @@ Exploitation de données bancaires pour les prévisions de croissance du PIB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1780420442147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3872,7 +3879,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780420442146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3909,7 +3916,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780420442146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3944,7 +3951,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1780420442146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4040,7 +4047,7 @@ Que disent les données de production et de consommation d’électricité sur l
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1780420442150" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1780476117580" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
 <a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4075,7 +4082,7 @@ Une évaluation des achats transfrontaliers de tabac et des pertes fiscales asso
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780420442148" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780476117578" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4108,7 +4115,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780420442146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4145,7 +4152,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780420442146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4180,7 +4187,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1780420442147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4219,7 +4226,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1780420442146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1780476117577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4258,7 +4265,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1780420442146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1780476117576" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
