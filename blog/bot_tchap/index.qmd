@@ -169,8 +169,9 @@ TCHAP_BOT_PWD="votre_mot_de_passe_tchap"
 
 ```
 
-```{python filename="main.py"}
+```{python}
 #| code-fold: true
+#| filename: "main.py"
 
 # uv add "matrix-nio[e2e]" simplematrixbotlib dotenv
 import os
@@ -249,8 +250,10 @@ LLM_LAB_API_KEY="votre_cle_api_llm_lab"
 
 ```
 
-```{python filename="main.py"}
+```{python}
 #| code-fold: true
+#| filename: "main.py"
+
 # uv add openai
 import os
 from openai import OpenAI
@@ -331,16 +334,17 @@ You : quit
 # Troisième étape : préparer la quatrième étape
 
 Là je triche, je n'ai pas suivi cet ordre là mais j'aurai dû le suivre.
-Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l'ordre des 
-aiguilles d'une montre.
+Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l'ordre.
 
 Donc, maintenant, avant de combiner les deux, j'aurai dû construire le code petit à petit pour 
 que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules 
 (`config`, `core`, `listeners`).
 
-Voici la structure après cette étape :
 
-```
+<details>
+<summary>Voici la structure après cette étape : </summary>
+
+```bash
 tchap_bot_test/
 │
 ├── main.py                  # Point d'entrée : appelle src.run("!")
@@ -369,6 +373,8 @@ tchap_bot_test/
 
 ```
 
+</details>
+
 Les `listeners` stockent toutes les fonctionnalités de notre bot Tchap. L'architecture du dossier
 est volontairement modulaire : chaque fonctionnalité a son
 propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au
@@ -385,6 +391,9 @@ et lancer le bot tient en une ligne :
 ```bash
 uv run main.py
 ```
+
+**Pour la simplicité de la suite, tout reste dans un seul fichier `main.py`. Si vous voulez adopter cette organisation,** 
+**forkez le repo du bot !** 
 
 # Quatrième étape : combiner 1 et 2
 
