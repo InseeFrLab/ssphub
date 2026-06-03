@@ -28,6 +28,8 @@ format:
   html:
     code-overflow: wrap
     execute: false
+
+page-layout: full
 ---
 
 # Quel est le besoin ?
