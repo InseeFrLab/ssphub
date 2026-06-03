@@ -336,7 +336,7 @@ Donc, maintenant, avant de combiner les deux, j'aurai dû construire le code pet
 que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules 
 (`config`, `core`, `listeners`).
 
-Voici la structure à cette étape :
+Voici la structure après cette étape :
 
 ```
 tchap_bot_test/
@@ -388,6 +388,8 @@ uv run main.py
 
 Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer une crêpe au sucre**. 
 
+## Un bot simple sans mémoire
+
 On crée une commande `llm` maintenant et on la branche sur `llm.lab` avec une 
 fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore). 
 
@@ -397,9 +399,12 @@ on le récupère avec `match = botlib.MessageMatch(room, message, bot)`.
 Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. 
 Et puis on renvoie la réponse du LLM sur Tchap.
 
+## Ajouter la mémoire des échanges
+
 La vraie prise de tête - relative, ça n'a duré que quelques heures - c'était de
-**reconstituer le fil de la conversation** pour que le bot ait de la mémoire. 
-C'est simple, je voulais que si je réponde au bot dans Tchap, le bot récupère les 
+**reconstituer le fil de la conversation pour faire un vrai tchat** et que le bot ait la mémoire
+des échanges passés. 
+Concrètement, je voulais que si je réponde au message du bot dans Tchap, le bot récupère les 
 messages liés à la conversation et les envoie en contexte au LLM. Pour mimer un chat 
 avec un LLM et éviter à chaque fois de recommencer à 0. 
 
@@ -408,6 +413,8 @@ avec un LLM et éviter à chaque fois de recommencer à 0.
 Dans Matrix, chaque message a bien son identifiant unique, mais le lien « ce message répond
 à celui-là » est caché dans des balises bien imbriquées
 (`content` → `m.relates_to` → `m.in_reply_to` → `event_id`).
+
+### La plomberie derrière un message
 
 L'astuce pour ne pas rester perdu trop longtemps : **exporter une conversation Tchap au format JSON**. En voyant
 la vraie tête des événements, je me suis moins perdu dans les étages de balises.
@@ -489,14 +496,16 @@ Voici l'échange ci-dessus au format JSON Matrix :
 
 ```
 
+### Architecture de remonter la mémoire des échanges
+
 Ensuite, il "suffit" de remonter le fil réponse après réponse, de façon récursive.
 Concrètement, **à partir de l'ID d'un événement**, il faut : 
 
-- récupérer l'événement (aka : le message);
-- avec l'événement, déterminer qui de l'humain ou de l'"assistant" a envoyé le message;
-- extraire le contenu;
-- stocker tout cela dans l'historique;
-- savoir si lui même est en réponse à un événement;
+- récupérer l'événement (aka : le message) - une fonction `get_event` permet de le faire;
+- avec l'événement, déterminer qui de l'humain ou de l'"assistant" a envoyé le message - c'est le rôle de `get_role_event`;
+- extraire le contenu - `extract_info` extrait les informations sender, body et replied_to d'un `event` Tchap ;
+- stocker tout cela dans l'historique - `history_append`;
+- savoir si lui même est en réponse à un événement - la fonction `get_in_reply_to_event_id` fait cela;
 - et puis on boucle et on boucle et on boucle. 
 
 Par ailleurs, **Tchap permet de formatter son message** : soit vous êtes une/un boss et vous
@@ -505,10 +514,12 @@ en html pour vous.
 
 Pour que la réponse de notre assistant préféré passe bien dans Tchap, 
 **il faut lui ajouter un prompt système qui demande de répondre en markdown** 
-sans échapper les caractères spéciaux. 
+sans échapper les caractères spéciaux. `add_system_prompt` fait cela pour nous. 
+
+### Les fonctions asynchrones 
 
 Après, il faut gérer **les problèmes de fonction `async` dans Python**. 
-Je n'ai pas tout compris mais de ce que j'ai compris, pour les requêtes "compliquées", 
+J'ai compris que je n'avais pas tout compris mais en gros, pour les requêtes "compliquées", 
 c'est à dire celles dont la réponse peut prendre un peu de temps, **on met un `await` devant**. 
 Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf. le blabla sur le chiffrement), 
 donc quand on récupère un message de l'API de `nio` on doit indiquer `await bot.async_client.room_get_event`.
@@ -518,6 +529,7 @@ une fonction `async` qu'on définit en `async def get_event`.
 Et ainsi toute fonction qui appelerait `get_event` devrait le faire avec un `await get_event` 
 et serait elle-même `async`.
 
+### Grand final
 Une fois tout cela compris, avec l'aide d'un assistant bien-tombé, on arrive à ce bloc ci-dessous.
 Il est autonome (les fonctions utilitaires sont incluses) et prend en
 entrée un `bot`, l'`id` du salon et l'`id` du message auquel on répond :
@@ -747,7 +759,7 @@ if __name__ == "__main__":
 ```
 
 
-::: {.callout-tip}
+::: {.callout-tip title="Pour passer en debug mode"}
 
 Fun fact - pour débugger le code, vous avez un mode "debug" dans la fonction `tchat_with_llm` qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. 
 Pour cela, décommenter les lignes après "debug" et commentez celles après "prod mode".
@@ -760,9 +772,10 @@ bot (toujours en commençant par `llm`) pour qu'il se souvienne de tout ce qui p
 
 ::: {.callout-note}
 
-Pour la simplicité de ce post, j'ai simplifié le contenu du repo.
+Pour la simplicité de ce post, j'ai un petit peu simplifié le contenu du repo.
 Il n'y a pas d'organisation en package Python ici, tout est *peu proprement* placé dans un seul script `main.py`.
-Allez voir le repo pour une cible plus propre. 
+Par ailleurs, il n'y a pas de préfixe à la commande : il faut commencer un message Tchap avec le bot par `llm` et non par `!llm`. 
+Allez voir le repo pour une cible plus propre et utilisant le préfixe `!`. 
 
 :::
 
@@ -782,6 +795,8 @@ This bot's public fingerprint ("Session key") for one-sided verification is: MXt
 
 Dernière marche, et pas la plus petite : **faire tourner le bot en continu, sans dépendre
 de ma machine**. L'équipe du SSP Cloud m'a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).
+
+## Docker mon amour
 
 Cela demande de découvrir **Docker** et ses ressources de débutant bien faites 
 ([ici](https://docs.docker.com/get-started/introduction/get-docker-desktop/) par exemple).
@@ -827,8 +842,11 @@ L'image **Docker se construit toute seule à chaque `push` sur GitHub**, grâce 
 Action* qui la pousse ensuite sur Docker Hub. N'oubliez pas d'ajouter en secret GitHub 
 vos identifiants Docker :
 
-```{yaml filename=".github/workflows/deploy.yaml"}
-#| code-fold: true
+<details>
+<summary>Show YAML</summary>
+
+
+```{.yaml filename=".github/workflows/deploy.yaml"}
 
 name: Build and push Docker image
 
@@ -857,6 +875,9 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest
 ```
 
+</details>
+
+
 Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
 
 Une petite angoisse une fois l'image poussée sur Docker : *mais où sont tous mes secrets  (identifiants Tchap, clé d'API du
@@ -867,7 +888,10 @@ fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s'app
 `kubectl apply -f` une fois les deux variables `${SSP_USERNAME}` et
 `${DOCKERHUB_USERNAME}` substituées :
 
-```{python filename=".env"}
+<details>
+<summary>Show .env file </summary>
+
+```{.python filename=".env"}
 # =============================================================================
 # .env - variables d'environnement du bot Tchap
 # Copiez ce fichier, renseignez les valeurs, et NE LE COMMITEZ PAS
@@ -894,9 +918,14 @@ DOCKERHUB_TOKEN="votre_token_dockerhub"
 SSP_USERNAME="votre_identifiant_sspcloud"
 
 ``` 
+</details>
 
-```{yaml filename="k8s/deployment.yaml"}
-#| code-fold: true
+
+<details>
+<summary>Show YAML</summary>
+
+
+```{.yaml filename="k8s/deployment.yaml"}
 
 apiVersion: apps/v1
 kind: Deployment
@@ -962,6 +991,7 @@ spec:
     requests:
       storage: 1Gi
 ```
+</details>
 
 Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
 Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
