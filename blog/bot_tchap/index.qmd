@@ -535,12 +535,14 @@ Et ainsi toute fonction qui appelerait `get_event` devrait le faire avec un `awa
 et serait elle-même `async`.
 
 ### Grand final
+
 Une fois tout cela compris, avec l'aide d'un assistant bien-tombé, on arrive à ce bloc ci-dessous.
 Il est autonome (les fonctions utilitaires sont incluses) et prend en
 entrée un `bot`, l'`id` du salon et l'`id` du message auquel on répond :
 
-```{python filename="main.py"}
+```{python}
 #| code-fold: true
+#| filename: "main.py"
 
 import os
 from openai import OpenAI
@@ -801,6 +803,11 @@ This bot's public fingerprint ("Session key") for one-sided verification is: MXt
 Dernière marche, et pas la plus petite : **faire tourner le bot en continu, sans dépendre
 de ma machine**. L'équipe du SSP Cloud m'a bien guidé (mille mercis à elle ! et à mon assistant IA préféré aussi).
 
+Les étapes sont : 
+
+- de conteneuriser son application avec Docker;
+- de la déployer à proprement parler sur l'infrastructure Kubernetes du SSPCloud.  
+
 ## Docker mon amour
 
 Cela demande de découvrir **Docker** et ses ressources de débutant bien faites 
@@ -812,6 +819,8 @@ sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l'avoir en local ou 
 GitHub Action ou bien le VS Code de GitHub (dans `<> Code` / `Codespaces` dans GitHub, cela vous ouvre un espace
 similaire à Onyxia) permet de faire des Docker dans Docker. 
 
+### Le dockerfile : la recette pour construire l'image Docker
+
 Après, le `Dockerfile` est assez basique et un assitant IA aide à le rédiger. 
 
 Le morceau le plus pénible, ça a été **les bibliothèques de chiffrement**
@@ -821,9 +830,7 @@ et mon assistant préféré m'a aidé.
 
 Voici le `Dockerfile` final, utilisable tel quel :
 
-```{python filename="dockerfile"}
-#| code-fold: true
-
+```{.python filename="dockerfile"}
 FROM python:3.13-slim
 
 # Installation de uv
@@ -843,16 +850,17 @@ COPY . .
 CMD ["uv", "run", "main.py"]
 ```
 
+### Le workflow github action pour exécuter la tambouille du dockerfile
+
 L'image **Docker se construit toute seule à chaque `push` sur GitHub**, grâce à une *GitHub
 Action* qui la pousse ensuite sur Docker Hub. N'oubliez pas d'ajouter en secret GitHub 
 vos identifiants Docker :
 
 <details>
-<summary>Show YAML</summary>
+<summary>Voir le YAML</summary>
 
 
 ```{.yaml filename=".github/workflows/deploy.yaml"}
-
 name: Build and push Docker image
 
 on:
@@ -882,9 +890,11 @@ jobs:
 
 </details>
 
+## SSPCloud mon amour
 
 Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
 
+### Ciel, mes secrets 
 Une petite angoisse une fois l'image poussée sur Docker : *mais où sont tous mes secrets  (identifiants Tchap, clé d'API du
 LLM) ?*. Bon, après vérification, **ils ne sont pas poussées dans l'image Docker s'ils ne sont pas dans le code**. 
 
@@ -894,7 +904,7 @@ fichier de session Tchap entre deux redémarrages. Le manifeste ci-dessous s'app
 `${DOCKERHUB_USERNAME}` substituées :
 
 <details>
-<summary>Show .env file </summary>
+<summary>Voir le fichier .env </summary>
 
 ```{.python filename=".env"}
 # =============================================================================
@@ -925,13 +935,32 @@ SSP_USERNAME="votre_identifiant_sspcloud"
 ``` 
 </details>
 
+### La recette de déploiement Kubernetes
+
+En Kubernetes, il faut donc passer un manifeste ou un "contrat" (j'aime l'idée de passer un contrat avec une machine). 
+Le "contrat" définit comment on déploit l'image qu'on a construite avant. 
+
+C'est un peu comme si le gateau était sorti du four, maintenant le contrat c'est avec le serveur pour lui dire
+comment il doit nous amener le gateau à table et comment nous le servir. 
+
+Tout cela se passe dans un fichier YAML à stocker dans un répertoire idoine nommé `k8s` (je ne sais pas pourquoi). 
+Le contrat spécifie : 
+
+- l'espace SSPCloud lié au déployement et le nom du pod;
+- ce qu'il se passe si le pod est tué (ici on le recrée, `recreate`, pour qu'il y en ait toujours un `replica`);
+- on injecte le lien vers l'image docker à tirer; 
+    - on spécifie tous les secrets dont il a besoin pour travailler; 
+    - on lui donne de la ressource pour qu'il travaille;
+    - on lui alloue aussi un petit espace de stockage (`PersistentVolumeClaim`) 
+    pour qu'il puisse stocker ses token Tchap;
+
+Et voilà, le serveur est censé pouvoir nous amener notre gateau tout sorti du four. 
 
 <details>
-<summary>Show YAML</summary>
+<summary>Voir le YAML</summary>
 
 
 ```{.yaml filename="k8s/deployment.yaml"}
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -996,23 +1025,55 @@ spec:
     requests:
       storage: 1Gi
 ```
+
 </details>
 
+## Décollage de la fusée 
+
 Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d'admin Kubernetes dans le SSPCloud. 
-Et puis, j'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
-En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
-enregistrés en variable d'environnement dans bash : 
 
 
 ::: {.callout-tip title="Lancer un service avec un rôle admin Kubernetes" collapse="true"}
+
+Dans les détails de création de votre service, vous avez l'onglet "Role": 
 
 ![Comment créer un service avec un rôle administrateur Kubernetes](admin_role.png)
 
 :::
 
+J'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
+En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
+enregistrés en variable d'environnement dans bash : 
+
 ```{.bash}
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
 ```
+
+Les commandes essentielles de Kubernetes sont : 
+
+- `kubectl get pods` : va lister tous les pods liés à votre compte SSPCloud
+
+```.bash
+onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
+NAME                            READY   STATUS    RESTARTS       AGE
+tchap-bot-118218-6vmfk          1/1     Running   43 (12m ago)   36h
+vscode-python-118218-0          1/1     Running   0              18h
+vscode-python-118218-0          1/1     Running   0              101m
+vscode-r-python-julia-118218-0  1/1     Running   0              20h
+```
+
+::: {.callout-tip title="Tuer le pod"}
+
+Comme on a spécifié qu'on **voulait toujours un pod actif dans notre contrat**, un simple `kubectl delete pod <pod-name> -n <namespace>` va le tuer mais le 
+processus de déploiement va en recréer un pour arriver au nombre spécifié de replicas (ici : 1 - fun fact, mettez deux pods et 
+vous aurez des messages en double à chaque fois). 
+
+Comment on fait pour tuer cette bougie qui se rallume à chaque fois qu'on lui souffle dessus alors ?
+
+- soit on arrête le déploiement avec `kubectl delete deployment <name> -n <namespace>`
+- soit on lui de deployer 0 pod avec `kubectl scale deployment <name> --replicas=0 -n <namespace>`
+
+:::
 
 Et voilà tatam : un bot qui tourne en continu sur le SSP Cloud, qui répond à nos
 questions dans le salon de l'équipe, et qui garde même le fil de la discussion en
@@ -1024,11 +1085,13 @@ mémoire.
 Et t'es mignon mais combien de temps cela t'a pris tout ça ?
 
 Expérience : 
+
 - connaissance inexistante du sujet bot/Tchap;
 - connaissance inexistante de la manière dont marche llm.lab;
 - 0 déploiement réussi;
 
 Outils : 
+
 - avec un assistant IA (essentiel).
 
 Et à grosses mailles : 
