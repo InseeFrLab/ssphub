@@ -190,7 +190,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="fdb022fe" class="cell">
+<div id="fbfe7f1f" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -380,7 +380,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="26721cce" class="cell">
+<div id="5a0f3ad0" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1271,7 +1271,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="98faa694" class="cell">
+<div id="b79aa930" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3347,7 +3347,7 @@ background-color: null;
 font-style: inherit;">vscode-python-118218-0</span>          1/1     Running   0          19h</span>
 <span id="cb20-6"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">vscode-python-118218-0</span>          1/1     Running   0          113m</span>
+font-style: inherit;">vscode-python-118219-0</span>          1/1     Running   0          113m</span>
 <span id="cb20-7"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running   0          20h</span>
@@ -3369,7 +3369,7 @@ background-color: null;
 font-style: inherit;">NAME</span>                            READY   STATUS              RESTARTS   AGE</span>
 <span id="cb20-12"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">tchap-bot-68d875998b-77lb6</span>      0/1     ContainerCreating   0          2s</span>
+font-style: inherit;">tchap-bot-118218118218-lb6</span>      0/1     ContainerCreating   0          2s</span>
 <span id="cb20-13"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">vscode-python-118218-0</span>          1/1     Running             0          19h</span>

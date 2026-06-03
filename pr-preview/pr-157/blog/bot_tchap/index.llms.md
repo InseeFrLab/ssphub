@@ -912,13 +912,13 @@ deployment.apps/tchap-bot scaled
 onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
 NAME                            READY   STATUS    RESTARTS   AGE
 vscode-python-118218-0          1/1     Running   0          19h
-vscode-python-118218-0          1/1     Running   0          113m
+vscode-python-118219-0          1/1     Running   0          113m
 vscode-r-python-julia-118218-0  1/1     Running   0          20h
 onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl scale deployment tchap-bot --replicas=1
 deployment.apps/tchap-bot scaled
 onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
 NAME                            READY   STATUS              RESTARTS   AGE
-tchap-bot-68d875998b-77lb6      0/1     ContainerCreating   0          2s
+tchap-bot-118218118218-lb6      0/1     ContainerCreating   0          2s
 vscode-python-118218-0          1/1     Running             0          19h
 vscode-python-118218-0          1/1     Running             0          114m
 vscode-r-python-julia-118218-0  1/1     Running             0          20h
