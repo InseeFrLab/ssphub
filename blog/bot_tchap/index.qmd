@@ -132,7 +132,7 @@ La première étape a été facile. La deuxième, envoyer un message, un poil pl
 Je suis reparti des **très bons examples de la documentation** de [`simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html)
 et de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation). 
 
-Pour **comprendre la manière dont marche Matrix**, cela a été plus simple quand j'ai compris que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : 
+Pour **comprendre la manière dont marche Matrix**, le déclic a été de comprendre que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : 
 tout cela, ce sont des événements (*event*) avec un identifiant unique. Concrètement, ne cherchez donc pas la 
 fonction `send_message` : vous envoyez un evénement qui est de type message (`m.room.message`). De la même manière que quand vous entrez dans
 un salon, vous envoyez un événement de type `je rentre dans ce salon Tchap`.
