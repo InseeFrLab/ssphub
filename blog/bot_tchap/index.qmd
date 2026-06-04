@@ -74,7 +74,7 @@ peu familier avec une API, c'est pas beaucoup plus compliqué de programmer un b
 
 Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications aussi accessibles,
 sans compter les outils internes à l'État listés dans les ressources ci-dessus. Après avoir regardé, mes besoins étaient au fond assez
-simples, je m'en suis tenu à un petit *package* public :
+simples, je m'en suis tenu à un petit package public :
 [`simplematrixbotlib`](https://pypi.org/project/simplematrixbotlib/), qui n'est lui-même
 qu'une surcouche bien pratique de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation).
 
@@ -232,7 +232,7 @@ fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
 
 Bonne nouvelle : **utiliser** [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), **c'est en fait super simple**. 
 
-Comme le service expose une API compatible OpenAI, il suffit de réutiliser le *package* `openai`
+Comme llm.lab expose une API compatible OpenAI, il suffit de réutiliser le package `openai`
 en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspcloud.fr) 
 en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). 
 On stocke le tout dans le `.env` sous `LLM_LAB_API_KEY`. 
@@ -338,7 +338,7 @@ Là je triche, je n'ai pas suivi cet ordre là mais j'aurai dû le suivre.
 Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l'ordre.
 
 Donc, maintenant, avant de combiner les deux, j'aurai dû construire le code petit à petit pour 
-que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules 
+que tout marche depuis Python, en rangeant au passage le tout en package avec des sous-modules 
 (`config`, `core`, `listeners`).
 
 
@@ -385,7 +385,7 @@ sa fonction `register` en `no_register`, et hop.
 Un petit coup d'IA permet de rédiger le code d'initialisation qui charge tous les 
 `listeners` à partir des scripts dans le dossier `listeners`.
 
-À ce stade, l'organisation en *package* avec [`uv`](https://docs.astral.sh/uv/) rend le
+À ce stade, l'organisation en package avec [`uv`](https://docs.astral.sh/uv/) rend le
 tout reproductible. Les dépendances vivent dans le `pyproject.toml`,
 et lancer le bot tient en une ligne :
 
