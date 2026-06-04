@@ -377,7 +377,7 @@ background: #6886bb;
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_MATRIX_ID<span class="op">=</span><span class="st">"@votre-bot:agent.finances.tchap.gouv.fr"</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_PWD<span class="op">=</span><span class="st">"votre_mot_de_passe_tchap"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="cbf32ff0" class="cell">
+<div id="11b5752c" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -460,7 +460,7 @@ Mise en garde
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>LLM_LAB_API_KEY<span class="op">=</span><span class="st">"votre_cle_api_llm_lab"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="79616942" class="cell">
+<div id="0e6d37bb" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -699,7 +699,7 @@ Voir un échange Tchap au format JSON
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="94c3ad94" class="cell">
+<div id="2d258209" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1233,7 +1233,7 @@ Voir le contrat Kubernetes
 </div>
 <p>J’ai enlevé mes identifiants dans le contrat mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec <code>DOCKERHUB_USERNAME</code> et <code>SSP_USERNAME</code> enregistrés en variable d’environnement dans bash :</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sed</span> <span class="st">"s/</span><span class="dt">\$</span><span class="st">{DOCKERHUB_USERNAME}/</span><span class="va">$DOCKERHUB_USERNAME</span><span class="st">/g; s/</span><span class="dt">\$</span><span class="st">{SSP_USERNAME}/</span><span class="va">$SSP_USERNAME</span><span class="st">/g"</span> k8s/deployment.yaml <span class="kw">|</span> <span class="ex">kubectl</span> apply <span class="at">-f</span> <span class="at">-</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Les deux variables <code>${SSP_USERNAME}</code> et <code>${DOCKERHUB_USERNAME}</code> ne sont en soit pas des données sensibles. Pas besoin d’utiliser des secrets en soit, mais je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple <code>kubectl apply -f</code>.</p>
+<p>Les deux variables <code>${SSP_USERNAME}</code> et <code>${DOCKERHUB_USERNAME}</code> ne sont pas en soit des données sensibles. Je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur dans le contrat et ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple <code>kubectl apply -f k8s/deployment.yaml</code>.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Kubernetes en 2min">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1316,7 +1316,7 @@ Voir le contrat Kubernetes
 <li>Bot et LLM Lab : 3h</li>
 <li>déploiement du bot: 3h</li>
 <li>Docker : 6h</li>
-<li>post de blog : 5h</li>
+<li>post de blog : 7h (3h pour le premier jet, 4h de relecture 🥵)</li>
 </ul>
 <p>Soit au total <strong>environ une semaine de travail</strong> emballé c’est pesé.</p>
 </div>

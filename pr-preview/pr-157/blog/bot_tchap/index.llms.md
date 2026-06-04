@@ -886,7 +886,7 @@ J’ai enlevé mes identifiants dans le contrat mais vous pouvez les committer s
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
 ```
 
-Les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` ne sont en soit pas des données sensibles. Pas besoin d’utiliser des secrets en soit, mais je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple `kubectl apply -f`.
+Les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` ne sont pas en soit des données sensibles. Je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur dans le contrat et ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple `kubectl apply -f k8s/deployment.yaml`.
 
 > **TIP:**
 >
@@ -960,7 +960,7 @@ vscode-r-python-julia-118218-0  1/1     Running             0          20h
 > - Bot et LLM Lab : 3h
 > - déploiement du bot: 3h
 > - Docker : 6h
-> - post de blog : 5h
+> - post de blog : 7h (3h pour le premier jet, 4h de relecture 🥵)
 >
 > Soit au total **environ une semaine de travail** emballé c’est pesé.
 

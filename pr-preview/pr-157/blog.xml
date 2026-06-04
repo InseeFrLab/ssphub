@@ -191,7 +191,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="cbf32ff0" class="cell">
+<div id="11b5752c" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -382,7 +382,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="79616942" class="cell">
+<div id="0e6d37bb" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1273,7 +1273,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="94c3ad94" class="cell">
+<div id="2d258209" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3296,7 +3296,7 @@ background-color: null;
 font-style: inherit;">-f</span> <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">-</span></span></code></pre></div></div>
-<p>Les deux variables <code>${SSP_USERNAME}</code> et <code>${DOCKERHUB_USERNAME}</code> ne sont en soit pas des données sensibles. Pas besoin d’utiliser des secrets en soit, mais je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple <code>kubectl apply -f</code>.</p>
+<p>Les deux variables <code>${SSP_USERNAME}</code> et <code>${DOCKERHUB_USERNAME}</code> ne sont pas en soit des données sensibles. Je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur dans le contrat et ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple <code>kubectl apply -f k8s/deployment.yaml</code>.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Kubernetes en 2min">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -3438,7 +3438,7 @@ font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running    
 <li>Bot et LLM Lab : 3h</li>
 <li>déploiement du bot: 3h</li>
 <li>Docker : 6h</li>
-<li>post de blog : 5h</li>
+<li>post de blog : 7h (3h pour le premier jet, 4h de relecture 🥵)</li>
 </ul>
 <p>Soit au total <strong>environ une semaine de travail</strong> emballé c’est pesé.</p>
 </div>
