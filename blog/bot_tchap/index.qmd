@@ -890,8 +890,9 @@ un peu comme GitHub pour le code).
 
 ::: {.callout-tip}
 
-N'oubliez pas d'ajouter en secret GitHub 
-vos identifiants Docker.
+N'oubliez pas d'ajouter en secret GitHub vos identifiants Docker.
+Il faut pour cela avoir créé avant un Token Docker avec les permissions "read and write"
+sur votre repo Docker pour pouvoir y pousser l'image. 
 
 :::
 
@@ -1190,6 +1191,7 @@ Soit au total **environ une semaine de travail** emballé c'est pesé.
 Pour aller plus loin ou refaire l'expérience chez vous :
 
 - le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm> ;
+- l'image Docker du bot : <https://hub.docker.com/r/ssphub/tchap-bot> ;
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
 - la [documentation des API Matrix](https://spec.matrix.org/latest/client-server-api/) ;
