@@ -353,7 +353,7 @@ que tout marche depuis Python, en rangeant au passage le tout en package avec de
 <summary>Voici la structure après cette étape : </summary>
 
 ```bash
-tchap_bot_test/
+tchap_bot_llm/
 │
 ├── main.py                  # Point d'entrée : appelle src.run("!")
 ├── pyproject.toml           # Dépendances (matrix-nio[e2e], openai, simplematrixbotlib)
