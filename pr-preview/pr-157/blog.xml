@@ -191,7 +191,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="11b5752c" class="cell">
+<div id="40d95c03" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -382,7 +382,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="0e6d37bb" class="cell">
+<div id="2ffe98ba" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1273,7 +1273,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="2d258209" class="cell">
+<div id="db534299" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3339,7 +3339,9 @@ font-style: inherit;">vscode-python-118219-0</span>          1/1     Running   0
 background-color: null;
 font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running   0              20h</span></code></pre></div></div>
 <ul>
-<li><code>kubectl delete pod &lt;pod-name&gt;</code> : pour arrêter un pod : mais un pod n’est pas un déploiement, donc vous pouvez tester sur votre déploiement cela ne va pas marcher. <em>Cf.</em> partie suivante.</li>
+<li><p><code>kubectl logs -f deployment/tchap-bot</code> : pour savoir ce qu’il se passe à l’intérieur du pod déployé</p></li>
+<li><p>vous pouvez aussi voir ce qu’il se passe dans le stockage persistent avec <code>kubectl exec -it deployment/tchap-bot -- ls -la /app/session</code> et particulièrement y supprimer des fichiers ou dossier, comme sur le terminal avec <code>kubectl exec -it deployment/tchap-bot -- rm -rf /app/session/store /app/session/session.txt</code> par exemple</p></li>
+<li><p><code>kubectl delete pod &lt;pod-name&gt;</code> : pour arrêter un pod : mais un pod n’est pas un déploiement, donc vous pouvez tester sur votre déploiement cela ne va pas marcher. <em>Cf.</em> partie suivante.</p></li>
 </ul>
 </div>
 </div>

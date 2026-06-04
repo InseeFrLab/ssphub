@@ -903,6 +903,10 @@ Les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` ne sont pas en s
 > vscode-r-python-julia-118218-0  1/1     Running   0              20h
 > ```
 >
+> - `kubectl logs -f deployment/tchap-bot` : pour savoir ce qu’il se passe à l’intérieur du pod déployé
+>
+> - vous pouvez aussi voir ce qu’il se passe dans le stockage persistent avec `kubectl exec -it deployment/tchap-bot -- ls -la /app/session` et particulièrement y supprimer des fichiers ou dossier, comme sur le terminal avec `kubectl exec -it deployment/tchap-bot -- rm -rf /app/session/store /app/session/session.txt` par exemple
+>
 > - `kubectl delete pod <pod-name>` : pour arrêter un pod : mais un pod n’est pas un déploiement, donc vous pouvez tester sur votre déploiement cela ne va pas marcher. *Cf.* partie suivante.
 
 Et voilà **tatam** : **un bot qui tourne en continu sur le SSP Cloud, qui répond à nos** **questions dans le salon de l’équipe, et qui garde même le fil de la discussion en** **mémoire.**

@@ -253,7 +253,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="11b5752c" class="cell">
+<div id="40d95c03" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -444,7 +444,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="0e6d37bb" class="cell">
+<div id="2ffe98ba" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1335,7 +1335,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="2d258209" class="cell">
+<div id="db534299" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3401,7 +3401,9 @@ font-style: inherit;">vscode-python-118219-0</span>          1/1     Running   0
 background-color: null;
 font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running   0              20h</span></code></pre></div></div>
 <ul>
-<li><code>kubectl delete pod &lt;pod-name&gt;</code> : pour arrêter un pod : mais un pod n’est pas un déploiement, donc vous pouvez tester sur votre déploiement cela ne va pas marcher. <em>Cf.</em> partie suivante.</li>
+<li><p><code>kubectl logs -f deployment/tchap-bot</code> : pour savoir ce qu’il se passe à l’intérieur du pod déployé</p></li>
+<li><p>vous pouvez aussi voir ce qu’il se passe dans le stockage persistent avec <code>kubectl exec -it deployment/tchap-bot -- ls -la /app/session</code> et particulièrement y supprimer des fichiers ou dossier, comme sur le terminal avec <code>kubectl exec -it deployment/tchap-bot -- rm -rf /app/session/store /app/session/session.txt</code> par exemple</p></li>
+<li><p><code>kubectl delete pod &lt;pod-name&gt;</code> : pour arrêter un pod : mais un pod n’est pas un déploiement, donc vous pouvez tester sur votre déploiement cela ne va pas marcher. <em>Cf.</em> partie suivante.</p></li>
 </ul>
 </div>
 </div>
@@ -4046,7 +4048,7 @@ font-style: inherit;">return</span> button</span>
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780571173484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780588789146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4070,7 +4072,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780571173485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1780588789146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4094,7 +4096,7 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1780571173484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1780588789146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4118,7 +4120,7 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780571173483" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780588789144" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5246,7 +5248,7 @@ Astuce
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1780571173485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1780588789147" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5281,7 +5283,7 @@ Exploitation de données bancaires pour les prévisions de croissance du PIB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1780571173481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1780588789142" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5318,7 +5320,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780571173480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5355,7 +5357,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780571173480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5390,7 +5392,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1780571173480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5486,7 +5488,7 @@ Que disent les données de production et de consommation d’électricité sur l
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1780571173485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1780588789146" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
 <a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5521,7 +5523,7 @@ Une évaluation des achats transfrontaliers de tabac et des pertes fiscales asso
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780571173481" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1780588789143" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5554,7 +5556,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780571173480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5591,7 +5593,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780571173480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5626,7 +5628,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1780571173480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5665,7 +5667,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1780571173480" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5704,7 +5706,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1780571173479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1780588789141" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
