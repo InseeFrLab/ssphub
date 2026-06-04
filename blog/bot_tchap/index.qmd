@@ -410,7 +410,7 @@ Comme le dit l'adage, on a de la pâte à crêpe, on a du sucre, on va **créer 
 
 ## Un bot simple sans mémoire
 
-On crée une commande `llm` maintenant et on la branche sur `llm.lab` avec une 
+On crée une commande `llm` maintenant dans les `listener` et on la branche sur `llm.lab` avec une 
 fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore). 
 
 Cela se fait avec un peu de douleur mais rien que l'on aime pas : on
@@ -529,9 +529,9 @@ Concrètement, **à partir de l'ID d'un événement**, il faut :
 - récupérer l'événement (aka : le message) - une fonction `get_event` permet de le faire;
 - avec l'événement, déterminer qui de l'humain ou de l'"assistant" a envoyé le message - c'est le rôle de `get_role_event`;
 - extraire le contenu - `extract_info` extrait les informations sender, body et replied_to d'un `event` Tchap ;
-- stocker tout cela dans l'historique - `history_append`;
-- savoir si lui même est en réponse à un événement - la fonction `get_in_reply_to_event_id` fait cela;
-- et puis on boucle et on boucle et on boucle. 
+- stocker tout cela dans l'historique - c'est le rôle de la fonction `history_append`;
+- savoir si un événement lui même est en réponse à un événement - la fonction `get_in_reply_to_event_id` fait cela;
+- et puis on boucle et on boucle. 
 
 Par ailleurs, **Tchap permet de formatter son message** : soit vous êtes une/un boss et vous
 l'écrivez directement en html, soit vous l'écrivez en markdown et Tchap le transformera 
@@ -549,8 +549,8 @@ c'est à dire celles dont la réponse peut prendre un peu de temps, **on met un 
 Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf. le blabla sur le chiffrement), 
 donc quand on récupère un message de l'API de `nio` on doit indiquer `await bot.async_client.room_get_event`.
 
-Et `await`, ce petit coquin, se propage. C'est à dire qu'une fonction qui comprend un `await` sera
-une fonction `async` qu'on définit en `async def get_event`.
+Et `await`, ce petit coquin, se propage. C'est à dire qu'une fonction qui comprend un `await` dans le code
+sera une fonction `async` qu'on définit en `async def get_event`.
 Et ainsi toute fonction qui appelerait `get_event` devrait le faire avec un `await get_event` 
 et serait elle-même `async`.
 
@@ -788,7 +788,7 @@ if __name__ == "__main__":
 
 ::: {.callout-tip title="Pour passer en debug mode"}
 
-Fun fact - pour débugger le code, vous avez un mode "debug" dans la fonction `tchat_with_llm` qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. 
+Pour débugger le code, vous avez un mode "debug" dans la fonction `tchat_with_llm` qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. 
 Pour cela, décommenter les lignes après "debug" et commentez celles après "prod mode".
 
 :::
@@ -801,7 +801,7 @@ bot (toujours en commençant par `llm`) pour qu'il se souvienne de tout ce qui p
 
 Pour la simplicité de ce post, j'ai un petit peu simplifié le contenu du repo.
 Il n'y a pas d'organisation en package Python ici, tout est *peu proprement* placé dans un seul script `main.py`.
-Par ailleurs, il n'y a pas de préfixe à la commande : il faut commencer un message Tchap avec le bot par `llm` et non par `!llm`. 
+Par ailleurs, il n'y a pas de préfixe à la commande : il faut commencer un message Tchap par `llm` et non par `!llm`. 
 Allez voir le repo pour une cible plus propre et utilisant le préfixe `!`. 
 
 :::
@@ -816,6 +816,16 @@ This bot's public fingerprint ("Session key") for one-sided verification is: MXt
 ```
 
 ![Tatam](endfull_loop.png)
+
+
+::: {.callout-caution}
+
+Cela marche bien mais dans les faits, le bot se déconnecte régulièrement et perd donc les messages passées. 
+Si le message auquel vous répondez a plus d'un jour, il y a de fortes chances que le bot n'y ait pas accès.
+Il faudrait donc ajouter une gestion de ce cas là - pas fait ici. 
+
+:::
+
 
 
 # Cinquième étape : mise en production sur le SSP Cloud
@@ -835,13 +845,14 @@ Cela demande de découvrir **Docker** et ses ressources de débutant bien faites
 
 Il faut aller **se créer un compte sur** [**Docker**](https://www.docker.com/). L'installation de Docker
 est pas évidente sur des PC contraints (et hic : impossible de le tester directement
-sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l'avoir en local ou tester via des 
+sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l'avoir en local (à l'Insee, Podman peut s'installer en local) ou tester via des 
 GitHub Action ou bien le VS Code de GitHub (dans `<> Code` / `Codespaces` dans GitHub, cela vous ouvre un espace
 similaire à Onyxia) permet de faire des Docker dans Docker. 
 
 ### Le dockerfile : la recette pour construire l'image Docker
 
-Après, le `Dockerfile` est assez basique et un assitant IA aide à le rédiger. 
+On doit écrire ensuite le `Dockerfile`, qui est la recette pour construire l'image Docker. 
+Le dockerfile est assez basique et un assitant IA aide facilement à le rédiger. 
 
 Le morceau le plus pénible, ça a été **les bibliothèques de chiffrement**
 (`python-olm`, qui compile `libolm` depuis les sources) : il a fallu glisser les bons
@@ -872,12 +883,21 @@ CMD ["uv", "run", "main.py"]
 
 ### Le workflow github action pour exécuter la tambouille du dockerfile
 
-L'image **Docker se construit toute seule à chaque `push` sur GitHub**, grâce à une *GitHub
-Action* qui la pousse ensuite sur Docker Hub. N'oubliez pas d'ajouter en secret GitHub 
-vos identifiants Docker :
+J'ai choisi de construire l'image **Docker à chaque `push` sur GitHub**, grâce à une *GitHub
+Action* qui la pousse ensuite sur Docker Hub (qui est un site où sont stockées des images Docker, 
+un peu comme GitHub pour le code). 
+
+
+::: {.callout-tip}
+
+N'oubliez pas d'ajouter en secret GitHub 
+vos identifiants Docker.
+
+:::
+
 
 <details>
-<summary>Voir le YAML</summary>
+<summary>Voir le fichier GitHub Action qui construit l'image et la push sur Docker-Hub</summary>
 
 
 ```{.yaml filename=".github/workflows/deploy.yaml"}
@@ -912,7 +932,7 @@ jobs:
 
 ## SSPCloud mon amour
 
-Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
+Reste à écrire le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud. 
 
 ### Ciel, mes secrets 
 Une petite angoisse une fois l'image poussée sur Docker : *mais où sont tous mes secrets  (identifiants Tchap, clé d'API du
@@ -959,10 +979,10 @@ SSP_USERNAME="votre_identifiant_sspcloud"
 
 ### La recette de déploiement Kubernetes
 
-En Kubernetes, il faut donc passer un manifeste ou un "contrat" (j'aime l'idée de passer un contrat avec une machine). 
+En Kubernetes, il faut donc **passer un manifeste ou un "contrat"** (j'aime l'idée de passer un contrat avec une machine). 
 Le "contrat" définit comment on déploit l'image qu'on a construite avant. 
 
-C'est un peu comme si le gateau était sorti du four, maintenant le contrat c'est avec le serveur pour lui dire
+C'est un peu comme si le gateau était sorti du four, maintenant on contracte avec le serveur pour lui dire
 comment il doit nous amener le gateau à table et comment nous le servir. 
 
 Tout cela se passe dans un fichier YAML à stocker dans un répertoire idoine nommé `k8s` (je ne sais pas pourquoi). 
@@ -1063,7 +1083,7 @@ Dans les détails de création de votre service, vous avez l'onglet "Role":
 
 :::
 
-J'ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. 
+J'ai enlevé mes identifiants dans le contrat mais vous pouvez les committer si vous voulez. 
 En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME`
 enregistrés en variable d'environnement dans bash : 
 
