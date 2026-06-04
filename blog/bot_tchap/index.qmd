@@ -383,14 +383,15 @@ tchap_bot_llm/
 
 </details>
 
-Les `listeners` stockent toutes les fonctionnalités de notre bot Tchap. L'architecture du dossier
+Les `listeners` stockent toutes les fonctionnalités de notre bot Tchap. L'architecture de ce dossier
 est volontairement modulaire : chaque fonctionnalité a son
 propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au
 démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste
-sa fonction `register` en `no_register`, et hop.
+sa fonction `register` en `no_register`, et il ne sera pas chargé par le bot.
 
 Un petit coup d'IA permet de rédiger le code d'initialisation qui charge tous les 
-`listeners` à partir des scripts dans le dossier `listeners`.
+`listeners` à partir des scripts dans le dossier `listeners`. On stocke ce code
+dans une fonction `load_all` dans le script `__init__.py` du dossier `listeners`.
 
 À ce stade, l'organisation en package avec [`uv`](https://docs.astral.sh/uv/) rend le
 tout reproductible. Les dépendances vivent dans le `pyproject.toml`,
