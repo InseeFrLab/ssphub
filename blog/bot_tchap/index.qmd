@@ -89,13 +89,14 @@ c'est de créer une BALF et un compte Tchap rien que pour lui.
 Parce que sinon, **rien ne différencie, vu de Tchap, un bot d'un utilisateur humain.**
 
 Le plus dur au début, ça a été de me repérer dans l'univers Matrix / Tchap. Pour l'apprivoiser,
-je suis retourné à la base des API avec quelques lignes de `bash` et `curl` et l'aide de la [documentation 
+on va **retourner à la base des API** avec quelques lignes de `bash` et `curl` et l'aide de la [documentation 
 de Matrix](https://spec.matrix.org/latest/client-server-api/) pour taper directement sur leurs API. 
 
 ## Authentification 
 Première mission : **récupérer un jeton d'accès**. 
 Vous envoyez **votre identifiant et mot de passe Tchap** et l'API vous donne un token. 
-Ce bout de script tourne tel quel, à condition d'avoir renseigné vos deux
+
+Le script ci-dessous tourne tel quel sur un Terminal, à condition d'avoir renseigné vos deux
 variables d'environnement `TCHAP_BOT_MATRIX_ID`, qui est votre `id` utilisateur de Tchap (quelque chose comme 
 "@votre-bot:agent.finances.tchap.gouv.fr"), et `TCHAP_BOT_PWD`
 qui est le mot de passe que vous utilisez pour vous connecter au compte. 
