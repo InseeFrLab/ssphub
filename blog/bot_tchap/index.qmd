@@ -237,7 +237,14 @@ en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspc
 Pour récupérer votre clé API, vous pouvez suivre [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). 
 On stocke le tout dans le `.env` sous `LLM_LAB_API_KEY`. 
 
-Après, le code ci-dessous s'exécute tel quel avec `uv run main.py`:
+Pour échanger avec le LLM, vous utilisez le client LLM `openai` avec les méthodes
+`chat.completions.create` en précisant le modèle utilisé et le tchat (sous la forme 
+d'un dictionnaire). Vous aurez la réponse du LLM stockée dans le contenu 
+de ce qu'il renverra et que `openai` stocke dans `choices[0].message.content`.
+
+On peut créer un petit bout de code qui génère l'historique des échanges et 
+permet d'échanger avec le LLM en entrant les questions directement via Python. 
+Tout est dans le code ci-dessous, qui s'exécute avec `uv run main.py`:
 
 ```{.python filename=".env"}
 # =============================================================================
@@ -294,7 +301,7 @@ if __name__ == "__main__":
         if question.lower() == "quit":
             break
 
-        print(f"Bot : {ask(question)}")
+        print(f"LLM : {ask(question)}")
 ```
 
 Le truc à retenir avec le format `openai`, c'est qu'**un échange avec un LLM n'est qu'une simple liste Python** :
@@ -316,9 +323,9 @@ et le contenu stocké, étonnament, dans la clé `content`.
 ```bash
 onyxia@vscode-python-118218-0:~/work$ uv run main.py 
 You : Bonjour
-Bot : Bonjour ! Comment puis-je vous aider aujourd'hui ?
+LLM : Bonjour ! Comment puis-je vous aider aujourd'hui ?
 You : Je voudrais parler avec une IA
-Bot : Bonjour ! Vous y êtes. Je suis une intelligence artificielle, prête à discuter avec vous.
+LLM : Bonjour ! Vous y êtes. Je suis une intelligence artificielle, prête à discuter avec vous.
 
 De quoi aimeriez-vous parler ? Je peux vous aider dans de nombreux domaines, par exemple :
 
