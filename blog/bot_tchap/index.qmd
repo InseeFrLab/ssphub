@@ -1091,8 +1091,9 @@ enregistrés en variable d'environnement dans bash :
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
 ```
 
-Si vous n'êtes pas un freak comme moi, vous pouvez remplacer les deux variables `${SSP_USERNAME}` et
-`${DOCKERHUB_USERNAME}` dans le contrat yaml ci-dessus et ne pas les avoir en variable d'environnement. 
+Les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` ne sont en soit pas des données sensibles. 
+Pas besoin d'utiliser des secrets en soit, mais je l'ai fait pour que vous puissiez bien voir où les changer 
+dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur ne pas les avoir en variable d'environnement. 
 Vous pouvez alors lancer le déployement avec un plus simple `kubectl apply -f`.
 
 
