@@ -237,7 +237,7 @@ en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspc
 en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). 
 On stocke le tout dans le `.env` sous `LLM_LAB_API_KEY`. 
 
-Après, le snippet ci-dessous est complet et s'exécute tel quel avec `uv run main.py`:
+Après, le code ci-dessous s'exécute tel quel avec `uv run main.py`:
 
 ```{.python filename=".env"}
 # =============================================================================
