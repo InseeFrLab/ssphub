@@ -233,8 +233,8 @@ fameux échange d'emojis qui certifie l'appareil). Le bot tourne, mais il reste
 Bonne nouvelle : **utiliser** [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), **c'est en fait super simple**. 
 
 Comme llm.lab expose une API compatible OpenAI, il suffit de réutiliser le package `openai`
-en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspcloud.fr) 
-en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). 
+en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspcloud.fr). 
+Pour récupérer votre clé API, vous pouvez suivre [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). 
 On stocke le tout dans le `.env` sous `LLM_LAB_API_KEY`. 
 
 Après, le code ci-dessous s'exécute tel quel avec `uv run main.py`:
@@ -309,7 +309,7 @@ et le contenu stocké, étonnament, dans la clé `content`.
 ```
 
 *Fun fact (pour moi)* : chez OpenAI, l'IA n'est ni un « bot » ni un « modèle », mais un
-*assistant*. Sans doute pour ne pas faire peur. 🙂
+*assistant*. Sans doute pour ne pas faire peur 🙂.
 
 **Vous avez maintenant de quoi envoyer des requêtes à un LLM.**
 
