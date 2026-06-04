@@ -86,11 +86,11 @@ Petit avantage au démarrage : j'avais une **boîte aux lettres fonctionnelle (B
 sous la main, ce qui m'a permis de créer un compte Tchap tout neuf. Le bot n'emprunte
 donc pas mon identité. Si vous n'en avez pas, la bonne pratique indiqué dans les ressources de Tchap,
 c'est de créer une BALF et un compte Tchap rien que pour lui.
-Parce que sinon, **rien ne différencie, vu de Tchap, un bot d'être utilisateur humain.**
+Parce que sinon, **rien ne différencie, vu de Tchap, un bot d'un utilisateur humain.**
 
 Le plus dur au début, ça a été de me repérer dans l'univers Matrix / Tchap. Pour l'apprivoiser,
-je suis retourné à la base des API avec quelques lignes de `bash` et `curl` pour taper 
-directement sur l'API. 
+je suis retourné à la base des API avec quelques lignes de `bash` et `curl` et l'aide de la [documentation 
+de Matrix](https://spec.matrix.org/latest/client-server-api/) pour taper directement sur leurs API. 
 
 ## Authentification 
 Première mission : **récupérer un jeton d'accès**. 
@@ -1162,6 +1162,7 @@ Pour aller plus loin ou refaire l'expérience chez vous :
 - le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm> ;
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
+- la [documentation des API Matrix](https://spec.matrix.org/latest/client-server-api/) ;
 - le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ; 
 - la [documentation de Docker](https://docs.docker.com/) ;
 - le [chapitre déploiement du cours de mise en production de l'ENSAE](https://ensae-reproductibilite.github.io/slides/#/d%C3%A9ploiement).
