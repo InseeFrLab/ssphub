@@ -1,6 +1,6 @@
 # Quel est le besoin ?
 
-Dans l’équipe, on a un salon Tchap bienveillant. C’est là qu’on pose les questions qu’on n’ose pas poser ailleurs. Et un jour, l’idée est venue d’y **brancher un bot capable de répondre à nos questions**, directement depuis Tchap, plutôt que d’attendre qu’un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. De quoi se dépanner sans déranger personne - et, accessoirement, briller en réunion d’équipe - si tant est qu’on capte dans la salle de réunion.
+Dans l’équipe, on a un salon Tchap pour se dépanner sans déranger personne. C’est là qu’on pose les questions qu’on n’ose pas poser ailleurs. Et un jour, l’idée est venue d’y **brancher un bot capable de répondre à nos questions**, directement depuis Tchap, plutôt que d’attendre qu’un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. De quoi se dépanner sans déranger personne - et, accessoirement, briller en réunion d’équipe - si tant est qu’on capte dans la salle de réunion.
 
 Et enfin, soyons honnêtes, c’était aussi en partie parce que c’était drôle d’essayer de mettre un bot sur Tchap.
 
@@ -24,19 +24,21 @@ La première découverte fut que **dans Tchap, quasiment tout est automatisable*
 
 Tout cela passe par des **appels API**, un peu comme sur Grist. A partir du moment où vous êtes un peu familier avec une API, c’est pas beaucoup plus compliqué de programmer un bot sur Tchap.
 
-Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications aussi accessibles, sans compter les outils internes à l’État listés dans les ressources ci-dessus. Après avoir regardé, mes besoins étaient au fond assez simples, je m’en suis tenu à un petit *package* public : [`simplematrixbotlib`](https://pypi.org/project/simplematrixbotlib/), qui n’est lui-même qu’une surcouche bien pratique de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation).
+Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications aussi accessibles, sans compter les outils internes à l’État listés dans les ressources ci-dessus. Après avoir regardé, mes besoins étaient au fond assez simples, je m’en suis tenu à un petit package public : [`simplematrixbotlib`](https://pypi.org/project/simplematrixbotlib/), qui n’est lui-même qu’une surcouche bien pratique de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation).
 
 Je vais vous **refaire le parcours pour créer facilement votre bot sur Tchap**.
 
 # Première étape : mettre en place le bot
 
-Petit avantage au démarrage : j’avais une **boîte aux lettres fonctionnelle (BALF)** sous la main, ce qui m’a permis de créer un compte Tchap tout neuf. Le bot n’emprunte donc pas mon identité. Si vous n’en avez pas, la bonne pratique indiqué dans les ressources de Tchap, c’est de créer une BALF et un compte Tchap rien que pour lui. Parce que sinon, **rien ne différencie, vu de Tchap, un bot d’être utilisateur humain.**
+Petit avantage au démarrage : j’avais une **boîte aux lettres fonctionnelle (BALF)** sous la main, ce qui m’a permis de créer un compte Tchap tout neuf. Le bot n’emprunte donc pas mon identité. Si vous n’en avez pas, la bonne pratique indiqué dans les ressources de Tchap, c’est de créer une BALF et un compte Tchap rien que pour lui. Parce que sinon, **rien ne différencie, vu de Tchap, un bot d’un utilisateur humain.**
 
-Le plus dur au début, ça a été de me repérer dans l’univers Matrix / Tchap. Pour l’apprivoiser, je suis retourné à la base des API avec quelques lignes de `bash` et `curl` pour taper directement sur l’API.
+Le plus dur au début, ça a été de me repérer dans l’univers Matrix / Tchap. Pour l’apprivoiser, on va **retourner à la base des API** avec quelques lignes de `bash` et `curl` et l’aide de la [documentation de Matrix](https://spec.matrix.org/latest/client-server-api/) pour taper directement sur leurs API.
 
 ## Authentification
 
-Première mission : **récupérer un jeton d’accès**. Vous envoyez **votre identifiant et mot de passe Tchap** et l’API vous donne un token. Ce bout de script tourne tel quel, à condition d’avoir renseigné vos deux variables d’environnement `TCHAP_BOT_MATRIX_ID`, qui est votre `id` utilisateur de Tchap (quelque chose comme “@votre-bot:agent.finances.tchap.gouv.fr”), et `TCHAP_BOT_PWD` qui est le mot de passe que vous utilisez pour vous connecter au compte.
+Première mission : **récupérer un jeton d’accès**. Vous envoyez **votre identifiant et mot de passe Tchap** et l’API vous donne un token.
+
+Le script ci-dessous tourne tel quel sur un Terminal, à condition d’avoir renseigné vos deux variables d’environnement `TCHAP_BOT_MATRIX_ID`, qui est votre `id` utilisateur de Tchap (quelque chose comme “@votre-bot:agent.finances.tchap.gouv.fr”), et `TCHAP_BOT_PWD` qui est le mot de passe que vous utilisez pour vous connecter au compte.
 
 ``` bash
 #!/usr/bin/env bash
@@ -67,7 +69,7 @@ La première étape a été facile. La deuxième, envoyer un message, un poil pl
 
 Je suis reparti des **très bons examples de la documentation** de [`simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html) et de [`matrix-nio`](https://matrix-nio.readthedocs.io/en/latest/#api-documentation).
 
-Pour **comprendre la manière dont marche Matrix**, cela a été plus simple quand j’ai compris que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : tout cela, ce sont des événements (*event*) avec un identifiant unique. Concrètement, ne cherchez donc pas la fonction `send_message` : vous envoyez un evénement qui est de type message (`m.room.message`). De la même manière que quand vous entrez dans un salon, vous envoyez un événement de type `je rentre dans ce salon Tchap`.
+Pour **comprendre la manière dont marche Matrix**, le déclic a été de comprendre que **tout est un événement dans Matrix.** Un message, une réaction, une connexion : tout cela, ce sont des événements (*event*) avec un identifiant unique. Concrètement, ne cherchez donc pas la fonction `send_message` : vous envoyez un evénement qui est de type message (`m.room.message`). De la même manière que quand vous entrez dans un salon, vous envoyez un événement de type `je rentre dans ce salon Tchap`.
 
 Cela *n’a pas été beaucoup plus simple* par contre quand je me suis rendu compte que **le chiffrement, c’est très bien, mais ca complique tout.** Indispensable pour la sécurité, mais ça vous complique la vie. De ce que j’ai compris sur la manière dont Matrix marche quand les messages sont chiffrés : dès que vous envoyez un message, la clé de chiffrement change. Vous avez l’ancienne clé et le message, avec cela vous trouvez la nouvelle clé. Par contre, à partir de la clé actuelle, vous ne pouvez pas déduire l’ancienne clé et donc déchiffrer les anciens messages. Mais vous pourrez voir les prochains. Et ceux d’après, etc etc.
 
@@ -144,9 +146,11 @@ Lancez-le avec un `uv run main.py`.
 
 Bonne nouvelle : **utiliser** [`llm.lab.sspcloud.fr`](https://llm.lab.sspcloud.fr/), **c’est en fait super simple**.
 
-Comme le service expose une API compatible OpenAI, il suffit de réutiliser le *package* `openai` en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspcloud.fr) en suivant [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). On stocke le tout dans le `.env` sous `LLM_LAB_API_KEY`.
+Comme llm.lab expose une API compatible OpenAI, il suffit de réutiliser le package `openai` en pointant vers la bonne URL avec sa clé API de [llm.lab](https://llm.lab.sspcloud.fr). Pour récupérer votre clé API, vous pouvez suivre [cette procédure](https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key). On stocke le tout dans le `.env` sous `LLM_LAB_API_KEY`.
 
-Après, le snippet ci-dessous est complet et s’exécute tel quel avec `uv run main.py`:
+Pour échanger avec le LLM, vous utilisez le client LLM `openai` avec les méthodes `chat.completions.create` en précisant le modèle utilisé et le tchat (sous la forme d’un dictionnaire). Vous aurez la réponse du LLM stockée dans le contenu de ce qu’il renverra et que `openai` stocke dans `choices[0].message.content`.
+
+On peut créer un petit bout de code qui génère l’historique des échanges et permet d’échanger avec le LLM en entrant les questions directement via Python. Tout est dans le code ci-dessous, qui s’exécute avec `uv run main.py`:
 
 ``` python
 # =============================================================================
@@ -201,7 +205,7 @@ if __name__ == "__main__":
         if question.lower() == "quit":
             break
 
-        print(f"Bot : {ask(question)}")
+        print(f"LLM : {ask(question)}")
 ```
 
 Le truc à retenir avec le format `openai`, c’est qu’**un échange avec un LLM n’est qu’une simple liste Python** : chaque message est un dictionnaire avec un rôle stocké dans la clé `role` et le contenu stocké, étonnament, dans la clé `content`.
@@ -213,16 +217,16 @@ Le truc à retenir avec le format `openai`, c’est qu’**un échange avec un L
 ]
 ```
 
-*Fun fact (pour moi)* : chez OpenAI, l’IA n’est ni un « bot » ni un « modèle », mais un *assistant*. Sans doute pour ne pas faire peur. 🙂
+*Fun fact (pour moi)* : chez OpenAI, l’IA n’est ni un « bot » ni un « modèle », mais un *assistant*. Sans doute pour ne pas faire peur 🙂.
 
 **Vous avez maintenant de quoi envoyer des requêtes à un LLM.**
 
 ``` bash
 onyxia@vscode-python-118218-0:~/work$ uv run main.py 
 You : Bonjour
-Bot : Bonjour ! Comment puis-je vous aider aujourd'hui ?
+LLM : Bonjour ! Comment puis-je vous aider aujourd'hui ?
 You : Je voudrais parler avec une IA
-Bot : Bonjour ! Vous y êtes. Je suis une intelligence artificielle, prête à discuter avec vous.
+LLM : Bonjour ! Vous y êtes. Je suis une intelligence artificielle, prête à discuter avec vous.
 
 De quoi aimeriez-vous parler ? Je peux vous aider dans de nombreux domaines, par exemple :
 
@@ -240,12 +244,12 @@ You : quit
 
 Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre.
 
-Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en *package* avec des sous-modules (`config`, `core`, `listeners`).
+Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en package avec des sous-modules (`config`, `core`, `listeners`).
 
 Voici la structure après cette étape :
 
 ``` bash
-tchap_bot_test/
+tchap_bot_llm/
 │
 ├── main.py                  # Point d'entrée : appelle src.run("!")
 ├── pyproject.toml           # Dépendances (matrix-nio[e2e], openai, simplematrixbotlib)
@@ -272,11 +276,11 @@ tchap_bot_test/
    └── get_token.sh         # Récupère un jeton d'accès
 ```
 
-Les `listeners` stockent toutes les fonctionnalités de notre bot Tchap. L’architecture du dossier est volontairement modulaire : chaque fonctionnalité a son propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste sa fonction `register` en `no_register`, et hop.
+Les `listeners` stockent toutes les fonctionnalités de notre bot Tchap. L’architecture de ce dossier est volontairement modulaire : chaque fonctionnalité a son propre fichier avec une fonction `register`, et toutes sont chargées automatiquement au démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste sa fonction `register` en `no_register`, et il ne sera pas chargé par le bot.
 
-Un petit coup d’IA permet de rédiger le code d’initialisation qui charge tous les `listeners` à partir des scripts dans le dossier `listeners`.
+Un petit coup d’IA permet de rédiger le code d’initialisation qui charge tous les `listeners` à partir des scripts dans le dossier `listeners`. On stocke ce code dans une fonction `load_all` dans le script `__init__.py` du dossier `listeners`.
 
-À ce stade, l’organisation en *package* avec [`uv`](https://docs.astral.sh/uv/) rend le tout reproductible. Les dépendances vivent dans le `pyproject.toml`, et lancer le bot tient en une ligne :
+À ce stade, l’organisation en package avec [`uv`](https://docs.astral.sh/uv/) rend le tout reproductible. Les dépendances vivent dans le `pyproject.toml`, et lancer le bot tient en une ligne :
 
 ``` bash
 uv run main.py
@@ -290,7 +294,7 @@ Comme le dit l’adage, on a de la pâte à crêpe, on a du sucre, on va **crée
 
 ## Un bot simple sans mémoire
 
-On crée une commande `llm` maintenant et on la branche sur `llm.lab` avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).
+On crée une commande `llm` maintenant dans les `listener` et on la branche sur `llm.lab` avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).
 
 Cela se fait avec un peu de douleur mais rien que l’on aime pas : on repère si on reçoit un message avec `@bot.listener.on_message_event` et on le récupère avec `match = botlib.MessageMatch(room, message, bot)`. Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. Et puis on renvoie la réponse du LLM sur Tchap.
 
@@ -392,9 +396,9 @@ Ensuite, il “suffit” de remonter le fil réponse après réponse, de façon 
 - récupérer l’événement (aka : le message) - une fonction `get_event` permet de le faire;
 - avec l’événement, déterminer qui de l’humain ou de l’“assistant” a envoyé le message - c’est le rôle de `get_role_event`;
 - extraire le contenu - `extract_info` extrait les informations sender, body et replied_to d’un `event` Tchap ;
-- stocker tout cela dans l’historique - `history_append`;
-- savoir si lui même est en réponse à un événement - la fonction `get_in_reply_to_event_id` fait cela;
-- et puis on boucle et on boucle et on boucle.
+- stocker tout cela dans l’historique - c’est le rôle de la fonction `history_append`;
+- savoir si un événement lui même est en réponse à un événement - la fonction `get_in_reply_to_event_id` fait cela;
+- et puis on boucle et on boucle.
 
 Par ailleurs, **Tchap permet de formatter son message** : soit vous êtes une/un boss et vous l’écrivez directement en html, soit vous l’écrivez en markdown et Tchap le transformera en html pour vous.
 
@@ -404,7 +408,7 @@ Pour que la réponse de notre assistant préféré passe bien dans Tchap, **il f
 
 Après, il faut gérer **les problèmes de fonction `async` dans Python**. J’ai compris que je n’avais pas tout compris mais en gros, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, **on met un `await` devant**. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf. le blabla sur le chiffrement), donc quand on récupère un message de l’API de `nio` on doit indiquer `await bot.async_client.room_get_event`.
 
-Et `await`, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un `await` sera une fonction `async` qu’on définit en `async def get_event`. Et ainsi toute fonction qui appelerait `get_event` devrait le faire avec un `await get_event` et serait elle-même `async`.
+Et `await`, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un `await` dans le code sera une fonction `async` qu’on définit en `async def get_event`. Et ainsi toute fonction qui appelerait `get_event` devrait le faire avec un `await get_event` et serait elle-même `async`.
 
 ### Grand final
 
@@ -635,13 +639,13 @@ if __name__ == "__main__":
 
 > **TIP:**
 >
-> Fun fact - pour débugger le code, vous avez un mode “debug” dans la fonction `tchat_with_llm` qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. Pour cela, décommenter les lignes après “debug” et commentez celles après “prod mode”.
+> Pour débugger le code, vous avez un mode “debug” dans la fonction `tchat_with_llm` qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. Pour cela, décommenter les lignes après “debug” et commentez celles après “prod mode”.
 
 Côté utilisateur, le résultat est tout bête : il suffit de **répondre** à un message du bot (toujours en commençant par `llm`) pour qu’il se souvienne de tout ce qui précède.
 
 > **NOTE:**
 >
-> Pour la simplicité de ce post, j’ai un petit peu simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est *peu proprement* placé dans un seul script `main.py`. Par ailleurs, il n’y a pas de préfixe à la commande : il faut commencer un message Tchap avec le bot par `llm` et non par `!llm`. Allez voir le repo pour une cible plus propre et utilisant le préfixe `!`.
+> Pour la simplicité de ce post, j’ai un petit peu simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est *peu proprement* placé dans un seul script `main.py`. Par ailleurs, il n’y a pas de préfixe à la commande : il faut commencer un message Tchap par `llm` et non par `!llm`. Allez voir le repo pour une cible plus propre et utilisant le préfixe `!`.
 
 On lance à nouveau le bot avec un `uv run main.py`.
 
@@ -654,6 +658,10 @@ This bot's public fingerprint ("Session key") for one-sided verification is: MXt
 ![](endfull_loop.png)
 
 Tatam
+
+> **CAUTION:**
+>
+> Cela marche bien mais dans les faits, le bot se déconnecte régulièrement et perd donc les messages passées. Si le message auquel vous répondez a plus d’un jour, il y a de fortes chances que le bot n’y ait pas accès. Il faudrait donc ajouter une gestion de ce cas là - pas fait ici.
 
 # Cinquième étape : mise en production sur le SSP Cloud
 
@@ -668,11 +676,11 @@ Les étapes sont :
 
 Cela demande de découvrir **Docker** et ses ressources de débutant bien faites ([ici](https://docs.docker.com/get-started/introduction/get-docker-desktop/) par exemple).
 
-Il faut aller **se créer un compte sur** [**Docker**](https://www.docker.com/). L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local ou tester via des GitHub Action ou bien le VS Code de GitHub (dans `<> Code` / `Codespaces` dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.
+Il faut aller **se créer un compte sur** [**Docker**](https://www.docker.com/). L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local (à l’Insee, Podman peut s’installer en local) ou tester via des GitHub Action ou bien le VS Code de GitHub (dans `<> Code` / `Codespaces` dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.
 
 ### Le dockerfile : la recette pour construire l’image Docker
 
-Après, le `Dockerfile` est assez basique et un assitant IA aide à le rédiger.
+On doit écrire ensuite le `Dockerfile`, qui est la recette pour construire l’image Docker. Le dockerfile est assez basique et un assitant IA aide facilement à le rédiger.
 
 Le morceau le plus pénible, ça a été **les bibliothèques de chiffrement** (`python-olm`, qui compile `libolm` depuis les sources) : il a fallu glisser les bons outils de compilation dans l’image. Mais là encore, cela a été tout à fait respectable et mon assistant préféré m’a aidé.
 
@@ -700,9 +708,13 @@ CMD ["uv", "run", "main.py"]
 
 ### Le workflow github action pour exécuter la tambouille du dockerfile
 
-L’image **Docker se construit toute seule à chaque `push` sur GitHub**, grâce à une *GitHub Action* qui la pousse ensuite sur Docker Hub. N’oubliez pas d’ajouter en secret GitHub vos identifiants Docker :
+J’ai choisi de construire l’image **Docker à chaque `push` sur GitHub**, grâce à une *GitHub Action* qui la pousse ensuite sur Docker Hub (qui est un site où sont stockées des images Docker, un peu comme GitHub pour le code).
 
-Voir le YAML
+> **TIP:**
+>
+> N’oubliez pas d’ajouter en secret GitHub vos identifiants Docker. Il faut pour cela avoir créé avant un Token Docker avec les permissions “read and write” sur votre repo Docker pour pouvoir y pousser l’image.
+
+Voir le fichier GitHub Action qui construit l’image et la push sur Docker-Hub
 
 ``` yaml
 name: Build and push Docker image
@@ -734,7 +746,7 @@ jobs:
 
 ## SSPCloud mon amour
 
-Reste le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud.
+Reste à écrire le **manifeste Kubernetes** pour déployer le conteneur sur le SSP Cloud.
 
 ### Ciel, mes secrets
 
@@ -773,9 +785,9 @@ SSP_USERNAME="votre_identifiant_sspcloud"
 
 ### La recette de déploiement Kubernetes
 
-En Kubernetes, il faut donc passer un manifeste ou un “contrat” (j’aime l’idée de passer un contrat avec une machine). Le “contrat” définit comment on déploit l’image qu’on a construite avant.
+En Kubernetes, il faut donc **passer un manifeste ou un “contrat”** (j’aime l’idée de passer un contrat avec une machine). Le “contrat” définit comment on déploit l’image qu’on a construite avant.
 
-C’est un peu comme si le gateau était sorti du four, maintenant le contrat c’est avec le serveur pour lui dire comment il doit nous amener le gateau à table et comment nous le servir.
+C’est un peu comme si le gateau était sorti du four, maintenant on contracte avec le serveur pour lui dire comment il doit nous amener le gateau à table et comment nous le servir.
 
 Tout cela se passe dans un fichier YAML à stocker dans un répertoire idoine nommé `k8s` (je ne sais pas pourquoi). Le contrat spécifie :
 
@@ -868,13 +880,13 @@ Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d’admin Kubern
 >
 > Comment créer un service avec un rôle administrateur Kubernetes
 
-J’ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME` enregistrés en variable d’environnement dans bash :
+J’ai enlevé mes identifiants dans le contrat mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec `DOCKERHUB_USERNAME` et `SSP_USERNAME` enregistrés en variable d’environnement dans bash :
 
 ``` bash
 sed "s/\${DOCKERHUB_USERNAME}/$DOCKERHUB_USERNAME/g; s/\${SSP_USERNAME}/$SSP_USERNAME/g" k8s/deployment.yaml | kubectl apply -f -
 ```
 
-Si vous n’êtes pas un freak comme moi, vous pouvez remplacer les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` dans le contrat yaml ci-dessus et ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple `kubectl apply -f`.
+Les deux variables `${SSP_USERNAME}` et `${DOCKERHUB_USERNAME}` ne sont en soit pas des données sensibles. Pas besoin d’utiliser des secrets en soit, mais je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple `kubectl apply -f`.
 
 > **TIP:**
 >
@@ -887,7 +899,7 @@ Si vous n’êtes pas un freak comme moi, vous pouvez remplacer les deux variabl
 > NAME                            READY   STATUS    RESTARTS       AGE
 > tchap-bot-118218-6vmfk          1/1     Running   43 (12m ago)   36h
 > vscode-python-118218-0          1/1     Running   0              18h
-> vscode-python-118218-0          1/1     Running   0              101m
+> vscode-python-118219-0          1/1     Running   0              101m
 > vscode-r-python-julia-118218-0  1/1     Running   0              20h
 > ```
 >
@@ -920,7 +932,7 @@ onyxia@vscode-python-118218-0:~/work/tchap_bot_llm$ kubectl get pods
 NAME                            READY   STATUS              RESTARTS   AGE
 tchap-bot-118218118218-lb6      0/1     ContainerCreating   0          2s
 vscode-python-118218-0          1/1     Running             0          19h
-vscode-python-118218-0          1/1     Running             0          114m
+vscode-python-118219-0          1/1     Running             0          114m
 vscode-r-python-julia-118218-0  1/1     Running             0          20h
 ```
 
@@ -957,8 +969,10 @@ vscode-r-python-julia-118218-0  1/1     Running             0          20h
 Pour aller plus loin ou refaire l’expérience chez vous :
 
 - le code source complet du bot : <https://github.com/SSPHub/tchap_bot_llm> ;
+- l’image Docker du bot : <https://hub.docker.com/r/ssphub/tchap-bot> ;
 - la [doc technique des bots Tchap](https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/) ;
 - la [doc de `simplematrixbotlib`](https://simple-matrix-bot-lib.readthedocs.io/en/latest/) ;
+- la [documentation des API Matrix](https://spec.matrix.org/latest/client-server-api/) ;
 - le service de modèles de langage du SSP Cloud : <https://llm.lab.sspcloud.fr/> ;
 - la [documentation de Docker](https://docs.docker.com/) ;
 - le [chapitre déploiement du cours de mise en production de l’ENSAE](https://ensae-reproductibilite.github.io/slides/#/d%C3%A9ploiement).

@@ -22,7 +22,7 @@
 
 <section id="quel-est-le-besoin" class="level1">
 <h1>Quel est le besoin ?</h1>
-<p>Dans l’équipe, on a un salon Tchap bienveillant. C’est là qu’on pose les questions qu’on n’ose pas poser ailleurs. Et un jour, l’idée est venue d’y <strong>brancher un bot capable de répondre à nos questions</strong>, directement depuis Tchap, plutôt que d’attendre qu’un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. De quoi se dépanner sans déranger personne - et, accessoirement, briller en réunion d’équipe - si tant est qu’on capte dans la salle de réunion.</p>
+<p>Dans l’équipe, on a un salon Tchap pour se dépanner sans déranger personne. C’est là qu’on pose les questions qu’on n’ose pas poser ailleurs. Et un jour, l’idée est venue d’y <strong>brancher un bot capable de répondre à nos questions</strong>, directement depuis Tchap, plutôt que d’attendre qu’un(e) gentil(le) collègue y réponde ou pose la question à un(e) autre collègue qui connaît la réponse. De quoi se dépanner sans déranger personne - et, accessoirement, briller en réunion d’équipe - si tant est qu’on capte dans la salle de réunion.</p>
 <p>Et enfin, soyons honnêtes, c’était aussi en partie parce que c’était drôle d’essayer de mettre un bot sur Tchap.</p>
 <p>Finalement, ce n’était pas si compliqué. On m’avait vendu que les bots Tchap étaient compliqués à mettre en place, et en fait je n’ai pas trouvé. Par ailleurs, se connecter à <a href="https://llm.lab.sspcloud.fr">llm.lab</a> est plutôt très simple. Le plus délicat a été de découvrir Tchap, d’orchestrer les deux et enfin la mise en production.</p>
 <p>Après <em>une petite semaine de travail</em> (cf.&nbsp;détail plus bas pour ceux que cela intéresse), le bot est en place (cf.&nbsp;<a href="https://github.com/SSPHub/tchap_bot_llm">sa maison sur Github</a>) et fait aujourd’hui trois choses :</p>
@@ -42,16 +42,17 @@
 </ul>
 <p>La première découverte fut que <strong>dans Tchap, quasiment tout est automatisable</strong>. Le bot récupère exactement le nom et prénom du compte que vous lui donnez et puis il peut envoyer des messages, réagir, suivre un fil de discussion, inviter des gens …</p>
 <p>Tout cela passe par des <strong>appels API</strong>, un peu comme sur Grist. A partir du moment où vous êtes un peu familier avec une API, c’est pas beaucoup plus compliqué de programmer un bot sur Tchap.</p>
-<p>Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications aussi accessibles, sans compter les outils internes à l’État listés dans les ressources ci-dessus. Après avoir regardé, mes besoins étaient au fond assez simples, je m’en suis tenu à un petit <em>package</em> public : <a href="https://pypi.org/project/simplematrixbotlib/"><code>simplematrixbotlib</code></a>, qui n’est lui-même qu’une surcouche bien pratique de <a href="https://matrix-nio.readthedocs.io/en/latest/#api-documentation"><code>matrix-nio</code></a>.</p>
+<p>Matrix (la technologie derrière Tchap) repose sur un écosystème avec des bibliothèques et explications aussi accessibles, sans compter les outils internes à l’État listés dans les ressources ci-dessus. Après avoir regardé, mes besoins étaient au fond assez simples, je m’en suis tenu à un petit package public : <a href="https://pypi.org/project/simplematrixbotlib/"><code>simplematrixbotlib</code></a>, qui n’est lui-même qu’une surcouche bien pratique de <a href="https://matrix-nio.readthedocs.io/en/latest/#api-documentation"><code>matrix-nio</code></a>.</p>
 <p>Je vais vous <strong>refaire le parcours pour créer facilement votre bot sur Tchap</strong>.</p>
 </section>
 <section id="première-étape-mettre-en-place-le-bot" class="level1">
 <h1>Première étape : mettre en place le bot</h1>
-<p>Petit avantage au démarrage : j’avais une <strong>boîte aux lettres fonctionnelle (BALF)</strong> sous la main, ce qui m’a permis de créer un compte Tchap tout neuf. Le bot n’emprunte donc pas mon identité. Si vous n’en avez pas, la bonne pratique indiqué dans les ressources de Tchap, c’est de créer une BALF et un compte Tchap rien que pour lui. Parce que sinon, <strong>rien ne différencie, vu de Tchap, un bot d’être utilisateur humain.</strong></p>
-<p>Le plus dur au début, ça a été de me repérer dans l’univers Matrix / Tchap. Pour l’apprivoiser, je suis retourné à la base des API avec quelques lignes de <code>bash</code> et <code>curl</code> pour taper directement sur l’API.</p>
+<p>Petit avantage au démarrage : j’avais une <strong>boîte aux lettres fonctionnelle (BALF)</strong> sous la main, ce qui m’a permis de créer un compte Tchap tout neuf. Le bot n’emprunte donc pas mon identité. Si vous n’en avez pas, la bonne pratique indiqué dans les ressources de Tchap, c’est de créer une BALF et un compte Tchap rien que pour lui. Parce que sinon, <strong>rien ne différencie, vu de Tchap, un bot d’un utilisateur humain.</strong></p>
+<p>Le plus dur au début, ça a été de me repérer dans l’univers Matrix / Tchap. Pour l’apprivoiser, on va <strong>retourner à la base des API</strong> avec quelques lignes de <code>bash</code> et <code>curl</code> et l’aide de la <a href="https://spec.matrix.org/latest/client-server-api/">documentation de Matrix</a> pour taper directement sur leurs API.</p>
 <section id="authentification" class="level2">
 <h2 class="anchored" data-anchor-id="authentification">Authentification</h2>
-<p>Première mission : <strong>récupérer un jeton d’accès</strong>. Vous envoyez <strong>votre identifiant et mot de passe Tchap</strong> et l’API vous donne un token. Ce bout de script tourne tel quel, à condition d’avoir renseigné vos deux variables d’environnement <code>TCHAP_BOT_MATRIX_ID</code>, qui est votre <code>id</code> utilisateur de Tchap (quelque chose comme “<span class="citation" data-cites="votre-bot:agent.finances.tchap.gouv.fr">@votre-bot:agent.finances.tchap.gouv.fr</span>”), et <code>TCHAP_BOT_PWD</code> qui est le mot de passe que vous utilisez pour vous connecter au compte.</p>
+<p>Première mission : <strong>récupérer un jeton d’accès</strong>. Vous envoyez <strong>votre identifiant et mot de passe Tchap</strong> et l’API vous donne un token.</p>
+<p>Le script ci-dessous tourne tel quel sur un Terminal, à condition d’avoir renseigné vos deux variables d’environnement <code>TCHAP_BOT_MATRIX_ID</code>, qui est votre <code>id</code> utilisateur de Tchap (quelque chose comme “<span class="citation" data-cites="votre-bot:agent.finances.tchap.gouv.fr">@votre-bot:agent.finances.tchap.gouv.fr</span>”), et <code>TCHAP_BOT_PWD</code> qui est le mot de passe que vous utilisez pour vous connecter au compte.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#!/usr/bin/env bash</span></span>
@@ -148,7 +149,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <h2 class="anchored" data-anchor-id="envoyer-un-message">Envoyer un message</h2>
 <p>La première étape a été facile. La deuxième, envoyer un message, un poil plus longue (mais cela reste tout à fait raisonnable).</p>
 <p>Je suis reparti des <strong>très bons examples de la documentation</strong> de <a href="https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html"><code>simplematrixbotlib</code></a> et de <a href="https://matrix-nio.readthedocs.io/en/latest/#api-documentation"><code>matrix-nio</code></a>.</p>
-<p>Pour <strong>comprendre la manière dont marche Matrix</strong>, cela a été plus simple quand j’ai compris que <strong>tout est un événement dans Matrix.</strong> Un message, une réaction, une connexion : tout cela, ce sont des événements (<em>event</em>) avec un identifiant unique. Concrètement, ne cherchez donc pas la fonction <code>send_message</code> : vous envoyez un evénement qui est de type message (<code>m.room.message</code>). De la même manière que quand vous entrez dans un salon, vous envoyez un événement de type <code>je rentre dans ce salon Tchap</code>.</p>
+<p>Pour <strong>comprendre la manière dont marche Matrix</strong>, le déclic a été de comprendre que <strong>tout est un événement dans Matrix.</strong> Un message, une réaction, une connexion : tout cela, ce sont des événements (<em>event</em>) avec un identifiant unique. Concrètement, ne cherchez donc pas la fonction <code>send_message</code> : vous envoyez un evénement qui est de type message (<code>m.room.message</code>). De la même manière que quand vous entrez dans un salon, vous envoyez un événement de type <code>je rentre dans ce salon Tchap</code>.</p>
 <p>Cela <em>n’a pas été beaucoup plus simple</em> par contre quand je me suis rendu compte que <strong>le chiffrement, c’est très bien, mais ca complique tout.</strong> Indispensable pour la sécurité, mais ça vous complique la vie. De ce que j’ai compris sur la manière dont Matrix marche quand les messages sont chiffrés : dès que vous envoyez un message, la clé de chiffrement change. Vous avez l’ancienne clé et le message, avec cela vous trouvez la nouvelle clé. Par contre, à partir de la clé actuelle, vous ne pouvez pas déduire l’ancienne clé et donc déchiffrer les anciens messages. Mais vous pourrez voir les prochains. Et ceux d’après, etc etc.</p>
 <p>Concrètement, cela veut dire que <strong>le bot n’a pas accès au passé</strong>. Il ne peut voir que les messages depuis qu’il a été créé.</p>
 <p>Une fois ces idées en tête, je suis reparti de la <a href="https://simple-matrix-bot-lib.readthedocs.io/en/latest/examples.html">doc de <code>simplematrixbotlib</code></a> pour bâtir <strong>un cas tout simple</strong> : un bot qui répond à un mot. Vous lui dites <code>coucou</code>, il vous donne l’heure.</p>
@@ -190,7 +191,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="fbfe7f1f" class="cell">
+<div id="cbf32ff0" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -349,8 +350,9 @@ Mise en garde
 <section id="deuxième-étape-brancher-un-llm" class="level1">
 <h1>Deuxième étape : brancher un LLM</h1>
 <p>Bonne nouvelle : <strong>utiliser</strong> <a href="https://llm.lab.sspcloud.fr/"><code>llm.lab.sspcloud.fr</code></a>, <strong>c’est en fait super simple</strong>.</p>
-<p>Comme le service expose une API compatible OpenAI, il suffit de réutiliser le <em>package</em> <code>openai</code> en pointant vers la bonne URL avec sa clé API de <a href="https://llm.lab.sspcloud.fr">llm.lab</a> en suivant <a href="https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key">cette procédure</a>. On stocke le tout dans le <code>.env</code> sous <code>LLM_LAB_API_KEY</code>.</p>
-<p>Après, le snippet ci-dessous est complet et s’exécute tel quel avec <code>uv run main.py</code>:</p>
+<p>Comme llm.lab expose une API compatible OpenAI, il suffit de réutiliser le package <code>openai</code> en pointant vers la bonne URL avec sa clé API de <a href="https://llm.lab.sspcloud.fr">llm.lab</a>. Pour récupérer votre clé API, vous pouvez suivre <a href="https://aiml4os.github.io/funathon-project2/2-rag-intro.html#getting-your-llm.lab-api-key">cette procédure</a>. On stocke le tout dans le <code>.env</code> sous <code>LLM_LAB_API_KEY</code>.</p>
+<p>Pour échanger avec le LLM, vous utilisez le client LLM <code>openai</code> avec les méthodes <code>chat.completions.create</code> en précisant le modèle utilisé et le tchat (sous la forme d’un dictionnaire). Vous aurez la réponse du LLM stockée dans le contenu de ce qu’il renverra et que <code>openai</code> stocke dans <code>choices[0].message.content</code>.</p>
+<p>On peut créer un petit bout de code qui génère l’historique des échanges et permet d’échanger avec le LLM en entrant les questions directement via Python. Tout est dans le code ci-dessous, qui s’exécute avec <code>uv run main.py</code>:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>.env</strong></pre>
@@ -380,7 +382,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="5a0f3ad0" class="cell">
+<div id="79616942" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -524,7 +526,7 @@ font-style: inherit;">break</span></span>
 background-color: null;
 font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
 background-color: null;
-font-style: inherit;">f"Bot : </span><span class="sc" style="color: #5E5E5E;
+font-style: inherit;">f"LLM : </span><span class="sc" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">{</span>ask(question)<span class="sc" style="color: #5E5E5E;
 background-color: null;
@@ -560,7 +562,7 @@ background-color: null;
 font-style: inherit;">"Bien sûr !"</span>},</span>
 <span id="cb7-4">]</span></code></pre></div></div>
 </div>
-<p><em>Fun fact (pour moi)</em> : chez OpenAI, l’IA n’est ni un « bot » ni un « modèle », mais un <em>assistant</em>. Sans doute pour ne pas faire peur. 🙂</p>
+<p><em>Fun fact (pour moi)</em> : chez OpenAI, l’IA n’est ni un « bot » ni un « modèle », mais un <em>assistant</em>. Sans doute pour ne pas faire peur 🙂.</p>
 <p><strong>Vous avez maintenant de quoi envoyer des requêtes à un LLM.</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><span class="ex" style="color: null;
 background-color: null;
@@ -570,7 +572,7 @@ background-color: null;
 font-style: inherit;">You</span> : Bonjour</span>
 <span id="cb8-3"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">Bot</span> : Bonjour ! Comment puis-je vous aider aujourd<span class="st" style="color: #20794D;
+font-style: inherit;">LLM</span> : Bonjour ! Comment puis-je vous aider aujourd<span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">'hui ?</span></span>
 <span id="cb8-4"><span class="st" style="color: #20794D;
@@ -578,7 +580,7 @@ background-color: null;
 font-style: inherit;">You : Je voudrais parler avec une IA</span></span>
 <span id="cb8-5"><span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">Bot : Bonjour ! Vous y êtes. Je suis une intelligence artificielle, prête à discuter avec vous.</span></span>
+font-style: inherit;">LLM : Bonjour ! Vous y êtes. Je suis une intelligence artificielle, prête à discuter avec vous.</span></span>
 <span id="cb8-6"></span>
 <span id="cb8-7"><span class="st" style="color: #20794D;
 background-color: null;
@@ -610,14 +612,14 @@ font-style: inherit;">You : quit</span></span></code></pre></div></div>
 <section id="troisième-étape-préparer-la-quatrième-étape" class="level1">
 <h1>Troisième étape : préparer la quatrième étape</h1>
 <p>Là je triche, je n’ai pas suivi cet ordre là mais j’aurai dû le suivre. Un peu comme dans Pulp Fiction où les chapitres sont pas vraiment dans l’ordre.</p>
-<p>Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en <em>package</em> avec des sous-modules (<code>config</code>, <code>core</code>, <code>listeners</code>).</p>
+<p>Donc, maintenant, avant de combiner les deux, j’aurai dû construire le code petit à petit pour que tout marche depuis Python, en rangeant au passage le tout en package avec des sous-modules (<code>config</code>, <code>core</code>, <code>listeners</code>).</p>
 <details>
 <summary>
 Voici la structure après cette étape :
 </summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">tchap_bot_test/</span></span>
+font-style: inherit;">tchap_bot_llm/</span></span>
 <span id="cb9-2"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">│</span></span>
@@ -721,9 +723,9 @@ font-style: inherit;">└──</span> get_token.sh         <span class="co" sty
 background-color: null;
 font-style: inherit;"># Récupère un jeton d'accès</span></span></code></pre></div></div>
 </details>
-<p>Les <code>listeners</code> stockent toutes les fonctionnalités de notre bot Tchap. L’architecture du dossier est volontairement modulaire : chaque fonctionnalité a son propre fichier avec une fonction <code>register</code>, et toutes sont chargées automatiquement au démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste sa fonction <code>register</code> en <code>no_register</code>, et hop.</p>
-<p>Un petit coup d’IA permet de rédiger le code d’initialisation qui charge tous les <code>listeners</code> à partir des scripts dans le dossier <code>listeners</code>.</p>
-<p>À ce stade, l’organisation en <em>package</em> avec <a href="https://docs.astral.sh/uv/"><code>uv</code></a> rend le tout reproductible. Les dépendances vivent dans le <code>pyproject.toml</code>, et lancer le bot tient en une ligne :</p>
+<p>Les <code>listeners</code> stockent toutes les fonctionnalités de notre bot Tchap. L’architecture de ce dossier est volontairement modulaire : chaque fonctionnalité a son propre fichier avec une fonction <code>register</code>, et toutes sont chargées automatiquement au démarrage. Pour désactiver un module, pas besoin de toucher au reste : on renomme juste sa fonction <code>register</code> en <code>no_register</code>, et il ne sera pas chargé par le bot.</p>
+<p>Un petit coup d’IA permet de rédiger le code d’initialisation qui charge tous les <code>listeners</code> à partir des scripts dans le dossier <code>listeners</code>. On stocke ce code dans une fonction <code>load_all</code> dans le script <code>__init__.py</code> du dossier <code>listeners</code>.</p>
+<p>À ce stade, l’organisation en package avec <a href="https://docs.astral.sh/uv/"><code>uv</code></a> rend le tout reproductible. Les dépendances vivent dans le <code>pyproject.toml</code>, et lancer le bot tient en une ligne :</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">uv</span> run main.py</span></code></pre></div></div>
@@ -734,7 +736,7 @@ font-style: inherit;">uv</span> run main.py</span></code></pre></div></div>
 <p>Comme le dit l’adage, on a de la pâte à crêpe, on a du sucre, on va <strong>créer une crêpe au sucre</strong>.</p>
 <section id="un-bot-simple-sans-mémoire" class="level2">
 <h2 class="anchored" data-anchor-id="un-bot-simple-sans-mémoire">Un bot simple sans mémoire</h2>
-<p>On crée une commande <code>llm</code> maintenant et on la branche sur <code>llm.lab</code> avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).</p>
+<p>On crée une commande <code>llm</code> maintenant dans les <code>listener</code> et on la branche sur <code>llm.lab</code> avec une fonctionnalité simple : si on pose une question, il répond. Pas de chat (encore).</p>
 <p>Cela se fait avec un peu de douleur mais rien que l’on aime pas : on repère si on reçoit un message avec <code>@bot.listener.on_message_event</code> et on le récupère avec <code>match = botlib.MessageMatch(room, message, bot)</code>. Si le message correspond au prefix et à la commande, on envoie son contenu au LLM. Et puis on renvoie la réponse du LLM sur Tchap.</p>
 </section>
 <section id="ajouter-la-mémoire-des-échanges" class="level2">
@@ -1256,9 +1258,9 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <li>récupérer l’événement (aka : le message) - une fonction <code>get_event</code> permet de le faire;</li>
 <li>avec l’événement, déterminer qui de l’humain ou de l’“assistant” a envoyé le message - c’est le rôle de <code>get_role_event</code>;</li>
 <li>extraire le contenu - <code>extract_info</code> extrait les informations sender, body et replied_to d’un <code>event</code> Tchap ;</li>
-<li>stocker tout cela dans l’historique - <code>history_append</code>;</li>
-<li>savoir si lui même est en réponse à un événement - la fonction <code>get_in_reply_to_event_id</code> fait cela;</li>
-<li>et puis on boucle et on boucle et on boucle.</li>
+<li>stocker tout cela dans l’historique - c’est le rôle de la fonction <code>history_append</code>;</li>
+<li>savoir si un événement lui même est en réponse à un événement - la fonction <code>get_in_reply_to_event_id</code> fait cela;</li>
+<li>et puis on boucle et on boucle.</li>
 </ul>
 <p>Par ailleurs, <strong>Tchap permet de formatter son message</strong> : soit vous êtes une/un boss et vous l’écrivez directement en html, soit vous l’écrivez en markdown et Tchap le transformera en html pour vous.</p>
 <p>Pour que la réponse de notre assistant préféré passe bien dans Tchap, <strong>il faut lui ajouter un prompt système qui demande de répondre en markdown</strong> sans échapper les caractères spéciaux. <code>add_system_prompt</code> fait cela pour nous.</p>
@@ -1266,12 +1268,12 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="les-fonctions-asynchrones" class="level3">
 <h3 class="anchored" data-anchor-id="les-fonctions-asynchrones">Les fonctions asynchrones</h3>
 <p>Après, il faut gérer <strong>les problèmes de fonction <code>async</code> dans Python</strong>. J’ai compris que je n’avais pas tout compris mais en gros, pour les requêtes “compliquées”, c’est à dire celles dont la réponse peut prendre un peu de temps, <strong>on met un <code>await</code> devant</strong>. Concrètement, les réponses de Tchap peuvent être longues à récupérer (cf.&nbsp;le blabla sur le chiffrement), donc quand on récupère un message de l’API de <code>nio</code> on doit indiquer <code>await bot.async_client.room_get_event</code>.</p>
-<p>Et <code>await</code>, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un <code>await</code> sera une fonction <code>async</code> qu’on définit en <code>async def get_event</code>. Et ainsi toute fonction qui appelerait <code>get_event</code> devrait le faire avec un <code>await get_event</code> et serait elle-même <code>async</code>.</p>
+<p>Et <code>await</code>, ce petit coquin, se propage. C’est à dire qu’une fonction qui comprend un <code>await</code> dans le code sera une fonction <code>async</code> qu’on définit en <code>async def get_event</code>. Et ainsi toute fonction qui appelerait <code>get_event</code> devrait le faire avec un <code>await get_event</code> et serait elle-même <code>async</code>.</p>
 </section>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="b79aa930" class="cell">
+<div id="94c3ad94" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2104,7 +2106,7 @@ font-style: inherit;">"__main__"</span>:</span>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Fun fact - pour débugger le code, vous avez un mode “debug” dans la fonction <code>tchat_with_llm</code> qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. Pour cela, décommenter les lignes après “debug” et commentez celles après “prod mode”.</p>
+<p>Pour débugger le code, vous avez un mode “debug” dans la fonction <code>tchat_with_llm</code> qui vous renvoie sur Tchap la requête que le bot aurait envoyé au LLM. Pour cela, décommenter les lignes après “debug” et commentez celles après “prod mode”.</p>
 </div>
 </div>
 <p>Côté utilisateur, le résultat est tout bête : il suffit de <strong>répondre</strong> à un message du bot (toujours en commençant par <code>llm</code>) pour qu’il se souvienne de tout ce qui précède.</p>
@@ -2118,7 +2120,7 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Pour la simplicité de ce post, j’ai un petit peu simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est <em>peu proprement</em> placé dans un seul script <code>main.py</code>. Par ailleurs, il n’y a pas de préfixe à la commande : il faut commencer un message Tchap avec le bot par <code>llm</code> et non par <code>!llm</code>. Allez voir le repo pour une cible plus propre et utilisant le préfixe <code>!</code>.</p>
+<p>Pour la simplicité de ce post, j’ai un petit peu simplifié le contenu du repo. Il n’y a pas d’organisation en package Python ici, tout est <em>peu proprement</em> placé dans un seul script <code>main.py</code>. Par ailleurs, il n’y a pas de préfixe à la commande : il faut commencer un message Tchap par <code>llm</code> et non par <code>!llm</code>. Allez voir le repo pour une cible plus propre et utilisant le préfixe <code>!</code>.</p>
 </div>
 </div>
 <p>On lance à nouveau le bot avec un <code>uv run main.py</code>.</p>
@@ -2146,6 +2148,19 @@ font-style: inherit;">'s public fingerprint ("Session key") for one-sided verifi
 <figcaption>Tatam</figcaption>
 </figure>
 </div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Mise en garde
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cela marche bien mais dans les faits, le bot se déconnecte régulièrement et perd donc les messages passées. Si le message auquel vous répondez a plus d’un jour, il y a de fortes chances que le bot n’y ait pas accès. Il faudrait donc ajouter une gestion de ce cas là - pas fait ici.</p>
+</div>
+</div>
 </section>
 </section>
 </section>
@@ -2160,10 +2175,10 @@ font-style: inherit;">'s public fingerprint ("Session key") for one-sided verifi
 <section id="docker-mon-amour" class="level2">
 <h2 class="anchored" data-anchor-id="docker-mon-amour">Docker mon amour</h2>
 <p>Cela demande de découvrir <strong>Docker</strong> et ses ressources de débutant bien faites (<a href="https://docs.docker.com/get-started/introduction/get-docker-desktop/">ici</a> par exemple).</p>
-<p>Il faut aller <strong>se créer un compte sur</strong> <a href="https://www.docker.com/"><strong>Docker</strong></a>. L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local ou tester via des GitHub Action ou bien le VS Code de GitHub (dans <code>&lt;&gt; Code</code> / <code>Codespaces</code> dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.</p>
+<p>Il faut aller <strong>se créer un compte sur</strong> <a href="https://www.docker.com/"><strong>Docker</strong></a>. L’installation de Docker est pas évidente sur des PC contraints (et hic : impossible de le tester directement sur le SSP Cloud - pas de Docker dans Docker). Il faut donc l’avoir en local (à l’Insee, Podman peut s’installer en local) ou tester via des GitHub Action ou bien le VS Code de GitHub (dans <code>&lt;&gt; Code</code> / <code>Codespaces</code> dans GitHub, cela vous ouvre un espace similaire à Onyxia) permet de faire des Docker dans Docker.</p>
 <section id="le-dockerfile-la-recette-pour-construire-limage-docker" class="level3">
 <h3 class="anchored" data-anchor-id="le-dockerfile-la-recette-pour-construire-limage-docker">Le dockerfile : la recette pour construire l’image Docker</h3>
-<p>Après, le <code>Dockerfile</code> est assez basique et un assitant IA aide à le rédiger.</p>
+<p>On doit écrire ensuite le <code>Dockerfile</code>, qui est la recette pour construire l’image Docker. Le dockerfile est assez basique et un assitant IA aide facilement à le rédiger.</p>
 <p>Le morceau le plus pénible, ça a été <strong>les bibliothèques de chiffrement</strong> (<code>python-olm</code>, qui compile <code>libolm</code> depuis les sources) : il a fallu glisser les bons outils de compilation dans l’image. Mais là encore, cela a été tout à fait respectable et mon assistant préféré m’a aidé.</p>
 <p>Voici le <code>Dockerfile</code> final, utilisable tel quel :</p>
 <div class="code-with-filename">
@@ -2267,10 +2282,23 @@ font-style: inherit;">"main.py"</span>]</span></code></pre></div></div>
 </section>
 <section id="le-workflow-github-action-pour-exécuter-la-tambouille-du-dockerfile" class="level3">
 <h3 class="anchored" data-anchor-id="le-workflow-github-action-pour-exécuter-la-tambouille-du-dockerfile">Le workflow github action pour exécuter la tambouille du dockerfile</h3>
-<p>L’image <strong>Docker se construit toute seule à chaque <code>push</code> sur GitHub</strong>, grâce à une <em>GitHub Action</em> qui la pousse ensuite sur Docker Hub. N’oubliez pas d’ajouter en secret GitHub vos identifiants Docker :</p>
+<p>J’ai choisi de construire l’image <strong>Docker à chaque <code>push</code> sur GitHub</strong>, grâce à une <em>GitHub Action</em> qui la pousse ensuite sur Docker Hub (qui est un site où sont stockées des images Docker, un peu comme GitHub pour le code).</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Astuce
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>N’oubliez pas d’ajouter en secret GitHub vos identifiants Docker. Il faut pour cela avoir créé avant un Token Docker avec les permissions “read and write” sur votre repo Docker pour pouvoir y pousser l’image.</p>
+</div>
+</div>
 <details>
 <summary>
-Voir le YAML
+Voir le fichier GitHub Action qui construit l’image et la push sur Docker-Hub
 </summary>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
@@ -2501,7 +2529,7 @@ font-style: inherit;"> ${{ secrets.DOCKERHUB_USERNAME }}/tchap-bot:latest</span>
 </section>
 <section id="sspcloud-mon-amour" class="level2">
 <h2 class="anchored" data-anchor-id="sspcloud-mon-amour">SSPCloud mon amour</h2>
-<p>Reste le <strong>manifeste Kubernetes</strong> pour déployer le conteneur sur le SSP Cloud.</p>
+<p>Reste à écrire le <strong>manifeste Kubernetes</strong> pour déployer le conteneur sur le SSP Cloud.</p>
 <section id="ciel-mes-secrets" class="level3">
 <h3 class="anchored" data-anchor-id="ciel-mes-secrets">Ciel, mes secrets</h3>
 <p>Une petite angoisse une fois l’image poussée sur Docker : <em>mais où sont tous mes secrets (identifiants Tchap, clé d’API du LLM) ?</em>. Bon, après vérification, <strong>ils ne sont pas poussées dans l’image Docker s’ils ne sont pas dans le code</strong>. Les secrets sont injectés en variables d’environnement via des <code>secretKeyRef</code>.</p>
@@ -2597,8 +2625,8 @@ font-style: inherit;">"votre_identifiant_sspcloud"</span></span></code></pre></d
 </section>
 <section id="la-recette-de-déploiement-kubernetes" class="level3">
 <h3 class="anchored" data-anchor-id="la-recette-de-déploiement-kubernetes">La recette de déploiement Kubernetes</h3>
-<p>En Kubernetes, il faut donc passer un manifeste ou un “contrat” (j’aime l’idée de passer un contrat avec une machine). Le “contrat” définit comment on déploit l’image qu’on a construite avant.</p>
-<p>C’est un peu comme si le gateau était sorti du four, maintenant le contrat c’est avec le serveur pour lui dire comment il doit nous amener le gateau à table et comment nous le servir.</p>
+<p>En Kubernetes, il faut donc <strong>passer un manifeste ou un “contrat”</strong> (j’aime l’idée de passer un contrat avec une machine). Le “contrat” définit comment on déploit l’image qu’on a construite avant.</p>
+<p>C’est un peu comme si le gateau était sorti du four, maintenant on contracte avec le serveur pour lui dire comment il doit nous amener le gateau à table et comment nous le servir.</p>
 <p>Tout cela se passe dans un fichier YAML à stocker dans un répertoire idoine nommé <code>k8s</code> (je ne sais pas pourquoi). Le contrat spécifie :</p>
 <ul>
 <li>l’espace SSPCloud lié au déployement et le nom du pod;</li>
@@ -3216,7 +3244,7 @@ font-style: inherit;"> 1Gi</span></span></code></pre></div></div>
 <h2 class="anchored" data-anchor-id="décollage-de-la-fusée">Décollage de la fusée</h2>
 <p>Et maintenant pour le lancer, vous ouvrez un VSCode avec droits d’admin Kubernetes dans le SSPCloud.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Lancer un service avec un rôle admin Kubernetes">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -3225,7 +3253,7 @@ font-style: inherit;"> 1Gi</span></span></code></pre></div></div>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Dans les détails de création de votre service, vous avez l’onglet “Role”:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -3237,7 +3265,7 @@ font-style: inherit;"> 1Gi</span></span></code></pre></div></div>
 </div>
 </div>
 </div>
-<p>J’ai enlevé mes identifiants mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec <code>DOCKERHUB_USERNAME</code> et <code>SSP_USERNAME</code> enregistrés en variable d’environnement dans bash :</p>
+<p>J’ai enlevé mes identifiants dans le contrat mais vous pouvez les committer si vous voulez. En tout cas pour les remplacer avant de lancer le code, il suffit de lancer avec <code>DOCKERHUB_USERNAME</code> et <code>SSP_USERNAME</code> enregistrés en variable d’environnement dans bash :</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">sed</span> <span class="st" style="color: #20794D;
@@ -3268,7 +3296,7 @@ background-color: null;
 font-style: inherit;">-f</span> <span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">-</span></span></code></pre></div></div>
-<p>Si vous n’êtes pas un freak comme moi, vous pouvez remplacer les deux variables <code>${SSP_USERNAME}</code> et <code>${DOCKERHUB_USERNAME}</code> dans le contrat yaml ci-dessus et ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple <code>kubectl apply -f</code>.</p>
+<p>Les deux variables <code>${SSP_USERNAME}</code> et <code>${DOCKERHUB_USERNAME}</code> ne sont en soit pas des données sensibles. Pas besoin d’utiliser des secrets en soit, mais je l’ai fait pour que vous puissiez bien voir où les changer dans le contrat yaml ci-dessus. Vous pouvez donc les changer en dur ne pas les avoir en variable d’environnement. Vous pouvez alors lancer le déployement avec un plus simple <code>kubectl apply -f</code>.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Kubernetes en 2min">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -3306,7 +3334,7 @@ background-color: null;
 font-style: inherit;">vscode-python-118218-0</span>          1/1     Running   0              18h</span>
 <span id="cb19-5"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">vscode-python-118218-0</span>          1/1     Running   0              101m</span>
+font-style: inherit;">vscode-python-118219-0</span>          1/1     Running   0              101m</span>
 <span id="cb19-6"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running   0              20h</span></code></pre></div></div>
@@ -3375,7 +3403,7 @@ background-color: null;
 font-style: inherit;">vscode-python-118218-0</span>          1/1     Running             0          19h</span>
 <span id="cb20-14"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">vscode-python-118218-0</span>          1/1     Running             0          114m</span>
+font-style: inherit;">vscode-python-118219-0</span>          1/1     Running             0          114m</span>
 <span id="cb20-15"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running             0          20h</span></code></pre></div></div>
@@ -3422,8 +3450,10 @@ font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running    
 <p>Pour aller plus loin ou refaire l’expérience chez vous :</p>
 <ul>
 <li>le code source complet du bot : <a href="https://github.com/SSPHub/tchap_bot_llm" class="uri">https://github.com/SSPHub/tchap_bot_llm</a> ;</li>
+<li>l’image Docker du bot : <a href="https://hub.docker.com/r/ssphub/tchap-bot" class="uri">https://hub.docker.com/r/ssphub/tchap-bot</a> ;</li>
 <li>la <a href="https://aide.tchap.beta.gouv.fr/fr/article/documentation-technique-bot-et-integrations-tchap-1z3dfx/">doc technique des bots Tchap</a> ;</li>
 <li>la <a href="https://simple-matrix-bot-lib.readthedocs.io/en/latest/">doc de <code>simplematrixbotlib</code></a> ;</li>
+<li>la <a href="https://spec.matrix.org/latest/client-server-api/">documentation des API Matrix</a> ;</li>
 <li>le service de modèles de langage du SSP Cloud : <a href="https://llm.lab.sspcloud.fr/" class="uri">https://llm.lab.sspcloud.fr/</a> ;</li>
 <li>la <a href="https://docs.docker.com/">documentation de Docker</a> ;</li>
 <li>le <a href="https://ensae-reproductibilite.github.io/slides/#/d%C3%A9ploiement">chapitre déploiement du cours de mise en production de l’ENSAE</a>.</li>

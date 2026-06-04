@@ -80,7 +80,7 @@ Raya Berova, Gaëtan Carrere, Thomas Faria, Clément Guillo et Tom Seimandi
 
 **Description :** Application web à destination des agents facilitant l'utilisation des résultats fournis par le modèle de segmentation.
 
-3 juin 2026
+4 juin 2026
 
 ![](../../project/2022_satellites/cards/img/toad_doc.jpg)
 
@@ -90,7 +90,7 @@ Raya Berova, Gaëtan Carrere, Thomas Faria, Clément Guillo et Tom Seimandi
 
 Raya Berova, Gaëtan Carrere, Thomas Faria, Clément Guillo et Tom Seimandi
 
-3 juin 2026
+4 juin 2026
 
 # Projets similaires
 
