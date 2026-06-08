@@ -75,6 +75,7 @@ jobs:
           preview-branch: ${{ env.PREVIEW_BRANCH }}
           action: deploy
           comment: false
+          token: ${{ secrets.DEPLOY_GH_PAGES_TOKEN }}  # Uses a token to allow preview from forks
 
       # For this workflow only
       - name: Comment PR (custom)
