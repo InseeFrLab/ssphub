@@ -47,7 +47,7 @@ jobs:
             github::ropensci-review-tools/babelquarto@a485fea
 
       - name: Install uv  # for post on onyxia
-        uses: astral-sh/setup-uv@v8.1.0
+        uses: astral-sh/setup-uv@v8.2.0
         with:
           enable-cache: true
 
@@ -75,6 +75,7 @@ jobs:
           preview-branch: ${{ env.PREVIEW_BRANCH }}
           action: deploy
           comment: false
+          token: ${{ secrets.DEPLOY_GH_PAGES_TOKEN }}  # Uses a token to allow preview from forks
 
       # For this workflow only
       - name: Comment PR (custom)
@@ -102,6 +103,7 @@ jobs:
         uses: rossjrw/pr-preview-action@v1.8.1
         with:
           action: remove
+          token: ${{ secrets.DEPLOY_GH_PAGES_TOKEN }}  # Uses a token to allow preview from forks
 
       - name: Comment PR that preview was removed
         uses: marocchino/sticky-pull-request-comment@v3
