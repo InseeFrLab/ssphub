@@ -47,7 +47,7 @@ jobs:
             github::ropensci-review-tools/babelquarto@a485fea
 
       - name: Install uv  # for post on onyxia
-        uses: astral-sh/setup-uv@v8.1.0
+        uses: astral-sh/setup-uv@v8.2.0
         with:
           enable-cache: true
 
