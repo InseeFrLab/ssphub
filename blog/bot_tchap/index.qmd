@@ -1177,7 +1177,7 @@ Tout dépend des compétences de bases, que je vous auto-spécifie ici :
 - avec un assistant IA (essentiel);
 - avec accès au SSPCloud (essentiel).
 
-E**t à grosses mailles :**
+**Et à grosses mailles :**
 
 - Découverte de Matrix, la manière dont marchent les bots, test à droite à gauche : 2 jours
 - Premier bot simple : 3h
@@ -1190,6 +1190,23 @@ E**t à grosses mailles :**
 Soit au total **environ une semaine de travail** emballé c'est pesé. 
 
 :::
+
+# Ce qu'il reste à faire pour une v1 plus propre
+
+Ce projet, très agréable à mener et qui fonctionne, reste à consolider pour le stabiliser et le renforcer.
+Maintenant qu'il est en production, je vois au moins les **champs suivants à améliorer** : 
+
+- la **gestion des logs** : l'application ne renvoie pour le moment aucun log. Impossible en cas de problème de 
+détecter son origine ;
+- **l'identification à Matrix** saute régulièrement : la récupération des messages passés ne fonctionne donc 
+souvent pas forcément. Inclure une gestion des erreurs permettrait de renforcer cela ;
+- le bot ne gère pas tout seul **les contacts** avec qui il échange : si un nouveau contact parle au bot, il ne va rien
+se passer tant que je ne me connecte pas à l'interface de Tchap et que j'accepte pas de démarrer la conversation. 
+Ceci dit, c'est aussi une protection pour éviter de submerger llm.lab de requêtes ;
+- une **gestion des requêtes envoyées à llm.lab** : pour le moment, le bot est censé répondre à tout, aucune limite 
+de messages etc n'est incluse.  
+
+Et encorement sûrement d'autres choses auxquelles je n'ai pas pensé ! 
 
 # Ressources
 
