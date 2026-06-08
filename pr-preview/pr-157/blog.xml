@@ -191,7 +191,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="40d95c03" class="cell">
+<div id="b660f75f" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -382,7 +382,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="2ffe98ba" class="cell">
+<div id="3af1a938" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1273,7 +1273,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="db534299" class="cell">
+<div id="f15a37a6" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
