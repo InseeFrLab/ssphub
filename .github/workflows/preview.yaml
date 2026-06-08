@@ -103,6 +103,7 @@ jobs:
         uses: rossjrw/pr-preview-action@v1.8.1
         with:
           action: remove
+          token: ${{ secrets.DEPLOY_GH_PAGES_TOKEN }}  # Uses a token to allow preview from forks
 
       - name: Comment PR that preview was removed
         uses: marocchino/sticky-pull-request-comment@v3
