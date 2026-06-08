@@ -191,7 +191,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="b660f75f" class="cell">
+<div id="f3da368e" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -382,7 +382,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="3af1a938" class="cell">
+<div id="4b2dc0cf" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1273,7 +1273,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="f15a37a6" class="cell">
+<div id="acdf07f4" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3432,7 +3432,7 @@ font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running    
 <li>avec un assistant IA (essentiel);</li>
 <li>avec accès au SSPCloud (essentiel).</li>
 </ul>
-<p>E<strong>t à grosses mailles :</strong></p>
+<p><strong>Et à grosses mailles :</strong></p>
 <ul>
 <li>Découverte de Matrix, la manière dont marchent les bots, test à droite à gauche : 2 jours</li>
 <li>Premier bot simple : 3h</li>
@@ -3446,6 +3446,17 @@ font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running    
 </div>
 </div>
 </section>
+</section>
+<section id="ce-quil-reste-à-faire-pour-une-v1-plus-propre" class="level1">
+<h1>Ce qu’il reste à faire pour une v1 plus propre</h1>
+<p>Ce projet, très agréable à mener et qui fonctionne, reste à consolider pour le stabiliser et le renforcer. Maintenant qu’il est en production, je vois au moins les <strong>champs suivants à améliorer</strong> :</p>
+<ul>
+<li>la <strong>gestion des logs</strong> : l’application ne renvoie pour le moment aucun log. Impossible en cas de problème de détecter son origine ;</li>
+<li><strong>l’identification à Matrix</strong> saute régulièrement : la récupération des messages passés ne fonctionne donc souvent pas forcément. Inclure une gestion des erreurs permettrait de renforcer cela ;</li>
+<li>le bot ne gère pas tout seul <strong>les contacts</strong> avec qui il échange : si un nouveau contact parle au bot, il ne va rien se passer tant que je ne me connecte pas à l’interface de Tchap et que j’accepte pas de démarrer la conversation. Ceci dit, c’est aussi une protection pour éviter de submerger llm.lab de requêtes ;</li>
+<li>une <strong>gestion des requêtes envoyées à llm.lab</strong> : pour le moment, le bot est censé répondre à tout, aucune limite de messages etc n’est incluse.</li>
+</ul>
+<p>Et encorement sûrement d’autres choses auxquelles je n’ai pas pensé !</p>
 </section>
 <section id="ressources" class="level1">
 <h1>Ressources</h1>

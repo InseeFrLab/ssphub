@@ -293,6 +293,7 @@ background: #6886bb;
   <li><a href="#décollage-de-la-fusée" id="toc-décollage-de-la-fusée" class="nav-link" data-scroll-target="#décollage-de-la-fusée">Décollage de la fusée</a></li>
   <li><a href="#exploser-la-fusée" id="toc-exploser-la-fusée" class="nav-link" data-scroll-target="#exploser-la-fusée">Exploser la fusée</a></li>
   </ul></li>
+  <li><a href="#ce-quil-reste-à-faire-pour-une-v1-plus-propre" id="toc-ce-quil-reste-à-faire-pour-une-v1-plus-propre" class="nav-link" data-scroll-target="#ce-quil-reste-à-faire-pour-une-v1-plus-propre">Ce qu’il reste à faire pour une v1 plus propre</a></li>
   <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/blog/bot_tchap/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/blog/bot_tchap/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></nav>
@@ -377,7 +378,7 @@ background: #6886bb;
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_MATRIX_ID<span class="op">=</span><span class="st">"@votre-bot:agent.finances.tchap.gouv.fr"</span></span>
 <span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>TCHAP_BOT_PWD<span class="op">=</span><span class="st">"votre_mot_de_passe_tchap"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="b660f75f" class="cell">
+<div id="f3da368e" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -460,7 +461,7 @@ Mise en garde
 <span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># --- Accès au LLM (llm.lab.sspcloud.fr) -----------------------------------</span></span>
 <span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>LLM_LAB_API_KEY<span class="op">=</span><span class="st">"votre_cle_api_llm_lab"</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<div id="3af1a938" class="cell">
+<div id="4b2dc0cf" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -699,7 +700,7 @@ Voir un échange Tchap au format JSON
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="f15a37a6" class="cell">
+<div id="acdf07f4" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1310,7 +1311,7 @@ Voir le contrat Kubernetes
 <li>avec un assistant IA (essentiel);</li>
 <li>avec accès au SSPCloud (essentiel).</li>
 </ul>
-<p>E<strong>t à grosses mailles :</strong></p>
+<p><strong>Et à grosses mailles :</strong></p>
 <ul>
 <li>Découverte de Matrix, la manière dont marchent les bots, test à droite à gauche : 2 jours</li>
 <li>Premier bot simple : 3h</li>
@@ -1324,6 +1325,17 @@ Voir le contrat Kubernetes
 </div>
 </div>
 </section>
+</section>
+<section id="ce-quil-reste-à-faire-pour-une-v1-plus-propre" class="level1">
+<h1>Ce qu’il reste à faire pour une v1 plus propre</h1>
+<p>Ce projet, très agréable à mener et qui fonctionne, reste à consolider pour le stabiliser et le renforcer. Maintenant qu’il est en production, je vois au moins les <strong>champs suivants à améliorer</strong> :</p>
+<ul>
+<li>la <strong>gestion des logs</strong> : l’application ne renvoie pour le moment aucun log. Impossible en cas de problème de détecter son origine ;</li>
+<li><strong>l’identification à Matrix</strong> saute régulièrement : la récupération des messages passés ne fonctionne donc souvent pas forcément. Inclure une gestion des erreurs permettrait de renforcer cela ;</li>
+<li>le bot ne gère pas tout seul <strong>les contacts</strong> avec qui il échange : si un nouveau contact parle au bot, il ne va rien se passer tant que je ne me connecte pas à l’interface de Tchap et que j’accepte pas de démarrer la conversation. Ceci dit, c’est aussi une protection pour éviter de submerger llm.lab de requêtes ;</li>
+<li>une <strong>gestion des requêtes envoyées à llm.lab</strong> : pour le moment, le bot est censé répondre à tout, aucune limite de messages etc n’est incluse.</li>
+</ul>
+<p>Et encorement sûrement d’autres choses auxquelles je n’ai pas pensé !</p>
 </section>
 <section id="ressources" class="level1">
 <h1>Ressources</h1>
