@@ -1,0 +1,49 @@
+---
+title: "Recodification de la NACE 2.0 vers la NACE 2.1 avec des LLMs"
+
+description: "Utilisation de grands modèles de langage (LLM) comme annotateurs virtuels pour retraiter un corpus d'entraînement lors de la révision d'une nomenclature d'activités économiques"
+
+format: html
+
+date: '2026-06-04'
+
+image: schema_recodif_nace.png
+
+categories:
+- LLM
+- codification automatique
+- machine learning
+- Python
+- en production
+- nomenclature
+- Insee
+
+listing:
+- id: similar-project
+  contents:
+    - ../2022_codif_ape/index.qmd
+    - ../*/index.qmd
+  type: grid
+  include:
+    categories: ["codification automatique", "machine learning"]
+  sort:
+  - date desc
+  page-size: 6
+
+---
+
+# Synthèse du projet
+
+|              |  Recodification de la NACE 2.0 vers la NACE 2.1 avec des LLMs |
+|--------------|--------------------------------------------------------------|
+| **Détail du projet** | L'Insee dispose d'un classifieur en production — [TorchTextClassifiers](https://github.com/InseeFrLab/TorchTextClassifiers) — entraîné sur 2,7 millions d'observations étiquetées selon la nomenclature européenne des activités économiques NACE 2.0. La révision de cette nomenclature vers la version 2.1 impose de **réentraîner ce classifieur sur de nouvelles données labellisées**. Une table de correspondance officielle permet de retraiter automatiquement les codes univoques (correspondance 1-à-1 entre les anciens codes et les nouveaux codes de la NACE), mais 52 % du corpus implique des codes « multivocaux » — un ancien code pouvant correspondre à plusieurs nouveaux codes (2 à 5 en général, mais plus de 30 dans certains cas extrèmes), ce qui représente environ 1,4 million d'observations impossibles à retraiter manuellement. Le projet développe une méthode de **réétiquetage automatique par LLM** pour résoudre ce problème structurel, récurrent lors de toute révision de nomenclature (NACE, COICOP, ISCO…). |
+| **Acteurs** | [SSPLab DMCSI (Insee), Dris DSE (Insee)](https://www.insee.fr/) |
+| **Approche** | La méthode développée est appelée **RBAG** (_Rule-Based Augmented Generation_) : le LLM ne génère pas librement un code parmi les 732 catégories NACE 2.1 (ce qui produirait des hallucinations), mais **choisit parmi les seuls codes candidats** fournis par la table de correspondance officielle, enrichis des notes explicatives NACE 2.1. La réponse est structurée (JSON) et un **ensemble de trois modèles open-source** (Qwen3-235B MoE, Qwen3-235B MoE en mode _thinking_, Gemma4-27B MoE) est utilisé avec vote majoritaire. L'ensemble du pipeline est orchestré sur le [SSP Cloud](https://datalab.sspcloud.fr/) via Argo Workflows. |
+| **Résultats du projet** | Sur un benchmark de ~30 000 observations annotées par ~25 experts NACE, l'ensemble de LLMs atteint **78 % de précision**. Le classifieur TorchTextClassifiers réentraîné sur le corpus semi-synthétique (~2,3 millions de labellisations) atteint **~80 % de précision sur NACE 2.1**, soit des performances équivalentes à celles du classifieur NACE 2.0, validant l'approche par train-set semi-synthétique. Une comparaison avec une approche RAG pure (sans table de correspondance) montre un écart de ~10 points en défaveur du RAG. |
+| **Produits et documentation du projet** | Présentation à l'[ISI Regional Statistics Conference 2026](https://www.isi-web.org/), Malte — [slides disponibles en ligne](https://jpramil.github.io/prez_recodif_isi/) {{< fa brands github >}} |
+| **Code du projet** | Dépôt disponible sur [GitHub {{< fa brands github >}}](https://github.com/InseeFrLab/codif-ape-nace-revision) |
+
+# Projets similaires
+
+::: {#similar-project}
+:::
