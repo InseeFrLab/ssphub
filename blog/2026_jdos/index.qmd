@@ -22,6 +22,7 @@ categories:
 
 
 Les 16 et 17 juin 2026, l'Insee et le réseau SSPHub ont réuni au Lieu de la transformation publique, à Paris, une vingtaine de participants venus de différentes administrations pour [deux jours dédiés à la contribution open source](../../event/2026-06-jdos/index.qmd). Data scientists, statisticiens, développeurs et documentalistes du service statistique public se sont retrouvés autour d'un objectif simple : démystifier la contribution open source et montrer que chacun, quel que soit son profil, peut apporter de la valeur aux outils qu'on utilise au quotidien — par le code, mais aussi par la documentation, les tests, la traduction ou le signalement de bugs.
+Ces journées auront aussi été l'occasion de se rencontrer en travaillant ensemble sur des projets concrets que l'on utilise quotidiennement. 
 
 Le pari est tenu : ces deux jours se concluent sur des **dizaines de contributions** (pull requests, issues et commit) portées par une vingtaine de contributeurs.
 
@@ -75,7 +76,9 @@ En plus des quatre projets, les participants ont contribué individuellement à 
 | Détail        | 48 pull requests · 30 issues · 8 revues                         |
 | Projets       | Active Tigger, SNDSTools, CanaR, UtilitR + contributions libres |
 
-Au-delà des chiffres, ces deux jours auront surtout montré que la contribution open source est à la portée de tous, et que les data scientists du service public ont toute leur place comme contributeurs actifs des outils qu'ils utilisent. Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition.
+Au-delà des chiffres, ces deux jours auront surtout montré que la contribution open source est à la portée de tous, et que les data scientists du service public ont toute leur place comme contributeurs actifs des outils qu'ils utilisent. 
+Cela aura aussi été l'occasion de travailler différemment tous ensemble autour de projets concrets, ce qui fut très apprécié de tous, et dans des conditions agréables. 
+Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition.
 
 Le détail des contributions est consultable ici : <https://inseefrlab.github.io/journees-datascience-opensource/contributions.html>
 
