@@ -1,0 +1,100 @@
+name: Preview - build
+
+# UNPRIVILEGED build half of the fork-safe preview.
+# Runs the (potentially untrusted) fork code, but has NO secrets and NO write
+# access. It only produces artifacts. The privileged push happens in
+# preview-deploy.yml, triggered by workflow_run.
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
+    branches:
+      - main
+
+# Intentionally no `permissions:` block granting write — this job must stay read-only.
+
+concurrency:
+  group: preview-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # 1) Stash PR metadata FIRST, before any checkout wipes the workspace.
+      #    The deploy workflow has no PR context, so it reads number + action from here.
+      - name: Save PR metadata
+        run: |
+          mkdir -p preview-meta
+          cat > preview-meta/pr.json <<EOF
+          {
+            "number": "${{ github.event.pull_request.number }}",
+            "action": "${{ github.event.action }}"
+          }
+          EOF
+          cat preview-meta/pr.json
+
+      - name: Upload metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-meta
+          path: preview-meta/
+
+      # 2) Everything below only when the PR is NOT being closed.
+      #    On close there is nothing to build; the deploy workflow will do the removal.
+      - name: Check out repository
+        if: github.event.action != 'closed'
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+
+      - name: Configure safe.directory # Workaround for actions/checkout#760
+        if: github.event.action != 'closed'
+        run: git config --global --add safe.directory /__w/ssphub/ssphub
+
+      - name: Set up R
+        if: github.event.action != 'closed'
+        uses: r-lib/actions/setup-r@v2
+
+      - name: Install babelquarto
+        if: github.event.action != 'closed'
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            github::ropensci-review-tools/babelquarto@a485fea
+
+      - name: Install uv # for post on onyxia
+        if: github.event.action != 'closed'
+        uses: astral-sh/setup-uv@v8.2.0
+        with:
+          enable-cache: true
+
+      - name: Install the dependencies and add venv to path
+        if: github.event.action != 'closed'
+        run: |
+          uv sync
+          echo "$(pwd)/.venv/bin" >> $GITHUB_PATH
+
+      - name: Update _quarto.yml with gh-pages preview url
+        if: github.event.action != 'closed'
+        run: |
+          sed -i 's/site-url:\ https:\/\/ssphub.netlify.app/site-url:\ https:\/\/inseefrlab.github.io\/ssphub\/pr-preview\/pr-${{ github.event.pull_request.number }}/g' _quarto.yml
+          cat _quarto.yml
+
+      - name: Render bilingual project
+        if: github.event.action != 'closed'
+        run: |
+          Rscript scripts/1_render.R
+
+      - name: Upload built site
+        if: github.event.action != 'closed'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: ./_site/
