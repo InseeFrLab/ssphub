@@ -1,0 +1,108 @@
+name: Preview - deploy
+
+# PRIVILEGED deploy half of the fork-safe preview.
+# Triggered by the build workflow completing. Because workflow_run always runs
+# the version of THIS file on the default branch (never the fork's code), it is
+# safe to give it write access and secrets. It never executes fork code — it only
+# takes the already-built static files and pushes them.
+
+on:
+  workflow_run:
+    workflows: ["Preview - build"]
+    types:
+      - completed
+
+permissions:
+  contents: write # push the preview to the gh-pages branch
+  pull-requests: write # leave the sticky comment
+  actions: read # download artifacts from the triggering run
+
+env:
+  PREVIEW_BRANCH: gh-pages
+
+concurrency:
+  group: preview-deploy-${{ github.event.workflow_run.head_branch }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Only act on builds that came from a pull_request (ignore manual dispatch runs).
+    if: github.event.workflow_run.event == 'pull_request'
+    steps:
+      # Check out the BASE repo (trusted, default branch). pr-preview-action operates
+      # inside this checkout to manage the gh-pages branch.
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Download metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: preview-meta
+          path: preview-meta
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Read PR metadata
+        id: meta
+        run: |
+          number=$(jq -r .number preview-meta/pr.json)
+          action=$(jq -r .action preview-meta/pr.json)
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+          if [ "$action" = "closed" ]; then
+            echo "preview_action=remove" >> "$GITHUB_OUTPUT"
+          else
+            echo "preview_action=deploy" >> "$GITHUB_OUTPUT"
+          fi
+          echo "PR #$number -> $action"
+
+      - name: Download built site
+        if: steps.meta.outputs.preview_action == 'deploy'
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: _site
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy preview
+        if: steps.meta.outputs.preview_action == 'deploy'
+        id: deploy-preview
+        uses: rossjrw/pr-preview-action@v1.8.1
+        with:
+          source-dir: ./_site/
+          preview-branch: ${{ env.PREVIEW_BRANCH }}
+          pr-number: ${{ steps.meta.outputs.number }} # required: no PR context under workflow_run
+          action: deploy
+          comment: false
+          # No `token:` needed — the default GITHUB_TOKEN here has write access.
+
+      - name: Remove preview
+        if: steps.meta.outputs.preview_action == 'remove'
+        id: remove-preview
+        uses: rossjrw/pr-preview-action@v1.8.1
+        with:
+          preview-branch: ${{ env.PREVIEW_BRANCH }}
+          pr-number: ${{ steps.meta.outputs.number }}
+          action: remove
+          comment: false
+
+      - name: Comment PR (deployed)
+        if: steps.meta.outputs.preview_action == 'deploy'
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          header: pr-preview
+          number: ${{ steps.meta.outputs.number }} # required: set the PR explicitly
+          message: |
+            :rocket: View preview at <br> ${{ steps.deploy-preview.outputs.preview-url }} <br>
+            <h6>Built to branch <a href="${{ github.server_url }}/${{ github.repository }}/tree/${{ env.PREVIEW_BRANCH }}"> ${{ env.PREVIEW_BRANCH }} </a> at ${{ steps.deploy-preview.outputs.action-start-time }}. <br> Preview will be ready when the <a href="${{ github.server_url }}/${{ github.repository }}/deployments">GitHub Pages deployment</a> is complete. <br> </h6>
+
+      - name: Comment PR (removed)
+        if: steps.meta.outputs.preview_action == 'remove'
+        uses: marocchino/sticky-pull-request-comment@v3
+        with:
+          header: pr-preview
+          number: ${{ steps.meta.outputs.number }}
+          message: |
+            Preview removed because the pull request was closed.
+            ${{ steps.remove-preview.outputs.action-start-time }}
