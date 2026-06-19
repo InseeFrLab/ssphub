@@ -45,18 +45,18 @@ To render or preview the website during development, you can use the following c
 - To render the site:
 
   ```bash
-  Rscript scripts/1_render.R
+  uv run Rscript scripts/1_render.R
   ```
 
 - To preview the site:
 
   ```bash
-  Rscript scripts/3_preview.R
+  uv run Rscript scripts/3_preview.R
   ```
 
 - To render and preview simultaneously:
   ```bash
-  Rscript scripts/3_render_preview.R
+  uv run Rscript scripts/3_render_preview.R
   ```
 
 If a pull request (PR) is opened, a preview of the website is automatically generated. The link to this preview is available in the PR details on GitHub. Every push to the remote repository will automatically update the website preview.
