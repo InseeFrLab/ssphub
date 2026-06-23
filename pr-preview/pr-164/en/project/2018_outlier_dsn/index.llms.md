@@ -1,3 +1,0 @@
-# Project summary
-
-[TABLE]
