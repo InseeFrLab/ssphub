@@ -41,12 +41,6 @@ Les ressources sont toujours disponibles en ligne, soit sur le [site du funathon
 
 Un retour d'expérience plus détaillé a par ailleurs été présenté à la conférence qualité [lors de la session 21](https://www.q2026.hr/programme/conference-programme/session-21/) et dont la présentation est disponible [ici](https://www.q2026.hr/media/kmuchjs4/presentation-a-new-way-to-learn-machine-learning-and-ai.pptx), si jamais vous voulez vous lancer dans une telle expérience 😜.
 
-## Le site du réseau s'enrichit d'une liste de formations en data science 
-Le site du réseau s'est enrichi d'une **liste de formations librement accessibles et d'intérêt pour la data-science**. Pour y accéder, il faut aller dans l'onglet ["ressources"](../../course.qmd).
-
-![Aperçu de la liste des formations sur le site du réseau](formations.png){width=300}
-
-
 ## Retour sur les journées data-science et open source - 📅 16 et 17 juin 
 L'Insee a organisé deux journées pour **démystifier la contribution à l'open source** et explorer des projets liés à la data science les 16 et 17 juin.
 Rassemblant une vingtaine de participants de différentes administrations, cela aura été l'occasion de découvrir ensemble le monde de l'open source et d'apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR et des contributions libres). 
@@ -56,9 +50,22 @@ Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une pr
 
 Plus de **détails** sont disponibles sur la [page de l'événement](../../event/2026-06-jdos/index.qmd), [le retex](../../blog/2026_jdos/index.qmd) ou [le site dédié](https://inseefrlab.github.io/journees-datascience-opensource).
 
-## Rencontres R
+# Du nouveau contenu sur le [site du réseau](https://ssphub.netlify.app) !
+
+## Le site du réseau s'enrichit d'une liste de formations en data science 
+Le site du réseau s'est enrichi d'une **liste de formations librement accessibles et d'intérêt pour la data-science**. Pour y accéder, il faut aller dans l'onglet ["ressources"](../../course.qmd).
+
+![Aperçu de la liste des formations sur le site du réseau](formations.png){width=300}
+
+## Et d'un article de blog pour créer un bot sur Tchap
+Une gentille personne a expliqué sur le blog du réseau comment créer un [bot sur Tchap connecté à un LLM](../../blog/bot_tchap/index.qmd). 
+
+En résumé, grâce à la philosophie ouverte de Tchap et à des outils comme `simplematrixbotlib`, **la mise en place a été plus simple que prévu**, malgré les défis du chiffrement et de la gestion des fils de discussion. Le bot est **capable de répondre à des commandes et d’interroger un LLM**, mais ne gère pas les nouvelles discussions et autres événements (actuellement). Enfin, après avoir conteneurisé l’application avec Docker, le bot **tourne désormais en production sur le SSP Cloud**, le tout pour une petite semaine de travail.
+
+Pour plus de détails, tout est expliqué sur [l'article de blog](../../blog/bot_tchap/index.qmd). 
 
 # Actualités
+Beaucoup d'actualités dans les dernières semaines, j'essaye de rendre cela digeste. 
 
 ## IA :
 - [Impact de l'IA sur la productivité des développeurs open-source](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/): Étude expérimentale montrant que l'usage d'outils d'IA ralentit de 19% les développeurs expérimentés sur des tâches réelles. Les résultats contrastent fortement avec les perceptions des développeurs et les benchmarks classiques.
