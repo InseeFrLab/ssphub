@@ -86,30 +86,33 @@ Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/i
 **Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky**. 
 
 ## Fun/formation
-- [MicroGPT Visualized - Building a GPT from scratch — an interactive visual guide](https://microgpt.jtauber.com/): Construction d'un GPT simplifié en 6 étapes
 
-- [YAML? That’s Norway problem](https://lab174.com/blog/202601-yaml-norway/): Analyse technique du problème de parsing du code pays NO en booléen dans YAML. Étude de l'évolution des spécifications de la v1.0 à la v1.2 et des raisons de sa persistance.
+### Formation
+- [MicroGPT Visualized - Building a GPT from scratch — an interactive visual guide](https://microgpt.jtauber.com/): Apprendre à construire un **LLM simplifié** en 6 étapes ;
 
-- [Succès de la formation MOOC gratuite aux statistiques avec R](https://www.linkedin.com/posts/jean-paul-maalouf_rstats-statistiques-datascience-ugcPost-7464962595242790912-lPtY/?utm_source=share&utm_medium=member_desktop&rcm=ACoAABRqCyYBCiH_kp7iH7uac5mx7bM3KsjsXQ4): Plus de 1000 inscrits pour un MOOC de statistiques avec R en accès libre. Formation pratique comprenant 8h de vidéos et des scripts commentés.
+- [Formation ouverte aux statistiques avec R](https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text):  Formation aux **statistiques avec R** comprenant 8h de vidéos et des scripts R commentés.
 
-- [ RAG with raghilda](https://info.posit.co/NzA5LU5YTi03MDYAAAGh5ODbBdeFmlOPaLdHwMlSHBHsHBxC_zbtIhyFs1bvc87cZhr-FsVhfWa0OPca32phPpMhMeo=): An introduction to building retrieval-augmented generation systems with raghilda
+### Explications techniques
+- [YAML? That’s Norway problem](https://lab174.com/blog/202601-yaml-norway/): Si vous êtes fan du **language YAML**, cet article explique que ce n'est pas si facile avec le "Norway problem": le code du pays (NO) étant traduit par "False" dans les premières versions du language. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du language en regardant l'évolution du language YAML et les raisons de son succès aujourd'hui.
+
+- [DuckDB Internals: Why is DuckDB Fast?](https://www.greybeam.ai/blog/duckdb-internals-part-1): Analyse approfondie de **l'architecture interne de DuckDB** pour comprendre comment il est si rapide (réponse : l'exécution in-process, le stockage colonne et l'optimisation SQL).
 
 ## Ressources
 
 ### Outils d'IA
-- [ParseBench : Benchmark de parsing de documents pour agents IA](https://www.parsebench.ai/#compare): Présentation de ParseBench, premier benchmark évaluant les besoins des agents IA en parsing de documents. Basé sur 2000 pages vérifiées par l'humain et 169k règles de test.
+- [RAG with raghilda](https://info.posit.co/NzA5LU5YTi03MDYAAAGh5ODbBdeFmlOPaLdHwMlSHBHsHBxC_zbtIhyFs1bvc87cZhr-FsVhfWa0OPca32phPpMhMeo=): Une introduction à Raghilda, un **package Python pour construire des RAG** ;
 
-- [curl.md : Convertir des sites web en markdown optimisé pour les agents](https://curl.md/docs): Outil permettant de transformer des pages web en format markdown optimisé pour les agents IA. Réduit la consommation de tokens et améliore le contexte pour les LLM via CLI, API ou plugins.
+- [ParseBench : Benchmark de parsing de documents pour agents IA](https://www.parsebench.ai/#compare): Présentation de ParseBench, un **benchmark d'évaluation de parsing de documents** orientés vers des agents IA.
 
-- [OpenAI Privacy Filter](https://huggingface.co/openai/privacy-filter): Modèle de classification de jetons pour la détection et le masquage d'informations personnelles (PII). Conçu pour la sanitisation de données à haut débit et utilisable localement.
-Catégories : Anonymisation de données, classification, IA, NLP/texte
+- [curl.md : Convertir des sites web en markdown optimisé pour les agents](https://curl.md/docs): Outil permettant de transformer des pages web en format markdown optimisé pour les agents IA pour **réduire la consommation de tokens** et améliorer le contexte des LLM.
 
-- [Your own AI workspace, running on your hardware.](https://github.com/pewdiepie-archdaemon/odysseus): Odysseus is a self-hosted interface for talking to language models — chat, autonomous agents, tools, model serving, email, research, and more. Local-first, privacy-first, and no telemetry. Just you and your models. 
+- [OpenAI Privacy Filter](https://huggingface.co/openai/privacy-filter): Modèle **de détection et d'anonymisation d'informations personnelles** conçu pour fonctionner à haut débit et utilisable localement.
 
-- [Teaching agents the core skills of data science](https://blog.probabl.ai/teaching-agents-data-science-skills): Les agents IA excellent en ingénierie mais manquent de méthodologie et de pensée statistique. L'objectif est de former des agents capables de gérer des workflows de data science complexes et fiables. Des skills peuvent permettre de les aider, le depot est ici : https://github.com/probabl-ai/skills
+- [Your own AI workspace, running on your hardware.](https://github.com/pewdiepie-archdaemon/odysseus): Odysseus permet d'héberger des modèles localement, permettant de partager tout le contexte nécessaire avec les modèles et d'atteindre ainsi de meilleures performances. 
+
+- [Teaching agents the core skills of data science](https://blog.probabl.ai/teaching-agents-data-science-skills): Probabl publie sur [GitHub](https://github.com/probabl-ai/skills) des **compétences (*skills*) pour agents IA afin qu'ils s'améliorent en data science**. L'objectif est de former des agents capables de gérer des workflows de data science complexes et fiables. 
 
 ### duckDB
-- [DuckDB Internals: Why is DuckDB Fast?](https://www.greybeam.ai/blog/duckdb-internals-part-1): Analyse approfondie de l'architecture interne de DuckDB. Explication des mécanismes de rapidité via l'exécution in-process, le stockage colonne et l'optimisation SQL.
 
 - [Full-Text Search with DuckDB](https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html): Exploration de l'extension de recherche plein texte (FTS) de DuckDB. Tutoriel sur l'indexation et l'utilisation de l'algorithme BM25 pour interroger des données textuelles comme des e-mails.
 
