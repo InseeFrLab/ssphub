@@ -1,5 +1,5 @@
 ---
-title: "XXX"
+title: "Le prix de statistiques indépendantes"
 
 description: |
   Infolettre du mois de __juin 2026__
@@ -23,6 +23,11 @@ C'est le printemps ! Le temps est bon, il fait [41,6°C en Californie avant la f
 
 
 # L'infographie
+Si vous avez joué à Sim's city, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné [sa note](https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris) proposant de fusionner toute la petite couronne et Paris au sein d'une ville du Grand Paris d'un outil de visualisation pour créer cette nouvelle commune. 
+
+![Créer sa ville du Grand Paris, par le Haut commissariat à la stratégie et au plan](ville_grand_paris.png){width=450}
+
+Si vous cherchez à créer 40 districts en région parisienne, le jeu est par [ici](https://strategie-plan.eu/datavisualisation-grandparis/#trace).
 
 # Les évènements du réseau
 Plusieurs événements ont eu lieu ces dernières semaines auquel le réseau était invité. 
@@ -33,6 +38,7 @@ L'Insee a organisé un **funathon européen** sur l'utilisation du *machine lear
 Les retours des participants furent très positifs et ont particulièrement apprécié **apprendre de nouvelles compétences sur des cas d'usage concrets**.  
 
 Les ressources sont toujours disponibles en ligne, soit sur le [site du funathon](https://aiml4os.github.io/funathon-general-website/about.html) ou sur les sites dédiés des sujets : 
+
   - Segmentation d'images satellites par *deep learning* ([sujet 1](https://aiml4os.github.io/funathon-project1/));
   - Codification automatique pour la classification NACE ([sujet 2](https://aiml4os.github.io/funathon-project2/));
   - Prévision des prix de l'immobilier sur données tabulaires par méthodes ensemblistes ([sujet 3](https://aiml4os.github.io/funathon-project3/)).
@@ -44,10 +50,11 @@ Un retour d'expérience plus détaillé a par ailleurs été présenté à la co
 ## Retour sur les journées data-science et open source - 📅 16 et 17 juin 
 L'Insee a organisé deux journées pour **démystifier la contribution à l'open source** et explorer des projets liés à la data science les 16 et 17 juin.
 Rassemblant une vingtaine de participants de différentes administrations, cela aura été l'occasion de découvrir ensemble le monde de l'open source et d'apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR et des contributions libres). 
+
 Au-delà des chiffres, ces deux jours auront surtout montré que **la contribution open source est à la portée de tous et que les data scientists du service public ont toute leur place comme contributeurs actifs des outils qu'ils utilisent**. 
 Cela aura aussi été l'occasion de **travailler différemment tous ensemble autour de projets concrets**, ce qui fut très apprécié de tous. 
-Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition.
 
+Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition.
 Plus de **détails** sont disponibles sur la [page de l'événement](../../event/2026-06-jdos/index.qmd), [le retex](../../blog/2026_jdos/index.qmd) ou [le site dédié](https://inseefrlab.github.io/journees-datascience-opensource).
 
 # Du nouveau contenu sur le [site du réseau](https://ssphub.netlify.app) !
@@ -55,7 +62,7 @@ Plus de **détails** sont disponibles sur la [page de l'événement](../../event
 ## Le site du réseau s'enrichit d'une liste de formations en data science 
 Le site du réseau s'est enrichi d'une **liste de formations librement accessibles et d'intérêt pour la data-science**. Pour y accéder, il faut aller dans l'onglet ["ressources"](../../course.qmd).
 
-![Aperçu de la liste des formations sur le site du réseau](formations.png){width=300}
+![Aperçu de la liste des formations sur le site du réseau](formations.png){width=400}
 
 ## Et d'un article de blog pour créer un bot sur Tchap
 Une gentille personne a expliqué sur le blog du réseau comment créer un [bot sur Tchap connecté à un LLM](../../blog/bot_tchap/index.qmd). 
@@ -72,7 +79,7 @@ Beaucoup d'actualités dans les dernières semaines, j'essaye de rendre cela dig
 Catégories : data, Metier Data, performance
 
 
-## IA :
+## IA
 - [L’IA générative sous la loupe environnementale : les enjeux énergétiques](https://www.linkedin.com/posts/ia-environnement-innovationresponsable-share-7463320029036580865-MHmu): Étude du PEReN pour l'Arcep sur la consommation énergétique de 22 modèles d'IA. Analyse des leviers de sobriété comme l'architecture mélange d'experts ou la quantification.
 Catégories : IA, performance
 
@@ -83,7 +90,7 @@ Catégories : emploi, IA, IA agent
 Catégories : IA, IA agent, OCR
 
 
-## Fun/formation :
+## Fun/formation
 - [MicroGPT Visualized - Building a GPT from scratch — an interactive visual guide](https://microgpt.jtauber.com/): Construction d'un GPT simplifié en 6 étapes
 Catégories : formation, techos
 
@@ -99,10 +106,7 @@ Catégories : data, formation, OpenSource, R
 - [ RAG with raghilda](https://info.posit.co/NzA5LU5YTi03MDYAAAGh5ODbBdeFmlOPaLdHwMlSHBHsHBxC_zbtIhyFs1bvc87cZhr-FsVhfWa0OPca32phPpMhMeo=): An introduction to building retrieval-augmented generation systems with raghilda
 Catégories : formation, RAG
 
-- [Grand Paris : visualisation interactive des 40 nouveaux districts](https://strategie-plan.eu/datavisualisation-grandparis/#trace): Outil de visualisation interactive pour simuler la refondation administrative du Grand Paris. Permet de composer et nommer 40 districts d'environ 170 000 habitants chacun.
-Catégories : cartographie, dataviz, fun, Geo
-
-## Ressources :
+## Ressources
 - [curl.md : Convertir des sites web en markdown optimisé pour les agents](https://curl.md/docs): Outil permettant de transformer des pages web en format markdown optimisé pour les agents IA. Réduit la consommation de tokens et améliore le contexte pour les LLM via CLI, API ou plugins.
 Catégories : IA agent, LLM, tools
 
