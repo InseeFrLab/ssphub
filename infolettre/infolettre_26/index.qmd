@@ -15,11 +15,26 @@ image: XXX.png
 
 categories:
   - Infolettre
+
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Datatype&display=swap" rel="stylesheet">
+          <style>
+            .datatype-text {
+              font-family: 'Datatype', sans-serif;
+              font-variation-settings: 'wdth' 50;
+              font-weight: 400;
+            }
+          </style>
 ---
 
 # Bienvenue à la **vingt sixième infolettre** !
 
-C'est le printemps ! Le temps est bon, il fait [41,6°C en Californie avant la fin de l'hiver](https://www.rtl.be/actu/monde/international/jusqua-416degc-avant-meme-la-fin-de-lhiver-une-vague-de-chaleur-extreme-frappe/2026-03-19/article/783199). 
+C'est l'été, la canicule a le droit d'arriver ! C'est la dernière infolettre avant la pause estivale, donc pour vous récompenser, elle est dense 😙 
 
 
 # L'infographie
@@ -114,20 +129,20 @@ Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/i
 
 ### duckDB
 
-- [Full-Text Search with DuckDB](https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html): Exploration de l'extension de recherche plein texte (FTS) de DuckDB. Tutoriel sur l'indexation et l'utilisation de l'algorithme BM25 pour interroger des données textuelles comme des e-mails.
+- [Full-Text Search with DuckDB](https://peterdohertys.website/blog-posts/full-text-search-w-duckdb.html): Exploration de **l'extension de recherche textuelle (FTS) de DuckDB** avec un tutoriel sur l'indexation et l'utilisation de l'algorithme BM25 pour interroger des données textuelles comme des e-mails.
 
 ### Git et souveraineté européenne 
-- [The Netherlands is Building Its Own GitHub Replacement](https://itsfoss.com/news/netherlands-forgejo-migration/): Le gouvernement néerlandais déploie Forgejo, une plateforme auto-hébergée et open source, pour remplacer GitHub et GitLab. Cette initiative vise à garantir la souveraineté numérique et le contrôle total sur l'hébergement du code source gouvernemental.
+- [The Netherlands is Building Its Own GitHub Replacement](https://itsfoss.com/news/netherlands-forgejo-migration/): Le gouvernement néerlandais déploie **Forgejo**, une plateforme auto-hébergée et open source, pour **remplacer GitHub et GitLab**. Cette initiative vise à garantir la souveraineté numérique et le contrôle total sur l'hébergement du code source gouvernemental.
 
 ### R, Python, machine learning
-- [Bringing OpenTelemetry to R in production](https://opensource.posit.co/blog/2026-05-07_opentelemetry/): Intégration d'OpenTelemetry dans les packages R clés (Shiny, plumber2, etc.) pour l'observabilité en production. Permet de collecter traces, logs et métriques sans modification du code via des variables d'environnement.
+- [Bringing OpenTelemetry to R in production](https://opensource.posit.co/blog/2026-05-07_opentelemetry/): Intégration **d'OpenTelemetry dans les packages R clés** (Shiny, plumber2, etc.) pour l'observabilité en production, ce qui permet de collecter traces, logs et métriques sans modification du code via des variables d'environnement.
 
-- [Supertree : visualisation interactive d'arbres de décision](https://github.com/mljar/supertree): Outil Python permettant de visualiser de manière interactive des arbres de décision dans Jupyter ou Colab. Compatible avec scikit-learn, XGBoost, LightGBM et ONNX.
+- [Supertree : visualisation interactive d'arbres de décision](https://github.com/mljar/supertree): Outil Python permettant de **visualiser de manière interactive des arbres** de décision dans Jupyter ou Colab. Compatible avec scikit-learn, XGBoost, LightGBM et ONNX.
 
 ### Publication
 
-- [Modernisation de la chaîne de production scientifique de l'OFCE](https://www.linkedin.com/posts/xavier-timbeau-b141b61a_depuis-maintenant-un-peu-plus-de-2-ans-nous-activity-7471954013521915904-K21b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGc8mWkBtWTZy0PWkiGLiCCQBRMkKBQxqnI): Transformation de la chaîne éditoriale de l'OFCE vers un flux industriel et automatisé. Utilisation de Quarto, R et Git pour garantir la reproductibilité et la source unique de données.
+- [Modernisation de la chaîne de production scientifique de l'OFCE](https://www.linkedin.com/posts/xavier-timbeau-b141b61a_depuis-maintenant-un-peu-plus-de-2-ans-nous-activity-7471954013521915904-K21b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGc8mWkBtWTZy0PWkiGLiCCQBRMkKBQxqnI): **Transformation de la chaîne éditoriale de l'OFCE** vers un flux industriel et automatisé par l'utilisation de Quarto, de R et de Git pour garantir la reproductibilité et une source unique de données et de vérité.
 
-- [Migrating from Pagedown to Typst](https://www.ysunflower.com/blog/migrating-from-pagedown-to-typst): Comparaison entre Pagedown et Typst pour la génération de rapports PDF. Typst offre une alternative plus rapide, intuitive et moderne via l'utilisation de Quarto.
+- [Migrating from Pagedown to Typst](https://www.ysunflower.com/blog/migrating-from-pagedown-to-typst): Comparaison entre **Pagedown et Typst** pour la génération de rapports PDF. Typst offre une alternative plus rapide, intuitive et moderne via l'utilisation de Quarto.
 
-- [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Police OpenType variable permettant de transformer des expressions textuelles en graphiques inline. Utilise les ligatures pour générer barres, sparklines et camemberts sans JavaScript ni images.
+- [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Dataype est **une nouvelle police** qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans Javascript ni image 💫 . Ainsi, un simple `{l:20,40,70,50,90}` va produire [{l:20,40,70,50,90}]{.datatype-text} et ` {b:30,70,50,90} ` va produire [{b:30,70,50,90}]{.datatype-text}
