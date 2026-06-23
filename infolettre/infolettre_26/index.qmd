@@ -67,27 +67,20 @@ Pour plus de détails, tout est expliqué sur [l'article de blog](../../blog/bot
 # Actualités
 Beaucoup d'actualités dans les dernières semaines, j'essaye de rendre cela digeste. 
 
-## IA :
-- [Impact de l'IA sur la productivité des développeurs open-source](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/): Étude expérimentale montrant que l'usage d'outils d'IA ralentit de 19% les développeurs expérimentés sur des tâches réelles. Les résultats contrastent fortement avec les perceptions des développeurs et les benchmarks classiques.
-Catégories : emploi, IA, performance
+## Quel est le prix de l'indépendance statistique ? 25$ pour 1$
+- [The Value of Reliable Statistics](https://www.nber.org/papers/w35135): Étude de l'impact de la perte de confiance dans les statistiques publiques sur l'incertitude économique. bénéfice économique lié au maintien de l'intégrité des données officielles estimé à 25$ par $ investi.
+Catégories : data, Metier Data, performance
 
+
+## IA :
 - [L’IA générative sous la loupe environnementale : les enjeux énergétiques](https://www.linkedin.com/posts/ia-environnement-innovationresponsable-share-7463320029036580865-MHmu): Étude du PEReN pour l'Arcep sur la consommation énergétique de 22 modèles d'IA. Analyse des leviers de sobriété comme l'architecture mélange d'experts ou la quantification.
 Catégories : IA, performance
 
 - [Microsoft reports expose AI's cost problem: The tech is more expensive than paying human employees](https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/): L'adoption massive de l'IA en entreprise génère des coûts de calcul et de tokens dépassant parfois les salaires humains. Malgré la baisse du prix unitaire des tokens, l'usage intensif d'agents IA risque de faire exploser les budgets.
 Catégories : emploi, IA, IA agent
 
-- [OpenAI Privacy Filter](https://huggingface.co/openai/privacy-filter): Modèle de classification de jetons pour la détection et le masquage d'informations personnelles (PII). Conçu pour la sanitisation de données à haut débit et utilisable localement.
-Catégories : Anonymisation de données, classification, IA, NLP/texte
-
-- [Your own AI workspace, running on your hardware.](https://github.com/pewdiepie-archdaemon/odysseus): Odysseus is a self-hosted interface for talking to language models — chat, autonomous agents, tools, model serving, email, research, and more. Local-first, privacy-first, and no telemetry. Just you and your models. 
-Catégories : LLM
-
 - [ParseBench : Benchmark de parsing de documents pour agents IA](https://www.parsebench.ai/#compare): Présentation de ParseBench, premier benchmark évaluant les besoins des agents IA en parsing de documents. Basé sur 2000 pages vérifiées par l'humain et 169k règles de test.
 Catégories : IA, IA agent, OCR
-
-- [Teaching agents the core skills of data science](https://blog.probabl.ai/teaching-agents-data-science-skills): Les agents IA excellent en ingénierie mais manquent de méthodologie et de pensée statistique. L'objectif est de former des agents capables de gérer des workflows de data science complexes et fiables. Des skills peuvent permettre de les aider, le depot est ici : https://github.com/probabl-ai/skills
-Catégories : IA agent, ML
 
 
 ## Fun/formation :
@@ -105,9 +98,6 @@ Catégories : data, formation, OpenSource, R
 
 - [ RAG with raghilda](https://info.posit.co/NzA5LU5YTi03MDYAAAGh5ODbBdeFmlOPaLdHwMlSHBHsHBxC_zbtIhyFs1bvc87cZhr-FsVhfWa0OPca32phPpMhMeo=): An introduction to building retrieval-augmented generation systems with raghilda
 Catégories : formation, RAG
-
-- [I trained a transformer in an email](https://www.adamoshadjivasiliou.com/blog/transformer-in-email.html): Expérience technique consistant à entraîner et exécuter un modèle transformer directement dans un e-mail via AMP for Email. Utilisation de JavaScript limité et de CSS pour simuler le calcul et le stockage des poids.
-Catégories : fun, IA
 
 - [Grand Paris : visualisation interactive des 40 nouveaux districts](https://strategie-plan.eu/datavisualisation-grandparis/#trace): Outil de visualisation interactive pour simuler la refondation administrative du Grand Paris. Permet de composer et nommer 40 districts d'environ 170 000 habitants chacun.
 Catégories : cartographie, dataviz, fun, Geo
@@ -137,17 +127,14 @@ Catégories : dataviz, ML, package, Python
 - [Modernisation de la chaîne de production scientifique de l'OFCE](https://www.linkedin.com/posts/xavier-timbeau-b141b61a_depuis-maintenant-un-peu-plus-de-2-ans-nous-activity-7471954013521915904-K21b?utm_source=share&utm_medium=member_desktop&rcm=ACoAAGc8mWkBtWTZy0PWkiGLiCCQBRMkKBQxqnI): Transformation de la chaîne éditoriale de l'OFCE vers un flux industriel et automatisé. Utilisation de Quarto, R et Git pour garantir la reproductibilité et la source unique de données.
 Catégories : OpenSource, Quarto, R, reproductibilite
 
-## Autre :
-- [The Value of Reliable Statistics](https://www.nber.org/papers/w35135): Étude de l'impact de la perte de confiance dans les statistiques publiques sur l'incertitude économique. bénéfice économique lié au maintien de l'intégrité des données officielles estimé à 25$ par $ investi.
-Catégories : data, Metier Data, performance
+- [OpenAI Privacy Filter](https://huggingface.co/openai/privacy-filter): Modèle de classification de jetons pour la détection et le masquage d'informations personnelles (PII). Conçu pour la sanitisation de données à haut débit et utilisable localement.
+Catégories : Anonymisation de données, classification, IA, NLP/texte
 
-- [Graph database-ball! Exploring the Game with LadybugDB, DuckDB and PostgreSQL](https://theconsensus.dev/p/2026/05/29/ladybug-duckdb-and-postgresql.html): Comparaison des capacités de bases de données orientées graphes entre DuckDB, LadybugDB et PostgreSQL. Analyse de l'expérience utilisateur et des performances via des requêtes sur des données de baseball.
-Catégories : data, duckDB, performance
+- [Your own AI workspace, running on your hardware.](https://github.com/pewdiepie-archdaemon/odysseus): Odysseus is a self-hosted interface for talking to language models — chat, autonomous agents, tools, model serving, email, research, and more. Local-first, privacy-first, and no telemetry. Just you and your models. 
+Catégories : LLM
 
-- [Hackathon 2026 de l'Assemblée nationale : le parcours de la loi et l'IA](https://hackathon2026.assemblee-nationale.fr/): Événement les 3 et 4 juillet 2026 visant à explorer l'usage de l'IA dans le processus législatif. Défis centrés sur l'accessibilité de la loi, l'automatisation documentaire et l'aide à la décision.
-Catégories : conférence
+- [Teaching agents the core skills of data science](https://blog.probabl.ai/teaching-agents-data-science-skills): Les agents IA excellent en ingénierie mais manquent de méthodologie et de pensée statistique. L'objectif est de former des agents capables de gérer des workflows de data science complexes et fiables. Des skills peuvent permettre de les aider, le depot est ici : https://github.com/probabl-ai/skills
+Catégories : IA agent, ML
 
 - [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Police OpenType variable permettant de transformer des expressions textuelles en graphiques inline. Utilise les ligatures pour générer barres, sparklines et camemberts sans JavaScript ni images.
 Catégories : dataviz, OpenSource
-
-
