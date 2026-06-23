@@ -11,7 +11,7 @@ number: 26
 authors:
   - Nicolas
 
-image: XXX.png
+image: prix_stats.png
 
 categories:
   - Infolettre
@@ -145,4 +145,4 @@ Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/i
 
 - [Migrating from Pagedown to Typst](https://www.ysunflower.com/blog/migrating-from-pagedown-to-typst): Comparaison entre **Pagedown et Typst** pour la génération de rapports PDF. Typst offre une alternative plus rapide, intuitive et moderne via l'utilisation de Quarto.
 
-- [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Dataype est **une nouvelle police** qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans Javascript ni image 💫 . Ainsi, un simple `{l:20,40,70,50,90}` va produire [{l:20,40,70,50,90}]{.datatype-text} et ` {b:30,70,50,90} ` va produire [{b:30,70,50,90}]{.datatype-text}
+- [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Dataype est **une nouvelle police** qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans Javascript ni image 💫 . Ainsi, un simple `{l:20,40,70,50,90}` va produire [{l:20,40,70,50,90}]{.datatype-text} et `{b:30,70,50,90}` va produire [{b:30,70,50,90}]{.datatype-text}.
