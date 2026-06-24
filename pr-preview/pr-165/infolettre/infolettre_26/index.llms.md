@@ -4,7 +4,7 @@ C’est l’été, la canicule a le droit d’arriver ! C’est la dernière inf
 
 # L’infographie
 
-Si vous avez joué à SimCity, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné [sa note](https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris) proposant de fusionner toute la petite couronne et Paris au sein d’une **ville du Grand Paris** d’un **outil de visualisation** pour créer cette nouvelle commune.
+Si vous avez joué à SimCity, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné [sa note](https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris), proposant de fusionner toute la petite couronne et Paris au sein d’une ville du Grand Paris, d’un outil de visualisation permettant à chacun de créer cette nouvelle commune.
 
 ![](ville_grand_paris.png)
 
@@ -14,35 +14,36 @@ Si vous cherchez à créer 40 districts en région parisienne, le jeu est par [i
 
 # Les évènements du réseau
 
-Plusieurs événements ont eu lieu ces dernières semaines auxquels le réseau était invité.
+Plusieurs événements du réseau ont eu lieu ces dernières semaines.
 
-## Retour sur le funathon sur le *machine learning* et l’IA - 📅 27 et 28 mai
+## Retour sur le funathon consacré au *machine learning* et l’IA - 📅 27 et 28 mai
 
-L’Insee a organisé un **funathon européen** sur l’utilisation du *machine learning* et de l’IA dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os). **67 équipes de 25 pays différents représentant 215 personnes** ont ainsi participé à l’un des trois sujets proposés. Les retours des participants furent très positifs, les participants ayant particulièrement apprécié **apprendre de nouvelles compétences sur des cas d’usage concrets**.
+L’Insee a organisé un **funathon européen** portant sur l’utilisation du *machine learning* et de l’IA dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os). **215 personnes, réparties en 67 équipes et issues de 25 pays différents**, ont participé et ont pu explorer l’un des trois sujets proposés. Les retours des participants sont très positifs : ils ont particulièrement apprécié le fait de pouvoir **acquérir de nouvelles compétences à partir de cas d’usage concrets** issus de la statistique publique.
 
-Les ressources sont toujours disponibles en ligne, sur le [site du funathon](https://aiml4os.github.io/funathon-general-website/about.html) ou sur les sites des sujets :
+Les ressources sont toujours disponibles en ligne, sur le [site du funathon](https://aiml4os.github.io/funathon-general-website/about.html) ou sur les sites dédiés à chaque sujet :
 
 - Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes - [sujet 1](https://aiml4os.github.io/funathon-project1/) ;
 - Codification automatique pour la classification NACE - [sujet 2](https://aiml4os.github.io/funathon-project2/) ;
 - Segmentation d’images satellites par *deep learning* - [sujet 3](https://aiml4os.github.io/funathon-project3/).
 
-**N’hésitez pas à aller voir les sujets par vous-même !**
+**Que ce soit par curiosité, pour apprendre ou pour revivre l’expérience du funathon, n’hésitez pas à consulter les sujets !**
 
 Un retour d’expérience plus détaillé a par ailleurs été présenté à la conférence qualité [lors de la session 21](https://www.q2026.hr/programme/conference-programme/session-21/) et dont la présentation est disponible [ici](https://www.q2026.hr/media/kmuchjs4/presentation-a-new-way-to-learn-machine-learning-and-ai.pptx), si jamais vous voulez vous lancer dans une telle expérience 😜.
 
 ## Retour sur les journées data-science et open source - 📅 16 et 17 juin
 
-L’Insee a organisé deux journées pour **démystifier la contribution à l’open source** et explorer des projets liés à la data science les 16 et 17 juin. Rassemblant une vingtaine de participants de différentes administrations, cela aura été l’occasion de découvrir ensemble le monde de l’open source et d’apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR et des contributions libres).
+L’Insee a organisé les 16 et 17 juin deux journées pour **démystifier la contribution à l’open source**, explorer et contribuer à des projets liés à la data science. Rassemblant une vingtaine de participants issus de différentes administrations, ces journées ont permis de (re-)découvrir ensemble le monde de l’open source et d’apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR, ainsi que des contributions libres à d’autres projets).
 
-Au-delà des chiffres, ces deux jours auront surtout montré que **la contribution open source est à la portée de tous et que les data scientists du service public ont toute leur place comme contributeurs actifs des outils qu’ils utilisent**. Cela aura aussi été l’occasion de **travailler différemment tous ensemble autour de projets concrets**, ce qui fut très apprécié de tous.
+Au-delà des chiffres, ces deux jours ont surtout montré que **la contribution à l’open source est accessible à tous et que les data scientists du service public ont toute leur place comme contributeurs actifs aux outils qu’ils utilisent**.  
+Cela aura aussi été l’occasion de **travailler autrement, tous ensemble, autour de projets concrets**, une expérience qui a été très appréciée par les participants.
 
-Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition. Plus de **détails** sont disponibles sur la [page de l’événement](../../event/2026-06-jdos/index.llms.md), [le retex](../../blog/2026_jdos/index.llms.md) ou [le site dédié](https://inseefrlab.github.io/journees-datascience-opensource).
+Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une nouvelle édition l’année prochaine. Plus de **détails** sont disponibles sur la [page de l’événement](../../event/2026-06-jdos/index.llms.md), [le retex](../../blog/2026_jdos/index.llms.md) ou [le site dédié](https://inseefrlab.github.io/journees-datascience-opensource).
 
 ## Retour sur les rencontres R à Nantes - 📅 16 au 18 juin
 
 Les 12e **Rencontres R** ont eu lieu à Nantes du 16 au 18 juin. Dans un [billet de blog](../../blog/2026_rencontresR/index.llms.md), on revient sur quelques présentations marquantes : rendre ses graphiques `{ggplot2}` réellement **accessibles** (Cara Thompson), faire du web depuis R **sans Shiny** avec l’écosystème `hyperverse` (Arthur Bréant), produire des **PDF via Typst** plutôt que LaTeX et **étendre Quarto avec des filtres Lua** (Christophe Dervieux & Maëlle Salmon), et enfin les enjeux liés à l’utilisation de **R en production**.
 
-# Du nouveau contenu sur le [site du réseau](https://ssphub.netlify.app) !
+# Du nouveau sur le [site du réseau](https://ssphub.netlify.app) !
 
 ## Le site du réseau s’enrichit d’une liste de formations en data science
 
@@ -56,7 +57,7 @@ Aperçu de la liste des formations sur le site du réseau
 
 Une gentille personne a expliqué sur le blog du réseau comment créer un [bot sur Tchap connecté à un LLM](../../blog/bot_tchap/index.llms.md).
 
-En résumé, grâce à la philosophie ouverte de Tchap et à des outils comme `simplematrixbotlib`, **la mise en place a été plus simple que prévu**, malgré les défis du chiffrement et de la gestion des fils de discussion. Le bot est **capable de répondre à des commandes et d’interroger un LLM**, mais ne gère pas les nouvelles discussions et autres événements (actuellement). Enfin, après avoir conteneurisé l’application avec Docker, le bot **tourne désormais en production sur le SSP Cloud**, le tout pour une petite semaine de travail.
+En résumé, grâce à la philosophie ouverte de Tchap et à des outils comme `simplematrixbotlib`, **la mise en place a été plus simple que prévu**, malgré les défis liés au chiffrement et à la gestion des fils de discussion. Le bot est désormais **capable de répondre à des commandes et d’interroger un LLM**, même si la gestion des nouvelles discussions et de certains événements reste à implémenter. Une fois l’application conteneurisée avec Docker, le bot a pu **être déployé en production sur le SSP Cloud**, le tout en moins d’une semaine de travail.
 
 Pour plus de détails, tout est expliqué sur [l’article de blog](../../blog/bot_tchap/index.llms.md).
 
@@ -84,7 +85,7 @@ En ces temps de fraîcheur estivale, le PEReN a étudié **la consommation éner
 
 - [YAML? That’s Norway problem](https://lab174.com/blog/202601-yaml-norway/): Si vous êtes fan du **langage YAML**, cet article explique que ce n’est pas si facile avec le “Norway problem”: le code du pays (NO) étant traduit par “False” dans les premières versions du langage. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du langage en regardant l’évolution du langage YAML et les raisons de son succès aujourd’hui.
 
-- [DuckDB Internals: Why is DuckDB Fast?](https://www.greybeam.ai/blog/duckdb-internals-part-1): Analyse approfondie de **l’architecture interne de DuckDB** pour comprendre comment il est si rapide (réponse : l’exécution in-process, le stockage en colonnes et l’optimisation SQL).
+- [DuckDB Internals: Why is DuckDB Fast?](https://www.greybeam.ai/blog/duckdb-internals-part-1): Analyse approfondie de **l’architecture interne de DuckDB** pour comprendre pourquoi il est si rapide (réponse : l’exécution in-process, le stockage en colonnes et l’optimisation SQL).
 
 ## Ressources
 
