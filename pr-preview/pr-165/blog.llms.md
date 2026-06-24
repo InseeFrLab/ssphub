@@ -4,6 +4,14 @@ Pour rappel, les informations qui sont diffusées sur ce blog n’engagent que l
 
   
 
+![](./blog/2026_rencontresR/logo2026Nantes.png)
+
+##### Retour sur les Rencontres R 2026 à Nantes
+
+Quelques présentations qui m’ont marqué lors des 12e Rencontres R, à Nantes (16-18 juin 2026).
+
+24 juin 2026
+
 ![](./blog/2026_jdos/jdos.jpg)
 
 ##### Journées datascience & open source

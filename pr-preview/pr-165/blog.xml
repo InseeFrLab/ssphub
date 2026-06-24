@@ -10,7 +10,46 @@
 <atom:link href="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Articles, billets de blog écrits sur tout sujet en lien avec la data science. Cela peut couvrir des conférences, des nouveautés, des projets ...</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Thu, 18 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 24 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Retour sur les Rencontres R 2026 à Nantes</title>
+  <link>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog/2026_rencontresR/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Les 12e <a href="https://www.rencontresr.fr/posts/RR2026/index.html">Rencontres R</a> se sont tenues à Nantes du 16 au 18 juin 2026. Trois jours denses, avec une multitude de présentations autour de R et de son écosystème. Voici une sélection toute personnelle des interventions que j’ai préférées.</p>
+<section id="bien-plus-quun-beau-graphique-accessibilité-avec-ggplot2" class="level2">
+<h2 class="anchored" data-anchor-id="bien-plus-quun-beau-graphique-accessibilité-avec-ggplot2">Bien plus qu’un beau graphique : accessibilité avec <code>{ggplot2}</code></h2>
+<p>Dans sa conférence plénière, <strong>Cara Thompson</strong>, consultante indépendante en visualisation de données (<a href="https://www.cararthompson.com/">Building Stories With Data</a>), a déroulé <strong>15 astuces concrètes pour rendre nos graphiques <code>{ggplot2}</code> accessibles</strong>, le tout illustré avec les données du <em>Great British Bake Off</em>. Choix des couleurs différenciables, contraste, typographie lisible, annotations bien placées : autant de petits gestes qui changent la lecture d’un graphique, en particulier pour les publics daltoniens ou neuro-atypiques. Les <a href="https://www.cararthompson.com/talks/rencontresr-2026-beau-graphique/">slides et la liste des 15 astuces</a> sont en ligne.</p>
+</section>
+<section id="hyperverse-un-écosystème-naissant-de-packages-pour-faire-du-web-depuis-r" class="level2">
+<h2 class="anchored" data-anchor-id="hyperverse-un-écosystème-naissant-de-packages-pour-faire-du-web-depuis-r">hyperverse, un écosystème naissant de packages pour faire du web depuis R</h2>
+<p><strong>Arthur Bréant</strong> (développeur R chez <a href="https://thinkr.fr/">ThinkR</a>) a présenté <code>hyperverse</code>, <strong>un écosystème de packages naissant pour construire des applications web depuis R, “à la manière du web”</strong>. L’idée n’est pas de remplacer Shiny mais de proposer une autre approche : là où Shiny garde une connexion ouverte et où le serveur réagit, <code>htmxr</code> (le cœur de l’écosystème, qui fait le pont entre <code>htmx</code> et <code>plumber2</code>) repose sur de simples requêtes HTTP où le navigateur demande et R répond. L’écosystème étant naissant, toute contribution est bienvenue ! À découvrir dans sa <a href="https://hyperverse.world/talks/rencontres-r-2026/">présentation</a>.</p>
+</section>
+<section id="des-pdf-sans-frictions-avec-typst-et-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="des-pdf-sans-frictions-avec-typst-et-quarto">Des PDF sans frictions avec Typst et Quarto</h2>
+<p><strong>Christophe Dervieux</strong> (développeur chez Posit, l’un des artisans de Quarto) et <strong>Maëlle Salmon</strong> montrent dans ce tutoriel comment <strong>produire des PDF avec Quarto en s’appuyant sur Typst</strong>, une alternative moderne, plus rapide et plus simple à prendre en main que LaTeX. Le <a href="https://cderv.github.io/tuto-quarto-typst-rr-2026/">support du tutoriel</a> est librement accessible.</p>
+</section>
+<section id="enrichir-quarto-avec-les-filtres-lua" class="level2">
+<h2 class="anchored" data-anchor-id="enrichir-quarto-avec-les-filtres-lua">Enrichir Quarto avec les filtres Lua</h2>
+<p>Toujours du côté de Quarto, <strong>Christophe Dervieux</strong> a expliqué comment <strong>étendre les capacités de Quarto grâce aux filtres Lua</strong>, pour automatiser des traitements et pousser plus loin la personnalisation de ses documents. Une porte d’entrée utile pour qui veut dépasser les usages classiques de Quarto. Les <a href="https://cderv-rr2026.share.connect.posit.cloud/">slides sont disponibles ici</a>, et une <a href="https://www.youtube.com/watch?v=u9ev3mvC-p0">version anglaise du même talk est sur YouTube</a>.</p>
+</section>
+<section id="r-est-il-un-langage-adapté-à-la-production" class="level2">
+<h2 class="anchored" data-anchor-id="r-est-il-un-langage-adapté-à-la-production">R est-il un langage adapté à la production ?</h2>
+<p>Enfin, <strong>Lino</strong> (data scientist à l’Insee) a posé une question qui nous parle : <strong>R est-il un langage adapté à la mise en production ?</strong> L’occasion de revenir sur les enjeux de reproductibilité et d’industrialisation, et sur la place de R dans une chaîne de production. Les <a href="https://linogaliana.github.io/prez-rencontresR-2026/">slides sont aussi disponibles ici</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <guid>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog/2026_rencontresR/</guid>
+  <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog/2026_rencontresR/logo2026Nantes.png" medium="image" type="image/png" height="46" width="144"/>
+</item>
 <item>
   <title>Journées datascience &amp; open source</title>
   <link>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog/2026_jdos/</link>
@@ -292,7 +331,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="e14cb47d" class="cell">
+<div id="b4354a82" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -483,7 +522,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="09cb239a" class="cell">
+<div id="cc26c558" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1374,7 +1413,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="9025f9fe" class="cell">
+<div id="e5ce1a70" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>

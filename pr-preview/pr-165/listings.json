@@ -252,21 +252,6 @@
     ]
   },
   {
-    "listing": "/blog.html",
-    "items": [
-      "/blog/2026_jdos/index.html",
-      "/blog/bot_tchap/index.html",
-      "/blog/parquetRP/index.html",
-      "/blog/onyxia/index.html",
-      "/blog/polars/index.html",
-      "/blog/recap2022/index.html",
-      "/blog/retrospective2022/index.html",
-      "/blog/embedding/index.html",
-      "/blog/2022_jms/index.html",
-      "/blog/hadoop_spark/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/project/2026_recodification_nace/index.html",
@@ -300,6 +285,7 @@
       "/project/2019_classification_asso/index.html",
       "/project/2018_outlier_dsn/index.html",
       "/project/2018_segregation/index.html",
+      "/blog/2026_rencontresR/index.html",
       "/blog/2026_jdos/index.html",
       "/event/2026-06-jdos/index.html",
       "/blog/bot_tchap/index.html",
@@ -386,6 +372,22 @@
       "/course/codestyle-rgoogle/index.html",
       "/course/fidle-cnrs/index.html",
       "/course/pandas-10min/index.html"
+    ]
+  },
+  {
+    "listing": "/blog.html",
+    "items": [
+      "/blog/2026_rencontresR/index.html",
+      "/blog/2026_jdos/index.html",
+      "/blog/bot_tchap/index.html",
+      "/blog/parquetRP/index.html",
+      "/blog/onyxia/index.html",
+      "/blog/polars/index.html",
+      "/blog/recap2022/index.html",
+      "/blog/retrospective2022/index.html",
+      "/blog/embedding/index.html",
+      "/blog/2022_jms/index.html",
+      "/blog/hadoop_spark/index.html"
     ]
   },
   {

@@ -22,14 +22,14 @@
 
 <section id="bienvenue-à-la-vingt-sixième-infolettre" class="level1">
 <h1>Bienvenue à la <strong>vingt sixième infolettre</strong> !</h1>
-<p>C’est l’été, la canicule a le droit d’arriver ! C’est la dernière infolettre avant la pause estivale, donc pour vous récompenser, elle est dense 😙</p>
+<p>C’est l’été, la canicule a le droit d’arriver ! C’est la dernière infolettre avant la pause estivale, donc pour vous récompenser, elle est dense 😙.</p>
 </section>
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
-<p>Si vous avez joué à Sim’s city, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné <a href="https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris">sa note</a> proposant de fusionner toute la petite couronne et Paris au sein d’une ville du Grand Paris d’un outil de visualisation pour créer cette nouvelle commune.</p>
+<p>Si vous avez joué à SimCity, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné <a href="https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris">sa note</a> proposant de fusionner toute la petite couronne et Paris au sein d’une <strong>ville du Grand Paris</strong> d’un <strong>outil de visualisation</strong> pour créer cette nouvelle commune.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/infolettre/infolettre_26/ville_grand_paris.png" class="img-fluid figure-img" width="450"></p>
+<p><img src="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/infolettre/infolettre_26/ville_grand_paris.png" class="img-fluid figure-img" width="600"></p>
 <figcaption>Créer sa ville du Grand Paris, par le Haut commissariat à la stratégie et au plan</figcaption>
 </figure>
 </div>
@@ -37,15 +37,15 @@
 </section>
 <section id="les-évènements-du-réseau" class="level1">
 <h1>Les évènements du réseau</h1>
-<p>Plusieurs événements ont eu lieu ces dernières semaines auquel le réseau était invité.</p>
+<p>Plusieurs événements ont eu lieu ces dernières semaines auxquels le réseau était invité.</p>
 <section id="retour-sur-le-funathon-sur-le-machine-learning-et-lia---27-et-28-mai" class="level2">
 <h2 class="anchored" data-anchor-id="retour-sur-le-funathon-sur-le-machine-learning-et-lia---27-et-28-mai">Retour sur le funathon sur le <em>machine learning</em> et l’IA - 📅 27 et 28 mai</h2>
-<p>L’Insee a organisé un <strong>funathon européen</strong> sur l’utilisation du <em>machine learning</em> et de l’IA dans le cadre du projet européen <a href="https://cros.ec.europa.eu/dashboard/aiml4os">ESS-Net AIML4OS</a>. <strong>67 équipes de 25 pays différents représentant 215 personnes</strong> ont ainsi participé à l’un des trois sujets proposés. Les retours des participants furent très positifs et ont particulièrement apprécié <strong>apprendre de nouvelles compétences sur des cas d’usage concrets</strong>.</p>
-<p>Les ressources sont toujours disponibles en ligne, soit sur le <a href="https://aiml4os.github.io/funathon-general-website/about.html">site du funathon</a> ou sur les sites dédiés des sujets :</p>
+<p>L’Insee a organisé un <strong>funathon européen</strong> sur l’utilisation du <em>machine learning</em> et de l’IA dans le cadre du projet européen <a href="https://cros.ec.europa.eu/dashboard/aiml4os">ESS-Net AIML4OS</a>. <strong>67 équipes de 25 pays différents représentant 215 personnes</strong> ont ainsi participé à l’un des trois sujets proposés. Les retours des participants furent très positifs, les participants ayant particulièrement apprécié <strong>apprendre de nouvelles compétences sur des cas d’usage concrets</strong>.</p>
+<p>Les ressources sont toujours disponibles en ligne, sur le <a href="https://aiml4os.github.io/funathon-general-website/about.html">site du funathon</a> ou sur les sites des sujets :</p>
 <ul>
-<li>Segmentation d’images satellites par <em>deep learning</em> (<a href="https://aiml4os.github.io/funathon-project1/">sujet 1</a>);</li>
-<li>Codification automatique pour la classification NACE (<a href="https://aiml4os.github.io/funathon-project2/">sujet 2</a>);</li>
-<li>Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes (<a href="https://aiml4os.github.io/funathon-project3/">sujet 3</a>).</li>
+<li>Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes - <a href="https://aiml4os.github.io/funathon-project1/">sujet 1</a> ;</li>
+<li>Codification automatique pour la classification NACE - <a href="https://aiml4os.github.io/funathon-project2/">sujet 2</a> ;</li>
+<li>Segmentation d’images satellites par <em>deep learning</em> - <a href="https://aiml4os.github.io/funathon-project3/">sujet 3</a>.</li>
 </ul>
 <p><strong>N’hésitez pas à aller voir les sujets par vous-même !</strong></p>
 <p>Un retour d’expérience plus détaillé a par ailleurs été présenté à la conférence qualité <a href="https://www.q2026.hr/programme/conference-programme/session-21/">lors de la session 21</a> et dont la présentation est disponible <a href="https://www.q2026.hr/media/kmuchjs4/presentation-a-new-way-to-learn-machine-learning-and-ai.pptx">ici</a>, si jamais vous voulez vous lancer dans une telle expérience 😜.</p>
@@ -55,6 +55,10 @@
 <p>L’Insee a organisé deux journées pour <strong>démystifier la contribution à l’open source</strong> et explorer des projets liés à la data science les 16 et 17 juin. Rassemblant une vingtaine de participants de différentes administrations, cela aura été l’occasion de découvrir ensemble le monde de l’open source et d’apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR et des contributions libres).</p>
 <p>Au-delà des chiffres, ces deux jours auront surtout montré que <strong>la contribution open source est à la portée de tous et que les data scientists du service public ont toute leur place comme contributeurs actifs des outils qu’ils utilisent</strong>. Cela aura aussi été l’occasion de <strong>travailler différemment tous ensemble autour de projets concrets</strong>, ce qui fut très apprécié de tous.</p>
 <p>Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition. Plus de <strong>détails</strong> sont disponibles sur la <a href="../../event/2026-06-jdos/index.html">page de l’événement</a>, <a href="../../blog/2026_jdos/index.html">le retex</a> ou <a href="https://inseefrlab.github.io/journees-datascience-opensource">le site dédié</a>.</p>
+</section>
+<section id="retour-sur-les-rencontres-r-à-nantes---16-au-18-juin" class="level2">
+<h2 class="anchored" data-anchor-id="retour-sur-les-rencontres-r-à-nantes---16-au-18-juin">Retour sur les rencontres R à Nantes - 📅 16 au 18 juin</h2>
+<p>Les 12e <strong>Rencontres R</strong> ont eu lieu à Nantes du 16 au 18 juin. Dans un <a href="../../blog/2026_rencontresR/index.html">billet de blog</a>, on revient sur quelques présentations marquantes : rendre ses graphiques <code>{ggplot2}</code> réellement <strong>accessibles</strong> (Cara Thompson), faire du web depuis R <strong>sans Shiny</strong> avec l’écosystème <code>hyperverse</code> (Arthur Bréant), produire des <strong>PDF via Typst</strong> plutôt que LaTeX et <strong>étendre Quarto avec des filtres Lua</strong> (Christophe Dervieux &amp; Maëlle Salmon), et enfin les enjeux liés à l’utilisation de <strong>R en production</strong>.</p>
 </section>
 </section>
 <section id="du-nouveau-contenu-sur-le-site-du-réseau" class="level1">
@@ -83,9 +87,9 @@
 <h2 class="anchored" data-anchor-id="quel-est-le-prix-de-lindépendance-statistique-25-pour-1">Quel est le prix de l’indépendance statistique ? 25$ pour 1$</h2>
 <p>Des chercheurs ont utilisé <strong>le licenciement de la cheffe du Bureau of Labor Statistics (BLS)</strong> aux États-Unis pour mesurer, à partir de cette expérience naturelle, la valeur économique donnée aux statistiques publiques. Dans leur article <a href="https://www.nber.org/papers/w35135">The Value of Reliable Statistics</a> publié dans la revue NBER, ils confirment ainsi que la perte de confiance dans les statistiques publiques produit de l’incertitude économique. Ils estiment aussi le bénéfice économique lié au maintien de l’intégrité des données officielles à 25$ par $ investi dans les statistiques publiques.</p>
 </section>
-<section id="la-consommation-énergétique-de-llms-grands-modèles-de-language-gml" class="level2">
-<h2 class="anchored" data-anchor-id="la-consommation-énergétique-de-llms-grands-modèles-de-language-gml">La consommation énergétique de <del>LLMs</del> grands modèles de language (GML)</h2>
-<p>En ces temps de fraicheur estivale, le PEReN a étudié <strong>la consommation énergétique de 22 modèles d’IA générative</strong>, comme présenté sur <a href="https://www.peren.gouv.fr/actualites/2026-05-21_iag_et_environnement/">leur site</a>. Selon <a href="https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf">leur étude</a>, si les grands modèles étudiés consomment généralement plus, <strong>leur architecture et leur mode de fonctionnement jouent un rôle clé</strong>: l’utilisation d’une architecture « mélange d’experts » et de quantification diminuent ainsi le coût énergétique (de respectivement 45% et 39%) mais le mode “raisonnement”, qui améliore grandement l’efficacité du modèle en matière de code, est par contre bien plus énergivore (+92%). <strong>Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky</strong>.</p>
+<section id="la-consommation-énergétique-de-llms-grands-modèles-de-langage-gml" class="level2">
+<h2 class="anchored" data-anchor-id="la-consommation-énergétique-de-llms-grands-modèles-de-langage-gml">La consommation énergétique de <del>LLMs</del> grands modèles de langage (GML)</h2>
+<p>En ces temps de fraîcheur estivale, le PEReN a étudié <strong>la consommation énergétique de 22 modèles d’IA générative</strong>, comme présenté sur <a href="https://www.peren.gouv.fr/actualites/2026-05-21_iag_et_environnement/">leur site</a>. Selon <a href="https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf">leur étude</a>, si les grands modèles étudiés consomment généralement plus, <strong>leur architecture et leur mode de fonctionnement jouent un rôle clé</strong>: l’utilisation d’une architecture « mélange d’experts » et de quantification diminuent ainsi le coût énergétique (de respectivement 45% et 39%) mais le mode “raisonnement”, qui améliore grandement l’efficacité du modèle en matière de code, est par contre bien plus énergivore (+92%). <strong>Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky</strong>.</p>
 </section>
 <section id="funformation" class="level2">
 <h2 class="anchored" data-anchor-id="funformation">Fun/formation</h2>
@@ -93,14 +97,14 @@
 <h3 class="anchored" data-anchor-id="formation">Formation</h3>
 <ul>
 <li><p><a href="https://microgpt.jtauber.com/">MicroGPT Visualized - Building a GPT from scratch — an interactive visual guide</a>: Apprendre à construire un <strong>LLM simplifié</strong> en 6 étapes ;</p></li>
-<li><p><a href="https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text">Formation ouverte aux statistiques avec R</a>: Formation aux <strong>statistiques avec R</strong> comprenant 8h de vidéos et des scripts R commentés.</p></li>
+<li><p><a href="https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text">Formation ouverte aux statistiques avec R</a>: Formation aux <strong>statistiques avec R</strong> comprenant 8h de vidéos et des scripts R commentés, par <a href="https://www.linkedin.com/in/jean-paul-maalouf/">Jean-Paul Maalouf</a>.</p></li>
 </ul>
 </section>
 <section id="explications-techniques" class="level3">
 <h3 class="anchored" data-anchor-id="explications-techniques">Explications techniques</h3>
 <ul>
-<li><p><a href="https://lab174.com/blog/202601-yaml-norway/">YAML? That’s Norway problem</a>: Si vous êtes fan du <strong>language YAML</strong>, cet article explique que ce n’est pas si facile avec le “Norway problem”: le code du pays (NO) étant traduit par “False” dans les premières versions du language. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du language en regardant l’évolution du language YAML et les raisons de son succès aujourd’hui.</p></li>
-<li><p><a href="https://www.greybeam.ai/blog/duckdb-internals-part-1">DuckDB Internals: Why is DuckDB Fast?</a>: Analyse approfondie de <strong>l’architecture interne de DuckDB</strong> pour comprendre comment il est si rapide (réponse : l’exécution in-process, le stockage colonne et l’optimisation SQL).</p></li>
+<li><p><a href="https://lab174.com/blog/202601-yaml-norway/">YAML? That’s Norway problem</a>: Si vous êtes fan du <strong>langage YAML</strong>, cet article explique que ce n’est pas si facile avec le “Norway problem”: le code du pays (NO) étant traduit par “False” dans les premières versions du langage. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du langage en regardant l’évolution du langage YAML et les raisons de son succès aujourd’hui.</p></li>
+<li><p><a href="https://www.greybeam.ai/blog/duckdb-internals-part-1">DuckDB Internals: Why is DuckDB Fast?</a>: Analyse approfondie de <strong>l’architecture interne de DuckDB</strong> pour comprendre comment il est si rapide (réponse : l’exécution in-process, le stockage en colonnes et l’optimisation SQL).</p></li>
 </ul>
 </section>
 </section>
@@ -110,7 +114,7 @@
 <h3 class="anchored" data-anchor-id="outils-dia">Outils d’IA</h3>
 <ul>
 <li><p><a href="https://info.posit.co/NzA5LU5YTi03MDYAAAGh5ODbBdeFmlOPaLdHwMlSHBHsHBxC_zbtIhyFs1bvc87cZhr-FsVhfWa0OPca32phPpMhMeo=">RAG with raghilda</a>: Une introduction à Raghilda, un <strong>package Python pour construire des RAG</strong> ;</p></li>
-<li><p><a href="https://www.parsebench.ai/#compare">ParseBench : Benchmark de parsing de documents pour agents IA</a>: Présentation de ParseBench, un <strong>benchmark d’évaluation de parsing de documents</strong> orientés vers des agents IA.</p></li>
+<li><p><a href="https://www.parsebench.ai/#compare">ParseBench : Benchmark de parsing de documents pour agents IA</a>: Présentation de ParseBench, un <strong>benchmark d’évaluation de parsing de documents</strong> orienté vers des agents IA.</p></li>
 <li><p><a href="https://curl.md/docs">curl.md : Convertir des sites web en markdown optimisé pour les agents</a>: Outil permettant de transformer des pages web en format markdown optimisé pour les agents IA pour <strong>réduire la consommation de tokens</strong> et améliorer le contexte des LLM.</p></li>
 <li><p><a href="https://huggingface.co/openai/privacy-filter">OpenAI Privacy Filter</a>: Modèle <strong>de détection et d’anonymisation d’informations personnelles</strong> conçu pour fonctionner à haut débit et utilisable localement.</p></li>
 <li><p><a href="https://github.com/pewdiepie-archdaemon/odysseus">Your own AI workspace, running on your hardware.</a>: Odysseus permet d’héberger des modèles localement, permettant de partager tout le contexte nécessaire avec les modèles et d’atteindre ainsi de meilleures performances.</p></li>
@@ -141,7 +145,7 @@
 <ul>
 <li><p><a href="https://www.linkedin.com/posts/xavier-timbeau-b141b61a_depuis-maintenant-un-peu-plus-de-2-ans-nous-activity-7471954013521915904-K21b?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAGc8mWkBtWTZy0PWkiGLiCCQBRMkKBQxqnI">Modernisation de la chaîne de production scientifique de l’OFCE</a>: <strong>Transformation de la chaîne éditoriale de l’OFCE</strong> vers un flux industriel et automatisé par l’utilisation de Quarto, de R et de Git pour garantir la reproductibilité et une source unique de données et de vérité.</p></li>
 <li><p><a href="https://www.ysunflower.com/blog/migrating-from-pagedown-to-typst">Migrating from Pagedown to Typst</a>: Comparaison entre <strong>Pagedown et Typst</strong> pour la génération de rapports PDF. Typst offre une alternative plus rapide, intuitive et moderne via l’utilisation de Quarto.</p></li>
-<li><p><a href="https://franktisellano.github.io/datatype/">Datatype — variable font that turns text into charts</a>: Dataype est <strong>une nouvelle police</strong> qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans Javascript ni image 💫 . Ainsi, un simple <code>{l:20,40,70,50,90}</code> va produire <span class="datatype-text">{l:20,40,70,50,90}</span> et <code>{b:30,70,50,90}</code> va produire <span class="datatype-text">{b:30,70,50,90}</span>.</p></li>
+<li><p><a href="https://franktisellano.github.io/datatype/">Datatype — variable font that turns text into charts</a>: Datatype est <strong>une nouvelle police</strong> qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans JavaScript ni image 💫 . Ainsi, un simple <code>{l:20,40,70,50,90}</code> va produire <span class="datatype-text">{l:20,40,70,50,90}</span> et <code>{b:30,70,50,90}</code> va produire <span class="datatype-text">{b:30,70,50,90}</span>.</p></li>
 </ul>
 
 
@@ -154,6 +158,45 @@
   <guid>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/infolettre/infolettre_26/</guid>
   <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
   <media:content url="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/infolettre/infolettre_26/prix_stats.png" medium="image" type="image/png" height="56" width="144"/>
+</item>
+<item>
+  <title>Retour sur les Rencontres R 2026 à Nantes</title>
+  <link>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog/2026_rencontresR/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Les 12e <a href="https://www.rencontresr.fr/posts/RR2026/index.html">Rencontres R</a> se sont tenues à Nantes du 16 au 18 juin 2026. Trois jours denses, avec une multitude de présentations autour de R et de son écosystème. Voici une sélection toute personnelle des interventions que j’ai préférées.</p>
+<section id="bien-plus-quun-beau-graphique-accessibilité-avec-ggplot2" class="level2">
+<h2 class="anchored" data-anchor-id="bien-plus-quun-beau-graphique-accessibilité-avec-ggplot2">Bien plus qu’un beau graphique : accessibilité avec <code>{ggplot2}</code></h2>
+<p>Dans sa conférence plénière, <strong>Cara Thompson</strong>, consultante indépendante en visualisation de données (<a href="https://www.cararthompson.com/">Building Stories With Data</a>), a déroulé <strong>15 astuces concrètes pour rendre nos graphiques <code>{ggplot2}</code> accessibles</strong>, le tout illustré avec les données du <em>Great British Bake Off</em>. Choix des couleurs différenciables, contraste, typographie lisible, annotations bien placées : autant de petits gestes qui changent la lecture d’un graphique, en particulier pour les publics daltoniens ou neuro-atypiques. Les <a href="https://www.cararthompson.com/talks/rencontresr-2026-beau-graphique/">slides et la liste des 15 astuces</a> sont en ligne.</p>
+</section>
+<section id="hyperverse-un-écosystème-naissant-de-packages-pour-faire-du-web-depuis-r" class="level2">
+<h2 class="anchored" data-anchor-id="hyperverse-un-écosystème-naissant-de-packages-pour-faire-du-web-depuis-r">hyperverse, un écosystème naissant de packages pour faire du web depuis R</h2>
+<p><strong>Arthur Bréant</strong> (développeur R chez <a href="https://thinkr.fr/">ThinkR</a>) a présenté <code>hyperverse</code>, <strong>un écosystème de packages naissant pour construire des applications web depuis R, “à la manière du web”</strong>. L’idée n’est pas de remplacer Shiny mais de proposer une autre approche : là où Shiny garde une connexion ouverte et où le serveur réagit, <code>htmxr</code> (le cœur de l’écosystème, qui fait le pont entre <code>htmx</code> et <code>plumber2</code>) repose sur de simples requêtes HTTP où le navigateur demande et R répond. L’écosystème étant naissant, toute contribution est bienvenue ! À découvrir dans sa <a href="https://hyperverse.world/talks/rencontres-r-2026/">présentation</a>.</p>
+</section>
+<section id="des-pdf-sans-frictions-avec-typst-et-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="des-pdf-sans-frictions-avec-typst-et-quarto">Des PDF sans frictions avec Typst et Quarto</h2>
+<p><strong>Christophe Dervieux</strong> (développeur chez Posit, l’un des artisans de Quarto) et <strong>Maëlle Salmon</strong> montrent dans ce tutoriel comment <strong>produire des PDF avec Quarto en s’appuyant sur Typst</strong>, une alternative moderne, plus rapide et plus simple à prendre en main que LaTeX. Le <a href="https://cderv.github.io/tuto-quarto-typst-rr-2026/">support du tutoriel</a> est librement accessible.</p>
+</section>
+<section id="enrichir-quarto-avec-les-filtres-lua" class="level2">
+<h2 class="anchored" data-anchor-id="enrichir-quarto-avec-les-filtres-lua">Enrichir Quarto avec les filtres Lua</h2>
+<p>Toujours du côté de Quarto, <strong>Christophe Dervieux</strong> a expliqué comment <strong>étendre les capacités de Quarto grâce aux filtres Lua</strong>, pour automatiser des traitements et pousser plus loin la personnalisation de ses documents. Une porte d’entrée utile pour qui veut dépasser les usages classiques de Quarto. Les <a href="https://cderv-rr2026.share.connect.posit.cloud/">slides sont disponibles ici</a>, et une <a href="https://www.youtube.com/watch?v=u9ev3mvC-p0">version anglaise du même talk est sur YouTube</a>.</p>
+</section>
+<section id="r-est-il-un-langage-adapté-à-la-production" class="level2">
+<h2 class="anchored" data-anchor-id="r-est-il-un-langage-adapté-à-la-production">R est-il un langage adapté à la production ?</h2>
+<p>Enfin, <strong>Lino</strong> (data scientist à l’Insee) a posé une question qui nous parle : <strong>R est-il un langage adapté à la mise en production ?</strong> L’occasion de revenir sur les enjeux de reproductibilité et d’industrialisation, et sur la place de R dans une chaîne de production. Les <a href="https://linogaliana.github.io/prez-rencontresR-2026/">slides sont aussi disponibles ici</a>.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <guid>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog/2026_rencontresR/</guid>
+  <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/blog/2026_rencontresR/logo2026Nantes.png" medium="image" type="image/png" height="46" width="144"/>
 </item>
 <item>
   <title>Journées datascience &amp; open source</title>
@@ -511,7 +554,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="e14cb47d" class="cell">
+<div id="b4354a82" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -702,7 +745,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="09cb239a" class="cell">
+<div id="cc26c558" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1593,7 +1636,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="9025f9fe" class="cell">
+<div id="e5ce1a70" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -3856,7 +3899,7 @@ font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running    
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782232345842" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782295158904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3880,7 +3923,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782232345842" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782295158905" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3904,7 +3947,7 @@ Jocas, webscraping des offres d’emploi en ligne
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782232345843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782295158906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3928,7 +3971,7 @@ Codification automatique de l’activité principale des entreprises
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1782232345841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1782295158904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3952,7 +3995,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVzJTJDQVBJJTJDbWFjaGluZSUyMGxlYXJuaW5nJTJDZW4lMjBwcm9kdWN0aW9u" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1782232345841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="431">
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVzJTJDQVBJJTJDbWFjaGluZSUyMGxlYXJuaW5nJTJDZW4lMjBwcm9kdWN0aW9u" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1782295158904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="431">
 <a href="../../project/2021_Extraction_CS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -3976,7 +4019,7 @@ Extraction automatique du tableau des filiales et participations des comptes soc
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1782232345841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1782295158904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
 <a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4000,7 +4043,7 @@ Codification automatique des professions dans la nomenclature PCS 2020
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="6" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4024,7 +4067,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="7" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4048,7 +4091,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="8" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4072,7 +4115,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
+<div class="g-col-1" data-index="9" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
 <a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4096,7 +4139,7 @@ Codification automatique de l’activité des associations
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
+<div class="g-col-1" data-index="10" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1782295158902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
 <a href="../../project/2018_outlier_dsn/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4652,7 +4695,7 @@ font-style: inherit;">return</span> button</span>
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1782232345845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1782295158908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4676,7 +4719,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1782232345845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1782295158908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4700,7 +4743,7 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1782232345845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1782295158907" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4724,7 +4767,7 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782232345843" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782295158906" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5852,7 +5895,7 @@ Astuce
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1782232345846" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1782295158908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5887,7 +5930,7 @@ Exploitation de données bancaires pour les prévisions de croissance du PIB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1782232345841" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1782295158904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5924,7 +5967,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5961,7 +6004,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5996,7 +6039,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6092,7 +6135,7 @@ Que disent les données de production et de consommation d’électricité sur l
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1782232345845" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
+<div class="g-col-1" data-index="0" data-categories="ZXhwJUMzJUE5cmltZW50YXRpb24lMkNkb25uJUMzJUE5ZXMlMjBkZSUyMHQlQzMlQTlsJUMzJUE5cGhvbmllJTIwbW9iaWxlJTJDZG9ubiVDMyVBOWVzJTIwQ0IlMkNJbnNlZQ==" data-listing-date-sort="1704067200000" data-listing-file-modified-sort="1782295158908" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="382">
 <a href="../../project/2024_cb_mno_tabac/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6127,7 +6170,7 @@ Une évaluation des achats transfrontaliers de tabac et des pertes fiscales asso
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782232345842" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="1" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1782295158904" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6160,7 +6203,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6197,7 +6240,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6232,7 +6275,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="4" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6271,7 +6314,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1782295158903" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6310,7 +6353,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1782232345840" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
+<div class="g-col-1" data-index="6" data-categories="SW5zZWUlMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ2Rvbm4lQzMlQTllcyUyMGRlJTIwdCVDMyVBOWwlQzMlQTlwaG9uaWUlMjBtb2JpbGUlMkNkb25uJUMzJUE5ZXMlMjBhZG1pbmlzdHJhdGl2ZXM=" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1782295158902" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="277">
 <a href="../../project/2018_segregation/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6497,84 +6540,6 @@ Impact de la crise sanitaire sur un panel anonymisé de clients de La Banque Pos
   <guid>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/project/2025_comptes_bancaires_conj/</guid>
   <pubDate>Sun, 01 Jun 2025 00:00:00 GMT</pubDate>
   <media:content url="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/project/2025_comptes_bancaires_conj/money.jpg" medium="image" type="image/jpeg"/>
-</item>
-<item>
-  <title>Atelier - Comment récupérer des données sous format Parquet ?</title>
-  <link>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/event/2025-04-16-Parquet/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>L’atelier a eu lieu le <strong>16 avril 2025 (15h - 16h30)</strong>, en présentiel à l’Insee et en distanciel pour les membres du réseau du SSP Hub. Environ 35 personnes ont participé de l’Insee (DG ou directions régionales), de différents services statistiques ministériels ou d’autres horizons. Merci à tous pour les échanges !</p>
-<section id="slides-de-la-présentation" class="level1">
-<h1>Slides de la présentation</h1>
-<div>
-<iframe class="slide-deck" style="width: 100%; height: 500px" src="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/parquet#/title-slide"></iframe>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="26" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 25;"><span id="cb1-26"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">${</span>slides_button<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`</span></span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-1" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="32" data-source-offset="0" style="background: #f1f3f5;"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 31;"><span id="cb2-32">slides_button <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">html</span><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">`&lt;p class="text-center"&gt;</span></span>
-<span id="cb2-33"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;a class="btn btn-primary btn-lg cv-download" href="https://inseefrlab.github.io/ssphub-ateliers-slides/slides-data/parquet#/title-slide" target="_blank"&gt;</span></span>
-<span id="cb2-34"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">    &lt;i class="fa-solid fa-file-arrow-down"&gt;&lt;/i&gt;&amp;ensp;Voir les slides</span></span>
-<span id="cb2-35"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">  &lt;/a&gt;</span></span>
-<span id="cb2-36"><span class="vs" style="color: #20794D;
-background-color: null;
-font-style: inherit;">&lt;/p&gt;`</span></span></code></pre></div></div>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</section>
-<section id="documentation-de-latelier-replay" class="level1">
-<h1>Documentation de l’atelier &amp; <em>replay</em></h1>
-<p>Le matériel lié à l’atelier, y compris le replay, est disponible <a href="https://ssphub.github.io/ssphub-ateliers-parquet/" target="_blank">ici</a>. <img src="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/event/2025-04-16-Parquet/Parquet-site-preview.png" class="img-fluid"></p>
-</section>
-<section id="questions-contact" class="level1">
-<h1>Questions / contact</h1>
-<p>Si vous avez la moindre question 🤨, n’hésitez pas à contacter 📧 <em><a href="mailto:contact-ssphub@insee.fr" class="email">contact-ssphub@insee.fr</a></em>.</p>
-
-
-</section>
-
- ]]></description>
-  <category>Parquet</category>
-  <category>event</category>
-  <guid>https://inseefrlab.github.io/ssphub/pr-preview/pr-165/event/2025-04-16-Parquet/</guid>
-  <pubDate>Wed, 16 Apr 2025 14:00:00 GMT</pubDate>
-  <media:content url="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/event/2025-04-16-Parquet/Atelier-Parquet.png" medium="image" type="image/png" height="144" width="144"/>
 </item>
 </channel>
 </rss>

@@ -24,14 +24,14 @@ sur l&#39;actualité interne du réseau.
 
 <section id="bienvenue-à-la-vingt-sixième-infolettre" class="level1">
 <h1>Bienvenue à la <strong>vingt sixième infolettre</strong> !</h1>
-<p>C’est l’été, la canicule a le droit d’arriver ! C’est la dernière infolettre avant la pause estivale, donc pour vous récompenser, elle est dense 😙</p>
+<p>C’est l’été, la canicule a le droit d’arriver ! C’est la dernière infolettre avant la pause estivale, donc pour vous récompenser, elle est dense 😙.</p>
 </section>
 <section id="linfographie" class="level1">
 <h1>L’infographie</h1>
-<p>Si vous avez joué à Sim’s city, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné <a href="https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris">sa note</a> proposant de fusionner toute la petite couronne et Paris au sein d’une ville du Grand Paris d’un outil de visualisation pour créer cette nouvelle commune.</p>
+<p>Si vous avez joué à SimCity, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné <a href="https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris">sa note</a> proposant de fusionner toute la petite couronne et Paris au sein d’une <strong>ville du Grand Paris</strong> d’un <strong>outil de visualisation</strong> pour créer cette nouvelle commune.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/infolettre/infolettre_26/ville_grand_paris.png" class="img-fluid figure-img" width="450"></p>
+<p><img src="https://inseefrlab.github.io/ssphub/pr-preview/pr-165/infolettre/infolettre_26/ville_grand_paris.png" class="img-fluid figure-img" width="600"></p>
 <figcaption>Créer sa ville du Grand Paris, par le Haut commissariat à la stratégie et au plan</figcaption>
 </figure>
 </div>
@@ -39,15 +39,15 @@ sur l&#39;actualité interne du réseau.
 </section>
 <section id="les-évènements-du-réseau" class="level1">
 <h1>Les évènements du réseau</h1>
-<p>Plusieurs événements ont eu lieu ces dernières semaines auquel le réseau était invité.</p>
+<p>Plusieurs événements ont eu lieu ces dernières semaines auxquels le réseau était invité.</p>
 <section id="retour-sur-le-funathon-sur-le-machine-learning-et-lia---27-et-28-mai" class="level2">
 <h2 class="anchored" data-anchor-id="retour-sur-le-funathon-sur-le-machine-learning-et-lia---27-et-28-mai">Retour sur le funathon sur le <em>machine learning</em> et l’IA - 📅 27 et 28 mai</h2>
-<p>L’Insee a organisé un <strong>funathon européen</strong> sur l’utilisation du <em>machine learning</em> et de l’IA dans le cadre du projet européen <a href="https://cros.ec.europa.eu/dashboard/aiml4os">ESS-Net AIML4OS</a>. <strong>67 équipes de 25 pays différents représentant 215 personnes</strong> ont ainsi participé à l’un des trois sujets proposés. Les retours des participants furent très positifs et ont particulièrement apprécié <strong>apprendre de nouvelles compétences sur des cas d’usage concrets</strong>.</p>
-<p>Les ressources sont toujours disponibles en ligne, soit sur le <a href="https://aiml4os.github.io/funathon-general-website/about.html">site du funathon</a> ou sur les sites dédiés des sujets :</p>
+<p>L’Insee a organisé un <strong>funathon européen</strong> sur l’utilisation du <em>machine learning</em> et de l’IA dans le cadre du projet européen <a href="https://cros.ec.europa.eu/dashboard/aiml4os">ESS-Net AIML4OS</a>. <strong>67 équipes de 25 pays différents représentant 215 personnes</strong> ont ainsi participé à l’un des trois sujets proposés. Les retours des participants furent très positifs, les participants ayant particulièrement apprécié <strong>apprendre de nouvelles compétences sur des cas d’usage concrets</strong>.</p>
+<p>Les ressources sont toujours disponibles en ligne, sur le <a href="https://aiml4os.github.io/funathon-general-website/about.html">site du funathon</a> ou sur les sites des sujets :</p>
 <ul>
-<li>Segmentation d’images satellites par <em>deep learning</em> (<a href="https://aiml4os.github.io/funathon-project1/">sujet 1</a>);</li>
-<li>Codification automatique pour la classification NACE (<a href="https://aiml4os.github.io/funathon-project2/">sujet 2</a>);</li>
-<li>Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes (<a href="https://aiml4os.github.io/funathon-project3/">sujet 3</a>).</li>
+<li>Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes - <a href="https://aiml4os.github.io/funathon-project1/">sujet 1</a> ;</li>
+<li>Codification automatique pour la classification NACE - <a href="https://aiml4os.github.io/funathon-project2/">sujet 2</a> ;</li>
+<li>Segmentation d’images satellites par <em>deep learning</em> - <a href="https://aiml4os.github.io/funathon-project3/">sujet 3</a>.</li>
 </ul>
 <p><strong>N’hésitez pas à aller voir les sujets par vous-même !</strong></p>
 <p>Un retour d’expérience plus détaillé a par ailleurs été présenté à la conférence qualité <a href="https://www.q2026.hr/programme/conference-programme/session-21/">lors de la session 21</a> et dont la présentation est disponible <a href="https://www.q2026.hr/media/kmuchjs4/presentation-a-new-way-to-learn-machine-learning-and-ai.pptx">ici</a>, si jamais vous voulez vous lancer dans une telle expérience 😜.</p>
@@ -57,6 +57,10 @@ sur l&#39;actualité interne du réseau.
 <p>L’Insee a organisé deux journées pour <strong>démystifier la contribution à l’open source</strong> et explorer des projets liés à la data science les 16 et 17 juin. Rassemblant une vingtaine de participants de différentes administrations, cela aura été l’occasion de découvrir ensemble le monde de l’open source et d’apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR et des contributions libres).</p>
 <p>Au-delà des chiffres, ces deux jours auront surtout montré que <strong>la contribution open source est à la portée de tous et que les data scientists du service public ont toute leur place comme contributeurs actifs des outils qu’ils utilisent</strong>. Cela aura aussi été l’occasion de <strong>travailler différemment tous ensemble autour de projets concrets</strong>, ce qui fut très apprécié de tous.</p>
 <p>Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition. Plus de <strong>détails</strong> sont disponibles sur la <a href="../../event/2026-06-jdos/index.html">page de l’événement</a>, <a href="../../blog/2026_jdos/index.html">le retex</a> ou <a href="https://inseefrlab.github.io/journees-datascience-opensource">le site dédié</a>.</p>
+</section>
+<section id="retour-sur-les-rencontres-r-à-nantes---16-au-18-juin" class="level2">
+<h2 class="anchored" data-anchor-id="retour-sur-les-rencontres-r-à-nantes---16-au-18-juin">Retour sur les rencontres R à Nantes - 📅 16 au 18 juin</h2>
+<p>Les 12e <strong>Rencontres R</strong> ont eu lieu à Nantes du 16 au 18 juin. Dans un <a href="../../blog/2026_rencontresR/index.html">billet de blog</a>, on revient sur quelques présentations marquantes : rendre ses graphiques <code>{ggplot2}</code> réellement <strong>accessibles</strong> (Cara Thompson), faire du web depuis R <strong>sans Shiny</strong> avec l’écosystème <code>hyperverse</code> (Arthur Bréant), produire des <strong>PDF via Typst</strong> plutôt que LaTeX et <strong>étendre Quarto avec des filtres Lua</strong> (Christophe Dervieux &amp; Maëlle Salmon), et enfin les enjeux liés à l’utilisation de <strong>R en production</strong>.</p>
 </section>
 </section>
 <section id="du-nouveau-contenu-sur-le-site-du-réseau" class="level1">
@@ -85,9 +89,9 @@ sur l&#39;actualité interne du réseau.
 <h2 class="anchored" data-anchor-id="quel-est-le-prix-de-lindépendance-statistique-25-pour-1">Quel est le prix de l’indépendance statistique ? 25$ pour 1$</h2>
 <p>Des chercheurs ont utilisé <strong>le licenciement de la cheffe du Bureau of Labor Statistics (BLS)</strong> aux États-Unis pour mesurer, à partir de cette expérience naturelle, la valeur économique donnée aux statistiques publiques. Dans leur article <a href="https://www.nber.org/papers/w35135">The Value of Reliable Statistics</a> publié dans la revue NBER, ils confirment ainsi que la perte de confiance dans les statistiques publiques produit de l’incertitude économique. Ils estiment aussi le bénéfice économique lié au maintien de l’intégrité des données officielles à 25$ par $ investi dans les statistiques publiques.</p>
 </section>
-<section id="la-consommation-énergétique-de-llms-grands-modèles-de-language-gml" class="level2">
-<h2 class="anchored" data-anchor-id="la-consommation-énergétique-de-llms-grands-modèles-de-language-gml">La consommation énergétique de <del>LLMs</del> grands modèles de language (GML)</h2>
-<p>En ces temps de fraicheur estivale, le PEReN a étudié <strong>la consommation énergétique de 22 modèles d’IA générative</strong>, comme présenté sur <a href="https://www.peren.gouv.fr/actualites/2026-05-21_iag_et_environnement/">leur site</a>. Selon <a href="https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf">leur étude</a>, si les grands modèles étudiés consomment généralement plus, <strong>leur architecture et leur mode de fonctionnement jouent un rôle clé</strong>: l’utilisation d’une architecture « mélange d’experts » et de quantification diminuent ainsi le coût énergétique (de respectivement 45% et 39%) mais le mode “raisonnement”, qui améliore grandement l’efficacité du modèle en matière de code, est par contre bien plus énergivore (+92%). <strong>Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky</strong>.</p>
+<section id="la-consommation-énergétique-de-llms-grands-modèles-de-langage-gml" class="level2">
+<h2 class="anchored" data-anchor-id="la-consommation-énergétique-de-llms-grands-modèles-de-langage-gml">La consommation énergétique de <del>LLMs</del> grands modèles de langage (GML)</h2>
+<p>En ces temps de fraîcheur estivale, le PEReN a étudié <strong>la consommation énergétique de 22 modèles d’IA générative</strong>, comme présenté sur <a href="https://www.peren.gouv.fr/actualites/2026-05-21_iag_et_environnement/">leur site</a>. Selon <a href="https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf">leur étude</a>, si les grands modèles étudiés consomment généralement plus, <strong>leur architecture et leur mode de fonctionnement jouent un rôle clé</strong>: l’utilisation d’une architecture « mélange d’experts » et de quantification diminuent ainsi le coût énergétique (de respectivement 45% et 39%) mais le mode “raisonnement”, qui améliore grandement l’efficacité du modèle en matière de code, est par contre bien plus énergivore (+92%). <strong>Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky</strong>.</p>
 </section>
 <section id="funformation" class="level2">
 <h2 class="anchored" data-anchor-id="funformation">Fun/formation</h2>
@@ -95,14 +99,14 @@ sur l&#39;actualité interne du réseau.
 <h3 class="anchored" data-anchor-id="formation">Formation</h3>
 <ul>
 <li><p><a href="https://microgpt.jtauber.com/">MicroGPT Visualized - Building a GPT from scratch — an interactive visual guide</a>: Apprendre à construire un <strong>LLM simplifié</strong> en 6 étapes ;</p></li>
-<li><p><a href="https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text">Formation ouverte aux statistiques avec R</a>: Formation aux <strong>statistiques avec R</strong> comprenant 8h de vidéos et des scripts R commentés.</p></li>
+<li><p><a href="https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text">Formation ouverte aux statistiques avec R</a>: Formation aux <strong>statistiques avec R</strong> comprenant 8h de vidéos et des scripts R commentés, par <a href="https://www.linkedin.com/in/jean-paul-maalouf/">Jean-Paul Maalouf</a>.</p></li>
 </ul>
 </section>
 <section id="explications-techniques" class="level3">
 <h3 class="anchored" data-anchor-id="explications-techniques">Explications techniques</h3>
 <ul>
-<li><p><a href="https://lab174.com/blog/202601-yaml-norway/">YAML? That’s Norway problem</a>: Si vous êtes fan du <strong>language YAML</strong>, cet article explique que ce n’est pas si facile avec le “Norway problem”: le code du pays (NO) étant traduit par “False” dans les premières versions du language. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du language en regardant l’évolution du language YAML et les raisons de son succès aujourd’hui.</p></li>
-<li><p><a href="https://www.greybeam.ai/blog/duckdb-internals-part-1">DuckDB Internals: Why is DuckDB Fast?</a>: Analyse approfondie de <strong>l’architecture interne de DuckDB</strong> pour comprendre comment il est si rapide (réponse : l’exécution in-process, le stockage colonne et l’optimisation SQL).</p></li>
+<li><p><a href="https://lab174.com/blog/202601-yaml-norway/">YAML? That’s Norway problem</a>: Si vous êtes fan du <strong>langage YAML</strong>, cet article explique que ce n’est pas si facile avec le “Norway problem”: le code du pays (NO) étant traduit par “False” dans les premières versions du langage. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du langage en regardant l’évolution du langage YAML et les raisons de son succès aujourd’hui.</p></li>
+<li><p><a href="https://www.greybeam.ai/blog/duckdb-internals-part-1">DuckDB Internals: Why is DuckDB Fast?</a>: Analyse approfondie de <strong>l’architecture interne de DuckDB</strong> pour comprendre comment il est si rapide (réponse : l’exécution in-process, le stockage en colonnes et l’optimisation SQL).</p></li>
 </ul>
 </section>
 </section>
@@ -112,7 +116,7 @@ sur l&#39;actualité interne du réseau.
 <h3 class="anchored" data-anchor-id="outils-dia">Outils d’IA</h3>
 <ul>
 <li><p><a href="https://info.posit.co/NzA5LU5YTi03MDYAAAGh5ODbBdeFmlOPaLdHwMlSHBHsHBxC_zbtIhyFs1bvc87cZhr-FsVhfWa0OPca32phPpMhMeo=">RAG with raghilda</a>: Une introduction à Raghilda, un <strong>package Python pour construire des RAG</strong> ;</p></li>
-<li><p><a href="https://www.parsebench.ai/#compare">ParseBench : Benchmark de parsing de documents pour agents IA</a>: Présentation de ParseBench, un <strong>benchmark d’évaluation de parsing de documents</strong> orientés vers des agents IA.</p></li>
+<li><p><a href="https://www.parsebench.ai/#compare">ParseBench : Benchmark de parsing de documents pour agents IA</a>: Présentation de ParseBench, un <strong>benchmark d’évaluation de parsing de documents</strong> orienté vers des agents IA.</p></li>
 <li><p><a href="https://curl.md/docs">curl.md : Convertir des sites web en markdown optimisé pour les agents</a>: Outil permettant de transformer des pages web en format markdown optimisé pour les agents IA pour <strong>réduire la consommation de tokens</strong> et améliorer le contexte des LLM.</p></li>
 <li><p><a href="https://huggingface.co/openai/privacy-filter">OpenAI Privacy Filter</a>: Modèle <strong>de détection et d’anonymisation d’informations personnelles</strong> conçu pour fonctionner à haut débit et utilisable localement.</p></li>
 <li><p><a href="https://github.com/pewdiepie-archdaemon/odysseus">Your own AI workspace, running on your hardware.</a>: Odysseus permet d’héberger des modèles localement, permettant de partager tout le contexte nécessaire avec les modèles et d’atteindre ainsi de meilleures performances.</p></li>
@@ -143,7 +147,7 @@ sur l&#39;actualité interne du réseau.
 <ul>
 <li><p><a href="https://www.linkedin.com/posts/xavier-timbeau-b141b61a_depuis-maintenant-un-peu-plus-de-2-ans-nous-activity-7471954013521915904-K21b?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAGc8mWkBtWTZy0PWkiGLiCCQBRMkKBQxqnI">Modernisation de la chaîne de production scientifique de l’OFCE</a>: <strong>Transformation de la chaîne éditoriale de l’OFCE</strong> vers un flux industriel et automatisé par l’utilisation de Quarto, de R et de Git pour garantir la reproductibilité et une source unique de données et de vérité.</p></li>
 <li><p><a href="https://www.ysunflower.com/blog/migrating-from-pagedown-to-typst">Migrating from Pagedown to Typst</a>: Comparaison entre <strong>Pagedown et Typst</strong> pour la génération de rapports PDF. Typst offre une alternative plus rapide, intuitive et moderne via l’utilisation de Quarto.</p></li>
-<li><p><a href="https://franktisellano.github.io/datatype/">Datatype — variable font that turns text into charts</a>: Dataype est <strong>une nouvelle police</strong> qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans Javascript ni image 💫 . Ainsi, un simple <code>{l:20,40,70,50,90}</code> va produire <span class="datatype-text">{l:20,40,70,50,90}</span> et <code>{b:30,70,50,90}</code> va produire <span class="datatype-text">{b:30,70,50,90}</span>.</p></li>
+<li><p><a href="https://franktisellano.github.io/datatype/">Datatype — variable font that turns text into charts</a>: Datatype est <strong>une nouvelle police</strong> qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans JavaScript ni image 💫 . Ainsi, un simple <code>{l:20,40,70,50,90}</code> va produire <span class="datatype-text">{l:20,40,70,50,90}</span> et <code>{b:30,70,50,90}</code> va produire <span class="datatype-text">{b:30,70,50,90}</span>.</p></li>
 </ul>
 
 

@@ -1,10 +1,10 @@
 # Bienvenue à la **vingt sixième infolettre** !
 
-C’est l’été, la canicule a le droit d’arriver ! C’est la dernière infolettre avant la pause estivale, donc pour vous récompenser, elle est dense 😙
+C’est l’été, la canicule a le droit d’arriver ! C’est la dernière infolettre avant la pause estivale, donc pour vous récompenser, elle est dense 😙.
 
 # L’infographie
 
-Si vous avez joué à Sim’s city, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné [sa note](https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris) proposant de fusionner toute la petite couronne et Paris au sein d’une ville du Grand Paris d’un outil de visualisation pour créer cette nouvelle commune.
+Si vous avez joué à SimCity, voici la version parisienne. Le Haut-commissariat à la Stratégie et au Plan a accompagné [sa note](https://www.strategie-plan.gouv.fr/publications/du-periph-la-metropole-construire-la-ville-du-grand-paris) proposant de fusionner toute la petite couronne et Paris au sein d’une **ville du Grand Paris** d’un **outil de visualisation** pour créer cette nouvelle commune.
 
 ![](ville_grand_paris.png)
 
@@ -14,17 +14,17 @@ Si vous cherchez à créer 40 districts en région parisienne, le jeu est par [i
 
 # Les évènements du réseau
 
-Plusieurs événements ont eu lieu ces dernières semaines auquel le réseau était invité.
+Plusieurs événements ont eu lieu ces dernières semaines auxquels le réseau était invité.
 
 ## Retour sur le funathon sur le *machine learning* et l’IA - 📅 27 et 28 mai
 
-L’Insee a organisé un **funathon européen** sur l’utilisation du *machine learning* et de l’IA dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os). **67 équipes de 25 pays différents représentant 215 personnes** ont ainsi participé à l’un des trois sujets proposés. Les retours des participants furent très positifs et ont particulièrement apprécié **apprendre de nouvelles compétences sur des cas d’usage concrets**.
+L’Insee a organisé un **funathon européen** sur l’utilisation du *machine learning* et de l’IA dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os). **67 équipes de 25 pays différents représentant 215 personnes** ont ainsi participé à l’un des trois sujets proposés. Les retours des participants furent très positifs, les participants ayant particulièrement apprécié **apprendre de nouvelles compétences sur des cas d’usage concrets**.
 
-Les ressources sont toujours disponibles en ligne, soit sur le [site du funathon](https://aiml4os.github.io/funathon-general-website/about.html) ou sur les sites dédiés des sujets :
+Les ressources sont toujours disponibles en ligne, sur le [site du funathon](https://aiml4os.github.io/funathon-general-website/about.html) ou sur les sites des sujets :
 
-- Segmentation d’images satellites par *deep learning* ([sujet 1](https://aiml4os.github.io/funathon-project1/));
-- Codification automatique pour la classification NACE ([sujet 2](https://aiml4os.github.io/funathon-project2/));
-- Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes ([sujet 3](https://aiml4os.github.io/funathon-project3/)).
+- Prévision des prix de l’immobilier sur données tabulaires par méthodes ensemblistes - [sujet 1](https://aiml4os.github.io/funathon-project1/) ;
+- Codification automatique pour la classification NACE - [sujet 2](https://aiml4os.github.io/funathon-project2/) ;
+- Segmentation d’images satellites par *deep learning* - [sujet 3](https://aiml4os.github.io/funathon-project3/).
 
 **N’hésitez pas à aller voir les sujets par vous-même !**
 
@@ -37,6 +37,10 @@ L’Insee a organisé deux journées pour **démystifier la contribution à l’
 Au-delà des chiffres, ces deux jours auront surtout montré que **la contribution open source est à la portée de tous et que les data scientists du service public ont toute leur place comme contributeurs actifs des outils qu’ils utilisent**. Cela aura aussi été l’occasion de **travailler différemment tous ensemble autour de projets concrets**, ce qui fut très apprécié de tous.
 
 Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une prochaine édition. Plus de **détails** sont disponibles sur la [page de l’événement](../../event/2026-06-jdos/index.llms.md), [le retex](../../blog/2026_jdos/index.llms.md) ou [le site dédié](https://inseefrlab.github.io/journees-datascience-opensource).
+
+## Retour sur les rencontres R à Nantes - 📅 16 au 18 juin
+
+Les 12e **Rencontres R** ont eu lieu à Nantes du 16 au 18 juin. Dans un [billet de blog](../../blog/2026_rencontresR/index.llms.md), on revient sur quelques présentations marquantes : rendre ses graphiques `{ggplot2}` réellement **accessibles** (Cara Thompson), faire du web depuis R **sans Shiny** avec l’écosystème `hyperverse` (Arthur Bréant), produire des **PDF via Typst** plutôt que LaTeX et **étendre Quarto avec des filtres Lua** (Christophe Dervieux & Maëlle Salmon), et enfin les enjeux liés à l’utilisation de **R en production**.
 
 # Du nouveau contenu sur le [site du réseau](https://ssphub.netlify.app) !
 
@@ -64,9 +68,9 @@ Beaucoup d’actualités dans les dernières semaines, j’essaye de rendre cela
 
 Des chercheurs ont utilisé **le licenciement de la cheffe du Bureau of Labor Statistics (BLS)** aux États-Unis pour mesurer, à partir de cette expérience naturelle, la valeur économique donnée aux statistiques publiques. Dans leur article [The Value of Reliable Statistics](https://www.nber.org/papers/w35135) publié dans la revue NBER, ils confirment ainsi que la perte de confiance dans les statistiques publiques produit de l’incertitude économique. Ils estiment aussi le bénéfice économique lié au maintien de l’intégrité des données officielles à 25\$ par \$ investi dans les statistiques publiques.
 
-## La consommation énergétique de ~~LLMs~~ grands modèles de language (GML)
+## La consommation énergétique de ~~LLMs~~ grands modèles de langage (GML)
 
-En ces temps de fraicheur estivale, le PEReN a étudié **la consommation énergétique de 22 modèles d’IA générative**, comme présenté sur [leur site](https://www.peren.gouv.fr/actualites/2026-05-21_iag_et_environnement/). Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf), si les grands modèles étudiés consomment généralement plus, **leur architecture et leur mode de fonctionnement jouent un rôle clé**: l’utilisation d’une architecture « mélange d’experts » et de quantification diminuent ainsi le coût énergétique (de respectivement 45% et 39%) mais le mode “raisonnement”, qui améliore grandement l’efficacité du modèle en matière de code, est par contre bien plus énergivore (+92%). **Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky**.
+En ces temps de fraîcheur estivale, le PEReN a étudié **la consommation énergétique de 22 modèles d’IA générative**, comme présenté sur [leur site](https://www.peren.gouv.fr/actualites/2026-05-21_iag_et_environnement/). Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf), si les grands modèles étudiés consomment généralement plus, **leur architecture et leur mode de fonctionnement jouent un rôle clé**: l’utilisation d’une architecture « mélange d’experts » et de quantification diminuent ainsi le coût énergétique (de respectivement 45% et 39%) mais le mode “raisonnement”, qui améliore grandement l’efficacité du modèle en matière de code, est par contre bien plus énergivore (+92%). **Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky**.
 
 ## Fun/formation
 
@@ -74,13 +78,13 @@ En ces temps de fraicheur estivale, le PEReN a étudié **la consommation énerg
 
 - [MicroGPT Visualized - Building a GPT from scratch — an interactive visual guide](https://microgpt.jtauber.com/): Apprendre à construire un **LLM simplifié** en 6 étapes ;
 
-- [Formation ouverte aux statistiques avec R](https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text): Formation aux **statistiques avec R** comprenant 8h de vidéos et des scripts R commentés.
+- [Formation ouverte aux statistiques avec R](https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text): Formation aux **statistiques avec R** comprenant 8h de vidéos et des scripts R commentés, par [Jean-Paul Maalouf](https://www.linkedin.com/in/jean-paul-maalouf/).
 
 ### Explications techniques
 
-- [YAML? That’s Norway problem](https://lab174.com/blog/202601-yaml-norway/): Si vous êtes fan du **language YAML**, cet article explique que ce n’est pas si facile avec le “Norway problem”: le code du pays (NO) étant traduit par “False” dans les premières versions du language. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du language en regardant l’évolution du language YAML et les raisons de son succès aujourd’hui.
+- [YAML? That’s Norway problem](https://lab174.com/blog/202601-yaml-norway/): Si vous êtes fan du **langage YAML**, cet article explique que ce n’est pas si facile avec le “Norway problem”: le code du pays (NO) étant traduit par “False” dans les premières versions du langage. Au détour, cela permet de se rendre compte de la complexité derrière la simplicité du langage en regardant l’évolution du langage YAML et les raisons de son succès aujourd’hui.
 
-- [DuckDB Internals: Why is DuckDB Fast?](https://www.greybeam.ai/blog/duckdb-internals-part-1): Analyse approfondie de **l’architecture interne de DuckDB** pour comprendre comment il est si rapide (réponse : l’exécution in-process, le stockage colonne et l’optimisation SQL).
+- [DuckDB Internals: Why is DuckDB Fast?](https://www.greybeam.ai/blog/duckdb-internals-part-1): Analyse approfondie de **l’architecture interne de DuckDB** pour comprendre comment il est si rapide (réponse : l’exécution in-process, le stockage en colonnes et l’optimisation SQL).
 
 ## Ressources
 
@@ -88,7 +92,7 @@ En ces temps de fraicheur estivale, le PEReN a étudié **la consommation énerg
 
 - [RAG with raghilda](https://info.posit.co/NzA5LU5YTi03MDYAAAGh5ODbBdeFmlOPaLdHwMlSHBHsHBxC_zbtIhyFs1bvc87cZhr-FsVhfWa0OPca32phPpMhMeo=): Une introduction à Raghilda, un **package Python pour construire des RAG** ;
 
-- [ParseBench : Benchmark de parsing de documents pour agents IA](https://www.parsebench.ai/#compare): Présentation de ParseBench, un **benchmark d’évaluation de parsing de documents** orientés vers des agents IA.
+- [ParseBench : Benchmark de parsing de documents pour agents IA](https://www.parsebench.ai/#compare): Présentation de ParseBench, un **benchmark d’évaluation de parsing de documents** orienté vers des agents IA.
 
 - [curl.md : Convertir des sites web en markdown optimisé pour les agents](https://curl.md/docs): Outil permettant de transformer des pages web en format markdown optimisé pour les agents IA pour **réduire la consommation de tokens** et améliorer le contexte des LLM.
 
@@ -118,4 +122,4 @@ En ces temps de fraicheur estivale, le PEReN a étudié **la consommation énerg
 
 - [Migrating from Pagedown to Typst](https://www.ysunflower.com/blog/migrating-from-pagedown-to-typst): Comparaison entre **Pagedown et Typst** pour la génération de rapports PDF. Typst offre une alternative plus rapide, intuitive et moderne via l’utilisation de Quarto.
 
-- [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Dataype est **une nouvelle police** qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans Javascript ni image 💫 . Ainsi, un simple `{l:20,40,70,50,90}` va produire {l:20,40,70,50,90} et `{b:30,70,50,90}` va produire {b:30,70,50,90}.
+- [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Datatype est **une nouvelle police** qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans JavaScript ni image 💫 . Ainsi, un simple `{l:20,40,70,50,90}` va produire {l:20,40,70,50,90} et `{b:30,70,50,90}` va produire {b:30,70,50,90}.

@@ -34,6 +34,14 @@ Infolettre du mois de **juin 2026**
 
 30 juin 2026
 
+![](./blog/2026_rencontresR/logo2026Nantes.png)
+
+##### Retour sur les Rencontres R 2026 à Nantes
+
+Quelques présentations qui m’ont marqué lors des 12e Rencontres R, à Nantes (16-18 juin 2026).
+
+24 juin 2026
+
 ![](./blog/2026_jdos/jdos.jpg)
 
 ##### Journées datascience & open source
@@ -42,17 +50,17 @@ Bilan des journées datascience et opensource organisée les 16 et 17 juin 2026
 
 18 juin 2026
 
-![](./event/2026-06-jdos/jdos.jpg)
-
-##### Journées data science & *open-source*
-
-Programme et modalités d’inscription aux journées de contribution à l’open source en lien avec la data science
-
-16 juin 2026
-
 ## Les derniers billets de blog et événements
 
 L’ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.llms.md), tout comme les [événements](event.llms.md).
+
+![](./blog/2026_rencontresR/logo2026Nantes.png)
+
+##### Retour sur les Rencontres R 2026 à Nantes
+
+Quelques présentations qui m’ont marqué lors des 12e Rencontres R, à Nantes (16-18 juin 2026).
+
+24 juin 2026
 
 ![](./blog/2026_jdos/jdos.jpg)
 
@@ -93,8 +101,6 @@ Le **14 avril (14h00 - 14h30)**, le SSM Agriculture vient présenter leur travai
 Le **18 mars (14h00 - 15h30)**, la DARES a présenté leur travail sur les conventions collectives ou accords d’entreprise.
 
 18 mars 2026
-
-![](./event/2026-01-cartographia/cartographia.jpeg)
 
 ##### Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
 
