@@ -8,7 +8,7 @@ Si vous avez joué à SimCity, voici la version parisienne. Le Haut-commissariat
 
 ![](ville_grand_paris.png)
 
-Créer sa ville du Grand Paris, par le Haut commissariat à la stratégie et au plan
+Créer sa ville du Grand Paris, par le Haut-commissariat à la stratégie et au plan
 
 Si vous cherchez à créer 40 districts en région parisienne, le jeu est par [ici](https://strategie-plan.eu/datavisualisation-grandparis/#trace).
 
