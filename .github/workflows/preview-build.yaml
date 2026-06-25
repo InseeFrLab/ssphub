@@ -40,7 +40,7 @@ jobs:
           cat preview-meta/pr.json
 
       - name: Upload metadata
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: preview-meta
           path: preview-meta/
@@ -94,7 +94,7 @@ jobs:
 
       - name: Upload built site
         if: github.event.action != 'closed'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: site
           path: ./_site/
