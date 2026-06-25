@@ -35,5 +35,7 @@ git push --set-upstream origin $INFOLETTRE_BRANCH # --dry-run # for dev
 cp -r infolettre/infolettre_XX infolettre/$INFOLETTRE_BRANCH
 mv infolettre/$INFOLETTRE_BRANCH/template.txt infolettre/$INFOLETTRE_BRANCH/index.qmd
 
+sed -i "s/number: XXX/number: $INFOLETTRE_NB/g" infolettre/$INFOLETTRE_BRANCH/index.qmd
+
 git add infolettre/$INFOLETTRE_BRANCH/index.qmd # --dry-run # for dev
 git commit -m "initializing infolettre $INFOLETTRE_NB" # --dry-run # for dev
