@@ -48,7 +48,7 @@ Si vous cherchez à créer 40 districts en région parisienne, le jeu est par [i
 Plusieurs événements du réseau ont eu lieu ces dernières semaines. 
 
 ## Retour sur le funathon consacré au *machine learning* et l'IA - 📅 27 et 28 mai 
-L'Insee a organisé un **funathon européen** portant sur l'utilisation du *machine learning* et de l'IA dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os).
+L'Insee a organisé un **funathon européen** portant sur l'utilisation du *machine learning* et de l'IA  ; l’organisation de ce funathon s’inscrivait dans le cadre du projet européen [ESS-Net AIML4OS](https://cros.ec.europa.eu/dashboard/aiml4os).
 **215 personnes, réparties en 67 équipes et issues de 25 pays différents**, ont participé et ont pu explorer l'un des trois sujets proposés.
 Les retours des participants sont très positifs : ils ont particulièrement apprécié le fait de pouvoir **acquérir de nouvelles compétences à partir de cas d'usage concrets** issus de la statistique publique. 
 
@@ -97,12 +97,12 @@ Beaucoup d'actualités dans les dernières semaines, j'essaye de rendre cela dig
 ## Quel est le prix de l'indépendance statistique ? 25$ pour 1$
 
 Des chercheurs ont utilisé **le licenciement de la cheffe du Bureau of Labor Statistics (BLS)** aux États-Unis pour mesurer, à partir de cette expérience naturelle, la valeur économique donnée aux statistiques publiques. 
-Dans leur article [The Value of Reliable Statistics](https://www.nber.org/papers/w35135) publié dans la revue NBER, ils confirment ainsi que la perte de confiance dans les statistiques publiques produit de l'incertitude économique. 
+Dans leur article [The Value of Reliable Statistics](https://www.nber.org/papers/w35135) publié dans un document de travail du NBER, ils estiment ainsi que la perte de confiance dans les statistiques publiques produit de l'incertitude économique ce qui ralentit l'économie. 
 Ils estiment aussi le bénéfice économique lié au maintien de l'intégrité des données officielles à 25$ par $ investi dans les statistiques publiques.
 
 ## La consommation énergétique de ~~LLMs~~ grands modèles de langage (GML)
 En ces temps de fraîcheur estivale, le PEReN a étudié **la consommation énergétique de 22 modèles d'IA générative**, comme présenté sur [leur site](https://www.peren.gouv.fr/actualites/2026-05-21_iag_et_environnement/). 
-Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf), si les grands modèles étudiés consomment généralement plus, **leur architecture et leur mode de fonctionnement jouent un rôle clé**: l'utilisation d'une architecture « mélange d’experts » et de quantification diminuent ainsi le coût énergétique (de respectivement 45% et 39%) mais le mode "raisonnement", qui améliore grandement l'efficacité du modèle en matière de code, est par contre bien plus énergivore (+92%).
+Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/intelligence-artificielle/etude-IA-environnement-PEReN.pdf), si les grands modèles étudiés consomment généralement plus, **leur architecture et leur mode de fonctionnement jouent un rôle clé**: l'utilisation d'une architecture dite « mélange d’experts » (où le modèle est divisé en sous-modèles « experts » pour leurs tâches) et de techniques de compressions du modèle (quantification) diminuent ainsi le coût énergétique (de respectivement 45% et 39% par rapports aux autres modèles) mais le mode raisonnement, qui améliore grandement l'efficacité du modèle en matière de code, est par contre bien plus énergivore (+92% par rapports aux autres modèles).
 **Il existe ainsi des modèles efficaces qui évitent de faire chauffer le compteur Linky**. 
 
 ## Fun/formation
