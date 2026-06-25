@@ -1,9 +1,0 @@
-.underline-big {
-    font-size: larger; /* You can adjust the value based on your preference */
-    border-bottom: solid 1px red ; 
-    color: red ;
-  }
-
-.blurred-element {
-  filter: blur(5px); /* Adjust the pixel value for the desired level of blur */
-}
