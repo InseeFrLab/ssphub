@@ -5,7 +5,7 @@ description: |
   Infolettre du mois de __juin 2026__
 
 # Date published
-date: '2026-06-30'
+date: '2026-06-25'
 number: 26
 
 authors:
@@ -69,7 +69,7 @@ Rassemblant une vingtaine de participants issus de différentes administrations,
 Au-delà des chiffres, ces deux jours ont surtout montré que **la contribution à l'open source est accessible à tous et que les data scientists du service public ont toute leur place comme contributeurs actifs aux outils qu'ils utilisent**.  
 Cela aura aussi été l'occasion de **travailler autrement, tous ensemble, autour de projets concrets**, une expérience qui a été très appréciée par les participants. 
 
-Merci à toutes celles et ceux qui ont participé — et rendez-vous pour une nouvelle édition l'année prochaine.
+Merci à toutes celles et ceux qui ont participé - et rendez-vous pour une nouvelle édition l'année prochaine.
 Plus de **détails** sont disponibles sur la [page de l'événement](../../event/2026-06-jdos/index.qmd), [le retex](../../blog/2026_jdos/index.qmd) ou [le site dédié](https://inseefrlab.github.io/journees-datascience-opensource).
 
 ## Retour sur les rencontres R à Nantes - 📅 16 au 18 juin 
@@ -108,7 +108,7 @@ Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/i
 ## Fun/formation
 
 ### Formation
-- [MicroGPT Visualized - Building a GPT from scratch — an interactive visual guide](https://microgpt.jtauber.com/): Apprendre à construire un **LLM simplifié** en 6 étapes ;
+- [MicroGPT Visualized - Building a GPT from scratch - an interactive visual guide](https://microgpt.jtauber.com/): Apprendre à construire un **LLM simplifié** en 6 étapes ;
 
 - [Formation ouverte aux statistiques avec R](https://www.statistique-formation.fr/statistiques-avec-r-formation-complete?trk=public_post_comment-text):  Formation aux **statistiques avec R** comprenant 8h de vidéos et des scripts R commentés, par [Jean-Paul Maalouf](https://www.linkedin.com/in/jean-paul-maalouf/).
 
@@ -150,4 +150,4 @@ Selon [leur étude](https://www.arcep.fr/fileadmin/user_upload/grands_dossiers/i
 
 - [Migrating from Pagedown to Typst](https://www.ysunflower.com/blog/migrating-from-pagedown-to-typst): Comparaison entre **Pagedown et Typst** pour la génération de rapports PDF. Typst offre une alternative plus rapide, intuitive et moderne via l'utilisation de Quarto.
 
-- [Datatype — variable font that turns text into charts](https://franktisellano.github.io/datatype/): Datatype est **une nouvelle police** qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans JavaScript ni image 💫 . Ainsi, un simple `{l:20,40,70,50,90}` va produire [{l:20,40,70,50,90}]{.datatype-text} et `{b:30,70,50,90}` va produire [{b:30,70,50,90}]{.datatype-text}.
+- [Datatype - variable font that turns text into charts](https://franktisellano.github.io/datatype/): Datatype est **une nouvelle police** qui permet de transformer des expressions textuelles en graphiques très facilement en html, sans JavaScript ni image 💫 . Ainsi, un simple `{l:20,40,70,50,90}` va produire [{l:20,40,70,50,90}]{.datatype-text} et `{b:30,70,50,90}` va produire [{b:30,70,50,90}]{.datatype-text}.
