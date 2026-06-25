@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository # https://github.com/actions/checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
