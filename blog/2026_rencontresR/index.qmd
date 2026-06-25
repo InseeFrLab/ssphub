@@ -4,13 +4,13 @@ description: |
   Quelques présentations qui m'ont marqué lors des 12e Rencontres R, à Nantes (16-18 juin 2026).
 date: '2026-06-24'
 authors:
-  - Lino
+  - Nicolas
 categories:
   - R
 image: logo2026Nantes.png
 ---
 
-Les 12e [Rencontres R](https://www.rencontresr.fr/posts/RR2026/index.html) se sont tenues à Nantes du 16 au 18 juin 2026. Trois jours denses, avec une multitude de présentations autour de R et de son écosystème. Voici une sélection toute personnelle des interventions que j'ai préférées.
+Les 12e [Rencontres R](https://www.rencontresr.fr/posts/RR2026/index.html) se sont tenues à Nantes du 16 au 18 juin 2026. Trois jours denses, avec une multitude de présentations autour de R et de son écosystème. Voici une sélection des interventions préférées par les collègues qui y ont assisté.
 
 ## Bien plus qu'un beau graphique : accessibilité avec `{ggplot2}`
 
@@ -30,4 +30,4 @@ Toujours du côté de Quarto, **Christophe Dervieux** a expliqué comment **éte
 
 ## R est-il un langage adapté à la production ?
 
-Enfin, **Lino** (data scientist à l'Insee) a posé une question qui nous parle : **R est-il un langage adapté à la mise en production ?** L'occasion de revenir sur les enjeux de reproductibilité et d'industrialisation, et sur la place de R dans une chaîne de production. Les [slides sont aussi disponibles ici](https://linogaliana.github.io/prez-rencontresR-2026/).
+Enfin, **Lino Galiana** (data scientist à l'Insee) a parlé des enjeux autour de l'utilisation de R en production dans sa présentation **R est-il un langage adapté à la mise en production ?** L'occasion de revenir sur les enjeux de reproductibilité et d'industrialisation, et sur la place de R dans une chaîne de production. Les [slides sont aussi disponibles ici](https://linogaliana.github.io/prez-rencontresR-2026/).
