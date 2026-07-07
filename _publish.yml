@@ -1,8 +1,8 @@
 - source: project
   netlify:
     # Pre prod
-    # - id: "0bad57c6-1cc2-4468-aab9-0cb51d7c103f"
+    # - id: "pasteidhere-1cc2-4468-aab9-0cb51d7c103f"
     #   url: "https://ssphub-test.netlify.app/"
     # Prod
-    - id: "8aa026d7-5eef-462d-ac27-533c1a7efd91"
+    - id: "2ed82ec1-ebb2-45b7-9c64-7c699417b2c0"
       url: "https://ssphub.netlify.app/"
