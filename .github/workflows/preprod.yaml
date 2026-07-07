@@ -73,6 +73,6 @@ jobs:
         with:
           target: netlify
           render: false
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_SSPHUB_AUTH_TOKEN }} # For this workflow only
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_SSPHUB_AUTH_TOKEN }}
 
 

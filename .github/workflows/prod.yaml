@@ -57,6 +57,6 @@ jobs:
         with:
           target: netlify
           render: false
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_SSPHUB_AUTH_TOKEN }}
 
 

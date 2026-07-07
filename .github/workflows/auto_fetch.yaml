@@ -39,7 +39,7 @@ jobs:
         if: steps.run_script.outputs.branch_created == 'true'
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}  # outdated ? 
           commit-message: "Update based on latest commits"
           title: "Update projects with latest external docs"
           body: "This PR updates the projects external docs based on the latest commits from these repositories."
