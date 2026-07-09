@@ -20,6 +20,9 @@ description: |
 date: '2024-05-02T15:00:00Z'
 image: quarto.png
 echo: false
+
+aliases:
+  - /talk/2024-05-02-quarto/index.html
 ---
 
 ## Christophe Dervieux, \"`Quarto` : Une évolution de `R Markdown` pour des travaux statistiques reproductibles\"

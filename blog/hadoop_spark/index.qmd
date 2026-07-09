@@ -15,6 +15,9 @@ image: hadoop_spark.png
 
 categories:
   - données volumineuses
+
+aliases: 
+  - /post/hadoop_spark/index.html
 ---
 
 À la base des systèmes dits « big data », il y a un principe central : la distribution, à la fois des données et des traitements, sur un ensemble de machines/ordinateurs formant un cluster. Le stockage des données brutes s’appuie le plus souvent sur un système de fichiers distribués. *MapReduce* est la première implémentation pour les big data du principe de parallélisation des traitements appliquée aux fichiers distribués. Il repose sur deux fonctions principales, `map` et `reduce`, qui sont appliquées parfois à de multiples reprises.

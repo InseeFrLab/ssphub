@@ -11,6 +11,8 @@ description: |
 date: '2024-02-29T15:00:00Z'
 image: mauviere.png
 echo: false
+aliases:
+  - /talk/2024-02-29-mauviere/index.html
 ---
 
 ## Eric Mauvière, \"La dataviz pour donner du sens aux données et communiquer un message\"
