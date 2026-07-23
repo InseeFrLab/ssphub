@@ -34,7 +34,7 @@ Pré-requis: avoir un compte `Github`.
 
 Pour ce type de modifications, il est demandé d'utiliser directement
 l'outil de suggestions de changements de `Github`.
-Les pages déployées sur https://ssphub.netlify.app comprennent un bouton page qui
+Les pages déployées sur https://ssphub.fr comprennent un bouton page qui
 permet de proposer, automatiquement, des modifications via l'interface de
 `Github`.
 Ce bouton se trouve à la fin de la table des matières ou à droite de chaque page et a cette apparence:
