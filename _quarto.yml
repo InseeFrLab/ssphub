@@ -20,6 +20,8 @@ project:
     - project/**/*.qmd
     # English version - dealt with babelquarto and not with Quarto profiles
     - "*.en.qmd"
+  resources:
+    - _redirects
 
 website:
   title: "SSPHub"
