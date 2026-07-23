@@ -57,7 +57,7 @@ jobs:
           - source: project
             netlify:
               # Pre prod
-              - id: "0bad57c6-1cc2-4468-aab9-0cb51d7c103f"
+              - id: "7a1d4a2a-c77d-40db-92d0-0b540d8d70a2"
                 url: "https://ssphub-test.netlify.app/"
           EOF
 
