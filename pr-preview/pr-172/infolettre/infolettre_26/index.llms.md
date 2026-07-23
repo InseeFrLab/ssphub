@@ -34,8 +34,7 @@ Un retour d’expérience plus détaillé a par ailleurs été présenté à la 
 
 L’Insee a organisé les 16 et 17 juin deux journées pour **démystifier la contribution à l’open source**, explorer et contribuer à des projets liés à la data science. Rassemblant une vingtaine de participants issus de différentes administrations, ces journées ont permis de (re-)découvrir ensemble le monde de l’open source et d’apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR, ainsi que des contributions libres à d’autres projets).
 
-Au-delà des chiffres, ces deux jours ont surtout montré que **la contribution à l’open source est accessible à tous et que les data scientists du service public ont toute leur place comme contributeurs actifs aux outils qu’ils utilisent**.  
-Cela aura aussi été l’occasion de **travailler autrement, tous ensemble, autour de projets concrets**, une expérience qui a été très appréciée par les participants.
+Au-delà des chiffres, ces deux jours ont surtout montré que **la contribution à l’open source est accessible à tous et que les data scientists du service public ont toute leur place comme contributeurs actifs aux outils qu’ils utilisent**. Cela aura aussi été l’occasion de **travailler autrement, tous ensemble, autour de projets concrets**, une expérience qui a été très appréciée par les participants.
 
 Merci à toutes celles et ceux qui ont participé - et rendez-vous pour une nouvelle édition l’année prochaine. Plus de **détails** sont disponibles sur la [page de l’événement](../../event/2026-06-jdos/index.llms.md), [le retex](../../blog/2026_jdos/index.llms.md) ou [le site dédié](https://inseefrlab.github.io/journees-datascience-opensource).
 
@@ -43,7 +42,7 @@ Merci à toutes celles et ceux qui ont participé - et rendez-vous pour une nouv
 
 Les 12e **Rencontres R** ont eu lieu à Nantes du 16 au 18 juin. Dans un [billet de blog](../../blog/2026_rencontresR/index.llms.md), on revient sur quelques présentations marquantes : rendre ses graphiques `{ggplot2}` réellement **accessibles** (Cara Thompson), faire du web depuis R **sans Shiny** avec l’écosystème `hyperverse` (Arthur Bréant), produire des **PDF via Typst** plutôt que LaTeX et **étendre Quarto avec des filtres Lua** (Christophe Dervieux & Maëlle Salmon), et enfin les enjeux liés à l’utilisation de **R en production**.
 
-# Du nouveau sur le [site du réseau](https://ssphub.netlify.app) !
+# Du nouveau sur le [site du réseau](https://ssphub.fr) !
 
 ## Le site du réseau s’enrichit d’une liste de formations en data science
 

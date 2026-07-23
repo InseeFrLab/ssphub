@@ -55,8 +55,7 @@ sur l&#39;actualité interne du réseau.
 <section id="retour-sur-les-journées-data-science-et-open-source---16-et-17-juin" class="level2">
 <h2 class="anchored" data-anchor-id="retour-sur-les-journées-data-science-et-open-source---16-et-17-juin">Retour sur les journées data-science et open source - 📅 16 et 17 juin</h2>
 <p>L’Insee a organisé les 16 et 17 juin deux journées pour <strong>démystifier la contribution à l’open source</strong>, explorer et contribuer à des projets liés à la data science. Rassemblant une vingtaine de participants issus de différentes administrations, ces journées ont permis de (re-)découvrir ensemble le monde de l’open source et d’apporter environ 80 contributions à des projets communs (Active Tigger, SNDSTools, CanaR, UtilitR, ainsi que des contributions libres à d’autres projets).</p>
-<p>Au-delà des chiffres, ces deux jours ont surtout montré que <strong>la contribution à l’open source est accessible à tous et que les data scientists du service public ont toute leur place comme contributeurs actifs aux outils qu’ils utilisent</strong>.<br>
-Cela aura aussi été l’occasion de <strong>travailler autrement, tous ensemble, autour de projets concrets</strong>, une expérience qui a été très appréciée par les participants.</p>
+<p>Au-delà des chiffres, ces deux jours ont surtout montré que <strong>la contribution à l’open source est accessible à tous et que les data scientists du service public ont toute leur place comme contributeurs actifs aux outils qu’ils utilisent</strong>. Cela aura aussi été l’occasion de <strong>travailler autrement, tous ensemble, autour de projets concrets</strong>, une expérience qui a été très appréciée par les participants.</p>
 <p>Merci à toutes celles et ceux qui ont participé - et rendez-vous pour une nouvelle édition l’année prochaine. Plus de <strong>détails</strong> sont disponibles sur la <a href="../../event/2026-06-jdos/index.html">page de l’événement</a>, <a href="../../blog/2026_jdos/index.html">le retex</a> ou <a href="https://inseefrlab.github.io/journees-datascience-opensource">le site dédié</a>.</p>
 </section>
 <section id="retour-sur-les-rencontres-r-à-nantes---16-au-18-juin" class="level2">
@@ -65,7 +64,7 @@ Cela aura aussi été l’occasion de <strong>travailler autrement, tous ensembl
 </section>
 </section>
 <section id="du-nouveau-sur-le-site-du-réseau" class="level1">
-<h1>Du nouveau sur le <a href="https://ssphub.netlify.app">site du réseau</a> !</h1>
+<h1>Du nouveau sur le <a href="https://ssphub.fr">site du réseau</a> !</h1>
 <section id="le-site-du-réseau-senrichit-dune-liste-de-formations-en-data-science" class="level2">
 <h2 class="anchored" data-anchor-id="le-site-du-réseau-senrichit-dune-liste-de-formations-en-data-science">Le site du réseau s’enrichit d’une liste de formations en data science</h2>
 <p>Le site du réseau s’est enrichi d’une <strong>liste de formations librement accessibles et d’intérêt pour la data-science</strong>. Pour y accéder, il faut aller dans l’onglet <a href="../../course.html">“ressources”</a>.</p>
@@ -6369,7 +6368,7 @@ des utilisateurs plus expérimentés savent mettre en oeuvre quoditiennement.
 <p><img src="https://inseefrlab.github.io/ssphub/pr-preview/pr-172/infolettre/infolettre_10/write-blogpost.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:30.0%"></p>
 </figure>
 </div>
-<p>Le site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. <strong>Vos idées et contributions sont les bienvenues pour l’enrichir !</strong></p>
+<p>Le site web du réseau (https://ssphub.fr/) propose depuis septembre une section blog. <strong>Vos idées et contributions sont les bienvenues pour l’enrichir !</strong></p>
 <p>Pour souligner l’aspect collectif de cette section, un <a href="https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md">guide des contributeurs</a> vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de discussion pour définir le sujet du billet aux outils proposés pour faciliter la rédaction et la soumission de celui-ci depuis <a href="https://github.com/InseeFrLab/ssphub"><code>Github</code> <i class="fa-brands fa-github"></i></a>.</p>
 </section>
 <section id="la-saison-2-du-programme-10-arrive" class="level2">

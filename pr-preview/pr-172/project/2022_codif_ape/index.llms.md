@@ -184,7 +184,7 @@ Thomas Faria and Tom Seimandi
 
 5 juin 2023
 
-![](../../project/2022_codif_ape/cards/https:/ssphub.netlify.app/avatar.png)
+![](../../project/2022_codif_ape/cards/https:/ssphub.fr/avatar.png)
 
 ##### Journée SSP Hub
 

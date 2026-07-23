@@ -50,7 +50,7 @@ Cette évolution de la documentation vise à prolonger l’effort continu pour c
 
 ![](write-blogpost.jpg)
 
-Le site web du réseau (https://ssphub.netlify.app/) propose depuis septembre une section blog. **Vos idées et contributions sont les bienvenues pour l’enrichir !**
+Le site web du réseau (https://ssphub.fr/) propose depuis septembre une section blog. **Vos idées et contributions sont les bienvenues pour l’enrichir !**
 
 Pour souligner l’aspect collectif de cette section, un [guide des contributeurs](https://github.com/InseeFrLab/ssphub/blob/main/CONTRIBUTING.md) vient de voir le jour. Celui-ci expose la démarche à suivre, de la phase de discussion pour définir le sujet du billet aux outils proposés pour faciliter la rédaction et la soumission de celui-ci depuis [`Github` ](https://github.com/InseeFrLab/ssphub).
 
