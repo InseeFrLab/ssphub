@@ -1,6 +1,6 @@
 # Code du site du réseau du SSPHub, le réseau des data scientists du SSP (english below)
 
-Ce repo est le repo du [`SSPHub`](https://ssphub.netlify.app/), le site qui permet de partager du contenu entre data scientists du SSP.
+Ce repo est le repo du [`SSPHub`](https://ssphub.fr/), le site qui permet de partager du contenu entre data scientists du SSP.
 Il permet aussi de présenter des projets innovants portés au sein du SSP.
 
 Le site est ouvert à toutes les contributions.
@@ -10,7 +10,7 @@ _Des assistants d'IA générative ont été utilisés à différents stades du p
 
 # Website of the data scientists of the French Official Statistical System
 
-This repository contains the code for the [`SSPHub`](https://ssphub.netlify.app/), a collaborative platform designed for data scientists working within the French Official Statistical System. The website serves as a hub for sharing content, best practices, and innovative projects developed by data scientists across the system.
+This repository contains the code for the [`SSPHub`](https://ssphub.fr/), a collaborative platform designed for data scientists working within the French Official Statistical System. The website serves as a hub for sharing content, best practices, and innovative projects developed by data scientists across the system.
 
 # How to use this repo ?
 
@@ -24,13 +24,14 @@ To get started with this repository, the more convenient is to have :
 - If you plan to deploy the website, you will also need credentials for the `InseeFrLab/ssphub` repository.
 
 ## How to contribute
+
 - [ ] depuis le dossier ssphub, lancer `{bash} bash scripts/init_infolettre.sh` : va déterminer le nouveau numéro de l'infolettre, créer une branche nommée infolettre_27, créer un dossier infolettre/infolettre_27 et y copier le template + commiter le tout. On peut spécifier le numéro de l'infolettre en indiquant `{bash} bash scripts/init_infolettre.sh 27`
 - [ ] dans l'infolettre initialisée (infolettre/infolettre_27/index.qmd) rédiger le qmd avec:
   - la veille
   - les actualités
   - la dataviz
   - tout autre sujet
-- [ ] faire une preview avec `quarto preview` (installer jupyter avec `pip install jupyter` avant) 
+- [ ] faire une preview avec `quarto preview` (installer jupyter avec `pip install jupyter` avant)
 - [ ] Une fois l'infolettre ok, faire une PR sur main pour relecture. Un site de preview sera déployé (lien indiqué automatiquement en commentaire dans la PR)
 - [ ] mise à disposition de l'infolettre sur le site du ssphub en mergeant la branche sur le main
 - [ ] envoi infolettre par email avec les outils du repo [newsletter_tools](https://github.com/SSPHub/newsletter_tools)

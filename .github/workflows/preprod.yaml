@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
   # cf https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   push:
-    branches: 
-    - fusion_site_ssplab
+    branches:
+      - fusion_site_ssplab
 
 name: Test pre prod - render and publish to netlify
 
@@ -22,7 +22,7 @@ jobs:
 
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
-      # Useful ? 
+      # Useful ?
       - name: Configure safe.directory # Workaround for actions/checkout#760
         run: git config --global --add safe.directory /__w/ssphub/ssphub
 
@@ -35,20 +35,20 @@ jobs:
           packages: |
             github::ropensci-review-tools/babelquarto@a485fea
 
-      - name: Install uv  # for post on onyxia
+      - name: Install uv # for post on onyxia
         uses: astral-sh/setup-uv@v8.2.0
         with:
           enable-cache: true
 
       - name: Install the dependancies and add venv to path
-        run: | 
+        run: |
           uv sync
           echo "$(pwd)/.venv/bin" >> $GITHUB_PATH
 
       # For this workflow only
       - name: Update _quarto.yml with pre_prod url
         run: |
-          sed -i 's/site-url:\ https:\/\/ssphub.netlify.app/site-url:\ https:\/\/ssphub-test.netlify.app/g' _quarto.yml
+          sed -i 's/site-url:\ https:\/\/ssphub.fr/site-url:\ https:\/\/ssphub-test.netlify.app/g' _quarto.yml
           cat _quarto.yml
 
       - name: Update _publish.yml with pre_prod url
@@ -57,7 +57,7 @@ jobs:
           - source: project
             netlify:
               # Pre prod
-              - id: "0bad57c6-1cc2-4468-aab9-0cb51d7c103f"
+              - id: "7a1d4a2a-c77d-40db-92d0-0b540d8d70a2"
                 url: "https://ssphub-test.netlify.app/"
           EOF
 
@@ -65,7 +65,7 @@ jobs:
         run: |
           Rscript scripts/1_render.R
 
-      - name: Set up Quarto 
+      - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2 # https://github.com/quarto-dev/quarto-actions/tree/main/setup
 
       - name: Publish
@@ -74,5 +74,3 @@ jobs:
           target: netlify
           render: false
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_SSPHUB_AUTH_TOKEN }}
-
-
