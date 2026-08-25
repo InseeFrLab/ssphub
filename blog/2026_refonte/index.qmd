@@ -4,15 +4,15 @@ title: "Le site du SSPHub fait peau neuve"
 # Summary for listings and search engines
 description: |
   Le site du réseau accueille 30 fiches de projets innovants, une version
-  anglaise, et absorbe deux sites décommissionnés. Retour sur une refonte
+  anglaise et absorbe deux sites décommissionnés. Retour sur une refonte
   de 412 fichiers : les choix éditoriaux, le casse-tête du bilinguisme
-  sous Quarto, et un grand ménage.
+  sous Quarto et un peu de ménage.
 
 # Date published
-date: 2026-XX-XX
+date: 2026-09-01
 
 # Featured image
-image: refonte_site.png
+# image: refonte_site.png
 
 authors:
   - Nicolas
@@ -33,37 +33,53 @@ page-layout: full
 # Quel est le besoin ?
 
 Si vous êtes déjà venus ici, vous avez dû remarquer que **le site a changé de tête**.
-Trois nouveautés, pour aller à l'essentiel :
+Trois nouveautés sont apparues le 29 mai par ce commit [c3c88ce](https://github.com/InseeFrLab/ssphub/commit/c3c88ce62f11054ad2077e55d2fe035cef54aa46) :
 
 - une rubrique **[Projets innovants](../../project.qmd)** avec une trentaine de fiches, de 2018 à aujourd'hui ;
 - une **version anglaise** du site ;
-- et les contenus de **deux anciens sites** qui nous rejoignent, avant leur mise hors service.
+- et les contenus de **deux anciens sites** qui nous rejoignent avec leur mise hors service ⚰️.
 
 Derrière ces trois lignes, il y a une [*pull request*](https://github.com/InseeFrLab/ssphub/pull/112)
 de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées.
-C'était l'occasion de reprendre pas mal de choses sous le capot, et donc
-l'occasion d'un post de blog pour raconter les choix qu'on a faits — y compris ceux
-qu'on n'a pas réussi à faire.
+C'était l'occasion de reprendre pas mal de choses et donc
+l'occasion d'un post de blog pour raconter les choix qui ont été faits — si jamais vous voulez refaire 
+quelque chose comme cela.
 
 # Que veut-on voir sur ce site ?
 
-Avant de toucher au code, il a fallu répondre à une question un peu bête :
-**à quoi sert ce site, aujourd'hui ?** Quatre réponses, qui structurent tout le reste.
+Avant de toucher au "comment?", on a parlé du "pourquoi?". 
+Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux 
+quatres besoins suivant pour le site :
 
 ## L'infolettre passe en mode archive
 
-L'infolettre, c'est historiquement le cœur du réseau. Mais elle vit maintenant
+L'infolettre, c'est historiquement le coeur du réseau. Mais elle vit maintenant
 **par mail et sur Tchap**, là où sont les gens. Le site n'a plus besoin d'en être
-la vitrine : il en est l'archive.
+la vitrine mais plutôt une archive 👵.
 
 Elle a donc quitté la barre de navigation principale pour se ranger sagement
-dans le menu « À propos ». **Rassurez-vous, rien n'est perdu** :
-[tous les numéros](../../infolettre/infolettre.qmd) sont toujours là,
+dans le menu « À propos ». **Rien ne se perd, tout se transforme** comme disait Lavoisier:
+[tous les numéros](../../infolettre/infolettre.qmd) sont toujours listés là,
 jusqu'aux plus anciens.
 
 ## Les projets innovants deviennent la vitrine
 
-C'est le gros morceau : **une trentaine de fiches de projets** menés dans le SSP.
+C'est le gros morceau. On a voulu (re)mettre en avant ce que l'on fait au sein du réseau. 
+Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés. 
+La vie n'étant qu'éternel recommencement, on a décidé de les inclure à nouveau afin d'avoir 
+un endroit où l'on puisse trouver des ressources entre nous. 
+
+Dans l'idée, cela donne :
+
+> Un(e) chef(fe) : Il faut faire de la codification automatique avec de l'IA
+> Un(e) agent(e) : Mais bien sûr 😅. 
+> _à lui/elle-même_: Mais je sais pas faire. Qui en a fait avant ?
+> Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous 
+> serait utile. Si on les contactait ?
+> Un(e) chef(fe) : Bien vu, jeune padawan !
+
+Concrètement, on a repris les projets sur lesquels l'Insee ou des SSM ont travaillé de manière innovante.
+Cela donne **une trentaine de fiches de projets** menés dans le SSP.
 Nowcasting, images satellitaires, codification automatique de l'APE, webscraping
 pour l'IPC, données de cartes bancaires, `sndsTools`, détection d'atypies dans la
 DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche
@@ -74,9 +90,11 @@ La page [Projets](../../project.qmd) prend d'ailleurs le temps d'expliquer
 Exercice délicat : l'innovation est mouvante, et un projet innovant aujourd'hui
 sera un savoir classique dans deux ans.
 
-Un point important : **cette liste n'est pas exhaustive et ne cherche pas à l'être.**
-Elle repose sur le volontariat. Si vous avez mené un projet qui y a sa place,
-la marche à suivre est en bas de ce post — et elle est nettement plus simple qu'avant.
+Un point important : **cette liste n'est pas exhaustive.**
+Elle repose sur le volontariat. Si vous êtes vexé que votre projet y soit pas, ou que vous
+avez mené un projet qui y a sa place, ouvrez une issue et proposez de l'ajouter ! Mon 
+petit doigt me dit qu'avec l'IA maintenant cela se fait rapidement 😅 
+Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - normalement.
 
 ## Deux sites nous rejoignent
 
