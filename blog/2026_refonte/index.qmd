@@ -187,17 +187,14 @@ Exemple grandeur nature de babelquarto : le
 et qui m'a bien aidé.
 :::
 
-Reste la question de la traduction elle-même. Babeldown envoie le `.qmd` à DeepL
-et récupère un `.qmd` traduit, en préservant le YAML et les blocs de code.
-On lui a ajouté **un glossaire maison** : SSM, MSO et compagnie ne sont pas dans
-les dictionnaires généralistes, et on tenait à ce que le vocabulaire métier soit
-traduit de la même façon d'une page à l'autre.
+Au passage, on a ajouté un script de traduction semi-automatisé grâce à `babeldown`. 
+Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant 
+(à peu près) le YAML et les blocs de code.
 
 ::: {.callout-tip collapse="true"}
 ## Pour les curieux : le script de traduction
 
-Une trentaine de lignes de R, une clé d'API DeepL dans les variables d'environnement,
-et le glossaire dans `scripts/2_glossary-fr-en.csv` :
+Une trentaine de lignes de R et une clé d'API DeepL dans les variables d'environnement :
 
 ```r
 babeldown::deepl_translate(
@@ -211,8 +208,12 @@ babeldown::deepl_translate(
 ```
 
 Le résultat n'est évidemment pas publiable tel quel : c'est un premier jet
-qu'on relit. Mais ça fait gagner un temps considérable sur la mise en forme,
-qui est la partie pénible.
+qu'on relit. J'ai par la suite corrigé automatiquement certaines typos qui 
+ressortaient de la traduction : trop de `---` dans les tableaux, des caractères
+spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
+
+Cela fait gagner un temps considérable sur la mise en forme et on ne fait que relire 
+la traduction, ce qui en fait un exercice rapide. 
 :::
 
 # Contribuer, c'est devenu plus simple
