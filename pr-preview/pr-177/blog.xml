@@ -252,7 +252,7 @@ font-style: inherit;">"categories"</span>)</span>
 <li>une pour prévisualiser le site en local pendant qu’on écrit.</li>
 </ul>
 <p>Tout est documenté dans le <a href="https://github.com/InseeFrLab/ssphub/blob/main/README.md">README</a>.</p>
-<p>Et surtout, il y a <strong>la prévisualisation automatique</strong> : dès que vous proposez une modification, une version consultable du site est construite et publiée. Vous voyez votre ajout en ligne, avec sa vraie mise en page, avant qu’il ne soit visible du public. C’est le filet de sécurité qui rend la contribution beaucoup moins intimidante.</p>
+<p>Et surtout, il y a <strong>la prévisualisation automatique</strong> : dès que vous proposez une modification par une demande de tirage (pull request), une version consultable du site est construite et publiée sur internet. Vous voyez votre ajout en ligne, avec sa vraie mise en page, avant qu’il ne soit visible sur le site.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -285,22 +285,23 @@ background-color: null;
 font-style: inherit;"># Rendre le site</span></span>
 <span id="cb3-5"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">Rscript</span> scripts/1_render.R</span>
+font-style: inherit;">uv</span> run Rscript scripts/1_render.R</span>
 <span id="cb3-6"></span>
 <span id="cb3-7"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Rendre puis prévisualiser en local</span></span>
 <span id="cb3-8"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">Rscript</span> scripts/3_render_preview.R</span>
+font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R </span>
 <span id="cb3-9"></span>
 <span id="cb3-10"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Traduire une fiche projet</span></span>
 <span id="cb3-11"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">Rscript</span> scripts/2_translate.R 2026_mon_projet</span></code></pre></div></div>
-<p><strong>Oui, c’est un mélange de R et de Python.</strong> R pour le rendu et la traduction, parce que babelquarto et babeldown sont des packages R et qu’on n’allait pas les réécrire. Python pour l’outillage éditorial, avec <a href="https://docs.astral.sh/uv/"><code>uv</code></a> pour que l’environnement soit reproductible. C’est pragmatique plutôt qu’élégant, et dans un réseau où les deux langages sont courants, ça ne pose de problème à personne.</p>
+font-style: inherit;">uv</span> run Rscript scripts/2_translate.R 2026_mon_projet</span></code></pre></div></div>
+<p><strong>C’est un mélange de R et de Python</strong> et, honnêtement, je ne trouve pas cela très beau. Mais comme on dit, tant pis c’est comme cela 🫠.</p>
+<p>Python était déjà utilisé pour un post de blog. Il l’est donc à nouveau pour initier des projets et pour que l’environnement soit reproductible grâce à <a href="https://docs.astral.sh/uv/"><code>uv</code></a>. R est utilisé pour ses packages babelquarto et babeldown pour la traduction.</p>
 <p>Côté déploiement, il y a désormais <strong>trois environnements</strong> :</p>
 <table class="caption-top table">
 <colgroup>
@@ -765,7 +766,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="e0dfe546" class="cell">
+<div id="acc74589" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -956,7 +957,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="c93efde5" class="cell">
+<div id="dec4977a" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1847,7 +1848,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="22520869" class="cell">
+<div id="18d36f59" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
