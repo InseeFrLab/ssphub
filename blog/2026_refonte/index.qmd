@@ -232,10 +232,9 @@ Maintenant, **trois commandes suffisent** :
 Tout est documenté dans le [README](https://github.com/InseeFrLab/ssphub/blob/main/README.md).
 
 Et surtout, il y a **la prévisualisation automatique** : dès que vous proposez une
-modification, une version consultable du site est construite et publiée.
+modification par une demande de tirage (pull request), une version consultable du site est construite et publiée sur internet.
 Vous voyez votre ajout en ligne, avec sa vraie mise en page, avant qu'il ne soit
-visible du public. C'est le filet de sécurité qui rend la contribution beaucoup
-moins intimidante.
+visible sur le site. 
 
 ::: {.callout-note collapse="true"}
 ## Pour les curieux : les scripts et les trois environnements
@@ -247,21 +246,20 @@ Les scripts vivent dans `scripts/`, numérotés par ordre d'usage :
 cd scripts && uv run 1_template.py "2026_mon_projet"
 
 # Rendre le site
-Rscript scripts/1_render.R
+uv run Rscript scripts/1_render.R
 
 # Rendre puis prévisualiser en local
-Rscript scripts/3_render_preview.R
+uv run Rscript scripts/3_render_preview.R
 
 # Traduire une fiche projet
-Rscript scripts/2_translate.R 2026_mon_projet
+uv run Rscript scripts/2_translate.R 2026_mon_projet
 ```
 
-**Oui, c'est un mélange de R et de Python.** R pour le rendu et la traduction,
-parce que babelquarto et babeldown sont des packages R et qu'on n'allait pas
-les réécrire. Python pour l'outillage éditorial, avec
-[`uv`](https://docs.astral.sh/uv/) pour que l'environnement soit reproductible.
-C'est pragmatique plutôt qu'élégant, et dans un réseau où les deux langages sont
-courants, ça ne pose de problème à personne.
+**C'est un mélange de R et de Python** et, honnêtement, je ne trouve pas cela très beau.
+Mais comme on dit, tant pis c'est comme cela 🫠.
+
+Python était déjà utilisé pour un post de blog. Il l'est donc à nouveau pour initier des projets et pour que l'environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/).
+R est utilisé pour ses packages babelquarto et babeldown pour la traduction.
 
 Côté déploiement, il y a désormais **trois environnements** :
 
