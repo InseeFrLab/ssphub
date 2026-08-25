@@ -249,7 +249,7 @@ cd scripts && uv run 1_template.py "2026_mon_projet"
 uv run Rscript scripts/1_render.R
 
 # Rendre puis prévisualiser en local
-uv run Rscript scripts/3_render_preview.R
+uv run Rscript scripts/3_render_preview.R 
 
 # Traduire une fiche projet
 uv run Rscript scripts/2_translate.R 2026_mon_projet
