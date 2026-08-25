@@ -64,7 +64,7 @@ jusqu'aux plus anciens.
 
 ## Les projets innovants deviennent la vitrine
 
-C'est le gros morceau. On a voulu (re)mettre en avant ce que l'on fait au sein du réseau. 
+C'est le gros morceau. On a voulu (re)mettre en avant **ce que l'on fait au sein du réseau**. 
 Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés. 
 La vie n'étant qu'éternel recommencement, on a décidé de les inclure à nouveau afin d'avoir 
 un endroit où l'on puisse trouver des ressources entre nous. 
@@ -79,6 +79,9 @@ Dans l'idée, cela donne :
 > Un(e) chef(fe) : Bien vu, jeune padawan !
 
 Concrètement, on a repris les projets sur lesquels l'Insee ou des SSM ont travaillé de manière innovante.
+Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets**
+qui permet facilement de comprendre ce que le projet fait, où il en est,
+ où est la documentation et où est le code, s'il est public.  
 Cela donne **une trentaine de fiches de projets** menés dans le SSP.
 Nowcasting, images satellitaires, codification automatique de l'APE, webscraping
 pour l'IPC, données de cartes bancaires, `sndsTools`, détection d'atypies dans la
@@ -208,12 +211,13 @@ babeldown::deepl_translate(
 ```
 
 Le résultat n'est évidemment pas publiable tel quel : c'est un premier jet
-qu'on relit. J'ai par la suite corrigé automatiquement certaines typos qui 
-ressortaient de la traduction : trop de `---` dans les tableaux, des caractères
+qu'on relit. Le script R corrige automatiquement certaines typos par la suite. 
+Ces typos ressortaient quasi systématiquement de la traduction par qu'ils sont liés au modèle de tableau utilisé :
+ trop de `---` dans les tableaux, des caractères
 spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
 
-Cela fait gagner un temps considérable sur la mise en forme et on ne fait que relire 
-la traduction, ce qui en fait un exercice rapide. 
+L'usage de ce script fait **gagner un temps considérable sur la mise en forme** 
+et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide. 
 :::
 
 # Contribuer, c'est devenu plus simple
