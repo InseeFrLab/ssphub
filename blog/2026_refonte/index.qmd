@@ -99,65 +99,55 @@ Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - no
 ## Deux sites nous rejoignent
 
 `ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés.
-Plutôt que de laisser leurs contenus s'évaporer, on les a **rapatriés ici** :
+Plutôt que de laisser leurs contenus s'évaporer, on a **rapatrié les contenus encore d'actualité ici** :
 funathons, formations R et Observable, présentations, partenariats, billets.
 Là encore, l'idée est qu'on ne perde rien et qu'il n'y ait plus qu'un seul endroit
 où chercher.
 
 ## Une version anglaise, assumée comme partielle
 
-Le réseau a des interlocuteurs hors de France, et rien à leur montrer.
+Le réseau a des interlocuteurs hors de France et rien à leur montrer.
 Il y a maintenant une **version anglaise** de l'accueil, de la présentation du réseau
 et des fiches projets.
 
 En revanche, le blog, les événements et les infolettres restent en français.
-Ce n'est pas de la paresse (enfin, pas seulement) : **traduire un flux d'actualité
-coûte cher et se périme vite**, alors que présenter le réseau et ses réalisations,
-ça a de la valeur dans la durée. On a préféré traduire ce qui est stable.
+Ce n'est pas (seulement) de la paresse : **on s'est dit que l'actualité franco-française du SSP n'intéresserait pas forcément d'autres personnes** 
+(peut être à tort). 
 
 # Un site bilingue, ce n'est pas si simple
 
-Voilà pour l'éditorial. Passons à ce qui nous a fait perdre le plus de temps.
+Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?
 
 Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer
-nativement deux langues**. C'est un marronnier : l'
+nativement deux langues**. C'est un sparadrap : l'
 [issue #275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto
 traîne depuis des années, plusieurs solutions communautaires cohabitent,
 aucune n'est officielle.
 
-On a exploré cinq pistes. Deux tenaient vraiment la route, et le critère qui a
-tranché est plus simple qu'il n'y paraît : **le lien page à page.**
+On a exploré deux pistes pour un profil intermédiaire en quarto comme moi. Les critères qui m'ont fait
+choisir `babelquarto` c'est 1/ **le lien page à page natif** et 2/ une **plus grande lisibilité des fichiers quarto**
+ : il y a un fichier en français et un autre en anglais. 
 
 Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous
 emmener sur *cette* fiche en anglais. Pas sur la page d'accueil anglaise.
-La solution concurrente ne proposait qu'un aiguillage à l'entrée du site : vous
-choisissez votre langue une fois, et ensuite vous êtes coincé. **C'est la différence
-entre un site bilingue et deux sites juxtaposés.**
+La solution concurrente ne proposait à l'époque qu'un aiguillage à l'entrée du site : vous
+choisissez votre langue une fois, et ensuite vous êtes coincé. 
+**C'est la différence entre un site bilingue et deux sites juxtaposés.**
 
-Le second argument, c'est que la solution retenue,
-[**babelquarto**](https://docs.ropensci.org/babelquarto/), vient avec un petit frère,
-**babeldown**, qui fait de la traduction assistée via l'API DeepL. Même écosystème,
-même auteur, ça s'enchaîne sans colle maison.
 
 ::: {.callout-note collapse="true"}
 ## Pour les curieux : le comparatif des options
 
-Cinq pistes ont été regardées. Trois ont été écartées vite : une approche maison
-jugée non viable à long terme dans les échanges avec l'équipe Quarto, une variante
-repérée dans les commentaires de l'issue #275, et le passage à un générateur avec
-i18n natif type [Docusaurus](https://docusaurus.io/docs/i18n/introduction) —
-qui aurait signifié tout réécrire hors de Quarto.
-
-Restaient deux vrais candidats.
+Voici plus en détail les deux candidats qu'on a regardés :
 
 **Les profils Quarto**
 
 - ✅ C'est du Quarto natif : CI simple, `quarto preview` fonctionnel.
-- ❌ Trois heures d'essais pour ne toujours pas y arriver.
-- ❌ Il faut penser à `quarto render --profile fr,en`, sinon rien ne marche.
 - ❌ Pas de lien page à page.
 - ❌ L'écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}`
-  qui polluent les `.qmd`.
+  qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée. 
+- ❌ nécessité d'utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, 
+  alors que le site doit rester "simple" pour être maintenable plus facilement.
 
 **babelquarto**
 
@@ -168,8 +158,11 @@ Restaient deux vrais candidats.
 
 **Le retournement** : cette dernière contrainte ressemblait à une concession.
 C'est devenu la fonctionnalité qui permet une version anglaise *partielle*.
-`_quarto-en.yml` n'expose que trois entrées, pendant que `_quarto-fr.yml`
-en déroule six. Sans ce mécanisme, il aurait fallu traduire tout le site, ou rien.
+`_quarto-en.yml` n'expose que trois entrées : la page d'accueil/les projets, 
+la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr. 
+La version française, configurée dans `_quarto-fr.yml`, contient en plus les
+posts de blog, les ateliers et les infolettres. Sans ce mécanisme, il aurait fallu 
+traduire tout le site ou rien.
 
 Les deux approches ne s'excluaient pas : **on utilise finalement les deux**,
 babelquarto pour les pages, les profils pour les navbars. Le tout se déclare
@@ -190,7 +183,8 @@ Détail qui fait gagner du temps : **inutile de préciser les profils au render*
 s'ils portent le nom des langues.
 
 Exemple grandeur nature de babelquarto : le
-[devguide de rOpenSci](https://devguide.ropensci.org/), dont le code source est ouvert.
+[devguide de rOpenSci](https://devguide.ropensci.org/) dont le code source est ouvert
+et qui m'a bien aidé.
 :::
 
 Reste la question de la traduction elle-même. Babeldown envoie le `.qmd` à DeepL
