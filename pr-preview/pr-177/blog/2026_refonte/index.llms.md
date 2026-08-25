@@ -1,0 +1,205 @@
+# Quel est le besoin ?
+
+Si vous êtes déjà venus ici, vous avez dû remarquer que **le site a changé de tête**. Trois nouveautés sont apparues le 29 mai par ce commit [c3c88ce](https://github.com/InseeFrLab/ssphub/commit/c3c88ce62f11054ad2077e55d2fe035cef54aa46) :
+
+- une rubrique **[Projets innovants](../../project.llms.md)** avec une trentaine de fiches, de 2018 à aujourd’hui ;
+- une **version anglaise** du site ;
+- et les contenus de **deux anciens sites** qui nous rejoignent avec leur mise hors service ⚰️.
+
+Derrière ces trois lignes, il y a une [*pull request*](https://github.com/InseeFrLab/ssphub/pull/112) de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées. C’était l’occasion de reprendre pas mal de choses et donc l’occasion d’un post de blog pour raconter les choix qui ont été faits — si jamais vous voulez refaire quelque chose comme cela.
+
+# Que veut-on voir sur ce site ?
+
+Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatres besoins suivant pour le site :
+
+## L’infolettre passe en mode archive
+
+L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit maintenant **par mail et sur Tchap**, là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.
+
+Elle a donc quitté la barre de navigation principale pour se ranger sagement dans le menu « À propos ». **Rien ne se perd, tout se transforme** comme disait Lavoisier: [tous les numéros](../../infolettre/infolettre.llms.md) sont toujours listés là, jusqu’aux plus anciens.
+
+## Les projets innovants deviennent la vitrine
+
+C’est le gros morceau. On a voulu (re)mettre en avant **ce que l’on fait au sein du réseau**. Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés. La vie n’étant qu’éternel recommencement, on a décidé de les inclure à nouveau afin d’avoir un endroit où l’on puisse trouver des ressources entre nous.
+
+Dans l’idée, cela donne :
+
+> Un(e) chef(fe) : Il faut faire de la codification automatique avec de l’IA Un(e) agent(e) : Mais bien sûr 😅. *à lui/elle-même*: Mais je sais pas faire. Qui en a fait avant ? Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ? Un(e) chef(fe) : Bien vu, jeune padawan !
+
+Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets** qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code, s’il est public.\
+Cela donne **une trentaine de fiches de projets** menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, `sndsTools`, détection d’atypies dans la DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche renvoie vers le code quand il est ouvert.
+
+La page [Projets](../../project.llms.md) prend d’ailleurs le temps d’expliquer **ce qu’on entend par « projet innovant »**, et surtout ce qu’on n’y met pas. Exercice délicat : l’innovation est mouvante, et un projet innovant aujourd’hui sera un savoir classique dans deux ans.
+
+Un point important : **cette liste n’est pas exhaustive.** Elle repose sur le volontariat. Si vous êtes vexé que votre projet y soit pas, ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - normalement.
+
+## Deux sites nous rejoignent
+
+`ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés. Plutôt que de laisser leurs contenus s’évaporer, on a **rapatrié les contenus encore d’actualité ici** : funathons, formations R et Observable, présentations, partenariats, billets. Là encore, l’idée est qu’on ne perde rien et qu’il n’y ait plus qu’un seul endroit où chercher.
+
+## Une version anglaise, assumée comme partielle
+
+Le réseau a des interlocuteurs hors de France et rien à leur montrer. Il y a maintenant une **version anglaise** de l’accueil, de la présentation du réseau et des fiches projets.
+
+En revanche, le blog, les événements et les infolettres restent en français. Ce n’est pas (seulement) de la paresse : **on s’est dit que l’actualité franco-française du SSP n’intéresserait pas forcément d’autres personnes** (peut être à tort).
+
+# Un site bilingue, ce n’est pas si simple
+
+Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?
+
+Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer nativement deux langues**. C’est un sparadrap : l’ [issue \#275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent, aucune n’est officielle.
+
+On a exploré deux pistes pour un profil intermédiaire en quarto comme moi. Les critères qui m’ont fait choisir `babelquarto` c’est 1/ **le lien page à page natif** et 2/ une **plus grande lisibilité des fichiers quarto** : il y a un fichier en français et un autre en anglais.
+
+Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur *cette* fiche en anglais. Pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois, et ensuite vous êtes coincé. **C’est la différence entre un site bilingue et deux sites juxtaposés.**
+
+> **NOTE:**
+>
+> Voici plus en détail les deux candidats qu’on a regardés :
+>
+> **Les profils Quarto**
+>
+> - ✅ C’est du Quarto natif : CI simple, `quarto preview` fonctionnel.
+> - ❌ Pas de lien page à page.
+> - ❌ L’écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}` qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
+> - ❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable plus facilement.
+>
+> **babelquarto**
+>
+> - ✅ Le lien entre versions se construit tout seul : on n’écrit **rien** dans les liens.
+> - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc adhérence à R et perte du preview natif.
+> - ❌ La navbar doit malgré tout être gérée par des profils Quarto.
+>
+> **Le retournement** : cette dernière contrainte ressemblait à une concession. C’est devenu la fonctionnalité qui permet une version anglaise *partielle*. `_quarto-en.yml` n’expose que trois entrées : la page d’accueil/les projets, la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr. La version française, configurée dans `_quarto-fr.yml`, contient en plus les posts de blog, les ateliers et les infolettres. Sans ce mécanisme, il aurait fallu traduire tout le site ou rien.
+>
+> Les deux approches ne s’excluaient pas : **on utilise finalement les deux**, babelquarto pour les pages, les profils pour les navbars. Le tout se déclare dans `_quarto.yml` :
+>
+> ``` yaml
+> profile:
+>   default: fr
+>   group: [fr, en]
+>
+> babelquarto:
+>   languagelinks: navbar
+>   mainlanguage: "fr"
+>   languages: ["en"]
+> ```
+>
+> Détail qui fait gagner du temps : **inutile de préciser les profils au render** s’ils portent le nom des langues.
+>
+> Exemple grandeur nature de babelquarto : le [devguide de rOpenSci](https://devguide.ropensci.org/) dont le code source est ouvert et qui m’a bien aidé.
+
+Au passage, on a ajouté un script de traduction semi-automatisé grâce à `babeldown`. Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant (à peu près) le YAML et les blocs de code.
+
+> **TIP:**
+>
+> Une trentaine de lignes de R et une clé d’API DeepL dans les variables d’environnement :
+>
+> ``` r
+> babeldown::deepl_translate(
+>   path = input_path,
+>   out_path = out_path,
+>   source_lang = "FR",
+>   target_lang = "EN-GB",
+>   formality = "default",
+>   yaml_fields = c("title", "description", "categories")
+> )
+> ```
+>
+> Le résultat n’est évidemment pas publiable tel quel : c’est un premier jet qu’on relit. Le script R corrige automatiquement certaines typos par la suite. Ces typos ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de `---` dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
+>
+> L’usage de ce script fait **gagner un temps considérable sur la mise en forme** et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide.
+
+# Contribuer, c’est devenu plus simple
+
+Avant, ajouter du contenu demandait de comprendre comment le site était fabriqué. Maintenant, **trois commandes suffisent** :
+
+- une pour créer le squelette d’une fiche projet, pré-remplie avec les bons champs ;
+- une pour en produire la version anglaise ;
+- une pour prévisualiser le site en local pendant qu’on écrit.
+
+Tout est documenté dans le [README](https://github.com/InseeFrLab/ssphub/blob/main/README.md).
+
+Et surtout, il y a **la prévisualisation automatique** : dès que vous proposez une modification, une version consultable du site est construite et publiée. Vous voyez votre ajout en ligne, avec sa vraie mise en page, avant qu’il ne soit visible du public. C’est le filet de sécurité qui rend la contribution beaucoup moins intimidante.
+
+> **NOTE:**
+>
+> Les scripts vivent dans `scripts/`, numérotés par ordre d’usage :
+>
+> ``` bash
+> # Créer une nouvelle fiche projet
+> cd scripts && uv run 1_template.py "2026_mon_projet"
+>
+> # Rendre le site
+> Rscript scripts/1_render.R
+>
+> # Rendre puis prévisualiser en local
+> Rscript scripts/3_render_preview.R
+>
+> # Traduire une fiche projet
+> Rscript scripts/2_translate.R 2026_mon_projet
+> ```
+>
+> **Oui, c’est un mélange de R et de Python.** R pour le rendu et la traduction, parce que babelquarto et babeldown sont des packages R et qu’on n’allait pas les réécrire. Python pour l’outillage éditorial, avec [`uv`](https://docs.astral.sh/uv/) pour que l’environnement soit reproductible. C’est pragmatique plutôt qu’élégant, et dans un réseau où les deux langages sont courants, ça ne pose de problème à personne.
+>
+> Côté déploiement, il y a désormais **trois environnements** :
+>
+> |  | Déclencheur | Cible |
+> |----|----|----|
+> | **Preview** | ouverture d’une PR sur `main` | GitHub Pages, une preview par PR |
+> | **Pré-prod** | manuel | Netlify (site de test) |
+> | **Prod** | push sur `main` | Netlify (site public) |
+>
+> La preview est une GitHub Action maison plutôt que l’action Netlify standard : c’est une conséquence directe du choix de babelquarto, qui nous privait du preview natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent) et nettoie derrière elle à la fermeture de la PR.
+
+# Le grand ménage
+
+Une refonte, c’est aussi l’occasion d’ouvrir les placards. Trois trouvailles.
+
+**Les trois `init.sh`.** À la racine du dépôt dormait un script qui installait Go 1.18 et **Hugo 0.97 extended**. Hugo, c’est le générateur qu’on utilisait *avant* Quarto. Le script avait survécu des années à la migration, sans que personne ne se demande à quoi il servait.
+
+Les deux autres `init.sh` lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans [son propre dépôt](https://github.com/SSPHub/Formation-polars). Même question posée à trois fichiers, deux réponses différentes — mais le même verdict.
+
+**Les gros fichiers.** Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le **stockage S3 du SSP Cloud**, et le site pointe dessus. Git n’est pas fait pour ça.
+
+**L’arborescence.** Les dossiers portent enfin le nom des rubriques : `post/` est devenu `blog/`, `talk/` s’est réparti entre `event/` et `course/`, le CSS et le SCSS ont rejoint `assets/`. Ça paraît cosmétique, mais quand on cherche où ranger un nouveau contenu, ça change tout.
+
+> **TIP:**
+>
+> Toutes les adresses et liens du réseau vivent maintenant dans `_variables.yml` et s’appellent dans les `.qmd` avec `contact-ssphub@insee.fr` :
+>
+> ``` yaml
+> contact:
+>   email: <contact-ssphub@insee.fr>
+>   tchap: https://tchap.gouv.fr/#/room/#ssphub:agent.finances.tchap.gouv.fr
+>
+> signup:
+>   form: https://grist.numerique.gouv.fr/o/ssphub/forms/...
+> ```
+>
+> Fini de chercher une adresse mail dans quinze fichiers le jour où elle change.
+>
+> Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant `.llms.md` à l’URL.
+
+# Ce qu’il reste à faire
+
+Comme toujours, la v1 n’est pas la version finale. Les chantiers ouverts :
+
+- **la version anglaise ne couvre pas le blog ni les événements.** C’est un choix pour l’instant, ça peut évoluer si le besoin se confirme ;
+- **la synchronisation automatique des fiches projets** : un mécanisme existe pour récupérer la documentation directement depuis les dépôts des projets, afin que les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est désactivé, parce qu’il ne marche pas encore assez bien ;
+- **le workflow de pré-prod** se déclenche encore sur une branche qui n’existe plus depuis le merge. En pratique, il ne tourne qu’à la main ;
+- et depuis cette refonte, le site a déménagé sur **[ssphub.fr](https://ssphub.fr)** — mais ça, c’est une autre histoire, et une autre PR.
+
+# Et vous ?
+
+**Vous avez mené un projet innovant dans le SSP ?** Il a sa place dans la rubrique Projets. La procédure complète est dans le [README](https://github.com/InseeFrLab/ssphub/blob/main/README.md), et si vous préférez, ouvrez simplement une [issue](https://github.com/InseeFrLab/ssphub/issues) : on s’occupe du reste.
+
+# Ressources
+
+- le code source du site : <https://github.com/InseeFrLab/ssphub> ;
+- la PR de la refonte : <https://github.com/InseeFrLab/ssphub/pull/112> ;
+- l’issue Quarto sur le multilingue : <https://github.com/quarto-dev/quarto-cli/issues/275> ;
+- des exemples de sites Quarto multilingues, dans la catégorie [Show and Tell](https://github.com/quarto-dev/quarto-cli/discussions/categories/show-and-tell) du dépôt Quarto ;
+- la documentation de [`babelquarto`](https://docs.ropensci.org/babelquarto/) ;
+- le [devguide de rOpenSci](https://devguide.ropensci.org/), exemple grandeur nature ;
+- la documentation d’[`uv`](https://docs.astral.sh/uv/).

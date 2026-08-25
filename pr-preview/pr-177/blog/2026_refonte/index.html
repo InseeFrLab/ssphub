@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
+
+<link rel="alternate" hreflang="fr" href="https://inseefrlab.github.io/ssphub/pr-preview/pr-177/blog/2026_refonte/index.html" />
+<link rel="alternate" hreflang="en" href="https://inseefrlab.github.io/ssphub/pr-preview/pr-177/en/blog/2026_refonte/index.en.html" />
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Le site du réseau accueille 30 fiches de projets innovants, une version anglaise et absorbe deux sites décommissionnés. Retour sur une refonte de 412 fichiers : les choix éditoriaux, le casse-tête du bilinguisme sous Quarto et un peu de ménage.">
+
+<title>Le site du SSPHub fait peau neuve – SSPHub</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-da2894eb5453bdb8b288805c9228ca76.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
+  }
+}</script>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: white;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: white;
+background: #6886bb;
+      }
+</style>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SSPHub</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Accueil</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../event.html"> 
+<span class="menu-text">Événements</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project.html"> 
+<span class="menu-text">Projets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../course.html"> 
+<span class="menu-text">Ressources utiles</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-propos" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">À propos</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-propos">    
+        <li>
+    <a class="dropdown-item" href="../../infolettre/infolettre.html">
+ <span class="dropdown-text">Newsletters</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../about.html">
+ <span class="dropdown-text">Présentation du réseau</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../manifeste.html">
+ <span class="dropdown-text">Manifeste du réseau</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://datalab.sspcloud.fr/"> 
+<span class="menu-text">Le SSPCloud</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="../../index.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/InseeFrLab/ssphub"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Le site du SSPHub fait peau neuve</h1>
+                  <div>
+        <div class="description">
+          <p>Le site du réseau accueille 30 fiches de projets innovants, une version anglaise et absorbe deux sites décommissionnés. Retour sur une refonte de 412 fichiers : les choix éditoriaux, le casse-tête du bilinguisme sous Quarto et un peu de ménage.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Site</div>
+                <div class="quarto-category">Quarto</div>
+                <div class="quarto-category">Retour d'expérience</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      <div>
+      <div class="quarto-title-meta-heading">Auteur·rice</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nicolas </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Date de publication</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">1 septembre 2026</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#quel-est-le-besoin" id="toc-quel-est-le-besoin" class="nav-link active" data-scroll-target="#quel-est-le-besoin">Quel est le besoin ?</a></li>
+  <li><a href="#que-veut-on-voir-sur-ce-site" id="toc-que-veut-on-voir-sur-ce-site" class="nav-link" data-scroll-target="#que-veut-on-voir-sur-ce-site">Que veut-on voir sur ce site ?</a>
+  <ul class="collapse">
+  <li><a href="#linfolettre-passe-en-mode-archive" id="toc-linfolettre-passe-en-mode-archive" class="nav-link" data-scroll-target="#linfolettre-passe-en-mode-archive">L’infolettre passe en mode archive</a></li>
+  <li><a href="#les-projets-innovants-deviennent-la-vitrine" id="toc-les-projets-innovants-deviennent-la-vitrine" class="nav-link" data-scroll-target="#les-projets-innovants-deviennent-la-vitrine">Les projets innovants deviennent la vitrine</a></li>
+  <li><a href="#deux-sites-nous-rejoignent" id="toc-deux-sites-nous-rejoignent" class="nav-link" data-scroll-target="#deux-sites-nous-rejoignent">Deux sites nous rejoignent</a></li>
+  <li><a href="#une-version-anglaise-assumée-comme-partielle" id="toc-une-version-anglaise-assumée-comme-partielle" class="nav-link" data-scroll-target="#une-version-anglaise-assumée-comme-partielle">Une version anglaise, assumée comme partielle</a></li>
+  </ul></li>
+  <li><a href="#un-site-bilingue-ce-nest-pas-si-simple" id="toc-un-site-bilingue-ce-nest-pas-si-simple" class="nav-link" data-scroll-target="#un-site-bilingue-ce-nest-pas-si-simple">Un site bilingue, ce n’est pas si simple</a></li>
+  <li><a href="#contribuer-cest-devenu-plus-simple" id="toc-contribuer-cest-devenu-plus-simple" class="nav-link" data-scroll-target="#contribuer-cest-devenu-plus-simple">Contribuer, c’est devenu plus simple</a></li>
+  <li><a href="#le-grand-ménage" id="toc-le-grand-ménage" class="nav-link" data-scroll-target="#le-grand-ménage">Le grand ménage</a></li>
+  <li><a href="#ce-quil-reste-à-faire" id="toc-ce-quil-reste-à-faire" class="nav-link" data-scroll-target="#ce-quil-reste-à-faire">Ce qu’il reste à faire</a></li>
+  <li><a href="#et-vous" id="toc-et-vous" class="nav-link" data-scroll-target="#et-vous">Et vous ?</a></li>
+  <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/blog/2026_refonte/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/blog/2026_refonte/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+
+<section id="quel-est-le-besoin" class="level1">
+<h1>Quel est le besoin ?</h1>
+<p>Si vous êtes déjà venus ici, vous avez dû remarquer que <strong>le site a changé de tête</strong>. Trois nouveautés sont apparues le 29 mai par ce commit <a href="https://github.com/InseeFrLab/ssphub/commit/c3c88ce62f11054ad2077e55d2fe035cef54aa46">c3c88ce</a> :</p>
+<ul>
+<li>une rubrique <strong><a href="../../project.html">Projets innovants</a></strong> avec une trentaine de fiches, de 2018 à aujourd’hui ;</li>
+<li>une <strong>version anglaise</strong> du site ;</li>
+<li>et les contenus de <strong>deux anciens sites</strong> qui nous rejoignent avec leur mise hors service ⚰️.</li>
+</ul>
+<p>Derrière ces trois lignes, il y a une <a href="https://github.com/InseeFrLab/ssphub/pull/112"><em>pull request</em></a> de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées. C’était l’occasion de reprendre pas mal de choses et donc l’occasion d’un post de blog pour raconter les choix qui ont été faits — si jamais vous voulez refaire quelque chose comme cela.</p>
+</section>
+<section id="que-veut-on-voir-sur-ce-site" class="level1">
+<h1>Que veut-on voir sur ce site ?</h1>
+<p>Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatres besoins suivant pour le site :</p>
+<section id="linfolettre-passe-en-mode-archive" class="level2">
+<h2 class="anchored" data-anchor-id="linfolettre-passe-en-mode-archive">L’infolettre passe en mode archive</h2>
+<p>L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit maintenant <strong>par mail et sur Tchap</strong>, là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.</p>
+<p>Elle a donc quitté la barre de navigation principale pour se ranger sagement dans le menu « À propos ». <strong>Rien ne se perd, tout se transforme</strong> comme disait Lavoisier: <a href="../../infolettre/infolettre.html">tous les numéros</a> sont toujours listés là, jusqu’aux plus anciens.</p>
+</section>
+<section id="les-projets-innovants-deviennent-la-vitrine" class="level2">
+<h2 class="anchored" data-anchor-id="les-projets-innovants-deviennent-la-vitrine">Les projets innovants deviennent la vitrine</h2>
+<p>C’est le gros morceau. On a voulu (re)mettre en avant <strong>ce que l’on fait au sein du réseau</strong>. Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés. La vie n’étant qu’éternel recommencement, on a décidé de les inclure à nouveau afin d’avoir un endroit où l’on puisse trouver des ressources entre nous.</p>
+<p>Dans l’idée, cela donne :</p>
+<blockquote class="blockquote">
+<p>Un(e) chef(fe) : Il faut faire de la codification automatique avec de l’IA Un(e) agent(e) : Mais bien sûr 😅. <em>à lui/elle-même</em>: Mais je sais pas faire. Qui en a fait avant ? Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ? Un(e) chef(fe) : Bien vu, jeune padawan !</p>
+</blockquote>
+<p>Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans <strong>un tableau formatté pour tous les projets</strong> qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code, s’il est public.<br>
+Cela donne <strong>une trentaine de fiches de projets</strong> menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, <code>sndsTools</code>, détection d’atypies dans la DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche renvoie vers le code quand il est ouvert.</p>
+<p>La page <a href="../../project.html">Projets</a> prend d’ailleurs le temps d’expliquer <strong>ce qu’on entend par « projet innovant »</strong>, et surtout ce qu’on n’y met pas. Exercice délicat : l’innovation est mouvante, et un projet innovant aujourd’hui sera un savoir classique dans deux ans.</p>
+<p>Un point important : <strong>cette liste n’est pas exhaustive.</strong> Elle repose sur le volontariat. Si vous êtes vexé que votre projet y soit pas, ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - normalement.</p>
+</section>
+<section id="deux-sites-nous-rejoignent" class="level2">
+<h2 class="anchored" data-anchor-id="deux-sites-nous-rejoignent">Deux sites nous rejoignent</h2>
+<p><code>ssplab.lab.sspcloud.fr</code> et <code>statoscope.wordpress.com</code> sont décommissionnés. Plutôt que de laisser leurs contenus s’évaporer, on a <strong>rapatrié les contenus encore d’actualité ici</strong> : funathons, formations R et Observable, présentations, partenariats, billets. Là encore, l’idée est qu’on ne perde rien et qu’il n’y ait plus qu’un seul endroit où chercher.</p>
+</section>
+<section id="une-version-anglaise-assumée-comme-partielle" class="level2">
+<h2 class="anchored" data-anchor-id="une-version-anglaise-assumée-comme-partielle">Une version anglaise, assumée comme partielle</h2>
+<p>Le réseau a des interlocuteurs hors de France et rien à leur montrer. Il y a maintenant une <strong>version anglaise</strong> de l’accueil, de la présentation du réseau et des fiches projets.</p>
+<p>En revanche, le blog, les événements et les infolettres restent en français. Ce n’est pas (seulement) de la paresse : <strong>on s’est dit que l’actualité franco-française du SSP n’intéresserait pas forcément d’autres personnes</strong> (peut être à tort).</p>
+</section>
+</section>
+<section id="un-site-bilingue-ce-nest-pas-si-simple" class="level1">
+<h1>Un site bilingue, ce n’est pas si simple</h1>
+<p>Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?</p>
+<p>Le site tourne sous <a href="https://quarto.org">Quarto</a>. Et <strong>Quarto ne sait pas gérer nativement deux langues</strong>. C’est un sparadrap : l’ <a href="https://github.com/quarto-dev/quarto-cli/issues/275">issue #275</a> du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent, aucune n’est officielle.</p>
+<p>On a exploré deux pistes pour un profil intermédiaire en quarto comme moi. Les critères qui m’ont fait choisir <code>babelquarto</code> c’est 1/ <strong>le lien page à page natif</strong> et 2/ une <strong>plus grande lisibilité des fichiers quarto</strong> : il y a un fichier en français et un autre en anglais.</p>
+<p>Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur <em>cette</em> fiche en anglais. Pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois, et ensuite vous êtes coincé. <strong>C’est la différence entre un site bilingue et deux sites juxtaposés.</strong></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pour les curieux : le comparatif des options
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Voici plus en détail les deux candidats qu’on a regardés :</p>
+<p><strong>Les profils Quarto</strong></p>
+<ul>
+<li>✅ C’est du Quarto natif : CI simple, <code>quarto preview</code> fonctionnel.</li>
+<li>❌ Pas de lien page à page.</li>
+<li>❌ L’écriture est alourdie par les divs conditionnelles <code>::: {when-profile="fr"}</code> qui, je trouve, polluent les <code>.qmd</code> et rendent la maintenance plus compliquée.</li>
+<li>❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable plus facilement.</li>
+</ul>
+<p><strong>babelquarto</strong></p>
+<ul>
+<li>✅ Le lien entre versions se construit tout seul : on n’écrit <strong>rien</strong> dans les liens.</li>
+<li>❌ Le rendu ne passe plus par <code>quarto render</code> mais par R — donc adhérence à R et perte du preview natif.</li>
+<li>❌ La navbar doit malgré tout être gérée par des profils Quarto.</li>
+</ul>
+<p><strong>Le retournement</strong> : cette dernière contrainte ressemblait à une concession. C’est devenu la fonctionnalité qui permet une version anglaise <em>partielle</em>. <code>_quarto-en.yml</code> n’expose que trois entrées : la page d’accueil/les projets, la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr. La version française, configurée dans <code>_quarto-fr.yml</code>, contient en plus les posts de blog, les ateliers et les infolettres. Sans ce mécanisme, il aurait fallu traduire tout le site ou rien.</p>
+<p>Les deux approches ne s’excluaient pas : <strong>on utilise finalement les deux</strong>, babelquarto pour les pages, les profils pour les navbars. Le tout se déclare dans <code>_quarto.yml</code> :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">profile</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">default</span><span class="kw">:</span><span class="at"> fr</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">group</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">fr</span><span class="kw">,</span><span class="at"> en</span><span class="kw">]</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">babelquarto</span><span class="kw">:</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">languagelinks</span><span class="kw">:</span><span class="at"> navbar</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">mainlanguage</span><span class="kw">:</span><span class="at"> </span><span class="st">"fr"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">languages</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="st">"en"</span><span class="kw">]</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Détail qui fait gagner du temps : <strong>inutile de préciser les profils au render</strong> s’ils portent le nom des langues.</p>
+<p>Exemple grandeur nature de babelquarto : le <a href="https://devguide.ropensci.org/">devguide de rOpenSci</a> dont le code source est ouvert et qui m’a bien aidé.</p>
+</div>
+</div>
+</div>
+<p>Au passage, on a ajouté un script de traduction semi-automatisé grâce à <code>babeldown</code>. Cela envoie le <code>.qmd</code> à traduire à DeepL et récupère un <code>.qmd</code> traduit, en préservant (à peu près) le YAML et les blocs de code.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Astuce</span>Pour les curieux : le script de traduction
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Une trentaine de lignes de R et une clé d’API DeepL dans les variables d’environnement :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>babeldown<span class="sc">::</span><span class="fu">deepl_translate</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">path =</span> input_path,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">out_path =</span> out_path,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">source_lang =</span> <span class="st">"FR"</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">target_lang =</span> <span class="st">"EN-GB"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">formality =</span> <span class="st">"default"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">yaml_fields =</span> <span class="fu">c</span>(<span class="st">"title"</span>, <span class="st">"description"</span>, <span class="st">"categories"</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Le résultat n’est évidemment pas publiable tel quel : c’est un premier jet qu’on relit. Le script R corrige automatiquement certaines typos par la suite. Ces typos ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de <code>---</code> dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : <code>\-</code> par exemple et <code>{{\&lt; fa brands</code>.</p>
+<p>L’usage de ce script fait <strong>gagner un temps considérable sur la mise en forme</strong> et on ne fait que <strong>relire la traduction</strong>, ce qui en fait un exercice rapide.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contribuer-cest-devenu-plus-simple" class="level1">
+<h1>Contribuer, c’est devenu plus simple</h1>
+<p>Avant, ajouter du contenu demandait de comprendre comment le site était fabriqué. Maintenant, <strong>trois commandes suffisent</strong> :</p>
+<ul>
+<li>une pour créer le squelette d’une fiche projet, pré-remplie avec les bons champs ;</li>
+<li>une pour en produire la version anglaise ;</li>
+<li>une pour prévisualiser le site en local pendant qu’on écrit.</li>
+</ul>
+<p>Tout est documenté dans le <a href="https://github.com/InseeFrLab/ssphub/blob/main/README.md">README</a>.</p>
+<p>Et surtout, il y a <strong>la prévisualisation automatique</strong> : dès que vous proposez une modification, une version consultable du site est construite et publiée. Vous voyez votre ajout en ligne, avec sa vraie mise en page, avant qu’il ne soit visible du public. C’est le filet de sécurité qui rend la contribution beaucoup moins intimidante.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Pour les curieux : les scripts et les trois environnements
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Les scripts vivent dans <code>scripts/</code>, numérotés par ordre d’usage :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Créer une nouvelle fiche projet</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> scripts <span class="kw">&amp;&amp;</span> <span class="ex">uv</span> run 1_template.py <span class="st">"2026_mon_projet"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Rendre le site</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> scripts/1_render.R</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Rendre puis prévisualiser en local</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> scripts/3_render_preview.R</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Traduire une fiche projet</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="ex">Rscript</span> scripts/2_translate.R 2026_mon_projet</span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Oui, c’est un mélange de R et de Python.</strong> R pour le rendu et la traduction, parce que babelquarto et babeldown sont des packages R et qu’on n’allait pas les réécrire. Python pour l’outillage éditorial, avec <a href="https://docs.astral.sh/uv/"><code>uv</code></a> pour que l’environnement soit reproductible. C’est pragmatique plutôt qu’élégant, et dans un réseau où les deux langages sont courants, ça ne pose de problème à personne.</p>
+<p>Côté déploiement, il y a désormais <strong>trois environnements</strong> :</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Déclencheur</th>
+<th>Cible</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Preview</strong></td>
+<td>ouverture d’une PR sur <code>main</code></td>
+<td>GitHub Pages, une preview par PR</td>
+</tr>
+<tr class="even">
+<td><strong>Pré-prod</strong></td>
+<td>manuel</td>
+<td>Netlify (site de test)</td>
+</tr>
+<tr class="odd">
+<td><strong>Prod</strong></td>
+<td>push sur <code>main</code></td>
+<td>Netlify (site public)</td>
+</tr>
+</tbody>
+</table>
+<p>La preview est une GitHub Action maison plutôt que l’action Netlify standard : c’est une conséquence directe du choix de babelquarto, qui nous privait du preview natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent) et nettoie derrière elle à la fermeture de la PR.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="le-grand-ménage" class="level1">
+<h1>Le grand ménage</h1>
+<p>Une refonte, c’est aussi l’occasion d’ouvrir les placards. Trois trouvailles.</p>
+<p><strong>Les trois <code>init.sh</code>.</strong> À la racine du dépôt dormait un script qui installait Go 1.18 et <strong>Hugo 0.97 extended</strong>. Hugo, c’est le générateur qu’on utilisait <em>avant</em> Quarto. Le script avait survécu des années à la migration, sans que personne ne se demande à quoi il servait.</p>
+<p>Les deux autres <code>init.sh</code> lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans <a href="https://github.com/SSPHub/Formation-polars">son propre dépôt</a>. Même question posée à trois fichiers, deux réponses différentes — mais le même verdict.</p>
+<p><strong>Les gros fichiers.</strong> Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du <code>static/</code> de Hugo. Ils sont partis sur le <strong>stockage S3 du SSP Cloud</strong>, et le site pointe dessus. Git n’est pas fait pour ça.</p>
+<p><strong>L’arborescence.</strong> Les dossiers portent enfin le nom des rubriques : <code>post/</code> est devenu <code>blog/</code>, <code>talk/</code> s’est réparti entre <code>event/</code> et <code>course/</code>, le CSS et le SCSS ont rejoint <code>assets/</code>. Ça paraît cosmétique, mais quand on cherche où ranger un nouveau contenu, ça change tout.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Astuce</span>Pour les curieux : la centralisation des variables
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Toutes les adresses et liens du réseau vivent maintenant dans <code>_variables.yml</code> et s’appellent dans les <code>.qmd</code> avec <code>contact-ssphub@insee.fr</code> :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">contact</span><span class="kw">:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">email</span><span class="kw">:</span><span class="at"> &lt;contact-ssphub@insee.fr&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">tchap</span><span class="kw">:</span><span class="at"> https://tchap.gouv.fr/</span><span class="co">#/room/#ssphub:agent.finances.tchap.gouv.fr</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">signup</span><span class="kw">:</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">form</span><span class="kw">:</span><span class="at"> https://grist.numerique.gouv.fr/o/ssphub/forms/...</span></span></code></pre></div><button title="Copier vers le presse-papier" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Fini de chercher une adresse mail dans quinze fichiers le jour où elle change.</p>
+<p>Autre petit ajout de la refonte : <code>llms-txt: true</code> dans <code>_quarto.yml</code>, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant <code>.llms.md</code> à l’URL.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="ce-quil-reste-à-faire" class="level1">
+<h1>Ce qu’il reste à faire</h1>
+<p>Comme toujours, la v1 n’est pas la version finale. Les chantiers ouverts :</p>
+<ul>
+<li><strong>la version anglaise ne couvre pas le blog ni les événements.</strong> C’est un choix pour l’instant, ça peut évoluer si le besoin se confirme ;</li>
+<li><strong>la synchronisation automatique des fiches projets</strong> : un mécanisme existe pour récupérer la documentation directement depuis les dépôts des projets, afin que les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est désactivé, parce qu’il ne marche pas encore assez bien ;</li>
+<li><strong>le workflow de pré-prod</strong> se déclenche encore sur une branche qui n’existe plus depuis le merge. En pratique, il ne tourne qu’à la main ;</li>
+<li>et depuis cette refonte, le site a déménagé sur <strong><a href="https://ssphub.fr">ssphub.fr</a></strong> — mais ça, c’est une autre histoire, et une autre PR.</li>
+</ul>
+</section>
+<section id="et-vous" class="level1">
+<h1>Et vous ?</h1>
+<p><strong>Vous avez mené un projet innovant dans le SSP ?</strong> Il a sa place dans la rubrique Projets. La procédure complète est dans le <a href="https://github.com/InseeFrLab/ssphub/blob/main/README.md">README</a>, et si vous préférez, ouvrez simplement une <a href="https://github.com/InseeFrLab/ssphub/issues">issue</a> : on s’occupe du reste.</p>
+</section>
+<section id="ressources" class="level1">
+<h1>Ressources</h1>
+<ul>
+<li>le code source du site : <a href="https://github.com/InseeFrLab/ssphub" class="uri">https://github.com/InseeFrLab/ssphub</a> ;</li>
+<li>la PR de la refonte : <a href="https://github.com/InseeFrLab/ssphub/pull/112" class="uri">https://github.com/InseeFrLab/ssphub/pull/112</a> ;</li>
+<li>l’issue Quarto sur le multilingue : <a href="https://github.com/quarto-dev/quarto-cli/issues/275" class="uri">https://github.com/quarto-dev/quarto-cli/issues/275</a> ;</li>
+<li>des exemples de sites Quarto multilingues, dans la catégorie <a href="https://github.com/quarto-dev/quarto-cli/discussions/categories/show-and-tell">Show and Tell</a> du dépôt Quarto ;</li>
+<li>la documentation de <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> ;</li>
+<li>le <a href="https://devguide.ropensci.org/">devguide de rOpenSci</a>, exemple grandeur nature ;</li>
+<li>la documentation d’<a href="https://docs.astral.sh/uv/"><code>uv</code></a>.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copié");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copié");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/inseefrlab\.github\.io\/ssphub\/pr-preview\/pr-177");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/blog/2026_refonte/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/blog/2026_refonte/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></div></div></footer></body></html>
