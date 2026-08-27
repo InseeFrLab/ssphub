@@ -184,15 +184,12 @@ babelquarto:
   languages: ["en"]
 ```
 
-Détail qui fait gagner du temps : **inutile de préciser les profils au render**
-s'ils portent le nom des langues.
-
 Exemple grandeur nature de babelquarto : le
 [devguide de rOpenSci](https://devguide.ropensci.org/) dont le code source est ouvert
 et qui m'a bien aidé.
 :::
 
-Au passage, on a ajouté un script de traduction semi-automatisé grâce à `babeldown`.
+Au passage, on a ajouté un **script de traduction automatisé** grâce à `babeldown`.
 Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant
 (à peu près) le YAML et les blocs de code.
 
@@ -212,14 +209,15 @@ babeldown::deepl_translate(
 )
 ```
 
-Le résultat n'est évidemment pas publiable tel quel : c'est un premier jet
-qu'on relit. Le script R corrige automatiquement certaines typos par la suite.
-Ces typos ressortaient quasi systématiquement de la traduction par qu'ils sont liés au modèle de tableau utilisé :
+Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi
+ systématiquement de la traduction par qu'ils sont liés au modèle de tableau utilisé :
  trop de `---` dans les tableaux, des caractères
-spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
+ spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
 
 L'usage de ce script fait **gagner un temps considérable sur la mise en forme**
 et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide.
+Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont
+à reprendre à la main !).
 :::
 
 # Contribuer, c'est devenu plus simple
