@@ -135,7 +135,8 @@ Concrètement : quand vous lisez une fiche projet en français, un bouton doit v
 emmener sur *cette* fiche en anglais. Pas sur la page d'accueil anglaise.
 La solution concurrente ne proposait à l'époque qu'un aiguillage à l'entrée du site : vous
 choisissez votre langue une fois, et ensuite vous êtes coincé.
-**C'est la différence entre un site bilingue et deux sites juxtaposés.**
+**Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les
+désavantages que cela implique après en terme de technique**.
 
 
 ::: {.callout-note collapse="true"}
@@ -147,25 +148,26 @@ Voici plus en détail les deux candidats qu'on a regardés :
 
 - ✅ C'est du Quarto natif : CI simple, `quarto preview` fonctionnel.
 - ❌ Pas de lien page à page.
-- ❌ L'écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}`
-  qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
 - ❌ nécessité d'utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique,
   alors que le site doit rester "simple" pour être maintenable plus facilement.
+- ❌ L'écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}`
+  qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
 
 **babelquarto**
 
 - ✅ Le lien entre versions se construit tout seul : on n'écrit **rien** dans les liens.
-- ❌ Le rendu ne passe plus par `quarto render` mais par R — donc adhérence à R
-  et perte du preview natif.
-- ❌ La navbar doit malgré tout être gérée par des profils Quarto.
+- ❌ Le rendu ne passe plus par `quarto render` mais par R — donc perte du preview natif
+  et surtout, le plus désagréable, adhérence à R.
 
-**Le retournement** : cette dernière contrainte ressemblait à une concession.
-C'est devenu la fonctionnalité qui permet une version anglaise *partielle*.
-`_quarto-en.yml` n'expose que trois entrées : la page d'accueil/les projets,
+Même avec **babelquarto**, on a utilisé des profils Quarto pour permettre une version
+anglaise *partielle* :
+
+-  `_quarto-en.yml` n'expose que trois entrées : la page d'accueil, où sont présentés les projets,
 la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr.
-La version française, configurée dans `_quarto-fr.yml`, contient en plus les
-posts de blog, les ateliers et les infolettres. Sans ce mécanisme, il aurait fallu
-traduire tout le site ou rien.
+- La version française, configurée dans `_quarto-fr.yml`, contient en plus les
+posts de blog, les ateliers et les infolettres.
+
+Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.
 
 Les deux approches ne s'excluaient pas : **on utilise finalement les deux**,
 babelquarto pour les pages, les profils pour les navbars. Le tout se déclare
