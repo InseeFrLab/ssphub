@@ -54,35 +54,38 @@ quatres besoins suivant pour le site :
 
 ## L'infolettre passe en mode archive
 
-L'infolettre, c'est historiquement le coeur du réseau. Mais elle vit maintenant
-**par mail et sur Tchap**, là où sont les gens. Le site n'a plus besoin d'en être
+L'infolettre, c'est historiquement le coeur du réseau. Mais elle vit maintenant plus
+**par mail et sur Tchap** là où sont les gens. Le site n'a plus besoin d'en être
 la vitrine mais plutôt une archive 👵.
 
-Elle a donc quitté la barre de navigation principale pour se ranger sagement
-dans le menu « À propos ». **Rien ne se perd, tout se transforme** comme disait Lavoisier:
-[tous les numéros](../../infolettre/infolettre.qmd) sont toujours listés là,
-jusqu'aux plus anciens.
+**Rien ne se perd, tout se transforme** comme disait Lavoisier:
+[tous les numéros](../../infolettre/infolettre.qmd) sont toujours bien listés sur le site,
+jusqu'aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».
 
 ## Les projets innovants deviennent la vitrine
 
-C'est le gros morceau. On a voulu (re)mettre en avant **ce que l'on fait au sein du réseau**.
+C'est le gros morceau. On a voulu (re)mettre en avant **ce que l'on fait au sein du réseau** et avoir un endroit où partager nos projets.
+
 Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés.
-La vie n'étant qu'éternel recommencement, on a décidé de les inclure à nouveau afin d'avoir
-un endroit où l'on puisse trouver des ressources entre nous.
+La vie n'étant qu'éternel recommencement, on a décidé de les inclure à nouveau.
 
 Dans l'idée, cela donne :
 
 > Un(e) chef(fe) : Il faut faire de la codification automatique avec de l'IA
+
 > Un(e) agent(e) : Mais bien sûr 😅.
+
 > _à lui/elle-même_: Mais je sais pas faire. Qui en a fait avant ?
-> Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous
-> serait utile. Si on les contactait ?
+
+> Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
+
 > Un(e) chef(fe) : Bien vu, jeune padawan !
 
 Concrètement, on a repris les projets sur lesquels l'Insee ou des SSM ont travaillé de manière innovante.
 Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets**
 qui permet facilement de comprendre ce que le projet fait, où il en est,
  où est la documentation et où est le code, s'il est public.
+
 Cela donne **une trentaine de fiches de projets** menés dans le SSP.
 Nowcasting, images satellitaires, codification automatique de l'APE, webscraping
 pour l'IPC, données de cartes bancaires, `sndsTools`, détection d'atypies dans la
