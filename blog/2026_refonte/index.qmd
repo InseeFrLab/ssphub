@@ -250,9 +250,9 @@ Il ne traduit pas par contre les métadonnées (et donc les catégories, qui son
 Avant, ajouter du contenu demandait de comprendre comment le site était fabriqué.
 Maintenant, **trois commandes suffisent** :
 
-- une pour créer le squelette d'une fiche projet, pré-remplie avec les bons champs ;
-- une pour en produire la version anglaise ;
-- une pour prévisualiser le site en local pendant qu'on écrit.
+1. une pour créer le squelette d'une fiche projet, pré-remplie avec les bons champs ;
+2. une pour en produire la version anglaise ;
+3. une pour prévisualiser le site en local pendant qu'on écrit.
 
 Tout est documenté dans le [README](https://github.com/InseeFrLab/ssphub/blob/main/README.md).
 
@@ -267,17 +267,18 @@ visible sur le site.
 Les scripts vivent dans `scripts/`, numérotés par ordre d'usage :
 
 ```bash
-# Créer une nouvelle fiche projet
+# 1 - Créer une nouvelle fiche projet
 cd scripts && uv run 1_template.py "2026_mon_projet"
 
 # Rendre le site
 uv run Rscript scripts/1_render.R
 
-# Rendre puis prévisualiser en local
+# 2 - Traduire une fiche projet
+uv run Rscript scripts/2_translate.R 2026_mon_projet
+
+# 3 - Rendre et prévisualiser en local
 uv run Rscript scripts/3_render_preview.R
 
-# Traduire une fiche projet
-uv run Rscript scripts/2_translate.R 2026_mon_projet
 ```
 
 **C'est un mélange de R et de Python** et, honnêtement, je ne trouve pas cela très beau.
@@ -310,7 +311,7 @@ pour déployer la prévisualisation automatiquement.
 :::
 
 
-# Et un peu de ménage
+# Un peu de ménage
 
 Une refonte, c'est aussi l'occasion de faire un peu de ménage.
 
@@ -357,7 +358,7 @@ que vous pouvez donner un post entier à lire à un assistant, en ajoutant
 `.llms.md` à l'URL.
 :::
 
-# Et un changement d'adresse : ssphub.netlify.app devient ssphub.fr
+# Et un changement d'adresse
 
 Le site était déployé avant sur https://ssphub.netlify.app par facilité, comme cela permettait
 d'avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand
@@ -382,7 +383,7 @@ Comme toujours, des chantiers restent ouverts :
   les fiches restent à jour toutes seules. Il est écrit, il est en place... et il est
   désactivé, parce qu'il ne marche pas encore assez bien.
 
-# Et vous ?
+# Pour contribuer au site
 
 **Vous avez mené un projet innovant dans le SSP ?** Il a sa place dans la rubrique
 Projets. La procédure complète est dans le
