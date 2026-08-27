@@ -32,17 +32,19 @@ page-layout: full
 # Quel est le besoin ?
 
 Si vous êtes déjà venus ici, vous avez dû remarquer que **le site a changé de tête**.
-Trois nouveautés sont apparues le 29 mai par ce commit [c3c88ce](https://github.com/InseeFrLab/ssphub/commit/c3c88ce62f11054ad2077e55d2fe035cef54aa46) :
+Trois nouveautés sont apparues le 29 mai[^commitdelicieux].
 
-- une rubrique **[Projets innovants](../../project.qmd)** avec une trentaine de fiches, de 2018 à aujourd'hui ;
+- une rubrique **[Projets innovants](../../project.qmd)** avec une trentaine de fiches ;
 - une **version anglaise** du site ;
 - et les contenus de **deux anciens sites** qui nous rejoignent avec leur mise hors service ⚰️.
+
+
+[^commitdelicieux]: *cf.* le délicieux commit [c3c88ce](https://github.com/InseeFrLab/ssphub/commit/c3c88ce62f11054ad2077e55d2fe035cef54aa46).
 
 Derrière ces trois lignes, il y a une [*pull request*](https://github.com/InseeFrLab/ssphub/pull/112)
 de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées.
 C'était l'occasion de reprendre pas mal de choses et donc
-l'occasion d'un post de blog pour raconter les choix qui ont été faits — si jamais vous voulez refaire
-quelque chose comme cela.
+l'occasion d'un post de blog pour raconter les choix qui ont été faits - si jamais cela vosu est utile aussi.
 
 # Que veut-on voir sur ce site ?
 
