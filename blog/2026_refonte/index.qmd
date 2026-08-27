@@ -260,12 +260,14 @@ Mais comme on dit, tant pis c'est comme cela 🫠.
 
 Python était déjà utilisé pour un post de blog. Il l'est donc à nouveau pour initier des projets et pour que l'environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/).
 R est utilisé pour ses packages babelquarto et babeldown pour la traduction.
+On doit utiliser `uv run Rscript` parce que justement on utilise `uv` pour Python
+et qu'un article de blog utilise Python lors de la phase de render.
 
 Côté déploiement, il y a désormais **trois environnements** :
 
 | | Déclencheur | Cible |
 |---|---|---|
-| **Preview** | ouverture d'une PR sur `main` | GitHub Pages, une preview par PR |
+| **Preview - build** | ouverture d'une PR sur `main` | GitHub Pages, une preview par PR |
 | **Pré-prod** | manuel | Netlify (site de test) |
 | **Prod** | push sur `main` | Netlify (site public) |
 
@@ -273,7 +275,15 @@ La preview est une GitHub Action maison plutôt que l'action Netlify standard :
 c'est une conséquence directe du choix de babelquarto, qui nous privait du preview
 natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent)
 et nettoie derrière elle à la fermeture de la PR.
+
+Remarquez par ailleurs que pour permettre les preview à partir de fork du dépôt,
+**l'action *Preview - build* ne fait que rendre le site**. Pour le déployer, il faut
+avoir accès en écriture au repo, ce qui n'est pas possible depuis un fork. Il y a
+donc une action spécifique, **Preview - deploy** qui est lancée depuis le repo `ssphub`
+pour déployer la prévisualisation automatiquement.
+
 :::
+
 
 # Le grand ménage
 
