@@ -360,7 +360,7 @@ que vous pouvez donner un post entier à lire à un assistant, en ajoutant
 
 # Et un changement d'adresse
 
-Le site était déployé avant sur https://ssphub.netlify.app par facilité, comme cela permettait
+Le site était déployé avant sur <https://ssphub.netlify.app> par facilité, comme cela permettait
 d'avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand
 même sur le fait d'avoir une adresse url qui fasse peu propre pour un réseau d'agents publics.
 On a donc décidé de sortir le (petit) porte-monnaie et d'acheter le nom de domaine <ssphub.fr>,
