@@ -85,50 +85,57 @@ Concrètement, on a repris les projets sur lesquels l'Insee ou des SSM ont trava
 Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets**
 qui permet facilement de comprendre ce que le projet fait, où il en est,
  où est la documentation et où est le code, s'il est public.
+ Les projets sont par ailleurs taggés par **catégories**. Cela permet de créer des listings
+ pour **retrouver facilement des projets similaires**.
 
-Cela donne **une trentaine de fiches de projets** menés dans le SSP.
+Pour chaque projet, on a ainsi rempli ce tableau, échangé
+avec la personne qui en était à l'origine pour relire et mettre à jour son statut.
+Cette étape là, qui a demandé un peu de coordination et d'échanges entre intelligences humaines,
+a été relativement longue (environ deux semaines de travail).
+
+À la fin, cela donne la présentation d'**une trentaine de projets innovants** menés dans le SSP.
 Nowcasting, images satellitaires, codification automatique de l'APE, webscraping
-pour l'IPC, données de cartes bancaires, `sndsTools`, détection d'atypies dans la
-DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche
-renvoie vers le code quand il est ouvert.
+pour l'IPC, données de cartes bancaires, packages d'accès aux données, détection d'atypies dans la
+DSN, ségrégation urbaine...
 
-La page [Projets](../../project.qmd) prend d'ailleurs le temps d'expliquer
-**ce qu'on entend par « projet innovant »** et ce qu'on n'y met pas.
+La page [Projets](../../project.qmd) prend le temps d'expliquer
+**ce qu'on entend par « projet innovant »**.
 
 Un point important : **cette liste n'est pas exhaustive.**
-Elle repose sur le volontariat. Si vous êtes vexé que votre projet y soit pas, ou que vous
+Elle repose sur le volontariat. Si vous êtes vexé que votre projet n'y soit pas ou que vous
 avez mené un projet qui y a sa place, ouvrez une issue et proposez de l'ajouter ! Mon
-petit doigt me dit qu'avec l'IA maintenant cela se fait rapidement 😅
+petit doigt me dit qu'avec l'IA maintenant cela se fait rapidement 😅.
 Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - normalement.
 
 ## Deux sites nous rejoignent
 
-`ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés[^1].
+`ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés[^decommission].
 Au passage, on a fait un peu de ménage, supprimé le contenu trop ancien
  et **rapatrié les contenus encore d'actualité ici** : funathons, formations R
  et Observable, présentations, partenariats, billets.
 
-[^1] : Dans les faits, seul <https.ssplab.lab.sspcloud.fr> est redirigé vers <https://ssphub.fr>.
+[^decommission]: Dans les faits, seul <https.ssplab.lab.sspcloud.fr> est redirigé vers <https://ssphub.fr>.
 L'autre site n'a pas pu être décommissionné pour des raisons fort avouables (on a perdu les
 identifiants 😱).
 
-## Une version anglaise, assumée comme partielle
+## Une version anglaise partielle
 
-Le réseau a des interlocuteurs hors de France et rien à leur montrer.
-Il y a maintenant une **version anglaise** de l'accueil, de la présentation du réseau
+Comme il arrive que l'on ne soit pas seul au monde et d'avoir des interlocuteurs hors de France,
+une version anglaise des projets était une demande initiale.
+Il y a donc maintenant une **version anglaise** de l'accueil, de la présentation du réseau
 et des fiches projets.
 
 En revanche, le blog, les événements et les infolettres restent en français.
-Ce n'est pas (seulement) de la paresse : **on s'est dit que l'actualité franco-française du SSP n'intéresserait pas forcément d'autres personnes**
-(peut être à tort).
+Ce n'est pas (seulement) de la paresse : **on s'est dit que l'actualité franco-française
+du SSP n'intéresserait pas forcément d'autres personnes** (peut-être à tort).
 
 # Un site bilingue, ce n'est pas si simple
 
 Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?
 
 Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer
-nativement deux langues**. C'est un sparadrap : l'
-[issue #275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto
+nativement deux langues**. C'est un sparadrap : l'issue
+[#275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto
 traîne depuis des années, plusieurs solutions communautaires cohabitent,
 aucune n'est officielle.
 
