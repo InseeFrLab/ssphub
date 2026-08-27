@@ -20,7 +20,6 @@ authors:
 categories:
   - Site
   - Quarto
-  - Retour d'expérience
 
 format:
   html:
@@ -89,9 +88,7 @@ DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque f
 renvoie vers le code quand il est ouvert.
 
 La page [Projets](../../project.qmd) prend d'ailleurs le temps d'expliquer
-**ce qu'on entend par « projet innovant »**, et surtout ce qu'on n'y met pas.
-Exercice délicat : l'innovation est mouvante, et un projet innovant aujourd'hui
-sera un savoir classique dans deux ans.
+**ce qu'on entend par « projet innovant »** et ce qu'on n'y met pas.
 
 Un point important : **cette liste n'est pas exhaustive.**
 Elle repose sur le volontariat. Si vous êtes vexé que votre projet y soit pas, ou que vous
@@ -102,10 +99,9 @@ Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - no
 ## Deux sites nous rejoignent
 
 `ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés.
-Plutôt que de laisser leurs contenus s'évaporer, on a **rapatrié les contenus encore d'actualité ici** :
-funathons, formations R et Observable, présentations, partenariats, billets.
-Là encore, l'idée est qu'on ne perde rien et qu'il n'y ait plus qu'un seul endroit
-où chercher.
+Au passage, on a fait un peu de ménage, supprimé le contenu trop ancien
+ et **rapatrié les contenus encore d'actualité ici** : funathons, formations R
+ et Observable, présentations, partenariats, billets.
 
 ## Une version anglaise, assumée comme partielle
 
