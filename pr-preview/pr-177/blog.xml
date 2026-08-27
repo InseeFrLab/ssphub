@@ -12,7 +12,7 @@
 <generator>quarto-1.10.18</generator>
 <lastBuildDate>Tue, 01 Sep 2026 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>Le site du SSPHub fait peau neuve</title>
+  <title>Le site du SSPHub fait peau neuve ou comment faire un site bilingue avec Quarto</title>
   <link>https://inseefrlab.github.io/ssphub/pr-preview/pr-177/blog/2026_refonte/</link>
   <description><![CDATA[ 
 
@@ -45,14 +45,14 @@
 <blockquote class="blockquote">
 <p>Un(e) chef(fe) : Il faut faire de la codification automatique avec de l’IA Un(e) agent(e) : Mais bien sûr 😅. <em>à lui/elle-même</em>: Mais je sais pas faire. Qui en a fait avant ? Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ? Un(e) chef(fe) : Bien vu, jeune padawan !</p>
 </blockquote>
-<p>Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans <strong>un tableau formatté pour tous les projets</strong> qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code, s’il est public.<br>
-Cela donne <strong>une trentaine de fiches de projets</strong> menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, <code>sndsTools</code>, détection d’atypies dans la DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche renvoie vers le code quand il est ouvert.</p>
-<p>La page <a href="../../project.html">Projets</a> prend d’ailleurs le temps d’expliquer <strong>ce qu’on entend par « projet innovant »</strong>, et surtout ce qu’on n’y met pas. Exercice délicat : l’innovation est mouvante, et un projet innovant aujourd’hui sera un savoir classique dans deux ans.</p>
+<p>Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans <strong>un tableau formatté pour tous les projets</strong> qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code, s’il est public. Cela donne <strong>une trentaine de fiches de projets</strong> menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, <code>sndsTools</code>, détection d’atypies dans la DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche renvoie vers le code quand il est ouvert.</p>
+<p>La page <a href="../../project.html">Projets</a> prend d’ailleurs le temps d’expliquer <strong>ce qu’on entend par « projet innovant »</strong> et ce qu’on n’y met pas.</p>
 <p>Un point important : <strong>cette liste n’est pas exhaustive.</strong> Elle repose sur le volontariat. Si vous êtes vexé que votre projet y soit pas, ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - normalement.</p>
 </section>
 <section id="deux-sites-nous-rejoignent" class="level2">
 <h2 class="anchored" data-anchor-id="deux-sites-nous-rejoignent">Deux sites nous rejoignent</h2>
-<p><code>ssplab.lab.sspcloud.fr</code> et <code>statoscope.wordpress.com</code> sont décommissionnés. Plutôt que de laisser leurs contenus s’évaporer, on a <strong>rapatrié les contenus encore d’actualité ici</strong> : funathons, formations R et Observable, présentations, partenariats, billets. Là encore, l’idée est qu’on ne perde rien et qu’il n’y ait plus qu’un seul endroit où chercher.</p>
+<p><code>ssplab.lab.sspcloud.fr</code> et <code>statoscope.wordpress.com</code> sont décommissionnés[^1]. Au passage, on a fait un peu de ménage, supprimé le contenu trop ancien et <strong>rapatrié les contenus encore d’actualité ici</strong> : funathons, formations R et Observable, présentations, partenariats, billets.</p>
+<p>[^1] : Dans les faits, seul &lt;https.ssplab.lab.sspcloud.fr&gt; est redirigé vers <a href="https://ssphub.fr" class="uri">https://ssphub.fr</a>. L’autre site n’a pas pu être décommissionné pour des raisons fort avouables (on a perdu les identifiants 😱).</p>
 </section>
 <section id="une-version-anglaise-assumée-comme-partielle" class="level2">
 <h2 class="anchored" data-anchor-id="une-version-anglaise-assumée-comme-partielle">Une version anglaise, assumée comme partielle</h2>
@@ -65,7 +65,7 @@ Cela donne <strong>une trentaine de fiches de projets</strong> menés dans le SS
 <p>Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?</p>
 <p>Le site tourne sous <a href="https://quarto.org">Quarto</a>. Et <strong>Quarto ne sait pas gérer nativement deux langues</strong>. C’est un sparadrap : l’ <a href="https://github.com/quarto-dev/quarto-cli/issues/275">issue #275</a> du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent, aucune n’est officielle.</p>
 <p>On a exploré deux pistes pour un profil intermédiaire en quarto comme moi. Les critères qui m’ont fait choisir <code>babelquarto</code> c’est 1/ <strong>le lien page à page natif</strong> et 2/ une <strong>plus grande lisibilité des fichiers quarto</strong> : il y a un fichier en français et un autre en anglais.</p>
-<p>Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur <em>cette</em> fiche en anglais. Pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois, et ensuite vous êtes coincé. <strong>C’est la différence entre un site bilingue et deux sites juxtaposés.</strong></p>
+<p>Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur <em>cette</em> fiche en anglais. Pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois, et ensuite vous êtes coincé. <strong>Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après en terme de technique</strong>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -83,16 +83,20 @@ Cela donne <strong>une trentaine de fiches de projets</strong> menés dans le SS
 <ul>
 <li>✅ C’est du Quarto natif : CI simple, <code>quarto preview</code> fonctionnel.</li>
 <li>❌ Pas de lien page à page.</li>
-<li>❌ L’écriture est alourdie par les divs conditionnelles <code>::: {when-profile="fr"}</code> qui, je trouve, polluent les <code>.qmd</code> et rendent la maintenance plus compliquée.</li>
 <li>❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable plus facilement.</li>
+<li>❌ L’écriture est alourdie par les divs conditionnelles <code>::: {when-profile="fr"}</code> qui, je trouve, polluent les <code>.qmd</code> et rendent la maintenance plus compliquée.</li>
 </ul>
 <p><strong>babelquarto</strong></p>
 <ul>
 <li>✅ Le lien entre versions se construit tout seul : on n’écrit <strong>rien</strong> dans les liens.</li>
-<li>❌ Le rendu ne passe plus par <code>quarto render</code> mais par R — donc adhérence à R et perte du preview natif.</li>
-<li>❌ La navbar doit malgré tout être gérée par des profils Quarto.</li>
+<li>❌ Le rendu ne passe plus par <code>quarto render</code> mais par R — donc perte du preview natif et surtout, le plus désagréable, adhérence à R.</li>
 </ul>
-<p><strong>Le retournement</strong> : cette dernière contrainte ressemblait à une concession. C’est devenu la fonctionnalité qui permet une version anglaise <em>partielle</em>. <code>_quarto-en.yml</code> n’expose que trois entrées : la page d’accueil/les projets, la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr. La version française, configurée dans <code>_quarto-fr.yml</code>, contient en plus les posts de blog, les ateliers et les infolettres. Sans ce mécanisme, il aurait fallu traduire tout le site ou rien.</p>
+<p>Même avec <strong>babelquarto</strong>, on a utilisé des profils Quarto pour permettre une version anglaise <em>partielle</em> :</p>
+<ul>
+<li><code>_quarto-en.yml</code> n’expose que trois entrées : la page d’accueil, où sont présentés les projets, la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr.</li>
+<li>La version française, configurée dans <code>_quarto-fr.yml</code>, contient en plus les posts de blog, les ateliers et les infolettres.</li>
+</ul>
+<p>Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.</p>
 <p>Les deux approches ne s’excluaient pas : <strong>on utilise finalement les deux</strong>, babelquarto pour les pages, les profils pour les navbars. Le tout se déclare dans <code>_quarto.yml</code> :</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -180,12 +184,11 @@ font-style: inherit;">"en"</span><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">]</span></span></code></pre></div></div>
-<p>Détail qui fait gagner du temps : <strong>inutile de préciser les profils au render</strong> s’ils portent le nom des langues.</p>
 <p>Exemple grandeur nature de babelquarto : le <a href="https://devguide.ropensci.org/">devguide de rOpenSci</a> dont le code source est ouvert et qui m’a bien aidé.</p>
 </div>
 </div>
 </div>
-<p>Au passage, on a ajouté un script de traduction semi-automatisé grâce à <code>babeldown</code>. Cela envoie le <code>.qmd</code> à traduire à DeepL et récupère un <code>.qmd</code> traduit, en préservant (à peu près) le YAML et les blocs de code.</p>
+<p>Au passage, on a ajouté un <strong>script de traduction automatisé</strong> grâce à <code>babeldown</code>. Cela envoie le <code>.qmd</code> à traduire à DeepL et récupère un <code>.qmd</code> traduit, en préservant (à peu près) le YAML et les blocs de code.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -237,8 +240,8 @@ font-style: inherit;">"description"</span>, <span class="st" style="color: #2079
 background-color: null;
 font-style: inherit;">"categories"</span>)</span>
 <span id="cb2-8">)</span></code></pre></div></div>
-<p>Le résultat n’est évidemment pas publiable tel quel : c’est un premier jet qu’on relit. Le script R corrige automatiquement certaines typos par la suite. Ces typos ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de <code>---</code> dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : <code>\-</code> par exemple et <code>{{\&lt; fa brands</code>.</p>
-<p>L’usage de ce script fait <strong>gagner un temps considérable sur la mise en forme</strong> et on ne fait que <strong>relire la traduction</strong>, ce qui en fait un exercice rapide.</p>
+<p>Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de <code>---</code> dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : <code>\-</code> par exemple et <code>{{\&lt; fa brands</code>.</p>
+<p>L’usage de ce script fait <strong>gagner un temps considérable sur la mise en forme</strong> et on ne fait que <strong>relire la traduction</strong>, ce qui en fait un exercice rapide. Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont à reprendre à la main !).</p>
 </div>
 </div>
 </div>
@@ -292,7 +295,7 @@ background-color: null;
 font-style: inherit;"># Rendre puis prévisualiser en local</span></span>
 <span id="cb3-8"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R </span>
+font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R</span>
 <span id="cb3-9"></span>
 <span id="cb3-10"><span class="co" style="color: #5E5E5E;
 background-color: null;
@@ -301,7 +304,7 @@ font-style: inherit;"># Traduire une fiche projet</span></span>
 background-color: null;
 font-style: inherit;">uv</span> run Rscript scripts/2_translate.R 2026_mon_projet</span></code></pre></div></div>
 <p><strong>C’est un mélange de R et de Python</strong> et, honnêtement, je ne trouve pas cela très beau. Mais comme on dit, tant pis c’est comme cela 🫠.</p>
-<p>Python était déjà utilisé pour un post de blog. Il l’est donc à nouveau pour initier des projets et pour que l’environnement soit reproductible grâce à <a href="https://docs.astral.sh/uv/"><code>uv</code></a>. R est utilisé pour ses packages babelquarto et babeldown pour la traduction.</p>
+<p>Python était déjà utilisé pour un post de blog. Il l’est donc à nouveau pour initier des projets et pour que l’environnement soit reproductible grâce à <a href="https://docs.astral.sh/uv/"><code>uv</code></a>. R est utilisé pour ses packages babelquarto et babeldown pour la traduction. On doit utiliser <code>uv run Rscript</code> parce que justement on utilise <code>uv</code> pour Python et qu’un article de blog utilise Python lors de la phase de render.</p>
 <p>Côté déploiement, il y a désormais <strong>trois environnements</strong> :</p>
 <table class="caption-top table">
 <colgroup>
@@ -318,7 +321,7 @@ font-style: inherit;">uv</span> run Rscript scripts/2_translate.R 2026_mon_proje
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Preview</strong></td>
+<td><strong>Preview - build</strong></td>
 <td>ouverture d’une PR sur <code>main</code></td>
 <td>GitHub Pages, une preview par PR</td>
 </tr>
@@ -335,17 +338,18 @@ font-style: inherit;">uv</span> run Rscript scripts/2_translate.R 2026_mon_proje
 </tbody>
 </table>
 <p>La preview est une GitHub Action maison plutôt que l’action Netlify standard : c’est une conséquence directe du choix de babelquarto, qui nous privait du preview natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent) et nettoie derrière elle à la fermeture de la PR.</p>
+<p>Remarquez par ailleurs que pour permettre les preview à partir de fork du dépôt, <strong>l’action <em>Preview - build</em> ne fait que rendre le site</strong>. Pour le déployer, il faut avoir accès en écriture au repo, ce qui n’est pas possible depuis un fork. Il y a donc une action spécifique, <strong>Preview - deploy</strong> qui est lancée depuis le repo <code>ssphub</code> pour déployer la prévisualisation automatiquement.</p>
 </div>
 </div>
 </div>
 </section>
-<section id="le-grand-ménage" class="level1">
-<h1>Le grand ménage</h1>
-<p>Une refonte, c’est aussi l’occasion d’ouvrir les placards. Trois trouvailles.</p>
-<p><strong>Les trois <code>init.sh</code>.</strong> À la racine du dépôt dormait un script qui installait Go 1.18 et <strong>Hugo 0.97 extended</strong>. Hugo, c’est le générateur qu’on utilisait <em>avant</em> Quarto. Le script avait survécu des années à la migration, sans que personne ne se demande à quoi il servait.</p>
-<p>Les deux autres <code>init.sh</code> lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans <a href="https://github.com/SSPHub/Formation-polars">son propre dépôt</a>. Même question posée à trois fichiers, deux réponses différentes — mais le même verdict.</p>
-<p><strong>Les gros fichiers.</strong> Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du <code>static/</code> de Hugo. Ils sont partis sur le <strong>stockage S3 du SSP Cloud</strong>, et le site pointe dessus. Git n’est pas fait pour ça.</p>
-<p><strong>L’arborescence.</strong> Les dossiers portent enfin le nom des rubriques : <code>post/</code> est devenu <code>blog/</code>, <code>talk/</code> s’est réparti entre <code>event/</code> et <code>course/</code>, le CSS et le SCSS ont rejoint <code>assets/</code>. Ça paraît cosmétique, mais quand on cherche où ranger un nouveau contenu, ça change tout.</p>
+<section id="et-un-peu-de-ménage" class="level1">
+<h1>Et un peu de ménage</h1>
+<p>Une refonte, c’est aussi l’occasion de faire un peu de ménage.</p>
+<p><strong>Les trois <code>init.sh</code>.</strong> À la racine du dépôt dormait un script qui installait Go 1.18 et <strong>Hugo 0.97 extended</strong>. Hugo, c’est le générateur qu’on utilisait <em>avant</em> Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé par la patrouille.</p>
+<p>Les deux autres <code>init.sh</code> lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans <a href="https://github.com/SSPHub/Formation-polars">son propre dépôt</a>.</p>
+<p><strong>Les gros fichiers.</strong> Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du <code>static/</code> de Hugo. Ils sont partis sur le <strong>stockage S3 du SSP Cloud</strong>, et le site pointe dessus. Git n’est pas fait pour ça et le repo commence à être lourd.</p>
+<p><strong>L’arborescence.</strong> Les dossiers portent enfin le nom des rubriques : <code>post/</code> est devenu <code>blog/</code>, <code>talk/</code> s’est réparti entre <code>event/</code> et <code>course/</code>, le CSS et le SCSS ont rejoint <code>assets/</code>.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -410,14 +414,17 @@ font-style: inherit;"> https://grist.numerique.gouv.fr/o/ssphub/forms/...</span>
 </div>
 </div>
 </section>
+<section id="et-un-changement-dadresse-ssphub.netlify.app-devient-ssphub.fr" class="level1">
+<h1>Et un changement d’adresse : ssphub.netlify.app devient ssphub.fr</h1>
+<p>Le site était déployé avant sur https://ssphub.netlify.app par facilité, comme cela permettait d’avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand même sur le fait d’avoir une adresse url qui fasse peu propre pour un réseau d’agents publics. On a donc décidé de sortir le (petit) porte-monnaie et d’acheter le nom de domaine &lt;ssphub.fr&gt;, détenu maintenant très officiellement par l’État français (himself), représenté par le MEFSIN (himself), représenté par l’Insee (himsel) (cf <a href="https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/">le site de l’AFNIC</a>).</p>
+<p>Le site a ainsi déménagé sur <strong><a href="https://ssphub.fr">ssphub.fr</a></strong> à l’été 2026 par la fameuse <a href="https://github.com/InseeFrLab/ssphub/pull/173">demande de tirage (PR) 173</a>. On a au passage inséré une redirection de l’ancien nom de domaine vers le nouveau. <a href="https://ssphub.netlify.app/project/2026_sndstools/" class="uri">https://ssphub.netlify.app/project/2026_sndstools/</a> est redirigé vers <a href="https://ssphub.fr/project/2026_sndstools/" class="uri">https://ssphub.fr/project/2026_sndstools/</a>.</p>
+</section>
 <section id="ce-quil-reste-à-faire" class="level1">
 <h1>Ce qu’il reste à faire</h1>
-<p>Comme toujours, la v1 n’est pas la version finale. Les chantiers ouverts :</p>
+<p>Comme toujours, des chantiers restent ouverts :</p>
 <ul>
-<li><strong>la version anglaise ne couvre pas le blog ni les événements.</strong> C’est un choix pour l’instant, ça peut évoluer si le besoin se confirme ;</li>
-<li><strong>la synchronisation automatique des fiches projets</strong> : un mécanisme existe pour récupérer la documentation directement depuis les dépôts des projets, afin que les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est désactivé, parce qu’il ne marche pas encore assez bien ;</li>
-<li><strong>le workflow de pré-prod</strong> se déclenche encore sur une branche qui n’existe plus depuis le merge. En pratique, il ne tourne qu’à la main ;</li>
-<li>et depuis cette refonte, le site a déménagé sur <strong><a href="https://ssphub.fr">ssphub.fr</a></strong> — mais ça, c’est une autre histoire, et une autre PR.</li>
+<li><strong>la version anglaise ne couvre pas le blog ni les événements.</strong> C’est un choix pour l’instant;</li>
+<li><strong>la synchronisation automatique des fiches projets</strong> : un mécanisme existe pour récupérer la documentation directement depuis les dépôts des projets, afin que les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est désactivé, parce qu’il ne marche pas encore assez bien.</li>
 </ul>
 </section>
 <section id="et-vous" class="level1">
@@ -442,9 +449,9 @@ font-style: inherit;"> https://grist.numerique.gouv.fr/o/ssphub/forms/...</span>
  ]]></description>
   <category>Site</category>
   <category>Quarto</category>
-  <category>Retour d&#39;expérience</category>
   <guid>https://inseefrlab.github.io/ssphub/pr-preview/pr-177/blog/2026_refonte/</guid>
   <pubDate>Tue, 01 Sep 2026 00:00:00 GMT</pubDate>
+  <media:content url="https://inseefrlab.github.io/ssphub/pr-preview/pr-177/blog/2026_refonte/refonte.jpg" medium="image" type="image/jpeg"/>
 </item>
 <item>
   <title>Retour sur les Rencontres R 2026 à Nantes</title>
@@ -766,7 +773,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="acc74589" class="cell">
+<div id="1b28ea44" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -957,7 +964,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="dec4977a" class="cell">
+<div id="5ce62f84" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1848,7 +1855,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="18d36f59" class="cell">
+<div id="fc5212fb" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>

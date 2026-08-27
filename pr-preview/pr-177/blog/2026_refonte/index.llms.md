@@ -26,16 +26,17 @@ Dans l’idée, cela donne :
 
 > Un(e) chef(fe) : Il faut faire de la codification automatique avec de l’IA Un(e) agent(e) : Mais bien sûr 😅. *à lui/elle-même*: Mais je sais pas faire. Qui en a fait avant ? Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ? Un(e) chef(fe) : Bien vu, jeune padawan !
 
-Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets** qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code, s’il est public.\
-Cela donne **une trentaine de fiches de projets** menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, `sndsTools`, détection d’atypies dans la DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche renvoie vers le code quand il est ouvert.
+Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets** qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code, s’il est public. Cela donne **une trentaine de fiches de projets** menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, `sndsTools`, détection d’atypies dans la DSN, ségrégation urbaine… La liste est filtrable par catégorie, et chaque fiche renvoie vers le code quand il est ouvert.
 
-La page [Projets](../../project.llms.md) prend d’ailleurs le temps d’expliquer **ce qu’on entend par « projet innovant »**, et surtout ce qu’on n’y met pas. Exercice délicat : l’innovation est mouvante, et un projet innovant aujourd’hui sera un savoir classique dans deux ans.
+La page [Projets](../../project.llms.md) prend d’ailleurs le temps d’expliquer **ce qu’on entend par « projet innovant »** et ce qu’on n’y met pas.
 
 Un point important : **cette liste n’est pas exhaustive.** Elle repose sur le volontariat. Si vous êtes vexé que votre projet y soit pas, ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - normalement.
 
 ## Deux sites nous rejoignent
 
-`ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés. Plutôt que de laisser leurs contenus s’évaporer, on a **rapatrié les contenus encore d’actualité ici** : funathons, formations R et Observable, présentations, partenariats, billets. Là encore, l’idée est qu’on ne perde rien et qu’il n’y ait plus qu’un seul endroit où chercher.
+`ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés\[^1\]. Au passage, on a fait un peu de ménage, supprimé le contenu trop ancien et **rapatrié les contenus encore d’actualité ici** : funathons, formations R et Observable, présentations, partenariats, billets.
+
+\[^1\] : Dans les faits, seul \<https.ssplab.lab.sspcloud.fr\> est redirigé vers <https://ssphub.fr>. L’autre site n’a pas pu être décommissionné pour des raisons fort avouables (on a perdu les identifiants 😱).
 
 ## Une version anglaise, assumée comme partielle
 
@@ -51,7 +52,7 @@ Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer
 
 On a exploré deux pistes pour un profil intermédiaire en quarto comme moi. Les critères qui m’ont fait choisir `babelquarto` c’est 1/ **le lien page à page natif** et 2/ une **plus grande lisibilité des fichiers quarto** : il y a un fichier en français et un autre en anglais.
 
-Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur *cette* fiche en anglais. Pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois, et ensuite vous êtes coincé. **C’est la différence entre un site bilingue et deux sites juxtaposés.**
+Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur *cette* fiche en anglais. Pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois, et ensuite vous êtes coincé. **Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après en terme de technique**.
 
 > **NOTE:**
 >
@@ -61,16 +62,20 @@ Concrètement : quand vous lisez une fiche projet en français, un bouton doit v
 >
 > - ✅ C’est du Quarto natif : CI simple, `quarto preview` fonctionnel.
 > - ❌ Pas de lien page à page.
-> - ❌ L’écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}` qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
 > - ❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable plus facilement.
+> - ❌ L’écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}` qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
 >
 > **babelquarto**
 >
 > - ✅ Le lien entre versions se construit tout seul : on n’écrit **rien** dans les liens.
-> - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc adhérence à R et perte du preview natif.
-> - ❌ La navbar doit malgré tout être gérée par des profils Quarto.
+> - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc perte du preview natif et surtout, le plus désagréable, adhérence à R.
 >
-> **Le retournement** : cette dernière contrainte ressemblait à une concession. C’est devenu la fonctionnalité qui permet une version anglaise *partielle*. `_quarto-en.yml` n’expose que trois entrées : la page d’accueil/les projets, la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr. La version française, configurée dans `_quarto-fr.yml`, contient en plus les posts de blog, les ateliers et les infolettres. Sans ce mécanisme, il aurait fallu traduire tout le site ou rien.
+> Même avec **babelquarto**, on a utilisé des profils Quarto pour permettre une version anglaise *partielle* :
+>
+> - `_quarto-en.yml` n’expose que trois entrées : la page d’accueil, où sont présentés les projets, la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr.
+> - La version française, configurée dans `_quarto-fr.yml`, contient en plus les posts de blog, les ateliers et les infolettres.
+>
+> Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.
 >
 > Les deux approches ne s’excluaient pas : **on utilise finalement les deux**, babelquarto pour les pages, les profils pour les navbars. Le tout se déclare dans `_quarto.yml` :
 >
@@ -85,11 +90,9 @@ Concrètement : quand vous lisez une fiche projet en français, un bouton doit v
 >   languages: ["en"]
 > ```
 >
-> Détail qui fait gagner du temps : **inutile de préciser les profils au render** s’ils portent le nom des langues.
->
 > Exemple grandeur nature de babelquarto : le [devguide de rOpenSci](https://devguide.ropensci.org/) dont le code source est ouvert et qui m’a bien aidé.
 
-Au passage, on a ajouté un script de traduction semi-automatisé grâce à `babeldown`. Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant (à peu près) le YAML et les blocs de code.
+Au passage, on a ajouté un **script de traduction automatisé** grâce à `babeldown`. Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant (à peu près) le YAML et les blocs de code.
 
 > **TIP:**
 >
@@ -106,9 +109,9 @@ Au passage, on a ajouté un script de traduction semi-automatisé grâce à `bab
 > )
 > ```
 >
-> Le résultat n’est évidemment pas publiable tel quel : c’est un premier jet qu’on relit. Le script R corrige automatiquement certaines typos par la suite. Ces typos ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de `---` dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
+> Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de `---` dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
 >
-> L’usage de ce script fait **gagner un temps considérable sur la mise en forme** et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide.
+> L’usage de ce script fait **gagner un temps considérable sur la mise en forme** et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide. Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont à reprendre à la main !).
 
 # Contribuer, c’est devenu plus simple
 
@@ -134,7 +137,7 @@ Et surtout, il y a **la prévisualisation automatique** : dès que vous proposez
 > uv run Rscript scripts/1_render.R
 >
 > # Rendre puis prévisualiser en local
-> uv run Rscript scripts/3_render_preview.R 
+> uv run Rscript scripts/3_render_preview.R
 >
 > # Traduire une fiche projet
 > uv run Rscript scripts/2_translate.R 2026_mon_projet
@@ -142,29 +145,31 @@ Et surtout, il y a **la prévisualisation automatique** : dès que vous proposez
 >
 > **C’est un mélange de R et de Python** et, honnêtement, je ne trouve pas cela très beau. Mais comme on dit, tant pis c’est comme cela 🫠.
 >
-> Python était déjà utilisé pour un post de blog. Il l’est donc à nouveau pour initier des projets et pour que l’environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/). R est utilisé pour ses packages babelquarto et babeldown pour la traduction.
+> Python était déjà utilisé pour un post de blog. Il l’est donc à nouveau pour initier des projets et pour que l’environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/). R est utilisé pour ses packages babelquarto et babeldown pour la traduction. On doit utiliser `uv run Rscript` parce que justement on utilise `uv` pour Python et qu’un article de blog utilise Python lors de la phase de render.
 >
 > Côté déploiement, il y a désormais **trois environnements** :
 >
 > |  | Déclencheur | Cible |
 > |----|----|----|
-> | **Preview** | ouverture d’une PR sur `main` | GitHub Pages, une preview par PR |
+> | **Preview - build** | ouverture d’une PR sur `main` | GitHub Pages, une preview par PR |
 > | **Pré-prod** | manuel | Netlify (site de test) |
 > | **Prod** | push sur `main` | Netlify (site public) |
 >
 > La preview est une GitHub Action maison plutôt que l’action Netlify standard : c’est une conséquence directe du choix de babelquarto, qui nous privait du preview natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent) et nettoie derrière elle à la fermeture de la PR.
+>
+> Remarquez par ailleurs que pour permettre les preview à partir de fork du dépôt, **l’action *Preview - build* ne fait que rendre le site**. Pour le déployer, il faut avoir accès en écriture au repo, ce qui n’est pas possible depuis un fork. Il y a donc une action spécifique, **Preview - deploy** qui est lancée depuis le repo `ssphub` pour déployer la prévisualisation automatiquement.
 
-# Le grand ménage
+# Et un peu de ménage
 
-Une refonte, c’est aussi l’occasion d’ouvrir les placards. Trois trouvailles.
+Une refonte, c’est aussi l’occasion de faire un peu de ménage.
 
-**Les trois `init.sh`.** À la racine du dépôt dormait un script qui installait Go 1.18 et **Hugo 0.97 extended**. Hugo, c’est le générateur qu’on utilisait *avant* Quarto. Le script avait survécu des années à la migration, sans que personne ne se demande à quoi il servait.
+**Les trois `init.sh`.** À la racine du dépôt dormait un script qui installait Go 1.18 et **Hugo 0.97 extended**. Hugo, c’est le générateur qu’on utilisait *avant* Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé par la patrouille.
 
-Les deux autres `init.sh` lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans [son propre dépôt](https://github.com/SSPHub/Formation-polars). Même question posée à trois fichiers, deux réponses différentes — mais le même verdict.
+Les deux autres `init.sh` lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans [son propre dépôt](https://github.com/SSPHub/Formation-polars).
 
-**Les gros fichiers.** Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le **stockage S3 du SSP Cloud**, et le site pointe dessus. Git n’est pas fait pour ça.
+**Les gros fichiers.** Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le **stockage S3 du SSP Cloud**, et le site pointe dessus. Git n’est pas fait pour ça et le repo commence à être lourd.
 
-**L’arborescence.** Les dossiers portent enfin le nom des rubriques : `post/` est devenu `blog/`, `talk/` s’est réparti entre `event/` et `course/`, le CSS et le SCSS ont rejoint `assets/`. Ça paraît cosmétique, mais quand on cherche où ranger un nouveau contenu, ça change tout.
+**L’arborescence.** Les dossiers portent enfin le nom des rubriques : `post/` est devenu `blog/`, `talk/` s’est réparti entre `event/` et `course/`, le CSS et le SCSS ont rejoint `assets/`.
 
 > **TIP:**
 >
@@ -183,14 +188,18 @@ Les deux autres `init.sh` lançaient le tuto Polars sur le SSP Cloud. Ils sont d
 >
 > Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant `.llms.md` à l’URL.
 
+# Et un changement d’adresse : ssphub.netlify.app devient ssphub.fr
+
+Le site était déployé avant sur https://ssphub.netlify.app par facilité, comme cela permettait d’avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand même sur le fait d’avoir une adresse url qui fasse peu propre pour un réseau d’agents publics. On a donc décidé de sortir le (petit) porte-monnaie et d’acheter le nom de domaine \<ssphub.fr\>, détenu maintenant très officiellement par l’État français (himself), représenté par le MEFSIN (himself), représenté par l’Insee (himsel) (cf [le site de l’AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
+
+Le site a ainsi déménagé sur **[ssphub.fr](https://ssphub.fr)** à l’été 2026 par la fameuse [demande de tirage (PR) 173](https://github.com/InseeFrLab/ssphub/pull/173). On a au passage inséré une redirection de l’ancien nom de domaine vers le nouveau. <https://ssphub.netlify.app/project/2026_sndstools/> est redirigé vers <https://ssphub.fr/project/2026_sndstools/>.
+
 # Ce qu’il reste à faire
 
-Comme toujours, la v1 n’est pas la version finale. Les chantiers ouverts :
+Comme toujours, des chantiers restent ouverts :
 
-- **la version anglaise ne couvre pas le blog ni les événements.** C’est un choix pour l’instant, ça peut évoluer si le besoin se confirme ;
-- **la synchronisation automatique des fiches projets** : un mécanisme existe pour récupérer la documentation directement depuis les dépôts des projets, afin que les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est désactivé, parce qu’il ne marche pas encore assez bien ;
-- **le workflow de pré-prod** se déclenche encore sur une branche qui n’existe plus depuis le merge. En pratique, il ne tourne qu’à la main ;
-- et depuis cette refonte, le site a déménagé sur **[ssphub.fr](https://ssphub.fr)** — mais ça, c’est une autre histoire, et une autre PR.
+- **la version anglaise ne couvre pas le blog ni les événements.** C’est un choix pour l’instant;
+- **la synchronisation automatique des fiches projets** : un mécanisme existe pour récupérer la documentation directement depuis les dépôts des projets, afin que les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est désactivé, parce qu’il ne marche pas encore assez bien.
 
 # Et vous ?
 

@@ -4,7 +4,9 @@ Pour rappel, les informations qui sont diffusées sur ce blog n’engagent que l
 
 \
 
-##### Le site du SSPHub fait peau neuve
+![](./blog/2026_refonte/refonte.jpg)
+
+##### Le site du SSPHub fait peau neuve ou comment faire un site bilingue avec Quarto
 
 Le site du réseau accueille 30 fiches de projets innovants, une version anglaise et absorbe deux sites décommissionnés. Retour sur une refonte de 412 fichiers : les choix…
 

@@ -26,7 +26,9 @@ Une présentation du réseau est disponible sur la page [à propos](about.llms.m
 
 ## Les dernières actualités et contenus du réseau
 
-##### Le site du SSPHub fait peau neuve
+![](./blog/2026_refonte/refonte.jpg)
+
+##### Le site du SSPHub fait peau neuve ou comment faire un site bilingue avec Quarto
 
 Le site du réseau accueille 30 fiches de projets innovants, une version anglaise et absorbe deux sites décommissionnés. Retour sur une refonte de 412 fichiers : les choix…
 
@@ -52,7 +54,9 @@ Quelques présentations qui m’ont marqué lors des 12e Rencontres R, à Nantes
 
 L’ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.llms.md), tout comme les [événements](event.llms.md).
 
-##### Le site du SSPHub fait peau neuve
+![](./blog/2026_refonte/refonte.jpg)
+
+##### Le site du SSPHub fait peau neuve ou comment faire un site bilingue avec Quarto
 
 Le site du réseau accueille 30 fiches de projets innovants, une version anglaise et absorbe deux sites décommissionnés. Retour sur une refonte de 412 fichiers : les choix…
 
