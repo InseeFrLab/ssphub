@@ -285,29 +285,29 @@ pour déployer la prévisualisation automatiquement.
 :::
 
 
-# Le grand ménage
+# Et un peu de ménage
 
-Une refonte, c'est aussi l'occasion d'ouvrir les placards. Trois trouvailles.
+Une refonte, c'est aussi l'occasion de faire un peu de ménage.
 
 **Les trois `init.sh`.** À la racine du dépôt dormait un script qui installait
 Go 1.18 et **Hugo 0.97 extended**. Hugo, c'est le générateur qu'on utilisait
-*avant* Quarto. Le script avait survécu des années à la migration, sans que
-personne ne se demande à quoi il servait.
+*avant* Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé
+par la patrouille.
 
 Les deux autres `init.sh` lançaient le tuto Polars sur le SSP Cloud. Ils sont
 devenus inutiles le jour où le notebook a déménagé dans
 [son propre dépôt](https://github.com/SSPHub/Formation-polars).
-Même question posée à trois fichiers, deux réponses différentes — mais le même
-verdict.
+
 
 **Les gros fichiers.** Le dépôt versionnait des PDF de plusieurs mégaoctets et
 une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le
-**stockage S3 du SSP Cloud**, et le site pointe dessus. Git n'est pas fait pour ça.
+**stockage S3 du SSP Cloud**, et le site pointe dessus. Git n'est pas fait pour ça
+et le repo commence à être lourd.
 
 **L'arborescence.** Les dossiers portent enfin le nom des rubriques :
 `post/` est devenu `blog/`, `talk/` s'est réparti entre `event/` et `course/`,
-le CSS et le SCSS ont rejoint `assets/`. Ça paraît cosmétique, mais quand on cherche
-où ranger un nouveau contenu, ça change tout.
+le CSS et le SCSS ont rejoint `assets/`.
+
 
 ::: {.callout-tip collapse="true"}
 ## Pour les curieux : la centralisation des variables
@@ -332,20 +332,30 @@ que vous pouvez donner un post entier à lire à un assistant, en ajoutant
 `.llms.md` à l'URL.
 :::
 
+# Et un changement d'adresse : ssphub.netlify.app devient ssphub.fr
+
+Le site était déployé avant sur https://ssphub.netlify.app par facilité, comme cela permettait
+d'avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand
+même sur le fait d'avoir une adresse url qui fasse peu propre pour un réseau d'agents publics.
+On a donc décidé de sortir le (petit) porte-monnaie et d'acheter le nom de domaine <ssphub.fr>,
+détenu maintenant très officiellement par l'État français (himself), représenté par le MEFSIN (himself), représenté par l'Insee (himsel) (cf [le site de l'AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
+
+Le site a ainsi déménagé sur **[ssphub.fr](https://ssphub.fr)** à l'été 2026 par la
+fameuse [demande de tirage (PR) 173](https://github.com/InseeFrLab/ssphub/pull/173).
+On a au passage inséré une redirection de l'ancien nom de domaine vers le nouveau.
+<https://ssphub.netlify.app/project/2026_sndstools/> est redirigé
+vers <https://ssphub.fr/project/2026_sndstools/>.
+
 # Ce qu'il reste à faire
 
-Comme toujours, la v1 n'est pas la version finale. Les chantiers ouverts :
+Comme toujours, des chantiers restent ouverts :
 
 - **la version anglaise ne couvre pas le blog ni les événements.** C'est un choix
-  pour l'instant, ça peut évoluer si le besoin se confirme ;
+  pour l'instant;
 - **la synchronisation automatique des fiches projets** : un mécanisme existe pour
   récupérer la documentation directement depuis les dépôts des projets, afin que
-  les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est
-  désactivé, parce qu'il ne marche pas encore assez bien ;
-- **le workflow de pré-prod** se déclenche encore sur une branche qui n'existe plus
-  depuis le merge. En pratique, il ne tourne qu'à la main ;
-- et depuis cette refonte, le site a déménagé sur **[ssphub.fr](https://ssphub.fr)** —
-  mais ça, c'est une autre histoire, et une autre PR.
+  les fiches restent à jour toutes seules. Il est écrit, il est en place... et il est
+  désactivé, parce qu'il ne marche pas encore assez bien.
 
 # Et vous ?
 
