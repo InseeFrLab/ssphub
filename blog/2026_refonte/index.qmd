@@ -136,19 +136,22 @@ Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?
 Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer
 nativement deux langues**. C'est un sparadrap : l'issue
 [#275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto
-traîne depuis des années, plusieurs solutions communautaires cohabitent,
+traîne depuis des années, plusieurs solutions communautaires cohabitent et
 aucune n'est officielle.
 
 On a exploré deux pistes pour un profil intermédiaire en quarto comme moi. Les critères qui m'ont fait
-choisir `babelquarto` c'est 1/ **le lien page à page natif** et 2/ une **plus grande lisibilité des fichiers quarto**
- : il y a un fichier en français et un autre en anglais.
+choisir [`babelquarto`](https://docs.ropensci.org/babelquarto/) c'est 1/ **le lien page à page natif**
+et 2/ une **plus grande lisibilité des fichiers quarto**  : il y a un fichier en français
+ et un autre en anglais.
 
 Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous
-emmener sur *cette* fiche en anglais. Pas sur la page d'accueil anglaise.
+emmener sur *cette* fiche en anglais, pas sur la page d'accueil anglaise.
 La solution concurrente ne proposait à l'époque qu'un aiguillage à l'entrée du site : vous
-choisissez votre langue une fois, et ensuite vous êtes coincé.
+choisissez votre langue une fois et ensuite vous êtes coincé.
 **Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les
-désavantages que cela implique après en terme de technique**.
+désavantages que cela implique après en terme de technique**. L'autre solution a aussi
+des atouts, c'est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités
+à maintenir ensuite le site et un autre arbitrage est possible.
 
 
 ::: {.callout-note collapse="true"}
@@ -158,6 +161,13 @@ Voici plus en détail les deux candidats qu'on a regardés :
 
 **Les profils Quarto**
 
+- Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/docs/projects/profiles.html)
+ native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier `/en`
+ et le profil français dans le dossier par défaut). Pour ajouter des liens pages à page, il faut par ailleurs ajouter des filtres
+ Lua. C'est ce qu'un collègue a fait pour le site du cours [Python pour la data science](https://pythonds.linogaliana.fr/)
+ et qu'il a détaillé dans le fil de discussion de l'issue [#275 sus-nommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
+
+
 - ✅ C'est du Quarto natif : CI simple, `quarto preview` fonctionnel.
 - ❌ Pas de lien page à page.
 - ❌ nécessité d'utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique,
@@ -166,6 +176,13 @@ Voici plus en détail les deux candidats qu'on a regardés :
   qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
 
 **babelquarto**
+
+L'autre solution est d'utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/)
+développé par *R Open Science*. Le package permet, en ajoutant des spécifications dans le fichier
+`_ quarto.yml` de spécifier quelles langues coexistent. Il suffit ensuite de nommer les fichiers
+en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`.
+Le package lors du rendu du site va les détecter, les mettre dans un dossier `en/` et créer des
+liens pages à page pour basculer d'une langue à l'autre.
 
 - ✅ Le lien entre versions se construit tout seul : on n'écrit **rien** dans les liens.
 - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc perte du preview natif
@@ -181,11 +198,7 @@ posts de blog, les ateliers et les infolettres.
 
 Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.
 
-Les deux approches ne s'excluaient pas : **on utilise finalement les deux**,
-babelquarto pour les pages, les profils pour les navbars. Le tout se déclare
-dans `_quarto.yml` :
-
-```yaml
+```yaml filename="_quarto.yml"
 profile:
   default: fr
   group: [fr, en]
