@@ -316,7 +316,7 @@ pour déployer la prévisualisation automatiquement.
 Une refonte, c'est aussi l'occasion de faire un peu de ménage.
 
 **Les trois `init.sh`.** À la racine du dépôt dormait un script qui installait
-Go 1.18 et **Hugo 0.97 extended**. Hugo, c'est le générateur qu'on utilisait
+Go et Hugo, le générateur qu'on utilisait
 *avant* Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé
 par la patrouille.
 
