@@ -71,59 +71,63 @@ La vie n'étant qu'éternel recommencement, on a décidé de les inclure à nouv
 
 Dans l'idée, cela donne :
 
-> Un(e) chef(fe) : Il faut faire de la codification automatique avec de l'IA
-
-> Un(e) agent(e) : Mais bien sûr 😅.
-
+> Un(e) chef(fe)
+> Il faut faire de la codification automatique avec de l'IA
+>
+> Un(e) agent(e)
+> Mais bien sûr 😅.
 > _à lui/elle-même_: Mais je sais pas faire. Qui en a fait avant ?
-
-> Un(e) agent(e) : Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
-
-> Un(e) chef(fe) : Bien vu, jeune padawan !
+>
+> Un(e) agent(e)
+> Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
+>
+> Un(e) chef(fe)
+> Bien vu, jeune padawan !
+>
 
 Concrètement, on a repris les projets sur lesquels l'Insee ou des SSM ont travaillé de manière innovante.
 Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets**
 qui permet facilement de comprendre ce que le projet fait, où il en est,
- où est la documentation et où est le code, s'il est public.
+ où est la documentation et où est le code public.
  Les projets sont par ailleurs taggés par **catégories**. Cela permet de créer des listings
  pour **retrouver facilement des projets similaires**.
 
 Pour chaque projet, on a ainsi rempli ce tableau, échangé
 avec la personne qui en était à l'origine pour relire et mettre à jour son statut.
 Cette étape là, qui a demandé un peu de coordination et d'échanges entre intelligences humaines,
-a été relativement longue (environ deux semaines de travail).
+a été relativement longue (environ deux semaines de travail étalées sur de nombreuses semaines pour
+la partie coordination).
 
-À la fin, cela donne la présentation d'**une trentaine de projets innovants** menés dans le SSP.
+À la fin, cela donne la présentation d'**une trentaine de projets innovants**[^projetinnovant] menés dans le SSP.
 Nowcasting, images satellitaires, codification automatique de l'APE, webscraping
 pour l'IPC, données de cartes bancaires, packages d'accès aux données, détection d'atypies dans la
 DSN, ségrégation urbaine...
 
-La page [Projets](../../project.qmd) prend le temps d'expliquer
-**ce qu'on entend par « projet innovant »**.
+[^projetinnovant]: La page [projets](../../project.qmd) tente une définition de
+ce qu'on entend par « projet innovant ».
 
 Un point important : **cette liste n'est pas exhaustive.**
 Elle repose sur le volontariat. Si vous êtes vexé que votre projet n'y soit pas ou que vous
 avez mené un projet qui y a sa place, ouvrez une issue et proposez de l'ajouter ! Mon
-petit doigt me dit qu'avec l'IA maintenant cela se fait rapidement 😅.
-Sans rire, la marche à suivre est en bas de ce post et a été simplifiée - normalement.
+petit doigt me dit qu'avec l'IA maintenant cela se fait rapidement 😅 - cf la marche à suivre
+en bas de ce post.
 
 ## Deux sites nous rejoignent
 
-`ssplab.lab.sspcloud.fr` et `statoscope.wordpress.com` sont décommissionnés[^decommission].
+<https://ssplab.lab.sspcloud.fr> et <https://statoscope.wordpress.com> sont décommissionnés[^decommission].
 Au passage, on a fait un peu de ménage, supprimé le contenu trop ancien
  et **rapatrié les contenus encore d'actualité ici** : funathons, formations R
  et Observable, présentations, partenariats, billets.
 
-[^decommission]: Dans les faits, seul <https.ssplab.lab.sspcloud.fr> est redirigé vers <https://ssphub.fr>.
+[^decommission]: Dans les faits, seul <https://ssplab.lab.sspcloud.fr> est redirigé vers <https://ssphub.fr>.
 L'autre site n'a pas pu être décommissionné pour des raisons fort avouables (on a perdu les
 identifiants 😱).
 
 ## Une version anglaise partielle
 
-Comme il arrive que l'on ne soit pas seul au monde et d'avoir des interlocuteurs hors de France,
-une version anglaise des projets était une demande initiale.
-Il y a donc maintenant une **version anglaise** de l'accueil, de la présentation du réseau
-et des fiches projets.
+Il arrive que l'on ne soit pas seul au monde et d'avoir des interlocuteurs hors de France.
+une **version anglaise** des projets était  donc une demande initiale forte, avec aussi une traduction
+de la présentation du réseau.
 
 En revanche, le blog, les événements et les infolettres restent en français.
 Ce n'est pas (seulement) de la paresse : **on s'est dit que l'actualité franco-française
@@ -139,7 +143,8 @@ nativement deux langues**. C'est un sparadrap : l'issue
 traîne depuis des années, plusieurs solutions communautaires cohabitent et
 aucune n'est officielle.
 
-On a exploré deux pistes pour un profil intermédiaire en quarto comme moi. Les critères qui m'ont fait
+On a exploré deux pistes pour un profil intermédiaire en quarto comme moi : utiliser les profils de Quarto
+ou un package R fait exprès pour ceci, `babelquarto`. Les critères qui m'ont fait
 choisir [`babelquarto`](https://docs.ropensci.org/babelquarto/) c'est 1/ **le lien page à page natif**
 et 2/ une **plus grande lisibilité des fichiers quarto**  : il y a un fichier en français
  et un autre en anglais.
@@ -151,45 +156,46 @@ choisissez votre langue une fois et ensuite vous êtes coincé.
 **Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les
 désavantages que cela implique après en terme de technique**. L'autre solution a aussi
 des atouts, c'est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités
-à maintenir ensuite le site et un autre arbitrage est possible.
+à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !
 
 
 ::: {.callout-note collapse="true"}
-## Pour les curieux : le comparatif des options
+## Pour les curieux : un comparatif détaillé des options
 
 Voici plus en détail les deux candidats qu'on a regardés :
 
 **Les profils Quarto**
 
-- Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/docs/projects/profiles.html)
+Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/docs/projects/profiles.html)
  native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier `/en`
  et le profil français dans le dossier par défaut). Pour ajouter des liens pages à page, il faut par ailleurs ajouter des filtres
  Lua. C'est ce qu'un collègue a fait pour le site du cours [Python pour la data science](https://pythonds.linogaliana.fr/)
  et qu'il a détaillé dans le fil de discussion de l'issue [#275 sus-nommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
 
-
+Sur l'analyse coût bénéfice :
 - ✅ C'est du Quarto natif : CI simple, `quarto preview` fonctionnel.
 - ❌ Pas de lien page à page.
 - ❌ nécessité d'utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique,
-  alors que le site doit rester "simple" pour être maintenable plus facilement.
+  alors que le site doit rester "simple" pour être maintenable facilement.
 - ❌ L'écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}`
   qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
 
 **babelquarto**
 
 L'autre solution est d'utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/)
-développé par *R Open Science*. Le package permet, en ajoutant des spécifications dans le fichier
-`_ quarto.yml` de spécifier quelles langues coexistent. Il suffit ensuite de nommer les fichiers
+développé par *R Open Science*. Le package permet, de spécifier dans le fichier
+`_ quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers
 en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`.
-Le package lors du rendu du site va les détecter, les mettre dans un dossier `en/` et créer des
-liens pages à page pour basculer d'une langue à l'autre.
+Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue
+(ici seulement `en/`) et créer des liens pages à page pour basculer d'une langue à l'autre.
 
+Sur l'analyse coût bénéfice :
 - ✅ Le lien entre versions se construit tout seul : on n'écrit **rien** dans les liens.
 - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc perte du preview natif
   et surtout, le plus désagréable, adhérence à R.
 
-Même avec **babelquarto**, on a utilisé des profils Quarto pour permettre une version
-anglaise *partielle* :
+Même avec babelquarto, on a utilisé des profils Quarto pour permettre une version
+anglaise partielle :
 
 -  `_quarto-en.yml` n'expose que trois entrées : la page d'accueil, où sont présentés les projets,
 la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr.
@@ -198,7 +204,7 @@ posts de blog, les ateliers et les infolettres.
 
 Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.
 
-```yaml filename="_quarto.yml"
+```{yaml filename="_quarto.yml"}
 profile:
   default: fr
   group: [fr, en]
@@ -214,7 +220,7 @@ Exemple grandeur nature de babelquarto : le
 et qui m'a bien aidé.
 :::
 
-Au passage, on a ajouté un **script de traduction automatisé** grâce à `babeldown`.
+Au passage, on a ajouté un **script de traduction automatisé** grâce à [`babeldown`](https://docs.ropensci.org/babeldown/).
 Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant
 (à peu près) le YAML et les blocs de code.
 
