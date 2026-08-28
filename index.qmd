@@ -4,6 +4,7 @@ sidebar: false
 title-block-style: none
 css: assets/css/homepage.css
 page-layout: full
+comments: false
 listing:
   - id: project
     contents: project/**/index.qmd
