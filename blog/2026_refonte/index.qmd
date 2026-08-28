@@ -50,7 +50,7 @@ l'occasion d'un post de blog pour raconter les choix qui ont été faits - si ja
 
 Avant de toucher au "comment?", on a parlé du "pourquoi?".
 Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux
-quatre besoins suivant pour le site :
+quatre besoins suivants pour le site :
 
 ## L'infolettre passe en mode archive
 
@@ -58,7 +58,7 @@ L'infolettre, c'est historiquement le coeur du réseau. Mais elle vit désormais
 **par mail et sur Tchap** là où sont les gens. Le site n'a plus besoin d'en être
 la vitrine mais plutôt une archive 👵.
 
-**Rien ne se perd, tout se transforme** comme disait Lavoisier:
+**Rien ne se perd, tout se transforme** comme disait Lavoisier :
 [tous les numéros](../../infolettre/infolettre.qmd) sont toujours bien listés sur le site,
 jusqu'aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».
 
@@ -76,7 +76,7 @@ Dans l'idée, cela donne :
 >
 > **Un(e) agent(e)**\
 > Mais bien sûr 😅.\
-> _à lui/elle-même_: Mais je sais pas faire. Qui en a fait avant ?
+> _à lui/elle-même_ : Mais je sais pas faire. Qui en a fait avant ?
 >
 > **Un(e) agent(e)**\
 > Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
@@ -243,7 +243,7 @@ babeldown::deepl_translate(
 ```
 
 Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi
- systématiquement de la traduction parce qu'ils sont liés au modèle de tableau utilisé :
+ systématiquement de la traduction parce qu'elles sont liées au modèle de tableau utilisé :
  trop de `---` dans les tableaux, des caractères
  spéciaux insérés qui cassent la phase de rendu : `\-` par exemple et `{{\< fa brands`.
 
@@ -365,10 +365,10 @@ signup:
 
 Le site était déployé avant sur <https://ssphub.netlify.app> par facilité, comme cela permettait
 d'avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand
-même sur le fait d'avoir une adresse url qui fasse peu propre pour un réseau d'agents publics.
+même sur le fait d'avoir une adresse URL qui fasse peu propre pour un réseau d'agents publics.
 On a donc décidé de sortir le (petit) porte-monnaie et d'acheter le nom de domaine [ssphub.fr](https://ssphub.fr),
 détenu maintenant très officiellement par l'État français (*himself*), représenté par le MEFSIN (*himself*),
-représenté par l'Insee (*himself*) (cf [le site de l'AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
+représenté par l'Insee (*himself*) (*cf.* [le site de l'AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
 
 Le site a ainsi déménagé sur **[ssphub.fr](https://ssphub.fr)** à l'été 2026 par la
 fameuse [demande de tirage (PR) 173](https://github.com/InseeFrLab/ssphub/pull/173).
@@ -398,7 +398,7 @@ La refonte du site a pris **environ deux mois de travail**, étalé sur un an !
 - environ deux semaines pour chercher les informations sur les projets innovants, les inclure ;
 - une semaine de travail pour la relecture des projets, les relances, les échanges ;
 - une semaine de travail technique sur le site, améliorer le déploiement ;
-- enfin quelques jours de choix de nom de domaine et de gestion lié à la bascule ;
+- enfin quelques jours de choix de nom de domaine et de gestion pour transférer le site sur son nouvel URL ;
 - et le temps d'écriture de ce post de blog et de la communication à faire ensuite autour des projets 😉
 (un gros jour pour ce post, à voir pour la suite !).
 
