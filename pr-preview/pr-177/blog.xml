@@ -28,26 +28,31 @@
 <li>une <strong>version anglaise</strong> du site ;</li>
 <li>et les contenus de <strong>deux anciens sites</strong> qui nous rejoignent avec leur mise hors service ⚰️.</li>
 </ul>
-<p>Derrière ces trois lignes, il y a une <a href="https://github.com/InseeFrLab/ssphub/pull/112"><em>pull request</em></a> de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées. C’était l’occasion de reprendre pas mal de choses et donc l’occasion d’un post de blog pour raconter les choix qui ont été faits - si jamais cela vosu est utile aussi.</p>
+<p>Derrière ces trois lignes, il y a une <a href="https://github.com/InseeFrLab/ssphub/pull/112"><em>pull request</em></a> de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées. C’était l’occasion de reprendre pas mal de choses et donc l’occasion d’un post de blog pour raconter les choix qui ont été faits - si jamais cela vous est utile aussi.</p>
 </section>
 <section id="que-veut-on-voir-sur-ce-site" class="level1">
 <h1>Que veut-on voir sur ce site ?</h1>
-<p>Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatres besoins suivant pour le site :</p>
+<p>Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatre besoins suivant pour le site :</p>
 <section id="linfolettre-passe-en-mode-archive" class="level2">
 <h2 class="anchored" data-anchor-id="linfolettre-passe-en-mode-archive">L’infolettre passe en mode archive</h2>
-<p>L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit maintenant plus <strong>par mail et sur Tchap</strong> là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.</p>
+<p>L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit désormais surtout <strong>par mail et sur Tchap</strong> là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.</p>
 <p><strong>Rien ne se perd, tout se transforme</strong> comme disait Lavoisier: <a href="../../infolettre/infolettre.html">tous les numéros</a> sont toujours bien listés sur le site, jusqu’aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».</p>
 </section>
 <section id="les-projets-innovants-deviennent-la-vitrine" class="level2">
 <h2 class="anchored" data-anchor-id="les-projets-innovants-deviennent-la-vitrine">Les projets innovants deviennent la vitrine</h2>
 <p>C’est le gros morceau. On a voulu (re)mettre en avant <strong>ce que l’on fait au sein du réseau</strong> et avoir un endroit où partager nos projets.</p>
-<p>Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés. La vie n’étant qu’éternel recommencement, on a décidé de les inclure à nouveau.</p>
+<p>Des projets étaient autrefois affichés sur le site avant d’en disparaître. La vie n’étant qu’éternel recommencement, on a décidé de les inclure à nouveau.</p>
 <p>Dans l’idée, cela donne :</p>
 <blockquote class="blockquote">
-<p>Un(e) chef(fe) Il faut faire de la codification automatique avec de l’IA</p>
-<p>Un(e) agent(e) Mais bien sûr 😅. <em>à lui/elle-même</em>: Mais je sais pas faire. Qui en a fait avant ?</p>
-<p>Un(e) agent(e) Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?</p>
-<p>Un(e) chef(fe) Bien vu, jeune padawan !</p>
+<p><strong>Un(e) chef(fe)</strong><br>
+Il faut faire de la codification automatique avec de l’IA</p>
+<p><strong>Un(e) agent(e)</strong><br>
+Mais bien sûr 😅.<br>
+<em>à lui/elle-même</em>: Mais je sais pas faire. Qui en a fait avant ?</p>
+<p><strong>Un(e) agent(e)</strong><br>
+Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?</p>
+<p><strong>Un(e) chef(fe)</strong><br>
+Bien vu, jeune padawan !</p>
 </blockquote>
 <p>Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans <strong>un tableau formatté pour tous les projets</strong> qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code public. Les projets sont par ailleurs taggés par <strong>catégories</strong>. Cela permet de créer des listings pour <strong>retrouver facilement des projets similaires</strong>.</p>
 <p>Pour chaque projet, on a ainsi rempli ce tableau, échangé avec la personne qui en était à l’origine pour relire et mettre à jour son statut. Cette étape là, qui a demandé un peu de coordination et d’échanges entre intelligences humaines, a été relativement longue (environ deux semaines de travail étalées sur de nombreuses semaines pour la partie coordination).</p>
@@ -60,16 +65,16 @@
 </section>
 <section id="une-version-anglaise-partielle" class="level2">
 <h2 class="anchored" data-anchor-id="une-version-anglaise-partielle">Une version anglaise partielle</h2>
-<p>Il arrive que l’on ne soit pas seul au monde et d’avoir des interlocuteurs hors de France. une <strong>version anglaise</strong> des projets était donc une demande initiale forte, avec aussi une traduction de la présentation du réseau.</p>
+<p>Il arrive qu’on ne soit pas seul au monde et qu’on ait des interlocuteurs hors de France. Une <strong>version anglaise</strong> des projets était donc une demande initiale forte, avec aussi une traduction de la présentation du réseau.</p>
 <p>En revanche, le blog, les événements et les infolettres restent en français. Ce n’est pas (seulement) de la paresse : <strong>on s’est dit que l’actualité franco-française du SSP n’intéresserait pas forcément d’autres personnes</strong> (peut-être à tort).</p>
 </section>
 </section>
 <section id="un-site-bilingue-ce-nest-pas-si-simple" class="level1">
 <h1>Un site bilingue, ce n’est pas si simple</h1>
 <p>Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?</p>
-<p>Le site tourne sous <a href="https://quarto.org">Quarto</a>. Et <strong>Quarto ne sait pas gérer nativement deux langues</strong>. C’est un sparadrap : l’issue <a href="https://github.com/quarto-dev/quarto-cli/issues/275">#275</a> du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent et aucune n’est officielle.</p>
+<p>Le site tourne sous <a href="https://quarto.org">Quarto</a>. Et <strong>Quarto ne sait pas gérer nativement deux langues</strong>. C’est un serpent de mer : l’issue <a href="https://github.com/quarto-dev/quarto-cli/issues/275">#275</a> du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent et aucune n’est officielle.</p>
 <p>On a exploré deux pistes pour un profil intermédiaire en quarto comme moi : utiliser les profils de Quarto ou un package R fait exprès pour ceci, <code>babelquarto</code>. Les critères qui m’ont fait choisir <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> c’est 1/ <strong>le lien page à page natif</strong> et 2/ une <strong>plus grande lisibilité des fichiers quarto</strong> : il y a un fichier en français et un autre en anglais.</p>
-<p>Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur <em>cette</em> fiche en anglais, pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois et ensuite vous êtes coincé. <strong>Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après en terme de technique</strong>. L’autre solution a aussi des atouts, c’est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !</p>
+<p>Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur <em>cette</em> fiche en anglais, pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois et ensuite vous êtes coincé. <strong>Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après techniquement</strong>. L’autre solution a aussi des atouts, c’est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -85,43 +90,174 @@
 <p>Voici plus en détail les deux candidats qu’on a regardés :</p>
 <p><strong>Les profils Quarto</strong></p>
 <p>Concrètement, cela utilise la fonctionnalité de <a href="https://quarto.org/docs/projects/profiles.html">profils</a> native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier <code>/en</code> et le profil français dans le dossier par défaut). Pour ajouter des liens pages à page, il faut par ailleurs ajouter des filtres Lua. C’est ce qu’un collègue a fait pour le site du cours <a href="https://pythonds.linogaliana.fr/">Python pour la data science</a> et qu’il a détaillé dans le fil de discussion de l’issue <a href="https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583">#275 sus-nommée</a>.</p>
-<p>Sur l’analyse coût bénéfice : - ✅ C’est du Quarto natif : CI simple, <code>quarto preview</code> fonctionnel. - ❌ Pas de lien page à page. - ❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable facilement. - ❌ L’écriture est alourdie par les divs conditionnelles <code>::: {when-profile="fr"}</code> qui, je trouve, polluent les <code>.qmd</code> et rendent la maintenance plus compliquée.</p>
+<p>Sur l’analyse coût bénéfice :</p>
+<ul>
+<li>✅ C’est du Quarto natif : CI simple, <code>quarto preview</code> fonctionnel.</li>
+<li>❌ Pas de lien page à page.</li>
+<li>❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable facilement.</li>
+<li>❌ L’écriture est alourdie par les divs conditionnelles <code>::: {when-profile="fr"}</code> qui, je trouve, polluent les <code>.qmd</code> et rendent la maintenance plus compliquée.</li>
+</ul>
 <p><strong>babelquarto</strong></p>
-<p>L’autre solution est d’utiliser le package R <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> développé par <em>R Open Science</em>. Le package permet, de spécifier dans le fichier <code>_ quarto.yml</code> quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en <code>index.qmd</code> et les fichiers anglais équivalents en <code>index.en.qmd</code>. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement <code>en/</code>) et créer des liens pages à page pour basculer d’une langue à l’autre.</p>
-<p>Sur l’analyse coût bénéfice : - ✅ Le lien entre versions se construit tout seul : on n’écrit <strong>rien</strong> dans les liens. - ❌ Le rendu ne passe plus par <code>quarto render</code> mais par R — donc perte du preview natif et surtout, le plus désagréable, adhérence à R.</p>
+<p>L’autre solution est d’utiliser le package R <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> développé par <em>R Open Science</em>. Le package permet de spécifier dans le fichier <code>_quarto.yml</code> quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en <code>index.qmd</code> et les fichiers anglais équivalents en <code>index.en.qmd</code>. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement <code>en/</code>) et créer des liens pages à page pour basculer d’une langue à l’autre.</p>
+<p>Sur l’analyse coût bénéfice :</p>
+<ul>
+<li>✅ Le lien entre versions se construit tout seul : on n’écrit <strong>rien</strong> dans les liens.</li>
+<li>❌ Le rendu ne passe plus par <code>quarto render</code> mais par R — donc perte du preview natif et surtout, le plus désagréable, adhérence à R.</li>
+</ul>
 <p>Même avec babelquarto, on a utilisé des profils Quarto pour permettre une version anglaise partielle :</p>
 <ul>
 <li><code>_quarto-en.yml</code> n’expose que trois entrées : la page d’accueil, où sont présentés les projets, la description du réseau et un lien vers le 💓 SSPCloud 💓 bien sûr.</li>
 <li>La version française, configurée dans <code>_quarto-fr.yml</code>, contient en plus les posts de blog, les ateliers et les infolettres.</li>
 </ul>
 <p>Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.</p>
-<p>```{yaml filename=“_quarto.yml”} profile: default: fr group: [fr, en]</p>
-<p>babelquarto: languagelinks: navbar mainlanguage: “fr” languages: [“en”]</p>
-<pre><code>
-Exemple grandeur nature de babelquarto : le
-[devguide de rOpenSci](https://devguide.ropensci.org/) dont le code source est ouvert
-et qui m'a bien aidé.
-:::
-
-Au passage, on a ajouté un **script de traduction automatisé** grâce à [`babeldown`](https://docs.ropensci.org/babeldown/).
-Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant
-(à peu près) le YAML et les blocs de code.
-
-::: {.callout-tip collapse="true"}
-## Pour les curieux : le script de traduction
-
-Une trentaine de lignes de R et une clé d'API DeepL dans les variables d'environnement :
-
-```r
-babeldown::deepl_translate(
-  path = input_path,
-  out_path = out_path,
-  source_lang = "FR",
-  target_lang = "EN-GB",
-  formality = "default",
-  yaml_fields = c("title", "description", "categories")
-)</code></pre>
-<p>Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de <code>---</code> dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : <code>\-</code> par exemple et <code>{{\&lt; fa brands</code>.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>_quarto.yml</strong></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-filename="_quarto.yml" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">profile</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-2"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">default</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> fr</span></span>
+<span id="cb1-3"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">group</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">[</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">fr</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">,</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> en</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">]</span></span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">babelquarto</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span></span>
+<span id="cb1-6"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">languagelinks</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> navbar</span></span>
+<span id="cb1-7"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mainlanguage</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"fr"</span></span>
+<span id="cb1-8"><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">languages</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">:</span><span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;"> </span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">[</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"en"</span><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">]</span></span></code></pre></div></div>
+</div>
+<p>Exemple grandeur nature de babelquarto : le <a href="https://devguide.ropensci.org/">devguide de rOpenSci</a> dont le code source est ouvert et qui m’a bien aidé.</p>
+</div>
+</div>
+</div>
+<p>Au passage, on a ajouté un <strong>script de traduction automatisé</strong> grâce à <a href="https://docs.ropensci.org/babeldown/"><code>babeldown</code></a>. Cela envoie le <code>.qmd</code> à traduire à DeepL et récupère un <code>.qmd</code> traduit, en préservant (à peu près) le YAML et les blocs de code.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Astuce</span>Pour les curieux : le script de traduction
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Une trentaine de lignes de R et une clé d’API DeepL dans les variables d’environnement :</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">babeldown<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">deepl_translate</span>(</span>
+<span id="cb2-2">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">path =</span> input_path,</span>
+<span id="cb2-3">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">out_path =</span> out_path,</span>
+<span id="cb2-4">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">source_lang =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"FR"</span>,</span>
+<span id="cb2-5">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">target_lang =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"EN-GB"</span>,</span>
+<span id="cb2-6">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">formality =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"default"</span>,</span>
+<span id="cb2-7">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">yaml_fields =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"title"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"description"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"categories"</span>)</span>
+<span id="cb2-8">)</span></code></pre></div></div>
+<p>Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction parce qu’ils sont liés au modèle de tableau utilisé : trop de <code>---</code> dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : <code>\-</code> par exemple et <code>{{\&lt; fa brands</code>.</p>
 <p>L’usage de ce script fait <strong>gagner un temps considérable sur la mise en forme</strong> et on ne fait que <strong>relire la traduction</strong>, ce qui en fait un exercice rapide. Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont à reprendre à la main !).</p>
 </div>
 </div>
@@ -138,7 +274,7 @@ babeldown::deepl_translate(
 <p>Tout est documenté dans le <a href="https://github.com/InseeFrLab/ssphub/blob/main/README.md">README</a>.</p>
 <p>Et surtout, il y a <strong>la prévisualisation automatique</strong> : dès que vous proposez une modification par une demande de tirage (pull request), une version consultable du site est construite et publiée sur internet. Vous voyez votre ajout en ligne, avec sa vraie mise en page, avant qu’il ne soit visible sur le site.</p>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -147,13 +283,13 @@ babeldown::deepl_translate(
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Les scripts vivent dans <code>scripts/</code>, numérotés par ordre d’usage :</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="co" style="color: #5E5E5E;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># 1 - Créer une nouvelle fiche projet</span></span>
-<span id="cb2-2"><span class="bu" style="color: null;
+<span id="cb3-2"><span class="bu" style="color: null;
 background-color: null;
 font-style: inherit;">cd</span> scripts <span class="kw" style="color: #003B4F;
 background-color: null;
@@ -163,25 +299,25 @@ background-color: null;
 font-style: inherit;">uv</span> run 1_template.py <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"2026_mon_projet"</span></span>
-<span id="cb2-3"></span>
-<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+<span id="cb3-3"></span>
+<span id="cb3-4"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># Rendre le site</span></span>
-<span id="cb2-5"><span class="ex" style="color: null;
+<span id="cb3-5"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">uv</span> run Rscript scripts/1_render.R</span>
-<span id="cb2-6"></span>
-<span id="cb2-7"><span class="co" style="color: #5E5E5E;
+<span id="cb3-6"></span>
+<span id="cb3-7"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># 2 - Traduire une fiche projet</span></span>
-<span id="cb2-8"><span class="ex" style="color: null;
+<span id="cb3-8"><span class="ex" style="color: null;
 background-color: null;
-font-style: inherit;">uv</span> run Rscript scripts/2_translate.R 2026_mon_projet</span>
-<span id="cb2-9"></span>
-<span id="cb2-10"><span class="co" style="color: #5E5E5E;
+font-style: inherit;">Rscript</span> scripts/2_translate.R 2026_mon_projet</span>
+<span id="cb3-9"></span>
+<span id="cb3-10"><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;"># 3 - Rendre et prévisualiser en local</span></span>
-<span id="cb2-11"><span class="ex" style="color: null;
+<span id="cb3-11"><span class="ex" style="color: null;
 background-color: null;
 font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R</span></code></pre></div></div>
 <p><strong>C’est un mélange de R et de Python</strong> et, honnêtement, je ne trouve pas cela très beau. Mais comme on dit, tant pis c’est comme cela 🫠.</p>
@@ -233,13 +369,13 @@ font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R</span></c
 <p><strong>L’arborescence</strong>: Les dossiers portent enfin le nom des rubriques : <code>post/</code> est devenu <code>blog/</code>, <code>talk/</code> s’est réparti entre <code>event/</code> et <code>course/</code>, le CSS et le SCSS ont rejoint <code>assets/</code>.</p>
 <p><strong>LLMs</strong>: Autre petit ajout de la refonte : <code>llms-txt: true</code> dans <code>_quarto.yml</code>, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant <code>.llms.md</code> à l’URL : <a href="https://ssphub.fr/project.llms.md" class="uri">https://ssphub.fr/project.llms.md</a> est la version allégée pour IA de <a href="https://ssphub.fr/project" class="uri">https://ssphub.fr/project</a>.</p>
 <p><strong>Centralisation des variables</strong>: Toutes les adresses et liens du réseau vivent maintenant dans <code>_variables.yml</code> et s’appellent dans les <code>.qmd</code> avec <code>contact-ssphub@insee.fr</code>. Cela permet de mettre à jour des liens facilement partout dans le site.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><span class="fu" style="color: #4758AB;
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">contact</span><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">:</span></span>
-<span id="cb3-2"><span class="at" style="color: #657422;
+<span id="cb4-2"><span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -249,7 +385,7 @@ font-weight: bold;
 font-style: inherit;">:</span><span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;"> &lt;contact-ssphub@insee.fr&gt;</span></span>
-<span id="cb3-3"><span class="at" style="color: #657422;
+<span id="cb4-3"><span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -261,14 +397,14 @@ background-color: null;
 font-style: inherit;"> https://tchap.gouv.fr/</span><span class="co" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">#/room/#ssphub:agent.finances.tchap.gouv.fr</span></span>
-<span id="cb3-4"></span>
-<span id="cb3-5"><span class="fu" style="color: #4758AB;
+<span id="cb4-4"></span>
+<span id="cb4-5"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">signup</span><span class="kw" style="color: #003B4F;
 background-color: null;
 font-weight: bold;
 font-style: inherit;">:</span></span>
-<span id="cb3-6"><span class="at" style="color: #657422;
+<span id="cb4-6"><span class="at" style="color: #657422;
 background-color: null;
 font-style: inherit;">  </span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -292,7 +428,7 @@ font-style: inherit;"> https://grist.numerique.gouv.fr/o/ssphub/forms/...</span>
 <li><strong>la synchronisation automatique des fiches projets</strong> : un mécanisme existe pour récupérer la documentation directement depuis les dépôts des projets, afin que les fiches restent à jour toutes seules. Il est écrit, il est en place… et il est désactivé, parce qu’il ne marche pas encore assez bien.</li>
 </ul>
 <div class="callout callout-style-default callout-note callout-titled" title="Temps">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -301,17 +437,17 @@ font-style: inherit;"> https://grist.numerique.gouv.fr/o/ssphub/forms/...</span>
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Le travail de refonte global du site a pris <strong>environ deux mois de travail</strong>, étalé sur un an !</p>
 <ul>
-<li>environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu, rappatrier ce qui serait à rappatrier, supprimer le reste ;</li>
+<li>environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu, rapatrier ce qui serait à rapatrier, supprimer le reste ;</li>
 <li>environ une semaine de travail sur le cadrage de la refonte du site, monter une expérimentation et la valider ;</li>
 <li>environ deux semaines pour chercher les informations sur les projets innovants, les inclure ;</li>
 <li>une semaine de travail pour la relecture des projets, les relances, les échanges ;</li>
 <li>une semaine de travail technique sur le site, améliorer le déploiement ;</li>
 <li>enfin quelques jours de choix de nom de domaine et de gestion lié à la bascule ;</li>
-<li>et le temps d’écriture de ce blog de post et de la communication à faire ensuite autour des projets 😉.</li>
+<li>et le temps d’écriture de ce post de blog et de la communication à faire ensuite autour des projets 😉 (un gros jour pour ce post, à voir pour la suite !).</li>
 </ul>
 </div>
 </div>
@@ -672,7 +808,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="3776ae22" class="cell">
+<div id="3cf555c5" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -863,7 +999,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="66a69edb" class="cell">
+<div id="a754d304" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1754,7 +1890,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="0eec65b9" class="cell">
+<div id="bf3d182f" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>

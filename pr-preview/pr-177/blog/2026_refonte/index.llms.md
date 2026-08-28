@@ -6,15 +6,15 @@ Si vous êtes déjà venus ici, vous avez dû remarquer que **le site a changé 
 - une **version anglaise** du site ;
 - et les contenus de **deux anciens sites** qui nous rejoignent avec leur mise hors service ⚰️.
 
-Derrière ces trois lignes, il y a une [*pull request*](https://github.com/InseeFrLab/ssphub/pull/112) de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées. C’était l’occasion de reprendre pas mal de choses et donc l’occasion d’un post de blog pour raconter les choix qui ont été faits - si jamais cela vosu est utile aussi.
+Derrière ces trois lignes, il y a une [*pull request*](https://github.com/InseeFrLab/ssphub/pull/112) de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées. C’était l’occasion de reprendre pas mal de choses et donc l’occasion d’un post de blog pour raconter les choix qui ont été faits - si jamais cela vous est utile aussi.
 
 # Que veut-on voir sur ce site ?
 
-Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatres besoins suivant pour le site :
+Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatre besoins suivant pour le site :
 
 ## L’infolettre passe en mode archive
 
-L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit maintenant plus **par mail et sur Tchap** là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.
+L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit désormais surtout **par mail et sur Tchap** là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.
 
 **Rien ne se perd, tout se transforme** comme disait Lavoisier: [tous les numéros](../../infolettre/infolettre.llms.md) sont toujours bien listés sur le site, jusqu’aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».
 
@@ -22,17 +22,22 @@ L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit mainte
 
 C’est le gros morceau. On a voulu (re)mettre en avant **ce que l’on fait au sein du réseau** et avoir un endroit où partager nos projets.
 
-Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés. La vie n’étant qu’éternel recommencement, on a décidé de les inclure à nouveau.
+Des projets étaient autrefois affichés sur le site avant d’en disparaître. La vie n’étant qu’éternel recommencement, on a décidé de les inclure à nouveau.
 
 Dans l’idée, cela donne :
 
-> Un(e) chef(fe) Il faut faire de la codification automatique avec de l’IA
+> **Un(e) chef(fe)**\
+> Il faut faire de la codification automatique avec de l’IA
 >
-> Un(e) agent(e) Mais bien sûr 😅. *à lui/elle-même*: Mais je sais pas faire. Qui en a fait avant ?
+> **Un(e) agent(e)**\
+> Mais bien sûr 😅.\
+> *à lui/elle-même*: Mais je sais pas faire. Qui en a fait avant ?
 >
-> Un(e) agent(e) Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
+> **Un(e) agent(e)**\
+> Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
 >
-> Un(e) chef(fe) Bien vu, jeune padawan !
+> **Un(e) chef(fe)**\
+> Bien vu, jeune padawan !
 
 Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets** qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code public. Les projets sont par ailleurs taggés par **catégories**. Cela permet de créer des listings pour **retrouver facilement des projets similaires**.
 
@@ -48,7 +53,7 @@ Un point important : **cette liste n’est pas exhaustive.** Elle repose sur le 
 
 ## Une version anglaise partielle
 
-Il arrive que l’on ne soit pas seul au monde et d’avoir des interlocuteurs hors de France. une **version anglaise** des projets était donc une demande initiale forte, avec aussi une traduction de la présentation du réseau.
+Il arrive qu’on ne soit pas seul au monde et qu’on ait des interlocuteurs hors de France. Une **version anglaise** des projets était donc une demande initiale forte, avec aussi une traduction de la présentation du réseau.
 
 En revanche, le blog, les événements et les infolettres restent en français. Ce n’est pas (seulement) de la paresse : **on s’est dit que l’actualité franco-française du SSP n’intéresserait pas forcément d’autres personnes** (peut-être à tort).
 
@@ -56,11 +61,11 @@ En revanche, le blog, les événements et les infolettres restent en français. 
 
 Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?
 
-Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer nativement deux langues**. C’est un sparadrap : l’issue [\#275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent et aucune n’est officielle.
+Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer nativement deux langues**. C’est un serpent de mer : l’issue [\#275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent et aucune n’est officielle.
 
 On a exploré deux pistes pour un profil intermédiaire en quarto comme moi : utiliser les profils de Quarto ou un package R fait exprès pour ceci, `babelquarto`. Les critères qui m’ont fait choisir [`babelquarto`](https://docs.ropensci.org/babelquarto/) c’est 1/ **le lien page à page natif** et 2/ une **plus grande lisibilité des fichiers quarto** : il y a un fichier en français et un autre en anglais.
 
-Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur *cette* fiche en anglais, pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois et ensuite vous êtes coincé. **Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après en terme de technique**. L’autre solution a aussi des atouts, c’est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !
+Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur *cette* fiche en anglais, pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois et ensuite vous êtes coincé. **Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après techniquement**. L’autre solution a aussi des atouts, c’est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !
 
 > **NOTE:**
 >
@@ -70,13 +75,21 @@ Concrètement : quand vous lisez une fiche projet en français, un bouton doit v
 >
 > Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/docs/projects/profiles.html) native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier `/en` et le profil français dans le dossier par défaut). Pour ajouter des liens pages à page, il faut par ailleurs ajouter des filtres Lua. C’est ce qu’un collègue a fait pour le site du cours [Python pour la data science](https://pythonds.linogaliana.fr/) et qu’il a détaillé dans le fil de discussion de l’issue [\#275 sus-nommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
 >
-> Sur l’analyse coût bénéfice : - ✅ C’est du Quarto natif : CI simple, `quarto preview` fonctionnel. - ❌ Pas de lien page à page. - ❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable facilement. - ❌ L’écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}` qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
+> Sur l’analyse coût bénéfice :
+>
+> - ✅ C’est du Quarto natif : CI simple, `quarto preview` fonctionnel.
+> - ❌ Pas de lien page à page.
+> - ❌ nécessité d’utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique, alors que le site doit rester “simple” pour être maintenable facilement.
+> - ❌ L’écriture est alourdie par les divs conditionnelles `::: {when-profile="fr"}` qui, je trouve, polluent les `.qmd` et rendent la maintenance plus compliquée.
 >
 > **babelquarto**
 >
-> L’autre solution est d’utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/) développé par *R Open Science*. Le package permet, de spécifier dans le fichier `_ quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement `en/`) et créer des liens pages à page pour basculer d’une langue à l’autre.
+> L’autre solution est d’utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/) développé par *R Open Science*. Le package permet de spécifier dans le fichier `_quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement `en/`) et créer des liens pages à page pour basculer d’une langue à l’autre.
 >
-> Sur l’analyse coût bénéfice : - ✅ Le lien entre versions se construit tout seul : on n’écrit **rien** dans les liens. - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc perte du preview natif et surtout, le plus désagréable, adhérence à R.
+> Sur l’analyse coût bénéfice :
+>
+> - ✅ Le lien entre versions se construit tout seul : on n’écrit **rien** dans les liens.
+> - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc perte du preview natif et surtout, le plus désagréable, adhérence à R.
 >
 > Même avec babelquarto, on a utilisé des profils Quarto pour permettre une version anglaise partielle :
 >
@@ -85,35 +98,37 @@ Concrètement : quand vous lisez une fiche projet en français, un bouton doit v
 >
 > Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.
 >
-> \`\`\`{yaml filename=“\_quarto.yml”} profile: default: fr group: \[fr, en\]
+> ``` yaml
+> profile:
+>   default: fr
+>   group: [fr, en]
 >
-> babelquarto: languagelinks: navbar mainlanguage: “fr” languages: \[“en”\]
+> babelquarto:
+>   languagelinks: navbar
+>   mainlanguage: "fr"
+>   languages: ["en"]
+> ```
 >
->     Exemple grandeur nature de babelquarto : le
->     [devguide de rOpenSci](https://devguide.ropensci.org/) dont le code source est ouvert
->     et qui m'a bien aidé.
->     :::
+> Exemple grandeur nature de babelquarto : le [devguide de rOpenSci](https://devguide.ropensci.org/) dont le code source est ouvert et qui m’a bien aidé.
+
+Au passage, on a ajouté un **script de traduction automatisé** grâce à [`babeldown`](https://docs.ropensci.org/babeldown/). Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant (à peu près) le YAML et les blocs de code.
+
+> **TIP:**
 >
->     Au passage, on a ajouté un **script de traduction automatisé** grâce à [`babeldown`](https://docs.ropensci.org/babeldown/).
->     Cela envoie le `.qmd` à traduire à DeepL et récupère un `.qmd` traduit, en préservant
->     (à peu près) le YAML et les blocs de code.
+> Une trentaine de lignes de R et une clé d’API DeepL dans les variables d’environnement :
 >
->     ::: {.callout-tip collapse="true"}
->     ## Pour les curieux : le script de traduction
+> ``` r
+> babeldown::deepl_translate(
+>   path = input_path,
+>   out_path = out_path,
+>   source_lang = "FR",
+>   target_lang = "EN-GB",
+>   formality = "default",
+>   yaml_fields = c("title", "description", "categories")
+> )
+> ```
 >
->     Une trentaine de lignes de R et une clé d'API DeepL dans les variables d'environnement :
->
->     ```r
->     babeldown::deepl_translate(
->       path = input_path,
->       out_path = out_path,
->       source_lang = "FR",
->       target_lang = "EN-GB",
->       formality = "default",
->       yaml_fields = c("title", "description", "categories")
->     )
->
-> Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction par qu’ils sont liés au modèle de tableau utilisé : trop de `---` dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
+> Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction parce qu’ils sont liés au modèle de tableau utilisé : trop de `---` dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
 >
 > L’usage de ce script fait **gagner un temps considérable sur la mise en forme** et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide. Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont à reprendre à la main !).
 
@@ -141,7 +156,7 @@ Et surtout, il y a **la prévisualisation automatique** : dès que vous proposez
 > uv run Rscript scripts/1_render.R
 >
 > # 2 - Traduire une fiche projet
-> uv run Rscript scripts/2_translate.R 2026_mon_projet
+> Rscript scripts/2_translate.R 2026_mon_projet
 >
 > # 3 - Rendre et prévisualiser en local
 > uv run Rscript scripts/3_render_preview.R
@@ -205,13 +220,13 @@ Comme toujours, des chantiers restent ouverts :
 >
 > Le travail de refonte global du site a pris **environ deux mois de travail**, étalé sur un an !
 >
-> - environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu, rappatrier ce qui serait à rappatrier, supprimer le reste ;
+> - environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu, rapatrier ce qui serait à rapatrier, supprimer le reste ;
 > - environ une semaine de travail sur le cadrage de la refonte du site, monter une expérimentation et la valider ;
 > - environ deux semaines pour chercher les informations sur les projets innovants, les inclure ;
 > - une semaine de travail pour la relecture des projets, les relances, les échanges ;
 > - une semaine de travail technique sur le site, améliorer le déploiement ;
 > - enfin quelques jours de choix de nom de domaine et de gestion lié à la bascule ;
-> - et le temps d’écriture de ce blog de post et de la communication à faire ensuite autour des projets 😉.
+> - et le temps d’écriture de ce post de blog et de la communication à faire ensuite autour des projets 😉 (un gros jour pour ce post, à voir pour la suite !).
 
 # Pour contribuer au site
 
