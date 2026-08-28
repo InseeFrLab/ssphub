@@ -32,7 +32,7 @@ page-layout: full
 # Quel est le besoin ?
 
 Si vous êtes déjà venus ici, vous avez dû remarquer que **le site a changé de tête**.
-Trois nouveautés sont apparues le 29 mai[^commitdelicieux].
+Trois nouveautés sont apparues le 29 mai[^commitdelicieux] :
 
 - une rubrique **[Projets innovants](../../project.qmd)** avec une trentaine de fiches ;
 - une **version anglaise** du site ;
@@ -86,10 +86,10 @@ Dans l'idée, cela donne :
 >
 
 Concrètement, on a repris les projets sur lesquels l'Insee ou des SSM ont travaillé de manière innovante.
-Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets**
+Les projets sont maintenant structurés dans **un tableau formaté pour tous les projets**
 qui permet facilement de comprendre ce que le projet fait, où il en est,
  où est la documentation et où est le code public.
- Les projets sont par ailleurs taggés par **catégories**. Cela permet de créer des listings
+ Les projets sont par ailleurs tagués par **catégories**. Cela permet de créer des listings
  pour **retrouver facilement des projets similaires**.
 
 Pour chaque projet, on a ainsi rempli ce tableau, échangé
@@ -109,7 +109,7 @@ ce qu'on entend par « projet innovant ».
 Un point important : **cette liste n'est pas exhaustive.**
 Elle repose sur le volontariat. Si vous êtes vexé que votre projet n'y soit pas ou que vous
 avez mené un projet qui y a sa place, ouvrez une issue et proposez de l'ajouter ! Mon
-petit doigt me dit qu'avec l'IA maintenant cela se fait rapidement 😅 - cf la marche à suivre
+petit doigt me dit qu'avec l'IA maintenant cela se fait rapidement 😅 - *cf.* la marche à suivre
 en bas de ce post.
 
 ## Deux sites nous rejoignent
@@ -143,10 +143,10 @@ nativement deux langues**. C'est un serpent de mer : l'issue
 traîne depuis des années, plusieurs solutions communautaires cohabitent et
 aucune n'est officielle.
 
-On a exploré deux pistes pour un profil intermédiaire en quarto comme moi : utiliser les profils de Quarto
-ou un package R fait exprès pour ceci, `babelquarto`. Les critères qui m'ont fait
-choisir [`babelquarto`](https://docs.ropensci.org/babelquarto/) c'est 1/ **le lien page à page natif**
-et 2/ une **plus grande lisibilité des fichiers quarto**  : il y a un fichier en français
+On a exploré deux pistes pour un profil intermédiaire en Quarto comme moi : utiliser les profils de Quarto
+ou un package R fait exprès pour ceci, `babelquarto`. J'ai choisi [`babelquarto`](https://docs.ropensci.org/babelquarto/) car
+1/ il permet **un lien page à page natif**
+et 2/ la **lisibilité des fichiers Quarto est plus grande** : il y a un fichier en français
  et un autre en anglais.
 
 Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous
@@ -168,9 +168,9 @@ Voici plus en détail les deux candidats qu'on a regardés :
 
 Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/docs/projects/profiles.html)
  native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier `/en`
- et le profil français dans le dossier par défaut). Pour ajouter des liens pages à page, il faut par ailleurs ajouter des filtres
+ et le profil français dans le dossier par défaut). Pour ajouter des liens page à page, il faut par ailleurs ajouter des filtres
  Lua. C'est ce qu'un collègue a fait pour le site du cours [Python pour la data science](https://pythonds.linogaliana.fr/)
- et qu'il a détaillé dans le fil de discussion de l'issue [#275 sus-nommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
+ et qu'il a détaillé dans le fil de discussion de l'issue [#275 susnommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
 
 Sur l'analyse coût bénéfice :
 
@@ -184,11 +184,11 @@ Sur l'analyse coût bénéfice :
 **babelquarto**
 
 L'autre solution est d'utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/)
-développé par *R Open Science*. Le package permet de spécifier dans le fichier
+développé par *rOpenSci*. Le package permet de spécifier dans le fichier
 `_quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers
 en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`.
 Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue
-(ici seulement `en/`) et créer des liens pages à page pour basculer d'une langue à l'autre.
+(ici seulement `en/`) et créer des liens page à page pour basculer d'une langue à l'autre.
 
 Sur l'analyse coût bénéfice :
 
@@ -245,12 +245,12 @@ babeldown::deepl_translate(
 Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi
  systématiquement de la traduction parce qu'ils sont liés au modèle de tableau utilisé :
  trop de `---` dans les tableaux, des caractères
- spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
+ spéciaux insérés qui cassent la phase de rendu : `\-` par exemple et `{{\< fa brands`.
 
 L'usage de ce script fait **gagner un temps considérable sur la mise en forme**
 et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide.
-Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont
-à reprendre à la main !).
+Il ne traduit pas par contre les catégories des listings de projets similaires, qui sont
+à reprendre à la main.
 :::
 
 # Contribuer, c'est devenu plus simple
@@ -292,9 +292,8 @@ uv run Rscript scripts/3_render_preview.R
 **C'est un mélange de R et de Python** et, honnêtement, je ne trouve pas cela très beau.
 Mais comme on dit, tant pis c'est comme cela 🫠.
 
-On doit donc utiliser `uv run Rscript` parce que justement on utilise `uv` pour Python
-et qu'un article de blog utilise Python lors de la phase de render.
-Il l'est donc à nouveau pour initier des projets et pour que l'environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/).
+On doit donc utiliser `uv run Rscript` parce qu'un article de blog utilise Python lors de la phase de rendu.
+On utilise à nouveau `uv run` pour initier des projets et pour que l'environnement soit reproductible.
 R est ensuite utilisé pour ses packages babelquarto et babeldown pour la traduction.
 
 Côté déploiement, il y a désormais **trois environnements** :
@@ -310,9 +309,9 @@ c'est une conséquence directe du choix de babelquarto, qui nous privait du prev
 natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent)
 et nettoie derrière elle à la fermeture de la PR.
 
-Remarquez par ailleurs que pour permettre les preview à partir de fork du dépôt,
+Remarquez par ailleurs que pour permettre les prévisualisations à partir de *fork* du dépôt,
 **l'action *Preview - build* ne fait que rendre le site**. Pour le déployer, il faut
-avoir accès en écriture au repo, ce qui n'est pas possible depuis un fork. Il y a
+avoir accès en écriture au repo, ce qui n'est pas possible depuis un *fork*. Il y a
 donc une action spécifique, **Preview - deploy** qui est lancée depuis le repo `ssphub`
 pour déployer la prévisualisation automatiquement.
 
@@ -323,7 +322,7 @@ pour déployer la prévisualisation automatiquement.
 
 Une refonte, c'est aussi l'occasion de faire un peu de ménage.
 
-**Les trois `init.sh`**: À la racine du dépôt dormait un script qui installait
+**Les trois `init.sh`** : À la racine du dépôt dormait un script qui installait
 Go et Hugo, le générateur qu'on utilisait
 *avant* Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé
 par la patrouille.
@@ -333,22 +332,22 @@ devenus inutiles le jour où le notebook a déménagé dans
 [son propre dépôt](https://github.com/SSPHub/Formation-polars).
 
 
-**Les gros fichiers**: Le dépôt versionnait des PDF de plusieurs mégaoctets et
+**Les gros fichiers** : Le dépôt versionnait des PDF de plusieurs mégaoctets et
 une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le
 **stockage S3 du SSP Cloud**, et le site pointe dessus. Git n'est pas fait pour ça
 et le repo commence à être lourd.
 
-**L'arborescence**: Les dossiers portent enfin le nom des rubriques :
+**L'arborescence** : Les dossiers portent enfin le nom des rubriques :
 `post/` est devenu `blog/`, `talk/` s'est réparti entre `event/` et `course/`,
 le CSS et le SCSS ont rejoint `assets/`.
 
-**LLMs**: Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère
+**LLMs** : Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère
 une version du site lisible par les modèles de langage. C'est d'ailleurs comme ça
 que vous pouvez donner un post entier à lire à un assistant, en ajoutant
 `.llms.md` à l'URL : <https://ssphub.fr/project.llms.md> est la version allégée pour IA de
 <https://ssphub.fr/project>.
 
-**Centralisation des variables**: Toutes les adresses et liens du réseau vivent maintenant dans `_variables.yml`
+**Centralisation des variables** : Toutes les adresses et liens du réseau vivent maintenant dans `_variables.yml`
 et s'appellent dans les `.qmd` avec `{{< var contact.email >}}`. Cela permet de mettre à jour des liens
 facilement partout dans le site.
 
@@ -391,7 +390,7 @@ Comme toujours, des chantiers restent ouverts :
 
 ::: {.callout-note collapse="true" title="Temps"}
 
-Le travail de refonte global du site a pris **environ deux mois de travail**, étalé sur un an !
+La refonte du site a pris **environ deux mois de travail**, étalé sur un an !
 
 - environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu,
  rapatrier ce qui serait à rapatrier, supprimer le reste ;
