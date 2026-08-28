@@ -22,7 +22,7 @@
 
 <section id="quel-est-le-besoin" class="level1">
 <h1>Quel est le besoin ?</h1>
-<p>Si vous êtes déjà venus ici, vous avez dû remarquer que <strong>le site a changé de tête</strong>. Trois nouveautés sont apparues le 29 mai<sup>1</sup>.</p>
+<p>Si vous êtes déjà venus ici, vous avez dû remarquer que <strong>le site a changé de tête</strong>. Trois nouveautés sont apparues le 29 mai<sup>1</sup> :</p>
 <ul>
 <li>une rubrique <strong><a href="../../project.html">Projets innovants</a></strong> avec une trentaine de fiches ;</li>
 <li>une <strong>version anglaise</strong> du site ;</li>
@@ -32,11 +32,11 @@
 </section>
 <section id="que-veut-on-voir-sur-ce-site" class="level1">
 <h1>Que veut-on voir sur ce site ?</h1>
-<p>Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatre besoins suivant pour le site :</p>
+<p>Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatre besoins suivants pour le site :</p>
 <section id="linfolettre-passe-en-mode-archive" class="level2">
 <h2 class="anchored" data-anchor-id="linfolettre-passe-en-mode-archive">L’infolettre passe en mode archive</h2>
 <p>L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit désormais surtout <strong>par mail et sur Tchap</strong> là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.</p>
-<p><strong>Rien ne se perd, tout se transforme</strong> comme disait Lavoisier: <a href="../../infolettre/infolettre.html">tous les numéros</a> sont toujours bien listés sur le site, jusqu’aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».</p>
+<p><strong>Rien ne se perd, tout se transforme</strong> comme disait Lavoisier : <a href="../../infolettre/infolettre.html">tous les numéros</a> sont toujours bien listés sur le site, jusqu’aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».</p>
 </section>
 <section id="les-projets-innovants-deviennent-la-vitrine" class="level2">
 <h2 class="anchored" data-anchor-id="les-projets-innovants-deviennent-la-vitrine">Les projets innovants deviennent la vitrine</h2>
@@ -48,16 +48,16 @@
 Il faut faire de la codification automatique avec de l’IA</p>
 <p><strong>Un(e) agent(e)</strong><br>
 Mais bien sûr 😅.<br>
-<em>à lui/elle-même</em>: Mais je sais pas faire. Qui en a fait avant ?</p>
+<em>à lui/elle-même</em> : Mais je sais pas faire. Qui en a fait avant ?</p>
 <p><strong>Un(e) agent(e)</strong><br>
 Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?</p>
 <p><strong>Un(e) chef(fe)</strong><br>
 Bien vu, jeune padawan !</p>
 </blockquote>
-<p>Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans <strong>un tableau formatté pour tous les projets</strong> qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code public. Les projets sont par ailleurs taggés par <strong>catégories</strong>. Cela permet de créer des listings pour <strong>retrouver facilement des projets similaires</strong>.</p>
+<p>Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans <strong>un tableau formaté pour tous les projets</strong> qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code public. Les projets sont par ailleurs tagués par <strong>catégories</strong>. Cela permet de créer des listings pour <strong>retrouver facilement des projets similaires</strong>.</p>
 <p>Pour chaque projet, on a ainsi rempli ce tableau, échangé avec la personne qui en était à l’origine pour relire et mettre à jour son statut. Cette étape là, qui a demandé un peu de coordination et d’échanges entre intelligences humaines, a été relativement longue (environ deux semaines de travail étalées sur de nombreuses semaines pour la partie coordination).</p>
 <p>À la fin, cela donne la présentation d’<strong>une trentaine de projets innovants</strong><sup>2</sup> menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, packages d’accès aux données, détection d’atypies dans la DSN, ségrégation urbaine…</p>
-<p>Un point important : <strong>cette liste n’est pas exhaustive.</strong> Elle repose sur le volontariat. Si vous êtes vexé que votre projet n’y soit pas ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 - cf la marche à suivre en bas de ce post.</p>
+<p>Un point important : <strong>cette liste n’est pas exhaustive.</strong> Elle repose sur le volontariat. Si vous êtes vexé que votre projet n’y soit pas ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 - <em>cf.</em> la marche à suivre en bas de ce post.</p>
 </section>
 <section id="deux-sites-nous-rejoignent" class="level2">
 <h2 class="anchored" data-anchor-id="deux-sites-nous-rejoignent">Deux sites nous rejoignent</h2>
@@ -73,7 +73,7 @@ Bien vu, jeune padawan !</p>
 <h1>Un site bilingue, ce n’est pas si simple</h1>
 <p>Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?</p>
 <p>Le site tourne sous <a href="https://quarto.org">Quarto</a>. Et <strong>Quarto ne sait pas gérer nativement deux langues</strong>. C’est un serpent de mer : l’issue <a href="https://github.com/quarto-dev/quarto-cli/issues/275">#275</a> du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent et aucune n’est officielle.</p>
-<p>On a exploré deux pistes pour un profil intermédiaire en quarto comme moi : utiliser les profils de Quarto ou un package R fait exprès pour ceci, <code>babelquarto</code>. Les critères qui m’ont fait choisir <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> c’est 1/ <strong>le lien page à page natif</strong> et 2/ une <strong>plus grande lisibilité des fichiers quarto</strong> : il y a un fichier en français et un autre en anglais.</p>
+<p>On a exploré deux pistes pour un profil intermédiaire en Quarto comme moi : utiliser les profils de Quarto ou un package R fait exprès pour ceci, <code>babelquarto</code>. J’ai choisi <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> car 1/ il permet <strong>un lien page à page natif</strong> et 2/ la <strong>lisibilité des fichiers Quarto est plus grande</strong> : il y a un fichier en français et un autre en anglais.</p>
 <p>Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur <em>cette</em> fiche en anglais, pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois et ensuite vous êtes coincé. <strong>Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après techniquement</strong>. L’autre solution a aussi des atouts, c’est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -89,7 +89,7 @@ Bien vu, jeune padawan !</p>
 <div class="callout-body-container callout-body">
 <p>Voici plus en détail les deux candidats qu’on a regardés :</p>
 <p><strong>Les profils Quarto</strong></p>
-<p>Concrètement, cela utilise la fonctionnalité de <a href="https://quarto.org/docs/projects/profiles.html">profils</a> native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier <code>/en</code> et le profil français dans le dossier par défaut). Pour ajouter des liens pages à page, il faut par ailleurs ajouter des filtres Lua. C’est ce qu’un collègue a fait pour le site du cours <a href="https://pythonds.linogaliana.fr/">Python pour la data science</a> et qu’il a détaillé dans le fil de discussion de l’issue <a href="https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583">#275 sus-nommée</a>.</p>
+<p>Concrètement, cela utilise la fonctionnalité de <a href="https://quarto.org/docs/projects/profiles.html">profils</a> native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier <code>/en</code> et le profil français dans le dossier par défaut). Pour ajouter des liens page à page, il faut par ailleurs ajouter des filtres Lua. C’est ce qu’un collègue a fait pour le site du cours <a href="https://pythonds.linogaliana.fr/">Python pour la data science</a> et qu’il a détaillé dans le fil de discussion de l’issue <a href="https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583">#275 susnommée</a>.</p>
 <p>Sur l’analyse coût bénéfice :</p>
 <ul>
 <li>✅ C’est du Quarto natif : CI simple, <code>quarto preview</code> fonctionnel.</li>
@@ -98,7 +98,7 @@ Bien vu, jeune padawan !</p>
 <li>❌ L’écriture est alourdie par les divs conditionnelles <code>::: {when-profile="fr"}</code> qui, je trouve, polluent les <code>.qmd</code> et rendent la maintenance plus compliquée.</li>
 </ul>
 <p><strong>babelquarto</strong></p>
-<p>L’autre solution est d’utiliser le package R <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> développé par <em>R Open Science</em>. Le package permet de spécifier dans le fichier <code>_quarto.yml</code> quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en <code>index.qmd</code> et les fichiers anglais équivalents en <code>index.en.qmd</code>. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement <code>en/</code>) et créer des liens pages à page pour basculer d’une langue à l’autre.</p>
+<p>L’autre solution est d’utiliser le package R <a href="https://docs.ropensci.org/babelquarto/"><code>babelquarto</code></a> développé par <em>rOpenSci</em>. Le package permet de spécifier dans le fichier <code>_quarto.yml</code> quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en <code>index.qmd</code> et les fichiers anglais équivalents en <code>index.en.qmd</code>. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement <code>en/</code>) et créer des liens page à page pour basculer d’une langue à l’autre.</p>
 <p>Sur l’analyse coût bénéfice :</p>
 <ul>
 <li>✅ Le lien entre versions se construit tout seul : on n’écrit <strong>rien</strong> dans les liens.</li>
@@ -257,8 +257,8 @@ font-style: inherit;">"description"</span>, <span class="st" style="color: #2079
 background-color: null;
 font-style: inherit;">"categories"</span>)</span>
 <span id="cb2-8">)</span></code></pre></div></div>
-<p>Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction parce qu’ils sont liés au modèle de tableau utilisé : trop de <code>---</code> dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : <code>\-</code> par exemple et <code>{{\&lt; fa brands</code>.</p>
-<p>L’usage de ce script fait <strong>gagner un temps considérable sur la mise en forme</strong> et on ne fait que <strong>relire la traduction</strong>, ce qui en fait un exercice rapide. Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont à reprendre à la main !).</p>
+<p>Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction parce qu’elles sont liées au modèle de tableau utilisé : trop de <code>---</code> dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendu : <code>\-</code> par exemple et <code>{{\&lt; fa brands</code>.</p>
+<p>L’usage de ce script fait <strong>gagner un temps considérable sur la mise en forme</strong> et on ne fait que <strong>relire la traduction</strong>, ce qui en fait un exercice rapide. Il ne traduit pas par contre les catégories des listings de projets similaires, qui sont à reprendre à la main.</p>
 </div>
 </div>
 </div>
@@ -321,7 +321,7 @@ font-style: inherit;"># 3 - Rendre et prévisualiser en local</span></span>
 background-color: null;
 font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R</span></code></pre></div></div>
 <p><strong>C’est un mélange de R et de Python</strong> et, honnêtement, je ne trouve pas cela très beau. Mais comme on dit, tant pis c’est comme cela 🫠.</p>
-<p>On doit donc utiliser <code>uv run Rscript</code> parce que justement on utilise <code>uv</code> pour Python et qu’un article de blog utilise Python lors de la phase de render. Il l’est donc à nouveau pour initier des projets et pour que l’environnement soit reproductible grâce à <a href="https://docs.astral.sh/uv/"><code>uv</code></a>. R est ensuite utilisé pour ses packages babelquarto et babeldown pour la traduction.</p>
+<p>On doit donc utiliser <code>uv run Rscript</code> parce qu’un article de blog utilise Python lors de la phase de rendu. On utilise à nouveau <code>uv run</code> pour initier des projets et pour que l’environnement soit reproductible. R est ensuite utilisé pour ses packages babelquarto et babeldown pour la traduction.</p>
 <p>Côté déploiement, il y a désormais <strong>trois environnements</strong> :</p>
 <table class="caption-top table">
 <colgroup>
@@ -355,7 +355,7 @@ font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R</span></c
 </tbody>
 </table>
 <p>La preview est une GitHub Action maison plutôt que l’action Netlify standard : c’est une conséquence directe du choix de babelquarto, qui nous privait du preview natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent) et nettoie derrière elle à la fermeture de la PR.</p>
-<p>Remarquez par ailleurs que pour permettre les preview à partir de fork du dépôt, <strong>l’action <em>Preview - build</em> ne fait que rendre le site</strong>. Pour le déployer, il faut avoir accès en écriture au repo, ce qui n’est pas possible depuis un fork. Il y a donc une action spécifique, <strong>Preview - deploy</strong> qui est lancée depuis le repo <code>ssphub</code> pour déployer la prévisualisation automatiquement.</p>
+<p>Remarquez par ailleurs que pour permettre les prévisualisations à partir de <em>fork</em> du dépôt, <strong>l’action <em>Preview - build</em> ne fait que rendre le site</strong>. Pour le déployer, il faut avoir accès en écriture au repo, ce qui n’est pas possible depuis un <em>fork</em>. Il y a donc une action spécifique, <strong>Preview - deploy</strong> qui est lancée depuis le repo <code>ssphub</code> pour déployer la prévisualisation automatiquement.</p>
 </div>
 </div>
 </div>
@@ -363,12 +363,12 @@ font-style: inherit;">uv</span> run Rscript scripts/3_render_preview.R</span></c
 <section id="un-peu-de-ménage-et-autres" class="level1">
 <h1>Un peu de ménage et autres</h1>
 <p>Une refonte, c’est aussi l’occasion de faire un peu de ménage.</p>
-<p><strong>Les trois <code>init.sh</code></strong>: À la racine du dépôt dormait un script qui installait Go et Hugo, le générateur qu’on utilisait <em>avant</em> Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé par la patrouille.</p>
+<p><strong>Les trois <code>init.sh</code></strong> : À la racine du dépôt dormait un script qui installait Go et Hugo, le générateur qu’on utilisait <em>avant</em> Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé par la patrouille.</p>
 <p>Les deux autres <code>init.sh</code> lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans <a href="https://github.com/SSPHub/Formation-polars">son propre dépôt</a>.</p>
-<p><strong>Les gros fichiers</strong>: Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du <code>static/</code> de Hugo. Ils sont partis sur le <strong>stockage S3 du SSP Cloud</strong>, et le site pointe dessus. Git n’est pas fait pour ça et le repo commence à être lourd.</p>
-<p><strong>L’arborescence</strong>: Les dossiers portent enfin le nom des rubriques : <code>post/</code> est devenu <code>blog/</code>, <code>talk/</code> s’est réparti entre <code>event/</code> et <code>course/</code>, le CSS et le SCSS ont rejoint <code>assets/</code>.</p>
-<p><strong>LLMs</strong>: Autre petit ajout de la refonte : <code>llms-txt: true</code> dans <code>_quarto.yml</code>, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant <code>.llms.md</code> à l’URL : <a href="https://ssphub.fr/project.llms.md" class="uri">https://ssphub.fr/project.llms.md</a> est la version allégée pour IA de <a href="https://ssphub.fr/project" class="uri">https://ssphub.fr/project</a>.</p>
-<p><strong>Centralisation des variables</strong>: Toutes les adresses et liens du réseau vivent maintenant dans <code>_variables.yml</code> et s’appellent dans les <code>.qmd</code> avec <code>contact-ssphub@insee.fr</code>. Cela permet de mettre à jour des liens facilement partout dans le site.</p>
+<p><strong>Les gros fichiers</strong> : Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du <code>static/</code> de Hugo. Ils sont partis sur le <strong>stockage S3 du SSP Cloud</strong>, et le site pointe dessus. Git n’est pas fait pour ça et le repo commence à être lourd.</p>
+<p><strong>L’arborescence</strong> : Les dossiers portent enfin le nom des rubriques : <code>post/</code> est devenu <code>blog/</code>, <code>talk/</code> s’est réparti entre <code>event/</code> et <code>course/</code>, le CSS et le SCSS ont rejoint <code>assets/</code>.</p>
+<p><strong>LLMs</strong> : Autre petit ajout de la refonte : <code>llms-txt: true</code> dans <code>_quarto.yml</code>, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant <code>.llms.md</code> à l’URL : <a href="https://ssphub.fr/project.llms.md" class="uri">https://ssphub.fr/project.llms.md</a> est la version allégée pour IA de <a href="https://ssphub.fr/project" class="uri">https://ssphub.fr/project</a>.</p>
+<p><strong>Centralisation des variables</strong> : Toutes les adresses et liens du réseau vivent maintenant dans <code>_variables.yml</code> et s’appellent dans les <code>.qmd</code> avec <code>contact-ssphub@insee.fr</code>. Cela permet de mettre à jour des liens facilement partout dans le site.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">contact</span><span class="kw" style="color: #003B4F;
@@ -417,7 +417,7 @@ font-style: inherit;"> https://grist.numerique.gouv.fr/o/ssphub/forms/...</span>
 </section>
 <section id="et-un-changement-dadresse" class="level1">
 <h1>Et un changement d’adresse</h1>
-<p>Le site était déployé avant sur <a href="https://ssphub.netlify.app" class="uri">https://ssphub.netlify.app</a> par facilité, comme cela permettait d’avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand même sur le fait d’avoir une adresse url qui fasse peu propre pour un réseau d’agents publics. On a donc décidé de sortir le (petit) porte-monnaie et d’acheter le nom de domaine <a href="https://ssphub.fr">ssphub.fr</a>, détenu maintenant très officiellement par l’État français (<em>himself</em>), représenté par le MEFSIN (<em>himself</em>), représenté par l’Insee (<em>himself</em>) (cf <a href="https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/">le site de l’AFNIC</a>).</p>
+<p>Le site était déployé avant sur <a href="https://ssphub.netlify.app" class="uri">https://ssphub.netlify.app</a> par facilité, comme cela permettait d’avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand même sur le fait d’avoir une adresse URL qui fasse peu propre pour un réseau d’agents publics. On a donc décidé de sortir le (petit) porte-monnaie et d’acheter le nom de domaine <a href="https://ssphub.fr">ssphub.fr</a>, détenu maintenant très officiellement par l’État français (<em>himself</em>), représenté par le MEFSIN (<em>himself</em>), représenté par l’Insee (<em>himself</em>) (<em>cf.</em> <a href="https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/">le site de l’AFNIC</a>).</p>
 <p>Le site a ainsi déménagé sur <strong><a href="https://ssphub.fr">ssphub.fr</a></strong> à l’été 2026 par la fameuse <a href="https://github.com/InseeFrLab/ssphub/pull/173">demande de tirage (PR) 173</a>. On a au passage inséré une redirection de l’ancien nom de domaine vers le nouveau. <a href="https://ssphub.netlify.app/project/2026_sndstools/" class="uri">https://ssphub.netlify.app/project/2026_sndstools/</a> est redirigé automatiquement vers <a href="https://ssphub.fr/project/2026_sndstools/" class="uri">https://ssphub.fr/project/2026_sndstools/</a>.</p>
 </section>
 <section id="ce-quil-reste-à-faire" class="level1">
@@ -439,14 +439,14 @@ font-style: inherit;"> https://grist.numerique.gouv.fr/o/ssphub/forms/...</span>
 </div>
 <div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Le travail de refonte global du site a pris <strong>environ deux mois de travail</strong>, étalé sur un an !</p>
+<p>La refonte du site a pris <strong>environ deux mois de travail</strong>, étalé sur un an !</p>
 <ul>
 <li>environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu, rapatrier ce qui serait à rapatrier, supprimer le reste ;</li>
 <li>environ une semaine de travail sur le cadrage de la refonte du site, monter une expérimentation et la valider ;</li>
 <li>environ deux semaines pour chercher les informations sur les projets innovants, les inclure ;</li>
 <li>une semaine de travail pour la relecture des projets, les relances, les échanges ;</li>
 <li>une semaine de travail technique sur le site, améliorer le déploiement ;</li>
-<li>enfin quelques jours de choix de nom de domaine et de gestion lié à la bascule ;</li>
+<li>enfin quelques jours de choix de nom de domaine et de gestion pour transférer le site sur son nouvel URL ;</li>
 <li>et le temps d’écriture de ce post de blog et de la communication à faire ensuite autour des projets 😉 (un gros jour pour ce post, à voir pour la suite !).</li>
 </ul>
 </div>
@@ -1031,7 +1031,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_mot_de_passe_tchap"</span></span></code></pre></div></div>
 </div>
-<div id="3cf555c5" class="cell">
+<div id="987be19a" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -1222,7 +1222,7 @@ font-style: inherit;">=</span><span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"votre_cle_api_llm_lab"</span></span></code></pre></div></div>
 </div>
-<div id="a754d304" class="cell">
+<div id="cd626aa8" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -2113,7 +2113,7 @@ font-style: inherit;">}</span></span></code></pre></div></div>
 <section id="grand-final" class="level3">
 <h3 class="anchored" data-anchor-id="grand-final">Grand final</h3>
 <p>Une fois tout cela compris, avec l’aide d’un assistant bien-tombé, on arrive à ce bloc ci-dessous. Il est autonome (les fonctions utilitaires sont incluses) et prend en entrée un <code>bot</code>, l’<code>id</code> du salon et l’<code>id</code> du message auquel on répond :</p>
-<div id="bf3d182f" class="cell">
+<div id="e5bc2625" class="cell">
 <div class="code-with-filename">
 <details class="code-fold">
 <summary>Code</summary>
@@ -4376,7 +4376,7 @@ font-style: inherit;">vscode-r-python-julia-118218-0</span>  1/1     Running    
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787931546216" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
+<div class="g-col-1" data-index="0" data-categories="Y29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNleHRyYWN0aW9uJTIwZGUlMjBkb25uJUMzJUE5ZXMlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZQ==" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787932693952" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="323">
 <a href="../../project/2022_Enquete_Budget_Famille/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4400,7 +4400,7 @@ Travaux méthodologiques sur l’enquête Budget de Famille
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787931546216" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
+<div class="g-col-1" data-index="1" data-categories="d2Vic2NyYXBpbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ0RBUkVT" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787932693952" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="523">
 <a href="../../project/2022_JOCAS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4424,7 +4424,7 @@ Jocas, webscraping des offres d’emploi en ligne
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787931546217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787932693953" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4448,7 +4448,7 @@ Codification automatique de l’activité principale des entreprises
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1787931546215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1787932693951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4472,7 +4472,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVzJTJDQVBJJTJDbWFjaGluZSUyMGxlYXJuaW5nJTJDZW4lMjBwcm9kdWN0aW9u" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1787931546215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="431">
+<div class="g-col-1" data-index="4" data-categories="UHl0aG9uJTJDZXh0cmFjdGlvbiUyMGRlJTIwZG9ubiVDMyVBOWVzJTJDQVBJJTJDbWFjaGluZSUyMGxlYXJuaW5nJTJDZW4lMjBwcm9kdWN0aW9u" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1787932693951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="431">
 <a href="../../project/2021_Extraction_CS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4496,7 +4496,7 @@ Extraction automatique du tableau des filiales et participations des comptes soc
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1787931546215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
+<div class="g-col-1" data-index="5" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWU=" data-listing-date-sort="1609459200000" data-listing-file-modified-sort="1787932693951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="367">
 <a href="../../project/2021_codif_PCS/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4520,7 +4520,7 @@ Codification automatique des professions dans la nomenclature PCS 2020
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="6" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1787931546214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
+<div class="g-col-1" data-index="6" data-categories="ZGF0YXZpc3VhbGlzYXRpb24lMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNJbnNlZSUyQ2V4cCVDMyVBOXJpbWVudGF0aW9uJTJDb3Blbi1kYXRhJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1604188800000" data-listing-file-modified-sort="1787932693950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="480">
 <a href="../../project/2020_mvtpop/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4544,7 +4544,7 @@ Mouvements de population autour du confinement de mars 2020 grâce aux données 
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="7" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1787931546214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
+<div class="g-col-1" data-index="7" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNkb25uJUMzJUE5ZXMlMjBkZSUyMGNhaXNzZSUyQ0NPSUNPUCUyQ0lQQyUyQ2VuJTIwcHJvZHVjdGlvbg==" data-listing-date-sort="1577836800000" data-listing-file-modified-sort="1787932693950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="516">
 <a href="../../project/2020_donnees_caisse/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4568,7 +4568,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="8" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1787931546214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="8" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1787932693950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4592,7 +4592,7 @@ Classification des données de caisse à partir de machine learning
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="9" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1787931546214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
+<div class="g-col-1" data-index="9" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNjb2RpZmljYXRpb24lMjBhdXRvbWF0aXF1ZSUyQ21hY2hpbmUlMjBsZWFybmluZw==" data-listing-date-sort="1559347200000" data-listing-file-modified-sort="1787932693950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="346">
 <a href="../../project/2019_classification_asso/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -4616,7 +4616,7 @@ Codification automatique de l’activité des associations
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="10" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1787931546213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
+<div class="g-col-1" data-index="10" data-categories="ZG9ubiVDMyVBOWVzJTIwYWRtaW5pc3RyYXRpdmVzJTJDSW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNlbiUyMHByb2R1Y3Rpb24lMkNkYXRhJTIwZWRpdGluZw==" data-listing-date-sort="1514764800000" data-listing-file-modified-sort="1787932693949" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="318">
 <a href="../../project/2018_outlier_dsn/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5172,7 +5172,7 @@ font-style: inherit;">return</span> button</span>
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1787931546219" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
+<div class="g-col-1" data-index="0" data-categories="cGFja2FnZSUyQ1IlMkNlbiUyMHByb2R1Y3Rpb24lMkNJbnNlZQ==" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1787932693955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="148">
 <a href="../../project/2023_doremifasol/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5196,7 +5196,7 @@ Doremifasol
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1787931546219" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
+<div class="g-col-1" data-index="1" data-categories="ZW4lMjBwcm9kdWN0aW9uJTJDSW5zZWUlMkNwYWNrYWdlJTJDUHl0aG9u" data-listing-date-sort="1672531200000" data-listing-file-modified-sort="1787932693955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="219">
 <a href="../../project/2023_pynsee/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5220,7 +5220,7 @@ pynsee, un package Python <i class="fa-brands fa-python" aria-label="python"></i
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1787931546219" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
+<div class="g-col-1" data-index="2" data-categories="UHl0aG9uJTJDcGFja2FnZSUyQ2RlZXAlMjBsZWFybmluZyUyQ2ltYWdlcyUyMHNhdGVsbGl0ZXM=" data-listing-date-sort="1664582400000" data-listing-file-modified-sort="1787932693955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="401">
 <a href="../../project/2022_satellites/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -5244,7 +5244,7 @@ Utilisation des images satellites pour la statistique publique
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787931546217" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
+<div class="g-col-1" data-index="3" data-categories="UHl0aG9uJTJDY29kaWZpY2F0aW9uJTIwYXV0b21hdGlxdWUlMkNwYWNrYWdlJTJDZW4lMjBwcm9kdWN0aW9uJTJDTUxGbG93" data-listing-date-sort="1640995200000" data-listing-file-modified-sort="1787932693953" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="363">
 <a href="../../project/2022_codif_ape/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6372,7 +6372,7 @@ Astuce
 <h1>Projets similaires</h1>
 <div id="listing-similar-project" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1787931546219" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
+<div class="g-col-1" data-index="0" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBjb21wdGVzJTIwYmFuY2FpcmVzJTJDZXhwJUMzJUE5cmltZW50YXRpb24=" data-listing-date-sort="1748736000000" data-listing-file-modified-sort="1787932693956" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="788">
 <a href="../../project/2025_comptes_bancaires_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6407,7 +6407,7 @@ Exploitation de données bancaires pour les prévisions de croissance du PIB
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1787931546215" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
+<div class="g-col-1" data-index="1" data-categories="SW5zZWUlMkNtYWNoaW5lJTIwbGVhcm5pbmclMkNleHAlQzMlQTlyaW1lbnRhdGlvbiUyQ3ByJUMzJUE5dmlzaW9ucyUyQ3dlYnNjcmFwaW5n" data-listing-date-sort="1614556800000" data-listing-file-modified-sort="1787932693951" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="340">
 <a href="../../project/2021_gdp_media/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6444,7 +6444,7 @@ Prévoir la croissance en lisant le journal
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1787931546214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
+<div class="g-col-1" data-index="2" data-categories="cHIlQzMlQTl2aXNpb25zJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMkNJbnNlZSUyQ2Rvbm4lQzMlQTllcyUyMENCJTJDZG9ubiVDMyVBOWVzJTIwZGUlMjB0JUMzJUE5bCVDMyVBOXBob25pZSUyMG1vYmlsZQ==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1787932693950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="718">
 <a href="../../project/2020_cb_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6481,7 +6481,7 @@ Utilisation de données de cartes bancaires et de téléphonie mobile pour prév
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1787931546214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
+<div class="g-col-1" data-index="3" data-categories="SW5zZWUlMkNwciVDMyVBOXZpc2lvbnMlMkNkb25uJUMzJUE5ZXMlMjBwcml2JUMzJUE5ZXMlMkNleHAlQzMlQTlyaW1lbnRhdGlvbg==" data-listing-date-sort="1606780800000" data-listing-file-modified-sort="1787932693950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="414">
 <a href="../../project/2020_electricite_conj/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -6516,7 +6516,7 @@ Que disent les données de production et de consommation d’électricité sur l
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1787931546214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
+<div class="g-col-1" data-index="4" data-categories="bWFjaGluZSUyMGxlYXJuaW5nJTJDZXhwJUMzJUE5cmltZW50YXRpb24lMjBhcnIlQzMlQUF0JUMzJUE5ZSUyQ3ByJUMzJUE5dmlzaW9ucyUyQ0luc2VlJTJDbm93Y2FzdGluZw==" data-listing-date-sort="1575158400000" data-listing-file-modified-sort="1787932693950" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="374">
 <a href="../../project/2019_gdp_tracker/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">

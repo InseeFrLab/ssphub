@@ -1,6 +1,6 @@
 # Quel est le besoin ?
 
-Si vous êtes déjà venus ici, vous avez dû remarquer que **le site a changé de tête**. Trois nouveautés sont apparues le 29 mai[^1].
+Si vous êtes déjà venus ici, vous avez dû remarquer que **le site a changé de tête**. Trois nouveautés sont apparues le 29 mai[^1] :
 
 - une rubrique **[Projets innovants](../../project.llms.md)** avec une trentaine de fiches ;
 - une **version anglaise** du site ;
@@ -10,13 +10,13 @@ Derrière ces trois lignes, il y a une [*pull request*](https://github.com/Insee
 
 # Que veut-on voir sur ce site ?
 
-Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatre besoins suivant pour le site :
+Avant de toucher au “comment?”, on a parlé du “pourquoi?”. Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux quatre besoins suivants pour le site :
 
 ## L’infolettre passe en mode archive
 
 L’infolettre, c’est historiquement le coeur du réseau. Mais elle vit désormais surtout **par mail et sur Tchap** là où sont les gens. Le site n’a plus besoin d’en être la vitrine mais plutôt une archive 👵.
 
-**Rien ne se perd, tout se transforme** comme disait Lavoisier: [tous les numéros](../../infolettre/infolettre.llms.md) sont toujours bien listés sur le site, jusqu’aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».
+**Rien ne se perd, tout se transforme** comme disait Lavoisier : [tous les numéros](../../infolettre/infolettre.llms.md) sont toujours bien listés sur le site, jusqu’aux plus anciens, ils ont juste quitté la barre de navigation principale pour le menu « À propos ».
 
 ## Les projets innovants deviennent la vitrine
 
@@ -31,7 +31,7 @@ Dans l’idée, cela donne :
 >
 > **Un(e) agent(e)**\
 > Mais bien sûr 😅.\
-> *à lui/elle-même*: Mais je sais pas faire. Qui en a fait avant ?
+> *à lui/elle-même* : Mais je sais pas faire. Qui en a fait avant ?
 >
 > **Un(e) agent(e)**\
 > Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
@@ -39,13 +39,13 @@ Dans l’idée, cela donne :
 > **Un(e) chef(fe)**\
 > Bien vu, jeune padawan !
 
-Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans **un tableau formatté pour tous les projets** qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code public. Les projets sont par ailleurs taggés par **catégories**. Cela permet de créer des listings pour **retrouver facilement des projets similaires**.
+Concrètement, on a repris les projets sur lesquels l’Insee ou des SSM ont travaillé de manière innovante. Les projets sont maintenant structurés dans **un tableau formaté pour tous les projets** qui permet facilement de comprendre ce que le projet fait, où il en est, où est la documentation et où est le code public. Les projets sont par ailleurs tagués par **catégories**. Cela permet de créer des listings pour **retrouver facilement des projets similaires**.
 
 Pour chaque projet, on a ainsi rempli ce tableau, échangé avec la personne qui en était à l’origine pour relire et mettre à jour son statut. Cette étape là, qui a demandé un peu de coordination et d’échanges entre intelligences humaines, a été relativement longue (environ deux semaines de travail étalées sur de nombreuses semaines pour la partie coordination).
 
 À la fin, cela donne la présentation d’**une trentaine de projets innovants**[^2] menés dans le SSP. Nowcasting, images satellitaires, codification automatique de l’APE, webscraping pour l’IPC, données de cartes bancaires, packages d’accès aux données, détection d’atypies dans la DSN, ségrégation urbaine…
 
-Un point important : **cette liste n’est pas exhaustive.** Elle repose sur le volontariat. Si vous êtes vexé que votre projet n’y soit pas ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 - cf la marche à suivre en bas de ce post.
+Un point important : **cette liste n’est pas exhaustive.** Elle repose sur le volontariat. Si vous êtes vexé que votre projet n’y soit pas ou que vous avez mené un projet qui y a sa place, ouvrez une issue et proposez de l’ajouter ! Mon petit doigt me dit qu’avec l’IA maintenant cela se fait rapidement 😅 - *cf.* la marche à suivre en bas de ce post.
 
 ## Deux sites nous rejoignent
 
@@ -63,7 +63,7 @@ Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?
 
 Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer nativement deux langues**. C’est un serpent de mer : l’issue [\#275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto traîne depuis des années, plusieurs solutions communautaires cohabitent et aucune n’est officielle.
 
-On a exploré deux pistes pour un profil intermédiaire en quarto comme moi : utiliser les profils de Quarto ou un package R fait exprès pour ceci, `babelquarto`. Les critères qui m’ont fait choisir [`babelquarto`](https://docs.ropensci.org/babelquarto/) c’est 1/ **le lien page à page natif** et 2/ une **plus grande lisibilité des fichiers quarto** : il y a un fichier en français et un autre en anglais.
+On a exploré deux pistes pour un profil intermédiaire en Quarto comme moi : utiliser les profils de Quarto ou un package R fait exprès pour ceci, `babelquarto`. J’ai choisi [`babelquarto`](https://docs.ropensci.org/babelquarto/) car 1/ il permet **un lien page à page natif** et 2/ la **lisibilité des fichiers Quarto est plus grande** : il y a un fichier en français et un autre en anglais.
 
 Concrètement : quand vous lisez une fiche projet en français, un bouton doit vous emmener sur *cette* fiche en anglais, pas sur la page d’accueil anglaise. La solution concurrente ne proposait à l’époque qu’un aiguillage à l’entrée du site : vous choisissez votre langue une fois et ensuite vous êtes coincé. **Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les désavantages que cela implique après techniquement**. L’autre solution a aussi des atouts, c’est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !
 
@@ -73,7 +73,7 @@ Concrètement : quand vous lisez une fiche projet en français, un bouton doit v
 >
 > **Les profils Quarto**
 >
-> Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/docs/projects/profiles.html) native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier `/en` et le profil français dans le dossier par défaut). Pour ajouter des liens pages à page, il faut par ailleurs ajouter des filtres Lua. C’est ce qu’un collègue a fait pour le site du cours [Python pour la data science](https://pythonds.linogaliana.fr/) et qu’il a détaillé dans le fil de discussion de l’issue [\#275 sus-nommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
+> Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/docs/projects/profiles.html) native à Quarto en jouant avec les dossiers où le site est rendu (le profil anglais insère le rendu dans le dossier `/en` et le profil français dans le dossier par défaut). Pour ajouter des liens page à page, il faut par ailleurs ajouter des filtres Lua. C’est ce qu’un collègue a fait pour le site du cours [Python pour la data science](https://pythonds.linogaliana.fr/) et qu’il a détaillé dans le fil de discussion de l’issue [\#275 susnommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
 >
 > Sur l’analyse coût bénéfice :
 >
@@ -84,7 +84,7 @@ Concrètement : quand vous lisez une fiche projet en français, un bouton doit v
 >
 > **babelquarto**
 >
-> L’autre solution est d’utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/) développé par *R Open Science*. Le package permet de spécifier dans le fichier `_quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement `en/`) et créer des liens pages à page pour basculer d’une langue à l’autre.
+> L’autre solution est d’utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/) développé par *rOpenSci*. Le package permet de spécifier dans le fichier `_quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`. Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue (ici seulement `en/`) et créer des liens page à page pour basculer d’une langue à l’autre.
 >
 > Sur l’analyse coût bénéfice :
 >
@@ -128,9 +128,9 @@ Au passage, on a ajouté un **script de traduction automatisé** grâce à [`bab
 > )
 > ```
 >
-> Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction parce qu’ils sont liés au modèle de tableau utilisé : trop de `---` dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
+> Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi systématiquement de la traduction parce qu’elles sont liées au modèle de tableau utilisé : trop de `---` dans les tableaux, des caractères spéciaux insérés qui cassent la phase de rendu : `\-` par exemple et `{{\< fa brands`.
 >
-> L’usage de ce script fait **gagner un temps considérable sur la mise en forme** et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide. Il ne traduit pas par contre les métadonnées (et donc les catégories, qui sont à reprendre à la main !).
+> L’usage de ce script fait **gagner un temps considérable sur la mise en forme** et on ne fait que **relire la traduction**, ce qui en fait un exercice rapide. Il ne traduit pas par contre les catégories des listings de projets similaires, qui sont à reprendre à la main.
 
 # Contribuer, c’est devenu plus simple
 
@@ -164,7 +164,7 @@ Et surtout, il y a **la prévisualisation automatique** : dès que vous proposez
 >
 > **C’est un mélange de R et de Python** et, honnêtement, je ne trouve pas cela très beau. Mais comme on dit, tant pis c’est comme cela 🫠.
 >
-> On doit donc utiliser `uv run Rscript` parce que justement on utilise `uv` pour Python et qu’un article de blog utilise Python lors de la phase de render. Il l’est donc à nouveau pour initier des projets et pour que l’environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/). R est ensuite utilisé pour ses packages babelquarto et babeldown pour la traduction.
+> On doit donc utiliser `uv run Rscript` parce qu’un article de blog utilise Python lors de la phase de rendu. On utilise à nouveau `uv run` pour initier des projets et pour que l’environnement soit reproductible. R est ensuite utilisé pour ses packages babelquarto et babeldown pour la traduction.
 >
 > Côté déploiement, il y a désormais **trois environnements** :
 >
@@ -176,23 +176,23 @@ Et surtout, il y a **la prévisualisation automatique** : dès que vous proposez
 >
 > La preview est une GitHub Action maison plutôt que l’action Netlify standard : c’est une conséquence directe du choix de babelquarto, qui nous privait du preview natif. Elle gère la concurrence (une nouvelle poussée annule le build précédent) et nettoie derrière elle à la fermeture de la PR.
 >
-> Remarquez par ailleurs que pour permettre les preview à partir de fork du dépôt, **l’action *Preview - build* ne fait que rendre le site**. Pour le déployer, il faut avoir accès en écriture au repo, ce qui n’est pas possible depuis un fork. Il y a donc une action spécifique, **Preview - deploy** qui est lancée depuis le repo `ssphub` pour déployer la prévisualisation automatiquement.
+> Remarquez par ailleurs que pour permettre les prévisualisations à partir de *fork* du dépôt, **l’action *Preview - build* ne fait que rendre le site**. Pour le déployer, il faut avoir accès en écriture au repo, ce qui n’est pas possible depuis un *fork*. Il y a donc une action spécifique, **Preview - deploy** qui est lancée depuis le repo `ssphub` pour déployer la prévisualisation automatiquement.
 
 # Un peu de ménage et autres
 
 Une refonte, c’est aussi l’occasion de faire un peu de ménage.
 
-**Les trois `init.sh`**: À la racine du dépôt dormait un script qui installait Go et Hugo, le générateur qu’on utilisait *avant* Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé par la patrouille.
+**Les trois `init.sh`** : À la racine du dépôt dormait un script qui installait Go et Hugo, le générateur qu’on utilisait *avant* Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé par la patrouille.
 
 Les deux autres `init.sh` lançaient le tuto Polars sur le SSP Cloud. Ils sont devenus inutiles le jour où le notebook a déménagé dans [son propre dépôt](https://github.com/SSPHub/Formation-polars).
 
-**Les gros fichiers**: Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le **stockage S3 du SSP Cloud**, et le site pointe dessus. Git n’est pas fait pour ça et le repo commence à être lourd.
+**Les gros fichiers** : Le dépôt versionnait des PDF de plusieurs mégaoctets et une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le **stockage S3 du SSP Cloud**, et le site pointe dessus. Git n’est pas fait pour ça et le repo commence à être lourd.
 
-**L’arborescence**: Les dossiers portent enfin le nom des rubriques : `post/` est devenu `blog/`, `talk/` s’est réparti entre `event/` et `course/`, le CSS et le SCSS ont rejoint `assets/`.
+**L’arborescence** : Les dossiers portent enfin le nom des rubriques : `post/` est devenu `blog/`, `talk/` s’est réparti entre `event/` et `course/`, le CSS et le SCSS ont rejoint `assets/`.
 
-**LLMs**: Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant `.llms.md` à l’URL : <https://ssphub.fr/project.llms.md> est la version allégée pour IA de <https://ssphub.fr/project>.
+**LLMs** : Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère une version du site lisible par les modèles de langage. C’est d’ailleurs comme ça que vous pouvez donner un post entier à lire à un assistant, en ajoutant `.llms.md` à l’URL : <https://ssphub.fr/project.llms.md> est la version allégée pour IA de <https://ssphub.fr/project>.
 
-**Centralisation des variables**: Toutes les adresses et liens du réseau vivent maintenant dans `_variables.yml` et s’appellent dans les `.qmd` avec `contact-ssphub@insee.fr`. Cela permet de mettre à jour des liens facilement partout dans le site.
+**Centralisation des variables** : Toutes les adresses et liens du réseau vivent maintenant dans `_variables.yml` et s’appellent dans les `.qmd` avec `contact-ssphub@insee.fr`. Cela permet de mettre à jour des liens facilement partout dans le site.
 
 ``` yaml
 contact:
@@ -205,7 +205,7 @@ signup:
 
 # Et un changement d’adresse
 
-Le site était déployé avant sur <https://ssphub.netlify.app> par facilité, comme cela permettait d’avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand même sur le fait d’avoir une adresse url qui fasse peu propre pour un réseau d’agents publics. On a donc décidé de sortir le (petit) porte-monnaie et d’acheter le nom de domaine [ssphub.fr](https://ssphub.fr), détenu maintenant très officiellement par l’État français (*himself*), représenté par le MEFSIN (*himself*), représenté par l’Insee (*himself*) (cf [le site de l’AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
+Le site était déployé avant sur <https://ssphub.netlify.app> par facilité, comme cela permettait d’avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand même sur le fait d’avoir une adresse URL qui fasse peu propre pour un réseau d’agents publics. On a donc décidé de sortir le (petit) porte-monnaie et d’acheter le nom de domaine [ssphub.fr](https://ssphub.fr), détenu maintenant très officiellement par l’État français (*himself*), représenté par le MEFSIN (*himself*), représenté par l’Insee (*himself*) (*cf.* [le site de l’AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
 
 Le site a ainsi déménagé sur **[ssphub.fr](https://ssphub.fr)** à l’été 2026 par la fameuse [demande de tirage (PR) 173](https://github.com/InseeFrLab/ssphub/pull/173). On a au passage inséré une redirection de l’ancien nom de domaine vers le nouveau. <https://ssphub.netlify.app/project/2026_sndstools/> est redirigé automatiquement vers <https://ssphub.fr/project/2026_sndstools/>.
 
@@ -218,14 +218,14 @@ Comme toujours, des chantiers restent ouverts :
 
 > **NOTE:**
 >
-> Le travail de refonte global du site a pris **environ deux mois de travail**, étalé sur un an !
+> La refonte du site a pris **environ deux mois de travail**, étalé sur un an !
 >
 > - environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu, rapatrier ce qui serait à rapatrier, supprimer le reste ;
 > - environ une semaine de travail sur le cadrage de la refonte du site, monter une expérimentation et la valider ;
 > - environ deux semaines pour chercher les informations sur les projets innovants, les inclure ;
 > - une semaine de travail pour la relecture des projets, les relances, les échanges ;
 > - une semaine de travail technique sur le site, améliorer le déploiement ;
-> - enfin quelques jours de choix de nom de domaine et de gestion lié à la bascule ;
+> - enfin quelques jours de choix de nom de domaine et de gestion pour transférer le site sur son nouvel URL ;
 > - et le temps d’écriture de ce post de blog et de la communication à faire ensuite autour des projets 😉 (un gros jour pour ce post, à voir pour la suite !).
 
 # Pour contribuer au site
