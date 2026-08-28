@@ -29,6 +29,9 @@ website:
   repo-url: https://github.com/InseeFrLab/ssphub
   repo-actions: [source, issue, edit]
   llms-txt: true
+  comments:
+    utterances:
+      repo: InseeFrLab/ssphub
 
 title-block-banner: "#6886bb"
 title-block-banner-color: white
