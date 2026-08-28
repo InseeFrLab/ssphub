@@ -44,17 +44,17 @@ Trois nouveautés sont apparues le 29 mai[^commitdelicieux].
 Derrière ces trois lignes, il y a une [*pull request*](https://github.com/InseeFrLab/ssphub/pull/112)
 de 412 fichiers modifiés, à peu près 5 000 lignes ajoutées et 3 000 supprimées.
 C'était l'occasion de reprendre pas mal de choses et donc
-l'occasion d'un post de blog pour raconter les choix qui ont été faits - si jamais cela vosu est utile aussi.
+l'occasion d'un post de blog pour raconter les choix qui ont été faits - si jamais cela vous est utile aussi.
 
 # Que veut-on voir sur ce site ?
 
 Avant de toucher au "comment?", on a parlé du "pourquoi?".
 Après des échanges avec quelques personnes au sein du réseau, on est arrivé aux
-quatres besoins suivant pour le site :
+quatre besoins suivant pour le site :
 
 ## L'infolettre passe en mode archive
 
-L'infolettre, c'est historiquement le coeur du réseau. Mais elle vit maintenant plus
+L'infolettre, c'est historiquement le coeur du réseau. Mais elle vit désormais surtout
 **par mail et sur Tchap** là où sont les gens. Le site n'a plus besoin d'en être
 la vitrine mais plutôt une archive 👵.
 
@@ -66,22 +66,22 @@ jusqu'aux plus anciens, ils ont juste quitté la barre de navigation principale 
 
 C'est le gros morceau. On a voulu (re)mettre en avant **ce que l'on fait au sein du réseau** et avoir un endroit où partager nos projets.
 
-Ainsi, des projets étaient avant affichés sur le site mais ils avaient été enlevés.
+Des projets étaient autrefois affichés sur le site avant d'en disparaître.
 La vie n'étant qu'éternel recommencement, on a décidé de les inclure à nouveau.
 
 Dans l'idée, cela donne :
 
-> Un(e) chef(fe)
+> **Un(e) chef(fe)**\
 > Il faut faire de la codification automatique avec de l'IA
 >
-> Un(e) agent(e)
-> Mais bien sûr 😅.
+> **Un(e) agent(e)**\
+> Mais bien sûr 😅.\
 > _à lui/elle-même_: Mais je sais pas faire. Qui en a fait avant ?
 >
-> Un(e) agent(e)
+> **Un(e) agent(e)**\
 > Oh, mais le site du SSPHub donne des repo Git, des descriptions sommaires sur tel projet qui nous serait utile. Si on les contactait ?
 >
-> Un(e) chef(fe)
+> **Un(e) chef(fe)**\
 > Bien vu, jeune padawan !
 >
 
@@ -125,8 +125,8 @@ identifiants 😱).
 
 ## Une version anglaise partielle
 
-Il arrive que l'on ne soit pas seul au monde et d'avoir des interlocuteurs hors de France.
-une **version anglaise** des projets était  donc une demande initiale forte, avec aussi une traduction
+Il arrive qu'on ne soit pas seul au monde et qu'on ait des interlocuteurs hors de France.
+Une **version anglaise** des projets était  donc une demande initiale forte, avec aussi une traduction
 de la présentation du réseau.
 
 En revanche, le blog, les événements et les infolettres restent en français.
@@ -138,7 +138,7 @@ du SSP n'intéresserait pas forcément d'autres personnes** (peut-être à tort)
 Voilà pour le pourquoi et les objectifs. Maintenant comment faire ?
 
 Le site tourne sous [Quarto](https://quarto.org). Et **Quarto ne sait pas gérer
-nativement deux langues**. C'est un sparadrap : l'issue
+nativement deux langues**. C'est un serpent de mer : l'issue
 [#275](https://github.com/quarto-dev/quarto-cli/issues/275) du dépôt Quarto
 traîne depuis des années, plusieurs solutions communautaires cohabitent et
 aucune n'est officielle.
@@ -154,7 +154,7 @@ emmener sur *cette* fiche en anglais, pas sur la page d'accueil anglaise.
 La solution concurrente ne proposait à l'époque qu'un aiguillage à l'entrée du site : vous
 choisissez votre langue une fois et ensuite vous êtes coincé.
 **Comme ce besoin me semblait prioritaire, il a emporté la décision malgré les
-désavantages que cela implique après en terme de technique**. L'autre solution a aussi
+désavantages que cela implique après techniquement**. L'autre solution a aussi
 des atouts, c'est un arbitrage qui a été fait entre les fonctionnalités proposées, la simplicité, mes capacités
 à maintenir ensuite le site. Un autre arbitrage est tout aussi possible suivant les conditions !
 
@@ -173,6 +173,7 @@ Concrètement, cela utilise la fonctionnalité de [profils](https://quarto.org/d
  et qu'il a détaillé dans le fil de discussion de l'issue [#275 sus-nommée](https://github.com/quarto-dev/quarto-cli/issues/275#issuecomment-3687937583).
 
 Sur l'analyse coût bénéfice :
+
 - ✅ C'est du Quarto natif : CI simple, `quarto preview` fonctionnel.
 - ❌ Pas de lien page à page.
 - ❌ nécessité d'utiliser des filtres Lua ensuite pour faire quelque chose de plus spécifique,
@@ -183,13 +184,14 @@ Sur l'analyse coût bénéfice :
 **babelquarto**
 
 L'autre solution est d'utiliser le package R [`babelquarto`](https://docs.ropensci.org/babelquarto/)
-développé par *R Open Science*. Le package permet, de spécifier dans le fichier
-`_ quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers
+développé par *R Open Science*. Le package permet de spécifier dans le fichier
+`_quarto.yml` quelles langues coexistent. Il suffit ensuite de nommer les fichiers
 en français en `index.qmd` et les fichiers anglais équivalents en `index.en.qmd`.
 Le package va les détecter lors du rendu du site, les mettre dans un dossier pour chaque langue
 (ici seulement `en/`) et créer des liens pages à page pour basculer d'une langue à l'autre.
 
 Sur l'analyse coût bénéfice :
+
 - ✅ Le lien entre versions se construit tout seul : on n'écrit **rien** dans les liens.
 - ❌ Le rendu ne passe plus par `quarto render` mais par R — donc perte du preview natif
   et surtout, le plus désagréable, adhérence à R.
@@ -204,7 +206,7 @@ posts de blog, les ateliers et les infolettres.
 
 Sans les profils Quarto, il aurait fallu traduire tout le site ou rien.
 
-```{yaml filename="_quarto.yml"}
+```{.yaml filename="_quarto.yml"}
 profile:
   default: fr
   group: [fr, en]
@@ -241,7 +243,7 @@ babeldown::deepl_translate(
 ```
 
 Le script R corrige ensuite automatiquement certaines typos qui ressortaient quasi
- systématiquement de la traduction par qu'ils sont liés au modèle de tableau utilisé :
+ systématiquement de la traduction parce qu'ils sont liés au modèle de tableau utilisé :
  trop de `---` dans les tableaux, des caractères
  spéciaux insérés qui cassent la phase de rendering : `\-` par exemple et `{{\< fa brands`.
 
@@ -280,7 +282,7 @@ cd scripts && uv run 1_template.py "2026_mon_projet"
 uv run Rscript scripts/1_render.R
 
 # 2 - Traduire une fiche projet
-uv run Rscript scripts/2_translate.R 2026_mon_projet
+Rscript scripts/2_translate.R 2026_mon_projet
 
 # 3 - Rendre et prévisualiser en local
 uv run Rscript scripts/3_render_preview.R
@@ -392,13 +394,14 @@ Comme toujours, des chantiers restent ouverts :
 Le travail de refonte global du site a pris **environ deux mois de travail**, étalé sur un an !
 
 - environ deux semaines de travail pour étudier les anciens sites à décommissionner, lister leur contenu,
- rappatrier ce qui serait à rappatrier, supprimer le reste ;
+ rapatrier ce qui serait à rapatrier, supprimer le reste ;
 - environ une semaine de travail sur le cadrage de la refonte du site, monter une expérimentation et la valider ;
 - environ deux semaines pour chercher les informations sur les projets innovants, les inclure ;
 - une semaine de travail pour la relecture des projets, les relances, les échanges ;
 - une semaine de travail technique sur le site, améliorer le déploiement ;
 - enfin quelques jours de choix de nom de domaine et de gestion lié à la bascule ;
-- et le temps d'écriture de ce blog de post et de la communication à faire ensuite autour des projets 😉.
+- et le temps d'écriture de ce post de blog et de la communication à faire ensuite autour des projets 😉
+(un gros jour pour ce post, à voir pour la suite !).
 
 :::
 
