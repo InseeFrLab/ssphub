@@ -290,10 +290,10 @@ uv run Rscript scripts/3_render_preview.R
 **C'est un mélange de R et de Python** et, honnêtement, je ne trouve pas cela très beau.
 Mais comme on dit, tant pis c'est comme cela 🫠.
 
-Python était déjà utilisé pour un post de blog. Il l'est donc à nouveau pour initier des projets et pour que l'environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/).
-R est utilisé pour ses packages babelquarto et babeldown pour la traduction.
-On doit utiliser `uv run Rscript` parce que justement on utilise `uv` pour Python
+On doit donc utiliser `uv run Rscript` parce que justement on utilise `uv` pour Python
 et qu'un article de blog utilise Python lors de la phase de render.
+Il l'est donc à nouveau pour initier des projets et pour que l'environnement soit reproductible grâce à [`uv`](https://docs.astral.sh/uv/).
+R est ensuite utilisé pour ses packages babelquarto et babeldown pour la traduction.
 
 Côté déploiement, il y a désormais **trois environnements** :
 
@@ -317,11 +317,11 @@ pour déployer la prévisualisation automatiquement.
 :::
 
 
-# Un peu de ménage
+# Un peu de ménage et autres
 
 Une refonte, c'est aussi l'occasion de faire un peu de ménage.
 
-**Les trois `init.sh`.** À la racine du dépôt dormait un script qui installait
+**Les trois `init.sh`**: À la racine du dépôt dormait un script qui installait
 Go et Hugo, le générateur qu'on utilisait
 *avant* Quarto. Le script avait survécu à la migration vers Quarto, il a été rattrapé
 par la patrouille.
@@ -331,21 +331,24 @@ devenus inutiles le jour où le notebook a déménagé dans
 [son propre dépôt](https://github.com/SSPHub/Formation-polars).
 
 
-**Les gros fichiers.** Le dépôt versionnait des PDF de plusieurs mégaoctets et
+**Les gros fichiers**: Le dépôt versionnait des PDF de plusieurs mégaoctets et
 une présentation ODP, hérités du `static/` de Hugo. Ils sont partis sur le
 **stockage S3 du SSP Cloud**, et le site pointe dessus. Git n'est pas fait pour ça
 et le repo commence à être lourd.
 
-**L'arborescence.** Les dossiers portent enfin le nom des rubriques :
+**L'arborescence**: Les dossiers portent enfin le nom des rubriques :
 `post/` est devenu `blog/`, `talk/` s'est réparti entre `event/` et `course/`,
 le CSS et le SCSS ont rejoint `assets/`.
 
+**LLMs**: Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère
+une version du site lisible par les modèles de langage. C'est d'ailleurs comme ça
+que vous pouvez donner un post entier à lire à un assistant, en ajoutant
+`.llms.md` à l'URL : <https://ssphub.fr/project.llms.md> est la version allégée pour IA de
+<https://ssphub.fr/project>.
 
-::: {.callout-tip collapse="true"}
-## Pour les curieux : la centralisation des variables
-
-Toutes les adresses et liens du réseau vivent maintenant dans `_variables.yml`
-et s'appellent dans les `.qmd` avec `{{< var contact.email >}}` :
+**Centralisation des variables**: Toutes les adresses et liens du réseau vivent maintenant dans `_variables.yml`
+et s'appellent dans les `.qmd` avec `{{< var contact.email >}}`. Cela permet de mettre à jour des liens
+facilement partout dans le site.
 
 ```yaml
 contact:
@@ -356,34 +359,27 @@ signup:
   form: https://grist.numerique.gouv.fr/o/ssphub/forms/...
 ```
 
-Fini de chercher une adresse mail dans quinze fichiers le jour où elle change.
-
-Autre petit ajout de la refonte : `llms-txt: true` dans `_quarto.yml`, qui génère
-une version du site lisible par les modèles de langage. C'est d'ailleurs comme ça
-que vous pouvez donner un post entier à lire à un assistant, en ajoutant
-`.llms.md` à l'URL.
-:::
 
 # Et un changement d'adresse
 
 Le site était déployé avant sur <https://ssphub.netlify.app> par facilité, comme cela permettait
 d'avoir une CI/CD facilement intégrée à GitHub. Quelques personnes tiquaient quand
 même sur le fait d'avoir une adresse url qui fasse peu propre pour un réseau d'agents publics.
-On a donc décidé de sortir le (petit) porte-monnaie et d'acheter le nom de domaine <ssphub.fr>,
-détenu maintenant très officiellement par l'État français (himself), représenté par le MEFSIN (himself), représenté par l'Insee (himsel) (cf [le site de l'AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
+On a donc décidé de sortir le (petit) porte-monnaie et d'acheter le nom de domaine [ssphub.fr](https://ssphub.fr),
+détenu maintenant très officiellement par l'État français (*himself*), représenté par le MEFSIN (*himself*),
+représenté par l'Insee (*himself*) (cf [le site de l'AFNIC](https://www.afnic.fr/en/domain-names-and-support/everything-there-is-to-know-about-domain-names/find-a-domain-name-or-a-holder-using-whois/)).
 
 Le site a ainsi déménagé sur **[ssphub.fr](https://ssphub.fr)** à l'été 2026 par la
 fameuse [demande de tirage (PR) 173](https://github.com/InseeFrLab/ssphub/pull/173).
 On a au passage inséré une redirection de l'ancien nom de domaine vers le nouveau.
-<https://ssphub.netlify.app/project/2026_sndstools/> est redirigé
+<https://ssphub.netlify.app/project/2026_sndstools/> est redirigé automatiquement
 vers <https://ssphub.fr/project/2026_sndstools/>.
 
 # Ce qu'il reste à faire
 
 Comme toujours, des chantiers restent ouverts :
 
-- **la version anglaise ne couvre pas le blog ni les événements.** C'est un choix
-  pour l'instant;
+- **la version anglaise ne couvre pas le blog ni les événements.** C'est un choix ;
 - **la synchronisation automatique des fiches projets** : un mécanisme existe pour
   récupérer la documentation directement depuis les dépôts des projets, afin que
   les fiches restent à jour toutes seules. Il est écrit, il est en place... et il est
@@ -406,5 +402,6 @@ préférez, ouvrez simplement une
   [Show and Tell](https://github.com/quarto-dev/quarto-cli/discussions/categories/show-and-tell)
   du dépôt Quarto ;
 - la documentation de [`babelquarto`](https://docs.ropensci.org/babelquarto/) ;
+- la documentation de [`babeldown`](https://docs.ropensci.org/babeldown/) ;
 - le [devguide de rOpenSci](https://devguide.ropensci.org/), exemple grandeur nature ;
 - la documentation d'[`uv`](https://docs.astral.sh/uv/).
