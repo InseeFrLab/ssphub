@@ -23,7 +23,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-preview-github-pages:
     runs-on: ubuntu-latest
     steps:
       # 1) Stash PR metadata FIRST, before any checkout wipes the workspace.

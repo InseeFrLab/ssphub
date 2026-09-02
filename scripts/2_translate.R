@@ -60,14 +60,3 @@ replace_in_qmd <- function(input_file) {
 }
 
 replace_in_qmd(out_path)
-
-# NO WORK - TO DO LATER
-# # Glossary
-# filename <- "2_glossary-fr-en.csv"
-
-# # create (or update) glossary
-# babeldown::deepl_upsert_glossary(
-#   filename,
-#   target_lang = "en",
-#   source_lang = "fr"
-# )

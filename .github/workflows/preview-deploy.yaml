@@ -25,7 +25,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  deploy-to-github-pages:
     runs-on: ubuntu-latest
     # Only act on builds that came from a pull_request (ignore manual dispatch runs).
     if: github.event.workflow_run.event == 'pull_request'
