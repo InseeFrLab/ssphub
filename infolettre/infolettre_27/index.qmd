@@ -71,6 +71,21 @@ Les liens vers les différents **funathons, formations à Python, au MLOps et le
 
 N'hésitez pas à proposer de nouvelles formations!
 
+
+# Actualités du SSP Cloud
+
+Le service d'accès aux grands modèles de langage (LLM) [llm.lab](https://llm.lab.sspcloud.fr/), modèles auto-hébergés sur le SSP Cloud, devient de plus en plus connu et sollicité par les utilisateurs de la *célèbre* plateforme open-source de data science.
+Depuis peu, un nouvel outil est disponible pour les utilisateurs les plus aguerris, avides de tester toujours plus de nouveaux LLM : **le déploiement de LLM à la demande**.
+
+- **Le concept :** à partir d'un fichier YAML comprenant la configuration du LLM (*contrat de déploiement*), le modèle peut être déployé sur la plateforme, **sous réserve de disponibilité de GPU** (un modèle = un GPU).
+
+- **Comment ça marche ?** Une fois le contrat de déploiement ajouté dans le projet GitHub [sspcloud-llm](https://github.com/InseeFrLab/sspcloud-llm) et les poids du modèle à déployer ajoutés dans le S3 du SSP Cloud, le modèle est déployé automatiquement sur la plateforme *via* ArgoCD. La disponibilité du nouveau modèle est aussi observable sur [status.lab.sspcloud.fr](https://status.lab.sspcloud.fr/status/sspcloud).
+
+- **Les limites :** en plus de **la disponibilité des GPU**, une deuxième limite est la **capacité maximale en VRAM des GPU** (mémoire vive associée à la carte graphique).
+Les GPU avec le plus de VRAM disponible sur la plateforme du SSP Cloud disposent d'environ 90 Go ; ils ne peuvent pas héberger les plus gros modèles disponibles en *open-weight* (c'est-à-dire des LLM avec des poids qui sont téléchargeables).
+Des modèles comme `Kimi K3` ou `DeepSeek V4.1-Flash` ont un nombre de **paramètres totaux** (resp. 2 800 et 552 milliards) bien trop élevé pour la capacité d'un GPU du SSP Cloud.
+
+
 # Actualités en data science
 Avec la pause estivale, de nombreuses actualités en data science et ressources sont sorties.
 Voici un **panorama synthétique** des innovations relevées.
@@ -105,38 +120,29 @@ Pour savoir comment cela fonctionne, des universitaires, issus en grande partie 
 
 ## Ressources
 - **Python**
-  - [mcpgen : Transformez n'importe quelle API en serveur MCP Python](https://github.com/JnanaSrota/mcpgen): Outil de génération automatique de serveurs MCP à partir de spécifications OpenAPI ou de collections Postman. Produit un code source Python autonome sans dépendance runtime.
+  - [mcpgen : Transformez n'importe quelle API en serveur MCP Python](https://github.com/JnanaSrota/mcpgen): Outil de génération automatique de serveurs MCP à partir de spécifications OpenAPI ou de collections Postman.
 
 - **R**
-  - [rv : Gestionnaire de packages R reproductible et déclaratif](https://github.com/a2-ai/rv): Outil permettant de gérer et d'installer des packages R de manière rapide, déclarative et reproductible. Utilise un fichier de configuration pour synchroniser les versions de R et les dépendances du projet.
+  - [rv : Gestionnaire de packages R reproductible et déclaratif](https://github.com/a2-ai/rv): Outil permettant de gérer et d'installer des packages R de manière rapide, déclarative et reproductible à la `uv` mais pour R.
 
-  - [ggplot2qgis: Export de cartes ggplot2 et tmap vers QGIS](https://yutannihilation.github.io/ggplot2qgis/): Package R permettant d'exporter des graphiques spatiaux ggplot2 ou tmap vers des fichiers de projet QGIS (.qgs). La conversion préserve les échelles de couleurs, les styles de couches et gère les données vectorielles (GeoPackage) et raster (GeoTIFF).
+  - [ggplot2qgis: Export de cartes ggplot2 et tmap vers QGIS](https://yutannihilation.github.io/ggplot2qgis/): Package R permettant d'exporter des graphiques spatiaux ggplot2 ou tmap vers des fichiers de projet QGIS (.qgs) en préservant les échelles de couleurs, les styles de couches et en gérant les données vectorielles.
 
-  - [ir 0.1.0: self-describing R scripts and Quarto documents](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/): Lancement de ir, un outil en ligne de commande pour exécuter des scripts R et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier.
+  - [ir 0.1.0: self-describing R scripts and Quarto documents](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/): Lancement de `ir`, un outil en ligne de commande pour exécuter des scripts R et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier, comme avec `uv`.
 
-  - [Introducing lorax: Speaking for the Tree-Based Models](https://opensource.posit.co/blog/2026-07-28_lorax/): Présentation de lorax, un nouveau package R conçu pour caractériser et visualiser les modèles basés sur des arbres. Il permet d'extraire les règles de décision, d'identifier les prédicteurs utilisés et d'uniformiser l'accès aux caractéristiques de divers modèles.
+  - [Introducing lorax: Speaking for the Tree-Based Models](https://opensource.posit.co/blog/2026-07-28_lorax/): Présentation de `lorax`, un nouveau package R conçu pour caractériser et visualiser les modèles basés sur des arbres. Il permet d'extraire les règles de décision, d'identifier les prédicteurs utilisés et d'uniformiser l'accès aux caractéristiques de divers modèles.
 
   - [mcptools 1.0.0 : le premier SDK R pour le Model Context Protocol](https://opensource.posit.co/blog/2026-07-06_mcptools-1-0-0/): Lancement de la version 1.0.0 de mcptools sur CRAN. Ce SDK permet de déployer et de récupérer des outils MCP en R, avec support des images et des serveurs authentifiés.
 
 - **Typst**
-  - [Mosaic: Beautiful slides for Typst](https://github.com/vincentarelbundock/mosaic): Outil permettant de créer des présentations de type slides directement via Typst. Propose des thèmes modernes, des mises en page prêtes à l'emploi et une gestion simplifiée du contenu.
+  - [Mosaic: Beautiful slides for Typst](https://github.com/vincentarelbundock/mosaic): Outil permettant de créer des présentations de type slides directement via Typst.
 
-  - [Build LinkedIn Carousels with Typst: the slide Layout](https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html): Tutoriel pour créer des carrousels LinkedIn en utilisant Typst. Présentation d'un helper pour gérer la mise en page, les fonds et l'export en PDF.
+  - [Build LinkedIn Carousels with Typst: the slide Layout](https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html): Tutoriel pour créer des carrousels LinkedIn en utilisant Typst.
 
 - **OCR** : Un doctorant de Harvard présente [socOCRbench](https://noahdasanaike.github.io/posts/sococrbench.html), un nouveau benchmark d'OCR conçu pour les sciences sociales. Il évalue la reconnaissance de manuscrits, l'extraction de tableaux et de textes imprimés sur des documents complexes.
 
-## SSP Cloud
+- [Guide to data tools landscape for developers](https://sinja.io/blog/data-landscape-guide-for-developers): Guide d'introduction au paysage des outils de données pour les développeurs qui présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL).
+Le guide est pensé à **destination de developpeurs arrivant dans un environnement data et nouveaux dans la matière**.
 
-Le service d'accès aux grands modèles de langage (LLM) [llm.lab](https://llm.lab.sspcloud.fr/), modèles auto-hébergés sur le SSP Cloud, devient de plus en plus connu et sollicité par les utilisateurs de la *célèbre* plateforme open-source de data science. Depuis peu, un nouvel outil est disponible pour les utilisateurs les plus aguerris, avides de tester toujours plus de nouveaux LLM : **le déploiement de LLM à la demande**.
-
-- **Le concept :** à partir d'un fichier YAML comprenant la configuration du LLM (*contrat de déploiement*), le modèle peut être déployé sur la plateforme, **sous réserve de disponibilité de GPU** (un modèle = un GPU).
-
-- **Comment ça marche ?** Une fois le contrat de déploiement ajouté dans le projet GitHub [sspcloud-llm](https://github.com/InseeFrLab/sspcloud-llm) et les poids du modèle à déployer ajoutés dans le S3 du SSP Cloud, le modèle est déployé automatiquement sur la plateforme *via* ArgoCD. La disponibilité du nouveau modèle est aussi observable sur [status.lab.sspcloud.fr](https://status.lab.sspcloud.fr/status/sspcloud).
-
-- **Les limites :** en plus de **la disponibilité des GPU**, une deuxième limite est la **capacité maximale en VRAM des GPU** (mémoire vive associée à la carte graphique). Les GPU avec le plus de VRAM disponible sur la plateforme du SSP Cloud disposent d'environ 90 Go ; ils ne peuvent pas héberger les plus gros modèles disponibles en *open-weight* (c'est-à-dire des LLM avec des poids qui sont téléchargeables). Des modèles comme `Kimi K3` ou `DeepSeek V4.1-Flash` ont un nombre de **paramètres totaux** (resp. 2 800 et 552 milliards) bien trop élevé pour la capacité d'un GPU du SSP Cloud.
-- [Guide to data tools landscape for developers](https://sinja.io/blog/data-landscape-guide-for-developers): Guide d'introduction au paysage des outils de données pour les développeurs. Présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL).
-
-> "guide to data tools for software engineers who found themselves in a data company and have no idea what all those words mean"
 
 ## Fun/formation
 - Vous cherchez un chiffre similaire à un autre et montrer par exemple à vos élèves l'importance des métadonnées ? [Spurious Comparisons](https://number.weyland.enterprises/?q=66438820) permet de **rechercher des statistiques par valeur absolue**.
