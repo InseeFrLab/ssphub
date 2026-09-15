@@ -231,10 +231,15 @@ background: #6886bb;
   </ul></li>
   <li><a href="#actualités-en-data-science" id="toc-actualités-en-data-science" class="nav-link" data-scroll-target="#actualités-en-data-science">Actualités en data science</a>
   <ul class="collapse">
-  <li><a href="#funformation" id="toc-funformation" class="nav-link" data-scroll-target="#funformation">Fun/formation :</a></li>
-  <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources :</a></li>
-  <li><a href="#levelplus" id="toc-levelplus" class="nav-link" data-scroll-target="#levelplus">Levelplus</a></li>
-  <li><a href="#ia" id="toc-ia" class="nav-link" data-scroll-target="#ia">IA :</a></li>
+  <li><a href="#ia" id="toc-ia" class="nav-link" data-scroll-target="#ia">IA</a>
+  <ul class="collapse">
+  <li><a href="#efficacité-de-lia" id="toc-efficacité-de-lia" class="nav-link" data-scroll-target="#efficacité-de-lia">Efficacité de l’IA</a></li>
+  <li><a href="#adaptation-à-lusage-de-lia" id="toc-adaptation-à-lusage-de-lia" class="nav-link" data-scroll-target="#adaptation-à-lusage-de-lia">Adaptation à l’usage de l’IA</a></li>
+  </ul></li>
+  <li><a href="#ressources" id="toc-ressources" class="nav-link" data-scroll-target="#ressources">Ressources</a></li>
+  <li><a href="#ssp-cloud" id="toc-ssp-cloud" class="nav-link" data-scroll-target="#ssp-cloud">SSP Cloud</a></li>
+  <li><a href="#funformation" id="toc-funformation" class="nav-link" data-scroll-target="#funformation">Fun/formation</a></li>
+  <li><a href="#une-plongée-dans-des-articles-plus-exhaustifs" id="toc-une-plongée-dans-des-articles-plus-exhaustifs" class="nav-link" data-scroll-target="#une-plongée-dans-des-articles-plus-exhaustifs">Une plongée dans des articles plus exhaustifs</a></li>
   </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/infolettre/infolettre_27/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/infolettre/infolettre_27/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></nav>
@@ -293,62 +298,78 @@ background: #6886bb;
 </section>
 <section id="actualités-en-data-science" class="level1">
 <h1>Actualités en data science</h1>
-<section id="funformation" class="level2">
-<h2 class="anchored" data-anchor-id="funformation">Fun/formation :</h2>
+<p>Avec la pause estivale, de nombreuses actualités en data science et ressources sont sorties. Voici un panorama synthétique des innovations relevées.</p>
+<section id="ia" class="level2">
+<h2 class="anchored" data-anchor-id="ia">IA</h2>
+<section id="efficacité-de-lia" class="level3">
+<h3 class="anchored" data-anchor-id="efficacité-de-lia">Efficacité de l’IA</h3>
 <ul>
-<li><a href="https://sinja.io/blog/data-landscape-guide-for-developers">Guide to data tools landscape for developers</a>: Guide d’introduction au paysage des outils de données pour les développeurs. Présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL).</li>
-</ul>
-<blockquote class="blockquote">
-<p>“guide to data tools for software engineers who found themselves in a data company and have no idea what all those words mean” Catégories : data, formation, Metier Data</p>
-</blockquote>
-<ul>
-<li><p><a href="https://number.weyland.enterprises/?q=66438820">Spurious Comparisons</a>: Interface de recherche de statistiques par valeur absolue. Chargement de jeux de données via une plateforme interactive. Catégories : data, formation, fun</p></li>
-<li><p><a href="https://cran.r-project.org/web/packages/cpge/index.html">Package cpge: Interactive Clustered Graph for French CPGE</a>: Outil interactif de dataviz pour aider les étudiants en CPGE à choisir leur orientation. Visualisation par graphe des concours et secteurs d’activité des grandes écoles françaises. Catégories : dataviz, fun, package, R, RShiny</p></li>
-<li><p><a href="https://pudding.cool/2026/06/mow/">Why some people mow a lawn better than others</a>: Analyse de 132 003 tentatives de tonte de pelouse virtuelle pour étudier l’efficacité humaine. Étude comparative entre les stratégies humaines et les algorithmes de planification de trajectoire. Catégories : data, fun, performance</p></li>
+<li><p>L’étude <a href="https://arxiv.org/abs/2605.28787">Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval</a> de Google montre <strong>l’importance d’avoir des données structurées</strong> pour pour augmenter l’efficacité des agents autonomes. En effet, les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision (45% de réussite contre 20% pour les agents sans accès à des) et de conformité aux principes FAIR (l’agent de base réussit environ 40% des questions contre 66% pour les agents avec accès aux métadonnées structurées).</p></li>
+<li><p><a href="https://www.nber.org/papers/w35588">AI Agents and Prompt Engineering in Econometric Coding</a>: Étude de l’efficacité des LLM pour la rédaction de code économétrique entre chatbots et agents autonomes sur Stata, R et Python. Sur 21 taches dédiées, les agents autonomes sont bien plus efficaces (peuvent tester le code) que des chatbots et réussissent dans 96% des cas lorsqu’il interagit avec l’humain (95% sans interaction). Les LLM codent par ailleurs le mieux en Python et en R (écart de taux de succès non significatif entre les deux languages) et largement moins bien en Stata (33%)</p></li>
+<li><p><a href="https://frontierharness.org/">FrontierHarness Eval</a> évalue 12 environnements pour agents IA sur des tâches de génie logiciel par taux de réussite, vitesse et coût par tâche. Codex est celui qui réussit le mieux (67% des taches) à un coût pourtant six fois moindre que Claude Code.</p></li>
+<li><p><a href="https://noahdasanaike.github.io/posts/sococrbench.html">socOCRbench - An OCR benchmark for social science documents</a>: Présentation de socOCRbench, un nouveau benchmark d’OCR conçu pour les sciences sociales. Il évalue la reconnaissance de manuscrits, l’extraction de tableaux et de textes imprimés sur des documents complexes.</p></li>
 </ul>
 </section>
+<section id="adaptation-à-lusage-de-lia" class="level3">
+<h3 class="anchored" data-anchor-id="adaptation-à-lusage-de-lia">Adaptation à l’usage de l’IA</h3>
+<ul>
+<li><p><a href="https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html">Protecting our FLOSS commons from LLMs</a>: Codeberg annonce des mesures pour protéger l’écosystème libre des LLM. L’association s’engage à ne pas utiliser les données des utilisateurs pour l’entraînement de l’IA et modifie ses conditions d’utilisation.</p></li>
+<li><p><a href="https://github.com/isaqueseneda/shieldfont">ShieldFont : une police de caractères pour protéger les contenus contre l’IA</a>: Développement d’une police open-source qui empoisonne les jeux de données d’entraînement de l’IA par substitution de texte. Le système permet une lecture humaine normale tout en rendant le scraping de masse coûteux et inefficace.</p></li>
+<li><p><a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content?utm_source=newsletter.learnprompting.org&amp;utm_medium=newsletter&amp;utm_campaign=anything-you-write-with-claude-now-has-a-hidden-signature&amp;_bhlid=4815b7d903d36e54a02ae0cce5a97175599d945b">How Claude marks AI-generated content</a>: Présentation de la méthode utilisée par Anthropic pour identifier les contenus générés par l’IA. Document d’aide technique sur le marquage des sorties de Claude.</p></li>
+<li><p><a href="https://arxiv.org/pdf/2312.07913">A Survey of Text Watermarking in the Era of Large Language Models</a>: Les filigranes à l’ère de l’IA : comment protéger les droits d’auteur</p></li>
+</ul>
+</section>
+</section>
 <section id="ressources" class="level2">
-<h2 class="anchored" data-anchor-id="ressources">Ressources :</h2>
+<h2 class="anchored" data-anchor-id="ressources">Ressources</h2>
 <ul>
 <li>Python :
 <ul>
-<li><a href="https://github.com/JnanaSrota/mcpgen">mcpgen : Transformez n’importe quelle API en serveur MCP Python</a>: Outil de génération automatique de serveurs MCP à partir de spécifications OpenAPI ou de collections Postman. Produit un code source Python autonome sans dépendance runtime. Catégories : MCP, OpenSource, package, Python, tools</li>
+<li><a href="https://github.com/JnanaSrota/mcpgen">mcpgen : Transformez n’importe quelle API en serveur MCP Python</a>: Outil de génération automatique de serveurs MCP à partir de spécifications OpenAPI ou de collections Postman. Produit un code source Python autonome sans dépendance runtime.</li>
 </ul></li>
 <li>R
 <ul>
-<li><p><a href="https://github.com/a2-ai/rv">rv : Gestionnaire de packages R reproductible et déclaratif</a>: Outil permettant de gérer et d’installer des packages R de manière rapide, déclarative et reproductible. Utilise un fichier de configuration pour synchroniser les versions de R et les dépendances du projet. Catégories : package, R, reproductibilite</p></li>
-<li><p><a href="https://yutannihilation.github.io/ggplot2qgis/">ggplot2qgis: Export de cartes ggplot2 et tmap vers QGIS</a>: Package R permettant d’exporter des graphiques spatiaux ggplot2 ou tmap vers des fichiers de projet QGIS (.qgs). La conversion préserve les échelles de couleurs, les styles de couches et gère les données vectorielles (GeoPackage) et raster (GeoTIFF). Catégories : cartographie, dataviz, package, R</p></li>
-<li><p><a href="https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/">ir 0.1.0: self-describing R scripts and Quarto documents</a>: Lancement de ir, un outil en ligne de commande pour exécuter des scripts R et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier. Catégories : package, R, reproductibilite, tools</p></li>
-<li><p><a href="https://opensource.posit.co/blog/2026-07-28_lorax/">Introducing lorax: Speaking for the Tree-Based Models</a>: Présentation de lorax, un nouveau package R conçu pour caractériser et visualiser les modèles basés sur des arbres. Il permet d’extraire les règles de décision, d’identifier les prédicteurs utilisés et d’uniformiser l’accès aux caractéristiques de divers modèles. Catégories : dataviz, ML, package, R</p></li>
-<li><p><a href="https://opensource.posit.co/blog/2026-07-06_mcptools-1-0-0/">mcptools 1.0.0 : le premier SDK R pour le Model Context Protocol</a>: Lancement de la version 1.0.0 de mcptools sur CRAN. Ce SDK permet de déployer et de récupérer des outils MCP en R, avec support des images et des serveurs authentifiés. Catégories : IA, MCP, OpenSource, R</p></li>
+<li><p><a href="https://github.com/a2-ai/rv">rv : Gestionnaire de packages R reproductible et déclaratif</a>: Outil permettant de gérer et d’installer des packages R de manière rapide, déclarative et reproductible. Utilise un fichier de configuration pour synchroniser les versions de R et les dépendances du projet.</p></li>
+<li><p><a href="https://yutannihilation.github.io/ggplot2qgis/">ggplot2qgis: Export de cartes ggplot2 et tmap vers QGIS</a>: Package R permettant d’exporter des graphiques spatiaux ggplot2 ou tmap vers des fichiers de projet QGIS (.qgs). La conversion préserve les échelles de couleurs, les styles de couches et gère les données vectorielles (GeoPackage) et raster (GeoTIFF).</p></li>
+<li><p><a href="https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/">ir 0.1.0: self-describing R scripts and Quarto documents</a>: Lancement de ir, un outil en ligne de commande pour exécuter des scripts R et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier.</p></li>
+<li><p><a href="https://opensource.posit.co/blog/2026-07-28_lorax/">Introducing lorax: Speaking for the Tree-Based Models</a>: Présentation de lorax, un nouveau package R conçu pour caractériser et visualiser les modèles basés sur des arbres. Il permet d’extraire les règles de décision, d’identifier les prédicteurs utilisés et d’uniformiser l’accès aux caractéristiques de divers modèles.</p></li>
+<li><p><a href="https://opensource.posit.co/blog/2026-07-06_mcptools-1-0-0/">mcptools 1.0.0 : le premier SDK R pour le Model Context Protocol</a>: Lancement de la version 1.0.0 de mcptools sur CRAN. Ce SDK permet de déployer et de récupérer des outils MCP en R, avec support des images et des serveurs authentifiés.</p></li>
 </ul></li>
 <li>Typst :
 <ul>
-<li><p><a href="https://github.com/vincentarelbundock/mosaic">Mosaic: Beautiful slides for Typst</a>: Outil permettant de créer des présentations de type slides directement via Typst. Propose des thèmes modernes, des mises en page prêtes à l’emploi et une gestion simplifiée du contenu. Catégories : dataviz, OpenSource, tools</p></li>
-<li><p><a href="https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html">Build LinkedIn Carousels with Typst: the slide Layout</a>: Tutoriel pour créer des carrousels LinkedIn en utilisant Typst. Présentation d’un helper pour gérer la mise en page, les fonds et l’export en PDF. Catégories : dataviz, OpenSource, tools</p></li>
+<li><p><a href="https://github.com/vincentarelbundock/mosaic">Mosaic: Beautiful slides for Typst</a>: Outil permettant de créer des présentations de type slides directement via Typst. Propose des thèmes modernes, des mises en page prêtes à l’emploi et une gestion simplifiée du contenu.</p></li>
+<li><p><a href="https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html">Build LinkedIn Carousels with Typst: the slide Layout</a>: Tutoriel pour créer des carrousels LinkedIn en utilisant Typst. Présentation d’un helper pour gérer la mise en page, les fonds et l’export en PDF.</p></li>
 </ul></li>
-<li><a href="https://zvec.org/en/blog/2026-08-28-zvec-grep-open-source/">Zvec | From rg to zg: Local Search Beyond Keywords</a>: Lancement de zg, une infrastructure de recherche locale open source combinant recherche sémantique, BM25 et ripgrep. Conçu pour les humains et les agents IA, l’outil optimise la découverte d’informations dans le code et la documentation. Catégories : IA, MCP, NLP/texte, OpenSource, tools</li>
 </ul>
 </section>
-<section id="levelplus" class="level2">
-<h2 class="anchored" data-anchor-id="levelplus">Levelplus</h2>
+<section id="ssp-cloud" class="level2">
+<h2 class="anchored" data-anchor-id="ssp-cloud">SSP Cloud</h2>
+<p>Le service d’accès aux grands modèles de langage (LLM) <a href="https://llm.lab.sspcloud.fr/">llm.lab</a>, modèles auto-hébergés sur le SSP Cloud, devient de plus en plus connu et sollicité par les utilisateurs de la <em>célèbre</em> plateforme open-source de data science. Depuis peu, un nouvel outil est disponible pour les utilisateurs les plus aguerris, avides de tester toujours plus de nouveaux LLM : <strong>le déploiement de LLM à la demande</strong>.</p>
 <ul>
-<li><p><a href="https://motherduck.com/blog/self-hosting-duckdb-road-to-production/">Self-hosting DuckDB: the road to production</a>: Guide pratique sur l’auto-hébergement de DuckDB selon différents niveaux de maturité. Analyse des compromis entre construction maison et services managés en passant du laptop au cloud. Catégories : duckDB, techos</p></li>
-<li><p><a href="https://motherduck.com/blog/agent-signup-cloud-data-warehouse/">How an AI agent signed itself up to MotherDuck and built a pipeline</a>: Un agent IA provisionne de manière autonome un entrepôt de données cloud sans inscription humaine. L’article explore les nouveaux flux de travail où les agents gèrent l’infrastructure, l’ingestion de données et la visualisation. Catégories : duckDB, IA agent, Python, S3</p></li>
-<li><p><a href="https://thingsworthsharing.dev/iceberg">Grokking Apache Iceberg</a>: Exploration approfondie du fonctionnement technique d’Apache Iceberg. Comparaison avec l’ancien modèle Hive et démonstration des avantages du format de table pour la gestion des métadonnées. Catégories : data, Iceberg, metadata, stockage, techos</p></li>
+<li><p><strong>Le concept :</strong> à partir d’un fichier YAML comprenant la configuration du LLM (<em>contrat de déploiement</em>), le modèle peut être déployé sur la plateforme, <strong>sous réserve de disponibilité de GPU</strong> (un modèle = un GPU).</p></li>
+<li><p><strong>Comment ça marche ?</strong> Une fois le contrat de déploiement ajouté dans le projet GitHub <a href="https://github.com/InseeFrLab/sspcloud-llm">sspcloud-llm</a> et les poids du modèle à déployer ajoutés dans le S3 du SSP Cloud, le modèle est déployé automatiquement sur la plateforme <em>via</em> ArgoCD. La disponibilité du nouveau modèle est aussi observable sur <a href="https://status.lab.sspcloud.fr/status/sspcloud">status.lab.sspcloud.fr</a>.</p></li>
+<li><p><strong>Les limites :</strong> en plus de <strong>la disponibilité des GPU</strong>, une deuxième limite est la <strong>capacité maximale en VRAM des GPU</strong> (mémoire vive associée à la carte graphique). Les GPU avec le plus de VRAM disponible sur la plateforme du SSP Cloud disposent d’environ 90 Go ; ils ne peuvent pas héberger les plus gros modèles disponibles en <em>open-weight</em> (c’est-à-dire des LLM avec des poids qui sont téléchargeables). Des modèles comme <code>Kimi K3</code> ou <code>DeepSeek V4.1-Flash</code> ont un nombre de <strong>paramètres totaux</strong> (resp. 2 800 et 552 milliards) bien trop élevé pour la capacité d’un GPU du SSP Cloud.</p></li>
+<li><p><a href="https://sinja.io/blog/data-landscape-guide-for-developers">Guide to data tools landscape for developers</a>: Guide d’introduction au paysage des outils de données pour les développeurs. Présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL).</p></li>
+</ul>
+<blockquote class="blockquote">
+<p>“guide to data tools for software engineers who found themselves in a data company and have no idea what all those words mean”</p>
+</blockquote>
+</section>
+<section id="funformation" class="level2">
+<h2 class="anchored" data-anchor-id="funformation">Fun/formation</h2>
+<ul>
+<li><p>Vous cherchez un chiffre similaire à un autre et montrer par exemple à vos élèves l’importance des métadonnées ? <a href="https://number.weyland.enterprises/?q=66438820">Spurious Comparisons</a> permet de <strong>rechercher des statistiques par valeur absolue</strong>. Cela permet par exemple de voir que <a href="https://number.weyland.enterprises/?q=666">666</a> c’est le nombre de vue pour la page Wikipedia de Narendra Modi le 15 septembre 2025 mais aussi la quantité de sulfates et autres produits chimiques exportés en 2021 par l’Equateur. Coïncidence ?</p></li>
+<li><p>Un package R dédié <a href="https://CRAN.R-project.org/package=cpge">cpge</a> permet d’aider les étudiants en CPGE à choisir leur orientation et de voir les concours et secteurs d’activité des grandes écoles françaises.</p></li>
+<li><p>Une étonnante étude qui montre que <strong>l’humain est assez fort pour optimiser seul</strong> des problèmes complexes. <a href="https://pudding.cool/2026/06/mow/">Why some people mow a lawn better than others</a> permet d’analyser 132 003 tentatives de tonte de pelouse virtuelle pour étudier l’efficacité humaine et les compare aux algorithmes de planification de trajectoire.</p></li>
 </ul>
 </section>
-<section id="ia" class="level2">
-<h2 class="anchored" data-anchor-id="ia">IA :</h2>
+<section id="une-plongée-dans-des-articles-plus-exhaustifs" class="level2">
+<h2 class="anchored" data-anchor-id="une-plongée-dans-des-articles-plus-exhaustifs">Une plongée dans des articles plus exhaustifs</h2>
 <ul>
-<li><p><a href="https://arxiv.org/abs/2605.28787">Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval</a>: Étude comparative sur la nécessité des métadonnées sémantiques pour les agents autonomes. Les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision et de conformité aux principes FAIR. Catégories : efficacite, IA agent, metadata</p></li>
-<li><p><a href="https://www.nber.org/papers/w35588">AI Agents and Prompt Engineering in Econometric Coding</a>: Étude de l’efficacité des LLM pour la rédaction de code économétrique entre chatbots et agents autonomes sur Stata, R et Python. Sur 21 taches dédiées, les agents autonomes sont bien plus efficaces (peuvent tester le code) que des chatbots et réussissent dans 96% des cas lorsqu’il interagit avec l’humain (95% sans interaction). Les LLM codent par ailleurs le mieux en Python et en R (écart de taux de succès non significatif entre les deux languages) et largement moins bien en Stata (33%) Catégories : efficacite, LLM, Python, R</p></li>
-<li><p><a href="https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html">Protecting our FLOSS commons from LLMs</a>: Codeberg annonce des mesures pour protéger l’écosystème libre des LLM. L’association s’engage à ne pas utiliser les données des utilisateurs pour l’entraînement de l’IA et modifie ses conditions d’utilisation. Catégories : dangerIA, LLM, OpenSource</p></li>
-<li><p><a href="https://github.com/isaqueseneda/shieldfont">ShieldFont : une police de caractères pour protéger les contenus contre l’IA</a>: Développement d’une police open-source qui empoisonne les jeux de données d’entraînement de l’IA par substitution de texte. Le système permet une lecture humaine normale tout en rendant le scraping de masse coûteux et inefficace. Catégories : entrainement, IA, NLP/texte, OpenSource, sécurité</p></li>
-<li><p><a href="https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content?utm_source=newsletter.learnprompting.org&amp;utm_medium=newsletter&amp;utm_campaign=anything-you-write-with-claude-now-has-a-hidden-signature&amp;_bhlid=4815b7d903d36e54a02ae0cce5a97175599d945b">How Claude marks AI-generated content</a>: Présentation de la méthode utilisée par Anthropic pour identifier les contenus générés par l’IA. Document d’aide technique sur le marquage des sorties de Claude. Catégories : Anthropic, IA</p></li>
-<li><p><a href="https://arxiv.org/pdf/2312.07913">A Survey of Text Watermarking in the Era of Large Language Models</a>: Les filigranes à l’ère de l’IA : comment protéger les droits d’auteur Catégories : LLM, sécurité</p></li>
-<li><p><a href="https://frontierharness.org/">FrontierHarness Eval : Comparaison de performances et coûts de 12 configurations</a>: Évaluation comparative de 12 environnements de test pour agents IA sur des tâches de génie logiciel. Analyse détaillée des taux de réussite, de la vitesse et du coût par tâche. Catégories : IA, LLM, performance</p></li>
-<li><p><a href="https://noahdasanaike.github.io/posts/sococrbench.html">socOCRbench - An OCR benchmark for social science documents</a>: Présentation de socOCRbench, un nouveau benchmark d’OCR conçu pour les sciences sociales. Il évalue la reconnaissance de manuscrits, l’extraction de tableaux et de textes imprimés sur des documents complexes. Catégories : OCR, recherche, tools</p></li>
+<li><p><a href="https://motherduck.com/blog/self-hosting-duckdb-road-to-production/">Self-hosting DuckDB: the road to production</a>: <strong>Guide pratique sur l’auto-hébergement de DuckDB</strong> selon différents niveaux de maturité. Analyse des compromis entre construction maison et services managés en passant du laptop au cloud.</p></li>
+<li><p><a href="https://motherduck.com/blog/agent-signup-cloud-data-warehouse/">How an AI agent signed itself up to MotherDuck and built a pipeline</a>: Un agent IA provisionne de manière autonome un entrepôt de données cloud sans inscription humaine. L’article explore <strong>les nouveaux flux de travail où les agents gèrent l’infrastructure, l’ingestion de données et la visualisation</strong>.</p></li>
+<li><p><a href="https://thingsworthsharing.dev/iceberg">Grokking Apache Iceberg</a>: <strong>Exploration approfondie du fonctionnement technique d’Apache Iceberg</strong> : comparaison avec l’ancien modèle Hive et démonstration des avantages du format de table pour la gestion des métadonnées.</p></li>
+<li><p><a href="https://zvec.org/en/blog/2026-08-28-zvec-grep-open-source/">Zvec | From rg to zg: Local Search Beyond Keywords</a>: Lancement de zg, une <strong>infrastructure de recherche locale open source</strong> conçue pour les humains et les agents IA.</p></li>
 </ul>
 
 
