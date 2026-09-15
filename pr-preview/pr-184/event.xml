@@ -197,7 +197,146 @@ function createButton(slides, message="Télécharger les slides"){
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1781568000000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<a href="../../event/2026-06-jdos/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://inseefrlab.github.io/ssphub/pr-preview/pr-184/event/2026-06-jdos/jdos.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="autres-événements-du-réseau">
+Journées data science &amp; <em>open-source</em>
+</h5>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('bmV0d29yaw=='); return false;">network</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Programme et modalités d’inscription aux journées de contribution à l’open source en lien avec la data science</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="TExNJTJDU1NNJTIwQWdyaWN1bHR1cmU=" data-listing-date-sort="1776124800000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
+<a href="../../event/2026-04-ssm-agri/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://inseefrlab.github.io/ssphub/pr-preview/pr-184/event/2026-04-ssm-agri/logo_SSM_AGRESTE.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U1NNJTIwQWdyaWN1bHR1cmU='); return false;">SSM Agriculture</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le <strong>14 avril (14h00 - 14h30)</strong>, le SSM Agriculture vient présenter leur travail pour générer des commentaires de graphiques automatiquement.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="ZXh0cmFjdGlvbiUyMGQnaW5mb3JtYXRpb24lMkNOTFAlMkNEQVJFUw==" data-listing-date-sort="1773792000000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
+<a href="../../event/2026-03-dares-conventions-collectives/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://inseefrlab.github.io/ssphub/pr-preview/pr-184/event/2026-03-dares-conventions-collectives/logo_Dares.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Analyse textuelle de documents longs : cas des accords d’entreprise
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXh0cmFjdGlvbiUyMGQnaW5mb3JtYXRpb24='); return false;">extraction d'information</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TkxQ'); return false;">NLP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('REFSRVM='); return false;">DARES</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le <strong>18 mars (14h00 - 15h30)</strong>, la DARES a présenté leur travail sur les conventions collectives ou accords d’entreprise.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Y2FydG9ncmFwaGllJTJDZXZlbnQ=" data-listing-date-sort="1768262400000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<a href="../../event/2026-01-cartographia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://inseefrlab.github.io/ssphub/pr-preview/pr-184/event/2026-01-cartographia/cartographia.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y2FydG9ncmFwaGll'); return false;">cartographie</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le <strong>13 janvier (14h30 - 15h30)</strong>, Françoise Bahoken et Nicolas Lambert nous ont présenté leur dernier livre…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
+<a href="../../event/2025-12-01-network-day/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Troisième journée du SSPHub
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV0d29yaw=='); return false;">network</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Programme et modalités d’inscription à la 3e journée du réseau</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="UGFycXVldCUyQ2V2ZW50" data-listing-date-sort="1744812000000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<a href="../../event/2025-04-16-Parquet/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://inseefrlab.github.io/ssphub/pr-preview/pr-184/event/2025-04-16-Parquet/Atelier-Parquet.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Atelier - Comment récupérer des données sous format Parquet ?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGFycXVldA=='); return false;">Parquet</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le format <code>Parquet</code> est un format de données connaissant une popularité importante du fait de ses caractéristiques techniques (orientation colonne, compression…</p>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">Aucun article correspondant</div>
 </div>

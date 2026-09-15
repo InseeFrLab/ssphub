@@ -91,8 +91,9 @@ ul.task-list li input[type="checkbox"] {
 
     const options = {
       valueNames: ['listing-image','listing-title','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-categories"],
+      page: 18,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -288,7 +289,7 @@ window.Quarto = {
   <li><a href="#autres-événements-du-réseau" id="toc-autres-événements-du-réseau" class="nav-link" data-scroll-target="#autres-événements-du-réseau">Autres événements du réseau</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/InseeFrLab/ssphub/blob/main/event/2026-12-network-day/index.qmd" class="toc-action"><i class="bi bi-github"></i>Voir la source</a></li><li><a href="https://github.com/InseeFrLab/ssphub/issues/new" class="toc-action"><i class="bi empty"></i>Faire part d'un problème</a></li><li><a href="https://github.com/InseeFrLab/ssphub/edit/main/event/2026-12-network-day/index.qmd" class="toc-action"><i class="bi empty"></i>Modifier cette page</a></li></ul></div></nav>
-    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Toutes <span class="quarto-category-count">(0)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Catégories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">Toutes <span class="quarto-category-count">(22)</span></div><div class="category" data-category="MTAlMjU=">10% <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QVBJ">API <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FydG9ncmFwaGll">cartographie <span class="quarto-category-count">(1)</span></div><div class="category" data-category="REFSRVM=">DARES <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGF0YXZpeg==">dataviz <span class="quarto-category-count">(4)</span></div><div class="category" data-category="ZGVlcCUyMGxlYXJuaW5n">deep learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9jdW1lbnRhdGlvbg==">documentation <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZG9yZW1pZmFzb2w=">doremifasol <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZXZlbnQ=">event <span class="quarto-category-count">(14)</span></div><div class="category" data-category="ZXh0cmFjdGlvbiUyMGQnaW5mb3JtYXRpb24=">extraction d'information <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZnVuYXRob24=">funathon <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Z3JpZHZpeg==">gridviz <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SW5zZWU=">Insee <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TExN">LLM <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV0d29yaw==">network <span class="quarto-category-count">(2)</span></div><div class="category" data-category="TkxQ">NLP <span class="quarto-category-count">(1)</span></div><div class="category" data-category="b2JzZXJ2YWJsZQ==">observable <span class="quarto-category-count">(1)</span></div><div class="category" data-category="T0NS">OCR <span class="quarto-category-count">(1)</span></div><div class="category" data-category="b3BlbiUyMGRhdGE=">open data <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGFycXVldA==">Parquet <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHluc2Vl">pynsee <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(3)</span></div><div class="category" data-category="cXVhcnRv">quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Ug==">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U2VtaW5haXJl">Seminaire <span class="quarto-category-count">(3)</span></div><div class="category" data-category="U1NNJTIwQWdyaWN1bHR1cmU=">SSM Agriculture <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -473,7 +474,146 @@ function createButton(slides, message="Télécharger les slides"){
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1781568000000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<a href="../../event/2026-06-jdos/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../event/2026-06-jdos/jdos.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title" data-anchor-id="autres-événements-du-réseau">
+Journées data science &amp; <em>open-source</em>
+</h5>
+<div class="listing-categories">
 
+<div class="listing-category" onclick="window.quartoListingCategory('bmV0d29yaw=='); return false;">network</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Programme et modalités d’inscription aux journées de contribution à l’open source en lien avec la data science</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="TExNJTJDU1NNJTIwQWdyaWN1bHR1cmU=" data-listing-date-sort="1776124800000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
+<a href="../../event/2026-04-ssm-agri/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../event/2026-04-ssm-agri/logo_SSM_AGRESTE.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Génération de commentaire de graphiques : retour d’expérience sur les statistiques agricoles et pistes d’amélioration
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('TExN'); return false;">LLM</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U1NNJTIwQWdyaWN1bHR1cmU='); return false;">SSM Agriculture</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le <strong>14 avril (14h00 - 14h30)</strong>, le SSM Agriculture vient présenter leur travail pour générer des commentaires de graphiques automatiquement.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="ZXh0cmFjdGlvbiUyMGQnaW5mb3JtYXRpb24lMkNOTFAlMkNEQVJFUw==" data-listing-date-sort="1773792000000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
+<a href="../../event/2026-03-dares-conventions-collectives/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../event/2026-03-dares-conventions-collectives/logo_Dares.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Analyse textuelle de documents longs : cas des accords d’entreprise
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXh0cmFjdGlvbiUyMGQnaW5mb3JtYXRpb24='); return false;">extraction d'information</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('TkxQ'); return false;">NLP</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('REFSRVM='); return false;">DARES</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le <strong>18 mars (14h00 - 15h30)</strong>, la DARES a présenté leur travail sur les conventions collectives ou accords d’entreprise.</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="Y2FydG9ncmFwaGllJTJDZXZlbnQ=" data-listing-date-sort="1768262400000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<a href="../../event/2026-01-cartographia/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../event/2026-01-cartographia/cartographia.jpeg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Y2FydG9ncmFwaGll'); return false;">cartographie</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le <strong>13 janvier (14h30 - 15h30)</strong>, Françoise Bahoken et Nicolas Lambert nous ont présenté leur dernier livre…</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
+<a href="../../event/2025-12-01-network-day/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Troisième journée du SSPHub
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('bmV0d29yaw=='); return false;">network</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Programme et modalités d’inscription à la 3e journée du réseau</p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="UGFycXVldCUyQ2V2ZW50" data-listing-date-sort="1744812000000" data-listing-file-modified-sort="1789467853115" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<a href="../../event/2025-04-16-Parquet/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../event/2025-04-16-Parquet/Atelier-Parquet.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Atelier - Comment récupérer des données sous format Parquet ?
+</h5>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UGFycXVldA=='); return false;">Parquet</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('ZXZlbnQ='); return false;">event</div>
+
+</div>
+<div class="card-text listing-description delink">
+<p>Le format <code>Parquet</code> est un format de données connaissant une popularité importante du fait de ses caractéristiques techniques (orientation colonne, compression…</p>
+</div>
+</div>
+</div></a>
+</div>
 </div>
 <div class="listing-no-matching d-none">Aucun article correspondant</div>
 </div>
