@@ -1,6 +1,6 @@
-![](../infolettre/infolettre_27/XXX.png)
+![](../infolettre/infolettre_19/2025_09_back_school.png)
 
-##### XXX
+##### La rentrée avec des projets sur le site du réseau, un heureux événement et pléthore de ressources
 
 Infolettre du mois de **septembre 2026**
 

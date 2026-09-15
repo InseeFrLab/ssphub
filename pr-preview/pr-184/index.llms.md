@@ -26,7 +26,7 @@ Une présentation du réseau est disponible sur la page [à propos](about.llms.m
 
 ## Les dernières actualités et contenus du réseau
 
-![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg)
+![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201115612_diff.jpg)
 
 ##### Quatrième journée du SSPHub
 
@@ -34,9 +34,9 @@ Programme et modalités d’inscription à la 4e journée du réseau
 
 7 déc. 2026
 
-![](./infolettre/infolettre_27/XXX.png)
+![](./infolettre/infolettre_19/2025_09_back_school.png)
 
-##### XXX
+##### La rentrée avec des projets sur le site du réseau, un heureux événement et pléthore de ressources
 
 Infolettre du mois de **septembre 2026**
 
@@ -54,7 +54,7 @@ Le site du réseau accueille 30 fiches de projets innovants, une version anglais
 
 L’ensemble des billets de blog peut être retrouvé sur la [page dédiée](blog.llms.md), tout comme les [événements](event.llms.md).
 
-![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg)
+![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201115612_diff.jpg)
 
 ##### Quatrième journée du SSPHub
 
@@ -462,9 +462,9 @@ Croisement de données administratives et de données de téléphonie pour analy
 
 Toutes les *newsletters* précédemment publiées sont disponibles sur la [page dédiée](infolettre/infolettre.llms.md).
 
-![](./infolettre/infolettre_27/XXX.png)
+![](./infolettre/infolettre_19/2025_09_back_school.png)
 
-##### XXX
+##### La rentrée avec des projets sur le site du réseau, un heureux événement et pléthore de ressources
 
 Infolettre du mois de **septembre 2026**
 

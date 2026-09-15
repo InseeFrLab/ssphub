@@ -1,4 +1,4 @@
-![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2024-10-14-network/img7.jpg)
+![](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2025-12-network/IMG20251201115612_diff.jpg)
 
 ##### Quatrième journée du SSPHub
 
