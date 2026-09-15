@@ -129,7 +129,15 @@ Catégories : duckDB, IA agent, Python, S3
 - [Grokking Apache Iceberg](https://thingsworthsharing.dev/iceberg): Exploration approfondie du fonctionnement technique d'Apache Iceberg. Comparaison avec l'ancien modèle Hive et démonstration des avantages du format de table pour la gestion des métadonnées.
 Catégories : data, Iceberg, metadata, stockage, techos
 
+## SSP Cloud
 
+Le service d'accès aux grands modèles de langage (LLM) [llm.lab](https://llm.lab.sspcloud.fr/), modèles auto-hébergés sur le SSP Cloud, devient de plus en plus connu et sollicité par les utilisateurs de la *célèbre* plateforme open-source de data science. Depuis peu, un nouvel outil est disponible pour les utilisateurs les plus aguerris, avides de tester toujours plus de nouveaux LLM : **le déploiement de LLM à la demande**. 
+
+- **Le concept :** à partir d'un fichier YAML comprenant la configuration du LLM (*contrat de déploiement*), le modèle peut être déployé sur la plateforme, **sous réserve de disponibilité de GPU** (un modèle = un GPU).  
+
+- **Comment ça marche ?** Une fois le contrat de déploiement ajouté dans le projet GitHub [sspcloud-llm](https://github.com/InseeFrLab/sspcloud-llm) et les poids du modèle à déployer ajoutés dans le S3 du SSP Cloud, le modèle est déployé automatiquement sur la plateforme *via* ArgoCD. La disponibilité du nouveau modèle est aussi observable sur [status.lab.sspcloud.fr](https://status.lab.sspcloud.fr/status/sspcloud).
+
+- **Les limites :** en plus de **la disponibilité des GPU**, une deuxième limite est la **capacité maximale en VRAM des GPU** (mémoire vive associée à la carte graphique). Les GPU avec le plus de VRAM disponible sur la plateforme du SSP Cloud disposent d'environ 90 Go ; ils ne peuvent pas héberger les plus gros modèles disponibles en *open-weight* (c'est-à-dire des LLM avec des poids qui sont téléchargeables). Des modèles comme `Kimi K3` ou `DeepSeek V4.1-Flash` ont un nombre de **paramètres totaux** (resp. 2 800 et 552 milliards) bien trop élevé pour la capacité d'un GPU du SSP Cloud.
 
 ## IA :
 - [Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval](https://arxiv.org/abs/2605.28787): Étude comparative sur la nécessité des métadonnées sémantiques pour les agents autonomes. Les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision et de conformité aux principes FAIR.
