@@ -48,52 +48,7 @@ Aperçu de la liste des formations sur le site du réseau
 
 N’hésitez pas à proposer de nouvelles formations!
 
-# Actualités en data science
-
-Avec la pause estivale, de nombreuses actualités en data science et ressources sont sorties. Voici un panorama synthétique des innovations relevées.
-
-## IA
-
-### Efficacité de l’IA
-
-- L’étude [Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval](https://arxiv.org/abs/2605.28787) de Google montre **l’importance d’avoir des données structurées** pour pour augmenter l’efficacité des agents autonomes. En effet, les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision (45% de réussite contre 20% pour les agents sans accès à des) et de conformité aux principes FAIR (l’agent de base réussit environ 40% des questions contre 66% pour les agents avec accès aux métadonnées structurées).
-
-- [AI Agents and Prompt Engineering in Econometric Coding](https://www.nber.org/papers/w35588): Étude de l’efficacité des LLM pour la rédaction de code économétrique entre chatbots et agents autonomes sur Stata, R et Python. Sur 21 taches dédiées, les agents autonomes sont bien plus efficaces (peuvent tester le code) que des chatbots et réussissent dans 96% des cas lorsqu’il interagit avec l’humain (95% sans interaction). Les LLM codent par ailleurs le mieux en Python et en R (écart de taux de succès non significatif entre les deux languages) et largement moins bien en Stata (33%)
-
-- [FrontierHarness Eval](https://frontierharness.org/) évalue 12 environnements pour agents IA sur des tâches de génie logiciel par taux de réussite, vitesse et coût par tâche. Codex est celui qui réussit le mieux (67% des taches) à un coût pourtant six fois moindre que Claude Code.
-
-- [socOCRbench - An OCR benchmark for social science documents](https://noahdasanaike.github.io/posts/sococrbench.html): Présentation de socOCRbench, un nouveau benchmark d’OCR conçu pour les sciences sociales. Il évalue la reconnaissance de manuscrits, l’extraction de tableaux et de textes imprimés sur des documents complexes.
-
-### Adaptation à l’usage de l’IA
-
-- [Protecting our FLOSS commons from LLMs](https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html): Codeberg annonce des mesures pour protéger l’écosystème libre des LLM. L’association s’engage à ne pas utiliser les données des utilisateurs pour l’entraînement de l’IA et modifie ses conditions d’utilisation.
-
-- [ShieldFont : une police de caractères pour protéger les contenus contre l’IA](https://github.com/isaqueseneda/shieldfont): Développement d’une police open-source qui empoisonne les jeux de données d’entraînement de l’IA par substitution de texte. Le système permet une lecture humaine normale tout en rendant le scraping de masse coûteux et inefficace.
-
-- [How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content?utm_source=newsletter.learnprompting.org&utm_medium=newsletter&utm_campaign=anything-you-write-with-claude-now-has-a-hidden-signature&_bhlid=4815b7d903d36e54a02ae0cce5a97175599d945b): Présentation de la méthode utilisée par Anthropic pour identifier les contenus générés par l’IA. Document d’aide technique sur le marquage des sorties de Claude.
-
-- [A Survey of Text Watermarking in the Era of Large Language Models](https://arxiv.org/pdf/2312.07913): Les filigranes à l’ère de l’IA : comment protéger les droits d’auteur
-
-## Ressources
-
-- Python :
-  - [mcpgen : Transformez n’importe quelle API en serveur MCP Python](https://github.com/JnanaSrota/mcpgen): Outil de génération automatique de serveurs MCP à partir de spécifications OpenAPI ou de collections Postman. Produit un code source Python autonome sans dépendance runtime.
-- R
-  - [rv : Gestionnaire de packages R reproductible et déclaratif](https://github.com/a2-ai/rv): Outil permettant de gérer et d’installer des packages R de manière rapide, déclarative et reproductible. Utilise un fichier de configuration pour synchroniser les versions de R et les dépendances du projet.
-
-  - [ggplot2qgis: Export de cartes ggplot2 et tmap vers QGIS](https://yutannihilation.github.io/ggplot2qgis/): Package R permettant d’exporter des graphiques spatiaux ggplot2 ou tmap vers des fichiers de projet QGIS (.qgs). La conversion préserve les échelles de couleurs, les styles de couches et gère les données vectorielles (GeoPackage) et raster (GeoTIFF).
-
-  - [ir 0.1.0: self-describing R scripts and Quarto documents](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/): Lancement de ir, un outil en ligne de commande pour exécuter des scripts R et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier.
-
-  - [Introducing lorax: Speaking for the Tree-Based Models](https://opensource.posit.co/blog/2026-07-28_lorax/): Présentation de lorax, un nouveau package R conçu pour caractériser et visualiser les modèles basés sur des arbres. Il permet d’extraire les règles de décision, d’identifier les prédicteurs utilisés et d’uniformiser l’accès aux caractéristiques de divers modèles.
-
-  - [mcptools 1.0.0 : le premier SDK R pour le Model Context Protocol](https://opensource.posit.co/blog/2026-07-06_mcptools-1-0-0/): Lancement de la version 1.0.0 de mcptools sur CRAN. Ce SDK permet de déployer et de récupérer des outils MCP en R, avec support des images et des serveurs authentifiés.
-- Typst :
-  - [Mosaic: Beautiful slides for Typst](https://github.com/vincentarelbundock/mosaic): Outil permettant de créer des présentations de type slides directement via Typst. Propose des thèmes modernes, des mises en page prêtes à l’emploi et une gestion simplifiée du contenu.
-
-  - [Build LinkedIn Carousels with Typst: the slide Layout](https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html): Tutoriel pour créer des carrousels LinkedIn en utilisant Typst. Présentation d’un helper pour gérer la mise en page, les fonds et l’export en PDF.
-
-## SSP Cloud
+# Actualités du SSP Cloud
 
 Le service d’accès aux grands modèles de langage (LLM) [llm.lab](https://llm.lab.sspcloud.fr/), modèles auto-hébergés sur le SSP Cloud, devient de plus en plus connu et sollicité par les utilisateurs de la *célèbre* plateforme open-source de data science. Depuis peu, un nouvel outil est disponible pour les utilisateurs les plus aguerris, avides de tester toujours plus de nouveaux LLM : **le déploiement de LLM à la demande**.
 
@@ -103,9 +58,57 @@ Le service d’accès aux grands modèles de langage (LLM) [llm.lab](https://llm
 
 - **Les limites :** en plus de **la disponibilité des GPU**, une deuxième limite est la **capacité maximale en VRAM des GPU** (mémoire vive associée à la carte graphique). Les GPU avec le plus de VRAM disponible sur la plateforme du SSP Cloud disposent d’environ 90 Go ; ils ne peuvent pas héberger les plus gros modèles disponibles en *open-weight* (c’est-à-dire des LLM avec des poids qui sont téléchargeables). Des modèles comme `Kimi K3` ou `DeepSeek V4.1-Flash` ont un nombre de **paramètres totaux** (resp. 2 800 et 552 milliards) bien trop élevé pour la capacité d’un GPU du SSP Cloud.
 
-- [Guide to data tools landscape for developers](https://sinja.io/blog/data-landscape-guide-for-developers): Guide d’introduction au paysage des outils de données pour les développeurs. Présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL).
+# Actualités en data science
 
-> “guide to data tools for software engineers who found themselves in a data company and have no idea what all those words mean”
+Avec la pause estivale, de nombreuses actualités en data science et ressources sont sorties. Voici un **panorama synthétique** des innovations relevées.
+
+## IA
+
+### Efficacité de l’IA
+
+- L’étude [Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval](https://arxiv.org/abs/2605.28787) de Google montre **l’importance d’avoir des données structurées** pour pour augmenter l’efficacité des agents autonomes. En effet, les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision (45% de réussite contre 20% pour les agents sans accès à des) et de conformité aux principes FAIR (l’agent de base réussit environ 40% des questions contre 66% pour les agents avec accès aux métadonnées structurées).
+
+- Un article publié dans le NBER, [AI Agents and Prompt Engineering in Econometric Coding](https://www.nber.org/papers/w35588), analyse **l’efficacité des LLM pour la rédaction de code économétrique** entre chatbots et agents autonomes, c’est à dire pouvant tester le code qu’ils proposent et le corriger, sur Stata, R et Python. L’étude a utilisé les modèles Sonnet 4.6 de Claude, GPT 5.4 et DeepSeek V4 Flash. Résultat, sur 21 taches dédiées, les **agents autonomes sont bien plus efficaces** que des chatbots et **réussissent dans 96% des cas** lorsqu’il interagit avec l’humain (95% sans interaction). Les **LLM codent par ailleurs le mieux en Python et en R**, et notamment avec un écart de taux de succès non significatif entre les deux languages. Ils codent par contre largement moins bien en Stata (33%).
+
+- Le site [FrontierHarness Eval](https://frontierharness.org/) **évalue 12 environnements pour agents IA sur des tâches de génie logiciel** par taux de réussite, vitesse et coût par tâche. Codex est celui qui réussit le mieux (67% des taches) à un coût pourtant six fois moindre que Claude Code.
+
+### Adaptation à l’usage de l’IA
+
+Un certain nombre d’outils et de site ont annoncé le déploiement d’outils ou de techniques pour protéger leur contenu de l’IA.
+
+- Codeberg, une forge git allemande libre, annonce des **mesures pour protéger l’écosystème libre des LLM** dans un blog [Protecting our FLOSS commons from LLMs](https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html) : l’association s’engage ainsi à ne pas utiliser les données des utilisateurs pour l’entraînement de LLMs et modifie ses conditions d’utilisation pour **proscrire les projets vibe-codés**. Par ailleurs, les membres de l’association ont adopté une motion estimant que les LLM mettent en danger l’écosystème des logiciels libres.
+
+- Un déevloppeur néerlandais, Isaque Seneda, a développé [ShieldFont](https://github.com/isaqueseneda/shieldfont), une **police open-source qui empoisonne les jeux de données d’entraînement de LLM** par substitution de texte tout en permettant une lecture humaine normale.
+
+- Alors que les contenus générés par IA sont de plus en plus nombreux, **savoir les détecter est devenu d’autant plus important**. Anthropic a ainsi présenté dans ce post de blog [How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content) ses deux méthodes maison pour **marquer les textes ou fichiers générés par ses modèles**. Anthropic a aussi mis en place [un site](https://claude.com/check-files) pour vérifier si un fichier a été généré par Anthropic. Pour savoir comment cela fonctionne, des universitaires, issus en grande partie d’universités chinoises, ont fait **un tour des différentes techniques de marquage de textes produits** par les LLMs dans leur article [A Survey of Text Watermarking in the Era of Large Language Models](https://arxiv.org/pdf/2312.07913).
+
+## Ressources
+
+- **Python**
+
+  - [mcpgen : Transformez n’importe quelle API en serveur MCP Python](https://github.com/JnanaSrota/mcpgen) : Outil de génération automatique de serveurs MCP à partir de spécifications OpenAPI ou de collections Postman.
+
+- **R**
+
+  - [rv : Gestionnaire de packages R reproductible et déclaratif](https://github.com/a2-ai/rv) : Outil permettant de gérer et d’installer des packages R de manière rapide, déclarative et reproductible à la `uv` mais pour R.
+
+  - [ggplot2qgis : Export de cartes ggplot2 et tmap vers QGIS](https://yutannihilation.github.io/ggplot2qgis/) : Package R permettant d’exporter des graphiques spatiaux ggplot2 ou tmap vers des fichiers de projet QGIS (.qgs) en préservant les échelles de couleurs, les styles de couches et en gérant les données vectorielles.
+
+  - [ir 0.1.0 : self-describing R scripts and Quarto documents](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/) : Lancement de `ir`, un outil en ligne de commande pour exécuter des scripts R et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier, comme avec `uv`.
+
+  - [Introducing lorax : Speaking for the Tree-Based Models](https://opensource.posit.co/blog/2026-07-28_lorax/) : Présentation de `lorax`, un nouveau package R conçu pour caractériser et visualiser les modèles basés sur des arbres. Il permet d’extraire les règles de décision, d’identifier les prédicteurs utilisés et d’uniformiser l’accès aux caractéristiques de divers modèles.
+
+  - [mcptools 1.0.0 : le premier SDK R pour le Model Context Protocol](https://opensource.posit.co/blog/2026-07-06_mcptools-1-0-0/) : Lancement de la version 1.0.0 de mcptools sur CRAN. Ce SDK permet de déployer et de récupérer des outils MCP en R, avec support des images et des serveurs authentifiés.
+
+- **Typst**
+
+  - [Mosaic : Beautiful slides for Typst](https://github.com/vincentarelbundock/mosaic) : Outil permettant de créer des présentations de type slides directement via Typst.
+
+  - [Build LinkedIn Carousels with Typst : the slide Layout](https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html) : Tutoriel pour créer des carrousels LinkedIn en utilisant Typst.
+
+- **OCR** : Un doctorant de Harvard présente [socOCRbench](https://noahdasanaike.github.io/posts/sococrbench.html), un nouveau benchmark d’OCR conçu pour les sciences sociales. Il évalue la reconnaissance de manuscrits, l’extraction de tableaux et de textes imprimés sur des documents complexes.
+
+- [Guide to data tools landscape for developers](https://sinja.io/blog/data-landscape-guide-for-developers) : Guide d’introduction au paysage des outils de données pour les développeurs qui présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL). Le guide est pensé à **destination de developpeurs arrivant dans un environnement data et nouveaux dans la matière**.
 
 ## Fun/formation
 
@@ -117,10 +120,10 @@ Le service d’accès aux grands modèles de langage (LLM) [llm.lab](https://llm
 
 ## Une plongée dans des articles plus exhaustifs
 
-- [Self-hosting DuckDB: the road to production](https://motherduck.com/blog/self-hosting-duckdb-road-to-production/): **Guide pratique sur l’auto-hébergement de DuckDB** selon différents niveaux de maturité. Analyse des compromis entre construction maison et services managés en passant du laptop au cloud.
+- [Self-hosting DuckDB : the road to production](https://motherduck.com/blog/self-hosting-duckdb-road-to-production/) : **Guide pratique sur l’auto-hébergement de DuckDB** selon différents niveaux de maturité. Analyse des compromis entre construction maison et services managés en passant du laptop au cloud.
 
-- [How an AI agent signed itself up to MotherDuck and built a pipeline](https://motherduck.com/blog/agent-signup-cloud-data-warehouse/): Un agent IA provisionne de manière autonome un entrepôt de données cloud sans inscription humaine. L’article explore **les nouveaux flux de travail où les agents gèrent l’infrastructure, l’ingestion de données et la visualisation**.
+- [How an AI agent signed itself up to MotherDuck and built a pipeline](https://motherduck.com/blog/agent-signup-cloud-data-warehouse/) : Un agent IA provisionne de manière autonome un entrepôt de données cloud sans inscription humaine. L’article explore **les nouveaux flux de travail où les agents gèrent l’infrastructure, l’ingestion de données et la visualisation**.
 
-- [Grokking Apache Iceberg](https://thingsworthsharing.dev/iceberg): **Exploration approfondie du fonctionnement technique d’Apache Iceberg** : comparaison avec l’ancien modèle Hive et démonstration des avantages du format de table pour la gestion des métadonnées.
+- [Grokking Apache Iceberg](https://thingsworthsharing.dev/iceberg) : **Exploration approfondie du fonctionnement technique d’Apache Iceberg** : comparaison avec l’ancien modèle Hive et démonstration des avantages du format de table pour la gestion des métadonnées.
 
-- [Zvec \| From rg to zg: Local Search Beyond Keywords](https://zvec.org/en/blog/2026-08-28-zvec-grep-open-source/): Lancement de zg, une **infrastructure de recherche locale open source** conçue pour les humains et les agents IA.
+- [Zvec \| From rg to zg : Local Search Beyond Keywords](https://zvec.org/en/blog/2026-08-28-zvec-grep-open-source/) : Lancement de zg, une **infrastructure de recherche locale open source** conçue pour les humains et les agents IA.

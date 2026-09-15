@@ -38,6 +38,8 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 
 - [Initiation duckDB](https://inseefrlab.github.io/ecosysteme-data/source/duckdb/cestquoi.html)
 
+- [Les 4 étapes pour utiliser duckDB la première fois](https://lagaims.github.io/tuto-duckdb-R-etudes/)
+
 - [Initiation Parquet](https://inseefrlab.github.io/ecosysteme-data/source/parquet/cestquoi.html)
 
 ### Mise en production / MLOps
