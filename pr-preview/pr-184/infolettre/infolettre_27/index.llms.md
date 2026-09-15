@@ -12,7 +12,9 @@ Bienvenue à cette infolettre de rentrée, avec beaucoup d’annonces et d’act
 
 Étude sur les retards de bus à Singapour, *source : [The Straits Times](https://www.straitstimes.com/multimedia/graphics/2026/07/singapore-bus-waits/index.html)*
 
-# La quatrième journée du réseau arrive 📅 7 décembre - La Tréso (Malakoff)
+# Les actualités du réseau
+
+## La quatrième journée du réseau arrive 📅 7 décembre - La Tréso (Malakoff)
 
 **Réservez votre 7 décembre !** Pour la quatrième année consécutive, le SSPLab organise la journée du réseau pour rassembler les data-scientists de la statistique publique. Au menu : présentation de projets innovants, retour d’expérience et moments d’échanges informels (autrement appelés “pots” 🎉).
 
@@ -22,7 +24,25 @@ Comme les années précédentes, l’événement sera en présentiel et à dista
 
 - 👉️ [Ajouter cet événement à votre agenda `Outlook`](https://minio.lab.sspcloud.fr/ssphub/diffusion/website/2026-12-network/2026_12_4ejournee_SSPHub.ics)
 
-# Actualités
+## Le site a fait peau neuve et migre vers ssphub.fr
+
+Au cours de l’été, le site du réseau a fait une petite mue pour mieux faire connaître les projets innovants. Achevée en juillet 2026, cette refonte rassemble des contenus jusqu’ici dispersés et revus avec les équipes métiers. Le site, ouvert sur l’internet, facilite l’accès aux travaux du réseau et leur circulation : à l’Insee, avec les services statistiques ministériels, mais aussi à l’international. Le site présente maintenant des [projets innovants](../../project.llms.md) en français et en anglais, libre à vous d’ajouter vos projets.
+
+Un [article de blog](../../blog/2026_refonte/index.llms.md) revient plus en détail sur ce travail.
+
+Par exemple, [sept projets de codification automatique](https://ssphub.fr/project#category=codification%20automatique) utilisant le machine learning ou l’IA portés par l’Insee ou la Dares sont présentés. Cela couvre des projets comme la codification automatique de l’activité principale des entreprises, des professions dans la PCS. Les méthodes de machine learning ont aussi été utilisées pour le changement de nomenclature et enfin, *last but not least* pour constituer la base Jocas de la Dares, issue du webscraping des offres d’emploi en ligne.
+
+## Une liste de formation en data science sur le site
+
+Le site a aussi rassemblé une [liste de formations](../../course.llms.md) d’intérêt pour la data science, toutes ouvertes et en ligne. Basé en grande partie sur le catalogue des formations du SSPCloud, cela permet d’aider à monter en compétence sur les différents sujets.
+
+Les formations et ressources proposées couvrent Git, Quarto, Python, R, S3 et les technologies du SSPCloud. Les liens vers les différents funathons et documents de travail sont aussi rappelés.
+
+\*![Aperçu de la liste des formations sur le site du réseau](../infolettre_26/formations.png)
+
+N’hésitez pas à proposer de nouvelles formations!
+
+# Actualités en data science
 
 ## Fun/formation :
 
