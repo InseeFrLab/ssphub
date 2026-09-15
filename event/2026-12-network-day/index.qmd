@@ -15,8 +15,8 @@ echo: false
 listing:
   id: event-listing
   contents:
-  - event/**/index.qmd
-  - event/other_events.yml
+  - ../*/index.qmd
+  - ../other_events.yml
   type: grid
   sort:
     - "date desc"
