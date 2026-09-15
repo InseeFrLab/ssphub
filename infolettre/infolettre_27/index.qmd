@@ -91,13 +91,16 @@ Ils codent par contre largement moins bien en Stata (33%).
 
 
 ### Adaptation à l'usage de l'IA
-- [Protecting our FLOSS commons from LLMs](https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html): Codeberg annonce des mesures pour protéger l'écosystème libre des LLM. L'association s'engage à ne pas utiliser les données des utilisateurs pour l'entraînement de l'IA et modifie ses conditions d'utilisation.
+Un certain nombre d'outils et de site ont annoncé le déploiement d'outils ou de techniques pour protéger leur contenu de l'IA.
 
-- [ShieldFont : une police de caractères pour protéger les contenus contre l'IA](https://github.com/isaqueseneda/shieldfont): Développement d'une police open-source qui empoisonne les jeux de données d'entraînement de l'IA par substitution de texte. Le système permet une lecture humaine normale tout en rendant le scraping de masse coûteux et inefficace.
+- Codeberg, une forge git allemande libre, annonce des **mesures pour protéger l'écosystème libre des LLM** dans un blog [Protecting our FLOSS commons from LLMs](https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html): l'association s'engage ainsi à ne pas utiliser les données des utilisateurs pour l'entraînement de LLMs et modifie ses conditions d'utilisation pour **proscrire les projets vibe-codés**. Par ailleurs, les membres de l'association ont adopté une motion estimant que les LLM mettent en danger l'écosystème des logiciels libres.
 
-- [How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content?utm_source=newsletter.learnprompting.org&utm_medium=newsletter&utm_campaign=anything-you-write-with-claude-now-has-a-hidden-signature&_bhlid=4815b7d903d36e54a02ae0cce5a97175599d945b): Présentation de la méthode utilisée par Anthropic pour identifier les contenus générés par l'IA. Document d'aide technique sur le marquage des sorties de Claude.
+- Un déevloppeur néerlandais, Isaque Seneda, a développé [ShieldFont](https://github.com/isaqueseneda/shieldfont), une **police open-source qui empoisonne les jeux de données d'entraînement de LLM** par substitution de texte tout en permettant une lecture humaine normale.
 
-- [A Survey of Text Watermarking in the Era of Large Language Models](https://arxiv.org/pdf/2312.07913): Les filigranes à l'ère de l'IA : comment protéger les droits d'auteur
+- Alors que les contenus générés par IA sont de plus en plus nombreux, **savoir les détecter est devenu d'autant plus important**.
+Anthropic a ainsi présenté dans ce post de blog [How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content) ses deux méthodes maison  pour **marquer les textes ou fichiers générés par ses modèles**.
+Anthropic a aussi mis en place [un site](https://claude.com/check-files) pour vérifier si un fichier a été généré par Anthropic.
+Pour savoir comment cela fonctionne, des universitaires, issus en grande partie d'universités chinoises, ont fait **un tour des différentes techniques de marquage de textes produits** par les LLMs dans leur article [A Survey of Text Watermarking in the Era of Large Language Models](https://arxiv.org/pdf/2312.07913).
 
 
 ## Ressources
