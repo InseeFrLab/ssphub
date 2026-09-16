@@ -93,7 +93,7 @@ Voici un **panorama synthétique** des innovations relevées.
 ## IA
 
 ### Efficacité de l'IA
-- L'étude [Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval](https://arxiv.org/abs/2605.28787) de Google montre **l'importance d'avoir des données structurées** pour pour augmenter l'efficacité des agents autonomes.
+- L'étude [Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval](https://arxiv.org/abs/2605.28787) de Google montre **l'importance d'avoir des données structurées** pour augmenter l'efficacité des agents autonomes.
 En effet, les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision (45% de réussite contre 20% pour les agents sans accès à des) et de conformité aux principes FAIR (l'agent de base réussit environ 40% des questions contre 66% pour les agents avec accès aux métadonnées structurées).
 
 - Un article publié dans le NBER, [AI Agents and Prompt Engineering in Econometric Coding](https://www.nber.org/papers/w35588), analyse **l'efficacité des LLM pour la rédaction de code économétrique** entre chatbots et agents autonomes, c'est à dire pouvant tester le code qu'ils proposent et le corriger, sur Stata, R et Python.
@@ -110,7 +110,7 @@ Un certain nombre d'outils et de site ont annoncé le déploiement d'outils ou d
 
 - Codeberg, une forge git allemande libre, annonce des **mesures pour protéger l'écosystème libre des LLM** dans un blog [Protecting our FLOSS commons from LLMs](https://blog.codeberg.org/protecting-our-floss-commons-from-llms.html) : l'association s'engage ainsi à ne pas utiliser les données des utilisateurs pour l'entraînement de LLMs et modifie ses conditions d'utilisation pour **proscrire les projets vibe-codés**. Par ailleurs, les membres de l'association ont adopté une motion estimant que les LLM mettent en danger l'écosystème des logiciels libres.
 
-- Un déevloppeur néerlandais, Isaque Seneda, a développé [ShieldFont](https://github.com/isaqueseneda/shieldfont), une **police open-source qui empoisonne les jeux de données d'entraînement de LLM** par substitution de texte tout en permettant une lecture humaine normale.
+- Un développeur néerlandais, Isaque Seneda, a développé [ShieldFont](https://github.com/isaqueseneda/shieldfont), une **police open-source qui empoisonne les jeux de données d'entraînement de LLM** par substitution de texte tout en permettant une lecture humaine normale.
 
 - Alors que les contenus générés par IA sont de plus en plus nombreux, **savoir les détecter est devenu d'autant plus important**.
 Anthropic a ainsi présenté dans ce post de blog [How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content) ses deux méthodes maison  pour **marquer les textes ou fichiers générés par ses modèles**.
