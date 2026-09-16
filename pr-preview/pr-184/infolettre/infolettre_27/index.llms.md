@@ -8,7 +8,7 @@ Bienvenue à cette infolettre de rentrée, avec beaucoup d’annonces et d’act
 
 *The Straits Times*, journal quotidien de Singapour, publie une **belle infographie sur les retards de bus à Singapour** avec un style ressemblant à l’écriture extra-terrestre dans le film [Premier Contact](https://imgr.cineserie.com/2020/07/premier-contact-2-e1594048905709.jpg?width=660&height=&aspect_ratio=660:&quality=80).
 
-Dans leur article [Why your wait for a bus in Singapore feels so long](https://www.straitstimes.com/multimedia/graphics/2026/07/singapore-bus-waits/index.html), ils analysent la **perception des temps d’attente** des bus via l’étude des temps d’arrivée réels des bus.Au delà de l’aspect quantitatif très bien rendu, les auteurs mentionnent les impacts de la fréquence et de l’imprévisibilité de l’arrivée des bus sur l’anxiété des usagers et leur qualité de vie.
+Dans leur article [Why your wait for a bus in Singapore feels so long](https://www.straitstimes.com/multimedia/graphics/2026/07/singapore-bus-waits/index.html), ils analysent la **perception des temps d’attente** des bus via l’étude des temps d’arrivée réels des bus. Au-delà de l’aspect quantitatif très bien rendu, les auteurs mentionnent les impacts de la fréquence et de l’imprévisibilité de l’arrivée des bus sur l’anxiété des usagers et leur qualité de vie.
 
 ![](bus_delay_straitstimes.png)
 
@@ -34,11 +34,11 @@ Le site présente maintenant des [projets innovants](../../project.llms.md) en f
 
 👉️ Un [article de blog](../../blog/2026_refonte/index.llms.md) revient plus en détail sur ce travail.
 
-Par exemple, [sept projets de **codification automatique**](https://ssphub.fr/project#category=codification%20automatique) utilisant le machine learning ou l’IA portés par l’Insee ou la Dares sont présentés. Cela couvre des projets comme la **codification automatique de l’activité principale des entreprises** ou celle des **professions dans la PCS**. Les méthodes de machine learning ont aussi été utilisées pour le **changement de nomenclature de la NACE** et enfin, *last but not least* pour constituer **la base Jocas de la Dares**, issue du webscraping des offres d’emploi en ligne.
+Par exemple, [sept projets de **codification automatique**](https://ssphub.fr/project#category=codification%20automatique) utilisant le *machine learning* ou l’IA portés par l’Insee ou la Dares sont présentés. Cela couvre des projets comme la **codification automatique de l’activité principale des entreprises** ou celle des **professions dans la PCS**. Les méthodes de *machine learning* ont aussi été utilisées pour le **changement de nomenclature de la NACE** et enfin, *last but not least* pour constituer **la base Jocas de la Dares**, issue du *webscraping* des offres d’emploi en ligne.
 
 ## Une liste de formation en data science sur le site
 
-Une [liste de formations](../../course.llms.md) d’intérêt pour la **data science, toutes ouvertes et en ligne**, est aussi disponible sur le site. Basé en partie sur le [catalogue des formations du SSPCloud](https://www.sspcloud.fr/catalog), cela permet d’aider à monter en compétence sur les différents sujets.
+Une [liste de formations](../../course.llms.md) d’intérêt pour la **data science, toutes ouvertes et en ligne**, est aussi disponible sur le site. Basée en partie sur le [catalogue des formations du SSPCloud](https://www.sspcloud.fr/catalog), cela permet d’aider à monter en compétence sur les différents sujets.
 
 Les formations et ressources proposées couvrent **Git, Quarto, Python, R, S3 et les technologies du SSPCloud**. Les liens vers les différents **funathons, formations à Python, au MLOps et les documents de travail** sont aussi rappelés.
 
@@ -68,7 +68,7 @@ Avec la pause estivale, de nombreuses actualités en data science et ressources 
 
 - L’étude [Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval](https://arxiv.org/abs/2605.28787) de Google montre **l’importance d’avoir des données structurées** pour augmenter l’efficacité des agents autonomes. En effet, les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision (45% de réussite contre 20% pour les agents sans accès à des) et de conformité aux principes FAIR (l’agent de base réussit environ 40% des questions contre 66% pour les agents avec accès aux métadonnées structurées).
 
-- Un article publié dans le NBER, [AI Agents and Prompt Engineering in Econometric Coding](https://www.nber.org/papers/w35588), analyse **l’efficacité des LLM pour la rédaction de code économétrique** entre chatbots et agents autonomes, c’est à dire pouvant tester le code qu’ils proposent et le corriger, sur Stata, R et Python. L’étude a utilisé les modèles Sonnet 4.6 de Claude, GPT 5.4 et DeepSeek V4 Flash. Résultat, sur 21 taches dédiées, les **agents autonomes sont bien plus efficaces** que des chatbots et **réussissent dans 96% des cas** lorsqu’il interagit avec l’humain (95% sans interaction). Les **LLM codent par ailleurs le mieux en Python et en R**, et notamment avec un écart de taux de succès non significatif entre les deux languages. Ils codent par contre largement moins bien en Stata (33%).
+- Un article publié dans le NBER, [AI Agents and Prompt Engineering in Econometric Coding](https://www.nber.org/papers/w35588), analyse **l’efficacité des LLM pour la rédaction de code économétrique** entre chatbots et agents autonomes, c’est à dire pouvant tester le code qu’ils proposent et le corriger, sur Stata, R et Python. L’étude a utilisé les modèles Sonnet 4.6 de Claude, GPT 5.4 et DeepSeek V4 Flash. Résultat, sur 21 taches dédiées, les **agents autonomes sont bien plus efficaces** que des chatbots et **réussissent dans 96% des cas** lorsqu’il interagit avec l’humain (95% sans interaction). Les **LLM codent par ailleurs le mieux en Python et en R**, et notamment avec un écart de taux de succès non significatif entre les deux langages. Ils codent par contre largement moins bien en Stata (33% de réussite sur les tâches demandées).
 
 - Le site [FrontierHarness Eval](https://frontierharness.org/) **évalue 12 environnements pour agents IA sur des tâches de génie logiciel** par taux de réussite, vitesse et coût par tâche. Codex est celui qui réussit le mieux (67% des taches) à un coût pourtant six fois moindre que Claude Code.
 
@@ -80,35 +80,35 @@ Un certain nombre d’outils et de site ont annoncé le déploiement d’outils 
 
 - Un développeur néerlandais, Isaque Seneda, a développé [ShieldFont](https://github.com/isaqueseneda/shieldfont), une **police open-source qui empoisonne les jeux de données d’entraînement de LLM** par substitution de texte tout en permettant une lecture humaine normale.
 
-- Alors que les contenus générés par IA sont de plus en plus nombreux, **savoir les détecter est devenu d’autant plus important**. Anthropic a ainsi présenté dans ce post de blog [How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content) ses deux méthodes maison pour **marquer les textes ou fichiers générés par ses modèles**. Anthropic a aussi mis en place [un site](https://claude.com/check-files) pour vérifier si un fichier a été généré par Anthropic. Pour savoir comment cela fonctionne, des universitaires, issus en grande partie d’universités chinoises, ont fait **un tour des différentes techniques de marquage de textes produits** par les LLMs dans leur article [A Survey of Text Watermarking in the Era of Large Language Models](https://arxiv.org/pdf/2312.07913).
+- Alors que les contenus générés par IA sont de plus en plus nombreux, **savoir les détecter est devenu d’autant plus important**. Anthropic a ainsi présenté dans ce post de blog [How Claude marks AI-generated content](https://support.claude.com/en/articles/16266773-how-claude-marks-ai-generated-content) ses deux méthodes maison pour **marquer les textes ou fichiers générés par ses modèles**. Anthropic a aussi mis en place [un site](https://claude.com/check-files) pour vérifier si un fichier a été généré par Claude. Pour savoir comment cela fonctionne, des universitaires, issus en grande partie d’universités chinoises, ont fait **un tour des différentes techniques de marquage de textes produits** par les LLMs dans leur article [A Survey of Text Watermarking in the Era of Large Language Models](https://arxiv.org/pdf/2312.07913).
 
 ## Ressources
 
 - **Python**
 
-  - [mcpgen : Transformez n’importe quelle API en serveur MCP Python](https://github.com/JnanaSrota/mcpgen) : Outil de génération automatique de serveurs MCP à partir de spécifications OpenAPI ou de collections Postman.
+  - [mcpgen : Transformez n’importe quelle API en serveur MCP Python](https://github.com/JnanaSrota/mcpgen) : Outil de **génération automatique de serveurs MCP** à partir de spécifications OpenAPI ou de collections Postman.
 
 - **R**
 
-  - [rv : Gestionnaire de packages R reproductible et déclaratif](https://github.com/a2-ai/rv) : Outil permettant de gérer et d’installer des packages R de manière rapide, déclarative et reproductible à la `uv` mais pour R.
+  - [rv : Gestionnaire de packages R reproductible et déclaratif](https://github.com/a2-ai/rv) : Outil permettant de **gérer et d’installer des packages R** de manière rapide, déclarative et reproductible à la `uv` mais pour R.
 
-  - [ggplot2qgis : Export de cartes ggplot2 et tmap vers QGIS](https://yutannihilation.github.io/ggplot2qgis/) : Package R permettant d’exporter des graphiques spatiaux ggplot2 ou tmap vers des fichiers de projet QGIS (.qgs) en préservant les échelles de couleurs, les styles de couches et en gérant les données vectorielles.
+  - [ggplot2qgis : Export de cartes ggplot2 et tmap vers QGIS](https://yutannihilation.github.io/ggplot2qgis/) : Package R permettant **d’exporter des graphiques spatiaux vers des fichiers de projet QGIS** en préservant les échelles de couleurs, les styles de couches et en gérant les données vectorielles.
 
-  - [ir 0.1.0 : self-describing R scripts and Quarto documents](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/) : Lancement de `ir`, un outil en ligne de commande pour exécuter des scripts R et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier, comme avec `uv`.
+  - [ir 0.1.0 : self-describing R scripts and Quarto documents](https://opensource.posit.co/blog/2026-07-23_ir-0-1-0/) : Lancement de `ir`, un outil en **ligne de commande pour exécuter des scripts R** et documents Quarto. Il permet de gérer automatiquement les dépendances et les versions de R directement depuis le fichier, comme avec `uv`.
 
-  - [Introducing lorax : Speaking for the Tree-Based Models](https://opensource.posit.co/blog/2026-07-28_lorax/) : Présentation de `lorax`, un nouveau package R conçu pour caractériser et visualiser les modèles basés sur des arbres. Il permet d’extraire les règles de décision, d’identifier les prédicteurs utilisés et d’uniformiser l’accès aux caractéristiques de divers modèles.
+  - [Introducing lorax : Speaking for the Tree-Based Models](https://opensource.posit.co/blog/2026-07-28_lorax/) : Présentation de `lorax`, un nouveau package R conçu pour **caractériser et visualiser les modèles basés sur des arbres**. Il permet d’extraire les règles de décision, d’identifier les prédicteurs utilisés et d’uniformiser l’accès aux caractéristiques de divers modèles.
 
-  - [mcptools 1.0.0 : le premier SDK R pour le Model Context Protocol](https://opensource.posit.co/blog/2026-07-06_mcptools-1-0-0/) : Lancement de la version 1.0.0 de mcptools sur CRAN. Ce SDK permet de déployer et de récupérer des outils MCP en R, avec support des images et des serveurs authentifiés.
+  - [mcptools 1.0.0 : le premier SDK R pour le Model Context Protocol](https://opensource.posit.co/blog/2026-07-06_mcptools-1-0-0/) : Lancement de la version 1.0.0 de **mcptools** sur CRAN. Ce SDK permet de déployer et de récupérer des outils MCP en R, avec support des images et des serveurs authentifiés.
 
 - **Typst**
 
-  - [Mosaic : Beautiful slides for Typst](https://github.com/vincentarelbundock/mosaic) : Outil permettant de créer des présentations de type slides directement via Typst.
+  - [Mosaic : Beautiful slides for Typst](https://github.com/vincentarelbundock/mosaic) : Outil permettant de créer des **présentations de type slides directement avec Typst**.
 
-  - [Build LinkedIn Carousels with Typst : the slide Layout](https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html) : Tutoriel pour créer des carrousels LinkedIn en utilisant Typst.
+  - [Build LinkedIn Carousels with Typst : the slide Layout](https://mickael.canouil.fr/posts/2026-05-28-typst-linkedin-carousels/index.html) : Tutoriel pour créer des **carrousels LinkedIn avec Typst**.
 
 - **OCR** : Un doctorant de Harvard présente [socOCRbench](https://noahdasanaike.github.io/posts/sococrbench.html), un nouveau benchmark d’OCR conçu pour les sciences sociales. Il évalue la reconnaissance de manuscrits, l’extraction de tableaux et de textes imprimés sur des documents complexes.
 
-- [Guide to data tools landscape for developers](https://sinja.io/blog/data-landscape-guide-for-developers) : Guide d’introduction au paysage des outils de données pour les développeurs qui présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL). Le guide est pensé à **destination de developpeurs arrivant dans un environnement data et nouveaux dans la matière**.
+- [Guide to data tools landscape for developers](https://sinja.io/blog/data-landscape-guide-for-developers) : Guide d’introduction au paysage des outils de données pour les développeurs qui présente les différents métiers de la donnée et les étapes du cycle de vie de la donnée (ETL). Le guide est pensé à **destination de développeurs arrivant dans un environnement data et nouveaux dans la matière**.
 
 ## Fun/formation
 
@@ -125,5 +125,3 @@ Un certain nombre d’outils et de site ont annoncé le déploiement d’outils 
 - [How an AI agent signed itself up to MotherDuck and built a pipeline](https://motherduck.com/blog/agent-signup-cloud-data-warehouse/) : Un agent IA provisionne de manière autonome un entrepôt de données cloud sans inscription humaine. L’article explore **les nouveaux flux de travail où les agents gèrent l’infrastructure, l’ingestion de données et la visualisation**.
 
 - [Grokking Apache Iceberg](https://thingsworthsharing.dev/iceberg) : **Exploration approfondie du fonctionnement technique d’Apache Iceberg** : comparaison avec l’ancien modèle Hive et démonstration des avantages du format de table pour la gestion des métadonnées.
-
-- [Zvec \| From rg to zg : Local Search Beyond Keywords](https://zvec.org/en/blog/2026-08-28-zvec-grep-open-source/) : Lancement de zg, une **infrastructure de recherche locale open source** conçue pour les humains et les agents IA.
