@@ -1,3 +1,0 @@
-# Synthèse du projet
-
-[TABLE]
