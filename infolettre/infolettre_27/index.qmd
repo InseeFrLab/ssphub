@@ -19,8 +19,6 @@ categories:
 
 # Bienvenue à la **vingt septième infolettre** !
 
-La rentrée est passée par là, les chaleurs s'éloignent (il faut toujours 35°C dans des écoles dans le sud quand même).
-
 Bienvenue à cette infolettre de rentrée, avec beaucoup d'annonces et d'actualités.
 
 # L'infographie
@@ -69,7 +67,7 @@ Les liens vers les différents **funathons, formations à Python, au MLOps et le
 
 ![Aperçu de la liste des formations sur le site du réseau](../infolettre_26/formations.png){width=500}
 
-N'hésitez pas à proposer de nouvelles formations!
+N'hésitez pas à proposer de créer de nouvelles formations ou à nous suggérer la mention d’autres formations existantes !
 
 
 # Actualités du SSP Cloud
@@ -94,15 +92,15 @@ Voici un **panorama synthétique** des innovations relevées.
 
 ### Efficacité de l'IA
 - L'étude [Do Data Agents Need Semantic Metadata? A Comparative Study in Agentic Data Retrieval](https://arxiv.org/abs/2605.28787) de Google montre **l'importance d'avoir des données structurées** pour augmenter l'efficacité des agents autonomes.
-En effet, les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision (45% de réussite contre 20% pour les agents sans accès à des) et de conformité aux principes FAIR (l'agent de base réussit environ 40% des questions contre 66% pour les agents avec accès aux métadonnées structurées).
+En effet, les agents utilisant des métadonnées structurées surpassent nettement ceux naviguant sur le web non structuré en termes de précision (45% de réussite contre 20% pour les agents sans accès à des métadonnées) et de conformité aux principes FAIR (l'agent de base réussit environ 40% des questions contre 66% pour les agents avec accès aux métadonnées structurées).
 
 - Un article publié dans le NBER, [AI Agents and Prompt Engineering in Econometric Coding](https://www.nber.org/papers/w35588), analyse **l'efficacité des LLM pour la rédaction de code économétrique** entre chatbots et agents autonomes, c'est à dire pouvant tester le code qu'ils proposent et le corriger, sur Stata, R et Python.
 L'étude a utilisé les modèles Sonnet 4.6 de Claude, GPT 5.4 et DeepSeek V4 Flash.
-Résultat, sur 21 taches dédiées, les **agents autonomes sont bien plus efficaces** que des chatbots et **réussissent dans 96% des cas** lorsqu'il interagit avec l'humain (95% sans interaction).
+Résultat, sur 21 tâches dédiées, les **agents autonomes sont bien plus efficaces** que des chatbots et **réussissent dans 96% des cas** lorsqu'il interagit avec l'humain (95% sans interaction).
 Les **LLM codent par ailleurs le mieux en Python et en R**, et notamment avec un écart de taux de succès non significatif entre les deux langages.
 Ils codent par contre largement moins bien en Stata (33% de réussite sur les tâches demandées).
 
-- Le site [FrontierHarness Eval](https://frontierharness.org/) **évalue 12 environnements pour agents IA sur des tâches de génie logiciel** par taux de réussite, vitesse et coût par tâche. Codex est celui qui réussit le mieux (67% des taches) à un coût pourtant six fois moindre que Claude Code.
+- Le site [FrontierHarness Eval](https://frontierharness.org/) **évalue 12 environnements pour agents IA sur des tâches de génie logiciel** par taux de réussite, vitesse et coût par tâche. Codex est celui qui réussit le mieux (67% des tâches) à un coût pourtant six fois moindre que Claude Code.
 
 
 ### Adaptation à l'usage de l'IA
