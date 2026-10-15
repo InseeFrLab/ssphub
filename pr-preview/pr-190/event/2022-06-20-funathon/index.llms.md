@@ -1,0 +1,20 @@
+# Présentation
+
+En 2022, une nouvelle édition a eu lieu les 20 et 21 juin, tournant cette fois autour de la thématique de l’environnement, et du changement climatique. Cette fois encore, 9 sujets ont été proposés, chaque fois accompagnés de notebooks d’explication (en R et en Python). Ceci a notamment permis de travailler sur :
+
+- l’extraction de données de Twitter,
+- l’analyse textuelle des données du grand Débat,
+- la réalisation d’analyses graphiques autour de la montée des eaux,
+- l’analyse des données issues de la base Ademe sur les logements,
+- le machine learning à partir des données de la météo,
+- les données satellites,
+- l’utilisation de Fasttext,
+- d’Elastic Search,
+- enfin, 3 Master class ont également été proposées sur :
+  - 1.  la pertinence d’utiliser Python quand on connait R ;
+  - 2.  une initiation à Elastic ;
+  - 3.  L’utilisation du deep learning pour classifier des données issues d’images satellites.
+
+**Tous les niveaux d’expertise étaient les bievenus**.
+
+\# Détails L’ensemble du materiel associé, et les différents liens vers les master class, sont présents dans le [repo du funathon](https://git.lab.sspcloud.fr/ssplab/2022-06-funathon).
