@@ -3,7 +3,7 @@ title: "Funathon de juin 2021"
 
 categories:
 - event
-- funathon 
+- funathon
 - R
 - Python
 
@@ -18,7 +18,14 @@ aliases:
   - /talk/2021-06-22-funathon/index.html
 ---
 
-# Présentation 
+# Qu'est ce qu'un funathon ?
+
+Le funathon est un évènement de formation organisé par le SSP Lab.
+L'idée est simple : s'inspirer du format d'un hackathon, enlever le format compétitif, et créer ainsi un format permettant à tout agent du service statistique public et de ses partenaires proches de découvrir, se confronter, pratiquer, apprendre ou se perfectionner en datascience sur un cas d'usage, dans un esprit collaboratif et non compétitif.
+
+Le funathon vise ainsi tous les agents – du curieux débutant, à l’expert en science des données, en passant par celles et ceux qui ont déjà reçu une formation mais qui n’ont pas l’occasion de pratiquer, partant du principe que si un agent n’est pas confronté régulièrement à un cas d’utilisation de ses nouvelles connaissances, celles-ci risquent de se perdre progressivement.
+
+# Présentation
 
 La première édition du Funathon a eu lieu le 21 et 22 juin 2021 et a réuni environ 150 agents,  souvent réunis en équipe. Cette première édition a tourné autour de l'utilisation des données d'Airbnb, 8 sujets plus ou moins guidés étant proposés, avec chaque fois des notebooks (en R et en Python) permettant d'entrer facilement dans les sujets. **Tous les niveaux d'expertise étaient les bievenus**. Merci à tous !
 

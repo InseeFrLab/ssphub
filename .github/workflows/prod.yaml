@@ -3,8 +3,8 @@ on:
   workflow_dispatch:
   # cf https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_dispatch
   push:
-    branches: 
-    - main
+    branches:
+      - main
 
 name: Prod - render and publish to netlify
 
@@ -22,7 +22,7 @@ jobs:
 
       # add software dependencies here and any libraries
       # See more at https://github.com/quarto-dev/quarto-actions/blob/main/examples/example-03-dependencies.md
-      # Useful ? 
+      # Useful ?
       - name: Configure safe.directory # Workaround for actions/checkout#760
         run: git config --global --add safe.directory /__w/ssphub/ssphub
 
@@ -35,21 +35,21 @@ jobs:
           packages: |
             github::ropensci-review-tools/babelquarto@a485fea
 
-      - name: Install uv  # for post on onyxia
-        uses: astral-sh/setup-uv@v10.0.1
+      - name: Install uv # for post on onyxia
+        uses: astral-sh/setup-uv@v10.3.0
         with:
           enable-cache: true
 
       - name: Install the dependancies and add venv to path
-        run: | 
+        run: |
           uv sync
           echo "$(pwd)/.venv/bin" >> $GITHUB_PATH
-  
+
       - name: Render bilingual project
         run: |
           Rscript scripts/1_render.R
 
-      - name: Set up Quarto 
+      - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2 # https://github.com/quarto-dev/quarto-actions/tree/main/setup
 
       - name: Publish
@@ -58,5 +58,3 @@ jobs:
           target: netlify
           render: false
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_SSPHUB_AUTH_TOKEN }}
-
-
