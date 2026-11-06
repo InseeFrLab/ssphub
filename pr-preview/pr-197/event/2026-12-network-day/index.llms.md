@@ -8,10 +8,10 @@ L’agenda de la journée est le suivant :
 
 - **9h15-9h45**: **Accueil**, moment de convivialité autour d’un café.
 - **9h45-12h45**: **Retours d’expérience**
-  - 9h45 - 10h30 : Générer de la donnée synthétique textuelle pour la codification automatique ([repo \<\< fa brands github\>\>](https://github.com/mateomorin/Code2Text-presentation) et [site](https://mateomorin.github.io/Code2Text-presentation/)) - Insee (SSPLab) ;
-  - 10h30 - 11h15 : Outil de recherche en language naturel de la Cour des compte [“Que dit la Cour?”](https://www.ccomptes.fr/fr/actualites/quen-dit-la-cour-une-nouvelle-porte-dentree-vers-nos-travaux) - Cour des comptes
+  - 9h45 - 10h30 : Générer de la donnée synthétique textuelle pour la codification automatique ([repo ](https://github.com/mateomorin/Code2Text-presentation) et [site](https://mateomorin.github.io/Code2Text-presentation/)) - Insee (SSPLab) ;
+  - 10h30 - 11h15 : De l’idée au service public : plongée dans [“Qu’en dit la Cour?”](https://www.ccomptes.fr/fr/actualites/quen-dit-la-cour-une-nouvelle-porte-dentree-vers-nos-travaux) - Cour des comptes
   - 11h45 - 12h : Pause
-  - 12h - 12h45 : L’IA, un bon correcteur de dictées ? ([repo \<\< fa brands github\>\>](https://github.com/InseeFrLab/evaluation_dictee) - SSM Education nationale (DEPP) et Insee (SSPLab)
+  - 12h - 12h45 : L’IA, un bon correcteur de dictées ? ([repo ](https://github.com/InseeFrLab/evaluation_dictee)) - SSM Education nationale (DEPP) et Insee (SSPLab)
 - **12h45-14h**: **Pause déjeuner**
 - **14h - 15h45 : session sur le *vibecoding***
   - 14h - 14h30 : benchmark sur les tools et opencode sur SSPCloud - Insee (SSPLab)

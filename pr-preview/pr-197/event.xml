@@ -46,10 +46,10 @@
 <li><strong>9h15-9h45</strong>: <strong>Accueil</strong>, moment de convivialité autour d’un café.</li>
 <li><strong>9h45-12h45</strong>: <strong>Retours d’expérience</strong>
 <ul>
-<li>9h45 - 10h30 : Générer de la donnée synthétique textuelle pour la codification automatique (<a href="https://github.com/mateomorin/Code2Text-presentation">repo &lt;&lt; fa brands github&gt;&gt;</a> et <a href="https://mateomorin.github.io/Code2Text-presentation/">site</a>) - Insee (SSPLab) ;</li>
-<li>10h30 - 11h15 : Outil de recherche en language naturel de la Cour des compte <a href="https://www.ccomptes.fr/fr/actualites/quen-dit-la-cour-une-nouvelle-porte-dentree-vers-nos-travaux">“Que dit la Cour?”</a> - Cour des comptes</li>
+<li>9h45 - 10h30 : Générer de la donnée synthétique textuelle pour la codification automatique (<a href="https://github.com/mateomorin/Code2Text-presentation">repo <i class="fa-brands fa-github" aria-label="github"></i></a> et <a href="https://mateomorin.github.io/Code2Text-presentation/">site</a>) - Insee (SSPLab) ;</li>
+<li>10h30 - 11h15 : De l’idée au service public : plongée dans <a href="https://www.ccomptes.fr/fr/actualites/quen-dit-la-cour-une-nouvelle-porte-dentree-vers-nos-travaux">“Qu’en dit la Cour?”</a> - Cour des comptes</li>
 <li>11h45 - 12h : Pause</li>
-<li>12h - 12h45 : L’IA, un bon correcteur de dictées ? (<a href="https://github.com/InseeFrLab/evaluation_dictee">repo &lt;&lt; fa brands github&gt;&gt;</a> - SSM Education nationale (DEPP) et Insee (SSPLab)</li>
+<li>12h - 12h45 : L’IA, un bon correcteur de dictées ? (<a href="https://github.com/InseeFrLab/evaluation_dictee">repo <i class="fa-brands fa-github" aria-label="github"></i></a>) - SSM Education nationale (DEPP) et Insee (SSPLab)</li>
 </ul></li>
 <li><strong>12h45-14h</strong>: <strong>Pause déjeuner</strong></li>
 <li><strong>14h - 15h45 : session sur le <em>vibecoding</em></strong>
@@ -209,7 +209,7 @@ function createButton(slides, message="Télécharger les slides"){
     </div>
 </div>
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1781568000000" data-listing-file-modified-sort="1793976050597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
+<div class="g-col-1" data-index="0" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1781568000000" data-listing-file-modified-sort="1793980051367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="511">
 <a href="../../event/2026-06-jdos/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -232,7 +232,7 @@ Journées data science &amp; <em>open-source</em>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="TExNJTJDU1NNJTIwQWdyaWN1bHR1cmU=" data-listing-date-sort="1776124800000" data-listing-file-modified-sort="1793976050597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
+<div class="g-col-1" data-index="1" data-categories="TExNJTJDU1NNJTIwQWdyaWN1bHR1cmU=" data-listing-date-sort="1776124800000" data-listing-file-modified-sort="1793980051367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="250">
 <a href="../../event/2026-04-ssm-agri/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -255,7 +255,7 @@ Génération de commentaire de graphiques : retour d’expérience sur les stati
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="ZXh0cmFjdGlvbiUyMGQnaW5mb3JtYXRpb24lMkNOTFAlMkNEQVJFUw==" data-listing-date-sort="1773792000000" data-listing-file-modified-sort="1793976050597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
+<div class="g-col-1" data-index="2" data-categories="ZXh0cmFjdGlvbiUyMGQnaW5mb3JtYXRpb24lMkNOTFAlMkNEQVJFUw==" data-listing-date-sort="1773792000000" data-listing-file-modified-sort="1793980051367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="226">
 <a href="../../event/2026-03-dares-conventions-collectives/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -280,7 +280,7 @@ Analyse textuelle de documents longs : cas des accords d’entreprise
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="Y2FydG9ncmFwaGllJTJDZXZlbnQ=" data-listing-date-sort="1768262400000" data-listing-file-modified-sort="1793976050597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
+<div class="g-col-1" data-index="3" data-categories="Y2FydG9ncmFwaGllJTJDZXZlbnQ=" data-listing-date-sort="1768262400000" data-listing-file-modified-sort="1793980051367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
 <a href="../../event/2026-01-cartographia/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -303,7 +303,7 @@ Françoise Bahoken et Nicolas Lambert, présentation de leur livre Cartographia
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1793976050597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
+<div class="g-col-1" data-index="4" data-categories="bmV0d29yayUyQ2V2ZW50" data-listing-date-sort="1764547200000" data-listing-file-modified-sort="1793980051367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
 <a href="../../event/2025-12-01-network-day/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
@@ -326,7 +326,7 @@ Troisième journée du SSPHub
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="5" data-categories="UGFycXVldCUyQ2V2ZW50" data-listing-date-sort="1744812000000" data-listing-file-modified-sort="1793976050597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
+<div class="g-col-1" data-index="5" data-categories="UGFycXVldCUyQ2V2ZW50" data-listing-date-sort="1744812000000" data-listing-file-modified-sort="1793980051367" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="114">
 <a href="../../event/2025-04-16-Parquet/index.html" class="quarto-grid-link no-external-icon">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
