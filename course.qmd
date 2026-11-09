@@ -19,8 +19,6 @@ sur [notre `GitHub` {{< fa brands github >}}]({{< var site.github >}})_.
 # Formations
 Voici une liste de formations en open-source utiles pour tout data-scientist.
 
-## L'environnement du Datascientist
-
 ### Git
 
 * [Bonnes pratiques de développement avec Git et R](https://www.sspcloud.fr/catalog?path=Bonnes%E2%90%A3pratiques%E2%90%A3de%E2%90%A3d%C3%A9veloppement%E2%90%A3avec%E2%90%A3Git%E2%90%A3et%E2%90%A3R)
@@ -32,7 +30,6 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 * [Initiation à Python](https://www.sspcloud.fr/catalog?path=Introduction%E2%90%A3to%E2%90%A3Python)
 
 * [Python pour la datascience (cours ENSAE)](https://pythonds.linogaliana.fr/)
-
 
 ### R
 
@@ -68,7 +65,11 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 * [Machine Learning in production](https://mlip-cmu.github.io/book/)
 
 
-## Méthodologie Statistique
+## Méthodologie statistique et de science des données
+
+### Technologie cloud
+
+* Document de travail de l'Insee [*L’apport des technologies cloud pour industrialiser le processus d’innovation statistique*](https://www.insee.fr/fr/statistiques/8614378)
 
 ### Méthodes ensemblistes
 
