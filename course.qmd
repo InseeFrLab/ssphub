@@ -8,6 +8,7 @@ listing:
   template: scripts/courses.ejs
   sort: "date desc"
   categories: true
+  filter-ui: true
 page-layout: full
 ---
 
