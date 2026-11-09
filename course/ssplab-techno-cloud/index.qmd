@@ -1,6 +1,6 @@
 ---
 title: "L’apport des technologies cloud pour industrialiser le processus d’innovation statistique"
-description: "Ce document de travail vise à montrer l'opportunité des technologies cloud pour favoriser l'innovation dans la production statistique. Certaines technologies centrales de cet écosystème permettent de mettre à disposition des environnements qui favorisent à la fois l’autonomie, le passage à l'échelle et la reproductibilité des traitements. Le projet Onyxia, développé à l'Insee, permet aux statisticiens de s'approprier ces technologies à travers une interface simple d'utilisation et un catalogue de services de data science prêts à l’emploi. Enfin, ces technologies ont permis d'industrialiser le processus de codification automatique des domaines d'activité des entreprises françaises en facilitant la mise en production d'un modèle de machine learning selon les principes du MLOps. "
+description: "Présentation de l'opportunité d'utiliser des technologies cloud pour l'innovation pour favoriser l’autonomie, le passage à l'échelle et la reproductibilité des traitements grâce à Onyxia. Application avec l'exemple de l'industrialisation du processus de codification automatique des domaines d'activité des entreprises françaises en facilitant la mise en production d'un modèle de machine learning selon les principes du MLOps. "
 categories:
 - Document de travail
 - Insee
