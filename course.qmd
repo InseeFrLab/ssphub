@@ -19,6 +19,15 @@ sur [notre `GitHub` {{< fa brands github >}}]({{< var site.github >}})_.
 # Formations
 Voici une liste de formations en open-source utiles pour tout data-scientist.
 
+## L'environnement du Datascientist
+
+Le site [roadmap.sh](https://roadmap.sh/) présente toute une série de parcours d'apprentissage en ligne
+ et gratuit sur un ensemble de ressources, y compris celles utiles pour la data science.
+ Cela comprend notamment [bash ou shell](https://roadmap.sh/shell-bash), [R](https://roadmap.sh/r-programming), Python pour
+ des [développeurs](https://roadmap.sh/python) ou des [analystes de données](https://roadmap.sh/python-data-analysis),
+ [Kubernetes](https://roadmap.sh/kubernetes) et les principes du [cloud computing](https://roadmap.sh/cloud-computing).
+
+
 ### Git
 
 * [Bonnes pratiques de développement avec Git et R](https://www.sspcloud.fr/catalog?path=Bonnes%E2%90%A3pratiques%E2%90%A3de%E2%90%A3d%C3%A9veloppement%E2%90%A3avec%E2%90%A3Git%E2%90%A3et%E2%90%A3R)
