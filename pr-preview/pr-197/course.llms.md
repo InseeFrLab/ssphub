@@ -8,6 +8,8 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 
 ## L’environnement du Datascientist
 
+Le site [roadmap.sh](https://roadmap.sh/) présente toute une série de parcours d’apprentissage en ligne et gratuit sur un ensemble de ressources, y compris celles utiles pour la data science. Cela comprend notamment [bash ou shell](https://roadmap.sh/shell-bash), [R](https://roadmap.sh/r-programming), Python pour des [développeurs](https://roadmap.sh/python) ou des [analystes de données](https://roadmap.sh/python-data-analysis), [Kubernetes](https://roadmap.sh/kubernetes) et les principes du [cloud computing](https://roadmap.sh/cloud-computing).
+
 ### Git
 
 - [Bonnes pratiques de développement avec Git et R](https://www.sspcloud.fr/catalog?path=Bonnes%E2%90%A3pratiques%E2%90%A3de%E2%90%A3d%C3%A9veloppement%E2%90%A3avec%E2%90%A3Git%E2%90%A3et%E2%90%A3R)
@@ -19,6 +21,8 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 - [Initiation à Python](https://www.sspcloud.fr/catalog?path=Introduction%E2%90%A3to%E2%90%A3Python)
 
 - [Python pour la datascience (cours ENSAE)](https://pythonds.linogaliana.fr/)
+
+Des sites comme [realPython.com](https://realpython.com/) permettent de se former en ligne facilement à Python. Certaines ressources des parcours du site roadmap.sh pointent par ailleurs vers ce site.
 
 ### R
 
@@ -50,7 +54,11 @@ Voici une liste de formations en open-source utiles pour tout data-scientist.
 
 - [Machine Learning in production](https://mlip-cmu.github.io/book/)
 
-## Méthodologie Statistique
+## Méthodologie statistique et de science des données
+
+### Technologie cloud
+
+- Document de travail de l’Insee [*L’apport des technologies cloud pour industrialiser le processus d’innovation statistique*](https://www.insee.fr/fr/statistiques/8614378)
 
 ### Méthodes ensemblistes
 

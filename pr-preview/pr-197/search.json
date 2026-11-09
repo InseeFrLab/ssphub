@@ -1334,14 +1334,14 @@
     "href": "course.html#lenvironnement-du-datascientist",
     "title": "Formations et ressources utiles",
     "section": "L’environnement du Datascientist",
-    "text": "L’environnement du Datascientist\n\nGit\n\nBonnes pratiques de développement avec Git et R\nDocumentation Officielle\n\n\n\nPython\n\nInitiation à Python\nPython pour la datascience (cours ENSAE)\n\n\n\nR\n\nParcours R\nUtilitR\n\n\n\nQuarto\n\nDocumentation officielle\n\n\n\nS3, SSPcloud, Parquet, duckDB\n\nAcces SSPCLOUD\nInitiation S3\nInitiation duckDB\nLes 4 étapes pour utiliser duckDB la première fois\nInitiation Parquet\n\n\n\nMise en production / MLOps\n\nMise en production de projets Datascience (cours ENSAE)\nIntroduction au MLOps avec MLflow\nMachine Learning in production"
+    "text": "L’environnement du Datascientist\nLe site roadmap.sh présente toute une série de parcours d’apprentissage en ligne et gratuit sur un ensemble de ressources, y compris celles utiles pour la data science. Cela comprend notamment bash ou shell, R, Python pour des développeurs ou des analystes de données, Kubernetes et les principes du cloud computing.\n\nGit\n\nBonnes pratiques de développement avec Git et R\nDocumentation Officielle\n\n\n\nPython\n\nInitiation à Python\nPython pour la datascience (cours ENSAE)\n\nDes sites comme realPython.com permettent de se former en ligne facilement à Python. Certaines ressources des parcours du site roadmap.sh pointent par ailleurs vers ce site.\n\n\nR\n\nParcours R\nUtilitR\n\n\n\nQuarto\n\nDocumentation officielle\n\n\n\nS3, SSPcloud, Parquet, duckDB\n\nAcces SSPCLOUD\nInitiation S3\nInitiation duckDB\nLes 4 étapes pour utiliser duckDB la première fois\nInitiation Parquet\n\n\n\nMise en production / MLOps\n\nMise en production de projets Datascience (cours ENSAE)\nIntroduction au MLOps avec MLflow\nMachine Learning in production"
   },
   {
-    "objectID": "course.html#méthodologie-statistique",
-    "href": "course.html#méthodologie-statistique",
+    "objectID": "course.html#méthodologie-statistique-et-de-science-des-données",
+    "href": "course.html#méthodologie-statistique-et-de-science-des-données",
     "title": "Formations et ressources utiles",
-    "section": "Méthodologie Statistique",
-    "text": "Méthodologie Statistique\n\nMéthodes ensemblistes\n\nDocument de travail Méthodes ensemblistes"
+    "section": "Méthodologie statistique et de science des données",
+    "text": "Méthodologie statistique et de science des données\n\nTechnologie cloud\n\nDocument de travail de l’Insee L’apport des technologies cloud pour industrialiser le processus d’innovation statistique\n\n\n\nMéthodes ensemblistes\n\nDocument de travail Méthodes ensemblistes"
   },
   {
     "objectID": "course.html#autres-ressources",
