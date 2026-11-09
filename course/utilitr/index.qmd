@@ -8,7 +8,7 @@ description: |
   </p>
 
   <p>
-    La documentation <code>utilitR</code> ne fait aucun pré-requis de niveau: 
+    La documentation <code>utilitR</code> ne fait aucun pré-requis de niveau:
     à la fois le débutant
     et l'utilisateur plus expert désirant découvrir un nouveau champ ou bénéficier
     d'une aide-mémoire pourront trouver du contenu qui les intéresse.
@@ -16,14 +16,14 @@ description: |
 
   <p>
     Afin que les exemples soient concrets,
-    tous les jeux de données sont issus du 
+    tous les jeux de données sont issus du
     <a href="https://www.insee.fr/fr/accueil">site de l'Insee</a>.
   </p>
 categories:
 - R
 - opensource
 - opendata
-- book
+- Livre/Cours
 - MadeByUs
 date: "2021-04-27T00:00:00Z"
 
