@@ -93,6 +93,22 @@ Des sites comme [realPython.com](https://realpython.com/) permettent de se forme
 
 Une série de ressources utiles plus diversifiées sur des sujets en lien avec la science des données.
 
+![](./assets/media/logo_Insee.png)
+
+##### L’apport des technologies cloud pour industrialiser le processus d’innovation statistique
+
+Ce document de travail vise à montrer l'opportunité des technologies cloud pour favoriser l'innovation dans la production statistique. Certaines technologies centrales de cet écosystème permettent de mettre à disposition des environnements qui favorisent à la fois l’autonomie, le passage à l'échelle et la reproductibilité des traitements. Le projet Onyxia, développé à l'Insee, permet aux statisticiens de s'approprier ces technologies à travers une interface simple d'utilisation et un catalogue de services de data science prêts à l’emploi. Enfin, ces technologies ont permis d'industrialiser le processus de codification automatique des domaines d'activité des entreprises françaises en facilitant la mise en production d'un modèle de machine learning selon les principes du MLOps.
+
+21 juil. 2025
+
+![](https://ddotta.github.io/awesome-polars/media/logo_awesome_polars.png)
+
+##### Centre de ressources pour Polars
+
+Une liste de documentation et ressources en lien avec Polars à disposition sur internet, y compris des plugins Polars.
+
+25 juin 2025
+
 ![](./course/r-mtes/featured.png)
 
 ##### Les formations R du MTES
